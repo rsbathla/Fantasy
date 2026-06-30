@@ -88,6 +88,16 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done (tested + committed)
 - ✅ Re-verified: grade==chain PASS, 0 console errors, 0 visible NaN/undefined on dfs_week + home
 - ⚠️ FLAGGED (not changed, per golden rule): `dk_adp.csv` lists Kenneth Walker III on KC (top-15 RB ADP) — could be a real 2026 move or a source error; user to verify rather than override on a 2025 assumption.
 
+### Phase F — Live X (tweets) + analyst narrative layer
+Goal (user): "pull the most recent tweets… and start forming ideas and analysis on what people are saying and how that forms the profile of that player." Dossier purpose = aggregate ALL data per player.
+- ✅ **Free "scroller" pull (no paid API).** Paid X API is blocked by the sandbox network policy (api.x.com/api.twitter.com → 403 tunnel), so the pull runs in the browser. A private X **List "FF Analysts"** (id `2072071516770955274`) was created on an unused account (@rsbatz) via the X v1.1 API and populated with all **48 tracked analyst handles** (`x_handles.txt`). The list timeline is scrolled with real wheel events (scripted `scrollBy` stalls X's virtualizer) and each rendered tweet harvested from the DOM (id, handle, ISO date, like count, repost social-context, cleaned text).
+- ✅ **Pull 1 (2026-06-30):** 48 tweets across ~6h captured → `build_x_posts.py` → `x_posts.json` (normalized schema). Re-run = replace `POSTS` after the next scroll.
+- ✅ **Map → players/teams** (`x_dossier_refresh.py --input x_posts.json` → `x_live.json`): **16 players, 12 teams**. Hardened the mapper: it now requires BOTH first AND last name in the post, killing the unique-surname false positives the old `len(plist)==1` bypass produced (LeBron **James**→Jordan James, **Murray**-Boyles→Kyler Murray, to **Boston**→Denzel Boston, third **downs**→Josh Downs all correctly rejected; every true full-name mention kept).
+- ✅ **Analyst narrative layer** (`build_x_narrative.py` → `x_narrative.json`): per mapped player a **sentiment** (bullish/bearish/mixed/neutral) + **themes** + a synthesized **take**, each grounded in that pull's actual posts with handle attribution (never invented; players with no mapped posts are skipped). 16/16 mapped players synthesized. e.g. Odunze = contrarian Y3-leap buy (Sanderson, YPRR), Willis = rushing-creation QB2 floor (Winks YAC + Norris), Lloyd = self-aware hype-trap (Hartitz).
+- ✅ **Merged into the deep dossier**: `dossier_deep.html` rebuilt (369 players) with a "🧠 What analysts are saying" section (sentiment badge + themes + take) above the raw "Tweets & analyst mentions" evidence. Verified: narrative + live tweets present in the HTML (take/themes ×16; live YPRR + YAC tweets render).
+- **Refresh cadence (reproducible):** scroll the list → update `build_x_posts.py` POSTS → `python3 build_x_posts.py && python3 x_dossier_refresh.py --input x_posts.json --no-rebuild && python3 build_x_narrative.py && python3 build_dossier_deep.py`.
+- Golden rule respected: narratives attribute claims to analysts and avoid asserting 2026 facts (e.g., Jahnke's "best guess" Seahawks backfield reported as his projection, not endorsed).
+
 ---
 
 ## Open items (honest)
@@ -98,3 +108,4 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done (tested + committed)
 
 ## Change log
 - 2026-06-30: Audit → architecture → git init. Phase B (Best Ball: UD + projection fix + canonical entry), Phase C (DFS: defense split-parity + weekly model + lineup templates), Phase D (Dossier: offense scheme identity + unified home), Phase E (independent review + blocker fixes) — all complete & committed. All three products run end-to-end and render clean.
+- 2026-06-30: Phase F — live X layer via the free List "scroller" (paid API blocked by sandbox). Created+populated the 48-handle "FF Analysts" list on @rsbatz, scrolled it for 48 recent tweets, mapped to 16 players/12 teams (mapper hardened: require first+last name, false positives eliminated), and added a grounded per-player **analyst narrative** (sentiment+themes+take) merged into `dossier_deep.html`.

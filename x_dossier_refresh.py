@@ -40,6 +40,14 @@ def tracked_handles():
     return sorted(hs)
 
 # ---- player / team index for mapping ----
+SUFFIXES = {'jr', 'sr', 'ii', 'iii', 'iv', 'v'}
+
+def name_tokens(fk):
+    """first/last content tokens for a normalized name, with generational suffixes dropped
+    (so 'marvin harrison jr' -> first=marvin, last=harrison; 'jaxon smith njigba' -> jaxon/njigba)."""
+    toks = [t for t in str(fk).split() if t and t not in SUFFIXES]
+    return toks
+
 def player_index():
     rows = list(csv.DictReader(open(os.path.join(HERE, 'features.csv'), encoding='utf-8')))
     players = {}
@@ -47,10 +55,10 @@ def player_index():
         nm = r.get('name')
         if nm and r.get('pos') in ('QB', 'RB', 'WR', 'TE'):
             players[fn(nm)] = {'name': nm, 'pos': r['pos'], 'team': core.team_abbr(r.get('team'))}
-    # distinctive last-name -> player(s) for substring hits in tweet text
+    # distinctive last-name -> player(s) for substring hits in tweet text (suffix-stripped)
     by_last = {}
     for k, p in players.items():
-        toks = k.split()
+        toks = name_tokens(k)
         if len(toks) >= 2 and len(toks[-1]) > 3:
             by_last.setdefault(toks[-1], []).append(p)
     return players, by_last
@@ -71,9 +79,14 @@ def map_post(post, players, by_last):
     for last, plist in by_last.items():
         if (' ' + last + ' ') in text:
             for p in plist:
-                # require the first-name initial to also appear to reduce last-name collisions
-                fk = fn(p['name']); first = fk.split()[0]
-                if (' ' + first + ' ') in text or len(plist) == 1:
+                # require BOTH the first name AND the last name to appear in the post. This kills
+                # collisions where a distinctive surname doubles as a common word/place/other person
+                # (e.g. "LeBron James" -> Jordan James, "to Boston" -> Denzel Boston, "Murray-Boyles"
+                # -> Kyler Murray, "third downs" -> Josh Downs). Analysts name players in full, so
+                # recall stays high while these false positives are eliminated.
+                fk = fn(p['name']); toks = name_tokens(fk)
+                first = toks[0] if toks else ''
+                if first and (' ' + first + ' ') in text:
                     hit_players.add(fk)
     for word, ab in TEAM_WORDS.items():
         if (' ' + word + ' ') in text:

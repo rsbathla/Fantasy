@@ -30,6 +30,7 @@ for p in (intel.get('players') or []):
                              'n_about': p.get('n_about'), 'backtests': p.get('backtests', []), 'news': []}
 # LIVE X layer (x_dossier_refresh.py -> x_live.json, fed by the X MCP). Prefer live posts; split news.
 xlive = J('x_live.json')
+xnar = J('x_narrative.json')   # analysis layer: synthesized "what analysts are saying" per player
 for fk, posts in (xlive.get('players') or {}).items():
     cur = TW.setdefault(fk, {'about': [], 'comp': [], 'backtests': [], 'news': []})
     live_news = [p for p in posts if (p.get('kind') == 'news')]
@@ -84,9 +85,10 @@ for k in keys:
         'splits': cx.get('splits'), 'scheme': cx.get('scheme'), 'opp': cx.get('opp'), 'matchup': cx.get('matchup'),
         # full situational percentiles
         'situations': pr.get('situations'), 'trend': pr.get('trend'),
-        # tweets + video
+        # tweets + video + synthesized analyst narrative
         'tweets': TW.get(k, {}).get('about'), 'n_tweets': TW.get(k, {}).get('n_about'),
         'news': TW.get(k, {}).get('news'),
+        'analyst_take': xnar.get(k),
         'video': VID.get(k, {}).get('note'), 'n_clips': VID.get(k, {}).get('n_clips'),
     }
     players.append(rec)
@@ -186,6 +188,8 @@ function render(p){if(!p)return;let h='';
  const rf=p.risk_flags||p.flags;if(rf&&rf.length)h+=`<div class="sec"><h3>Risk flags${p.flags_playoff?` · ${p.flags_playoff} hit the playoffs`:''}</h3>${(Array.isArray(rf)?rf:[]).map(f=>`<span class="chip b">${esc(typeof f==='string'?f:(f.q||f.note||JSON.stringify(f)))}</span>`).join('')}</div>`;
  // backtests
  if(p.backtests&&p.backtests.length)h+=`<div class="sec"><h3>Analyst-claim backtests (claim vs our data)</h3>`+p.backtests.map(b=>`<div class="note" style="margin:3px 0"><b style="color:${/STRONG|SUPPORT/i.test(b.verdict)?'var(--good)':/NOT|REJECT/i.test(b.verdict)?'var(--bad)':'var(--warn)'}">${esc(b.verdict)}</b> — ${esc((b.dim||'').replace(/_/g,' '))} ${b.pctl!=null?'('+b.pctl+'th)':''}: ${esc(b.note||'')} ${b.by?'<span class=muted>— '+b.by.map(x=>'@'+esc(x)).join(', ')+'</span>':''}</div>`).join('')+`</div>`;
+ // synthesized analyst narrative — what people are saying -> the player's forming profile
+ if(p.analyst_take){const a=p.analyst_take;const sc={bullish:'var(--good)',bearish:'var(--bad)',mixed:'var(--warn)',neutral:'var(--mut)'}[a.sentiment]||'var(--mut)';h+=`<div class="sec"><h3>🧠 What analysts are saying</h3><div class="note" style="border-left:3px solid ${sc};padding-left:10px"><span style="color:${sc};font-weight:800;text-transform:uppercase;font-size:10px;letter-spacing:.5px">${esc(a.sentiment||'')}</span> <span class="muted">· ${a.n_src} mapped post${a.n_src===1?'':'s'}${a.handles&&a.handles.length?' · '+a.handles.map(x=>'@'+esc(x)).join(', '):''}</span><div style="margin-top:5px">${esc(a.take||'')}</div>${a.themes&&a.themes.length?'<div style="margin-top:6px">'+a.themes.map(t=>`<span class="chip">${esc(t)}</span>`).join('')+'</div>':''}</div></div>`;}
  // breaking news (live X news/trends)
  if(p.news&&p.news.length)h+=`<div class="sec"><h3>📰 Breaking news & trends (live)</h3>`+p.news.slice(0,8).map(t=>`<div class="tweet" style="border-left-color:var(--warn)"><span class="h" style="color:var(--warn)">@${esc(t.handle||'')}</span> <span class="m">${esc(t.date||'')}</span><div>${esc(t.text||'')}</div>${t.url?`<a href="${esc(t.url)}" target="_blank">link →</a>`:''}</div>`).join('')+`</div>`;
  // tweets
