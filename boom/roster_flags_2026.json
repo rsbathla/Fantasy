@@ -1,0 +1,98 @@
+{
+ "_meta": "2026 roster accuracy audit — 5 parallel web-research agents (June 2026, cited). The model's fusion_table player->team was verified across ~60 top skill players: HIGHLY accurate. This file records the real-data exceptions.",
+ "non_usable": {
+  "Brandon Aiyuk": "SF voided 2026 guarantees, intends to release/trade; has not played since Oct-2024 multi-ligament knee injury. Not a usable 2026 SF WR (transaction unresolved as of June 2026). [espn/nfl.com]"
+ },
+ "free_agents_unsigned_confirmed": {
+  "Stefon Diggs": "released by NE 3/11/2026, unsigned",
+  "Deebo Samuel": "WAS contract voided, UFA 3/11, unsigned",
+  "Tyreek Hill": "released by MIA 2/16/2026, rehabbing 2025 leg injury, unsigned (early-season risk once signed)",
+  "Nick Chubb": "played 2025 HOU, UFA ~3/6, unsigned (not retired)",
+  "Darren Waller": "played 2025 MIA, UFA, undecided/unsigned (not formally re-retired)"
+ },
+ "injury_watch_rostered": {
+  "Zach Charbonnet": "SEA — torn ACL (Jan 2026 playoffs), surgery Feb 20 2026; rehabbing on roster (NOT on IR), ahead of pace; realistic Oct/Nov return, healthy by fantasy playoffs",
+  "George Kittle": "SF — high-Achilles tear Jan 11 2026; ahead of schedule, Week-1 a coin flip, full-go by playoffs",
+  "Tank Dell": "HOU — catastrophic multi-ligament knee Dec 2024, missed all 2025; targeting camp/Week-1, early-season ramp plausible, likely healthy by playoffs",
+  "Malik Nabers": "NYG — torn ACL Week 4 2025 + offseason cleanup; GM optimistic Week-1, Schefter skeptical; healthy by playoffs",
+  "Jonathon Brooks": "CAR — SECOND ACL on same knee (Dec 2024), missed all 2025; CLEARED, took OTA snaps, projects full-go Week-1 with elevated re-injury/durability risk",
+  "Tucker Kraft": "GB — torn ACL Nov 2 2025, patellar graft; 'right on schedule', plans Week-1 no pitch count"
+ },
+ "_availability_meta": "Data-backed availability overlay. avail_mult = (17 - games_missed_mid)/17 using the cited June-2026 reporting midpoint of expected regular-season games missed. playoff_ok=true => projected healthy for fantasy playoffs (NFL Weeks 15-17): the injury is a TOTAL flag but NOT a playoff flag. Verified by parallel cited web research (June 28 2026).",
+ "availability": {
+  "Zach Charbonnet": {
+   "verdict": "EARLY_SEASON_RISK",
+   "games_missed_mid": 5.5,
+   "avail_mult": 0.68,
+   "playoff_ok": true,
+   "src": "nfl.com/fieldgulls/heavy (Feb-2026 ACL surgery, June minicamp)"
+  },
+  "George Kittle": {
+   "verdict": "WEEK1_MONITOR",
+   "games_missed_mid": 2.0,
+   "avail_mult": 0.88,
+   "playoff_ok": true,
+   "src": "espn/br/49erswebzone (ahead of schedule)"
+  },
+  "Malik Nabers": {
+   "verdict": "WEEK1_MONITOR",
+   "games_missed_mid": 1.75,
+   "avail_mult": 0.88,
+   "playoff_ok": true,
+   "src": "nfl.com (Schoen optimistic) / br (Schefter skeptical)"
+  },
+  "Tank Dell": {
+   "verdict": "WEEK1_MONITOR",
+   "games_missed_mid": 2.5,
+   "avail_mult": 0.85,
+   "playoff_ok": true,
+   "src": "nfl.com/pfn/click2houston"
+  },
+  "Tucker Kraft": {
+   "verdict": "FULL_GO",
+   "games_missed_mid": 0.5,
+   "avail_mult": 0.97,
+   "playoff_ok": true,
+   "src": "totalpackers/acmepacking/br (LaFleur on schedule)"
+  },
+  "Jonathon Brooks": {
+   "verdict": "FULL_GO_DURABILITY",
+   "games_missed_mid": 0.0,
+   "avail_mult": 1.0,
+   "playoff_ok": true,
+   "durability": true,
+   "src": "panthers.com/lwos/heavy (cleared, 2nd ACL same knee = re-injury risk)"
+  }
+ },
+ "roster_assignments_CONFIRMED_correct": [
+  "A.J. Brown -> NE (real trade from PHI, post-June-1; model was right, NOT an error)",
+  "Mike Evans -> SF (left TB)",
+  "Christian Kirk -> SF (left HOU)",
+  "Cooper Kupp -> SEA",
+  "Sam Darnold -> SEA QB1",
+  "DK Metcalf + Aaron Rodgers + Michael Pittman Jr. -> PIT",
+  "Kenneth Walker III -> KC",
+  "Jaylen Waddle -> DEN",
+  "David Montgomery -> HOU",
+  "Isiah Pacheco -> DET (FA)",
+  "Jakobi Meyers -> JAX",
+  "David Njoku -> LAC",
+  "Kyler Murray -> MIN (FA)",
+  "Jauan Jennings -> MIN (FA)",
+  "Travis Etienne -> NO",
+  "DJ Moore -> BUF",
+  "Romeo Doubs -> NE"
+ ],
+ "missing_depth_not_errors": {
+  "PHI": "Marquise (Hollywood) Brown (FA, replaces A.J. Brown)",
+  "WAS": "Treylon Burks (projected WR2)",
+  "BAL": "Rashod Bateman (WR2)",
+  "CHI": "Cole Kmet (TE2)",
+  "LV": "Michael Mayer (TE), Jack Bech (WR rookie)",
+  "ARI": "Trey Benson (RB)",
+  "CAR": "Xavier Legette (WR)",
+  "MIA": "Quinn Ewers (QB2)",
+  "CLE": "Dillon Gabriel (QB room)",
+  "note": "these are depth/competition omissions in the top-240 cut, not wrong-team errors"
+ }
+}

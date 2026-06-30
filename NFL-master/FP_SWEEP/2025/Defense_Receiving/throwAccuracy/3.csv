@@ -1,0 +1,33 @@
+teamTeamId,teamLocation,teamNickname,opponentAbbreviation,opponentConference,opponentDivisionName,playDefenseMiddleOfTheFieldLookPreName,playDefenseMiddleOfTheFieldLookPostName,playDefenseCoverageSchemeParent,teamStatsGamesPlayed,opponentStatsSnapsOffenseTotal,opponentStatsPassingPlayActionLabel,opponentStatsPassingPressuredLabel,opponentStatsPassingBlitzedLabel,opponentStatsReceivingRoutesTotal,opponentStatsReceivingTargetsTotal,opponentStatsReceivingTargetsContestedLabel,opponentStatsReceivingTargetsCatchableLabel,opponentStatsReceivingTargetsInEndzone,opponentStatsReceivingTargetsPerRoute,opponentStatsReceivingYardsAirTotal,opponentStatsReceivingAlignmentBackfieldTargetsPercentage,opponentStatsReceivingAlignmentSlotTargetsPercentage,opponentStatsReceivingAlignmentWideTargetsPercentage,opponentStatsReceivingTargetedReadFirstTotal,opponentStatsReceivingTargetedReadFirstPercentage,opponentStatsReceivingAverageDepthOfTarget,opponentStatsReceivingPasserRatingWhenTargeted,opponentStatsReceivingAveragesPerTargetYardsOverExpected,opponentStatsInside20ReceivingTargetsTotal,opponentStatsReceivingAlignmentInlineTargetsPercentage,opponentStatsReceivingTargetedReadDesignTotal,opponentStatsReceivingTargetedReadDesignPercentage,opponentStatsReceivingTargetsContestedTotal,teamIsHomeTeam
+17,Los Angeles,Rams,ATL,NFC,NFC South,Open,Closed,Cover 3,13,10,No,No,Yes,44,10,No,No,1,0.2273,141,0.1,0.5,0.4,7,0.7,14.1,39.6,-9.1171,1,,,,,
+12,Green Bay,Packers,CHI,NFC,NFC North,Closed,Closed,Cover 3,12,12,No,No,No,49,12,No,No,1,0.2449,57,0.3333,0.1667,0.3333,7,0.5833,4.75,39.6,-6.7397,1,0.1667,1,0.0833,,
+3,Baltimore,Ravens,PIT,AFC,AFC North,Closed,Closed,Red Zone,12,10,No,No,No,47,10,No,No,1,0.2128,119,0.2,0.1,0.7,9,0.9,11.9,,-8.4572,3,,,,1,
+20,Miami,Dolphins,NYJ,AFC,AFC East,Open,Open,Cover 6,8,10,No,Yes,No,47,10,No,No,1,0.2128,136,,0.5,0.4,6,0.6,13.6,,-9.1919,1,0.1,,,,
+25,New York,Jets,BUF,AFC,AFC East,Closed,Closed,Cover 3,12,10,No,No,No,44,10,No,No,,0.2273,118,0.1,0.1,0.5,7,0.7,11.8,39.6,-8.933,,0.3,1,0.1,,
+18,Los Angeles,Chargers,DEN,AFC,AFC West,Open,Open,Cover 0,12,6,No,Yes,Yes,29,6,No,No,,0.2069,15,0.5,0.3333,0.1667,3,0.5,2.5,39.6,-6.1908,1,,,,1,
+15,Jacksonville,Jaguars,TEN,AFC,AFC South,Closed,Open,Cover 4,13,15,No,Yes,No,67,15,No,No,2,0.2239,159,0.2,0.3333,0.4667,11,0.7333,10.6,11.8,-8.6732,3,,,,1,1
+13,Houston,Texans,IND,AFC,AFC South,Closed,Closed,Cover 3,13,8,No,No,No,36,8,No,No,1,0.2222,93,0.375,0.375,0.25,4,0.5,11.625,,-8.6742,1,,,,1,1
+21,Minnesota,Vikings,NYG,NFC,NFC East,Closed,Closed,Cover 1,12,6,No,Yes,Yes,28,6,No,No,,0.2143,25,0.3333,0.3333,0.3333,4,0.6667,4.1667,,-6.6064,1,,,,,
+23,New Orleans,Saints,TEN,AFC,AFC South,Closed,Closed,Cover 3,11,5,Yes,No,No,25,5,No,No,1,0.2,60,,,0.8,5,1,12,39.6,-8.6817,2,0.2,,,,
+11,Detroit,Lions,CHI,NFC,NFC North,Closed,Open,Cover 2,13,12,No,Yes,No,53,12,No,No,,0.2264,120,0.1667,0.5833,0.25,9,0.75,10,4.9,-8.44,,,,,,
+19,Las Vegas,Raiders,KC,AFC,AFC West,Open,Closed,Cover 1,13,7,No,Yes,No,32,7,No,No,2,0.2188,92,,0.4286,0.4286,3,0.4286,13.1429,39.6,-9.0501,1,0.1429,,,,1
+9,Dallas,Cowboys,NYG,NFC,NFC East,Open,Open,Cover 4,11,11,No,Yes,No,52,11,No,No,5,0.2115,182,,0.3636,0.6364,8,0.7273,16.5455,39.6,-9.9664,4,,,,,
+2,Atlanta,Falcons,LA,NFC,NFC West,Open,Closed,Cover 3,10,9,No,No,Yes,43,9,No,No,,0.2093,63,0.5556,,0.4444,5,0.5556,7,39.6,-7.0293,1,,,,,1
+32,Washington,Commanders,PHI,NFC,NFC East,Closed,Closed,Cover 1,12,10,No,No,Yes,45,10,No,No,1,0.2222,150,0.2,0.4,0.4,7,0.7,15,,-9.5526,1,,,,,
+26,Philadelphia,Eagles,WAS,NFC,NFC East,Closed,Closed,Cover 1,12,8,No,No,Yes,34,8,No,No,,0.2353,62,0.5,0.125,0.25,5,0.625,7.75,39.6,-7.651,,0.125,1,0.125,,1
+7,Cincinnati,Bengals,CLV,AFC,AFC North,Open,Open,Bracket,14,8,No,Yes,No,36,8,No,No,,0.2222,92,0.125,0.25,0.5,7,0.875,11.5,,-8.9026,1,0.125,,,,1
+8,Cleveland,Browns,CIN,AFC,AFC North,Open,Open,Bracket,14,10,No,Yes,No,48,10,No,No,1,0.2083,129,,0.4,0.6,6,0.6,12.9,39.6,-9.1119,3,,,,,
+27,Pittsburgh,Steelers,BLT,AFC,AFC North,Closed,Closed,Red Zone,11,6,No,No,No,26,6,No,No,,0.2308,14,,0.3333,0.6667,5,0.8333,2.3333,39.6,-5.6199,1,,1,0.1667,,1
+16,Kansas City,Chiefs,LV,AFC,AFC West,Open,Closed,Cover 1,12,7,No,Yes,No,31,7,No,No,,0.2258,81,0.1429,0.4286,0.2857,4,0.5714,11.5714,39.6,-8.1781,2,0.1429,,,,
+29,San Francisco,49ers,CHI,NFC,NFC North,Open,Closed,Cover 3,12,11,No,No,No,53,11,No,No,,0.2075,100,0.1818,0.6364,0.1818,5,0.4545,9.0909,1.7,-7.753,,,,,,1
+5,Carolina,Panthers,TB,NFC,NFC South,Open,Open,Cover 0,11,9,No,No,Yes,39,9,No,No,2,0.2308,112,,0.1111,0.6667,8,0.8889,12.4444,39.6,-9.0666,2,0.2222,,,,1
+24,New York,Giants,DAL,NFC,NFC East,Open,Open,Cover 4,12,8,No,Yes,No,34,8,No,No,,0.2353,102,0.125,0.25,0.5,6,0.75,12.75,39.6,-8.6731,,0.125,1,0.125,1,1
+1,Arizona,Cardinals,ATL,NFC,NFC South,Open,Open,Cover 4,13,4,No,No,No,18,4,No,No,,0.2222,30,,0.25,0.75,2,0.5,7.5,39.6,-7.18,1,,,,,1
+4,Buffalo,Bills,NYJ,AFC,AFC East,Closed,Closed,Cover 3,13,9,No,No,No,36,9,No,No,1,0.25,67,0.2222,0.3333,0.4444,6,0.6667,7.4444,39.6,-7.8098,1,,2,0.2222,,1
+6,Chicago,Bears,DET,NFC,NFC North,Closed,Open,Cover 2,13,9,No,Yes,No,45,9,No,No,4,0.2,120,,0.5556,0.4444,6,0.6667,13.3333,39.6,-8.5828,5,,,,1,1
+14,Indianapolis,Colts,HST,AFC,AFC South,Closed,Closed,Cover 3,11,9,No,No,No,43,9,No,No,3,0.2093,85,0.3333,0.3333,0.3333,6,0.6667,9.4444,,-8.0545,4,,,,,
+10,Denver,Broncos,LAC,AFC,AFC West,Open,Open,Cover 0,16,8,No,Yes,Yes,31,8,No,No,1,0.2581,77,0.125,0.25,0.5,7,0.875,9.625,39.6,-8.6968,1,0.125,1,0.125,,1
+28,Seattle,Seahawks,LA,NFC,NFC West,Open,Closed,Cover 3,13,14,Yes,Yes,No,60,14,No,No,2,0.2333,163,0.2143,0.0714,0.6429,8,0.5714,11.6429,9.8,-8.6084,3,0.0714,,,1,1
+31,Tennessee,Titans,JAX,AFC,AFC South,Closed,Open,Cover 4,10,7,No,Yes,No,30,7,No,No,,0.2333,64,0.1429,0.2857,0.4286,2,0.2857,9.1429,,-8.2248,,0.1429,,,,
+22,New England,Patriots,NYJ,AFC,AFC East,Open,Open,Cover 4,13,10,No,No,No,48,10,No,No,,0.2083,108,0.1,0.3,0.5,8,0.8,10.8,39.6,-8.2178,,0.1,,,,
+30,Tampa Bay,Buccaneers,CAR,NFC,NFC South,Open,Open,Cover 0,11,9,No,No,Yes,39,9,No,No,1,0.2308,58,0.1111,0.3333,0.5556,6,0.6667,6.4444,39.6,-6.3242,1,,,,,

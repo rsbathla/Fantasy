@@ -1,0 +1,255 @@
+player,pos,team,age,posRank_fpg,ceilingRank,floor,p25,median,p75,ceiling
+Bijan Robinson,RB,ATL,24,RB2 · 19.8,RB1,11.3,16.3,19.8,23.3,28.3
+Jahmyr Gibbs,RB,DET,23,RB3 · 18.5,RB2,9.6,14.8,18.5,22.2,27.4
+Christian McCaffrey,RB,SF,29,RB1 · 20.7,RB3,8.8,15.8,20.7,23.3,27.1
+Puka Nacua,WR,LA,24,WR1 · 19.3,WR1,11.7,16.2,19.3,22.4,26.6
+Jaxon Smith-Njigba,WR,SEA,24,WR2 · 18.3,WR2,11.0,15.3,18.3,21.3,25.6
+Ja'Marr Chase,WR,CIN,26,WR3 · 18.2,WR3,11.0,15.3,18.2,21.1,25.4
+Amon-Ra St. Brown,WR,DET,26,WR4 · 17.5,WR4,10.4,14.6,17.5,20.4,24.6
+De'Von Achane,RB,MIA,24,RB8 · 16.0,RB4,9.1,13.2,16.0,18.8,22.9
+Ashton Jeanty,RB,LV,22,RB6 · 16.2,RB5,9.6,13.5,16.2,18.9,22.8
+Drake London,WR,ATL,24,WR5 · 16.3,WR5,9.9,13.7,16.3,18.9,22.7
+James Cook,RB,BUF,26,RB9 · 15.8,RB6,8.6,12.9,15.8,18.4,22.2
+Chase Brown,RB,CIN,25,RB4 · 17.1,RB7,11.4,14.8,17.1,19.2,22.2
+Jonathan Taylor,RB,IND,27,RB7 · 16.1,RB8,8.3,12.9,16.1,18.5,22.0
+Rashee Rice,WR,KC,25,WR6 · 15.6,WR6,9.4,13.1,15.6,18.1,21.8
+Jeremiyah Love,,,,RB · ARI · Age 22,RB5 · 16.4 FP/G,11.3,14.3,16.4,18.5,21.5
+CeeDee Lamb,WR,DAL,26,WR7 · 14.9,WR7,8.9,12.4,14.9,17.4,20.9
+Trey McBride,TE,ARI,26,TE1 · 15.1,TE1,9.7,12.9,15.1,17.3,20.5
+Saquon Barkley,RB,PHI,29,RB10 · 15.6,RB10,7.2,12.1,15.6,17.5,20.1
+Omarion Hampton,RB,LAC,22,RB11 · 15.3,RB11,10.5,13.3,15.3,17.3,20.1
+Quinshon Judkins,RB,CLE,22,RB13 · 14.3,RB12,8.7,12.0,14.3,16.6,19.9
+Malik Nabers,WR,NYG,22,WR9 · 14.2,WR8,8.6,11.9,14.2,16.5,19.8
+Justin Jefferson,WR,MIN,26,WR8 · 14.3,WR9,8.9,12.1,14.3,16.5,19.7
+A.J. Brown,WR,NE,28,WR11 · 13.8,WR10,8.1,11.5,13.8,16.1,19.5
+Kenneth Walker,RB,KC,25,RB12 · 14.9,RB13,9.9,12.8,14.9,16.7,19.4
+Garrett Wilson,WR,NYJ,25,WR10 · 14.0,WR11,8.7,11.8,14.0,16.2,19.3
+Javonte Williams,RB,DAL,25,RB16 · 13.8,RB14,7.6,11.3,13.8,16.1,19.3
+George Pickens,WR,DAL,25,WR13 · 13.6,WR12,8.1,11.3,13.6,15.9,19.1
+Chris Olave,WR,NO,25,WR12 · 13.7,WR13,8.4,11.5,13.7,15.9,19.0
+Zay Flowers,WR,BAL,25,WR14 · 13.4,WR14,8.1,11.2,13.4,15.6,18.7
+Josh Jacobs,RB,GB,28,RB14 · 14.0,RB15,6.7,11.0,14.0,15.9,18.7
+Nico Collins,WR,HOU,26,WR15 · 12.9,WR15,7.8,10.8,12.9,15.0,18.0
+Brock Bowers,TE,LV,23,TE2 · 13.6,TE2,9.2,11.8,13.6,15.4,18.0
+Jaylen Waddle,WR,DEN,27,WR16 · 12.7,WR16,7.6,10.6,12.7,14.8,17.8
+Cam Skattebo,RB,NYG,24,RB18 · 13.4,RB16,9.2,11.7,13.4,15.1,17.6
+Kyren Williams,RB,LA,25,RB17 · 13.5,RB17,9.0,11.6,13.5,15.1,17.5
+Bucky Irving,RB,TB,23,RB19 · 13.2,RB18,9.0,11.5,13.2,14.9,17.4
+Tee Higgins,WR,CIN,27,WR17 · 12.4,WR17,7.5,10.4,12.4,14.4,17.3
+Jameson Williams,WR,DET,24,WR19 · 12.2,WR18,7.3,10.2,12.2,14.2,17.1
+Carnell Tate,,,,WR · TEN · Age 22,WR18 · 12.4 FP/G,7.7,10.5,12.4,14.3,17.1
+TreVeyon Henderson,RB,NE,23,RB22 · 12.8,RB19,8.6,11.1,12.8,14.5,17.0
+Alec Pierce,WR,IND,25,WR20 · 12.1,WR20,7.2,10.1,12.1,14.1,17.0
+Marvin Harrison Jr.,WR,ARI,23,WR21 · 12.1,WR21,7.4,10.2,12.1,14.0,16.8
+Rome Odunze,WR,CHI,23,WR22 · 12.0,WR22,7.2,10.0,12.0,14.0,16.8
+Breece Hall,RB,NYJ,24,RB20 · 12.9,RB20,9.0,11.3,12.9,14.5,16.8
+Derrick Henry,RB,BAL,32,RB15 · 13.9,RB21,5.1,10.3,13.9,15.0,16.7
+Tetairoa McMillan,WR,CAR,22,WR23 · 12.0,WR23,7.3,10.1,12.0,13.9,16.7
+DeVonta Smith,WR,PHI,27,WR25 · 11.8,WR24,7.1,9.9,11.8,13.7,16.5
+Michael Pittman,WR,PIT,28,WR27 · 11.7,WR25,7.1,9.8,11.7,13.6,16.3
+Wan'Dale Robinson,WR,TEN,25,WR26 · 11.8,WR26,7.4,10.0,11.8,13.6,16.2
+Parker Washington,WR,JAX,23,WR28 · 11.6,WR27,7.0,9.7,11.6,13.5,16.2
+Travis Etienne,RB,NO,27,RB21 · 12.8,RB22,8.3,11.0,12.8,14.2,16.2
+Colston Loveland,TE,CHI,21,TE3 · 11.7,TE3,7.3,9.9,11.7,13.5,16.1
+Luther Burden III,WR,CHI,22,WR32 · 11.4,WR28,6.8,9.5,11.4,13.3,16.0
+Brian Thomas Jr.,WR,JAX,23,WR29 · 11.4,WR29,6.9,9.5,11.4,13.3,15.9
+Emeka Egbuka,WR,TB,23,WR30 · 11.4,WR30,6.9,9.6,11.4,13.2,15.9
+Ladd McConkey,WR,LAC,24,WR31 · 11.4,WR31,7.0,9.6,11.4,13.2,15.8
+Davante Adams,WR,LA,33,WR24 · 11.9,WR32,8.1,10.4,11.9,13.4,15.7
+Josh Downs,WR,IND,24,WR33 · 11.1,WR33,6.6,9.3,11.1,12.9,15.6
+Khalil Shakir,WR,BUF,26,WR35 · 11.0,WR34,6.5,9.2,11.0,12.8,15.5
+Chuba Hubbard,RB,CAR,26,RB23 · 11.9,RB23,8.0,10.3,11.9,13.3,15.4
+Jordyn Tyson,,,,WR · NO · Age 22,WR34 · 11.1 FP/G,6.8,9.4,11.1,12.8,15.4
+Kenneth Gainwell,RB,TB,26,RB24 · 11.8,RB24,7.9,10.2,11.8,13.2,15.3
+Jadarian Price,,,,RB · SEA · Age 22,RB26 · 11.5 FP/G,7.8,10.0,11.5,13.0,15.2
+DK Metcalf,WR,PIT,28,WR36 · 10.7,WR36,6.4,9.0,10.7,12.4,15.0
+Makai Lemon,,,,WR · PHI · Age 22,WR37 · 10.7 FP/G,6.5,9.0,10.7,12.4,14.9
+DJ Moore,WR,BUF,28,WR39 · 10.6,WR38,6.3,8.8,10.6,12.4,14.9
+Sam LaPorta,TE,DET,25,TE7 · 10.8,TE4,6.7,9.1,10.8,12.5,14.9
+George Kittle,TE,SF,32,TE4 · 11.4,TE5,8.0,10.0,11.4,12.8,14.8
+Jakobi Meyers,WR,JAX,29,WR40 · 10.6,WR39,6.4,8.9,10.6,12.3,14.8
+Tyler Warren,TE,IND,23,TE9 · 10.7,TE6,6.7,9.1,10.7,12.3,14.7
+D'Andre Swift,RB,CHI,27,RB25 · 11.5,RB26,7.3,9.8,11.5,12.8,14.7
+Kyle Pitts,TE,ATL,25,TE6 · 10.8,TE7,6.9,9.2,10.8,12.4,14.7
+Bhayshul Tuten,RB,JAX,24,RB28 · 11.1,RB27,7.6,9.7,11.1,12.5,14.6
+Michael Wilson,WR,ARI,26,WR41 · 10.3,WR40,6.3,8.6,10.3,12.0,14.3
+Courtland Sutton,WR,DEN,30,WR38 · 10.6,WR41,6.9,9.1,10.6,12.1,14.3
+Xavier Worthy,WR,KC,22,WR42 · 10.2,WR42,6.1,8.5,10.2,11.9,14.3
+Travis Kelce,TE,KC,36,TE5 · 11.2,TE8,8.2,10.0,11.2,12.4,14.2
+Christian Watson,WR,GB,26,WR43 · 10.1,WR43,6.0,8.4,10.1,11.8,14.2
+RJ Harvey,RB,DEN,25,RB29 · 10.9,RB28,7.2,9.4,10.9,12.2,14.2
+Harold Fannin,TE,CLE,21,TE8 · 10.7,TE9,7.2,9.3,10.7,12.1,14.2
+Kyle Monangai,RB,CHI,23,RB32 · 10.5,RB29,7.1,9.1,10.5,11.9,13.9
+Romeo Doubs,WR,NE,25,WR46 · 9.7,WR44,5.7,8.1,9.7,11.3,13.7
+Rico Dowdle,RB,PIT,27,RB30 · 10.7,RB30,6.8,9.1,10.7,11.9,13.6
+Quentin Johnston,WR,LAC,24,WR44 · 9.8,WR45,6.0,8.2,9.8,11.4,13.6
+T.J. Hockenson,TE,MIN,28,TE10 · 10.1,TE10,6.7,8.7,10.1,11.5,13.5
+Jake Ferguson,TE,DAL,27,TE12 · 9.7,TE11,6.0,8.2,9.7,11.2,13.4
+Aaron Jones,RB,MIN,31,RB27 · 11.4,RB31,6.4,9.3,11.4,12.2,13.3
+KC Concepcion,,,,WR · CLE · Age 22,WR49 · 9.6 FP/G,6.0,8.1,9.6,11.1,13.2
+David Montgomery,RB,HOU,28,RB31 · 10.5,RB32,6.5,8.9,10.5,11.6,13.1
+Dallas Goedert,TE,PHI,31,TE11 · 9.9,TE12,6.8,8.6,9.9,11.2,13.0
+Mike Evans,WR,SF,32,WR45 · 9.7,WR47,6.4,8.4,9.7,11.0,13.0
+Rhamondre Stevenson,RB,NE,28,RB33 · 10.3,RB33,6.2,8.6,10.3,11.4,12.9
+Terry McLaurin,WR,WAS,30,WR48 · 9.6,WR48,6.3,8.2,9.6,11.0,12.9
+Chris Godwin Jr.,WR,TB,30,WR47 · 9.6,WR49,6.3,8.3,9.6,10.9,12.9
+Tucker Kraft,TE,GB,25,TE16 · 9.3,TE13,5.7,7.8,9.3,10.8,12.9
+Ricky Pearsall,WR,SF,25,WR52 · 9.1,WR50,5.4,7.6,9.1,10.6,12.8
+Rachaad White,RB,WAS,27,RB34 · 10.0,RB34,6.4,8.5,10.0,11.1,12.7
+Jordan Addison,WR,MIN,24,WR51 · 9.2,WR51,5.7,7.8,9.2,10.6,12.7
+Kenyon Sadiq,,,,TE · NYJ · Age 22,TE13 · 9.5 FP/G,6.3,8.2,9.5,10.8,12.7
+Stefon Diggs,WR,NE,32,WR50 · 9.3,WR52,6.0,8.0,9.3,10.6,12.6
+Juwan Johnson,TE,NO,29,TE14 · 9.3,TE15,6.1,8.0,9.3,10.6,12.5
+J.K. Dobbins,RB,DEN,27,RB36 · 9.7,RB35,6.2,8.3,9.7,10.8,12.4
+Mark Andrews,TE,BAL,30,TE15 · 9.3,TE16,6.3,8.1,9.3,10.5,12.3
+Tony Pollard,RB,TEN,28,RB35 · 9.9,RB36,6.3,8.4,9.9,10.9,12.2
+Isaiah Likely,TE,NYG,25,TE17 · 8.9,TE17,5.7,7.6,8.9,10.2,12.1
+Isiah Pacheco,RB,DET,27,RB37 · 9.4,RB37,5.9,8.0,9.4,10.5,12.0
+Zach Charbonnet,RB,SEA,25,RB39 · 9.2,RB38,6.1,7.9,9.2,10.3,11.9
+Brenton Strange,TE,JAX,25,TE18 · 8.7,TE18,5.5,7.4,8.7,10.0,11.9
+Pat Freiermuth,TE,PIT,27,TE19 · 8.7,TE19,5.5,7.4,8.7,10.0,11.9
+Jaylen Warren,RB,PIT,27,RB38 · 9.3,RB39,5.9,7.9,9.3,10.3,11.8
+Jalen Coker,WR,CAR,24,WR53 · 8.5,WR53,5.2,7.1,8.5,9.9,11.8
+Tre Tucker,WR,LV,24,WR54 · 8.5,WR54,5.2,7.2,8.5,9.8,11.8
+Omar Cooper Jr.,,,,WR · NYJ · Age 22,WR55 · 8.5 FP/G,5.2,7.2,8.5,9.8,11.8
+Jayden Reed,WR,GB,25,WR56 · 8.3,WR56,4.9,6.9,8.3,9.7,11.7
+Denzel Boston,,,,WR · CLE · Age 22,WR57 · 8.3 FP/G,5.0,7.0,8.3,9.6,11.6
+Matthew Golden,WR,GB,22,WR58 · 8.2,WR58,4.9,6.8,8.2,9.6,11.5
+Jacory Croskey-Merritt,RB,WAS,24,RB41 · 8.6,RB40,5.9,7.5,8.6,9.7,11.3
+Jerry Jeudy,WR,CLE,26,WR59 · 7.9,WR59,4.6,6.6,7.9,9.2,11.2
+Tyjae Spears,RB,TEN,24,RB42 · 8.6,RB41,6.0,7.5,8.6,9.7,11.2
+Jayden Higgins,WR,HOU,23,WR60 · 7.8,WR60,4.5,6.5,7.8,9.1,11.1
+Tyreek Hill,WR,MIA,32,WR61 · 7.7,WR61,4.4,6.4,7.7,9.0,11.0
+Germie Bernard,,,,WR · PIT · Age 22,WR62 · 7.5 FP/G,4.2,6.2,7.5,8.8,10.8
+Alvin Kamara,RB,NO,30,RB40 · 9.0,RB42,5.2,7.4,9.0,9.7,10.7
+Deebo Samuel Sr.,WR,WAS,30,WR63 · 7.4,WR63,4.1,6.1,7.4,8.7,10.7
+Rashid Shaheed,WR,SEA,27,WR64 · 7.4,WR64,4.1,6.1,7.4,8.7,10.7
+Jauan Jennings,WR,MIN,28,WR65 · 7.3,WR65,4.0,6.0,7.3,8.6,10.6
+Hunter Henry,TE,NE,31,TE20 · 7.9,TE20,5.2,6.8,7.9,9.0,10.6
+Woody Marks,RB,HOU,25,RB43 · 8.1,RB43,5.4,7.0,8.1,9.1,10.5
+Chig Okonkwo,TE,WAS,26,TE21 · 7.7,TE21,4.9,6.6,7.7,8.8,10.5
+Dalton Schultz,TE,HOU,29,TE22 · 7.7,TE22,4.9,6.6,7.7,8.8,10.5
+Keon Coleman,WR,BUF,22,WR66 · 7.0,WR66,3.7,5.7,7.0,8.3,10.3
+Dylan Sampson,RB,CLE,21,RB44 · 7.9,RB44,5.5,6.9,7.9,8.9,10.3
+Dalton Kincaid,TE,BUF,26,TE25 · 7.4,TE23,4.5,6.2,7.4,8.6,10.3
+A.J. Barner,TE,SEA,23,TE23 · 7.5,TE24,4.8,6.4,7.5,8.6,10.2
+Oronde Gadsden,TE,LAC,22,TE24 · 7.5,TE25,4.8,6.4,7.5,8.6,10.2
+Antonio Williams,,,,WR · WAS · Age 22,WR67 · 6.8 FP/G,3.5,5.5,6.8,8.1,10.1
+Dontayvion Wicks,WR,PHI,24,WR68 · 6.7,WR68,3.4,5.4,6.7,8.0,10.0
+Travis Hunter,WR,JAX,22,WR69 · 6.7,WR69,3.4,5.4,6.7,8.0,10.0
+Chris Bell,,,,WR · MIA · Age 22,WR70 · 6.7 FP/G,3.4,5.4,6.7,8.0,10.0
+Caleb Douglas,,,,WR · MIA · Age 22,WR71 · 6.7 FP/G,3.4,5.4,6.7,8.0,10.0
+Cade Otton,TE,TB,26,TE26 · 7.3,TE26,4.7,6.2,7.3,8.4,9.9
+Rashod Bateman,WR,BAL,26,WR72 · 6.6,WR72,3.3,5.3,6.6,7.9,9.9
+Keenan Allen,WR,LAC,33,WR73 · 6.5,WR73,3.2,5.2,6.5,7.8,9.8
+Brian Robinson,RB,ATL,26,RB45 · 7.5,RB45,5.0,6.5,7.5,8.4,9.7
+Christian Kirk,WR,SF,29,WR74 · 6.4,WR74,3.1,5.1,6.4,7.7,9.7
+Troy Franklin,WR,DEN,23,WR75 · 6.4,WR75,3.1,5.1,6.4,7.7,9.7
+Jalen Nailor,WR,LV,27,WR76 · 6.3,WR76,3.0,5.0,6.3,7.6,9.6
+Blake Corum,RB,LA,25,RB46 · 7.3,RB46,4.8,6.3,7.3,8.2,9.5
+Calvin Austin III,WR,NYG,26,WR77 · 6.2,WR77,2.9,4.9,6.2,7.5,9.5
+Kayshon Boutte,WR,NE,23,WR78 · 6.2,WR78,2.9,4.9,6.2,7.5,9.5
+Marquise Brown,WR,PHI,28,WR79 · 6.0,WR79,2.7,4.7,6.0,7.3,9.3
+Evan Engram,TE,DEN,31,TE27 · 6.8,TE27,4.3,5.8,6.8,7.8,9.3
+Tyrone Tracy,RB,NYG,26,RB47 · 7.0,RB47,4.5,6.0,7.0,7.9,9.2
+Ryan Flournoy,WR,DAL,26,WR80 · 5.9,WR80,2.6,4.6,5.9,7.2,9.2
+Mike Gesicki,TE,CIN,30,TE28 · 6.6,TE28,4.1,5.6,6.6,7.6,9.1
+Tre Harris,WR,LAC,24,WR81 · 5.6,WR81,2.3,4.3,5.6,6.9,8.9
+Andrei Iosivas,WR,CIN,26,WR82 · 5.5,WR82,2.2,4.2,5.5,6.8,8.8
+Marvin Mims Jr.,WR,DEN,23,WR83 · 5.5,WR83,2.2,4.2,5.5,6.8,8.8
+Calvin Ridley,WR,TEN,31,WR84 · 5.4,WR84,2.1,4.1,5.4,6.7,8.7
+DeMario Douglas,WR,NE,25,WR85 · 5.4,WR85,2.1,4.1,5.4,6.7,8.7
+Malik Washington,WR,MIA,25,WR86 · 5.4,WR86,2.1,4.1,5.4,6.7,8.7
+Adonai Mitchell,WR,NYJ,23,WR87 · 5.3,WR87,2.0,4.0,5.3,6.6,8.6
+Cooper Kupp,WR,SEA,32,WR88 · 5.3,WR88,2.0,4.0,5.3,6.6,8.6
+Gunnar Helm,TE,TEN,23,TE29 · 6.1,TE29,3.6,5.1,6.1,7.1,8.6
+Pat Bryant,WR,DEN,23,WR89 · 5.2,WR89,1.9,3.9,5.2,6.5,8.5
+Jordan Mason,RB,MIN,26,RB49 · 6.2,RB48,3.7,5.2,6.2,7.1,8.4
+Darnell Mooney,WR,ATL,28,WR90 · 5.1,WR90,1.8,3.8,5.1,6.4,8.4
+Tyquan Thornton,WR,KC,25,WR91 · 5.1,WR91,1.8,3.8,5.1,6.4,8.4
+Xavier Legette,WR,CAR,25,WR92 · 5.1,WR92,1.8,3.8,5.1,6.4,8.4
+Samaje Perine,RB,CIN,30,RB48 · 6.9,RB49,3.6,5.6,6.9,7.5,8.4
+Isaac TeSlaa,WR,DET,24,WR93 · 5.0,WR93,1.7,3.7,5.0,6.3,8.3
+Ja'Kobi Lane,,,,WR · BAL · Age 22,WR94 · 4.8 FP/G,1.5,3.5,4.8,6.1,8.1
+Chris Rodriguez,RB,JAX,26,RB51 · 5.8,RB50,3.3,4.8,5.8,6.7,8.0
+Tyler Allgeier,RB,ARI,25,RB52 · 5.8,RB51,3.3,4.8,5.8,6.7,8.0
+Olamide Zaccheaus,WR,CHI,28,WR95 · 4.7,WR95,1.4,3.4,4.7,6.0,8.0
+Kimani Vidal,RB,LAC,24,RB53 · 5.6,RB52,3.2,4.6,5.6,6.6,8.0
+Ja'Tavion Sanders,TE,CAR,22,TE30 · 5.5,TE30,3.0,4.5,5.5,6.5,8.0
+Michael Mayer,TE,LV,24,TE31 · 5.5,TE31,3.0,4.5,5.5,6.5,8.0
+Josh Palmer,WR,BUF,26,WR96 · 4.6,WR96,1.3,3.3,4.6,5.9,7.9
+Colby Parkinson,TE,LA,27,TE32 · 5.4,TE32,2.9,4.4,5.4,6.4,7.9
+Terrance Ferguson,TE,LA,22,TE33 · 5.4,TE33,2.9,4.4,5.4,6.4,7.9
+Ty Johnson,RB,BUF,28,RB50 · 6.0,RB53,3.1,4.8,6.0,6.8,7.8
+John Metchie III,WR,NYJ,25,WR97 · 4.4,WR97,1.1,3.1,4.4,5.7,7.7
+Gabe Davis,WR,BUF,27,WR98 · 4.3,WR98,1.0,3.0,4.3,5.6,7.6
+Jack Bech,WR,LV,23,WR99 · 4.3,WR99,1.0,3.0,4.3,5.6,7.6
+Jaydon Blue,RB,DAL,22,RB54 · 5.2,RB54,2.8,4.2,5.2,6.2,7.6
+Tory Horton,WR,SEA,23,WR100 · 3.9,WR100,0.6,2.6,3.9,5.2,7.2
+De'Zhaun Stribling,,,,WR · SF · Age 22,WR101 · 3.9 FP/G,0.6,2.6,3.9,5.2,7.2
+Darnell Washington,TE,PIT,24,TE34 · 4.7,TE34,2.2,3.7,4.7,5.7,7.2
+Noah Gray,TE,KC,26,TE35 · 4.7,TE35,2.2,3.7,4.7,5.7,7.2
+Jahan Dotson,WR,ATL,25,WR102 · 3.8,WR102,0.5,2.5,3.8,5.1,7.1
+Kalif Raymond,WR,CHI,31,WR103 · 3.8,WR103,0.5,2.5,3.8,5.1,7.1
+Ted Hurst,,,,WR · TB · Age 22,WR104 · 3.8 FP/G,0.5,2.5,3.8,5.1,7.1
+Zach Ertz,TE,WAS,35,TE36 · 4.6,TE36,2.1,3.6,4.6,5.6,7.1
+Jalen Tolbert,WR,MIA,27,WR105 · 3.7,WR105,0.4,2.4,3.7,5.0,7.0
+Jaylin Noel,WR,HOU,23,WR106 · 3.7,WR106,0.4,2.4,3.7,5.0,7.0
+Greg Dortch,WR,ARI,27,WR107 · 3.6,WR107,0.3,2.3,3.6,4.9,6.9
+Cole Kmet,TE,CHI,26,TE37 · 4.4,TE37,1.9,3.4,4.4,5.4,6.9
+Devaughn Vele,WR,NO,28,WR108 · 3.5,WR108,0.2,2.2,3.5,4.8,6.8
+Elijah Sarratt,,,,WR · BAL · Age 22,WR109 · 3.5 FP/G,0.2,2.2,3.5,4.8,6.8
+Cedric Tillman,WR,CLE,25,WR110 · 3.4,WR110,0.1,2.1,3.4,4.7,6.7
+KaVontae Turpin,WR,DAL,29,WR111 · 3.4,WR111,0.1,2.1,3.4,4.7,6.7
+Sterling Shepard,WR,TB,33,WR112 · 3.3,WR112,0.0,2.0,3.3,4.6,6.6
+Theo Johnson,TE,NYG,25,TE38 · 4.1,TE38,1.6,3.1,4.1,5.1,6.6
+Tommy Tremble,TE,CAR,25,TE39 · 4.1,TE39,1.6,3.1,4.1,5.1,6.6
+Darius Slayton,WR,NYG,29,WR113 · 3.2,WR113,0.0,1.9,3.2,4.5,6.5
+Zachariah Branch,,,,WR · ATL · Age 22,WR114 · 3.2 FP/G,0.0,1.9,3.2,4.5,6.5
+Devin Neal,RB,NO,22,RB55 · 4.1,RB55,1.7,3.1,4.1,5.1,6.5
+Dawson Knox,TE,BUF,29,TE40 · 3.9,TE40,1.4,2.9,3.9,4.9,6.4
+JuJu Smith-Schuster,WR,KC,29,WR115 · 3.0,WR115,0.0,1.7,3.0,4.3,6.3
+Kyle Williams,WR,NE,23,WR116 · 3.0,WR116,0.0,1.7,3.0,4.3,6.3
+Mason Taylor,TE,NYJ,21,TE41 · 3.8,TE41,1.3,2.8,3.8,4.8,6.3
+Kendrick Bourne,WR,SF,30,WR117 · 2.9,WR117,0.0,1.6,2.9,4.2,6.2
+Mike Washington Jr.,,,,RB · LV · Age 22,RB58 · 3.8 FP/G,1.4,2.8,3.8,4.8,6.2
+Ray Davis,RB,BUF,26,RB56 · 3.9,RB57,1.4,2.9,3.9,4.8,6.1
+Elic Ayomanor,WR,TEN,22,WR118 · 2.8,WR118,0.0,1.5,2.8,4.1,6.1
+Isaiah Bond,WR,CLE,21,WR119 · 2.8,WR119,0.0,1.5,2.8,4.1,6.1
+Mack Hollins,WR,NE,32,WR120 · 2.8,WR120,0.0,1.5,2.8,4.1,6.1
+Emanuel Wilson,RB,SEA,26,RB57 · 3.8,RB58,1.3,2.8,3.8,4.7,6.0
+Tank Bigsby,RB,PHI,23,RB59 · 3.6,RB59,1.2,2.6,3.6,4.6,6.0
+Isaiah Hodgins,WR,NYG,27,WR121 · 2.6,WR121,0.0,1.3,2.6,3.9,5.9
+Brandin Cooks,WR,BUF,32,WR122 · 2.5,WR122,0.0,1.2,2.5,3.8,5.8
+Tez Johnson,WR,TB,23,WR123 · 2.5,WR123,0.0,1.2,2.5,3.8,5.8
+Xavier Hutchinson,WR,HOU,25,WR124 · 2.5,WR124,0.0,1.2,2.5,3.8,5.8
+Emmett Johnson,,,,RB · KC · Age 22,RB60 · 3.4 FP/G,1.0,2.4,3.4,4.4,5.8
+Dont'e Thornton Jr.,WR,LV,23,WR125 · 2.4,WR125,0.0,1.1,2.4,3.7,5.7
+David Njoku,TE,LAC,29,TE42 · 3.2,TE42,0.7,2.2,3.2,4.2,5.7
+Jake Tonges,TE,SF,26,TE43 · 3.2,TE43,0.7,2.2,3.2,4.2,5.7
+Chimere Dike,WR,TEN,24,WR126 · 2.3,WR126,0.0,1.0,2.3,3.6,5.6
+Jonnu Smith,TE,PIT,30,TE44 · 2.9,TE44,0.4,1.9,2.9,3.9,5.4
+Ollie Gordon,RB,MIA,22,RB62 · 2.9,RB61,0.6,1.9,2.9,3.9,5.3
+Elijah Higgins,TE,ARI,25,TE45 · 2.8,TE45,0.3,1.8,2.8,3.8,5.3
+Marquez Valdes-Scantling,WR,PIT,31,WR127 · 1.8,WR127,0.0,0.5,1.8,3.1,5.1
+Elijah Arroyo,TE,SEA,22,TE46 · 2.6,TE46,0.1,1.6,2.6,3.6,5.1
+Devin Singletary,RB,NYG,28,RB61 · 3.1,RB62,0.2,1.9,3.1,3.9,4.9
+Malik Davis,RB,DAL,27,RB63 · 2.8,RB63,0.2,1.7,2.8,3.6,4.8
+Van Jefferson,WR,TEN,29,WR128 · 1.4,WR128,0.0,0.1,1.4,2.7,4.7
+Sean Tucker,RB,TB,24,RB64 · 2.3,RB64,0.5,1.3,2.3,3.3,4.7
+Keaton Mitchell,RB,LAC,24,RB66 · 2.2,RB65,0.4,1.2,2.2,3.2,4.6
+Darren Waller,TE,MIA,33,TE47 · 2.1,TE47,0.0,1.1,2.1,3.1,4.6
+David Sills,WR,ATL,30,WR129 · 1.2,WR129,0.0,0.0,1.2,2.5,4.5
+Isaiah Williams,WR,NYJ,25,WR130 · 1.2,WR130,0.0,0.0,1.2,2.5,4.5
+Jaylen Wright,RB,MIA,22,RB67 · 1.9,RB66,0.4,0.9,1.9,2.9,4.3
+Adam Thielen,WR,PIT,35,WR131 · 0.8,WR131,0.0,0.0,0.8,2.1,4.1
+Demarcus Robinson,WR,SF,31,WR132 · 0.8,WR132,0.0,0.0,0.8,2.1,4.1
+Tyler Lockett,WR,LV,33,WR133 · 0.8,WR133,0.0,0.0,0.8,2.1,4.1
+Michael Carter,RB,ARI,26,RB68 · 1.5,RB67,0.2,0.5,1.5,2.4,3.7
+Kareem Hunt,RB,KC,30,RB65 · 2.2,RB68,0.0,0.9,2.2,2.8,3.7
+Arian Smith,WR,NYJ,24,WR134 · -0.2,WR134,0.0,0.0,0.0,1.3,3.3
+Chris Moore,WR,WAS,32,WR135 · -0.5,WR135,0.0,0.0,0.0,1.3,3.3
+Zonovan Knight,RB,ARI,24,RB69 · 0.8,RB69,0.2,0.2,0.8,1.8,3.2
+Trey Benson,RB,ARI,23,RB72 · 0.5,RB70,0.1,0.1,0.5,1.5,2.9
+Nick Chubb,RB,HOU,30,RB70 · 0.7,RB71,0.0,0.0,0.7,1.3,2.2
+James Conner,RB,ARI,30,RB71 · 0.6,RB72,0.0,0.0,0.6,1.2,2.1

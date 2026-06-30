@@ -1,0 +1,301 @@
+ud_rank,name,pos,team,ud_adp,value,ud_pg,round,opinion_rank,n_sources
+1,Jahmyr Gibbs,RB,Detroit Lions,1.3,0.0,19.294,1,1,6
+2,Puka Nacua,WR,Los Angeles Rams,4.0,2.0,17.476,1,2,6
+3,Jaxon Smith-Njigba,WR,Seattle Seahawks,5.2,2.0,15.994,1,3,6
+4,Jonathan Taylor,RB,Indianapolis Colts,6.8,2.0,16.888,1,4,5
+5,Bijan Robinson,RB,Atlanta Falcons,1.8,-3.0,18.371,1,6,6
+6,Ja'Marr Chase,WR,Cincinnati Bengals,3.1,-3.0,16.371,1,7,6
+7,Amon-Ra St. Brown,WR,Detroit Lions,7.7,1.0,15.488,1,8,6
+8,James Cook,RB,Buffalo Bills,11.2,3.0,15.659,1,9,6
+9,CeeDee Lamb,WR,Dallas Cowboys,9.6,0.0,14.441,1,13,6
+10,Christian McCaffrey,RB,San Francisco 49ers,7.2,-3.0,18.476,1,15,6
+11,Derrick Henry,RB,Baltimore Ravens,17.5,7.0,15.5,1,12,6
+12,Saquon Barkley,RB,Philadelphia Eagles,13.8,1.0,14.882,1,16,6
+13,Justin Jefferson,WR,Minnesota Vikings,9.7,-3.0,13.888,2,23,5
+14,Drake London,WR,Atlanta Falcons,18.3,5.0,12.865,2,18,6
+15,Ashton Jeanty,RB,Las Vegas Raiders,11.5,-3.0,14.676,2,41,6
+16,De'Von Achane,RB,Miami Dolphins,15.2,-2.0,15.671,2,21,6
+17,George Pickens,WR,Dallas Cowboys,24.3,7.0,11.741,2,19,6
+18,Omarion Hampton,RB,Los Angeles Chargers,15.7,-3.0,14.976,2,28,5
+19,Kenneth Walker III,RB,Kansas City Chiefs,16.7,-3.0,,2,59,2
+20,Chase Brown,RB,Cincinnati Bengals,17.0,-3.0,14.112,2,34,5
+21,Brock Bowers,TE,Las Vegas Raiders,20.1,-1.0,11.3,2,42,6
+22,DeVonta Smith,WR,Philadelphia Eagles,28.0,6.0,11.394,2,27,6
+23,A.J. Brown,WR,New England Patriots,20.6,-2.0,12.147,2,31,6
+24,Kyren Williams,RB,Los Angeles Rams,31.5,7.0,13.541,2,24,5
+25,Nico Collins,WR,Houston Texans,23.0,-3.0,12.229,3,33,6
+26,Josh Allen,QB,Buffalo Bills,33.0,7.0,22.335,3,5,6
+27,Zay Flowers,WR,Baltimore Ravens,34.3,7.0,11.765,3,17,6
+28,Jeremiyah Love,RB,Arizona Cardinals,23.1,-5.0,14.606,3,29,5
+29,Javonte Williams,RB,Dallas Cowboys,35.2,7.0,14.353,3,25,5
+30,Breece Hall,RB,New York Jets,26.9,-4.0,14.818,3,30,6
+31,Trey McBride,TE,Arizona Cardinals,26.5,-6.0,11.694,3,32,6
+32,Chris Olave,WR,New Orleans Saints,27.7,-5.0,11.6,3,40,6
+33,Travis Etienne Jr.,RB,New Orleans Saints,29.2,-4.0,12.929,3,72,5
+34,Rashee Rice,WR,Kansas City Chiefs,30.3,-4.0,13.271,3,36,6
+35,Malik Nabers,WR,New York Giants,32.4,-3.0,12.153,3,68,6
+36,Tee Higgins,WR,Cincinnati Bengals,34.5,-1.0,10.588,3,43,6
+37,Tetairoa McMillan,WR,Carolina Panthers,37.9,0.0,11.565,4,67,6
+38,Josh Jacobs,RB,Green Bay Packers,39.1,2.0,15.282,4,44,6
+39,Ladd McConkey,WR,Los Angeles Chargers,38.0,-1.0,10.547,4,50,6
+40,Jameson Williams,WR,Detroit Lions,48.2,7.0,10.671,4,39,5
+41,Garrett Wilson,WR,New York Jets,38.3,-2.0,11.988,4,52,5
+42,Emeka Egbuka,WR,Tampa Bay Buccaneers,39.9,-1.0,10.853,4,60,6
+43,Luther Burden,WR,Chicago Bears,41.7,-1.0,9.782,4,56,6
+44,Davante Adams,WR,Los Angeles Rams,50.9,7.0,11.865,4,38,6
+45,Colston Loveland,TE,Chicago Bears,46.1,1.0,9.753,4,49,6
+46,Cam Skattebo,RB,New York Giants,43.9,-3.0,12.929,4,70,6
+47,D.J. Moore,WR,Buffalo Bills,54.7,7.0,10.218,4,48,5
+48,Mike Evans,WR,San Francisco 49ers,44.5,-4.0,9.135,4,103,5
+49,Lamar Jackson,QB,Baltimore Ravens,56.1,7.0,20.024,5,11,5
+50,Christian Watson,WR,Green Bay Packers,56.9,7.0,9.282,5,47,6
+51,Terry McLaurin,WR,Washington Commanders,45.4,-6.0,10.635,5,63,6
+52,TreVeyon Henderson,RB,New England Patriots,48.8,-4.0,11.229,5,53,5
+53,Jaylen Waddle,WR,Denver Broncos,49.4,-4.0,10.282,5,54,6
+54,D'Andre Swift,RB,Chicago Bears,51.8,-2.0,11.494,5,55,5
+55,David Montgomery,RB,Houston Texans,49.4,-5.0,10.594,5,112,5
+56,Bucky Irving,RB,Tampa Bay Buccaneers,53.4,-3.0,12.059,5,88,6
+57,Quinshon Judkins,RB,Cleveland Browns,55.2,-2.0,12.353,5,111,6
+58,Rome Odunze,WR,Chicago Bears,57.0,0.0,10.618,5,64,6
+59,Jayden Daniels,QB,Washington Commanders,67.1,7.0,19.362,5,26,6
+60,Jadarian Price,RB,Seattle Seahawks,58.8,-1.0,10.641,5,78,5
+61,Caleb Williams,QB,Chicago Bears,69.1,7.0,17.238,6,51,6
+62,Drake Maye,QB,New England Patriots,69.4,7.0,19.882,6,10,5
+63,Carnell Tate,WR,Tennessee Titans,59.4,-3.0,10.341,6,66,6
+64,Bhayshul Tuten,RB,Jacksonville Jaguars,59.6,-3.0,11.129,6,71,6
+65,Jalen Hurts,QB,Philadelphia Eagles,71.9,7.0,19.762,6,62,6
+66,Jordyn Tyson,WR,New Orleans Saints,62.9,-4.0,9.129,6,76,6
+67,Alec Pierce,WR,Indianapolis Colts,73.3,7.0,9.788,6,65,5
+68,Brian Thomas,WR,Jacksonville Jaguars,63.5,-5.0,8.635,6,107,5
+69,Joe Burrow,QB,Cincinnati Bengals,65.2,-5.0,18.629,6,75,5
+70,Tyler Warren,TE,Indianapolis Colts,65.7,-5.0,9.524,6,73,5
+71,Marvin Harrison,WR,Arizona Cardinals,68.0,-4.0,9.418,6,86,5
+72,Dak Prescott,QB,Dallas Cowboys,79.4,7.0,17.828,6,20,5
+73,Parker Washington,WR,Jacksonville Jaguars,69.7,-3.0,8.876,7,84,6
+74,Justin Herbert,QB,Los Angeles Chargers,81.4,7.0,17.614,7,58,5
+75,Courtland Sutton,WR,Denver Broncos,80.7,5.0,10.1,7,77,5
+76,Chuba Hubbard,RB,Carolina Panthers,70.7,-5.0,9.435,7,110,6
+77,Makai Lemon,WR,Philadelphia Eagles,72.4,-4.0,8.782,7,89,6
+78,DK Metcalf,WR,Pittsburgh Steelers,76.9,-1.0,9.565,7,80,5
+79,Trevor Lawrence,QB,Jacksonville Jaguars,86.5,7.0,18.092,7,45,5
+80,Tucker Kraft,TE,Green Bay Packers,82.4,2.0,7.647,7,81,6
+81,Rhamondre Stevenson,RB,New England Patriots,75.8,-6.0,10.382,7,98,5
+82,Jaylen Warren,RB,Pittsburgh Steelers,76.3,-6.0,9.635,7,93,6
+83,Patrick Mahomes,QB,Kansas City Chiefs,90.1,7.0,17.784,7,35,6
+84,Tony Pollard,RB,Tennessee Titans,77.8,-6.0,10.394,7,119,5
+85,Jayden Reed,WR,Green Bay Packers,83.1,-2.0,7.941,8,91,5
+86,RJ Harvey,RB,Denver Broncos,85.1,-2.0,8.6,8,127,6
+87,Jordan Addison,WR,Minnesota Vikings,86.3,-2.0,8.141,8,123,5
+88,Jaxson Dart,QB,New York Giants,95.8,7.0,18.756,8,69,6
+89,Rico Dowdle,RB,Pittsburgh Steelers,87.4,-2.0,9.924,8,105,5
+90,Sam LaPorta,TE,Detroit Lions,97.4,7.0,8.694,8,74,6
+91,Brock Purdy,QB,San Francisco 49ers,98.0,7.0,18.408,8,22,6
+92,Quentin Johnston,WR,Los Angeles Chargers,88.3,-4.0,8.288,8,114,5
+93,Chris Godwin,WR,Tampa Bay Buccaneers,89.0,-4.0,7.665,8,118,6
+94,Kyle Monangai,RB,Chicago Bears,91.6,-3.0,9.353,8,99,5
+95,Matthew Stafford,QB,Los Angeles Rams,102.7,7.0,18.305,8,14,6
+96,Michael Wilson,WR,Arizona Cardinals,92.2,-4.0,7.818,8,129,6
+97,Bo Nix,QB,Denver Broncos,104.1,7.0,18.079,9,90,5
+98,Michael Pittman Jr.,WR,Pittsburgh Steelers,104.4,7.0,9.059,9,97,5
+99,Blake Corum,RB,Los Angeles Rams,93.7,-6.0,8.571,9,100,5
+100,Kyle Pitts,TE,Atlanta Falcons,105.5,6.0,8.482,9,82,6
+101,Josh Downs,WR,Indianapolis Colts,95.8,-7.0,7.582,9,126,5
+102,Jared Goff,QB,Detroit Lions,107.1,6.0,16.778,9,37,5
+103,Harold Fannin,TE,Cleveland Browns,96.4,-7.0,8.435,9,117,6
+104,J.K. Dobbins,RB,Denver Broncos,104.0,-1.0,9.894,9,102,5
+105,Matthew Golden,WR,Green Bay Packers,109.4,5.0,9.024,9,79,5
+106,Jakobi Meyers,WR,Jacksonville Jaguars,99.7,-7.0,8.518,9,113,5
+107,Ricky Pearsall,WR,San Francisco 49ers,100.9,-7.0,8.047,9,109,5
+108,Xavier Worthy,WR,Kansas City Chiefs,101.2,-7.0,8.818,9,106,6
+109,Jordan Love,QB,Green Bay Packers,110.3,3.0,16.236,10,57,5
+110,Romeo Doubs,WR,New England Patriots,114.6,3.0,8.371,10,95,5
+111,Tyler Shough,QB,New Orleans Saints,116.7,4.0,16.287,10,87,6
+112,George Kittle,TE,San Francisco 49ers,117.5,6.0,10.28,10,61,6
+113,Baker Mayfield,QB,Tampa Bay Buccaneers,117.7,6.0,16.427,10,104,6
+114,Kenneth Gainwell,RB,Tampa Bay Buccaneers,105.8,-7.0,8.506,10,115,6
+115,Kyler Murray,QB,Minnesota Vikings,108.2,-6.0,15.418,10,150,5
+116,Travis Kelce,TE,Kansas City Chiefs,121.2,6.0,8.118,10,92,5
+117,Aaron Jones,RB,Minnesota Vikings,121.5,6.0,9.876,10,116,5
+118,Jonathon Brooks,RB,Carolina Panthers,109.5,-7.0,7.841,10,128,6
+119,Rachaad White,RB,Washington Commanders,119.5,1.0,8.924,10,120,6
+120,KC Concepcion,WR,Cleveland Browns,116.0,-6.0,7.6,10,149,5
+121,Khalil Shakir,WR,Buffalo Bills,128.3,7.0,8.041,11,96,5
+122,Wan'Dale Robinson,WR,Tennessee Titans,116.9,-6.0,7.965,11,122,5
+123,Dalton Kincaid,TE,Buffalo Bills,129.6,6.0,7.253,11,94,5
+124,Chris Rodriguez,RB,Jacksonville Jaguars,117.5,-7.0,3.882,11,165,6
+125,Jacory Croskey-Merritt,RB,Washington Commanders,120.0,-4.0,8.347,11,134,5
+126,Stefon Diggs,WR,,132.9,7.0,,11,46,3
+127,Mark Andrews,TE,Baltimore Ravens,127.2,0.0,8.371,11,130,5
+128,Dallas Goedert,TE,Philadelphia Eagles,135.6,7.0,8.435,11,108,5
+129,Jordan Mason,RB,Minnesota Vikings,124.6,-5.0,7.035,11,137,5
+130,Jake Ferguson,TE,Dallas Cowboys,126.5,-4.0,7.794,11,131,5
+131,Jayden Higgins,WR,Houston Texans,124.6,-6.0,6.6,11,157,5
+132,Malik Willis,QB,Miami Dolphins,131.4,-1.0,15.098,11,135,5
+133,Sam Darnold,QB,Seattle Seahawks,140.6,7.0,15.469,12,83,5
+134,Tyrone Tracy,RB,New York Giants,130.7,-4.0,4.318,12,185,5
+135,C.J. Stroud,QB,Houston Texans,142.4,7.0,15.338,12,132,5
+136,Isaiah Likely,TE,New York Giants,131.4,-4.0,7.324,12,144,5
+137,Jalen Coker,WR,Carolina Panthers,134.8,-3.0,6.924,12,148,5
+138,Daniel Jones,QB,Indianapolis Colts,144.6,7.0,16.789,12,125,5
+139,Cam Ward,QB,Tennessee Titans,136.3,-3.0,,12,175,3
+140,Keaton Mitchell,RB,Los Angeles Chargers,137.0,-3.0,3.329,12,171,6
+141,Jalen McMillan,WR,Tampa Bay Buccaneers,147.8,7.0,6.418,12,142,6
+142,Hunter Henry,TE,New England Patriots,149.4,7.0,7.106,12,121,5
+143,Travis Hunter,WR,Jacksonville Jaguars,137.8,-5.0,5.276,12,153,6
+144,Chig Okonkwo,TE,Washington Commanders,150.1,7.0,,12,85,3
+145,Oronde Gadsden,TE,Los Angeles Chargers,143.4,-2.0,5.588,13,145,5
+146,Rashid Shaheed,WR,Seattle Seahawks,140.1,-7.0,6.988,13,152,5
+147,Kenyon Sadiq,TE,New York Jets,154.2,6.0,7.453,13,124,5
+148,Omar Cooper,WR,New York Jets,141.4,-7.0,5.118,13,164,5
+149,Brenton Strange,TE,Jacksonville Jaguars,155.2,6.0,6.665,13,133,5
+150,Woody Marks,RB,Houston Texans,144.2,-6.0,6.706,13,183,5
+151,Isiah Pacheco,RB,Detroit Lions,147.4,-5.0,7.047,13,151,6
+152,Juwan Johnson,TE,New Orleans Saints,157.0,6.0,6.659,13,140,5
+153,Jauan Jennings,WR,Minnesota Vikings,147.4,-6.0,5.271,13,166,5
+154,Jonah Coleman,RB,Denver Broncos,150.1,-4.0,1.482,13,247,5
+155,T.J. Hockenson,TE,Minnesota Vikings,163.3,7.0,7.112,13,154,5
+156,Deebo Samuel,WR,,165.1,7.0,,13,136,2
+157,Zach Charbonnet,RB,Seattle Seahawks,166.0,7.0,11.082,14,101,5
+158,Antonio Williams,WR,Washington Commanders,159.8,1.0,5.465,14,158,5
+159,Jalen Nailor,WR,Las Vegas Raiders,152.2,-7.0,5.618,14,170,5
+160,Tre Tucker,WR,Las Vegas Raiders,155.6,-4.0,6.671,14,159,5
+161,Bryce Young,QB,Carolina Panthers,154.8,-7.0,14.856,14,173,5
+162,Tyjae Spears,RB,Tennessee Titans,161.6,-1.0,7.612,14,162,5
+163,Dalton Schultz,TE,Houston Texans,170.0,6.0,6.094,14,160,5
+164,Tyler Allgeier,RB,Arizona Cardinals,157.0,-7.0,4.594,14,187,5
+165,Ryan Flournoy,WR,Dallas Cowboys,170.6,6.0,4.394,14,161,5
+166,Aaron Rodgers,QB,Pittsburgh Steelers,172.2,6.0,13.851,14,139,6
+167,Denzel Boston,WR,Cleveland Browns,160.5,-7.0,6.347,14,172,5
+168,De'Zhaun Stribling,WR,San Francisco 49ers,166.6,-3.0,3.094,14,200,5
+169,AJ Barner,TE,Seattle Seahawks,175.1,7.0,5.382,15,155,5
+170,Gunnar Helm,TE,Tennessee Titans,178.4,7.0,5.676,15,169,5
+171,Germie Bernard,WR,Pittsburgh Steelers,179.7,7.0,6.006,15,156,5
+172,Brian Robinson,RB,Atlanta Falcons,167.4,-6.0,5.318,15,189,5
+173,Fernando Mendoza,QB,Las Vegas Raiders,168.5,-6.0,11.925,15,184,5
+174,Dylan Sampson,RB,Cleveland Browns,169.6,-6.0,4.141,15,221,5
+175,Isaac TeSlaa,WR,Detroit Lions,170.4,-5.0,3.541,15,193,5
+176,Cade Otton,TE,Tampa Bay Buccaneers,184.8,7.0,4.941,15,179,5
+177,Tank Bigsby,RB,Philadelphia Eagles,173.4,-4.0,3.541,15,186,5
+178,Sean Tucker,RB,Tampa Bay Buccaneers,173.6,-4.0,1.565,15,255,5
+179,Calvin Ridley,WR,Tennessee Titans,186.8,7.0,7.2,15,163,5
+180,Geno Smith,QB,New York Jets,180.2,-1.0,14.501,15,181,5
+181,Tre' Harris,WR,Los Angeles Chargers,174.6,-6.0,4.135,16,182,5
+182,Brandon Aiyuk,WR,San Francisco 49ers,189.1,6.0,,16,176,2
+183,Pat Freiermuth,TE,Pittsburgh Steelers,190.0,7.0,6.359,16,143,5
+184,Nicholas Singleton,RB,Tennessee Titans,182.0,-4.0,1.135,16,265,3
+185,Ted Hurst,WR,Tampa Bay Buccaneers,183.0,-4.0,3.124,16,210,5
+186,Emmett Johnson,RB,Kansas City Chiefs,184.2,-4.0,2.494,16,231,5
+187,Jerry Jeudy,WR,Cleveland Browns,185.0,-3.0,6.735,16,204,5
+188,Alvin Kamara,RB,New Orleans Saints,186.0,-3.0,6.282,16,197,5
+189,Jacoby Brissett,QB,Arizona Cardinals,198.7,7.0,12.492,16,141,3
+190,Tank Dell,WR,Houston Texans,189.6,-1.0,5.159,16,192,5
+191,Adonai Mitchell,WR,New York Jets,198.9,7.0,5.588,16,177,5
+192,Zachariah Branch,WR,Atlanta Falcons,186.9,-5.0,2.453,16,206,6
+193,Eli Stowers,TE,Philadelphia Eagles,193.3,-2.0,1.724,17,248,5
+194,David Njoku,TE,Los Angeles Chargers,203.2,7.0,4.012,17,196,5
+195,Terrance Ferguson,TE,Los Angeles Rams,204.7,7.0,6.141,17,146,5
+196,Malik Washington,WR,Miami Dolphins,194.1,-4.0,4.9,17,205,5
+197,Cooper Kupp,WR,Seattle Seahawks,206.9,7.0,4.953,17,167,5
+198,Marshawn Lloyd,RB,Green Bay Packers,207.6,7.0,3.594,17,190,6
+199,Darnell Mooney,WR,New York Giants,194.7,-6.0,4.829,17,199,5
+200,Mike Washington,RB,Las Vegas Raiders,195.8,-6.0,3.441,17,215,5
+201,Chris Bell,WR,Miami Dolphins,205.6,2.0,5.029,17,201,5
+202,Emanuel Wilson,RB,Seattle Seahawks,195.9,-7.0,1.05,17,277,5
+203,Mike Gesicki,TE,Cincinnati Bengals,208.3,5.0,5.253,17,188,5
+204,Kaytron Allen,RB,Washington Commanders,198.9,-7.0,0.588,17,284,5
+205,Jordan James,RB,San Francisco 49ers,210.4,6.0,3.318,18,202,5
+206,Dontayvion Wicks,WR,Philadelphia Eagles,200.5,-7.0,2.906,18,213,5
+207,Ray Davis,RB,Buffalo Bills,202.2,-7.0,1.753,18,224,5
+208,Tyreek Hill,WR,,210.8,4.0,,18,138,3
+209,Braelon Allen,RB,New York Jets,207.6,-3.0,4.794,18,207,5
+210,Kayshon Boutte,WR,New England Patriots,211.8,4.0,3.288,18,194,5
+211,Elijah Sarratt,WR,Baltimore Ravens,210.4,-1.0,3.024,18,208,5
+212,Tua Tagovailoa,QB,Atlanta Falcons,207.7,-5.0,7.245,18,211,5
+213,Pat Bryant,WR,Denver Broncos,213.2,5.0,3.412,18,209,5
+214,Tory Horton,WR,Seattle Seahawks,212.7,2.0,3.112,18,212,6
+215,Malachi Fields,WR,New York Giants,209.7,-6.0,1.665,18,264,5
+216,Colby Parkinson,TE,Los Angeles Rams,213.9,6.0,3.229,18,174,5
+217,Keon Coleman,WR,Buffalo Bills,213.9,6.0,2.829,19,203,6
+218,Rashod Bateman,WR,Baltimore Ravens,214.0,7.0,6.147,19,178,5
+219,Troy Franklin,WR,Denver Broncos,210.9,-6.0,2.541,19,238,5
+220,Michael Penix,QB,Atlanta Falcons,214.2,6.0,7.062,19,168,4
+221,Darnell Washington,TE,Pittsburgh Steelers,214.2,6.0,3.406,19,180,5
+222,Chris Brazzell,WR,Carolina Panthers,211.9,-7.0,3.047,19,223,5
+223,Ja'Kobi Lane,WR,Baltimore Ravens,214.6,5.0,4.135,19,191,5
+224,Kimani Vidal,RB,Los Angeles Chargers,213.1,-7.0,1.859,19,249,5
+225,Christian Kirk,WR,San Francisco 49ers,213.6,-6.0,3.253,19,228,5
+226,Jack Bech,WR,Las Vegas Raiders,214.9,6.0,4.753,19,217,5
+227,Jake Tonges,TE,San Francisco 49ers,213.7,-7.0,1.535,19,259,5
+228,Kaelon Black,RB,San Francisco 49ers,213.8,-7.0,1.735,19,253,5
+229,Evan Engram,TE,Denver Broncos,215.0,6.0,4.812,20,198,5
+230,James Conner,RB,Arizona Cardinals,214.0,-6.0,,20,256,2
+231,Andrei Iosivas,WR,Cincinnati Bengals,215.3,6.0,3.782,20,222,5
+232,Michael Mayer,TE,Las Vegas Raiders,215.3,6.0,3.576,20,227,5
+233,Shedeur Sanders,QB,Cleveland Browns,214.8,-3.0,6.166,20,233,3
+234,Carson Beck,QB,Arizona Cardinals,215.4,6.0,15.41,20,147,5
+235,Theo Johnson,TE,New York Giants,215.5,6.0,3.082,20,234,5
+236,Demond Claiborne,RB,Minnesota Vikings,214.8,-7.0,1.318,20,270,5
+237,Devaughn Vele,WR,New Orleans Saints,215.5,5.0,2.959,20,235,5
+238,Skyler Bell,WR,Buffalo Bills,214.9,-7.0,2.0,20,240,5
+239,Malik Davis,RB,Dallas Cowboys,215.1,-3.0,2.535,20,236,5
+240,Jaylin Noel,WR,Houston Texans,214.9,-7.0,2.535,20,243,5
+241,Jaydon Blue,RB,Dallas Cowboys,214.9,-7.0,1.747,21,262,5
+242,Ja'Tavion Sanders,TE,Carolina Panthers,215.5,2.0,3.512,21,230,5
+243,George Holani,RB,Seattle Seahawks,215.7,4.0,2.271,21,241,5
+244,Caleb Douglas,WR,Miami Dolphins,215.7,7.0,4.341,21,226,5
+245,Chimere Dike,WR,Tennessee Titans,215.4,-6.0,1.641,21,269,5
+246,Dawson Knox,TE,Buffalo Bills,215.7,6.0,3.353,21,195,5
+247,Najee Harris,RB,,215.7,2.0,,21,246,2
+248,Darius Slayton,WR,New York Giants,215.7,5.0,4.206,21,216,5
+249,Kirk Cousins,QB,Las Vegas Raiders,215.5,-6.0,2.789,21,261,3
+250,Keenan Allen,WR,,215.8,6.0,,21,218,2
+251,Adam Randall,RB,Baltimore Ravens,215.6,-6.0,1.353,21,282,5
+252,Zavion Thomas,WR,Chicago Bears,215.6,-6.0,0.312,21,296,5
+253,Cole Kmet,TE,Chicago Bears,215.8,6.0,2.641,22,232,5
+254,Elijah Arroyo,TE,Seattle Seahawks,215.8,6.0,2.965,22,237,5
+255,Eli Raridon,TE,New England Patriots,215.7,-7.0,1.712,22,258,5
+256,Jaylen Wright,RB,Miami Dolphins,215.7,-6.0,2.153,22,254,5
+257,DJ Giddens,RB,Indianapolis Colts,215.8,4.0,1.782,22,251,5
+258,Mason Taylor,TE,New York Jets,215.9,5.0,2.535,22,252,5
+259,Marvin Mims Jr.,WR,Denver Broncos,215.9,7.0,3.276,22,229,5
+260,Brenen Thompson,WR,Los Angeles Chargers,215.8,-6.0,1.424,22,280,5
+261,Ollie Gordon,RB,Miami Dolphins,215.8,-6.0,1.724,22,273,5
+262,Treylon Burks,WR,Washington Commanders,215.9,6.0,2.094,22,263,5
+263,Elic Ayomanor,WR,Tennessee Titans,215.8,-6.0,0.624,22,293,5
+264,Hollywood Brown,WR,Philadelphia Eagles,215.8,-6.0,,22,281,2
+265,Tutu Atwell,WR,Miami Dolphins,215.9,6.0,2.365,23,260,5
+266,LeQuint Allen,RB,Jacksonville Jaguars,215.9,6.0,2.071,23,250,5
+267,Mack Hollins,WR,New England Patriots,215.9,6.0,1.424,23,266,5
+268,Bryce Lance,WR,New Orleans Saints,215.9,1.0,2.024,23,267,5
+269,Oscar Delp,TE,New Orleans Saints,215.9,-7.0,,23,285,2
+270,J.J. McCarthy,QB,Minnesota Vikings,215.9,5.0,2.609,23,244,4
+271,Max Klare,TE,Los Angeles Rams,215.9,-7.0,0.341,23,298,5
+272,Justin Joly,TE,Denver Broncos,215.9,-7.0,,23,272,2
+273,Xavier Legette,WR,Carolina Panthers,215.9,4.0,3.376,23,245,5
+274,Kyle Williams,WR,New England Patriots,215.9,-7.0,,23,274,2
+275,Trey Benson,RB,Arizona Cardinals,216.0,4.0,,23,268,2
+276,DeMario Douglas,WR,New England Patriots,216.0,4.0,2.747,23,225,5
+277,Joe Mixon,RB,,215.9,-7.0,,24,292,2
+278,Tez Johnson,WR,Tampa Bay Buccaneers,215.9,-2.0,1.153,24,278,5
+279,Mac Jones,QB,San Francisco 49ers,216.0,7.0,,24,220,2
+280,Kaleb Johnson,RB,Pittsburgh Steelers,215.9,-6.0,0.212,24,299,5
+281,Kareem Hunt,RB,,216.0,6.0,,24,214,2
+282,Jack Endries,TE,Cincinnati Bengals,216.0,6.0,,24,276,2
+283,Isaiah Davis,RB,New York Jets,216.0,6.0,1.876,24,257,5
+284,Anthony Richardson,QB,Indianapolis Colts,215.9,-6.0,,24,294,2
+285,Brandin Cooks,WR,,216.0,6.0,,24,275,1
+286,Darren Waller,TE,,216.0,6.0,,24,239,2
+287,Deion Burks,WR,Indianapolis Colts,216.0,-5.0,,24,286,2
+288,Seth McGowan,RB,Indianapolis Colts,216.0,-7.0,0.594,24,295,5
+289,J'Mari Taylor,RB,Jacksonville Jaguars,216.0,5.0,,25,283,2
+290,Brashard Smith,RB,Kansas City Chiefs,216.0,-7.0,0.0,25,300,3
+291,Cedric Tillman,WR,Cleveland Browns,216.0,-7.0,1.212,25,290,5
+292,Devin Neal,RB,New Orleans Saints,216.0,-7.0,,25,288,2
+293,Roman Hemby,RB,Las Vegas Raiders,216.0,2.0,,25,287,2
+294,Will Shipley,RB,Philadelphia Eagles,216.0,-1.0,1.047,25,289,5
+295,Ty Simpson,QB,Los Angeles Rams,216.0,1.0,,25,219,2
+296,Marcus Mariota,QB,Washington Commanders,216.0,1.0,,25,271,2
+297,Cyrus Allen,WR,Kansas City Chiefs,216.0,-7.0,1.0,25,291,5
+298,Tyler Higbee,TE,Los Angeles Rams,216.0,0.0,1.7,25,242,5
+299,Dont'e Thornton,WR,Las Vegas Raiders,216.0,1.0,2.035,25,279,5
+300,Isaiah Bond,WR,Cleveland Browns,216.0,-1.0,0.747,25,297,5

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFL 2026 Team Scouting</title>
+<style>
+:root{--bg:#0a0e16;--bg2:#0c1320;--panel:#111a2b;--panel2:#0e1626;--line:#1d2a40;--line2:#26354f;
+--ink:#e9eef7;--ink2:#aebbd0;--ink3:#7488a6;--accent:#5b9dff;--good:#5fd08a;--bad:#ff8c8c;--mono:ui-monospace,Menlo,Consolas,monospace;--radius:14px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 -apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:1280px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:20px;margin:0 0 2px}.sub{color:var(--ink3);font-size:12.5px;margin-bottom:14px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 18px;position:sticky;top:0;background:linear-gradient(180deg,var(--bg),rgba(10,14,22,.92));padding:8px 0;z-index:5;border-bottom:1px solid var(--line)}
+.bar label{color:var(--ink3);font-size:12px}
+select,input{background:#0c1320;color:var(--ink);border:1px solid var(--line2);border-radius:8px;padding:6px 9px;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:14px}
+.card{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:var(--radius);padding:14px 15px;box-shadow:0 1px 0 rgba(255,255,255,.02)}
+.chead{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.tname{font-size:16px;font-weight:800}.tdiv{color:var(--ink3);font-size:11px;text-transform:uppercase;letter-spacing:.6px}
+.wt{font-family:var(--mono);font-weight:800;font-size:13px;background:var(--chipbg,#16213a);border:1px solid var(--line2);border-radius:8px;padding:3px 9px;white-space:nowrap}
+.coach{color:var(--ink2);font-size:12px;margin:7px 0 2px}.coach b{color:var(--ink)}
+.ratings{display:flex;gap:14px;margin:9px 0 4px}
+.rt{flex:1}.rt .rl{display:flex;justify-content:space-between;font-size:11px;color:var(--ink3);margin-bottom:3px}
+.rt .rl b{color:var(--ink2);font-family:var(--mono)}
+.track{height:7px;background:#0c1320;border-radius:5px;overflow:hidden;border:1px solid var(--line2)}
+.fill{height:100%;border-radius:5px}
+.sec{margin-top:12px;border-top:1px dashed var(--line2);padding-top:9px}
+.sec .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.7px;color:var(--ink3);font-weight:700;margin-bottom:6px}
+.dc{display:grid;grid-template-columns:36px 1fr;gap:3px 8px;align-items:baseline}
+.dc .pos{font-size:10px;font-weight:800;color:var(--accent);text-transform:uppercase;padding-top:2px}
+.dc .plist{display:flex;flex-direction:column;gap:2px}
+.pl{font-size:12.5px;color:var(--ink2);display:flex;gap:7px;flex-wrap:wrap;align-items:baseline}
+.pl .pn{color:var(--ink);font-weight:600}.pl .pm{font-family:var(--mono);font-size:11px;color:var(--ink3)}
+.def{display:flex;flex-wrap:wrap;gap:6px}
+.dchip{font-size:11px;font-family:var(--mono);border-radius:7px;padding:3px 8px;border:1px solid var(--line2);background:var(--panel2)}
+.dchip b{color:var(--ink)}
+.funnel{font-size:11px;font-weight:700;border-radius:7px;padding:3px 9px}
+.funnel.pass{background:rgba(91,157,255,.14);color:#9cc2ff;border:1px solid rgba(91,157,255,.4)}
+.funnel.run{background:rgba(214,160,69,.14);color:#e0b25c;border:1px solid rgba(214,160,69,.4)}
+.tier{font-size:10px;font-family:var(--mono)}.tier .tt{color:var(--ink3)}
+.t-TOUGH{color:var(--good)}.t-SOFT{color:var(--bad)}.t-AVG{color:var(--ink2)}
+.moves{display:flex;flex-direction:column;gap:5px}
+.mv{font-size:12px;line-height:1.45}.mv .mh{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.mv.add .mh{color:var(--good)}.mv.loss .mh{color:var(--bad)}
+.out{font-size:12.5px;line-height:1.55;color:var(--ink2);margin-top:4px}.out b{color:var(--ink)}
+.note{font-size:12px;color:var(--ink3);font-style:italic;margin-top:6px;border-left:2px solid var(--line2);padding-left:8px}
+.foot{margin-top:26px;color:var(--ink3);font-size:11px;text-align:center}
+.boom{display:inline-block;margin-top:3px;margin-left:6px;font-size:10px;font-family:var(--mono,monospace);padding:1px 6px;border-radius:4px;background:var(--panel2,#222);color:var(--ink2,#bbb)}.boom.ELITE{background:#16351f;color:#74e0a0}.boom.HIGH{background:#142c4d;color:#7fb2ff}.boom.MID{background:#2b2b14;color:#d6d67a}.boom.FA{background:#3a2616;color:#e6b36a}
+</style></head>
+<body><div class="wrap">
+<h1>NFL 2026 — Team Scouting</h1>
+<div class="sub">All 32 teams. Offense personnel + projection and defense ratings from our pipeline; coaching, win totals, roster moves and outlook web-verified (June 2026). Independent of best ball.</div>
+<div class="bar">
+  <label>Sort</label>
+  <select id="sort">
+    <option value="wt">Win total (high→low)</option>
+    <option value="offR">Offense rating</option>
+    <option value="defR">Defense rating</option>
+    <option value="div">Division</option>
+    <option value="az">Team A→Z</option>
+  </select>
+  <label>Filter</label>
+  <select id="conf"><option value="">All</option><option>AFC</option><option>NFC</option></select>
+  <input id="q" placeholder="search team / coach / player" style="flex:1;min-width:160px">
+</div>
+<div class="grid" id="grid"></div>
+<div class="foot">Coaching/win-total/move data is web-sourced (June 2026) and may contain occasional offseason inaccuracies — spot-check critical moves.</div>
+</div>
+<script>
+var DATA = __DATA__;
+function el(t,c,txt){var e=document.createElement(t);if(c)e.className=c;if(txt!=null)e.textContent=txt;return e;}
+function barColor(v){var h=Math.round((v/100)*125);return "hsl("+h+",62%,52%)";}
+function ratingRow(label,v){
+  var r=el("div","rt");var rl=el("div","rl");rl.appendChild(el("span",null,label));
+  var b=el("b",null,v==null?"—":v);rl.appendChild(b);r.appendChild(rl);
+  var tr=el("div","track");var f=el("div","fill");f.style.width=(v||0)+"%";f.style.background=barColor(v||0);tr.appendChild(f);r.appendChild(tr);return r;
+}
+function depth(off){
+  var wrap=el("div","dc");
+  [["QB",1],["RB",3],["WR",4],["TE",2]].forEach(function(pk){
+    var pos=pk[0],n=pk[1];var list=(off[pos]||[]).slice(0,n);if(!list.length)return;
+    wrap.appendChild(el("div","pos",pos));
+    var pl=el("div","plist");
+    list.forEach(function(p){
+      var row=el("div","pl");row.setAttribute("data-ctx-host","");row.appendChild(el("span","pn",p.n));
+      var _c=el("span","ctxchip","EPA");_c.setAttribute("data-ctx-name",p.n);_c.setAttribute("data-ctx-pos",pos);row.appendChild(_c);
+      var bits=[];if(p.adp!=null)bits.push("ADP "+p.adp);if(p.proj!=null)bits.push(p.proj+" pg");if(p.share!=null)bits.push(p.share+"% sh");if(p.ceil!=null)bits.push("ceil "+p.ceil);
+      if(bits.length)row.appendChild(el("span","pm",bits.join(" · ")));
+      if(p.boom&&p.boom.badge){row.appendChild(el("span","boom "+(p.boom.tier||""),p.boom.badge));}
+      pl.appendChild(row);
+    });
+    wrap.appendChild(pl);
+  });
+  return wrap;
+}
+function defBlock(d){
+  var box=el("div");var chips=el("div","def");
+  function chip(lbl,v,suf){if(v==null)return;var c=el("span","dchip");c.appendChild(el("b",null,v+(suf||"")));c.appendChild(document.createTextNode(" "+lbl));chips.appendChild(c);}
+  chip("pass-D",d.covp); chip("run-D",d.runp); chip("pass-rush",d.sackp); chip("man",d.manp);
+  // funnel
+  if(d.covp!=null&&d.runp!=null){
+    if(d.runp>=60&&d.covp<=40){var f=el("span","funnel pass","pass-funnel");chips.appendChild(f);}
+    else if(d.covp>=60&&d.runp<=40){var f2=el("span","funnel run","run-funnel");chips.appendChild(f2);}
+  }
+  box.appendChild(chips);
+  // per-position allowed tiers
+  var tline=el("div","tier");tline.appendChild(el("span","tt","allows: "));
+  ["QB","RB","WR","TE"].forEach(function(p){var t=(d.tiers||{})[p];if(t){var s=el("span","t-"+t);s.textContent=p+" "+t+"  ";tline.appendChild(s);}});
+  box.appendChild(tline);
+  return box;
+}
+function movesBlock(adds,loss){
+  var box=el("div","moves");
+  if(adds&&adds.length){var a=el("div","mv add");a.appendChild(el("span","mh","+ Added  "));a.appendChild(document.createTextNode(adds.join(" · ")));box.appendChild(a);}
+  if(loss&&loss.length){var l=el("div","mv loss");l.appendChild(el("span","mh","– Lost  "));l.appendChild(document.createTextNode(loss.join(" · ")));box.appendChild(l);}
+  return box;
+}
+function card(d){
+  var c=el("div","card");
+  var h=el("div","chead");var left=el("div");
+  left.appendChild(el("div","tname",d.nm));left.appendChild(el("div","tdiv",d.div));h.appendChild(left);
+  if(d.wt!=null)h.appendChild(el("div","wt","O/U "+d.wt));c.appendChild(h);
+  var co=el("div","coach");co.innerHTML="HC <b>"+(d.hc||"?")+"</b> · OC <b>"+(d.oc||"?")+"</b> · DC <b>"+(d.dc||"?")+"</b>";c.appendChild(co);
+  var rs=el("div","ratings");rs.appendChild(ratingRow("Offense",d.offR));rs.appendChild(ratingRow("Defense",d.defR));c.appendChild(rs);
+  var s1=el("div","sec");s1.appendChild(el("div","lbl","Offense — who gets the ball"));s1.appendChild(depth(d.off));c.appendChild(s1);
+  var s2=el("div","sec");s2.appendChild(el("div","lbl","Defense — ratings + scheme (pctl, higher = better unit)"));s2.appendChild(defBlock(d));c.appendChild(s2);
+  if((d.adds&&d.adds.length)||(d.loss&&d.loss.length)){var s3=el("div","sec");s3.appendChild(el("div","lbl","2026 changes"));s3.appendChild(movesBlock(d.adds,d.loss));c.appendChild(s3);}
+  var s4=el("div","sec");s4.appendChild(el("div","lbl","Outlook"));
+  if(d.offout){var o1=el("div","out");o1.innerHTML="<b>Off:</b> "+d.offout;s4.appendChild(o1);}
+  if(d.defout){var o2=el("div","out");o2.innerHTML="<b>Def:</b> "+d.defout;s4.appendChild(o2);}
+  if(d.note)s4.appendChild(el("div","note",d.note));
+  c.appendChild(s4);
+  return c;
+}
+function render(){
+  var sort=document.getElementById("sort").value, conf=document.getElementById("conf").value, q=document.getElementById("q").value.toLowerCase().trim();
+  var list=DATA.slice();
+  if(conf)list=list.filter(function(d){return d.div.indexOf(conf)===0;});
+  if(q)list=list.filter(function(d){
+    if((d.nm+" "+d.t+" "+d.hc+" "+d.oc+" "+d.dc).toLowerCase().indexOf(q)>=0)return true;
+    var names=[];["QB","RB","WR","TE"].forEach(function(p){(d.off[p]||[]).forEach(function(x){names.push(x.n.toLowerCase());});});
+    return names.join(" ").indexOf(q)>=0;
+  });
+  list.sort(function(a,b){
+    if(sort==="az")return a.nm<b.nm?-1:1;
+    if(sort==="div")return (a.div+a.nm)<(b.div+b.nm)?-1:1;
+    var av=a[sort],bv=b[sort];av=av==null?-1:av;bv=bv==null?-1:bv;return bv-av;
+  });
+  var g=document.getElementById("grid");g.textContent="";
+  list.forEach(function(d){g.appendChild(card(d));});
+}
+document.getElementById("sort").addEventListener("change",render);
+document.getElementById("conf").addEventListener("change",render);
+document.getElementById("q").addEventListener("input",render);
+render();
+if(typeof window!=="undefined"){window.__DATA=DATA;window.renderScout=render;}
+</script>
+</body>
+</html>

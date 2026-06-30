@@ -1,0 +1,162 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+:root{--bg:#0b0f17;--bg2:#0e1320;--card:#121a29;--card2:#0f1626;--line:#1e2a3d;--line2:#2a3a52;--ink:#eef2f8;--ink2:#aab8cc;--ink3:#6f819b;--accent:#5b9dff;--good:#5fd08a;--warn:#e6b34d;--bad:#ff8585;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+.top{padding:11px 18px;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:var(--bg2)}
+.top h1{font-size:15px;margin:0;letter-spacing:.3px;font-weight:800}
+.top .sub{color:var(--ink3);font-size:11.5px;font-family:var(--mono)}
+.modes{margin-left:auto;display:flex;gap:6px}
+.mbtn{font-size:12px;font-weight:700;padding:5px 13px;border:1px solid var(--line2);border-radius:8px;cursor:pointer;color:var(--ink2);background:transparent}
+.mbtn.on{background:var(--accent);color:#08101e;border-color:var(--accent)}
+.wrap{display:grid;grid-template-columns:212px 1fr;height:calc(100vh - 46px)}
+.nav{border-right:1px solid var(--line);overflow:auto;background:var(--bg2);padding:6px 0}
+.navsrch{padding:8px 9px}.navsrch input{width:100%;background:#0b1018;color:var(--ink);border:1px solid var(--line2);border-radius:8px;padding:7px 9px;font-size:12.5px}
+.divh{font-size:9.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink3);font-weight:800;padding:10px 12px 3px}
+.trow{padding:5px 12px;cursor:pointer;font-size:13px;display:flex;justify-content:space-between;align-items:center;border-left:2px solid transparent}
+.trow:hover{background:rgba(91,157,255,.08)}.trow.sel{background:rgba(91,157,255,.14);border-left-color:var(--accent)}
+.trow .ab{font-family:var(--mono);font-weight:700}.trow .nm{color:var(--ink3);font-size:11px}
+.pane{overflow:auto;padding:22px 30px;max-width:1060px}
+.dh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:4px}
+.dh .ab{font-size:30px;font-weight:900;letter-spacing:-.5px}.dh .nm{font-size:16px;color:var(--ink2)}.dh .dv{font-size:11px;color:var(--ink3);font-family:var(--mono);margin-left:auto}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.badge{border:1px solid var(--line2);border-radius:8px;padding:5px 11px;font-size:12px;background:var(--card2)}
+.badge b{font-family:var(--mono)}
+.badge.pass{border-color:rgba(91,157,255,.5);color:var(--accent)}.badge.run{border-color:rgba(95,208,138,.5);color:var(--good)}
+.badge.shift{border-color:var(--warn);color:var(--warn)}
+.sec{margin:22px 0 6px;font-size:11px;text-transform:uppercase;letter-spacing:1.1px;color:var(--ink3);font-weight:800;border-bottom:1px solid var(--line);padding-bottom:5px;display:flex;justify-content:space-between;align-items:center}
+.sec .tools{font-weight:700;letter-spacing:0;text-transform:none}
+.tbtn{font-size:11px;color:var(--accent);background:transparent;border:1px solid var(--line2);border-radius:6px;padding:3px 9px;cursor:pointer;margin-left:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:9px;margin:10px 0}
+.kv{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 11px}
+.kv .k{font-size:9.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--ink3);font-weight:700}
+.kv .v{font-size:17px;font-weight:800;font-family:var(--mono);margin-top:1px}.kv .v small{font-size:10px;color:var(--ink3);font-weight:600}
+.note{font-size:13px;color:var(--ink2);background:rgba(91,157,255,.06);border-left:3px solid var(--accent);padding:9px 12px;border-radius:7px;margin:8px 0}
+.shiftnote{background:rgba(230,179,77,.08);border-left-color:var(--warn);color:var(--warn)}
+.posgrp{margin:14px 0 4px;font-size:11px;font-weight:800;color:var(--accent);font-family:var(--mono);letter-spacing:.5px}
+/* player card */
+.pc{background:var(--card2);border:1px solid var(--line);border-radius:11px;margin:7px 0;overflow:hidden}
+.psum{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 13px;cursor:pointer}
+.psum:hover{background:rgba(91,157,255,.05)}
+.prk{font-family:var(--mono);font-size:12px;color:var(--ink3);min-width:34px}
+.pnm{font-weight:800;font-size:14.5px;min-width:150px}
+.ppos{font-family:var(--mono);font-size:10px;font-weight:700;border:1px solid var(--line2);border-radius:5px;padding:1px 5px;color:var(--ink2)}
+.pmeta{font-family:var(--mono);font-size:11.5px;color:var(--ink3)}
+.edge{font-family:var(--mono);font-size:11.5px;font-weight:700}.edge.up{color:var(--good)}.edge.dn{color:var(--bad)}
+.cons{display:flex;align-items:center;gap:6px;margin-left:auto}
+.consbar{width:74px;height:7px;border-radius:4px;background:#0b1018;border:1px solid var(--line2);overflow:hidden}
+.consbar i{display:block;height:100%}
+.consv{font-family:var(--mono);font-size:11.5px;font-weight:700}
+.exp{color:var(--ink3);font-size:12px;font-family:var(--mono)}
+.pflags{display:flex;gap:5px;flex-wrap:wrap;width:100%;margin-top:2px}
+.fchip{font-size:9.5px;font-weight:700;border:1px solid var(--line2);border-radius:5px;padding:1px 6px;color:var(--warn)}
+.pdetail{display:none;border-top:1px solid var(--line);padding:11px 13px 14px;background:var(--card)}
+.pc.open .pdetail{display:block}.pc.open .exp{color:var(--accent)}
+.dlab{font-size:9.5px;text-transform:uppercase;letter-spacing:.7px;color:var(--ink3);font-weight:800;margin:12px 0 5px}
+.dlab:first-child{margin-top:0}
+.siggrp{margin:6px 0}
+.sgh{font-size:10px;color:var(--ink3);font-weight:700;margin:6px 0 3px}
+.sigrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:5px 14px}
+.sig{display:flex;align-items:center;gap:7px;font-size:11.5px}
+.sl{color:var(--ink2);min-width:78px}.sb{flex:1;height:6px;border-radius:3px;background:#0b1018;border:1px solid var(--line2);overflow:hidden}
+.sb i{display:block;height:100%}.sv{font-family:var(--mono);font-size:11px;min-width:20px;text-align:right;color:var(--ink2)}
+.up{border-top:1px solid var(--line);padding:5px 0;font-size:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}
+.up:first-of-type{border-top:none}.updim{font-weight:700;font-family:var(--mono);min-width:84px}
+.tier{font-size:9px;font-weight:800;border-radius:4px;padding:1px 5px;border:1px solid var(--line2)}
+.tier.STABLE{color:var(--good);border-color:rgba(95,208,138,.5)}.tier.MODERATE{color:var(--accent)}
+.tier.LOW,.tier.NOISE,.tier.LEVEL-ONLY{color:var(--ink3)}
+.upnote{color:var(--ink3);font-size:11.5px;flex:1;min-width:200px}
+.bt{border-top:1px solid var(--line);padding:5px 0;font-size:12px}
+.verd{font-size:9.5px;font-weight:800;border-radius:4px;padding:1px 6px;margin-right:6px}
+.verd.S{color:var(--good);border:1px solid rgba(95,208,138,.5)}.verd.M{color:var(--warn);border:1px solid rgba(230,179,77,.5)}.verd.W{color:var(--bad);border:1px solid rgba(255,133,133,.4)}
+.grp-model{color:var(--good)}.grp-off{color:var(--ink3)}
+.tw{border-top:1px solid var(--line);padding:7px 0;font-size:12px}.tw:first-of-type{border-top:none}
+.tw .h{color:var(--ink3);font-family:var(--mono);font-size:11px}.tw .tx{color:var(--ink2);margin-top:2px;white-space:pre-wrap}
+.pl{display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;padding:6px 0;border-top:1px solid var(--line)}
+.pl:first-of-type{border-top:none}.pl .nm{font-weight:700;min-width:155px}.pl .mt{font-family:var(--mono);font-size:11.5px;color:var(--ink3)}
+.chip{font-size:10px;font-weight:700;border:1px solid var(--line2);border-radius:5px;padding:1px 6px;color:var(--good)}
+.stk{font-size:14px}.stk b{color:var(--accent)}
+.qwrap{max-width:760px}
+.qcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:12px 0}
+.qq{font-size:15px;font-weight:700}.qa{margin-top:10px;font-size:14px;color:var(--good);display:none}.qa.show{display:block}
+.qbtn{margin-top:10px;font-size:12px;font-weight:700;color:var(--accent);background:transparent;border:1px solid var(--line2);border-radius:7px;padding:5px 11px;cursor:pointer}
+.qbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.muted{color:var(--ink3)}
+.qprof{font-size:12.5px;color:var(--ink2);margin:2px 0 6px}
+.qprof b{color:var(--ink)}
+.qtrait{display:inline-block;font-size:10.5px;font-weight:700;border:1px solid var(--line2);border-radius:5px;padding:1px 7px;margin:2px 4px 2px 0;color:var(--accent)}
+.qclaim{font-size:11.5px;color:var(--good);margin-top:5px}
+.qnote{font-size:11px;color:var(--ink3);margin-top:3px}
+
+.bbwrap{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:9px 0}
+.bbcol{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:9px 12px}
+.bbh{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+.bbh.boom{color:var(--good)}.bbh.bust{color:var(--bad)}
+.bbi{font-size:12px;color:var(--ink2);padding:4px 0;border-top:1px solid var(--line)}
+.bbi:first-of-type{border-top:none}
+.tend{font-size:9px;font-weight:700;color:var(--ink3);border:1px solid var(--line2);border-radius:4px;padding:0 4px;margin-left:6px}
+@media(max-width:760px){.bbwrap{grid-template-columns:1fr}}
+
+@media print{.nav,.top .modes{display:none}.wrap{grid-template-columns:1fr;height:auto}.pane{max-width:none}.pdetail{display:block !important}}
+</style><style>.pdetail{display:block !important}.pane{max-width:1000px}</style></head><body><div class="pane"><div class="dh"><span class="ab">BUF</span><span class="nm">Buffalo Bills</span><span class="dv">AFC East</span></div><div class="badges"><span class="badge run">Funnel: <b>RUN</b></span><span class="badge">Win total <b>10.5</b></span><span class="badge">Pace <b>52</b>th</span><span class="badge">Pass <b>50%</b> (#30)</span></div><div class="sec">Identity &amp; coaching</div><div class="grid"><div class="kv"><div class="k">Plays/g</div><div class="v">59.8</div></div><div class="kv"><div class="k">Total TD/g</div><div class="v">3.06 <small>#2</small></div></div><div class="kv"><div class="k">Env idx</div><div class="v">78</div></div><div class="kv"><div class="k">Off quality</div><div class="v">68</div></div></div><div class="note">New OC: <b>Pete Carmichael Jr.</b><br>New DC: <b>Jim Leonhard</b></div><div class="sec">Team profile &mdash; strengths &amp; weaknesses</div><div class="bbwrap"><div class="bbcol"><div class="bbh boom">Strengths</div><div class="bbi">high implied team totals (env 78)</div><div class="bbi">strong coverage (82 pctl)</div><div class="bbi">strong O-line / pass protection (92 pctl)</div></div><div class="bbcol"><div class="bbh bust">Weaknesses</div><div class="bbi">run-first offense (bottom-8 pass rate) — limited pass volume</div></div></div><div class="bbwrap" style="margin-top:9px"><div class="bbcol"><div class="bbh boom">&#9650; Offense booms when</div><div class="bbi">with a lead — workhorse RB carries &amp; goal-line work</div><div class="bbi">as favorites — sustained drives &amp; early-down passing</div></div><div class="bbcol"><div class="bbh bust">&#9660; Offense busts when</div><div class="bbi">positive scripts kill WR volume (team milks the clock)</div></div></div><div class="sec">Roster &mdash; full detail (2)<span class="tools"><button class="tbtn" id="expall">Expand all</button><button class="tbtn" id="colall">Collapse</button></span></div><div class="posgrp">QB</div><div class="pc"><div class="psum"><span class="prk">#20</span><span class="ppos">QB</span><span class="pnm">Josh Allen</span><span class="pmeta">ADP 27</span><span class="edge up">+6 vs ADP</span><span class="cons"><span class="consbar"><i style="width:77%;background:#86c98f"></i></span><span class="consv">77</span><span class="exp">▸</span></span><div class="pflags"><span class="fchip">POLARIZING</span><span class="fchip">QB-ZONE-BEATER</span></div></div><div class="pdetail"><div class="dlab">Quantitative profile</div><div class="qprof"><b>Elite QB1 producer (mobile / deep arm)</b> &middot; 99th projection · 83rd ceiling · 80th boom</div><div class="dlab">Qualitative profile</div><div class="qprof"><span class="qtrait">polarizing (signals split)</span> <span class="qtrait">zone-beater</span><div class="qclaim">Backtested claim: STRONGLY SUPPORTED — deep (@jagibbs_23)</div><div class="qnote">analyst conviction 0.3; 3 recent note(s)</div></div><div class="dlab">Booms when / Busts when</div><div class="bbwrap"><div class="bbcol"><div class="bbh boom">&#9650; Booms when</div><div class="bbi">elite weekly producer — 99th projection at the position</div><div class="bbi">vs zone coverage — finds the soft spots<span class="tend">tendency</span></div><div class="bbi">works behind clean protection (78th)</div><div class="bbi">strong coaching-staff buy-in (68th)</div></div><div class="bbcol"><div class="bbh bust">&#9660; Busts when</div><div class="bbi">tougher vs press-man that disrupts his release<span class="tend">tendency</span></div><div class="bbi">vs two-high shells that take away the deep ball<span class="tend">tendency</span></div><div class="bbi">brutal slate of opposing defenses this season (5th)</div><div class="bbi">leans on deep production, which flips year to year<span class="tend">tendency</span></div></div></div><div class="dlab">Projection &amp; shape</div><div class="grid"><div class="kv"><div class="k">Proj pts/g</div><div class="v">22.3</div></div><div class="kv"><div class="k">Ceiling p95</div><div class="v">41.9</div></div><div class="kv"><div class="k">Volatility</div><div class="v">0.5 <small>CV</small></div></div><div class="kv"><div class="k">Spike wk%</div><div class="v">0%</div></div><div class="kv"><div class="k">Advance %</div><div class="v">100 <small>pos pctl</small></div></div><div class="kv"><div class="k">Ceiling %</div><div class="v">100 <small>pos pctl</small></div></div><div class="kv"><div class="k">Conviction</div><div class="v">0.3</div></div></div><div class="dlab">Playoff outlook (W15–17)</div><div class="grid"><div class="kv"><div class="k">Playoff up</div><div class="v">1</div></div><div class="kv"><div class="k">W15</div><div class="v">1.5 <small>vs CHI</small></div></div><div class="kv"><div class="k">W16</div><div class="v">1.5 <small>vs DEN</small></div></div><div class="kv"><div class="k">W17</div><div class="v">1.6 <small>BUF@MIA</small></div></div><div class="kv"><div class="k">W17 blowup</div><div class="v">#16</div></div><div class="kv"><div class="k">Bye</div><div class="v">7</div></div></div><div class="dlab">Signal breakdown (within-position pctl)</div><div class="siggrp"><div class="sgh">Value &amp; projection</div><div class="sigrow"><span class="sig"><span class="sl">Market/ADP</span><span class="sb"><i style="width:99%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">99</span></span><span class="sig"><span class="sl">Value</span><span class="sb"><i style="width:99%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">99</span></span><span class="sig"><span class="sl">Projection</span><span class="sb"><i style="width:99%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">99</span></span><span class="sig"><span class="sl">Advancement</span><span class="sb"><i style="width:99%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">99</span></span><span class="sig"><span class="sl">Ceiling</span><span class="sb"><i style="width:83%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">83</span></span><span class="sig"><span class="sl">Spike-week</span><span class="sb"><i style="width:37%;background:var(--warn)"></i></span><span class="sv" style="color:var(--warn)">37</span></span><span class="sig"><span class="sl">Boom</span><span class="sb"><i style="width:80%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">80</span></span><span class="sig"><span class="sl">SIS value</span><span class="sb"><i style="width:84%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">84</span></span></div></div><div class="siggrp"><div class="sgh">Context</div><div class="sigrow"><span class="sig"><span class="sl">O-line</span><span class="sb"><i style="width:93%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">93</span></span><span class="sig"><span class="sl">Protection</span><span class="sb"><i style="width:78%;background:#86c98f"></i></span><span class="sv" style="color:#86c98f">78</span></span><span class="sig"><span class="sl">Matchup</span><span class="sb"><i style="width:5%;background:var(--bad)"></i></span><span class="sv" style="color:var(--bad)">5</span></span><span class="sig"><span class="sl">Coachspeak</span><span class="sb"><i style="width:68%;background:#86c98f"></i></span><span class="sv" style="color:#86c98f">68</span></span></div></div><div class="dlab">Upside traits (model-driver vs descriptive)</div><div class="up"><span class="updim grp-off">deep · 84</span><span class="tier LEVEL-ONLY">LEVEL-ONLY</span><span class="upnote">deep role is stable but deep production-&gt;boom FLIPS sign yr/yr</span></div><div class="dlab">Backtested claims</div><div class="bt"><span class="verd S">STRONGLY SUPPORTED</span><b>deep</b> <span class="muted">— @jagibbs_23</span><div class="muted" style="margin-top:2px">deep role is stable but deep production-&gt;boom FLIPS sign yr/yr</div></div><div class="dlab">Best matchup</div><div class="muted" style="font-size:12px">Week 2 vs DET · matchup score 5</div><div class="dlab">Intel (tweets about Allen)</div><div class="tw"><span class="h">@ihartitz · Sun Jun 21 19:39</span><div class="tx">Lots of so called fantasy experts think Josh Allen deserves to be drafted as the QB1 in 2026 but some pretty damning evidence here that he'll probably be the QB2 https://t.co/PmzJISMMuU</div></div><div class="tw"><span class="h">@fantasypts · Mon Jun 15 12:00</span><div class="tx">How much does game script affect RBs? 
+
+It was the difference between Jonathon Taylor putting up playoff Josh Allen numbers in wins and Tony Pollard production levels in losses 👑 ➡️ 💩 https://t.co/P1knutElxo</div></div><div class="tw"><span class="h">@scottbarrettdfb · Fri Jun 12 21:31</span><div class="tx">top-3 throw of all-time
+
+70-yard dime from Josh Allen to win the game. Not his fault ol' stone-hands Gabe Davis dropped it! 
+
+https://t.co/EJlIpkHx3l</div></div></div></div><div class="posgrp">WR</div><div class="pc"><div class="psum"><span class="prk">#52</span><span class="ppos">WR</span><span class="pnm">DJ Moore</span><span class="pmeta">ADP 46</span><span class="edge dn">-6 vs ADP</span><span class="cons"><span class="consbar"><i style="width:60%;background:#86c98f"></i></span><span class="consv">60</span><span class="exp">▸</span></span><div class="pflags"><span class="fchip">POLARIZING</span><span class="fchip">MAN-BEATER</span></div></div><div class="pdetail"><div class="dlab">Quantitative profile</div><div class="qprof"><b>Separation technician</b> &middot; 81st projection · 68th ceiling · 65th boom · heavy-volume · low-variance</div><div class="dlab">Qualitative profile</div><div class="qprof"><span class="qtrait">polarizing (signals split)</span> <span class="qtrait">beats man</span> <span class="qtrait">volume (stable)</span><div class="qclaim">Backtested claim: SUPPORTED — route (@dbro_ffb, @fantasyptsdata)</div><div class="qnote">3 recent note(s)</div></div><div class="dlab">Booms when / Busts when</div><div class="bbwrap"><div class="bbcol"><div class="bbh boom">&#9650; Booms when</div><div class="bbi">solid baseline projection (81st)</div><div class="bbi">vs man coverage — wins one-on-one</div><div class="bbi">separates at an elite rate (74th)</div><div class="bbi">vs defenses with a beatable WR1 corner<span class="tend">tendency</span></div><div class="bbi">steady week to week (low volatility = high floor)</div></div><div class="bbcol"><div class="bbh bust">&#9660; Busts when</div><div class="bbi">quieter vs disciplined zone that takes away the quick game<span class="tend">tendency</span></div><div class="bbi">when shadowed by a shutdown CB1<span class="tend">tendency</span></div><div class="bbi">brutal slate of opposing defenses this season (9th)</div><div class="bbi">inefficient on his targets (28th)</div><div class="bbi">doesn’t consistently win routes (31st)</div></div></div><div class="dlab">Projection &amp; shape</div><div class="grid"><div class="kv"><div class="k">Proj pts/g</div><div class="v">12.2</div></div><div class="kv"><div class="k">Ceiling p95</div><div class="v">31.1</div></div><div class="kv"><div class="k">Volatility</div><div class="v">1 <small>CV</small></div></div><div class="kv"><div class="k">Spike wk%</div><div class="v">0%</div></div><div class="kv"><div class="k">Advance %</div><div class="v">81 <small>pos pctl</small></div></div><div class="kv"><div class="k">Ceiling %</div><div class="v">80 <small>pos pctl</small></div></div></div><div class="dlab">Playoff outlook (W15–17)</div><div class="grid"><div class="kv"><div class="k">Playoff up</div><div class="v">0.8</div></div><div class="kv"><div class="k">W15</div><div class="v">1.2 <small>vs CHI</small></div></div><div class="kv"><div class="k">W16</div><div class="v">1.3 <small>vs DEN</small></div></div><div class="kv"><div class="k">W17</div><div class="v">1.3 <small>BUF@MIA</small></div></div><div class="kv"><div class="k">W17 blowup</div><div class="v">#16</div></div><div class="kv"><div class="k">Bye</div><div class="v">7</div></div></div><div class="dlab">Signal breakdown (within-position pctl)</div><div class="siggrp"><div class="sgh">Value &amp; projection</div><div class="sigrow"><span class="sig"><span class="sl">Market/ADP</span><span class="sb"><i style="width:85%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">85</span></span><span class="sig"><span class="sl">Value</span><span class="sb"><i style="width:85%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">85</span></span><span class="sig"><span class="sl">Projection</span><span class="sb"><i style="width:81%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">81</span></span><span class="sig"><span class="sl">Advancement</span><span class="sb"><i style="width:81%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">81</span></span><span class="sig"><span class="sl">Ceiling</span><span class="sb"><i style="width:68%;background:#86c98f"></i></span><span class="sv" style="color:#86c98f">68</span></span><span class="sig"><span class="sl">Spike-week</span><span class="sb"><i style="width:33%;background:var(--warn)"></i></span><span class="sv" style="color:var(--warn)">33</span></span><span class="sig"><span class="sl">Boom</span><span class="sb"><i style="width:65%;background:#86c98f"></i></span><span class="sv" style="color:#86c98f">65</span></span><span class="sig"><span class="sl">SIS value</span><span class="sb"><i style="width:46%;background:var(--ink2)"></i></span><span class="sv" style="color:var(--ink2)">46</span></span></div></div><div class="siggrp"><div class="sgh">Receiving skill</div><div class="sigrow"><span class="sig"><span class="sl">Route eff</span><span class="sb"><i style="width:31%;background:var(--warn)"></i></span><span class="sv" style="color:var(--warn)">31</span></span><span class="sig"><span class="sl">Rec eff</span><span class="sb"><i style="width:28%;background:var(--warn)"></i></span><span class="sv" style="color:var(--warn)">28</span></span><span class="sig"><span class="sl">Separation</span><span class="sb"><i style="width:74%;background:#86c98f"></i></span><span class="sv" style="color:#86c98f">74</span></span><span class="sig"><span class="sl">YAC</span><span class="sb"><i style="width:60%;background:#86c98f"></i></span><span class="sv" style="color:#86c98f">60</span></span><span class="sig"><span class="sl">Explosive</span><span class="sb"><i style="width:55%;background:var(--ink2)"></i></span><span class="sv" style="color:var(--ink2)">55</span></span><span class="sig"><span class="sl">Coverage-proof</span><span class="sb"><i style="width:65%;background:#86c98f"></i></span><span class="sv" style="color:#86c98f">65</span></span></div></div><div class="siggrp"><div class="sgh">Context</div><div class="sigrow"><span class="sig"><span class="sl">O-line</span><span class="sb"><i style="width:92%;background:var(--good)"></i></span><span class="sv" style="color:var(--good)">92</span></span><span class="sig"><span class="sl">Matchup</span><span class="sb"><i style="width:9%;background:var(--bad)"></i></span><span class="sv" style="color:var(--bad)">9</span></span><span class="sig"><span class="sl">Coachspeak</span><span class="sb"><i style="width:50%;background:var(--ink2)"></i></span><span class="sv" style="color:var(--ink2)">50</span></span></div></div><div class="dlab">Upside traits (model-driver vs descriptive)</div><div class="up"><span class="updim grp-model">volume · 65</span><span class="tier STABLE">STABLE</span><span class="upnote">target rate / share persist strongly (r=0.54-0.66)</span></div><div class="up"><span class="updim grp-off">yac · 80</span><span class="tier WEAK">WEAK</span><span class="upnote">YAC only weakly persists (r~0.10-0.19)</span></div><div class="dlab">Backtested claims</div><div class="bt"><span class="verd M">SUPPORTED</span><b>route</b> <span class="muted">— @dbro_ffb, @fantasyptsdata</span><div class="muted" style="margin-top:2px">route efficiency (yprr/tprr) replicates yr/yr (r=0.51-0.69)</div></div><div class="bt"><span class="verd M">UNTESTABLE</span><b>man</b> <span class="muted">— @dhananizain</span><div class="muted" style="margin-top:2px">man-coverage skill is a real repeatable trait (r=0.47)</div></div><div class="dlab">Best matchup</div><div class="muted" style="font-size:12px">Week 8 vs BAL · matchup score 9</div><div class="dlab">Intel (tweets about Moore)</div><div class="tw"><span class="h">@dhananizain · Tue Jun 23 03:02</span><div class="tx">Buffalo traded for DJ Moore to solve their issue with Man Coverage - hope he can be the answer
+
+https://t.co/xVHvgoZi5t</div></div><div class="tw"><span class="h">@fantasyptsdata · Sat Jun 13 18:18</span><div class="tx">RT @DBro_FFB: D.J. Moore hope tweet for 2026
+
+Last year among 109 qual WRs
+(per @FantasyPtsData)
+
+as a perimeter WR:
+36th in separation
+(im…</div></div><div class="tw"><span class="h">@dbro_ffb · Sat Jun 13 17:27</span><div class="tx">D.J. Moore hope tweet for 2026
+
+Last year among 109 qual WRs
+(per @FantasyPtsData)
+
+as a perimeter WR:
+36th in separation
+(immediately behind C Olave)
+
+29th in route win rate
+(immediately behind C Lamb)</div></div></div></div><div class="sec">Defense &amp; funnels (what opponents exploit)</div><div class="grid"><div class="kv"><div class="k">Coverage</div><div class="v">83 <small>pctl</small></div></div><div class="kv"><div class="k">Pass rush</div><div class="v">55 <small>pctl</small></div></div><div class="kv"><div class="k">Run def</div><div class="v">36 <small>pctl</small></div></div></div><div class="note">RUN funnel (soft vs run, stiffer vs pass -&gt; RB up) &middot; TE fortress (avoid TEs) &middot; WR fortress (avoid WRs)</div><div class="pl"><span class="nm">CB1: Tre'Davious White</span><span class="mt">cov 68.2 (average) &rarr; WR1 funnel: exploitable</span></div><div style="margin-top:6px"><span class="muted" style="font-size:11px">2026 D rookies: </span><span class="chip" style="color:var(--ink2)">Davison Igbinosun CB R2</span> <span class="chip" style="color:var(--ink2)">Kaleb Elarms-Orr LB R4</span> <span class="chip" style="color:var(--ink2)">T.J. Parker DE R2</span></div><div class="sec">Latest team intel</div><div class="tw"><span class="h">@dhananizain &middot; Wed Jun 24 05:16</span><div class="tx">Bills could look to move on from Keon Coleman:
+
+“Keon Coleman is one of two players sitting squarely on the chopping block..”
+
+Mentions a trade is more likely than outright cut by week 1
+
+https://t.co/LCYs5aBTbB</div></div><div class="tw"><span class="h">@32beatwriters &middot; Mon Jun 22 21:13</span><div class="tx">ICYMI - we were joined by @MattParrino
+
+Hear what he has to say about everyone from James Cook to Skyler Bell to Jackson Hawes.
+
+Here's a quick quote on Keon Coleman...⤵️
+
+🎥https://t.co/keS5ev25yj
+🎧https://t.co/hA9Dg5t7Iz https://t.co/UovHZ</div></div><div class="tw"><span class="h">@ihartitz &middot; Sun Jun 21 21:03</span><div class="tx">Bills wide receiver moves since 2024:
+
+Traded for:
+-DJ Moore
+-Amari Cooper
+
+Drafted:
+-Keon Coleman
+-Kaden Prather
+-Skyler Bell
+
+Signed in free agency:
+-Josh Palmer
+-Curtis Samuel
+-Brandin Cooks
+-Gabe Davis
+-Elijah Moore
+-Mack Hollins
+-Mecol</div></div><div class="tw"><span class="h">@dhananizain &middot; Sat Jun 20 03:46</span><div class="tx">Interesting take on whether TreVeyon Henderson will be RB1 - this is a fan site but thought I’d share anyway:
+
+“That doesn’t appear to be in the plans right now, which shouldn’t be viewed as controversial at this point. Henderson had some b</div></div><div class="tw"><span class="h">@dhananizain &middot; Fri Jun 19 18:00</span><div class="tx">Bills new coach, Dean Marlowe, is impressed by Skyler Bell:
+
+“He honestly reminds me of a younger [Stefon] Diggs”
+
+https://t.co/O84Mk3NPBn</div></div></div></body></html>

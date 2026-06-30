@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+"""run_all.py — one-shot orchestrator for the 2026 best-ball deliverables.
+
+Default: rebuild the DOSSIER + FLAGS + RANKINGS chain (fast; depends only on already-built JSON).
+  python3 run_all.py
+--full : also run the upstream engine + boom subsystem first (needs the raw inputs to be present).
+  python3 run_all.py --full
+--check: just list which expected outputs currently exist (no run).
+
+Chain (each stage asserts its output exists & is non-empty; fails loud):
+  [--full] refactor/pipeline.py   -> features.csv, defense.json, fusion.json ...
+  [--full] boom_pipeline.py       -> boom/*.json, command_center.html
+  build_dossier.py                -> dossier_data.json        (verified 2026 OL wired in)
+  build_lever_count.py            -> lever_count.json         (+ lever_cal/sum into dossier)
+  build_flags_layer.py            -> flags_2026.json, flag_rank_delta.csv  (+ flags into dossier)
+  build_lever_board.py            -> lever_board.html
+  build_rankings.py               -> rankings.html, rankings_2026.csv
+  render_dossier.py               -> dossier.html
+"""
+import os, sys, subprocess, time, json
+HERE=os.path.dirname(os.path.abspath(__file__))
+def stage(cmd, outs):
+    name=' '.join(cmd); print("==> "+name); t=time.time()
+    r=subprocess.run([sys.executable]+cmd, cwd=HERE, capture_output=True, text=True)
+    if r.returncode!=0: sys.exit("[FAIL] %s\n%s"%(name, r.stderr[-2000:]))
+    for o in outs:
+        p=os.path.join(HERE,o)
+        if not (os.path.exists(p) and os.path.getsize(p)>0): sys.exit("[FAIL] %s: missing/empty %s"%(name,o))
+    tail=(r.stdout.strip().splitlines() or [''])[-1]
+    print("    ok (%.1fs) %s  %s"%(time.time()-t, outs, tail[:80]))
+DOSSIER=[(["build_dossier.py"],["dossier_data.json"]),
+ (["build_lever_count.py"],["lever_count.json"]),
+ (["build_flags_layer.py"],["flags_2026.json","flag_rank_delta.csv"]),
+ (["build_lever_board.py"],["lever_board.html"]),
+ (["build_rankings.py"],["rankings.html","rankings_2026.csv"]),
+ (["render_dossier.py"],["dossier.html"])]
+FULL=[(["refactor/pipeline.py"],["features.csv","defense.json"]),(["boom_pipeline.py"],["boom/boom_marks.json"])]
+def main():
+    chain=(FULL+DOSSIER) if "--full" in sys.argv else DOSSIER
+    if "--check" in sys.argv:
+        for cmd,outs in chain:
+            miss=[o for o in outs if not (os.path.exists(os.path.join(HERE,o)) and os.path.getsize(os.path.join(HERE,o))>0)]
+            print("  [%s] %-26s %s%s"%('OK ' if not miss else 'MISS',' '.join(cmd),outs,(' MISSING %s'%miss) if miss else ''))
+        return
+    t0=time.time()
+    for cmd,outs in chain: stage(cmd,outs)
+    dd=json.load(open(os.path.join(HERE,'dossier_data.json'))); fl=json.load(open(os.path.join(HERE,'flags_2026.json')))
+    print("\nDONE in %.1fs — %d teams, %d players, %d flagged (%d playoff). Open: dossier.html, rankings.html, lever_board.html"%(
+        time.time()-t0,len(dd['teams']),sum(len(t['players']) for t in dd['teams']),fl['meta']['n_flagged'],fl['meta']['n_playoff_flagged']))
+if __name__=='__main__': main()

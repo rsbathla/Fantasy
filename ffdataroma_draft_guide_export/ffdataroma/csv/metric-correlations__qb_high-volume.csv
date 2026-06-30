@@ -1,0 +1,12 @@
+# Sample: 66 QB player-seasons (2016–2025) — high-volume cohort (prior-year top tier by workload).
+Metric,r² → Next YR FP/G,r² Stickiness to Self
+Prior FP/G | PPR fantasy points per game in year N — baseline benchmark.,0.213,—
+EPA / Play | (Passing EPA + Rushing EPA) per (attempt + carry).,0.190,0.150
+Rush Yards / Game | QB rushing yards per game — flags mobile QBs.,0.174,0.666
+Total TDs | Passing TDs + Rushing TDs in year N.,0.107,0.045
+ANY/A | Adjusted Net Yards per Attempt: (pass yds + 20·TD − 45·INT − sack yds) / (att + sacks).,0.054,0.097
+CPOE | Completion percentage over expected (per attempt).,0.038,0.169
+Yards / Attempt | Passing yards per attempt.,0.021,0.152
+Pass Yards / Game | Passing yards per game in year N — strips out missed-game volume.,0.018,0.190
+Pass Yards | Total passing yards in year N.,0.011,0.023
+Pass Attempts | Total pass attempts in year N.,0.001,0.025

@@ -1,0 +1,6079 @@
+{
+"meta": {
+"n_players": 359,
+"n_flagged": 117,
+"n_playoff_flagged": 100,
+"total_flags": 130,
+"playoff_flags": 101,
+"by_category": {
+"oline": 17,
+"playoff": 100,
+"availability": 6,
+"durability": 1,
+"roster": 1,
+"scheme": 5
+},
+"params": {
+"PO_SLATE_TOUGH": 64,
+"PO_SLATE_HARD": 72,
+"OL_TIER_WEAK": 2,
+"PO_COLD_RATIO": 0.6
+},
+"note": "TOTAL=all risks; PLAYOFF=risks specific to NFL W15-17. avail=data-backed availability multiplier; adj_pg=proj.pg*avail."
+},
+"players": {
+"jacoby brissett": {
+"name": "Jacoby Brissett",
+"pos": "QB",
+"team": "ARI",
+"rank": 172,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.5,
+"adj_pg": 12.5,
+"proj_posrank": 29,
+"adj_posrank": 29,
+"flags": []
+},
+"carson beck": {
+"name": "Carson Beck",
+"pos": "QB",
+"team": "ARI",
+"rank": 280,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 15.4,
+"adj_pg": 15.4,
+"proj_posrank": 22,
+"adj_posrank": 22,
+"flags": []
+},
+"gardner minshew": {
+"name": "Gardner Minshew II",
+"pos": "QB",
+"team": "ARI",
+"rank": 396,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"jeremiyah love": {
+"name": "Jeremiyah Love",
+"pos": "RB",
+"team": "ARI",
+"rank": 27,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.5,
+"adj_pg": 16.5,
+"proj_posrank": 9,
+"adj_posrank": 9,
+"flags": []
+},
+"tyler allgeier": {
+"name": "Tyler Allgeier",
+"pos": "RB",
+"team": "ARI",
+"rank": 163,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.1,
+"adj_pg": 5.1,
+"proj_posrank": 50,
+"adj_posrank": 50,
+"flags": []
+},
+"james conner": {
+"name": "James Conner",
+"pos": "RB",
+"team": "ARI",
+"rank": 243,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"trey benson": {
+"name": "Trey Benson",
+"pos": "RB",
+"team": "ARI",
+"rank": 312,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"marvin harrison": {
+"name": "Marvin Harrison Jr.",
+"pos": "WR",
+"team": "ARI",
+"rank": 71,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.4,
+"adj_pg": 11.4,
+"proj_posrank": 33,
+"adj_posrank": 33,
+"flags": []
+},
+"michael wilson": {
+"name": "Michael Wilson",
+"pos": "WR",
+"team": "ARI",
+"rank": 89,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.8,
+"adj_pg": 9.8,
+"proj_posrank": 47,
+"adj_posrank": 47,
+"flags": []
+},
+"kendrick bourne": {
+"name": "Kendrick Bourne",
+"pos": "WR",
+"team": "ARI",
+"rank": 311,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.1,
+"adj_pg": 3.1,
+"proj_posrank": 109,
+"adj_posrank": 109,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"trey mcbride": {
+"name": "Trey McBride",
+"pos": "TE",
+"team": "ARI",
+"rank": 25,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 15.0,
+"adj_pg": 15.0,
+"proj_posrank": 1,
+"adj_posrank": 1,
+"flags": []
+},
+"tua tagovailoa": {
+"name": "Tua Tagovailoa",
+"pos": "QB",
+"team": "ATL",
+"rank": 200,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.2,
+"adj_pg": 7.2,
+"proj_posrank": 32,
+"adj_posrank": 32,
+"flags": []
+},
+"michael penix": {
+"name": "Michael Penix Jr.",
+"pos": "QB",
+"team": "ATL",
+"rank": 226,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.1,
+"adj_pg": 7.1,
+"proj_posrank": 33,
+"adj_posrank": 33,
+"flags": []
+},
+"bijan robinson": {
+"name": "Bijan Robinson",
+"pos": "RB",
+"team": "ATL",
+"rank": 4,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 20.6,
+"adj_pg": 20.6,
+"proj_posrank": 3,
+"adj_posrank": 3,
+"flags": []
+},
+"brian robinson": {
+"name": "Brian Robinson Jr.",
+"pos": "RB",
+"team": "ATL",
+"rank": 180,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.6,
+"adj_pg": 5.6,
+"proj_posrank": 48,
+"adj_posrank": 48,
+"flags": []
+},
+"drake london": {
+"name": "Drake London",
+"pos": "WR",
+"team": "ATL",
+"rank": 11,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 15.9,
+"adj_pg": 15.9,
+"proj_posrank": 8,
+"adj_posrank": 8,
+"flags": []
+},
+"zachariah branch": {
+"name": "Zachariah Branch",
+"pos": "WR",
+"team": "ATL",
+"rank": 194,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.1,
+"adj_pg": 3.1,
+"proj_posrank": 110,
+"adj_posrank": 110,
+"flags": []
+},
+"jahan dotson": {
+"name": "Jahan Dotson",
+"pos": "WR",
+"team": "ATL",
+"rank": 321,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.0,
+"adj_pg": 5.0,
+"proj_posrank": 82,
+"adj_posrank": 82,
+"flags": []
+},
+"olamide zaccheaus": {
+"name": "Olamide Zaccheaus",
+"pos": "WR",
+"team": "ATL",
+"rank": 322,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 96,
+"adj_posrank": 96,
+"flags": []
+},
+"kyle pitts": {
+"name": "Kyle Pitts Sr.",
+"pos": "TE",
+"team": "ATL",
+"rank": 87,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.8,
+"adj_pg": 10.8,
+"proj_posrank": 8,
+"adj_posrank": 8,
+"flags": []
+},
+"lamar jackson": {
+"name": "Lamar Jackson",
+"pos": "QB",
+"team": "BAL",
+"rank": 47,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 20.0,
+"adj_pg": 20.0,
+"proj_posrank": 2,
+"adj_posrank": 2,
+"flags": []
+},
+"tyler huntley": {
+"name": "Tyler Huntley",
+"pos": "QB",
+"team": "BAL",
+"rank": 333,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"derrick henry": {
+"name": "Derrick Henry",
+"pos": "RB",
+"team": "BAL",
+"rank": 15,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.1,
+"adj_pg": 16.1,
+"proj_posrank": 12,
+"adj_posrank": 12,
+"flags": []
+},
+"justice hill": {
+"name": "Justice Hill",
+"pos": "RB",
+"team": "BAL",
+"rank": 209,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.7,
+"adj_pg": 6.7,
+"proj_posrank": 46,
+"adj_posrank": 46,
+"flags": []
+},
+"adam randall": {
+"name": "Adam Randall",
+"pos": "RB",
+"team": "BAL",
+"rank": 300,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.5,
+"adj_pg": 1.5,
+"proj_posrank": 78,
+"adj_posrank": 78,
+"flags": []
+},
+"zay flowers": {
+"name": "Zay Flowers",
+"pos": "WR",
+"team": "BAL",
+"rank": 30,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.2,
+"adj_pg": 14.2,
+"proj_posrank": 13,
+"adj_posrank": 12,
+"flags": []
+},
+"elijah sarratt": {
+"name": "Elijah Sarratt",
+"pos": "WR",
+"team": "BAL",
+"rank": 230,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.6,
+"adj_pg": 3.6,
+"proj_posrank": 103,
+"adj_posrank": 103,
+"flags": []
+},
+"rashod bateman": {
+"name": "Rashod Bateman",
+"pos": "WR",
+"team": "BAL",
+"rank": 253,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.3,
+"adj_pg": 7.3,
+"proj_posrank": 63,
+"adj_posrank": 63,
+"flags": []
+},
+"devontez walker": {
+"name": "Devontez Walker",
+"pos": "WR",
+"team": "BAL",
+"rank": 296,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.0,
+"adj_pg": 2.0,
+"proj_posrank": 121,
+"adj_posrank": 121,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"jakobi lane": {
+"name": "Ja'Kobi Lane",
+"pos": "WR",
+"team": "BAL",
+"rank": 352,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.9,
+"adj_pg": 4.9,
+"proj_posrank": 83,
+"adj_posrank": 83,
+"flags": []
+},
+"mark andrews": {
+"name": "Mark Andrews",
+"pos": "TE",
+"team": "BAL",
+"rank": 138,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.1,
+"adj_pg": 10.1,
+"proj_posrank": 11,
+"adj_posrank": 11,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"josh allen": {
+"name": "Josh Allen",
+"pos": "QB",
+"team": "BUF",
+"rank": 20,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 22.3,
+"adj_pg": 22.3,
+"proj_posrank": 1,
+"adj_posrank": 1,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"james cook": {
+"name": "James Cook III",
+"pos": "RB",
+"team": "BUF",
+"rank": 9,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.7,
+"adj_pg": 16.7,
+"proj_posrank": 6,
+"adj_posrank": 6,
+"flags": []
+},
+"ray davis": {
+"name": "Ray Davis",
+"pos": "RB",
+"team": "BUF",
+"rank": 207,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.0,
+"adj_pg": 2.0,
+"proj_posrank": 69,
+"adj_posrank": 69,
+"flags": []
+},
+"ty johnson": {
+"name": "Ty Johnson",
+"pos": "RB",
+"team": "BUF",
+"rank": 263,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.9,
+"adj_pg": 4.9,
+"proj_posrank": 52,
+"adj_posrank": 52,
+"flags": []
+},
+"dj moore": {
+"name": "DJ Moore",
+"pos": "WR",
+"team": "BUF",
+"rank": 52,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 12.2,
+"adj_pg": 12.2,
+"proj_posrank": 27,
+"adj_posrank": 27,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"khalil shakir": {
+"name": "Khalil Shakir",
+"pos": "WR",
+"team": "BUF",
+"rank": 122,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.1,
+"adj_pg": 10.1,
+"proj_posrank": 44,
+"adj_posrank": 44,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"keon coleman": {
+"name": "Keon Coleman",
+"pos": "WR",
+"team": "BUF",
+"rank": 219,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.4,
+"adj_pg": 3.4,
+"proj_posrank": 105,
+"adj_posrank": 105,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"skyler bell": {
+"name": "Skyler Bell",
+"pos": "WR",
+"team": "BUF",
+"rank": 334,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 2.4,
+"adj_pg": 2.4,
+"proj_posrank": 118,
+"adj_posrank": 118,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"joshua palmer": {
+"name": "Joshua Palmer",
+"pos": "WR",
+"team": "BUF",
+"rank": 354,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dalton kincaid": {
+"name": "Dalton Kincaid",
+"pos": "TE",
+"team": "BUF",
+"rank": 111,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 9.0,
+"adj_pg": 9.0,
+"proj_posrank": 17,
+"adj_posrank": 17,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dawson knox": {
+"name": "Dawson Knox",
+"pos": "TE",
+"team": "BUF",
+"rank": 369,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 4.1,
+"adj_pg": 4.1,
+"proj_posrank": 35,
+"adj_posrank": 35,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"bryce young": {
+"name": "Bryce Young",
+"pos": "QB",
+"team": "CAR",
+"rank": 155,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.9,
+"adj_pg": 14.9,
+"proj_posrank": 26,
+"adj_posrank": 26,
+"flags": []
+},
+"chuba hubbard": {
+"name": "Chuba Hubbard",
+"pos": "RB",
+"team": "CAR",
+"rank": 80,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.6,
+"adj_pg": 10.6,
+"proj_posrank": 32,
+"adj_posrank": 31,
+"flags": []
+},
+"jonathon brooks": {
+"name": "Jonathon Brooks",
+"pos": "RB",
+"team": "CAR",
+"rank": 107,
+"total": 2,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.7,
+"adj_pg": 8.7,
+"proj_posrank": 40,
+"adj_posrank": 39,
+"flags": [
+{
+"code": "INJ",
+"label": "injury: full go durability (~0.0 g lost, avail 100%)",
+"sev": 1,
+"cat": "availability",
+"playoff": false
+},
+{
+"code": "DUR",
+"label": "elevated re-injury / durability risk",
+"sev": 1,
+"cat": "durability",
+"playoff": false
+}
+]
+},
+"trevor etienne": {
+"name": "Trevor Etienne",
+"pos": "RB",
+"team": "CAR",
+"rank": 242,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.8,
+"adj_pg": 1.8,
+"proj_posrank": 73,
+"adj_posrank": 73,
+"flags": []
+},
+"tetairoa mcmillan": {
+"name": "Tetairoa McMillan",
+"pos": "WR",
+"team": "CAR",
+"rank": 44,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.0,
+"adj_pg": 14.0,
+"proj_posrank": 16,
+"adj_posrank": 15,
+"flags": []
+},
+"jalen coker": {
+"name": "Jalen Coker",
+"pos": "WR",
+"team": "CAR",
+"rank": 131,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.7,
+"adj_pg": 8.7,
+"proj_posrank": 54,
+"adj_posrank": 54,
+"flags": []
+},
+"chris brazzell": {
+"name": "Chris Brazzell II",
+"pos": "WR",
+"team": "CAR",
+"rank": 246,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 97,
+"adj_posrank": 97,
+"flags": []
+},
+"john metchie": {
+"name": "John Metchie III",
+"pos": "WR",
+"team": "CAR",
+"rank": 273,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"xavier legette": {
+"name": "Xavier Legette",
+"pos": "WR",
+"team": "CAR",
+"rank": 285,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.2,
+"adj_pg": 4.2,
+"proj_posrank": 86,
+"adj_posrank": 86,
+"flags": []
+},
+"tommy tremble": {
+"name": "Tommy Tremble",
+"pos": "TE",
+"team": "CAR",
+"rank": 347,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 38,
+"adj_posrank": 38,
+"flags": []
+},
+"jatavion sanders": {
+"name": "Ja'Tavion Sanders",
+"pos": "TE",
+"team": "CAR",
+"rank": 365,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.5,
+"adj_pg": 4.5,
+"proj_posrank": 33,
+"adj_posrank": 33,
+"flags": []
+},
+"caleb williams": {
+"name": "Caleb Williams",
+"pos": "QB",
+"team": "CHI",
+"rank": 64,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 17.2,
+"adj_pg": 17.2,
+"proj_posrank": 15,
+"adj_posrank": 15,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dandre swift": {
+"name": "D'Andre Swift",
+"pos": "RB",
+"team": "CHI",
+"rank": 53,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.4,
+"adj_pg": 12.4,
+"proj_posrank": 22,
+"adj_posrank": 22,
+"flags": []
+},
+"kyle monangai": {
+"name": "Kyle Monangai",
+"pos": "RB",
+"team": "CHI",
+"rank": 104,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.1,
+"adj_pg": 10.1,
+"proj_posrank": 35,
+"adj_posrank": 34,
+"flags": []
+},
+"luther burden": {
+"name": "Luther Burden III",
+"pos": "WR",
+"team": "CHI",
+"rank": 43,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 12.0,
+"adj_pg": 12.0,
+"proj_posrank": 29,
+"adj_posrank": 29,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"rome odunze": {
+"name": "Rome Odunze",
+"pos": "WR",
+"team": "CHI",
+"rank": 61,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 12.4,
+"adj_pg": 12.4,
+"proj_posrank": 26,
+"adj_posrank": 26,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"zavion thomas": {
+"name": "Zavion Thomas",
+"pos": "WR",
+"team": "CHI",
+"rank": 310,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 0.4,
+"adj_pg": 0.4,
+"proj_posrank": 136,
+"adj_posrank": 136,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"kalif raymond": {
+"name": "Kalif Raymond",
+"pos": "WR",
+"team": "CHI",
+"rank": 313,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 98,
+"adj_posrank": 98,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jahdae walker": {
+"name": "Jahdae Walker",
+"pos": "WR",
+"team": "CHI",
+"rank": 326,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.1,
+"adj_pg": 1.1,
+"proj_posrank": 130,
+"adj_posrank": 130,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"colston loveland": {
+"name": "Colston Loveland",
+"pos": "TE",
+"team": "CHI",
+"rank": 38,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 12.1,
+"adj_pg": 12.1,
+"proj_posrank": 4,
+"adj_posrank": 3,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"cole kmet": {
+"name": "Cole Kmet",
+"pos": "TE",
+"team": "CHI",
+"rank": 307,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.3,
+"adj_pg": 3.3,
+"proj_posrank": 42,
+"adj_posrank": 42,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"sam roush": {
+"name": "Sam Roush",
+"pos": "TE",
+"team": "CHI",
+"rank": 359,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"joe burrow": {
+"name": "Joe Burrow",
+"pos": "QB",
+"team": "CIN",
+"rank": 62,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 18.6,
+"adj_pg": 18.6,
+"proj_posrank": 7,
+"adj_posrank": 7,
+"flags": []
+},
+"joe flacco": {
+"name": "Joe Flacco",
+"pos": "QB",
+"team": "CIN",
+"rank": 260,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.6,
+"adj_pg": 0.6,
+"proj_posrank": 38,
+"adj_posrank": 38,
+"flags": []
+},
+"chase brown": {
+"name": "Chase Brown",
+"pos": "RB",
+"team": "CIN",
+"rank": 21,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.0,
+"adj_pg": 16.0,
+"proj_posrank": 14,
+"adj_posrank": 14,
+"flags": []
+},
+"samaje perine": {
+"name": "Samaje Perine",
+"pos": "RB",
+"team": "CIN",
+"rank": 241,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.0,
+"adj_pg": 6.0,
+"proj_posrank": 47,
+"adj_posrank": 47,
+"flags": []
+},
+"tahj brooks": {
+"name": "Tahj Brooks",
+"pos": "RB",
+"team": "CIN",
+"rank": 389,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.1,
+"adj_pg": 1.1,
+"proj_posrank": 81,
+"adj_posrank": 81,
+"flags": []
+},
+"jamarr chase": {
+"name": "Ja'Marr Chase",
+"pos": "WR",
+"team": "CIN",
+"rank": 6,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 19.9,
+"adj_pg": 19.9,
+"proj_posrank": 2,
+"adj_posrank": 2,
+"flags": []
+},
+"tee higgins": {
+"name": "Tee Higgins",
+"pos": "WR",
+"team": "CIN",
+"rank": 35,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.7,
+"adj_pg": 12.7,
+"proj_posrank": 22,
+"adj_posrank": 22,
+"flags": []
+},
+"andrei iosivas": {
+"name": "Andrei Iosivas",
+"pos": "WR",
+"team": "CIN",
+"rank": 276,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.6,
+"adj_pg": 4.6,
+"proj_posrank": 84,
+"adj_posrank": 84,
+"flags": []
+},
+"colbie young": {
+"name": "Colbie Young",
+"pos": "WR",
+"team": "CIN",
+"rank": 364,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.4,
+"adj_pg": 0.4,
+"proj_posrank": 137,
+"adj_posrank": 137,
+"flags": []
+},
+"mike gesicki": {
+"name": "Mike Gesicki",
+"pos": "TE",
+"team": "CIN",
+"rank": 213,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.4,
+"adj_pg": 6.4,
+"proj_posrank": 28,
+"adj_posrank": 28,
+"flags": []
+},
+"jack endries": {
+"name": "Jack Endries",
+"pos": "TE",
+"team": "CIN",
+"rank": 308,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"erick all": {
+"name": "Erick All Jr.",
+"pos": "TE",
+"team": "CIN",
+"rank": 377,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.3,
+"adj_pg": 2.3,
+"proj_posrank": 44,
+"adj_posrank": 44,
+"flags": []
+},
+"deshaun watson": {
+"name": "Deshaun Watson",
+"pos": "QB",
+"team": "CLE",
+"rank": 223,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.9,
+"adj_pg": 7.9,
+"proj_posrank": 31,
+"adj_posrank": 31,
+"flags": []
+},
+"shedeur sanders": {
+"name": "Shedeur Sanders",
+"pos": "QB",
+"team": "CLE",
+"rank": 224,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.2,
+"adj_pg": 6.2,
+"proj_posrank": 34,
+"adj_posrank": 34,
+"flags": []
+},
+"quinshon judkins": {
+"name": "Quinshon Judkins",
+"pos": "RB",
+"team": "CLE",
+"rank": 57,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 13.3,
+"adj_pg": 13.3,
+"proj_posrank": 19,
+"adj_posrank": 19,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~64 pctl: NYG, BAL, IND)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dylan sampson": {
+"name": "Dylan Sampson",
+"pos": "RB",
+"team": "CLE",
+"rank": 178,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 5.0,
+"adj_pg": 5.0,
+"proj_posrank": 51,
+"adj_posrank": 51,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~64 pctl: NYG, BAL, IND)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"kc concepcion": {
+"name": "KC Concepcion",
+"pos": "WR",
+"team": "CLE",
+"rank": 127,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.4,
+"adj_pg": 9.4,
+"proj_posrank": 52,
+"adj_posrank": 52,
+"flags": []
+},
+"denzel boston": {
+"name": "Denzel Boston",
+"pos": "WR",
+"team": "CLE",
+"rank": 160,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.9,
+"adj_pg": 7.9,
+"proj_posrank": 60,
+"adj_posrank": 60,
+"flags": []
+},
+"jerry jeudy": {
+"name": "Jerry Jeudy",
+"pos": "WR",
+"team": "CLE",
+"rank": 189,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.2,
+"adj_pg": 8.2,
+"proj_posrank": 57,
+"adj_posrank": 57,
+"flags": []
+},
+"cedric tillman": {
+"name": "Cedric Tillman",
+"pos": "WR",
+"team": "CLE",
+"rank": 268,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.5,
+"adj_pg": 1.5,
+"proj_posrank": 127,
+"adj_posrank": 127,
+"flags": []
+},
+"isaiah bond": {
+"name": "Isaiah Bond",
+"pos": "WR",
+"team": "CLE",
+"rank": 318,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.9,
+"adj_pg": 0.9,
+"proj_posrank": 133,
+"adj_posrank": 133,
+"flags": []
+},
+"harold fannin": {
+"name": "Harold Fannin Jr.",
+"pos": "TE",
+"team": "CLE",
+"rank": 96,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.9,
+"adj_pg": 10.9,
+"proj_posrank": 7,
+"adj_posrank": 7,
+"flags": []
+},
+"dak prescott": {
+"name": "Dak Prescott",
+"pos": "QB",
+"team": "DAL",
+"rank": 73,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 17.8,
+"adj_pg": 17.8,
+"proj_posrank": 12,
+"adj_posrank": 12,
+"flags": []
+},
+"joe milton": {
+"name": "Joe Milton III",
+"pos": "QB",
+"team": "DAL",
+"rank": 344,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.6,
+"adj_pg": 0.6,
+"proj_posrank": 39,
+"adj_posrank": 39,
+"flags": []
+},
+"javonte williams": {
+"name": "Javonte Williams",
+"pos": "RB",
+"team": "DAL",
+"rank": 33,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 15.4,
+"adj_pg": 15.4,
+"proj_posrank": 15,
+"adj_posrank": 15,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jaydon blue": {
+"name": "Jaydon Blue",
+"pos": "RB",
+"team": "DAL",
+"rank": 216,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.9,
+"adj_pg": 1.9,
+"proj_posrank": 71,
+"adj_posrank": 71,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"malik davis": {
+"name": "Malik Davis",
+"pos": "RB",
+"team": "DAL",
+"rank": 292,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 2.8,
+"adj_pg": 2.8,
+"proj_posrank": 62,
+"adj_posrank": 62,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"phil mafah": {
+"name": "Phil Mafah",
+"pos": "RB",
+"team": "DAL",
+"rank": 361,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"ceedee lamb": {
+"name": "CeeDee Lamb",
+"pos": "WR",
+"team": "DAL",
+"rank": 8,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 17.5,
+"adj_pg": 17.5,
+"proj_posrank": 5,
+"adj_posrank": 5,
+"flags": []
+},
+"george pickens": {
+"name": "George Pickens",
+"pos": "WR",
+"team": "DAL",
+"rank": 18,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.1,
+"adj_pg": 14.1,
+"proj_posrank": 15,
+"adj_posrank": 14,
+"flags": []
+},
+"ryan flournoy": {
+"name": "Ryan Flournoy",
+"pos": "WR",
+"team": "DAL",
+"rank": 164,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.4,
+"adj_pg": 5.4,
+"proj_posrank": 77,
+"adj_posrank": 76,
+"flags": []
+},
+"kavontae turpin": {
+"name": "KaVontae Turpin",
+"pos": "WR",
+"team": "DAL",
+"rank": 320,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 99,
+"adj_posrank": 99,
+"flags": []
+},
+"jake ferguson": {
+"name": "Jake Ferguson",
+"pos": "TE",
+"team": "DAL",
+"rank": 130,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.9,
+"adj_pg": 9.9,
+"proj_posrank": 12,
+"adj_posrank": 12,
+"flags": []
+},
+"michael trigg": {
+"name": "Michael Trigg",
+"pos": "TE",
+"team": "DAL",
+"rank": 293,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"bo nix": {
+"name": "Bo Nix",
+"pos": "QB",
+"team": "DEN",
+"rank": 110,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 18.1,
+"adj_pg": 18.1,
+"proj_posrank": 10,
+"adj_posrank": 10,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"rj harvey": {
+"name": "RJ Harvey",
+"pos": "RB",
+"team": "DEN",
+"rank": 92,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.0,
+"adj_pg": 10.0,
+"proj_posrank": 36,
+"adj_posrank": 35,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~65 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jk dobbins": {
+"name": "J.K. Dobbins",
+"pos": "RB",
+"team": "DEN",
+"rank": 108,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.4,
+"adj_pg": 10.4,
+"proj_posrank": 33,
+"adj_posrank": 32,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~65 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jonah coleman": {
+"name": "Jonah Coleman",
+"pos": "RB",
+"team": "DEN",
+"rank": 173,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.7,
+"adj_pg": 1.7,
+"proj_posrank": 75,
+"adj_posrank": 75,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~65 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jaylen waddle": {
+"name": "Jaylen Waddle",
+"pos": "WR",
+"team": "DEN",
+"rank": 45,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 12.5,
+"adj_pg": 12.5,
+"proj_posrank": 25,
+"adj_posrank": 25,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"courtland sutton": {
+"name": "Courtland Sutton",
+"pos": "WR",
+"team": "DEN",
+"rank": 86,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 12.1,
+"adj_pg": 12.1,
+"proj_posrank": 28,
+"adj_posrank": 28,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"troy franklin": {
+"name": "Troy Franklin",
+"pos": "WR",
+"team": "DEN",
+"rank": 228,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.0,
+"adj_pg": 3.0,
+"proj_posrank": 111,
+"adj_posrank": 111,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"pat bryant": {
+"name": "Pat Bryant",
+"pos": "WR",
+"team": "DEN",
+"rank": 236,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 4.2,
+"adj_pg": 4.2,
+"proj_posrank": 87,
+"adj_posrank": 87,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"marvin mims": {
+"name": "Marvin Mims Jr.",
+"pos": "WR",
+"team": "DEN",
+"rank": 315,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 4.0,
+"adj_pg": 4.0,
+"proj_posrank": 89,
+"adj_posrank": 89,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"evan engram": {
+"name": "Evan Engram",
+"pos": "TE",
+"team": "DEN",
+"rank": 233,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 6.2,
+"adj_pg": 6.2,
+"proj_posrank": 30,
+"adj_posrank": 30,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"justin joly": {
+"name": "Justin Joly",
+"pos": "TE",
+"team": "DEN",
+"rank": 391,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jared goff": {
+"name": "Jared Goff",
+"pos": "QB",
+"team": "DET",
+"rank": 101,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.8,
+"adj_pg": 16.8,
+"proj_posrank": 16,
+"adj_posrank": 16,
+"flags": []
+},
+"jahmyr gibbs": {
+"name": "Jahmyr Gibbs",
+"pos": "RB",
+"team": "DET",
+"rank": 2,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 21.3,
+"adj_pg": 21.3,
+"proj_posrank": 1,
+"adj_posrank": 1,
+"flags": []
+},
+"isiah pacheco": {
+"name": "Isiah Pacheco",
+"pos": "RB",
+"team": "DET",
+"rank": 150,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.5,
+"adj_pg": 7.5,
+"proj_posrank": 42,
+"adj_posrank": 42,
+"flags": []
+},
+"amon ra st brown": {
+"name": "Amon-Ra St. Brown",
+"pos": "WR",
+"team": "DET",
+"rank": 7,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 19.0,
+"adj_pg": 19.0,
+"proj_posrank": 4,
+"adj_posrank": 4,
+"flags": []
+},
+"jameson williams": {
+"name": "Jameson Williams",
+"pos": "WR",
+"team": "DET",
+"rank": 46,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.6,
+"adj_pg": 12.6,
+"proj_posrank": 23,
+"adj_posrank": 23,
+"flags": []
+},
+"isaac teslaa": {
+"name": "Isaac TeSlaa",
+"pos": "WR",
+"team": "DET",
+"rank": 175,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.2,
+"adj_pg": 4.2,
+"proj_posrank": 88,
+"adj_posrank": 88,
+"flags": []
+},
+"greg dortch": {
+"name": "Greg Dortch",
+"pos": "WR",
+"team": "DET",
+"rank": 304,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.6,
+"adj_pg": 0.6,
+"proj_posrank": 135,
+"adj_posrank": 135,
+"flags": []
+},
+"sam laporta": {
+"name": "Sam LaPorta",
+"pos": "TE",
+"team": "DET",
+"rank": 88,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.0,
+"adj_pg": 11.0,
+"proj_posrank": 6,
+"adj_posrank": 6,
+"flags": []
+},
+"jordan love": {
+"name": "Jordan Love",
+"pos": "QB",
+"team": "GB",
+"rank": 109,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.2,
+"adj_pg": 16.2,
+"proj_posrank": 20,
+"adj_posrank": 20,
+"flags": []
+},
+"josh jacobs": {
+"name": "Josh Jacobs",
+"pos": "RB",
+"team": "GB",
+"rank": 48,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.3,
+"adj_pg": 16.3,
+"proj_posrank": 10,
+"adj_posrank": 10,
+"flags": []
+},
+"marshawn lloyd": {
+"name": "MarShawn Lloyd",
+"pos": "RB",
+"team": "GB",
+"rank": 211,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.9,
+"adj_pg": 3.9,
+"proj_posrank": 55,
+"adj_posrank": 55,
+"flags": []
+},
+"chris brooks": {
+"name": "Chris Brooks",
+"pos": "RB",
+"team": "GB",
+"rank": 244,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.9,
+"adj_pg": 2.9,
+"proj_posrank": 61,
+"adj_posrank": 61,
+"flags": []
+},
+"damien martinez": {
+"name": "Damien Martinez",
+"pos": "RB",
+"team": "GB",
+"rank": 362,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"christian watson": {
+"name": "Christian Watson",
+"pos": "WR",
+"team": "GB",
+"rank": 49,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.9,
+"adj_pg": 10.9,
+"proj_posrank": 36,
+"adj_posrank": 36,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"jayden reed": {
+"name": "Jayden Reed",
+"pos": "WR",
+"team": "GB",
+"rank": 97,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.8,
+"adj_pg": 9.8,
+"proj_posrank": 48,
+"adj_posrank": 48,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"matthew golden": {
+"name": "Matthew Golden",
+"pos": "WR",
+"team": "GB",
+"rank": 113,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.0,
+"adj_pg": 11.0,
+"proj_posrank": 35,
+"adj_posrank": 35,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"savion williams": {
+"name": "Savion Williams",
+"pos": "WR",
+"team": "GB",
+"rank": 372,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.0,
+"adj_pg": 4.0,
+"proj_posrank": 90,
+"adj_posrank": 90,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"tucker kraft": {
+"name": "Tucker Kraft",
+"pos": "TE",
+"team": "GB",
+"rank": 84,
+"total": 1,
+"playoff": 0,
+"avail": 0.97,
+"pg": 9.5,
+"adj_pg": 9.2,
+"proj_posrank": 13,
+"adj_posrank": 15,
+"flags": [
+{
+"code": "INJ",
+"label": "injury: full go (~0.5 g lost, avail 97%)",
+"sev": 1,
+"cat": "availability",
+"playoff": false
+}
+]
+},
+"luke musgrave": {
+"name": "Luke Musgrave",
+"pos": "TE",
+"team": "GB",
+"rank": 367,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.0,
+"adj_pg": 2.0,
+"proj_posrank": 48,
+"adj_posrank": 48,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"cj stroud": {
+"name": "C.J. Stroud",
+"pos": "QB",
+"team": "HOU",
+"rank": 132,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 15.3,
+"adj_pg": 15.3,
+"proj_posrank": 24,
+"adj_posrank": 24,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"david montgomery": {
+"name": "David Montgomery",
+"pos": "RB",
+"team": "HOU",
+"rank": 54,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.5,
+"adj_pg": 11.5,
+"proj_posrank": 25,
+"adj_posrank": 24,
+"flags": []
+},
+"woody marks": {
+"name": "Woody Marks",
+"pos": "RB",
+"team": "HOU",
+"rank": 152,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.4,
+"adj_pg": 7.4,
+"proj_posrank": 43,
+"adj_posrank": 43,
+"flags": []
+},
+"nico collins": {
+"name": "Nico Collins",
+"pos": "WR",
+"team": "HOU",
+"rank": 22,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 14.8,
+"adj_pg": 14.8,
+"proj_posrank": 10,
+"adj_posrank": 10,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jayden higgins": {
+"name": "Jayden Higgins",
+"pos": "WR",
+"team": "HOU",
+"rank": 136,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 8.2,
+"adj_pg": 8.2,
+"proj_posrank": 58,
+"adj_posrank": 58,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"tank dell": {
+"name": "Tank Dell",
+"pos": "WR",
+"team": "HOU",
+"rank": 186,
+"total": 2,
+"playoff": 1,
+"avail": 0.85,
+"pg": 6.3,
+"adj_pg": 5.4,
+"proj_posrank": 69,
+"adj_posrank": 77,
+"flags": [
+{
+"code": "INJ",
+"label": "injury: week1 monitor (~2.5 g lost, avail 85%)",
+"sev": 1,
+"cat": "availability",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jaylin noel": {
+"name": "Jaylin Noel",
+"pos": "WR",
+"team": "HOU",
+"rank": 240,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.2,
+"adj_pg": 3.2,
+"proj_posrank": 107,
+"adj_posrank": 107,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"xavier hutchinson": {
+"name": "Xavier Hutchinson",
+"pos": "WR",
+"team": "HOU",
+"rank": 393,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 2.9,
+"adj_pg": 2.9,
+"proj_posrank": 113,
+"adj_posrank": 113,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dalton schultz": {
+"name": "Dalton Schultz",
+"pos": "TE",
+"team": "HOU",
+"rank": 168,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 7.9,
+"adj_pg": 7.9,
+"proj_posrank": 22,
+"adj_posrank": 22,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"daniel jones": {
+"name": "Daniel Jones",
+"pos": "QB",
+"team": "IND",
+"rank": 137,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.8,
+"adj_pg": 16.8,
+"proj_posrank": 17,
+"adj_posrank": 17,
+"flags": []
+},
+"anthony richardson": {
+"name": "Anthony Richardson Sr.",
+"pos": "QB",
+"team": "IND",
+"rank": 270,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"riley leonard": {
+"name": "Riley Leonard",
+"pos": "QB",
+"team": "IND",
+"rank": 382,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"jonathan taylor": {
+"name": "Jonathan Taylor",
+"pos": "RB",
+"team": "IND",
+"rank": 5,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 18.3,
+"adj_pg": 18.3,
+"proj_posrank": 4,
+"adj_posrank": 4,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~76 pctl: TEN, CIN, CLE)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dj giddens": {
+"name": "DJ Giddens",
+"pos": "RB",
+"team": "IND",
+"rank": 316,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 2.0,
+"adj_pg": 2.0,
+"proj_posrank": 70,
+"adj_posrank": 70,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~76 pctl: TEN, CIN, CLE)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"seth mcgowan": {
+"name": "Seth McGowan",
+"pos": "RB",
+"team": "IND",
+"rank": 363,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 0.7,
+"adj_pg": 0.7,
+"proj_posrank": 83,
+"adj_posrank": 83,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~76 pctl: TEN, CIN, CLE)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"alec pierce": {
+"name": "Alec Pierce",
+"pos": "WR",
+"team": "IND",
+"rank": 74,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.8,
+"adj_pg": 11.8,
+"proj_posrank": 30,
+"adj_posrank": 30,
+"flags": []
+},
+"josh downs": {
+"name": "Josh Downs",
+"pos": "WR",
+"team": "IND",
+"rank": 102,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.8,
+"adj_pg": 9.8,
+"proj_posrank": 49,
+"adj_posrank": 49,
+"flags": []
+},
+"deion burks": {
+"name": "Deion Burks",
+"pos": "WR",
+"team": "IND",
+"rank": 335,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"nick westbrook ikhine": {
+"name": "Nick Westbrook-Ikhine",
+"pos": "WR",
+"team": "IND",
+"rank": 384,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.6,
+"adj_pg": 5.6,
+"proj_posrank": 76,
+"adj_posrank": 75,
+"flags": []
+},
+"tyler warren": {
+"name": "Tyler Warren",
+"pos": "TE",
+"team": "IND",
+"rank": 66,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.1,
+"adj_pg": 12.1,
+"proj_posrank": 5,
+"adj_posrank": 4,
+"flags": []
+},
+"trevor lawrence": {
+"name": "Trevor Lawrence",
+"pos": "QB",
+"team": "JAX",
+"rank": 79,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 18.1,
+"adj_pg": 18.1,
+"proj_posrank": 11,
+"adj_posrank": 11,
+"flags": []
+},
+"bhayshul tuten": {
+"name": "Bhayshul Tuten",
+"pos": "RB",
+"team": "JAX",
+"rank": 60,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.1,
+"adj_pg": 12.1,
+"proj_posrank": 23,
+"adj_posrank": 23,
+"flags": []
+},
+"chris rodriguez": {
+"name": "Chris Rodriguez Jr.",
+"pos": "RB",
+"team": "JAX",
+"rank": 141,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.0,
+"adj_pg": 4.0,
+"proj_posrank": 54,
+"adj_posrank": 54,
+"flags": []
+},
+"jmari taylor": {
+"name": "J'Mari Taylor",
+"pos": "RB",
+"team": "JAX",
+"rank": 281,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"lequint allen": {
+"name": "LeQuint Allen Jr.",
+"pos": "RB",
+"team": "JAX",
+"rank": 330,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.7,
+"adj_pg": 2.7,
+"proj_posrank": 63,
+"adj_posrank": 63,
+"flags": []
+},
+"brian thomas": {
+"name": "Brian Thomas Jr.",
+"pos": "WR",
+"team": "JAX",
+"rank": 67,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.3,
+"adj_pg": 10.3,
+"proj_posrank": 42,
+"adj_posrank": 42,
+"flags": []
+},
+"parker washington": {
+"name": "Parker Washington",
+"pos": "WR",
+"team": "JAX",
+"rank": 69,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.8,
+"adj_pg": 10.8,
+"proj_posrank": 37,
+"adj_posrank": 37,
+"flags": []
+},
+"jakobi meyers": {
+"name": "Jakobi Meyers",
+"pos": "WR",
+"team": "JAX",
+"rank": 106,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.6,
+"adj_pg": 10.6,
+"proj_posrank": 39,
+"adj_posrank": 39,
+"flags": []
+},
+"travis hunter": {
+"name": "Travis Hunter",
+"pos": "WR",
+"team": "JAX",
+"rank": 149,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.5,
+"adj_pg": 6.5,
+"proj_posrank": 68,
+"adj_posrank": 68,
+"flags": []
+},
+"brenton strange": {
+"name": "Brenton Strange",
+"pos": "TE",
+"team": "JAX",
+"rank": 145,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.4,
+"adj_pg": 8.4,
+"proj_posrank": 20,
+"adj_posrank": 20,
+"flags": []
+},
+"tanner koziol": {
+"name": "Tanner Koziol",
+"pos": "TE",
+"team": "JAX",
+"rank": 381,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"patrick mahomes": {
+"name": "Patrick Mahomes",
+"pos": "QB",
+"team": "KC",
+"rank": 90,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 17.8,
+"adj_pg": 17.8,
+"proj_posrank": 13,
+"adj_posrank": 13,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"justin fields": {
+"name": "Justin Fields",
+"pos": "QB",
+"team": "KC",
+"rank": 291,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 0.7,
+"adj_pg": 0.7,
+"proj_posrank": 37,
+"adj_posrank": 37,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"kenneth walker": {
+"name": "Kenneth Walker III",
+"pos": "RB",
+"team": "KC",
+"rank": 17,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"emmett johnson": {
+"name": "Emmett Johnson",
+"pos": "RB",
+"team": "KC",
+"rank": 202,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.7,
+"adj_pg": 2.7,
+"proj_posrank": 64,
+"adj_posrank": 64,
+"flags": []
+},
+"brashard smith": {
+"name": "Brashard Smith",
+"pos": "RB",
+"team": "KC",
+"rank": 283,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.0,
+"adj_pg": 0.0,
+"proj_posrank": 86,
+"adj_posrank": 86,
+"flags": []
+},
+"emari demercado": {
+"name": "Emari Demercado",
+"pos": "RB",
+"team": "KC",
+"rank": 355,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.8,
+"adj_pg": 3.8,
+"proj_posrank": 56,
+"adj_posrank": 56,
+"flags": []
+},
+"jaydn ott": {
+"name": "Jaydn Ott",
+"pos": "RB",
+"team": "KC",
+"rank": 425,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"rashee rice": {
+"name": "Rashee Rice",
+"pos": "WR",
+"team": "KC",
+"rank": 31,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 16.1,
+"adj_pg": 16.1,
+"proj_posrank": 7,
+"adj_posrank": 7,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"xavier worthy": {
+"name": "Xavier Worthy",
+"pos": "WR",
+"team": "KC",
+"rank": 115,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.4,
+"adj_pg": 10.4,
+"proj_posrank": 41,
+"adj_posrank": 41,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"tyquan thornton": {
+"name": "Tyquan Thornton",
+"pos": "WR",
+"team": "KC",
+"rank": 239,
+"total": 2,
+"playoff": 1,
+"avail": 1.0,
+"pg": 4.6,
+"adj_pg": 4.6,
+"proj_posrank": 85,
+"adj_posrank": 85,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"cyrus allen": {
+"name": "Cyrus Allen",
+"pos": "WR",
+"team": "KC",
+"rank": 256,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.2,
+"adj_pg": 1.2,
+"proj_posrank": 129,
+"adj_posrank": 129,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jalen royals": {
+"name": "Jalen Royals",
+"pos": "WR",
+"team": "KC",
+"rank": 373,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 2.9,
+"adj_pg": 2.9,
+"proj_posrank": 114,
+"adj_posrank": 114,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"travis kelce": {
+"name": "Travis Kelce",
+"pos": "TE",
+"team": "KC",
+"rank": 118,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.3,
+"adj_pg": 10.3,
+"proj_posrank": 10,
+"adj_posrank": 10,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"noah gray": {
+"name": "Noah Gray",
+"pos": "TE",
+"team": "KC",
+"rank": 360,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.4,
+"adj_pg": 3.4,
+"proj_posrank": 40,
+"adj_posrank": 40,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"justin herbert": {
+"name": "Justin Herbert",
+"pos": "QB",
+"team": "LAC",
+"rank": 77,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 17.6,
+"adj_pg": 17.6,
+"proj_posrank": 14,
+"adj_posrank": 14,
+"flags": []
+},
+"trey lance": {
+"name": "Trey Lance",
+"pos": "QB",
+"team": "LAC",
+"rank": 394,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"omarion hampton": {
+"name": "Omarion Hampton",
+"pos": "RB",
+"team": "LAC",
+"rank": 19,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.6,
+"adj_pg": 16.6,
+"proj_posrank": 7,
+"adj_posrank": 7,
+"flags": []
+},
+"keaton mitchell": {
+"name": "Keaton Mitchell",
+"pos": "RB",
+"team": "LAC",
+"rank": 146,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 57,
+"adj_posrank": 57,
+"flags": []
+},
+"kimani vidal": {
+"name": "Kimani Vidal",
+"pos": "RB",
+"team": "LAC",
+"rank": 215,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.1,
+"adj_pg": 2.1,
+"proj_posrank": 68,
+"adj_posrank": 68,
+"flags": []
+},
+"ladd mcconkey": {
+"name": "Ladd McConkey",
+"pos": "WR",
+"team": "LAC",
+"rank": 37,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.9,
+"adj_pg": 12.9,
+"proj_posrank": 20,
+"adj_posrank": 19,
+"flags": []
+},
+"quentin johnston": {
+"name": "Quentin Johnston",
+"pos": "WR",
+"team": "LAC",
+"rank": 76,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.8,
+"adj_pg": 9.8,
+"proj_posrank": 50,
+"adj_posrank": 50,
+"flags": []
+},
+"tre harris": {
+"name": "Tre' Harris",
+"pos": "WR",
+"team": "LAC",
+"rank": 183,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.2,
+"adj_pg": 5.2,
+"proj_posrank": 79,
+"adj_posrank": 79,
+"flags": []
+},
+"keandre lambert smith": {
+"name": "KeAndre Lambert-Smith",
+"pos": "WR",
+"team": "LAC",
+"rank": 269,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.7,
+"adj_pg": 1.7,
+"proj_posrank": 124,
+"adj_posrank": 124,
+"flags": []
+},
+"brenen thompson": {
+"name": "Brenen Thompson",
+"pos": "WR",
+"team": "LAC",
+"rank": 309,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.7,
+"adj_pg": 1.7,
+"proj_posrank": 125,
+"adj_posrank": 125,
+"flags": []
+},
+"oronde gadsden": {
+"name": "Oronde Gadsden II",
+"pos": "TE",
+"team": "LAC",
+"rank": 148,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.9,
+"adj_pg": 6.9,
+"proj_posrank": 25,
+"adj_posrank": 25,
+"flags": []
+},
+"david njoku": {
+"name": "David Njoku",
+"pos": "TE",
+"team": "LAC",
+"rank": 203,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.0,
+"adj_pg": 5.0,
+"proj_posrank": 31,
+"adj_posrank": 31,
+"flags": []
+},
+"charlie kolar": {
+"name": "Charlie Kolar",
+"pos": "TE",
+"team": "LAC",
+"rank": 332,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.2,
+"adj_pg": 1.2,
+"proj_posrank": 51,
+"adj_posrank": 51,
+"flags": []
+},
+"matthew stafford": {
+"name": "Matthew Stafford",
+"pos": "QB",
+"team": "LAR",
+"rank": 85,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 18.3,
+"adj_pg": 18.3,
+"proj_posrank": 9,
+"adj_posrank": 9,
+"flags": []
+},
+"ty simpson": {
+"name": "Ty Simpson",
+"pos": "QB",
+"team": "LAR",
+"rank": 356,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"kyren williams": {
+"name": "Kyren Williams",
+"pos": "RB",
+"team": "LAR",
+"rank": 28,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.5,
+"adj_pg": 14.5,
+"proj_posrank": 16,
+"adj_posrank": 16,
+"flags": []
+},
+"blake corum": {
+"name": "Blake Corum",
+"pos": "RB",
+"team": "LAR",
+"rank": 99,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.1,
+"adj_pg": 9.1,
+"proj_posrank": 38,
+"adj_posrank": 37,
+"flags": []
+},
+"jarquez hunter": {
+"name": "Jarquez Hunter",
+"pos": "RB",
+"team": "LAR",
+"rank": 287,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"puka nacua": {
+"name": "Puka Nacua",
+"pos": "WR",
+"team": "LAR",
+"rank": 1,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 21.1,
+"adj_pg": 21.1,
+"proj_posrank": 1,
+"adj_posrank": 1,
+"flags": []
+},
+"davante adams": {
+"name": "Davante Adams",
+"pos": "WR",
+"team": "LAR",
+"rank": 41,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 13.9,
+"adj_pg": 13.9,
+"proj_posrank": 18,
+"adj_posrank": 17,
+"flags": []
+},
+"cj daniels": {
+"name": "CJ Daniels",
+"pos": "WR",
+"team": "LAR",
+"rank": 319,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.4,
+"adj_pg": 0.4,
+"proj_posrank": 138,
+"adj_posrank": 138,
+"flags": []
+},
+"jordan whittington": {
+"name": "Jordan Whittington",
+"pos": "WR",
+"team": "LAR",
+"rank": 350,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.3,
+"adj_pg": 2.3,
+"proj_posrank": 119,
+"adj_posrank": 119,
+"flags": []
+},
+"colby parkinson": {
+"name": "Colby Parkinson",
+"pos": "TE",
+"team": "LAR",
+"rank": 199,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.9,
+"adj_pg": 3.9,
+"proj_posrank": 36,
+"adj_posrank": 36,
+"flags": []
+},
+"terrance ferguson": {
+"name": "Terrance Ferguson",
+"pos": "TE",
+"team": "LAR",
+"rank": 204,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.4,
+"adj_pg": 7.4,
+"proj_posrank": 23,
+"adj_posrank": 23,
+"flags": []
+},
+"tyler higbee": {
+"name": "Tyler Higbee",
+"pos": "TE",
+"team": "LAR",
+"rank": 340,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.1,
+"adj_pg": 2.1,
+"proj_posrank": 46,
+"adj_posrank": 46,
+"flags": []
+},
+"max klare": {
+"name": "Max Klare",
+"pos": "TE",
+"team": "LAR",
+"rank": 387,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.5,
+"adj_pg": 0.5,
+"proj_posrank": 52,
+"adj_posrank": 52,
+"flags": []
+},
+"fernando mendoza": {
+"name": "Fernando Mendoza",
+"pos": "QB",
+"team": "LV",
+"rank": 174,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.9,
+"adj_pg": 11.9,
+"proj_posrank": 30,
+"adj_posrank": 30,
+"flags": []
+},
+"kirk cousins": {
+"name": "Kirk Cousins",
+"pos": "QB",
+"team": "LV",
+"rank": 231,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.8,
+"adj_pg": 2.8,
+"proj_posrank": 35,
+"adj_posrank": 35,
+"flags": []
+},
+"ashton jeanty": {
+"name": "Ashton Jeanty",
+"pos": "RB",
+"team": "LV",
+"rank": 14,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.6,
+"adj_pg": 16.6,
+"proj_posrank": 8,
+"adj_posrank": 8,
+"flags": []
+},
+"mike washington": {
+"name": "Mike Washington Jr.",
+"pos": "RB",
+"team": "LV",
+"rank": 212,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 58,
+"adj_posrank": 58,
+"flags": []
+},
+"roman hemby": {
+"name": "Roman Hemby",
+"pos": "RB",
+"team": "LV",
+"rank": 248,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"jalen nailor": {
+"name": "Jalen Nailor",
+"pos": "WR",
+"team": "LV",
+"rank": 159,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.8,
+"adj_pg": 6.8,
+"proj_posrank": 64,
+"adj_posrank": 64,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"tre tucker": {
+"name": "Tre Tucker",
+"pos": "WR",
+"team": "LV",
+"rank": 165,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.1,
+"adj_pg": 8.1,
+"proj_posrank": 59,
+"adj_posrank": 59,
+"flags": []
+},
+"malik benson": {
+"name": "Malik Benson",
+"pos": "WR",
+"team": "LV",
+"rank": 275,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"donte thornton": {
+"name": "Dont'e Thornton Jr.",
+"pos": "WR",
+"team": "LV",
+"rank": 324,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.5,
+"adj_pg": 2.5,
+"proj_posrank": 116,
+"adj_posrank": 116,
+"flags": []
+},
+"jack bech": {
+"name": "Jack Bech",
+"pos": "WR",
+"team": "LV",
+"rank": 325,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.0,
+"adj_pg": 6.0,
+"proj_posrank": 74,
+"adj_posrank": 73,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"brock bowers": {
+"name": "Brock Bowers",
+"pos": "TE",
+"team": "LV",
+"rank": 26,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.2,
+"adj_pg": 14.2,
+"proj_posrank": 2,
+"adj_posrank": 2,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"michael mayer": {
+"name": "Michael Mayer",
+"pos": "TE",
+"team": "LV",
+"rank": 323,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.7,
+"adj_pg": 4.7,
+"proj_posrank": 32,
+"adj_posrank": 32,
+"flags": []
+},
+"malik willis": {
+"name": "Malik Willis",
+"pos": "QB",
+"team": "MIA",
+"rank": 134,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 15.1,
+"adj_pg": 15.1,
+"proj_posrank": 25,
+"adj_posrank": 25,
+"flags": []
+},
+"quinn ewers": {
+"name": "Quinn Ewers",
+"pos": "QB",
+"team": "MIA",
+"rank": 289,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"devon achane": {
+"name": "De'Von Achane",
+"pos": "RB",
+"team": "MIA",
+"rank": 16,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 17.6,
+"adj_pg": 17.6,
+"proj_posrank": 5,
+"adj_posrank": 5,
+"flags": []
+},
+"ollie gordon": {
+"name": "Ollie Gordon II",
+"pos": "RB",
+"team": "MIA",
+"rank": 265,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.8,
+"adj_pg": 1.8,
+"proj_posrank": 74,
+"adj_posrank": 74,
+"flags": []
+},
+"jaylen wright": {
+"name": "Jaylen Wright",
+"pos": "RB",
+"team": "MIA",
+"rank": 278,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.4,
+"adj_pg": 2.4,
+"proj_posrank": 66,
+"adj_posrank": 66,
+"flags": []
+},
+"malik washington": {
+"name": "Malik Washington",
+"pos": "WR",
+"team": "MIA",
+"rank": 166,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.1,
+"adj_pg": 6.1,
+"proj_posrank": 72,
+"adj_posrank": 71,
+"flags": []
+},
+"chris bell": {
+"name": "Chris Bell",
+"pos": "WR",
+"team": "MIA",
+"rank": 218,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.2,
+"adj_pg": 6.2,
+"proj_posrank": 71,
+"adj_posrank": 70,
+"flags": []
+},
+"jalen tolbert": {
+"name": "Jalen Tolbert",
+"pos": "WR",
+"team": "MIA",
+"rank": 255,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.9,
+"adj_pg": 3.9,
+"proj_posrank": 92,
+"adj_posrank": 92,
+"flags": []
+},
+"tutu atwell": {
+"name": "Tutu Atwell",
+"pos": "WR",
+"team": "MIA",
+"rank": 329,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.0,
+"adj_pg": 3.0,
+"proj_posrank": 112,
+"adj_posrank": 112,
+"flags": []
+},
+"caleb douglas": {
+"name": "Caleb Douglas",
+"pos": "WR",
+"team": "MIA",
+"rank": 336,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.3,
+"adj_pg": 5.3,
+"proj_posrank": 78,
+"adj_posrank": 78,
+"flags": []
+},
+"kevin coleman": {
+"name": "Kevin Coleman Jr.",
+"pos": "WR",
+"team": "MIA",
+"rank": 368,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.2,
+"adj_pg": 3.2,
+"proj_posrank": 108,
+"adj_posrank": 108,
+"flags": []
+},
+"greg dulcich": {
+"name": "Greg Dulcich",
+"pos": "TE",
+"team": "MIA",
+"rank": 176,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.7,
+"adj_pg": 6.7,
+"proj_posrank": 26,
+"adj_posrank": 26,
+"flags": []
+},
+"kyler murray": {
+"name": "Kyler Murray",
+"pos": "QB",
+"team": "MIN",
+"rank": 117,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 15.4,
+"adj_pg": 15.4,
+"proj_posrank": 23,
+"adj_posrank": 23,
+"flags": []
+},
+"jj mccarthy": {
+"name": "J.J. McCarthy",
+"pos": "QB",
+"team": "MIN",
+"rank": 247,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.6,
+"adj_pg": 2.6,
+"proj_posrank": 36,
+"adj_posrank": 36,
+"flags": []
+},
+"aaron jones": {
+"name": "Aaron Jones Sr.",
+"pos": "RB",
+"team": "MIN",
+"rank": 123,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 11.3,
+"adj_pg": 11.3,
+"proj_posrank": 28,
+"adj_posrank": 27,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~65 pctl: DET, WAS, NYJ)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jordan mason": {
+"name": "Jordan Mason",
+"pos": "RB",
+"team": "MIN",
+"rank": 133,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 7.4,
+"adj_pg": 7.4,
+"proj_posrank": 44,
+"adj_posrank": 44,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~65 pctl: DET, WAS, NYJ)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"demond claiborne": {
+"name": "Demond Claiborne",
+"pos": "RB",
+"team": "MIN",
+"rank": 229,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.5,
+"adj_pg": 1.5,
+"proj_posrank": 79,
+"adj_posrank": 79,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~65 pctl: DET, WAS, NYJ)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"justin jefferson": {
+"name": "Justin Jefferson",
+"pos": "WR",
+"team": "MIN",
+"rank": 12,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 17.2,
+"adj_pg": 17.2,
+"proj_posrank": 6,
+"adj_posrank": 6,
+"flags": []
+},
+"jordan addison": {
+"name": "Jordan Addison",
+"pos": "WR",
+"team": "MIN",
+"rank": 105,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.9,
+"adj_pg": 9.9,
+"proj_posrank": 46,
+"adj_posrank": 46,
+"flags": []
+},
+"jauan jennings": {
+"name": "Jauan Jennings",
+"pos": "WR",
+"team": "MIN",
+"rank": 158,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.6,
+"adj_pg": 6.6,
+"proj_posrank": 67,
+"adj_posrank": 67,
+"flags": []
+},
+"tj hockenson": {
+"name": "T.J. Hockenson",
+"pos": "TE",
+"team": "MIN",
+"rank": 167,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.4,
+"adj_pg": 9.4,
+"proj_posrank": 14,
+"adj_posrank": 13,
+"flags": []
+},
+"drake maye": {
+"name": "Drake Maye",
+"pos": "QB",
+"team": "NE",
+"rank": 59,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 19.9,
+"adj_pg": 19.9,
+"proj_posrank": 3,
+"adj_posrank": 3,
+"flags": []
+},
+"treveyon henderson": {
+"name": "TreVeyon Henderson",
+"pos": "RB",
+"team": "NE",
+"rank": 58,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 12.5,
+"adj_pg": 12.5,
+"proj_posrank": 21,
+"adj_posrank": 21,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~67 pctl: KC, NYJ, DEN)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"rhamondre stevenson": {
+"name": "Rhamondre Stevenson",
+"pos": "RB",
+"team": "NE",
+"rank": 81,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 11.5,
+"adj_pg": 11.5,
+"proj_posrank": 26,
+"adj_posrank": 25,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~67 pctl: KC, NYJ, DEN)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"aj brown": {
+"name": "A.J. Brown",
+"pos": "WR",
+"team": "NE",
+"rank": 24,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.7,
+"adj_pg": 14.7,
+"proj_posrank": 11,
+"adj_posrank": 11,
+"flags": []
+},
+"romeo doubs": {
+"name": "Romeo Doubs",
+"pos": "WR",
+"team": "NE",
+"rank": 120,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.1,
+"adj_pg": 10.1,
+"proj_posrank": 45,
+"adj_posrank": 45,
+"flags": []
+},
+"kayshon boutte": {
+"name": "Kayshon Boutte",
+"pos": "WR",
+"team": "NE",
+"rank": 205,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.0,
+"adj_pg": 4.0,
+"proj_posrank": 91,
+"adj_posrank": 91,
+"flags": []
+},
+"mack hollins": {
+"name": "Mack Hollins",
+"pos": "WR",
+"team": "NE",
+"rank": 259,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.7,
+"adj_pg": 1.7,
+"proj_posrank": 126,
+"adj_posrank": 126,
+"flags": []
+},
+"demario douglas": {
+"name": "DeMario Douglas",
+"pos": "WR",
+"team": "NE",
+"rank": 301,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.4,
+"adj_pg": 3.4,
+"proj_posrank": 106,
+"adj_posrank": 106,
+"flags": []
+},
+"kyle williams": {
+"name": "Kyle Williams",
+"pos": "WR",
+"team": "NE",
+"rank": 409,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"hunter henry": {
+"name": "Hunter Henry",
+"pos": "TE",
+"team": "NE",
+"rank": 153,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.8,
+"adj_pg": 8.8,
+"proj_posrank": 18,
+"adj_posrank": 18,
+"flags": []
+},
+"eli raridon": {
+"name": "Eli Raridon",
+"pos": "TE",
+"team": "NE",
+"rank": 366,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.2,
+"adj_pg": 2.2,
+"proj_posrank": 45,
+"adj_posrank": 45,
+"flags": []
+},
+"tyler shough": {
+"name": "Tyler Shough",
+"pos": "QB",
+"team": "NO",
+"rank": 116,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.3,
+"adj_pg": 16.3,
+"proj_posrank": 19,
+"adj_posrank": 19,
+"flags": []
+},
+"travis etienne": {
+"name": "Travis Etienne Jr.",
+"pos": "RB",
+"team": "NO",
+"rank": 39,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.3,
+"adj_pg": 14.3,
+"proj_posrank": 18,
+"adj_posrank": 18,
+"flags": []
+},
+"alvin kamara": {
+"name": "Alvin Kamara",
+"pos": "RB",
+"team": "NO",
+"rank": 169,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.3,
+"adj_pg": 7.3,
+"proj_posrank": 45,
+"adj_posrank": 45,
+"flags": []
+},
+"audric estime": {
+"name": "Audric Estime",
+"pos": "RB",
+"team": "NO",
+"rank": 272,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"devin neal": {
+"name": "Devin Neal",
+"pos": "RB",
+"team": "NO",
+"rank": 342,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"chris olave": {
+"name": "Chris Olave",
+"pos": "WR",
+"team": "NO",
+"rank": 34,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.2,
+"adj_pg": 14.2,
+"proj_posrank": 14,
+"adj_posrank": 13,
+"flags": []
+},
+"jordyn tyson": {
+"name": "Jordyn Tyson",
+"pos": "WR",
+"team": "NO",
+"rank": 72,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.1,
+"adj_pg": 11.1,
+"proj_posrank": 34,
+"adj_posrank": 34,
+"flags": []
+},
+"bryce lance": {
+"name": "Bryce Lance",
+"pos": "WR",
+"team": "NO",
+"rank": 271,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.5,
+"adj_pg": 2.5,
+"proj_posrank": 117,
+"adj_posrank": 117,
+"flags": []
+},
+"devaughn vele": {
+"name": "Devaughn Vele",
+"pos": "WR",
+"team": "NO",
+"rank": 279,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 100,
+"adj_posrank": 100,
+"flags": []
+},
+"juwan johnson": {
+"name": "Juwan Johnson",
+"pos": "TE",
+"team": "NO",
+"rank": 147,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.5,
+"adj_pg": 8.5,
+"proj_posrank": 19,
+"adj_posrank": 19,
+"flags": []
+},
+"oscar delp": {
+"name": "Oscar Delp",
+"pos": "TE",
+"team": "NO",
+"rank": 297,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"noah fant": {
+"name": "Noah Fant",
+"pos": "TE",
+"team": "NO",
+"rank": 375,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.6,
+"adj_pg": 2.6,
+"proj_posrank": 43,
+"adj_posrank": 43,
+"flags": []
+},
+"jaxson dart": {
+"name": "Jaxson Dart",
+"pos": "QB",
+"team": "NYG",
+"rank": 98,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 18.8,
+"adj_pg": 18.8,
+"proj_posrank": 6,
+"adj_posrank": 6,
+"flags": []
+},
+"jameis winston": {
+"name": "Jameis Winston",
+"pos": "QB",
+"team": "NYG",
+"rank": 295,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"cam skattebo": {
+"name": "Cam Skattebo",
+"pos": "RB",
+"team": "NYG",
+"rank": 50,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 14.4,
+"adj_pg": 14.4,
+"proj_posrank": 17,
+"adj_posrank": 17,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~68 pctl: CLE, DET, DAL)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"tyrone tracy": {
+"name": "Tyrone Tracy Jr.",
+"pos": "RB",
+"team": "NYG",
+"rank": 139,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 4.8,
+"adj_pg": 4.8,
+"proj_posrank": 53,
+"adj_posrank": 53,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~68 pctl: CLE, DET, DAL)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"devin singletary": {
+"name": "Devin Singletary",
+"pos": "RB",
+"team": "NYG",
+"rank": 257,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.6,
+"adj_pg": 1.6,
+"proj_posrank": 76,
+"adj_posrank": 76,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~68 pctl: CLE, DET, DAL)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"malik nabers": {
+"name": "Malik Nabers",
+"pos": "WR",
+"team": "NYG",
+"rank": 40,
+"total": 1,
+"playoff": 0,
+"avail": 0.88,
+"pg": 14.7,
+"adj_pg": 12.9,
+"proj_posrank": 12,
+"adj_posrank": 20,
+"flags": [
+{
+"code": "INJ",
+"label": "injury: week1 monitor (~1.75 g lost, avail 88%)",
+"sev": 1,
+"cat": "availability",
+"playoff": false
+}
+]
+},
+"darnell mooney": {
+"name": "Darnell Mooney",
+"pos": "WR",
+"team": "NYG",
+"rank": 220,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.8,
+"adj_pg": 5.8,
+"proj_posrank": 75,
+"adj_posrank": 74,
+"flags": []
+},
+"malachi fields": {
+"name": "Malachi Fields",
+"pos": "WR",
+"team": "NYG",
+"rank": 221,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.0,
+"adj_pg": 2.0,
+"proj_posrank": 122,
+"adj_posrank": 122,
+"flags": []
+},
+"odell beckham": {
+"name": "Odell Beckham Jr.",
+"pos": "WR",
+"team": "NYG",
+"rank": 250,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.2,
+"adj_pg": 2.2,
+"proj_posrank": 120,
+"adj_posrank": 120,
+"flags": []
+},
+"juju smith schuster": {
+"name": "JuJu Smith-Schuster",
+"pos": "WR",
+"team": "NYG",
+"rank": 262,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.1,
+"adj_pg": 1.1,
+"proj_posrank": 131,
+"adj_posrank": 131,
+"flags": []
+},
+"calvin austin": {
+"name": "Calvin Austin III",
+"pos": "WR",
+"team": "NYG",
+"rank": 303,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.0,
+"adj_pg": 1.0,
+"proj_posrank": 132,
+"adj_posrank": 132,
+"flags": []
+},
+"darius slayton": {
+"name": "Darius Slayton",
+"pos": "WR",
+"team": "NYG",
+"rank": 306,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.1,
+"adj_pg": 5.1,
+"proj_posrank": 80,
+"adj_posrank": 80,
+"flags": []
+},
+"isaiah likely": {
+"name": "Isaiah Likely",
+"pos": "TE",
+"team": "NYG",
+"rank": 125,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.2,
+"adj_pg": 9.2,
+"proj_posrank": 16,
+"adj_posrank": 16,
+"flags": []
+},
+"theo johnson": {
+"name": "Theo Johnson",
+"pos": "TE",
+"team": "NYG",
+"rank": 337,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.8,
+"adj_pg": 3.8,
+"proj_posrank": 37,
+"adj_posrank": 37,
+"flags": []
+},
+"geno smith": {
+"name": "Geno Smith",
+"pos": "QB",
+"team": "NYJ",
+"rank": 185,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 14.5,
+"adj_pg": 14.5,
+"proj_posrank": 27,
+"adj_posrank": 27,
+"flags": []
+},
+"cade klubnik": {
+"name": "Cade Klubnik",
+"pos": "QB",
+"team": "NYJ",
+"rank": 357,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"breece hall": {
+"name": "Breece Hall",
+"pos": "RB",
+"team": "NYJ",
+"rank": 32,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.3,
+"adj_pg": 16.3,
+"proj_posrank": 11,
+"adj_posrank": 11,
+"flags": []
+},
+"braelon allen": {
+"name": "Braelon Allen",
+"pos": "RB",
+"team": "NYJ",
+"rank": 196,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 5.2,
+"adj_pg": 5.2,
+"proj_posrank": 49,
+"adj_posrank": 49,
+"flags": []
+},
+"isaiah davis": {
+"name": "Isaiah Davis",
+"pos": "RB",
+"team": "NYJ",
+"rank": 261,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.3,
+"adj_pg": 2.3,
+"proj_posrank": 67,
+"adj_posrank": 67,
+"flags": []
+},
+"garrett wilson": {
+"name": "Garrett Wilson",
+"pos": "WR",
+"team": "NYJ",
+"rank": 42,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 15.0,
+"adj_pg": 15.0,
+"proj_posrank": 9,
+"adj_posrank": 9,
+"flags": []
+},
+"omar cooper": {
+"name": "Omar Cooper Jr.",
+"pos": "WR",
+"team": "NYJ",
+"rank": 156,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.3,
+"adj_pg": 6.3,
+"proj_posrank": 70,
+"adj_posrank": 69,
+"flags": []
+},
+"adonai mitchell": {
+"name": "Adonai Mitchell",
+"pos": "WR",
+"team": "NYJ",
+"rank": 184,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.7,
+"adj_pg": 6.7,
+"proj_posrank": 65,
+"adj_posrank": 65,
+"flags": []
+},
+"kenyon sadiq": {
+"name": "Kenyon Sadiq",
+"pos": "TE",
+"team": "NYJ",
+"rank": 154,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.4,
+"adj_pg": 9.4,
+"proj_posrank": 15,
+"adj_posrank": 14,
+"flags": []
+},
+"mason taylor": {
+"name": "Mason Taylor",
+"pos": "TE",
+"team": "NYJ",
+"rank": 370,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.4,
+"adj_pg": 3.4,
+"proj_posrank": 41,
+"adj_posrank": 41,
+"flags": []
+},
+"jalen hurts": {
+"name": "Jalen Hurts",
+"pos": "QB",
+"team": "PHI",
+"rank": 70,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 19.8,
+"adj_pg": 19.8,
+"proj_posrank": 4,
+"adj_posrank": 4,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"tanner mckee": {
+"name": "Tanner McKee",
+"pos": "QB",
+"team": "PHI",
+"rank": 234,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"saquon barkley": {
+"name": "Saquon Barkley",
+"pos": "RB",
+"team": "PHI",
+"rank": 13,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 16.1,
+"adj_pg": 16.1,
+"proj_posrank": 13,
+"adj_posrank": 13,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~69 pctl: SEA, HOU, SF)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"tank bigsby": {
+"name": "Tank Bigsby",
+"pos": "RB",
+"team": "PHI",
+"rank": 181,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 59,
+"adj_posrank": 59,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~69 pctl: SEA, HOU, SF)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"will shipley": {
+"name": "Will Shipley",
+"pos": "RB",
+"team": "PHI",
+"rank": 266,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.4,
+"adj_pg": 1.4,
+"proj_posrank": 80,
+"adj_posrank": 80,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~69 pctl: SEA, HOU, SF)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"devonta smith": {
+"name": "DeVonta Smith",
+"pos": "WR",
+"team": "PHI",
+"rank": 23,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 14.0,
+"adj_pg": 14.0,
+"proj_posrank": 17,
+"adj_posrank": 16,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"makai lemon": {
+"name": "Makai Lemon",
+"pos": "WR",
+"team": "PHI",
+"rank": 82,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.6,
+"adj_pg": 10.6,
+"proj_posrank": 40,
+"adj_posrank": 40,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dontayvion wicks": {
+"name": "Dontayvion Wicks",
+"pos": "WR",
+"team": "PHI",
+"rank": 201,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.5,
+"adj_pg": 3.5,
+"proj_posrank": 104,
+"adj_posrank": 104,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"hollywood brown": {
+"name": "Hollywood Brown",
+"pos": "WR",
+"team": "PHI",
+"rank": 254,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dallas goedert": {
+"name": "Dallas Goedert",
+"pos": "TE",
+"team": "PHI",
+"rank": 124,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.5,
+"adj_pg": 10.5,
+"proj_posrank": 9,
+"adj_posrank": 9,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"eli stowers": {
+"name": "Eli Stowers",
+"pos": "TE",
+"team": "PHI",
+"rank": 217,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 2.1,
+"adj_pg": 2.1,
+"proj_posrank": 47,
+"adj_posrank": 47,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"aaron rodgers": {
+"name": "Aaron Rodgers",
+"pos": "QB",
+"team": "PIT",
+"rank": 161,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 13.9,
+"adj_pg": 13.9,
+"proj_posrank": 28,
+"adj_posrank": 28,
+"flags": []
+},
+"drew allar": {
+"name": "Drew Allar",
+"pos": "QB",
+"team": "PIT",
+"rank": 299,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"jaylen warren": {
+"name": "Jaylen Warren",
+"pos": "RB",
+"team": "PIT",
+"rank": 83,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.0,
+"adj_pg": 11.0,
+"proj_posrank": 30,
+"adj_posrank": 29,
+"flags": []
+},
+"rico dowdle": {
+"name": "Rico Dowdle",
+"pos": "RB",
+"team": "PIT",
+"rank": 95,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.8,
+"adj_pg": 10.8,
+"proj_posrank": 31,
+"adj_posrank": 30,
+"flags": []
+},
+"kaleb johnson": {
+"name": "Kaleb Johnson",
+"pos": "RB",
+"team": "PIT",
+"rank": 353,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.2,
+"adj_pg": 0.2,
+"proj_posrank": 85,
+"adj_posrank": 85,
+"flags": []
+},
+"dk metcalf": {
+"name": "DK Metcalf",
+"pos": "WR",
+"team": "PIT",
+"rank": 78,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.5,
+"adj_pg": 11.5,
+"proj_posrank": 32,
+"adj_posrank": 32,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"michael pittman": {
+"name": "Michael Pittman Jr.",
+"pos": "WR",
+"team": "PIT",
+"rank": 94,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.6,
+"adj_pg": 11.6,
+"proj_posrank": 31,
+"adj_posrank": 31,
+"flags": []
+},
+"germie bernard": {
+"name": "Germie Bernard",
+"pos": "WR",
+"team": "PIT",
+"rank": 192,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.4,
+"adj_pg": 7.4,
+"proj_posrank": 62,
+"adj_posrank": 62,
+"flags": []
+},
+"eli heidenreich": {
+"name": "Eli Heidenreich",
+"pos": "WR",
+"team": "PIT",
+"rank": 343,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"roman wilson": {
+"name": "Roman Wilson",
+"pos": "WR",
+"team": "PIT",
+"rank": 348,
+"total": 1,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
+},
+"pat freiermuth": {
+"name": "Pat Freiermuth",
+"pos": "TE",
+"team": "PIT",
+"rank": 195,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.1,
+"adj_pg": 8.1,
+"proj_posrank": 21,
+"adj_posrank": 21,
+"flags": []
+},
+"darnell washington": {
+"name": "Darnell Washington",
+"pos": "TE",
+"team": "PIT",
+"rank": 245,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 4.3,
+"adj_pg": 4.3,
+"proj_posrank": 34,
+"adj_posrank": 34,
+"flags": []
+},
+"sam darnold": {
+"name": "Sam Darnold",
+"pos": "QB",
+"team": "SEA",
+"rank": 129,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 15.5,
+"adj_pg": 15.5,
+"proj_posrank": 21,
+"adj_posrank": 21,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jadarian price": {
+"name": "Jadarian Price",
+"pos": "RB",
+"team": "SEA",
+"rank": 68,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.4,
+"adj_pg": 11.4,
+"proj_posrank": 27,
+"adj_posrank": 26,
+"flags": []
+},
+"zach charbonnet": {
+"name": "Zach Charbonnet",
+"pos": "RB",
+"team": "SEA",
+"rank": 142,
+"total": 1,
+"playoff": 0,
+"avail": 0.68,
+"pg": 12.0,
+"adj_pg": 8.2,
+"proj_posrank": 24,
+"adj_posrank": 41,
+"flags": [
+{
+"code": "INJ",
+"label": "injury: early season risk (~5.5 g lost, avail 68%)",
+"sev": 2,
+"cat": "availability",
+"playoff": false
+}
+]
+},
+"george holani": {
+"name": "George Holani",
+"pos": "RB",
+"team": "SEA",
+"rank": 225,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 2.5,
+"adj_pg": 2.5,
+"proj_posrank": 65,
+"adj_posrank": 65,
+"flags": []
+},
+"emanuel wilson": {
+"name": "Emanuel Wilson",
+"pos": "RB",
+"team": "SEA",
+"rank": 227,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.1,
+"adj_pg": 1.1,
+"proj_posrank": 82,
+"adj_posrank": 82,
+"flags": []
+},
+"jaxon smith njigba": {
+"name": "Jaxon Smith-Njigba",
+"pos": "WR",
+"team": "SEA",
+"rank": 3,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 19.4,
+"adj_pg": 19.4,
+"proj_posrank": 3,
+"adj_posrank": 3,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"rashid shaheed": {
+"name": "Rashid Shaheed",
+"pos": "WR",
+"team": "SEA",
+"rank": 151,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 8.3,
+"adj_pg": 8.3,
+"proj_posrank": 56,
+"adj_posrank": 56,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"cooper kupp": {
+"name": "Cooper Kupp",
+"pos": "WR",
+"team": "SEA",
+"rank": 197,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 6.1,
+"adj_pg": 6.1,
+"proj_posrank": 73,
+"adj_posrank": 72,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"tory horton": {
+"name": "Tory Horton",
+"pos": "WR",
+"team": "SEA",
+"rank": 237,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.8,
+"adj_pg": 3.8,
+"proj_posrank": 94,
+"adj_posrank": 94,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"aj barner": {
+"name": "AJ Barner",
+"pos": "TE",
+"team": "SEA",
+"rank": 179,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 6.7,
+"adj_pg": 6.7,
+"proj_posrank": 27,
+"adj_posrank": 27,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"elijah arroyo": {
+"name": "Elijah Arroyo",
+"pos": "TE",
+"team": "SEA",
+"rank": 386,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 39,
+"adj_posrank": 39,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"brock purdy": {
+"name": "Brock Purdy",
+"pos": "QB",
+"team": "SF",
+"rank": 93,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 18.4,
+"adj_pg": 18.4,
+"proj_posrank": 8,
+"adj_posrank": 8,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"mac jones": {
+"name": "Mac Jones",
+"pos": "QB",
+"team": "SF",
+"rank": 379,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"christian mccaffrey": {
+"name": "Christian McCaffrey",
+"pos": "RB",
+"team": "SF",
+"rank": 10,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 20.8,
+"adj_pg": 20.8,
+"proj_posrank": 2,
+"adj_posrank": 2,
+"flags": []
+},
+"jordan james": {
+"name": "Jordan James",
+"pos": "RB",
+"team": "SF",
+"rank": 222,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.6,
+"adj_pg": 3.6,
+"proj_posrank": 60,
+"adj_posrank": 60,
+"flags": []
+},
+"kaelon black": {
+"name": "Kaelon Black",
+"pos": "RB",
+"team": "SF",
+"rank": 238,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.9,
+"adj_pg": 1.9,
+"proj_posrank": 72,
+"adj_posrank": 72,
+"flags": []
+},
+"mike evans": {
+"name": "Mike Evans",
+"pos": "WR",
+"team": "SF",
+"rank": 55,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 10.8,
+"adj_pg": 10.8,
+"proj_posrank": 38,
+"adj_posrank": 38,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"ricky pearsall": {
+"name": "Ricky Pearsall",
+"pos": "WR",
+"team": "SF",
+"rank": 112,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 9.8,
+"adj_pg": 9.8,
+"proj_posrank": 51,
+"adj_posrank": 51,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dezhaun stribling": {
+"name": "De'Zhaun Stribling",
+"pos": "WR",
+"team": "SF",
+"rank": 187,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 101,
+"adj_posrank": 101,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"brandon aiyuk": {
+"name": "Brandon Aiyuk",
+"pos": "WR",
+"team": "SF",
+"rank": 193,
+"total": 2,
+"playoff": 2,
+"avail": 0.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "OUT",
+"label": "not a usable 2026 asset (transaction unresolved)",
+"sev": 3,
+"cat": "roster",
+"playoff": true
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"christian kirk": {
+"name": "Christian Kirk",
+"pos": "WR",
+"team": "SF",
+"rank": 214,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.9,
+"adj_pg": 3.9,
+"proj_posrank": 93,
+"adj_posrank": 93,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"george kittle": {
+"name": "George Kittle",
+"pos": "TE",
+"team": "SF",
+"rank": 103,
+"total": 2,
+"playoff": 1,
+"avail": 0.88,
+"pg": 12.7,
+"adj_pg": 11.2,
+"proj_posrank": 3,
+"adj_posrank": 5,
+"flags": [
+{
+"code": "INJ",
+"label": "injury: week1 monitor (~2.0 g lost, avail 88%)",
+"sev": 1,
+"cat": "availability",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jake tonges": {
+"name": "Jake Tonges",
+"pos": "TE",
+"team": "SF",
+"rank": 274,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.9,
+"adj_pg": 1.9,
+"proj_posrank": 49,
+"adj_posrank": 49,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"baker mayfield": {
+"name": "Baker Mayfield",
+"pos": "QB",
+"team": "TB",
+"rank": 121,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 16.4,
+"adj_pg": 16.4,
+"proj_posrank": 18,
+"adj_posrank": 18,
+"flags": []
+},
+"bucky irving": {
+"name": "Bucky Irving",
+"pos": "RB",
+"team": "TB",
+"rank": 65,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 13.2,
+"adj_pg": 13.2,
+"proj_posrank": 20,
+"adj_posrank": 20,
+"flags": []
+},
+"kenneth gainwell": {
+"name": "Kenneth Gainwell",
+"pos": "RB",
+"team": "TB",
+"rank": 100,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.0,
+"adj_pg": 10.0,
+"proj_posrank": 37,
+"adj_posrank": 36,
+"flags": []
+},
+"sean tucker": {
+"name": "Sean Tucker",
+"pos": "RB",
+"team": "TB",
+"rank": 188,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.6,
+"adj_pg": 1.6,
+"proj_posrank": 77,
+"adj_posrank": 77,
+"flags": []
+},
+"emeka egbuka": {
+"name": "Emeka Egbuka",
+"pos": "WR",
+"team": "TB",
+"rank": 36,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.8,
+"adj_pg": 12.8,
+"proj_posrank": 21,
+"adj_posrank": 21,
+"flags": []
+},
+"chris godwin": {
+"name": "Chris Godwin Jr.",
+"pos": "WR",
+"team": "TB",
+"rank": 91,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 9.4,
+"adj_pg": 9.4,
+"proj_posrank": 53,
+"adj_posrank": 53,
+"flags": [
+{
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.98 -> playoff 0.47)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jalen mcmillan": {
+"name": "Jalen McMillan",
+"pos": "WR",
+"team": "TB",
+"rank": 144,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 7.8,
+"adj_pg": 7.8,
+"proj_posrank": 61,
+"adj_posrank": 61,
+"flags": [
+{
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.85 -> playoff 0.47)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"ted hurst": {
+"name": "Ted Hurst",
+"pos": "WR",
+"team": "TB",
+"rank": 210,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 3.8,
+"adj_pg": 3.8,
+"proj_posrank": 95,
+"adj_posrank": 95,
+"flags": []
+},
+"tez johnson": {
+"name": "Tez Johnson",
+"pos": "WR",
+"team": "TB",
+"rank": 346,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.4,
+"adj_pg": 1.4,
+"proj_posrank": 128,
+"adj_posrank": 128,
+"flags": []
+},
+"cade otton": {
+"name": "Cade Otton",
+"pos": "TE",
+"team": "TB",
+"rank": 191,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 6.4,
+"adj_pg": 6.4,
+"proj_posrank": 29,
+"adj_posrank": 29,
+"flags": []
+},
+"cam ward": {
+"name": "Cam Ward",
+"pos": "QB",
+"team": "TEN",
+"rank": 143,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"tony pollard": {
+"name": "Tony Pollard",
+"pos": "RB",
+"team": "TEN",
+"rank": 75,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 11.3,
+"adj_pg": 11.3,
+"proj_posrank": 29,
+"adj_posrank": 28,
+"flags": []
+},
+"tyjae spears": {
+"name": "Tyjae Spears",
+"pos": "RB",
+"team": "TEN",
+"rank": 162,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 9.1,
+"adj_pg": 9.1,
+"proj_posrank": 39,
+"adj_posrank": 38,
+"flags": []
+},
+"nick singleton": {
+"name": "Nick Singleton",
+"pos": "RB",
+"team": "TEN",
+"rank": 198,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"carnell tate": {
+"name": "Carnell Tate",
+"pos": "WR",
+"team": "TEN",
+"rank": 56,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 12.6,
+"adj_pg": 12.6,
+"proj_posrank": 24,
+"adj_posrank": 24,
+"flags": []
+},
+"wandale robinson": {
+"name": "Wan'Dale Robinson",
+"pos": "WR",
+"team": "TEN",
+"rank": 114,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.3,
+"adj_pg": 10.3,
+"proj_posrank": 43,
+"adj_posrank": 43,
+"flags": []
+},
+"calvin ridley": {
+"name": "Calvin Ridley",
+"pos": "WR",
+"team": "TEN",
+"rank": 190,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.6,
+"adj_pg": 8.6,
+"proj_posrank": 55,
+"adj_posrank": 55,
+"flags": []
+},
+"chimere dike": {
+"name": "Chimere Dike",
+"pos": "WR",
+"team": "TEN",
+"rank": 331,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 1.8,
+"adj_pg": 1.8,
+"proj_posrank": 123,
+"adj_posrank": 123,
+"flags": []
+},
+"elic ayomanor": {
+"name": "Elic Ayomanor",
+"pos": "WR",
+"team": "TEN",
+"rank": 351,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.8,
+"adj_pg": 0.8,
+"proj_posrank": 134,
+"adj_posrank": 134,
+"flags": []
+},
+"gunnar helm": {
+"name": "Gunnar Helm",
+"pos": "TE",
+"team": "TEN",
+"rank": 177,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 7.4,
+"adj_pg": 7.4,
+"proj_posrank": 24,
+"adj_posrank": 24,
+"flags": []
+},
+"jayden daniels": {
+"name": "Jayden Daniels",
+"pos": "QB",
+"team": "WAS",
+"rank": 63,
+"total": 2,
+"playoff": 1,
+"avail": 1.0,
+"pg": 19.4,
+"adj_pg": 19.4,
+"proj_posrank": 5,
+"adj_posrank": 5,
+"flags": [
+{
+"code": "SCH",
+"label": "new-OC scheme reduces scramble usage",
+"sev": 2,
+"cat": "scheme",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"marcus mariota": {
+"name": "Marcus Mariota",
+"pos": "QB",
+"team": "WAS",
+"rank": 317,
+"total": 2,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "SCH",
+"label": "new-OC scheme reduces scramble usage",
+"sev": 2,
+"cat": "scheme",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"rachaad white": {
+"name": "Rachaad White",
+"pos": "RB",
+"team": "WAS",
+"rank": 119,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 10.3,
+"adj_pg": 10.3,
+"proj_posrank": 34,
+"adj_posrank": 33,
+"flags": []
+},
+"jacory croskey merritt": {
+"name": "Jacory Croskey-Merritt",
+"pos": "RB",
+"team": "WAS",
+"rank": 126,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 8.7,
+"adj_pg": 8.7,
+"proj_posrank": 41,
+"adj_posrank": 40,
+"flags": []
+},
+"kaytron allen": {
+"name": "Kaytron Allen",
+"pos": "RB",
+"team": "WAS",
+"rank": 206,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": 0.7,
+"adj_pg": 0.7,
+"proj_posrank": 84,
+"adj_posrank": 84,
+"flags": []
+},
+"jerome ford": {
+"name": "Jerome Ford",
+"pos": "RB",
+"team": "WAS",
+"rank": 251,
+"total": 0,
+"playoff": 0,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": []
+},
+"terry mclaurin": {
+"name": "Terry McLaurin",
+"pos": "WR",
+"team": "WAS",
+"rank": 51,
+"total": 2,
+"playoff": 1,
+"avail": 1.0,
+"pg": 13.0,
+"adj_pg": 13.0,
+"proj_posrank": 19,
+"adj_posrank": 18,
+"flags": [
+{
+"code": "SCH",
+"label": "new-OC scheme reduces motion usage",
+"sev": 2,
+"cat": "scheme",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"antonio williams": {
+"name": "Antonio Williams",
+"pos": "WR",
+"team": "WAS",
+"rank": 170,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 6.7,
+"adj_pg": 6.7,
+"proj_posrank": 66,
+"adj_posrank": 66,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"luke mccaffrey": {
+"name": "Luke McCaffrey",
+"pos": "WR",
+"team": "WAS",
+"rank": 288,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 0.0,
+"adj_pg": 0.0,
+"proj_posrank": 139,
+"adj_posrank": 139,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"dyami brown": {
+"name": "Dyami Brown",
+"pos": "WR",
+"team": "WAS",
+"rank": 341,
+"total": 2,
+"playoff": 1,
+"avail": 1.0,
+"pg": 5.1,
+"adj_pg": 5.1,
+"proj_posrank": 81,
+"adj_posrank": 81,
+"flags": [
+{
+"code": "SCH",
+"label": "new-OC scheme reduces motion usage",
+"sev": 2,
+"cat": "scheme",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"jaylin lane": {
+"name": "Jaylin Lane",
+"pos": "WR",
+"team": "WAS",
+"rank": 371,
+"total": 1,
+"playoff": 1,
+"avail": 1.0,
+"pg": 3.7,
+"adj_pg": 3.7,
+"proj_posrank": 102,
+"adj_posrank": 102,
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"treylon burks": {
+"name": "Treylon Burks",
+"pos": "WR",
+"team": "WAS",
+"rank": 380,
+"total": 2,
+"playoff": 1,
+"avail": 1.0,
+"pg": 2.6,
+"adj_pg": 2.6,
+"proj_posrank": 115,
+"adj_posrank": 115,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"chig okonkwo": {
+"name": "Chig Okonkwo",
+"pos": "TE",
+"team": "WAS",
+"rank": 135,
+"total": 2,
+"playoff": 1,
+"avail": 1.0,
+"pg": null,
+"adj_pg": null,
+"proj_posrank": null,
+"adj_posrank": null,
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+},
+"ben sinnott": {
+"name": "Ben Sinnott",
+"pos": "TE",
+"team": "WAS",
+"rank": 358,
+"total": 3,
+"playoff": 1,
+"avail": 1.0,
+"pg": 1.7,
+"adj_pg": 1.7,
+"proj_posrank": 50,
+"adj_posrank": 50,
+"flags": [
+{
+"code": "SCH",
+"label": "new-OC scheme reduces motion usage",
+"sev": 2,
+"cat": "scheme",
+"playoff": false
+},
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+},
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"sev": 2,
+"cat": "playoff",
+"playoff": true
+}
+]
+}
+}
+}

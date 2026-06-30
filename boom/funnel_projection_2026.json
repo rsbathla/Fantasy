@@ -1,0 +1,191 @@
+{
+ "BAL": {
+  "cb1": "Chidobe Awuzie",
+  "cb1_cov": 77.2,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 4.5,
+  "projection_flag": ""
+ },
+ "BUF": {
+  "cb1": "Tre'Davious White",
+  "cb1_cov": 68.2,
+  "expected_wr1": "exploitable",
+  "dvoa_wr1_2025": -0.4,
+  "projection_flag": ""
+ },
+ "CAR": {
+  "cb1": "Mike Jackson",
+  "cb1_cov": 85.8,
+  "expected_wr1": "fortress",
+  "dvoa_wr1_2025": 2.5,
+  "projection_flag": "WATCH: elite CB1 but soft WR1 in 2025 -> WR1 likely REGRESSES tougher in 2026"
+ },
+ "CHI": {
+  "cb1": "Tyrique Stevenson",
+  "cb1_cov": 62.3,
+  "expected_wr1": "exploitable",
+  "dvoa_wr1_2025": 2.4,
+  "projection_flag": ""
+ },
+ "CIN": {
+  "cb1": "DJ Turner II",
+  "cb1_cov": 78.1,
+  "expected_wr1": "fortress",
+  "dvoa_wr1_2025": -3.6,
+  "projection_flag": ""
+ },
+ "CLE": {
+  "cb1": "Tyson Campbell",
+  "cb1_cov": 65.7,
+  "expected_wr1": "exploitable",
+  "dvoa_wr1_2025": -2.2,
+  "projection_flag": "WATCH: weak CB1 but tough WR1 in 2025 -> WR1 likely REGRESSES softer in 2026"
+ },
+ "DAL": {
+  "cb1": "Cobie Durant",
+  "cb1_cov": 65.1,
+  "expected_wr1": "exploitable",
+  "dvoa_wr1_2025": 4.2,
+  "projection_flag": ""
+ },
+ "DEN": {
+  "cb1": "Ja'Quan McMillian",
+  "cb1_cov": 78.9,
+  "expected_wr1": "fortress",
+  "dvoa_wr1_2025": -4.0,
+  "projection_flag": ""
+ },
+ "DET": {
+  "cb1": "Roger McCreary",
+  "cb1_cov": 72.0,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 0.8,
+  "projection_flag": ""
+ },
+ "GB": {
+  "cb1": "Benjamin St-Juste",
+  "cb1_cov": 77.8,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 0.8,
+  "projection_flag": ""
+ },
+ "HOU": {
+  "cb1": "Kamari Lassiter",
+  "cb1_cov": 77.0,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": -3.4,
+  "projection_flag": "WATCH: weak CB1 but tough WR1 in 2025 -> WR1 likely REGRESSES softer in 2026"
+ },
+ "IND": {
+  "cb1": "Charvarius Ward",
+  "cb1_cov": 77.4,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": -2.6,
+  "projection_flag": "WATCH: weak CB1 but tough WR1 in 2025 -> WR1 likely REGRESSES softer in 2026"
+ },
+ "JAX": {
+  "cb1": "Jarrian Jones",
+  "cb1_cov": 74.5,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 2.9,
+  "projection_flag": ""
+ },
+ "KC": {
+  "cb1": "Nohl Williams",
+  "cb1_cov": 75.6,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": -1.5,
+  "projection_flag": ""
+ },
+ "LAC": {
+  "cb1": "Donte Jackson",
+  "cb1_cov": 73.4,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 0.8,
+  "projection_flag": ""
+ },
+ "LAR": {
+  "cb1": "Trent McDuffie",
+  "cb1_cov": 74.7,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 2.5,
+  "projection_flag": ""
+ },
+ "LV": {
+  "cb1": "Eric Stokes",
+  "cb1_cov": 75.2,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": -1.2,
+  "projection_flag": ""
+ },
+ "MIA": {
+  "cb1": "Rasul Douglas",
+  "cb1_cov": 72.6,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": -0.3,
+  "projection_flag": ""
+ },
+ "MIN": {
+  "cb1": "James Pierre",
+  "cb1_cov": 88.9,
+  "expected_wr1": "fortress",
+  "dvoa_wr1_2025": -3.7,
+  "projection_flag": ""
+ },
+ "NE": {
+  "cb1": "Christian Gonzalez",
+  "cb1_cov": 76.9,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 0.5,
+  "projection_flag": ""
+ },
+ "NO": {
+  "cb1": "Kool-Aid McKinstry",
+  "cb1_cov": 71.4,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": -2.3,
+  "projection_flag": "WATCH: weak CB1 but tough WR1 in 2025 -> WR1 likely REGRESSES softer in 2026"
+ },
+ "NYJ": {
+  "cb1": "Nahshon Wright",
+  "cb1_cov": 64.8,
+  "expected_wr1": "exploitable",
+  "dvoa_wr1_2025": 2.4,
+  "projection_flag": ""
+ },
+ "PHI": {
+  "cb1": "Quinyon Mitchell",
+  "cb1_cov": 80.2,
+  "expected_wr1": "fortress",
+  "dvoa_wr1_2025": -4.5,
+  "projection_flag": ""
+ },
+ "PIT": {
+  "cb1": "Joey Porter Jr.",
+  "cb1_cov": 76.6,
+  "expected_wr1": "tight",
+  "dvoa_wr1_2025": 0.7,
+  "projection_flag": ""
+ },
+ "SEA": {
+  "cb1": "Devon Witherspoon",
+  "cb1_cov": 83.6,
+  "expected_wr1": "fortress",
+  "dvoa_wr1_2025": -2.1,
+  "projection_flag": ""
+ },
+ "TB": {
+  "cb1": "Jacob Parrish",
+  "cb1_cov": 65.7,
+  "expected_wr1": "exploitable",
+  "dvoa_wr1_2025": 1.3,
+  "projection_flag": ""
+ },
+ "TEN": {
+  "cb1": "Cor'Dale Flott",
+  "cb1_cov": 68.1,
+  "expected_wr1": "exploitable",
+  "dvoa_wr1_2025": 3.3,
+  "projection_flag": ""
+ }
+}

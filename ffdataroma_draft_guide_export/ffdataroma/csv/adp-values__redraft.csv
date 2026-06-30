@@ -1,0 +1,195 @@
+rank,name,team,position,adp,adpHalf,adpStd,adpPpr,passCatcher,volumeWr,volumeTe,topOffense
+1,Jahmyr Gibbs,DET,RB,2,2,1,1,true,false,false,true
+2,Bijan Robinson,ATL,RB,1,1,2,2,false,false,false,false
+3,Puka Nacua,LAR,WR,4,4,4,4,false,true,false,false
+4,Ja'Marr Chase,CIN,WR,3,3,3,3,false,true,false,true
+5,Jaxon Smith-Njigba,SEA,WR,5,5,5,5,false,true,false,false
+6,Amon-Ra St. Brown,DET,WR,8,8,8,8,false,true,false,true
+7,Christian McCaffrey,SF,RB,6,6,7,6,true,false,false,false
+8,Justin Jefferson,MIN,WR,9,9,10,10,false,true,false,false
+9,Ashton Jeanty,LV,RB,12,12,12,9,false,false,false,false
+10,Jonathan Taylor,IND,RB,7,7,6,7,false,false,false,false
+11,James Cook III,BUF,RB,11,11,11,11,true,false,false,true
+12,CeeDee Lamb,DAL,WR,10,10,9,12,false,true,false,false
+13,Kenneth Walker III,KC,RB,20,20,16,17,false,false,false,true
+14,Saquon Barkley,PHI,RB,14,14,13,13,false,false,false,true
+15,Derrick Henry,BAL,RB,21,21,18,21,false,false,false,true
+16,De'Von Achane,MIA,RB,13,13,14,15,true,false,false,false
+17,Brock Bowers,LV,TE,15,15,20,19,false,false,true,false
+18,Jeremiyah Love,ARI,RB,25,25,23,24,false,false,false,false
+19,Drake London,ATL,WR,19,19,19,18,false,true,false,false
+20,Trey McBride,ARI,TE,16,16,25,20,false,false,true,false
+21,Omarion Hampton,LAC,RB,17,17,15,16,false,false,false,false
+22,Chase Brown,CIN,RB,18,18,17,14,true,false,false,true
+23,Rashee Rice,KC,WR,31,31,30,28,false,true,false,true
+24,George Pickens,DAL,WR,26,26,24,25,false,false,false,false
+25,Nico Collins,HOU,WR,23,23,22,22,false,false,false,false
+26,A.J. Brown,NE,WR,24,24,21,23,false,true,false,false
+27,Breece Hall,NYJ,RB,30,30,26,29,true,false,false,false
+28,Chris Olave,NO,WR,27,27,27,27,false,true,false,false
+29,DeVonta Smith,PHI,WR,32,32,28,30,false,true,false,true
+30,Josh Jacobs,GB,RB,36,36,40,39,false,false,false,true
+31,Josh Allen,BUF,QB,22,22,33,26,false,false,false,false
+32,Tee Higgins,CIN,WR,37,37,35,38,false,false,false,true
+33,Colston Loveland,CHI,TE,35,35,46,42,false,false,true,false
+34,Travis Etienne Jr.,NO,RB,33,33,29,31,true,false,false,false
+35,Zay Flowers,BAL,WR,39,39,34,35,false,false,false,true
+36,Jaylen Waddle,DEN,WR,58,58,49,48,false,true,false,false
+37,Garrett Wilson,NYJ,WR,42,42,39,37,false,true,false,false
+38,Malik Nabers,NYG,WR,29,29,32,33,false,true,false,false
+39,Luther Burden III,CHI,WR,45,45,42,43,false,false,false,false
+40,Javonte Williams,DAL,RB,34,34,36,34,false,false,false,false
+41,Ladd McConkey,LAC,WR,44,44,37,36,false,true,false,false
+42,Bucky Irving,TB,RB,54,54,53,54,true,false,false,false
+43,Emeka Egbuka,TB,WR,38,38,41,41,false,false,false,false
+44,Kyren Williams,LAR,RB,28,28,31,32,false,false,false,false
+45,Mike Evans,SF,WR,52,52,44,56,false,false,false,false
+46,Davante Adams,LAR,WR,53,53,51,47,false,true,false,false
+47,Bhayshul Tuten,JAX,RB,63,63,61,60,true,false,false,false
+48,Tetairoa McMillan,CAR,WR,40,40,38,40,false,false,false,false
+49,Jameson Williams,DET,WR,57,57,47,51,false,false,false,true
+50,D'Andre Swift,CHI,RB,59,59,52,50,true,false,false,false
+51,Jayden Daniels,WAS,QB,61,61,66,65,false,false,false,false
+52,Drake Maye,NE,QB,56,56,68,61,false,false,false,false
+53,David Montgomery,HOU,RB,49,49,50,46,false,false,false,false
+54,Cam Skattebo,NYG,RB,41,41,43,44,false,false,false,false
+55,Lamar Jackson,BAL,QB,43,43,56,52,false,false,false,false
+56,Terry McLaurin,WAS,WR,55,55,45,45,false,true,false,true
+57,Carnell Tate,TEN,WR,69,69,60,62,false,false,false,false
+58,Jadarian Price,SEA,RB,60,60,,,false,false,false,false
+59,Quinshon Judkins,CLE,RB,47,47,55,57,false,false,false,false
+60,TreVeyon Henderson,NE,RB,51,51,48,49,true,false,false,false
+61,Rome Odunze,CHI,WR,62,62,58,58,false,false,false,false
+62,Jordyn Tyson,NO,WR,76,76,62,70,false,false,false,false
+63,Tucker Kraft,GB,TE,72,72,82,84,false,false,true,true
+64,Brian Thomas Jr.,JAX,WR,68,68,63,72,false,false,false,false
+65,Tyler Warren,IND,TE,50,50,65,64,false,false,true,false
+66,DJ Moore,BUF,WR,46,46,54,53,false,true,false,true
+67,Christian Watson,GB,WR,66,66,57,55,false,false,false,true
+68,Parker Washington,JAX,WR,80,80,70,71,false,false,false,false
+69,Joe Burrow,CIN,QB,48,48,64,59,false,false,false,false
+70,Tony Pollard,TEN,RB,84,84,78,80,true,false,false,false
+71,Jaylen Warren,PIT,RB,81,81,76,69,true,false,false,false
+72,Rhamondre Stevenson,NE,RB,74,74,75,78,false,false,false,false
+73,Makai Lemon,PHI,WR,93,93,73,83,false,false,false,true
+74,Kyle Monangai,CHI,RB,89,89,91,91,false,false,false,false
+75,Blake Corum,LAR,RB,96,96,93,102,false,false,false,false
+76,Marvin Harrison Jr.,ARI,WR,73,73,67,66,false,false,false,false
+77,Chuba Hubbard,CAR,RB,71,71,71,67,false,false,false,false
+78,Trevor Lawrence,JAX,QB,82,82,86,82,false,false,false,false
+79,Justin Herbert,LAC,QB,83,83,81,76,false,false,false,false
+80,Jayden Reed,GB,WR,100,100,83,95,false,true,false,true
+81,Chris Godwin Jr.,TB,WR,94,94,89,90,false,false,false,false
+82,Jalen Hurts,PHI,QB,65,65,72,74,false,false,false,false
+83,Courtland Sutton,DEN,WR,86,86,80,77,false,false,false,false
+84,Kyle Pitts Sr.,ATL,TE,79,79,106,96,false,false,false,false
+85,J.K. Dobbins,DEN,RB,99,99,103,107,true,false,false,false
+86,Harold Fannin Jr.,CLE,TE,67,67,96,87,false,false,false,false
+87,Alec Pierce,IND,WR,78,78,74,75,false,false,false,false
+88,Dak Prescott,DAL,QB,70,70,79,79,false,false,false,false
+89,Brock Purdy,SF,QB,97,97,98,99,false,false,false,false
+90,Patrick Mahomes II,KC,QB,92,92,90,98,false,false,false,false
+91,Caleb Williams,CHI,QB,64,64,69,68,false,false,false,false
+92,Jordan Addison,MIN,WR,103,103,85,100,false,false,false,false
+93,Michael Wilson,ARI,WR,91,91,92,89,false,false,false,false
+94,DK Metcalf,PIT,WR,85,85,77,73,false,false,false,false
+95,Josh Downs,IND,WR,114,114,94,105,false,false,false,false
+96,Ricky Pearsall,SF,WR,110,110,100,101,false,false,false,false
+97,RJ Harvey,DEN,RB,75,75,84,81,false,false,false,false
+98,Xavier Worthy,KC,WR,119,119,101,111,false,false,false,true
+99,Sam LaPorta,DET,TE,77,77,97,97,false,false,false,true
+100,Rachaad White,WAS,RB,121,121,120,114,true,false,false,true
+101,KC Concepcion,CLE,WR,127,127,,,false,false,false,false
+102,Rico Dowdle,PIT,RB,87,87,87,86,false,false,false,false
+103,Kenneth Gainwell,TB,RB,102,102,107,85,true,false,false,false
+104,Jonathon Brooks,CAR,RB,115,115,110,108,true,false,false,false
+105,Jakobi Meyers,JAX,WR,105,105,99,103,false,false,false,false
+106,Chris Rodriguez Jr.,JAX,RB,129,129,119,129,false,false,false,false
+107,Jordan Mason,MIN,RB,118,118,125,122,false,false,false,false
+108,Aaron Jones Sr.,MIN,RB,125,125,123,120,true,false,false,false
+109,Jacory Croskey-Merritt,WAS,RB,128,128,121,130,true,false,false,true
+110,Quentin Johnston,LAC,WR,108,108,88,94,false,false,false,false
+111,Matthew Golden,GB,WR,126,126,111,117,false,false,false,true
+112,Travis Kelce,KC,TE,104,104,122,119,false,false,false,true
+113,Jordan Love,GB,QB,117,117,112,113,false,false,false,false
+114,Jaxson Dart,NYG,QB,88,88,95,88,false,false,false,false
+115,Wan'Dale Robinson,TEN,WR,107,107,115,110,false,true,false,false
+116,Stefon Diggs,FA,WR,143,143,133,137,false,true,false,false
+117,Jalen Coker,CAR,WR,142,142,134,133,false,false,false,false
+118,Malik Willis,MIA,QB,131,131,132,127,false,false,false,false
+119,Bo Nix,DEN,QB,101,101,104,106,false,false,false,false
+120,Tyrone Tracy Jr.,NYG,RB,130,130,130,132,true,false,false,false
+121,Matthew Stafford,LAR,QB,90,90,102,92,false,false,false,false
+122,Tyler Shough,NO,QB,120,120,116,112,false,false,false,false
+123,Kyler Murray,MIN,QB,109,109,109,109,false,false,false,false
+124,Romeo Doubs,NE,WR,124,124,113,116,false,false,false,false
+125,Dalton Kincaid,BUF,TE,112,112,129,118,false,false,false,true
+126,Michael Pittman Jr.,PIT,WR,106,106,105,93,false,false,false,false
+127,Oronde Gadsden II,LAC,TE,136,136,142,139,false,false,false,false
+128,Jalen McMillan,TB,WR,157,157,147,146,false,false,false,false
+129,Woody Marks,HOU,RB,139,139,143,141,false,false,false,false
+130,Jared Goff,DET,QB,98,98,108,104,false,false,false,false
+131,George Kittle,SF,TE,95,95,117,123,false,false,false,false
+132,Jonah Coleman,DEN,RB,151,151,,,false,false,false,false
+133,Brian Robinson Jr.,ATL,RB,162,162,165,167,false,false,false,false
+134,Tank Bigsby,PHI,RB,176,176,172,177,false,false,false,true
+135,Baker Mayfield,TB,QB,122,122,118,115,false,false,false,false
+136,Mark Andrews,BAL,TE,123,123,127,134,false,false,false,true
+137,Khalil Shakir,BUF,WR,132,132,128,124,false,true,false,true
+138,Omar Cooper Jr.,NYJ,WR,156,156,,,false,false,false,false
+139,Tre Tucker,LV,WR,171,171,155,158,false,false,false,false
+140,Antonio Williams,WAS,WR,166,166,,,false,false,false,true
+141,Jake Ferguson,DAL,TE,113,113,126,128,false,false,false,false
+142,Isaiah Likely,NYG,TE,111,111,131,126,false,false,false,false
+143,Chig Okonkwo,WAS,TE,137,137,149,145,false,false,false,true
+144,Rashid Shaheed,SEA,WR,146,146,138,147,false,false,false,false
+145,Tyler Allgeier,ARI,RB,150,150,156,144,false,false,false,false
+146,Jalen Nailor,LV,WR,158,158,151,159,false,false,false,false
+147,Travis Hunter,JAX,WR,202,202,,163,false,false,false,false
+148,Kenyon Sadiq,NYJ,TE,135,135,,,false,false,false,false
+149,Dallas Goedert,PHI,TE,116,116,135,131,false,false,false,true
+150,Isiah Pacheco,DET,RB,144,144,146,149,false,false,false,true
+151,Emmett Johnson,KC,RB,177,177,,,false,false,false,true
+152,Jayden Higgins,HOU,WR,134,134,124,121,false,false,false,false
+153,Zach Charbonnet,SEA,RB,152,152,163,169,true,false,false,false
+154,Denzel Boston,CLE,WR,165,165,,,false,false,false,false
+155,Jauan Jennings,MIN,WR,155,155,145,148,false,false,false,false
+156,Darnell Mooney,NYG,WR,207,207,193,194,false,false,false,false
+157,Hunter Henry,NE,TE,145,145,148,154,false,false,false,false
+158,Brenton Strange,JAX,TE,149,149,154,152,false,false,false,false
+159,Keaton Mitchell,LAC,RB,153,153,137,143,false,false,false,false
+160,Tyreek Hill,FA,WR,174,174,213,228,false,false,false,false
+161,Ray Davis,BUF,RB,212,212,200,191,false,false,false,true
+162,Tyjae Spears,TEN,RB,159,159,160,155,true,false,false,false
+163,Emanuel Wilson,SEA,RB,180,180,195,171,false,false,false,false
+164,Jordan James,SF,RB,211,211,210,208,false,false,false,false
+165,Brandon Aiyuk,SF,WR,179,179,187,184,false,true,false,false
+166,Deebo Samuel Sr.,FA,WR,170,170,162,161,false,false,false,false
+167,Elijah Sarratt,BAL,WR,235,235,,,false,false,false,true
+168,De'Zhaun Stribling,SF,WR,191,191,,,false,false,false,false
+169,Kimani Vidal,LAC,RB,206,206,219,188,false,false,false,false
+170,Isaac TeSlaa,DET,WR,187,187,170,181,false,false,false,true
+171,Calvin Ridley,TEN,WR,183,183,185,193,false,true,false,false
+172,Kaytron Allen,WAS,RB,189,189,,,false,false,false,true
+173,Dylan Sampson,CLE,RB,161,161,167,151,false,false,false,false
+174,Dalton Schultz,HOU,TE,163,163,168,168,false,false,false,false
+175,Gunnar Helm,TEN,TE,178,178,176,183,false,false,false,false
+176,Cade Otton,TB,TE,186,186,183,192,false,false,false,false
+177,Juwan Johnson,NO,TE,138,138,157,142,false,false,false,false
+178,C.J. Stroud,HOU,QB,140,140,141,136,false,false,false,false
+179,Sam Darnold,SEA,QB,133,133,139,138,false,false,false,false
+180,Cam Ward,TEN,QB,141,141,136,135,false,false,false,false
+181,AJ Barner,SEA,TE,182,182,175,182,false,false,false,false
+182,T.J. Hockenson,MIN,TE,147,147,161,164,false,false,false,false
+183,Germie Bernard,PIT,WR,195,195,,,false,false,false,false
+184,Alvin Kamara,NO,RB,160,160,184,180,true,false,false,false
+185,Mike Washington Jr.,LV,RB,181,181,,,false,false,false,false
+186,James Conner,ARI,RB,205,205,227,199,false,false,false,false
+187,Braelon Allen,NYJ,RB,196,196,205,190,false,false,false,false
+188,Kaelon Black,SF,RB,226,226,,,false,false,false,false
+189,Tre' Harris,LAC,WR,200,200,174,174,false,false,false,false
+190,Chris Bell,MIA,WR,197,197,,,false,false,false,false
+191,Jerry Jeudy,CLE,WR,173,173,182,172,false,false,false,false
+192,Jack Bech,LV,WR,241,241,236,299,false,false,false,false
+193,Malachi Fields,NYG,WR,204,204,,,false,false,false,false
+194,Zachariah Branch,ATL,WR,201,201,,,false,false,false,false

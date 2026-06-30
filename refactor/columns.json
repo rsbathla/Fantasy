@@ -1,0 +1,840 @@
+{
+  "n_players": 371,
+  "n_columns": 139,
+  "columns": {
+    "name": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 100.0,
+      "abstains": false
+    },
+    "pos": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 100.0,
+      "abstains": false
+    },
+    "team": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 100.0,
+      "abstains": false
+    },
+    "pid": {
+      "producer": "unknown",
+      "dtype": "string",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "adp": {
+      "producer": "build_features",
+      "dtype": "numeric",
+      "coverage_pct": 100.0,
+      "abstains": false
+    },
+    "merged_rank": {
+      "producer": "build_features",
+      "dtype": "numeric",
+      "coverage_pct": 99.2,
+      "abstains": true
+    },
+    "proj_pg": {
+      "producer": "build_features",
+      "dtype": "numeric",
+      "coverage_pct": 85.2,
+      "abstains": true
+    },
+    "p95": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 82.5,
+      "abstains": true
+    },
+    "spike": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 82.5,
+      "abstains": true
+    },
+    "cv": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 82.5,
+      "abstains": true
+    },
+    "adv_pct": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 85.2,
+      "abstains": true
+    },
+    "p50": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 82.5,
+      "abstains": true
+    },
+    "p85": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 82.5,
+      "abstains": true
+    },
+    "sim_mean": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 82.5,
+      "abstains": true
+    },
+    "reg_rank": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 85.2,
+      "abstains": true
+    },
+    "bye": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "w15": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "w16": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "w17": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "tail": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 100.0,
+      "abstains": false
+    },
+    "clay_targ_pct": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 74.7,
+      "abstains": true
+    },
+    "clay_car_pct": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 74.7,
+      "abstains": true
+    },
+    "tm_pass_att": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "tm_pass_rate": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "tm_plays": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "tm_total_td": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "rk_passvol": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "rk_passrate": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "rk_td": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "opp_w15": {
+      "producer": "unknown",
+      "dtype": "empty",
+      "coverage_pct": 0.0,
+      "abstains": true
+    },
+    "opp_w16": {
+      "producer": "unknown",
+      "dtype": "empty",
+      "coverage_pct": 0.0,
+      "abstains": true
+    },
+    "opp_w17": {
+      "producer": "unknown",
+      "dtype": "empty",
+      "coverage_pct": 0.0,
+      "abstains": true
+    },
+    "coord_scheme": {
+      "producer": "unknown",
+      "dtype": "string",
+      "coverage_pct": 24.3,
+      "abstains": true
+    },
+    "g25": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "tgt_share": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 68.2,
+      "abstains": true
+    },
+    "tgt_share_cv": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 65.0,
+      "abstains": true
+    },
+    "carry_share": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 54.7,
+      "abstains": true
+    },
+    "carry_share_cv": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 46.6,
+      "abstains": true
+    },
+    "adot": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 68.2,
+      "abstains": true
+    },
+    "tgt_pg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "car_pg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "rec_pg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "td_pg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "dk_mean25": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "dk_max25": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "team25": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "mover": {
+      "producer": "unknown",
+      "dtype": "string",
+      "coverage_pct": 77.9,
+      "abstains": true
+    },
+    "delta_pg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 70.4,
+      "abstains": true
+    },
+    "yprr_man": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 45.8,
+      "abstains": true
+    },
+    "yprr_zone": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 45.8,
+      "abstains": true
+    },
+    "man_route_sh": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 45.8,
+      "abstains": true
+    },
+    "adot25": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 45.8,
+      "abstains": true
+    },
+    "man_zone_delta": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 45.8,
+      "abstains": true
+    },
+    "ol_pass_winrate": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "ol_run_winrate": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "opp_pass_def_tier": {
+      "producer": "unknown",
+      "dtype": "string",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "team_run_def_tier": {
+      "producer": "build_features",
+      "dtype": "string",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "team_play_action": {
+      "producer": "build_features",
+      "dtype": "numeric",
+      "coverage_pct": 50.4,
+      "abstains": true
+    },
+    "team_motion": {
+      "producer": "build_features",
+      "dtype": "numeric",
+      "coverage_pct": 50.4,
+      "abstains": true
+    },
+    "team_plays_g": {
+      "producer": "build_features",
+      "dtype": "numeric",
+      "coverage_pct": 50.4,
+      "abstains": true
+    },
+    "team_vacated_tgt": {
+      "producer": "build_features",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w15_total": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w15_imp": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w15_spread": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w16_total": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w16_imp": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w16_spread": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w17_total": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w17_imp": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "vegas_w17_spread": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "opp_w15_man_rate": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 93.3,
+      "abstains": true
+    },
+    "zone_run_sh": {
+      "producer": "ingest_advanced",
+      "dtype": "numeric",
+      "coverage_pct": 22.9,
+      "abstains": true
+    },
+    "zone_succ": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 22.9,
+      "abstains": true
+    },
+    "gap_succ": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 22.6,
+      "abstains": true
+    },
+    "stuff_pct": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 22.9,
+      "abstains": true
+    },
+    "sack_pct25": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 12.7,
+      "abstains": true
+    },
+    "ypa25": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 12.7,
+      "abstains": true
+    },
+    "route_yprr": {
+      "producer": "ingest_advanced2/3",
+      "dtype": "numeric",
+      "coverage_pct": 68.7,
+      "abstains": true
+    },
+    "route_ypt": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 68.7,
+      "abstains": true
+    },
+    "route_tprr": {
+      "producer": "ingest_advanced2/3",
+      "dtype": "numeric",
+      "coverage_pct": 68.7,
+      "abstains": true
+    },
+    "deep_route_sh": {
+      "producer": "ingest_advanced2/3",
+      "dtype": "numeric",
+      "coverage_pct": 68.7,
+      "abstains": true
+    },
+    "fd_rr": {
+      "producer": "ingest_advanced2/3",
+      "dtype": "numeric",
+      "coverage_pct": 68.7,
+      "abstains": true
+    },
+    "rb_rec_ypg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 21.6,
+      "abstains": true
+    },
+    "rb_rec_pg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 21.6,
+      "abstains": true
+    },
+    "outside_run_sh": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 22.9,
+      "abstains": true
+    },
+    "deep_ball_sh": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 12.7,
+      "abstains": true
+    },
+    "deep_ypa": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 12.1,
+      "abstains": true
+    },
+    "qb_anya": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 12.7,
+      "abstains": true
+    },
+    "qb_scramble": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 12.7,
+      "abstains": true
+    },
+    "qb_rush_ypg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 12.1,
+      "abstains": true
+    },
+    "recyd_pg": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 65.8,
+      "abstains": true
+    },
+    "adot_adj_ypt": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 45.8,
+      "abstains": true
+    },
+    "epa_proxy": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 81.4,
+      "abstains": true
+    },
+    "epa_proxy_src": {
+      "producer": "unknown",
+      "dtype": "string",
+      "coverage_pct": 81.4,
+      "abstains": true
+    },
+    "cpoe": {
+      "producer": "ingest_advanced4",
+      "dtype": "numeric",
+      "coverage_pct": 12.7,
+      "abstains": true
+    },
+    "rec_epa_route": {
+      "producer": "ingest_advanced4",
+      "dtype": "numeric",
+      "coverage_pct": 67.9,
+      "abstains": true
+    },
+    "rec_separation": {
+      "producer": "ingest_advanced4",
+      "dtype": "numeric",
+      "coverage_pct": 67.7,
+      "abstains": true
+    },
+    "rec_yacoe": {
+      "producer": "ingest_advanced4",
+      "dtype": "numeric",
+      "coverage_pct": 67.4,
+      "abstains": true
+    },
+    "rec_croe": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 67.7,
+      "abstains": true
+    },
+    "epa_real": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 79.2,
+      "abstains": true
+    },
+    "rush_epa_att": {
+      "producer": "ingest_advanced4",
+      "dtype": "numeric",
+      "coverage_pct": 20.2,
+      "abstains": true
+    },
+    "ryoe_att": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 20.2,
+      "abstains": true
+    },
+    "rb_topspeed": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 20.2,
+      "abstains": true
+    },
+    "qb_epa_db": {
+      "producer": "ingest_advanced4",
+      "dtype": "numeric",
+      "coverage_pct": 11.3,
+      "abstains": true
+    },
+    "qb_cpoe": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 11.3,
+      "abstains": true
+    },
+    "qb_ttt": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 11.3,
+      "abstains": true
+    },
+    "qb_pressure_rate": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 11.3,
+      "abstains": true
+    },
+    "sis_epa": {
+      "producer": "ingest_advanced5/6",
+      "dtype": "numeric",
+      "coverage_pct": 74.1,
+      "abstains": true
+    },
+    "sis_pe_play": {
+      "producer": "ingest_advanced5/6",
+      "dtype": "numeric",
+      "coverage_pct": 35.0,
+      "abstains": true
+    },
+    "sis_positive": {
+      "producer": "ingest_advanced5/6",
+      "dtype": "numeric",
+      "coverage_pct": 74.1,
+      "abstains": true
+    },
+    "sis_par": {
+      "producer": "ingest_advanced5/6",
+      "dtype": "numeric",
+      "coverage_pct": 74.1,
+      "abstains": true
+    },
+    "sis_boom": {
+      "producer": "ingest_advanced5/6",
+      "dtype": "numeric",
+      "coverage_pct": 74.1,
+      "abstains": true
+    },
+    "sis_bust": {
+      "producer": "ingest_advanced5/6",
+      "dtype": "numeric",
+      "coverage_pct": 74.1,
+      "abstains": true
+    },
+    "snap_share_est": {
+      "producer": "ingest_advanced6",
+      "dtype": "numeric",
+      "coverage_pct": 63.1,
+      "abstains": true
+    },
+    "snap_est_basis": {
+      "producer": "ingest_advanced6",
+      "dtype": "string",
+      "coverage_pct": 63.1,
+      "abstains": true
+    },
+    "sis_epa_per_tgt": {
+      "producer": "ingest_advanced5/6",
+      "dtype": "numeric",
+      "coverage_pct": 39.1,
+      "abstains": true
+    },
+    "sis_rec_boom": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 10.2,
+      "abstains": true
+    },
+    "sis_rec_epa_per_tgt": {
+      "producer": "unknown",
+      "dtype": "numeric",
+      "coverage_pct": 10.2,
+      "abstains": true
+    },
+    "rec_epa_man": {
+      "producer": "ingest_advanced7",
+      "dtype": "numeric",
+      "coverage_pct": 40.2,
+      "abstains": true
+    },
+    "rec_epa_per_tgt_man": {
+      "producer": "ingest_advanced7",
+      "dtype": "numeric",
+      "coverage_pct": 40.2,
+      "abstains": true
+    },
+    "rec_boom_man": {
+      "producer": "ingest_advanced7",
+      "dtype": "numeric",
+      "coverage_pct": 40.2,
+      "abstains": true
+    },
+    "rec_epa_zone": {
+      "producer": "ingest_advanced8",
+      "dtype": "numeric",
+      "coverage_pct": 38.3,
+      "abstains": true
+    },
+    "rec_epa_per_tgt_zone": {
+      "producer": "ingest_advanced8",
+      "dtype": "numeric",
+      "coverage_pct": 38.3,
+      "abstains": true
+    },
+    "rec_boom_zone": {
+      "producer": "ingest_advanced8",
+      "dtype": "numeric",
+      "coverage_pct": 38.3,
+      "abstains": true
+    },
+    "rec_man_zone_delta": {
+      "producer": "ingest_advanced8",
+      "dtype": "numeric",
+      "coverage_pct": 36.4,
+      "abstains": true
+    },
+    "qb_epa_man": {
+      "producer": "ingest_advanced9",
+      "dtype": "numeric",
+      "coverage_pct": 12.1,
+      "abstains": true
+    },
+    "qb_boom_man": {
+      "producer": "ingest_advanced9",
+      "dtype": "numeric",
+      "coverage_pct": 12.1,
+      "abstains": true
+    },
+    "qb_epa_zone": {
+      "producer": "ingest_advanced9",
+      "dtype": "numeric",
+      "coverage_pct": 12.4,
+      "abstains": true
+    },
+    "qb_boom_zone": {
+      "producer": "ingest_advanced9",
+      "dtype": "numeric",
+      "coverage_pct": 12.4,
+      "abstains": true
+    },
+    "qb_man_zone_delta": {
+      "producer": "ingest_advanced9",
+      "dtype": "numeric",
+      "coverage_pct": 12.1,
+      "abstains": true
+    },
+    "rb_epa_a_zone": {
+      "producer": "ingest_advanced10",
+      "dtype": "numeric",
+      "coverage_pct": 22.1,
+      "abstains": true
+    },
+    "rb_boom_zone": {
+      "producer": "ingest_advanced10",
+      "dtype": "numeric",
+      "coverage_pct": 22.1,
+      "abstains": true
+    },
+    "rb_epa_a_gap": {
+      "producer": "ingest_advanced10",
+      "dtype": "numeric",
+      "coverage_pct": 20.8,
+      "abstains": true
+    },
+    "rb_boom_gap": {
+      "producer": "ingest_advanced10",
+      "dtype": "numeric",
+      "coverage_pct": 20.8,
+      "abstains": true
+    },
+    "rb_zone_gap_delta": {
+      "producer": "ingest_advanced10",
+      "dtype": "numeric",
+      "coverage_pct": 20.8,
+      "abstains": true
+    },
+    "opp_pass_cov_pctl": {
+      "producer": "ingest_defense/reweight_2026",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "opp_pass_rush_pctl": {
+      "producer": "ingest_defense/reweight_2026",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "opp_run_def_pctl": {
+      "producer": "ingest_defense/reweight_2026",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    },
+    "opp_pass_cov_epatgt": {
+      "producer": "ingest_defense/reweight_2026",
+      "dtype": "numeric",
+      "coverage_pct": 96.8,
+      "abstains": true
+    }
+  }
+}

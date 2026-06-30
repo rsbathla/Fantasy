@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bb-components — Showcase</title>
+
+<!-- Library tokens + components, included via RELATIVE paths (works from file://) -->
+<link rel="stylesheet" href="./bb-components.css">
+
+<style>
+  /* Page chrome only — the components style themselves in their shadow roots.
+     We deliberately do NOT define --bb-* or --acc here on most of the page so
+     you can see the library's own dark/light tokens take over. The "host theme"
+     demo section below overrides tokens to prove theming works. */
+  :root {
+    --pg-bg: #0e1016; --pg-surface: #161922; --pg-line: #262b3a;
+    --pg-text: #e7ebf3; --pg-muted: #9aa3b6; --pg-accent: #7aa2ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--pg-bg); color: var(--pg-text);
+    font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 18px 96px; }
+  header h1 { font-size: 22px; margin: 0 0 4px; }
+  header p { color: var(--pg-muted); margin: 0 0 6px; }
+  .note {
+    display: inline-block; margin: 10px 0 0; padding: 8px 12px; font-size: 12.5px;
+    background: rgba(122,162,255,.10); border: 1px solid rgba(122,162,255,.3);
+    border-radius: 8px; color: #cdd9ff;
+  }
+  section { margin: 34px 0 0; }
+  section > h2 {
+    font-size: 15px; margin: 0 0 4px; text-transform: uppercase; letter-spacing: .5px;
+    color: var(--pg-accent);
+  }
+  section > .desc { color: var(--pg-muted); font-size: 12.5px; margin: 0 0 12px; }
+  .card {
+    background: var(--pg-surface); border: 1px solid var(--pg-line);
+    border-radius: 12px; padding: 16px 18px; margin: 12px 0;
+  }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .row + .row { margin-top: 10px; }
+  .label { font-size: 11px; text-transform: uppercase; letter-spacing: .4px;
+    color: var(--pg-muted); width: 100%; margin-bottom: 2px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 760px) { .grid2 { grid-template-columns: 1fr; } }
+  .hostskin {
+    /* Re-skin the library by overriding --bb-* on this ancestor only. */
+    --bb-accent: #d98cff; --bb-good: #4fd0a5; --bb-warn: #ffcc66; --bb-bad: #ff7a98;
+    --bb-surface: #1a1426; --bb-surface-2: #241a36; --bb-line: #3a2c52;
+    --bb-radius: 12px;
+  }
+  code { background: var(--pg-line); padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  .toolbar-row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  .toolbar-row bb-search { flex: 1; min-width: 200px; }
+  .small { color: var(--pg-muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>bb-components — Live Showcase</h1>
+    <p>Accessible, dependency-free Web Components for the Best Ball / DFS Command Center.</p>
+    <p class="small">Every component is keyboard-operable (Tab to focus, arrows to move, Enter/Space to act) and screen-reader labeled.</p>
+    <div class="note" role="note">
+      Open your DevTools console (F12) — it should be <strong>completely clean</strong>: zero errors, zero warnings from this page.
+    </div>
+  </header>
+
+  <!-- ============================ TABS ============================ -->
+  <section>
+    <h2>1 · &lt;bb-tabs&gt;</h2>
+    <p class="desc">WAI-ARIA tabs. Arrow keys + Home/End move between tabs (focus follows selection); panels are light-DOM children with <code>data-tab</code>. Tablist scrolls horizontally on narrow screens.</p>
+    <div class="card">
+      <bb-tabs id="demoTabs" selected="board">
+        <div data-tab="board">
+          <h3 style="margin:.2em 0">Best-Ball Plan</h3>
+          <p class="small">Tab panel content lives in the light DOM. This panel holds the populated player table below in a real layout.</p>
+        </div>
+        <div data-tab="dfs">
+          <h3 style="margin:.2em 0">DFS Scenarios</h3>
+          <p class="small">Switching tabs emits <code>bb-tab-change</code>. Watch the console log line below.</p>
+        </div>
+        <div data-tab="pers">
+          <h3 style="margin:.2em 0">Personnel &amp; Scheme</h3>
+          <p class="small">Roving tabindex keeps only the active tab in the Tab order.</p>
+        </div>
+        <div data-tab="def">
+          <h3 style="margin:.2em 0">Defense</h3>
+          <p class="small">Press End to jump here, Home to return to the first tab.</p>
+        </div>
+      </bb-tabs>
+      <p class="small" id="tabLog" style="margin-top:8px">Last bb-tab-change: <em>(none yet)</em></p>
+    </div>
+  </section>
+
+  <!-- ======================= SEGMENTED CONTROL ======================= -->
+  <section>
+    <h2>2 · &lt;bb-segmented&gt;</h2>
+    <p class="desc">Radiogroup pattern (position filter). Arrow keys + Home/End move, Space/Enter selects, emits <code>bb-change</code>.</p>
+    <div class="card">
+      <div class="row">
+        <span class="label">Position filter (also drives the table below)</span>
+        <bb-segmented id="posFilter" label="Filter by position"
+          options="ALL,QB,RB,WR,TE" value="ALL"></bb-segmented>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <span class="label">Another instance (independent)</span>
+        <bb-segmented label="Tier" options="Core,Pivot,Dart" value="Core"></bb-segmented>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ SEARCH ============================ -->
+  <section>
+    <h2>3 · &lt;bb-search&gt;</h2>
+    <p class="desc">Labeled (SR-only label), debounced <code>bb-search</code>, Clear button appears when non-empty, Escape clears, live region announces the result count.</p>
+    <div class="card">
+      <bb-search id="soloSearch" label="Search players by name"
+        placeholder="Type a player name… (try 'la')" debounce="120"></bb-search>
+      <p class="small" id="searchLog" style="margin-top:8px">Last query: <em>(empty)</em> · matches: <span id="searchCount">—</span></p>
+    </div>
+  </section>
+
+  <!-- ============================ BADGES ============================ -->
+  <section>
+    <h2>4 · &lt;bb-badge&gt;</h2>
+    <p class="desc">Status / flag chips. Text is always the accessible name (never color-only); every variant meets ≥4.5:1 contrast.</p>
+    <div class="card">
+      <div class="row">
+        <span class="label">All variants</span>
+        <bb-badge variant="good">GOOD</bb-badge>
+        <bb-badge variant="warn">WARN</bb-badge>
+        <bb-badge variant="bad">BAD</bb-badge>
+        <bb-badge variant="info">INFO</bb-badge>
+        <bb-badge variant="accent">ACCENT</bb-badge>
+        <bb-badge variant="neutral">NEUTRAL</bb-badge>
+        <bb-badge>(default = neutral)</bb-badge>
+      </div>
+      <div class="row" style="margin-top:14px">
+        <span class="label">Real fantasy flags</span>
+        <bb-badge variant="good" title="High weekly ceiling">BOOM MERCHANT</bb-badge>
+        <bb-badge variant="accent" title="Beats man coverage">MAN-BEATER</bb-badge>
+        <bb-badge variant="bad" title="Low weekly floor">FLOOR RISK</bb-badge>
+        <bb-badge variant="warn" title="Volatile range of outcomes">VOLATILE</bb-badge>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= DATA TABLE (states) ======================= -->
+  <section>
+    <h2>5 · &lt;bb-data-table&gt; — every state</h2>
+    <p class="desc">Real <code>&lt;table&gt;</code> with sortable header buttons (<code>aria-sort</code> cycles none→desc→asc), build-once rows, sort-by-reorder, filter-by-display-toggle. Slots for <code>toolbar</code>, <code>empty</code>, <code>error</code>.</p>
+
+    <h3 style="font-size:13px;color:var(--pg-muted);margin:18px 0 6px">5a · Populated + live toolbar (search + position filter wired in)</h3>
+    <div class="card">
+      <bb-data-table id="mainTable" caption="Fantasy board — sortable; filtered live by the controls in the toolbar."
+        responsive="scroll" empty-text="No players match your filters.">
+        <div slot="toolbar" class="toolbar-row">
+          <bb-search id="tblSearch" label="Search the table" placeholder="Filter players…" debounce="80"></bb-search>
+          <bb-segmented id="tblPos" label="Position" options="ALL,QB,RB,WR,TE" value="ALL"></bb-segmented>
+        </div>
+      </bb-data-table>
+      <p class="small" id="tableStatus" style="margin-top:8px"></p>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3 style="font-size:13px;color:var(--pg-muted);margin:18px 0 6px">5b · Loading (skeleton + aria-busy)</h3>
+        <div class="card"><bb-data-table id="loadingTable" loading caption="Loading state"></bb-data-table></div>
+      </div>
+      <div>
+        <h3 style="font-size:13px;color:var(--pg-muted);margin:18px 0 6px">5c · Empty (role=status)</h3>
+        <div class="card"><bb-data-table id="emptyTable" caption="Empty state" empty-text="No players found for this slate."></bb-data-table></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div>
+        <h3 style="font-size:13px;color:var(--pg-muted);margin:18px 0 6px">5d · Error (role=alert, via attribute)</h3>
+        <div class="card"><bb-data-table id="errorTable" caption="Error state" error="Could not load projections. Retry shortly."></bb-data-table></div>
+      </div>
+      <div>
+        <h3 style="font-size:13px;color:var(--pg-muted);margin:18px 0 6px">5e · Error (via &lt;slot name=&quot;error&quot;&gt;)</h3>
+        <div class="card">
+          <bb-data-table id="errorSlotTable" caption="Error state (slotted)">
+            <span slot="error">⚠ Upstream feed timed out — <a href="#" onclick="return false">retry</a>.</span>
+          </bb-data-table>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:13px;color:var(--pg-muted);margin:18px 0 6px">5f · Responsive <code>cards</code> mode — narrow your window below ~640px to see rows reflow into labeled cards</h3>
+    <div class="card">
+      <bb-data-table id="cardsTable" responsive="cards"
+        caption="Same data, responsive='cards' — each row becomes a labeled card on narrow screens."></bb-data-table>
+    </div>
+  </section>
+
+  <!-- ======================= HOST THEMING DEMO ======================= -->
+  <section class="hostskin">
+    <h2>6 · Host theming — same components, re-skinned via <code>--bb-*</code></h2>
+    <p class="desc">This section sets <code>--bb-accent</code>, surfaces, and radius on an ancestor. The components inherit them with no code change.</p>
+    <div class="card" style="background:var(--bb-surface);border-color:var(--bb-line)">
+      <div class="row">
+        <bb-segmented label="Re-skinned filter" options="ALL,QB,RB,WR,TE" value="QB"></bb-segmented>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <bb-badge variant="good">GOOD</bb-badge>
+        <bb-badge variant="accent">ACCENT</bb-badge>
+        <bb-badge variant="bad">BAD</bb-badge>
+      </div>
+      <bb-tabs selected="x" style="margin-top:14px">
+        <div data-tab="x"><p class="small" style="margin:.4em 0">Re-skinned tab panel X.</p></div>
+        <div data-tab="y"><p class="small" style="margin:.4em 0">Re-skinned tab panel Y.</p></div>
+      </bb-tabs>
+    </div>
+  </section>
+</div>
+
+<!-- Library script, RELATIVE path, classic <script> (no type=module) -->
+<script src="./bb-components.js"></script>
+<script>
+/* Demo wiring — plain vanilla JS. ~12 sample players in the dashboard's shape. */
+(function () {
+  'use strict';
+
+  var PLAYERS = [
+    { n: 'Bijan Robinson',     p: 'RB', t: 'ATL', c: 96, d: 4,  pw17: 71, prof: 'Bellcow back, dual-threat RB1.',           f: ['BOOM MERCHANT'] },
+    { n: "Ja'Marr Chase",      p: 'WR', t: 'CIN', c: 95, d: 6,  pw17: 78, prof: 'Alpha target hog, elite separator.',       f: ['BOOM MERCHANT','MAN-BEATER'] },
+    { n: 'CeeDee Lamb',        p: 'WR', t: 'DAL', c: 92, d: 5,  pw17: 74, prof: 'Volume monster, every-down WR1.',          f: ['MAN-BEATER'] },
+    { n: 'Josh Allen',         p: 'QB', t: 'BUF', c: 90, d: 7,  pw17: 69, prof: 'Konami-code QB, rushing floor + ceiling.', f: ['BOOM MERCHANT'] },
+    { n: 'Saquon Barkley',     p: 'RB', t: 'PHI', c: 89, d: 9,  pw17: 66, prof: 'Explosive behind elite line.',            f: ['VOLATILE'] },
+    { n: 'Amon-Ra St. Brown',  p: 'WR', t: 'DET', c: 88, d: 4,  pw17: 70, prof: 'PPR cheat code, target earner.',          f: [] },
+    { n: 'Lamar Jackson',      p: 'QB', t: 'BAL', c: 87, d: 8,  pw17: 64, prof: 'Dual-threat MVP upside.',                 f: ['BOOM MERCHANT'] },
+    { n: 'Brock Bowers',       p: 'TE', t: 'LV',  c: 84, d: 11, pw17: 58, prof: 'Rare every-down rookie TE.',             f: ['MAN-BEATER'] },
+    { n: 'Jonathan Taylor',    p: 'RB', t: 'IND', c: 82, d: 13, pw17: 55, prof: 'Bounce-back bellcow if healthy.',        f: ['FLOOR RISK'] },
+    { n: 'Drake London',       p: 'WR', t: 'ATL', c: 80, d: 10, pw17: 60, prof: 'Ascending target share with new QB.',   f: ['VOLATILE'] },
+    { n: 'Trey McBride',       p: 'TE', t: 'ARI', c: 79, d: 7,  pw17: 57, prof: 'Target-heavy modern TE.',               f: [] },
+    { n: 'Rome Odunze',        p: 'WR', t: 'CHI', c: 71, d: 18, pw17: 49, prof: 'Boom/bust deep threat, raw role.',       f: ['FLOOR RISK','VOLATILE'] },
+    { n: 'Caleb Williams',     p: 'QB', t: 'CHI', c: 68, d: null, pw17: null, prof: 'Year-2 leap candidate (proj pending).', f: ['VOLATILE'] }
+  ];
+
+  var POS_COLORS = { QB: '#e0567a', RB: '#37b87a', WR: '#3b8ef0', TE: '#e8a33d' };
+
+  // Build a position pill as a real DOM node (render returning a Node).
+  function posPill(v) {
+    if (!v) return document.createTextNode('–');
+    var s = document.createElement('span');
+    s.textContent = v;
+    s.style.cssText = 'font-size:9px;font-weight:800;border-radius:4px;padding:1px 6px;color:#0c0e13;background:' + (POS_COLORS[v] || '#9aa3b6');
+    return s;
+  }
+  // Flags rendered as a Node fragment (uses bb-badge inside the cell).
+  function flagsCell(v) {
+    if (!v || !v.length) return document.createTextNode('–');
+    var frag = document.createElement('span');
+    frag.style.cssText = 'display:inline-flex;gap:3px;flex-wrap:wrap';
+    v.forEach(function (flag) {
+      var b = document.createElement('bb-badge');
+      var variant = flag === 'FLOOR RISK' ? 'bad'
+                  : flag === 'MAN-BEATER' ? 'accent'
+                  : flag === 'VOLATILE' ? 'warn' : 'good';
+      b.setAttribute('variant', variant);
+      b.textContent = flag;
+      frag.appendChild(b);
+    });
+    return frag;
+  }
+
+  var COLUMNS = [
+    { key: 'n',    label: 'Player',    sortable: true, sortType: 'text' },
+    { key: 'p',    label: 'Pos',       align: 'center', sortable: true, sortType: 'text', render: function (v) { return posPill(v); } },
+    { key: 't',    label: 'Team',      align: 'center', sortable: true, sortType: 'text' },
+    { key: 'c',    label: 'Consensus', align: 'right',  sortable: true, sortType: 'num' },
+    { key: 'd',    label: 'Diverg.',   align: 'right',  sortable: true, sortType: 'num' },
+    { key: 'pw17', label: '% W17',     align: 'right',  sortable: true, sortType: 'num',
+      render: function (v) { return v == null ? null : (v + '%'); } },
+    { key: 'prof', label: 'Profile' },
+    { key: 'f',    label: 'Flags',     render: function (v) { return flagsCell(v); } }
+  ];
+
+  function $(id) { return document.getElementById(id); }
+
+  // --- 5a main table (populated + wired filters) ---
+  var main = $('mainTable');
+  main.rowKey = 'n';
+  main.columns = COLUMNS;
+  main.setRows(PLAYERS);
+  main.sort('c', 'desc');
+
+  var state = { q: '', pos: 'ALL' };
+  function applyMainFilter() {
+    main.setFilter(function (row) {
+      var posOk = state.pos === 'ALL' || row.p === state.pos;
+      var qOk = !state.q || (row.n + ' ' + row.t + ' ' + (row.prof || '')).toLowerCase().indexOf(state.q.toLowerCase()) >= 0;
+      return posOk && qOk;
+    });
+    var visible = PLAYERS.filter(function (row) {
+      var posOk = state.pos === 'ALL' || row.p === state.pos;
+      var qOk = !state.q || (row.n + ' ' + row.t + ' ' + (row.prof || '')).toLowerCase().indexOf(state.q.toLowerCase()) >= 0;
+      return posOk && qOk;
+    }).length;
+    $('tblSearch').count = visible;
+    $('tableStatus').textContent = visible + ' of ' + PLAYERS.length + ' players shown'
+      + (state.pos !== 'ALL' ? ' · pos=' + state.pos : '')
+      + (state.q ? ' · "' + state.q + '"' : '');
+  }
+  $('tblSearch').addEventListener('bb-search', function (e) { state.q = e.detail.query; applyMainFilter(); });
+  $('tblPos').addEventListener('bb-change', function (e) { state.pos = e.detail.value; applyMainFilter(); });
+  applyMainFilter();
+
+  // --- 5b loading table: give it columns so skeleton matches width ---
+  $('loadingTable').columns = COLUMNS.slice(0, 5);
+
+  // --- 5c empty table ---
+  $('emptyTable').columns = COLUMNS.slice(0, 5);
+  $('emptyTable').setRows([]);
+
+  // --- 5d / 5e error tables (columns so colspan is correct) ---
+  $('errorTable').columns = COLUMNS.slice(0, 5);
+  $('errorSlotTable').columns = COLUMNS.slice(0, 5);
+
+  // --- 5f cards table ---
+  var cards = $('cardsTable');
+  cards.columns = [
+    { key: 'n', label: 'Player', sortable: true, sortType: 'text' },
+    { key: 'p', label: 'Pos', align: 'center', render: function (v) { return posPill(v); } },
+    { key: 't', label: 'Team', align: 'center' },
+    { key: 'c', label: 'Consensus', align: 'right', sortable: true, sortType: 'num' },
+    { key: 'pw17', label: '% W17', align: 'right', sortable: true, sortType: 'num',
+      render: function (v) { return v == null ? null : (v + '%'); } }
+  ];
+  cards.setRows(PLAYERS.slice(0, 6));
+
+  // --- tabs log ---
+  $('demoTabs').addEventListener('bb-tab-change', function (e) {
+    $('tabLog').innerHTML = 'Last bb-tab-change: <strong>' + e.detail.id + '</strong>';
+  });
+
+  // --- solo search log ---
+  $('soloSearch').addEventListener('bb-search', function (e) {
+    var q = e.detail.query;
+    var matches = PLAYERS.filter(function (p) {
+      return !q || p.n.toLowerCase().indexOf(q.toLowerCase()) >= 0;
+    }).length;
+    $('soloSearch').count = matches;
+    $('searchLog').innerHTML = 'Last query: <em>' + (q ? q : '(empty)') + '</em> · matches: <span id="searchCount">' + matches + '</span>';
+  });
+
+  // --- standalone position filter (section 2) just logs, no table ---
+  $('posFilter').addEventListener('bb-change', function () { /* wired only to demonstrate event */ });
+})();
+</script>
+</body>
+</html>

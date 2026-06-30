@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.pyo
+_verify_*.png
+_shot_*.png
+_ctxtest.png
+.DS_Store
+*.tmp
+engine/live_tree.json.corrupt_bak

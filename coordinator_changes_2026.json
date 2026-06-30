@@ -1,0 +1,194 @@
+{
+ "_README": "2026 NFL coordinator changes, SOURCED from CBS Sports (verified). oc_new/dc_new=new hire for 2026; name = new coordinator. Source: https://www.cbssports.com/nfl/news/nfl-coaching-grades-2026-offensive-defensive-coordinator-hires/",
+ "ARI": {
+  "oc_new": true,
+  "oc_name": "Nathaniel Hackett",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "ATL": {
+  "oc_new": true,
+  "oc_name": "Tommy Rees",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "BAL": {
+  "oc_new": true,
+  "oc_name": "Declan Doyle",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Jesse Minter",
+  "dc_prior_man_rate": 19,
+  "dc_prior_sack_rate": 5.5,
+  "dc_scheme": "Jesse Minter: heavy zone (~81%), two-high split-field, low man, low blitz, front-four pressure (ex-LAC DC)",
+  "src": "CBS/NFL.com",
+  "dc_source": "user-confirmed (Ramneik), 2026"
+ },
+ "BUF": {
+  "oc_new": true,
+  "oc_name": "Pete Carmichael Jr.",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Jim Leonhard"
+ },
+ "CHI": {
+  "oc_new": true,
+  "oc_name": "Press Taylor",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "CLE": {
+  "oc_new": true,
+  "oc_name": "Travis Switzer",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Mike Rutenberg"
+ },
+ "DAL": {
+  "dc_new": true,
+  "dc_name": "Christian Parker",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "DEN": {
+  "oc_new": true,
+  "oc_name": "Davis Webb",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "DET": {
+  "oc_new": true,
+  "oc_name": "Drew Petzing",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "GB": {
+  "dc_new": true,
+  "dc_name": "Jonathan Gannon",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_prior_man_rate": 15,
+  "dc_prior_sack_rate": 4.5,
+  "dc_scheme": "Jonathan Gannon: LOW blitz (~17-18%), front-four pressure, 3-safety looks",
+  "src": "PackersNews/ESPN"
+ },
+ "KC": {
+  "oc_new": true,
+  "oc_name": "Eric Bieniemy",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "LAC": {
+  "oc_new": true,
+  "oc_name": "Mike McDaniel",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Chris O'Leary"
+ },
+ "LAR": {
+  "oc_new": true,
+  "oc_name": "Nathan Scheelhaase",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "LV": {
+  "oc_new": true,
+  "oc_name": "Andrew Janocko",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Rob Leonard"
+ },
+ "MIA": {
+  "oc_new": true,
+  "oc_name": "Bobby Slowik",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Sean Duggan"
+ },
+ "NYG": {
+  "oc_new": true,
+  "oc_name": "Matt Nagy",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Dennard Wilson",
+  "dc_prior_man_rate": 20,
+  "dc_prior_sack_rate": 7.0,
+  "dc_scheme": "Dennard Wilson: multiple/attacking, smart blitz, DB-coach pass-D emphasis",
+  "src": "ESPN/BigBlueView"
+ },
+ "NYJ": {
+  "oc_new": true,
+  "oc_name": "Frank Reich",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Brian Duker"
+ },
+ "PHI": {
+  "oc_new": true,
+  "oc_name": "Sean Mannion",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "PIT": {
+  "oc_new": true,
+  "oc_name": "Brian Angelichio",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Patrick Graham",
+  "dc_prior_man_rate": 14,
+  "dc_prior_sack_rate": 5.0,
+  "dc_scheme": "Patrick Graham: two-high split-field, press corners, NOT a heavy blitzer",
+  "src": "SteelCurtain/SI"
+ },
+ "SEA": {
+  "oc_new": true,
+  "oc_name": "Brian Fleury",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "SF": {
+  "dc_new": true,
+  "dc_name": "Raheem Morris",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_prior_man_rate": 26,
+  "dc_prior_sack_rate": 8.0,
+  "dc_scheme": "Raheem Morris: MORE man + aggressive (5+ rushers ~1/3), multiple change-ups vs Saleh zone",
+  "src": "ESPN/NinersNation"
+ },
+ "TB": {
+  "oc_new": true,
+  "oc_name": "Zac Robinson",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true
+ },
+ "TEN": {
+  "oc_new": true,
+  "oc_name": "Brian Daboll",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Gus Bradley",
+  "dc_prior_man_rate": 10,
+  "dc_prior_sack_rate": 6.0,
+  "dc_scheme": "Gus Bradley: heavy Cover-3 ZONE (led NFL ~55% Cover-3 in 2023), low man",
+  "src": "PFF/Colts/SI"
+ },
+ "WAS": {
+  "oc_new": true,
+  "oc_name": "David Blough",
+  "source": "cbssports.com/2026-coordinator-hires",
+  "verified": true,
+  "dc_new": true,
+  "dc_name": "Daronte Jones"
+ }
+}

@@ -1,0 +1,17 @@
+# Sample: 460 RB player-seasons (2016–2025), gated by position volume.
+Metric,r² → Next YR FP/G,r² Stickiness to Self
+Prior FP/G | PPR fantasy points per game in year N — baseline benchmark.,0.428,—
+Rush Yards / Game | Rushing yards per game.,0.272,0.455
+Rush Yards | Total rushing yards in year N.,0.251,0.310
+Rec Yards / Game | Receiving yards per game.,0.251,0.443
+Total TDs | Rushing TDs + Receiving TDs.,0.243,0.145
+Rec Yards | Total receiving yards.,0.231,0.297
+Rushes | Total carries in year N.,0.216,0.332
+Target Share | Player's share of his team's targets.,0.207,0.311
+Targets | Total receiving targets in year N.,0.200,0.318
+EPA / Touch | (Rushing EPA + Receiving EPA) per (carry + target).,0.054,0.044
+Yards Per Route Run | Receiving yards per route the player ran — production per opportunity in the passing game.,0.049,0.354
+YPC | Yards per carry — basic rushing efficiency.,0.041,0.049
+YACo / Att | Yards after contact per attempt (PFR).,0.027,0.085
+MTF / Att | Missed tackles forced per rush attempt (PFR's brk_tkl / att).,0.024,0.024
+"Explosive Rush Rate | Share of carries that went for 15+ yards. Big-play rate, computed from pbp.",0.021,0.044

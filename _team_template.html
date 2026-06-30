@@ -1,0 +1,147 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best Ball 2026 — Team Intel Board</title>
+<style>
+:root{--bg:#0f1115;--panel:#161922;--panel2:#1c2030;--line:#262b3a;--txt:#e7ebf3;--mut:#9aa3b6;--mut2:#6b7385;
+--qb:#e0567a;--rb:#37b87a;--wr:#3b8ef0;--te:#e8a33d;--acc:#7aa2ff;--good:#37b87a;--warn:#e8a33d;--bad:#e0567a;
+--chipbg:#222739;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px 80px}
+header{position:sticky;top:0;z-index:30;background:rgba(15,17,21,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:14px 0 10px}
+header .wrap{padding-bottom:0}
+h1{font-size:18px;margin:0 0 2px;letter-spacing:.2px}
+.sub{color:var(--mut);font-size:12px;margin-bottom:10px}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#q{flex:1;min-width:180px;background:var(--panel2);border:1px solid var(--line);color:var(--txt);border-radius:9px;padding:8px 11px;font-size:13px}
+#q::placeholder{color:var(--mut2)}
+.btn{background:var(--panel2);border:1px solid var(--line);color:var(--mut);border-radius:9px;padding:8px 11px;font-size:12px;cursor:pointer;white-space:nowrap}
+.btn:hover{color:var(--txt);border-color:var(--acc)}
+.nav{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.nav a{font-size:11px;font-weight:600;background:var(--chipbg);border:1px solid var(--line);border-radius:7px;padding:3px 7px;cursor:pointer;color:var(--mut);text-decoration:none}
+.nav a:hover{color:var(--txt);border-color:var(--acc)}
+.nav a b{color:var(--txt)} .nav a .c{color:var(--mut2);font-weight:500}
+.team{margin-top:18px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel)}
+.thead{display:flex;align-items:center;gap:10px;padding:12px 14px;cursor:pointer;background:linear-gradient(180deg,var(--panel2),var(--panel))}
+.thead:hover{background:var(--panel2)}
+.tabbr{font-size:15px;font-weight:800;letter-spacing:.4px;min-width:42px}
+.tname{font-weight:600}
+.tmeta{color:var(--mut);font-size:12px;margin-left:auto;text-align:right;white-space:nowrap}
+.caret{color:var(--mut2);transition:transform .15s;font-size:12px}
+.team.open .caret{transform:rotate(90deg)}
+.tbody{display:none;border-top:1px solid var(--line)}
+.team.open .tbody{display:block}
+.sched{display:flex;gap:14px;flex-wrap:wrap;padding:9px 14px;font-size:12px;color:var(--mut);background:var(--panel2);border-bottom:1px solid var(--line)}
+.sched b{color:var(--txt);font-weight:600}
+.tnote{padding:10px 14px;font-size:12.5px;color:#c8cee0;border-bottom:1px solid var(--line);background:rgba(122,162,255,.05)}
+.tnote .lab{color:var(--acc);font-weight:700;font-size:11px;letter-spacing:.3px;text-transform:uppercase;margin-right:6px}
+.prow{display:grid;grid-template-columns:30px 22px 1fr 56px 44px 44px;gap:8px;align-items:center;padding:9px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.prow:last-child{border-bottom:none}
+.prow:hover{background:var(--panel2)}
+.prk{color:var(--mut2);font-size:12px;text-align:right}
+.pos{font-size:9px;font-weight:800;text-align:center;border-radius:4px;padding:2px 0;color:#0c0e13}
+.pos.QB{background:var(--qb)}.pos.RB{background:var(--rb)}.pos.WR{background:var(--wr)}.pos.TE{background:var(--te)}
+.pname{font-weight:600;font-size:13.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pname .tg{font-size:9px;font-weight:700;border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:middle}
+.tg.a{background:rgba(232,163,61,.18);color:var(--te)} .tg.v{background:rgba(55,184,122,.16);color:var(--good)}
+.tg.r{background:rgba(224,86,122,.16);color:var(--bad)} .tg.b{background:rgba(59,142,240,.16);color:var(--wr)} .tg.x{background:rgba(224,86,122,.16);color:var(--bad)}
+.pcell{font-size:12px;color:var(--mut);text-align:right}
+.pcell b{color:var(--txt)}
+.det{display:none;padding:4px 14px 14px;background:var(--panel2);border-bottom:1px solid var(--line);font-size:12.5px}
+.prow.open + .det{display:block}
+.layer{margin-top:11px}
+.layer .lh{font-size:10.5px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:var(--acc);margin-bottom:4px;display:flex;align-items:center;gap:6px}
+.layer .lh .dot{width:6px;height:6px;border-radius:50%;background:var(--acc)}
+.kv{color:#c8cee0}.kv b{color:#fff}
+.kv .sep{color:var(--mut2);margin:0 7px}
+.q{color:var(--mut);font-style:italic;border-left:2px solid var(--line);padding-left:9px;margin-top:5px}
+.src{color:var(--mut2);font-style:normal}
+.ovf{display:inline-block;background:rgba(224,86,122,.13);color:#f3a3b4;border:1px solid rgba(224,86,122,.3);border-radius:6px;padding:2px 7px;font-size:11px;margin:3px 5px 0 0}
+.ovf .ty{font-weight:700;text-transform:uppercase;font-size:9px;color:var(--bad);margin-right:5px}
+.muted{color:var(--mut2)}
+.none{padding:18px 14px;color:var(--mut2);font-size:12px}
+mark{background:rgba(232,163,61,.4);color:#fff;border-radius:2px}
+.legend{font-size:11px;color:var(--mut2);margin-top:8px}
+.legend span{margin-right:12px}
+</style></head><body>
+<header><div class="wrap">
+  <h1>Best Ball 2026 — Team Intel Board</h1>
+  <div class="sub" id="sub"></div>
+  <div class="controls">
+    <input id="q" placeholder="Search any player across all teams…" autocomplete="off">
+    <button class="btn" id="exp">Expand all</button>
+    <button class="btn" id="col">Collapse all</button>
+  </div>
+  <div class="nav" id="nav"></div>
+</div></header>
+<div class="wrap" id="root"></div>
+<script>
+const DATA=__DATA__, COV=__COV__;
+const sub=document.getElementById('sub');
+sub.textContent=`${COV.players} players · ${COV.teams} teams · layers: ${COV.sum} summaries · ${COV.bb} best-ball · ${COV.vid} video · ${COV.ov} risk flags · ${COV.teamnotes} team tendency notes`;
+const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const root=document.getElementById('root'), nav=document.getElementById('nav');
+function tags(p){let o='';if(p.cl>=33)o+='<span class="tg a">α-ceiling</span>';
+ if(p.rk&&p.adp&&p.rk<=p.adp-8)o+='<span class="tg v">value</span>';
+ if(p.boom&&(p.boom.tier=='ELITE'||p.boom.tier=='HIGH'))o+='<span class="tg b">'+p.boom.badge.split(' \u00b7 ')[0]+' ceil</span>';
+ if(p.boom&&p.boom.tier=='FA')o+='<span class="tg r">FA</span>';
+ if(p.rk&&p.adp&&p.rk>=p.adp+10)o+='<span class="tg x">reach</span>';
+ if(p.ov&&p.ov.length)o+='<span class="tg r">risk</span>';return o;}
+function val(x,suf){return (x===null||x===undefined||x==='')?null:(x+(suf||''));}
+function detail(p){
+ let L=[];
+ // DATA
+ let d=[];
+ if(p.rk)d.push(`board <b>#${p.rk}</b>`); if(p.adp)d.push(`ADP <b>${p.adp}</b>`);
+ if(p.pg)d.push(`proj <b>${p.pg}</b>/g`); if(p.rr)d.push(`reg-season <b>#${p.rr}</b>`);
+ if(p.ap||p.ap===0)d.push(`advancement <b>${p.ap}%</b>`);
+ L.push(`<div class="layer"><div class="lh"><span class="dot"></span>Data</div><div class="kv">${d.join('<span class="sep">·</span>')}</div></div>`);
+ // UPSIDE
+ let u=[];
+ if(p.cl)u.push(`ceiling p95 <b>${p.cl}</b>${p.clp?` (${p.clp}<span class="muted">pctl</span>)`:''}`);
+ if(p.boom&&p.boom.badge)u.push(`<b>boom model:</b> ${esc(p.boom.badge)}`);
+ if(p.sp)u.push(`spike <b>${p.sp}%</b>`); if(p.cv)u.push(`CV <b>${p.cv}</b>`);
+ if(p.by)u.push(`bye <b>W${p.by}</b>`);
+ let sc=[]; if(p.w15)sc.push(`W15 ${esc(p.w15)}`); if(p.w16)sc.push(`W16 ${esc(p.w16)}`); if(p.w17)sc.push(`W17 ${esc(p.w17)}${p.tl?` <span class="muted">tail #${p.tl}</span>`:''}`);
+ let ut=`<div class="kv">${u.join('<span class="sep">·</span>')}</div>`;
+ if(sc.length)ut+=`<div class="kv" style="margin-top:4px">playoffs <span class="sep">·</span>${sc.join('<span class="sep">·</span>')}</div>`;
+ L.push(`<div class="layer"><div class="lh"><span class="dot"></span>Upside</div>${ut}</div>`);
+ // BEST BALL
+ L.push(`<div class="layer"><div class="lh"><span class="dot"></span>Best ball</div><div class="kv">${p.bb?esc(p.bb):'<span class="muted">— no best-ball-specific note</span>'}</div></div>`);
+ // QUALITATIVE
+ let qparts=[];
+ if(p.sm)qparts.push(`<div class="kv">${esc(p.sm)}</div>`);
+ if(p.q)qparts.push(`<div class="q">${esc(p.q)}</div>`);
+ if(p.vd)qparts.push(`<div class="kv" style="margin-top:5px"><span class="muted">video:</span> ${esc(p.vd)}</div>`);
+ if(p.ov&&p.ov.length)qparts.push(`<div style="margin-top:5px">`+p.ov.map(o=>`<span class="ovf"><span class="ty">${esc(o.ty)}</span>${esc(o.no)}</span>`).join('')+`</div>`);
+ if(p.qs)qparts.push(`<div class="muted" style="margin-top:5px">coachspeak intensity: ${p.qs}</div>`);
+ if(!qparts.length)qparts.push('<div class="muted">— no qualitative notes yet</div>');
+ L.push(`<div class="layer"><div class="lh"><span class="dot"></span>Qualitative</div>${qparts.join('')}</div>`);
+ return L.join('');
+}
+function render(){
+ root.innerHTML=''; nav.innerHTML='';
+ DATA.forEach((t,i)=>{
+  const a=document.createElement('a');a.innerHTML=`<b>${t.t}</b> <span class="c">${t.nplay}</span>`;a.onclick=()=>{const el=document.getElementById('tm'+i);el.classList.add('open');el.scrollIntoView({behavior:'smooth',block:'start'});};nav.appendChild(a);
+  const sec=document.createElement('section');sec.className='team';sec.id='tm'+i;
+  const sched=[];if(t.w15)sched.push(`<span>W15 <b>${esc(t.w15)}</b></span>`);if(t.w16)sched.push(`<span>W16 <b>${esc(t.w16)}</b></span>`);if(t.w17)sched.push(`<span>W17 <b>${esc(t.w17)}</b>${t.tl?` (tail #${t.tl})`:''}</span>`);
+  let rowsH=t.players.map(p=>`<div class="prow" data-n="${esc(p.n.toLowerCase())}" data-ctx-host><div class="prk">${p.rk||''}</div><div class="pos ${p.p}">${p.p}</div><div class="pname">${esc(p.n)}${tags(p)}<span class="ctxchip" data-ctx-name="${esc(p.n)}" data-ctx-pos="${esc(p.p)}">EPA</span></div><div class="pcell">ADP <b>${p.adp||'—'}</b></div><div class="pcell">cl <b>${p.cl||'—'}</b></div><div class="pcell">#<b>${p.rr||'—'}</b></div></div><div class="det" data-det></div>`).join('');
+  sec.innerHTML=`<div class="thead"><div class="tabbr">${t.t}</div><div class="tname">${esc(t.nm)}</div><div class="tmeta">${t.by?'bye W'+t.by+' · ':''}${t.nplay} draftable · ${t.nalpha} α-ceiling · best #${t.best}</div><div class="caret">▶</div></div>
+   <div class="tbody">${sched.length?`<div class="sched">Playoff schedule: ${sched.join('')}</div>`:''}${t.note?`<div class="tnote"><span class="lab">Team tendencies</span>${esc(t.note)}</div>`:'<div class="tnote muted">No team tendency note yet for this team.</div>'}${rowsH}</div>`;
+  root.appendChild(sec);
+  sec.querySelector('.thead').onclick=()=>sec.classList.toggle('open');
+  const prows=sec.querySelectorAll('.prow');
+  prows.forEach((row,idx)=>{row.onclick=()=>{const det=row.nextElementSibling;if(!row.classList.contains('open')&&!det.dataset.built){det.innerHTML=detail(t.players[idx]);det.dataset.built='1';}row.classList.toggle('open');};});
+ });
+}
+render();
+document.getElementById('exp').onclick=()=>document.querySelectorAll('.team').forEach(e=>e.classList.add('open'));
+document.getElementById('col').onclick=()=>document.querySelectorAll('.team').forEach(e=>{e.classList.remove('open');e.querySelectorAll('.prow.open').forEach(r=>r.classList.remove('open'));});
+const q=document.getElementById('q');
+q.oninput=()=>{const s=q.value.trim().toLowerCase();
+ document.querySelectorAll('.team').forEach(sec=>{let any=false;
+  sec.querySelectorAll('.prow').forEach(row=>{const m=!s||row.dataset.n.includes(s);row.style.display=m?'grid':'none';if(m&&s)any=true;
+   const nm=row.querySelector('.pname');nm.querySelectorAll('mark').length;});
+  if(s){sec.classList.toggle('open',any);sec.style.display=any?'':'none';}else{sec.style.display='';sec.classList.remove('open');}});
+};
+</script></body></html>

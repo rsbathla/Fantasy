@@ -1,0 +1,371 @@
+{
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "$id": "https://bestball2026/engine/tree_schema.json",
+ "title": "Best Ball 2026 Decision Tree (Contract 3)",
+ "description": "Schema for the pick-decision tree produced by engine/decision_tree.py (Contract 4) and consumed by the decision dashboard UI (Contract 5). One state + one headline pick + a branching tree of ordered availability scenarios at our pick, each looking ahead 1-2 plies. Branch values come from pick_values (dTitle/dAdv/dW17); branches are ordered best->fallback with the last branch being 'best available / need POS'. From round ~8 on, ties break toward playoff_up (see docs/STRATEGY_SPEC.md S4).",
+ "type": "object",
+ "required": [
+  "state",
+  "headline",
+  "tree"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "state": {
+   "type": "object",
+   "description": "The live draft state at the moment of this decision.",
+   "required": [
+    "pick",
+    "round",
+    "seat",
+    "roster",
+    "counts",
+    "anchor"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "pick": {
+     "type": "integer",
+     "minimum": 1,
+     "description": "Overall pick number."
+    },
+    "round": {
+     "type": "integer",
+     "minimum": 1,
+     "description": "Draft round (1-18)."
+    },
+    "seat": {
+     "type": "integer",
+     "minimum": 1,
+     "description": "Our draft slot (1-12)."
+    },
+    "roster": {
+     "type": "array",
+     "description": "Players we have already drafted.",
+     "items": {
+      "type": "object",
+      "required": [
+       "name",
+       "pos",
+       "team"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "name": {
+        "type": "string"
+       },
+       "pos": {
+        "type": "string",
+        "enum": [
+         "QB",
+         "RB",
+         "WR",
+         "TE"
+        ]
+       },
+       "team": {
+        "type": "string",
+        "description": "Team abbreviation, e.g. LAR."
+       }
+      }
+     }
+    },
+    "counts": {
+     "type": "object",
+     "description": "Positional counts on our current roster.",
+     "required": [
+      "QB",
+      "RB",
+      "WR",
+      "TE"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "QB": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "RB": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "WR": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "TE": {
+       "type": "integer",
+       "minimum": 0
+      }
+     }
+    },
+    "anchor": {
+     "type": "string",
+     "description": "Our best game-stack to build, as 'AWAY@HOME' or 'none' if no stack seeded yet."
+    },
+    "untracked": {
+     "type": "array"
+    },
+    "dropped": {
+     "type": "array"
+    },
+    "modeled_n": {
+     "type": "integer"
+    },
+    "drafted_n": {
+     "type": "integer"
+    }
+   }
+  },
+  "headline": {
+   "type": "object",
+   "description": "The single recommended pick at this state.",
+   "required": [
+    "take",
+    "dTitle",
+    "dAdv",
+    "why"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "take": {
+     "type": "string",
+     "description": "Recommended player name."
+    },
+    "dTitle": {
+     "type": "number",
+     "description": "Marginal title-share contribution (from pick_values)."
+    },
+    "dAdv": {
+     "type": "number",
+     "description": "Marginal P(advance) contribution (from pick_values)."
+    },
+    "why": {
+     "type": "string",
+     "description": "One-line human rationale."
+    }
+   }
+  },
+  "tree": {
+   "$ref": "#/definitions/node"
+  }
+ },
+ "definitions": {
+  "node": {
+   "type": "object",
+   "description": "A decision node: a label for the pick plus ordered branches (availability scenarios).",
+   "required": [
+    "label",
+    "branches"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "label": {
+     "type": "string",
+     "description": "Human label for the pick this node decides, e.g. 'Pick 43 (R4)'."
+    },
+    "branches": {
+     "type": "array",
+     "description": "2-4 branches ordered best->fallback. The LAST branch must be the catch-all 'best available / need POS'.",
+     "minItems": 2,
+     "maxItems": 4,
+     "items": {
+      "$ref": "#/definitions/branch"
+     }
+    }
+   }
+  },
+  "branch": {
+   "type": "object",
+   "description": "One availability scenario and the pick to make in it, optionally with a 1-2 ply look-ahead subtree.",
+   "required": [
+    "cond",
+    "take",
+    "pos",
+    "dTitle",
+    "dAdv",
+    "dW17",
+    "reason"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "cond": {
+     "type": "string",
+     "description": "The trigger condition, e.g. 'if Davante Adams (elite WR) still on board'."
+    },
+    "take": {
+     "type": "string",
+     "description": "Player to take in this scenario."
+    },
+    "pos": {
+     "type": "string",
+     "enum": [
+      "QB",
+      "RB",
+      "WR",
+      "TE"
+     ]
+    },
+    "team": {
+     "type": "string",
+     "description": "Team abbreviation of the pick (optional)."
+    },
+    "dTitle": {
+     "type": "number",
+     "description": "Marginal title-share Delta for this pick."
+    },
+    "dAdv": {
+     "type": "number",
+     "description": "Marginal P(advance) Delta for this pick."
+    },
+    "dW17": {
+     "type": "number",
+     "description": "Marginal W17 (finals) Delta for this pick."
+    },
+    "playoff_up": {
+     "type": "number",
+     "minimum": 0,
+     "maximum": 1,
+     "description": "Player's normalized W15-17 ceiling overlay (from engine/playoff_overlay.csv); the late-round tie-breaker/driver."
+    },
+    "reason": {
+     "type": "string",
+     "description": "Short rationale for this branch."
+    },
+    "then": {
+     "description": "Optional next-pick subtree (same node shape), for 1-2 ply look-ahead.",
+     "$ref": "#/definitions/node"
+    }
+   }
+  }
+ },
+ "example": {
+  "state": {
+   "pick": 43,
+   "round": 4,
+   "seat": 7,
+   "roster": [
+    {
+     "name": "Ja'Marr Chase",
+     "pos": "WR",
+     "team": "CIN"
+    },
+    {
+     "name": "Jahmyr Gibbs",
+     "pos": "RB",
+     "team": "DET"
+    },
+    {
+     "name": "Drake London",
+     "pos": "WR",
+     "team": "ATL"
+    }
+   ],
+   "counts": {
+    "QB": 0,
+    "RB": 1,
+    "WR": 2,
+    "TE": 0
+   },
+   "anchor": "none"
+  },
+  "headline": {
+   "take": "Davante Adams",
+   "dTitle": 0.041,
+   "dAdv": 0.052,
+   "why": "Elite-ceiling WR falling past ADP (46.7); adds a third alpha WR to the core and carries a top-tier W15-17 slate (LAR vs DAL/SEA/TB). Advancement-positive AND finals-positive at R4."
+  },
+  "tree": {
+   "label": "Pick 43 (R4)",
+   "branches": [
+    {
+     "cond": "if Davante Adams (elite WR) still on board",
+     "take": "Davante Adams",
+     "pos": "WR",
+     "team": "LAR",
+     "dTitle": 0.041,
+     "dAdv": 0.052,
+     "dW17": 0.038,
+     "playoff_up": 0.842,
+     "reason": "Best ceiling-volume on the board and value vs MERGED RANK (ADP 46.7, fell to us). WR is the core (target 8-9) and we still need WR depth. Highest playoff_up of the three options (LAR is a top offense with a soft finals slate) -- a tie-breaker here, not the driver yet at R4.",
+     "then": {
+      "label": "Pick 58 (R5) - look-ahead",
+      "branches": [
+       {
+        "cond": "if a lead-back RB2 (e.g. Josh Jacobs) is available",
+        "take": "Josh Jacobs",
+        "pos": "RB",
+        "team": "GB",
+        "dTitle": 0.034,
+        "dAdv": 0.061,
+        "dW17": 0.022,
+        "playoff_up": 0.686,
+        "reason": "We are RB-light (1). Securing a second clear lead back by R5 is the advancement-insurance rule; carries are bankable W1-14 volume."
+       },
+       {
+        "cond": "else best available WR / need POS",
+        "take": "Chris Olave",
+        "pos": "WR",
+        "team": "NO",
+        "dTitle": 0.027,
+        "dAdv": 0.03,
+        "dW17": 0.024,
+        "playoff_up": 0.549,
+        "reason": "If RB room thins, keep stacking WR ceiling; circle back to RB2 in R6. Fallback = best available."
+       }
+      ]
+     }
+    },
+    {
+     "cond": "else if a top-RB (e.g. Josh Jacobs) is the best value",
+     "take": "Josh Jacobs",
+     "pos": "RB",
+     "team": "GB",
+     "dTitle": 0.033,
+     "dAdv": 0.058,
+     "dW17": 0.021,
+     "playoff_up": 0.686,
+     "reason": "If Adams is gone, pivot to RB: we have only 1 RB and need 2 lead backs by R5. Jacobs is a workhorse (volume = advancement), and GB's playoff environment is solid. Take the floor-securing pick over a lateral WR.",
+     "then": {
+      "label": "Pick 58 (R5) - look-ahead",
+      "branches": [
+       {
+        "cond": "if an alpha WR fell (e.g. DK Metcalf)",
+        "take": "DK Metcalf",
+        "pos": "WR",
+        "team": "PIT",
+        "dTitle": 0.03,
+        "dAdv": 0.028,
+        "dW17": 0.026,
+        "playoff_up": 0.433,
+        "reason": "Back to the WR core (target 8-9) with a ceiling WR who fell; we now have RB floor secured."
+       },
+       {
+        "cond": "else best available / need POS",
+        "take": "Trey McBride",
+        "pos": "TE",
+        "team": "ARI",
+        "dTitle": 0.026,
+        "dAdv": 0.024,
+        "dW17": 0.025,
+        "playoff_up": 0.502,
+        "reason": "Elite-TE-or-wait: if the alpha TE tier is here at value, take it and we need only one more TE late. Otherwise best available."
+       }
+      ]
+     }
+    },
+    {
+     "cond": "else best available / need POS (Adams and the RB tier both gone)",
+     "take": "Tee Higgins",
+     "pos": "WR",
+     "team": "CIN",
+     "dTitle": 0.029,
+     "dAdv": 0.034,
+     "dW17": 0.02,
+     "playoff_up": 0.588,
+     "reason": "Catch-all fallback. Best ceiling-volume left; WR is never a wasted pick given the 8-9 target. NOTE: Higgins is CIN -> pairs with our Ja'Marr Chase for a same-team seed, but Chase+Higgins are WR-WR (r~0, NOT a true correlated stack) -- treat as depth, not as our anchor; seek the QB+catcher+bring-back anchor later."
+    }
+   ]
+  }
+ }
+}

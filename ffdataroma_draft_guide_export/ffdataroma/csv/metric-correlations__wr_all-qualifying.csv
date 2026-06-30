@@ -1,0 +1,20 @@
+# Sample: 619 WR player-seasons (2016–2025), gated by position volume.
+Metric,r² → Next YR FP/G,r² Stickiness to Self
+Prior FP/G | PPR fantasy points per game in year N — baseline benchmark.,0.402,—
+Rec Yards / Game | Receiving yards per game.,0.387,0.384
+Rec Yards | Total receiving yards.,0.344,0.271
+Receptions | Total receptions.,0.320,0.311
+Targets | Total receiving targets.,0.301,0.290
+Target Share | Player's share of his team's targets.,0.292,0.298
+Yards Per Route Run | Average receiving yards generated per route the player ran — production per opportunity.,0.282,0.309
+Targets Per Route Run | How often the player was targeted on routes he ran — the per-opportunity 'go-to' rate.,0.248,0.412
+Air Yards | Total receiving air yards (sum of pass depth on targets).,0.210,0.314
+Receiving TDs | Total receiving TDs.,0.202,0.131
+Rec EPA / Snap | Receiving EPA per offensive snap.,0.155,0.089
+Air Yds / Snap | Air yards per offensive snap (downfield-usage rate proxy).,0.118,0.420
+aDOT-Adj Yds Per Target | Yards per target ABOVE EXPECTED for the player's aDOT. Strips out the deep-shot premium so the leaderboard isn't dominated by downfield specialists.,0.074,0.061
+Rec EPA / Tgt | Receiving EPA per target.,0.065,0.041
+Yards Per Target | Receiving yards per target. Combines catch rate with average completion depth.,0.060,0.069
+MTF / Rec | Missed tackles forced per reception (PFR's brk_tkl / rec).,0.016,0.109
+"YAC Per Reception | Yards after catch per reception. Pure post-catch production, unadjusted for role.",0.010,0.234
+YAC OE Per Reception | YAC per reception ABOVE EXPECTED for the player's aDOT. Positive = creating more after-catch yards than role implies.,0.008,0.182

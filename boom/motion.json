@@ -1,0 +1,2602 @@
+{
+ "michael pittman": {
+  "name": "Michael Pittman",
+  "motion_pct": 51.4,
+  "n_rte": 949,
+  "yprr_motion": 1.68,
+  "yprr_nomotion": 1.67,
+  "motion_lift": 0.01
+ },
+ "xavier weaver": {
+  "name": "Xavier Weaver",
+  "motion_pct": 65.6,
+  "n_rte": 218,
+  "yprr_motion": 0.11,
+  "yprr_nomotion": 0.68,
+  "motion_lift": -0.57
+ },
+ "adonai mitchell": {
+  "name": "Adonai Mitchell",
+  "motion_pct": 45.9,
+  "n_rte": 475,
+  "yprr_motion": 1.38,
+  "yprr_nomotion": 1.81,
+  "motion_lift": -0.43
+ },
+ "devin duvernay": {
+  "name": "Devin Duvernay",
+  "motion_pct": 56.2,
+  "n_rte": 144,
+  "yprr_motion": 0.69,
+  "yprr_nomotion": 0.78,
+  "motion_lift": -0.08
+ },
+ "devontez walker": {
+  "name": "Devontez Walker",
+  "motion_pct": 44.6,
+  "n_rte": 74,
+  "yprr_motion": 2.64,
+  "yprr_nomotion": 1.71,
+  "motion_lift": 0.93
+ },
+ "darnell mooney": {
+  "name": "Darnell Mooney",
+  "motion_pct": 39.8,
+  "n_rte": 907,
+  "yprr_motion": 1.91,
+  "yprr_nomotion": 1.37,
+  "motion_lift": 0.54
+ },
+ "courtland sutton": {
+  "name": "Courtland Sutton",
+  "motion_pct": 58.3,
+  "n_rte": 1057,
+  "yprr_motion": 2.29,
+  "yprr_nomotion": 1.56,
+  "motion_lift": 0.73
+ },
+ "gunner olszewski": {
+  "name": "Gunner Olszewski",
+  "motion_pct": 57.6,
+  "n_rte": 66,
+  "yprr_motion": 2.13,
+  "yprr_nomotion": 2.29,
+  "motion_lift": -0.16
+ },
+ "mecole hardman": {
+  "name": "Mecole Hardman",
+  "motion_pct": 30.9,
+  "n_rte": 68,
+  "yprr_motion": 1.29,
+  "yprr_nomotion": 1.34,
+  "motion_lift": -0.05
+ },
+ "adam trautman": {
+  "name": "Adam Trautman",
+  "motion_pct": 54.1,
+  "n_rte": 318,
+  "yprr_motion": 0.92,
+  "yprr_nomotion": 1.54,
+  "motion_lift": -0.61
+ },
+ "jalen mcmillan": {
+  "name": "Jalen McMillan",
+  "motion_pct": 48.7,
+  "n_rte": 421,
+  "yprr_motion": 1.52,
+  "yprr_nomotion": 1.52,
+  "motion_lift": 0.0
+ },
+ "sterling shepard": {
+  "name": "Sterling Shepard",
+  "motion_pct": 49.9,
+  "n_rte": 633,
+  "yprr_motion": 0.86,
+  "yprr_nomotion": 1.36,
+  "motion_lift": -0.5
+ },
+ "ladd mcconkey": {
+  "name": "Ladd McConkey",
+  "motion_pct": 44.4,
+  "n_rte": 986,
+  "yprr_motion": 1.39,
+  "yprr_nomotion": 2.43,
+  "motion_lift": -1.04
+ },
+ "george kittle": {
+  "name": "George Kittle",
+  "motion_pct": 26.6,
+  "n_rte": 657,
+  "yprr_motion": 3.04,
+  "yprr_nomotion": 2.49,
+  "motion_lift": 0.55
+ },
+ "roman wilson": {
+  "name": "Roman Wilson",
+  "motion_pct": 60.7,
+  "n_rte": 145,
+  "yprr_motion": 0.86,
+  "yprr_nomotion": 1.58,
+  "motion_lift": -0.72
+ },
+ "xavier legette": {
+  "name": "Xavier Legette",
+  "motion_pct": 54.3,
+  "n_rte": 772,
+  "yprr_motion": 0.81,
+  "yprr_nomotion": 1.47,
+  "motion_lift": -0.66
+ },
+ "emeka egbuka": {
+  "name": "Emeka Egbuka",
+  "motion_pct": 36.5,
+  "n_rte": 493,
+  "yprr_motion": 1.65,
+  "yprr_nomotion": 2.05,
+  "motion_lift": -0.4
+ },
+ "zach ertz": {
+  "name": "Zach Ertz",
+  "motion_pct": 57.3,
+  "n_rte": 782,
+  "yprr_motion": 1.45,
+  "yprr_nomotion": 1.52,
+  "motion_lift": -0.07
+ },
+ "john fitzpatrick": {
+  "name": "John FitzPatrick",
+  "motion_pct": 50.0,
+  "n_rte": 122,
+  "yprr_motion": 0.52,
+  "yprr_nomotion": 0.69,
+  "motion_lift": -0.17
+ },
+ "marvin harrison": {
+  "name": "Marvin Harrison",
+  "motion_pct": 49.0,
+  "n_rte": 867,
+  "yprr_motion": 1.64,
+  "yprr_nomotion": 1.8,
+  "motion_lift": -0.16
+ },
+ "quentin johnston": {
+  "name": "Quentin Johnston",
+  "motion_pct": 45.4,
+  "n_rte": 840,
+  "yprr_motion": 1.95,
+  "yprr_nomotion": 1.53,
+  "motion_lift": 0.42
+ },
+ "tyquan thornton": {
+  "name": "Tyquan Thornton",
+  "motion_pct": 48.8,
+  "n_rte": 287,
+  "yprr_motion": 1.49,
+  "yprr_nomotion": 1.89,
+  "motion_lift": -0.4
+ },
+ "scott miller": {
+  "name": "Scott Miller",
+  "motion_pct": 50.3,
+  "n_rte": 175,
+  "yprr_motion": 0.72,
+  "yprr_nomotion": 0.78,
+  "motion_lift": -0.06
+ },
+ "michael wilson": {
+  "name": "Michael Wilson",
+  "motion_pct": 53.8,
+  "n_rte": 1070,
+  "yprr_motion": 1.65,
+  "yprr_nomotion": 1.22,
+  "motion_lift": 0.43
+ },
+ "mason kinsey": {
+  "name": "Mason Kinsey",
+  "motion_pct": 57.7,
+  "n_rte": 78,
+  "yprr_motion": 1.44,
+  "yprr_nomotion": 0.0,
+  "motion_lift": 1.44
+ },
+ "payne durham": {
+  "name": "Payne Durham",
+  "motion_pct": 46.2,
+  "n_rte": 160,
+  "yprr_motion": 1.31,
+  "yprr_nomotion": 0.34,
+  "motion_lift": 0.97
+ },
+ "andrew ogletree": {
+  "name": "Andrew Ogletree",
+  "motion_pct": 59.1,
+  "n_rte": 149,
+  "yprr_motion": 0.28,
+  "yprr_nomotion": 1.82,
+  "motion_lift": -1.54
+ },
+ "zay flowers": {
+  "name": "Zay Flowers",
+  "motion_pct": 41.5,
+  "n_rte": 914,
+  "yprr_motion": 2.54,
+  "yprr_nomotion": 2.44,
+  "motion_lift": 0.1
+ },
+ "romeo doubs": {
+  "name": "Romeo Doubs",
+  "motion_pct": 43.6,
+  "n_rte": 706,
+  "yprr_motion": 1.82,
+  "yprr_nomotion": 1.92,
+  "motion_lift": -0.1
+ },
+ "pat freiermuth": {
+  "name": "Pat Freiermuth",
+  "motion_pct": 55.4,
+  "n_rte": 718,
+  "yprr_motion": 1.94,
+  "yprr_nomotion": 1.15,
+  "motion_lift": 0.8
+ },
+ "demarcus robinson": {
+  "name": "Demarcus Robinson",
+  "motion_pct": 27.5,
+  "n_rte": 717,
+  "yprr_motion": 1.47,
+  "yprr_nomotion": 0.94,
+  "motion_lift": 0.53
+ },
+ "connor heyward": {
+  "name": "Connor Heyward",
+  "motion_pct": 43.8,
+  "n_rte": 64,
+  "yprr_motion": 0.89,
+  "yprr_nomotion": 1.0,
+  "motion_lift": -0.1
+ },
+ "josh whyle": {
+  "name": "Josh Whyle",
+  "motion_pct": 60.1,
+  "n_rte": 218,
+  "yprr_motion": 1.18,
+  "yprr_nomotion": 1.5,
+  "motion_lift": -0.32
+ },
+ "aj barner": {
+  "name": "AJ Barner",
+  "motion_pct": 41.9,
+  "n_rte": 527,
+  "yprr_motion": 1.07,
+  "yprr_nomotion": 1.73,
+  "motion_lift": -0.66
+ },
+ "rashid shaheed": {
+  "name": "Rashid Shaheed",
+  "motion_pct": 36.6,
+  "n_rte": 625,
+  "yprr_motion": 1.69,
+  "yprr_nomotion": 1.64,
+  "motion_lift": 0.05
+ },
+ "kevin austin": {
+  "name": "Kevin Austin",
+  "motion_pct": 40.0,
+  "n_rte": 295,
+  "yprr_motion": 0.55,
+  "yprr_nomotion": 1.28,
+  "motion_lift": -0.72
+ },
+ "tommy tremble": {
+  "name": "Tommy Tremble",
+  "motion_pct": 52.4,
+  "n_rte": 490,
+  "yprr_motion": 1.12,
+  "yprr_nomotion": 0.84,
+  "motion_lift": 0.28
+ },
+ "mack hollins": {
+  "name": "Mack Hollins",
+  "motion_pct": 39.0,
+  "n_rte": 664,
+  "yprr_motion": 1.62,
+  "yprr_nomotion": 1.26,
+  "motion_lift": 0.36
+ },
+ "deebo samuel": {
+  "name": "Deebo Samuel",
+  "motion_pct": 39.4,
+  "n_rte": 817,
+  "yprr_motion": 1.39,
+  "yprr_nomotion": 1.92,
+  "motion_lift": -0.52
+ },
+ "kalif raymond": {
+  "name": "Kalif Raymond",
+  "motion_pct": 34.4,
+  "n_rte": 311,
+  "yprr_motion": 1.39,
+  "yprr_nomotion": 1.74,
+  "motion_lift": -0.34
+ },
+ "ben sims": {
+  "name": "Ben Sims",
+  "motion_pct": 37.3,
+  "n_rte": 75,
+  "yprr_motion": 0.43,
+  "yprr_nomotion": 1.28,
+  "motion_lift": -0.85
+ },
+ "josh palmer": {
+  "name": "Josh Palmer",
+  "motion_pct": 35.7,
+  "n_rte": 589,
+  "yprr_motion": 2.13,
+  "yprr_nomotion": 1.16,
+  "motion_lift": 0.96
+ },
+ "jordan addison": {
+  "name": "Jordan Addison",
+  "motion_pct": 41.7,
+  "n_rte": 868,
+  "yprr_motion": 1.67,
+  "yprr_nomotion": 1.74,
+  "motion_lift": -0.07
+ },
+ "jonnu smith": {
+  "name": "Jonnu Smith",
+  "motion_pct": 39.8,
+  "n_rte": 669,
+  "yprr_motion": 1.31,
+  "yprr_nomotion": 1.88,
+  "motion_lift": -0.57
+ },
+ "malik heath": {
+  "name": "Malik Heath",
+  "motion_pct": 43.4,
+  "n_rte": 143,
+  "yprr_motion": 1.55,
+  "yprr_nomotion": 1.08,
+  "motion_lift": 0.47
+ },
+ "tim jones": {
+  "name": "Tim Jones",
+  "motion_pct": 65.6,
+  "n_rte": 61,
+  "yprr_motion": 1.15,
+  "yprr_nomotion": 0.48,
+  "motion_lift": 0.67
+ },
+ "gabe davis": {
+  "name": "Gabe Davis",
+  "motion_pct": 47.4,
+  "n_rte": 344,
+  "yprr_motion": 0.85,
+  "yprr_nomotion": 1.26,
+  "motion_lift": -0.41
+ },
+ "andre baccellia": {
+  "name": "Andre Baccellia",
+  "motion_pct": 55.4,
+  "n_rte": 65,
+  "yprr_motion": 0.14,
+  "yprr_nomotion": 0.1,
+  "motion_lift": 0.04
+ },
+ "jerry jeudy": {
+  "name": "Jerry Jeudy",
+  "motion_pct": 55.5,
+  "n_rte": 1223,
+  "yprr_motion": 1.32,
+  "yprr_nomotion": 1.72,
+  "motion_lift": -0.41
+ },
+ "cedrick wilson": {
+  "name": "Cedrick Wilson",
+  "motion_pct": 48.6,
+  "n_rte": 243,
+  "yprr_motion": 0.69,
+  "yprr_nomotion": 1.38,
+  "motion_lift": -0.69
+ },
+ "mitchell tinsley": {
+  "name": "Mitchell Tinsley",
+  "motion_pct": 39.5,
+  "n_rte": 129,
+  "yprr_motion": 0.61,
+  "yprr_nomotion": 1.09,
+  "motion_lift": -0.48
+ },
+ "mark andrews": {
+  "name": "Mark Andrews",
+  "motion_pct": 46.0,
+  "n_rte": 646,
+  "yprr_motion": 1.67,
+  "yprr_nomotion": 1.71,
+  "motion_lift": -0.04
+ },
+ "dawson knox": {
+  "name": "Dawson Knox",
+  "motion_pct": 28.3,
+  "n_rte": 545,
+  "yprr_motion": 1.77,
+  "yprr_nomotion": 1.17,
+  "motion_lift": 0.6
+ },
+ "cedric tillman": {
+  "name": "Cedric Tillman",
+  "motion_pct": 57.8,
+  "n_rte": 536,
+  "yprr_motion": 0.88,
+  "yprr_nomotion": 1.49,
+  "motion_lift": -0.62
+ },
+ "juju smith schuster": {
+  "name": "JuJu Smith-Schuster",
+  "motion_pct": 47.5,
+  "n_rte": 545,
+  "yprr_motion": 0.8,
+  "yprr_nomotion": 1.29,
+  "motion_lift": -0.49
+ },
+ "troy franklin": {
+  "name": "Troy Franklin",
+  "motion_pct": 55.8,
+  "n_rte": 704,
+  "yprr_motion": 1.23,
+  "yprr_nomotion": 1.58,
+  "motion_lift": -0.35
+ },
+ "shane zylstra": {
+  "name": "Shane Zylstra",
+  "motion_pct": 39.3,
+  "n_rte": 117,
+  "yprr_motion": 0.09,
+  "yprr_nomotion": 0.54,
+  "motion_lift": -0.45
+ },
+ "tyler conklin": {
+  "name": "Tyler Conklin",
+  "motion_pct": 63.0,
+  "n_rte": 506,
+  "yprr_motion": 1.1,
+  "yprr_nomotion": 1.07,
+  "motion_lift": 0.03
+ },
+ "jayden higgins": {
+  "name": "Jayden Higgins",
+  "motion_pct": 49.0,
+  "n_rte": 341,
+  "yprr_motion": 0.86,
+  "yprr_nomotion": 2.19,
+  "motion_lift": -1.33
+ },
+ "alec pierce": {
+  "name": "Alec Pierce",
+  "motion_pct": 51.7,
+  "n_rte": 861,
+  "yprr_motion": 2.64,
+  "yprr_nomotion": 1.56,
+  "motion_lift": 1.08
+ },
+ "chimere dike": {
+  "name": "Chimere Dike",
+  "motion_pct": 56.6,
+  "n_rte": 376,
+  "yprr_motion": 1.24,
+  "yprr_nomotion": 0.98,
+  "motion_lift": 0.26
+ },
+ "pharaoh brown": {
+  "name": "Pharaoh Brown",
+  "motion_pct": 45.5,
+  "n_rte": 77,
+  "yprr_motion": 0.8,
+  "yprr_nomotion": 0.91,
+  "motion_lift": -0.11
+ },
+ "justin jefferson": {
+  "name": "Justin Jefferson",
+  "motion_pct": 41.0,
+  "n_rte": 1112,
+  "yprr_motion": 2.37,
+  "yprr_nomotion": 2.29,
+  "motion_lift": 0.08
+ },
+ "tj hockenson": {
+  "name": "T.J. Hockenson",
+  "motion_pct": 45.4,
+  "n_rte": 648,
+  "yprr_motion": 1.58,
+  "yprr_nomotion": 1.21,
+  "motion_lift": 0.37
+ },
+ "gunnar helm": {
+  "name": "Gunnar Helm",
+  "motion_pct": 50.4,
+  "n_rte": 230,
+  "yprr_motion": 1.71,
+  "yprr_nomotion": 1.39,
+  "motion_lift": 0.32
+ },
+ "lucas krull": {
+  "name": "Lucas Krull",
+  "motion_pct": 70.9,
+  "n_rte": 206,
+  "yprr_motion": 0.89,
+  "yprr_nomotion": 0.64,
+  "motion_lift": 0.25
+ },
+ "theo johnson": {
+  "name": "Theo Johnson",
+  "motion_pct": 59.4,
+  "n_rte": 732,
+  "yprr_motion": 1.29,
+  "yprr_nomotion": 1.0,
+  "motion_lift": 0.29
+ },
+ "tylan wallace": {
+  "name": "Tylan Wallace",
+  "motion_pct": 46.6,
+  "n_rte": 174,
+  "yprr_motion": 1.68,
+  "yprr_nomotion": 1.1,
+  "motion_lift": 0.58
+ },
+ "elijah higgins": {
+  "name": "Elijah Higgins",
+  "motion_pct": 50.0,
+  "n_rte": 430,
+  "yprr_motion": 1.05,
+  "yprr_nomotion": 1.15,
+  "motion_lift": -0.1
+ },
+ "travis hunter": {
+  "name": "Travis Hunter",
+  "motion_pct": 41.5,
+  "n_rte": 212,
+  "yprr_motion": 1.25,
+  "yprr_nomotion": 1.52,
+  "motion_lift": -0.27
+ },
+ "dontayvion wicks": {
+  "name": "Dontayvion Wicks",
+  "motion_pct": 40.7,
+  "n_rte": 462,
+  "yprr_motion": 1.86,
+  "yprr_nomotion": 1.46,
+  "motion_lift": 0.4
+ },
+ "konata mumpfield": {
+  "name": "Konata Mumpfield",
+  "motion_pct": 48.8,
+  "n_rte": 166,
+  "yprr_motion": 0.58,
+  "yprr_nomotion": 0.53,
+  "motion_lift": 0.05
+ },
+ "trent sherfield": {
+  "name": "Trent Sherfield",
+  "motion_pct": 53.3,
+  "n_rte": 105,
+  "yprr_motion": 1.11,
+  "yprr_nomotion": 0.85,
+  "motion_lift": 0.26
+ },
+ "dalton schultz": {
+  "name": "Dalton Schultz",
+  "motion_pct": 45.5,
+  "n_rte": 930,
+  "yprr_motion": 1.12,
+  "yprr_nomotion": 1.65,
+  "motion_lift": -0.53
+ },
+ "khalil shakir": {
+  "name": "Khalil Shakir",
+  "motion_pct": 28.9,
+  "n_rte": 754,
+  "yprr_motion": 1.43,
+  "yprr_nomotion": 2.29,
+  "motion_lift": -0.86
+ },
+ "greg dortch": {
+  "name": "Greg Dortch",
+  "motion_pct": 52.4,
+  "n_rte": 475,
+  "yprr_motion": 1.18,
+  "yprr_nomotion": 1.12,
+  "motion_lift": 0.06
+ },
+ "elic ayomanor": {
+  "name": "Elic Ayomanor",
+  "motion_pct": 62.2,
+  "n_rte": 445,
+  "yprr_motion": 1.03,
+  "yprr_nomotion": 1.36,
+  "motion_lift": -0.33
+ },
+ "mason taylor": {
+  "name": "Mason Taylor",
+  "motion_pct": 36.6,
+  "n_rte": 331,
+  "yprr_motion": 0.85,
+  "yprr_nomotion": 1.27,
+  "motion_lift": -0.42
+ },
+ "marvin mims": {
+  "name": "Marvin Mims",
+  "motion_pct": 53.3,
+  "n_rte": 435,
+  "yprr_motion": 1.31,
+  "yprr_nomotion": 2.58,
+  "motion_lift": -1.27
+ },
+ "cooper kupp": {
+  "name": "Cooper Kupp",
+  "motion_pct": 29.8,
+  "n_rte": 719,
+  "yprr_motion": 1.74,
+  "yprr_nomotion": 1.84,
+  "motion_lift": -0.1
+ },
+ "tyler johnson": {
+  "name": "Tyler Johnson",
+  "motion_pct": 30.2,
+  "n_rte": 338,
+  "yprr_motion": 1.09,
+  "yprr_nomotion": 1.6,
+  "motion_lift": -0.51
+ },
+ "colby parkinson": {
+  "name": "Colby Parkinson",
+  "motion_pct": 36.0,
+  "n_rte": 519,
+  "yprr_motion": 0.95,
+  "yprr_nomotion": 1.58,
+  "motion_lift": -0.62
+ },
+ "brandin cooks": {
+  "name": "Brandin Cooks",
+  "motion_pct": 41.8,
+  "n_rte": 589,
+  "yprr_motion": 0.97,
+  "yprr_nomotion": 0.87,
+  "motion_lift": 0.09
+ },
+ "chris godwin": {
+  "name": "Chris Godwin",
+  "motion_pct": 41.0,
+  "n_rte": 459,
+  "yprr_motion": 1.38,
+  "yprr_nomotion": 2.5,
+  "motion_lift": -1.12
+ },
+ "tucker kraft": {
+  "name": "Tucker Kraft",
+  "motion_pct": 41.4,
+  "n_rte": 563,
+  "yprr_motion": 1.37,
+  "yprr_nomotion": 2.66,
+  "motion_lift": -1.29
+ },
+ "allen lazard": {
+  "name": "Allen Lazard",
+  "motion_pct": 60.7,
+  "n_rte": 514,
+  "yprr_motion": 1.05,
+  "yprr_nomotion": 1.35,
+  "motion_lift": -0.31
+ },
+ "jauan jennings": {
+  "name": "Jauan Jennings",
+  "motion_pct": 27.0,
+  "n_rte": 822,
+  "yprr_motion": 1.86,
+  "yprr_nomotion": 2.01,
+  "motion_lift": -0.15
+ },
+ "davante adams": {
+  "name": "Davante Adams",
+  "motion_pct": 50.8,
+  "n_rte": 866,
+  "yprr_motion": 2.28,
+  "yprr_nomotion": 2.0,
+  "motion_lift": 0.28
+ },
+ "jake ferguson": {
+  "name": "Jake Ferguson",
+  "motion_pct": 45.0,
+  "n_rte": 828,
+  "yprr_motion": 1.33,
+  "yprr_nomotion": 1.31,
+  "motion_lift": 0.02
+ },
+ "jalen coker": {
+  "name": "Jalen Coker",
+  "motion_pct": 57.9,
+  "n_rte": 532,
+  "yprr_motion": 1.64,
+  "yprr_nomotion": 1.64,
+  "motion_lift": 0.0
+ },
+ "jack stoll": {
+  "name": "Jack Stoll",
+  "motion_pct": 51.9,
+  "n_rte": 79,
+  "yprr_motion": 0.54,
+  "yprr_nomotion": 0.9,
+  "motion_lift": -0.36
+ },
+ "jayden reed": {
+  "name": "Jayden Reed",
+  "motion_pct": 38.0,
+  "n_rte": 471,
+  "yprr_motion": 2.58,
+  "yprr_nomotion": 2.06,
+  "motion_lift": 0.53
+ },
+ "mike gesicki": {
+  "name": "Mike Gesicki",
+  "motion_pct": 46.0,
+  "n_rte": 648,
+  "yprr_motion": 1.62,
+  "yprr_nomotion": 1.4,
+  "motion_lift": 0.22
+ },
+ "xavier worthy": {
+  "name": "Xavier Worthy",
+  "motion_pct": 43.1,
+  "n_rte": 861,
+  "yprr_motion": 1.41,
+  "yprr_nomotion": 1.32,
+  "motion_lift": 0.09
+ },
+ "brock wright": {
+  "name": "Brock Wright",
+  "motion_pct": 35.6,
+  "n_rte": 267,
+  "yprr_motion": 0.82,
+  "yprr_nomotion": 0.76,
+  "motion_lift": 0.06
+ },
+ "tucker fisk": {
+  "name": "Tucker Fisk",
+  "motion_pct": 26.4,
+  "n_rte": 87,
+  "yprr_motion": 0.0,
+  "yprr_nomotion": 0.9,
+  "motion_lift": -0.9
+ },
+ "tetairoa mcmillan": {
+  "name": "Tetairoa McMillan",
+  "motion_pct": 51.3,
+  "n_rte": 522,
+  "yprr_motion": 1.67,
+  "yprr_nomotion": 2.23,
+  "motion_lift": -0.56
+ },
+ "isaac teslaa": {
+  "name": "Isaac TeSlaa",
+  "motion_pct": 42.6,
+  "n_rte": 272,
+  "yprr_motion": 0.7,
+  "yprr_nomotion": 1.01,
+  "motion_lift": -0.31
+ },
+ "david moore": {
+  "name": "David Moore",
+  "motion_pct": 57.6,
+  "n_rte": 356,
+  "yprr_motion": 1.02,
+  "yprr_nomotion": 0.96,
+  "motion_lift": 0.06
+ },
+ "van jefferson": {
+  "name": "Van Jefferson",
+  "motion_pct": 56.4,
+  "n_rte": 679,
+  "yprr_motion": 0.93,
+  "yprr_nomotion": 0.91,
+  "motion_lift": 0.02
+ },
+ "davis allen": {
+  "name": "Davis Allen",
+  "motion_pct": 40.0,
+  "n_rte": 305,
+  "yprr_motion": 0.55,
+  "yprr_nomotion": 0.99,
+  "motion_lift": -0.44
+ },
+ "darius cooper": {
+  "name": "Darius Cooper",
+  "motion_pct": 44.4,
+  "n_rte": 90,
+  "yprr_motion": 1.15,
+  "yprr_nomotion": 0.92,
+  "motion_lift": 0.23
+ },
+ "dylan drummond": {
+  "name": "Dylan Drummond",
+  "motion_pct": 51.6,
+  "n_rte": 64,
+  "yprr_motion": 1.12,
+  "yprr_nomotion": 0.16,
+  "motion_lift": 0.96
+ },
+ "daniel bellinger": {
+  "name": "Daniel Bellinger",
+  "motion_pct": 56.3,
+  "n_rte": 343,
+  "yprr_motion": 0.8,
+  "yprr_nomotion": 1.72,
+  "motion_lift": -0.93
+ },
+ "harold fannin": {
+  "name": "Harold Fannin",
+  "motion_pct": 46.9,
+  "n_rte": 403,
+  "yprr_motion": 1.5,
+  "yprr_nomotion": 2.09,
+  "motion_lift": -0.59
+ },
+ "jaylen waddle": {
+  "name": "Jaylen Waddle",
+  "motion_pct": 34.3,
+  "n_rte": 804,
+  "yprr_motion": 1.78,
+  "yprr_nomotion": 2.2,
+  "motion_lift": -0.42
+ },
+ "marquise brown": {
+  "name": "Marquise Brown",
+  "motion_pct": 52.8,
+  "n_rte": 400,
+  "yprr_motion": 1.53,
+  "yprr_nomotion": 1.88,
+  "motion_lift": -0.35
+ },
+ "darren waller": {
+  "name": "Darren Waller",
+  "motion_pct": 42.6,
+  "n_rte": 148,
+  "yprr_motion": 1.52,
+  "yprr_nomotion": 2.2,
+  "motion_lift": -0.68
+ },
+ "christian kirk": {
+  "name": "Christian Kirk",
+  "motion_pct": 53.5,
+  "n_rte": 473,
+  "yprr_motion": 1.49,
+  "yprr_nomotion": 1.09,
+  "motion_lift": 0.4
+ },
+ "julian hill": {
+  "name": "Julian Hill",
+  "motion_pct": 21.6,
+  "n_rte": 208,
+  "yprr_motion": 0.65,
+  "yprr_nomotion": 1.29,
+  "motion_lift": -0.65
+ },
+ "noah brown": {
+  "name": "Noah Brown",
+  "motion_pct": 55.3,
+  "n_rte": 309,
+  "yprr_motion": 1.76,
+  "yprr_nomotion": 1.7,
+  "motion_lift": 0.06
+ },
+ "luke musgrave": {
+  "name": "Luke Musgrave",
+  "motion_pct": 49.4,
+  "n_rte": 249,
+  "yprr_motion": 0.61,
+  "yprr_nomotion": 1.76,
+  "motion_lift": -1.15
+ },
+ "dalton kincaid": {
+  "name": "Dalton Kincaid",
+  "motion_pct": 31.6,
+  "n_rte": 433,
+  "yprr_motion": 1.86,
+  "yprr_nomotion": 2.58,
+  "motion_lift": -0.72
+ },
+ "mitchell evans": {
+  "name": "Mitchell Evans",
+  "motion_pct": 37.7,
+  "n_rte": 122,
+  "yprr_motion": 0.46,
+  "yprr_nomotion": 1.97,
+  "motion_lift": -1.51
+ },
+ "jaxon smith njigba": {
+  "name": "Jaxon Smith-Njigba",
+  "motion_pct": 46.3,
+  "n_rte": 1055,
+  "yprr_motion": 2.85,
+  "yprr_nomotion": 2.71,
+  "motion_lift": 0.14
+ },
+ "marquez valdes scantling": {
+  "name": "Marquez Valdes-Scantling",
+  "motion_pct": 45.2,
+  "n_rte": 485,
+  "yprr_motion": 0.44,
+  "yprr_nomotion": 1.64,
+  "motion_lift": -1.2
+ },
+ "sam laporta": {
+  "name": "Sam LaPorta",
+  "motion_pct": 33.1,
+  "n_rte": 632,
+  "yprr_motion": 1.46,
+  "yprr_nomotion": 2.15,
+  "motion_lift": -0.69
+ },
+ "jakobi meyers": {
+  "name": "Jakobi Meyers",
+  "motion_pct": 43.3,
+  "n_rte": 1051,
+  "yprr_motion": 1.73,
+  "yprr_nomotion": 1.81,
+  "motion_lift": -0.08
+ },
+ "tyrell shavers": {
+  "name": "Tyrell Shavers",
+  "motion_pct": 26.4,
+  "n_rte": 182,
+  "yprr_motion": 0.63,
+  "yprr_nomotion": 2.12,
+  "motion_lift": -1.49
+ },
+ "aj brown": {
+  "name": "A.J. Brown",
+  "motion_pct": 49.3,
+  "n_rte": 785,
+  "yprr_motion": 2.65,
+  "yprr_nomotion": 2.66,
+  "motion_lift": -0.01
+ },
+ "ian thomas": {
+  "name": "Ian Thomas",
+  "motion_pct": 39.6,
+  "n_rte": 96,
+  "yprr_motion": 1.05,
+  "yprr_nomotion": 1.4,
+  "motion_lift": -0.34
+ },
+ "gage larvadain": {
+  "name": "Gage Larvadain",
+  "motion_pct": 52.9,
+  "n_rte": 121,
+  "yprr_motion": 0.48,
+  "yprr_nomotion": 0.7,
+  "motion_lift": -0.22
+ },
+ "andrei iosivas": {
+  "name": "Andrei Iosivas",
+  "motion_pct": 45.8,
+  "n_rte": 1049,
+  "yprr_motion": 0.94,
+  "yprr_nomotion": 0.81,
+  "motion_lift": 0.13
+ },
+ "david sills": {
+  "name": "David Sills",
+  "motion_pct": 42.8,
+  "n_rte": 297,
+  "yprr_motion": 0.92,
+  "yprr_nomotion": 0.44,
+  "motion_lift": 0.48
+ },
+ "malik nabers": {
+  "name": "Malik Nabers",
+  "motion_pct": 52.9,
+  "n_rte": 650,
+  "yprr_motion": 2.15,
+  "yprr_nomotion": 2.4,
+  "motion_lift": -0.26
+ },
+ "terry mclaurin": {
+  "name": "Terry McLaurin",
+  "motion_pct": 54.1,
+  "n_rte": 752,
+  "yprr_motion": 2.62,
+  "yprr_nomotion": 1.78,
+  "motion_lift": 0.84
+ },
+ "devonta smith": {
+  "name": "DeVonta Smith",
+  "motion_pct": 49.2,
+  "n_rte": 861,
+  "yprr_motion": 2.25,
+  "yprr_nomotion": 2.03,
+  "motion_lift": 0.22
+ },
+ "jaylin lane": {
+  "name": "Jaylin Lane",
+  "motion_pct": 58.8,
+  "n_rte": 182,
+  "yprr_motion": 0.98,
+  "yprr_nomotion": 1.6,
+  "motion_lift": -0.62
+ },
+ "liljordan humphrey": {
+  "name": "Lil'Jordan Humphrey",
+  "motion_pct": 63.1,
+  "n_rte": 401,
+  "yprr_motion": 1.17,
+  "yprr_nomotion": 1.04,
+  "motion_lift": 0.13
+ },
+ "calvin austin": {
+  "name": "Calvin Austin",
+  "motion_pct": 56.7,
+  "n_rte": 646,
+  "yprr_motion": 1.17,
+  "yprr_nomotion": 1.76,
+  "motion_lift": -0.59
+ },
+ "tyreek hill": {
+  "name": "Tyreek Hill",
+  "motion_pct": 31.7,
+  "n_rte": 575,
+  "yprr_motion": 1.81,
+  "yprr_nomotion": 2.28,
+  "motion_lift": -0.47
+ },
+ "devaughn vele": {
+  "name": "Devaughn Vele",
+  "motion_pct": 53.4,
+  "n_rte": 500,
+  "yprr_motion": 1.59,
+  "yprr_nomotion": 1.47,
+  "motion_lift": 0.12
+ },
+ "terrance ferguson": {
+  "name": "Terrance Ferguson",
+  "motion_pct": 43.2,
+  "n_rte": 162,
+  "yprr_motion": 0.99,
+  "yprr_nomotion": 1.76,
+  "motion_lift": -0.77
+ },
+ "will dissly": {
+  "name": "Will Dissly",
+  "motion_pct": 42.9,
+  "n_rte": 352,
+  "yprr_motion": 1.67,
+  "yprr_nomotion": 1.62,
+  "motion_lift": 0.05
+ },
+ "drew sample": {
+  "name": "Drew Sample",
+  "motion_pct": 41.6,
+  "n_rte": 387,
+  "yprr_motion": 0.4,
+  "yprr_nomotion": 0.67,
+  "motion_lift": -0.26
+ },
+ "simi fehoko": {
+  "name": "Simi Fehoko",
+  "motion_pct": 42.2,
+  "n_rte": 135,
+  "yprr_motion": 0.0,
+  "yprr_nomotion": 1.36,
+  "motion_lift": -1.36
+ },
+ "kavontae turpin": {
+  "name": "KaVontae Turpin",
+  "motion_pct": 44.0,
+  "n_rte": 430,
+  "yprr_motion": 1.17,
+  "yprr_nomotion": 2.47,
+  "motion_lift": -1.29
+ },
+ "nick vannett": {
+  "name": "Nick Vannett",
+  "motion_pct": 43.9,
+  "n_rte": 98,
+  "yprr_motion": 0.21,
+  "yprr_nomotion": 2.29,
+  "motion_lift": -2.08
+ },
+ "juwan johnson": {
+  "name": "Juwan Johnson",
+  "motion_pct": 39.9,
+  "n_rte": 885,
+  "yprr_motion": 1.56,
+  "yprr_nomotion": 1.66,
+  "motion_lift": -0.1
+ },
+ "josh reynolds": {
+  "name": "Josh Reynolds",
+  "motion_pct": 54.0,
+  "n_rte": 341,
+  "yprr_motion": 0.88,
+  "yprr_nomotion": 0.85,
+  "motion_lift": 0.04
+ },
+ "tanner hudson": {
+  "name": "Tanner Hudson",
+  "motion_pct": 48.0,
+  "n_rte": 175,
+  "yprr_motion": 2.06,
+  "yprr_nomotion": 1.64,
+  "motion_lift": 0.43
+ },
+ "garrett wilson": {
+  "name": "Garrett Wilson",
+  "motion_pct": 56.2,
+  "n_rte": 828,
+  "yprr_motion": 1.85,
+  "yprr_nomotion": 1.77,
+  "motion_lift": 0.08
+ },
+ "jalen tolbert": {
+  "name": "Jalen Tolbert",
+  "motion_pct": 48.9,
+  "n_rte": 759,
+  "yprr_motion": 1.48,
+  "yprr_nomotion": 0.68,
+  "motion_lift": 0.8
+ },
+ "casey washington": {
+  "name": "Casey Washington",
+  "motion_pct": 34.7,
+  "n_rte": 98,
+  "yprr_motion": 1.71,
+  "yprr_nomotion": 0.78,
+  "motion_lift": 0.93
+ },
+ "arian smith": {
+  "name": "Arian Smith",
+  "motion_pct": 38.4,
+  "n_rte": 229,
+  "yprr_motion": 0.16,
+  "yprr_nomotion": 0.27,
+  "motion_lift": -0.11
+ },
+ "john bates": {
+  "name": "John Bates",
+  "motion_pct": 43.1,
+  "n_rte": 218,
+  "yprr_motion": 0.85,
+  "yprr_nomotion": 0.86,
+  "motion_lift": -0.01
+ },
+ "jack bech": {
+  "name": "Jack Bech",
+  "motion_pct": 44.4,
+  "n_rte": 178,
+  "yprr_motion": 1.66,
+  "yprr_nomotion": 0.94,
+  "motion_lift": 0.72
+ },
+ "keon coleman": {
+  "name": "Keon Coleman",
+  "motion_pct": 31.1,
+  "n_rte": 578,
+  "yprr_motion": 1.99,
+  "yprr_nomotion": 1.51,
+  "motion_lift": 0.48
+ },
+ "jamarr chase": {
+  "name": "Ja'Marr Chase",
+  "motion_pct": 43.3,
+  "n_rte": 1311,
+  "yprr_motion": 2.39,
+  "yprr_nomotion": 2.37,
+  "motion_lift": 0.02
+ },
+ "nico collins": {
+  "name": "Nico Collins",
+  "motion_pct": 45.5,
+  "n_rte": 800,
+  "yprr_motion": 2.2,
+  "yprr_nomotion": 3.04,
+  "motion_lift": -0.84
+ },
+ "malachi corley": {
+  "name": "Malachi Corley",
+  "motion_pct": 46.3,
+  "n_rte": 108,
+  "yprr_motion": 0.58,
+  "yprr_nomotion": 1.14,
+  "motion_lift": -0.56
+ },
+ "durham smythe": {
+  "name": "Durham Smythe",
+  "motion_pct": 28.4,
+  "n_rte": 148,
+  "yprr_motion": 0.55,
+  "yprr_nomotion": 0.52,
+  "motion_lift": 0.03
+ },
+ "rome odunze": {
+  "name": "Rome Odunze",
+  "motion_pct": 46.3,
+  "n_rte": 897,
+  "yprr_motion": 1.52,
+  "yprr_nomotion": 1.58,
+  "motion_lift": -0.06
+ },
+ "tory horton": {
+  "name": "Tory Horton",
+  "motion_pct": 33.3,
+  "n_rte": 126,
+  "yprr_motion": 1.69,
+  "yprr_nomotion": 1.07,
+  "motion_lift": 0.62
+ },
+ "nick westbrook ikhine": {
+  "name": "Nick Westbrook-Ikhine",
+  "motion_pct": 54.2,
+  "n_rte": 577,
+  "yprr_motion": 1.03,
+  "yprr_nomotion": 0.99,
+  "motion_lift": 0.04
+ },
+ "braxton berrios": {
+  "name": "Braxton Berrios",
+  "motion_pct": 48.0,
+  "n_rte": 102,
+  "yprr_motion": 0.41,
+  "yprr_nomotion": 0.32,
+  "motion_lift": 0.09
+ },
+ "dj moore": {
+  "name": "DJ Moore",
+  "motion_pct": 44.4,
+  "n_rte": 1143,
+  "yprr_motion": 1.53,
+  "yprr_nomotion": 1.37,
+  "motion_lift": 0.15
+ },
+ "ray ray mccloud": {
+  "name": "Ray-Ray McCloud",
+  "motion_pct": 45.3,
+  "n_rte": 636,
+  "yprr_motion": 0.98,
+  "yprr_nomotion": 1.37,
+  "motion_lift": -0.39
+ },
+ "josh oliver": {
+  "name": "Josh Oliver",
+  "motion_pct": 40.0,
+  "n_rte": 270,
+  "yprr_motion": 1.74,
+  "yprr_nomotion": 1.42,
+  "motion_lift": 0.32
+ },
+ "dk metcalf": {
+  "name": "DK Metcalf",
+  "motion_pct": 50.1,
+  "n_rte": 932,
+  "yprr_motion": 1.73,
+  "yprr_nomotion": 2.22,
+  "motion_lift": -0.49
+ },
+ "bo melton": {
+  "name": "Bo Melton",
+  "motion_pct": 44.4,
+  "n_rte": 124,
+  "yprr_motion": 3.32,
+  "yprr_nomotion": 0.22,
+  "motion_lift": 3.11
+ },
+ "michael mayer": {
+  "name": "Michael Mayer",
+  "motion_pct": 42.3,
+  "n_rte": 421,
+  "yprr_motion": 1.27,
+  "yprr_nomotion": 1.06,
+  "motion_lift": 0.21
+ },
+ "kendrick bourne": {
+  "name": "Kendrick Bourne",
+  "motion_pct": 43.1,
+  "n_rte": 596,
+  "yprr_motion": 1.96,
+  "yprr_nomotion": 1.04,
+  "motion_lift": 0.91
+ },
+ "tyler lockett": {
+  "name": "Tyler Lockett",
+  "motion_pct": 55.0,
+  "n_rte": 851,
+  "yprr_motion": 0.96,
+  "yprr_nomotion": 1.15,
+  "motion_lift": -0.19
+ },
+ "keandre lambert smith": {
+  "name": "KeAndre Lambert-Smith",
+  "motion_pct": 51.5,
+  "n_rte": 68,
+  "yprr_motion": 1.46,
+  "yprr_nomotion": 0.0,
+  "motion_lift": 1.46
+ },
+ "greg dulcich": {
+  "name": "Greg Dulcich",
+  "motion_pct": 54.3,
+  "n_rte": 221,
+  "yprr_motion": 1.13,
+  "yprr_nomotion": 2.25,
+  "motion_lift": -1.12
+ },
+ "luke farrell": {
+  "name": "Luke Farrell",
+  "motion_pct": 39.1,
+  "n_rte": 207,
+  "yprr_motion": 0.64,
+  "yprr_nomotion": 0.8,
+  "motion_lift": -0.15
+ },
+ "matthew golden": {
+  "name": "Matthew Golden",
+  "motion_pct": 47.4,
+  "n_rte": 247,
+  "yprr_motion": 1.8,
+  "yprr_nomotion": 1.15,
+  "motion_lift": 0.65
+ },
+ "jordan whittington": {
+  "name": "Jordan Whittington",
+  "motion_pct": 36.3,
+  "n_rte": 306,
+  "yprr_motion": 0.98,
+  "yprr_nomotion": 1.82,
+  "motion_lift": -0.83
+ },
+ "chig okonkwo": {
+  "name": "Chig Okonkwo",
+  "motion_pct": 61.0,
+  "n_rte": 730,
+  "yprr_motion": 1.36,
+  "yprr_nomotion": 1.52,
+  "motion_lift": -0.16
+ },
+ "rashod bateman": {
+  "name": "Rashod Bateman",
+  "motion_pct": 44.0,
+  "n_rte": 709,
+  "yprr_motion": 1.3,
+  "yprr_nomotion": 1.45,
+  "motion_lift": -0.15
+ },
+ "jake bobo": {
+  "name": "Jake Bobo",
+  "motion_pct": 57.0,
+  "n_rte": 165,
+  "yprr_motion": 0.68,
+  "yprr_nomotion": 0.89,
+  "motion_lift": -0.21
+ },
+ "jatavion sanders": {
+  "name": "Ja'Tavion Sanders",
+  "motion_pct": 62.0,
+  "n_rte": 503,
+  "yprr_motion": 1.3,
+  "yprr_nomotion": 0.66,
+  "motion_lift": 0.63
+ },
+ "rashee rice": {
+  "name": "Rashee Rice",
+  "motion_pct": 39.3,
+  "n_rte": 333,
+  "yprr_motion": 3.23,
+  "yprr_nomotion": 2.16,
+  "motion_lift": 1.07
+ },
+ "mason tipton": {
+  "name": "Mason Tipton",
+  "motion_pct": 44.3,
+  "n_rte": 388,
+  "yprr_motion": 0.53,
+  "yprr_nomotion": 0.39,
+  "motion_lift": 0.14
+ },
+ "jake tonges": {
+  "name": "Jake Tonges",
+  "motion_pct": 31.9,
+  "n_rte": 229,
+  "yprr_motion": 0.54,
+  "yprr_nomotion": 1.62,
+  "motion_lift": -1.08
+ },
+ "dante pettis": {
+  "name": "Dante Pettis",
+  "motion_pct": 39.5,
+  "n_rte": 172,
+  "yprr_motion": 1.28,
+  "yprr_nomotion": 1.54,
+  "motion_lift": -0.26
+ },
+ "darnell washington": {
+  "name": "Darnell Washington",
+  "motion_pct": 40.4,
+  "n_rte": 329,
+  "yprr_motion": 1.44,
+  "yprr_nomotion": 1.9,
+  "motion_lift": -0.46
+ },
+ "george pickens": {
+  "name": "George Pickens",
+  "motion_pct": 46.6,
+  "n_rte": 995,
+  "yprr_motion": 2.45,
+  "yprr_nomotion": 2.24,
+  "motion_lift": 0.21
+ },
+ "james proche": {
+  "name": "James Proche",
+  "motion_pct": 40.6,
+  "n_rte": 101,
+  "yprr_motion": 0.56,
+  "yprr_nomotion": 1.05,
+  "motion_lift": -0.48
+ },
+ "ronnie bell": {
+  "name": "Ronnie Bell",
+  "motion_pct": 36.0,
+  "n_rte": 86,
+  "yprr_motion": 1.13,
+  "yprr_nomotion": 0.18,
+  "motion_lift": 0.95
+ },
+ "grant calcaterra": {
+  "name": "Grant Calcaterra",
+  "motion_pct": 47.6,
+  "n_rte": 372,
+  "yprr_motion": 1.25,
+  "yprr_nomotion": 0.79,
+  "motion_lift": 0.46
+ },
+ "olamide zaccheaus": {
+  "name": "Olamide Zaccheaus",
+  "motion_pct": 44.7,
+  "n_rte": 575,
+  "yprr_motion": 1.39,
+  "yprr_nomotion": 1.45,
+  "motion_lift": -0.06
+ },
+ "blake whiteheart": {
+  "name": "Blake Whiteheart",
+  "motion_pct": 55.8,
+  "n_rte": 147,
+  "yprr_motion": 0.65,
+  "yprr_nomotion": 0.03,
+  "motion_lift": 0.62
+ },
+ "josiah deguara": {
+  "name": "Josiah Deguara",
+  "motion_pct": 39.2,
+  "n_rte": 74,
+  "yprr_motion": 0.86,
+  "yprr_nomotion": 0.22,
+  "motion_lift": 0.64
+ },
+ "tyler higbee": {
+  "name": "Tyler Higbee",
+  "motion_pct": 47.1,
+  "n_rte": 204,
+  "yprr_motion": 1.7,
+  "yprr_nomotion": 1.7,
+  "motion_lift": 0.01
+ },
+ "adam thielen": {
+  "name": "Adam Thielen",
+  "motion_pct": 56.3,
+  "n_rte": 517,
+  "yprr_motion": 1.48,
+  "yprr_nomotion": 1.64,
+  "motion_lift": -0.16
+ },
+ "brycen tremayne": {
+  "name": "Brycen Tremayne",
+  "motion_pct": 59.0,
+  "n_rte": 117,
+  "yprr_motion": 1.61,
+  "yprr_nomotion": 0.98,
+  "motion_lift": 0.64
+ },
+ "jalen brooks": {
+  "name": "Jalen Brooks",
+  "motion_pct": 57.5,
+  "n_rte": 273,
+  "yprr_motion": 0.79,
+  "yprr_nomotion": 0.89,
+  "motion_lift": -0.1
+ },
+ "travis kelce": {
+  "name": "Travis Kelce",
+  "motion_pct": 45.6,
+  "n_rte": 1020,
+  "yprr_motion": 1.43,
+  "yprr_nomotion": 1.82,
+  "motion_lift": -0.38
+ },
+ "cade otton": {
+  "name": "Cade Otton",
+  "motion_pct": 44.7,
+  "n_rte": 836,
+  "yprr_motion": 1.13,
+  "yprr_nomotion": 1.62,
+  "motion_lift": -0.49
+ },
+ "keenan allen": {
+  "name": "Keenan Allen",
+  "motion_pct": 48.0,
+  "n_rte": 942,
+  "yprr_motion": 1.18,
+  "yprr_nomotion": 2.02,
+  "motion_lift": -0.84
+ },
+ "isaiah hodgins": {
+  "name": "Isaiah Hodgins",
+  "motion_pct": 53.1,
+  "n_rte": 209,
+  "yprr_motion": 0.99,
+  "yprr_nomotion": 0.18,
+  "motion_lift": 0.81
+ },
+ "tim patrick": {
+  "name": "Tim Patrick",
+  "motion_pct": 33.0,
+  "n_rte": 451,
+  "yprr_motion": 0.75,
+  "yprr_nomotion": 1.56,
+  "motion_lift": -0.8
+ },
+ "john metchie": {
+  "name": "John Metchie",
+  "motion_pct": 35.4,
+  "n_rte": 460,
+  "yprr_motion": 0.96,
+  "yprr_nomotion": 1.25,
+  "motion_lift": -0.29
+ },
+ "brian thomas": {
+  "name": "Brian Thomas",
+  "motion_pct": 48.2,
+  "n_rte": 937,
+  "yprr_motion": 2.25,
+  "yprr_nomotion": 2.01,
+  "motion_lift": 0.24
+ },
+ "noah fant": {
+  "name": "Noah Fant",
+  "motion_pct": 53.1,
+  "n_rte": 552,
+  "yprr_motion": 1.56,
+  "yprr_nomotion": 1.28,
+  "motion_lift": 0.28
+ },
+ "puka nacua": {
+  "name": "Puka Nacua",
+  "motion_pct": 38.0,
+  "n_rte": 722,
+  "yprr_motion": 2.89,
+  "yprr_nomotion": 4.27,
+  "motion_lift": -1.38
+ },
+ "pat bryant": {
+  "name": "Pat Bryant",
+  "motion_pct": 52.3,
+  "n_rte": 279,
+  "yprr_motion": 0.8,
+  "yprr_nomotion": 1.96,
+  "motion_lift": -1.16
+ },
+ "will mallory": {
+  "name": "Will Mallory",
+  "motion_pct": 61.8,
+  "n_rte": 76,
+  "yprr_motion": 0.32,
+  "yprr_nomotion": 1.03,
+  "motion_lift": -0.72
+ },
+ "xavier gipson": {
+  "name": "Xavier Gipson",
+  "motion_pct": 68.3,
+  "n_rte": 120,
+  "yprr_motion": 0.12,
+  "yprr_nomotion": 0.92,
+  "motion_lift": -0.8
+ },
+ "jalen nailor": {
+  "name": "Jalen Nailor",
+  "motion_pct": 42.2,
+  "n_rte": 729,
+  "yprr_motion": 1.28,
+  "yprr_nomotion": 1.1,
+  "motion_lift": 0.18
+ },
+ "austin trammell": {
+  "name": "Austin Trammell",
+  "motion_pct": 52.2,
+  "n_rte": 67,
+  "yprr_motion": 1.32,
+  "yprr_nomotion": 1.25,
+  "motion_lift": 0.07
+ },
+ "austin hooper": {
+  "name": "Austin Hooper",
+  "motion_pct": 49.3,
+  "n_rte": 450,
+  "yprr_motion": 1.66,
+  "yprr_nomotion": 1.62,
+  "motion_lift": 0.04
+ },
+ "chris olave": {
+  "name": "Chris Olave",
+  "motion_pct": 38.4,
+  "n_rte": 734,
+  "yprr_motion": 1.93,
+  "yprr_nomotion": 2.25,
+  "motion_lift": -0.32
+ },
+ "harrison bryant": {
+  "name": "Harrison Bryant",
+  "motion_pct": 39.4,
+  "n_rte": 109,
+  "yprr_motion": 0.28,
+  "yprr_nomotion": 1.23,
+  "motion_lift": -0.94
+ },
+ "anthony firkser": {
+  "name": "Anthony Firkser",
+  "motion_pct": 43.9,
+  "n_rte": 107,
+  "yprr_motion": 0.64,
+  "yprr_nomotion": 0.38,
+  "motion_lift": 0.26
+ },
+ "demario douglas": {
+  "name": "DeMario Douglas",
+  "motion_pct": 56.0,
+  "n_rte": 641,
+  "yprr_motion": 1.55,
+  "yprr_nomotion": 1.82,
+  "motion_lift": -0.26
+ },
+ "tutu atwell": {
+  "name": "Tutu Atwell",
+  "motion_pct": 37.7,
+  "n_rte": 379,
+  "yprr_motion": 0.96,
+  "yprr_nomotion": 2.62,
+  "motion_lift": -1.66
+ },
+ "luke schoonmaker": {
+  "name": "Luke Schoonmaker",
+  "motion_pct": 43.9,
+  "n_rte": 301,
+  "yprr_motion": 0.87,
+  "yprr_nomotion": 1.53,
+  "motion_lift": -0.66
+ },
+ "tanner conner": {
+  "name": "Tanner Conner",
+  "motion_pct": 33.9,
+  "n_rte": 109,
+  "yprr_motion": 1.03,
+  "yprr_nomotion": 0.96,
+  "motion_lift": 0.07
+ },
+ "isaiah bond": {
+  "name": "Isaiah Bond",
+  "motion_pct": 48.0,
+  "n_rte": 325,
+  "yprr_motion": 1.33,
+  "yprr_nomotion": 0.78,
+  "motion_lift": 0.55
+ },
+ "jonathan mingo": {
+  "name": "Jonathan Mingo",
+  "motion_pct": 57.6,
+  "n_rte": 288,
+  "yprr_motion": 0.71,
+  "yprr_nomotion": 0.62,
+  "motion_lift": 0.09
+ },
+ "brock bowers": {
+  "name": "Brock Bowers",
+  "motion_pct": 45.3,
+  "n_rte": 942,
+  "yprr_motion": 2.06,
+  "yprr_nomotion": 1.93,
+  "motion_lift": 0.13
+ },
+ "curtis samuel": {
+  "name": "Curtis Samuel",
+  "motion_pct": 29.3,
+  "n_rte": 287,
+  "yprr_motion": 0.78,
+  "yprr_nomotion": 1.32,
+  "motion_lift": -0.54
+ },
+ "mike evans": {
+  "name": "Mike Evans",
+  "motion_pct": 47.1,
+  "n_rte": 586,
+  "yprr_motion": 2.31,
+  "yprr_nomotion": 2.37,
+  "motion_lift": -0.05
+ },
+ "zay jones": {
+  "name": "Zay Jones",
+  "motion_pct": 56.4,
+  "n_rte": 319,
+  "yprr_motion": 1.08,
+  "yprr_nomotion": 0.53,
+  "motion_lift": 0.55
+ },
+ "tez johnson": {
+  "name": "Tez Johnson",
+  "motion_pct": 33.5,
+  "n_rte": 275,
+  "yprr_motion": 0.57,
+  "yprr_nomotion": 1.48,
+  "motion_lift": -0.91
+ },
+ "david njoku": {
+  "name": "David Njoku",
+  "motion_pct": 54.8,
+  "n_rte": 624,
+  "yprr_motion": 1.29,
+  "yprr_nomotion": 1.26,
+  "motion_lift": 0.02
+ },
+ "justin watson": {
+  "name": "Justin Watson",
+  "motion_pct": 40.4,
+  "n_rte": 376,
+  "yprr_motion": 0.74,
+  "yprr_nomotion": 0.92,
+  "motion_lift": -0.18
+ },
+ "eric saubert": {
+  "name": "Eric Saubert",
+  "motion_pct": 37.1,
+  "n_rte": 194,
+  "yprr_motion": 1.18,
+  "yprr_nomotion": 0.38,
+  "motion_lift": 0.8
+ },
+ "ben sinnott": {
+  "name": "Ben Sinnott",
+  "motion_pct": 40.9,
+  "n_rte": 181,
+  "yprr_motion": 1.44,
+  "yprr_nomotion": 0.33,
+  "motion_lift": 1.12
+ },
+ "jameson williams": {
+  "name": "Jameson Williams",
+  "motion_pct": 36.9,
+  "n_rte": 998,
+  "yprr_motion": 1.79,
+  "yprr_nomotion": 2.32,
+  "motion_lift": -0.54
+ },
+ "ricky pearsall": {
+  "name": "Ricky Pearsall",
+  "motion_pct": 27.4,
+  "n_rte": 537,
+  "yprr_motion": 1.87,
+  "yprr_nomotion": 1.68,
+  "motion_lift": 0.2
+ },
+ "elijah arroyo": {
+  "name": "Elijah Arroyo",
+  "motion_pct": 30.8,
+  "n_rte": 133,
+  "yprr_motion": 1.56,
+  "yprr_nomotion": 1.25,
+  "motion_lift": 0.31
+ },
+ "treylon burks": {
+  "name": "Treylon Burks",
+  "motion_pct": 51.0,
+  "n_rte": 204,
+  "yprr_motion": 0.57,
+  "yprr_nomotion": 1.05,
+  "motion_lift": -0.48
+ },
+ "drake london": {
+  "name": "Drake London",
+  "motion_pct": 39.9,
+  "n_rte": 857,
+  "yprr_motion": 2.75,
+  "yprr_nomotion": 2.42,
+  "motion_lift": 0.34
+ },
+ "tre harris": {
+  "name": "Tre Harris",
+  "motion_pct": 44.7,
+  "n_rte": 273,
+  "yprr_motion": 0.76,
+  "yprr_nomotion": 1.53,
+  "motion_lift": -0.77
+ },
+ "colston loveland": {
+  "name": "Colston Loveland",
+  "motion_pct": 39.0,
+  "n_rte": 356,
+  "yprr_motion": 1.91,
+  "yprr_nomotion": 2.06,
+  "motion_lift": -0.15
+ },
+ "chris moore": {
+  "name": "Chris Moore",
+  "motion_pct": 50.2,
+  "n_rte": 215,
+  "yprr_motion": 1.04,
+  "yprr_nomotion": 0.88,
+  "motion_lift": 0.16
+ },
+ "tip reiman": {
+  "name": "Tip Reiman",
+  "motion_pct": 47.4,
+  "n_rte": 133,
+  "yprr_motion": 0.39,
+  "yprr_nomotion": 0.43,
+  "motion_lift": -0.03
+ },
+ "ryan flournoy": {
+  "name": "Ryan Flournoy",
+  "motion_pct": 44.5,
+  "n_rte": 339,
+  "yprr_motion": 1.42,
+  "yprr_nomotion": 1.92,
+  "motion_lift": -0.5
+ },
+ "ryan miller": {
+  "name": "Ryan Miller",
+  "motion_pct": 47.9,
+  "n_rte": 140,
+  "yprr_motion": 1.93,
+  "yprr_nomotion": 0.45,
+  "motion_lift": 1.48
+ },
+ "luke mccaffrey": {
+  "name": "Luke McCaffrey",
+  "motion_pct": 64.8,
+  "n_rte": 315,
+  "yprr_motion": 1.23,
+  "yprr_nomotion": 1.09,
+  "motion_lift": 0.14
+ },
+ "malik washington": {
+  "name": "Malik Washington",
+  "motion_pct": 36.6,
+  "n_rte": 543,
+  "yprr_motion": 0.7,
+  "yprr_nomotion": 1.16,
+  "motion_lift": -0.46
+ },
+ "johnny mundt": {
+  "name": "Johnny Mundt",
+  "motion_pct": 34.8,
+  "n_rte": 293,
+  "yprr_motion": 0.86,
+  "yprr_nomotion": 0.87,
+  "motion_lift": -0.0
+ },
+ "luther burden": {
+  "name": "Luther Burden",
+  "motion_pct": 33.9,
+  "n_rte": 230,
+  "yprr_motion": 1.97,
+  "yprr_nomotion": 3.28,
+  "motion_lift": -1.31
+ },
+ "isaiah likely": {
+  "name": "Isaiah Likely",
+  "motion_pct": 40.1,
+  "n_rte": 481,
+  "yprr_motion": 1.67,
+  "yprr_nomotion": 1.6,
+  "motion_lift": 0.07
+ },
+ "tre tucker": {
+  "name": "Tre Tucker",
+  "motion_pct": 43.1,
+  "n_rte": 1153,
+  "yprr_motion": 1.21,
+  "yprr_nomotion": 0.96,
+  "motion_lift": 0.25
+ },
+ "brevyn spann ford": {
+  "name": "Brevyn Spann-Ford",
+  "motion_pct": 43.0,
+  "n_rte": 165,
+  "yprr_motion": 1.09,
+  "yprr_nomotion": 1.08,
+  "motion_lift": 0.01
+ },
+ "jalin hyatt": {
+  "name": "Jalin Hyatt",
+  "motion_pct": 61.2,
+  "n_rte": 291,
+  "yprr_motion": 0.24,
+  "yprr_nomotion": 0.48,
+  "motion_lift": -0.24
+ },
+ "elijah moore": {
+  "name": "Elijah Moore",
+  "motion_pct": 58.7,
+  "n_rte": 668,
+  "yprr_motion": 0.65,
+  "yprr_nomotion": 1.43,
+  "motion_lift": -0.78
+ },
+ "hunter renfrow": {
+  "name": "Hunter Renfrow",
+  "motion_pct": 67.1,
+  "n_rte": 143,
+  "yprr_motion": 0.48,
+  "yprr_nomotion": 0.91,
+  "motion_lift": -0.43
+ },
+ "trey mcbride": {
+  "name": "Trey McBride",
+  "motion_pct": 52.9,
+  "n_rte": 1178,
+  "yprr_motion": 1.92,
+  "yprr_nomotion": 2.14,
+  "motion_lift": -0.22
+ },
+ "kylen granson": {
+  "name": "Kylen Granson",
+  "motion_pct": 56.4,
+  "n_rte": 296,
+  "yprr_motion": 0.73,
+  "yprr_nomotion": 0.77,
+  "motion_lift": -0.04
+ },
+ "brenton strange": {
+  "name": "Brenton Strange",
+  "motion_pct": 48.0,
+  "n_rte": 548,
+  "yprr_motion": 1.62,
+  "yprr_nomotion": 1.85,
+  "motion_lift": -0.23
+ },
+ "xavier hutchinson": {
+  "name": "Xavier Hutchinson",
+  "motion_pct": 47.7,
+  "n_rte": 623,
+  "yprr_motion": 0.79,
+  "yprr_nomotion": 0.94,
+  "motion_lift": -0.15
+ },
+ "jeremy ruckert": {
+  "name": "Jeremy Ruckert",
+  "motion_pct": 44.4,
+  "n_rte": 313,
+  "yprr_motion": 0.93,
+  "yprr_nomotion": 0.89,
+  "motion_lift": 0.05
+ },
+ "amon ra st brown": {
+  "name": "Amon-Ra St. Brown",
+  "motion_pct": 35.3,
+  "n_rte": 1027,
+  "yprr_motion": 2.48,
+  "yprr_nomotion": 2.66,
+  "motion_lift": -0.18
+ },
+ "christian watson": {
+  "name": "Christian Watson",
+  "motion_pct": 40.8,
+  "n_rte": 463,
+  "yprr_motion": 2.51,
+  "yprr_nomotion": 2.76,
+  "motion_lift": -0.25
+ },
+ "cole kmet": {
+  "name": "Cole Kmet",
+  "motion_pct": 43.9,
+  "n_rte": 743,
+  "yprr_motion": 1.22,
+  "yprr_nomotion": 1.01,
+  "motion_lift": 0.21
+ },
+ "deandre hopkins": {
+  "name": "DeAndre Hopkins",
+  "motion_pct": 44.6,
+  "n_rte": 523,
+  "yprr_motion": 1.74,
+  "yprr_nomotion": 1.84,
+  "motion_lift": -0.1
+ },
+ "jahan dotson": {
+  "name": "Jahan Dotson",
+  "motion_pct": 49.3,
+  "n_rte": 763,
+  "yprr_motion": 0.58,
+  "yprr_nomotion": 0.68,
+  "motion_lift": -0.1
+ },
+ "foster moreau": {
+  "name": "Foster Moreau",
+  "motion_pct": 41.6,
+  "n_rte": 315,
+  "yprr_motion": 1.53,
+  "yprr_nomotion": 1.48,
+  "motion_lift": 0.05
+ },
+ "charlie woerner": {
+  "name": "Charlie Woerner",
+  "motion_pct": 34.6,
+  "n_rte": 188,
+  "yprr_motion": 0.4,
+  "yprr_nomotion": 0.55,
+  "motion_lift": -0.15
+ },
+ "wandale robinson": {
+  "name": "Wan'Dale Robinson",
+  "motion_pct": 57.7,
+  "n_rte": 1069,
+  "yprr_motion": 1.71,
+  "yprr_nomotion": 1.46,
+  "motion_lift": 0.25
+ },
+ "jaylin noel": {
+  "name": "Jaylin Noel",
+  "motion_pct": 49.7,
+  "n_rte": 195,
+  "yprr_motion": 1.36,
+  "yprr_nomotion": 1.63,
+  "motion_lift": -0.27
+ },
+ "jamari thrash": {
+  "name": "Jamari Thrash",
+  "motion_pct": 64.1,
+  "n_rte": 209,
+  "yprr_motion": 0.54,
+  "yprr_nomotion": 0.76,
+  "motion_lift": -0.22
+ },
+ "parker washington": {
+  "name": "Parker Washington",
+  "motion_pct": 47.3,
+  "n_rte": 733,
+  "yprr_motion": 1.87,
+  "yprr_nomotion": 1.52,
+  "motion_lift": 0.36
+ },
+ "ashton dulin": {
+  "name": "Ashton Dulin",
+  "motion_pct": 42.6,
+  "n_rte": 122,
+  "yprr_motion": 0.46,
+  "yprr_nomotion": 2.13,
+  "motion_lift": -1.67
+ },
+ "hunter long": {
+  "name": "Hunter Long",
+  "motion_pct": 39.3,
+  "n_rte": 178,
+  "yprr_motion": 0.15,
+  "yprr_nomotion": 1.25,
+  "motion_lift": -1.1
+ },
+ "tee higgins": {
+  "name": "Tee Higgins",
+  "motion_pct": 44.0,
+  "n_rte": 924,
+  "yprr_motion": 2.42,
+  "yprr_nomotion": 1.49,
+  "motion_lift": 0.94
+ },
+ "donte thornton": {
+  "name": "Dont'e Thornton",
+  "motion_pct": 46.4,
+  "n_rte": 224,
+  "yprr_motion": 0.87,
+  "yprr_nomotion": 0.38,
+  "motion_lift": 0.49
+ },
+ "noah gray": {
+  "name": "Noah Gray",
+  "motion_pct": 48.7,
+  "n_rte": 483,
+  "yprr_motion": 1.18,
+  "yprr_nomotion": 1.36,
+  "motion_lift": -0.18
+ },
+ "kyle williams": {
+  "name": "Kyle Williams",
+  "motion_pct": 49.1,
+  "n_rte": 169,
+  "yprr_motion": 2.2,
+  "yprr_nomotion": 0.3,
+  "motion_lift": 1.9
+ },
+ "ben skowronek": {
+  "name": "Ben Skowronek",
+  "motion_pct": 40.0,
+  "n_rte": 85,
+  "yprr_motion": 2.41,
+  "yprr_nomotion": 1.1,
+  "motion_lift": 1.31
+ },
+ "dallas goedert": {
+  "name": "Dallas Goedert",
+  "motion_pct": 49.6,
+  "n_rte": 621,
+  "yprr_motion": 1.42,
+  "yprr_nomotion": 2.07,
+  "motion_lift": -0.64
+ },
+ "charlie kolar": {
+  "name": "Charlie Kolar",
+  "motion_pct": 35.6,
+  "n_rte": 132,
+  "yprr_motion": 1.02,
+  "yprr_nomotion": 2.65,
+  "motion_lift": -1.63
+ },
+ "cade stover": {
+  "name": "Cade Stover",
+  "motion_pct": 37.4,
+  "n_rte": 187,
+  "yprr_motion": 0.54,
+  "yprr_nomotion": 1.46,
+  "motion_lift": -0.92
+ },
+ "darius slayton": {
+  "name": "Darius Slayton",
+  "motion_pct": 55.5,
+  "n_rte": 861,
+  "yprr_motion": 1.22,
+  "yprr_nomotion": 1.38,
+  "motion_lift": -0.15
+ },
+ "stefon diggs": {
+  "name": "Stefon Diggs",
+  "motion_pct": 45.5,
+  "n_rte": 653,
+  "yprr_motion": 1.93,
+  "yprr_nomotion": 2.63,
+  "motion_lift": -0.7
+ },
+ "nate adkins": {
+  "name": "Nate Adkins",
+  "motion_pct": 55.1,
+  "n_rte": 136,
+  "yprr_motion": 0.28,
+  "yprr_nomotion": 2.33,
+  "motion_lift": -2.05
+ },
+ "dyami brown": {
+  "name": "Dyami Brown",
+  "motion_pct": 45.1,
+  "n_rte": 415,
+  "yprr_motion": 1.7,
+  "yprr_nomotion": 0.95,
+  "motion_lift": 0.75
+ },
+ "kyle pitts": {
+  "name": "Kyle Pitts",
+  "motion_pct": 41.7,
+  "n_rte": 908,
+  "yprr_motion": 1.18,
+  "yprr_nomotion": 2.04,
+  "motion_lift": -0.86
+ },
+ "quintin morris": {
+  "name": "Quintin Morris",
+  "motion_pct": 33.3,
+  "n_rte": 126,
+  "yprr_motion": 0.55,
+  "yprr_nomotion": 0.81,
+  "motion_lift": -0.26
+ },
+ "jimmy horn": {
+  "name": "Jimmy Horn",
+  "motion_pct": 35.9,
+  "n_rte": 78,
+  "yprr_motion": 0.43,
+  "yprr_nomotion": 1.92,
+  "motion_lift": -1.49
+ },
+ "cody white": {
+  "name": "Cody White",
+  "motion_pct": 48.5,
+  "n_rte": 68,
+  "yprr_motion": 1.61,
+  "yprr_nomotion": 2.31,
+  "motion_lift": -0.71
+ },
+ "evan engram": {
+  "name": "Evan Engram",
+  "motion_pct": 56.8,
+  "n_rte": 569,
+  "yprr_motion": 1.65,
+  "yprr_nomotion": 1.19,
+  "motion_lift": 0.46
+ },
+ "skyy moore": {
+  "name": "Skyy Moore",
+  "motion_pct": 32.6,
+  "n_rte": 86,
+  "yprr_motion": 1.0,
+  "yprr_nomotion": 1.02,
+  "motion_lift": -0.02
+ },
+ "isaiah williams": {
+  "name": "Isaiah Williams",
+  "motion_pct": 33.3,
+  "n_rte": 210,
+  "yprr_motion": 0.72,
+  "yprr_nomotion": 1.07,
+  "motion_lift": -0.35
+ },
+ "ceedee lamb": {
+  "name": "CeeDee Lamb",
+  "motion_pct": 43.2,
+  "n_rte": 947,
+  "yprr_motion": 2.08,
+  "yprr_nomotion": 2.64,
+  "motion_lift": -0.55
+ },
+ "xavier smith": {
+  "name": "Xavier Smith",
+  "motion_pct": 48.2,
+  "n_rte": 137,
+  "yprr_motion": 2.81,
+  "yprr_nomotion": 1.75,
+  "motion_lift": 1.06
+ },
+ "khadarel hodge": {
+  "name": "KhaDarel Hodge",
+  "motion_pct": 49.3,
+  "n_rte": 140,
+  "yprr_motion": 1.13,
+  "yprr_nomotion": 1.19,
+  "motion_lift": -0.06
+ },
+ "hunter henry": {
+  "name": "Hunter Henry",
+  "motion_pct": 51.4,
+  "n_rte": 880,
+  "yprr_motion": 1.58,
+  "yprr_nomotion": 1.7,
+  "motion_lift": -0.12
+ },
+ "josh downs": {
+  "name": "Josh Downs",
+  "motion_pct": 51.9,
+  "n_rte": 707,
+  "yprr_motion": 1.71,
+  "yprr_nomotion": 2.18,
+  "motion_lift": -0.47
+ },
+ "tyler warren": {
+  "name": "Tyler Warren",
+  "motion_pct": 43.3,
+  "n_rte": 480,
+  "yprr_motion": 1.24,
+  "yprr_nomotion": 2.06,
+  "motion_lift": -0.82
+ },
+ "oronde gadsden": {
+  "name": "Oronde Gadsden",
+  "motion_pct": 49.1,
+  "n_rte": 375,
+  "yprr_motion": 1.59,
+  "yprr_nomotion": 1.94,
+  "motion_lift": -0.35
+ },
+ "stone smartt": {
+  "name": "Stone Smartt",
+  "motion_pct": 49.3,
+  "n_rte": 152,
+  "yprr_motion": 1.23,
+  "yprr_nomotion": 2.18,
+  "motion_lift": -0.95
+ },
+ "calvin ridley": {
+  "name": "Calvin Ridley",
+  "motion_pct": 63.7,
+  "n_rte": 648,
+  "yprr_motion": 2.1,
+  "yprr_nomotion": 1.93,
+  "motion_lift": 0.17
+ },
+ "derius davis": {
+  "name": "Derius Davis",
+  "motion_pct": 38.8,
+  "n_rte": 121,
+  "yprr_motion": 0.15,
+  "yprr_nomotion": 1.55,
+  "motion_lift": -1.4
+ },
+ "kayshon boutte": {
+  "name": "Kayshon Boutte",
+  "motion_pct": 52.8,
+  "n_rte": 778,
+  "yprr_motion": 1.93,
+  "yprr_nomotion": 0.95,
+  "motion_lift": 0.98
+ },
+ "mo alie cox": {
+  "name": "Mo Alie-Cox",
+  "motion_pct": 49.4,
+  "n_rte": 239,
+  "yprr_motion": 1.27,
+  "yprr_nomotion": 0.95,
+  "motion_lift": 0.31
+ },
+ "taysom hill": {
+  "name": "Taysom Hill",
+  "motion_pct": 39.2,
+  "n_rte": 181,
+  "yprr_motion": 1.01,
+  "yprr_nomotion": 1.87,
+  "motion_lift": -0.86
+ },
+ "jermaine burton": {
+  "name": "Jermaine Burton",
+  "motion_pct": 46.2,
+  "n_rte": 93,
+  "yprr_motion": 1.21,
+  "yprr_nomotion": 1.1,
+  "motion_lift": 0.11
+ },
+ "jacob cowing": {
+  "name": "Jacob Cowing",
+  "motion_pct": 31.7,
+  "n_rte": 63,
+  "yprr_motion": 1.5,
+  "yprr_nomotion": 1.16,
+  "motion_lift": 0.34
+ },
+ "mike williams": {
+  "name": "Mike Williams",
+  "motion_pct": 61.4,
+  "n_rte": 308,
+  "yprr_motion": 1.21,
+  "yprr_nomotion": 0.59,
+  "motion_lift": 0.62
+ },
+ "robert woods": {
+  "name": "Robert Woods",
+  "motion_pct": 34.9,
+  "n_rte": 172,
+  "yprr_motion": 1.2,
+  "yprr_nomotion": 1.17,
+  "motion_lift": 0.03
+ },
+ "terrace marshall": {
+  "name": "Terrace Marshall",
+  "motion_pct": 43.2,
+  "n_rte": 81,
+  "yprr_motion": 0.0,
+  "yprr_nomotion": 0.89,
+  "motion_lift": -0.89
+ },
+ "jalen reagor": {
+  "name": "Jalen Reagor",
+  "motion_pct": 41.5,
+  "n_rte": 82,
+  "yprr_motion": 1.29,
+  "yprr_nomotion": 1.17,
+  "motion_lift": 0.12
+ },
+ "erick all": {
+  "name": "Erick All",
+  "motion_pct": 31.9,
+  "n_rte": 94,
+  "yprr_motion": 0.57,
+  "yprr_nomotion": 2.2,
+  "motion_lift": -1.63
+ },
+ "kj osborn": {
+  "name": "K.J. Osborn",
+  "motion_pct": 58.3,
+  "n_rte": 120,
+  "yprr_motion": 0.56,
+  "yprr_nomotion": 0.36,
+  "motion_lift": 0.2
+ },
+ "jamison crowder": {
+  "name": "Jamison Crowder",
+  "motion_pct": 57.3,
+  "n_rte": 75,
+  "yprr_motion": 1.07,
+  "yprr_nomotion": 0.81,
+  "motion_lift": 0.26
+ },
+ "jalynn polk": {
+  "name": "Ja'Lynn Polk",
+  "motion_pct": 55.4,
+  "n_rte": 231,
+  "yprr_motion": 0.3,
+  "yprr_nomotion": 0.48,
+  "motion_lift": -0.18
+ },
+ "mike woods": {
+  "name": "Mike Woods",
+  "motion_pct": 61.5,
+  "n_rte": 182,
+  "yprr_motion": 0.54,
+  "yprr_nomotion": 0.06,
+  "motion_lift": 0.48
+ },
+ "tyler boyd": {
+  "name": "Tyler Boyd",
+  "motion_pct": 63.5,
+  "n_rte": 400,
+  "yprr_motion": 0.73,
+  "yprr_nomotion": 1.4,
+  "motion_lift": -0.67
+ },
+ "trey palmer": {
+  "name": "Trey Palmer",
+  "motion_pct": 45.7,
+  "n_rte": 162,
+  "yprr_motion": 1.32,
+  "yprr_nomotion": 0.84,
+  "motion_lift": 0.48
+ },
+ "deandre carter": {
+  "name": "DeAndre Carter",
+  "motion_pct": 67.5,
+  "n_rte": 77,
+  "yprr_motion": 0.96,
+  "yprr_nomotion": 0.88,
+  "motion_lift": 0.08
+ },
+ "bub means": {
+  "name": "Bub Means",
+  "motion_pct": 44.0,
+  "n_rte": 84,
+  "yprr_motion": 1.41,
+  "yprr_nomotion": 1.4,
+  "motion_lift": 0.01
+ },
+ "chris conley": {
+  "name": "Chris Conley",
+  "motion_pct": 29.0,
+  "n_rte": 107,
+  "yprr_motion": 0.61,
+  "yprr_nomotion": 0.75,
+  "motion_lift": -0.14
+ },
+ "amari cooper": {
+  "name": "Amari Cooper",
+  "motion_pct": 49.3,
+  "n_rte": 353,
+  "yprr_motion": 1.74,
+  "yprr_nomotion": 1.36,
+  "motion_lift": 0.38
+ },
+ "brandon aiyuk": {
+  "name": "Brandon Aiyuk",
+  "motion_pct": 31.6,
+  "n_rte": 206,
+  "yprr_motion": 1.55,
+  "yprr_nomotion": 1.94,
+  "motion_lift": -0.39
+ },
+ "nelson agholor": {
+  "name": "Nelson Agholor",
+  "motion_pct": 54.5,
+  "n_rte": 189,
+  "yprr_motion": 1.37,
+  "yprr_nomotion": 1.05,
+  "motion_lift": 0.32
+ },
+ "trenton irwin": {
+  "name": "Trenton Irwin",
+  "motion_pct": 36.5,
+  "n_rte": 63,
+  "yprr_motion": 0.48,
+  "yprr_nomotion": 0.1,
+  "motion_lift": 0.38
+ },
+ "tank dell": {
+  "name": "Tank Dell",
+  "motion_pct": 41.9,
+  "n_rte": 415,
+  "yprr_motion": 2.17,
+  "yprr_nomotion": 1.2,
+  "motion_lift": 0.97
+ },
+ "rakim jarrett": {
+  "name": "Rakim Jarrett",
+  "motion_pct": 48.3,
+  "n_rte": 87,
+  "yprr_motion": 0.83,
+  "yprr_nomotion": 1.98,
+  "motion_lift": -1.15
+ },
+ "diontae johnson": {
+  "name": "Diontae Johnson",
+  "motion_pct": 57.9,
+  "n_rte": 240,
+  "yprr_motion": 1.48,
+  "yprr_nomotion": 1.67,
+  "motion_lift": -0.19
+ },
+ "river cracraft": {
+  "name": "River Cracraft",
+  "motion_pct": 41.8,
+  "n_rte": 67,
+  "yprr_motion": 2.0,
+  "yprr_nomotion": 0.26,
+  "motion_lift": 1.74
+ },
+ "brandon powell": {
+  "name": "Brandon Powell",
+  "motion_pct": 32.7,
+  "n_rte": 104,
+  "yprr_motion": 0.65,
+  "yprr_nomotion": 0.7,
+  "motion_lift": -0.05
+ },
+ "gerald everett": {
+  "name": "Gerald Everett",
+  "motion_pct": 59.6,
+  "n_rte": 104,
+  "yprr_motion": 0.47,
+  "yprr_nomotion": 0.17,
+  "motion_lift": 0.3
+ },
+ "odell beckham": {
+  "name": "Odell Beckham",
+  "motion_pct": 46.1,
+  "n_rte": 102,
+  "yprr_motion": 0.45,
+  "yprr_nomotion": 0.62,
+  "motion_lift": -0.17
+ },
+ "hayden hurst": {
+  "name": "Hayden Hurst",
+  "motion_pct": 38.6,
+  "n_rte": 83,
+  "yprr_motion": 0.81,
+  "yprr_nomotion": 0.92,
+  "motion_lift": -0.11
+ },
+ "dj turner": {
+  "name": "D.J. Turner",
+  "motion_pct": 51.1,
+  "n_rte": 223,
+  "yprr_motion": 0.84,
+  "yprr_nomotion": 0.57,
+  "motion_lift": 0.27
+ },
+ "johnny wilson": {
+  "name": "Johnny Wilson",
+  "motion_pct": 41.5,
+  "n_rte": 130,
+  "yprr_motion": 0.17,
+  "yprr_nomotion": 0.38,
+  "motion_lift": -0.21
+ },
+ "jordan akins": {
+  "name": "Jordan Akins",
+  "motion_pct": 63.5,
+  "n_rte": 288,
+  "yprr_motion": 1.41,
+  "yprr_nomotion": 1.26,
+  "motion_lift": 0.15
+ },
+ "parris campbell": {
+  "name": "Parris Campbell",
+  "motion_pct": 57.7,
+  "n_rte": 71,
+  "yprr_motion": 0.71,
+  "yprr_nomotion": 0.03,
+  "motion_lift": 0.68
+ }
+}

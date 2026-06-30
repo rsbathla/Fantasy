@@ -1,0 +1,286 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate"><meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="0">
+<title>Best Ball / DFS 2026 — Command Center</title><style>
+:root{--bg:#0e1016;--p1:#161922;--p2:#1c2030;--ln:#262b3a;--tx:#e7ebf3;--mut:#9aa3b6;--mut2:#697084;--acc:#7aa2ff;
+--qb:#e0567a;--rb:#37b87a;--wr:#3b8ef0;--te:#e8a33d;--good:#37b87a;--warn:#e8a33d;--bad:#e0567a;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:13px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px 80px}
+header{position:sticky;top:0;z-index:40;background:rgba(14,16,22,.97);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln);padding:12px 0 0}
+h1{font-size:17px;margin:0 0 2px}.sub{color:var(--mut);font-size:12px;margin-bottom:9px}
+.tabs{display:flex;gap:4px}.tab{padding:9px 15px;font-size:13px;font-weight:600;color:var(--mut);cursor:pointer;border-bottom:2px solid transparent}
+.tab.on{color:var(--tx);border-bottom-color:var(--acc)}.tab:hover{color:var(--tx)}
+.sub2{display:flex;gap:4px;margin:14px 0 6px;flex-wrap:wrap}.s2{padding:5px 11px;font-size:12px;border:1px solid var(--ln);border-radius:8px;color:var(--mut);cursor:pointer;background:var(--p1)}.s2.on{color:var(--tx);border-color:var(--acc);background:var(--p2)}
+.panel{display:none}.panel.on{display:block}.view{display:none}.view.on{display:block}
+.ctl{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0}
+input.q{flex:1;min-width:160px;background:var(--p2);border:1px solid var(--ln);color:var(--tx);border-radius:8px;padding:7px 10px}
+.pf{padding:5px 9px;font-size:11px;font-weight:700;border:1px solid var(--ln);border-radius:7px;color:var(--mut);cursor:pointer;background:var(--p1)}.pf.on{color:#0c0e13}
+.pf.QB.on{background:var(--qb)}.pf.RB.on{background:var(--rb)}.pf.WR.on{background:var(--wr)}.pf.TE.on{background:var(--te)}.pf.ALL.on{background:var(--acc)}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{padding:5px 6px;text-align:center;border-bottom:1px solid var(--ln);white-space:nowrap}
+th{position:sticky;top:96px;background:var(--p1);cursor:pointer;color:var(--mut);font-size:10.5px;text-transform:uppercase;letter-spacing:.3px;z-index:5}
+th:hover{color:var(--tx)}td.l,th.l{text-align:left}tr:hover td{background:rgba(122,162,255,.05)}
+.pos{font-size:9px;font-weight:800;border-radius:4px;padding:1px 5px;color:#0c0e13}.pos.QB{background:var(--qb)}.pos.RB{background:var(--rb)}.pos.WR{background:var(--wr)}.pos.TE{background:var(--te)}
+.hm{border-radius:4px;font-weight:600;color:#0b0d12;min-width:30px}
+.fl{font-size:9px;font-weight:700;border-radius:4px;padding:1px 5px;margin:1px}.fl.fade{background:rgba(55,184,122,.2);color:var(--good)}.fl.dar{background:rgba(224,86,122,.2);color:var(--bad)}.fl.stud{background:rgba(122,162,255,.2);color:var(--acc)}.fl.pol{background:rgba(232,163,61,.2);color:var(--warn)}.fl.o{background:rgba(150,160,180,.18);color:var(--mut)}
+.card{background:var(--p1);border:1px solid var(--ln);border-radius:12px;padding:13px 15px;margin:10px 0}
+.tier{background:var(--p1);border:1px solid var(--ln);border-radius:10px;padding:10px 13px;margin:8px 0}.tier h4{margin:0 0 7px;font-size:13px}
+.chip{display:inline-block;background:var(--p2);border:1px solid var(--ln);border-radius:7px;padding:3px 8px;margin:2px;font-size:11px}
+.chip b{font-weight:600}.chip .a{color:var(--mut2)}
+.bar{height:7px;background:var(--p2);border-radius:4px;overflow:hidden;display:inline-block;width:120px;vertical-align:middle}.bar>i{display:block;height:100%;background:var(--acc)}
+.lev{font-size:9px;font-weight:800;background:rgba(232,163,61,.2);color:var(--warn);border-radius:4px;padding:1px 6px}
+.note{color:var(--mut);font-size:11.5px}.q{color:var(--mut);font-style:italic;border-left:2px solid var(--ln);padding-left:8px;margin:4px 0}
+.legend{font-size:11px;color:var(--mut2);margin:8px 0;padding:8px 11px;background:var(--p1);border:1px solid var(--ln);border-radius:8px}
+.legend b{color:var(--tx)}.mod{color:var(--good);font-weight:700}.cor{color:var(--warn);font-weight:700}
+.det{display:none;font-size:11.5px;color:var(--mut);padding:4px 8px;background:var(--p2)}tr.open+tr.detrow .det{display:block}
+h3{font-size:14px;margin:16px 0 4px}.muted{color:var(--mut2)}
+.boommk{font-family:monospace}.boommk.ELITE{background:rgba(46,160,90,.18);color:#5fd08a;border-color:rgba(46,160,90,.4)}.boommk.HIGH{background:rgba(70,130,220,.18);color:#7fb2ff;border-color:rgba(70,130,220,.4)}.boommk.MID{background:rgba(180,180,60,.15);color:#d6d67a}.boommk.FA{background:rgba(200,140,40,.16);color:#e6b36a;border-color:rgba(200,140,40,.4)}
+/* --- 4-layer per-player context drilldown --- */
+tr.prow{cursor:pointer}tr.prow.open td{background:rgba(122,162,255,.10)}tr.prow td:first-child::before{content:"\25B8";color:var(--mut2);font-size:9px;margin-right:5px;display:inline-block;transition:transform .12s}tr.prow.open td:first-child::before{transform:rotate(90deg)}
+tr.ctxrow>td{padding:0;background:var(--bg)}
+.ctxwrap{display:none;padding:10px 12px 14px;background:linear-gradient(180deg,rgba(28,32,48,.6),var(--p1));border-bottom:2px solid var(--acc);position:sticky;left:0;width:calc(100vw - 32px);max-width:1148px;box-sizing:border-box}
+tr.prow.open+tr.ctxrow .ctxwrap{display:block}
+.ctxgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}@media(max-width:920px){.ctxgrid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.ctxgrid{grid-template-columns:1fr}}
+.ctxcard{background:var(--p2);border:1px solid var(--ln);border-radius:9px;padding:9px 11px;min-width:0}
+.ctxcard h5{margin:0 0 7px;font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--acc);display:flex;align-items:center;gap:5px}
+.ctxcard h5 .ln{font-size:8px;background:var(--p1);border:1px solid var(--ln);border-radius:4px;padding:0 4px;color:var(--mut2)}
+.kv{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;padding:2px 0;border-bottom:1px dashed rgba(150,160,180,.10)}.kv:last-child{border-bottom:0}
+.kv .k{color:var(--mut)}.kv .v{font-weight:600;font-family:monospace;text-align:right}
+.kv .v.g{color:var(--good)}.kv .v.b{color:var(--bad)}.kv .v.w{color:var(--warn)}
+.dial{display:inline-block;font-size:9px;font-weight:700;border-radius:4px;padding:1px 5px;margin:1px}.dial.up{background:rgba(55,184,122,.18);color:var(--good)}.dial.dn{background:rgba(224,86,122,.18);color:var(--bad)}.dial.nz{background:rgba(150,160,180,.12);color:var(--mut2)}
+.yoy{font-size:11px;margin-top:6px;padding-top:6px;border-top:1px solid var(--ln)}
+.wkrow{display:flex;justify-content:space-between;font-size:11px;padding:2px 0}.pill{font-size:9px;font-weight:700;border-radius:4px;padding:1px 6px;color:#0b0d12}
+.ctxnote{font-size:10.5px;color:var(--mut);margin-top:6px;line-height:1.45}
+.ctxempty{font-size:10.5px;color:var(--mut2);font-style:italic;padding:4px 0}
+.fitcue{font-size:9.5px;font-weight:700;color:var(--good);background:rgba(55,184,122,.13);border-radius:4px;padding:1px 6px;margin:1px;display:inline-block}
+</style></head><body>
+<header><div class="wrap">
+<h1>Best Ball / DFS 2026 — Command Center</h1>
+<div class="sub" id="sub"></div><div class="sub" id="built" style="opacity:.6;font-size:11px">built __BUILT__ — hard-refresh (Ctrl+Shift+R) if stale</div>
+<div class="tabs"><div class="tab on" data-t="bb">Best-Ball Plan</div><div class="tab" data-t="dfs">DFS Scenarios</div><div class="tab" data-t="pers">Personnel &amp; Scheme</div><div class="tab" data-t="def">Defense</div></div>
+</div></header>
+<div class="wrap">
+<div class="panel on" id="bb">
+  <div class="sub2"><div class="s2 on" data-v="fusion">Model Fusion</div><div class="s2" data-v="tiers">Draft Tiers</div><div class="s2" data-v="teams">Team Priority</div><div class="s2" data-v="stacks">Stacks</div></div>
+  <div class="view on" id="v-fusion">
+    <div class="legend">Each column is one <b>model's</b> within-position percentile (0–100, higher=better). <b>Cons</b>=mean, <b>Div</b>=disagreement. Flags: <span class="fl fade">FADE</span> models&gt;market · <span class="fl dar">DARLING</span> market&gt;models · <span class="fl stud">STUD</span> all-high · <span class="fl pol">POLARIZING</span> high disagreement. The point is to <b>see where models diverge</b>, not to trust one number.</div>
+    <div class="ctl"><input class="q" id="fq" placeholder="Search player…"><span id="fpf"></span></div>
+    <div style="overflow:auto"><table id="ft"></table></div>
+  </div>
+  <div class="view" id="v-tiers"></div>
+  <div class="view" id="v-teams"></div>
+  <div class="view" id="v-stacks"></div>
+</div>
+<div class="panel" id="dfs">
+  <div class="legend" id="dfsleg"></div>
+  <div class="ctl"><input class="q" id="dq" placeholder="Search player…"><span id="dpf"></span></div>
+  <div style="overflow:auto"><table id="dt"></table></div>
+</div>
+<div class="panel" id="pers">
+  <div class="legend"><span class="mod">OFFENSE = data-modeled</span> (vacated targets, arrivals/departures, projected volume shift). <span class="cor">DEFENSE / O-LINE / COORDINATOR = corpus-sourced</span> (analyst chatter, sparse — coverage: <span id="cov"></span>). 2026 coordinators are never asserted from memory.</div>
+  <div class="ctl"><input class="q" id="pq" placeholder="Search team…"></div>
+  <div id="perslist"></div>
+</div>
+<div class="panel" id="def">
+  <div class="legend">Team <b>defensive unit strength</b> from SIS DataHub 2025 <b>Points Saved</b>, <b>reweighted onto 2026 rosters</b> (each confirmed offseason mover carries his full 2025 Points Saved to his new team; retired/unsigned subtract; rookies add nothing), shown as a <b>league percentile</b> across all 32 teams (0–100, greener = stronger unit). The small <b>Δ25</b> tag = change vs the 2025 percentile. Click a team row to see the <b>2026 moves</b> applied. <b>Cov</b> = pass coverage, <b>Rush</b> = pass rush, <b>Run</b> = run defense. <b>EPA/Tgt</b> = target-weighted EPA allowed in coverage (more negative = better). Each unit's <b>top contributor</b> by Points Saved is shown (turnover-relevant). These are the opponent strengths the DFS <b>matchup</b> source folds in to fade receivers vs strong coverage, QBs vs strong pass-rush, and RBs vs strong run-D.</div>
+  <div class="ctl"><input class="q" id="dfq" placeholder="Search team…"><span id="dfpf"></span></div>
+  <div style="overflow:auto"><table id="dft"></table></div>
+</div>
+</div>
+<script>
+const D=__DATA__;
+document.getElementById('sub').innerHTML=`${D.meta.players} players · model fusion + ${D.meta.stacks} stacks + DFS scenarios for ${D.meta.dfs} players · all grounded in nflfastR PBP + Clay-2026 + sim<br><span style="color:var(--acc)">▸ click any player row</span> for the 4-layer context: situational splits + real NFL Pro EPA · playcaller fit · vacated/opportunity · W15-17 matchup <span class="muted">(${D.meta.ctx||0} players)</span>`;
+const POS=['ALL','QB','RB','WR','TE'];
+const hm=p=>{if(p==null)return 'transparent';const h=Math.max(0,Math.min(120,p*1.2));return `hsl(${h},58%,42%)`;};
+const hmp=v=>hm((v||0)*100);
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const posb=p=>`<span class="pos ${p}">${p}</span>`;
+// ---------- 4-layer per-player context drilldown ----------
+const CTX=D.ctx||{};
+function ctxKey(n){return String(n==null?'':n).trim().toLowerCase().replace(/\s+(jr|sr|ii|iii|iv|v)\.?$/,'').replace(/\./g,'').replace(/'/g,'').replace(/-/g,' ').split(/\s+/).filter(Boolean).join(' ');}
+const f1=v=>v==null?'':(Math.round(v*100)/100).toFixed(2);
+const f3=v=>v==null?'':(Math.round(v*1000)/1000).toFixed(3);
+function kv(k,v,cls){return v===''||v==null?'':`<div class="kv"><span class="k">${k}</span><span class="v ${cls||''}">${v}</span></div>`;}
+function dchip(lab,val){if(val==null)return '';const c=val>0?'up':val<0?'dn':'nz';const a=val>0?'▲':val<0?'▼':'•';return `<span class="dial ${c}">${lab} ${a}</span>`;}
+function mpill(v){if(v==null)return '<span class="muted">–</span>';const h=Math.max(0,Math.min(120,(100-v)*1.2));return `<span class="pill" style="background:hsl(${h},58%,45%)">${Math.round(v)}</span>`;}
+function ctxCardSplits(s){
+  if(!s)return '';let h='<div class="ctxcard"><h5>① Situational &amp; EPA <span class="ln">real</span></h5>';
+  if(s.pos==='WR'||s.pos==='TE'||(s.pos==='RB'&&(s.rec_epa_route!=null||s.yprr_man!=null))){
+    if(s.yprr_man!=null||s.yprr_zone!=null){h+=kv('YPRR man / zone',`${f1(s.yprr_man)} / ${f1(s.yprr_zone)}`);
+      if(s.man_zone_delta!=null)h+=kv('man−zone Δ',(s.man_zone_delta>0?'+':'')+f1(s.man_zone_delta),s.man_zone_delta>0?'g':'b');}
+    h+=kv('Rec EPA/route',f3(s.rec_epa_route),s.rec_epa_route>0?'g':s.rec_epa_route<0?'b':'');
+    h+=kv('Avg separation',f1(s.rec_separation),s.rec_separation>=3?'g':'');
+    h+=kv('YACOE/rec',f1(s.rec_yacoe),s.rec_yacoe>0?'g':'');
+    h+=kv('CROE',f3(s.rec_croe),s.rec_croe>0?'g':s.rec_croe<0?'b':'');
+    h+=kv('aDOT',f1(s.adot25));h+=kv('man route %',f1(s.man_route_sh));
+  }
+  if(s.pos==='QB'){
+    h+=kv('EPA/dropback',f3(s.qb_epa_db),s.qb_epa_db>0.1?'g':s.qb_epa_db<0?'b':'');
+    h+=kv('CPOE',f1(s.qb_cpoe),s.qb_cpoe>0?'g':s.qb_cpoe<0?'b':'');
+    h+=kv('Time to throw',f1(s.qb_ttt));
+    h+=kv('Pressure% faced',f1(s.qb_pressure_rate),s.qb_pressure_rate>35?'b':s.qb_pressure_rate<28?'g':'w');
+    h+=kv('Sack% (FP)',f1(s.sack_pct25));h+=kv('aNY/A',f1(s.qb_anya));h+=kv('deep ball %',f1(s.deep_ball_sh));
+  }
+  if(s.pos==='RB'){
+    h+=kv('Rush EPA/att',f3(s.rush_epa_att),s.rush_epa_att>-0.02?'g':s.rush_epa_att<-0.12?'b':'');
+    h+=kv('RYOE/att',f1(s.ryoe_att),s.ryoe_att>0.5?'g':s.ryoe_att<0?'b':'');
+    h+=kv('zone / gap succ',`${f1(s.zone_succ)} / ${f1(s.gap_succ)}`);
+    h+=kv('zone run %',f1(s.zone_run_sh));h+=kv('stuff %',f1(s.stuff_pct),s.stuff_pct>20?'b':'');
+    h+=kv('top speed (20+)',s.rb_topspeed==null?'':Math.round(s.rb_topspeed));
+    if(s.rb_rec_ypg!=null)h+=kv('rec yds/g',f1(s.rb_rec_ypg));
+  }
+  if(s.yoy){const d=s.yoy.delta;h+=`<div class="yoy"><span class="k" style="color:var(--mut2)">${esc(s.yoy.label)} — trajectory</span><div class="kv" style="border:0"><span class="k">2024 → 2025</span><span class="v">${f3(s.yoy.y2024)} → ${f3(s.yoy.y2025)} <span class="${d>0?'g':d<0?'b':''}">${d==null?'':(d>0?'▲+':'▼')+f3(Math.abs(d))}</span></span></div></div>`;}
+  return h+'</div>';
+}
+function ctxCardScheme(sc,pos){
+  let h='<div class="ctxcard"><h5>② Playcaller fit <span class="ln">2026</span></h5>';
+  if(!sc){return h+'<div class="ctxempty">Continuity team — no 2026 play-caller change tracked (Clay already models as no-change).</div></div>';}
+  h+=`<div style="font-size:11.5px;font-weight:600;margin-bottom:5px">${esc(sc.playcaller||'')}</div>`;
+  const d=sc.dials||{};
+  h+=`<div style="margin:3px 0 5px">${dchip('Mot',d.motion)}${dchip('Vert',d.vertical)}${dchip('Pass',d.passcatch)}${dchip('Scr',d.scramble)}</div>`;
+  if(sc.fit&&sc.fit.length)h+=`<div style="margin:4px 0">${sc.fit.map(c=>`<span class="fitcue">${esc(c)}</span>`).join('')}</div>`;
+  if(sc.note)h+=`<div class="ctxnote">${esc(sc.note)}</div>`;
+  return h+'</div>';
+}
+function ctxCardOpp(o){
+  let h='<div class="ctxcard"><h5>③ Opportunity / vacated</h5>';
+  if(!o)return h+'<div class="ctxempty">no opportunity data</div></div>';
+  h+=kv('route %',o.route_pct==null?'':f1(o.route_pct));
+  h+=kv('alignment',o.align?esc(o.align)+(o.align_pct!=null?` (${f1(o.align_pct)}%)`:''):'');
+  h+=kv('target share',o.tgt_share==null?'':f1(o.tgt_share)+'%');
+  h+=kv('team vacated tgt',o.team_vacated_tgt==null?'':(o.team_vacated_tgt>40?'<span class="v g">':'')+f1(o.team_vacated_tgt)+'%'+(o.team_vacated_tgt>40?'</span>':''));
+  if(o.self_moves&&o.self_moves.length){h+='<div class="ctxnote">';
+    o.self_moves.forEach(m=>{const t=(m.tgts?m.tgts+' tgt':'')+(m.rush?(m.tgts?' / ':'')+m.rush+' rush':'');
+      h+=`<div>${m.dir==='added'?'➕ brings':'➖ vacates'} <b>${t}</b>${m.from&&m.to?` (${esc(m.from)}→${esc(m.to)})`:''}</div>`;});
+    h+='</div>';}
+  return h+'</div>';
+}
+function ctxCardMatchup(m){
+  let h='<div class="ctxcard"><h5>④ Playoff matchup <span class="ln">W15-17</span></h5>';
+  if(!m||!m.weeks||!m.weeks.length)return h+'<div class="ctxempty">no W15-17 matchup</div></div>';
+  const lab=m.metric==='run'?'Run-D':'Coverage';
+  m.weeks.forEach(w=>{h+=`<div class="wkrow"><span class="k">W${w.wk} @ ${esc(w.opp)}</span>${mpill(w.val)}</div>`;});
+  if(m.avg!=null){const soft=m.avg<40,tough=m.avg>65;
+    h+=`<div class="kv" style="margin-top:4px;border-top:1px solid var(--ln);padding-top:5px"><span class="k">avg ${lab} pctl</span><span class="v ${soft?'g':tough?'b':'w'}">${m.avg} ${soft?'soft':tough?'tough':'avg'}</span></div>`;}
+  h+='<div class="ctxnote">lower percentile = softer matchup (greener). Move-aware 2026 D.</div>';
+  return h+'</div>';
+}
+function ctxHTML(name,pos){
+  const c=CTX[ctxKey(name)];
+  if(!c)return '<div class="ctxwrap"><div class="ctxempty" style="padding:8px">No extended context for this player.</div></div>';
+  return `<div class="ctxwrap"><div class="ctxgrid">${ctxCardSplits(c.splits)}${ctxCardScheme(c.scheme,pos)}${ctxCardOpp(c.opp)}${ctxCardMatchup(c.matchup)}</div></div>`;
+}
+function wireCtx(tb){tb.querySelectorAll('tr.prow').forEach(tr=>{tr.onclick=e=>{if(e.target.closest('th'))return;const open=tr.classList.toggle('open');const nx=tr.nextElementSibling;if(nx&&nx.classList.contains('ctxrow')&&!nx.dataset.filled){nx.querySelector('td').innerHTML=ctxHTML(tr.dataset.n,tr.dataset.p);nx.dataset.filled='1';}};});}
+// tabs
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));t.classList.add('on');document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));document.getElementById(t.dataset.t).classList.add('on');});
+document.querySelectorAll('.s2').forEach(t=>t.onclick=()=>{document.querySelectorAll('.s2').forEach(x=>x.classList.remove('on'));t.classList.add('on');document.querySelectorAll('#bb .view').forEach(v=>v.classList.remove('on'));document.getElementById('v-'+t.dataset.v).classList.add('on');});
+// pos filter builder
+function pfbar(host,state,cb){const h=document.getElementById(host);h.innerHTML='';POS.forEach(p=>{const b=document.createElement('span');b.className='pf '+p+(p===state.pos?' on':'');b.textContent=p;b.onclick=()=>{state.pos=p;cb();};h.appendChild(b);});}
+// ---------- FUSION ----------
+const FCOLS=[['m.market','Mkt'],['m.value','Val'],['m.proj','Proj'],['m.ceiling','Ceil'],['m.adv','Adv'],['eff','Eff'],['m.oline','OL'],['m.coachspeak','Coach']];
+let fstate={pos:'ALL',sort:'c',dir:-1,q:''};
+function flagcls(f){f=f.toLowerCase();if(f.includes('trap')||f.includes('darling')||f.includes('empty'))return 'dar';if(f.includes('edge')||f.includes('fade')||f.includes('separation'))return 'fade';if(f.includes('stud'))return 'stud';if(f.includes('polar'))return 'pol';return 'o';}
+function getv(o,path){if(path==='eff'){const m=o.m||{};return m.rec_eff!=null?m.rec_eff:(m.run_eff!=null?m.run_eff:(m.rush_eff!=null?m.rush_eff:m.protection));}return path.split('.').reduce((a,k)=>a&&a[k],o);}
+function renderFusion(){
+  const tb=document.getElementById('ft');
+  let rows=D.fusion.filter(p=>(fstate.pos==='ALL'||p.p===fstate.pos)&&(!fstate.q||p.n.toLowerCase().includes(fstate.q)));
+  const key=fstate.sort;
+  rows.sort((a,b)=>{let va=key==='c'?a.c:key==='d'?a.d:key==='adp'?(a.adp||999):getv(a,key),vb=key==='c'?b.c:key==='d'?b.d:key==='adp'?(b.adp||999):getv(b,key);return (va-vb)*fstate.dir;});
+  let h='<tr><th class="l" data-k="n">Player</th><th>Pos</th><th data-k="adp">ADP</th>';
+  FCOLS.forEach(c=>h+=`<th data-k="${c[0]}">${c[1]}</th>`);
+  h+='<th data-k="c">Cons</th><th data-k="d">Div</th><th class="l">Flags</th></tr>';
+  rows.forEach(p=>{const hasctx=CTX[ctxKey(p.n)]?'':' style="cursor:default"';h+=`<tr class="prow" data-n="${esc(p.n)}" data-p="${p.p}"${hasctx}><td class="l"><b>${esc(p.n)}</b> <span class="muted">${p.t}</span></td><td>${posb(p.p)}</td><td>${p.adp??''}</td>`;
+    FCOLS.forEach(c=>{const v=getv(p,c[0]);h+=`<td><span class="hm" style="background:${hm(v)};padding:2px 6px">${v==null?'':Math.round(v)}</span></td>`;});
+    h+=`<td><b>${p.c}</b></td><td style="color:${p.d>=22?'var(--warn)':'var(--mut)'}">${p.d}</td><td class="l">${p.boom?`<span class="fl boommk ${p.boom.tier}" title="${esc(p.boom.badge)}">\uD83D\uDE80 ${esc(p.boom.badge.split(' ')[0])}${p.boom.tier==='FA'?' FA':''}</span> `:''}${(p.f||[]).map(f=>`<span class="fl ${flagcls(f)}">${esc(f)}</span>`).join('')}</td></tr><tr class="ctxrow"><td colspan="14"></td></tr>`;});
+  tb.innerHTML=h;
+  wireCtx(tb);
+  tb.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(fstate.sort===k)fstate.dir*=-1;else{fstate.sort=k;fstate.dir=(k==='n'||k==='adp')?1:-1;}renderFusion();});
+}
+document.getElementById('fq').oninput=e=>{fstate.q=e.target.value.toLowerCase();renderFusion();};
+pfbar('fpf',fstate,renderFusion);
+// ---------- TIERS ----------
+function renderTiers(){let h='<h3>Ceiling-first draft tiers</h3>';
+  D.tiers.forEach(t=>{h+=`<div class="tier"><h4>Tier ${t.tier} <span class="muted">· ${esc(t.adp_band||t.label||'')}</span></h4>`;
+   (t.players||[]).forEach(p=>{h+=`<span class="chip">${posb(p.pos)} <b>${esc(p.name)}</b> <span class="a">${p.team} · ADP ${p.adp} · p95 ${p.p95??''}</span> ${(p.flags||[]).map(f=>`<span class="fl ${flagcls(f)}">${esc(f)}</span>`).join('')}</span>`;});
+   h+='</div>';});
+  document.getElementById('v-tiers').innerHTML=h;}
+// ---------- TEAM PRIORITY ----------
+function renderTeams(){let h='<h3>Team priority — attack order</h3>';const mx=Math.max(...D.teampri.map(t=>t.attack_score||0));
+  D.teampri.forEach(t=>{h+=`<div class="card" style="padding:9px 13px"><div style="display:flex;align-items:center;gap:10px"><b style="width:26px">${t.rank}</b><b style="width:42px">${t.team}</b><span class="bar"><i style="width:${(t.attack_score/mx*100)||0}%"></i></span><span class="muted" style="width:42px;text-align:right">${Math.round(t.attack_score)}</span><span class="note" style="flex:1">${esc(t.why||'')}</span></div></div>`;});
+  document.getElementById('v-teams').innerHTML=h;}
+// ---------- STACKS ----------
+function renderStacks(){let h='<h3>Top stacks — QB + catchers + Week-17 bring-back</h3>';
+  D.stacks.forEach(s=>{h+=`<div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><div><b>#${s.rank}</b> &nbsp;<b>${esc(s.qb)}</b> <span class="muted">${s.team}</span> ${s.leverage?'<span class="lev">LEVERAGE</span>':''}</div><div class="muted">${s.w17_game||''} · tail #${s.tail_rank??''} · ceil ${Math.round(s.combined_ceiling||0)} · ADP ${Math.round(s.adp_cost||0)}</div></div>
+    <div style="margin-top:6px">${(s.pieces||[]).map(x=>`<span class="chip"><b>${esc(x)}</b></span>`).join('')} <span class="muted">+ bring-back →</span> <span class="chip" style="border-color:var(--acc)"><b>${esc(s.bringback||'')}</b> <span class="a">${s.bringback_team||''}</span></span></div>
+    <div class="note" style="margin-top:5px">QB↔WR1 r=${s.r_qbwr??'·'} · bring-back r=${s.r_bringback??'·'}${s.note?' · '+esc(s.note):''}</div></div>`;});
+  document.getElementById('v-stacks').innerHTML=h;}
+// ---------- DFS ----------
+const SRC=[['environment','Env'],['opportunity','Opp'],['efficiency','Eff'],['matchup','Mtch'],['role','Role']];
+document.getElementById('dfsleg').innerHTML="Each column is an INDEPENDENT source-model's within-position ceiling read (0-100, greener=higher): environment (Vegas total), opportunity (volume/share), efficiency (EPA/YPRR/separation), matchup (coverage/run-D/OL), role (deep routes/speed). <b>Cons</b>=mean, <b>Div</b>=disagreement. Sources are FUSED and shown side by side — never multiplied. The profile names which sources drive vs diverge.";
+let dstate={pos:'ALL',sort:'c',dir:-1,q:''};
+function renderDFS(){const tb=document.getElementById('dt');
+  let rows=D.dfs.players.filter(p=>(dstate.pos==='ALL'||p.p===dstate.pos)&&(!dstate.q||p.n.toLowerCase().includes(dstate.q)));
+  rows.sort((a,b)=>{let va,vb;if(dstate.sort==='c'){va=a.c;vb=b.c;}else if(dstate.sort==='d'){va=a.d;vb=b.d;}else if(dstate.sort==='pw17'){va=a.pw17;vb=b.pw17;}else{va=(a.src[dstate.sort]==null?-1:a.src[dstate.sort]);vb=(b.src[dstate.sort]==null?-1:b.src[dstate.sort]);}return(va-vb)*dstate.dir;});
+  let h=`<tr><th class="l" data-k="n">Player</th><th>Pos</th>`;
+  SRC.forEach(s=>h+=`<th data-k="${s[0]}">${s[1]}</th>`);
+  h+=`<th data-k="c">Cons</th><th data-k="d">Div</th><th data-k="pw17">W17 P</th><th class="l">Profile (which sources drive vs diverge)</th></tr>`;
+  rows.forEach(p=>{const hasctx=CTX[ctxKey(p.n)]?'':' style="cursor:default"';h+=`<tr class="prow" data-n="${esc(p.n)}" data-p="${p.p}"${hasctx}><td class="l"><b>${esc(p.n)}</b> <span class="muted">${p.t}</span></td><td>${posb(p.p)}</td>`;
+    SRC.forEach(s=>{const v=p.src[s[0]];h+=`<td>`+((v==null)?'<span class="muted">–</span>':`<span class="hm" style="background:${hm(v)};padding:2px 6px">${Math.round(v)}</span>`)+`</td>`;});
+    h+=`<td><b>${p.c}</b></td><td style="color:${p.d>=28?'var(--warn)':'var(--mut)'}">${p.d}</td><td>${p.pw17}%</td><td class="l" style="white-space:normal;max-width:380px"><span class="note">${esc(p.prof||'')}</span></td></tr><tr class="ctxrow"><td colspan="11"></td></tr>`;});
+  tb.innerHTML=h;
+  wireCtx(tb);
+  tb.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(dstate.sort===k)dstate.dir*=-1;else{dstate.sort=k;dstate.dir=k==='n'?1:-1;}renderDFS();});
+}
+document.getElementById('dq').oninput=e=>{dstate.q=e.target.value.toLowerCase();renderDFS();};
+pfbar('dpf',dstate,renderDFS);
+// ---------- PERSONNEL ----------
+document.getElementById('cov').textContent=`offense ${D.coverage.offense_n}/32 · defense ${D.coverage.defense_n} · O-line ${D.coverage.oline_n} · coordinator ${D.coverage.coordinator_n}`;
+function renderPers(q){const host=document.getElementById('perslist');let h='';
+  const keys=Object.keys(D.personnel).sort();
+  keys.forEach(tm=>{const t=D.personnel[tm];if(q&&!tm.toLowerCase().includes(q)&&!(t.name||'').toLowerCase().includes(q))return;
+    const o=t.offense||{};h+=`<div class="card"><div style="display:flex;justify-content:space-between"><b style="font-size:14px">${tm} <span class="muted">${esc(t.name||'')}</span></b><span class="note">${o.vac_tgt!=null?('~'+o.vac_tgt+'% targets vacated'):''}</span></div>`;
+    if(o.summary)h+=`<div style="margin-top:5px"><span class="mod">OFFENSE</span> ${esc(o.summary)}</div>`;
+    const nm=x=>x&&x.name!=null?x.name:x;
+    const arr=(o.arrivals||[]).map(a=>a&&a.name?(a.from?a.name+' (from '+a.from+')':a.name):a);
+    const dep=(o.departures||[]).map(d=>d&&d.name?(d.dest?d.name+'\u2192'+d.dest:d.name):d);
+    const ben=(o.beneficiaries||[]).map(nm);
+    if(arr.length)h+=`<div class="note" style="margin-top:3px">In: ${arr.map(esc).join(', ')}</div>`;
+    if(dep.length)h+=`<div class="note">Out: ${dep.map(esc).join(', ')}</div>`;
+    if(ben.length)h+=`<div class="note">Beneficiaries: <b>${ben.map(esc).join(', ')}</b></div>`;
+    const dn=(t.defense&&t.defense.notes)||[];if(dn.length)h+=`<div style="margin-top:5px"><span class="cor">DEFENSE</span></div>`+dn.map(n=>`<div class="q">${esc(n.q||n)} ${n.handle?'<span class="muted">(@'+esc(n.handle)+')</span>':''}</div>`).join('');
+    const ol=(t.oline&&t.oline.notes)||[];if(ol.length)h+=`<div style="margin-top:5px"><span class="cor">O-LINE</span></div>`+ol.map(n=>`<div class="q">${esc(n.q||n)} ${n.handle?'<span class="muted">(@'+esc(n.handle)+')</span>':''}</div>`).join('');
+    const c=t.coordinator;if(c&&(c.note||c.implication))h+=`<div style="margin-top:5px"><span class="cor">COORDINATOR / SCHEME</span> <span class="note">${esc(c.note||'')} ${c.handle?'(@'+esc(c.handle)+')':''}</span>${c.implication?`<div class="note">↳ implication: ${esc(c.implication)}</div>`:''}</div>`;
+    h+='</div>';});
+  host.innerHTML=h||'<div class="muted">No match.</div>';}
+document.getElementById('pq').oninput=e=>renderPers(e.target.value.toLowerCase());
+// ---------- DEFENSE ----------
+let dfstate={sort:'cov',dir:-1,q:''};
+const DFCOLS=[['cov','Cov','covs'],['rush','Rush','rushs'],['run','Run','runs']];
+function tname(x){return x&&x.name?x.name:'';}
+const D25={cov:'cov25',rush:'rush25',run:'run25'};
+const UNAME={coverage:'COV',pass_rush:'RUSH',run_def:'RUN'};
+function dtag(v,v25){if(v==null||v25==null)return '';const d=Math.round(v-v25);if(d===0)return ' <span class="muted" style="font-size:9px">\u039425 0</span>';const col=d>0?'#4ea84e':'#c0504d';const ar=d>0?'\u25b2':'\u25bc';return ` <span style="font-size:9px;color:${col}">${ar}${Math.abs(d)}</span>`;}
+function movesHTML(t){if(!t.moves||!t.moves.length)return '<span class="muted">no 2026 moves applied (roster held)</span>';
+  return t.moves.map(m=>`<span style="display:inline-block;margin:2px 8px 2px 0;padding:1px 5px;background:#1f2733;border-radius:3px;font-size:11px">${esc(m.pl)} <span class="muted">${UNAME[m.u]||m.u}</span> ${esc(m.fr)}\u2192${esc(m.to)} <b>${m.ps}</b>${m.conf===false?' <span style="color:#d8a200">?</span>':''}</span>`).join('');}
+function funnelHTML(t){const fl=t.funnel||[];if(!fl.length&&!t.lean26)return '';
+  const tag=(t.lean26&&t.lean25&&t.lean26!==t.lean25)?`<span style="color:#d8a200">SHIFT 25→26: ${t.lean25}→${t.lean26}</span>`:(t.lean26?`2026 engine lean: ${t.lean26}`:'');
+  return `<div style="margin-top:6px"><span class="cor">FUNNELS</span> ${tag}</div>`+fl.map(f=>`<div class="q">${esc(f)}</div>`).join('');}
+function rookieHTML(t){const rk=t.rk||[];if(!rk.length)return '';
+  return `<div style="margin-top:6px"><span class="cor">2026 ROOKIES (def)</span></div><div>`+rk.map(r=>`<span style="display:inline-block;margin:2px 8px 2px 0;padding:1px 5px;background:#1f2733;border-radius:3px;font-size:11px">${esc(r.pl)} <span class="muted">${esc(r.pos)}</span> ${esc(r.rd)}</span>`).join('')+`</div>`;}
+function dccbHTML(t){let h='';if(t.dc&&t.dc.scheme)h+=`<div style="margin-top:6px"><span class="cor">NEW DC</span> ${esc(t.dc.name||'')} — ${esc(t.dc.scheme)}${t.dc.man26!=null?` (man ${t.dc.man25}→${t.dc.man26}%)`:''}</div>`;if(t.cb1)h+=`<div style="margin-top:4px"><span class="cor">CB1</span> ${esc(t.cb1.name||'')} cov ${t.cb1.cov} (${esc(t.cb1.tier||'')}) → WR1 ${esc(t.cb1.wr1_funnel||'')}</div>`;return h;}
+function renderDefense(){const tb=document.getElementById('dft');
+  let rows=(D.defense||[]).filter(t=>!dfstate.q||t.t.toLowerCase().includes(dfstate.q));
+  rows.sort((a,b)=>{const va=a[dfstate.sort],vb=b[dfstate.sort];return ((va==null?-1:va)-(vb==null?-1:vb))*dfstate.dir;});
+  let h='<tr><th class="l" data-k="t">Team</th><th data-k="cov">Cov pctl (\u039425)</th><th data-k="rush">Rush pctl (\u039425)</th><th data-k="run">Run pctl (\u039425)</th><th>Cov EPA/Tgt</th><th class="l">Top coverage 26</th><th class="l">Top pass-rush 26</th><th class="l">Top run-D 26</th></tr>';
+  rows.forEach((t,i)=>{h+=`<tr class="drow" data-i="${i}" style="cursor:pointer"><td class="l"><b>${esc(t.t)}</b>${(t.lean26&&t.lean25&&t.lean26!==t.lean25)?` <span style="color:#d8a200;font-size:9px">⚠SHIFT</span>`:''}${(t.moves&&t.moves.length)?` <span class="muted" style="font-size:9px">\u25b8${t.moves.length}</span>`:''}</td>`;
+    DFCOLS.forEach(c=>{const v=t[c[0]];const v25=t[D25[c[0]]];h+=`<td><span class="hm" style="background:${hm(v)};padding:2px 6px">${v==null?'':Math.round(v)}</span>${dtag(v,v25)}</td>`;});
+    h+=`<td>${t.covepa==null?'':t.covepa.toFixed(3)}</td>`;
+    h+=`<td class="l">${esc(tname(t.tcov))}${t.tcov?` <span class="muted">${t.tcov.ps}</span>`:''}</td>`;
+    h+=`<td class="l">${esc(tname(t.trush))}${t.trush?` <span class="muted">${t.trush.ps}</span>`:''}</td>`;
+    h+=`<td class="l">${esc(tname(t.trun))}${t.trun?` <span class="muted">${t.trun.ps}</span>`:''}</td></tr>`;
+    h+=`<tr class="dmoves" data-i="${i}" style="display:none"><td colspan="8" class="l" style="padding:4px 10px 8px">${movesHTML(t)}${funnelHTML(t)}${rookieHTML(t)}${dccbHTML(t)}</td></tr>`;});
+  tb.innerHTML=h;
+  tb.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(dfstate.sort===k)dfstate.dir*=-1;else{dfstate.sort=k;dfstate.dir=k==='t'?1:-1;}renderDefense();});
+  tb.querySelectorAll('tr.drow').forEach(tr=>tr.onclick=()=>{const mr=tb.querySelector(`tr.dmoves[data-i="${tr.dataset.i}"]`);if(mr)mr.style.display=mr.style.display==='none'?'':'none';});
+}
+document.getElementById('dfq').oninput=e=>{dfstate.q=e.target.value.toLowerCase();renderDefense();};
+// init
+renderFusion();renderTiers();renderTeams();renderStacks();renderDFS();renderPers('');renderDefense();
+</script></body></html>

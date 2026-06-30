@@ -1,0 +1,51 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Draft assistant · pick __PICK__</title>
+<style>
+:root{--bg:#faf9f5;--card:#fff;--bd:#e6e3da;--tx:#1a1a18;--mut:#6b6a64;--hint:#999;--info:#185fa5;--infobg:#e6f1fb;--ok:#3b6d11;--okbg:#eaf3de;--bad:#a32d2d;--badbg:#fcebeb;--warn:#854f0b;--warnbg:#faeeda}
+@media(prefers-color-scheme:dark){:root{--bg:#1c1c1a;--card:#262624;--bd:#3a3a36;--tx:#eee;--mut:#aaa;--hint:#777;--infobg:#0c2740;--okbg:#1b2e09;--badbg:#3a1212;--warnbg:#3a2a08;--info:#85b7eb;--ok:#97c459;--bad:#f09595;--warn:#ef9f27}}
+*{box-sizing:border-box}body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);margin:0;padding:18px;font-size:15px}
+.wrap{max-width:760px;margin:0 auto}.hd{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}
+.pill{font-size:12px;background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:5px 10px;color:var(--mut)}.pill b{color:var(--tx);font-weight:600}
+.row{display:grid;grid-template-columns:22px minmax(0,1fr) 38px 64px 84px 22px;gap:9px;align-items:center;background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px 11px;margin-bottom:6px;cursor:pointer}
+.row:hover{border-color:var(--mut)}.nm{font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sub{font-size:11px;color:var(--hint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dt{font-size:15px;font-weight:600;text-align:right}.lean{font-size:10px;font-weight:600;border-radius:7px;padding:2px 6px;text-align:center}
+.det{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:11px 13px;margin:-2px 0 7px;font-size:13px}
+.tw{display:flex;gap:7px;padding:5px 0;border-top:1px solid var(--bd);font-size:12px}.tag{flex:none;font-size:10px;font-weight:600;border:1px solid var(--bd);border-radius:6px;padding:0 5px;line-height:17px;height:18px;color:var(--mut)}
+h1{font-size:17px;font-weight:600;margin:0 0 3px}.note{font-size:11px;color:var(--hint);margin:8px 0}button{font:inherit;font-size:13px;width:100%;background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:8px;color:var(--tx);cursor:pointer;margin:3px 0}
+.wd{background:var(--infobg);color:var(--info);border-radius:7px;padding:7px 9px;margin-bottom:7px;font-weight:600}
+.ovbox{border-radius:7px;padding:6px 9px;margin-bottom:7px;font-weight:600}
+</style></head><body><div class="wrap">
+<h1>Draft assistant · pick __PICK__</h1>
+<div class="hd"><span class="pill">roster <b>__ROSTER__</b></span><span class="pill">anchor <b>__ANCHOR__</b></span><span class="pill" style="margin-left:auto">tap a name ↓</span></div>
+<div id="verdict" style="background:var(--infobg);color:var(--info);border-radius:10px;padding:12px 14px;font-size:15px;font-weight:600;margin-bottom:12px;line-height:1.45">→ __VERDICT__</div>
+<div id="main"></div><button id="moreBtn">show the rest ↓</button><div id="more" style="display:none"></div>
+<div class="note">Δtitle = marginal lift to your title equity from adding this player (relative ranking robust, absolute approximate). qual = coachspeak synthesis. overlay = playbook risk/trap flag.</div>
+</div>
+<script>
+const D=__DATA__, BASE=__BASE__, N=__N__;
+function leanInfo(q){const l=(q||'').split(' ')[0];if(l==='bullish')return['bull','var(--okbg)','var(--ok)'];if(l==='bearish')return['bear','var(--badbg)','var(--bad)'];if(l==='mixed')return['mixed','var(--warnbg)','var(--warn)'];return['','transparent','var(--hint)'];}
+function flagHTML(d){if(!d.ov)return '';const trap=(d.ovt==='trap');const bg=trap?'var(--warnbg)':'var(--badbg)',fg=trap?'var(--warn)':'var(--bad)';return `<span class="lean" style="background:${bg};color:${fg}">${trap?'TRAP':d.ovt||'risk'}</span>`;}
+function esc(s){return String(s||'').replace(/&amp;/g,'&').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function rowHTML(d){const top=d.idx===1;const[lt,lbg,lfg]=leanInfo(d.qsum);const dt=d.wd?((d.wd.dtitle>=0?'+':'')+d.wd.dtitle+'%'):'—';
+ return `<div class="row" data-ctx-host style="${top?'border:2px solid var(--info)':''}" onclick="tog(${d.idx})">
+ <div style="font-size:11px;color:var(--hint)">${d.idx}</div>
+ <div style="min-width:0"><div class="nm">${esc(d.name)} <span style="font-size:11px;color:var(--mut);font-weight:400">${d.pos}·${d.team}</span><span class="ctxchip" data-ctx-name="${esc(d.name)}" data-ctx-pos="${esc(d.pos)}">EPA</span></div><div class="sub">${d.qsum?esc(d.qsum):('rk'+(d.rk==null?'–':d.rk)+' · '+esc(d.tags))}</div></div>
+ <div style="font-size:14px;font-weight:600;text-align:center">${d.ceil==null?'–':d.ceil}</div>
+ <div class="dt" style="color:${d.wd&&d.wd.dtitle>0?'var(--ok)':'var(--tx)'}">${dt}</div>
+ <div>${d.ov?flagHTML(d):(lt?`<span class="lean" style="background:${lbg};color:${lfg}">${lt}</span>`:'')}</div>
+ <div style="color:var(--hint)"><span id="cv${d.idx}">▾</span></div></div><div class="det" id="dt${d.idx}" style="display:none"></div>`;}
+function detHTML(d){let h='';h+=`<div style="font-size:12px;color:var(--mut);margin-bottom:5px">board #${d.rk==null?'-':d.rk} · reg-season #${d.regrank==null?'-':d.regrank} · ceil ${d.ceil==null?'-':d.ceil} · bye ${d.bye==null?'-':'W'+d.bye}</div>`;h+=`<div style="font-size:12px;margin-bottom:7px">playoffs · W15 ${d.w15?('vs '+d.w15):'-'} · W16 ${d.w16?('@ '+d.w16):'-'} · W17 ${d.w17||'-'}${d.tail?(' · tail #'+d.tail):''}</div>`;
+ if(d.wd){h+=`<div class="wd">win-Δ · Δtitle ${d.wd.dtitle>=0?'+':''}${d.wd.dtitle}%  ·  Δadvance ${d.wd.dadv>=0?'+':''}${d.wd.dadv}%  ·  ΔW17 ${d.wd.dw17>=0?'+':''}${d.wd.dw17}%</div>`;}
+ if(d.ov){const trap=(d.ovt==='trap');h+=`<div class="ovbox" style="background:${trap?'var(--warnbg)':'var(--badbg)'};color:${trap?'var(--warn)':'var(--bad)'}">⚑ overlay: ${esc(d.ov)}</div>`;}
+ if(d.qsum){h+=`<div style="margin-bottom:5px">${esc(d.qsum)}</div>`; if(d.quote)h+=`<div style="color:var(--mut);font-style:italic;margin-bottom:4px">“${esc(d.quote)}”</div>`;}
+ if(d.bbnote){h+=`<div style="font-size:12px;margin:5px 0"><span style="color:var(--mut)"><i class="ti ti-clipboard-list"></i> best ball:</span> ${esc(d.bbnote)}</div>`;}
+ if(d.teamnote){h+=`<div style="font-size:12px;margin:5px 0;color:var(--mut)"><i class="ti ti-users"></i> team: <span style="color:var(--tx)">${esc(d.teamnote)}</span></div>`;}
+ if(d.video){h+=`<div style="font-size:12px;margin:5px 0"><span style="color:var(--mut)"><i class="ti ti-video"></i> video:</span> ${esc(d.video)}</div>`;}
+ if(d.notes&&d.notes.length){d.notes.forEach(n=>{const up=n[1]==='up';h+=`<div class="tw"><span class="tag">${n[0]||'?'}</span><span style="flex:none;color:${up?'var(--ok)':'var(--bad)'};font-weight:600">${up?'▲':'▼'}</span><span style="min-width:0"><span style="color:var(--mut)">@${esc(n[2])}</span> ${esc(n[3])}</span></div>`;});}
+ else if(!d.qsum){h+='<div style="color:var(--hint)">No gated coachspeak — qual from board sources only.</div>';}
+ return h;}
+const byi={};D.forEach(d=>byi[d.idx]=d);
+function tog(i){const e=document.getElementById('dt'+i),c=document.getElementById('cv'+i);if(e.style.display==='none'){e.innerHTML=detHTML(byi[i]);e.style.display='block';c.textContent='▴';}else{e.style.display='none';c.textContent='▾';}}
+document.getElementById('main').innerHTML=D.length?D.slice(0,N).map(rowHTML).join(''):'<div style="padding:14px;color:var(--bad)">No candidates parsed \u2014 re-copy the full board (Ctrl+A \u2192 Ctrl+C) and re-run.</div>';
+document.getElementById('more').innerHTML=D.slice(N).map(rowHTML).join('');
+document.getElementById('moreBtn').onclick=function(){const m=document.getElementById('more');const s=m.style.display==='none';m.style.display=s?'block':'none';this.textContent=s?'hide the rest ↑':'show the rest ↓';};
+</script></body></html>

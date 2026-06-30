@@ -1,0 +1,119 @@
+Round 5 of 20
+00:45:43
+On the clock: Pick 56
+rsbathla
+Pick 57
+Maximus0421
+caseyt
+QB
+0
+RB
+2
+WR
+3
+TE
+0
+1.1
+1
+J. Gibbs
+RB
+DET
+(BYE 6)
+2.12
+24
+R. Rice
+WR
+KC
+(BYE 5)
+3.1
+25
+N. Collins
+WR
+HOU
+(BYE 8)
+4.12
+48
+D. Swift
+RB
+CHI
+(BYE 10)
+5.1
+49
+J. Williams
+WR
+DET
+(BYE 6)
+6.12
+72
+rsbathla
+QB
+1
+RB
+2
+WR
+1
+TE
+0
+1.8
+8
+J. Taylor
+RB
+IND
+(BYE 13)
+2.5
+17
+K. Walker III
+RB
+KC
+(BYE 5)
+3.8
+32
+J. Allen
+QB
+BUF
+(BYE 7)
+4.5
+41
+T. Higgins
+WR
+CIN
+(BYE 6)
+On The Clock
+45:43
+6.5
+65
+Maximus0421
+QB
+0
+RB
+2
+WR
+2
+TE
+0
+1.9
+9
+A. Jeanty
+RB
+LV
+(BYE 13)
+2.4
+16
+O. Hampton
+RB
+LAC
+(BYE 7)
+3.9
+33
+E. Egbuka
+WR
+TB
+(BYE 10)
+4.4
+40
+M. Nabers
+WR
+NYG
+(BYE 8)
+5.9
+57

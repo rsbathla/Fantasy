@@ -1,0 +1,86 @@
+{
+ "SPIKE": {
+  "QB": 26.0,
+  "RB": 22.0,
+  "WR": 20.2,
+  "TE": 16.3,
+  "DST": 13.9
+ },
+ "rule": "avg(85th pctl, mean+1sd) of actual within the position startable tier (top-N by weekly proj)",
+ "startable_tier_sizes": {
+  "QB": 16,
+  "RB": 32,
+  "WR": 44,
+  "TE": 16,
+  "DST": 16
+ },
+ "provenance": {
+  "QB": {
+   "N_startable": 16,
+   "n_obs": 176,
+   "mean": 18.14,
+   "sd": 8.06,
+   "p85": 25.8,
+   "mean_plus_1sd": 26.2,
+   "anchors_agree_within_8pct": true,
+   "threshold": 26.0,
+   "boom_rate_startable": 0.142,
+   "booms_per_17g": 2.4
+  },
+  "RB": {
+   "N_startable": 32,
+   "n_obs": 352,
+   "mean": 12.85,
+   "sd": 8.91,
+   "p85": 22.2,
+   "mean_plus_1sd": 21.8,
+   "anchors_agree_within_8pct": true,
+   "threshold": 22.0,
+   "boom_rate_startable": 0.156,
+   "booms_per_17g": 2.7
+  },
+  "WR": {
+   "N_startable": 44,
+   "n_obs": 484,
+   "mean": 11.14,
+   "sd": 8.58,
+   "p85": 20.6,
+   "mean_plus_1sd": 19.7,
+   "anchors_agree_within_8pct": true,
+   "threshold": 20.2,
+   "boom_rate_startable": 0.155,
+   "booms_per_17g": 2.6
+  },
+  "TE": {
+   "N_startable": 16,
+   "n_obs": 176,
+   "mean": 9.89,
+   "sd": 6.72,
+   "p85": 15.9,
+   "mean_plus_1sd": 16.6,
+   "anchors_agree_within_8pct": true,
+   "threshold": 16.3,
+   "boom_rate_startable": 0.148,
+   "booms_per_17g": 2.5
+  },
+  "DST": {
+   "N_startable": 16,
+   "n_obs": 145,
+   "mean": 7.63,
+   "sd": 6.19,
+   "p85": 14.0,
+   "mean_plus_1sd": 13.8,
+   "anchors_agree_within_8pct": true,
+   "threshold": 13.9,
+   "boom_rate_startable": 0.159,
+   "booms_per_17g": 2.7
+  }
+ },
+ "posbase": {
+  "WR": 0.1782178217821782,
+  "QB": 0.11428571428571428,
+  "TE": 0.18181818181818182,
+  "RB": 0.18661971830985916,
+  "DST": 0.15862068965517243
+ }
+}

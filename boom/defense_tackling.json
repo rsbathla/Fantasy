@@ -1,0 +1,199 @@
+{
+ "CIN": {
+  "mtf_att_allowed": 0.15,
+  "mtf_allowed": 72,
+  "rush_att": 479,
+  "leaky_pctl": 72
+ },
+ "NYG": {
+  "mtf_att_allowed": 0.2,
+  "mtf_allowed": 94,
+  "rush_att": 465,
+  "leaky_pctl": 100
+ },
+ "WAS": {
+  "mtf_att_allowed": 0.16,
+  "mtf_allowed": 79,
+  "rush_att": 504,
+  "leaky_pctl": 88
+ },
+ "NYJ": {
+  "mtf_att_allowed": 0.14,
+  "mtf_allowed": 76,
+  "rush_att": 539,
+  "leaky_pctl": 59
+ },
+ "BUF": {
+  "mtf_att_allowed": 0.17,
+  "mtf_allowed": 75,
+  "rush_att": 450,
+  "leaky_pctl": 94
+ },
+ "CHI": {
+  "mtf_att_allowed": 0.15,
+  "mtf_allowed": 68,
+  "rush_att": 457,
+  "leaky_pctl": 72
+ },
+ "MIA": {
+  "mtf_att_allowed": 0.15,
+  "mtf_allowed": 69,
+  "rush_att": 469,
+  "leaky_pctl": 72
+ },
+ "ARI": {
+  "mtf_att_allowed": 0.18,
+  "mtf_allowed": 87,
+  "rush_att": 489,
+  "leaky_pctl": 97
+ },
+ "ATL": {
+  "mtf_att_allowed": 0.12,
+  "mtf_allowed": 56,
+  "rush_att": 466,
+  "leaky_pctl": 34
+ },
+ "DAL": {
+  "mtf_att_allowed": 0.14,
+  "mtf_allowed": 62,
+  "rush_att": 452,
+  "leaky_pctl": 59
+ },
+ "PHI": {
+  "mtf_att_allowed": 0.13,
+  "mtf_allowed": 64,
+  "rush_att": 494,
+  "leaky_pctl": 44
+ },
+ "MIN": {
+  "mtf_att_allowed": 0.12,
+  "mtf_allowed": 66,
+  "rush_att": 529,
+  "leaky_pctl": 34
+ },
+ "CAR": {
+  "mtf_att_allowed": 0.16,
+  "mtf_allowed": 77,
+  "rush_att": 479,
+  "leaky_pctl": 88
+ },
+ "NO": {
+  "mtf_att_allowed": 0.14,
+  "mtf_allowed": 73,
+  "rush_att": 517,
+  "leaky_pctl": 59
+ },
+ "GB": {
+  "mtf_att_allowed": 0.12,
+  "mtf_allowed": 56,
+  "rush_att": 476,
+  "leaky_pctl": 34
+ },
+ "LV": {
+  "mtf_att_allowed": 0.16,
+  "mtf_allowed": 84,
+  "rush_att": 511,
+  "leaky_pctl": 88
+ },
+ "CLE": {
+  "mtf_att_allowed": 0.16,
+  "mtf_allowed": 75,
+  "rush_att": 475,
+  "leaky_pctl": 88
+ },
+ "TEN": {
+  "mtf_att_allowed": 0.12,
+  "mtf_allowed": 55,
+  "rush_att": 453,
+  "leaky_pctl": 34
+ },
+ "DET": {
+  "mtf_att_allowed": 0.13,
+  "mtf_allowed": 59,
+  "rush_att": 446,
+  "leaky_pctl": 44
+ },
+ "PIT": {
+  "mtf_att_allowed": 0.12,
+  "mtf_allowed": 55,
+  "rush_att": 451,
+  "leaky_pctl": 34
+ },
+ "LAR": {
+  "mtf_att_allowed": 0.14,
+  "mtf_allowed": 63,
+  "rush_att": 436,
+  "leaky_pctl": 59
+ },
+ "SF": {
+  "mtf_att_allowed": 0.17,
+  "mtf_allowed": 71,
+  "rush_att": 424,
+  "leaky_pctl": 94
+ },
+ "BAL": {
+  "mtf_att_allowed": 0.1,
+  "mtf_allowed": 43,
+  "rush_att": 434,
+  "leaky_pctl": 9
+ },
+ "KC": {
+  "mtf_att_allowed": 0.11,
+  "mtf_allowed": 51,
+  "rush_att": 448,
+  "leaky_pctl": 16
+ },
+ "LAC": {
+  "mtf_att_allowed": 0.16,
+  "mtf_allowed": 68,
+  "rush_att": 416,
+  "leaky_pctl": 88
+ },
+ "IND": {
+  "mtf_att_allowed": 0.1,
+  "mtf_allowed": 45,
+  "rush_att": 448,
+  "leaky_pctl": 9
+ },
+ "NE": {
+  "mtf_att_allowed": 0.15,
+  "mtf_allowed": 62,
+  "rush_att": 411,
+  "leaky_pctl": 72
+ },
+ "TB": {
+  "mtf_att_allowed": 0.13,
+  "mtf_allowed": 52,
+  "rush_att": 396,
+  "leaky_pctl": 44
+ },
+ "HOU": {
+  "mtf_att_allowed": 0.12,
+  "mtf_allowed": 47,
+  "rush_att": 400,
+  "leaky_pctl": 34
+ },
+ "SEA": {
+  "mtf_att_allowed": 0.11,
+  "mtf_allowed": 48,
+  "rush_att": 418,
+  "leaky_pctl": 16
+ },
+ "DEN": {
+  "mtf_att_allowed": 0.14,
+  "mtf_allowed": 57,
+  "rush_att": 400,
+  "leaky_pctl": 59
+ },
+ "JAX": {
+  "mtf_att_allowed": 0.1,
+  "mtf_allowed": 38,
+  "rush_att": 369,
+  "leaky_pctl": 9
+ },
+ "_meta": {
+  "source": "FantasyPoints Advanced Rushing - Defense view, 2025",
+  "metric": "missed tackles forced ALLOWED per carry (high = leaky tackling, good for elusive RBs)",
+  "season": 2025
+ }
+}

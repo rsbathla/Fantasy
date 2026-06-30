@@ -1,0 +1,2632 @@
+{
+  "teams": {
+    "ARI": {
+      "team": "ARI",
+      "name": "Arizona Cardinals",
+      "offense": {
+        "summary": "24% of 2025 target volume departs (M.Carter (7% of '25 tgt vol -> gone); E.Higgins (6% of '25 tgt vol -> gone); G.Dortch (5% of '25 tgt vol -> DET); Z.Knight (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Tyler Allgeier, Kendrick Bourne; rookies: Jeremiyah Love. With projected pass attempts DOWN -7.5/g vs 2025, the vacated work most plausibly flows to Jeremiyah Love (RB, ADP 26.5, p95 37), Trey McBride (TE, ADP 22.8, p95 36), Marvin Harrison Jr. (WR, ADP 66.4, p95 30).",
+        "vac_tgt": 23.6,
+        "d_pa": -7.5,
+        "volume_shift": "projected pass attempts DOWN -7.5/g vs 2025",
+        "departures": [
+          {
+            "name": "M.Carter",
+            "share_pct": 7.3,
+            "dest": "gone"
+          },
+          {
+            "name": "E.Higgins",
+            "share_pct": 6.0,
+            "dest": "gone"
+          },
+          {
+            "name": "G.Dortch",
+            "share_pct": 5.3,
+            "dest": "DET"
+          },
+          {
+            "name": "Z.Knight",
+            "share_pct": 5.0,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Tyler Allgeier",
+            "from": "ATL"
+          },
+          {
+            "name": "Kendrick Bourne",
+            "from": "SF"
+          }
+        ],
+        "rookies": [
+          "Jeremiyah Love"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Jeremiyah Love",
+            "pos": "RB",
+            "adp": 26.5,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": null
+          },
+          {
+            "name": "Trey McBride",
+            "pos": "TE",
+            "adp": 22.8,
+            "p95": 36,
+            "mover": false,
+            "tgtshare25": 27.9
+          },
+          {
+            "name": "Marvin Harrison Jr.",
+            "pos": "WR",
+            "adp": 66.4,
+            "p95": 30,
+            "mover": false,
+            "tgtshare25": 18.2
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": "However, Hackett got hired as the offensive coordinator in Arizona.",
+        "handle": "thepowerrank",
+        "all_notes": [
+          {
+            "q": "However, Hackett got hired as the offensive coordinator in Arizona.",
+            "handle": "thepowerrank"
+          }
+        ],
+        "scheme_shift": "Corpus names Hackett as the hired OC; Vance Joseph runs the defense (both per corpus).",
+        "implication": "The note states a staff change but no clear pass/run lean; with modeled pass attempts DOWN sharply (-7.5/g) there is no confident WR-room lift -- treat as scheme-uncertain / neutral.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "ATL": {
+      "team": "ATL",
+      "name": "Atlanta Falcons",
+      "offense": {
+        "summary": "21% of 2025 target volume departs (D.Mooney (14% of '25 tgt vol -> NYG); D.Sills (7% of '25 tgt vol -> gone)). Incoming -- arrivals: Tua Tagovailoa, Olamide Zaccheaus, Jahan Dotson; rookies: Zachariah Branch. With pass volume roughly flat (-0.4/g), the vacated work most plausibly flows to Bijan Robinson (RB, ADP 2.1, p95 46), Drake London (WR, ADP 15.7, p95 38), Kyle Pitts Sr. (TE, ADP 93.9, p95 28).",
+        "vac_tgt": 20.7,
+        "d_pa": -0.4,
+        "volume_shift": "pass volume roughly flat (-0.4/g)",
+        "departures": [
+          {
+            "name": "D.Mooney",
+            "share_pct": 13.8,
+            "dest": "NYG"
+          },
+          {
+            "name": "D.Sills",
+            "share_pct": 6.9,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Tua Tagovailoa",
+            "from": "MIA"
+          },
+          {
+            "name": "Olamide Zaccheaus",
+            "from": "CHI"
+          },
+          {
+            "name": "Jahan Dotson",
+            "from": "PHI"
+          }
+        ],
+        "rookies": [
+          "Zachariah Branch"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Bijan Robinson",
+            "pos": "RB",
+            "adp": 2.1,
+            "p95": 46,
+            "mover": false,
+            "tgtshare25": 19.7
+          },
+          {
+            "name": "Drake London",
+            "pos": "WR",
+            "adp": 15.7,
+            "p95": 38,
+            "mover": false,
+            "tgtshare25": 29.9
+          },
+          {
+            "name": "Kyle Pitts Sr.",
+            "pos": "TE",
+            "adp": 93.9,
+            "p95": 28,
+            "mover": false,
+            "tgtshare25": 22.7
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [
+          {
+            "q": "And no matter who's in there for this Falcons defense.",
+            "handle": "sigmundbloom"
+          }
+        ],
+        "source": "CORPUS (transcripts + team_notes)",
+        "status": "signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "BAL": {
+      "team": "BAL",
+      "name": "Baltimore Ravens",
+      "offense": {
+        "summary": "18% of 2025 target volume departs (D.Hopkins (10% of '25 tgt vol -> FA); I.Likely (9% of '25 tgt vol -> NYG)). Incoming -- arrivals: Ja'Kobi Lane. With pass volume roughly flat (-0.1/g), the vacated work most plausibly flows to Derrick Henry (RB, ADP 20.4, p95 37), Zay Flowers (WR, ADP 36.5, p95 36), Mark Andrews (TE, ADP 131.3, p95 25).",
+        "vac_tgt": 18.3,
+        "d_pa": -0.1,
+        "volume_shift": "pass volume roughly flat (-0.1/g)",
+        "departures": [
+          {
+            "name": "D.Hopkins",
+            "share_pct": 9.5,
+            "dest": "FA"
+          },
+          {
+            "name": "I.Likely",
+            "share_pct": 8.8,
+            "dest": "NYG"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Ja'Kobi Lane",
+            "from": "WAS"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Derrick Henry",
+            "pos": "RB",
+            "adp": 20.4,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 6.3
+          },
+          {
+            "name": "Zay Flowers",
+            "pos": "WR",
+            "adp": 36.5,
+            "p95": 36,
+            "mover": false,
+            "tgtshare25": 30.0
+          },
+          {
+            "name": "Mark Andrews",
+            "pos": "TE",
+            "adp": 131.3,
+            "p95": 25,
+            "mover": false,
+            "tgtshare25": 17.0
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [
+          {
+            "q": "This is the most talented pass rusher the Ravens have had in years, and remember this, the last two fully healthy years he's had, 23 and 24, 17 and a half sacks each year.",
+            "handle": "dhananizain"
+          }
+        ],
+        "source": "CORPUS (transcripts + team_notes)",
+        "status": "signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "BUF": {
+      "team": "BUF",
+      "name": "Buffalo Bills",
+      "offense": {
+        "summary": "17% of 2025 target volume departs (K.Coleman (12% of '25 tgt vol -> MIA); T.Shavers (5% of '25 tgt vol -> gone)). Incoming -- rookies: DJ Moore. With projected pass attempts DOWN -2.8/g vs 2025, the vacated work most plausibly flows to James Cook III (RB, ADP 10.6, p95 37), DJ Moore (WR, ADP 44.2, p95 31), Khalil Shakir (WR, ADP 122.9, p95 27).",
+        "vac_tgt": 16.8,
+        "d_pa": -2.8,
+        "volume_shift": "projected pass attempts DOWN -2.8/g vs 2025",
+        "departures": [
+          {
+            "name": "K.Coleman",
+            "share_pct": 12.2,
+            "dest": "MIA"
+          },
+          {
+            "name": "T.Shavers",
+            "share_pct": 4.6,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [],
+        "rookies": [
+          "DJ Moore"
+        ],
+        "beneficiaries": [
+          {
+            "name": "James Cook III",
+            "pos": "RB",
+            "adp": 10.6,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 9.6
+          },
+          {
+            "name": "DJ Moore",
+            "pos": "WR",
+            "adp": 44.2,
+            "p95": 31,
+            "mover": false,
+            "tgtshare25": null
+          },
+          {
+            "name": "Khalil Shakir",
+            "pos": "WR",
+            "adp": 122.9,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 22.1
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "CAR": {
+      "team": "CAR",
+      "name": "Carolina Panthers",
+      "offense": {
+        "summary": "20% of 2025 target volume departs (R.Dowdle (10% of '25 tgt vol -> PIT); H.Renfrow (5% of '25 tgt vol -> gone); M.Evans (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Trevor Etienne, John Metchie III; rookies: Jonathon Brooks. With projected pass attempts DOWN -1.5/g vs 2025, the vacated work most plausibly flows to Tetairoa McMillan (WR, ADP 42.1, p95 36), Chuba Hubbard (RB, ADP 71.8, p95 26), Jalen Coker (WR, ADP 132.0, p95 23).",
+        "vac_tgt": 20.0,
+        "d_pa": -1.5,
+        "volume_shift": "projected pass attempts DOWN -1.5/g vs 2025",
+        "departures": [
+          {
+            "name": "R.Dowdle",
+            "share_pct": 10.0,
+            "dest": "PIT"
+          },
+          {
+            "name": "H.Renfrow",
+            "share_pct": 5.0,
+            "dest": "gone"
+          },
+          {
+            "name": "M.Evans",
+            "share_pct": 5.0,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Trevor Etienne",
+            "from": "JAX"
+          },
+          {
+            "name": "John Metchie III",
+            "from": "NYJ"
+          }
+        ],
+        "rookies": [
+          "Jonathon Brooks"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Tetairoa McMillan",
+            "pos": "WR",
+            "adp": 42.1,
+            "p95": 36,
+            "mover": false,
+            "tgtshare25": 25.3
+          },
+          {
+            "name": "Chuba Hubbard",
+            "pos": "RB",
+            "adp": 71.8,
+            "p95": 26,
+            "mover": false,
+            "tgtshare25": 8.9
+          },
+          {
+            "name": "Jalen Coker",
+            "pos": "WR",
+            "adp": 132.0,
+            "p95": 23,
+            "mover": false,
+            "tgtshare25": 17.2
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "CHI": {
+      "team": "CHI",
+      "name": "Chicago Bears",
+      "offense": {
+        "summary": "27% of 2025 target volume departs (D.Moore (16% of '25 tgt vol -> gone); O.Zaccheaus (11% of '25 tgt vol -> ATL)). Incoming -- arrivals: Kalif Raymond. With projected pass attempts DOWN -5.4/g vs 2025, the vacated work most plausibly flows to Rome Odunze (WR, ADP 56.6, p95 32), Colston Loveland (TE, ADP 39.7, p95 30), Luther Burden III (WR, ADP 42.2, p95 30).",
+        "vac_tgt": 27.2,
+        "d_pa": -5.4,
+        "volume_shift": "projected pass attempts DOWN -5.4/g vs 2025",
+        "departures": [
+          {
+            "name": "D.Moore",
+            "share_pct": 16.0,
+            "dest": "gone"
+          },
+          {
+            "name": "O.Zaccheaus",
+            "share_pct": 11.2,
+            "dest": "ATL"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Kalif Raymond",
+            "from": "DET"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Rome Odunze",
+            "pos": "WR",
+            "adp": 56.6,
+            "p95": 32,
+            "mover": false,
+            "tgtshare25": 22.3
+          },
+          {
+            "name": "Colston Loveland",
+            "pos": "TE",
+            "adp": 39.7,
+            "p95": 30,
+            "mover": false,
+            "tgtshare25": 18.0
+          },
+          {
+            "name": "Luther Burden III",
+            "pos": "WR",
+            "adp": 42.2,
+            "p95": 30,
+            "mover": false,
+            "tgtshare25": 13.3
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "CIN": {
+      "team": "CIN",
+      "name": "Cincinnati Bengals",
+      "offense": {
+        "summary": "7% of 2025 target volume departs (N.Fant (7% of '25 tgt vol -> NO)). No notable skill arrivals. With projected pass attempts DOWN -5.1/g vs 2025, the vacated work most plausibly flows to Ja'Marr Chase (WR, ADP 3.2, p95 47), Chase Brown (RB, ADP 17.8, p95 35), Tee Higgins (WR, ADP 36.2, p95 33).",
+        "vac_tgt": 6.7,
+        "d_pa": -5.1,
+        "volume_shift": "projected pass attempts DOWN -5.1/g vs 2025",
+        "departures": [
+          {
+            "name": "N.Fant",
+            "share_pct": 6.7,
+            "dest": "NO"
+          }
+        ],
+        "arrivals": [],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Ja'Marr Chase",
+            "pos": "WR",
+            "adp": 3.2,
+            "p95": 47,
+            "mover": false,
+            "tgtshare25": 32.0
+          },
+          {
+            "name": "Chase Brown",
+            "pos": "RB",
+            "adp": 17.8,
+            "p95": 35,
+            "mover": false,
+            "tgtshare25": 14.4
+          },
+          {
+            "name": "Tee Higgins",
+            "pos": "WR",
+            "adp": 36.2,
+            "p95": 33,
+            "mover": false,
+            "tgtshare25": 18.3
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "CLE": {
+      "team": "CLE",
+      "name": "Cleveland Browns",
+      "offense": {
+        "summary": "15% of 2025 target volume departs (D.Njoku (9% of '25 tgt vol -> LAC); J.Ford (6% of '25 tgt vol -> gone)). Incoming -- rookies: KC Concepcion, Denzel Boston. With projected pass attempts DOWN -3.9/g vs 2025, the vacated work most plausibly flows to Quinshon Judkins (RB, ADP 54.4, p95 32), Harold Fannin Jr. (TE, ADP 86.6, p95 27), KC Concepcion (WR, ADP 125.7, p95 25).",
+        "vac_tgt": 15.2,
+        "d_pa": -3.9,
+        "volume_shift": "projected pass attempts DOWN -3.9/g vs 2025",
+        "departures": [
+          {
+            "name": "D.Njoku",
+            "share_pct": 9.1,
+            "dest": "LAC"
+          },
+          {
+            "name": "J.Ford",
+            "share_pct": 6.1,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [],
+        "rookies": [
+          "KC Concepcion",
+          "Denzel Boston"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Quinshon Judkins",
+            "pos": "RB",
+            "adp": 54.4,
+            "p95": 32,
+            "mover": false,
+            "tgtshare25": 9.6
+          },
+          {
+            "name": "Harold Fannin Jr.",
+            "pos": "TE",
+            "adp": 86.6,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 21.9
+          },
+          {
+            "name": "KC Concepcion",
+            "pos": "WR",
+            "adp": 125.7,
+            "p95": 25,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [
+          {
+            "q": "Cleveland gave away Miles Garrett, who is exiting his prime, and in return they got Jared Verse, a defensive player who's entering his prime and a bunch of draft picks.",
+            "handle": "thepowerrank"
+          }
+        ],
+        "source": "CORPUS (transcripts + team_notes)",
+        "status": "signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "DAL": {
+      "team": "DAL",
+      "name": "Dallas Cowboys",
+      "offense": {
+        "summary": "6% of 2025 target volume departs (J.Tolbert (6% of '25 tgt vol -> MIA)). No notable skill arrivals. With projected pass attempts DOWN -4.6/g vs 2025, the vacated work most plausibly flows to CeeDee Lamb (WR, ADP 10.8, p95 42), George Pickens (WR, ADP 24.2, p95 36), Javonte Williams (RB, ADP 37.8, p95 35).",
+        "vac_tgt": 5.7,
+        "d_pa": -4.6,
+        "volume_shift": "projected pass attempts DOWN -4.6/g vs 2025",
+        "departures": [
+          {
+            "name": "J.Tolbert",
+            "share_pct": 5.7,
+            "dest": "MIA"
+          }
+        ],
+        "arrivals": [],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "CeeDee Lamb",
+            "pos": "WR",
+            "adp": 10.8,
+            "p95": 42,
+            "mover": false,
+            "tgtshare25": 25.0
+          },
+          {
+            "name": "George Pickens",
+            "pos": "WR",
+            "adp": 24.2,
+            "p95": 36,
+            "mover": false,
+            "tgtshare25": 22.6
+          },
+          {
+            "name": "Javonte Williams",
+            "pos": "RB",
+            "adp": 37.8,
+            "p95": 35,
+            "mover": false,
+            "tgtshare25": 9.1
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "DEN": {
+      "team": "DEN",
+      "name": "Denver Broncos",
+      "offense": {
+        "summary": "10% of 2025 target volume departs (L.Humphrey (5% of '25 tgt vol -> gone); T.Badie (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Jaylen Waddle; rookies: Jonah Coleman. With projected pass attempts DOWN -4.7/g vs 2025, the vacated work most plausibly flows to Jaylen Waddle (WR, ADP 48.5, p95 33) [incoming], Courtland Sutton (WR, ADP 83.1, p95 31), J.K. Dobbins (RB, ADP 110.8, p95 25).",
+        "vac_tgt": 9.8,
+        "d_pa": -4.7,
+        "volume_shift": "projected pass attempts DOWN -4.7/g vs 2025",
+        "departures": [
+          {
+            "name": "L.Humphrey",
+            "share_pct": 4.9,
+            "dest": "gone"
+          },
+          {
+            "name": "T.Badie",
+            "share_pct": 4.9,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Jaylen Waddle",
+            "from": "MIA"
+          }
+        ],
+        "rookies": [
+          "Jonah Coleman"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Jaylen Waddle",
+            "pos": "WR",
+            "adp": 48.5,
+            "p95": 33,
+            "mover": true,
+            "tgtshare25": 23.2
+          },
+          {
+            "name": "Courtland Sutton",
+            "pos": "WR",
+            "adp": 83.1,
+            "p95": 31,
+            "mover": false,
+            "tgtshare25": 20.9
+          },
+          {
+            "name": "J.K. Dobbins",
+            "pos": "RB",
+            "adp": 110.8,
+            "p95": 25,
+            "mover": false,
+            "tgtshare25": 4.5
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "DET": {
+      "team": "DET",
+      "name": "Detroit Lions",
+      "offense": {
+        "summary": "15% of 2025 target volume departs (K.Raymond (6% of '25 tgt vol -> CHI); D.Montgomery (5% of '25 tgt vol -> HOU); B.Wright (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Isiah Pacheco, Greg Dortch. With projected pass attempts DOWN -4.5/g vs 2025, the vacated work most plausibly flows to Jahmyr Gibbs (RB, ADP 1.2, p95 46), Amon-Ra St. Brown (WR, ADP 7.9, p95 45), Jameson Williams (WR, ADP 50.5, p95 33).",
+        "vac_tgt": 14.8,
+        "d_pa": -4.5,
+        "volume_shift": "projected pass attempts DOWN -4.5/g vs 2025",
+        "departures": [
+          {
+            "name": "K.Raymond",
+            "share_pct": 5.5,
+            "dest": "CHI"
+          },
+          {
+            "name": "D.Montgomery",
+            "share_pct": 5.3,
+            "dest": "HOU"
+          },
+          {
+            "name": "B.Wright",
+            "share_pct": 4.0,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Isiah Pacheco",
+            "from": "KC"
+          },
+          {
+            "name": "Greg Dortch",
+            "from": "ARI"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Jahmyr Gibbs",
+            "pos": "RB",
+            "adp": 1.2,
+            "p95": 46,
+            "mover": false,
+            "tgtshare25": 16.2
+          },
+          {
+            "name": "Amon-Ra St. Brown",
+            "pos": "WR",
+            "adp": 7.9,
+            "p95": 45,
+            "mover": false,
+            "tgtshare25": 31.7
+          },
+          {
+            "name": "Jameson Williams",
+            "pos": "WR",
+            "adp": 50.5,
+            "p95": 33,
+            "mover": false,
+            "tgtshare25": 18.6
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "GB": {
+      "team": "GB",
+      "name": "Green Bay Packers",
+      "offense": {
+        "summary": "29% of 2025 target volume departs (R.Doubs (19% of '25 tgt vol -> NE); D.Wicks (9% of '25 tgt vol -> PHI)). No notable skill arrivals. With pass volume roughly flat (-0.3/g), the vacated work most plausibly flows to Josh Jacobs (RB, ADP 44.4, p95 37), Christian Watson (WR, ADP 54.6, p95 29), Matthew Golden (WR, ADP 114.6, p95 29).",
+        "vac_tgt": 28.6,
+        "d_pa": -0.3,
+        "volume_shift": "pass volume roughly flat (-0.3/g)",
+        "departures": [
+          {
+            "name": "R.Doubs",
+            "share_pct": 19.4,
+            "dest": "NE"
+          },
+          {
+            "name": "D.Wicks",
+            "share_pct": 9.2,
+            "dest": "PHI"
+          }
+        ],
+        "arrivals": [],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Josh Jacobs",
+            "pos": "RB",
+            "adp": 44.4,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 10.7
+          },
+          {
+            "name": "Christian Watson",
+            "pos": "WR",
+            "adp": 54.6,
+            "p95": 29,
+            "mover": false,
+            "tgtshare25": 20.0
+          },
+          {
+            "name": "Matthew Golden",
+            "pos": "WR",
+            "adp": 114.6,
+            "p95": 29,
+            "mover": false,
+            "tgtshare25": 12.4
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": "He had gotten the job because he was the offensive coordinator with the Green Bay Packers for the previous three seasons.",
+        "handle": "thepowerrank",
+        "all_notes": [
+          {
+            "q": "He had gotten the job because he was the offensive coordinator with the Green Bay Packers for the previous three seasons.",
+            "handle": "thepowerrank"
+          }
+        ],
+        "scheme_shift": "Corpus references Love's prior system being less oriented to the intermediate middle.",
+        "implication": "The scheme note describes a coach/system that LEFT GB, not a 2026 GB hire; no defensible 2026 direction -- hold neutral.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "HOU": {
+      "team": "HOU",
+      "name": "Houston Texans",
+      "offense": {
+        "summary": "11% of 2025 target volume departs (C.Kirk (11% of '25 tgt vol -> SF)). Incoming -- arrivals: David Montgomery; rookies: Tank Dell. With projected pass attempts DOWN -4.6/g vs 2025, the vacated work most plausibly flows to Nico Collins (WR, ADP 23.6, p95 37), David Montgomery (RB, ADP 50.9, p95 28) [incoming], Jayden Higgins (WR, ADP 132.2, p95 23).",
+        "vac_tgt": 10.8,
+        "d_pa": -4.6,
+        "volume_shift": "projected pass attempts DOWN -4.6/g vs 2025",
+        "departures": [
+          {
+            "name": "C.Kirk",
+            "share_pct": 10.8,
+            "dest": "SF"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "David Montgomery",
+            "from": "DET"
+          }
+        ],
+        "rookies": [
+          "Tank Dell"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Nico Collins",
+            "pos": "WR",
+            "adp": 23.6,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 24.1
+          },
+          {
+            "name": "David Montgomery",
+            "pos": "RB",
+            "adp": 50.9,
+            "p95": 28,
+            "mover": true,
+            "tgtshare25": 5.8
+          },
+          {
+            "name": "Jayden Higgins",
+            "pos": "WR",
+            "adp": 132.2,
+            "p95": 23,
+            "mover": false,
+            "tgtshare25": 13.0
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": "The 2024 Houston Texans ran 12 personnel at the 3rd highest rate in the NFL at 31.5%.",
+        "handle": "coachspeakindex",
+        "all_notes": [
+          {
+            "q": "The 2024 Houston Texans ran 12 personnel at the 3rd highest rate in the NFL at 31.5%.",
+            "handle": "coachspeakindex"
+          }
+        ],
+        "scheme_shift": "Corpus: 2024 Texans ran 12-personnel at the 3rd-highest rate in the NFL (31.5%).",
+        "implication": "A 12-personnel-heavy identity caps pure spread passing; with one WR (Kirk) departed and modeled pass attempts DOWN (-4.6/g), the implication is a TE/play-action tilt rather than a WR-volume spike.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "IND": {
+      "team": "IND",
+      "name": "Indianapolis Colts",
+      "offense": {
+        "summary": "41% of 2025 target volume departs (M.Pittman (19% of '25 tgt vol -> PIT); A.Mitchell (12% of '25 tgt vol -> NYJ); J.Taylor (9% of '25 tgt vol -> JAX)). No notable skill arrivals. With projected pass attempts DOWN -3.2/g vs 2025, the vacated work most plausibly flows to Jonathan Taylor (RB, ADP 7.7, p95 40), Alec Pierce (WR, ADP 72.7, p95 31), Tyler Warren (TE, ADP 61.9, p95 30).",
+        "vac_tgt": 41.1,
+        "d_pa": -3.2,
+        "volume_shift": "projected pass attempts DOWN -3.2/g vs 2025",
+        "departures": [
+          {
+            "name": "M.Pittman",
+            "share_pct": 19.2,
+            "dest": "PIT"
+          },
+          {
+            "name": "A.Mitchell",
+            "share_pct": 12.5,
+            "dest": "NYJ"
+          },
+          {
+            "name": "J.Taylor",
+            "share_pct": 9.4,
+            "dest": "JAX"
+          }
+        ],
+        "arrivals": [],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Jonathan Taylor",
+            "pos": "RB",
+            "adp": 7.7,
+            "p95": 40,
+            "mover": false,
+            "tgtshare25": 11.8
+          },
+          {
+            "name": "Alec Pierce",
+            "pos": "WR",
+            "adp": 72.7,
+            "p95": 31,
+            "mover": false,
+            "tgtshare25": 17.4
+          },
+          {
+            "name": "Tyler Warren",
+            "pos": "TE",
+            "adp": 61.9,
+            "p95": 30,
+            "mover": false,
+            "tgtshare25": 21.6
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "JAX": {
+      "team": "JAX",
+      "name": "Jacksonville Jaguars",
+      "offense": {
+        "summary": "15% of 2025 target volume departs (T.Etienne (9% of '25 tgt vol -> CAR); D.Brown (6% of '25 tgt vol -> WAS)). Incoming -- arrivals: Chris Rodriguez Jr., J'Mari Taylor. With projected pass attempts DOWN -2.5/g vs 2025, the vacated work most plausibly flows to Bhayshul Tuten (RB, ADP 61.7, p95 28), Parker Washington (WR, ADP 63.8, p95 28), Jakobi Meyers (WR, ADP 102.8, p95 28).",
+        "vac_tgt": 15.0,
+        "d_pa": -2.5,
+        "volume_shift": "projected pass attempts DOWN -2.5/g vs 2025",
+        "departures": [
+          {
+            "name": "T.Etienne",
+            "share_pct": 9.1,
+            "dest": "CAR"
+          },
+          {
+            "name": "D.Brown",
+            "share_pct": 5.9,
+            "dest": "WAS"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Chris Rodriguez Jr.",
+            "from": "WAS"
+          },
+          {
+            "name": "J'Mari Taylor",
+            "from": "IND"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Bhayshul Tuten",
+            "pos": "RB",
+            "adp": 61.7,
+            "p95": 28,
+            "mover": false,
+            "tgtshare25": 4.4
+          },
+          {
+            "name": "Parker Washington",
+            "pos": "WR",
+            "adp": 63.8,
+            "p95": 28,
+            "mover": false,
+            "tgtshare25": 20.9
+          },
+          {
+            "name": "Jakobi Meyers",
+            "pos": "WR",
+            "adp": 102.8,
+            "p95": 28,
+            "mover": false,
+            "tgtshare25": 22.2
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "KC": {
+      "team": "KC",
+      "name": "Kansas City Chiefs",
+      "offense": {
+        "summary": "31% of 2025 target volume departs (M.Brown (13% of '25 tgt vol -> gone); J.Smith-Schuster (8% of '25 tgt vol -> gone); I.Pacheco (5% of '25 tgt vol -> DET); K.Hunt (4% of '25 tgt vol -> FA)). Incoming -- arrivals: Kenneth Walker III, Justin Fields; rookies: Emmett Johnson. With projected pass attempts DOWN -3.7/g vs 2025, the vacated work most plausibly flows to Rashee Rice (WR, ADP 31.2, p95 38), Xavier Worthy (WR, ADP 112.3, p95 28), Travis Kelce (TE, ADP 116.8, p95 27).",
+        "vac_tgt": 30.8,
+        "d_pa": -3.7,
+        "volume_shift": "projected pass attempts DOWN -3.7/g vs 2025",
+        "departures": [
+          {
+            "name": "M.Brown",
+            "share_pct": 13.4,
+            "dest": "gone"
+          },
+          {
+            "name": "J.Smith-Schuster",
+            "share_pct": 8.2,
+            "dest": "gone"
+          },
+          {
+            "name": "I.Pacheco",
+            "share_pct": 4.7,
+            "dest": "DET"
+          },
+          {
+            "name": "K.Hunt",
+            "share_pct": 4.5,
+            "dest": "FA"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Kenneth Walker III",
+            "from": "SEA"
+          },
+          {
+            "name": "Justin Fields",
+            "from": "NYJ"
+          }
+        ],
+        "rookies": [
+          "Emmett Johnson"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Rashee Rice",
+            "pos": "WR",
+            "adp": 31.2,
+            "p95": 38,
+            "mover": false,
+            "tgtshare25": 29.1
+          },
+          {
+            "name": "Xavier Worthy",
+            "pos": "WR",
+            "adp": 112.3,
+            "p95": 28,
+            "mover": false,
+            "tgtshare25": 16.0
+          },
+          {
+            "name": "Travis Kelce",
+            "pos": "TE",
+            "adp": 116.8,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 20.1
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "LAC": {
+      "team": "LAC",
+      "name": "Los Angeles Chargers",
+      "offense": {
+        "summary": "23% of 2025 target volume departs (K.Allen (23% of '25 tgt vol -> gone)). Incoming -- arrivals: David Njoku, Charlie Kolar; rookies: Keaton Mitchell. With projected pass attempts DOWN -5.9/g vs 2025, the vacated work most plausibly flows to Omarion Hampton (RB, ADP 17.3, p95 37), Ladd McConkey (WR, ADP 33.5, p95 33), Quentin Johnston (WR, ADP 90.8, p95 26).",
+        "vac_tgt": 22.7,
+        "d_pa": -5.9,
+        "volume_shift": "projected pass attempts DOWN -5.9/g vs 2025",
+        "departures": [
+          {
+            "name": "K.Allen",
+            "share_pct": 22.7,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "David Njoku",
+            "from": "CLE"
+          },
+          {
+            "name": "Charlie Kolar",
+            "from": "BAL"
+          }
+        ],
+        "rookies": [
+          "Keaton Mitchell"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Omarion Hampton",
+            "pos": "RB",
+            "adp": 17.3,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 11.8
+          },
+          {
+            "name": "Ladd McConkey",
+            "pos": "WR",
+            "adp": 33.5,
+            "p95": 33,
+            "mover": false,
+            "tgtshare25": 20.6
+          },
+          {
+            "name": "Quentin Johnston",
+            "pos": "WR",
+            "adp": 90.8,
+            "p95": 26,
+            "mover": false,
+            "tgtshare25": 20.0
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [
+          {
+            "q": "And of course, the offensive line is hopefully fingers crossed with the Chargers, as always.",
+            "handle": "joshnorris"
+          }
+        ],
+        "source": "CORPUS (transcripts + team_notes)",
+        "status": "signal"
+      },
+      "coordinator": {
+        "note": "The bad news for Chargers fans is that O'Leary has only been a defensive coordinator for one season.",
+        "handle": "thepowerrank",
+        "all_notes": [
+          {
+            "q": "The bad news for Chargers fans is that O'Leary has only been a defensive coordinator for one season.",
+            "handle": "thepowerrank"
+          }
+        ],
+        "scheme_shift": "Corpus: a defensive coordinator (O'Leary) with one year of DC experience; OL flagged as the perennial question.",
+        "implication": "Signal is defense/OL-side, not an offensive scheme change -- no WR/RB volume implication can be defended from it.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "LAR": {
+      "team": "LAR",
+      "name": "Los Angeles Rams",
+      "offense": {
+        "summary": "9% of 2025 target volume departs (D.Allen (5% of '25 tgt vol -> gone); K.Mumpfield (4% of '25 tgt vol -> gone)). No notable skill arrivals. With pass-volume change not modeled (skill group tagged to prior-name team in source), the vacated work most plausibly flows to Puka Nacua (WR, ADP 4.0, p95 50), Davante Adams (WR, ADP 46.2, p95 35), Kyren Williams (RB, ADP 29.3, p95 34).",
+        "vac_tgt": 8.9,
+        "d_pa": null,
+        "volume_shift": "pass-volume change not modeled (skill group tagged to prior-name team in source)",
+        "departures": [
+          {
+            "name": "D.Allen",
+            "share_pct": 4.7,
+            "dest": "gone"
+          },
+          {
+            "name": "K.Mumpfield",
+            "share_pct": 4.2,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Puka Nacua",
+            "pos": "WR",
+            "adp": 4.0,
+            "p95": 50,
+            "mover": false,
+            "tgtshare25": 31.1
+          },
+          {
+            "name": "Davante Adams",
+            "pos": "WR",
+            "adp": 46.2,
+            "p95": 35,
+            "mover": false,
+            "tgtshare25": 24.4
+          },
+          {
+            "name": "Kyren Williams",
+            "pos": "RB",
+            "adp": 29.3,
+            "p95": 34,
+            "mover": false,
+            "tgtshare25": 8.4
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [
+          {
+            "q": "The Los Angeles Rams were the favorite to win the Super Bowl, and then they added the NFL's best defensive player in Myles Garrett.",
+            "handle": "thepowerrank"
+          },
+          {
+            "q": "He's going to not be in the slot, not be in the backfield in this kind of unique spot where the way that the Rams want to play this defense is going to be a box.",
+            "handle": "syedschemes"
+          }
+        ],
+        "source": "CORPUS (transcripts + team_notes)",
+        "status": "signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "LV": {
+      "team": "LV",
+      "name": "Las Vegas Raiders",
+      "offense": {
+        "summary": "12% of 2025 target volume departs (T.Lockett (12% of '25 tgt vol -> gone)). Incoming -- arrivals: Jalen Nailor, Kirk Cousins; rookies: Fernando Mendoza. With pass volume roughly flat (-0.9/g), the vacated work most plausibly flows to Ashton Jeanty (RB, ADP 12.0, p95 37), Brock Bowers (TE, ADP 19.5, p95 34), Tre Tucker (WR, ADP 162.0, p95 23).",
+        "vac_tgt": 12.0,
+        "d_pa": -0.9,
+        "volume_shift": "pass volume roughly flat (-0.9/g)",
+        "departures": [
+          {
+            "name": "T.Lockett",
+            "share_pct": 12.0,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Jalen Nailor",
+            "from": "MIN"
+          },
+          {
+            "name": "Kirk Cousins",
+            "from": "ATL"
+          }
+        ],
+        "rookies": [
+          "Fernando Mendoza"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Ashton Jeanty",
+            "pos": "RB",
+            "adp": 12.0,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 15.7
+          },
+          {
+            "name": "Brock Bowers",
+            "pos": "TE",
+            "adp": 19.5,
+            "p95": 34,
+            "mover": false,
+            "tgtshare25": 23.5
+          },
+          {
+            "name": "Tre Tucker",
+            "pos": "WR",
+            "adp": 162.0,
+            "p95": 23,
+            "mover": false,
+            "tgtshare25": 18.9
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [
+          {
+            "q": "Now, yards before contact per rush can be a running back stat if they are messing around behind the line of scrimmage, but in the case of the Raiders, we can say with some confidence that it's the play of the offensive line.",
+            "handle": "benjaminsolak"
+          }
+        ],
+        "source": "CORPUS (transcripts + team_notes)",
+        "status": "signal"
+      },
+      "coordinator": {
+        "note": "New season, and you guys have a lot of the same parts of the team, but certainly some new members of your coaching staff, Clint Kubiak, your offensive coordinator, now the head coach of the Las Vegas Raiders.",
+        "handle": "dhananizain",
+        "all_notes": [
+          {
+            "q": "New season, and you guys have a lot of the same parts of the team, but certainly some new members of your coaching staff, Clint Kubiak, your offensive coordinator, now the head coach of the Las Vegas Raiders.",
+            "handle": "dhananizain"
+          }
+        ],
+        "scheme_shift": "Corpus frames an OL-driven run-game identity under the new staff (Kubiak named as the prior OC, now a head coach elsewhere).",
+        "implication": "Corpus stresses an OL-built run game, so the lean is toward establishing the run -> mild RB tilt; but pass volume is modeled roughly flat (-0.9/g), so no strong WR lift.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "MIA": {
+      "team": "MIA",
+      "name": "Miami Dolphins",
+      "offense": {
+        "summary": "44% of 2025 target volume departs (J.Waddle (22% of '25 tgt vol -> DEN); D.Waller (8% of '25 tgt vol -> FA); T.Hill (6% of '25 tgt vol -> gone); J.Hill (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Jalen Tolbert, Tutu Atwell, Kevin Coleman Jr.; rookies: Malik Willis. With pass volume roughly flat (-0.9/g), the vacated work most plausibly flows to De'Von Achane (RB, ADP 16.9, p95 40), Greg Dulcich (TE, ADP 192.4, p95 19), Chris Bell (WR, ADP 205.9, p95 19).",
+        "vac_tgt": 44.0,
+        "d_pa": -0.9,
+        "volume_shift": "pass volume roughly flat (-0.9/g)",
+        "departures": [
+          {
+            "name": "J.Waddle",
+            "share_pct": 21.5,
+            "dest": "DEN"
+          },
+          {
+            "name": "D.Waller",
+            "share_pct": 7.5,
+            "dest": "FA"
+          },
+          {
+            "name": "T.Hill",
+            "share_pct": 6.2,
+            "dest": "gone"
+          },
+          {
+            "name": "J.Hill",
+            "share_pct": 4.5,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Jalen Tolbert",
+            "from": "DAL"
+          },
+          {
+            "name": "Tutu Atwell",
+            "from": "LAR"
+          },
+          {
+            "name": "Kevin Coleman Jr.",
+            "from": "BUF"
+          }
+        ],
+        "rookies": [
+          "Malik Willis"
+        ],
+        "beneficiaries": [
+          {
+            "name": "De'Von Achane",
+            "pos": "RB",
+            "adp": 16.9,
+            "p95": 40,
+            "mover": false,
+            "tgtshare25": 18.6
+          },
+          {
+            "name": "Greg Dulcich",
+            "pos": "TE",
+            "adp": 192.4,
+            "p95": 19,
+            "mover": false,
+            "tgtshare25": 15.8
+          },
+          {
+            "name": "Chris Bell",
+            "pos": "WR",
+            "adp": 205.9,
+            "p95": 19,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": "When new general manager John Eric Sullivan and new head coach Jeff Halfley arrived in Miami earlier this year, we saw one of the biggest overhauls of a roster that we have ever seen in the NFL.",
+        "handle": "coachspeakindex",
+        "all_notes": [
+          {
+            "q": "When new general manager John Eric Sullivan and new head coach Jeff Halfley arrived in Miami earlier this year, we saw one of the biggest overhauls of a roster that we have ever seen in the NFL.",
+            "handle": "coachspeakindex"
+          }
+        ],
+        "scheme_shift": "New GM (Sullivan) + new HC drove 'one of the biggest roster overhauls' in the NFL (per corpus).",
+        "implication": "Corpus confirms a top-to-bottom regime change but NOT the offensive pass/run direction; with the WR room gutted (Waddle/Hill out, 44% of targets vacated) the scheme is unsettled -- low confidence, treat incoming/young WRs as dart throws.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "MIN": {
+      "team": "MIN",
+      "name": "Minnesota Vikings",
+      "offense": {
+        "summary": "23% of 2025 target volume departs (J.Nailor (11% of '25 tgt vol -> LV); A.Thielen (8% of '25 tgt vol -> gone); J.Oliver (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Kyler Murray, Jauan Jennings. With projected pass attempts UP +1.7/g vs 2025, the vacated work most plausibly flows to Justin Jefferson (WR, ADP 8.8, p95 41), Jordan Addison (WR, ADP 96.3, p95 27), Aaron Jones Sr. (RB, ADP 119.4, p95 27).",
+        "vac_tgt": 22.8,
+        "d_pa": 1.7,
+        "volume_shift": "projected pass attempts UP +1.7/g vs 2025",
+        "departures": [
+          {
+            "name": "J.Nailor",
+            "share_pct": 11.0,
+            "dest": "LV"
+          },
+          {
+            "name": "A.Thielen",
+            "share_pct": 7.7,
+            "dest": "gone"
+          },
+          {
+            "name": "J.Oliver",
+            "share_pct": 4.1,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Kyler Murray",
+            "from": "ARI"
+          },
+          {
+            "name": "Jauan Jennings",
+            "from": "SF"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Justin Jefferson",
+            "pos": "WR",
+            "adp": 8.8,
+            "p95": 41,
+            "mover": false,
+            "tgtshare25": 30.5
+          },
+          {
+            "name": "Jordan Addison",
+            "pos": "WR",
+            "adp": 96.3,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 18.1
+          },
+          {
+            "name": "Aaron Jones Sr.",
+            "pos": "RB",
+            "adp": 119.4,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 14.0
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "NE": {
+      "team": "NE",
+      "name": "New England Patriots",
+      "offense": {
+        "summary": "30% of 2025 target volume departs (S.Diggs (20% of '25 tgt vol -> FA); A.Hooper (6% of '25 tgt vol -> gone); K.Williams (4% of '25 tgt vol -> gone)). Incoming -- arrivals: A.J. Brown, Romeo Doubs. With projected pass attempts DOWN -2.4/g vs 2025, the vacated work most plausibly flows to A.J. Brown (WR, ADP 19.4, p95 37) [incoming], TreVeyon Henderson (RB, ADP 57.6, p95 29), Rhamondre Stevenson (RB, ADP 75.6, p95 27).",
+        "vac_tgt": 30.4,
+        "d_pa": -2.4,
+        "volume_shift": "projected pass attempts DOWN -2.4/g vs 2025",
+        "departures": [
+          {
+            "name": "S.Diggs",
+            "share_pct": 20.4,
+            "dest": "FA"
+          },
+          {
+            "name": "A.Hooper",
+            "share_pct": 5.5,
+            "dest": "gone"
+          },
+          {
+            "name": "K.Williams",
+            "share_pct": 4.5,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "A.J. Brown",
+            "from": "PHI"
+          },
+          {
+            "name": "Romeo Doubs",
+            "from": "GB"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "A.J. Brown",
+            "pos": "WR",
+            "adp": 19.4,
+            "p95": 37,
+            "mover": true,
+            "tgtshare25": 28.0
+          },
+          {
+            "name": "TreVeyon Henderson",
+            "pos": "RB",
+            "adp": 57.6,
+            "p95": 29,
+            "mover": false,
+            "tgtshare25": 10.1
+          },
+          {
+            "name": "Rhamondre Stevenson",
+            "pos": "RB",
+            "adp": 75.6,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 10.7
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "NO": {
+      "team": "NO",
+      "name": "New Orleans Saints",
+      "offense": {
+        "summary": "13% of 2025 target volume departs (B.Cooks (9% of '25 tgt vol -> gone); K.Austin (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Travis Etienne Jr., Noah Fant; rookies: Jordyn Tyson. With projected pass attempts DOWN -5.5/g vs 2025, the vacated work most plausibly flows to Chris Olave (WR, ADP 26.5, p95 36), Travis Etienne Jr. (RB, ADP 34.0, p95 33) [incoming], Jordyn Tyson (WR, ADP 68.2, p95 29).",
+        "vac_tgt": 13.4,
+        "d_pa": -5.5,
+        "volume_shift": "projected pass attempts DOWN -5.5/g vs 2025",
+        "departures": [
+          {
+            "name": "B.Cooks",
+            "share_pct": 9.0,
+            "dest": "gone"
+          },
+          {
+            "name": "K.Austin",
+            "share_pct": 4.4,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Travis Etienne Jr.",
+            "from": "JAX"
+          },
+          {
+            "name": "Noah Fant",
+            "from": "CIN"
+          }
+        ],
+        "rookies": [
+          "Jordyn Tyson"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Chris Olave",
+            "pos": "WR",
+            "adp": 26.5,
+            "p95": 36,
+            "mover": false,
+            "tgtshare25": 29.1
+          },
+          {
+            "name": "Travis Etienne Jr.",
+            "pos": "RB",
+            "adp": 34.0,
+            "p95": 33,
+            "mover": true,
+            "tgtshare25": 10.1
+          },
+          {
+            "name": "Jordyn Tyson",
+            "pos": "WR",
+            "adp": 68.2,
+            "p95": 29,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [
+          {
+            "q": "I would say the Saints offensive line is pretty good, so there's going to be almost no competition behind him.",
+            "handle": "ffdataroma"
+          }
+        ],
+        "source": "CORPUS (transcripts + team_notes)",
+        "status": "signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "NYG": {
+      "team": "NYG",
+      "name": "New York Giants",
+      "offense": {
+        "summary": "34% of 2025 target volume departs (W.Robinson (28% of '25 tgt vol -> TEN); D.Bellinger (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Isaiah Likely, Darnell Mooney, Calvin Austin III. With projected pass attempts DOWN -4.3/g vs 2025, the vacated work most plausibly flows to Malik Nabers (WR, ADP 36.5, p95 37), Cam Skattebo (RB, ADP 45.2, p95 32), Isaiah Likely (TE, ADP 122.5, p95 24) [incoming].",
+        "vac_tgt": 33.8,
+        "d_pa": -4.3,
+        "volume_shift": "projected pass attempts DOWN -4.3/g vs 2025",
+        "departures": [
+          {
+            "name": "W.Robinson",
+            "share_pct": 28.5,
+            "dest": "TEN"
+          },
+          {
+            "name": "D.Bellinger",
+            "share_pct": 5.3,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Isaiah Likely",
+            "from": "BAL"
+          },
+          {
+            "name": "Darnell Mooney",
+            "from": "ATL"
+          },
+          {
+            "name": "Calvin Austin III",
+            "from": "PIT"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Malik Nabers",
+            "pos": "WR",
+            "adp": 36.5,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 27.1
+          },
+          {
+            "name": "Cam Skattebo",
+            "pos": "RB",
+            "adp": 45.2,
+            "p95": 32,
+            "mover": false,
+            "tgtshare25": 12.8
+          },
+          {
+            "name": "Isaiah Likely",
+            "pos": "TE",
+            "adp": 122.5,
+            "p95": 24,
+            "mover": true,
+            "tgtshare25": 13.0
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "NYJ": {
+      "team": "NYJ",
+      "name": "New York Jets",
+      "offense": {
+        "summary": "40% of 2025 target volume departs (J.Metchie (11% of '25 tgt vol -> CAR); I.Williams (8% of '25 tgt vol -> gone); J.Ruckert (7% of '25 tgt vol -> gone); J.Reynolds (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Geno Smith, Adonai Mitchell; rookies: Kenyon Sadiq, Omar Cooper Jr.. With projected pass attempts DOWN -1.7/g vs 2025, the vacated work most plausibly flows to Breece Hall (RB, ADP 30.5, p95 37), Garrett Wilson (WR, ADP 39.0, p95 37), Kenyon Sadiq (TE, ADP 151.4, p95 25).",
+        "vac_tgt": 40.5,
+        "d_pa": -1.7,
+        "volume_shift": "projected pass attempts DOWN -1.7/g vs 2025",
+        "departures": [
+          {
+            "name": "J.Metchie",
+            "share_pct": 11.3,
+            "dest": "CAR"
+          },
+          {
+            "name": "I.Williams",
+            "share_pct": 8.5,
+            "dest": "gone"
+          },
+          {
+            "name": "J.Ruckert",
+            "share_pct": 6.9,
+            "dest": "gone"
+          },
+          {
+            "name": "J.Reynolds",
+            "share_pct": 5.2,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Geno Smith",
+            "from": "LV"
+          },
+          {
+            "name": "Adonai Mitchell",
+            "from": "IND"
+          }
+        ],
+        "rookies": [
+          "Kenyon Sadiq",
+          "Omar Cooper Jr."
+        ],
+        "beneficiaries": [
+          {
+            "name": "Breece Hall",
+            "pos": "RB",
+            "adp": 30.5,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 11.2
+          },
+          {
+            "name": "Garrett Wilson",
+            "pos": "WR",
+            "adp": 39.0,
+            "p95": 37,
+            "mover": false,
+            "tgtshare25": 35.6
+          },
+          {
+            "name": "Kenyon Sadiq",
+            "pos": "TE",
+            "adp": 151.4,
+            "p95": 25,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": "However, he was still a hot commodity because Aaron Rodgers was going to the New York Jets, and the Jets were more than happy to hire his buddy to be the offensive coordinator.",
+        "handle": "thepowerrank",
+        "all_notes": [
+          {
+            "q": "However, he was still a hot commodity because Aaron Rodgers was going to the New York Jets, and the Jets were more than happy to hire his buddy to be the offensive coordinator.",
+            "handle": "thepowerrank"
+          }
+        ],
+        "scheme_shift": "Corpus: an OC hired as an Aaron-Rodgers-tied hire under the new staff.",
+        "implication": "The note establishes a new play-caller but no clear pass lean; with 40.5% of targets vacated and pass volume ~flat (-1.7/g) the room is wide open but the direction is unproven -- no confident tilt.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "PHI": {
+      "team": "PHI",
+      "name": "Philadelphia Eagles",
+      "offense": {
+        "summary": "33% of 2025 target volume departs (A.Brown (26% of '25 tgt vol -> NE); J.Dotson (8% of '25 tgt vol -> ATL)). Incoming -- arrivals: Dontayvion Wicks; rookies: Makai Lemon. With projected pass attempts DOWN -2.3/g vs 2025, the vacated work most plausibly flows to Saquon Barkley (RB, ADP 13.5, p95 35), DeVonta Smith (WR, ADP 28.1, p95 35), Makai Lemon (WR, ADP 81.6, p95 29).",
+        "vac_tgt": 33.3,
+        "d_pa": -2.3,
+        "volume_shift": "projected pass attempts DOWN -2.3/g vs 2025",
+        "departures": [
+          {
+            "name": "A.Brown",
+            "share_pct": 25.8,
+            "dest": "NE"
+          },
+          {
+            "name": "J.Dotson",
+            "share_pct": 7.5,
+            "dest": "ATL"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Dontayvion Wicks",
+            "from": "GB"
+          }
+        ],
+        "rookies": [
+          "Makai Lemon"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Saquon Barkley",
+            "pos": "RB",
+            "adp": 13.5,
+            "p95": 35,
+            "mover": false,
+            "tgtshare25": 13.3
+          },
+          {
+            "name": "DeVonta Smith",
+            "pos": "WR",
+            "adp": 28.1,
+            "p95": 35,
+            "mover": false,
+            "tgtshare25": 25.1
+          },
+          {
+            "name": "Makai Lemon",
+            "pos": "WR",
+            "adp": 81.6,
+            "p95": 29,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": "New Eagles offensive coordinator Sean Mannion hasn't called plays in the NFL before, but he was an offensive coordinator at the East West Shrine Bowl this year.",
+        "handle": "syedschemes",
+        "all_notes": [
+          {
+            "q": "New Eagles offensive coordinator Sean Mannion hasn't called plays in the NFL before, but he was an offensive coordinator at the East West Shrine Bowl this year.",
+            "handle": "syedschemes"
+          },
+          {
+            "q": "One of, you know, three in the division, as a matter of fact, you know, with the Eagles re, you know, hiring a new offensive coordinator.",
+            "handle": "dhananizain"
+          }
+        ],
+        "scheme_shift": "New Eagles OC Sean Mannion (per corpus) -- a first-time NFL play-caller (Shrine Bowl OC).",
+        "implication": "A first-time play-caller succeeding a run-leaning staff; corpus gives no explicit pass-up signal and modeled pass attempts are DOWN (-2.3/g) after A.J. Brown's exit -- do NOT assume a WR-friendly tilt; neutral-to-cautious.",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "PIT": {
+      "team": "PIT",
+      "name": "Pittsburgh Steelers",
+      "offense": {
+        "summary": "45% of 2025 target volume departs (K.Gainwell (17% of '25 tgt vol -> TB); C.Austin (11% of '25 tgt vol -> NYG); J.Smith (11% of '25 tgt vol -> gone); M.Valdes-Scantling (6% of '25 tgt vol -> gone)). Incoming -- arrivals: Rico Dowdle, Michael Pittman Jr.; rookies: Germie Bernard. With pass volume roughly flat (-1.0/g), the vacated work most plausibly flows to DK Metcalf (WR, ADP 74.3, p95 30), Michael Pittman Jr. (WR, ADP 99.3, p95 29) [incoming], Jaylen Warren (RB, ADP 81.8, p95 27).",
+        "vac_tgt": 44.8,
+        "d_pa": -1.0,
+        "volume_shift": "pass volume roughly flat (-1.0/g)",
+        "departures": [
+          {
+            "name": "K.Gainwell",
+            "share_pct": 16.7,
+            "dest": "TB"
+          },
+          {
+            "name": "C.Austin",
+            "share_pct": 11.2,
+            "dest": "NYG"
+          },
+          {
+            "name": "J.Smith",
+            "share_pct": 10.7,
+            "dest": "gone"
+          },
+          {
+            "name": "M.Valdes-Scantling",
+            "share_pct": 6.2,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Rico Dowdle",
+            "from": "CAR"
+          },
+          {
+            "name": "Michael Pittman Jr.",
+            "from": "IND"
+          }
+        ],
+        "rookies": [
+          "Germie Bernard"
+        ],
+        "beneficiaries": [
+          {
+            "name": "DK Metcalf",
+            "pos": "WR",
+            "adp": 74.3,
+            "p95": 30,
+            "mover": false,
+            "tgtshare25": 21.9
+          },
+          {
+            "name": "Michael Pittman Jr.",
+            "pos": "WR",
+            "adp": 99.3,
+            "p95": 29,
+            "mover": true,
+            "tgtshare25": 21.0
+          },
+          {
+            "name": "Jaylen Warren",
+            "pos": "RB",
+            "adp": 81.8,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 10.4
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "SEA": {
+      "team": "SEA",
+      "name": "Seattle Seahawks",
+      "offense": {
+        "summary": "39% of 2025 target volume departs (J.Smith-Njigba (31% of '25 tgt vol -> gone); K.Walker (8% of '25 tgt vol -> KC)). Incoming -- arrivals: Emanuel Wilson; rookies: Jaxon Smith-Njigba, Jadarian Price. With pass volume roughly flat (-0.2/g), the vacated work most plausibly flows to Jaxon Smith-Njigba (WR, ADP 5.4, p95 47), Zach Charbonnet (RB, ADP 148.6, p95 31), Jadarian Price (RB, ADP 60.2, p95 28).",
+        "vac_tgt": 38.7,
+        "d_pa": -0.2,
+        "volume_shift": "pass volume roughly flat (-0.2/g)",
+        "departures": [
+          {
+            "name": "J.Smith-Njigba",
+            "share_pct": 31.0,
+            "dest": "gone"
+          },
+          {
+            "name": "K.Walker",
+            "share_pct": 7.7,
+            "dest": "KC"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Emanuel Wilson",
+            "from": "GB"
+          }
+        ],
+        "rookies": [
+          "Jaxon Smith-Njigba",
+          "Jadarian Price"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Jaxon Smith-Njigba",
+            "pos": "WR",
+            "adp": 5.4,
+            "p95": 47,
+            "mover": false,
+            "tgtshare25": null
+          },
+          {
+            "name": "Zach Charbonnet",
+            "pos": "RB",
+            "adp": 148.6,
+            "p95": 31,
+            "mover": false,
+            "tgtshare25": 7.5
+          },
+          {
+            "name": "Jadarian Price",
+            "pos": "RB",
+            "adp": 60.2,
+            "p95": 28,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "SF": {
+      "team": "SF",
+      "name": "San Francisco 49ers",
+      "offense": {
+        "summary": "39% of 2025 target volume departs (J.Jennings (17% of '25 tgt vol -> MIN); K.Bourne (9% of '25 tgt vol -> ARI); D.Robinson (7% of '25 tgt vol -> gone); K.Juszczyk (6% of '25 tgt vol -> gone)). Incoming -- arrivals: Christian Kirk; rookies: Mike Evans, De'Zhaun Stribling, Brandon Aiyuk. With projected pass attempts DOWN -4.2/g vs 2025, the vacated work most plausibly flows to Christian McCaffrey (RB, ADP 6.3, p95 44), George Kittle (TE, ADP 104.9, p95 33), Mike Evans (WR, ADP 52.0, p95 30).",
+        "vac_tgt": 38.6,
+        "d_pa": -4.2,
+        "volume_shift": "projected pass attempts DOWN -4.2/g vs 2025",
+        "departures": [
+          {
+            "name": "J.Jennings",
+            "share_pct": 16.7,
+            "dest": "MIN"
+          },
+          {
+            "name": "K.Bourne",
+            "share_pct": 9.1,
+            "dest": "ARI"
+          },
+          {
+            "name": "D.Robinson",
+            "share_pct": 7.3,
+            "dest": "gone"
+          },
+          {
+            "name": "K.Juszczyk",
+            "share_pct": 5.5,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Christian Kirk",
+            "from": "HOU"
+          }
+        ],
+        "rookies": [
+          "Mike Evans",
+          "De'Zhaun Stribling",
+          "Brandon Aiyuk"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Christian McCaffrey",
+            "pos": "RB",
+            "adp": 6.3,
+            "p95": 44,
+            "mover": false,
+            "tgtshare25": 23.3
+          },
+          {
+            "name": "George Kittle",
+            "pos": "TE",
+            "adp": 104.9,
+            "p95": 33,
+            "mover": false,
+            "tgtshare25": 20.1
+          },
+          {
+            "name": "Mike Evans",
+            "pos": "WR",
+            "adp": 52.0,
+            "p95": 30,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "TB": {
+      "team": "TB",
+      "name": "Tampa Bay Buccaneers",
+      "offense": {
+        "summary": "30% of 2025 target volume departs (M.Evans (11% of '25 tgt vol -> gone); S.Shepard (10% of '25 tgt vol -> gone); R.White (8% of '25 tgt vol -> WAS)). Incoming -- arrivals: Kenneth Gainwell. With projected pass attempts DOWN -4.4/g vs 2025, the vacated work most plausibly flows to Emeka Egbuka (WR, ADP 32.4, p95 33), Bucky Irving (RB, ADP 59.5, p95 32), Chris Godwin Jr. (WR, ADP 87.0, p95 25).",
+        "vac_tgt": 29.6,
+        "d_pa": -4.4,
+        "volume_shift": "projected pass attempts DOWN -4.4/g vs 2025",
+        "departures": [
+          {
+            "name": "M.Evans",
+            "share_pct": 11.4,
+            "dest": "gone"
+          },
+          {
+            "name": "S.Shepard",
+            "share_pct": 9.9,
+            "dest": "gone"
+          },
+          {
+            "name": "R.White",
+            "share_pct": 8.3,
+            "dest": "WAS"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Kenneth Gainwell",
+            "from": "PIT"
+          }
+        ],
+        "rookies": [],
+        "beneficiaries": [
+          {
+            "name": "Emeka Egbuka",
+            "pos": "WR",
+            "adp": 32.4,
+            "p95": 33,
+            "mover": false,
+            "tgtshare25": 23.6
+          },
+          {
+            "name": "Bucky Irving",
+            "pos": "RB",
+            "adp": 59.5,
+            "p95": 32,
+            "mover": false,
+            "tgtshare25": 11.9
+          },
+          {
+            "name": "Chris Godwin Jr.",
+            "pos": "WR",
+            "adp": 87.0,
+            "p95": 25,
+            "mover": false,
+            "tgtshare25": 18.2
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": "One of the most exciting quotes of the offseason came a couple weeks ago when new Buccaneers offensive coordinator Zach Robinson said that Amika Iqbuka is going to play the Z in his offense.",
+        "handle": "benjaminsolak",
+        "all_notes": [
+          {
+            "q": "One of the most exciting quotes of the offseason came a couple weeks ago when new Buccaneers offensive coordinator Zach Robinson said that Amika Iqbuka is going to play the Z in his offense.",
+            "handle": "benjaminsolak"
+          }
+        ],
+        "scheme_shift": "New Bucs OC Zach Robinson (per corpus, a Sean McVay-tree hire) -- plans to play Egbuka at Z.",
+        "implication": "A McVay-branch OC plus an explicit role quote points to a defined WR-usage scheme; with 29.6% of targets vacated (Evans/Shepard) this most plausibly LIFTS the returning/young WRs (Egbuka, Godwin) even with pass volume modeled slightly down (-4.4/g).",
+        "source": "CORPUS (coordinator_notes.json + mined transcripts)"
+      }
+    },
+    "TEN": {
+      "team": "TEN",
+      "name": "Tennessee Titans",
+      "offense": {
+        "summary": "26% of 2025 target volume departs (C.Okonkwo (16% of '25 tgt vol -> WAS); V.Jefferson (10% of '25 tgt vol -> gone)). Incoming -- arrivals: Wan'Dale Robinson; rookies: Carnell Tate, Nick Singleton. With projected pass attempts DOWN -4.0/g vs 2025, the vacated work most plausibly flows to Carnell Tate (WR, ADP 62.1, p95 32), Tony Pollard (RB, ADP 77.6, p95 27), Wan'Dale Robinson (WR, ADP 106.7, p95 27) [incoming].",
+        "vac_tgt": 25.7,
+        "d_pa": -4.0,
+        "volume_shift": "projected pass attempts DOWN -4.0/g vs 2025",
+        "departures": [
+          {
+            "name": "C.Okonkwo",
+            "share_pct": 15.5,
+            "dest": "WAS"
+          },
+          {
+            "name": "V.Jefferson",
+            "share_pct": 10.2,
+            "dest": "gone"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Wan'Dale Robinson",
+            "from": "NYG"
+          }
+        ],
+        "rookies": [
+          "Carnell Tate",
+          "Nick Singleton"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Carnell Tate",
+            "pos": "WR",
+            "adp": 62.1,
+            "p95": 32,
+            "mover": false,
+            "tgtshare25": null
+          },
+          {
+            "name": "Tony Pollard",
+            "pos": "RB",
+            "adp": 77.6,
+            "p95": 27,
+            "mover": false,
+            "tgtshare25": 8.6
+          },
+          {
+            "name": "Wan'Dale Robinson",
+            "pos": "WR",
+            "adp": 106.7,
+            "p95": 27,
+            "mover": true,
+            "tgtshare25": 30.3
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    },
+    "WAS": {
+      "team": "WAS",
+      "name": "Washington Commanders",
+      "offense": {
+        "summary": "60% of 2025 target volume departs (D.Samuel (23% of '25 tgt vol -> FA); Z.Ertz (17% of '25 tgt vol -> FA); J.McNichols (7% of '25 tgt vol -> gone); J.Lane (7% of '25 tgt vol -> BAL)). Incoming -- arrivals: Rachaad White, Chig Okonkwo, Dyami Brown; rookies: Jacory Croskey-Merritt, Antonio Williams. With pass volume roughly flat (+0.6/g), the vacated work most plausibly flows to Terry McLaurin (WR, ADP 46.5, p95 32), Rachaad White (RB, ADP 122.5, p95 24) [incoming], Jacory Croskey-Merritt (RB, ADP 121.8, p95 22).",
+        "vac_tgt": 59.5,
+        "d_pa": 0.6,
+        "volume_shift": "pass volume roughly flat (+0.6/g)",
+        "departures": [
+          {
+            "name": "D.Samuel",
+            "share_pct": 22.9,
+            "dest": "FA"
+          },
+          {
+            "name": "Z.Ertz",
+            "share_pct": 16.7,
+            "dest": "FA"
+          },
+          {
+            "name": "J.McNichols",
+            "share_pct": 7.3,
+            "dest": "gone"
+          },
+          {
+            "name": "J.Lane",
+            "share_pct": 7.3,
+            "dest": "BAL"
+          }
+        ],
+        "arrivals": [
+          {
+            "name": "Rachaad White",
+            "from": "TB"
+          },
+          {
+            "name": "Chig Okonkwo",
+            "from": "TEN"
+          },
+          {
+            "name": "Dyami Brown",
+            "from": "JAX"
+          }
+        ],
+        "rookies": [
+          "Jacory Croskey-Merritt",
+          "Antonio Williams"
+        ],
+        "beneficiaries": [
+          {
+            "name": "Terry McLaurin",
+            "pos": "WR",
+            "adp": 46.5,
+            "p95": 32,
+            "mover": false,
+            "tgtshare25": 23.1
+          },
+          {
+            "name": "Rachaad White",
+            "pos": "RB",
+            "adp": 122.5,
+            "p95": 24,
+            "mover": true,
+            "tgtshare25": 8.2
+          },
+          {
+            "name": "Jacory Croskey-Merritt",
+            "pos": "RB",
+            "adp": 121.8,
+            "p95": 22,
+            "mover": false,
+            "tgtshare25": null
+          }
+        ],
+        "source": "MODELED (team_review_data.json delta)"
+      },
+      "defense": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "oline": {
+        "notes": [],
+        "source": "CORPUS (none found)",
+        "status": "no corpus signal"
+      },
+      "coordinator": {
+        "note": null,
+        "handle": null,
+        "all_notes": [],
+        "scheme_shift": "no corpus signal -- no scheme assumption",
+        "implication": "no corpus signal -- no scheme assumption",
+        "source": "CORPUS (none found)"
+      }
+    }
+  },
+  "coverage": {
+    "teams_total": 32,
+    "offense_n": 32,
+    "defense_n": 4,
+    "oline_n": 3,
+    "coordinator_n": 9
+  }
+}

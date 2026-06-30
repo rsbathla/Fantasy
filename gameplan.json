@@ -1,0 +1,5152 @@
+{
+  "meta": {
+    "n_board": 371,
+    "n_scored": 306,
+    "alpha_p95": 33.0,
+    "high_total_cut": 4.525,
+    "r_qb_wr1": 0.351,
+    "r_qb_wr2": 0.339,
+    "r_bringback_high": 0.159,
+    "r_bringback_all": 0.129,
+    "weights": {
+      "ceiling_score": {
+        "p95": 0.5,
+        "spike": 0.25,
+        "adv": 0.25
+      },
+      "attack": {
+        "ceil": 0.42,
+        "env": 0.26,
+        "pace": 0.18,
+        "vac": 0.14
+      }
+    }
+  },
+  "draft_tiers": [
+    {
+      "tier": 1,
+      "adp_band": "1-11",
+      "label": "R1 anchors",
+      "n": 11,
+      "players": [
+        {
+          "name": "Puka Nacua",
+          "pos": "WR",
+          "team": "LAR",
+          "adp": 3.9,
+          "p95": 49.8,
+          "spike": 0.158,
+          "adv": 1.0,
+          "ceiling_score": 1.578,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "pos": "WR",
+          "team": "CIN",
+          "adp": 3.1,
+          "p95": 46.7,
+          "spike": 0.16,
+          "adv": 0.993,
+          "ceiling_score": 1.45,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "team": "SEA",
+          "adp": 5.4,
+          "p95": 46.6,
+          "spike": 0.158,
+          "adv": 0.986,
+          "ceiling_score": 1.434,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Amon-Ra St. Brown",
+          "pos": "WR",
+          "team": "DET",
+          "adp": 7.2,
+          "p95": 44.9,
+          "spike": 0.157,
+          "adv": 0.978,
+          "ceiling_score": 1.35,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Bijan Robinson",
+          "pos": "RB",
+          "team": "ATL",
+          "adp": 2.1,
+          "p95": 46.0,
+          "spike": 0.163,
+          "adv": 0.977,
+          "ceiling_score": 1.333,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Jahmyr Gibbs",
+          "pos": "RB",
+          "team": "DET",
+          "adp": 1.2,
+          "p95": 45.7,
+          "spike": 0.163,
+          "adv": 1.0,
+          "ceiling_score": 1.332,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING",
+            "FLOOR RISK",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "CeeDee Lamb",
+          "pos": "WR",
+          "team": "DAL",
+          "adp": 10.4,
+          "p95": 42.5,
+          "spike": 0.168,
+          "adv": 0.971,
+          "ceiling_score": 1.306,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Justin Jefferson",
+          "pos": "WR",
+          "team": "MIN",
+          "adp": 9.0,
+          "p95": 41.2,
+          "spike": 0.162,
+          "adv": 0.964,
+          "ceiling_score": 1.216,
+          "flags": [
+            "POLARIZING",
+            "FLOOR RISK"
+          ]
+        },
+        {
+          "name": "Christian McCaffrey",
+          "pos": "RB",
+          "team": "SF",
+          "adp": 6.3,
+          "p95": 43.9,
+          "spike": 0.158,
+          "adv": 0.988,
+          "ceiling_score": 1.214,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY TRAP"
+          ]
+        },
+        {
+          "name": "Jonathan Taylor",
+          "pos": "RB",
+          "team": "IND",
+          "adp": 8.4,
+          "p95": 40.4,
+          "spike": 0.161,
+          "adv": 0.965,
+          "ceiling_score": 1.094,
+          "flags": [
+            "POLARIZING",
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "James Cook III",
+          "pos": "RB",
+          "team": "BUF",
+          "adp": 11.1,
+          "p95": 37.4,
+          "spike": 0.163,
+          "adv": 0.942,
+          "ceiling_score": 0.972,
+          "flags": [
+            "POLARIZING"
+          ]
+        }
+      ]
+    },
+    {
+      "tier": 2,
+      "adp_band": "12-23",
+      "label": "R2",
+      "n": 11,
+      "players": [
+        {
+          "name": "Brock Bowers",
+          "pos": "TE",
+          "team": "LV",
+          "adp": 20.0,
+          "p95": 34.1,
+          "spike": 0.175,
+          "adv": 0.981,
+          "ceiling_score": 1.24,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "FLOOR RISK",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "De'Von Achane",
+          "pos": "RB",
+          "team": "MIA",
+          "adp": 19.1,
+          "p95": 40.3,
+          "spike": 0.165,
+          "adv": 0.953,
+          "ceiling_score": 1.114,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Drake London",
+          "pos": "WR",
+          "team": "ATL",
+          "adp": 17.4,
+          "p95": 38.5,
+          "spike": 0.165,
+          "adv": 0.95,
+          "ceiling_score": 1.107,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "A.J. Brown",
+          "pos": "WR",
+          "team": "NE",
+          "adp": 17.7,
+          "p95": 37.3,
+          "spike": 0.174,
+          "adv": 0.921,
+          "ceiling_score": 1.087,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Nico Collins",
+          "pos": "WR",
+          "team": "HOU",
+          "adp": 22.6,
+          "p95": 37.5,
+          "spike": 0.169,
+          "adv": 0.935,
+          "ceiling_score": 1.074,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Omarion Hampton",
+          "pos": "RB",
+          "team": "LAC",
+          "adp": 15.5,
+          "p95": 36.7,
+          "spike": 0.168,
+          "adv": 0.93,
+          "ceiling_score": 0.982,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Ashton Jeanty",
+          "pos": "RB",
+          "team": "LV",
+          "adp": 12.1,
+          "p95": 37.0,
+          "spike": 0.166,
+          "adv": 0.919,
+          "ceiling_score": 0.969,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY TRAP"
+          ]
+        },
+        {
+          "name": "Derrick Henry",
+          "pos": "RB",
+          "team": "BAL",
+          "adp": 20.3,
+          "p95": 37.1,
+          "spike": 0.17,
+          "adv": 0.86,
+          "ceiling_score": 0.957,
+          "flags": []
+        },
+        {
+          "name": "Chase Brown",
+          "pos": "RB",
+          "team": "CIN",
+          "adp": 16.9,
+          "p95": 35.3,
+          "spike": 0.174,
+          "adv": 0.849,
+          "ceiling_score": 0.921,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Saquon Barkley",
+          "pos": "RB",
+          "team": "PHI",
+          "adp": 13.4,
+          "p95": 35.0,
+          "spike": 0.168,
+          "adv": 0.872,
+          "ceiling_score": 0.878,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES"
+          ]
+        },
+        {
+          "name": "Kenneth Walker III",
+          "pos": "RB",
+          "team": "KC",
+          "adp": 14.8,
+          "p95": NaN,
+          "spike": NaN,
+          "adv": NaN,
+          "ceiling_score": NaN,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "tier": 3,
+      "adp_band": "24-41",
+      "label": "R3-mid3",
+      "n": 19,
+      "players": [
+        {
+          "name": "Josh Allen",
+          "pos": "QB",
+          "team": "BUF",
+          "adp": 27.0,
+          "p95": 41.9,
+          "spike": 0.135,
+          "adv": 1.0,
+          "ceiling_score": 1.633,
+          "flags": [
+            "POLARIZING",
+            "QB-ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Trey McBride",
+          "pos": "TE",
+          "team": "ARI",
+          "adp": 24.2,
+          "p95": 35.9,
+          "spike": 0.169,
+          "adv": 1.0,
+          "ceiling_score": 1.312,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Malik Nabers",
+          "pos": "WR",
+          "team": "NYG",
+          "adp": 37.6,
+          "p95": 36.9,
+          "spike": 0.177,
+          "adv": 0.928,
+          "ceiling_score": 1.09,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Rashee Rice",
+          "pos": "WR",
+          "team": "KC",
+          "adp": 25.1,
+          "p95": 38.1,
+          "spike": 0.163,
+          "adv": 0.957,
+          "ceiling_score": 1.086,
+          "flags": [
+            "POLARIZING",
+            "FLOOR RISK",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Garrett Wilson",
+          "pos": "WR",
+          "team": "NYJ",
+          "adp": 39.0,
+          "p95": 36.8,
+          "spike": 0.166,
+          "adv": 0.942,
+          "ceiling_score": 1.037,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Breece Hall",
+          "pos": "RB",
+          "team": "NYJ",
+          "adp": 31.9,
+          "p95": 37.4,
+          "spike": 0.173,
+          "adv": 0.895,
+          "ceiling_score": 1.02,
+          "flags": [
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Zay Flowers",
+          "pos": "WR",
+          "team": "BAL",
+          "adp": 32.1,
+          "p95": 35.6,
+          "spike": 0.174,
+          "adv": 0.906,
+          "ceiling_score": 1.003,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Chris Olave",
+          "pos": "WR",
+          "team": "NO",
+          "adp": 28.6,
+          "p95": 35.8,
+          "spike": 0.171,
+          "adv": 0.914,
+          "ceiling_score": 0.999,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Colston Loveland",
+          "pos": "TE",
+          "team": "CHI",
+          "adp": 39.8,
+          "p95": 29.9,
+          "spike": 0.176,
+          "adv": 0.942,
+          "ceiling_score": 0.997,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Jeremiyah Love",
+          "pos": "RB",
+          "team": "ARI",
+          "adp": 27.3,
+          "p95": 36.8,
+          "spike": 0.169,
+          "adv": 0.907,
+          "ceiling_score": 0.977,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "George Pickens",
+          "pos": "WR",
+          "team": "DAL",
+          "adp": 24.3,
+          "p95": 35.7,
+          "spike": 0.168,
+          "adv": 0.899,
+          "ceiling_score": 0.972,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "DeVonta Smith",
+          "pos": "WR",
+          "team": "PHI",
+          "adp": 28.1,
+          "p95": 34.8,
+          "spike": 0.17,
+          "adv": 0.892,
+          "ceiling_score": 0.933,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Tee Higgins",
+          "pos": "WR",
+          "team": "CIN",
+          "adp": 35.4,
+          "p95": 32.8,
+          "spike": 0.188,
+          "adv": 0.849,
+          "ceiling_score": 0.915,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Javonte Williams",
+          "pos": "RB",
+          "team": "DAL",
+          "adp": 38.2,
+          "p95": 35.1,
+          "spike": 0.175,
+          "adv": 0.837,
+          "ceiling_score": 0.909,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Emeka Egbuka",
+          "pos": "WR",
+          "team": "TB",
+          "adp": 32.6,
+          "p95": 33.1,
+          "spike": 0.181,
+          "adv": 0.856,
+          "ceiling_score": 0.899,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Kyren Williams",
+          "pos": "RB",
+          "team": "LAR",
+          "adp": 30.1,
+          "p95": 33.5,
+          "spike": 0.182,
+          "adv": 0.826,
+          "ceiling_score": 0.898,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Ladd McConkey",
+          "pos": "WR",
+          "team": "LAC",
+          "adp": 34.7,
+          "p95": 33.4,
+          "spike": 0.173,
+          "adv": 0.863,
+          "ceiling_score": 0.876,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Travis Etienne Jr.",
+          "pos": "RB",
+          "team": "NO",
+          "adp": 36.6,
+          "p95": 33.0,
+          "spike": 0.173,
+          "adv": 0.802,
+          "ceiling_score": 0.789,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Luther Burden III",
+          "pos": "WR",
+          "team": "CHI",
+          "adp": 41.9,
+          "p95": 30.4,
+          "spike": 0.178,
+          "adv": 0.799,
+          "ceiling_score": 0.72,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        }
+      ]
+    },
+    {
+      "tier": 4,
+      "adp_band": "42-65",
+      "label": "R4-mid5",
+      "n": 25,
+      "players": [
+        {
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
+          "adp": 65.5,
+          "p95": 37.2,
+          "spike": 0.138,
+          "adv": 0.949,
+          "ceiling_score": 1.357,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Lamar Jackson",
+          "pos": "QB",
+          "team": "BAL",
+          "adp": 53.3,
+          "p95": 36.8,
+          "spike": 0.125,
+          "adv": 0.974,
+          "ceiling_score": 1.265,
+          "flags": [
+            "POLARIZING",
+            "FLOOR RISK"
+          ]
+        },
+        {
+          "name": "Tyler Warren",
+          "pos": "TE",
+          "team": "IND",
+          "adp": 61.3,
+          "p95": 30.1,
+          "spike": 0.178,
+          "adv": 0.923,
+          "ceiling_score": 1.004,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Davante Adams",
+          "pos": "WR",
+          "team": "LAR",
+          "adp": 47.2,
+          "p95": 34.8,
+          "spike": 0.179,
+          "adv": 0.878,
+          "ceiling_score": 0.976,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Josh Jacobs",
+          "pos": "RB",
+          "team": "GB",
+          "adp": 43.5,
+          "p95": 36.7,
+          "spike": 0.17,
+          "adv": 0.884,
+          "ceiling_score": 0.965,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Tetairoa McMillan",
+          "pos": "WR",
+          "team": "CAR",
+          "adp": 42.9,
+          "p95": 36.4,
+          "spike": 0.164,
+          "adv": 0.885,
+          "ceiling_score": 0.962,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Jameson Williams",
+          "pos": "WR",
+          "team": "DET",
+          "adp": 52.6,
+          "p95": 32.7,
+          "spike": 0.186,
+          "adv": 0.835,
+          "ceiling_score": 0.888,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Jaylen Waddle",
+          "pos": "WR",
+          "team": "DEN",
+          "adp": 47.4,
+          "p95": 32.8,
+          "spike": 0.181,
+          "adv": 0.827,
+          "ceiling_score": 0.861,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Terry McLaurin",
+          "pos": "WR",
+          "team": "WAS",
+          "adp": 45.2,
+          "p95": 32.4,
+          "spike": 0.175,
+          "adv": 0.871,
+          "ceiling_score": 0.848,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Carnell Tate",
+          "pos": "WR",
+          "team": "TEN",
+          "adp": 62.7,
+          "p95": 32.4,
+          "spike": 0.175,
+          "adv": 0.842,
+          "ceiling_score": 0.826,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "team": "CHI",
+          "adp": 58.6,
+          "p95": 31.8,
+          "spike": 0.179,
+          "adv": 0.82,
+          "ceiling_score": 0.806,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "DJ Moore",
+          "pos": "WR",
+          "team": "BUF",
+          "adp": 46.3,
+          "p95": 31.1,
+          "spike": 0.184,
+          "adv": 0.813,
+          "ceiling_score": 0.797,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Bucky Irving",
+          "pos": "RB",
+          "team": "TB",
+          "adp": 59.7,
+          "p95": 32.1,
+          "spike": 0.177,
+          "adv": 0.779,
+          "ceiling_score": 0.763,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY TRAP",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Quinshon Judkins",
+          "pos": "RB",
+          "team": "CLE",
+          "adp": 55.4,
+          "p95": 31.9,
+          "spike": 0.175,
+          "adv": 0.791,
+          "ceiling_score": 0.754,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Cam Skattebo",
+          "pos": "RB",
+          "team": "NYG",
+          "adp": 44.0,
+          "p95": 31.9,
+          "spike": 0.172,
+          "adv": 0.814,
+          "ceiling_score": 0.74,
+          "flags": [
+            "POLARIZING",
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "Christian Watson",
+          "pos": "WR",
+          "team": "GB",
+          "adp": 54.8,
+          "p95": 29.5,
+          "spike": 0.192,
+          "adv": 0.748,
+          "ceiling_score": 0.723,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Mike Evans",
+          "pos": "WR",
+          "team": "SF",
+          "adp": 50.5,
+          "p95": 29.5,
+          "spike": 0.188,
+          "adv": 0.741,
+          "ceiling_score": 0.697,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "David Montgomery",
+          "pos": "RB",
+          "team": "HOU",
+          "adp": 49.9,
+          "p95": 27.7,
+          "spike": 0.192,
+          "adv": 0.721,
+          "ceiling_score": 0.678,
+          "flags": [
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "D'Andre Swift",
+          "pos": "RB",
+          "team": "CHI",
+          "adp": 51.1,
+          "p95": 29.8,
+          "spike": 0.177,
+          "adv": 0.756,
+          "ceiling_score": 0.664,
+          "flags": [
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Jadarian Price",
+          "pos": "RB",
+          "team": "SEA",
+          "adp": 65.6,
+          "p95": 28.3,
+          "spike": 0.186,
+          "adv": 0.698,
+          "ceiling_score": 0.637,
+          "flags": []
+        },
+        {
+          "name": "Bhayshul Tuten",
+          "pos": "RB",
+          "team": "JAX",
+          "adp": 55.5,
+          "p95": 28.4,
+          "spike": 0.181,
+          "adv": 0.744,
+          "ceiling_score": 0.631,
+          "flags": [
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "TreVeyon Henderson",
+          "pos": "RB",
+          "team": "NE",
+          "adp": 57.3,
+          "p95": 29.1,
+          "spike": 0.175,
+          "adv": 0.767,
+          "ceiling_score": 0.626,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Parker Washington",
+          "pos": "WR",
+          "team": "JAX",
+          "adp": 64.1,
+          "p95": 28.0,
+          "spike": 0.185,
+          "adv": 0.734,
+          "ceiling_score": 0.612,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Brian Thomas Jr.",
+          "pos": "WR",
+          "team": "JAX",
+          "adp": 62.9,
+          "p95": 27.3,
+          "spike": 0.19,
+          "adv": 0.705,
+          "ceiling_score": 0.584,
+          "flags": []
+        },
+        {
+          "name": "Joe Burrow",
+          "pos": "QB",
+          "team": "CIN",
+          "adp": 59.1,
+          "p95": 29.8,
+          "spike": 0.074,
+          "adv": 0.846,
+          "ceiling_score": 0.413,
+          "flags": [
+            "MARKET DARLING",
+            "POLARIZING",
+            "QB-MAN-BEATER"
+          ]
+        }
+      ]
+    },
+    {
+      "tier": 5,
+      "adp_band": "66-95",
+      "label": "R6-8",
+      "n": 29,
+      "players": [
+        {
+          "name": "Matthew Stafford",
+          "pos": "QB",
+          "team": "LAR",
+          "adp": 89.3,
+          "p95": 37.0,
+          "spike": 0.162,
+          "adv": 0.795,
+          "ceiling_score": 1.403,
+          "flags": [
+            "MARKET FADE"
+          ]
+        },
+        {
+          "name": "Jayden Daniels",
+          "pos": "QB",
+          "team": "WAS",
+          "adp": 69.3,
+          "p95": 35.6,
+          "spike": 0.13,
+          "adv": 0.897,
+          "ceiling_score": 1.173,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP",
+            "FLOOR RISK",
+            "QB-ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Dak Prescott",
+          "pos": "QB",
+          "team": "DAL",
+          "adp": 79.6,
+          "p95": 35.1,
+          "spike": 0.152,
+          "adv": 0.718,
+          "ceiling_score": 1.172,
+          "flags": []
+        },
+        {
+          "name": "Trevor Lawrence",
+          "pos": "QB",
+          "team": "JAX",
+          "adp": 84.7,
+          "p95": 35.0,
+          "spike": 0.145,
+          "adv": 0.769,
+          "ceiling_score": 1.152,
+          "flags": []
+        },
+        {
+          "name": "Patrick Mahomes",
+          "pos": "QB",
+          "team": "KC",
+          "adp": 92.9,
+          "p95": 34.3,
+          "spike": 0.143,
+          "adv": 0.692,
+          "ceiling_score": 1.038,
+          "flags": []
+        },
+        {
+          "name": "Sam LaPorta",
+          "pos": "TE",
+          "team": "DET",
+          "adp": 92.2,
+          "p95": 28.8,
+          "spike": 0.187,
+          "adv": 0.904,
+          "ceiling_score": 0.987,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Justin Herbert",
+          "pos": "QB",
+          "team": "LAC",
+          "adp": 81.9,
+          "p95": 33.6,
+          "spike": 0.141,
+          "adv": 0.667,
+          "ceiling_score": 0.972,
+          "flags": [
+            "MARKET DARLING",
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Caleb Williams",
+          "pos": "QB",
+          "team": "CHI",
+          "adp": 70.3,
+          "p95": 33.3,
+          "spike": 0.143,
+          "adv": 0.641,
+          "ceiling_score": 0.945,
+          "flags": [
+            "MARKET DARLING",
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Kyle Pitts Sr.",
+          "pos": "TE",
+          "team": "ATL",
+          "adp": 90.6,
+          "p95": 28.2,
+          "spike": 0.177,
+          "adv": 0.865,
+          "ceiling_score": 0.853,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Courtland Sutton",
+          "pos": "WR",
+          "team": "DEN",
+          "adp": 82.6,
+          "p95": 31.4,
+          "spike": 0.183,
+          "adv": 0.806,
+          "ceiling_score": 0.801,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Jalen Hurts",
+          "pos": "QB",
+          "team": "PHI",
+          "adp": 75.9,
+          "p95": 33.1,
+          "spike": 0.092,
+          "adv": 0.923,
+          "ceiling_score": 0.784,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Alec Pierce",
+          "pos": "WR",
+          "team": "IND",
+          "adp": 80.2,
+          "p95": 31.2,
+          "spike": 0.184,
+          "adv": 0.791,
+          "ceiling_score": 0.784,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Tucker Kraft",
+          "pos": "TE",
+          "team": "GB",
+          "adp": 77.8,
+          "p95": 25.5,
+          "spike": 0.19,
+          "adv": 0.769,
+          "ceiling_score": 0.731,
+          "flags": [
+            "MARKET DARLING",
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "DK Metcalf",
+          "pos": "WR",
+          "team": "PIT",
+          "adp": 74.5,
+          "p95": 30.3,
+          "spike": 0.181,
+          "adv": 0.777,
+          "ceiling_score": 0.721,
+          "flags": []
+        },
+        {
+          "name": "Marvin Harrison Jr.",
+          "pos": "WR",
+          "team": "ARI",
+          "adp": 67.8,
+          "p95": 30.1,
+          "spike": 0.175,
+          "adv": 0.77,
+          "ceiling_score": 0.671,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Michael Pittman Jr.",
+          "pos": "WR",
+          "team": "PIT",
+          "adp": 95.8,
+          "p95": 29.4,
+          "spike": 0.175,
+          "adv": 0.784,
+          "ceiling_score": 0.651,
+          "flags": [
+            "EMPTY CALORIES",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Jordyn Tyson",
+          "pos": "WR",
+          "team": "NO",
+          "adp": 69.2,
+          "p95": 29.0,
+          "spike": 0.18,
+          "adv": 0.763,
+          "ceiling_score": 0.651,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Makai Lemon",
+          "pos": "WR",
+          "team": "PHI",
+          "adp": 87.6,
+          "p95": 28.7,
+          "spike": 0.178,
+          "adv": 0.727,
+          "ceiling_score": 0.595,
+          "flags": []
+        },
+        {
+          "name": "Jaylen Warren",
+          "pos": "RB",
+          "team": "PIT",
+          "adp": 77.3,
+          "p95": 26.7,
+          "spike": 0.189,
+          "adv": 0.663,
+          "ceiling_score": 0.567,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Rico Dowdle",
+          "pos": "RB",
+          "team": "PIT",
+          "adp": 89.8,
+          "p95": 26.9,
+          "spike": 0.187,
+          "adv": 0.651,
+          "ceiling_score": 0.553,
+          "flags": []
+        },
+        {
+          "name": "Rhamondre Stevenson",
+          "pos": "RB",
+          "team": "NE",
+          "adp": 76.1,
+          "p95": 26.6,
+          "spike": 0.182,
+          "adv": 0.709,
+          "ceiling_score": 0.545,
+          "flags": [
+            "FLOOR RISK"
+          ]
+        },
+        {
+          "name": "Tony Pollard",
+          "pos": "RB",
+          "team": "TEN",
+          "adp": 71.7,
+          "p95": 27.2,
+          "spike": 0.181,
+          "adv": 0.686,
+          "ceiling_score": 0.538,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Quentin Johnston",
+          "pos": "WR",
+          "team": "LAC",
+          "adp": 72.2,
+          "p95": 26.5,
+          "spike": 0.192,
+          "adv": 0.669,
+          "ceiling_score": 0.533,
+          "flags": [
+            "REACH",
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Chuba Hubbard",
+          "pos": "RB",
+          "team": "CAR",
+          "adp": 75.8,
+          "p95": 26.1,
+          "spike": 0.186,
+          "adv": 0.64,
+          "ceiling_score": 0.506,
+          "flags": [
+            "EFFICIENCY TRAP",
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "Chris Godwin Jr.",
+          "pos": "WR",
+          "team": "TB",
+          "adp": 84.8,
+          "p95": 25.1,
+          "spike": 0.194,
+          "adv": 0.633,
+          "ceiling_score": 0.458,
+          "flags": []
+        },
+        {
+          "name": "Jayden Reed",
+          "pos": "WR",
+          "team": "GB",
+          "adp": 91.8,
+          "p95": 25.7,
+          "spike": 0.184,
+          "adv": 0.655,
+          "ceiling_score": 0.448,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "RJ Harvey",
+          "pos": "RB",
+          "team": "DEN",
+          "adp": 85.7,
+          "p95": 24.5,
+          "spike": 0.19,
+          "adv": 0.593,
+          "ceiling_score": 0.443,
+          "flags": [
+            "EMPTY CALORIES",
+            "FLOOR RISK",
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "Michael Wilson",
+          "pos": "WR",
+          "team": "ARI",
+          "adp": 83.4,
+          "p95": 25.6,
+          "spike": 0.185,
+          "adv": 0.647,
+          "ceiling_score": 0.442,
+          "flags": [
+            "EMPTY CALORIES",
+            "FLOOR RISK"
+          ]
+        },
+        {
+          "name": "Kenneth Gainwell",
+          "pos": "RB",
+          "team": "TB",
+          "adp": 94.8,
+          "p95": 24.2,
+          "spike": 0.191,
+          "adv": 0.581,
+          "ceiling_score": 0.43,
+          "flags": [
+            "RB-ZONE-SCHEME"
+          ]
+        }
+      ]
+    },
+    {
+      "tier": 6,
+      "adp_band": "96-125",
+      "label": "R8-mid10",
+      "n": 30,
+      "players": [
+        {
+          "name": "Brock Purdy",
+          "pos": "QB",
+          "team": "SF",
+          "adp": 97.3,
+          "p95": 35.9,
+          "spike": 0.149,
+          "adv": 0.821,
+          "ceiling_score": 1.272,
+          "flags": [
+            "CONSENSUS STUD",
+            "QB-MAN-BEATER"
+          ]
+        },
+        {
+          "name": "George Kittle",
+          "pos": "TE",
+          "team": "SF",
+          "adp": 104.7,
+          "p95": 33.2,
+          "spike": 0.187,
+          "adv": 0.962,
+          "ceiling_score": 1.265,
+          "flags": [
+            "MARKET FADE",
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Jaxson Dart",
+          "pos": "QB",
+          "team": "NYG",
+          "adp": 101.9,
+          "p95": 34.6,
+          "spike": 0.132,
+          "adv": 0.872,
+          "ceiling_score": 1.115,
+          "flags": [
+            "MARKET FADE",
+            "FLOOR RISK",
+            "QB-ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Jared Goff",
+          "pos": "QB",
+          "team": "DET",
+          "adp": 104.0,
+          "p95": 33.9,
+          "spike": 0.162,
+          "adv": 0.59,
+          "ceiling_score": 1.077,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Dallas Goedert",
+          "pos": "TE",
+          "team": "PHI",
+          "adp": 124.3,
+          "p95": 27.3,
+          "spike": 0.188,
+          "adv": 0.846,
+          "ceiling_score": 0.865,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Baker Mayfield",
+          "pos": "QB",
+          "team": "TB",
+          "adp": 121.3,
+          "p95": 32.2,
+          "spike": 0.146,
+          "adv": 0.564,
+          "ceiling_score": 0.849,
+          "flags": [
+            "QB-ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Harold Fannin Jr.",
+          "pos": "TE",
+          "team": "CLE",
+          "adp": 100.5,
+          "p95": 27.4,
+          "spike": 0.177,
+          "adv": 0.885,
+          "ceiling_score": 0.828,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "FLOOR RISK",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Jordan Love",
+          "pos": "QB",
+          "team": "GB",
+          "adp": 112.1,
+          "p95": 32.0,
+          "spike": 0.149,
+          "adv": 0.513,
+          "ceiling_score": 0.819,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Tyler Shough",
+          "pos": "QB",
+          "team": "NO",
+          "adp": 117.1,
+          "p95": 31.6,
+          "spike": 0.144,
+          "adv": 0.538,
+          "ceiling_score": 0.781,
+          "flags": [
+            "QB-MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Travis Kelce",
+          "pos": "TE",
+          "team": "KC",
+          "adp": 117.9,
+          "p95": 26.8,
+          "spike": 0.181,
+          "adv": 0.827,
+          "ceiling_score": 0.78,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Dalton Kincaid",
+          "pos": "TE",
+          "team": "BUF",
+          "adp": 114.1,
+          "p95": 24.8,
+          "spike": 0.2,
+          "adv": 0.692,
+          "ceiling_score": 0.698,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Matthew Golden",
+          "pos": "WR",
+          "team": "GB",
+          "adp": 115.1,
+          "p95": 28.9,
+          "spike": 0.183,
+          "adv": 0.755,
+          "ceiling_score": 0.657,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Isaiah Likely",
+          "pos": "TE",
+          "team": "NYG",
+          "adp": 121.9,
+          "p95": 24.4,
+          "spike": 0.195,
+          "adv": 0.712,
+          "ceiling_score": 0.652,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP",
+            "FLOOR RISK",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Xavier Worthy",
+          "pos": "WR",
+          "team": "KC",
+          "adp": 108.7,
+          "p95": 27.5,
+          "spike": 0.185,
+          "adv": 0.712,
+          "ceiling_score": 0.574,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Jakobi Meyers",
+          "pos": "WR",
+          "team": "JAX",
+          "adp": 110.3,
+          "p95": 27.6,
+          "spike": 0.183,
+          "adv": 0.719,
+          "ceiling_score": 0.572,
+          "flags": [
+            "EMPTY CALORIES",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Khalil Shakir",
+          "pos": "WR",
+          "team": "BUF",
+          "adp": 123.2,
+          "p95": 27.1,
+          "spike": 0.192,
+          "adv": 0.683,
+          "ceiling_score": 0.572,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Romeo Doubs",
+          "pos": "WR",
+          "team": "NE",
+          "adp": 120.3,
+          "p95": 27.1,
+          "spike": 0.19,
+          "adv": 0.691,
+          "ceiling_score": 0.567,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Wan'Dale Robinson",
+          "pos": "WR",
+          "team": "TEN",
+          "adp": 107.8,
+          "p95": 27.3,
+          "spike": 0.181,
+          "adv": 0.698,
+          "ceiling_score": 0.531,
+          "flags": [
+            "FLOOR RISK"
+          ]
+        },
+        {
+          "name": "Jordan Addison",
+          "pos": "WR",
+          "team": "MIN",
+          "adp": 99.4,
+          "p95": 26.6,
+          "spike": 0.189,
+          "adv": 0.676,
+          "ceiling_score": 0.529,
+          "flags": [
+            "EMPTY CALORIES"
+          ]
+        },
+        {
+          "name": "Bo Nix",
+          "pos": "QB",
+          "team": "DEN",
+          "adp": 112.7,
+          "p95": 30.4,
+          "spike": 0.093,
+          "adv": 0.744,
+          "ceiling_score": 0.509,
+          "flags": []
+        },
+        {
+          "name": "Aaron Jones Sr.",
+          "pos": "RB",
+          "team": "MIN",
+          "adp": 118.9,
+          "p95": 26.7,
+          "spike": 0.179,
+          "adv": 0.674,
+          "ceiling_score": 0.496,
+          "flags": [
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "J.K. Dobbins",
+          "pos": "RB",
+          "team": "DEN",
+          "adp": 107.2,
+          "p95": 25.2,
+          "spike": 0.189,
+          "adv": 0.628,
+          "ceiling_score": 0.49,
+          "flags": [
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Ricky Pearsall",
+          "pos": "WR",
+          "team": "SF",
+          "adp": 105.5,
+          "p95": 26.7,
+          "spike": 0.186,
+          "adv": 0.64,
+          "ceiling_score": 0.487,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Blake Corum",
+          "pos": "RB",
+          "team": "LAR",
+          "adp": 103.5,
+          "p95": 23.1,
+          "spike": 0.204,
+          "adv": 0.558,
+          "ceiling_score": 0.479,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Josh Downs",
+          "pos": "WR",
+          "team": "IND",
+          "adp": 96.3,
+          "p95": 25.8,
+          "spike": 0.188,
+          "adv": 0.662,
+          "ceiling_score": 0.477,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Kyle Monangai",
+          "pos": "RB",
+          "team": "CHI",
+          "adp": 98.7,
+          "p95": 25.2,
+          "spike": 0.189,
+          "adv": 0.605,
+          "ceiling_score": 0.468,
+          "flags": []
+        },
+        {
+          "name": "Rachaad White",
+          "pos": "RB",
+          "team": "WAS",
+          "adp": 112.3,
+          "p95": 24.2,
+          "spike": 0.189,
+          "adv": 0.616,
+          "ceiling_score": 0.441,
+          "flags": []
+        },
+        {
+          "name": "Jonathon Brooks",
+          "pos": "RB",
+          "team": "CAR",
+          "adp": 100.7,
+          "p95": 21.8,
+          "spike": 0.198,
+          "adv": 0.535,
+          "ceiling_score": 0.359,
+          "flags": []
+        },
+        {
+          "name": "Jacory Croskey-Merritt",
+          "pos": "RB",
+          "team": "WAS",
+          "adp": 123.2,
+          "p95": 22.0,
+          "spike": 0.19,
+          "adv": 0.547,
+          "ceiling_score": 0.315,
+          "flags": [
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Kyler Murray",
+          "pos": "QB",
+          "team": "MIN",
+          "adp": 111.2,
+          "p95": 25.4,
+          "spike": 0.086,
+          "adv": 0.462,
+          "ceiling_score": -0.03,
+          "flags": [
+            "MARKET DARLING",
+            "QB-MAN-BEATER"
+          ]
+        }
+      ]
+    },
+    {
+      "tier": 7,
+      "adp_band": "126-155",
+      "label": "mid10-13",
+      "n": 30,
+      "players": [
+        {
+          "name": "Zach Charbonnet",
+          "pos": "RB",
+          "team": "SEA",
+          "adp": 146.5,
+          "p95": 31.5,
+          "spike": 0.214,
+          "adv": 0.733,
+          "ceiling_score": 1.009,
+          "flags": [
+            "MARKET FADE",
+            "EMPTY CALORIES",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Sam Darnold",
+          "pos": "QB",
+          "team": "SEA",
+          "adp": 136.5,
+          "p95": 31.2,
+          "spike": 0.158,
+          "adv": 0.487,
+          "ceiling_score": 0.82,
+          "flags": [
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Jake Ferguson",
+          "pos": "TE",
+          "team": "DAL",
+          "adp": 128.3,
+          "p95": 25.4,
+          "spike": 0.198,
+          "adv": 0.788,
+          "ceiling_score": 0.79,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP"
+          ]
+        },
+        {
+          "name": "Mark Andrews",
+          "pos": "TE",
+          "team": "BAL",
+          "adp": 131.5,
+          "p95": 25.4,
+          "spike": 0.188,
+          "adv": 0.808,
+          "ceiling_score": 0.733,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP",
+            "FLOOR RISK",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Hunter Henry",
+          "pos": "TE",
+          "team": "NE",
+          "adp": 155.5,
+          "p95": 24.4,
+          "spike": 0.198,
+          "adv": 0.673,
+          "ceiling_score": 0.643,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "C.J. Stroud",
+          "pos": "QB",
+          "team": "HOU",
+          "adp": 139.8,
+          "p95": 29.7,
+          "spike": 0.147,
+          "adv": 0.41,
+          "ceiling_score": 0.598,
+          "flags": [
+            "QB-MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Juwan Johnson",
+          "pos": "TE",
+          "team": "NO",
+          "adp": 151.4,
+          "p95": 23.6,
+          "spike": 0.194,
+          "adv": 0.654,
+          "ceiling_score": 0.562,
+          "flags": []
+        },
+        {
+          "name": "Brenton Strange",
+          "pos": "TE",
+          "team": "JAX",
+          "adp": 148.2,
+          "p95": 22.4,
+          "spike": 0.199,
+          "adv": 0.635,
+          "ceiling_score": 0.518,
+          "flags": []
+        },
+        {
+          "name": "KC Concepcion",
+          "pos": "WR",
+          "team": "CLE",
+          "adp": 126.3,
+          "p95": 25.2,
+          "spike": 0.186,
+          "adv": 0.626,
+          "ceiling_score": 0.413,
+          "flags": []
+        },
+        {
+          "name": "Isiah Pacheco",
+          "pos": "RB",
+          "team": "DET",
+          "adp": 144.3,
+          "p95": 20.1,
+          "spike": 0.21,
+          "adv": 0.523,
+          "ceiling_score": 0.384,
+          "flags": [
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Oronde Gadsden II",
+          "pos": "TE",
+          "team": "LAC",
+          "adp": 143.5,
+          "p95": 20.1,
+          "spike": 0.207,
+          "adv": 0.538,
+          "ceiling_score": 0.376,
+          "flags": [
+            "POLARIZING",
+            "FLOOR RISK"
+          ]
+        },
+        {
+          "name": "Malik Willis",
+          "pos": "QB",
+          "team": "MIA",
+          "adp": 129.6,
+          "p95": 27.9,
+          "spike": 0.13,
+          "adv": 0.385,
+          "ceiling_score": 0.358,
+          "flags": [
+            "MARKET DARLING",
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "QB-MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Jayden Higgins",
+          "pos": "WR",
+          "team": "HOU",
+          "adp": 131.1,
+          "p95": 22.9,
+          "spike": 0.195,
+          "adv": 0.59,
+          "ceiling_score": 0.336,
+          "flags": [
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Rashid Shaheed",
+          "pos": "WR",
+          "team": "SEA",
+          "adp": 145.2,
+          "p95": 22.5,
+          "spike": 0.194,
+          "adv": 0.604,
+          "ceiling_score": 0.328,
+          "flags": [
+            "EFFICIENCY TRAP"
+          ]
+        },
+        {
+          "name": "Jalen Coker",
+          "pos": "WR",
+          "team": "CAR",
+          "adp": 127.3,
+          "p95": 23.3,
+          "spike": 0.186,
+          "adv": 0.619,
+          "ceiling_score": 0.327,
+          "flags": [
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Jalen McMillan",
+          "pos": "WR",
+          "team": "TB",
+          "adp": 140.1,
+          "p95": 22.3,
+          "spike": 0.197,
+          "adv": 0.568,
+          "ceiling_score": 0.308,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Jordan Mason",
+          "pos": "RB",
+          "team": "MIN",
+          "adp": 128.8,
+          "p95": 19.4,
+          "spike": 0.202,
+          "adv": 0.512,
+          "ceiling_score": 0.288,
+          "flags": []
+        },
+        {
+          "name": "Woody Marks",
+          "pos": "RB",
+          "team": "HOU",
+          "adp": 145.4,
+          "p95": 19.2,
+          "spike": 0.201,
+          "adv": 0.5,
+          "ceiling_score": 0.258,
+          "flags": []
+        },
+        {
+          "name": "Daniel Jones",
+          "pos": "QB",
+          "team": "IND",
+          "adp": 142.9,
+          "p95": 28.0,
+          "spike": 0.089,
+          "adv": 0.615,
+          "ceiling_score": 0.248,
+          "flags": [
+            "POLARIZING",
+            "QB-ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Keaton Mitchell",
+          "pos": "RB",
+          "team": "LAC",
+          "adp": 140.7,
+          "p95": 11.5,
+          "spike": 0.247,
+          "adv": 0.349,
+          "ceiling_score": 0.229,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Travis Hunter",
+          "pos": "WR",
+          "team": "JAX",
+          "adp": 155.3,
+          "p95": 19.1,
+          "spike": 0.209,
+          "adv": 0.518,
+          "ceiling_score": 0.206,
+          "flags": [
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Omar Cooper Jr.",
+          "pos": "WR",
+          "team": "NYJ",
+          "adp": 150.0,
+          "p95": 18.6,
+          "spike": 0.209,
+          "adv": 0.511,
+          "ceiling_score": 0.175,
+          "flags": []
+        },
+        {
+          "name": "Jauan Jennings",
+          "pos": "WR",
+          "team": "MIN",
+          "adp": 151.7,
+          "p95": 19.0,
+          "spike": 0.204,
+          "adv": 0.525,
+          "ceiling_score": 0.175,
+          "flags": [
+            "FLOOR RISK"
+          ]
+        },
+        {
+          "name": "Jalen Nailor",
+          "pos": "WR",
+          "team": "LV",
+          "adp": 152.7,
+          "p95": 19.6,
+          "spike": 0.195,
+          "adv": 0.547,
+          "ceiling_score": 0.169,
+          "flags": [
+            "FLOOR RISK",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Chris Rodriguez Jr.",
+          "pos": "RB",
+          "team": "JAX",
+          "adp": 137.7,
+          "p95": 11.5,
+          "spike": 0.233,
+          "adv": 0.384,
+          "ceiling_score": 0.146,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Tyrone Tracy Jr.",
+          "pos": "RB",
+          "team": "NYG",
+          "adp": 132.7,
+          "p95": 13.8,
+          "spike": 0.212,
+          "adv": 0.395,
+          "ceiling_score": 0.065,
+          "flags": []
+        },
+        {
+          "name": "Bryce Young",
+          "pos": "QB",
+          "team": "CAR",
+          "adp": 149.3,
+          "p95": 25.1,
+          "spike": 0.093,
+          "adv": 0.359,
+          "ceiling_score": -0.081,
+          "flags": [
+            "QB-ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Stefon Diggs",
+          "pos": "WR",
+          "team": "FA",
+          "adp": 135.5,
+          "p95": NaN,
+          "spike": NaN,
+          "adv": NaN,
+          "ceiling_score": NaN,
+          "flags": [
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Cam Ward",
+          "pos": "QB",
+          "team": "TEN",
+          "adp": 138.2,
+          "p95": NaN,
+          "spike": NaN,
+          "adv": NaN,
+          "ceiling_score": NaN,
+          "flags": []
+        },
+        {
+          "name": "Chig Okonkwo",
+          "pos": "TE",
+          "team": "WAS",
+          "adp": 141.3,
+          "p95": NaN,
+          "spike": NaN,
+          "adv": NaN,
+          "ceiling_score": NaN,
+          "flags": []
+        }
+      ]
+    },
+    {
+      "tier": 8,
+      "adp_band": "156-191",
+      "label": "R13-16",
+      "n": 35,
+      "players": [
+        {
+          "name": "Kenyon Sadiq",
+          "pos": "TE",
+          "team": "NYJ",
+          "adp": 159.2,
+          "p95": 25.1,
+          "spike": 0.196,
+          "adv": 0.75,
+          "ceiling_score": 0.728,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "T.J. Hockenson",
+          "pos": "TE",
+          "team": "MIN",
+          "adp": 163.0,
+          "p95": 24.2,
+          "spike": 0.19,
+          "adv": 0.731,
+          "ceiling_score": 0.625,
+          "flags": [
+            "EFFICIENCY TRAP",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Aaron Rodgers",
+          "pos": "QB",
+          "team": "PIT",
+          "adp": 163.2,
+          "p95": 28.0,
+          "spike": 0.153,
+          "adv": 0.308,
+          "ceiling_score": 0.477,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Dalton Schultz",
+          "pos": "TE",
+          "team": "HOU",
+          "adp": 171.2,
+          "p95": 21.8,
+          "spike": 0.199,
+          "adv": 0.596,
+          "ceiling_score": 0.454,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Gunnar Helm",
+          "pos": "TE",
+          "team": "TEN",
+          "adp": 181.3,
+          "p95": 20.9,
+          "spike": 0.208,
+          "adv": 0.577,
+          "ceiling_score": 0.451,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Tyjae Spears",
+          "pos": "RB",
+          "team": "TEN",
+          "adp": 157.6,
+          "p95": 22.1,
+          "spike": 0.195,
+          "adv": 0.57,
+          "ceiling_score": 0.376,
+          "flags": [
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Calvin Ridley",
+          "pos": "WR",
+          "team": "TEN",
+          "adp": 191.3,
+          "p95": 23.6,
+          "spike": 0.193,
+          "adv": 0.612,
+          "ceiling_score": 0.376,
+          "flags": [
+            "MARKET FADE",
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Jerry Jeudy",
+          "pos": "WR",
+          "team": "CLE",
+          "adp": 185.0,
+          "p95": 23.2,
+          "spike": 0.187,
+          "adv": 0.597,
+          "ceiling_score": 0.31,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Tre Tucker",
+          "pos": "WR",
+          "team": "LV",
+          "adp": 159.8,
+          "p95": 22.6,
+          "spike": 0.189,
+          "adv": 0.583,
+          "ceiling_score": 0.291,
+          "flags": []
+        },
+        {
+          "name": "Denzel Boston",
+          "pos": "WR",
+          "team": "CLE",
+          "adp": 165.4,
+          "p95": 21.6,
+          "spike": 0.195,
+          "adv": 0.576,
+          "ceiling_score": 0.272,
+          "flags": []
+        },
+        {
+          "name": "AJ Barner",
+          "pos": "TE",
+          "team": "SEA",
+          "adp": 185.3,
+          "p95": 19.1,
+          "spike": 0.201,
+          "adv": 0.51,
+          "ceiling_score": 0.256,
+          "flags": []
+        },
+        {
+          "name": "Alvin Kamara",
+          "pos": "RB",
+          "team": "NO",
+          "adp": 164.3,
+          "p95": 18.8,
+          "spike": 0.202,
+          "adv": 0.488,
+          "ceiling_score": 0.246,
+          "flags": []
+        },
+        {
+          "name": "Cade Otton",
+          "pos": "TE",
+          "team": "TB",
+          "adp": 187.5,
+          "p95": 18.5,
+          "spike": 0.207,
+          "adv": 0.462,
+          "ceiling_score": 0.23,
+          "flags": []
+        },
+        {
+          "name": "Greg Dulcich",
+          "pos": "TE",
+          "team": "MIA",
+          "adp": 174.8,
+          "p95": 19.3,
+          "spike": 0.195,
+          "adv": 0.51,
+          "ceiling_score": 0.23,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ]
+        },
+        {
+          "name": "Adonai Mitchell",
+          "pos": "WR",
+          "team": "NYJ",
+          "adp": 177.1,
+          "p95": 20.3,
+          "spike": 0.201,
+          "adv": 0.54,
+          "ceiling_score": 0.221,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Braelon Allen",
+          "pos": "RB",
+          "team": "NYJ",
+          "adp": 191.3,
+          "p95": 14.7,
+          "spike": 0.218,
+          "adv": 0.442,
+          "ceiling_score": 0.188,
+          "flags": []
+        },
+        {
+          "name": "Tank Dell",
+          "pos": "WR",
+          "team": "HOU",
+          "adp": 187.9,
+          "p95": 18.5,
+          "spike": 0.213,
+          "adv": 0.504,
+          "ceiling_score": 0.187,
+          "flags": []
+        },
+        {
+          "name": "Antonio Williams",
+          "pos": "WR",
+          "team": "WAS",
+          "adp": 166.6,
+          "p95": 19.2,
+          "spike": 0.203,
+          "adv": 0.532,
+          "ceiling_score": 0.182,
+          "flags": []
+        },
+        {
+          "name": "Tyler Allgeier",
+          "pos": "RB",
+          "team": "ARI",
+          "adp": 157.9,
+          "p95": 14.8,
+          "spike": 0.218,
+          "adv": 0.43,
+          "ceiling_score": 0.182,
+          "flags": [
+            "BOOM MERCHANT",
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "Brian Robinson Jr.",
+          "pos": "RB",
+          "team": "ATL",
+          "adp": 174.8,
+          "p95": 15.6,
+          "spike": 0.21,
+          "adv": 0.453,
+          "ceiling_score": 0.165,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Dylan Sampson",
+          "pos": "RB",
+          "team": "CLE",
+          "adp": 171.7,
+          "p95": 14.5,
+          "spike": 0.217,
+          "adv": 0.419,
+          "ceiling_score": 0.154,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "RB-ZONE-SCHEME"
+          ]
+        },
+        {
+          "name": "Fernando Mendoza",
+          "pos": "QB",
+          "team": "LV",
+          "adp": 168.9,
+          "p95": 23.3,
+          "spike": 0.149,
+          "adv": 0.256,
+          "ceiling_score": 0.15,
+          "flags": []
+        },
+        {
+          "name": "Tank Bigsby",
+          "pos": "RB",
+          "team": "PHI",
+          "adp": 175.2,
+          "p95": 10.7,
+          "spike": 0.239,
+          "adv": 0.326,
+          "ceiling_score": 0.118,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "BOOM MERCHANT"
+          ]
+        },
+        {
+          "name": "Ryan Flournoy",
+          "pos": "WR",
+          "team": "DAL",
+          "adp": 166.4,
+          "p95": 16.9,
+          "spike": 0.215,
+          "adv": 0.453,
+          "ceiling_score": 0.091,
+          "flags": [
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Malik Washington",
+          "pos": "WR",
+          "team": "MIA",
+          "adp": 161.2,
+          "p95": 17.6,
+          "spike": 0.203,
+          "adv": 0.489,
+          "ceiling_score": 0.079,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Tre' Harris",
+          "pos": "WR",
+          "team": "LAC",
+          "adp": 176.9,
+          "p95": 16.1,
+          "spike": 0.215,
+          "adv": 0.439,
+          "ceiling_score": 0.051,
+          "flags": [
+            "BOOM MERCHANT",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Isaac TeSlaa",
+          "pos": "WR",
+          "team": "DET",
+          "adp": 169.8,
+          "p95": 14.3,
+          "spike": 0.236,
+          "adv": 0.388,
+          "ceiling_score": 0.05,
+          "flags": []
+        },
+        {
+          "name": "De'Zhaun Stribling",
+          "pos": "WR",
+          "team": "SF",
+          "adp": 182.4,
+          "p95": 12.9,
+          "spike": 0.242,
+          "adv": 0.299,
+          "ceiling_score": -0.043,
+          "flags": []
+        },
+        {
+          "name": "Geno Smith",
+          "pos": "QB",
+          "team": "NYJ",
+          "adp": 180.2,
+          "p95": 24.5,
+          "spike": 0.092,
+          "adv": 0.333,
+          "ceiling_score": -0.132,
+          "flags": []
+        },
+        {
+          "name": "Zachariah Branch",
+          "pos": "WR",
+          "team": "ATL",
+          "adp": 188.8,
+          "p95": 11.5,
+          "spike": 0.22,
+          "adv": 0.216,
+          "ceiling_score": -0.298,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Jonah Coleman",
+          "pos": "RB",
+          "team": "DEN",
+          "adp": 168.0,
+          "p95": 6.9,
+          "spike": 0.205,
+          "adv": 0.14,
+          "ceiling_score": -0.451,
+          "flags": [
+            "POLARIZING"
+          ]
+        },
+        {
+          "name": "Sean Tucker",
+          "pos": "RB",
+          "team": "TB",
+          "adp": 183.8,
+          "p95": 6.2,
+          "spike": 0.201,
+          "adv": 0.116,
+          "ceiling_score": -0.532,
+          "flags": [
+            "POLARIZING",
+            "BOOM MERCHANT",
+            "RB-GAP-SCHEME"
+          ]
+        },
+        {
+          "name": "Jacoby Brissett",
+          "pos": "QB",
+          "team": "ARI",
+          "adp": 167.8,
+          "p95": NaN,
+          "spike": NaN,
+          "adv": 0.282,
+          "ceiling_score": NaN,
+          "flags": [
+            "QB-ZONE-BEATER"
+          ]
+        },
+        {
+          "name": "Deebo Samuel Sr.",
+          "pos": "WR",
+          "team": "FA",
+          "adp": 176.3,
+          "p95": NaN,
+          "spike": NaN,
+          "adv": NaN,
+          "ceiling_score": NaN,
+          "flags": [
+            "EFFICIENCY EDGE",
+            "MAN-BEATER"
+          ]
+        },
+        {
+          "name": "Tyreek Hill",
+          "pos": "WR",
+          "team": "FA",
+          "adp": 188.2,
+          "p95": NaN,
+          "spike": NaN,
+          "adv": NaN,
+          "ceiling_score": NaN,
+          "flags": [
+            "EFFICIENCY EDGE",
+            "SEPARATION KING"
+          ]
+        }
+      ]
+    }
+  ],
+  "round_targets": {
+    "1": {
+      "round": 1,
+      "adp_band": "1-12",
+      "targets": [
+        {
+          "name": "Puka Nacua",
+          "pos": "WR",
+          "team": "LAR",
+          "adp": 3.9,
+          "p95": 49.8,
+          "ceiling_score": 1.578,
+          "merged_rank": 2.0,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "pos": "WR",
+          "team": "CIN",
+          "adp": 3.1,
+          "p95": 46.7,
+          "ceiling_score": 1.45,
+          "merged_rank": 3.0,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "team": "SEA",
+          "adp": 5.4,
+          "p95": 46.6,
+          "ceiling_score": 1.434,
+          "merged_rank": 5.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Amon-Ra St. Brown",
+          "pos": "WR",
+          "team": "DET",
+          "adp": 7.2,
+          "p95": 44.9,
+          "ceiling_score": 1.35,
+          "merged_rank": 7.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Bijan Robinson",
+          "pos": "RB",
+          "team": "ATL",
+          "adp": 2.1,
+          "p95": 46.0,
+          "ceiling_score": 1.333,
+          "merged_rank": 4.0,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "2": {
+      "round": 2,
+      "adp_band": "13-24",
+      "targets": [
+        {
+          "name": "Trey McBride",
+          "pos": "TE",
+          "team": "ARI",
+          "adp": 24.2,
+          "p95": 35.9,
+          "ceiling_score": 1.312,
+          "merged_rank": 27.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Brock Bowers",
+          "pos": "TE",
+          "team": "LV",
+          "adp": 20.0,
+          "p95": 34.1,
+          "ceiling_score": 1.24,
+          "merged_rank": 25.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "FLOOR RISK",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "De'Von Achane",
+          "pos": "RB",
+          "team": "MIA",
+          "adp": 19.1,
+          "p95": 40.3,
+          "ceiling_score": 1.114,
+          "merged_rank": 12.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Drake London",
+          "pos": "WR",
+          "team": "ATL",
+          "adp": 17.4,
+          "p95": 38.5,
+          "ceiling_score": 1.107,
+          "merged_rank": 15.0,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "A.J. Brown",
+          "pos": "WR",
+          "team": "NE",
+          "adp": 17.7,
+          "p95": 37.3,
+          "ceiling_score": 1.087,
+          "merged_rank": 23.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "3": {
+      "round": 3,
+      "adp_band": "25-36",
+      "targets": [
+        {
+          "name": "Josh Allen",
+          "pos": "QB",
+          "team": "BUF",
+          "adp": 27.0,
+          "p95": 41.9,
+          "ceiling_score": 1.633,
+          "merged_rank": 19.0,
+          "flags": [
+            "POLARIZING",
+            "QB-ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Rashee Rice",
+          "pos": "WR",
+          "team": "KC",
+          "adp": 25.1,
+          "p95": 38.1,
+          "ceiling_score": 1.086,
+          "merged_rank": 24.0,
+          "flags": [
+            "POLARIZING",
+            "FLOOR RISK",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Breece Hall",
+          "pos": "RB",
+          "team": "NYJ",
+          "adp": 31.9,
+          "p95": 37.4,
+          "ceiling_score": 1.02,
+          "merged_rank": 26.0,
+          "flags": [
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Zay Flowers",
+          "pos": "WR",
+          "team": "BAL",
+          "adp": 32.1,
+          "p95": 35.6,
+          "ceiling_score": 1.003,
+          "merged_rank": 37.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Chris Olave",
+          "pos": "WR",
+          "team": "NO",
+          "adp": 28.6,
+          "p95": 35.8,
+          "ceiling_score": 0.999,
+          "merged_rank": 29.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "4": {
+      "round": 4,
+      "adp_band": "37-48",
+      "targets": [
+        {
+          "name": "Malik Nabers",
+          "pos": "WR",
+          "team": "NYG",
+          "adp": 37.6,
+          "p95": 36.9,
+          "ceiling_score": 1.09,
+          "merged_rank": 31.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Garrett Wilson",
+          "pos": "WR",
+          "team": "NYJ",
+          "adp": 39.0,
+          "p95": 36.8,
+          "ceiling_score": 1.037,
+          "merged_rank": 33.0,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Colston Loveland",
+          "pos": "TE",
+          "team": "CHI",
+          "adp": 39.8,
+          "p95": 29.9,
+          "ceiling_score": 0.997,
+          "merged_rank": 44.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Davante Adams",
+          "pos": "WR",
+          "team": "LAR",
+          "adp": 47.2,
+          "p95": 34.8,
+          "ceiling_score": 0.976,
+          "merged_rank": 43.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Josh Jacobs",
+          "pos": "RB",
+          "team": "GB",
+          "adp": 43.5,
+          "p95": 36.7,
+          "ceiling_score": 0.965,
+          "merged_rank": 39.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "5": {
+      "round": 5,
+      "adp_band": "49-60",
+      "targets": [
+        {
+          "name": "Lamar Jackson",
+          "pos": "QB",
+          "team": "BAL",
+          "adp": 53.3,
+          "p95": 36.8,
+          "ceiling_score": 1.265,
+          "merged_rank": 47.0,
+          "flags": [
+            "POLARIZING",
+            "FLOOR RISK"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jameson Williams",
+          "pos": "WR",
+          "team": "DET",
+          "adp": 52.6,
+          "p95": 32.7,
+          "ceiling_score": 0.888,
+          "merged_rank": 54.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "team": "CHI",
+          "adp": 58.6,
+          "p95": 31.8,
+          "ceiling_score": 0.806,
+          "merged_rank": 61.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Bucky Irving",
+          "pos": "RB",
+          "team": "TB",
+          "adp": 59.7,
+          "p95": 32.1,
+          "ceiling_score": 0.763,
+          "merged_rank": 60.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY TRAP",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Quinshon Judkins",
+          "pos": "RB",
+          "team": "CLE",
+          "adp": 55.4,
+          "p95": 31.9,
+          "ceiling_score": 0.754,
+          "merged_rank": 56.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "6": {
+      "round": 6,
+      "adp_band": "61-72",
+      "targets": [
+        {
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
+          "adp": 65.5,
+          "p95": 37.2,
+          "ceiling_score": 1.357,
+          "merged_rank": 59.0,
+          "flags": [
+            "CONSENSUS STUD",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jayden Daniels",
+          "pos": "QB",
+          "team": "WAS",
+          "adp": 69.3,
+          "p95": 35.6,
+          "ceiling_score": 1.173,
+          "merged_rank": 65.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP",
+            "FLOOR RISK",
+            "QB-ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Tyler Warren",
+          "pos": "TE",
+          "team": "IND",
+          "adp": 61.3,
+          "p95": 30.1,
+          "ceiling_score": 1.004,
+          "merged_rank": 67.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Caleb Williams",
+          "pos": "QB",
+          "team": "CHI",
+          "adp": 70.3,
+          "p95": 33.3,
+          "ceiling_score": 0.945,
+          "merged_rank": 64.0,
+          "flags": [
+            "MARKET DARLING",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Carnell Tate",
+          "pos": "WR",
+          "team": "TEN",
+          "adp": 62.7,
+          "p95": 32.4,
+          "ceiling_score": 0.826,
+          "merged_rank": 62.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "7": {
+      "round": 7,
+      "adp_band": "73-84",
+      "targets": [
+        {
+          "name": "Dak Prescott",
+          "pos": "QB",
+          "team": "DAL",
+          "adp": 79.6,
+          "p95": 35.1,
+          "ceiling_score": 1.172,
+          "merged_rank": 71.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Trevor Lawrence",
+          "pos": "QB",
+          "team": "JAX",
+          "adp": 84.7,
+          "p95": 35.0,
+          "ceiling_score": 1.152,
+          "merged_rank": 79.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Justin Herbert",
+          "pos": "QB",
+          "team": "LAC",
+          "adp": 81.9,
+          "p95": 33.6,
+          "ceiling_score": 0.972,
+          "merged_rank": 76.0,
+          "flags": [
+            "MARKET DARLING",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Courtland Sutton",
+          "pos": "WR",
+          "team": "DEN",
+          "adp": 82.6,
+          "p95": 31.4,
+          "ceiling_score": 0.801,
+          "merged_rank": 84.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jalen Hurts",
+          "pos": "QB",
+          "team": "PHI",
+          "adp": 75.9,
+          "p95": 33.1,
+          "ceiling_score": 0.784,
+          "merged_rank": 69.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "8": {
+      "round": 8,
+      "adp_band": "85-96",
+      "targets": [
+        {
+          "name": "Matthew Stafford",
+          "pos": "QB",
+          "team": "LAR",
+          "adp": 89.3,
+          "p95": 37.0,
+          "ceiling_score": 1.403,
+          "merged_rank": 82.0,
+          "flags": [
+            "MARKET FADE"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Patrick Mahomes",
+          "pos": "QB",
+          "team": "KC",
+          "adp": 92.9,
+          "p95": 34.3,
+          "ceiling_score": 1.038,
+          "merged_rank": 88.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Sam LaPorta",
+          "pos": "TE",
+          "team": "DET",
+          "adp": 92.2,
+          "p95": 28.8,
+          "ceiling_score": 0.987,
+          "merged_rank": 95.0,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Kyle Pitts Sr.",
+          "pos": "TE",
+          "team": "ATL",
+          "adp": 90.6,
+          "p95": 28.2,
+          "ceiling_score": 0.853,
+          "merged_rank": 100.0,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Michael Pittman Jr.",
+          "pos": "WR",
+          "team": "PIT",
+          "adp": 95.8,
+          "p95": 29.4,
+          "ceiling_score": 0.651,
+          "merged_rank": 98.0,
+          "flags": [
+            "EMPTY CALORIES",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "9": {
+      "round": 9,
+      "adp_band": "97-108",
+      "targets": [
+        {
+          "name": "Brock Purdy",
+          "pos": "QB",
+          "team": "SF",
+          "adp": 97.3,
+          "p95": 35.9,
+          "ceiling_score": 1.272,
+          "merged_rank": 93.0,
+          "flags": [
+            "CONSENSUS STUD",
+            "QB-MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "George Kittle",
+          "pos": "TE",
+          "team": "SF",
+          "adp": 104.7,
+          "p95": 33.2,
+          "ceiling_score": 1.265,
+          "merged_rank": 104.0,
+          "flags": [
+            "MARKET FADE",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jaxson Dart",
+          "pos": "QB",
+          "team": "NYG",
+          "adp": 101.9,
+          "p95": 34.6,
+          "ceiling_score": 1.115,
+          "merged_rank": 94.0,
+          "flags": [
+            "MARKET FADE",
+            "FLOOR RISK",
+            "QB-ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jared Goff",
+          "pos": "QB",
+          "team": "DET",
+          "adp": 104.0,
+          "p95": 33.9,
+          "ceiling_score": 1.077,
+          "merged_rank": 99.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Harold Fannin Jr.",
+          "pos": "TE",
+          "team": "CLE",
+          "adp": 100.5,
+          "p95": 27.4,
+          "ceiling_score": 0.828,
+          "merged_rank": 96.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "FLOOR RISK",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "10": {
+      "round": 10,
+      "adp_band": "109-120",
+      "targets": [
+        {
+          "name": "Jordan Love",
+          "pos": "QB",
+          "team": "GB",
+          "adp": 112.1,
+          "p95": 32.0,
+          "ceiling_score": 0.819,
+          "merged_rank": 109.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Tyler Shough",
+          "pos": "QB",
+          "team": "NO",
+          "adp": 117.1,
+          "p95": 31.6,
+          "ceiling_score": 0.781,
+          "merged_rank": 116.0,
+          "flags": [
+            "QB-MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Travis Kelce",
+          "pos": "TE",
+          "team": "KC",
+          "adp": 117.9,
+          "p95": 26.8,
+          "ceiling_score": 0.78,
+          "merged_rank": 122.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Dalton Kincaid",
+          "pos": "TE",
+          "team": "BUF",
+          "adp": 114.1,
+          "p95": 24.8,
+          "ceiling_score": 0.698,
+          "merged_rank": 120.0,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Matthew Golden",
+          "pos": "WR",
+          "team": "GB",
+          "adp": 115.1,
+          "p95": 28.9,
+          "ceiling_score": 0.657,
+          "merged_rank": 112.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "11": {
+      "round": 11,
+      "adp_band": "121-132",
+      "targets": [
+        {
+          "name": "Dallas Goedert",
+          "pos": "TE",
+          "team": "PHI",
+          "adp": 124.3,
+          "p95": 27.3,
+          "ceiling_score": 0.865,
+          "merged_rank": 123.0,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Baker Mayfield",
+          "pos": "QB",
+          "team": "TB",
+          "adp": 121.3,
+          "p95": 32.2,
+          "ceiling_score": 0.849,
+          "merged_rank": 118.0,
+          "flags": [
+            "QB-ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jake Ferguson",
+          "pos": "TE",
+          "team": "DAL",
+          "adp": 128.3,
+          "p95": 25.4,
+          "ceiling_score": 0.79,
+          "merged_rank": 128.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Mark Andrews",
+          "pos": "TE",
+          "team": "BAL",
+          "adp": 131.5,
+          "p95": 25.4,
+          "ceiling_score": 0.733,
+          "merged_rank": 133.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP",
+            "FLOOR RISK",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Isaiah Likely",
+          "pos": "TE",
+          "team": "NYG",
+          "adp": 121.9,
+          "p95": 24.4,
+          "ceiling_score": 0.652,
+          "merged_rank": 127.0,
+          "flags": [
+            "POLARIZING",
+            "EMPTY CALORIES",
+            "EFFICIENCY TRAP",
+            "FLOOR RISK",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "12": {
+      "round": 12,
+      "adp_band": "133-144",
+      "targets": [
+        {
+          "name": "Sam Darnold",
+          "pos": "QB",
+          "team": "SEA",
+          "adp": 136.5,
+          "p95": 31.2,
+          "ceiling_score": 0.82,
+          "merged_rank": 129.0,
+          "flags": [
+            "EFFICIENCY EDGE"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "C.J. Stroud",
+          "pos": "QB",
+          "team": "HOU",
+          "adp": 139.8,
+          "p95": 29.7,
+          "ceiling_score": 0.598,
+          "merged_rank": 132.0,
+          "flags": [
+            "QB-MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Isiah Pacheco",
+          "pos": "RB",
+          "team": "DET",
+          "adp": 144.3,
+          "p95": 20.1,
+          "ceiling_score": 0.384,
+          "merged_rank": 147.0,
+          "flags": [
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Oronde Gadsden II",
+          "pos": "TE",
+          "team": "LAC",
+          "adp": 143.5,
+          "p95": 20.1,
+          "ceiling_score": 0.376,
+          "merged_rank": 146.0,
+          "flags": [
+            "POLARIZING",
+            "FLOOR RISK"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jalen McMillan",
+          "pos": "WR",
+          "team": "TB",
+          "adp": 140.1,
+          "p95": 22.3,
+          "ceiling_score": 0.308,
+          "merged_rank": 144.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "13": {
+      "round": 13,
+      "adp_band": "145-156",
+      "targets": [
+        {
+          "name": "Zach Charbonnet",
+          "pos": "RB",
+          "team": "SEA",
+          "adp": 146.5,
+          "p95": 31.5,
+          "ceiling_score": 1.009,
+          "merged_rank": 142.0,
+          "flags": [
+            "MARKET FADE",
+            "EMPTY CALORIES",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Hunter Henry",
+          "pos": "TE",
+          "team": "NE",
+          "adp": 155.5,
+          "p95": 24.4,
+          "ceiling_score": 0.643,
+          "merged_rank": 153.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Juwan Johnson",
+          "pos": "TE",
+          "team": "NO",
+          "adp": 151.4,
+          "p95": 23.6,
+          "ceiling_score": 0.562,
+          "merged_rank": 149.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Brenton Strange",
+          "pos": "TE",
+          "team": "JAX",
+          "adp": 148.2,
+          "p95": 22.4,
+          "ceiling_score": 0.518,
+          "merged_rank": 154.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Rashid Shaheed",
+          "pos": "WR",
+          "team": "SEA",
+          "adp": 145.2,
+          "p95": 22.5,
+          "ceiling_score": 0.328,
+          "merged_rank": 152.0,
+          "flags": [
+            "EFFICIENCY TRAP"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "14": {
+      "round": 14,
+      "adp_band": "157-168",
+      "targets": [
+        {
+          "name": "Kenyon Sadiq",
+          "pos": "TE",
+          "team": "NYJ",
+          "adp": 159.2,
+          "p95": 25.1,
+          "ceiling_score": 0.728,
+          "merged_rank": 148.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling",
+          "value_fall": true
+        },
+        {
+          "name": "T.J. Hockenson",
+          "pos": "TE",
+          "team": "MIN",
+          "adp": 163.0,
+          "p95": 24.2,
+          "ceiling_score": 0.625,
+          "merged_rank": 159.0,
+          "flags": [
+            "EFFICIENCY TRAP",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Aaron Rodgers",
+          "pos": "QB",
+          "team": "PIT",
+          "adp": 163.2,
+          "p95": 28.0,
+          "ceiling_score": 0.477,
+          "merged_rank": 158.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Tyjae Spears",
+          "pos": "RB",
+          "team": "TEN",
+          "adp": 157.6,
+          "p95": 22.1,
+          "ceiling_score": 0.376,
+          "merged_rank": 162.0,
+          "flags": [
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Tre Tucker",
+          "pos": "WR",
+          "team": "LV",
+          "adp": 159.8,
+          "p95": 22.6,
+          "ceiling_score": 0.291,
+          "merged_rank": 156.0,
+          "flags": [],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "15": {
+      "round": 15,
+      "adp_band": "169-180",
+      "targets": [
+        {
+          "name": "Dalton Schultz",
+          "pos": "TE",
+          "team": "HOU",
+          "adp": 171.2,
+          "p95": 21.8,
+          "ceiling_score": 0.454,
+          "merged_rank": 168.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Greg Dulcich",
+          "pos": "TE",
+          "team": "MIA",
+          "adp": 174.8,
+          "p95": 19.3,
+          "ceiling_score": 0.23,
+          "merged_rank": 184.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Adonai Mitchell",
+          "pos": "WR",
+          "team": "NYJ",
+          "adp": 177.1,
+          "p95": 20.3,
+          "ceiling_score": 0.221,
+          "merged_rank": 190.0,
+          "flags": [
+            "POLARIZING",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Brian Robinson Jr.",
+          "pos": "RB",
+          "team": "ATL",
+          "adp": 174.8,
+          "p95": 15.6,
+          "ceiling_score": 0.165,
+          "merged_rank": 179.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Dylan Sampson",
+          "pos": "RB",
+          "team": "CLE",
+          "adp": 171.7,
+          "p95": 14.5,
+          "ceiling_score": 0.154,
+          "merged_rank": 178.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "16": {
+      "round": 16,
+      "adp_band": "181-192",
+      "targets": [
+        {
+          "name": "Gunnar Helm",
+          "pos": "TE",
+          "team": "TEN",
+          "adp": 181.3,
+          "p95": 20.9,
+          "ceiling_score": 0.451,
+          "merged_rank": 183.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Calvin Ridley",
+          "pos": "WR",
+          "team": "TEN",
+          "adp": 191.3,
+          "p95": 23.6,
+          "ceiling_score": 0.376,
+          "merged_rank": 187.0,
+          "flags": [
+            "MARKET FADE",
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jerry Jeudy",
+          "pos": "WR",
+          "team": "CLE",
+          "adp": 185.0,
+          "p95": 23.2,
+          "ceiling_score": 0.31,
+          "merged_rank": 177.0,
+          "flags": [
+            "POLARIZING",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Germie Bernard",
+          "pos": "WR",
+          "team": "PIT",
+          "adp": 192.6,
+          "p95": 21.3,
+          "ceiling_score": 0.28,
+          "merged_rank": 192.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "AJ Barner",
+          "pos": "TE",
+          "team": "SEA",
+          "adp": 185.3,
+          "p95": 19.1,
+          "ceiling_score": 0.256,
+          "merged_rank": 180.0,
+          "flags": [],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "17": {
+      "round": 17,
+      "adp_band": "193-204",
+      "targets": [
+        {
+          "name": "Pat Freiermuth",
+          "pos": "TE",
+          "team": "PIT",
+          "adp": 198.6,
+          "p95": 22.7,
+          "ceiling_score": 0.528,
+          "merged_rank": 194.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Terrance Ferguson",
+          "pos": "TE",
+          "team": "LAR",
+          "adp": 203.3,
+          "p95": 21.4,
+          "ceiling_score": 0.429,
+          "merged_rank": 214.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Colby Parkinson",
+          "pos": "TE",
+          "team": "LAR",
+          "adp": 202.4,
+          "p95": 13.6,
+          "ceiling_score": 0.272,
+          "merged_rank": 205.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "David Njoku",
+          "pos": "TE",
+          "team": "LAC",
+          "adp": 197.9,
+          "p95": 15.7,
+          "ceiling_score": 0.177,
+          "merged_rank": 196.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Cooper Kupp",
+          "pos": "WR",
+          "team": "SEA",
+          "adp": 199.8,
+          "p95": 18.4,
+          "ceiling_score": 0.136,
+          "merged_rank": 195.0,
+          "flags": [],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "18": {
+      "round": 18,
+      "adp_band": "205-216",
+      "targets": [
+        {
+          "name": "MarShawn Lloyd",
+          "pos": "RB",
+          "team": "GB",
+          "adp": 206.6,
+          "p95": 12.0,
+          "ceiling_score": 0.316,
+          "merged_rank": 219.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Mike Gesicki",
+          "pos": "TE",
+          "team": "CIN",
+          "adp": 214.6,
+          "p95": 19.0,
+          "ceiling_score": 0.316,
+          "merged_rank": 217.0,
+          "flags": [
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Mike Washington Jr.",
+          "pos": "RB",
+          "team": "LV",
+          "adp": 207.7,
+          "p95": 11.3,
+          "ceiling_score": 0.203,
+          "merged_rank": 209.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Justice Hill",
+          "pos": "RB",
+          "team": "BAL",
+          "adp": 211.1,
+          "p95": 17.8,
+          "ceiling_score": 0.162,
+          "merged_rank": 211.0,
+          "flags": [],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Chris Bell",
+          "pos": "WR",
+          "team": "MIA",
+          "adp": 213.4,
+          "p95": 18.7,
+          "ceiling_score": 0.096,
+          "merged_rank": 203.0,
+          "flags": [],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    },
+    "19": {
+      "round": 19,
+      "adp_band": "217-228",
+      "targets": [
+        {
+          "name": "Carson Beck",
+          "pos": "QB",
+          "team": "ARI",
+          "adp": 228.2,
+          "p95": 30.3,
+          "ceiling_score": 0.652,
+          "merged_rank": 261.0,
+          "flags": [
+            "VALUE"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Samaje Perine",
+          "pos": "RB",
+          "team": "CIN",
+          "adp": 225.2,
+          "p95": 16.8,
+          "ceiling_score": 0.279,
+          "merged_rank": 236.0,
+          "flags": [
+            "BOOM MERCHANT",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Rashod Bateman",
+          "pos": "WR",
+          "team": "BAL",
+          "adp": 227.2,
+          "p95": 21.1,
+          "ceiling_score": 0.256,
+          "merged_rank": 297.0,
+          "flags": [
+            "REACH",
+            "MARKET FADE",
+            "POLARIZING",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jordan James",
+          "pos": "RB",
+          "team": "SF",
+          "adp": 222.1,
+          "p95": 11.2,
+          "ceiling_score": 0.245,
+          "merged_rank": 237.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Evan Engram",
+          "pos": "TE",
+          "team": "DEN",
+          "adp": 221.6,
+          "p95": 18.3,
+          "ceiling_score": 0.175,
+          "merged_rank": 224.0,
+          "flags": [
+            "POLARIZING",
+            "EFFICIENCY EDGE",
+            "SEPARATION KING",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": [
+        {
+          "name": "Emanuel Wilson",
+          "pos": "RB",
+          "team": "SEA",
+          "adp": 219.0,
+          "p95": 2.0,
+          "ceiling_score": -1.044,
+          "merged_rank": 207.0,
+          "flags": [
+            "VALUE",
+            "POLARIZING"
+          ],
+          "kind": "value"
+        }
+      ]
+    },
+    "20": {
+      "round": 20,
+      "adp_band": "229-240",
+      "targets": [
+        {
+          "name": "Emari Demercado",
+          "pos": "RB",
+          "team": "KC",
+          "adp": 230.5,
+          "p95": 11.6,
+          "ceiling_score": 0.245,
+          "merged_rank": 281.0,
+          "flags": [
+            "VALUE",
+            "POLARIZING",
+            "RB-ZONE-SCHEME"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Dawson Knox",
+          "pos": "TE",
+          "team": "BUF",
+          "adp": 231.3,
+          "p95": 13.6,
+          "ceiling_score": 0.215,
+          "merged_rank": 356.0,
+          "flags": [
+            "POLARIZING",
+            "BOOM MERCHANT",
+            "ZONE-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Jack Bech",
+          "pos": "WR",
+          "team": "LV",
+          "adp": 229.4,
+          "p95": 18.1,
+          "ceiling_score": 0.114,
+          "merged_rank": 343.0,
+          "flags": [
+            "REACH",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Dyami Brown",
+          "pos": "WR",
+          "team": "WAS",
+          "adp": 229.8,
+          "p95": 16.5,
+          "ceiling_score": 0.109,
+          "merged_rank": 372.0,
+          "flags": [
+            "REACH",
+            "MAN-BEATER"
+          ],
+          "kind": "ceiling"
+        },
+        {
+          "name": "Nick Westbrook-Ikhine",
+          "pos": "WR",
+          "team": "IND",
+          "adp": 232.2,
+          "p95": 17.0,
+          "ceiling_score": 0.071,
+          "merged_rank": 266.0,
+          "flags": [
+            "VALUE",
+            "POLARIZING"
+          ],
+          "kind": "ceiling"
+        }
+      ],
+      "values": []
+    }
+  },
+  "team_priority": [
+    {
+      "rank": 1,
+      "team": "LAR",
+      "attack_score": 100.0,
+      "nalpha": 4,
+      "sum_p95_alpha": 155.1,
+      "total_td": 3.24,
+      "rk_td": 1,
+      "rk_passvol": 11,
+      "vac_tgt": 8.9,
+      "why": "4 alpha-ceiling bats (sum p95 155); elite scoring env (TD/g 3.24, rk1)"
+    },
+    {
+      "rank": 2,
+      "team": "DAL",
+      "attack_score": 95.0,
+      "nalpha": 4,
+      "sum_p95_alpha": 148.4,
+      "total_td": 2.76,
+      "rk_td": 5,
+      "rk_passvol": 3,
+      "vac_tgt": 5.7,
+      "why": "4 alpha-ceiling bats (sum p95 148); elite scoring env (TD/g 2.76, rk5); top pass volume (rk3)"
+    },
+    {
+      "rank": 3,
+      "team": "DET",
+      "attack_score": 84.0,
+      "nalpha": 3,
+      "sum_p95_alpha": 124.5,
+      "total_td": 2.94,
+      "rk_td": 3,
+      "rk_passvol": 15,
+      "vac_tgt": 14.8,
+      "why": "3 alpha-ceiling bats (sum p95 125); elite scoring env (TD/g 2.94, rk3)"
+    },
+    {
+      "rank": 4,
+      "team": "SF",
+      "attack_score": 77.6,
+      "nalpha": 3,
+      "sum_p95_alpha": 113.1,
+      "total_td": 2.59,
+      "rk_td": 9,
+      "rk_passvol": 20,
+      "vac_tgt": 38.6,
+      "why": "3 alpha-ceiling bats (sum p95 113); good scoring env (TD/g 2.59); huge vacated targets (39)"
+    },
+    {
+      "rank": 5,
+      "team": "CIN",
+      "attack_score": 71.4,
+      "nalpha": 2,
+      "sum_p95_alpha": 82.0,
+      "total_td": 2.76,
+      "rk_td": 4,
+      "rk_passvol": 1,
+      "vac_tgt": 6.7,
+      "why": "2 alpha ceiling(s) (sum p95 82); elite scoring env (TD/g 2.76, rk4); top pass volume (rk1)"
+    },
+    {
+      "rank": 6,
+      "team": "KC",
+      "attack_score": 68.0,
+      "nalpha": 2,
+      "sum_p95_alpha": 72.3,
+      "total_td": 2.59,
+      "rk_td": 9,
+      "rk_passvol": 5,
+      "vac_tgt": 30.8,
+      "why": "2 alpha ceiling(s) (sum p95 72); good scoring env (TD/g 2.59); top pass volume (rk5); huge vacated targets (31)"
+    },
+    {
+      "rank": 7,
+      "team": "PHI",
+      "attack_score": 66.2,
+      "nalpha": 3,
+      "sum_p95_alpha": 102.9,
+      "total_td": 2.65,
+      "rk_td": 7,
+      "rk_passvol": 31,
+      "vac_tgt": 33.3,
+      "why": "3 alpha-ceiling bats (sum p95 103); good scoring env (TD/g 2.65); run-leaning (low pass volume); huge vacated targets (33)"
+    },
+    {
+      "rank": 8,
+      "team": "BUF",
+      "attack_score": 61.6,
+      "nalpha": 2,
+      "sum_p95_alpha": 79.3,
+      "total_td": 3.06,
+      "rk_td": 2,
+      "rk_passvol": 28,
+      "vac_tgt": 16.8,
+      "why": "2 alpha ceiling(s) (sum p95 79); elite scoring env (TD/g 3.06, rk2); run-leaning (low pass volume)"
+    },
+    {
+      "rank": 9,
+      "team": "BAL",
+      "attack_score": 59.4,
+      "nalpha": 3,
+      "sum_p95_alpha": 109.5,
+      "total_td": 2.71,
+      "rk_td": 6,
+      "rk_passvol": 32,
+      "vac_tgt": 18.3,
+      "why": "3 alpha-ceiling bats (sum p95 110); elite scoring env (TD/g 2.71, rk6); run-leaning (low pass volume); notable vacated targets (18)"
+    },
+    {
+      "rank": 10,
+      "team": "LAC",
+      "attack_score": 58.5,
+      "nalpha": 3,
+      "sum_p95_alpha": 103.8,
+      "total_td": 2.41,
+      "rk_td": 14,
+      "rk_passvol": 21,
+      "vac_tgt": 22.7,
+      "why": "3 alpha-ceiling bats (sum p95 104); notable vacated targets (23)"
+    },
+    {
+      "rank": 11,
+      "team": "NE",
+      "attack_score": 56.1,
+      "nalpha": 2,
+      "sum_p95_alpha": 74.5,
+      "total_td": 2.65,
+      "rk_td": 8,
+      "rk_passvol": 25,
+      "vac_tgt": 30.4,
+      "why": "2 alpha ceiling(s) (sum p95 75); good scoring env (TD/g 2.65); run-leaning (low pass volume); huge vacated targets (30)"
+    },
+    {
+      "rank": 12,
+      "team": "ATL",
+      "attack_score": 49.0,
+      "nalpha": 2,
+      "sum_p95_alpha": 84.5,
+      "total_td": 1.88,
+      "rk_td": 23,
+      "rk_passvol": 7,
+      "vac_tgt": 20.7,
+      "why": "2 alpha ceiling(s) (sum p95 85); notable vacated targets (21)"
+    },
+    {
+      "rank": 13,
+      "team": "SEA",
+      "attack_score": 46.5,
+      "nalpha": 1,
+      "sum_p95_alpha": 46.6,
+      "total_td": 2.53,
+      "rk_td": 11,
+      "rk_passvol": 27,
+      "vac_tgt": 38.7,
+      "why": "1 alpha ceiling(s) (sum p95 47); good scoring env (TD/g 2.53); run-leaning (low pass volume); huge vacated targets (39)"
+    },
+    {
+      "rank": 14,
+      "team": "NYJ",
+      "attack_score": 45.9,
+      "nalpha": 2,
+      "sum_p95_alpha": 74.2,
+      "total_td": 2.0,
+      "rk_td": 22,
+      "rk_passvol": 18,
+      "vac_tgt": 40.5,
+      "why": "2 alpha ceiling(s) (sum p95 74); huge vacated targets (40)"
+    },
+    {
+      "rank": 15,
+      "team": "ARI",
+      "attack_score": 44.2,
+      "nalpha": 2,
+      "sum_p95_alpha": 72.7,
+      "total_td": 1.71,
+      "rk_td": 28,
+      "rk_passvol": 2,
+      "vac_tgt": 23.6,
+      "why": "2 alpha ceiling(s) (sum p95 73); top pass volume (rk2); notable vacated targets (24)"
+    },
+    {
+      "rank": 16,
+      "team": "WAS",
+      "attack_score": 43.8,
+      "nalpha": 1,
+      "sum_p95_alpha": 35.6,
+      "total_td": 2.29,
+      "rk_td": 17,
+      "rk_passvol": 25,
+      "vac_tgt": 59.5,
+      "why": "1 alpha ceiling(s) (sum p95 36); run-leaning (low pass volume); huge vacated targets (60)"
+    },
+    {
+      "rank": 17,
+      "team": "NYG",
+      "attack_score": 42.2,
+      "nalpha": 2,
+      "sum_p95_alpha": 71.5,
+      "total_td": 2.18,
+      "rk_td": 20,
+      "rk_passvol": 30,
+      "vac_tgt": 33.8,
+      "why": "2 alpha ceiling(s) (sum p95 72); run-leaning (low pass volume); huge vacated targets (34)"
+    },
+    {
+      "rank": 18,
+      "team": "GB",
+      "attack_score": 41.6,
+      "nalpha": 1,
+      "sum_p95_alpha": 36.7,
+      "total_td": 2.47,
+      "rk_td": 12,
+      "rk_passvol": 18,
+      "vac_tgt": 28.6,
+      "why": "1 alpha ceiling(s) (sum p95 37); good scoring env (TD/g 2.47); notable vacated targets (29)"
+    },
+    {
+      "rank": 19,
+      "team": "IND",
+      "attack_score": 40.4,
+      "nalpha": 1,
+      "sum_p95_alpha": 40.4,
+      "total_td": 2.29,
+      "rk_td": 17,
+      "rk_passvol": 23,
+      "vac_tgt": 41.1,
+      "why": "1 alpha ceiling(s) (sum p95 40); huge vacated targets (41)"
+    },
+    {
+      "rank": 20,
+      "team": "CHI",
+      "attack_score": 40.4,
+      "nalpha": 1,
+      "sum_p95_alpha": 33.3,
+      "total_td": 2.41,
+      "rk_td": 14,
+      "rk_passvol": 21,
+      "vac_tgt": 27.2,
+      "why": "1 alpha ceiling(s) (sum p95 33); notable vacated targets (27)"
+    },
+    {
+      "rank": 21,
+      "team": "MIN",
+      "attack_score": 40.3,
+      "nalpha": 1,
+      "sum_p95_alpha": 41.2,
+      "total_td": 2.12,
+      "rk_td": 21,
+      "rk_passvol": 4,
+      "vac_tgt": 22.8,
+      "why": "1 alpha ceiling(s) (sum p95 41); top pass volume (rk4); notable vacated targets (23)"
+    },
+    {
+      "rank": 22,
+      "team": "JAX",
+      "attack_score": 35.0,
+      "nalpha": 1,
+      "sum_p95_alpha": 35.0,
+      "total_td": 2.35,
+      "rk_td": 16,
+      "rk_passvol": 10,
+      "vac_tgt": 15.0,
+      "why": "1 alpha ceiling(s) (sum p95 35)"
+    },
+    {
+      "rank": 23,
+      "team": "LV",
+      "attack_score": 34.4,
+      "nalpha": 2,
+      "sum_p95_alpha": 71.1,
+      "total_td": 1.71,
+      "rk_td": 28,
+      "rk_passvol": 8,
+      "vac_tgt": 12.0,
+      "why": "2 alpha ceiling(s) (sum p95 71)"
+    },
+    {
+      "rank": 24,
+      "team": "TB",
+      "attack_score": 32.6,
+      "nalpha": 1,
+      "sum_p95_alpha": 33.1,
+      "total_td": 2.24,
+      "rk_td": 19,
+      "rk_passvol": 23,
+      "vac_tgt": 29.6,
+      "why": "1 alpha ceiling(s) (sum p95 33); notable vacated targets (30)"
+    },
+    {
+      "rank": 25,
+      "team": "NO",
+      "attack_score": 27.0,
+      "nalpha": 1,
+      "sum_p95_alpha": 35.8,
+      "total_td": 1.88,
+      "rk_td": 23,
+      "rk_passvol": 14,
+      "vac_tgt": 13.4,
+      "why": "1 alpha ceiling(s) (sum p95 36)"
+    },
+    {
+      "rank": 26,
+      "team": "DEN",
+      "attack_score": 26.3,
+      "nalpha": 0,
+      "sum_p95_alpha": 0.0,
+      "total_td": 2.47,
+      "rk_td": 13,
+      "rk_passvol": 9,
+      "vac_tgt": 9.8,
+      "why": "thin on alpha ceilings"
+    },
+    {
+      "rank": 27,
+      "team": "PIT",
+      "attack_score": 26.0,
+      "nalpha": 0,
+      "sum_p95_alpha": 0.0,
+      "total_td": 1.76,
+      "rk_td": 27,
+      "rk_passvol": 6,
+      "vac_tgt": 44.8,
+      "why": "thin on alpha ceilings; top pass volume (rk6); huge vacated targets (45)"
+    },
+    {
+      "rank": 28,
+      "team": "HOU",
+      "attack_score": 22.6,
+      "nalpha": 1,
+      "sum_p95_alpha": 37.5,
+      "total_td": 1.88,
+      "rk_td": 23,
+      "rk_passvol": 13,
+      "vac_tgt": 10.8,
+      "why": "1 alpha ceiling(s) (sum p95 37)"
+    },
+    {
+      "rank": 29,
+      "team": "CAR",
+      "attack_score": 18.5,
+      "nalpha": 1,
+      "sum_p95_alpha": 36.4,
+      "total_td": 1.82,
+      "rk_td": 26,
+      "rk_passvol": 17,
+      "vac_tgt": 20.0,
+      "why": "1 alpha ceiling(s) (sum p95 36); notable vacated targets (20)"
+    },
+    {
+      "rank": 30,
+      "team": "MIA",
+      "attack_score": 13.0,
+      "nalpha": 1,
+      "sum_p95_alpha": 40.3,
+      "total_td": 1.35,
+      "rk_td": 32,
+      "rk_passvol": 29,
+      "vac_tgt": 44.0,
+      "why": "1 alpha ceiling(s) (sum p95 40); run-leaning (low pass volume); huge vacated targets (44)"
+    },
+    {
+      "rank": 31,
+      "team": "TEN",
+      "attack_score": 9.5,
+      "nalpha": 0,
+      "sum_p95_alpha": 0.0,
+      "total_td": 1.71,
+      "rk_td": 30,
+      "rk_passvol": 11,
+      "vac_tgt": 25.7,
+      "why": "thin on alpha ceilings; notable vacated targets (26)"
+    },
+    {
+      "rank": 32,
+      "team": "CLE",
+      "attack_score": 0.0,
+      "nalpha": 0,
+      "sum_p95_alpha": 0.0,
+      "total_td": 1.47,
+      "rk_td": 31,
+      "rk_passvol": 15,
+      "vac_tgt": 15.2,
+      "why": "thin on alpha ceilings"
+    }
+  ],
+  "stacks": [
+    {
+      "qb": "Joe Burrow",
+      "team": "CIN",
+      "pieces": [
+        "Joe Burrow",
+        "Ja'Marr Chase",
+        "Tee Higgins"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Joe Burrow",
+          "pos": "QB",
+          "team": "CIN",
+          "adp": 59.1,
+          "p95": 29.8
+        },
+        {
+          "name": "Ja'Marr Chase",
+          "pos": "WR",
+          "team": "CIN",
+          "adp": 3.1,
+          "p95": 46.7
+        },
+        {
+          "name": "Tee Higgins",
+          "pos": "WR",
+          "team": "CIN",
+          "adp": 35.4,
+          "p95": 32.8
+        }
+      ],
+      "bringback": "Zay Flowers",
+      "bringback_team": "BAL",
+      "w17_game": "BAL@CIN",
+      "tail_rank": 2,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 144.9,
+      "adp_cost": 129.7,
+      "corr_factor": 1.369,
+      "leverage": "CHALK/SHOOTOUT",
+      "score": 161.87,
+      "note": "Joe Burrow + Ja'Marr Chase (+Tee Higgins) bring-back Zay Flowers (BAL) | shootout-tilted W17, top-2 blow-up tail.",
+      "rank": 1
+    },
+    {
+      "qb": "Dak Prescott",
+      "team": "DAL",
+      "pieces": [
+        "Dak Prescott",
+        "CeeDee Lamb",
+        "George Pickens"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Dak Prescott",
+          "pos": "QB",
+          "team": "DAL",
+          "adp": 79.6,
+          "p95": 35.1
+        },
+        {
+          "name": "CeeDee Lamb",
+          "pos": "WR",
+          "team": "DAL",
+          "adp": 10.4,
+          "p95": 42.5
+        },
+        {
+          "name": "George Pickens",
+          "pos": "WR",
+          "team": "DAL",
+          "adp": 24.3,
+          "p95": 35.7
+        }
+      ],
+      "bringback": "Malik Nabers",
+      "bringback_team": "NYG",
+      "w17_game": "DAL@NYG",
+      "tail_rank": 3,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 150.2,
+      "adp_cost": 151.9,
+      "corr_factor": 1.369,
+      "leverage": "MID/SHOOTOUT",
+      "score": 160.27,
+      "note": "Dak Prescott + CeeDee Lamb (+George Pickens) bring-back Malik Nabers (NYG) | shootout-tilted W17, top-3 blow-up tail.",
+      "rank": 2
+    },
+    {
+      "qb": "Matthew Stafford",
+      "team": "LAR",
+      "pieces": [
+        "Matthew Stafford",
+        "Puka Nacua",
+        "Davante Adams"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Matthew Stafford",
+          "pos": "QB",
+          "team": "LAR",
+          "adp": 89.3,
+          "p95": 37.0
+        },
+        {
+          "name": "Puka Nacua",
+          "pos": "WR",
+          "team": "LAR",
+          "adp": 3.9,
+          "p95": 49.8
+        },
+        {
+          "name": "Davante Adams",
+          "pos": "WR",
+          "team": "LAR",
+          "adp": 47.2,
+          "p95": 34.8
+        }
+      ],
+      "bringback": "Emeka Egbuka",
+      "bringback_team": "TB",
+      "w17_game": "LAR@TB",
+      "tail_rank": 1,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 154.7,
+      "adp_cost": 173.0,
+      "corr_factor": 1.369,
+      "leverage": "MID/SHOOTOUT",
+      "score": 157.71,
+      "note": "Matthew Stafford + Puka Nacua (+Davante Adams) bring-back Emeka Egbuka (TB) | shootout-tilted W17, top-1 blow-up tail.",
+      "rank": 3
+    },
+    {
+      "qb": "Caleb Williams",
+      "team": "CHI",
+      "pieces": [
+        "Caleb Williams",
+        "Rome Odunze",
+        "Luther Burden III"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Caleb Williams",
+          "pos": "QB",
+          "team": "CHI",
+          "adp": 70.3,
+          "p95": 33.3
+        },
+        {
+          "name": "Rome Odunze",
+          "pos": "WR",
+          "team": "CHI",
+          "adp": 58.6,
+          "p95": 31.8
+        },
+        {
+          "name": "Luther Burden III",
+          "pos": "WR",
+          "team": "CHI",
+          "adp": 41.9,
+          "p95": 30.4
+        }
+      ],
+      "bringback": "Amon-Ra St. Brown",
+      "bringback_team": "DET",
+      "w17_game": "CHI@DET",
+      "tail_rank": 4,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 140.4,
+      "adp_cost": 178.0,
+      "corr_factor": 1.369,
+      "leverage": "MID/SHOOTOUT",
+      "score": 141.55,
+      "note": "Caleb Williams + Rome Odunze (+Luther Burden III) bring-back Amon-Ra St. Brown (DET) | shootout-tilted W17, top-4 blow-up tail.",
+      "rank": 4
+    },
+    {
+      "qb": "Jared Goff",
+      "team": "DET",
+      "pieces": [
+        "Jared Goff",
+        "Amon-Ra St. Brown",
+        "Jameson Williams"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Jared Goff",
+          "pos": "QB",
+          "team": "DET",
+          "adp": 104.0,
+          "p95": 33.9
+        },
+        {
+          "name": "Amon-Ra St. Brown",
+          "pos": "WR",
+          "team": "DET",
+          "adp": 7.2,
+          "p95": 44.9
+        },
+        {
+          "name": "Jameson Williams",
+          "pos": "WR",
+          "team": "DET",
+          "adp": 52.6,
+          "p95": 32.7
+        }
+      ],
+      "bringback": "Rome Odunze",
+      "bringback_team": "CHI",
+      "w17_game": "CHI@DET",
+      "tail_rank": 4,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 143.3,
+      "adp_cost": 222.4,
+      "corr_factor": 1.369,
+      "leverage": "LEVERAGE/SHOOTOUT",
+      "score": 130.12,
+      "note": "Jared Goff + Amon-Ra St. Brown (+Jameson Williams) bring-back Rome Odunze (CHI) | shootout-tilted W17, top-4 blow-up tail.",
+      "rank": 5
+    },
+    {
+      "qb": "Lamar Jackson",
+      "team": "BAL",
+      "pieces": [
+        "Lamar Jackson",
+        "Zay Flowers"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Lamar Jackson",
+          "pos": "QB",
+          "team": "BAL",
+          "adp": 53.3,
+          "p95": 36.8
+        },
+        {
+          "name": "Zay Flowers",
+          "pos": "WR",
+          "team": "BAL",
+          "adp": 32.1,
+          "p95": 35.6
+        }
+      ],
+      "bringback": "Ja'Marr Chase",
+      "bringback_team": "CIN",
+      "w17_game": "BAL@CIN",
+      "tail_rank": 2,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 119.1,
+      "adp_cost": 88.5,
+      "corr_factor": 1.118,
+      "leverage": "CHALK/SHOOTOUT",
+      "score": 117.7,
+      "note": "Lamar Jackson + Zay Flowers bring-back Ja'Marr Chase (CIN) | shootout-tilted W17, top-2 blow-up tail.",
+      "rank": 6
+    },
+    {
+      "qb": "Tyler Shough",
+      "team": "NO",
+      "pieces": [
+        "Tyler Shough",
+        "Chris Olave",
+        "Jordyn Tyson"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Tyler Shough",
+          "pos": "QB",
+          "team": "NO",
+          "adp": 117.1,
+          "p95": 31.6
+        },
+        {
+          "name": "Chris Olave",
+          "pos": "WR",
+          "team": "NO",
+          "adp": 28.6,
+          "p95": 35.8
+        },
+        {
+          "name": "Jordyn Tyson",
+          "pos": "WR",
+          "team": "NO",
+          "adp": 69.2,
+          "p95": 29.0
+        }
+      ],
+      "bringback": "Drake London",
+      "bringback_team": "ATL",
+      "w17_game": "ATL@NO",
+      "tail_rank": 11,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.129,
+      "high_total": false,
+      "combined_ceiling": 134.9,
+      "adp_cost": 232.3,
+      "corr_factor": 1.346,
+      "leverage": "LEVERAGE",
+      "score": 114.12,
+      "note": "Tyler Shough + Chris Olave (+Jordyn Tyson) bring-back Drake London (ATL) | moderate-total W17, top-11 blow-up tail.",
+      "rank": 7
+    },
+    {
+      "qb": "Bo Nix",
+      "team": "DEN",
+      "pieces": [
+        "Bo Nix",
+        "Jaylen Waddle",
+        "Courtland Sutton"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Bo Nix",
+          "pos": "QB",
+          "team": "DEN",
+          "adp": 112.7,
+          "p95": 30.4
+        },
+        {
+          "name": "Jaylen Waddle",
+          "pos": "WR",
+          "team": "DEN",
+          "adp": 47.4,
+          "p95": 32.8
+        },
+        {
+          "name": "Courtland Sutton",
+          "pos": "WR",
+          "team": "DEN",
+          "adp": 82.6,
+          "p95": 31.4
+        }
+      ],
+      "bringback": "A.J. Brown",
+      "bringback_team": "NE",
+      "w17_game": "DEN@NE",
+      "tail_rank": 6,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 131.9,
+      "adp_cost": 260.4,
+      "corr_factor": 1.369,
+      "leverage": "LEVERAGE/SHOOTOUT",
+      "score": 108.47,
+      "note": "Bo Nix + Jaylen Waddle (+Courtland Sutton) bring-back A.J. Brown (NE) | shootout-tilted W17, top-6 blow-up tail.",
+      "rank": 8
+    },
+    {
+      "qb": "Brock Purdy",
+      "team": "SF",
+      "pieces": [
+        "Brock Purdy",
+        "George Kittle",
+        "Mike Evans"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Brock Purdy",
+          "pos": "QB",
+          "team": "SF",
+          "adp": 97.3,
+          "p95": 35.9
+        },
+        {
+          "name": "George Kittle",
+          "pos": "TE",
+          "team": "SF",
+          "adp": 104.7,
+          "p95": 33.2
+        },
+        {
+          "name": "Mike Evans",
+          "pos": "WR",
+          "team": "SF",
+          "adp": 50.5,
+          "p95": 29.5
+        }
+      ],
+      "bringback": "DeVonta Smith",
+      "bringback_team": "PHI",
+      "w17_game": "PHI@SF",
+      "tail_rank": 8,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 133.4,
+      "adp_cost": 280.6,
+      "corr_factor": 1.369,
+      "leverage": "LEVERAGE/SHOOTOUT",
+      "score": 100.61,
+      "note": "Brock Purdy + George Kittle (+Mike Evans) bring-back DeVonta Smith (PHI) | shootout-tilted W17, top-8 blow-up tail.",
+      "rank": 9
+    },
+    {
+      "qb": "Jaxson Dart",
+      "team": "NYG",
+      "pieces": [
+        "Jaxson Dart",
+        "Malik Nabers"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Jaxson Dart",
+          "pos": "QB",
+          "team": "NYG",
+          "adp": 101.9,
+          "p95": 34.6
+        },
+        {
+          "name": "Malik Nabers",
+          "pos": "WR",
+          "team": "NYG",
+          "adp": 37.6,
+          "p95": 36.9
+        }
+      ],
+      "bringback": "CeeDee Lamb",
+      "bringback_team": "DAL",
+      "w17_game": "DAL@NYG",
+      "tail_rank": 3,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 114.0,
+      "adp_cost": 149.9,
+      "corr_factor": 1.118,
+      "leverage": "LEVERAGE/SHOOTOUT",
+      "score": 99.76,
+      "note": "Jaxson Dart + Malik Nabers bring-back CeeDee Lamb (DAL) | shootout-tilted W17, top-3 blow-up tail.",
+      "rank": 10
+    },
+    {
+      "qb": "Baker Mayfield",
+      "team": "TB",
+      "pieces": [
+        "Baker Mayfield",
+        "Emeka Egbuka"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Baker Mayfield",
+          "pos": "QB",
+          "team": "TB",
+          "adp": 121.3,
+          "p95": 32.2
+        },
+        {
+          "name": "Emeka Egbuka",
+          "pos": "WR",
+          "team": "TB",
+          "adp": 32.6,
+          "p95": 33.1
+        }
+      ],
+      "bringback": "Puka Nacua",
+      "bringback_team": "LAR",
+      "w17_game": "LAR@TB",
+      "tail_rank": 1,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 115.1,
+      "adp_cost": 157.8,
+      "corr_factor": 1.118,
+      "leverage": "LEVERAGE/SHOOTOUT",
+      "score": 99.05,
+      "note": "Baker Mayfield + Emeka Egbuka bring-back Puka Nacua (LAR) | shootout-tilted W17, top-1 blow-up tail.",
+      "rank": 11
+    },
+    {
+      "qb": "Drake Maye",
+      "team": "NE",
+      "pieces": [
+        "Drake Maye",
+        "A.J. Brown"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Drake Maye",
+          "pos": "QB",
+          "team": "NE",
+          "adp": 65.5,
+          "p95": 37.2
+        },
+        {
+          "name": "A.J. Brown",
+          "pos": "WR",
+          "team": "NE",
+          "adp": 17.7,
+          "p95": 37.3
+        }
+      ],
+      "bringback": "Jaylen Waddle",
+      "bringback_team": "DEN",
+      "w17_game": "DEN@NE",
+      "tail_rank": 6,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 107.3,
+      "adp_cost": 130.6,
+      "corr_factor": 1.118,
+      "leverage": "MID/SHOOTOUT",
+      "score": 97.71,
+      "note": "Drake Maye + A.J. Brown bring-back Jaylen Waddle (DEN) | shootout-tilted W17, top-6 blow-up tail.",
+      "rank": 12
+    },
+    {
+      "qb": "Jalen Hurts",
+      "team": "PHI",
+      "pieces": [
+        "Jalen Hurts",
+        "DeVonta Smith",
+        "Makai Lemon"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Jalen Hurts",
+          "pos": "QB",
+          "team": "PHI",
+          "adp": 75.9,
+          "p95": 33.1
+        },
+        {
+          "name": "DeVonta Smith",
+          "pos": "WR",
+          "team": "PHI",
+          "adp": 28.1,
+          "p95": 34.8
+        },
+        {
+          "name": "Makai Lemon",
+          "pos": "WR",
+          "team": "PHI",
+          "adp": 87.6,
+          "p95": 28.7
+        }
+      ],
+      "bringback": "George Kittle",
+      "bringback_team": "SF",
+      "w17_game": "PHI@SF",
+      "tail_rank": 8,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 129.8,
+      "adp_cost": 296.3,
+      "corr_factor": 1.369,
+      "leverage": "LEVERAGE/SHOOTOUT",
+      "score": 93.43,
+      "note": "Jalen Hurts + DeVonta Smith (+Makai Lemon) bring-back George Kittle (SF) | shootout-tilted W17, top-8 blow-up tail.",
+      "rank": 13
+    },
+    {
+      "qb": "Justin Herbert",
+      "team": "LAC",
+      "pieces": [
+        "Justin Herbert",
+        "Ladd McConkey"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Justin Herbert",
+          "pos": "QB",
+          "team": "LAC",
+          "adp": 81.9,
+          "p95": 33.6
+        },
+        {
+          "name": "Ladd McConkey",
+          "pos": "WR",
+          "team": "LAC",
+          "adp": 34.7,
+          "p95": 33.4
+        }
+      ],
+      "bringback": "Rashee Rice",
+      "bringback_team": "KC",
+      "w17_game": "KC@LAC",
+      "tail_rank": 9,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.159,
+      "high_total": true,
+      "combined_ceiling": 105.1,
+      "adp_cost": 141.7,
+      "corr_factor": 1.118,
+      "leverage": "MID/SHOOTOUT",
+      "score": 90.84,
+      "note": "Justin Herbert + Ladd McConkey bring-back Rashee Rice (KC) | shootout-tilted W17, top-9 blow-up tail.",
+      "rank": 14
+    },
+    {
+      "qb": "Sam Darnold",
+      "team": "SEA",
+      "pieces": [
+        "Sam Darnold",
+        "Jaxon Smith-Njigba"
+      ],
+      "pieces_detail": [
+        {
+          "name": "Sam Darnold",
+          "pos": "QB",
+          "team": "SEA",
+          "adp": 136.5,
+          "p95": 31.2
+        },
+        {
+          "name": "Jaxon Smith-Njigba",
+          "pos": "WR",
+          "team": "SEA",
+          "adp": 5.4,
+          "p95": 46.6
+        }
+      ],
+      "bringback": "Tetairoa McMillan",
+      "bringback_team": "CAR",
+      "w17_game": "CAR@SEA",
+      "tail_rank": 5,
+      "r_qbwr": 0.351,
+      "r_bringback": 0.129,
+      "high_total": false,
+      "combined_ceiling": 114.2,
+      "adp_cost": 184.8,
+      "corr_factor": 1.095,
+      "leverage": "LEVERAGE",
+      "score": 90.76,
+      "note": "Sam Darnold + Jaxon Smith-Njigba bring-back Tetairoa McMillan (CAR) | moderate-total W17, top-5 blow-up tail.",
+      "rank": 15
+    }
+  ]
+}

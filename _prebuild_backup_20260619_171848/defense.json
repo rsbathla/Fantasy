@@ -1,0 +1,3614 @@
+{
+  "meta": {
+    "n_teams": 32,
+    "source": "SIS DataHub 2025 Points Saved, REWEIGHTED onto 2026 rosters (accounting reweight, not a refit)",
+    "method": "Each confirmed 2026 mover carries their FULL 2025 Points Saved to their 2026 team; RETIRED/UFA subtract only; \"2 teams\" players assign combined PS to their 2026 team; rookies/incoming-with-no-2025-data add NOTHING (replacement-level floor). 32-team percentiles recomputed per unit.",
+    "fields": {
+      "*_2025": "original 2025 strength/pctl (reference)",
+      "*_2026": "2026-roster-adjusted strength/pctl (canonical, used by the matchup engine)",
+      "pass_cov_*": "coverage Points Saved (higher=better)",
+      "pass_rush_*": "pass-rush PS",
+      "run_def_*": "run-defense PS",
+      "*_pctl": "league percentile across 32 teams (0-100, higher=better unit)",
+      "pass_cov_epatgt": "target-weighted EPA/Tgt allowed (NEGATIVE=good)",
+      "top_*": "top-3 contributors per unit on the 2026 roster",
+      "moves_2026": "applied 2026 roster moves (player, from->to, unit, ps, source, conf)"
+    },
+    "assumptions": [
+      "Default: a player STAYS on his 2025 team unless a CONFIRMED move was found.",
+      "Rookies/incoming players with no 2025 SIS data add nothing (honest replacement-level floor).",
+      "RETIRED/UFA-unsigned: production leaves the league (subtract only).",
+      "Low-confidence moves (conf=false): Kevin Byard->NE, Dre'Mont Jones->NE, K'Lavon Chaisson->WAS (sources disagreed)."
+    ],
+    "unmatched_movers": [
+      "michael danna",
+      "mike danna",
+      "pj locke",
+      "tim settle",
+      "colby wooden"
+    ]
+  },
+  "teams": {
+    "ARI": {
+      "team": "ARI",
+      "pass_cov_strength_2025": 38.7,
+      "pass_cov_pctl_2025": 4.7,
+      "pass_rush_strength_2025": 64.1,
+      "pass_rush_pctl_2025": 43.8,
+      "run_def_strength_2025": 41.1,
+      "run_def_pctl_2025": 10.9,
+      "pass_cov_epatgt_2025": 0.2919,
+      "pass_cov_strength_2026": 51.5,
+      "pass_cov_pctl_2026": 10.9,
+      "pass_rush_strength_2026": 49.7,
+      "pass_rush_pctl_2026": 29.7,
+      "run_def_strength_2026": 42.1,
+      "run_def_pctl_2026": 14.1,
+      "pass_cov_epatgt_2026": 0.3136,
+      "pass_cov_strength": 51.5,
+      "pass_cov_pctl": 10.9,
+      "pass_cov_epatgt": 0.3136,
+      "pass_rush_strength": 49.7,
+      "pass_rush_pctl": 29.7,
+      "run_def_strength": 42.1,
+      "run_def_pctl": 14.1,
+      "top_coverage": [
+        {
+          "name": "Andrew Wingard",
+          "pos": "S",
+          "ps": 21.0,
+          "epatgt": 0.4
+        },
+        {
+          "name": "Budda Baker",
+          "pos": "S",
+          "ps": 13.6,
+          "epatgt": 0.08
+        },
+        {
+          "name": "Will Johnson",
+          "pos": "CB",
+          "ps": 12.6,
+          "epatgt": 0.35
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Josh Sweat",
+          "pos": "LB",
+          "ps": 32.2
+        },
+        {
+          "name": "Zaven Collins",
+          "pos": "LB",
+          "ps": 11.7
+        },
+        {
+          "name": "Baron Browning",
+          "pos": "LB",
+          "ps": 5.8
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Andrew Wingard",
+          "pos": "S",
+          "ps": 15.0
+        },
+        {
+          "name": "Budda Baker",
+          "pos": "S",
+          "ps": 9.4
+        },
+        {
+          "name": "Dadrion Taylor-Demerson",
+          "pos": "S",
+          "ps": 8.3
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Andrew Wingard",
+          "unit": "coverage",
+          "from": "JAX",
+          "to": "ARI",
+          "ps": 21.0,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S JAX->ARI"
+        },
+        {
+          "player": "Andrew Wingard",
+          "unit": "run_def",
+          "from": "JAX",
+          "to": "ARI",
+          "ps": 15.0,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S JAX->ARI"
+        }
+      ]
+    },
+    "ATL": {
+      "team": "ATL",
+      "pass_cov_strength_2025": 139.2,
+      "pass_cov_pctl_2025": 82.8,
+      "pass_rush_strength_2025": 45.2,
+      "pass_rush_pctl_2025": 26.6,
+      "run_def_strength_2025": 76.9,
+      "run_def_pctl_2025": 51.6,
+      "pass_cov_epatgt_2025": 0.1024,
+      "pass_cov_strength_2026": 100.1,
+      "pass_cov_pctl_2026": 67.2,
+      "pass_rush_strength_2026": 42.4,
+      "pass_rush_pctl_2026": 17.2,
+      "run_def_strength_2026": 51.3,
+      "run_def_pctl_2026": 29.7,
+      "pass_cov_epatgt_2026": 0.1764,
+      "pass_cov_strength": 100.1,
+      "pass_cov_pctl": 67.2,
+      "pass_cov_epatgt": 0.1764,
+      "pass_rush_strength": 42.4,
+      "pass_rush_pctl": 17.2,
+      "run_def_strength": 51.3,
+      "run_def_pctl": 29.7,
+      "top_coverage": [
+        {
+          "name": "Jessie Bates III",
+          "pos": "S",
+          "ps": 29.3,
+          "epatgt": 0.27
+        },
+        {
+          "name": "Xavier Watts",
+          "pos": "S",
+          "ps": 27.6,
+          "epatgt": 0.44
+        },
+        {
+          "name": "A.J. Terrell",
+          "pos": "CB",
+          "ps": 25.1,
+          "epatgt": 0.03
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "James Pearce Jr.",
+          "pos": "LB",
+          "ps": 21.0
+        },
+        {
+          "name": "Jalon Walker",
+          "pos": "LB",
+          "ps": 10.3
+        },
+        {
+          "name": "Leonard Floyd",
+          "pos": "LB",
+          "ps": 7.0
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "A.J. Terrell",
+          "pos": "CB",
+          "ps": 18.0
+        },
+        {
+          "name": "Xavier Watts",
+          "pos": "S",
+          "ps": 14.7
+        },
+        {
+          "name": "Jessie Bates III",
+          "pos": "S",
+          "ps": 14.4
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Cameron Thomas",
+          "unit": "pass_rush",
+          "from": "CLE",
+          "to": "ATL",
+          "ps": 3.1,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "EDGE depth ->ATL"
+        }
+      ]
+    },
+    "BAL": {
+      "team": "BAL",
+      "pass_cov_strength_2025": 91.0,
+      "pass_cov_pctl_2025": 48.4,
+      "pass_rush_strength_2025": 18.8,
+      "pass_rush_pctl_2025": 4.7,
+      "run_def_strength_2025": 78.2,
+      "run_def_pctl_2025": 57.8,
+      "pass_cov_epatgt_2025": 0.1859,
+      "pass_cov_strength_2026": 91.0,
+      "pass_cov_pctl_2026": 57.8,
+      "pass_rush_strength_2026": 43.4,
+      "pass_rush_pctl_2026": 20.3,
+      "run_def_strength_2026": 92.8,
+      "run_def_pctl_2026": 70.3,
+      "pass_cov_epatgt_2026": 0.1859,
+      "pass_cov_strength": 91.0,
+      "pass_cov_pctl": 57.8,
+      "pass_cov_epatgt": 0.1859,
+      "pass_rush_strength": 43.4,
+      "pass_rush_pctl": 20.3,
+      "run_def_strength": 92.8,
+      "run_def_pctl": 70.3,
+      "top_coverage": [
+        {
+          "name": "Kyle Hamilton",
+          "pos": "S",
+          "ps": 21.6,
+          "epatgt": -0.17
+        },
+        {
+          "name": "Chidobe Awuzie",
+          "pos": "CB",
+          "ps": 19.5,
+          "epatgt": 0.17
+        },
+        {
+          "name": "Nate Wiggins",
+          "pos": "CB",
+          "ps": 18.7,
+          "epatgt": 0.31
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Calais Campbell",
+          "pos": "DE",
+          "ps": 14.4
+        },
+        {
+          "name": "Travis Jones",
+          "pos": "DT",
+          "ps": 10.9
+        },
+        {
+          "name": "Trey Hendrickson",
+          "pos": "DE",
+          "ps": 10.2
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Kyle Hamilton",
+          "pos": "S",
+          "ps": 16.8
+        },
+        {
+          "name": "Roquan Smith",
+          "pos": "LB",
+          "ps": 15.5
+        },
+        {
+          "name": "Jaylinn Hawkins",
+          "pos": "S",
+          "ps": 14.6
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Chidobe Awuzie",
+          "unit": "coverage",
+          "from": "BAL",
+          "to": "BAL",
+          "ps": 19.5,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": false,
+          "note": "CB re-routed/retained BAL (was on BAL roster)"
+        },
+        {
+          "player": "Jaylinn Hawkins",
+          "unit": "run_def",
+          "from": "NE",
+          "to": "BAL",
+          "ps": 14.6,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S ->BAL"
+        },
+        {
+          "player": "Calais Campbell",
+          "unit": "pass_rush",
+          "from": "ARI",
+          "to": "BAL",
+          "ps": 14.4,
+          "src": "https://www.baltimoreravens.com/news/calais-campbell-ravens-signing-veteran-free-agent-return-reunion-bringing-back",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Trey Hendrickson",
+          "unit": "pass_rush",
+          "from": "CIN",
+          "to": "BAL",
+          "ps": 10.2,
+          "src": "https://www.nfl.com/news/trey-hendrickson-ravens-sign-de-four-year-112-million-contract-maxx-crosby-trade",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "BUF": {
+      "team": "BUF",
+      "pass_cov_strength_2025": 98.2,
+      "pass_cov_pctl_2025": 54.7,
+      "pass_rush_strength_2025": 64.1,
+      "pass_rush_pctl_2025": 43.8,
+      "run_def_strength_2025": 47.8,
+      "run_def_pctl_2025": 14.1,
+      "pass_cov_epatgt_2025": 0.0735,
+      "pass_cov_strength_2026": 145.8,
+      "pass_cov_pctl_2026": 82.8,
+      "pass_rush_strength_2026": 58.6,
+      "pass_rush_pctl_2026": 39.1,
+      "run_def_strength_2026": 70.5,
+      "run_def_pctl_2026": 57.8,
+      "pass_cov_epatgt_2026": 0.0924,
+      "pass_cov_strength": 145.8,
+      "pass_cov_pctl": 82.8,
+      "pass_cov_epatgt": 0.0924,
+      "pass_rush_strength": 58.6,
+      "pass_rush_pctl": 39.1,
+      "run_def_strength": 70.5,
+      "run_def_pctl": 57.8,
+      "top_coverage": [
+        {
+          "name": "Cole Bishop",
+          "pos": "S",
+          "ps": 29.8,
+          "epatgt": -0.16
+        },
+        {
+          "name": "Dee Alford",
+          "pos": "CB",
+          "ps": 29.5,
+          "epatgt": -0.05
+        },
+        {
+          "name": "Christian Benford",
+          "pos": "CB",
+          "ps": 25.7,
+          "epatgt": -0.08
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Bradley Chubb",
+          "pos": "LB",
+          "ps": 19.4
+        },
+        {
+          "name": "Greg Rousseau",
+          "pos": "DE",
+          "ps": 18.9
+        },
+        {
+          "name": "Deone Walker",
+          "pos": "DT",
+          "ps": 8.0
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordan Poyer",
+          "pos": "S",
+          "ps": 15.8
+        },
+        {
+          "name": "Cole Bishop",
+          "pos": "S",
+          "ps": 14.7
+        },
+        {
+          "name": "Geno Stone",
+          "pos": "S",
+          "ps": 14.5
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Dee Alford",
+          "unit": "coverage",
+          "from": "ATL",
+          "to": "BUF",
+          "ps": 29.5,
+          "src": "https://sports.yahoo.com/articles/buffalo-bills-agree-terms-atlanta-035900209.html",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Bradley Chubb",
+          "unit": "pass_rush",
+          "from": "MIA",
+          "to": "BUF",
+          "ps": 19.4,
+          "src": "https://www.nfl.com/news/bills-signing-ex-dolphins-pass-rusher-bradley-chubb",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "C.J. Gardner-Johnson",
+          "unit": "coverage",
+          "from": "2 teams",
+          "to": "BUF",
+          "ps": 18.2,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "2 teams 2025 -> BUF"
+        },
+        {
+          "player": "Geno Stone",
+          "unit": "run_def",
+          "from": "CIN",
+          "to": "BUF",
+          "ps": 14.5,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S CIN->BUF"
+        },
+        {
+          "player": "C.J. Gardner-Johnson",
+          "unit": "run_def",
+          "from": "2 teams",
+          "to": "BUF",
+          "ps": 6.6,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "2 teams 2025 -> BUF"
+        },
+        {
+          "player": "Dee Alford",
+          "unit": "run_def",
+          "from": "ATL",
+          "to": "BUF",
+          "ps": 6.5,
+          "src": "https://sports.yahoo.com/articles/buffalo-bills-agree-terms-atlanta-035900209.html",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Geno Stone",
+          "unit": "coverage",
+          "from": "CIN",
+          "to": "BUF",
+          "ps": 5.5,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S CIN->BUF"
+        }
+      ]
+    },
+    "CAR": {
+      "team": "CAR",
+      "pass_cov_strength_2025": 102.9,
+      "pass_cov_pctl_2025": 64.1,
+      "pass_rush_strength_2025": 15.4,
+      "pass_rush_pctl_2025": 1.6,
+      "run_def_strength_2025": 71.1,
+      "run_def_pctl_2025": 39.1,
+      "pass_cov_epatgt_2025": -0.0191,
+      "pass_cov_strength_2026": 102.9,
+      "pass_cov_pctl_2026": 73.4,
+      "pass_rush_strength_2026": 38.4,
+      "pass_rush_pctl_2026": 7.8,
+      "run_def_strength_2026": 82.7,
+      "run_def_pctl_2026": 64.1,
+      "pass_cov_epatgt_2026": -0.0191,
+      "pass_cov_strength": 102.9,
+      "pass_cov_pctl": 73.4,
+      "pass_cov_epatgt": -0.0191,
+      "pass_rush_strength": 38.4,
+      "pass_rush_pctl": 7.8,
+      "run_def_strength": 82.7,
+      "run_def_pctl": 64.1,
+      "top_coverage": [
+        {
+          "name": "Mike Jackson Sr.",
+          "pos": "CB",
+          "ps": 35.4,
+          "epatgt": -0.15
+        },
+        {
+          "name": "Jaycee Horn",
+          "pos": "CB",
+          "ps": 25.3,
+          "epatgt": -0.17
+        },
+        {
+          "name": "Tre'von Moehrig",
+          "pos": "S",
+          "ps": 20.8,
+          "epatgt": 0.28
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jaelan Phillips",
+          "pos": "LB",
+          "ps": 21.1
+        },
+        {
+          "name": "Derrick Brown",
+          "pos": "DT",
+          "ps": 13.5
+        },
+        {
+          "name": "A'Shawn Robinson",
+          "pos": "DT",
+          "ps": 9.3
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Derrick Brown",
+          "pos": "DT",
+          "ps": 20.0
+        },
+        {
+          "name": "Nick Scott",
+          "pos": "S",
+          "ps": 15.5
+        },
+        {
+          "name": "Jaelan Phillips",
+          "pos": "LB",
+          "ps": 14.8
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jaelan Phillips",
+          "unit": "pass_rush",
+          "from": "2 teams",
+          "to": "CAR",
+          "ps": 21.1,
+          "src": "https://www.nfl.com/news/top-101-nfl-free-agents-of-2026",
+          "conf": true,
+          "note": "2 teams 2025 -> CAR 2026"
+        },
+        {
+          "player": "Jaelan Phillips",
+          "unit": "run_def",
+          "from": "2 teams",
+          "to": "CAR",
+          "ps": 14.8,
+          "src": "https://www.nfl.com/news/top-101-nfl-free-agents-of-2026",
+          "conf": true,
+          "note": "2 teams 2025 -> CAR 2026"
+        },
+        {
+          "player": "Devin Lloyd",
+          "unit": "run_def",
+          "from": "JAX",
+          "to": "CAR",
+          "ps": 2.4,
+          "src": "https://www.cbssports.com/nfl/news/2026-nfl-free-agency-panthers-jets-defense/",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Devin Lloyd",
+          "unit": "pass_rush",
+          "from": "JAX",
+          "to": "CAR",
+          "ps": 1.9,
+          "src": "https://www.cbssports.com/nfl/news/2026-nfl-free-agency-panthers-jets-defense/",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "CHI": {
+      "team": "CHI",
+      "pass_cov_strength_2025": 105.1,
+      "pass_cov_pctl_2025": 70.3,
+      "pass_rush_strength_2025": 44.7,
+      "pass_rush_pctl_2025": 23.4,
+      "run_def_strength_2025": 94.4,
+      "run_def_pctl_2025": 92.2,
+      "pass_cov_epatgt_2025": 0.2188,
+      "pass_cov_strength_2026": 94.9,
+      "pass_cov_pctl_2026": 62.5,
+      "pass_rush_strength_2026": 44.7,
+      "pass_rush_pctl_2026": 23.4,
+      "run_def_strength_2026": 55.1,
+      "run_def_pctl_2026": 35.9,
+      "pass_cov_epatgt_2026": 0.3356,
+      "pass_cov_strength": 94.9,
+      "pass_cov_pctl": 62.5,
+      "pass_cov_epatgt": 0.3356,
+      "pass_rush_strength": 44.7,
+      "pass_rush_pctl": 23.4,
+      "run_def_strength": 55.1,
+      "run_def_pctl": 35.9,
+      "top_coverage": [
+        {
+          "name": "Devin Bush",
+          "pos": "LB",
+          "ps": 30.7,
+          "epatgt": -0.01
+        },
+        {
+          "name": "Coby Bryant",
+          "pos": "S",
+          "ps": 25.3,
+          "epatgt": 0.24
+        },
+        {
+          "name": "Jaquan Brisker",
+          "pos": "S",
+          "ps": 19.3,
+          "epatgt": 0.07
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Montez Sweat",
+          "pos": "DE",
+          "ps": 20.7
+        },
+        {
+          "name": "Gervon Dexter Sr.",
+          "pos": "DT",
+          "ps": 16.2
+        },
+        {
+          "name": "Austin Booker",
+          "pos": "DE",
+          "ps": 3.9
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Devin Bush",
+          "pos": "LB",
+          "ps": 21.8
+        },
+        {
+          "name": "Jaquan Brisker",
+          "pos": "S",
+          "ps": 14.7
+        },
+        {
+          "name": "T.J. Edwards",
+          "pos": "LB",
+          "ps": 7.3
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Devin Bush",
+          "unit": "coverage",
+          "from": "CLE",
+          "to": "CHI",
+          "ps": 30.7,
+          "src": "https://chicago.suntimes.com/bears/2026/03/09/bears-to-sign-playmaking-veteran-devin-bush-jr",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Coby Bryant",
+          "unit": "coverage",
+          "from": "SEA",
+          "to": "CHI",
+          "ps": 25.3,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S SEA->CHI"
+        },
+        {
+          "player": "Devin Bush",
+          "unit": "run_def",
+          "from": "CLE",
+          "to": "CHI",
+          "ps": 21.8,
+          "src": "https://chicago.suntimes.com/bears/2026/03/09/bears-to-sign-playmaking-veteran-devin-bush-jr",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Coby Bryant",
+          "unit": "run_def",
+          "from": "SEA",
+          "to": "CHI",
+          "ps": 6.2,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S SEA->CHI"
+        }
+      ]
+    },
+    "CIN": {
+      "team": "CIN",
+      "pass_cov_strength_2025": 49.9,
+      "pass_cov_pctl_2025": 20.3,
+      "pass_rush_strength_2025": 54.5,
+      "pass_rush_pctl_2025": 32.8,
+      "run_def_strength_2025": 81.5,
+      "run_def_pctl_2025": 64.1,
+      "pass_cov_epatgt_2025": 0.1956,
+      "pass_cov_strength_2026": 67.5,
+      "pass_cov_pctl_2026": 29.7,
+      "pass_rush_strength_2026": 59.3,
+      "pass_rush_pctl_2026": 42.2,
+      "run_def_strength_2026": 100.1,
+      "run_def_pctl_2026": 79.7,
+      "pass_cov_epatgt_2026": 0.1351,
+      "pass_cov_strength": 67.5,
+      "pass_cov_pctl": 29.7,
+      "pass_cov_epatgt": 0.1351,
+      "pass_rush_strength": 59.3,
+      "pass_rush_pctl": 42.2,
+      "run_def_strength": 100.1,
+      "run_def_pctl": 79.7,
+      "top_coverage": [
+        {
+          "name": "Bryan Cook",
+          "pos": "S",
+          "ps": 23.1,
+          "epatgt": 0.02
+        },
+        {
+          "name": "DJ Turner II",
+          "pos": "CB",
+          "ps": 19.4,
+          "epatgt": -0.24
+        },
+        {
+          "name": "Dax Hill",
+          "pos": "CB",
+          "ps": 13.5,
+          "epatgt": 0.31
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Dexter Lawrence",
+          "pos": "DT",
+          "ps": 15.1
+        },
+        {
+          "name": "Myles Murphy",
+          "pos": "DE",
+          "ps": 13.4
+        },
+        {
+          "name": "Cedric Johnson",
+          "pos": "DE",
+          "ps": 12.7
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordan Battle",
+          "pos": "S",
+          "ps": 23.4
+        },
+        {
+          "name": "Jonathan Allen",
+          "pos": "DT",
+          "ps": 17.3
+        },
+        {
+          "name": "Dax Hill",
+          "pos": "CB",
+          "ps": 16.8
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Bryan Cook",
+          "unit": "coverage",
+          "from": "KC",
+          "to": "CIN",
+          "ps": 23.1,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S KC->CIN"
+        },
+        {
+          "player": "Jonathan Allen",
+          "unit": "run_def",
+          "from": "MIN",
+          "to": "CIN",
+          "ps": 17.3,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "DT MIN->CIN"
+        },
+        {
+          "player": "Bryan Cook",
+          "unit": "run_def",
+          "from": "KC",
+          "to": "CIN",
+          "ps": 15.7,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "S KC->CIN"
+        },
+        {
+          "player": "Dexter Lawrence",
+          "unit": "pass_rush",
+          "from": "NYG",
+          "to": "CIN",
+          "ps": 15.1,
+          "src": "https://www.nfl.com/news/nfl-network-giants-trading-dt-dexter-lawrence-to-bengals-in-exchange-for-2026-no-10-overall-pick",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Jonathan Allen",
+          "unit": "pass_rush",
+          "from": "MIN",
+          "to": "CIN",
+          "ps": 6.4,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "DT MIN->CIN"
+        },
+        {
+          "player": "Boye Mafe",
+          "unit": "pass_rush",
+          "from": "SEA",
+          "to": "CIN",
+          "ps": 3.6,
+          "src": "https://www.espn.com/nfl/story/_/id/48083059/nfl-free-agency-2026-all-signings-afc-nfc-teams",
+          "conf": true,
+          "note": "EDGE SEA->CIN"
+        }
+      ]
+    },
+    "CLE": {
+      "team": "CLE",
+      "pass_cov_strength_2025": 77.5,
+      "pass_cov_pctl_2025": 39.1,
+      "pass_rush_strength_2025": 109.0,
+      "pass_rush_pctl_2025": 92.2,
+      "run_def_strength_2025": 87.6,
+      "run_def_pctl_2025": 76.6,
+      "pass_cov_epatgt_2025": 0.0291,
+      "pass_cov_strength_2026": 67.1,
+      "pass_cov_pctl_2026": 26.6,
+      "pass_rush_strength_2026": 79.3,
+      "pass_rush_pctl_2026": 67.2,
+      "run_def_strength_2026": 97.7,
+      "run_def_pctl_2026": 73.4,
+      "pass_cov_epatgt_2026": 0.0357,
+      "pass_cov_strength": 67.1,
+      "pass_cov_pctl": 26.6,
+      "pass_cov_epatgt": 0.0357,
+      "pass_rush_strength": 79.3,
+      "pass_rush_pctl": 67.2,
+      "run_def_strength": 97.7,
+      "run_def_pctl": 73.4,
+      "top_coverage": [
+        {
+          "name": "Grant Delpit",
+          "pos": "S",
+          "ps": 22.9,
+          "epatgt": 0.19
+        },
+        {
+          "name": "Denzel Ward",
+          "pos": "CB",
+          "ps": 21.5,
+          "epatgt": 0.02
+        },
+        {
+          "name": "Tyson Campbell",
+          "pos": "CB",
+          "ps": 20.3,
+          "epatgt": 0.0
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jared Verse",
+          "pos": "LB",
+          "ps": 27.9
+        },
+        {
+          "name": "Maliek Collins",
+          "pos": "DT",
+          "ps": 15.6
+        },
+        {
+          "name": "Mason Graham",
+          "pos": "DT",
+          "ps": 9.8
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Carson Schwesinger",
+          "pos": "LB",
+          "ps": 26.9
+        },
+        {
+          "name": "Tyson Campbell",
+          "pos": "CB",
+          "ps": 24.8
+        },
+        {
+          "name": "Ronnie Hickman",
+          "pos": "S",
+          "ps": 17.1
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jared Verse",
+          "unit": "pass_rush",
+          "from": "LAR",
+          "to": "CLE",
+          "ps": 27.9,
+          "src": "https://www.nfl.com/news/nfl-network-browns-trading-myles-garrett-to-rams-jared-verse",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Tyson Campbell",
+          "unit": "run_def",
+          "from": "2 teams",
+          "to": "CLE",
+          "ps": 24.8,
+          "src": "https://www.nfl.com/news/jaguars-trade-cb-tyson-campbell",
+          "conf": true,
+          "note": "2 teams (mid-2025 JAX->CLE) -> CLE 2026"
+        },
+        {
+          "player": "Tyson Campbell",
+          "unit": "coverage",
+          "from": "2 teams",
+          "to": "CLE",
+          "ps": 20.3,
+          "src": "https://www.nfl.com/news/jaguars-trade-cb-tyson-campbell",
+          "conf": true,
+          "note": "2 teams (mid-2025 JAX->CLE) -> CLE 2026"
+        },
+        {
+          "player": "Jared Verse",
+          "unit": "run_def",
+          "from": "LAR",
+          "to": "CLE",
+          "ps": 10.8,
+          "src": "https://www.nfl.com/news/nfl-network-browns-trading-myles-garrett-to-rams-jared-verse",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Quincy Williams",
+          "unit": "run_def",
+          "from": "NYJ",
+          "to": "CLE",
+          "ps": 3.6,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB NYJ->CLE"
+        },
+        {
+          "player": "Quincy Williams",
+          "unit": "coverage",
+          "from": "NYJ",
+          "to": "CLE",
+          "ps": 0.0,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB NYJ->CLE"
+        }
+      ]
+    },
+    "DAL": {
+      "team": "DAL",
+      "pass_cov_strength_2025": 43.0,
+      "pass_cov_pctl_2025": 17.2,
+      "pass_rush_strength_2025": 60.2,
+      "pass_rush_pctl_2025": 39.1,
+      "run_def_strength_2025": 33.1,
+      "run_def_pctl_2025": 4.7,
+      "pass_cov_epatgt_2025": 0.1767,
+      "pass_cov_strength_2026": 75.9,
+      "pass_cov_pctl_2026": 39.1,
+      "pass_rush_strength_2026": 48.7,
+      "pass_rush_pctl_2026": 26.6,
+      "run_def_strength_2026": 47.1,
+      "run_def_pctl_2026": 17.2,
+      "pass_cov_epatgt_2026": 0.0996,
+      "pass_cov_strength": 75.9,
+      "pass_cov_pctl": 39.1,
+      "pass_cov_epatgt": 0.0996,
+      "pass_rush_strength": 48.7,
+      "pass_rush_pctl": 26.6,
+      "run_def_strength": 47.1,
+      "run_def_pctl": 17.2,
+      "top_coverage": [
+        {
+          "name": "Cobie Durant",
+          "pos": "CB",
+          "ps": 24.8,
+          "epatgt": -0.26
+        },
+        {
+          "name": "Donovan Wilson",
+          "pos": "S",
+          "ps": 12.3,
+          "epatgt": 0.23
+        },
+        {
+          "name": "DaRon Bland",
+          "pos": "CB",
+          "ps": 11.2,
+          "epatgt": -0.03
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Rashan Gary",
+          "pos": "DE",
+          "ps": 20.7
+        },
+        {
+          "name": "Osa Odighizuwa",
+          "pos": "DT",
+          "ps": 13.9
+        },
+        {
+          "name": "James Houston",
+          "pos": "LB",
+          "ps": 8.2
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jalen Thompson",
+          "pos": "S",
+          "ps": 14.0
+        },
+        {
+          "name": "Donovan Wilson",
+          "pos": "S",
+          "ps": 13.2
+        },
+        {
+          "name": "DaRon Bland",
+          "pos": "CB",
+          "ps": 12.1
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Cobie Durant",
+          "unit": "coverage",
+          "from": "LAR",
+          "to": "DAL",
+          "ps": 24.8,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "CB LAR->DAL"
+        },
+        {
+          "player": "Rashan Gary",
+          "unit": "pass_rush",
+          "from": "GB",
+          "to": "DAL",
+          "ps": 20.7,
+          "src": "https://www.cbssports.com/nfl/news/rashan-gary-trade-cowboys-packers/",
+          "conf": true,
+          "note": "EDGE traded GB->DAL"
+        },
+        {
+          "player": "Jalen Thompson",
+          "unit": "run_def",
+          "from": "ARI",
+          "to": "DAL",
+          "ps": 14.0,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-tracker",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Jalen Thompson",
+          "unit": "coverage",
+          "from": "ARI",
+          "to": "DAL",
+          "ps": 8.2,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-tracker",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "DEN": {
+      "team": "DEN",
+      "pass_cov_strength_2025": 168.0,
+      "pass_cov_pctl_2025": 95.3,
+      "pass_rush_strength_2025": 109.3,
+      "pass_rush_pctl_2025": 95.3,
+      "run_def_strength_2025": 56.1,
+      "run_def_pctl_2025": 29.7,
+      "pass_cov_epatgt_2025": 0.1088,
+      "pass_cov_strength_2026": 168.0,
+      "pass_cov_pctl_2026": 98.4,
+      "pass_rush_strength_2026": 94.1,
+      "pass_rush_pctl_2026": 92.2,
+      "run_def_strength_2026": 56.1,
+      "run_def_pctl_2026": 39.1,
+      "pass_cov_epatgt_2026": 0.1088,
+      "pass_cov_strength": 168.0,
+      "pass_cov_pctl": 98.4,
+      "pass_cov_epatgt": 0.1088,
+      "pass_rush_strength": 94.1,
+      "pass_rush_pctl": 92.2,
+      "run_def_strength": 56.1,
+      "run_def_pctl": 39.1,
+      "top_coverage": [
+        {
+          "name": "Pat Surtain II",
+          "pos": "CB",
+          "ps": 38.5,
+          "epatgt": -0.18
+        },
+        {
+          "name": "Riley Moss",
+          "pos": "CB",
+          "ps": 35.1,
+          "epatgt": 0.07
+        },
+        {
+          "name": "Brandon Jones",
+          "pos": "S",
+          "ps": 30.7,
+          "epatgt": 0.19
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Nik Bonitto",
+          "pos": "LB",
+          "ps": 27.3
+        },
+        {
+          "name": "Zach Allen",
+          "pos": "DE",
+          "ps": 22.6
+        },
+        {
+          "name": "Jonathon Cooper",
+          "pos": "LB",
+          "ps": 13.5
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Talanoa Hufanga",
+          "pos": "S",
+          "ps": 24.1
+        },
+        {
+          "name": "Brandon Jones",
+          "pos": "S",
+          "ps": 12.4
+        },
+        {
+          "name": "Alex Singleton",
+          "pos": "LB",
+          "ps": 8.6
+        }
+      ],
+      "moves_2026": []
+    },
+    "DET": {
+      "team": "DET",
+      "pass_cov_strength_2025": 97.4,
+      "pass_cov_pctl_2025": 51.6,
+      "pass_rush_strength_2025": 98.4,
+      "pass_rush_pctl_2025": 89.1,
+      "run_def_strength_2025": 54.2,
+      "run_def_pctl_2025": 23.4,
+      "pass_cov_epatgt_2025": 0.1241,
+      "pass_cov_strength_2026": 75.7,
+      "pass_cov_pctl_2026": 35.9,
+      "pass_rush_strength_2026": 81.6,
+      "pass_rush_pctl_2026": 70.3,
+      "run_def_strength_2026": 49.3,
+      "run_def_pctl_2026": 23.4,
+      "pass_cov_epatgt_2026": 0.0667,
+      "pass_cov_strength": 75.7,
+      "pass_cov_pctl": 35.9,
+      "pass_cov_epatgt": 0.0667,
+      "pass_rush_strength": 81.6,
+      "pass_rush_pctl": 70.3,
+      "run_def_strength": 49.3,
+      "run_def_pctl": 23.4,
+      "top_coverage": [
+        {
+          "name": "Jack Campbell",
+          "pos": "LB",
+          "ps": 26.9,
+          "epatgt": -0.21
+        },
+        {
+          "name": "Rock Ya-Sin",
+          "pos": "CB",
+          "ps": 20.8,
+          "epatgt": -0.01
+        },
+        {
+          "name": "D.J. Reed",
+          "pos": "CB",
+          "ps": 11.4,
+          "epatgt": 0.18
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Aidan Hutchinson",
+          "pos": "DE",
+          "ps": 63.7
+        },
+        {
+          "name": "Jack Campbell",
+          "pos": "LB",
+          "ps": 9.2
+        },
+        {
+          "name": "Alim McNeill",
+          "pos": "DT",
+          "ps": 9.1
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jack Campbell",
+          "pos": "LB",
+          "ps": 31.9
+        },
+        {
+          "name": "Brian Branch",
+          "pos": "S",
+          "ps": 16.3
+        },
+        {
+          "name": "Derrick Barnes",
+          "pos": "LB",
+          "ps": 1.1
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Rock Ya-Sin",
+          "unit": "coverage",
+          "from": "DET",
+          "to": "DET",
+          "ps": 20.8,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "CB ->DET"
+        }
+      ]
+    },
+    "GB": {
+      "team": "GB",
+      "pass_cov_strength_2025": 77.6,
+      "pass_cov_pctl_2025": 42.2,
+      "pass_rush_strength_2025": 81.8,
+      "pass_rush_pctl_2025": 70.3,
+      "run_def_strength_2025": 88.3,
+      "run_def_pctl_2025": 79.7,
+      "pass_cov_epatgt_2025": 0.2156,
+      "pass_cov_strength_2026": 101.4,
+      "pass_cov_pctl_2026": 70.3,
+      "pass_rush_strength_2026": 67.9,
+      "pass_rush_pctl_2026": 51.6,
+      "run_def_strength_2026": 79.8,
+      "run_def_pctl_2026": 60.9,
+      "pass_cov_epatgt_2026": 0.1929,
+      "pass_cov_strength": 101.4,
+      "pass_cov_pctl": 70.3,
+      "pass_cov_epatgt": 0.1929,
+      "pass_rush_strength": 67.9,
+      "pass_rush_pctl": 51.6,
+      "run_def_strength": 79.8,
+      "run_def_pctl": 60.9,
+      "top_coverage": [
+        {
+          "name": "Edgerrin Cooper",
+          "pos": "LB",
+          "ps": 24.7,
+          "epatgt": -0.35
+        },
+        {
+          "name": "Benjamin St-Juste",
+          "pos": "CB",
+          "ps": 21.1,
+          "epatgt": 0.08
+        },
+        {
+          "name": "Keisean Nixon",
+          "pos": "CB",
+          "ps": 18.3,
+          "epatgt": 0.2
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Micah Parsons",
+          "pos": "DE",
+          "ps": 36.4
+        },
+        {
+          "name": "Devonte Wyatt",
+          "pos": "DT",
+          "ps": 17.1
+        },
+        {
+          "name": "Zaire Franklin",
+          "pos": "LB",
+          "ps": 4.4
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Xavier McKinney",
+          "pos": "S",
+          "ps": 17.7
+        },
+        {
+          "name": "Evan Williams",
+          "pos": "S",
+          "ps": 15.8
+        },
+        {
+          "name": "Keisean Nixon",
+          "pos": "CB",
+          "ps": 14.3
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Benjamin St-Juste",
+          "unit": "coverage",
+          "from": "LAC",
+          "to": "GB",
+          "ps": 21.1,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "CB LAC->GB"
+        },
+        {
+          "player": "Zaire Franklin",
+          "unit": "coverage",
+          "from": "IND",
+          "to": "GB",
+          "ps": 11.1,
+          "src": "https://www.cbssports.com/nfl/news/nfl-trade-tracker-grades/",
+          "conf": true,
+          "note": "LB traded IND->GB"
+        },
+        {
+          "player": "Zaire Franklin",
+          "unit": "pass_rush",
+          "from": "IND",
+          "to": "GB",
+          "ps": 4.4,
+          "src": "https://www.cbssports.com/nfl/news/nfl-trade-tracker-grades/",
+          "conf": true,
+          "note": "LB traded IND->GB"
+        },
+        {
+          "player": "Javon Hargrave",
+          "unit": "pass_rush",
+          "from": "MIN",
+          "to": "GB",
+          "ps": 4.3,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "DT ->GB"
+        },
+        {
+          "player": "Zaire Franklin",
+          "unit": "run_def",
+          "from": "IND",
+          "to": "GB",
+          "ps": -0.9,
+          "src": "https://www.cbssports.com/nfl/news/nfl-trade-tracker-grades/",
+          "conf": true,
+          "note": "LB traded IND->GB"
+        }
+      ]
+    },
+    "HOU": {
+      "team": "HOU",
+      "pass_cov_strength_2025": 142.6,
+      "pass_cov_pctl_2025": 89.1,
+      "pass_rush_strength_2025": 137.2,
+      "pass_rush_pctl_2025": 98.4,
+      "run_def_strength_2025": 92.0,
+      "run_def_pctl_2025": 89.1,
+      "pass_cov_epatgt_2025": -0.135,
+      "pass_cov_strength_2026": 161.8,
+      "pass_cov_pctl_2026": 95.3,
+      "pass_rush_strength_2026": 138.0,
+      "pass_rush_pctl_2026": 98.4,
+      "run_def_strength_2026": 112.8,
+      "run_def_pctl_2026": 95.3,
+      "pass_cov_epatgt_2026": -0.1249,
+      "pass_cov_strength": 161.8,
+      "pass_cov_pctl": 95.3,
+      "pass_cov_epatgt": -0.1249,
+      "pass_rush_strength": 138.0,
+      "pass_rush_pctl": 98.4,
+      "run_def_strength": 112.8,
+      "run_def_pctl": 95.3,
+      "top_coverage": [
+        {
+          "name": "Derek Stingley Jr.",
+          "pos": "CB",
+          "ps": 41.9,
+          "epatgt": -0.03
+        },
+        {
+          "name": "Jalen Pitre",
+          "pos": "S",
+          "ps": 28.3,
+          "epatgt": -0.29
+        },
+        {
+          "name": "Calen Bullock",
+          "pos": "S",
+          "ps": 25.4,
+          "epatgt": -0.45
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Will Anderson Jr.",
+          "pos": "DE",
+          "ps": 57.4
+        },
+        {
+          "name": "Danielle Hunter",
+          "pos": "DE",
+          "ps": 47.2
+        },
+        {
+          "name": "Tommy Togiai",
+          "pos": "DT",
+          "ps": 13.2
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Reed Blankenship",
+          "pos": "S",
+          "ps": 20.9
+        },
+        {
+          "name": "Tommy Togiai",
+          "pos": "DT",
+          "ps": 20.3
+        },
+        {
+          "name": "Kamari Lassiter",
+          "pos": "CB",
+          "ps": 19.4
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Reed Blankenship",
+          "unit": "run_def",
+          "from": "PHI",
+          "to": "HOU",
+          "ps": 20.9,
+          "src": "https://www.inquirer.com/eagles/reed-blankenship-houston-texans-2026-nfl-free-agency-20260309.html",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Reed Blankenship",
+          "unit": "coverage",
+          "from": "PHI",
+          "to": "HOU",
+          "ps": 19.3,
+          "src": "https://www.inquirer.com/eagles/reed-blankenship-houston-texans-2026-nfl-free-agency-20260309.html",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Logan Hall",
+          "unit": "pass_rush",
+          "from": "TB",
+          "to": "HOU",
+          "ps": 0.8,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "DL TB->HOU"
+        }
+      ]
+    },
+    "IND": {
+      "team": "IND",
+      "pass_cov_strength_2025": 42.8,
+      "pass_cov_pctl_2025": 14.1,
+      "pass_rush_strength_2025": 73.5,
+      "pass_rush_pctl_2025": 60.9,
+      "run_def_strength_2025": 55.2,
+      "run_def_pctl_2025": 26.6,
+      "pass_cov_epatgt_2025": 0.2143,
+      "pass_cov_strength_2026": 28.2,
+      "pass_cov_pctl_2026": 1.6,
+      "pass_rush_strength_2026": 71.9,
+      "pass_rush_pctl_2026": 60.9,
+      "run_def_strength_2026": 41.8,
+      "run_def_pctl_2026": 10.9,
+      "pass_cov_epatgt_2026": 0.1664,
+      "pass_cov_strength": 28.2,
+      "pass_cov_pctl": 1.6,
+      "pass_cov_epatgt": 0.1664,
+      "pass_rush_strength": 71.9,
+      "pass_rush_pctl": 60.9,
+      "run_def_strength": 41.8,
+      "run_def_pctl": 10.9,
+      "top_coverage": [
+        {
+          "name": "Kenny Moore II",
+          "pos": "CB",
+          "ps": 11.7,
+          "epatgt": 0.2
+        },
+        {
+          "name": "Mekhi Blackmon",
+          "pos": "CB",
+          "ps": 10.0,
+          "epatgt": 0.21
+        },
+        {
+          "name": "Charvarius Ward",
+          "pos": "CB",
+          "ps": 6.5,
+          "epatgt": 0.05
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Laiatu Latu",
+          "pos": "DE",
+          "ps": 28.5
+        },
+        {
+          "name": "DeForest Buckner",
+          "pos": "DT",
+          "ps": 16.9
+        },
+        {
+          "name": "Arden Key",
+          "pos": "DE",
+          "ps": 6.7
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Grover Stewart",
+          "pos": "DT",
+          "ps": 12.7
+        },
+        {
+          "name": "Camryn Bynum",
+          "pos": "S",
+          "ps": 11.4
+        },
+        {
+          "name": "Mekhi Blackmon",
+          "pos": "CB",
+          "ps": 10.5
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Arden Key",
+          "unit": "pass_rush",
+          "from": "TEN",
+          "to": "IND",
+          "ps": 6.7,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "EDGE TEN->IND"
+        }
+      ]
+    },
+    "JAX": {
+      "team": "JAX",
+      "pass_cov_strength_2025": 145.5,
+      "pass_cov_pctl_2025": 92.2,
+      "pass_rush_strength_2025": 64.3,
+      "pass_rush_pctl_2025": 48.4,
+      "run_def_strength_2025": 34.4,
+      "run_def_pctl_2025": 7.8,
+      "pass_cov_epatgt_2025": -0.1599,
+      "pass_cov_strength_2026": 145.6,
+      "pass_cov_pctl_2026": 79.7,
+      "pass_rush_strength_2026": 62.4,
+      "pass_rush_pctl_2026": 45.3,
+      "run_def_strength_2026": 16.9,
+      "run_def_pctl_2026": 1.6,
+      "pass_cov_epatgt_2026": -0.1459,
+      "pass_cov_strength": 145.6,
+      "pass_cov_pctl": 79.7,
+      "pass_cov_epatgt": -0.1459,
+      "pass_rush_strength": 62.4,
+      "pass_rush_pctl": 45.3,
+      "run_def_strength": 16.9,
+      "run_def_pctl": 1.6,
+      "top_coverage": [
+        {
+          "name": "Antonio Johnson",
+          "pos": "S",
+          "ps": 29.8,
+          "epatgt": -0.27
+        },
+        {
+          "name": "Montaric Brown",
+          "pos": "CB",
+          "ps": 25.9,
+          "epatgt": -0.22
+        },
+        {
+          "name": "Jourdan Lewis",
+          "pos": "CB",
+          "ps": 25.8,
+          "epatgt": -0.28
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Josh Hines-Allen",
+          "pos": "DE",
+          "ps": 28.7
+        },
+        {
+          "name": "Arik Armstead",
+          "pos": "DT",
+          "ps": 16.8
+        },
+        {
+          "name": "Travon Walker",
+          "pos": "DE",
+          "ps": 9.8
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Foyesade Oluokun",
+          "pos": "LB",
+          "ps": 16.9
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Greg Newsome II",
+          "unit": "coverage",
+          "from": "2 teams",
+          "to": "JAX",
+          "ps": 21.1,
+          "src": "https://www.aol.com/articles/jaguars-browns-swap-cornerbacks-draft-162449940.html",
+          "conf": true,
+          "note": "2 teams 2025 -> JAX 2026"
+        }
+      ]
+    },
+    "KC": {
+      "team": "KC",
+      "pass_cov_strength_2025": 99.5,
+      "pass_cov_pctl_2025": 60.9,
+      "pass_rush_strength_2025": 71.0,
+      "pass_rush_pctl_2025": 57.8,
+      "run_def_strength_2025": 78.5,
+      "run_def_pctl_2025": 60.9,
+      "pass_cov_epatgt_2025": 0.0548,
+      "pass_cov_strength_2026": 64.7,
+      "pass_cov_pctl_2026": 20.3,
+      "pass_rush_strength_2026": 71.0,
+      "pass_rush_pctl_2026": 57.8,
+      "run_def_strength_2026": 52.7,
+      "run_def_pctl_2026": 32.8,
+      "pass_cov_epatgt_2026": 0.0676,
+      "pass_cov_strength": 64.7,
+      "pass_cov_pctl": 20.3,
+      "pass_cov_epatgt": 0.0676,
+      "pass_rush_strength": 71.0,
+      "pass_rush_pctl": 57.8,
+      "run_def_strength": 52.7,
+      "run_def_pctl": 32.8,
+      "top_coverage": [
+        {
+          "name": "Alohi Gilman",
+          "pos": "S",
+          "ps": 29.9,
+          "epatgt": -0.16
+        },
+        {
+          "name": "Chamarri Conner",
+          "pos": "S",
+          "ps": 19.6,
+          "epatgt": 0.18
+        },
+        {
+          "name": "Nohl Williams",
+          "pos": "CB",
+          "ps": 10.6,
+          "epatgt": -0.14
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Chris Jones",
+          "pos": "DT",
+          "ps": 34.9
+        },
+        {
+          "name": "George Karlaftis",
+          "pos": "DE",
+          "ps": 18.5
+        },
+        {
+          "name": "Charles Omenihu",
+          "pos": "DE",
+          "ps": 9.8
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Nick Bolton",
+          "pos": "LB",
+          "ps": 16.9
+        },
+        {
+          "name": "Alohi Gilman",
+          "pos": "S",
+          "ps": 13.9
+        },
+        {
+          "name": "Drue Tranquill",
+          "pos": "LB",
+          "ps": 12.4
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Alohi Gilman",
+          "unit": "coverage",
+          "from": "2 teams",
+          "to": "KC",
+          "ps": 29.9,
+          "src": "https://sports.yahoo.com/articles/kansas-city-chiefs-sign-safety-164553767.html",
+          "conf": true,
+          "note": "2 teams (LAC/BAL) 2025 -> KC 2026"
+        },
+        {
+          "player": "Alohi Gilman",
+          "unit": "run_def",
+          "from": "2 teams",
+          "to": "KC",
+          "ps": 13.9,
+          "src": "https://sports.yahoo.com/articles/kansas-city-chiefs-sign-safety-164553767.html",
+          "conf": true,
+          "note": "2 teams (LAC/BAL) 2025 -> KC 2026"
+        }
+      ]
+    },
+    "LAC": {
+      "team": "LAC",
+      "pass_cov_strength_2025": 103.8,
+      "pass_cov_pctl_2025": 67.2,
+      "pass_rush_strength_2025": 40.6,
+      "pass_rush_pctl_2025": 17.2,
+      "run_def_strength_2025": 24.5,
+      "run_def_pctl_2025": 1.6,
+      "pass_cov_epatgt_2025": 0.0092,
+      "pass_cov_strength_2026": 82.7,
+      "pass_cov_pctl_2026": 45.3,
+      "pass_rush_strength_2026": 40.6,
+      "pass_rush_pctl_2026": 14.1,
+      "run_def_strength_2026": 24.5,
+      "run_def_pctl_2026": 4.7,
+      "pass_cov_epatgt_2026": -0.0031,
+      "pass_cov_strength": 82.7,
+      "pass_cov_pctl": 45.3,
+      "pass_cov_epatgt": -0.0031,
+      "pass_rush_strength": 40.6,
+      "pass_rush_pctl": 14.1,
+      "run_def_strength": 24.5,
+      "run_def_pctl": 4.7,
+      "top_coverage": [
+        {
+          "name": "Donte Jackson",
+          "pos": "CB",
+          "ps": 25.8,
+          "epatgt": -0.34
+        },
+        {
+          "name": "Daiyan Henley",
+          "pos": "LB",
+          "ps": 18.6,
+          "epatgt": 0.33
+        },
+        {
+          "name": "Derwin James Jr.",
+          "pos": "S",
+          "ps": 17.4,
+          "epatgt": -0.3
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Tuli Tuipulotu",
+          "pos": "LB",
+          "ps": 26.8
+        },
+        {
+          "name": "Justin Eboigbe",
+          "pos": "DE",
+          "ps": 7.6
+        },
+        {
+          "name": "Khalil Mack",
+          "pos": "LB",
+          "ps": 6.4
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Derwin James Jr.",
+          "pos": "S",
+          "ps": 12.6
+        },
+        {
+          "name": "Daiyan Henley",
+          "pos": "LB",
+          "ps": 6.3
+        },
+        {
+          "name": "Tony Jefferson",
+          "pos": "S",
+          "ps": 5.6
+        }
+      ],
+      "moves_2026": []
+    },
+    "LAR": {
+      "team": "LAR",
+      "pass_cov_strength_2025": 139.9,
+      "pass_cov_pctl_2025": 85.9,
+      "pass_rush_strength_2025": 86.6,
+      "pass_rush_pctl_2025": 79.7,
+      "run_def_strength_2025": 88.9,
+      "run_def_pctl_2025": 82.8,
+      "pass_cov_epatgt_2025": 0.124,
+      "pass_cov_strength_2026": 150.1,
+      "pass_cov_pctl_2026": 85.9,
+      "pass_rush_strength_2026": 113.2,
+      "pass_rush_pctl_2026": 95.3,
+      "run_def_strength_2026": 109.5,
+      "run_def_pctl_2026": 89.1,
+      "pass_cov_epatgt_2026": 0.1877,
+      "pass_cov_strength": 150.1,
+      "pass_cov_pctl": 85.9,
+      "pass_cov_epatgt": 0.1877,
+      "pass_rush_strength": 113.2,
+      "pass_rush_pctl": 95.3,
+      "run_def_strength": 109.5,
+      "run_def_pctl": 89.1,
+      "top_coverage": [
+        {
+          "name": "Jaylen Watson",
+          "pos": "CB",
+          "ps": 32.4,
+          "epatgt": -0.11
+        },
+        {
+          "name": "Kam Curl",
+          "pos": "S",
+          "ps": 24.6,
+          "epatgt": 0.32
+        },
+        {
+          "name": "Kamren Kinchens",
+          "pos": "S",
+          "ps": 23.4,
+          "epatgt": 0.71
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Myles Garrett",
+          "pos": "DE",
+          "ps": 54.5
+        },
+        {
+          "name": "Byron Young",
+          "pos": "LB",
+          "ps": 18.4
+        },
+        {
+          "name": "Kobie Turner",
+          "pos": "DT",
+          "ps": 13.2
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Byron Young",
+          "pos": "LB",
+          "ps": 24.6
+        },
+        {
+          "name": "Kam Curl",
+          "pos": "S",
+          "ps": 18.7
+        },
+        {
+          "name": "Nate Landman",
+          "pos": "LB",
+          "ps": 17.5
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Myles Garrett",
+          "unit": "pass_rush",
+          "from": "CLE",
+          "to": "LAR",
+          "ps": 54.5,
+          "src": "https://www.espn.com/nfl/story/_/id/48939456/sources-browns-rams-finalizing-myles-garrett-blockbuster-trade",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Jaylen Watson",
+          "unit": "coverage",
+          "from": "KC",
+          "to": "LAR",
+          "ps": 32.4,
+          "src": "https://www.therams.com/news/rams-agree-to-terms-with-cb-jaylen-watson-on-three-year-deal-free-agency-2026",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Jaylen Watson",
+          "unit": "run_def",
+          "from": "KC",
+          "to": "LAR",
+          "ps": 12.7,
+          "src": "https://www.therams.com/news/rams-agree-to-terms-with-cb-jaylen-watson-on-three-year-deal-free-agency-2026",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Trent McDuffie",
+          "unit": "run_def",
+          "from": "KC",
+          "to": "LAR",
+          "ps": 11.3,
+          "src": "https://www.aol.com/articles/rams-land-chiefs-trent-mcduffie-170732678.html",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Trent McDuffie",
+          "unit": "coverage",
+          "from": "KC",
+          "to": "LAR",
+          "ps": 9.1,
+          "src": "https://www.aol.com/articles/rams-land-chiefs-trent-mcduffie-170732678.html",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Myles Garrett",
+          "unit": "run_def",
+          "from": "CLE",
+          "to": "LAR",
+          "ps": 7.3,
+          "src": "https://www.espn.com/nfl/story/_/id/48939456/sources-browns-rams-finalizing-myles-garrett-blockbuster-trade",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "L'Jarius Sneed",
+          "unit": "coverage",
+          "from": "TEN",
+          "to": "LAR",
+          "ps": -6.5,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-best-unsigned-free-agents-2026/",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "LV": {
+      "team": "LV",
+      "pass_cov_strength_2025": 72.9,
+      "pass_cov_pctl_2025": 35.9,
+      "pass_rush_strength_2025": 41.6,
+      "pass_rush_pctl_2025": 20.3,
+      "run_def_strength_2025": 96.5,
+      "run_def_pctl_2025": 95.3,
+      "pass_cov_epatgt_2025": 0.1936,
+      "pass_cov_strength_2026": 86.9,
+      "pass_cov_pctl_2026": 54.7,
+      "pass_rush_strength_2026": 40.1,
+      "pass_rush_pctl_2026": 10.9,
+      "run_def_strength_2026": 111.8,
+      "run_def_pctl_2026": 92.2,
+      "pass_cov_epatgt_2026": 0.192,
+      "pass_cov_strength": 86.9,
+      "pass_cov_pctl": 54.7,
+      "pass_cov_epatgt": 0.192,
+      "pass_rush_strength": 40.1,
+      "pass_rush_pctl": 10.9,
+      "run_def_strength": 111.8,
+      "run_def_pctl": 92.2,
+      "top_coverage": [
+        {
+          "name": "Eric Stokes",
+          "pos": "CB",
+          "ps": 24.5,
+          "epatgt": -0.03
+        },
+        {
+          "name": "Isaiah Pola-Mao",
+          "pos": "S",
+          "ps": 14.8,
+          "epatgt": -0.05
+        },
+        {
+          "name": "Devin White",
+          "pos": "LB",
+          "ps": 12.6,
+          "epatgt": 0.0
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Maxx Crosby",
+          "pos": "DE",
+          "ps": 15.1
+        },
+        {
+          "name": "Tyree Wilson",
+          "pos": "DE",
+          "ps": 11.6
+        },
+        {
+          "name": "Malcolm Koonce",
+          "pos": "DE",
+          "ps": 9.1
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Maxx Crosby",
+          "pos": "DE",
+          "ps": 34.6
+        },
+        {
+          "name": "Jeremy Chinn",
+          "pos": "S",
+          "ps": 19.7
+        },
+        {
+          "name": "Elandon Roberts",
+          "pos": "LB",
+          "ps": 14.9
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Quay Walker",
+          "unit": "coverage",
+          "from": "GB",
+          "to": "LV",
+          "ps": 8.4,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB GB->LV"
+        },
+        {
+          "player": "Quay Walker",
+          "unit": "run_def",
+          "from": "GB",
+          "to": "LV",
+          "ps": 7.7,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB GB->LV"
+        },
+        {
+          "player": "Taron Johnson",
+          "unit": "coverage",
+          "from": "BUF",
+          "to": "LV",
+          "ps": 5.6,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "CB traded BUF->LV"
+        },
+        {
+          "player": "Taron Johnson",
+          "unit": "run_def",
+          "from": "BUF",
+          "to": "LV",
+          "ps": 4.8,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "CB traded BUF->LV"
+        },
+        {
+          "player": "Nakobe Dean",
+          "unit": "run_def",
+          "from": "PHI",
+          "to": "LV",
+          "ps": 2.8,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB PHI->LV"
+        },
+        {
+          "player": "Kwity Paye",
+          "unit": "pass_rush",
+          "from": "IND",
+          "to": "LV",
+          "ps": -1.5,
+          "src": "https://www.espn.com/nfl/story/_/id/48083059/nfl-free-agency-2026-all-signings-afc-nfc-teams",
+          "conf": true,
+          "note": "EDGE IND->LV"
+        }
+      ]
+    },
+    "MIA": {
+      "team": "MIA",
+      "pass_cov_strength_2025": 60.1,
+      "pass_cov_pctl_2025": 26.6,
+      "pass_rush_strength_2025": 38.4,
+      "pass_rush_pctl_2025": 14.1,
+      "run_def_strength_2025": 86.4,
+      "run_def_pctl_2025": 73.4,
+      "pass_cov_epatgt_2025": 0.0992,
+      "pass_cov_strength_2026": 54.6,
+      "pass_cov_pctl_2026": 14.1,
+      "pass_rush_strength_2026": 19.0,
+      "pass_rush_pctl_2026": 1.6,
+      "run_def_strength_2026": 69.3,
+      "run_def_pctl_2026": 51.6,
+      "pass_cov_epatgt_2026": 0.0453,
+      "pass_cov_strength": 54.6,
+      "pass_cov_pctl": 14.1,
+      "pass_cov_epatgt": 0.0453,
+      "pass_rush_strength": 19.0,
+      "pass_rush_pctl": 1.6,
+      "run_def_strength": 69.3,
+      "run_def_pctl": 51.6,
+      "top_coverage": [
+        {
+          "name": "Rasul Douglas",
+          "pos": "CB",
+          "ps": 26.8,
+          "epatgt": -0.16
+        },
+        {
+          "name": "Jack Jones",
+          "pos": "CB",
+          "ps": 19.6,
+          "epatgt": 0.22
+        },
+        {
+          "name": "Jordyn Brooks",
+          "pos": "LB",
+          "ps": 4.7,
+          "epatgt": 0.19
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Tyrel Dodson",
+          "pos": "LB",
+          "ps": 10.9
+        },
+        {
+          "name": "Zach Sieler",
+          "pos": "DT",
+          "ps": 4.9
+        },
+        {
+          "name": "Chop Robinson",
+          "pos": "DE",
+          "ps": 3.5
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordyn Brooks",
+          "pos": "LB",
+          "ps": 29.8
+        },
+        {
+          "name": "Jack Jones",
+          "pos": "CB",
+          "ps": 18.6
+        },
+        {
+          "name": "Tyrel Dodson",
+          "pos": "LB",
+          "ps": 7.1
+        }
+      ],
+      "moves_2026": []
+    },
+    "MIN": {
+      "team": "MIN",
+      "pass_cov_strength_2025": 61.9,
+      "pass_cov_pctl_2025": 29.7,
+      "pass_rush_strength_2025": 87.7,
+      "pass_rush_pctl_2025": 82.8,
+      "run_def_strength_2025": 125.8,
+      "run_def_pctl_2025": 98.4,
+      "pass_cov_epatgt_2025": -0.0512,
+      "pass_cov_strength_2026": 83.5,
+      "pass_cov_pctl_2026": 48.4,
+      "pass_rush_strength_2026": 73.4,
+      "pass_rush_pctl_2026": 64.1,
+      "run_def_strength_2026": 108.5,
+      "run_def_pctl_2026": 85.9,
+      "pass_cov_epatgt_2026": -0.0696,
+      "pass_cov_strength": 83.5,
+      "pass_cov_pctl": 48.4,
+      "pass_cov_epatgt": -0.0696,
+      "pass_rush_strength": 73.4,
+      "pass_rush_pctl": 64.1,
+      "run_def_strength": 108.5,
+      "run_def_pctl": 85.9,
+      "top_coverage": [
+        {
+          "name": "James Pierre",
+          "pos": "CB",
+          "ps": 21.6,
+          "epatgt": -0.2
+        },
+        {
+          "name": "Byron Murphy Jr.",
+          "pos": "CB",
+          "ps": 15.9,
+          "epatgt": 0.21
+        },
+        {
+          "name": "Eric Wilson",
+          "pos": "LB",
+          "ps": 15.9,
+          "epatgt": -0.28
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Dallas Turner",
+          "pos": "LB",
+          "ps": 26.0
+        },
+        {
+          "name": "Andrew Van Ginkel",
+          "pos": "LB",
+          "ps": 21.7
+        },
+        {
+          "name": "Jalen Redmond",
+          "pos": "DT",
+          "ps": 16.8
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Blake Cashman",
+          "pos": "LB",
+          "ps": 22.6
+        },
+        {
+          "name": "Byron Murphy Jr.",
+          "pos": "CB",
+          "ps": 19.5
+        },
+        {
+          "name": "Jalen Redmond",
+          "pos": "DT",
+          "ps": 15.3
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "James Pierre",
+          "unit": "coverage",
+          "from": "PIT",
+          "to": "MIN",
+          "ps": 21.6,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "CB PIT->MIN"
+        }
+      ]
+    },
+    "NE": {
+      "team": "NE",
+      "pass_cov_strength_2025": 122.4,
+      "pass_cov_pctl_2025": 79.7,
+      "pass_rush_strength_2025": 56.7,
+      "pass_rush_pctl_2025": 35.9,
+      "run_def_strength_2025": 90.8,
+      "run_def_pctl_2025": 85.9,
+      "pass_cov_epatgt_2025": -0.0379,
+      "pass_cov_strength_2026": 154.6,
+      "pass_cov_pctl_2026": 92.2,
+      "pass_rush_strength_2026": 53.7,
+      "pass_rush_pctl_2026": 35.9,
+      "run_def_strength_2026": 100.3,
+      "run_def_pctl_2026": 82.8,
+      "pass_cov_epatgt_2026": -0.0233,
+      "pass_cov_strength": 154.6,
+      "pass_cov_pctl": 92.2,
+      "pass_cov_epatgt": -0.0233,
+      "pass_rush_strength": 53.7,
+      "pass_rush_pctl": 35.9,
+      "run_def_strength": 100.3,
+      "run_def_pctl": 82.8,
+      "top_coverage": [
+        {
+          "name": "Kevin Byard III",
+          "pos": "S",
+          "ps": 32.1,
+          "epatgt": 0.08
+        },
+        {
+          "name": "Christian Gonzalez",
+          "pos": "CB",
+          "ps": 28.1,
+          "epatgt": -0.29
+        },
+        {
+          "name": "Robert Spillane",
+          "pos": "LB",
+          "ps": 26.6,
+          "epatgt": -0.25
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Dre'Mont Jones",
+          "pos": "LB",
+          "ps": 21.6
+        },
+        {
+          "name": "Christian Barmore",
+          "pos": "DT",
+          "ps": 11.9
+        },
+        {
+          "name": "Harold Landry III",
+          "pos": "DE",
+          "ps": 10.1
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Kevin Byard III",
+          "pos": "S",
+          "ps": 24.1
+        },
+        {
+          "name": "Christian Gonzalez",
+          "pos": "CB",
+          "ps": 16.3
+        },
+        {
+          "name": "Carlton Davis III",
+          "pos": "CB",
+          "ps": 14.4
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Kevin Byard III",
+          "unit": "coverage",
+          "from": "CHI",
+          "to": "NE",
+          "ps": 32.1,
+          "src": "https://sports.yahoo.com/articles/contract-details-patriots-free-agency-140000073.html",
+          "conf": false,
+          "note": "sources disagreed on destination"
+        },
+        {
+          "player": "Kevin Byard III",
+          "unit": "run_def",
+          "from": "CHI",
+          "to": "NE",
+          "ps": 24.1,
+          "src": "https://sports.yahoo.com/articles/contract-details-patriots-free-agency-140000073.html",
+          "conf": false,
+          "note": "sources disagreed on destination"
+        },
+        {
+          "player": "Dre'Mont Jones",
+          "unit": "pass_rush",
+          "from": "2 teams",
+          "to": "NE",
+          "ps": 21.6,
+          "src": "https://sports.yahoo.com/articles/contract-details-patriots-free-agency-140000073.html",
+          "conf": false,
+          "note": "2 teams 2025; destination disputed"
+        }
+      ]
+    },
+    "NO": {
+      "team": "NO",
+      "pass_cov_strength_2025": 41.7,
+      "pass_cov_pctl_2025": 7.8,
+      "pass_rush_strength_2025": 88.6,
+      "pass_rush_pctl_2025": 85.9,
+      "run_def_strength_2025": 81.9,
+      "run_def_pctl_2025": 67.2,
+      "pass_cov_epatgt_2025": 0.1418,
+      "pass_cov_strength_2026": 51.3,
+      "pass_cov_pctl_2026": 7.8,
+      "pass_rush_strength_2026": 93.5,
+      "pass_rush_pctl_2026": 89.1,
+      "run_def_strength_2026": 63.2,
+      "run_def_pctl_2026": 48.4,
+      "pass_cov_epatgt_2026": 0.1169,
+      "pass_cov_strength": 51.3,
+      "pass_cov_pctl": 7.8,
+      "pass_cov_epatgt": 0.1169,
+      "pass_rush_strength": 93.5,
+      "pass_rush_pctl": 89.1,
+      "run_def_strength": 63.2,
+      "run_def_pctl": 48.4,
+      "top_coverage": [
+        {
+          "name": "Alontae Taylor",
+          "pos": "CB",
+          "ps": 23.1,
+          "epatgt": 0.12
+        },
+        {
+          "name": "Kool-Aid McKinstry",
+          "pos": "CB",
+          "ps": 13.8,
+          "epatgt": 0.12
+        },
+        {
+          "name": "Kaden Elliss",
+          "pos": "LB",
+          "ps": 9.6,
+          "epatgt": -0.01
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Chase Young",
+          "pos": "DE",
+          "ps": 40.7
+        },
+        {
+          "name": "Cameron Jordan",
+          "pos": "DE",
+          "ps": 16.4
+        },
+        {
+          "name": "Nathan Shepherd",
+          "pos": "DT",
+          "ps": 13.3
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Kool-Aid McKinstry",
+          "pos": "CB",
+          "ps": 13.3
+        },
+        {
+          "name": "Carl Granderson",
+          "pos": "DE",
+          "ps": 12.5
+        },
+        {
+          "name": "Jonas Sanker",
+          "pos": "S",
+          "ps": 11.1
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Kaden Elliss",
+          "unit": "coverage",
+          "from": "ATL",
+          "to": "NO",
+          "ps": 9.6,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB ATL->NO"
+        },
+        {
+          "player": "Kaden Elliss",
+          "unit": "pass_rush",
+          "from": "ATL",
+          "to": "NO",
+          "ps": 4.9,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB ATL->NO"
+        },
+        {
+          "player": "Kaden Elliss",
+          "unit": "run_def",
+          "from": "ATL",
+          "to": "NO",
+          "ps": 1.9,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB ATL->NO"
+        }
+      ]
+    },
+    "NYG": {
+      "team": "NYG",
+      "pass_cov_strength_2025": 62.9,
+      "pass_cov_pctl_2025": 32.8,
+      "pass_rush_strength_2025": 83.7,
+      "pass_rush_pctl_2025": 73.4,
+      "run_def_strength_2025": 85.5,
+      "run_def_pctl_2025": 70.3,
+      "pass_cov_epatgt_2025": 0.1789,
+      "pass_cov_strength_2026": 45.6,
+      "pass_cov_pctl_2026": 4.7,
+      "pass_rush_strength_2026": 88.0,
+      "pass_rush_pctl_2026": 85.9,
+      "run_def_strength_2026": 99.6,
+      "run_def_pctl_2026": 76.6,
+      "pass_cov_epatgt_2026": 0.2727,
+      "pass_cov_strength": 45.6,
+      "pass_cov_pctl": 4.7,
+      "pass_cov_epatgt": 0.2727,
+      "pass_rush_strength": 88.0,
+      "pass_rush_pctl": 85.9,
+      "run_def_strength": 99.6,
+      "run_def_pctl": 76.6,
+      "top_coverage": [
+        {
+          "name": "Bobby Okereke",
+          "pos": "LB",
+          "ps": 22.3,
+          "epatgt": -0.28
+        },
+        {
+          "name": "Andru Phillips",
+          "pos": "CB",
+          "ps": 10.7,
+          "epatgt": 0.46
+        },
+        {
+          "name": "Tremaine Edmunds",
+          "pos": "LB",
+          "ps": 4.5,
+          "epatgt": 0.15
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Brian Burns",
+          "pos": "LB",
+          "ps": 47.0
+        },
+        {
+          "name": "Abdul Carter",
+          "pos": "LB",
+          "ps": 15.7
+        },
+        {
+          "name": "Odafe Oweh",
+          "pos": "LB",
+          "ps": 14.0
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Tremaine Edmunds",
+          "pos": "LB",
+          "ps": 20.3
+        },
+        {
+          "name": "Bobby Okereke",
+          "pos": "LB",
+          "ps": 17.6
+        },
+        {
+          "name": "Nick Cross",
+          "pos": "S",
+          "ps": 14.2
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Tremaine Edmunds",
+          "unit": "run_def",
+          "from": "CHI",
+          "to": "NYG",
+          "ps": 20.3,
+          "src": "https://chicago.suntimes.com/bears/2026/03/09/former-bears-linebacker-tremaine-edmunds-gets-3-year-36-million-deal-from-giants-report",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Nick Cross",
+          "unit": "run_def",
+          "from": "IND",
+          "to": "NYG",
+          "ps": 14.2,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-giants-raiders-jets-among-teams-in-line-for-turnaround-after-signings-trades",
+          "conf": true,
+          "note": "S IND->NYG"
+        },
+        {
+          "player": "Odafe Oweh",
+          "unit": "pass_rush",
+          "from": "2 teams",
+          "to": "NYG",
+          "ps": 14.0,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-giants-raiders-jets-among-teams-in-line-for-turnaround-after-signings-trades",
+          "conf": true,
+          "note": "2 teams 2025 -> NYG"
+        },
+        {
+          "player": "Nick Cross",
+          "unit": "pass_rush",
+          "from": "IND",
+          "to": "NYG",
+          "ps": 5.4,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-giants-raiders-jets-among-teams-in-line-for-turnaround-after-signings-trades",
+          "conf": true,
+          "note": "S IND->NYG"
+        },
+        {
+          "player": "Tremaine Edmunds",
+          "unit": "coverage",
+          "from": "CHI",
+          "to": "NYG",
+          "ps": 4.5,
+          "src": "https://chicago.suntimes.com/bears/2026/03/09/former-bears-linebacker-tremaine-edmunds-gets-3-year-36-million-deal-from-giants-report",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Nick Cross",
+          "unit": "coverage",
+          "from": "IND",
+          "to": "NYG",
+          "ps": 3.5,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-giants-raiders-jets-among-teams-in-line-for-turnaround-after-signings-trades",
+          "conf": true,
+          "note": "S IND->NYG"
+        }
+      ]
+    },
+    "NYJ": {
+      "team": "NYJ",
+      "pass_cov_strength_2025": 31.1,
+      "pass_cov_pctl_2025": 1.6,
+      "pass_rush_strength_2025": 34.5,
+      "pass_rush_pctl_2025": 10.9,
+      "run_def_strength_2025": 77.2,
+      "run_def_pctl_2025": 54.7,
+      "pass_cov_epatgt_2025": 0.2674,
+      "pass_cov_strength_2026": 75.3,
+      "pass_cov_pctl_2026": 32.8,
+      "pass_rush_strength_2026": 50.7,
+      "pass_rush_pctl_2026": 32.8,
+      "run_def_strength_2026": 171.9,
+      "run_def_pctl_2026": 98.4,
+      "pass_cov_epatgt_2026": 0.2136,
+      "pass_cov_strength": 75.3,
+      "pass_cov_pctl": 32.8,
+      "pass_cov_epatgt": 0.2136,
+      "pass_rush_strength": 50.7,
+      "pass_rush_pctl": 32.8,
+      "run_def_strength": 171.9,
+      "run_def_pctl": 98.4,
+      "top_coverage": [
+        {
+          "name": "Nahshon Wright",
+          "pos": "CB",
+          "ps": 29.6,
+          "epatgt": -0.03
+        },
+        {
+          "name": "Brandon Stephens",
+          "pos": "CB",
+          "ps": 10.1,
+          "epatgt": 0.32
+        },
+        {
+          "name": "Dane Belton",
+          "pos": "S",
+          "ps": 9.0,
+          "epatgt": 0.22
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jowon Briggs",
+          "pos": "DT",
+          "ps": 14.8
+        },
+        {
+          "name": "Will McDonald IV",
+          "pos": "DE",
+          "ps": 14.5
+        },
+        {
+          "name": "Joseph Ossai",
+          "pos": "DE",
+          "ps": 10.1
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Nahshon Wright",
+          "pos": "CB",
+          "ps": 22.8
+        },
+        {
+          "name": "Brandon Stephens",
+          "pos": "CB",
+          "ps": 21.2
+        },
+        {
+          "name": "Jamien Sherwood",
+          "pos": "LB",
+          "ps": 20.6
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Nahshon Wright",
+          "unit": "coverage",
+          "from": "CHI",
+          "to": "NYJ",
+          "ps": 29.6,
+          "src": "https://www.newyorkjets.com/news/jets-sign-db-nahshon-wright-free-agency-03-12-2026",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Nahshon Wright",
+          "unit": "run_def",
+          "from": "CHI",
+          "to": "NYJ",
+          "ps": 22.8,
+          "src": "https://www.newyorkjets.com/news/jets-sign-db-nahshon-wright-free-agency-03-12-2026",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Demario Davis",
+          "unit": "run_def",
+          "from": "NO",
+          "to": "NYJ",
+          "ps": 20.6,
+          "src": "https://www.newyorkjets.com/news/jets-sign-linebacker-demario-davis-free-agency-03-12-2026",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Dane Belton",
+          "unit": "run_def",
+          "from": "NYG",
+          "to": "NYJ",
+          "ps": 20.4,
+          "src": "https://www.newyorkjets.com/news/jets-sign-s-dane-belton-free-agency-03-12-2026",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "David Onyemata",
+          "unit": "run_def",
+          "from": "ATL",
+          "to": "NYJ",
+          "ps": 17.3,
+          "src": "https://www.yardbarker.com/nfl/articles/jets_contract_details_davis_onyemata_enagbare_wright_belton",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Minkah Fitzpatrick",
+          "unit": "run_def",
+          "from": "MIA",
+          "to": "NYJ",
+          "ps": 17.1,
+          "src": "https://www.espn.com/nfl/story/_/id/48915793/2026-nfl-offseason-trade-tracker",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Joseph Ossai",
+          "unit": "pass_rush",
+          "from": "CIN",
+          "to": "NYJ",
+          "ps": 10.1,
+          "src": "https://nfltraderumors.co/jets-signing-de-joseph-ossai-to-three-year-36m-deal/",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Dane Belton",
+          "unit": "coverage",
+          "from": "NYG",
+          "to": "NYJ",
+          "ps": 9.0,
+          "src": "https://www.newyorkjets.com/news/jets-sign-s-dane-belton-free-agency-03-12-2026",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "T'Vondre Sweat",
+          "unit": "pass_rush",
+          "from": "TEN",
+          "to": "NYJ",
+          "ps": 5.6,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-tracker",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Minkah Fitzpatrick",
+          "unit": "coverage",
+          "from": "MIA",
+          "to": "NYJ",
+          "ps": 5.5,
+          "src": "https://www.espn.com/nfl/story/_/id/48915793/2026-nfl-offseason-trade-tracker",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Kingsley Enagbare",
+          "unit": "pass_rush",
+          "from": "GB",
+          "to": "NYJ",
+          "ps": 1.9,
+          "src": "https://www.acmepackingcompany.com/packers-kingsley-enagbare-signs-big-deal-with-new-york-jets",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "David Onyemata",
+          "unit": "pass_rush",
+          "from": "ATL",
+          "to": "NYJ",
+          "ps": 1.0,
+          "src": "https://www.yardbarker.com/nfl/articles/jets_contract_details_davis_onyemata_enagbare_wright_belton",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "PHI": {
+      "team": "PHI",
+      "pass_cov_strength_2025": 117.8,
+      "pass_cov_pctl_2025": 76.6,
+      "pass_rush_strength_2025": 67.3,
+      "pass_rush_pctl_2025": 51.6,
+      "run_def_strength_2025": 73.9,
+      "run_def_pctl_2025": 45.3,
+      "pass_cov_epatgt_2025": -0.0478,
+      "pass_cov_strength_2026": 109.0,
+      "pass_cov_pctl_2026": 76.6,
+      "pass_rush_strength_2026": 70.9,
+      "pass_rush_pctl_2026": 54.7,
+      "run_def_strength_2026": 50.2,
+      "run_def_pctl_2026": 26.6,
+      "pass_cov_epatgt_2026": -0.0209,
+      "pass_cov_strength": 109.0,
+      "pass_cov_pctl": 76.6,
+      "pass_cov_epatgt": -0.0209,
+      "pass_rush_strength": 70.9,
+      "pass_rush_pctl": 54.7,
+      "run_def_strength": 50.2,
+      "run_def_pctl": 26.6,
+      "top_coverage": [
+        {
+          "name": "Cooper DeJean",
+          "pos": "CB",
+          "ps": 36.7,
+          "epatgt": -0.03
+        },
+        {
+          "name": "Quinyon Mitchell",
+          "pos": "CB",
+          "ps": 27.4,
+          "epatgt": -0.07
+        },
+        {
+          "name": "Zack Baun",
+          "pos": "LB",
+          "ps": 25.6,
+          "epatgt": -0.54
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Moro Ojomo",
+          "pos": "DT",
+          "ps": 20.5
+        },
+        {
+          "name": "Jalyx Hunt",
+          "pos": "LB",
+          "ps": 17.5
+        },
+        {
+          "name": "Jalen Carter",
+          "pos": "DT",
+          "ps": 14.4
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordan Davis",
+          "pos": "DT",
+          "ps": 18.9
+        },
+        {
+          "name": "Zack Baun",
+          "pos": "LB",
+          "ps": 10.9
+        },
+        {
+          "name": "Cooper DeJean",
+          "pos": "CB",
+          "ps": 10.8
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jonathan Jones",
+          "unit": "coverage",
+          "from": "WAS",
+          "to": "PHI",
+          "ps": 10.4,
+          "src": "https://www.foxsports.com/stories/nfl/2026-nfl-free-agency-trades-tracker-signings-updates-best-players-available",
+          "conf": true,
+          "note": "CB WAS->PHI"
+        },
+        {
+          "player": "Jonathan Greenard",
+          "unit": "pass_rush",
+          "from": "MIN",
+          "to": "PHI",
+          "ps": 3.6,
+          "src": "https://www.foxsports.com/stories/nfl/2026-nfl-draft-trades-tracker-grades",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "PIT": {
+      "team": "PIT",
+      "pass_cov_strength_2025": 77.9,
+      "pass_cov_pctl_2025": 45.3,
+      "pass_rush_strength_2025": 86.4,
+      "pass_rush_pctl_2025": 76.6,
+      "run_def_strength_2025": 47.9,
+      "run_def_pctl_2025": 17.2,
+      "pass_cov_epatgt_2025": 0.113,
+      "pass_cov_strength_2026": 86.2,
+      "pass_cov_pctl_2026": 51.6,
+      "pass_rush_strength_2026": 86.4,
+      "pass_rush_pctl_2026": 81.2,
+      "run_def_strength_2026": 47.9,
+      "run_def_pctl_2026": 20.3,
+      "pass_cov_epatgt_2026": 0.0386,
+      "pass_cov_strength": 86.2,
+      "pass_cov_pctl": 51.6,
+      "pass_cov_epatgt": 0.0386,
+      "pass_rush_strength": 86.4,
+      "pass_rush_pctl": 81.2,
+      "run_def_strength": 47.9,
+      "run_def_pctl": 20.3,
+      "top_coverage": [
+        {
+          "name": "Jamel Dean",
+          "pos": "CB",
+          "ps": 29.8,
+          "epatgt": -0.51
+        },
+        {
+          "name": "Jalen Ramsey",
+          "pos": "CB",
+          "ps": 20.3,
+          "epatgt": 0.26
+        },
+        {
+          "name": "Joey Porter Jr.",
+          "pos": "CB",
+          "ps": 15.1,
+          "epatgt": -0.05
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Nick Herbig",
+          "pos": "LB",
+          "ps": 29.8
+        },
+        {
+          "name": "Alex Highsmith",
+          "pos": "LB",
+          "ps": 21.8
+        },
+        {
+          "name": "T.J. Watt",
+          "pos": "DE",
+          "ps": 20.7
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Cameron Heyward",
+          "pos": "DT",
+          "ps": 22.4
+        },
+        {
+          "name": "Jalen Ramsey",
+          "pos": "CB",
+          "ps": 13.1
+        },
+        {
+          "name": "Payton Wilson",
+          "pos": "LB",
+          "ps": 8.3
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jamel Dean",
+          "unit": "coverage",
+          "from": "TB",
+          "to": "PIT",
+          "ps": 29.8,
+          "src": "https://www.si.com/nfl/steelers/onsi/news/pittsburgh-steelers-sign-buccaneers-jamel-dean",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "SEA": {
+      "team": "SEA",
+      "pass_cov_strength_2025": 178.0,
+      "pass_cov_pctl_2025": 98.4,
+      "pass_rush_strength_2025": 79.8,
+      "pass_rush_pctl_2025": 67.2,
+      "run_def_strength_2025": 69.3,
+      "run_def_pctl_2025": 35.9,
+      "pass_cov_epatgt_2025": -0.0165,
+      "pass_cov_strength_2026": 152.7,
+      "pass_cov_pctl_2026": 89.1,
+      "pass_rush_strength_2026": 84.7,
+      "pass_rush_pctl_2026": 75.0,
+      "run_def_strength_2026": 63.0,
+      "run_def_pctl_2026": 45.3,
+      "pass_cov_epatgt_2026": -0.0389,
+      "pass_cov_strength": 152.7,
+      "pass_cov_pctl": 89.1,
+      "pass_cov_epatgt": -0.0389,
+      "pass_rush_strength": 84.7,
+      "pass_rush_pctl": 75.0,
+      "run_def_strength": 63.0,
+      "run_def_pctl": 45.3,
+      "top_coverage": [
+        {
+          "name": "Ernest Jones IV",
+          "pos": "LB",
+          "ps": 36.2,
+          "epatgt": -0.07
+        },
+        {
+          "name": "Riq Woolen",
+          "pos": "CB",
+          "ps": 26.8,
+          "epatgt": -0.12
+        },
+        {
+          "name": "Josh Jobe",
+          "pos": "CB",
+          "ps": 23.3,
+          "epatgt": -0.0
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Byron Murphy II",
+          "pos": "DT",
+          "ps": 18.8
+        },
+        {
+          "name": "DeMarcus Lawrence",
+          "pos": "LB",
+          "ps": 18.0
+        },
+        {
+          "name": "Uchenna Nwosu",
+          "pos": "LB",
+          "ps": 12.4
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Devon Witherspoon",
+          "pos": "CB",
+          "ps": 12.0
+        },
+        {
+          "name": "Leonard Williams",
+          "pos": "DE",
+          "ps": 10.8
+        },
+        {
+          "name": "Ernest Jones IV",
+          "pos": "LB",
+          "ps": 10.5
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Dante Fowler Jr.",
+          "unit": "pass_rush",
+          "from": "DAL",
+          "to": "SEA",
+          "ps": 8.5,
+          "src": "https://heavy.com/sports/nfl/free-agency-tracker-2026-news-signings-rumors/",
+          "conf": true,
+          "note": "EDGE DAL->SEA"
+        }
+      ]
+    },
+    "SF": {
+      "team": "SF",
+      "pass_cov_strength_2025": 98.6,
+      "pass_cov_pctl_2025": 57.8,
+      "pass_rush_strength_2025": 19.6,
+      "pass_rush_pctl_2025": 7.8,
+      "run_def_strength_2025": 71.2,
+      "run_def_pctl_2025": 42.2,
+      "pass_cov_epatgt_2025": 0.0771,
+      "pass_cov_strength_2026": 79.3,
+      "pass_cov_pctl_2026": 42.2,
+      "pass_rush_strength_2026": 19.6,
+      "pass_rush_pctl_2026": 4.7,
+      "run_def_strength_2026": 70.0,
+      "run_def_pctl_2026": 54.7,
+      "pass_cov_epatgt_2026": 0.1626,
+      "pass_cov_strength": 79.3,
+      "pass_cov_pctl": 42.2,
+      "pass_cov_epatgt": 0.1626,
+      "pass_rush_strength": 19.6,
+      "pass_rush_pctl": 4.7,
+      "run_def_strength": 70.0,
+      "run_def_pctl": 54.7,
+      "top_coverage": [
+        {
+          "name": "Deommodore Lenoir",
+          "pos": "CB",
+          "ps": 38.2,
+          "epatgt": -0.08
+        },
+        {
+          "name": "Ji'Ayir Brown",
+          "pos": "S",
+          "ps": 21.4,
+          "epatgt": -0.38
+        },
+        {
+          "name": "Renardo Green",
+          "pos": "CB",
+          "ps": 18.4,
+          "epatgt": 0.13
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Bryce Huff",
+          "pos": "DE",
+          "ps": 14.9
+        },
+        {
+          "name": "Sam Okuayinonu",
+          "pos": "DE",
+          "ps": 4.7
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Renardo Green",
+          "pos": "CB",
+          "ps": 15.3
+        },
+        {
+          "name": "Malik Mustapha",
+          "pos": "S",
+          "ps": 12.2
+        },
+        {
+          "name": "Upton Stout",
+          "pos": "CB",
+          "ps": 11.9
+        }
+      ],
+      "moves_2026": []
+    },
+    "TB": {
+      "team": "TB",
+      "pass_cov_strength_2025": 108.9,
+      "pass_cov_pctl_2025": 73.4,
+      "pass_rush_strength_2025": 70.4,
+      "pass_rush_pctl_2025": 54.7,
+      "run_def_strength_2025": 76.0,
+      "run_def_pctl_2025": 48.4,
+      "pass_cov_epatgt_2025": 0.1077,
+      "pass_cov_strength_2026": 94.9,
+      "pass_cov_pctl_2026": 62.5,
+      "pass_rush_strength_2026": 86.4,
+      "pass_rush_pctl_2026": 81.2,
+      "run_def_strength_2026": 86.5,
+      "run_def_pctl_2026": 67.2,
+      "pass_cov_epatgt_2026": 0.1897,
+      "pass_cov_strength": 94.9,
+      "pass_cov_pctl": 62.5,
+      "pass_cov_epatgt": 0.1897,
+      "pass_rush_strength": 86.4,
+      "pass_rush_pctl": 81.2,
+      "run_def_strength": 86.5,
+      "run_def_pctl": 67.2,
+      "top_coverage": [
+        {
+          "name": "Antoine Winfield Jr.",
+          "pos": "S",
+          "ps": 25.2,
+          "epatgt": -0.08
+        },
+        {
+          "name": "Lavonte David",
+          "pos": "LB",
+          "ps": 16.5,
+          "epatgt": 0.03
+        },
+        {
+          "name": "Alex Anzalone",
+          "pos": "LB",
+          "ps": 15.8,
+          "epatgt": -0.02
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Yaya Diaby",
+          "pos": "LB",
+          "ps": 21.9
+        },
+        {
+          "name": "Al-Quadin Muhammad",
+          "pos": "LB",
+          "ps": 16.8
+        },
+        {
+          "name": "Anthony Nelson",
+          "pos": "DE",
+          "ps": 12.0
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Zyon McCollum",
+          "pos": "CB",
+          "ps": 15.8
+        },
+        {
+          "name": "Tykee Smith",
+          "pos": "S",
+          "ps": 15.0
+        },
+        {
+          "name": "Antoine Winfield Jr.",
+          "pos": "S",
+          "ps": 14.5
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Al-Quadin Muhammad",
+          "unit": "pass_rush",
+          "from": "DET",
+          "to": "TB",
+          "ps": 16.8,
+          "src": "https://heavy.com/sports/nfl/free-agency-tracker-2026-news-signings-rumors/",
+          "conf": true,
+          "note": "EDGE depth ->TB"
+        },
+        {
+          "player": "Alex Anzalone",
+          "unit": "coverage",
+          "from": "DET",
+          "to": "TB",
+          "ps": 15.8,
+          "src": "https://www.espn.com/nfl/story/_/id/48083059/nfl-free-agency-2026-all-signings-afc-nfc-teams",
+          "conf": true,
+          "note": "LB DET->TB"
+        },
+        {
+          "player": "Christian Rozeboom",
+          "unit": "run_def",
+          "from": "CAR",
+          "to": "TB",
+          "ps": 5.6,
+          "src": "https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/",
+          "conf": true,
+          "note": "LB ->TB"
+        },
+        {
+          "player": "Alex Anzalone",
+          "unit": "run_def",
+          "from": "DET",
+          "to": "TB",
+          "ps": 4.9,
+          "src": "https://www.espn.com/nfl/story/_/id/48083059/nfl-free-agency-2026-all-signings-afc-nfc-teams",
+          "conf": true,
+          "note": "LB DET->TB"
+        }
+      ]
+    },
+    "TEN": {
+      "team": "TEN",
+      "pass_cov_strength_2025": 42.1,
+      "pass_cov_pctl_2025": 10.9,
+      "pass_rush_strength_2025": 79.4,
+      "pass_rush_pctl_2025": 64.1,
+      "run_def_strength_2025": 56.9,
+      "run_def_pctl_2025": 32.8,
+      "pass_cov_epatgt_2025": 0.338,
+      "pass_cov_strength_2026": 65.0,
+      "pass_cov_pctl_2026": 23.4,
+      "pass_rush_strength_2026": 84.7,
+      "pass_rush_pctl_2026": 75.0,
+      "run_def_strength_2026": 56.9,
+      "run_def_pctl_2026": 42.2,
+      "pass_cov_epatgt_2026": 0.162,
+      "pass_cov_strength": 65.0,
+      "pass_cov_pctl": 23.4,
+      "pass_cov_epatgt": 0.162,
+      "pass_rush_strength": 84.7,
+      "pass_rush_pctl": 75.0,
+      "run_def_strength": 56.9,
+      "run_def_pctl": 42.2,
+      "top_coverage": [
+        {
+          "name": "Cody Barton",
+          "pos": "LB",
+          "ps": 29.0,
+          "epatgt": -0.63
+        },
+        {
+          "name": "Cor'Dale Flott",
+          "pos": "CB",
+          "ps": 16.3,
+          "epatgt": -0.17
+        },
+        {
+          "name": "Cedric Gray",
+          "pos": "LB",
+          "ps": 10.2,
+          "epatgt": 0.24
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jeffery Simmons",
+          "pos": "DT",
+          "ps": 45.6
+        },
+        {
+          "name": "John Franklin-Myers",
+          "pos": "DE",
+          "ps": 15.2
+        },
+        {
+          "name": "Sebastian Joseph-Day",
+          "pos": "DT",
+          "ps": 8.7
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Cedric Gray",
+          "pos": "LB",
+          "ps": 27.3
+        },
+        {
+          "name": "Jeffery Simmons",
+          "pos": "DT",
+          "ps": 23.3
+        },
+        {
+          "name": "Amani Hooker",
+          "pos": "S",
+          "ps": 10.4
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Cor'Dale Flott",
+          "unit": "coverage",
+          "from": "NYG",
+          "to": "TEN",
+          "ps": 16.3,
+          "src": "https://www.tennesseetitans.com/news/titans-sign-cornerback-cor-dale-flott",
+          "conf": true,
+          "note": "CB NYG->TEN"
+        },
+        {
+          "player": "John Franklin-Myers",
+          "unit": "pass_rush",
+          "from": "DEN",
+          "to": "TEN",
+          "ps": 15.2,
+          "src": "https://www.aol.com/articles/titans-sign-john-franklin-myers-192951802.html",
+          "conf": true,
+          "note": "DE DEN->TEN"
+        },
+        {
+          "player": "Jermaine Johnson II",
+          "unit": "pass_rush",
+          "from": "NYJ",
+          "to": "TEN",
+          "ps": 2.4,
+          "src": "https://www.nfl.com/news/2026-nfl-free-agency-tracker",
+          "conf": true,
+          "note": null
+        }
+      ]
+    },
+    "WAS": {
+      "team": "WAS",
+      "pass_cov_strength_2025": 51.7,
+      "pass_cov_pctl_2025": 23.4,
+      "pass_rush_strength_2025": 46.2,
+      "pass_rush_pctl_2025": 29.7,
+      "run_def_strength_2025": 49.9,
+      "run_def_pctl_2025": 20.3,
+      "pass_cov_epatgt_2025": 0.2753,
+      "pass_cov_strength_2026": 57.4,
+      "pass_cov_pctl_2026": 17.2,
+      "pass_rush_strength_2026": 64.2,
+      "pass_rush_pctl_2026": 48.4,
+      "run_def_strength_2026": 28.8,
+      "run_def_pctl_2026": 7.8,
+      "pass_cov_epatgt_2026": 0.21,
+      "pass_cov_strength": 57.4,
+      "pass_cov_pctl": 17.2,
+      "pass_cov_epatgt": 0.21,
+      "pass_rush_strength": 64.2,
+      "pass_rush_pctl": 48.4,
+      "run_def_strength": 28.8,
+      "run_def_pctl": 7.8,
+      "top_coverage": [
+        {
+          "name": "Dee Winters",
+          "pos": "LB",
+          "ps": 19.3,
+          "epatgt": -0.27
+        },
+        {
+          "name": "Mike Sainristil",
+          "pos": "CB",
+          "ps": 16.2,
+          "epatgt": 0.21
+        },
+        {
+          "name": "Marshon Lattimore",
+          "pos": "CB",
+          "ps": 8.6,
+          "epatgt": 0.34
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "K'Lavon Chaisson",
+          "pos": "DE",
+          "ps": 24.6
+        },
+        {
+          "name": "Jer'Zhan Newton",
+          "pos": "DT",
+          "ps": 11.1
+        },
+        {
+          "name": "Daron Payne",
+          "pos": "DT",
+          "ps": 9.3
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Quan Martin",
+          "pos": "S",
+          "ps": 15.4
+        },
+        {
+          "name": "Jeremy Reaves",
+          "pos": "S",
+          "ps": 6.8
+        },
+        {
+          "name": "Mike Sainristil",
+          "pos": "CB",
+          "ps": 6.6
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "K'Lavon Chaisson",
+          "unit": "pass_rush",
+          "from": "NE",
+          "to": "WAS",
+          "ps": 24.6,
+          "src": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/commanders-agree-to-terms-with-klavon-chaisson",
+          "conf": true,
+          "note": "confirmed WAS (turned down Saints)"
+        },
+        {
+          "player": "Dee Winters",
+          "unit": "coverage",
+          "from": "SF",
+          "to": "WAS",
+          "ps": 19.3,
+          "src": "https://www.pff.com/news/2026-nfl-offseason-tracker-signings-trades-and-cuts-for-all-32-teams",
+          "conf": true,
+          "note": null
+        },
+        {
+          "player": "Amik Robertson",
+          "unit": "coverage",
+          "from": "DET",
+          "to": "WAS",
+          "ps": 5.9,
+          "src": "https://www.espn.com/nfl/story/_/id/48083059/nfl-free-agency-2026-all-signings-afc-nfc-teams",
+          "conf": true,
+          "note": "CB ->WAS"
+        },
+        {
+          "player": "Dee Winters",
+          "unit": "run_def",
+          "from": "SF",
+          "to": "WAS",
+          "ps": 1.2,
+          "src": "https://www.pff.com/news/2026-nfl-offseason-tracker-signings-trades-and-cuts-for-all-32-teams",
+          "conf": true,
+          "note": null
+        }
+      ]
+    }
+  }
+}

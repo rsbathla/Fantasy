@@ -1,0 +1,360 @@
+{
+"rookie": {
+"WR": {
+"correlation": {
+"predictorLabel": "Predictor Score",
+"baselineLabel": "Draft Capital",
+"predictorRsq": 0.431,
+"baselineRsq": 0.319
+},
+"hitRates": [
+{
+"tier": "Can't Miss (86+)",
+"avgFpg": 14.63,
+"rates": [
+67,
+83,
+100,
+100
+]
+},
+{
+"tier": "Likely WR1s (75-85.99)",
+"avgFpg": 10.73,
+"rates": [
+33,
+49,
+70,
+82
+]
+},
+{
+"tier": "WR1 Upside (59-74.99)",
+"avgFpg": 7.79,
+"rates": [
+11,
+27,
+38,
+55
+]
+},
+{
+"tier": "WR2 Upside (45-58.99)",
+"avgFpg": 4.85,
+"rates": [
+5,
+7,
+16,
+28
+]
+},
+{
+"tier": "WR3 Upside (38-44.99)",
+"avgFpg": 2.56,
+"rates": [
+0,
+3,
+3,
+10
+]
+},
+{
+"tier": "Waivers Material (Below 38)",
+"avgFpg": 2.06,
+"rates": [
+0,
+0,
+1,
+4
+]
+}
+]
+},
+"RB": {
+"correlation": {
+"predictorLabel": "Predictor Score",
+"baselineLabel": "Draft Capital",
+"predictorRsq": 0.503,
+"baselineRsq": 0.385
+},
+"hitRates": [
+{
+"tier": "Can't Miss (85+)",
+"avgFpg": 18.22,
+"rates": [
+75,
+100,
+100,
+100
+]
+},
+{
+"tier": "Likely RB1 (69-84.99)",
+"avgFpg": 13.61,
+"rates": [
+35,
+65,
+70,
+78
+]
+},
+{
+"tier": "RB1 Upside (58-68.99)",
+"avgFpg": 8.84,
+"rates": [
+6,
+16,
+25,
+56
+]
+},
+{
+"tier": "RB2 Upside (50-57.99)",
+"avgFpg": 5.77,
+"rates": [
+0,
+7,
+19,
+25
+]
+},
+{
+"tier": "RB3 Upside (43-49.99)",
+"avgFpg": 4.27,
+"rates": [
+0,
+3,
+4,
+9
+]
+},
+{
+"tier": "Waivers Material (Below 43)",
+"avgFpg": 2.72,
+"rates": [
+0,
+2,
+2,
+4
+]
+}
+]
+},
+"TE": {
+"correlation": {
+"predictorLabel": "Predictor Score",
+"baselineLabel": "Draft Capital",
+"predictorRsq": 0.561,
+"baselineRsq": 0.425
+},
+"hitRates": [
+{
+"tier": "Can't Miss (81+)",
+"avgFpg": 11.57,
+"rates": [
+83,
+100,
+100
+]
+},
+{
+"tier": "Likely TE1 (71-80.99)",
+"avgFpg": 8.14,
+"rates": [
+25,
+63,
+75
+]
+},
+{
+"tier": "TE1 Upside (59-70.99)",
+"avgFpg": 5.53,
+"rates": [
+9,
+23,
+46
+]
+},
+{
+"tier": "TE2 Upside (47-58.99)",
+"avgFpg": 3.85,
+"rates": [
+3,
+6,
+21
+]
+},
+{
+"tier": "Waivers Material (Below 47)",
+"avgFpg": 1.5,
+"rates": [
+0,
+0,
+4
+]
+}
+]
+},
+"QB": {
+"correlation": {
+"predictorLabel": "Predictor Score",
+"baselineLabel": "Draft Capital",
+"predictorRsq": 0.586,
+"baselineRsq": 0.468
+},
+"hitRates": [
+{
+"tier": "Can't Miss (90+)",
+"avgFpg": 17.91,
+"rates": [
+67,
+83,
+83,
+100
+]
+},
+{
+"tier": "Likely QB1 (80-89.99)",
+"avgFpg": 16.1,
+"rates": [
+27,
+73,
+73,
+91
+]
+},
+{
+"tier": "QB1 Upside (67-79.99)",
+"avgFpg": 12.96,
+"rates": [
+25,
+33,
+50,
+67
+]
+},
+{
+"tier": "QB2 Upside (48-66.99)",
+"avgFpg": 7.8,
+"rates": [
+7,
+13,
+20,
+27
+]
+},
+{
+"tier": "Waivers Material (Below 48)",
+"avgFpg": 2.73,
+"rates": [
+0,
+2,
+2,
+2
+]
+}
+]
+}
+},
+"year2": {
+"WR": {
+"correlation": {
+"predictorLabel": "Predictor Score",
+"baselineLabel": "Year 1 FP/G",
+"predictorRsq": 0.593,
+"baselineRsq": 0.433
+},
+"hitRates": [
+{
+"tier": "Can't Miss (88+)",
+"avgFpg": 20.48,
+"rates": [
+100,
+100,
+100,
+100
+]
+},
+{
+"tier": "Likely WR1 (71-87.99)",
+"avgFpg": 14.83,
+"rates": [
+64.29,
+85.71,
+92.86,
+100
+]
+},
+{
+"tier": "WR1 Upside (58-70.99)",
+"avgFpg": 12.83,
+"rates": [
+35.29,
+58.82,
+85.29,
+91.18
+]
+},
+{
+"tier": "WR2 Upside (45-57.99)",
+"avgFpg": 8.83,
+"rates": [
+9.52,
+20.63,
+38.1,
+53.97
+]
+},
+{
+"tier": "WR3 Upside (34-44.99)",
+"avgFpg": 4.94,
+"rates": [
+0,
+2,
+12,
+20
+]
+},
+{
+"tier": "Waivers Material (Below 34)",
+"avgFpg": 2.66,
+"rates": [
+0,
+0,
+0,
+4.35
+]
+}
+]
+}
+},
+"projections": {
+"WR": {
+"correlation": {
+"predictorLabel": "Predictor Model",
+"baselineLabel": "Prior Year FP/G",
+"predictorR": 0.707,
+"baselineR": 0.56,
+"boostText": "27.6% increase over prior year FP/G in terms direct correlation to fantasy points"
+}
+},
+"RB": {
+"correlation": {
+"predictorLabel": "Predictor Model",
+"baselineLabel": "Prior Year FP/G",
+"predictorR": 0.682,
+"baselineR": 0.466,
+"boostText": "46.4% increase over prior year FP/G in terms direct correlation to fantasy points"
+}
+},
+"TE": {
+"correlation": {
+"predictorLabel": "Predictor Model",
+"baselineLabel": "Prior Year FP/G",
+"predictorR": 0.711,
+"baselineR": 0.429,
+"boostText": "64.3% increase over prior year FP/G in terms direct correlation to fantasy points"
+}
+}
+}
+}

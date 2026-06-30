@@ -1,0 +1,13 @@
+Step 1: imports
+Step 2: load
+Step 3: loaded 403 statmenu
+Step 4: POS_BASE=0.1782178217821782
+Step 5: 153 WR keys
+Step 6: processing jamarr chase
+Step 7: chart2 keys=['g', 'aDOT', 'tprr', 'yprr', 'ypt', 'catch', 'yac_rec', 'yaco_rec', 'mtf_rec', 'fr_pct', 'deep_pct', 'contested_pct', 'ay_share', 'slot_pct', 'wide_pct', 'threat', 'fp_rr']
+Step 8: c2_yprr=2.38, c2_tprr=0.27
+EXCEPTION: name '__file__' is not defined
+Traceback (most recent call last):
+  File "<string>", line 49, in <module>
+  File "<string>", line 17, in <module>
+NameError: name '__file__' is not defined

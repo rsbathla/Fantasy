@@ -1,0 +1,448 @@
+Round 5 of 20
+00:45:43
+On the clock: Pick 56
+rsbathla
+Pick 57
+Maximus0421
+caseyt
+QB
+0
+RB
+2
+WR
+3
+TE
+0
+1.1
+1
+J. Gibbs
+RB
+DET
+(BYE 6)
+2.12
+24
+R. Rice
+WR
+KC
+(BYE 5)
+3.1
+25
+N. Collins
+WR
+HOU
+(BYE 8)
+4.12
+48
+D. Swift
+RB
+CHI
+(BYE 10)
+5.1
+49
+J. Williams
+WR
+DET
+(BYE 6)
+Unstoppable-Force
+QB
+0
+RB
+3
+WR
+2
+TE
+0
+1.2
+2
+B. Robinson
+RB
+ATL
+(BYE 11)
+2.11
+23
+J. Love
+RB
+ARI
+(BYE 14)
+3.2
+26
+C. Olave
+WR
+NO
+(BYE 8)
+4.11
+47
+C. Skattebo
+RB
+NYG
+(BYE 8)
+5.2
+50
+M. Evans
+WR
+SF
+(BYE 8)
+ghsfy53
+QB
+0
+RB
+0
+WR
+4
+TE
+1
+1.3
+3
+J. Chase
+WR
+CIN
+(BYE 6)
+2.10
+22
+T. McBride
+TE
+ARI
+(BYE 14)
+3.3
+27
+G. Pickens
+WR
+DAL
+(BYE 14)
+4.10
+46
+J. Waddle
+WR
+DEN
+(BYE 10)
+5.3
+51
+D. Adams
+WR
+LAR
+(BYE 11)
+ZaneZilla
+QB
+0
+RB
+1
+WR
+3
+TE
+1
+1.4
+4
+P. Nacua
+WR
+LAR
+(BYE 11)
+2.9
+21
+B. Bowers
+TE
+LV
+(BYE 13)
+3.4
+28
+K. Williams
+RB
+LAR
+(BYE 11)
+4.9
+45
+T. McLaurin
+WR
+WAS
+(BYE 7)
+5.4
+52
+D. Moore
+WR
+BUF
+(BYE 7)
+JaredLStanley
+QB
+0
+RB
+3
+WR
+2
+TE
+0
+1.5
+5
+J. Smith-Njigba
+WR
+SEA
+(BYE 11)
+2.8
+20
+D. Henry
+RB
+BAL
+(BYE 13)
+3.5
+29
+D. Smith
+WR
+PHI
+(BYE 10)
+4.8
+44
+D. Montgomery
+RB
+HOU
+(BYE 8)
+5.5
+53
+B. Tuten
+RB
+JAX
+(BYE 7)
+ewjohnson_tha_first
+QB
+0
+RB
+1
+WR
+3
+TE
+1
+1.6
+6
+J. Jefferson
+WR
+MIN
+(BYE 6)
+2.7
+19
+C. Brown
+RB
+CIN
+(BYE 6)
+3.6
+30
+L. McConkey
+WR
+LAC
+(BYE 7)
+4.7
+43
+L. Burden III
+WR
+CHI
+(BYE 10)
+5.6
+54
+T. Warren
+TE
+IND
+(BYE 13)
+mroban
+QB
+0
+RB
+2
+WR
+3
+TE
+0
+1.7
+7
+C. McCaffrey
+RB
+SF
+(BYE 8)
+2.6
+18
+A. Brown
+WR
+NE
+(BYE 11)
+3.7
+31
+G. Wilson
+WR
+NYJ
+(BYE 13)
+4.6
+42
+J. Williams
+RB
+DAL
+(BYE 14)
+5.7
+55
+C. Watson
+WR
+GB
+(BYE 11)
+rsbathla
+QB
+1
+RB
+2
+WR
+1
+TE
+0
+1.8
+8
+J. Taylor
+RB
+IND
+(BYE 13)
+2.5
+17
+K. Walker III
+RB
+KC
+(BYE 5)
+3.8
+32
+J. Allen
+QB
+BUF
+(BYE 7)
+4.5
+41
+T. Higgins
+WR
+CIN
+(BYE 6)
+On The Clock
+45:43
+6.5
+65
+Maximus0421
+QB
+0
+RB
+2
+WR
+2
+TE
+0
+1.9
+9
+A. Jeanty
+RB
+LV
+(BYE 13)
+2.4
+16
+O. Hampton
+RB
+LAC
+(BYE 7)
+3.9
+33
+E. Egbuka
+WR
+TB
+(BYE 10)
+4.4
+40
+M. Nabers
+WR
+NYG
+(BYE 8)
+WinAtFantasyFootball
+QB
+0
+RB
+2
+WR
+1
+TE
+1
+1.10
+10
+A. St. Brown
+WR
+DET
+(BYE 6)
+2.3
+15
+S. Barkley
+RB
+PHI
+(BYE 10)
+3.10
+34
+B. Hall
+RB
+NYJ
+(BYE 13)
+4.3
+39
+C. Loveland
+TE
+CHI
+(BYE 10)
+mattkays
+QB
+0
+RB
+2
+WR
+2
+TE
+0
+1.11
+11
+C. Lamb
+WR
+DAL
+(BYE 14)
+2.2
+14
+D. Achane
+RB
+MIA
+(BYE 6)
+3.11
+35
+T. Etienne Jr.
+RB
+NO
+(BYE 8)
+4.2
+38
+T. McMillan
+WR
+CAR
+(BYE 5)
+VanCoCapital
+QB
+0
+RB
+2
+WR
+2
+TE
+0
+1.12
+12
+J. Cook III
+RB
+BUF
+(BYE 7)
+2.1
+13
+D. London
+WR
+ATL
+(BYE 11)
+3.12
+36
+Z. Flowers
+WR
+BAL
+(BYE 13)
+4.1
+37
+J. Jacobs
+RB
+GB
+(BYE 11)

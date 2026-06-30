@@ -1,0 +1,79 @@
+{
+ "n_player_games": 1184,
+ "n_players": 256,
+ "overall_boom_rate": 0.1689,
+ "auc_base_only": 0.7386,
+ "auc_full": 0.7243,
+ "auc_matchup_alone": 0.5278,
+ "brier_base": 0.1233,
+ "brier_full": 0.1253,
+ "within_player_better_half_boom": 0.2,
+ "within_player_worse_half_boom": 0.1607,
+ "lift_top_bottom_quintile": 11.571,
+ "top_quintile_boom": 0.3432,
+ "bot_quintile_boom": 0.0297,
+ "player_base_spearman": 0.5051,
+ "signal_gates": {
+  "matchup_layer": {
+   "verdict": "KEEP_SHRUNK_PER_POSITION",
+   "auc_base": 0.739,
+   "auc_full": 0.724,
+   "helps": [
+    "QB",
+    "TE"
+   ],
+   "hurts": [
+    "WR",
+    "RB"
+   ]
+  },
+  "snap_share": {
+   "verdict": "CONTEXT_ONLY",
+   "reason": "in-sample residual-vs-base ~0 (RB -0.03, WR +0.06, TE +0.09) despite raw corr +0.44 RB; redundant with base rate",
+   "family": "opportunity"
+  },
+  "opportunity_family": {
+   "verdict": "CONCLUSIVELY_REDUNDANT",
+   "members": [
+    "route_participation",
+    "snap_share",
+    "rz_snap_share"
+   ],
+   "reason": "base rate already encodes opportunity; keep as context, never as multiplier"
+  },
+  "separation": {
+   "verdict": "PASSES_SCREEN",
+   "reason": "in-sample residual-vs-base: overall sep +0.29, MAN sep +0.32 (real orthogonal signal; base does not capture separation skill)",
+   "caveat": "in-sample upper bound; wire shrunk, OOS-confirm pending",
+   "wired": "WR live (19 incl Chase/Puka); TE display pending builder-plumbing fix; signal recorded in separation.json+statmenu"
+  },
+  "defense_matchup_per_position": {
+   "verdict": "KEEP_PER_POSITION_SIZED",
+   "test": "leak-free per-game opp-defense softness -> boom (gamelog)",
+   "QB": {
+    "auc": 0.583,
+    "soft_vs_tough": "17.5% vs 7.2%",
+    "lift": 2.42,
+    "action": "STRONG multiplier"
+   },
+   "TE": {
+    "auc": 0.56,
+    "soft_vs_tough": "21.4% vs 16.3%",
+    "lift": 1.31,
+    "action": "MODERATE"
+   },
+   "WR": {
+    "auc": 0.54,
+    "soft_vs_tough": "19.9% vs 16.9%",
+    "lift": 1.18,
+    "action": "SMALL"
+   },
+   "RB": {
+    "auc": 0.43,
+    "soft_vs_tough": "17.8% vs 23.8%",
+    "lift": 0.75,
+    "action": "OFF \u2014 run-D pctl is wrong lens for RB ceiling (inverted)"
+   }
+  }
+ }
+}

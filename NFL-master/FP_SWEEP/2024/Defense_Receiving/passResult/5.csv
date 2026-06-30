@@ -1,0 +1,33 @@
+teamTeamId,teamLocation,teamNickname,teamIsHomeTeam,opponentAbbreviation,opponentConference,opponentDivisionName,playDefenseMiddleOfTheFieldLookPreName,playDefenseMiddleOfTheFieldLookPostName,playDefenseCoverageSchemeParent,teamStatsGamesPlayed,opponentStatsSnapsOffenseTotal,opponentStatsPassingPlayActionLabel,opponentStatsPassingPressuredLabel,opponentStatsPassingBlitzedLabel,opponentStatsReceivingRoutesTotal,opponentStatsReceivingTargetsContestedLabel,opponentStatsReceivingTargetsCatchableLabel
+2,Atlanta,Falcons,1,CAR,NFC,NFC South,Open,Closed,Cover 3,17,31,No,Yes,No,142,No,No
+32,Washington,Commanders,,DAL,NFC,NFC East,Closed,Open,Cover 4,17,43,No,Yes,Yes,186,No,No
+26,Philadelphia,Eagles,1,NYG,NFC,NFC East,Closed,Closed,Cover 3,17,41,No,Yes,Yes,183,No,No
+7,Cincinnati,Bengals,,PIT,AFC,AFC North,Open,Open,Cover 6,16,36,No,Yes,No,167,No,No
+8,Cleveland,Browns,,BLT,AFC,AFC North,Closed,Closed,Cover 3,17,41,No,Yes,Yes,180,No,No
+27,Pittsburgh,Steelers,1,CIN,AFC,AFC North,Open,Open,Cover 6,17,40,No,Yes,No,181,No,No
+16,Kansas City,Chiefs,,DEN,AFC,AFC West,Closed,Closed,Cover 1,17,39,No,Yes,No,163,No,No
+29,San Francisco,49ers,,ARZ,NFC,NFC West,Open,Open,Cover 2,17,37,Yes,Yes,No,176,No,No
+6,Chicago,Bears,,GB,NFC,NFC North,Open,Closed,Cover 3,17,40,No,Yes,No,181,No,No
+5,Carolina,Panthers,,ATL,NFC,NFC South,Open,Closed,Cover 3,16,32,No,Yes,No,143,No,No
+1,Arizona,Cardinals,1,SF,NFC,NFC West,Open,Open,Cover 2,16,41,Yes,Yes,No,180,No,No
+4,Buffalo,Bills,,NE,AFC,AFC East,Open,Closed,Cover 3,16,39,No,No,No,177,No,No
+14,Indianapolis,Colts,1,JAX,AFC,AFC South,Closed,Closed,Cover 1,16,36,No,Yes,Yes,168,No,No
+24,New York,Giants,,PHI,NFC,NFC East,Closed,Closed,Cover 3,17,45,No,Yes,Yes,194,No,No
+10,Denver,Broncos,1,KC,AFC,AFC West,Closed,Closed,Cover 1,17,63,No,Yes,No,285,No,No
+28,Seattle,Seahawks,,LA,NFC,NFC West,Open,Open,Cover 4,17,45,No,Yes,No,202,No,No
+31,Tennessee,Titans,1,HST,AFC,AFC South,Open,Open,Red Zone,16,32,No,Yes,No,148,No,No
+22,New England,Patriots,1,BUF,AFC,AFC East,Open,Closed,Cover 3,17,28,No,No,No,123,No,No
+30,Tampa Bay,Buccaneers,1,NO,NFC,NFC South,Open,Closed,Cover 1,17,46,Yes,Yes,Yes,192,No,No
+17,Los Angeles,Rams,1,SEA,NFC,NFC West,Open,Open,Cover 4,16,38,No,Yes,No,178,No,No
+12,Green Bay,Packers,1,CHI,NFC,NFC North,Open,Closed,Cover 3,16,45,No,Yes,No,208,No,No
+3,Baltimore,Ravens,1,CLV,AFC,AFC North,Closed,Closed,Cover 3,17,54,No,Yes,Yes,244,No,No
+20,Miami,Dolphins,,NYJ,AFC,AFC East,Open,Open,Cover 6,17,35,No,Yes,No,155,No,No
+25,New York,Jets,1,MIA,AFC,AFC East,Open,Open,Cover 6,17,43,No,Yes,No,196,No,No
+18,Los Angeles,Chargers,,LV,AFC,AFC West,Closed,Closed,Cover 1,17,46,Yes,Yes,No,197,No,No
+15,Jacksonville,Jaguars,,IND,AFC,AFC South,Closed,Closed,Cover 1,17,34,No,Yes,Yes,154,No,No
+13,Houston,Texans,,TEN,AFC,AFC South,Open,Open,Red Zone,17,49,No,Yes,No,224,No,No
+21,Minnesota,Vikings,,DET,NFC,NFC North,Closed,Closed,Red Zone,17,49,Yes,Yes,No,218,No,No
+23,New Orleans,Saints,,TB,NFC,NFC South,Open,Closed,Cover 1,17,39,Yes,Yes,Yes,171,No,No
+11,Detroit,Lions,1,MIN,NFC,NFC North,Closed,Closed,Red Zone,17,37,Yes,Yes,No,164,No,No
+19,Las Vegas,Raiders,1,LAC,AFC,AFC West,Closed,Closed,Cover 1,17,38,Yes,Yes,No,167,No,No
+9,Dallas,Cowboys,1,WAS,NFC,NFC East,Closed,Open,Cover 4,17,52,No,Yes,Yes,232,No,No

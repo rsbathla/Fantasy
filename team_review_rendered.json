@@ -1,0 +1,5130 @@
+{
+"teams": [
+{
+"team": "DET",
+"name": "Detroit Lions",
+"verdict": "A balanced, high-volume attack and a top scoring offense (2.94 implied TD/g, 3rd). 4 alpha-ceiling players (p95≥33); best board asset is Jahmyr Gibbs at #1.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"1",
+"Jahmyr Gibbs",
+"RB",
+"1.2",
+"46",
+"16.3%",
+"100%",
+"16.2% tgt"
+],
+[
+"7",
+"Amon-Ra St. Brown",
+"WR",
+"7.9",
+"45",
+"15.7%",
+"98%",
+"31.7% tgt"
+],
+[
+"54",
+"Jameson Williams",
+"WR",
+"50.5",
+"33",
+"18.6%",
+"83%",
+"18.6% tgt"
+],
+[
+"95",
+"Sam LaPorta",
+"TE",
+"92.4",
+"29",
+"18.7%",
+"90%",
+"18.5% tgt"
+],
+[
+"99",
+"Jared Goff",
+"QB",
+"103.5",
+"34",
+"16.2%",
+"59%",
+"1.1 car/g"
+],
+[
+"147",
+"Isiah Pacheco",
+"RB",
+"142.2",
+"20",
+"21.0%",
+"52%",
+"9.8% tgt"
+],
+[
+"175",
+"Isaac TeSlaa",
+"WR",
+"169.3",
+"14",
+"23.6%",
+"39%",
+"5.7% tgt"
+],
+[
+"386",
+"Greg Dortch",
+"WR",
+"228.6",
+"3",
+"14.1%",
+"4%",
+"8.2% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.8 plays/g (9th) · 32.0 pass att (15th) · 53.5% pass rate (19th) · 247.5 pass yds (4th) · 27.8 carries (10th) · 126.1 rush yds (10th) · 2.94 TD/g (3rd)",
+"read": "A balanced script (53.5% pass) spreads opportunity without a strong structural lean either way, and the pace is real — 59.8 snaps/g (9th) manufactures extra possessions for everyone. Most important for best ball: 2.94 implied TD/g (3rd) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Amon-Ra St. Brown 31.7% tgt / aDOT 8.1 / max 44.4 · Jameson Williams 18.6% tgt / aDOT 12.6 / max 29.9 · Sam LaPorta 18.5% tgt / aDOT 5.7 / max 21.7 · Jahmyr Gibbs 14.3 car/g, 4.5 rec/g, max 58.4",
+"read": "Amon-Ra St. Brown is the focal point — a 31.7% target share in 2025 (fairly stable, cv 0.35), at a 8.1-yard aDOT (all-levels routes), peaking at 44.4 DK in his best week. Secondary volume goes to Jameson Williams (18.6%), Sam LaPorta (18.5%). In the backfield Jahmyr Gibbs profiled as the lead of a rotation (14.3 carries/g, and he caught 4.5 balls/g); ceiling week 58.4 DK. Small-sample caveat: Sam LaPorta (9g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 32.0 pass att/g in 2026 vs 36.5 actual in 2025 (-4.5) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~14.8% of the 2025 target volume turned over (a largely intact target tree) — out: K.Raymond (5.5%, to CHI), D.Montgomery (5.3%, to HOU), B.Wright (4.0%, gone). In: Isiah Pacheco (from KC); Greg Dortch (from ARI). Player deltas (2025 actual → 2026 projection): Jahmyr Gibbs 21.3/g proj vs 22.3/g in 2025 (-1.0, roughly steady); Amon-Ra St. Brown 19.0/g proj vs 19.9/g in 2025 (-0.9, roughly steady); Jameson Williams 12.6/g proj vs 13.6/g in 2025 (-1.0, roughly steady); Sam LaPorta 11.0/g proj vs 11.9/g in 2025 (-0.9, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Jahmyr Gibbs p95 46 (16.3% spike) · Amon-Ra St. Brown p95 45 (15.7% spike) · Jared Goff p95 34 (16.2% spike) · Jameson Williams p95 33 (18.6% spike)",
+"read": "4 players clear the alpha-ceiling bar, led by Jahmyr Gibbs (p95 46, hits a spike week 16.3% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Jameson Williams — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Jahmyr Gibbs (100%), Amon-Ra St. Brown (98%), Sam LaPorta (90%). Pure spike profiles (big ceiling, thinner advancement floor): Isiah Pacheco, Isaac TeSlaa — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Jared Goff + Amon-Ra St. Brown / Jameson Williams — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is CHI@DET — a top-tier blow-up game (tail rank #4); the natural bring-back is a CHI pass-catcher to play both sides of that game. Byes fall in Week 6, and the playoff run is W15 vs MIN, W16 vs NYG."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Jahmyr Gibbs: “Didn't understand why Bijan Robinson opened as the 1.1 in ADP over Jahmyr Gibbs” (@adamlevitan). On Jared Goff: “What we need to see in the coming years, and I think what we can see, and he's got the coach to do it, who had Jared Goff playing like a machine” (@benjaminsolak). On Isiah Pacheco: “Can t stop drafting Isiah Pacheco in best ball” (@ihartitz)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Jahmyr Gibbs (board #1, ADP 1.2), with Amon-Ra St. Brown, Jameson Williams as the correlated ceiling pieces. Let the market overpay for Greg Dortch."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "LAR",
+"name": "Los Angeles Rams",
+"verdict": "A balanced, high-volume attack and a top scoring offense (3.24 implied TD/g, 1st). 4 alpha-ceiling players (p95≥33); best board asset is Puka Nacua at #2.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"2",
+"Puka Nacua",
+"WR",
+"4.0",
+"50",
+"15.8%",
+"100%",
+"31.1% tgt"
+],
+[
+"34",
+"Kyren Williams",
+"RB",
+"29.3",
+"34",
+"18.2%",
+"83%",
+"8.4% tgt"
+],
+[
+"43",
+"Davante Adams",
+"WR",
+"46.2",
+"35",
+"17.9%",
+"88%",
+"24.4% tgt"
+],
+[
+"82",
+"Matthew Stafford",
+"QB",
+"88.5",
+"37",
+"16.2%",
+"79%",
+"1.7 car/g"
+],
+[
+"107",
+"Blake Corum",
+"RB",
+"100.5",
+"23",
+"20.4%",
+"56%",
+"5.2% tgt"
+],
+[
+"205",
+"Colby Parkinson",
+"TE",
+"203.3",
+"14",
+"26.7%",
+"33%",
+"11.8% tgt"
+],
+[
+"214",
+"Terrance Ferguson",
+"TE",
+"212.3",
+"21",
+"20.2%",
+"56%",
+"7.2% tgt"
+],
+[
+"248",
+"Jarquez Hunter",
+"RB",
+"230.0",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"322",
+"Max Klare",
+"TE",
+"228.9",
+"2",
+"12.2%",
+"2%",
+"rookie/NA"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "60.1 plays/g (7th) · 32.8 pass att (11th) · 54.7% pass rate (13th) · 251.9 pass yds (2nd) · 27.2 carries (15th) · 121.5 rush yds (13th) · 3.24 TD/g (1st)",
+"read": "A balanced script (54.7% pass) spreads opportunity without a strong structural lean either way, and the pace is real — 60.1 snaps/g (7th) manufactures extra possessions for everyone. Most important for best ball: 3.24 implied TD/g (1st) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Puka Nacua 31.1% tgt / aDOT 10.1 / max 49.5 · Davante Adams 24.4% tgt / aDOT 13.2 / max 26.5 · Colby Parkinson 11.8% tgt / aDOT 5.1 / max 24.5 · Kyren Williams 15.2 car/g, 2.2 rec/g, max 32.1",
+"read": "Puka Nacua (2025 with LAR) is the focal point — a 31.1% target share in 2025 (rock-steady, cv 0.27), at a 10.1-yard aDOT (all-levels routes), peaking at 49.5 DK in his best week. Secondary volume goes to Davante Adams (24.4%). In the backfield Kyren Williams (2025 with LAR) profiled as a true workhorse (15.2 carries/g, with a thin receiving role); ceiling week 32.1 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "In: Puka Nacua (from LAR); Kyren Williams (from LAR); Davante Adams (from LAR); Matthew Stafford (from LAR); Blake Corum (from LAR); Colby Parkinson (from LAR). Player deltas (2025 actual → 2026 projection): Puka Nacua 21.1/g proj vs 25.1/g in 2025 (-4.0, projected to regress, joins from LAR); Kyren Williams 14.5/g proj vs 16.3/g in 2025 (-1.8, roughly steady, joins from LAR); Davante Adams 13.9/g proj vs 15.4/g in 2025 (-1.5, roughly steady, joins from LAR); Matthew Stafford 18.3/g proj vs 22.0/g in 2025 (-3.7, projected to regress, joins from LAR)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Puka Nacua p95 50 (15.8% spike) · Matthew Stafford p95 37 (16.2% spike) · Davante Adams p95 35 (17.9% spike) · Kyren Williams p95 34 (18.2% spike)",
+"read": "4 players clear the alpha-ceiling bar, led by Puka Nacua (p95 50, hits a spike week 15.8% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Davante Adams — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Puka Nacua (100%), Davante Adams (88%), Kyren Williams (83%). Pure spike profiles (big ceiling, thinner advancement floor): Blake Corum, Colby Parkinson, Terrance Ferguson — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Matthew Stafford + Puka Nacua / Davante Adams — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is LAR@TB — a top-tier blow-up game (tail rank #1); the natural bring-back is a TB pass-catcher to play both sides of that game. Byes fall in Week 11, and the playoff run is W15 vs DAL, W16 vs SEA."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “He's going to not be in the slot, not be in the backfield in this kind of unique spot where the way that the Rams want to play this defense is going to be a box”. On Matthew Stafford: “For the Rams, an injury to Matthew Stafford, who is 38 years old, at the quarterback position would certainly derail their season” (@thepowerrank). On Blake Corum: “Blake Corum will be a very important handcuff with standalone value in 2026” (@superrnova38). On Colby Parkinson: “Colby Parkinson's, I think really actually a pretty solid player for him” (@joshnorris)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Puka Nacua (board #2, ADP 4.0), with Kyren Williams, Davante Adams as the correlated ceiling pieces. Let the market overpay for Jarquez Hunter, Max Klare."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Puka Nacua — risk: Open NFL off-field review; early-season tail risk (survivable phase). 11 • Davante Adams — age: Age / role-decline flag (dataroma model). 11 • Blake Corum — trap: Trap take Jaxson Dart instead (+23 board ranks). 4.2"
+}
+]
+},
+{
+"team": "CIN",
+"name": "Cincinnati Bengals",
+"verdict": "A pass-first, high-volume attack and a top scoring offense (2.76 implied TD/g, 4th). 3 alpha-ceiling players (p95≥33); best board asset is Ja'Marr Chase at #3.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"3",
+"Ja'Marr Chase",
+"WR",
+"3.2",
+"47",
+"16.0%",
+"99%",
+"32.0% tgt"
+],
+[
+"22",
+"Chase Brown",
+"RB",
+"17.8",
+"35",
+"17.4%",
+"85%",
+"14.4% tgt"
+],
+[
+"42",
+"Tee Higgins",
+"WR",
+"36.2",
+"33",
+"18.8%",
+"85%",
+"18.3% tgt"
+],
+[
+"53",
+"Joe Burrow",
+"QB",
+"57.4",
+"30",
+"7.4%",
+"85%",
+"1.8 car/g"
+],
+[
+"217",
+"Mike Gesicki",
+"TE",
+"216.9",
+"19",
+"21.3%",
+"48%",
+"10.5% tgt"
+],
+[
+"236",
+"Samaje Perine",
+"RB",
+"225.6",
+"17",
+"21.8%",
+"47%",
+"5.6% tgt"
+],
+[
+"282",
+"Tahj Brooks",
+"RB",
+"231.1",
+"6",
+"17.6%",
+"6%",
+"3.0% tgt"
+],
+[
+"311",
+"Joe Flacco",
+"QB",
+"228.8",
+"",
+"",
+"3%",
+"1.6 car/g"
+],
+[
+"313",
+"Andrei Iosivas",
+"WR",
+"228.6",
+"15",
+"23.3%",
+"40%",
+"10.1% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "60.3 plays/g (3rd) · 34.9 pass att (1st) · 58.0% pass rate (2nd) · 252.0 pass yds (1st) · 25.4 carries (30th) · 108.2 rush yds (31st) · 2.76 TD/g (4th)",
+"read": "This is a genuinely pass-first script — 58.0% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate, and the pace is real — 60.3 snaps/g (3rd) manufactures extra possessions for everyone. Most important for best ball: 2.76 implied TD/g (4th) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Ja'Marr Chase 32.0% tgt / aDOT 8.5 / max 41.1 · Tee Higgins 18.3% tgt / aDOT 13.3 / max 34.1 · Mike Gesicki 10.5% tgt / aDOT 9.7 / max 20.6 · Chase Brown 13.7 car/g, 4.1 rec/g, max 32.9",
+"read": "Ja'Marr Chase is the focal point — a 32.0% target share in 2025 (fairly stable, cv 0.35), at a 8.5-yard aDOT (all-levels routes), peaking at 41.1 DK in his best week. Secondary volume goes to Tee Higgins (18.3%). In the backfield Chase Brown profiled as the lead of a rotation (13.7 carries/g, and he caught 4.1 balls/g); ceiling week 32.9 DK. Small-sample caveat: Joe Burrow (8g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 34.9 pass att/g in 2026 vs 40.0 actual in 2025 (-5.1) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~6.7% of the 2025 target volume turned over (a largely intact target tree) — out: N.Fant (6.7%, to NO). Player deltas (2025 actual → 2026 projection): Ja'Marr Chase 19.9/g proj vs 21.0/g in 2025 (-1.1, roughly steady); Chase Brown 16.0/g proj vs 16.9/g in 2025 (-0.9, roughly steady); Tee Higgins 12.7/g proj vs 14.2/g in 2025 (-1.5, roughly steady); Joe Burrow 18.6/g proj vs 18.1/g in 2025 (+0.5, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Ja'Marr Chase p95 47 (16.0% spike) · Chase Brown p95 35 (17.4% spike) · Tee Higgins p95 33 (18.8% spike)",
+"read": "3 players clear the alpha-ceiling bar, led by Ja'Marr Chase (p95 47, hits a spike week 16.0% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Ja'Marr Chase, Tee Higgins — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Ja'Marr Chase (99%), Chase Brown (85%), Tee Higgins (85%). Pure spike profiles (big ceiling, thinner advancement floor): Mike Gesicki, Samaje Perine, Andrei Iosivas — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Joe Burrow + Ja'Marr Chase / Tee Higgins — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is BAL@CIN — a top-tier blow-up game (tail rank #2); the natural bring-back is a BAL pass-catcher to play both sides of that game. Byes fall in Week 6, and the playoff run is W15 vs CAR, W16 vs IND."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Ja'Marr Chase: “Jamar Chase finished as the wide receiver four in points per game after being selected as the wide receiver 21 in underdog drafts” (@joshnorris). On Joe Burrow: “You need the 12-yard line for a first down, Burrow, circling back” (@sigmundbloom)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Ja'Marr Chase (board #3, ADP 3.2), with Chase Brown, Tee Higgins as the correlated ceiling pieces. Let the market overpay for Samaje Perine, Tahj Brooks."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "ATL",
+"name": "Atlanta Falcons",
+"verdict": "A pass-first, high-volume attack and a middle scoring offense (1.88 implied TD/g, 23rd). 2 alpha-ceiling players (p95≥33); best board asset is Bijan Robinson at #4.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"4",
+"Bijan Robinson",
+"RB",
+"2.1",
+"46",
+"16.3%",
+"98%",
+"19.7% tgt"
+],
+[
+"15",
+"Drake London",
+"WR",
+"15.7",
+"38",
+"16.5%",
+"95%",
+"29.9% tgt"
+],
+[
+"100",
+"Kyle Pitts Sr.",
+"TE",
+"93.9",
+"28",
+"17.7%",
+"87%",
+"22.7% tgt"
+],
+[
+"179",
+"Brian Robinson Jr.",
+"RB",
+"170.0",
+"16",
+"21.0%",
+"45%",
+"19.7% tgt"
+],
+[
+"197",
+"Tua Tagovailoa",
+"QB",
+"195.9",
+"15",
+"16.1%",
+"21%",
+"1.4 car/g"
+],
+[
+"198",
+"Zachariah Branch",
+"WR",
+"199.7",
+"11",
+"21.9%",
+"22%",
+"rookie/NA"
+],
+[
+"223",
+"Michael Penix Jr.",
+"QB",
+"220.3",
+"",
+"",
+"18%",
+"2.3 car/g"
+],
+[
+"293",
+"Olamide Zaccheaus",
+"WR",
+"232.2",
+"13",
+"22.5%",
+"32%",
+"13.5% tgt"
+],
+[
+"387",
+"Jahan Dotson",
+"WR",
+"230.1",
+"16",
+"20.3%",
+"42%",
+"8.5% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "60.2 plays/g (5th) · 33.4 pass att (7th) · 55.4% pass rate (10th) · 238.4 pass yds (8th) · 26.8 carries (20th) · 120.7 rush yds (15th) · 1.88 TD/g (23rd)",
+"read": "A balanced script (55.4% pass) spreads opportunity without a strong structural lean either way, and the pace is real — 60.2 snaps/g (5th) manufactures extra possessions for everyone. Scoring sits mid-pack (1.88 TD/g, 23rd)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Drake London 29.9% tgt / aDOT 10.8 / max 41.8 · Kyle Pitts Sr. 22.7% tgt / aDOT 7.3 / max 48.6 · Olamide Zaccheaus 13.5% tgt / aDOT 7.3 / max 17.8 · Bijan Robinson 16.9 car/g, 4.6 rec/g, max 42.9",
+"read": "Drake London is the focal point — a 29.9% target share in 2025 (fairly stable, cv 0.38), at a 10.8-yard aDOT (all-levels routes), peaking at 41.8 DK in his best week. Secondary volume goes to Kyle Pitts Sr. (22.7%). In the backfield Bijan Robinson profiled as a true workhorse (16.9 carries/g, and he caught 4.6 balls/g); ceiling week 42.9 DK. Small-sample caveat: Michael Penix Jr. (9g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 33.4 pass att/g in 2026 vs 33.8 actual in 2025 (-0.4) — holding steady on pass volume. Vacated opportunity: ~20.7% of the 2025 target volume turned over (meaningful turnover) — out: D.Mooney (13.8%, to NYG), D.Sills (6.9%, gone). In: Tua Tagovailoa (from MIA); Olamide Zaccheaus (from CHI); Jahan Dotson (from PHI)  ·  rookies: Zachariah Branch. Player deltas (2025 actual → 2026 projection): Bijan Robinson 20.6/g proj vs 23.1/g in 2025 (-2.5, projected to regress); Drake London 15.9/g proj vs 18.0/g in 2025 (-2.1, projected to regress); Kyle Pitts Sr. 10.8/g proj vs 12.6/g in 2025 (-1.8, roughly steady); Brian Robinson Jr. 5.6/g proj vs 23.1/g in 2025 (-17.5, projected to regress)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Bijan Robinson p95 46 (16.3% spike) · Drake London p95 38 (16.5% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Bijan Robinson (p95 46, hits a spike week 16.3% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Bijan Robinson (98%), Drake London (95%), Kyle Pitts Sr. (87%). Pure spike profiles (big ceiling, thinner advancement floor): Brian Robinson Jr., Zachariah Branch, Olamide Zaccheaus — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Tua Tagovailoa + Drake London / Kyle Pitts Sr. — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is ATL@NO — a mid-tier finals game (tail rank #11); the natural bring-back is a NO pass-catcher to play both sides of that game. Byes fall in Week 11, and the playoff run is W15 vs WAS, W16 vs TB."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “And it goes to show how much he is such a huge part of the Falcons offense”. On Bijan Robinson: “Didn't understand why Bijan Robinson opened as the 1.1 in ADP over Jahmyr Gibbs” (@adamlevitan). On Drake London: “Isn't that the case for Drake London + Nico Collins as top-10 WRs and Round 2 picks despite the QB questions?” (@ihartitz). On Zachariah Branch: “Falcons third-round rookie receiver Zachariah Branch had a strong day fresh off his trip to Los Angeles for the NFLPA rookie premiere, which spanned May 14-16 and featured 42 draft picks” (@32beatwriters)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Bijan Robinson (board #4, ADP 2.1), with Drake London as the correlated ceiling pieces. Let the market overpay for Olamide Zaccheaus, Jahan Dotson."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "SEA",
+"name": "Seattle Seahawks",
+"verdict": "A run-leaning, low-snap attack and a middle scoring offense (2.53 implied TD/g, 11th). 1 alpha-ceiling player (p95≥33); best board asset is Jaxon Smith-Njigba at #5.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"5",
+"Jaxon Smith-Njigba",
+"WR",
+"5.4",
+"47",
+"15.8%",
+"99%",
+"rookie/NA"
+],
+[
+"66",
+"Jadarian Price",
+"RB",
+"60.2",
+"28",
+"18.6%",
+"70%",
+"rookie/NA"
+],
+[
+"129",
+"Sam Darnold",
+"QB",
+"135.6",
+"31",
+"15.8%",
+"49%",
+"2.0 car/g"
+],
+[
+"142",
+"Zach Charbonnet",
+"RB",
+"148.6",
+"31",
+"21.4%",
+"73%",
+"7.5% tgt"
+],
+[
+"152",
+"Rashid Shaheed",
+"WR",
+"146.2",
+"23",
+"19.4%",
+"60%",
+"15.5% tgt"
+],
+[
+"180",
+"AJ Barner",
+"TE",
+"182.0",
+"19",
+"20.1%",
+"51%",
+"14.1% tgt"
+],
+[
+"195",
+"Cooper Kupp",
+"WR",
+"194.9",
+"18",
+"20.7%",
+"48%",
+"17.9% tgt"
+],
+[
+"207",
+"Emanuel Wilson",
+"RB",
+"191.1",
+"2",
+"16.2%",
+"7%",
+"6.7% tgt"
+],
+[
+"226",
+"George Holani",
+"RB",
+"225.9",
+"9",
+"22.9%",
+"26%",
+"8.2% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.4 plays/g (24th) · 30.2 pass att (27th) · 51.7% pass rate (26th) · 236.0 pass yds (9th) · 28.2 carries (7th) · 114.3 rush yds (23rd) · 2.53 TD/g (11th)",
+"read": "A run-leaning script (51.7% pass vs 54% league) tilts value toward the backfield and compresses the passing pie, but the deliberate pace (58.4 snaps/g, 24th) caps the raw opportunity to go around. Scoring sits mid-pack (2.53 TD/g, 11th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Cooper Kupp 17.9% tgt / aDOT 7.6 / max 16.0 · Rashid Shaheed 15.5% tgt / aDOT 12.9 / max 24.4 · AJ Barner 14.1% tgt / aDOT 4.5 / max 24.3 · Zach Charbonnet 11.2 car/g, 1.2 rec/g, max 29.2",
+"read": "Cooper Kupp is the focal point — a 17.9% target share in 2025 (fairly stable, cv 0.43), at a 7.6-yard aDOT (short-area routes), peaking at 16.0 DK in his best week. Secondary volume goes to Rashid Shaheed (15.5%). In the backfield Zach Charbonnet profiled as the lead of a rotation (11.2 carries/g, with a thin receiving role); ceiling week 29.2 DK. Small-sample caveat: Tory Horton (7g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 30.2 pass att/g in 2026 vs 30.4 actual in 2025 (-0.2) — holding steady on pass volume. Vacated opportunity: ~38.7% of the 2025 target volume turned over (major turnover) — out: J.Smith-Njigba (31.0%, gone), K.Walker (7.7%, to KC). In: Emanuel Wilson (from GB)  ·  rookies: Jaxon Smith-Njigba, Jadarian Price. Player deltas (2025 actual → 2026 projection): Sam Darnold 15.5/g proj vs 15.3/g in 2025 (+0.2, roughly steady); Zach Charbonnet 12.0/g proj vs 10.8/g in 2025 (+1.2, roughly steady); Rashid Shaheed 8.3/g proj vs 7.7/g in 2025 (+0.6, roughly steady); AJ Barner 6.7/g proj vs 8.3/g in 2025 (-1.6, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Jaxon Smith-Njigba p95 47 (15.8% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Jaxon Smith-Njigba (p95 47, hits a spike week 15.8% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Jaxon Smith-Njigba (99%), Zach Charbonnet (73%), Jadarian Price (70%). Pure spike profiles (big ceiling, thinner advancement floor): Jadarian Price, Zach Charbonnet, Rashid Shaheed — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Sam Darnold + Jaxon Smith-Njigba / Rashid Shaheed — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is CAR@SEA — a top-tier blow-up game (tail rank #5); the natural bring-back is a CAR pass-catcher to play both sides of that game. Byes fall in Week 11, and the playoff run is W15 vs PHI, W16 vs LAR."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “They signed Connor Hayward in free agency, and all of that is to present as if they are running the football, but if you go and you look at Clint's offense last year in Seattle, 23rd in rushing success rate, 20th in explosive rush rate”. On Jadarian Price: “Also, first round pick Jadarian Price is going to have a very long runway to try and prove to the coaching staff that he should be RB1” (@coachspeakindex). On Sam Darnold: “He's going to have a full off season now to build chemistry with Sam Darnold as well” (@jamesdkoh). On AJ Barner: “Franken signing these late round tight ends, he is someone that I really am attacking because I think it's kind of fitting that he's staying next to AJ Barner in drafts” (@joshnorris)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Jaxon Smith-Njigba (board #5, ADP 5.4). Let the market overpay for Emanuel Wilson, Tory Horton."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Cooper Kupp — age: Age / role-decline flag. 11"
+}
+]
+},
+{
+"team": "SF",
+"name": "San Francisco 49ers",
+"verdict": "A balanced, average-pace attack and a middle scoring offense (2.59 implied TD/g, 9th). 3 alpha-ceiling players (p95≥33); best board asset is Christian McCaffrey at #6.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"6",
+"Christian McCaffrey",
+"RB",
+"6.3",
+"44",
+"15.8%",
+"99%",
+"23.3% tgt"
+],
+[
+"52",
+"Mike Evans",
+"WR",
+"52.0",
+"30",
+"18.8%",
+"74%",
+"rookie/NA"
+],
+[
+"93",
+"Brock Purdy",
+"QB",
+"98.8",
+"36",
+"14.9%",
+"82%",
+"4.3 car/g"
+],
+[
+"104",
+"George Kittle",
+"TE",
+"104.9",
+"33",
+"18.7%",
+"96%",
+"20.1% tgt"
+],
+[
+"114",
+"Ricky Pearsall",
+"WR",
+"107.4",
+"27",
+"18.6%",
+"64%",
+"16.8% tgt"
+],
+[
+"181",
+"De'Zhaun Stribling",
+"WR",
+"176.9",
+"13",
+"24.2%",
+"30%",
+"rookie/NA"
+],
+[
+"200",
+"Brandon Aiyuk",
+"WR",
+"204.3",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"216",
+"Christian Kirk",
+"WR",
+"208.6",
+"13",
+"24.3%",
+"35%",
+"15.7% tgt"
+],
+[
+"227",
+"Kaelon Black",
+"RB",
+"217.6",
+"7",
+"20.5%",
+"17%",
+"rookie/NA"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.2 plays/g (14th) · 31.2 pass att (20th) · 52.7% pass rate (23rd) · 245.9 pass yds (5th) · 28.0 carries (9th) · 117.2 rush yds (19th) · 2.59 TD/g (9th)",
+"read": "A balanced script (52.7% pass) spreads opportunity without a strong structural lean either way. Scoring sits mid-pack (2.59 TD/g, 9th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "George Kittle 20.1% tgt / aDOT 6.7 / max 27.5 · Ricky Pearsall 16.8% tgt / aDOT 13.8 / max 22.7 · Christian Kirk 15.7% tgt / aDOT 7.4 / max 31.4 · Christian McCaffrey 17.7 car/g, 5.9 rec/g, max 42.1",
+"read": "George Kittle is the focal point — a 20.1% target share in 2025 (fairly stable, cv 0.41), at a 6.7-yard aDOT (short-area routes), peaking at 27.5 DK in his best week. Secondary volume goes to Ricky Pearsall (16.8%), Christian Kirk (15.7%). In the backfield Christian McCaffrey profiled as a true workhorse (17.7 carries/g, and he caught 5.9 balls/g); ceiling week 42.1 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 31.2 pass att/g in 2026 vs 35.4 actual in 2025 (-4.2) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~38.6% of the 2025 target volume turned over (major turnover) — out: J.Jennings (16.7%, to MIN), K.Bourne (9.1%, to ARI), D.Robinson (7.3%, gone), K.Juszczyk (5.5%, gone). In: Christian Kirk (from HOU)  ·  rookies: Mike Evans, De'Zhaun Stribling, Brandon Aiyuk. Player deltas (2025 actual → 2026 projection): Christian McCaffrey 20.8/g proj vs 24.7/g in 2025 (-3.9, projected to regress); Brock Purdy 18.4/g proj vs 19.8/g in 2025 (-1.4, roughly steady); George Kittle 12.7/g proj vs 13.8/g in 2025 (-1.1, roughly steady); Ricky Pearsall 9.8/g proj vs 9.5/g in 2025 (+0.3, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Christian McCaffrey p95 44 (15.8% spike) · Brock Purdy p95 36 (14.9% spike) · George Kittle p95 33 (18.7% spike)",
+"read": "3 players clear the alpha-ceiling bar, led by Christian McCaffrey (p95 44, hits a spike week 15.8% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: George Kittle — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Christian McCaffrey (99%), George Kittle (96%), Brock Purdy (82%). Pure spike profiles (big ceiling, thinner advancement floor): Mike Evans, Ricky Pearsall, De'Zhaun Stribling — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Brock Purdy + George Kittle / Mike Evans — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is PHI@SF — a mid-tier finals game (tail rank #8); the natural bring-back is a PHI pass-catcher to play both sides of that game. Byes fall in Week 8, and the playoff run is W15 vs LAC, W16 vs KC."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “And then maybe Brandon Ayuk like on August 1st, if he wants to show up and the 49ers want to release him from being a hostage”. On Mike Evans: “Before injuries hit in 2025, Evans averaged 11.3 PPR points at 47 yards per game” (@superrnova38). On George Kittle: “With Kittle, I think I have some downside risk” (@fantasypts). On Brandon Aiyuk: “You draft no Wide Receivers in best ball and then finish the draft with: Stefon Diggs Travis Hunter Brandon Aiyuk Tank Dell Deebo Samuel Tyreek Hill And 2 other guys” (@chessliam)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Christian McCaffrey (board #6, ADP 6.3), with Brock Purdy, George Kittle as the correlated ceiling pieces. Let the market overpay for Jordan James, Jake Tonges."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Mike Evans — age: Age / role-decline flag. 11 • George Kittle — injury: Achilles; 61.9% inline negative indicator verify camp. 11"
+}
+]
+},
+{
+"team": "IND",
+"name": "Indianapolis Colts",
+"verdict": "A balanced, low-snap attack and a middle scoring offense (2.29 implied TD/g, 17th). 1 alpha-ceiling player (p95≥33); best board asset is Jonathan Taylor at #8.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"8",
+"Jonathan Taylor",
+"RB",
+"7.7",
+"40",
+"16.1%",
+"97%",
+"11.8% tgt"
+],
+[
+"67",
+"Tyler Warren",
+"TE",
+"61.9",
+"30",
+"17.8%",
+"92%",
+"21.6% tgt"
+],
+[
+"80",
+"Alec Pierce",
+"WR",
+"72.7",
+"31",
+"18.4%",
+"79%",
+"17.4% tgt"
+],
+[
+"108",
+"Josh Downs",
+"WR",
+"104.8",
+"26",
+"18.8%",
+"66%",
+"17.3% tgt"
+],
+[
+"137",
+"Daniel Jones",
+"QB",
+"142.8",
+"28",
+"8.9%",
+"62%",
+"3.5 car/g"
+],
+[
+"266",
+"Nick Westbrook-Ikhine",
+"WR",
+"232.0",
+"17",
+"20.9%",
+"46%",
+"rookie/NA"
+],
+[
+"277",
+"Deion Burks",
+"WR",
+"230.6",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"331",
+"DJ Giddens",
+"RB",
+"228.8",
+"7",
+"22.0%",
+"21%",
+"3.0% tgt"
+],
+[
+"374",
+"Anthony Richardson Sr.",
+"QB",
+"230.9",
+"",
+"",
+"",
+"2.9% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.0 plays/g (31st) · 31.0 pass att (23rd) · 53.4% pass rate (20th) · 220.2 pass yds (28th) · 27.0 carries (18th) · 121.2 rush yds (14th) · 2.29 TD/g (17th)",
+"read": "A balanced script (53.4% pass) spreads opportunity without a strong structural lean either way, but the deliberate pace (58.0 snaps/g, 31st) caps the raw opportunity to go around. Scoring sits mid-pack (2.29 TD/g, 17th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Tyler Warren 21.6% tgt / aDOT 5.3 / max 18.3 · Alec Pierce 17.4% tgt / aDOT 19.0 / max 32.2 · Josh Downs 17.3% tgt / aDOT 7.5 / max 17.0 · Jonathan Taylor 19.1 car/g, 2.7 rec/g, max 52.6",
+"read": "Tyler Warren is the focal point — a 21.6% target share in 2025 (rock-steady, cv 0.29), at a 5.3-yard aDOT (short-area routes), peaking at 18.3 DK in his best week. Secondary volume goes to Alec Pierce (17.4%), Josh Downs (17.3%). In the backfield Jonathan Taylor profiled as a true workhorse (19.1 carries/g, with a thin receiving role); ceiling week 52.6 DK. Small-sample caveat: Anthony Richardson Sr. (2g), Riley Leonard (5g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 31.0 pass att/g in 2026 vs 34.2 actual in 2025 (-3.2) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~41.1% of the 2025 target volume turned over (major turnover) — out: M.Pittman (19.2%, to PIT), A.Mitchell (12.5%, to NYJ), J.Taylor (9.4%, to JAX). Player deltas (2025 actual → 2026 projection): Jonathan Taylor 18.3/g proj vs 22.1/g in 2025 (-3.8, projected to regress); Tyler Warren 12.1/g proj vs 11.1/g in 2025 (+1.0, roughly steady); Alec Pierce 11.8/g proj vs 12.6/g in 2025 (-0.8, roughly steady); Josh Downs 9.8/g proj vs 8.5/g in 2025 (+1.3, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Jonathan Taylor p95 40 (16.1% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Jonathan Taylor (p95 40, hits a spike week 16.1% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Jonathan Taylor (97%), Tyler Warren (92%), Alec Pierce (79%). Pure spike profiles (big ceiling, thinner advancement floor): Alec Pierce, Josh Downs, Nick Westbrook-Ikhine — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Daniel Jones + Alec Pierce / Tyler Warren — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is CLE@IND — a lower-variance finals game (tail rank #15); the natural bring-back is a CLE pass-catcher to play both sides of that game. Byes fall in Week 13, and the playoff run is W15 vs TEN, W16 vs CIN."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Alec Pierce: “Alec Pierce being the WR34 in ADP seems very off” (@haydenwinks). On Josh Downs: “I would not be shocked whatsoever if Josh Downs led the Colts in receptions this year” (@jamesdkoh). On DJ Giddens: “It has been Giddens getting the initial first-team reps, although they've both rotated” (@dhananizain). On Seth McGowan: “Now, McGowan is a guy I am a little more confident” (@dhananizain)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Jonathan Taylor (board #8, ADP 7.7). Let the market overpay for Nick Westbrook-Ikhine, Deion Burks."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "DAL",
+"name": "Dallas Cowboys",
+"verdict": "A balanced, high-volume attack and a top scoring offense (2.76 implied TD/g, 5th). 4 alpha-ceiling players (p95≥33); best board asset is CeeDee Lamb at #9.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"9",
+"CeeDee Lamb",
+"WR",
+"10.8",
+"42",
+"16.8%",
+"97%",
+"25.0% tgt"
+],
+[
+"28",
+"George Pickens",
+"WR",
+"24.2",
+"36",
+"16.8%",
+"90%",
+"22.6% tgt"
+],
+[
+"35",
+"Javonte Williams",
+"RB",
+"37.8",
+"35",
+"17.5%",
+"84%",
+"9.1% tgt"
+],
+[
+"71",
+"Dak Prescott",
+"QB",
+"76.4",
+"35",
+"15.2%",
+"72%",
+"3.1 car/g"
+],
+[
+"128",
+"Jake Ferguson",
+"TE",
+"127.6",
+"25",
+"19.8%",
+"79%",
+"16.5% tgt"
+],
+[
+"176",
+"Ryan Flournoy",
+"WR",
+"172.9",
+"17",
+"21.5%",
+"45%",
+"12.7% tgt"
+],
+[
+"228",
+"Jaydon Blue",
+"RB",
+"224.3",
+"7",
+"20.5%",
+"19%",
+"3.3% tgt"
+],
+[
+"260",
+"Michael Trigg",
+"TE",
+"229.2",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"278",
+"Malik Davis",
+"RB",
+"228.9",
+"9",
+"23.9%",
+"29%",
+"7.1% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "61.5 plays/g (1st) · 34.1 pass att (3rd) · 55.4% pass rate (11th) · 251.2 pass yds (3rd) · 27.5 carries (14th) · 119.3 rush yds (17th) · 2.76 TD/g (5th)",
+"read": "A balanced script (55.4% pass) spreads opportunity without a strong structural lean either way, and the pace is real — 61.5 snaps/g (1st) manufactures extra possessions for everyone. Most important for best ball: 2.76 implied TD/g (5th) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "CeeDee Lamb 25.0% tgt / aDOT 12.0 / max 27.2 · George Pickens 22.6% tgt / aDOT 11.2 / max 36.4 · Jake Ferguson 16.5% tgt / aDOT 4.6 / max 23.9 · Javonte Williams 15.8 car/g, 2.2 rec/g, max 29.9",
+"read": "CeeDee Lamb is the focal point — a 25.0% target share in 2025 (fairly stable, cv 0.34), at a 12.0-yard aDOT (downfield routes), peaking at 27.2 DK in his best week. Secondary volume goes to George Pickens (22.6%), Jake Ferguson (16.5%). In the backfield Javonte Williams profiled as a true workhorse (15.8 carries/g, with a thin receiving role); ceiling week 29.9 DK. Small-sample caveat: Joe Milton III (4g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 34.1 pass att/g in 2026 vs 38.7 actual in 2025 (-4.6) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~5.7% of the 2025 target volume turned over (a largely intact target tree) — out: J.Tolbert (5.7%, to MIA). Player deltas (2025 actual → 2026 projection): CeeDee Lamb 17.5/g proj vs 16.8/g in 2025 (+0.7, roughly steady); George Pickens 14.1/g proj vs 17.9/g in 2025 (-3.8, projected to regress); Javonte Williams 15.4/g proj vs 15.7/g in 2025 (-0.3, roughly steady); Dak Prescott 17.8/g proj vs 19.7/g in 2025 (-1.9, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "CeeDee Lamb p95 42 (16.8% spike) · George Pickens p95 36 (16.8% spike) · Javonte Williams p95 35 (17.5% spike) · Dak Prescott p95 35 (15.2% spike)",
+"read": "4 players clear the alpha-ceiling bar, led by CeeDee Lamb (p95 42, hits a spike week 16.8% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: George Pickens — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: CeeDee Lamb (97%), George Pickens (90%), Javonte Williams (84%). Pure spike profiles (big ceiling, thinner advancement floor): Jake Ferguson, Ryan Flournoy, Jaydon Blue — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Dak Prescott + CeeDee Lamb / George Pickens — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is DAL@NYG — a top-tier blow-up game (tail rank #3); the natural bring-back is a NYG pass-catcher to play both sides of that game. Byes fall in Week 14, and the playoff run is W15 vs LAR, W16 vs JAX."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On CeeDee Lamb: “Last year, CeeDee Lamb and George Pickens combined for the 2nd-most receiving yards out of any WR1/WR2 duo in the league (2,508) But who is a better draft pick at cost in 2026?” (@fantasypts). On George Pickens: “Last year, CeeDee Lamb and George Pickens combined for the 2nd-most receiving yards out of any WR1/WR2 duo in the league (2,508) But who is a better draft pick at cost in 2026?” (@fantasypts)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around CeeDee Lamb (board #9, ADP 10.8), with George Pickens, Javonte Williams as the correlated ceiling pieces. Let the market overpay for Michael Trigg, Malik Davis."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "MIN",
+"name": "Minnesota Vikings",
+"verdict": "A pass-first, high-volume attack and a middle scoring offense (2.12 implied TD/g, 21st). 1 alpha-ceiling player (p95≥33); best board asset is Justin Jefferson at #10.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"10",
+"Justin Jefferson",
+"WR",
+"8.8",
+"41",
+"16.2%",
+"96%",
+"30.5% tgt"
+],
+[
+"102",
+"Jordan Addison",
+"WR",
+"96.3",
+"27",
+"18.9%",
+"68%",
+"18.1% tgt"
+],
+[
+"106",
+"Kyler Murray",
+"QB",
+"108.4",
+"25",
+"8.6%",
+"46%",
+"5.8 car/g"
+],
+[
+"119",
+"Aaron Jones Sr.",
+"RB",
+"119.4",
+"27",
+"17.9%",
+"67%",
+"14.0% tgt"
+],
+[
+"134",
+"Jordan Mason",
+"RB",
+"130.1",
+"19",
+"20.2%",
+"51%",
+"6.2% tgt"
+],
+[
+"157",
+"Jauan Jennings",
+"WR",
+"150.6",
+"19",
+"20.4%",
+"53%",
+"19.6% tgt"
+],
+[
+"159",
+"T.J. Hockenson",
+"TE",
+"162.5",
+"24",
+"19.0%",
+"73%",
+"15.8% tgt"
+],
+[
+"231",
+"Demond Claiborne",
+"RB",
+"224.3",
+"6",
+"20.1%",
+"9%",
+"rookie/NA"
+],
+[
+"241",
+"J.J. McCarthy",
+"QB",
+"225.6",
+"",
+"",
+"10%",
+"3.7 car/g"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "60.1 plays/g (6th) · 33.9 pass att (4th) · 56.4% pass rate (4th) · 232.0 pass yds (13th) · 26.2 carries (26th) · 124.6 rush yds (11th) · 2.12 TD/g (21st)",
+"read": "This is a genuinely pass-first script — 56.4% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate, and the pace is real — 60.1 snaps/g (6th) manufactures extra possessions for everyone. Scoring sits mid-pack (2.12 TD/g, 21st)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Justin Jefferson 30.5% tgt / aDOT 10.1 / max 25.6 · Jauan Jennings 19.6% tgt / aDOT 10.0 / max 19.9 · Jordan Addison 18.1% tgt / aDOT 13.7 / max 24.8 · Aaron Jones Sr. 11.0 car/g, 2.3 rec/g, max 15.9",
+"read": "Justin Jefferson is the focal point — a 30.5% target share in 2025 (rock-steady, cv 0.19), at a 10.1-yard aDOT (all-levels routes), peaking at 25.6 DK in his best week. Secondary volume goes to Jauan Jennings (19.6%), Jordan Addison (18.1%). In the backfield Aaron Jones Sr. profiled as the lead of a rotation (11.0 carries/g, with a thin receiving role); ceiling week 15.9 DK. Small-sample caveat: Kyler Murray (5g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 33.9 pass att/g in 2026 vs 32.2 actual in 2025 (+1.7) — leaning more pass-heavy than 2025. Vacated opportunity: ~22.8% of the 2025 target volume turned over (meaningful turnover) — out: J.Nailor (11.0%, to LV), A.Thielen (7.7%, gone), J.Oliver (4.1%, gone). In: Kyler Murray (from ARI); Jauan Jennings (from SF). Player deltas (2025 actual → 2026 projection): Justin Jefferson 17.2/g proj vs 12.4/g in 2025 (+4.8, trending up); Jordan Addison 9.9/g proj vs 10.0/g in 2025 (-0.1, roughly steady); Kyler Murray 15.4/g proj vs 16.2/g in 2025 (-0.8, roughly steady, joins from ARI); Aaron Jones Sr. 11.3/g proj vs 10.0/g in 2025 (+1.3, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Justin Jefferson p95 41 (16.2% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Justin Jefferson (p95 41, hits a spike week 16.2% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Justin Jefferson (96%), T.J. Hockenson (73%), Jordan Addison (68%). Pure spike profiles (big ceiling, thinner advancement floor): Jordan Addison, Jordan Mason, Jauan Jennings — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Kyler Murray + Justin Jefferson / Jordan Addison — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is MIN@NYJ — a mid-tier finals game (tail rank #7); the natural bring-back is a NYJ pass-catcher to play both sides of that game. Byes fall in Week 6, and the playoff run is W15 vs DET, W16 vs WAS."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Kyler Murray: “-Kyler Murray might be THE late-round QB -Aaron Jones goes Round 11!” (@ihartitz). On Aaron Jones Sr.: “I think MIN would be a dream landing spot with Aaron Jones taking a pay cut, Jordan Mason on final year of contract and hasn't shown much as a Viking and only drafting a 6th rd Demond Claiborne” (@smitchell17). On Jordan Mason: “I think MIN would be a dream landing spot with Aaron Jones taking a pay cut, Jordan Mason on final year of contract and hasn't shown much as a Viking and only drafting a 6th rd Demond Claiborne” (@smitchell17). On Demond Claiborne: “I think MIN would be a dream landing spot with Aaron Jones taking a pay cut, Jordan Mason on final year of contract and hasn't shown much as a Viking and only drafting a 6th rd Demond Claiborne” (@smitchell17)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Justin Jefferson (board #10, ADP 8.8). Let the market overpay for J.J. McCarthy."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "KC",
+"name": "Kansas City Chiefs",
+"verdict": "A pass-first, high-volume attack and a middle scoring offense (2.59 implied TD/g, 9th). 2 alpha-ceiling players (p95≥33); best board asset is Kenneth Walker III at #11.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"11",
+"Kenneth Walker III",
+"RB",
+"15.3",
+"",
+"",
+"",
+"9.5% tgt"
+],
+[
+"24",
+"Rashee Rice",
+"WR",
+"31.2",
+"38",
+"16.3%",
+"96%",
+"29.1% tgt"
+],
+[
+"88",
+"Patrick Mahomes",
+"QB",
+"93.3",
+"34",
+"14.3%",
+"69%",
+"3.4% tgt"
+],
+[
+"117",
+"Xavier Worthy",
+"WR",
+"112.3",
+"28",
+"18.5%",
+"71%",
+"16.0% tgt"
+],
+[
+"122",
+"Travis Kelce",
+"TE",
+"116.8",
+"27",
+"18.1%",
+"83%",
+"20.1% tgt"
+],
+[
+"199",
+"Emmett Johnson",
+"RB",
+"193.2",
+"9",
+"24.2%",
+"28%",
+"rookie/NA"
+],
+[
+"243",
+"Tyquan Thornton",
+"WR",
+"226.0",
+"15",
+"22.3%",
+"40%",
+"9.8% tgt"
+],
+[
+"249",
+"Jaydn Ott",
+"RB",
+"226.5",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"257",
+"Brashard Smith",
+"RB",
+"226.8",
+"",
+"",
+"1%",
+"9.3% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "60.4 plays/g (2nd) · 33.6 pass att (5th) · 55.7% pass rate (9th) · 243.1 pass yds (6th) · 26.8 carries (21st) · 126.6 rush yds (8th) · 2.59 TD/g (9th)",
+"read": "A balanced script (55.7% pass) spreads opportunity without a strong structural lean either way, and the pace is real — 60.4 snaps/g (2nd) manufactures extra possessions for everyone. Scoring sits mid-pack (2.59 TD/g, 9th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Rashee Rice 29.1% tgt / aDOT 4.3 / max 29.4 · Travis Kelce 20.1% tgt / aDOT 6.7 / max 24.1 · Xavier Worthy 16.0% tgt / aDOT 12.9 / max 17.1 · Kenneth Walker III 14.3 car/g, 2.0 rec/g, max 38.5",
+"read": "Rashee Rice is the focal point — a 29.1% target share in 2025 (rock-steady, cv 0.2), at a 4.3-yard aDOT (short-area routes), peaking at 29.4 DK in his best week. Secondary volume goes to Travis Kelce (20.1%), Xavier Worthy (16.0%). In the backfield Kenneth Walker III (2025 with SEA) profiled as the lead of a rotation (14.3 carries/g, with a thin receiving role); ceiling week 38.5 DK. Small-sample caveat: Rashee Rice (8g), Justin Fields (9g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 33.6 pass att/g in 2026 vs 37.3 actual in 2025 (-3.7) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~30.8% of the 2025 target volume turned over (meaningful turnover) — out: M.Brown (13.4%, gone), J.Smith-Schuster (8.2%, gone), I.Pacheco (4.7%, to DET), K.Hunt (4.5%, to FA). In: Kenneth Walker III (from SEA); Justin Fields (from NYJ)  ·  rookies: Emmett Johnson. Player deltas (2025 actual → 2026 projection): Rashee Rice 16.1/g proj vs 18.9/g in 2025 (-2.8, projected to regress); Patrick Mahomes 17.8/g proj vs 21.3/g in 2025 (-3.5, projected to regress); Xavier Worthy 10.4/g proj vs 7.9/g in 2025 (+2.5, trending up); Travis Kelce 10.3/g proj vs 11.2/g in 2025 (-0.9, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Rashee Rice p95 38 (16.3% spike) · Patrick Mahomes p95 34 (14.3% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Rashee Rice (p95 38, hits a spike week 16.3% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Rashee Rice — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Rashee Rice (96%), Travis Kelce (83%), Xavier Worthy (71%). Pure spike profiles (big ceiling, thinner advancement floor): Xavier Worthy, Emmett Johnson, Tyquan Thornton — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Patrick Mahomes + Rashee Rice / Xavier Worthy — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is KC@LAC — a mid-tier finals game (tail rank #9); the natural bring-back is a LAC pass-catcher to play both sides of that game. Byes fall in Week 5, and the playoff run is W15 vs NE, W16 vs SF."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “The AFC West may not have seen an elite speed number one receiver like Jalen Waddell since Tyreek Hill with the Chiefs, and he gives defenses something else to think about”. On Kenneth Walker III: “Kenneth Walker is an aggressive runner, but it's actually been his agility and acceleration that have really shown up in the playoffs” (@syedschemes). On Rashee Rice: “If you anticipate Rashee Rice either A.) fucks up again or B.) gets suspended and misses a chunk of the season Why are you not taking Jalen Royals in EVERY draft?” (@smitchell17). On Patrick Mahomes: “And some men have Patrick Mahomes past ADP” (@patkerrane)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Rashee Rice (board #24, ADP 31.2), with Patrick Mahomes as the correlated ceiling pieces. Let the market overpay for Tyquan Thornton, Jaydn Ott."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Rashee Rice — risk: Serving jail time (street-racing plea); bearish-gated. Discount-only talent bet. 11"
+}
+]
+},
+{
+"team": "MIA",
+"name": "Miami Dolphins",
+"verdict": "A run-leaning, low-snap attack and a muted scoring offense (1.35 implied TD/g, 32nd). 1 alpha-ceiling player (p95≥33); best board asset is De'Von Achane at #12.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"12",
+"De'Von Achane",
+"RB",
+"16.9",
+"40",
+"16.5%",
+"95%",
+"18.6% tgt"
+],
+[
+"125",
+"Malik Willis",
+"QB",
+"129.1",
+"28",
+"13.0%",
+"38%",
+"rookie/NA"
+],
+[
+"173",
+"Malik Washington",
+"WR",
+"170.8",
+"18",
+"20.2%",
+"49%",
+"14.4% tgt"
+],
+[
+"184",
+"Greg Dulcich",
+"TE",
+"192.4",
+"19",
+"19.5%",
+"51%",
+"15.8% tgt"
+],
+[
+"203",
+"Chris Bell",
+"WR",
+"205.9",
+"19",
+"19.6%",
+"50%",
+"rookie/NA"
+],
+[
+"272",
+"Jalen Tolbert",
+"WR",
+"228.2",
+"13",
+"22.2%",
+"34%",
+"8.5% tgt"
+],
+[
+"273",
+"Ollie Gordon II",
+"RB",
+"226.9",
+"6",
+"21.5%",
+"16%",
+"3.9% tgt"
+],
+[
+"284",
+"Tutu Atwell",
+"WR",
+"227.8",
+"11",
+"20.0%",
+"20%",
+"4.9% tgt"
+],
+[
+"294",
+"Jaylen Wright",
+"RB",
+"229.7",
+"8",
+"21.8%",
+"24%",
+"7.4% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.2 plays/g (26th) · 29.7 pass att (29th) · 51.1% pass rate (28th) · 209.1 pass yds (32nd) · 28.5 carries (6th) · 140.1 rush yds (3rd) · 1.35 TD/g (32nd)",
+"read": "A run-leaning script (51.1% pass vs 54% league) tilts value toward the backfield and compresses the passing pie, but the deliberate pace (58.2 snaps/g, 26th) caps the raw opportunity to go around. The 32nd-ranked scoring rate (1.35 TD/g) is the cap here — touchdown-dependent ceilings get harder to hit."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Greg Dulcich 15.8% tgt / aDOT 4.6 / max 16.1 · Kevin Coleman Jr. 15.3% tgt / aDOT 11.0 / max 28.2 · Malik Washington 14.4% tgt / aDOT 5.2 / max 13.6 · De'Von Achane 14.9 car/g, 4.2 rec/g, max 43.5",
+"read": "Greg Dulcich is the focal point — a 15.8% target share in 2025 (fairly stable, cv 0.36), at a 4.6-yard aDOT (short-area routes), peaking at 16.1 DK in his best week. Secondary volume goes to Kevin Coleman Jr. (15.3%). In the backfield De'Von Achane profiled as the lead of a rotation (14.9 carries/g, and he caught 4.2 balls/g); ceiling week 43.5 DK. Small-sample caveat: Greg Dulcich (9g), Tutu Atwell (8g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “When new general manager John Eric Sullivan and new head coach Jeff Halfley arrived in Miami earlier this year, we saw one of the biggest overhauls of a roster that we have ever seen in the NFL” (@coachspeakindex). Volume shift: Clay projects 29.7 pass att/g in 2026 vs 30.6 actual in 2025 (-0.9) — holding steady on pass volume. Vacated opportunity: ~44.0% of the 2025 target volume turned over (major turnover) — out: J.Waddle (21.5%, to DEN), D.Waller (7.5%, to FA), T.Hill (6.2%, gone), J.Hill (4.5%, gone). In: Jalen Tolbert (from DAL); Tutu Atwell (from LAR); Kevin Coleman Jr. (from BUF)  ·  rookies: Malik Willis. Player deltas (2025 actual → 2026 projection): De'Von Achane 17.6/g proj vs 20.9/g in 2025 (-3.3, projected to regress); Malik Washington 6.1/g proj vs 6.6/g in 2025 (-0.5, roughly steady); Greg Dulcich 6.7/g proj vs 7.1/g in 2025 (-0.4, roughly steady); Jalen Tolbert 3.9/g proj vs 4.0/g in 2025 (-0.1, roughly steady, joins from DAL)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "De'Von Achane p95 40 (16.5% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by De'Von Achane (p95 40, hits a spike week 16.5% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: De'Von Achane (95%), Greg Dulcich (51%), Chris Bell (50%). Pure spike profiles (big ceiling, thinner advancement floor): Malik Washington, Greg Dulcich, Chris Bell — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Malik Willis + Greg Dulcich / Chris Bell — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is BUF@MIA — a lower-variance finals game (tail rank #16); the natural bring-back is a BUF pass-catcher to play both sides of that game. Byes fall in Week 6, and the playoff run is W15 vs GB, W16 vs LAC."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “When new general manager John Eric Sullivan and new head coach Jeff Halfley arrived in Miami earlier this year, we saw one of the biggest overhauls of a roster that we have ever seen in the NFL”. On De'Von Achane: “He should be watching as much Devon Achan tape as possible because that's like what he should look like” (@joshnorris). On Malik Willis: “I almost want to put like Malik Willis in his own tier because he's a different type of quarterback than all these next ones” (@haydenwinks). On Greg Dulcich: “Among tight ends who ran at least 25 routes in 2025, Dulcich ranked 5th in targets per route run, 2nd in yards per route run, and 7th in yards after the catch per reception” (@coachspeakindex)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around De'Von Achane (board #12, ADP 16.9). Board-vs-market values to exploit: Greg Dulcich (#184 vs ADP 192.4). Let the market overpay for Jalen Tolbert, Ollie Gordon II."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "BUF",
+"name": "Buffalo Bills",
+"verdict": "A run-leaning, high-volume attack and a top scoring offense (3.06 implied TD/g, 2nd). 2 alpha-ceiling players (p95≥33); best board asset is James Cook III at #13.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"13",
+"James Cook III",
+"RB",
+"10.6",
+"37",
+"16.3%",
+"94%",
+"9.6% tgt"
+],
+[
+"19",
+"Josh Allen",
+"QB",
+"26.1",
+"42",
+"13.5%",
+"100%",
+"7.5 car/g"
+],
+[
+"48",
+"DJ Moore",
+"WR",
+"44.2",
+"31",
+"18.4%",
+"81%",
+"rookie/NA"
+],
+[
+"120",
+"Dalton Kincaid",
+"TE",
+"113.0",
+"25",
+"20.0%",
+"69%",
+"14.9% tgt"
+],
+[
+"126",
+"Khalil Shakir",
+"WR",
+"122.9",
+"27",
+"19.2%",
+"68%",
+"22.1% tgt"
+],
+[
+"208",
+"Ray Davis",
+"RB",
+"204.7",
+"7",
+"22.7%",
+"20%",
+"5.6% tgt"
+],
+[
+"222",
+"Keon Coleman",
+"WR",
+"214.4",
+"12",
+"24.3%",
+"24%",
+"15.3% tgt"
+],
+[
+"269",
+"Ty Johnson",
+"RB",
+"227.2",
+"14",
+"21.6%",
+"41%",
+"8.8% tgt"
+],
+[
+"275",
+"Joshua Palmer",
+"WR",
+"227.8",
+"",
+"",
+"",
+"10.0% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.8 plays/g (8th) · 29.9 pass att (28th) · 50.0% pass rate (30th) · 232.1 pass yds (12th) · 29.9 carries (2nd) · 140.2 rush yds (2nd) · 3.06 TD/g (2nd)",
+"read": "A run-leaning script (50.0% pass vs 54% league) tilts value toward the backfield and compresses the passing pie, and the pace is real — 59.8 snaps/g (8th) manufactures extra possessions for everyone. Most important for best ball: 3.06 implied TD/g (2nd) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Khalil Shakir 22.1% tgt / aDOT 3.3 / max 20.8 · Keon Coleman 15.3% tgt / aDOT 11.0 / max 28.2 · Dalton Kincaid 14.9% tgt / aDOT 9.2 / max 25.1 · James Cook III 18.3 car/g, 1.9 rec/g, max 36.6",
+"read": "Khalil Shakir is the focal point — a 22.1% target share in 2025 (fairly stable, cv 0.36), at a 3.3-yard aDOT (short-area routes), peaking at 20.8 DK in his best week. Secondary volume goes to Keon Coleman (15.3%). In the backfield James Cook III profiled as a true workhorse (18.3 carries/g, with a thin receiving role); ceiling week 36.6 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 29.9 pass att/g in 2026 vs 32.7 actual in 2025 (-2.8) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~16.8% of the 2025 target volume turned over (a largely intact target tree) — out: K.Coleman (12.2%, to MIA), T.Shavers (4.6%, gone). In: no veteran additions of note  ·  rookies: DJ Moore. Player deltas (2025 actual → 2026 projection): James Cook III 16.7/g proj vs 18.8/g in 2025 (-2.1, projected to regress); Josh Allen 22.3/g proj vs 24.4/g in 2025 (-2.1, projected to regress); Dalton Kincaid 9.0/g proj vs 11.7/g in 2025 (-2.7, projected to regress); Khalil Shakir 10.1/g proj vs 11.0/g in 2025 (-0.9, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Josh Allen p95 42 (13.5% spike) · James Cook III p95 37 (16.3% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Josh Allen (p95 42, hits a spike week 13.5% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Josh Allen (100%), James Cook III (94%), DJ Moore (81%). Pure spike profiles (big ceiling, thinner advancement floor): Dalton Kincaid, Khalil Shakir, Ray Davis — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Josh Allen + DJ Moore / Khalil Shakir — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is BUF@MIA — a lower-variance finals game (tail rank #16); the natural bring-back is a MIA pass-catcher to play both sides of that game. Byes fall in Week 7, and the playoff run is W15 vs CHI, W16 vs DEN."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On DJ Moore: “Day one, I thought he was the future replacement for DJ Moore” (@joshnorris)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around James Cook III (board #13, ADP 10.6), with Josh Allen as the correlated ceiling pieces. Let the market overpay for Ty Johnson, Joshua Palmer."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Dalton Kincaid — trap: Trap take Kyler Murray instead (+17). 4.2"
+}
+]
+},
+{
+"team": "LV",
+"name": "Las Vegas Raiders",
+"verdict": "A pass-first, high-volume attack and a muted scoring offense (1.71 implied TD/g, 28th). 2 alpha-ceiling players (p95≥33); best board asset is Ashton Jeanty at #14.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"14",
+"Ashton Jeanty",
+"RB",
+"12.0",
+"37",
+"16.6%",
+"92%",
+"15.7% tgt"
+],
+[
+"25",
+"Brock Bowers",
+"TE",
+"19.5",
+"34",
+"17.5%",
+"98%",
+"23.5% tgt"
+],
+[
+"156",
+"Tre Tucker",
+"WR",
+"162.0",
+"23",
+"18.9%",
+"58%",
+"18.9% tgt"
+],
+[
+"161",
+"Jalen Nailor",
+"WR",
+"155.6",
+"20",
+"19.5%",
+"55%",
+"11.7% tgt"
+],
+[
+"167",
+"Fernando Mendoza",
+"QB",
+"165.6",
+"23",
+"14.9%",
+"26%",
+"rookie/NA"
+],
+[
+"209",
+"Mike Washington Jr.",
+"RB",
+"204.6",
+"11",
+"24.5%",
+"34%",
+"rookie/NA"
+],
+[
+"229",
+"Kirk Cousins",
+"QB",
+"221.0",
+"",
+"",
+"13%",
+"1.4 car/g"
+],
+[
+"310",
+"Dont'e Thornton Jr.",
+"WR",
+"228.1",
+"10",
+"21.0%",
+"17%",
+"9.9% tgt"
+],
+[
+"324",
+"Malik Benson",
+"WR",
+"231.0",
+"",
+"",
+"",
+"rookie/NA"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.6 plays/g (10th) · 33.3 pass att (8th) · 55.8% pass rate (8th) · 228.6 pass yds (16th) · 26.4 carries (25th) · 108.3 rush yds (30th) · 1.71 TD/g (28th)",
+"read": "This is a genuinely pass-first script — 55.8% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate, and the pace is real — 59.6 snaps/g (10th) manufactures extra possessions for everyone. The 28th-ranked scoring rate (1.71 TD/g) is the cap here — touchdown-dependent ceilings get harder to hit."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Brock Bowers 23.5% tgt / aDOT 6.4 / max 46.3 · Tre Tucker 18.9% tgt / aDOT 10.2 / max 43.9 · Michael Mayer 14.8% tgt / aDOT 4.8 / max 17.9 · Ashton Jeanty 15.7 car/g, 3.2 rec/g, max 37.5",
+"read": "Brock Bowers is the focal point — a 23.5% target share in 2025 (rock-steady, cv 0.28), at a 6.4-yard aDOT (short-area routes), peaking at 46.3 DK in his best week. Secondary volume goes to Tre Tucker (18.9%). In the backfield Ashton Jeanty profiled as a true workhorse (15.7 carries/g, and he caught 3.2 balls/g); ceiling week 37.5 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “New season, and you guys have a lot of the same parts of the team, but certainly some new members of your coaching staff, Clint Kubiak, your offensive coordinator, now the head coach of the Las Vegas Raiders” (@dhananizain). Volume shift: Clay projects 33.3 pass att/g in 2026 vs 34.2 actual in 2025 (-0.9) — holding steady on pass volume. Vacated opportunity: ~12.0% of the 2025 target volume turned over (a largely intact target tree) — out: T.Lockett (12.0%, gone). In: Jalen Nailor (from MIN); Kirk Cousins (from ATL)  ·  rookies: Fernando Mendoza. Player deltas (2025 actual → 2026 projection): Ashton Jeanty 16.6/g proj vs 14.8/g in 2025 (+1.8, roughly steady); Brock Bowers 14.2/g proj vs 15.0/g in 2025 (-0.8, roughly steady); Tre Tucker 8.1/g proj vs 9.7/g in 2025 (-1.6, roughly steady); Jalen Nailor 6.8/g proj vs 6.0/g in 2025 (+0.8, roughly steady, joins from MIN)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Ashton Jeanty p95 37 (16.6% spike) · Brock Bowers p95 34 (17.5% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Ashton Jeanty (p95 37, hits a spike week 16.6% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Brock Bowers (98%), Ashton Jeanty (92%), Tre Tucker (58%). Pure spike profiles (big ceiling, thinner advancement floor): Tre Tucker, Jalen Nailor, Mike Washington Jr. — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Fernando Mendoza + Brock Bowers / Tre Tucker — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is ARI@LV — a lower-variance finals game (tail rank #14); the natural bring-back is a ARI pass-catcher to play both sides of that game. Byes fall in Week 13, and the playoff run is W15 vs DEN, W16 vs TEN."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “Now, yards before contact per rush can be a running back stat if they are messing around behind the line of scrimmage, but in the case of the Raiders, we can say with some confidence that it's the play of the offensive line”. On Brock Bowers: “Yeah, you talk about Brock Bowers and the Raiders, Mike, are expecting Bowers to bounce back in a big way” (@dhananizain). On Mike Washington Jr.: “Even after Las Vegas drafted former Arkansas running back Mike Washington Jr” (@smitchell17). On Kirk Cousins: “- Las Vegas Raiders: This is such an easy one to get a back-stack in since you can literally get both Mendoza and presumable starter Kirk Cousins pretty late in drafts” (@smitchell17)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Ashton Jeanty (board #14, ADP 12.0), with Brock Bowers as the correlated ceiling pieces. Let the market overpay for Dont'e Thornton Jr., Malik Benson."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "LAC",
+"name": "Los Angeles Chargers",
+"verdict": "A balanced, low-snap attack and a middle scoring offense (2.41 implied TD/g, 14th). 3 alpha-ceiling players (p95≥33); best board asset is Omarion Hampton at #16.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"16",
+"Omarion Hampton",
+"RB",
+"17.3",
+"37",
+"16.8%",
+"93%",
+"11.8% tgt"
+],
+[
+"38",
+"Ladd McConkey",
+"WR",
+"33.5",
+"33",
+"17.3%",
+"86%",
+"20.6% tgt"
+],
+[
+"76",
+"Justin Herbert",
+"QB",
+"82.3",
+"34",
+"14.1%",
+"67%",
+"5.5 car/g"
+],
+[
+"90",
+"Quentin Johnston",
+"WR",
+"90.8",
+"26",
+"19.2%",
+"67%",
+"20.0% tgt"
+],
+[
+"145",
+"Keaton Mitchell",
+"RB",
+"142.7",
+"11",
+"24.7%",
+"35%",
+"rookie/NA"
+],
+[
+"146",
+"Oronde Gadsden II",
+"TE",
+"140.5",
+"20",
+"20.7%",
+"54%",
+"14.1% tgt"
+],
+[
+"188",
+"Tre' Harris",
+"WR",
+"185.5",
+"16",
+"21.5%",
+"44%",
+"9.1% tgt"
+],
+[
+"196",
+"David Njoku",
+"TE",
+"188.8",
+"16",
+"22.5%",
+"42%",
+"12.4% tgt"
+],
+[
+"215",
+"Kimani Vidal",
+"RB",
+"210.0",
+"8",
+"21.1%",
+"22%",
+"6.7% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "57.8 plays/g (32nd) · 31.1 pass att (21st) · 53.7% pass rate (18th) · 226.2 pass yds (20th) · 26.8 carries (21st) · 120.5 rush yds (16th) · 2.41 TD/g (14th)",
+"read": "A balanced script (53.7% pass) spreads opportunity without a strong structural lean either way, but the deliberate pace (57.8 snaps/g, 32nd) caps the raw opportunity to go around. Scoring sits mid-pack (2.41 TD/g, 14th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Ladd McConkey 20.6% tgt / aDOT 9.9 / max 26.0 · Quentin Johnston 20.0% tgt / aDOT 11.6 / max 24.9 · Oronde Gadsden II 14.1% tgt / aDOT 8.9 / max 32.4 · Kimani Vidal 12.8 car/g, 1.4 rec/g, max 25.8",
+"read": "Ladd McConkey is the focal point — a 20.6% target share in 2025 (fairly stable, cv 0.39), at a 9.9-yard aDOT (all-levels routes), peaking at 26.0 DK in his best week. Secondary volume goes to Quentin Johnston (20.0%). In the backfield Kimani Vidal profiled as the lead of a rotation (12.8 carries/g, with a thin receiving role); ceiling week 25.8 DK. Small-sample caveat: Trey Lance (4g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “The bad news for Chargers fans is that O'Leary has only been a defensive coordinator for one season” (@thepowerrank). Volume shift: Clay projects 31.1 pass att/g in 2026 vs 37.0 actual in 2025 (-5.9) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~22.7% of the 2025 target volume turned over (meaningful turnover) — out: K.Allen (22.7%, gone). In: David Njoku (from CLE); Charlie Kolar (from BAL)  ·  rookies: Keaton Mitchell. Player deltas (2025 actual → 2026 projection): Omarion Hampton 16.6/g proj vs 13.9/g in 2025 (+2.7, trending up); Ladd McConkey 12.9/g proj vs 11.4/g in 2025 (+1.5, roughly steady); Justin Herbert 17.6/g proj vs 18.9/g in 2025 (-1.3, roughly steady); Quentin Johnston 9.8/g proj vs 12.9/g in 2025 (-3.1, projected to regress)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Omarion Hampton p95 37 (16.8% spike) · Justin Herbert p95 34 (14.1% spike) · Ladd McConkey p95 33 (17.3% spike)",
+"read": "3 players clear the alpha-ceiling bar, led by Omarion Hampton (p95 37, hits a spike week 16.8% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Ladd McConkey — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Omarion Hampton (93%), Ladd McConkey (86%), Justin Herbert (67%). Pure spike profiles (big ceiling, thinner advancement floor): Quentin Johnston, Keaton Mitchell, Oronde Gadsden II — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Justin Herbert + Ladd McConkey / Quentin Johnston — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is KC@LAC — a mid-tier finals game (tail rank #9); the natural bring-back is a KC pass-catcher to play both sides of that game. Byes fall in Week 7, and the playoff run is W15 vs SF, W16 vs MIA."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “The bad news for Chargers fans is that O'Leary has only been a defensive coordinator for one season”. On Omarion Hampton: “And I know Amarion Hampton was hurt last year, but I watched basically every snap of Amarion Hampton when he was playing” (@fantasypts). On Ladd McConkey: “Ladd McConkey is Ryan Heath's favorite bet to follow Jaxon Smith-Njigba's Year 3 breakout Here's how their Year 1 and Year 2 metrics stack up, and what conditions are setting McConkey up for the leap!” (@fantasypts). On Justin Herbert: “Justin Herbert should just have the best season of his career” (@fantasypts)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Omarion Hampton (board #16, ADP 17.3), with Ladd McConkey, Justin Herbert as the correlated ceiling pieces. Let the market overpay for Charlie Kolar, KeAndre Lambert-Smith."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Justin Herbert — trap: Trap take Michael Wilson instead (+16). 4.2"
+}
+]
+},
+{
+"team": "PHI",
+"name": "Philadelphia Eagles",
+"verdict": "A run-leaning, average-pace attack and a top scoring offense (2.65 implied TD/g, 7th). 3 alpha-ceiling players (p95≥33); best board asset is Saquon Barkley at #17.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"17",
+"Saquon Barkley",
+"RB",
+"13.5",
+"35",
+"16.8%",
+"87%",
+"13.3% tgt"
+],
+[
+"30",
+"DeVonta Smith",
+"WR",
+"28.1",
+"35",
+"17.0%",
+"89%",
+"25.1% tgt"
+],
+[
+"69",
+"Jalen Hurts",
+"QB",
+"75.3",
+"33",
+"9.2%",
+"92%",
+"6.5 car/g"
+],
+[
+"89",
+"Makai Lemon",
+"WR",
+"81.6",
+"29",
+"17.8%",
+"73%",
+"rookie/NA"
+],
+[
+"123",
+"Dallas Goedert",
+"TE",
+"124.0",
+"27",
+"18.8%",
+"85%",
+"20.7% tgt"
+],
+[
+"182",
+"Tank Bigsby",
+"RB",
+"178.5",
+"11",
+"23.9%",
+"33%",
+"4.3% tgt"
+],
+[
+"210",
+"Dontayvion Wicks",
+"WR",
+"210.0",
+"12",
+"24.4%",
+"26%",
+"12.8% tgt"
+],
+[
+"212",
+"Eli Stowers",
+"TE",
+"199.9",
+"8",
+"21.3%",
+"12%",
+"rookie/NA"
+],
+[
+"254",
+"Will Shipley",
+"RB",
+"227.4",
+"6",
+"19.8%",
+"8%",
+"4.9% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.9 plays/g (18th) · 29.4 pass att (31st) · 49.8% pass rate (31st) · 222.3 pass yds (25th) · 29.6 carries (3rd) · 126.8 rush yds (6th) · 2.65 TD/g (7th)",
+"read": "A run-leaning script (49.8% pass vs 54% league) tilts value toward the backfield and compresses the passing pie. Most important for best ball: 2.65 implied TD/g (7th) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "DeVonta Smith 25.1% tgt / aDOT 11.1 / max 36.3 · Dallas Goedert 20.7% tgt / aDOT 7.5 / max 29.0 · Dontayvion Wicks 12.8% tgt / aDOT 11.2 / max 28.0 · Saquon Barkley 18.1 car/g, 2.4 rec/g, max 36.4",
+"read": "DeVonta Smith is the focal point — a 25.1% target share in 2025 (fairly stable, cv 0.43), at a 11.1-yard aDOT (all-levels routes), peaking at 36.3 DK in his best week. Secondary volume goes to Dallas Goedert (20.7%). In the backfield Saquon Barkley profiled as a true workhorse (18.1 carries/g, with a thin receiving role); ceiling week 36.4 DK. Small-sample caveat: Tanner McKee (4g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “New Eagles offensive coordinator Sean Mannion hasn't called plays in the NFL before, but he was an offensive coordinator at the East West Shrine Bowl this year” (@syedschemes). Volume shift: Clay projects 29.4 pass att/g in 2026 vs 31.7 actual in 2025 (-2.3) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~33.3% of the 2025 target volume turned over (meaningful turnover) — out: A.Brown (25.8%, to NE), J.Dotson (7.5%, to ATL). In: Dontayvion Wicks (from GB)  ·  rookies: Makai Lemon. Player deltas (2025 actual → 2026 projection): Saquon Barkley 16.1/g proj vs 15.3/g in 2025 (+0.8, roughly steady); DeVonta Smith 14.0/g proj vs 12.4/g in 2025 (+1.6, roughly steady); Jalen Hurts 19.8/g proj vs 19.0/g in 2025 (+0.8, roughly steady); Dallas Goedert 10.5/g proj vs 13.0/g in 2025 (-2.5, projected to regress)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Saquon Barkley p95 35 (16.8% spike) · DeVonta Smith p95 35 (17.0% spike) · Jalen Hurts p95 33 (9.2% spike)",
+"read": "3 players clear the alpha-ceiling bar, led by Saquon Barkley (p95 35, hits a spike week 16.8% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: DeVonta Smith — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Jalen Hurts (92%), DeVonta Smith (89%), Saquon Barkley (87%). Pure spike profiles (big ceiling, thinner advancement floor): Tank Bigsby, Dontayvion Wicks, Eli Stowers — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Jalen Hurts + DeVonta Smith / Makai Lemon — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is PHI@SF — a mid-tier finals game (tail rank #8); the natural bring-back is a SF pass-catcher to play both sides of that game. Byes fall in Week 10, and the playoff run is W15 vs SEA, W16 vs HOU."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “I want to see his usage kind of like a Zach Bond type two years ago with the Eagles, where you're playing linebacker, able to work down to the edge, because you want him attacking running backs from a distance”. On Makai Lemon: “Makai Lemon's good, and I can get access to Makai Lemon right now in the eighth round in FFPC drafts” (@fantasypts). On Dontayvion Wicks: “A, Wicks, I just think he has a very unique skill set of being able to get in and out of breaks and be really efficient at the line of scrimmage” (@dhananizain). On Will Shipley: “And during that bye week, you know, we read Duraco, we read John Shipley” (@joshnorris)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Saquon Barkley (board #17, ADP 13.5), with DeVonta Smith, Jalen Hurts as the correlated ceiling pieces. Let the market overpay for Eli Stowers, Will Shipley."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "BAL",
+"name": "Baltimore Ravens",
+"verdict": "A run-leaning, average-pace attack and a top scoring offense (2.71 implied TD/g, 6th). 3 alpha-ceiling players (p95≥33); best board asset is Derrick Henry at #18.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"18",
+"Derrick Henry",
+"RB",
+"20.4",
+"37",
+"17.0%",
+"86%",
+"6.3% tgt"
+],
+[
+"37",
+"Zay Flowers",
+"WR",
+"36.5",
+"36",
+"17.4%",
+"91%",
+"30.0% tgt"
+],
+[
+"47",
+"Lamar Jackson",
+"QB",
+"51.8",
+"37",
+"12.5%",
+"97%",
+"5.2 car/g"
+],
+[
+"133",
+"Mark Andrews",
+"TE",
+"131.3",
+"25",
+"18.8%",
+"81%",
+"17.0% tgt"
+],
+[
+"211",
+"Justice Hill",
+"RB",
+"213.4",
+"18",
+"19.8%",
+"48%",
+"12.4% tgt"
+],
+[
+"234",
+"Elijah Sarratt",
+"WR",
+"224.3",
+"13",
+"23.8%",
+"27%",
+"rookie/NA"
+],
+[
+"297",
+"Rashod Bateman",
+"WR",
+"227.4",
+"21",
+"19.9%",
+"55%",
+"12.1% tgt"
+],
+[
+"306",
+"Devontez Walker",
+"WR",
+"228.2",
+"8",
+"20.4%",
+"13%",
+"6.8% tgt"
+],
+[
+"339",
+"Tyler Huntley",
+"QB",
+"230.5",
+"",
+"",
+"",
+"4.8 car/g"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.1 plays/g (16th) · 27.5 pass att (32nd) · 46.5% pass rate (32nd) · 228.5 pass yds (17th) · 31.6 carries (1st) · 152.1 rush yds (1st) · 2.71 TD/g (6th)",
+"read": "A run-leaning script (46.5% pass vs 54% league) tilts value toward the backfield and compresses the passing pie. Most important for best ball: 2.71 implied TD/g (6th) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Zay Flowers 30.0% tgt / aDOT 10.1 / max 32.8 · Mark Andrews 17.0% tgt / aDOT 7.3 / max 27.1 · Rashod Bateman 12.1% tgt / aDOT 12.0 / max 17.3 · Derrick Henry 18.1 car/g, 0.9 rec/g, max 48.6",
+"read": "Zay Flowers is the focal point — a 30.0% target share in 2025 (rock-steady, cv 0.3), at a 10.1-yard aDOT (all-levels routes), peaking at 32.8 DK in his best week. Secondary volume goes to Mark Andrews (17.0%). In the backfield Derrick Henry profiled as a true workhorse (18.1 carries/g, with a thin receiving role); ceiling week 48.6 DK. Small-sample caveat: Devontez Walker (5g), Tyler Huntley (5g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 27.5 pass att/g in 2026 vs 27.6 actual in 2025 (-0.1) — holding steady on pass volume. Vacated opportunity: ~18.3% of the 2025 target volume turned over (a largely intact target tree) — out: D.Hopkins (9.5%, to FA), I.Likely (8.8%, to NYG). In: Ja'Kobi Lane (from WAS). Player deltas (2025 actual → 2026 projection): Derrick Henry 16.1/g proj vs 18.0/g in 2025 (-1.9, roughly steady); Zay Flowers 14.2/g proj vs 15.0/g in 2025 (-0.8, roughly steady); Lamar Jackson 20.0/g proj vs 17.0/g in 2025 (+3.0, trending up); Mark Andrews 10.1/g proj vs 7.7/g in 2025 (+2.4, trending up)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Derrick Henry p95 37 (17.0% spike) · Lamar Jackson p95 37 (12.5% spike) · Zay Flowers p95 36 (17.4% spike)",
+"read": "3 players clear the alpha-ceiling bar, led by Derrick Henry (p95 37, hits a spike week 17.0% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Lamar Jackson (97%), Zay Flowers (91%), Derrick Henry (86%). Pure spike profiles (big ceiling, thinner advancement floor): Justice Hill, Elijah Sarratt, Rashod Bateman — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Lamar Jackson + Zay Flowers / Mark Andrews — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is BAL@CIN — a top-tier blow-up game (tail rank #2); the natural bring-back is a CIN pass-catcher to play both sides of that game. Byes fall in Week 13, and the playoff run is W15 vs PIT, W16 vs CLE."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “This is the most talented pass rusher the Ravens have had in years, and remember this, the last two fully healthy years he's had, 23 and 24, 17 and a half sacks each year”. On Lamar Jackson: “You lose Linderbaum, draft a guard inside the top 14, but for the most part, it's kind of the same thing with Lamar Jackson in terms of the skill guys” (@joshnorris). On Mark Andrews: “I don't think you can make this trade, and Andrew Berry wouldn't have made this trade, without Jared Burse” (@clevta). On Ja'Kobi Lane: “Antonio has it, man, in the biggest way. - New Ravens OC Declan Doyle \"Taking Note\", of rookie standout WR Ja'Kobi Lane after first week of Baltimore's OTAs” (@smitchell17)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Derrick Henry (board #18, ADP 20.4), with Zay Flowers, Lamar Jackson as the correlated ceiling pieces. Let the market overpay for Rashod Bateman, Devontez Walker."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Derrick Henry — age: Age flag; zero receiving floor is the 2nd fragility. 11"
+}
+]
+},
+{
+"team": "ARI",
+"name": "Arizona Cardinals",
+"verdict": "A pass-first, low-snap attack and a muted scoring offense (1.71 implied TD/g, 28th). 2 alpha-ceiling players (p95≥33); best board asset is Jeremiyah Love at #20.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"20",
+"Jeremiyah Love",
+"RB",
+"26.5",
+"37",
+"16.9%",
+"91%",
+"rookie/NA"
+],
+[
+"27",
+"Trey McBride",
+"TE",
+"22.8",
+"36",
+"16.9%",
+"100%",
+"27.9% tgt"
+],
+[
+"73",
+"Marvin Harrison Jr.",
+"WR",
+"66.4",
+"30",
+"17.5%",
+"77%",
+"18.2% tgt"
+],
+[
+"86",
+"Michael Wilson",
+"WR",
+"81.1",
+"26",
+"18.5%",
+"65%",
+"15.8% tgt"
+],
+[
+"163",
+"Tyler Allgeier",
+"RB",
+"157.2",
+"15",
+"21.8%",
+"43%",
+"5.5% tgt"
+],
+[
+"165",
+"Jacoby Brissett",
+"QB",
+"166.9",
+"",
+"",
+"28%",
+"2.7 car/g"
+],
+[
+"230",
+"James Conner",
+"RB",
+"220.9",
+"",
+"",
+"",
+"9.9% tgt"
+],
+[
+"252",
+"Gardner Minshew II",
+"QB",
+"228.5",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"261",
+"Carson Beck",
+"QB",
+"226.8",
+"30",
+"14.7%",
+"44%",
+"rookie/NA"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.2 plays/g (26th) · 34.3 pass att (2nd) · 58.9% pass rate (1st) · 223.9 pass yds (24th) · 23.9 carries (32nd) · 103.1 rush yds (32nd) · 1.71 TD/g (28th)",
+"read": "This is a genuinely pass-first script — 58.9% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate, but the deliberate pace (58.2 snaps/g, 26th) caps the raw opportunity to go around. The 28th-ranked scoring rate (1.71 TD/g) is the cap here — touchdown-dependent ceilings get harder to hit."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Trey McBride 27.9% tgt / aDOT 6.6 / max 40.4 · Marvin Harrison Jr. 18.2% tgt / aDOT 12.8 / max 22.6 · Michael Wilson 15.8% tgt / aDOT 11.8 / max 40.2 · James Conner 10.7 car/g, 2.7 rec/g, max 14.4",
+"read": "Trey McBride is the focal point — a 27.9% target share in 2025 (rock-steady, cv 0.19), at a 6.6-yard aDOT (short-area routes), peaking at 40.4 DK in his best week. Secondary volume goes to Marvin Harrison Jr. (18.2%), Michael Wilson (15.8%). In the backfield James Conner profiled as a committee back (10.7 carries/g, with a thin receiving role); ceiling week 14.4 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “However, Hackett got hired as the offensive coordinator in Arizona” (@thepowerrank). Volume shift: Clay projects 34.3 pass att/g in 2026 vs 41.8 actual in 2025 (-7.5) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~23.6% of the 2025 target volume turned over (meaningful turnover) — out: M.Carter (7.3%, gone), E.Higgins (6.0%, gone), G.Dortch (5.3%, to DET), Z.Knight (5.0%, gone). In: Tyler Allgeier (from ATL); Kendrick Bourne (from SF)  ·  rookies: Jeremiyah Love. Player deltas (2025 actual → 2026 projection): Trey McBride 15.0/g proj vs 19.1/g in 2025 (-4.1, projected to regress); Marvin Harrison Jr. 11.4/g proj vs 10.4/g in 2025 (+1.0, roughly steady); Michael Wilson 9.8/g proj vs 13.5/g in 2025 (-3.7, projected to regress); Tyler Allgeier 5.1/g proj vs 7.2/g in 2025 (-2.1, projected to regress, joins from ATL)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Jeremiyah Love p95 37 (16.9% spike) · Trey McBride p95 36 (16.9% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Jeremiyah Love (p95 37, hits a spike week 16.9% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Trey McBride (100%), Jeremiyah Love (91%), Marvin Harrison Jr. (77%). Pure spike profiles (big ceiling, thinner advancement floor): Michael Wilson, Tyler Allgeier, Kendrick Bourne — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Jacoby Brissett + Trey McBride / Marvin Harrison Jr. — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is ARI@LV — a lower-variance finals game (tail rank #14); the natural bring-back is a LV pass-catcher to play both sides of that game. Byes fall in Week 14, and the playoff run is W15 vs NYJ, W16 vs NO."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “The Broncos defensive coordinator, Vance Joseph, spent four seasons with Arizona as their defensive coordinator”. On Jeremiyah Love: “ADP RB6 Ashton Jeanty, RB7 De'Von Achane, RB13 Jeremiyah Love are good at football, but could easily be in bottom-10 scoring offenses” (@ihartitz). On Jacoby Brissett: “Jacoby Brissette is their future quarterback” (@smitchell17). On Kendrick Bourne: “12.6 of 6 from the free throw line to go along with 13 rebounds, and again, when you see the disparity and how that's borne out, 6 offensive boards just doing Angel Reese things” (@ahaanrungta)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Jeremiyah Love (board #20, ADP 26.5), with Trey McBride as the correlated ceiling pieces. Let the market overpay for Gardner Minshew II, Carson Beck."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Michael Wilson — contingency: Leveraged insurance: +21.5 pts if Marvin Harrison misses time. 9 • structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "HOU",
+"name": "Houston Texans",
+"verdict": "A balanced, average-pace attack and a middle scoring offense (1.88 implied TD/g, 23rd). 1 alpha-ceiling player (p95≥33); best board asset is Nico Collins at #21.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"21",
+"Nico Collins",
+"WR",
+"23.6",
+"37",
+"16.9%",
+"94%",
+"24.1% tgt"
+],
+[
+"51",
+"David Montgomery",
+"RB",
+"50.9",
+"28",
+"19.2%",
+"72%",
+"5.8% tgt"
+],
+[
+"132",
+"C.J. Stroud",
+"QB",
+"139.0",
+"30",
+"14.7%",
+"41%",
+"3.2 car/g"
+],
+[
+"136",
+"Jayden Higgins",
+"WR",
+"132.2",
+"23",
+"19.5%",
+"59%",
+"13.0% tgt"
+],
+[
+"150",
+"Woody Marks",
+"RB",
+"143.4",
+"19",
+"20.1%",
+"50%",
+"6.9% tgt"
+],
+[
+"168",
+"Dalton Schultz",
+"TE",
+"171.4",
+"22",
+"19.9%",
+"60%",
+"17.9% tgt"
+],
+[
+"186",
+"Tank Dell",
+"WR",
+"187.0",
+"18",
+"21.3%",
+"50%",
+"rookie/NA"
+],
+[
+"245",
+"Jaylin Noel",
+"WR",
+"227.5",
+"11",
+"21.8%",
+"24%",
+"7.1% tgt"
+],
+[
+"267",
+"Xavier Hutchinson",
+"WR",
+"230.2",
+"11",
+"21.2%",
+"19%",
+"12.9% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.9 plays/g (17th) · 32.4 pass att (13th) · 55.0% pass rate (12th) · 232.1 pass yds (11th) · 26.5 carries (23rd) · 113.6 rush yds (25th) · 1.88 TD/g (23rd)",
+"read": "A balanced script (55.0% pass) spreads opportunity without a strong structural lean either way. Scoring sits mid-pack (1.88 TD/g, 23rd)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Nico Collins 24.1% tgt / aDOT 12.4 / max 26.4 · Dalton Schultz 17.9% tgt / aDOT 6.1 / max 21.6 · Jayden Higgins 13.0% tgt / aDOT 12.4 / max 16.8 · Woody Marks 12.7 car/g, 1.4 rec/g, max 27.9",
+"read": "Nico Collins is the focal point — a 24.1% target share in 2025 (rock-steady, cv 0.33), at a 12.4-yard aDOT (downfield routes), peaking at 26.4 DK in his best week. Secondary volume goes to Dalton Schultz (17.9%). In the backfield Woody Marks profiled as the lead of a rotation (12.7 carries/g, with a thin receiving role); ceiling week 27.9 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 32.4 pass att/g in 2026 vs 37.0 actual in 2025 (-4.6) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~10.8% of the 2025 target volume turned over (a largely intact target tree) — out: C.Kirk (10.8%, to SF). In: David Montgomery (from DET)  ·  rookies: Tank Dell. Player deltas (2025 actual → 2026 projection): Nico Collins 14.8/g proj vs 15.0/g in 2025 (-0.2, roughly steady); David Montgomery 11.5/g proj vs 9.9/g in 2025 (+1.6, roughly steady, joins from DET); C.J. Stroud 15.3/g proj vs 14.9/g in 2025 (+0.4, roughly steady); Jayden Higgins 8.2/g proj vs 7.8/g in 2025 (+0.4, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Nico Collins p95 37 (16.9% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Nico Collins (p95 37, hits a spike week 16.9% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Nico Collins — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Nico Collins (94%), David Montgomery (72%), Dalton Schultz (60%). Pure spike profiles (big ceiling, thinner advancement floor): David Montgomery, Jayden Higgins, Woody Marks — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is C.J. Stroud + Nico Collins / Jayden Higgins — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is GB@HOU — a mid-tier finals game (tail rank #10); the natural bring-back is a GB pass-catcher to play both sides of that game. Byes fall in Week 8, and the playoff run is W15 vs JAX, W16 vs PHI."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “The 2024 Houston Texans ran 12 personnel at the 3rd highest rate in the NFL at 31.5%”. On Nico Collins: “Isn't that the case for Drake London + Nico Collins as top-10 WRs and Round 2 picks despite the QB questions?” (@ihartitz). On C.J. Stroud: “Stroud supporter, I feel like Nate has done a really good job of, even when things are going south from a production standpoint or perception standpoint, saying, this quarterback is still playing well” (@sammonsonnfl). On Woody Marks: “Houston has an excellent receiving back in Woody Marks that was basically drafted FOR that reason” (@smitchell17)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Nico Collins (board #21, ADP 23.6). Let the market overpay for Jaylin Noel, Xavier Hutchinson."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "NE",
+"name": "New England Patriots",
+"verdict": "A run-leaning, low-snap attack and a top scoring offense (2.65 implied TD/g, 8th). 2 alpha-ceiling players (p95≥33); best board asset is A.J. Brown at #23.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"23",
+"A.J. Brown",
+"WR",
+"19.4",
+"37",
+"17.4%",
+"92%",
+"28.0% tgt"
+],
+[
+"59",
+"Drake Maye",
+"QB",
+"65.0",
+"37",
+"13.8%",
+"95%",
+"3.0% tgt"
+],
+[
+"63",
+"TreVeyon Henderson",
+"RB",
+"57.6",
+"29",
+"17.5%",
+"77%",
+"10.1% tgt"
+],
+[
+"78",
+"Rhamondre Stevenson",
+"RB",
+"75.6",
+"27",
+"18.2%",
+"71%",
+"10.7% tgt"
+],
+[
+"121",
+"Romeo Doubs",
+"WR",
+"119.4",
+"27",
+"19.0%",
+"69%",
+"19.5% tgt"
+],
+[
+"153",
+"Hunter Henry",
+"TE",
+"156.2",
+"24",
+"19.8%",
+"67%",
+"16.7% tgt"
+],
+[
+"213",
+"Kayshon Boutte",
+"WR",
+"207.2",
+"14",
+"24.6%",
+"36%",
+"13.5% tgt"
+],
+[
+"276",
+"DeMario Douglas",
+"WR",
+"228.4",
+"12",
+"21.8%",
+"25%",
+"10.2% tgt"
+],
+[
+"315",
+"Mack Hollins",
+"WR",
+"228.3",
+"8",
+"20.0%",
+"12%",
+"16.0% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.4 plays/g (25th) · 30.6 pass att (25th) · 52.4% pass rate (24th) · 240.9 pass yds (7th) · 27.8 carries (10th) · 126.5 rush yds (9th) · 2.65 TD/g (8th)",
+"read": "A run-leaning script (52.4% pass vs 54% league) tilts value toward the backfield and compresses the passing pie, but the deliberate pace (58.4 snaps/g, 25th) caps the raw opportunity to go around. Most important for best ball: 2.65 implied TD/g (8th) is a top-tier scoring environment that raises every weekly ceiling."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "A.J. Brown 28.0% tgt / aDOT 12.2 / max 38.2 · Romeo Doubs 19.5% tgt / aDOT 12.4 / max 29.8 · Hunter Henry 16.7% tgt / aDOT 8.2 / max 29.0 · Rhamondre Stevenson 10.5 car/g, 2.4 rec/g, max 38.3",
+"read": "A.J. Brown (2025 with PHI) is the focal point — a 28.0% target share in 2025 (fairly stable, cv 0.4), at a 12.2-yard aDOT (downfield routes), peaking at 38.2 DK in his best week. Secondary volume goes to Romeo Doubs (19.5%), Hunter Henry (16.7%). In the backfield Rhamondre Stevenson profiled as a committee back (10.5 carries/g, with a thin receiving role); ceiling week 38.3 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 30.6 pass att/g in 2026 vs 33.0 actual in 2025 (-2.4) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~30.4% of the 2025 target volume turned over (meaningful turnover) — out: S.Diggs (20.4%, to FA), A.Hooper (5.5%, gone), K.Williams (4.5%, gone). In: A.J. Brown (from PHI); Romeo Doubs (from GB). Player deltas (2025 actual → 2026 projection): A.J. Brown 14.7/g proj vs 15.0/g in 2025 (-0.3, roughly steady, joins from PHI); Drake Maye 19.9/g proj vs 20.7/g in 2025 (-0.8, roughly steady); TreVeyon Henderson 12.5/g proj vs 10.9/g in 2025 (+1.6, roughly steady); Rhamondre Stevenson 11.5/g proj vs 12.9/g in 2025 (-1.4, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "A.J. Brown p95 37 (17.4% spike) · Drake Maye p95 37 (13.8% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by A.J. Brown (p95 37, hits a spike week 17.4% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Drake Maye (95%), A.J. Brown (92%), TreVeyon Henderson (77%). Pure spike profiles (big ceiling, thinner advancement floor): Rhamondre Stevenson, Romeo Doubs, Hunter Henry — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Drake Maye + A.J. Brown / Romeo Doubs — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is DEN@NE — a top-tier blow-up game (tail rank #6); the natural bring-back is a DEN pass-catcher to play both sides of that game. Byes fall in Week 11, and the playoff run is W15 vs KC, W16 vs NYJ."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “Zach did an awesome job scheming him up in the red zone in the New England game”. On Kayshon Boutte: “Is Kayshon Boutte going to be the absolute stone nuts value at an ADP of 207.1 when/if A.J” (@smitchell17)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around A.J. Brown (board #23, ADP 19.4), with Drake Maye as the correlated ceiling pieces. Let the market overpay for DeMario Douglas, Mack Hollins."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "NYJ",
+"name": "New York Jets",
+"verdict": "A balanced, low-snap attack and a middle scoring offense (2.0 implied TD/g, 22nd). 2 alpha-ceiling players (p95≥33); best board asset is Breece Hall at #26.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"26",
+"Breece Hall",
+"RB",
+"30.5",
+"37",
+"17.3%",
+"90%",
+"11.2% tgt"
+],
+[
+"33",
+"Garrett Wilson",
+"WR",
+"39.0",
+"37",
+"16.6%",
+"94%",
+"35.6% tgt"
+],
+[
+"148",
+"Kenyon Sadiq",
+"TE",
+"151.4",
+"25",
+"19.6%",
+"75%",
+"rookie/NA"
+],
+[
+"155",
+"Omar Cooper Jr.",
+"WR",
+"149.3",
+"19",
+"20.9%",
+"51%",
+"rookie/NA"
+],
+[
+"171",
+"Geno Smith",
+"QB",
+"174.3",
+"25",
+"9.2%",
+"33%",
+"2.7 car/g"
+],
+[
+"190",
+"Adonai Mitchell",
+"WR",
+"196.7",
+"20",
+"20.1%",
+"54%",
+"15.3% tgt"
+],
+[
+"202",
+"Braelon Allen",
+"RB",
+"200.2",
+"15",
+"21.8%",
+"44%",
+"5.2% tgt"
+],
+[
+"328",
+"Isaiah Davis",
+"RB",
+"228.0",
+"8",
+"21.0%",
+"23%",
+"8.6% tgt"
+],
+[
+"354",
+"Mason Taylor",
+"TE",
+"229.9",
+"11",
+"22.9%",
+"23%",
+"17.2% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.1 plays/g (29th) · 31.2 pass att (18th) · 53.7% pass rate (17th) · 224.3 pass yds (23rd) · 26.9 carries (19th) · 116.1 rush yds (21st) · 2.0 TD/g (22nd)",
+"read": "A balanced script (53.7% pass) spreads opportunity without a strong structural lean either way, but the deliberate pace (58.1 snaps/g, 29th) caps the raw opportunity to go around. Scoring sits mid-pack (2.0 TD/g, 22nd)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Garrett Wilson 35.6% tgt / aDOT 8.9 / max 24.4 · Mason Taylor 17.2% tgt / aDOT 5.7 / max 15.7 · Adonai Mitchell 15.3% tgt / aDOT 14.9 / max 27.2 · Breece Hall 15.2 car/g, 2.2 rec/g, max 35.9",
+"read": "Garrett Wilson is the focal point — a 35.6% target share in 2025 (rock-steady, cv 0.28), at a 8.9-yard aDOT (all-levels routes), peaking at 24.4 DK in his best week. Secondary volume goes to Mason Taylor (17.2%), Adonai Mitchell (15.3%). In the backfield Breece Hall profiled as a true workhorse (15.2 carries/g, with a thin receiving role); ceiling week 35.9 DK. Small-sample caveat: Garrett Wilson (7g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “However, he was still a hot commodity because Aaron Rodgers was going to the New York Jets, and the Jets were more than happy to hire his buddy to be the offensive coordinator” (@thepowerrank). Volume shift: Clay projects 31.2 pass att/g in 2026 vs 32.9 actual in 2025 (-1.7) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~40.5% of the 2025 target volume turned over (major turnover) — out: J.Metchie (11.3%, to CAR), I.Williams (8.5%, gone), J.Ruckert (6.9%, gone), J.Reynolds (5.2%, gone). In: Geno Smith (from LV); Adonai Mitchell (from IND)  ·  rookies: Kenyon Sadiq, Omar Cooper Jr.. Player deltas (2025 actual → 2026 projection): Breece Hall 16.3/g proj vs 13.9/g in 2025 (+2.4, trending up); Garrett Wilson 15.0/g proj vs 14.2/g in 2025 (+0.8, roughly steady); Geno Smith 14.5/g proj vs 12.9/g in 2025 (+1.6, roughly steady, joins from LV); Adonai Mitchell 6.7/g proj vs 5.7/g in 2025 (+1.0, roughly steady, joins from IND)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Breece Hall p95 37 (17.3% spike) · Garrett Wilson p95 37 (16.6% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Breece Hall (p95 37, hits a spike week 17.3% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Garrett Wilson (94%), Breece Hall (90%), Kenyon Sadiq (75%). Pure spike profiles (big ceiling, thinner advancement floor): Kenyon Sadiq, Omar Cooper Jr., Adonai Mitchell — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Geno Smith + Garrett Wilson / Kenyon Sadiq — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is MIN@NYJ — a mid-tier finals game (tail rank #7); the natural bring-back is a MIN pass-catcher to play both sides of that game. Byes fall in Week 13, and the playoff run is W15 vs ARI, W16 vs NE."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “However, he was still a hot commodity because Aaron Rodgers was going to the New York Jets, and the Jets were more than happy to hire his buddy to be the offensive coordinator”. On Breece Hall: “We debated players next to each other in ADP: + Breece Hall vs” (@haydenwinks). On Kenyon Sadiq: “He has the athletic tools in his body to be able to do that, so I'm really interested to see where does Kenyon Sadiq land in the 2026 NFL Draft” (@syedschemes). On Omar Cooper Jr.: “I don't think I'll be drafting much Omar Cooper” (@haydenwinks)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Breece Hall (board #26, ADP 30.5), with Garrett Wilson as the correlated ceiling pieces. Let the market overpay for Isaiah Davis, Mason Taylor."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "NO",
+"name": "New Orleans Saints",
+"verdict": "A balanced, average-pace attack and a middle scoring offense (1.88 implied TD/g, 23rd). 2 alpha-ceiling players (p95≥33); best board asset is Chris Olave at #29.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"29",
+"Chris Olave",
+"WR",
+"26.5",
+"36",
+"17.1%",
+"91%",
+"29.1% tgt"
+],
+[
+"40",
+"Travis Etienne Jr.",
+"RB",
+"34.0",
+"33",
+"17.3%",
+"80%",
+"10.1% tgt"
+],
+[
+"74",
+"Jordyn Tyson",
+"WR",
+"68.2",
+"29",
+"18.1%",
+"76%",
+"rookie/NA"
+],
+[
+"116",
+"Tyler Shough",
+"QB",
+"115.6",
+"32",
+"14.4%",
+"54%",
+"4.2 car/g"
+],
+[
+"149",
+"Juwan Johnson",
+"TE",
+"152.8",
+"24",
+"19.4%",
+"65%",
+"17.6% tgt"
+],
+[
+"169",
+"Alvin Kamara",
+"RB",
+"163.3",
+"19",
+"20.2%",
+"49%",
+"11.7% tgt"
+],
+[
+"251",
+"Audric Estime",
+"RB",
+"232.3",
+"",
+"",
+"",
+"9.1% tgt"
+],
+[
+"265",
+"Devin Neal",
+"RB",
+"228.2",
+"",
+"",
+"",
+"7.8% tgt"
+],
+[
+"301",
+"Devaughn Vele",
+"WR",
+"229.6",
+"13",
+"25.1%",
+"28%",
+"13.6% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.4 plays/g (13th) · 32.2 pass att (14th) · 54.3% pass rate (15th) · 228.6 pass yds (15th) · 27.1 carries (16th) · 115.4 rush yds (22nd) · 1.88 TD/g (23rd)",
+"read": "A balanced script (54.3% pass) spreads opportunity without a strong structural lean either way. Scoring sits mid-pack (1.88 TD/g, 23rd)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Chris Olave 29.1% tgt / aDOT 11.8 / max 39.8 · Juwan Johnson 17.6% tgt / aDOT 7.6 / max 19.2 · Devaughn Vele 13.6% tgt / aDOT 10.8 / max 23.3 · Travis Etienne Jr. 15.0 car/g, 2.3 rec/g, max 31.5",
+"read": "Chris Olave is the focal point — a 29.1% target share in 2025 (rock-steady, cv 0.23), at a 11.8-yard aDOT (all-levels routes), peaking at 39.8 DK in his best week. Secondary volume goes to Juwan Johnson (17.6%). In the backfield Travis Etienne Jr. (2025 with JAX) profiled as a true workhorse (15.0 carries/g, with a thin receiving role); ceiling week 31.5 DK. Small-sample caveat: Devaughn Vele (9g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 32.2 pass att/g in 2026 vs 37.7 actual in 2025 (-5.5) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~13.4% of the 2025 target volume turned over (a largely intact target tree) — out: B.Cooks (9.0%, gone), K.Austin (4.4%, gone). In: Travis Etienne Jr. (from JAX); Noah Fant (from CIN)  ·  rookies: Jordyn Tyson. Player deltas (2025 actual → 2026 projection): Chris Olave 14.2/g proj vs 17.4/g in 2025 (-3.2, projected to regress); Travis Etienne Jr. 14.3/g proj vs 15.7/g in 2025 (-1.4, roughly steady, joins from JAX); Tyler Shough 16.3/g proj vs 15.3/g in 2025 (+1.0, roughly steady); Juwan Johnson 8.5/g proj vs 10.7/g in 2025 (-2.2, projected to regress)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Chris Olave p95 36 (17.1% spike) · Travis Etienne Jr. p95 33 (17.3% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Chris Olave (p95 36, hits a spike week 17.1% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Chris Olave (91%), Travis Etienne Jr. (80%), Jordyn Tyson (76%). Pure spike profiles (big ceiling, thinner advancement floor): Jordyn Tyson, Juwan Johnson, Alvin Kamara — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Tyler Shough + Chris Olave / Jordyn Tyson — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is ATL@NO — a mid-tier finals game (tail rank #11); the natural bring-back is a ATL pass-catcher to play both sides of that game. Byes fall in Week 8, and the playoff run is W15 vs TB, W16 vs ARI."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “But they came to work me out in New Orleans, went to dinner, and there was just friction between the head coach, general manager, the owners”. On Jordyn Tyson: “They added Jordan Tyson in the draft to go alongside Chris Alave” (@fantasypts). On Alvin Kamara: “I'm assuming Alvin Kamara is going to retire or get released” (@ffdataroma). On Oscar Delp: “You know, a player like Oscar Delp from Georgia, who was drafted in the third round by the New Orleans Saints” (@dbro_ffb)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Chris Olave (board #29, ADP 26.5), with Travis Etienne Jr. as the correlated ceiling pieces. Let the market overpay for Audric Estime, Devin Neal."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Travis Etienne Jr. — trap: Trap take Kyren Williams instead (+20). 4.2 • Alvin Kamara — age: Age / role-decline flag. 11"
+}
+]
+},
+{
+"team": "NYG",
+"name": "New York Giants",
+"verdict": "A run-leaning, average-pace attack and a middle scoring offense (2.18 implied TD/g, 20th). 2 alpha-ceiling players (p95≥33); best board asset is Malik Nabers at #31.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"31",
+"Malik Nabers",
+"WR",
+"36.5",
+"37",
+"17.7%",
+"93%",
+"27.1% tgt"
+],
+[
+"46",
+"Cam Skattebo",
+"RB",
+"45.2",
+"32",
+"17.2%",
+"81%",
+"12.8% tgt"
+],
+[
+"94",
+"Jaxson Dart",
+"QB",
+"98.6",
+"35",
+"13.2%",
+"87%",
+"6.1 car/g"
+],
+[
+"127",
+"Isaiah Likely",
+"TE",
+"122.5",
+"24",
+"19.4%",
+"71%",
+"13.0% tgt"
+],
+[
+"138",
+"Tyrone Tracy Jr.",
+"RB",
+"133.7",
+"14",
+"21.2%",
+"40%",
+"12.4% tgt"
+],
+[
+"218",
+"Malachi Fields",
+"WR",
+"211.5",
+"8",
+"20.4%",
+"14%",
+"rookie/NA"
+],
+[
+"220",
+"Darnell Mooney",
+"WR",
+"216.0",
+"18",
+"21.0%",
+"47%",
+"16.1% tgt"
+],
+[
+"239",
+"Odell Beckham Jr.",
+"WR",
+"224.4",
+"9",
+"21.0%",
+"14%",
+"rookie/NA"
+],
+[
+"255",
+"JuJu Smith-Schuster",
+"WR",
+"226.4",
+"1",
+"7.7%",
+"6%",
+"rookie/NA"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.6 plays/g (23rd) · 29.6 pass att (30th) · 50.6% pass rate (29th) · 217.0 pass yds (29th) · 28.9 carries (5th) · 129.9 rush yds (5th) · 2.18 TD/g (20th)",
+"read": "A run-leaning script (50.6% pass vs 54% league) tilts value toward the backfield and compresses the passing pie. Scoring sits mid-pack (2.18 TD/g, 20th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Malik Nabers 27.1% tgt / aDOT 15.9 / max 40.7 · Theo Johnson 17.1% tgt / aDOT 8.3 / max 21.3 · Darnell Mooney 16.1% tgt / aDOT 14.2 / max 16.4 · Cam Skattebo 12.8 car/g, 3.0 rec/g, max 31.0",
+"read": "Malik Nabers is the focal point — a 27.1% target share in 2025 (fairly stable, cv 0.37), at a 15.9-yard aDOT (downfield routes), peaking at 40.7 DK in his best week. Secondary volume goes to Theo Johnson (17.1%), Darnell Mooney (16.1%). In the backfield Cam Skattebo profiled as the lead of a rotation (12.8 carries/g, and he caught 3.0 balls/g); ceiling week 31.0 DK. Small-sample caveat: Malik Nabers (4g), Jameis Winston (3g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 29.6 pass att/g in 2026 vs 33.9 actual in 2025 (-4.3) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~33.8% of the 2025 target volume turned over (meaningful turnover) — out: W.Robinson (28.5%, to TEN), D.Bellinger (5.3%, gone). In: Isaiah Likely (from BAL); Darnell Mooney (from ATL); Calvin Austin III (from PIT). Player deltas (2025 actual → 2026 projection): Malik Nabers 14.7/g proj vs 15.0/g in 2025 (-0.3, roughly steady); Cam Skattebo 14.4/g proj vs 15.8/g in 2025 (-1.4, roughly steady); Jaxson Dart 18.8/g proj vs 17.5/g in 2025 (+1.3, roughly steady); Isaiah Likely 9.2/g proj vs 5.7/g in 2025 (+3.5, trending up, joins from BAL)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Malik Nabers p95 37 (17.7% spike) · Jaxson Dart p95 35 (13.2% spike)",
+"read": "2 players clear the alpha-ceiling bar, led by Malik Nabers (p95 37, hits a spike week 17.7% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Malik Nabers (93%), Jaxson Dart (87%), Cam Skattebo (81%). Pure spike profiles (big ceiling, thinner advancement floor): Isaiah Likely, Tyrone Tracy Jr., Malachi Fields — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Jaxson Dart + Malik Nabers / Isaiah Likely — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is DAL@NYG — a top-tier blow-up game (tail rank #3); the natural bring-back is a DAL pass-catcher to play both sides of that game. Byes fall in Week 8, and the playoff run is W15 vs CLE, W16 vs DET."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Jaxson Dart: “- New York Giants: The Giants also present one of the easier ways to get late-rd stacks if you decide to take Jaxson Dart in the earlier rounds” (@smitchell17). On Isaiah Likely: “Isaiah Likely signs a big free agent contract, ends up in New York with his old head coach, John Harbaugh” (@fantasypts). On Malachi Fields: “They also took a stance drafting Notre Dame standout Malachi Fields” (@smitchell17). On Darnell Mooney: “They raise the money just about $750,000 and shoot this movie Obsession in 20 days” (@brettkollmann)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Malik Nabers (board #31, ADP 36.5), with Jaxson Dart as the correlated ceiling pieces. Let the market overpay for Odell Beckham Jr., JuJu Smith-Schuster."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Cam Skattebo — injury: Contested 4v3 backfield + fibula recovery vs Roman-fit bulls. 11/ 5 • Isaiah Likely — trap: Trap take Baker Mayfield instead (+18). 4.2"
+}
+]
+},
+{
+"team": "TB",
+"name": "Tampa Bay Buccaneers",
+"verdict": "A balanced, average-pace attack and a middle scoring offense (2.24 implied TD/g, 19th). 1 alpha-ceiling player (p95≥33); best board asset is Emeka Egbuka at #36.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"36",
+"Emeka Egbuka",
+"WR",
+"32.4",
+"33",
+"18.1%",
+"86%",
+"23.6% tgt"
+],
+[
+"60",
+"Bucky Irving",
+"RB",
+"59.5",
+"32",
+"17.7%",
+"78%",
+"11.9% tgt"
+],
+[
+"91",
+"Chris Godwin Jr.",
+"WR",
+"87.0",
+"25",
+"19.4%",
+"63%",
+"18.2% tgt"
+],
+[
+"103",
+"Kenneth Gainwell",
+"RB",
+"99.3",
+"24",
+"19.1%",
+"58%",
+"16.4% tgt"
+],
+[
+"118",
+"Baker Mayfield",
+"QB",
+"119.2",
+"32",
+"14.6%",
+"56%",
+"3.2 car/g"
+],
+[
+"144",
+"Jalen McMillan",
+"WR",
+"140.9",
+"22",
+"19.7%",
+"57%",
+"10.8% tgt"
+],
+[
+"185",
+"Sean Tucker",
+"RB",
+"181.4",
+"6",
+"20.1%",
+"12%",
+"5.3% tgt"
+],
+[
+"191",
+"Cade Otton",
+"TE",
+"187.6",
+"18",
+"20.7%",
+"46%",
+"17.4% tgt"
+],
+[
+"204",
+"Ted Hurst",
+"WR",
+"197.2",
+"13",
+"24.3%",
+"33%",
+"rookie/NA"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.8 plays/g (20th) · 31.0 pass att (23rd) · 52.8% pass rate (22nd) · 224.9 pass yds (21st) · 27.8 carries (10th) · 122.7 rush yds (12th) · 2.24 TD/g (19th)",
+"read": "A balanced script (52.8% pass) spreads opportunity without a strong structural lean either way. Scoring sits mid-pack (2.24 TD/g, 19th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Emeka Egbuka 23.6% tgt / aDOT 12.3 / max 32.3 · Chris Godwin Jr. 18.2% tgt / aDOT 6.9 / max 26.8 · Cade Otton 17.4% tgt / aDOT 5.1 / max 22.4 · Bucky Irving 17.3 car/g, 3.0 rec/g, max 29.5",
+"read": "Emeka Egbuka is the focal point — a 23.6% target share in 2025 (fairly stable, cv 0.34), at a 12.3-yard aDOT (downfield routes), peaking at 32.3 DK in his best week. Secondary volume goes to Chris Godwin Jr. (18.2%), Cade Otton (17.4%). In the backfield Bucky Irving profiled as a true workhorse (17.3 carries/g, and he caught 3.0 balls/g); ceiling week 29.5 DK. Small-sample caveat: Chris Godwin Jr. (9g), Jalen McMillan (4g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “One of the most exciting quotes of the offseason came a couple weeks ago when new Buccaneers offensive coordinator Zach Robinson said that Amika Iqbuka is going to play the Z in his offense” (@benjaminsolak). Volume shift: Clay projects 31.0 pass att/g in 2026 vs 35.4 actual in 2025 (-4.4) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~29.6% of the 2025 target volume turned over (meaningful turnover) — out: M.Evans (11.4%, gone), S.Shepard (9.9%, gone), R.White (8.3%, to WAS). In: Kenneth Gainwell (from PIT). Player deltas (2025 actual → 2026 projection): Emeka Egbuka 12.8/g proj vs 11.9/g in 2025 (+0.9, roughly steady); Bucky Irving 13.2/g proj vs 14.2/g in 2025 (-1.0, roughly steady); Chris Godwin Jr. 9.4/g proj vs 9.3/g in 2025 (+0.1, roughly steady); Kenneth Gainwell 10.0/g proj vs 12.8/g in 2025 (-2.8, projected to regress, joins from PIT)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Emeka Egbuka p95 33 (18.1% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Emeka Egbuka (p95 33, hits a spike week 18.1% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Emeka Egbuka — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Emeka Egbuka (86%), Bucky Irving (78%), Chris Godwin Jr. (63%). Pure spike profiles (big ceiling, thinner advancement floor): Chris Godwin Jr., Kenneth Gainwell, Jalen McMillan — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Baker Mayfield + Emeka Egbuka / Chris Godwin Jr. — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is LAR@TB — a top-tier blow-up game (tail rank #1); the natural bring-back is a LAR pass-catcher to play both sides of that game. Byes fall in Week 10, and the playoff run is W15 vs NO, W16 vs ATL."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “One of the most exciting quotes of the offseason came a couple weeks ago when new Buccaneers offensive coordinator Zach Robinson said that Amika Iqbuka is going to play the Z in his offense”. On Bucky Irving: “The Gainwell buzz + Bucky Irving injury fear is pushing him into a very comfortable range of drafts, behind Skatt and just ahead of TreVeyon/Montgomery” (@ffdataroma). On Baker Mayfield: “The Bucs, obviously, are a talented team with a quarterback in Baker Mayfield ready to get back into having playoff success” (@dhananizain). On Ted Hurst: “And just to watch the steps that they're taking from year one to year two, when it comes to Mac and Tez, and watching them help Ted Hurst out as well” (@dhananizain)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Emeka Egbuka (board #36, ADP 32.4). Let the market overpay for Tez Johnson."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Chris Godwin Jr. — age: Age / role-decline flag. 11"
+}
+]
+},
+{
+"team": "GB",
+"name": "Green Bay Packers",
+"verdict": "A balanced, average-pace attack and a middle scoring offense (2.47 implied TD/g, 12th). 1 alpha-ceiling player (p95≥33); best board asset is Josh Jacobs at #39.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"39",
+"Josh Jacobs",
+"RB",
+"44.4",
+"37",
+"17.0%",
+"88%",
+"10.7% tgt"
+],
+[
+"57",
+"Christian Watson",
+"WR",
+"54.6",
+"29",
+"19.2%",
+"75%",
+"20.0% tgt"
+],
+[
+"83",
+"Tucker Kraft",
+"TE",
+"80.1",
+"26",
+"19.0%",
+"77%",
+"18.9% tgt"
+],
+[
+"97",
+"Jayden Reed",
+"WR",
+"89.9",
+"26",
+"18.4%",
+"65%",
+"17.3% tgt"
+],
+[
+"109",
+"Jordan Love",
+"QB",
+"111.1",
+"32",
+"14.9%",
+"51%",
+"3.0 car/g"
+],
+[
+"112",
+"Matthew Golden",
+"WR",
+"114.6",
+"29",
+"18.3%",
+"76%",
+"12.4% tgt"
+],
+[
+"219",
+"MarShawn Lloyd",
+"RB",
+"209.5",
+"12",
+"25.2%",
+"37%",
+"rookie/NA"
+],
+[
+"247",
+"Chris Brooks",
+"RB",
+"225.5",
+"10",
+"24.0%",
+"30%",
+"5.8% tgt"
+],
+[
+"287",
+"Luke Musgrave",
+"TE",
+"229.5",
+"9",
+"20.7%",
+"10%",
+"8.2% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.8 plays/g (19th) · 31.2 pass att (18th) · 53.1% pass rate (21st) · 234.9 pass yds (10th) · 27.6 carries (13th) · 118.7 rush yds (18th) · 2.47 TD/g (12th)",
+"read": "A balanced script (53.1% pass) spreads opportunity without a strong structural lean either way. Scoring sits mid-pack (2.47 TD/g, 12th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Christian Watson 20.0% tgt / aDOT 17.2 / max 25.3 · Tucker Kraft 18.9% tgt / aDOT 4.6 / max 36.3 · Jayden Reed 17.3% tgt / aDOT 9.4 / max 15.7 · Josh Jacobs 15.8 car/g, 2.3 rec/g, max 32.0",
+"read": "Christian Watson is the focal point — a 20.0% target share in 2025 (fairly stable, cv 0.41), at a 17.2-yard aDOT (downfield routes), peaking at 25.3 DK in his best week. Secondary volume goes to Tucker Kraft (18.9%), Jayden Reed (17.3%). In the backfield Josh Jacobs profiled as a true workhorse (15.8 carries/g, with a thin receiving role); ceiling week 32.0 DK. Small-sample caveat: Tucker Kraft (8g), Jayden Reed (6g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Scheme watch — “He had gotten the job because he was the offensive coordinator with the Green Bay Packers for the previous three seasons” (@thepowerrank). Volume shift: Clay projects 31.2 pass att/g in 2026 vs 31.5 actual in 2025 (-0.3) — holding steady on pass volume. Vacated opportunity: ~28.6% of the 2025 target volume turned over (meaningful turnover) — out: R.Doubs (19.4%, to NE), D.Wicks (9.2%, to PHI). Player deltas (2025 actual → 2026 projection): Josh Jacobs 16.3/g proj vs 15.4/g in 2025 (+0.9, roughly steady); Christian Watson 10.9/g proj vs 13.5/g in 2025 (-2.6, projected to regress); Tucker Kraft 9.5/g proj vs 15.4/g in 2025 (-5.9, projected to regress); Jayden Reed 9.8/g proj vs 10.7/g in 2025 (-0.9, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Josh Jacobs p95 37 (17.0% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Josh Jacobs (p95 37, hits a spike week 17.0% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Josh Jacobs (88%), Tucker Kraft (77%), Matthew Golden (76%). Pure spike profiles (big ceiling, thinner advancement floor): Christian Watson, Tucker Kraft, Jayden Reed — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Jordan Love + Christian Watson / Matthew Golden — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is GB@HOU — a mid-tier finals game (tail rank #10); the natural bring-back is a HOU pass-catcher to play both sides of that game. Byes fall in Week 11, and the playoff run is W15 vs MIA, W16 vs CHI."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “Critically, in Green Bay, that offense was a little less oriented on getting the ball to the intermediate middle of the field for Jordan Love relative to some of the other quarterbacks who've played in other branches”. On Josh Jacobs: “Both 2024 Alexander Madison and 2023 Josh Jacobs had poor yards before contact per rush playing for the Raiders” (@benjaminsolak). On Jayden Reed: “I still want to draft Jaden Reed as wide receiver 41, but he would be roadblocked in that scenario” (@mattharmon_byb). On Matthew Golden: “And you look at Matthew Golden, his route participation in the heavy sets down at 43%” (@joshnorris)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Josh Jacobs (board #39, ADP 44.4). Let the market overpay for Chris Brooks, Luke Musgrave."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Josh Jacobs — risk: Booked at OTAs; personal-conduct investigation suspension possible. 11 • Christian Watson — contingency: Leveraged insurance: +11.1 pts if Josh Jacobs misses time. 9 • Tucker Kraft — injury: Knee (~10mo); TE4-6 case real / TE1 stretch. 11"
+}
+]
+},
+{
+"team": "CAR",
+"name": "Carolina Panthers",
+"verdict": "A balanced, low-snap attack and a muted scoring offense (1.82 implied TD/g, 26th). 1 alpha-ceiling player (p95≥33); best board asset is Tetairoa McMillan at #41.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"41",
+"Tetairoa McMillan",
+"WR",
+"42.1",
+"36",
+"16.4%",
+"88%",
+"25.3% tgt"
+],
+[
+"75",
+"Chuba Hubbard",
+"RB",
+"71.8",
+"26",
+"18.6%",
+"64%",
+"8.9% tgt"
+],
+[
+"110",
+"Jonathon Brooks",
+"RB",
+"106.5",
+"22",
+"19.8%",
+"53%",
+"rookie/NA"
+],
+[
+"135",
+"Jalen Coker",
+"WR",
+"132.0",
+"23",
+"18.6%",
+"62%",
+"17.2% tgt"
+],
+[
+"143",
+"Bryce Young",
+"QB",
+"148.9",
+"25",
+"9.3%",
+"36%",
+"3.4 car/g"
+],
+[
+"232",
+"Chris Brazzell II",
+"WR",
+"221.6",
+"13",
+"24.6%",
+"28%",
+"rookie/NA"
+],
+[
+"258",
+"Trevor Etienne",
+"RB",
+"225.9",
+"7",
+"20.4%",
+"15%",
+"10.1% tgt"
+],
+[
+"296",
+"Xavier Legette",
+"WR",
+"230.9",
+"13",
+"23.9%",
+"37%",
+"14.0% tgt"
+],
+[
+"305",
+"John Metchie III",
+"WR",
+"231.1",
+"",
+"",
+"",
+"14.2% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.1 plays/g (30th) · 31.6 pass att (17th) · 54.4% pass rate (14th) · 213.8 pass yds (31st) · 26.5 carries (24th) · 111.7 rush yds (27th) · 1.82 TD/g (26th)",
+"read": "A balanced script (54.4% pass) spreads opportunity without a strong structural lean either way, but the deliberate pace (58.1 snaps/g, 30th) caps the raw opportunity to go around. The 26th-ranked scoring rate (1.82 TD/g) is the cap here — touchdown-dependent ceilings get harder to hit."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Tetairoa McMillan 25.3% tgt / aDOT 11.7 / max 36.0 · Jalen Coker 17.2% tgt / aDOT 10.1 / max 31.4 · John Metchie III 14.2% tgt / aDOT 5.6 / max 18.5 · Trevor Etienne 15.0 car/g, 2.3 rec/g, max 31.5",
+"read": "Tetairoa McMillan is the focal point — a 25.3% target share in 2025 (rock-steady, cv 0.32), at a 11.7-yard aDOT (all-levels routes), peaking at 36.0 DK in his best week. Secondary volume goes to Jalen Coker (17.2%). In the backfield Trevor Etienne (2025 with JAX) profiled as a true workhorse (15.0 carries/g, with a thin receiving role); ceiling week 31.5 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 31.6 pass att/g in 2026 vs 33.1 actual in 2025 (-1.5) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~20.0% of the 2025 target volume turned over (meaningful turnover) — out: R.Dowdle (10.0%, to PIT), H.Renfrow (5.0%, gone), M.Evans (5.0%, gone). In: Trevor Etienne (from JAX); John Metchie III (from NYJ)  ·  rookies: Jonathon Brooks. Player deltas (2025 actual → 2026 projection): Tetairoa McMillan 14.0/g proj vs 12.9/g in 2025 (+1.1, roughly steady); Chuba Hubbard 10.6/g proj vs 9.1/g in 2025 (+1.5, roughly steady); Jalen Coker 8.7/g proj vs 10.0/g in 2025 (-1.3, roughly steady); Bryce Young 14.9/g proj vs 15.1/g in 2025 (-0.2, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Tetairoa McMillan p95 36 (16.4% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Tetairoa McMillan (p95 36, hits a spike week 16.4% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Tetairoa McMillan (88%), Chuba Hubbard (64%), Jalen Coker (62%). Pure spike profiles (big ceiling, thinner advancement floor): Chuba Hubbard, Jonathon Brooks, Jalen Coker — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Bryce Young + Tetairoa McMillan / Jalen Coker — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is CAR@SEA — a top-tier blow-up game (tail rank #5); the natural bring-back is a SEA pass-catcher to play both sides of that game. Byes fall in Week 5, and the playoff run is W15 vs CIN, W16 vs PIT."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Chuba Hubbard: “7 early Fantasy Football takes/questions after firing off some best ball drafts: - Who is taking Chuba Hubbard in the 6th round?!” (@connorallennfl)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Tetairoa McMillan (board #41, ADP 42.1). Let the market overpay for Chris Brazzell II, Trevor Etienne."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+},
+{
+"team": "CHI",
+"name": "Chicago Bears",
+"verdict": "A run-leaning, high-volume attack and a middle scoring offense (2.41 implied TD/g, 14th). 1 alpha-ceiling player (p95≥33); best board asset is Colston Loveland at #44.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"44",
+"Colston Loveland",
+"TE",
+"39.7",
+"30",
+"17.6%",
+"94%",
+"18.0% tgt"
+],
+[
+"45",
+"Luther Burden III",
+"WR",
+"42.2",
+"30",
+"17.8%",
+"80%",
+"13.3% tgt"
+],
+[
+"55",
+"D'Andre Swift",
+"RB",
+"53.2",
+"30",
+"17.7%",
+"76%",
+"9.0% tgt"
+],
+[
+"61",
+"Rome Odunze",
+"WR",
+"56.6",
+"32",
+"17.9%",
+"82%",
+"22.3% tgt"
+],
+[
+"64",
+"Caleb Williams",
+"QB",
+"68.6",
+"33",
+"14.3%",
+"64%",
+"5.7% tgt"
+],
+[
+"101",
+"Kyle Monangai",
+"RB",
+"95.9",
+"25",
+"18.9%",
+"60%",
+"7.0% tgt"
+],
+[
+"283",
+"Zavion Thomas",
+"WR",
+"227.6",
+"2",
+"12.3%",
+"1%",
+"rookie/NA"
+],
+[
+"298",
+"Kalif Raymond",
+"WR",
+"231.1",
+"13",
+"22.5%",
+"27%",
+"7.5% tgt"
+],
+[
+"303",
+"Cole Kmet",
+"TE",
+"229.4",
+"12",
+"24.4%",
+"21%",
+"9.3% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "60.2 plays/g (4th) · 31.1 pass att (21st) · 51.6% pass rate (27th) · 224.8 pass yds (22nd) · 29.2 carries (4th) · 134.0 rush yds (4th) · 2.41 TD/g (14th)",
+"read": "A run-leaning script (51.6% pass vs 54% league) tilts value toward the backfield and compresses the passing pie, and the pace is real — 60.2 snaps/g (4th) manufactures extra possessions for everyone. Scoring sits mid-pack (2.41 TD/g, 14th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Rome Odunze 22.3% tgt / aDOT 14.3 / max 34.8 · Colston Loveland 18.0% tgt / aDOT 9.7 / max 32.8 · Luther Burden III 13.3% tgt / aDOT 8.1 / max 30.8 · D'Andre Swift 14.2 car/g, 2.0 rec/g, max 28.5",
+"read": "Rome Odunze is the focal point — a 22.3% target share in 2025 (rock-steady, cv 0.32), at a 14.3-yard aDOT (downfield routes), peaking at 34.8 DK in his best week. Secondary volume goes to Colston Loveland (18.0%). In the backfield D'Andre Swift profiled as the lead of a rotation (14.2 carries/g, with a thin receiving role); ceiling week 28.5 DK. Small-sample caveat: Jahdae Walker (3g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 31.1 pass att/g in 2026 vs 36.5 actual in 2025 (-5.4) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~27.2% of the 2025 target volume turned over (meaningful turnover) — out: D.Moore (16.0%, gone), O.Zaccheaus (11.2%, to ATL). In: Kalif Raymond (from DET). Player deltas (2025 actual → 2026 projection): Colston Loveland 12.1/g proj vs 11.2/g in 2025 (+0.9, roughly steady); Luther Burden III 12.0/g proj vs 8.6/g in 2025 (+3.4, trending up); D'Andre Swift 12.4/g proj vs 14.6/g in 2025 (-2.2, projected to regress); Rome Odunze 12.4/g proj vs 11.7/g in 2025 (+0.7, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Caleb Williams p95 33 (14.3% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Caleb Williams (p95 33, hits a spike week 14.3% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Colston Loveland (94%), Rome Odunze (82%), Luther Burden III (80%). Pure spike profiles (big ceiling, thinner advancement floor): Kyle Monangai, Kalif Raymond, Cole Kmet — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Caleb Williams + Rome Odunze / Colston Loveland — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is CHI@DET — a top-tier blow-up game (tail rank #4); the natural bring-back is a DET pass-catcher to play both sides of that game. Byes fall in Week 10, and the playoff run is W15 vs BUF, W16 vs GB."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “I think when you see the way that he moves, you can envision all kinds of possibilities in this Bears offense, in the Bears special teams”. On Colston Loveland: “Ran for some run after catch in Colston Loveland” (@dhananizain). On Luther Burden III: “Like I'm the person who would people would think of it's like not being excited enough about Luther burden but like Luther burden was literally my highest drafted player last year” (@patkerrane). On D'Andre Swift: “-Death, taxes, D'Andre Swift beating ADP -Luther Burden -Round 4 Colston Loveland?!?” (@ihartitz)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Caleb Williams (board #64, ADP 68.6). Let the market overpay for Zavion Thomas, Kalif Raymond."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Colston Loveland — contingency: Leveraged insurance: +10.8 pts if Rome Odunze misses time. 9 • Luther Burden III — contingency: Leveraged insurance: +12.9 pts if Rome Odunze misses time. 9 • Rome Odunze — injury: Foot \"permanent damage\" per beat; missed 5+ games 2025. 11 • Caleb Williams — trap: Trap take Parker Washington instead (+18). 4.2"
+}
+]
+},
+{
+"team": "WAS",
+"name": "Washington Commanders",
+"verdict": "A run-leaning, average-pace attack and a middle scoring offense (2.29 implied TD/g, 17th). 1 alpha-ceiling player (p95≥33); best board asset is Terry McLaurin at #49.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"49",
+"Terry McLaurin",
+"WR",
+"46.5",
+"32",
+"17.5%",
+"87%",
+"23.1% tgt"
+],
+[
+"65",
+"Jayden Daniels",
+"QB",
+"69.2",
+"36",
+"13.0%",
+"90%",
+"8.4 car/g"
+],
+[
+"124",
+"Rachaad White",
+"RB",
+"122.5",
+"24",
+"18.9%",
+"62%",
+"8.2% tgt"
+],
+[
+"130",
+"Jacory Croskey-Merritt",
+"RB",
+"121.8",
+"22",
+"19.0%",
+"55%",
+"rookie/NA"
+],
+[
+"151",
+"Chig Okonkwo",
+"TE",
+"145.4",
+"",
+"",
+"",
+"15.0% tgt"
+],
+[
+"164",
+"Antonio Williams",
+"WR",
+"159.3",
+"19",
+"20.3%",
+"53%",
+"rookie/NA"
+],
+[
+"201",
+"Kaytron Allen",
+"RB",
+"195.8",
+"3",
+"17.4%",
+"3%",
+"rookie/NA"
+],
+[
+"270",
+"Luke McCaffrey",
+"WR",
+"229.0",
+"",
+"",
+"1%",
+"9.0% tgt"
+],
+[
+"271",
+"Treylon Burks",
+"WR",
+"231.9",
+"10",
+"21.7%",
+"18%",
+"12.4% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.7 plays/g (21st) · 30.6 pass att (25th) · 52.1% pass rate (25th) · 226.7 pass yds (19th) · 28.1 carries (8th) · 126.8 rush yds (6th) · 2.29 TD/g (17th)",
+"read": "A run-leaning script (52.1% pass vs 54% league) tilts value toward the backfield and compresses the passing pie. Scoring sits mid-pack (2.29 TD/g, 17th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Terry McLaurin 23.1% tgt / aDOT 14.0 / max 22.6 · Chig Okonkwo 15.0% tgt / aDOT 4.6 / max 16.4 · Treylon Burks 12.4% tgt / aDOT 13.5 / max 8.8 · Rachaad White 7.8 car/g, 2.4 rec/g, max 23.1",
+"read": "Terry McLaurin is the focal point — a 23.1% target share in 2025 (rock-steady, cv 0.29), at a 14.0-yard aDOT (downfield routes), peaking at 22.6 DK in his best week. Secondary volume goes to Chig Okonkwo (15.0%). In the backfield Rachaad White (2025 with TB) profiled as a committee back (7.8 carries/g, with a thin receiving role); ceiling week 23.1 DK. Small-sample caveat: Jayden Daniels (7g), Luke McCaffrey (7g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 30.6 pass att/g in 2026 vs 30.0 actual in 2025 (+0.6) — holding steady on pass volume. Vacated opportunity: ~59.5% of the 2025 target volume turned over (major turnover) — out: D.Samuel (22.9%, to FA), Z.Ertz (16.7%, to FA), J.McNichols (7.3%, gone), J.Lane (7.3%, to BAL). In: Rachaad White (from TB); Chig Okonkwo (from TEN); Dyami Brown (from JAX)  ·  rookies: Jacory Croskey-Merritt, Antonio Williams. Player deltas (2025 actual → 2026 projection): Terry McLaurin 13.0/g proj vs 11.4/g in 2025 (+1.6, roughly steady); Jayden Daniels 19.4/g proj vs 16.8/g in 2025 (+2.6, trending up); Rachaad White 10.3/g proj vs 8.4/g in 2025 (+1.9, roughly steady, joins from TB); Luke McCaffrey 0.0/g proj vs 7.0/g in 2025 (-7.0, projected to regress)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Jayden Daniels p95 36 (13.0% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Jayden Daniels (p95 36, hits a spike week 13.0% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Jayden Daniels (90%), Terry McLaurin (87%), Rachaad White (62%). Pure spike profiles (big ceiling, thinner advancement floor): Rachaad White, Jacory Croskey-Merritt, Antonio Williams — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Jayden Daniels + Terry McLaurin / Antonio Williams — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is JAX@WAS — a mid-tier finals game (tail rank #12); the natural bring-back is a JAX pass-catcher to play both sides of that game. Byes fall in Week 7, and the playoff run is W15 vs ATL, W16 vs MIN."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “After he came back from injury, at which point Parker Washington had established himself in the offense, Jacoby Myers had been acquired from the Raiders, he averaged 17.5 area yards per target”. On Terry McLaurin: “I'm going to have Terry McLaurin way ahead of where he's being drafted and ranked” (@joshnorris)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Jayden Daniels (board #65, ADP 69.2). Let the market overpay for Luke McCaffrey, Treylon Burks."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Terry McLaurin — age: Age / role-decline flag. 11"
+}
+]
+},
+{
+"team": "DEN",
+"name": "Denver Broncos",
+"verdict": "A pass-first, average-pace attack and a middle scoring offense (2.47 implied TD/g, 13th). 1 alpha-ceiling player (p95≥33); best board asset is Jaylen Waddle at #50.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"50",
+"Jaylen Waddle",
+"WR",
+"48.5",
+"33",
+"18.1%",
+"83%",
+"23.2% tgt"
+],
+[
+"84",
+"Courtland Sutton",
+"WR",
+"83.1",
+"31",
+"18.3%",
+"81%",
+"20.9% tgt"
+],
+[
+"87",
+"RJ Harvey",
+"RB",
+"79.9",
+"24",
+"19.0%",
+"59%",
+"11.0% tgt"
+],
+[
+"111",
+"Bo Nix",
+"QB",
+"111.6",
+"30",
+"9.3%",
+"74%",
+"2.8% tgt"
+],
+[
+"115",
+"J.K. Dobbins",
+"RB",
+"110.8",
+"25",
+"18.9%",
+"63%",
+"4.5% tgt"
+],
+[
+"174",
+"Jonah Coleman",
+"RB",
+"168.3",
+"7",
+"20.5%",
+"14%",
+"rookie/NA"
+],
+[
+"224",
+"Evan Engram",
+"TE",
+"223.2",
+"18",
+"20.2%",
+"44%",
+"13.3% tgt"
+],
+[
+"235",
+"Pat Bryant",
+"WR",
+"225.0",
+"14",
+"23.0%",
+"38%",
+"10.9% tgt"
+],
+[
+"242",
+"Troy Franklin",
+"WR",
+"223.0",
+"11",
+"23.1%",
+"21%",
+"18.5% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.4 plays/g (12th) · 33.2 pass att (9th) · 55.9% pass rate (7th) · 227.7 pass yds (18th) · 26.2 carries (26th) · 116.8 rush yds (20th) · 2.47 TD/g (13th)",
+"read": "This is a genuinely pass-first script — 55.9% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate. Scoring sits mid-pack (2.47 TD/g, 13th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Jaylen Waddle 23.2% tgt / aDOT 13.1 / max 26.0 · Courtland Sutton 20.9% tgt / aDOT 12.2 / max 27.3 · Troy Franklin 18.5% tgt / aDOT 12.3 / max 26.9 · J.K. Dobbins 15.3 car/g, 1.1 rec/g, max 17.1",
+"read": "Jaylen Waddle (2025 with MIA) is the focal point — a 23.2% target share in 2025 (fairly stable, cv 0.37), at a 13.1-yard aDOT (downfield routes), peaking at 26.0 DK in his best week. Secondary volume goes to Courtland Sutton (20.9%), Troy Franklin (18.5%). In the backfield J.K. Dobbins profiled as a true workhorse (15.3 carries/g, with a thin receiving role); ceiling week 17.1 DK."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 33.2 pass att/g in 2026 vs 37.9 actual in 2025 (-4.7) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~9.8% of the 2025 target volume turned over (a largely intact target tree) — out: L.Humphrey (4.9%, gone), T.Badie (4.9%, gone). In: Jaylen Waddle (from MIA)  ·  rookies: Jonah Coleman. Player deltas (2025 actual → 2026 projection): Jaylen Waddle 12.5/g proj vs 12.3/g in 2025 (+0.2, roughly steady, joins from MIA); Courtland Sutton 12.1/g proj vs 12.8/g in 2025 (-0.7, roughly steady); RJ Harvey 10.0/g proj vs 12.1/g in 2025 (-2.1, projected to regress); Bo Nix 18.1/g proj vs 19.2/g in 2025 (-1.1, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Jaylen Waddle p95 33 (18.1% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Jaylen Waddle (p95 33, hits a spike week 18.1% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. Highest-variance (boom/bust) of the group: Jaylen Waddle — exactly the volatility you want on a bench that only counts its best weeks."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Jaylen Waddle (83%), Courtland Sutton (81%), Bo Nix (74%). Pure spike profiles (big ceiling, thinner advancement floor): RJ Harvey, J.K. Dobbins, Jonah Coleman — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Bo Nix + Jaylen Waddle / Courtland Sutton — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is DEN@NE — a top-tier blow-up game (tail rank #6); the natural bring-back is a NE pass-catcher to play both sides of that game. Byes fall in Week 10, and the playoff run is W15 vs LV, W16 vs BUF."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “A lot of volume last week and that trend continued here this week as the Broncos look to not only increase his usage but also his production this season after he played a career low in snaps in 2025”. On Courtland Sutton: “Courtland Sutton has been facing zero target comp the last 2 years in a much better offense, and he still managed to fade out for parts of 2025” (@ffdataroma). On RJ Harvey: “But I'm probably going to be wrong because my guess is Harvey is going to be the third down back” (@dhananizain). On Bo Nix: “He is a great personality, a guy that doesn't have the extra ego, and he's going to gel well with Bo Nix once he's healthy and getting the flow” (@dhananizain)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Jaylen Waddle (board #50, ADP 48.5). Let the market overpay for Pat Bryant, Troy Franklin."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Bo Nix — trap: Trap take Kyler Murray instead (+16). 4.2 • structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "CLE",
+"name": "Cleveland Browns",
+"verdict": "A balanced, average-pace attack and a muted scoring offense (1.47 implied TD/g, 31st). 0 alpha-ceiling players (p95≥33); best board asset is Quinshon Judkins at #56.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"56",
+"Quinshon Judkins",
+"RB",
+"54.4",
+"32",
+"17.5%",
+"79%",
+"9.6% tgt"
+],
+[
+"96",
+"Harold Fannin Jr.",
+"TE",
+"86.6",
+"27",
+"17.7%",
+"88%",
+"21.9% tgt"
+],
+[
+"131",
+"KC Concepcion",
+"WR",
+"125.7",
+"25",
+"18.6%",
+"63%",
+"rookie/NA"
+],
+[
+"166",
+"Denzel Boston",
+"WR",
+"166.9",
+"22",
+"19.4%",
+"58%",
+"rookie/NA"
+],
+[
+"177",
+"Jerry Jeudy",
+"WR",
+"177.8",
+"23",
+"18.7%",
+"60%",
+"20.5% tgt"
+],
+[
+"178",
+"Dylan Sampson",
+"RB",
+"170.9",
+"14",
+"21.7%",
+"42%",
+"9.9% tgt"
+],
+[
+"206",
+"Deshaun Watson",
+"QB",
+"211.1",
+"15",
+"14.7%",
+"23%",
+"rookie/NA"
+],
+[
+"225",
+"Shedeur Sanders",
+"QB",
+"216.5",
+"",
+"",
+"15%",
+"2.8 car/g"
+],
+[
+"317",
+"Isaiah Bond",
+"WR",
+"227.6",
+"5",
+"17.0%",
+"5%",
+"9.9% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.1 plays/g (15th) · 32.0 pass att (15th) · 54.1% pass rate (16th) · 215.5 pass yds (30th) · 27.1 carries (16th) · 113.9 rush yds (24th) · 1.47 TD/g (31st)",
+"read": "A balanced script (54.1% pass) spreads opportunity without a strong structural lean either way. The 31st-ranked scoring rate (1.47 TD/g) is the cap here — touchdown-dependent ceilings get harder to hit."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Harold Fannin Jr. 21.9% tgt / aDOT 6.0 / max 28.4 · Jerry Jeudy 20.5% tgt / aDOT 12.2 / max 19.8 · Cedric Tillman 10.5% tgt / aDOT 11.9 / max 16.2 · Quinshon Judkins 16.5 car/g, 1.9 rec/g, max 26.4",
+"read": "Harold Fannin Jr. is the focal point — a 21.9% target share in 2025 (fairly stable, cv 0.42), at a 6.0-yard aDOT (short-area routes), peaking at 28.4 DK in his best week. Secondary volume goes to Jerry Jeudy (20.5%). In the backfield Quinshon Judkins profiled as a true workhorse (16.5 carries/g, with a thin receiving role); ceiling week 26.4 DK. Small-sample caveat: Shedeur Sanders (8g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 32.0 pass att/g in 2026 vs 35.9 actual in 2025 (-3.9) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~15.2% of the 2025 target volume turned over (a largely intact target tree) — out: D.Njoku (9.1%, to LAC), J.Ford (6.1%, gone). In: no veteran additions of note  ·  rookies: KC Concepcion, Denzel Boston. Player deltas (2025 actual → 2026 projection): Quinshon Judkins 13.3/g proj vs 12.2/g in 2025 (+1.1, roughly steady); Harold Fannin Jr. 10.9/g proj vs 11.9/g in 2025 (-1.0, roughly steady); Jerry Jeudy 8.2/g proj vs 7.2/g in 2025 (+1.0, roughly steady); Dylan Sampson 5.0/g proj vs 5.9/g in 2025 (-0.9, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": null,
+"read": "No alpha-ceiling (p95≥33) bats here — the top spike is Quinshon Judkins at p95 32 (17.5% spike weeks). In a top-2-advance pod this is a ceiling-light room you lean on for value, not for the league-winning week."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Harold Fannin Jr. (88%), Quinshon Judkins (79%), KC Concepcion (63%). Pure spike profiles (big ceiling, thinner advancement floor): KC Concepcion, Denzel Boston, Jerry Jeudy — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Deshaun Watson + Harold Fannin Jr. / KC Concepcion — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is CLE@IND — a lower-variance finals game (tail rank #15); the natural bring-back is a IND pass-catcher to play both sides of that game. Byes fall in Week 11, and the playoff run is W15 vs NYG, W16 vs BAL."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “Cleveland gave away Miles Garrett, who is exiting his prime, and in return they got Jared Verse, a defensive player who's entering his prime and a bunch of draft picks”. On Quinshon Judkins: “When I was talking about Quincy Judkins playing in control and his feet being underneath him and playing more athletic than what his, his numbers would suggest, the inverse is true for Toon” (@joshnorris). On Harold Fannin Jr.: “One guy that I am a huge fan of, who I think is going to be very talented, is Fannin Jr” (@clevta). On KC Concepcion: “WR24 - KC Concepcion (WR30 ADP) + Really strong prospect with fantasy friendly skillset (YAC, separator) and clear path to strong volume, offense live to be much improved in 2027 w/ new QB” (@ffdataroma)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Quinshon Judkins (board #56, ADP 54.4). Let the market overpay for Isaiah Bond, Cedric Tillman."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Quinshon Judkins — injury: Dislocated ankle + fractured fibula 12/21/25; recovery concern. 11"
+}
+]
+},
+{
+"team": "JAX",
+"name": "Jacksonville Jaguars",
+"verdict": "A pass-first, average-pace attack and a middle scoring offense (2.35 implied TD/g, 16th). 1 alpha-ceiling player (p95≥33); best board asset is Bhayshul Tuten at #58.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"58",
+"Bhayshul Tuten",
+"RB",
+"61.7",
+"28",
+"18.1%",
+"74%",
+"4.4% tgt"
+],
+[
+"70",
+"Parker Washington",
+"WR",
+"63.8",
+"28",
+"18.5%",
+"73%",
+"20.9% tgt"
+],
+[
+"72",
+"Brian Thomas Jr.",
+"WR",
+"70.1",
+"27",
+"19.0%",
+"71%",
+"18.4% tgt"
+],
+[
+"79",
+"Trevor Lawrence",
+"QB",
+"86.7",
+"35",
+"14.5%",
+"77%",
+"4.9 car/g"
+],
+[
+"105",
+"Jakobi Meyers",
+"WR",
+"102.8",
+"28",
+"18.3%",
+"72%",
+"22.2% tgt"
+],
+[
+"140",
+"Chris Rodriguez Jr.",
+"RB",
+"130.2",
+"12",
+"23.3%",
+"38%",
+"4.0% tgt"
+],
+[
+"154",
+"Brenton Strange",
+"TE",
+"151.9",
+"22",
+"19.9%",
+"63%",
+"15.6% tgt"
+],
+[
+"160",
+"Travis Hunter",
+"WR",
+"154.4",
+"19",
+"20.9%",
+"52%",
+"17.4% tgt"
+],
+[
+"291",
+"LeQuint Allen Jr.",
+"RB",
+"229.6",
+"10",
+"22.0%",
+"27%",
+"3.7% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.7 plays/g (21st) · 32.9 pass att (10th) · 56.1% pass rate (6th) · 231.1 pass yds (14th) · 25.8 carries (29th) · 111.5 rush yds (28th) · 2.35 TD/g (16th)",
+"read": "This is a genuinely pass-first script — 56.1% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate. Scoring sits mid-pack (2.35 TD/g, 16th)."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Jakobi Meyers 22.2% tgt / aDOT 9.2 / max 21.3 · Parker Washington 20.9% tgt / aDOT 12.2 / max 29.5 · Brian Thomas Jr. 18.4% tgt / aDOT 14.4 / max 23.0 · J'Mari Taylor 19.1 car/g, 2.7 rec/g, max 52.6",
+"read": "Jakobi Meyers is the focal point — a 22.2% target share in 2025 (rock-steady, cv 0.31), at a 9.2-yard aDOT (all-levels routes), peaking at 21.3 DK in his best week. Secondary volume goes to Parker Washington (20.9%), Brian Thomas Jr. (18.4%). In the backfield J'Mari Taylor (2025 with IND) profiled as a true workhorse (19.1 carries/g, with a thin receiving role); ceiling week 52.6 DK. Small-sample caveat: Travis Hunter (7g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 32.9 pass att/g in 2026 vs 35.4 actual in 2025 (-2.5) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~15.0% of the 2025 target volume turned over (a largely intact target tree) — out: T.Etienne (9.1%, to CAR), D.Brown (5.9%, to WAS). In: Chris Rodriguez Jr. (from WAS); J'Mari Taylor (from IND). Player deltas (2025 actual → 2026 projection): Bhayshul Tuten 12.1/g proj vs 5.9/g in 2025 (+6.2, trending up); Parker Washington 10.8/g proj vs 12.8/g in 2025 (-2.0, projected to regress); Brian Thomas Jr. 10.3/g proj vs 9.9/g in 2025 (+0.4, roughly steady); Trevor Lawrence 18.1/g proj vs 20.8/g in 2025 (-2.7, projected to regress)."
+},
+{
+"label": "Ceiling & upside",
+"stat": "Trevor Lawrence p95 35 (14.5% spike)",
+"read": "1 players clear the alpha-ceiling bar, led by Trevor Lawrence (p95 35, hits a spike week 14.5% of the time). This is the currency that wins best ball — these are the weekly outcomes that drag a lineup into the 90th percentile. "
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Trevor Lawrence (77%), Bhayshul Tuten (74%), Parker Washington (73%). Pure spike profiles (big ceiling, thinner advancement floor): Bhayshul Tuten, Parker Washington, Brian Thomas Jr. — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Trevor Lawrence + Parker Washington / Jakobi Meyers — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is JAX@WAS — a mid-tier finals game (tail rank #12); the natural bring-back is a WAS pass-catcher to play both sides of that game. Byes fall in Week 7, and the playoff run is W15 vs HOU, W16 vs DAL."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “But he did get to a decent place in the offense last season, especially when the Jaguars stopped trying to use him as a three-level all-around threat and primarily used him as a field-stretching downfield target”. On Bhayshul Tuten: “Member when Bhayshul Tuten entered his first playoff game and ripped off gains of 20, 14, and 13 on three-straight runs?” (@jagibbs_23). On Parker Washington: “If we see a tweet from Dave, I'm on a fantasy points show right now and talking about Parker Washington as the worst pick in round six of fantasy drafts” (@fantasypts). On Trevor Lawrence: “They felt like him and Trevor Lawrence didn't necessarily have the chemistry there in the deep game early on in the season” (@dhananizain)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Trevor Lawrence (board #79, ADP 86.7). Let the market overpay for LeQuint Allen Jr., Tanner Koziol."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Bhayshul Tuten — trap: Trap take Rome Odunze instead (+15). 4.2 • Jakobi Meyers — trap: Trap take Jaxson Dart instead (+15). 4.2 • structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "TEN",
+"name": "Tennessee Titans",
+"verdict": "A pass-first, low-snap attack and a muted scoring offense (1.71 implied TD/g, 30th). 0 alpha-ceiling players (p95≥33); best board asset is Carnell Tate at #62.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"62",
+"Carnell Tate",
+"WR",
+"62.1",
+"32",
+"17.5%",
+"84%",
+"rookie/NA"
+],
+[
+"81",
+"Tony Pollard",
+"RB",
+"77.6",
+"27",
+"18.1%",
+"69%",
+"8.6% tgt"
+],
+[
+"113",
+"Wan'Dale Robinson",
+"WR",
+"106.7",
+"27",
+"18.1%",
+"70%",
+"30.3% tgt"
+],
+[
+"141",
+"Cam Ward",
+"QB",
+"136.6",
+"",
+"",
+"",
+"2.3 car/g"
+],
+[
+"162",
+"Tyjae Spears",
+"RB",
+"159.9",
+"22",
+"19.5%",
+"57%",
+"13.3% tgt"
+],
+[
+"183",
+"Gunnar Helm",
+"TE",
+"183.1",
+"21",
+"20.8%",
+"58%",
+"10.7% tgt"
+],
+[
+"187",
+"Calvin Ridley",
+"WR",
+"190.9",
+"24",
+"19.3%",
+"61%",
+"16.8% tgt"
+],
+[
+"193",
+"Nick Singleton",
+"RB",
+"186.0",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"304",
+"Chimere Dike",
+"WR",
+"229.2",
+"7",
+"21.0%",
+"12%",
+"14.8% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "58.2 plays/g (28th) · 32.8 pass att (11th) · 56.4% pass rate (3rd) · 220.8 pass yds (27th) · 25.4 carries (30th) · 110.2 rush yds (29th) · 1.71 TD/g (30th)",
+"read": "This is a genuinely pass-first script — 56.4% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate, but the deliberate pace (58.2 snaps/g, 28th) caps the raw opportunity to go around. The 30th-ranked scoring rate (1.71 TD/g) is the cap here — touchdown-dependent ceilings get harder to hit."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Wan'Dale Robinson 30.3% tgt / aDOT 8.4 / max 33.6 · Elic Ayomanor 18.5% tgt / aDOT 12.7 / max 15.6 · Calvin Ridley 16.8% tgt / aDOT 12.6 / max 20.1 · Tony Pollard 14.2 car/g, 1.9 rec/g, max 31.1",
+"read": "Wan'Dale Robinson (2025 with NYG) is the focal point — a 30.3% target share in 2025 (rock-steady, cv 0.33), at a 8.4-yard aDOT (all-levels routes), peaking at 33.6 DK in his best week. Secondary volume goes to Elic Ayomanor (18.5%), Calvin Ridley (16.8%). In the backfield Tony Pollard profiled as the lead of a rotation (14.2 carries/g, with a thin receiving role); ceiling week 31.1 DK. Small-sample caveat: Calvin Ridley (7g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 32.8 pass att/g in 2026 vs 36.8 actual in 2025 (-4.0) — projected for lower pass volume / more run than 2025. Vacated opportunity: ~25.7% of the 2025 target volume turned over (meaningful turnover) — out: C.Okonkwo (15.5%, to WAS), V.Jefferson (10.2%, gone). In: Wan'Dale Robinson (from NYG)  ·  rookies: Carnell Tate, Nick Singleton. Player deltas (2025 actual → 2026 projection): Tony Pollard 11.3/g proj vs 11.6/g in 2025 (-0.3, roughly steady); Wan'Dale Robinson 10.3/g proj vs 14.2/g in 2025 (-3.9, projected to regress, joins from NYG); Tyjae Spears 9.1/g proj vs 8.6/g in 2025 (+0.5, roughly steady); Gunnar Helm 7.4/g proj vs 5.7/g in 2025 (+1.7, roughly steady)."
+},
+{
+"label": "Ceiling & upside",
+"stat": null,
+"read": "No alpha-ceiling (p95≥33) bats here — the top spike is Carnell Tate at p95 32 (17.5% spike weeks). In a top-2-advance pod this is a ceiling-light room you lean on for value, not for the league-winning week."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: Carnell Tate (84%), Wan'Dale Robinson (70%), Tony Pollard (69%). Pure spike profiles (big ceiling, thinner advancement floor): Tony Pollard, Wan'Dale Robinson, Tyjae Spears — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Cam Ward + Carnell Tate / Wan'Dale Robinson — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is PIT@TEN — a lower-variance finals game (tail rank #13); the natural bring-back is a PIT pass-catcher to play both sides of that game. Byes fall in Week 9, and the playoff run is W15 vs IND, W16 vs LV."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On the team: “I think, like you said, the ceiling is pretty low here, especially in the Titans offense”. On Cam Ward: “Like, what if Cam Ward plays, like, the first overall pick like he was last year?” (@joshnorris). On Tyjae Spears: “We talk about our defense being the tip of the spear of the team” (@syedschemes). On Calvin Ridley: “Here they are going to double him with a Fonga right here and Riley Moss” (@dhananizain)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Carnell Tate (board #62, ADP 62.1). Let the market overpay for Chimere Dike, Elic Ayomanor."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "Cam Ward — trap: Trap take Tyrone Tracy Jr. instead (+20). 4.2 • structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "PIT",
+"name": "Pittsburgh Steelers",
+"verdict": "A pass-first, average-pace attack and a muted scoring offense (1.76 implied TD/g, 27th). 0 alpha-ceiling players (p95≥33); best board asset is DK Metcalf at #77.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"77",
+"DK Metcalf",
+"WR",
+"74.3",
+"30",
+"18.1%",
+"78%",
+"21.9% tgt"
+],
+[
+"85",
+"Jaylen Warren",
+"RB",
+"81.8",
+"27",
+"18.9%",
+"66%",
+"10.4% tgt"
+],
+[
+"92",
+"Rico Dowdle",
+"RB",
+"90.8",
+"27",
+"18.7%",
+"65%",
+"11.3% tgt"
+],
+[
+"98",
+"Michael Pittman Jr.",
+"WR",
+"99.3",
+"29",
+"17.5%",
+"78%",
+"21.0% tgt"
+],
+[
+"158",
+"Aaron Rodgers",
+"QB",
+"161.2",
+"28",
+"15.3%",
+"31%",
+"3.0% tgt"
+],
+[
+"192",
+"Germie Bernard",
+"WR",
+"187.5",
+"21",
+"20.1%",
+"56%",
+"rookie/NA"
+],
+[
+"194",
+"Pat Freiermuth",
+"TE",
+"197.7",
+"23",
+"20.0%",
+"62%",
+"11.1% tgt"
+],
+[
+"256",
+"Darnell Washington",
+"TE",
+"227.2",
+"14",
+"23.6%",
+"37%",
+"11.4% tgt"
+],
+[
+"326",
+"Eli Heidenreich",
+"WR",
+"227.2",
+"",
+"",
+"",
+"rookie/NA"
+]
+]
+},
+"layers": [
+{
+"label": "Volume & script",
+"stat": "59.6 plays/g (11th) · 33.5 pass att (6th) · 56.2% pass rate (5th) · 221.4 pass yds (26th) · 26.1 carries (28th) · 112.9 rush yds (26th) · 1.76 TD/g (27th)",
+"read": "This is a genuinely pass-first script — 56.2% pass rate against a 54% league mean — so the receiving corps, not the backfield, is where the fantasy points concentrate. The 27th-ranked scoring rate (1.76 TD/g) is the cap here — touchdown-dependent ceilings get harder to hit."
+},
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "DK Metcalf 21.9% tgt / aDOT 10.6 / max 26.6 · Michael Pittman Jr. 21.0% tgt / aDOT 8.0 / max 23.5 · Darnell Washington 11.4% tgt / aDOT 5.5 / max 10.7 · Rico Dowdle 13.4 car/g, 2.2 rec/g, max 36.9",
+"read": "DK Metcalf is the focal point — a 21.9% target share in 2025 (rock-steady, cv 0.31), at a 10.6-yard aDOT (all-levels routes), peaking at 26.6 DK in his best week. Secondary volume goes to Michael Pittman Jr. (21.0%). In the backfield Rico Dowdle (2025 with CAR) profiled as the lead of a rotation (13.4 carries/g, with a thin receiving role); ceiling week 36.9 DK. Small-sample caveat: Roman Wilson (9g) missed time, so the rates ride a partial season."
+},
+{
+"label": "2026 outlook: what changes",
+"stat": null,
+"read": "Volume shift: Clay projects 33.5 pass att/g in 2026 vs 34.5 actual in 2025 (-1.0) — holding steady on pass volume. Vacated opportunity: ~44.8% of the 2025 target volume turned over (major turnover) — out: K.Gainwell (16.7%, to TB), C.Austin (11.2%, to NYG), J.Smith (10.7%, gone), M.Valdes-Scantling (6.2%, gone). In: Rico Dowdle (from CAR); Michael Pittman Jr. (from IND)  ·  rookies: Germie Bernard. Player deltas (2025 actual → 2026 projection): DK Metcalf 11.5/g proj vs 12.5/g in 2025 (-1.0, roughly steady); Jaylen Warren 11.0/g proj vs 13.5/g in 2025 (-2.5, projected to regress); Rico Dowdle 10.8/g proj vs 12.7/g in 2025 (-1.9, roughly steady, joins from CAR); Michael Pittman Jr. 11.6/g proj vs 12.0/g in 2025 (-0.4, roughly steady, joins from IND)."
+},
+{
+"label": "Ceiling & upside",
+"stat": null,
+"read": "No alpha-ceiling (p95≥33) bats here — the top spike is DK Metcalf at p95 30 (18.1% spike weeks). In a top-2-advance pod this is a ceiling-light room you lean on for value, not for the league-winning week."
+},
+{
+"label": "Regular-season value (advancement)",
+"stat": null,
+"read": "Advancement is the binding gate in a 12-team/top-2 pod — the players who actually bank points week to week. Best regular-season equity: DK Metcalf (78%), Michael Pittman Jr. (78%), Jaylen Warren (66%). Pure spike profiles (big ceiling, thinner advancement floor): DK Metcalf, Jaylen Warren, Rico Dowdle — useful as upside dart-throws, not as the backbone of the grind."
+},
+{
+"label": "Stacking & the Week 17 finals",
+"stat": null,
+"read": "The stack spine is Aaron Rodgers + DK Metcalf / Michael Pittman Jr. — QB-WR1 correlation runs r≈0.35 league-wide, so pairing them converts one good game script into two scoring lineups. The Week 17 finals slot is PIT@TEN — a lower-variance finals game (tail rank #13); the natural bring-back is a TEN pass-catcher to play both sides of that game. Byes fall in Week 9, and the playoff run is W15 vs BAL, W16 vs CAR."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Rico Dowdle: “He could be a guy that defines this offense when they were at their best Rico Dowdle was playing really well” (@adamlevitan). On Michael Pittman Jr.: “There a more triple condom pick on the best ball board than Michael Pittman Jr?” (@smitchell17). On Aaron Rodgers: “They have two third-round picks in 2025 in Caleb Rogers and Charles Grant, and then a 2026 third-rounder in Trey Zoon III” (@benjaminsolak)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around DK Metcalf (board #77, ADP 74.3). Let the market overpay for Darnell Washington, Eli Heidenreich."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "structural: a pass-first, low-carry script makes the backfield a committee/touchdown-variance bet"
+}
+]
+},
+{
+"team": "FA",
+"name": "FA",
+"verdict": "FA are an unsigned-player bucket in this snapshot — landing spot drives everything, so treat the ceiling numbers below as talent, not opportunity.",
+"table": {
+"headers": [
+"Brd",
+"Player",
+"Pos",
+"ADP",
+"Ceil",
+"Spike",
+"Adv",
+"2025 use"
+],
+"rows": [
+[
+"139",
+"Stefon Diggs",
+"WR",
+"138.1",
+"",
+"",
+"",
+"21.4% tgt"
+],
+[
+"172",
+"Deebo Samuel Sr.",
+"WR",
+"180.8",
+"",
+"",
+"",
+"25.5% tgt"
+],
+[
+"189",
+"Tyreek Hill",
+"WR",
+"178.7",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"240",
+"Nick Chubb",
+"RB",
+"226.3",
+"",
+"",
+"",
+"5.1% tgt"
+],
+[
+"244",
+"Darren Waller",
+"TE",
+"229.1",
+"",
+"",
+"",
+"16.6% tgt"
+],
+[
+"246",
+"Kareem Hunt",
+"RB",
+"225.6",
+"",
+"",
+"",
+"5.3% tgt"
+],
+[
+"250",
+"Austin Ekeler",
+"RB",
+"230.2",
+"",
+"",
+"",
+"rookie/NA"
+],
+[
+"262",
+"DeAndre Hopkins",
+"WR",
+"226.6",
+"",
+"",
+"",
+"9.8% tgt"
+],
+[
+"279",
+"Zach Ertz",
+"TE",
+"228.3",
+"",
+"",
+"",
+"19.4% tgt"
+]
+]
+},
+"layers": [
+{
+"label": "Usage & opportunity (2025 PBP)",
+"stat": "Deebo Samuel Sr. 25.5% tgt / aDOT 5.3 / max 23.6 · Stefon Diggs 21.4% tgt / aDOT 8.2 / max 27.6 · Zach Ertz 19.4% tgt / aDOT 9.0 / max 23.6 · Kareem Hunt 9.6 car/g, 1.1 rec/g, max 24.0",
+"read": "Deebo Samuel Sr. (2025 with WAS) is the focal point — a 25.5% target share in 2025 (rock-steady, cv 0.32), at a 5.3-yard aDOT (short-area routes), peaking at 23.6 DK in his best week. Secondary volume goes to Stefon Diggs (21.4%), Zach Ertz (19.4%). In the backfield Kareem Hunt (2025 with KC) profiled as a committee back (9.6 carries/g, with a thin receiving role); ceiling week 24.0 DK. Small-sample caveat: Darren Waller (8g) missed time, so the rates ride a partial season."
+},
+{
+"label": "Ceiling & upside",
+"stat": null,
+"read": "No alpha-ceiling (p95≥33) bats here — the top spike is Stefon Diggs at p95 None (None% spike weeks). In a top-2-advance pod this is a ceiling-light room you lean on for value, not for the league-winning week."
+},
+{
+"label": "Coachspeak & film",
+"stat": null,
+"read": "On Stefon Diggs: “You draft no Wide Receivers in best ball and then finish the draft with: Stefon Diggs Travis Hunter Brandon Aiyuk Tank Dell Deebo Samuel Tyreek Hill And 2 other guys” (@chessliam). On Deebo Samuel Sr.: “You draft no Wide Receivers in best ball and then finish the draft with: Stefon Diggs Travis Hunter Brandon Aiyuk Tank Dell Deebo Samuel Tyreek Hill And 2 other guys” (@chessliam). On Tyreek Hill: “You draft no Wide Receivers in best ball and then finish the draft with: Stefon Diggs Travis Hunter Brandon Aiyuk Tank Dell Deebo Samuel Tyreek Hill And 2 other guys” (@chessliam). On Nick Chubb: “I learned how to be egoless from Nick Chubb” (@sammonsonnfl)."
+},
+{
+"label": "Best-ball plan",
+"stat": null,
+"read": "Anchor the team around Stefon Diggs (board #139, ADP 138.1). Board-vs-market values to exploit: Deebo Samuel Sr. (#172 vs ADP 180.8). Let the market overpay for Tyreek Hill, Nick Chubb."
+},
+{
+"label": "Risks & flags",
+"stat": null,
+"read": "No specific risk overlays on this group; the main risk is generic (price vs the field)."
+}
+]
+}
+],
+"league": {
+"plays": 59.13970588235294,
+"passatt": 31.81985294117647,
+"passrate": 53.79698796565402,
+"td": 2.2775735294117645,
+"passyd": 230.42463235294116,
+"rushyd": 120.9889705882353
+}
+}

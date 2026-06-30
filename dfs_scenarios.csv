@@ -1,0 +1,372 @@
+name,pos,team,env,opp,eff,matchup,role,consensus,divergence,p_w15,p_w16,p_w17,profile
+Ja'Marr Chase,WR,CIN,89.9,96.3,69.6,24.7,32.1,62.5,29.3,0.3723,0.3977,0.3893,"Vegas+volume elite, matchup+role cool (sources DIVERGE)"
+Jahmyr Gibbs,RB,DET,85.9,89.4,66.5,75.2,79.4,79.3,8.1,0.4777,0.5658,0.4911,Vegas+volume+matchup+role elite
+Justin Jefferson,WR,MIN,56.4,93.1,27.1,53.7,45.4,55.1,21.6,0.2881,0.3348,0.269,"volume elite, efficiency cool"
+Puka Nacua,WR,LAR,95.9,98.0,99.6,84.1,92.9,94.1,5.5,0.4978,0.4031,0.4561,all 5 sources agree: elite across the board
+Bijan Robinson,RB,ATL,35.4,97.5,82.9,89.8,75.9,76.3,21.7,0.3789,0.3923,0.3923,volume+efficiency+matchup+role elite
+Amon-Ra St. Brown,WR,DET,87.2,95.5,82.9,7.1,57.1,66.0,32.1,0.366,0.4331,0.3759,"Vegas+volume+efficiency elite, matchup cool (sources DIVERGE)"
+CeeDee Lamb,WR,DAL,98.6,86.6,81.2,23.3,77.9,73.5,26.1,0.318,0.3746,0.3928,"Vegas+volume+efficiency+role elite, matchup cool (sources DIVERGE)"
+James Cook III,RB,BUF,91.4,85.6,75.9,88.8,48.8,78.1,15.6,0.3752,0.2856,0.3968,Vegas+volume+efficiency+matchup elite
+Jaxon Smith-Njigba,WR,SEA,68.2,98.8,97.9,42.9,92.1,80.0,21.6,0.324,0.3846,0.3649,volume+efficiency+role elite
+Jonathan Taylor,RB,IND,56.1,94.4,74.7,40.3,59.4,65.0,18.3,0.3472,0.3716,0.3099,volume+efficiency elite
+Ashton Jeanty,RB,LV,16.7,90.6,7.6,41.3,6.5,32.5,31.6,0.1676,0.2471,0.2703,"volume elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Christian McCaffrey,RB,SF,50.0,99.4,19.4,86.9,57.1,62.6,28.3,0.4096,0.4096,0.4522,"volume+matchup elite, efficiency cool (sources DIVERGE)"
+Saquon Barkley,RB,PHI,37.9,88.1,51.2,57.8,66.5,60.3,16.7,0.2677,0.2677,0.2563,volume elite
+Omarion Hampton,RB,LAC,74.2,71.9,81.8,7.3,55.9,58.2,26.8,0.3061,0.3404,0.283,"Vegas+volume+efficiency elite, matchup cool (sources DIVERGE)"
+Kenneth Walker III,RB,KC,46.0,68.1,54.7,20.9,81.8,54.3,20.6,,,,"role elite, matchup cool"
+Derrick Henry,RB,BAL,79.3,78.1,68.8,61.7,64.1,70.4,7.2,0.2864,0.3373,0.307,all 5 sources agree: middling
+Drake London,WR,ATL,41.9,94.7,72.1,92.2,55.4,71.3,20.5,0.2372,0.2463,0.2463,volume+efficiency+matchup elite
+Chase Brown,RB,CIN,88.4,86.9,71.2,95.6,17.1,71.8,28.5,0.3079,0.3414,0.3303,"Vegas+volume+efficiency+matchup elite, role cool (sources DIVERGE)"
+Nico Collins,WR,HOU,19.9,89.0,79.6,15.9,79.6,56.8,32.0,0.2401,0.1793,0.1945,"volume+efficiency+role elite, Vegas+matchup cool (sources DIVERGE)"
+George Pickens,WR,DAL,98.6,81.7,95.4,15.2,94.6,77.1,31.5,0.2228,0.2652,0.2791,"Vegas+volume+efficiency+role elite, matchup cool (sources DIVERGE)"
+De'Von Achane,RB,MIA,1.5,93.1,91.2,37.4,95.9,63.8,38.0,0.1944,0.2059,0.2292,"volume+efficiency+role elite, Vegas cool (sources DIVERGE)"
+Josh Allen,QB,BUF,91.5,50.0,73.4,97.2,94.7,81.4,17.8,0.51,0.3689,0.5424,Vegas+efficiency+matchup+role elite
+Jeremiyah Love,RB,ARI,10.1,,,26.7,,18.4,8.3,0.2129,0.1701,0.2238,Vegas+matchup cool
+Trey McBride,TE,ARI,7.6,99.0,85.0,77.1,49.0,63.5,32.4,0.3279,0.2795,0.3397,"volume+efficiency+matchup elite, Vegas cool (sources DIVERGE)"
+Brock Bowers,TE,LV,13.6,97.0,59.0,0.8,61.0,46.3,34.9,0.255,0.3338,0.3554,"volume elite, Vegas+matchup cool (sources DIVERGE)"
+Rashee Rice,WR,KC,50.3,97.2,34.6,61.1,5.4,49.7,30.3,0.2635,0.2795,0.2309,"volume elite, efficiency+role cool (sources DIVERGE)"
+DeVonta Smith,WR,PHI,44.6,76.8,80.4,4.4,69.6,55.2,28.3,0.2076,0.2076,0.2001,"volume+efficiency elite, matchup cool (sources DIVERGE)"
+Tee Higgins,WR,CIN,89.9,54.9,65.4,42.2,75.4,65.6,16.4,0.2025,0.2218,0.2153,Vegas+role elite
+Josh Jacobs,RB,GB,82.8,80.6,28.8,60.7,45.3,59.6,20.7,0.3838,0.2955,0.2845,"Vegas+volume elite, efficiency cool"
+Chris Olave,WR,NO,47.3,92.3,67.1,47.6,34.6,57.8,20.1,0.1822,0.2658,0.1974,"volume elite, role cool"
+Malik Nabers,WR,NYG,38.2,85.8,55.4,72.0,15.4,53.4,24.8,0.2159,0.1837,0.2239,"volume+matchup elite, role cool (sources DIVERGE)"
+A.J. Brown,WR,NE,33.8,84.1,64.6,28.7,46.2,51.5,20.5,0.1918,0.2313,0.2155,"volume elite, Vegas+matchup cool"
+Kyren Williams,RB,LAR,94.4,79.4,90.0,64.6,52.4,76.2,15.7,0.3152,0.227,0.2749,Vegas+volume+efficiency elite
+Emeka Egbuka,WR,TB,71.3,83.3,30.4,69.3,27.1,56.3,23.0,0.1983,0.1847,0.1847,"Vegas+volume elite, efficiency+role cool (sources DIVERGE)"
+Zay Flowers,WR,BAL,81.4,88.2,87.9,57.8,63.7,75.8,12.7,0.2267,0.2654,0.2422,Vegas+volume+efficiency elite
+Breece Hall,RB,NYJ,6.6,81.9,50.0,90.8,62.9,58.4,29.6,0.2406,0.1651,0.1862,"volume+matchup elite, Vegas cool (sources DIVERGE)"
+DJ Moore,WR,BUF,92.9,21.5,38.8,62.5,54.6,54.1,24.0,0.2144,0.161,0.2278,"Vegas elite, volume cool (sources DIVERGE)"
+Garrett Wilson,WR,NYJ,8.4,93.9,40.4,56.4,47.9,49.4,27.5,0.2076,0.15,0.1663,"volume elite, Vegas cool (sources DIVERGE)"
+Javonte Williams,RB,DAL,98.0,74.4,93.5,76.2,33.5,75.1,22.8,0.266,0.3263,0.346,"Vegas+volume+efficiency+matchup elite, role cool (sources DIVERGE)"
+Travis Etienne Jr.,RB,NO,41.4,83.1,22.9,33.5,73.5,50.9,23.3,0.1714,0.2759,0.19,"volume+role elite, efficiency+matchup cool (sources DIVERGE)"
+Colston Loveland,TE,CHI,72.0,79.0,91.0,48.3,87.0,75.5,15.1,0.2858,0.312,0.3206,Vegas+volume+efficiency+role elite
+Ladd McConkey,WR,LAC,74.7,76.0,42.9,40.2,38.8,54.5,17.1,0.1935,0.213,0.1805,Vegas+volume elite
+Jaylen Waddle,WR,DEN,26.7,66.3,76.2,76.7,86.2,66.4,20.8,0.1648,0.1714,0.1324,"efficiency+matchup+role elite, Vegas cool"
+Davante Adams,WR,LAR,95.9,89.8,49.6,95.6,44.6,75.1,23.0,0.2772,0.2106,0.2469,Vegas+volume+matchup elite (sources DIVERGE)
+Tetairoa McMillan,WR,CAR,13.2,82.5,53.8,27.4,68.8,49.1,25.6,0.1911,0.1449,0.1525,"volume elite, Vegas+matchup cool (sources DIVERGE)"
+Luther Burden III,WR,CHI,78.0,41.1,96.2,50.3,74.6,68.0,19.9,0.1564,0.1758,0.1823,Vegas+efficiency+role elite
+Bucky Irving,RB,TB,71.2,91.9,13.5,81.1,22.9,56.1,31.8,0.2064,0.1902,0.1902,"Vegas+volume+matchup elite, efficiency+role cool (sources DIVERGE)"
+Lamar Jackson,QB,BAL,81.1,4.7,56.4,48.1,81.9,54.4,28.2,0.3135,0.3988,0.3478,"Vegas+role elite, volume cool (sources DIVERGE)"
+Terry McLaurin,WR,WAS,62.2,72.0,77.9,99.7,30.4,68.4,22.7,0.2168,0.1694,0.1762,"volume+efficiency+matchup elite, role cool (sources DIVERGE)"
+Jameson Williams,WR,DET,87.2,61.4,87.1,11.1,82.9,65.9,29.0,0.1912,0.2378,0.1979,"Vegas+efficiency+role elite, matchup cool (sources DIVERGE)"
+Joe Burrow,QB,CIN,88.7,82.1,64.9,72.6,37.2,69.1,17.9,0.2638,0.3285,0.3066,Vegas+volume+matchup elite
+Cam Skattebo,RB,NYG,32.8,73.1,47.6,30.6,77.1,52.2,19.6,0.2013,0.1629,0.2112,"volume+role elite, Vegas+matchup cool"
+David Montgomery,RB,HOU,19.2,59.4,40.6,0.5,25.3,29.0,19.9,0.1485,0.0964,0.1088,Vegas+matchup+role cool
+Quinshon Judkins,RB,CLE,4.0,84.4,8.8,6.3,42.9,29.3,31.0,0.1223,0.1077,0.1608,"volume elite, Vegas+efficiency+matchup cool (sources DIVERGE)"
+Rome Odunze,WR,CHI,78.0,80.1,59.6,49.7,71.2,67.7,11.5,0.1662,0.1859,0.1925,Vegas+volume+role elite
+TreVeyon Henderson,RB,NE,30.3,48.1,67.6,65.5,58.2,53.9,13.6,0.1285,0.1665,0.151,Vegas cool
+Mike Evans,WR,SF,53.7,90.7,23.8,52.4,17.9,47.7,25.9,0.1276,0.1276,0.1435,"volume elite, efficiency+role cool (sources DIVERGE)"
+Christian Watson,WR,GB,84.5,68.7,89.6,87.5,98.8,85.8,9.8,0.1905,0.1448,0.1393,Vegas+efficiency+matchup+role elite
+Jadarian Price,RB,SEA,67.7,,,45.1,,56.4,11.3,0.1217,0.1612,0.1477,"mixed reads, no strong driver"
+Drake Maye,QB,NE,33.0,48.1,96.8,38.7,96.8,62.7,28.3,0.2105,0.2915,0.2586,"efficiency+role elite, Vegas cool (sources DIVERGE)"
+D'Andre Swift,RB,CHI,76.8,69.4,87.6,96.6,85.3,83.1,9.3,0.1587,0.1812,0.1888,Vegas+efficiency+matchup+role elite
+Brian Thomas Jr.,WR,JAX,65.5,65.4,39.6,29.7,57.9,51.6,14.5,0.0932,0.1321,0.1523,matchup cool
+Carnell Tate,WR,TEN,23.3,,,90.2,,56.8,33.4,0.1803,0.1413,0.1477,"matchup elite, Vegas cool (sources DIVERGE)"
+Tyler Warren,TE,IND,51.7,95.0,41.0,65.3,27.0,56.0,23.2,0.301,0.3199,0.272,"volume elite, role cool (sources DIVERGE)"
+Bhayshul Tuten,RB,JAX,63.6,21.9,72.4,18.9,86.5,52.7,27.4,0.1075,0.1646,0.1949,"efficiency+role elite, volume+matchup cool (sources DIVERGE)"
+Jordyn Tyson,WR,NO,47.3,,,65.5,,56.4,9.1,0.12,0.1782,0.1304,"mixed reads, no strong driver"
+Makai Lemon,WR,PHI,44.6,,,9.5,,27.0,17.6,0.1269,0.1269,0.1217,matchup cool
+Jayden Daniels,QB,WAS,66.0,68.9,37.2,76.4,79.8,65.7,15.1,0.3361,0.2206,0.2366,matchup+role elite
+Dak Prescott,QB,DAL,98.1,74.5,84.0,21.7,45.7,64.8,27.5,0.2359,0.3158,0.3426,"Vegas+volume+efficiency elite, matchup cool (sources DIVERGE)"
+Marvin Harrison Jr.,WR,ARI,10.5,64.6,70.4,76.0,82.1,60.7,25.8,0.1144,0.0932,0.1198,"efficiency+matchup+role elite, Vegas cool (sources DIVERGE)"
+Parker Washington,WR,JAX,65.5,71.1,78.8,29.7,62.1,61.4,16.8,0.0996,0.1414,0.1631,"volume+efficiency elite, matchup cool"
+Caleb Williams,QB,CHI,78.3,44.3,60.6,59.4,84.0,65.3,14.3,0.1848,0.2232,0.2364,Vegas+role elite
+Jalen Hurts,QB,PHI,43.4,21.7,62.8,25.5,52.1,41.1,15.6,0.2506,0.2506,0.2307,volume+matchup cool
+Tucker Kraft,TE,GB,78.0,83.0,99.0,61.9,91.0,82.6,12.6,0.267,0.2109,0.204,Vegas+volume+efficiency+role elite
+Chuba Hubbard,RB,CAR,13.6,50.6,39.4,23.8,32.4,32.0,12.7,0.0985,0.0665,0.0715,Vegas+matchup+role cool
+RJ Harvey,RB,DEN,24.7,53.1,25.3,15.0,51.2,33.9,15.4,0.092,0.0973,0.0675,Vegas+efficiency+matchup cool
+Alec Pierce,WR,IND,58.8,62.2,91.2,58.4,97.1,73.5,17.0,0.1572,0.17,0.1382,efficiency+role elite
+DK Metcalf,WR,PIT,30.1,73.6,67.9,64.5,31.2,53.5,18.9,0.1294,0.1409,0.1294,"volume elite, Vegas+role cool"
+Courtland Sutton,WR,DEN,26.7,74.4,68.8,72.6,64.6,61.4,17.7,0.1545,0.1609,0.1232,"volume+matchup elite, Vegas cool"
+Rhamondre Stevenson,RB,NE,30.3,58.1,42.9,67.5,34.7,46.7,14.1,0.1054,0.1385,0.1249,Vegas+role cool
+Sam LaPorta,TE,DET,80.5,63.0,87.0,2.5,77.0,62.0,30.8,0.2717,0.3266,0.2797,"Vegas+efficiency+role elite, matchup cool (sources DIVERGE)"
+Chris Godwin Jr.,WR,TB,71.3,67.9,62.1,60.5,42.1,60.8,10.1,0.1151,0.1061,0.1061,Vegas elite
+Tony Pollard,RB,TEN,21.7,76.9,33.5,43.2,39.4,42.9,18.5,0.1385,0.1016,0.1075,"volume elite, Vegas+efficiency cool"
+Justin Herbert,QB,LAC,75.5,67.0,54.3,61.3,69.1,65.4,7.2,0.2227,0.264,0.196,all 5 sources agree: middling
+Jayden Reed,WR,GB,84.5,54.1,77.1,93.9,87.1,79.3,13.7,0.1596,0.1204,0.1157,Vegas+efficiency+matchup+role elite
+Trevor Lawrence,QB,JAX,68.9,72.6,43.6,16.0,67.0,53.6,21.4,0.1389,0.2425,0.2986,"volume elite, matchup cool"
+Patrick Mahomes,QB,KC,49.1,91.5,71.3,63.2,86.2,72.3,15.4,0.2186,0.2453,0.1674,volume+efficiency+role elite
+Matthew Stafford,QB,LAR,94.3,31.1,92.6,95.3,75.5,77.8,24.4,0.364,0.2414,0.3076,"Vegas+efficiency+matchup+role elite, volume cool (sources DIVERGE)"
+Jordan Addison,WR,MIN,56.4,56.5,57.1,19.9,49.6,47.9,14.3,0.1131,0.1369,0.1038,matchup cool
+Michael Wilson,WR,ARI,10.5,69.5,44.6,81.4,23.8,46.0,26.7,0.0825,0.0656,0.0868,"matchup elite, Vegas+role cool (sources DIVERGE)"
+Harold Fannin Jr.,TE,CLE,2.5,89.0,43.0,63.6,13.0,42.2,31.9,0.1762,0.1589,0.2201,"volume elite, Vegas+role cool (sources DIVERGE)"
+Jaylen Warren,RB,PIT,27.8,75.6,88.8,38.3,65.3,59.2,22.8,0.1036,0.1156,0.1036,"volume+efficiency elite, Vegas cool (sources DIVERGE)"
+Kyle Pitts Sr.,TE,ATL,33.1,93.0,61.0,80.5,53.0,64.1,21.0,0.2255,0.2335,0.2335,"volume+matchup elite, Vegas cool"
+Rico Dowdle,RB,PIT,27.8,70.6,46.5,51.0,54.7,50.1,13.8,0.1014,0.1128,0.1014,"volume elite, Vegas cool"
+Jared Goff,QB,DET,85.8,25.5,88.3,2.8,28.7,46.2,34.5,0.2148,0.2987,0.2265,"Vegas+efficiency elite, volume+matchup+role cool (sources DIVERGE)"
+Brock Purdy,QB,SF,52.8,36.8,86.2,70.8,88.3,67.0,19.8,0.2124,0.2124,0.2542,efficiency+matchup+role elite
+Jakobi Meyers,WR,JAX,65.5,72.8,48.8,25.7,65.4,55.6,16.9,0.0935,0.1352,0.157,"volume elite, matchup cool"
+Kyler Murray,QB,MIN,56.6,93.4,50.0,6.6,71.3,55.6,28.7,0.0784,0.1335,0.0609,"volume+role elite, matchup cool (sources DIVERGE)"
+Jaxson Dart,QB,NYG,35.8,34.9,39.4,23.6,77.7,42.3,18.5,0.2172,0.16,0.2322,"role elite, volume+matchup cool"
+Quentin Johnston,WR,LAC,74.7,77.6,52.9,40.2,39.6,57.0,16.4,0.121,0.1353,0.1116,Vegas+volume elite
+George Kittle,TE,SF,47.5,87.0,95.0,58.5,97.0,77.0,20.2,0.2941,0.2941,0.3203,volume+efficiency+role elite
+Kyle Monangai,RB,CHI,76.8,44.4,70.0,85.0,60.6,67.4,14.0,0.1026,0.1189,0.1244,Vegas+efficiency+matchup elite
+Blake Corum,RB,LAR,94.4,36.9,80.6,58.7,46.5,63.4,21.3,0.1291,0.0854,0.1084,Vegas+efficiency elite
+Bo Nix,QB,DEN,27.4,78.3,67.0,85.8,39.4,59.6,22.5,0.1625,0.1784,0.0933,"volume+matchup elite, Vegas cool (sources DIVERGE)"
+Wan'Dale Robinson,WR,TEN,23.3,85.0,54.6,80.7,12.9,51.3,29.2,0.1215,0.0911,0.096,"volume+matchup elite, Vegas+role cool (sources DIVERGE)"
+Dalton Kincaid,TE,BUF,88.1,57.0,97.0,78.8,73.0,78.8,13.6,0.2297,0.1793,0.2422,Vegas+efficiency+matchup+role elite
+Ricky Pearsall,WR,SF,53.7,57.3,82.1,51.7,95.4,68.0,17.5,0.1048,0.1048,0.1187,efficiency+role elite
+Jordan Love,QB,GB,84.0,29.2,90.4,67.0,64.9,67.1,21.3,0.2782,0.1799,0.1687,"Vegas+efficiency elite, volume cool"
+Xavier Worthy,WR,KC,50.3,58.9,46.2,35.5,48.8,47.9,7.5,0.1323,0.142,0.1132,all 5 sources agree: middling
+J.K. Dobbins,RB,DEN,24.7,66.9,86.5,32.5,71.2,56.4,23.7,0.1043,0.1098,0.0782,"efficiency+role elite, Vegas+matchup cool (sources DIVERGE)"
+Kenneth Gainwell,RB,TB,71.2,51.9,62.9,82.0,93.5,72.3,14.5,0.1127,0.1017,0.1017,Vegas+matchup+role elite
+Travis Kelce,TE,KC,44.1,91.0,71.0,41.5,41.0,57.7,20.1,0.2298,0.2444,0.2002,volume+efficiency elite
+Michael Pittman Jr.,WR,PIT,30.1,79.3,41.2,44.3,47.1,48.4,16.5,0.1321,0.144,0.1321,"volume elite, Vegas cool"
+Josh Downs,WR,IND,58.8,59.8,21.2,54.4,21.2,43.1,18.0,0.1095,0.1195,0.095,efficiency+role cool
+Baker Mayfield,QB,TB,72.6,40.6,26.6,34.9,58.5,46.6,16.7,0.1966,0.1734,0.1734,"Vegas elite, efficiency+matchup cool"
+Matthew Golden,WR,GB,84.5,36.2,72.9,79.4,90.4,72.7,19.1,0.1932,0.1466,0.141,Vegas+efficiency+matchup+role elite
+Khalil Shakir,WR,BUF,92.9,78.5,50.4,80.1,3.8,61.1,31.9,0.1572,0.1184,0.1671,"Vegas+volume+matchup elite, role cool (sources DIVERGE)"
+Tyler Shough,QB,NO,46.2,61.3,45.7,27.4,43.6,44.8,10.8,0.1143,0.2386,0.1345,matchup cool
+Jacory Croskey-Merritt,RB,WAS,59.6,,52.4,70.4,37.1,54.9,12.1,0.0933,0.0643,0.0682,matchup elite
+Aaron Jones Sr.,RB,MIN,53.0,63.1,53.5,22.8,47.6,48.0,13.6,0.126,0.1596,0.1132,matchup cool
+Romeo Doubs,WR,NE,33.8,63.0,66.2,22.6,83.8,53.9,22.4,0.0986,0.1226,0.1129,"role elite, Vegas+matchup cool (sources DIVERGE)"
+Dallas Goedert,TE,PHI,35.6,77.0,51.0,4.2,43.0,42.2,23.6,0.2312,0.2312,0.2231,"volume elite, matchup cool (sources DIVERGE)"
+Jake Ferguson,TE,DAL,98.3,69.0,33.0,36.4,47.0,56.7,24.3,0.2267,0.2717,0.2864,"Vegas elite, efficiency cool (sources DIVERGE)"
+Jonathon Brooks,RB,CAR,13.6,,,31.6,,22.6,9.0,0.0659,0.0447,0.048,Vegas+matchup cool
+Chris Rodriguez Jr.,RB,JAX,63.6,65.6,78.2,50.0,40.6,59.6,13.0,0.0082,0.0142,0.0178,efficiency elite
+KC Concepcion,WR,CLE,5.7,,,78.4,,42.1,36.4,0.0624,0.0548,0.0831,"matchup elite, Vegas cool (sources DIVERGE)"
+Mark Andrews,TE,BAL,75.4,51.0,15.0,60.2,29.0,46.1,21.6,0.2304,0.2668,0.245,"Vegas elite, efficiency+role cool"
+Jordan Mason,RB,MIN,53.0,41.9,84.1,47.1,88.8,63.0,19.5,0.0529,0.0684,0.0471,efficiency+role elite
+Isaiah Likely,TE,NYG,30.5,31.0,25.0,82.2,15.0,36.7,23.4,0.1799,0.1544,0.1863,"matchup elite, Vegas+volume+efficiency+role cool (sources DIVERGE)"
+Malik Willis,QB,MIA,1.9,2.8,98.9,31.1,98.9,46.7,43.9,0.0347,0.0399,0.0516,"efficiency+role elite, Vegas+volume+matchup cool (sources DIVERGE)"
+Jayden Higgins,WR,HOU,19.9,44.3,29.6,0.3,77.1,34.2,25.8,0.0885,0.0611,0.0677,"role elite, Vegas+efficiency+matchup cool (sources DIVERGE)"
+Zach Charbonnet,RB,SEA,67.7,49.4,61.8,83.0,67.6,65.9,10.8,0.1391,0.18,0.1662,matchup elite
+C.J. Stroud,QB,HOU,23.6,57.5,58.5,44.3,41.5,45.1,12.7,0.1484,0.0769,0.0927,Vegas cool
+Rachaad White,RB,WAS,59.6,43.1,77.1,52.9,38.2,54.2,13.7,0.132,0.0922,0.0976,efficiency elite
+Jalen Coker,WR,CAR,13.2,51.6,75.4,43.6,43.8,45.5,19.9,0.0869,0.0655,0.069,"efficiency elite, Vegas cool"
+Sam Darnold,QB,SEA,70.8,12.3,75.5,53.8,60.6,54.6,22.5,0.1223,0.181,0.1606,"Vegas+efficiency elite, volume cool (sources DIVERGE)"
+Oronde Gadsden II,TE,LAC,66.9,53.0,67.0,44.9,45.0,55.4,9.9,0.1242,0.1381,0.1151,"mixed reads, no strong driver"
+Tyrone Tracy Jr.,RB,NYG,32.8,61.9,44.1,51.9,26.5,43.4,12.8,0.0178,0.0135,0.0189,Vegas+role cool
+Kenyon Sadiq,TE,NYJ,5.1,,,90.7,,47.9,42.8,0.1726,0.1247,0.1382,"matchup elite, Vegas cool (sources DIVERGE)"
+Jalen McMillan,WR,TB,71.3,29.7,92.9,63.5,28.7,57.2,24.8,0.0819,0.0753,0.0753,"Vegas+efficiency elite, volume+role cool (sources DIVERGE)"
+Isiah Pacheco,RB,DET,85.9,39.4,32.4,80.1,10.0,49.6,29.0,0.0626,0.0867,0.0658,"Vegas+matchup elite, efficiency+role cool (sources DIVERGE)"
+Jauan Jennings,WR,MIN,56.4,53.3,25.4,34.8,60.4,46.1,13.6,0.0546,0.0674,0.0498,efficiency+matchup cool
+Woody Marks,RB,HOU,19.2,60.6,20.6,1.5,44.1,29.2,20.7,0.0552,0.0332,0.0383,Vegas+efficiency+matchup cool
+Daniel Jones,QB,IND,61.3,23.6,79.8,40.6,47.9,50.6,19.0,0.1381,0.1668,0.0999,"efficiency elite, volume cool"
+Cam Ward,QB,TEN,25.5,55.7,7.4,65.1,11.7,33.1,23.3,,,,Vegas+efficiency+role cool (sources DIVERGE)
+Rashid Shaheed,WR,SEA,68.2,49.2,20.4,26.7,52.9,43.5,17.6,0.0728,0.0944,0.087,efficiency+matchup cool
+Brenton Strange,TE,JAX,57.6,61.0,83.0,33.1,69.0,60.7,16.4,0.1255,0.1721,0.1957,"efficiency elite, matchup cool"
+Stefon Diggs,WR,FA,,75.2,93.8,,80.4,83.1,7.8,,,,all three sources agree: elite across the board
+Chig Okonkwo,TE,WAS,54.2,49.0,53.0,13.6,5.0,35.0,21.2,,,,matchup+role cool
+Omar Cooper Jr.,WR,NYJ,8.4,,,94.9,,51.6,43.3,0.0413,0.0273,0.0311,"matchup elite, Vegas cool (sources DIVERGE)"
+Keaton Mitchell,RB,LAC,74.2,,58.2,5.3,91.2,57.2,32.2,0.0143,0.0168,0.0127,"Vegas+role elite, matchup cool (sources DIVERGE)"
+Bryce Young,QB,CAR,17.9,33.0,30.9,51.9,18.1,30.4,12.5,0.0532,0.0209,0.025,Vegas+volume+efficiency+role cool
+Travis Hunter,WR,JAX,65.5,67.1,35.4,25.7,24.6,43.7,18.9,0.037,0.0555,0.0657,matchup+role cool
+T.J. Hockenson,TE,MIN,50.0,55.0,37.0,17.8,35.0,39.0,13.0,0.1928,0.2286,0.1785,matchup+role cool
+Hunter Henry,TE,NE,27.1,65.0,73.0,50.0,79.0,58.8,18.6,0.1473,0.1779,0.1656,"efficiency+role elite, Vegas cool"
+Juwan Johnson,TE,NO,39.8,71.0,65.0,66.9,57.0,59.9,11.1,0.1399,0.206,0.1518,volume elite
+Tyler Allgeier,RB,ARI,10.1,34.4,31.2,13.1,72.4,32.2,22.2,0.014,0.0101,0.0151,"role elite, Vegas+volume+efficiency+matchup cool (sources DIVERGE)"
+Antonio Williams,WR,WAS,62.2,,,12.8,,37.5,24.7,0.0715,0.0538,0.0562,matchup cool (sources DIVERGE)
+Tyjae Spears,RB,TEN,21.7,40.6,45.3,69.4,84.1,52.2,22.0,0.0832,0.0582,0.0621,"role elite, Vegas cool (sources DIVERGE)"
+Jalen Nailor,WR,LV,16.6,30.5,37.1,24.0,66.2,34.9,17.1,0.0422,0.0588,0.0637,Vegas+volume+matchup cool
+Tyreek Hill,WR,FA,,87.4,98.8,,99.6,95.3,5.6,,,,all three sources agree: elite across the board
+Jacoby Brissett,QB,ARI,14.2,84.0,33.0,84.0,30.9,49.2,29.1,,,,"volume+matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Isaac TeSlaa,WR,DET,87.2,2.8,24.6,6.1,76.2,39.4,35.5,0.0292,0.0384,0.0304,"Vegas+role elite, volume+efficiency+matchup cool (sources DIVERGE)"
+Jonah Coleman,RB,DEN,24.7,,,12.1,,18.4,6.3,0.0042,0.0044,0.0031,Vegas+matchup cool
+Fernando Mendoza,QB,LV,20.8,87.7,,0.9,,36.5,37.1,0.0155,0.0369,0.0452,"volume elite, Vegas+matchup cool (sources DIVERGE)"
+Aaron Rodgers,QB,PIT,30.2,59.4,24.5,74.5,5.3,38.8,24.9,0.076,0.0897,0.076,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Tre Tucker,WR,LV,16.6,60.6,47.1,2.4,70.4,39.4,25.9,0.048,0.0698,0.0765,"role elite, Vegas+matchup cool (sources DIVERGE)"
+Dalton Schultz,TE,HOU,16.1,81.0,77.0,9.3,81.0,52.9,32.9,0.1545,0.1121,0.1226,"volume+efficiency+role elite, Vegas+matchup cool (sources DIVERGE)"
+Alvin Kamara,RB,NO,41.4,64.4,17.1,25.7,18.2,33.4,17.8,0.0387,0.071,0.044,efficiency+matchup+role cool
+Geno Smith,QB,NYJ,9.4,19.8,9.6,29.2,20.2,17.6,7.4,0.0421,0.013,0.019,all 5 sources agree: weak across the board
+Brian Robinson Jr.,RB,ATL,35.4,97.5,79.4,74.3,19.4,61.2,29.1,0.0256,0.0272,0.0272,"volume+efficiency+matchup elite, role cool (sources DIVERGE)"
+Dylan Sampson,RB,CLE,4.0,31.9,10.0,27.7,30.0,20.7,11.4,0.0145,0.0124,0.0204,Vegas+volume+efficiency+matchup+role cool
+Denzel Boston,WR,CLE,5.7,,,78.4,,42.1,36.4,0.0484,0.0428,0.0636,"matchup elite, Vegas cool (sources DIVERGE)"
+De'Zhaun Stribling,WR,SF,53.7,,,48.6,,51.2,2.6,0.0227,0.0227,0.0258,"mixed reads, no strong driver"
+AJ Barner,TE,SEA,61.0,41.0,69.0,29.7,67.0,53.5,15.5,0.0992,0.1258,0.1168,matchup cool
+Cade Otton,TE,TB,63.6,73.0,27.0,68.6,39.0,54.2,18.0,0.1108,0.1025,0.1025,"volume elite, efficiency cool"
+David Njoku,TE,LAC,66.9,37.0,7.0,44.9,17.0,34.6,21.1,0.0709,0.0795,0.0653,efficiency+role cool
+Tank Bigsby,RB,PHI,37.9,18.1,95.9,55.3,92.4,59.9,30.3,0.0103,0.0103,0.0097,"efficiency+role elite, volume cool (sources DIVERGE)"
+Jerry Jeudy,WR,CLE,5.7,70.3,3.8,55.1,2.1,27.4,29.2,0.053,0.0468,0.0693,"volume elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Malik Washington,WR,MIA,2.0,38.6,13.8,46.3,16.2,23.4,16.5,0.025,0.0267,0.0303,Vegas+efficiency+role cool
+Brandon Aiyuk,WR,SF,53.7,,,48.6,,51.2,2.6,,,,"mixed reads, no strong driver"
+Deebo Samuel Sr.,WR,FA,,80.9,60.4,,4.6,48.6,32.2,,,,"volume elite, role cool (sources DIVERGE)"
+Nick Singleton,RB,TEN,21.7,,,24.8,,23.2,1.6,,,,Vegas+matchup cool
+Emanuel Wilson,RB,SEA,67.7,5.6,59.4,44.2,28.8,41.1,22.2,0.0035,0.0046,0.0042,volume+role cool (sources DIVERGE)
+Ryan Flournoy,WR,DAL,98.6,43.5,84.6,17.9,78.8,64.7,29.6,0.0397,0.051,0.055,"Vegas+efficiency+role elite, matchup cool (sources DIVERGE)"
+Eli Stowers,TE,PHI,35.6,,,7.6,,21.6,14.0,0.0156,0.0156,0.0149,matchup cool
+Tank Dell,WR,HOU,19.9,,,3.0,,11.4,8.4,0.0507,0.0334,0.0375,Vegas+matchup cool
+Mike Washington Jr.,RB,LV,16.7,,,48.5,,32.6,15.9,0.0053,0.0091,0.0104,Vegas cool
+Calvin Ridley,WR,TEN,23.3,50.0,31.2,57.1,27.9,37.9,13.2,0.091,0.069,0.0726,Vegas+efficiency+role cool
+Germie Bernard,WR,PIT,30.1,,,85.5,,57.8,27.7,0.0578,0.0635,0.0578,"matchup elite, Vegas cool (sources DIVERGE)"
+Emmett Johnson,RB,KC,46.0,,,9.2,,27.6,18.4,0.0073,0.0081,0.0057,matchup cool
+Gunnar Helm,TE,TEN,17.8,29.0,31.0,75.4,11.0,32.8,22.5,0.1342,0.105,0.1098,"matchup elite, Vegas+volume+efficiency+role cool (sources DIVERGE)"
+Kayshon Boutte,WR,NE,33.8,42.7,86.2,51.0,96.2,62.0,24.7,0.02,0.0254,0.0232,"efficiency+role elite, Vegas cool (sources DIVERGE)"
+Colby Parkinson,TE,LAR,93.2,33.0,55.0,89.0,63.0,66.6,22.3,0.0658,0.0471,0.057,"Vegas+matchup elite, volume cool (sources DIVERGE)"
+Kaytron Allen,RB,WAS,59.6,,,56.8,,58.2,1.4,0.0012,0.0008,0.0009,"mixed reads, no strong driver"
+Chris Bell,WR,MIA,2.0,,,32.8,,17.4,15.4,0.0294,0.0313,0.0351,Vegas+matchup cool
+Cooper Kupp,WR,SEA,68.2,55.7,47.9,10.5,52.1,46.9,19.4,0.0421,0.0551,0.0507,matchup cool
+Ted Hurst,WR,TB,71.3,,,63.5,,67.4,3.9,0.024,0.0219,0.0219,Vegas elite
+Braelon Allen,RB,NYJ,6.6,13.1,2.9,84.0,0.6,21.4,31.6,0.0185,0.0108,0.0127,"matchup elite, Vegas+volume+efficiency+role cool (sources DIVERGE)"
+Tua Tagovailoa,QB,ATL,39.6,53.8,22.3,82.1,22.3,44.0,22.4,0.0039,0.0044,0.0044,"matchup elite, efficiency+role cool (sources DIVERGE)"
+Kimani Vidal,RB,LAC,74.2,56.9,15.9,4.4,61.8,42.6,27.4,0.0048,0.0056,0.0043,"Vegas elite, efficiency+matchup cool (sources DIVERGE)"
+Tre' Harris,WR,LAC,74.7,11.0,58.8,40.2,53.8,47.7,21.4,0.0363,0.0415,0.033,"Vegas elite, volume cool"
+Ray Davis,RB,BUF,91.4,10.6,73.5,91.7,87.6,71.0,30.9,0.0053,0.0034,0.0058,"Vegas+efficiency+matchup+role elite, volume cool (sources DIVERGE)"
+Pat Freiermuth,TE,PIT,23.7,23.0,79.0,56.8,59.0,48.3,21.8,0.1337,0.1451,0.1337,"efficiency elite, Vegas+volume cool"
+Christian Kirk,WR,SF,53.7,37.0,2.9,44.9,7.1,29.1,20.4,0.0244,0.0244,0.0277,efficiency+role cool
+Malachi Fields,WR,NYG,38.2,,,18.9,,28.6,9.7,0.0074,0.0061,0.0078,matchup cool
+Zachariah Branch,WR,ATL,41.9,,,99.0,,70.4,28.6,0.0131,0.0138,0.0138,matchup elite (sources DIVERGE)
+Sean Tucker,RB,TB,71.2,23.1,34.7,53.9,90.0,54.6,24.2,0.003,0.0027,0.0027,"Vegas+role elite, volume+efficiency cool (sources DIVERGE)"
+Terrance Ferguson,TE,LAR,93.2,9.0,45.0,95.8,99.0,68.4,35.7,0.1795,0.1362,0.1596,"Vegas+matchup+role elite, volume cool (sources DIVERGE)"
+Adonai Mitchell,WR,NYJ,8.4,47.6,9.6,88.9,22.9,35.5,30.2,0.047,0.0312,0.0355,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Keon Coleman,WR,BUF,92.9,52.4,36.2,73.3,33.8,57.7,22.6,0.0246,0.0176,0.0265,"Vegas+matchup elite, role cool (sources DIVERGE)"
+Justice Hill,RB,BAL,79.3,20.6,48.8,77.7,4.1,46.1,30.1,0.0461,0.0594,0.0512,"Vegas+matchup elite, volume+role cool (sources DIVERGE)"
+Darnell Mooney,WR,NYG,38.2,45.9,16.2,59.8,51.2,42.3,14.8,0.0396,0.0322,0.0416,efficiency cool
+Shedeur Sanders,QB,CLE,5.7,63.2,5.3,8.5,16.0,19.7,22.1,,,,Vegas+efficiency+matchup+role cool (sources DIVERGE)
+Mike Gesicki,TE,CIN,83.9,13.0,23.0,34.7,65.0,43.9,26.5,0.1178,0.1305,0.1262,"Vegas elite, volume+efficiency+matchup cool (sources DIVERGE)"
+Deshaun Watson,QB,CLE,5.7,51.9,,14.2,,23.9,20.1,0.0017,0.0012,0.0038,Vegas+matchup cool
+James Conner,RB,ARI,10.1,55.6,35.9,21.8,8.8,26.4,17.5,,,,Vegas+matchup+role cool
+Greg Dulcich,TE,MIA,0.8,43.0,93.0,31.4,83.0,50.2,33.9,0.071,0.0749,0.0828,"efficiency+role elite, Vegas+matchup cool (sources DIVERGE)"
+Kaelon Black,RB,SF,50.0,,,94.2,,72.1,22.1,0.0028,0.0028,0.0034,matchup elite (sources DIVERGE)
+Michael Penix Jr.,QB,ATL,39.6,65.1,41.5,91.5,56.4,58.8,18.9,,,,matchup elite
+Dontayvion Wicks,WR,PHI,44.6,24.8,52.1,5.1,87.9,42.9,27.8,0.0161,0.0161,0.0153,"role elite, volume+matchup cool (sources DIVERGE)"
+Troy Franklin,WR,DEN,26.7,63.8,19.6,75.3,22.1,41.5,23.3,0.014,0.0147,0.0108,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Demond Claiborne,RB,MIN,53.0,,,35.4,,44.2,8.8,0.002,0.0026,0.0017,"mixed reads, no strong driver"
+Evan Engram,TE,DEN,20.3,39.0,17.0,73.7,9.0,31.8,23.1,0.0941,0.0979,0.0758,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Tory Horton,WR,SEA,68.2,32.1,42.1,14.5,56.2,42.6,18.7,0.0172,0.023,0.021,volume+matchup cool
+Elijah Sarratt,WR,BAL,81.4,,,70.6,,76.0,5.4,0.0213,0.0262,0.0232,Vegas+matchup elite
+Jake Tonges,TE,SF,47.5,47.0,63.0,55.1,33.0,49.1,10.0,0.015,0.015,0.0169,role cool
+Justin Fields,QB,KC,49.1,99.1,20.2,55.7,62.8,57.4,25.4,,,,"volume elite, efficiency cool (sources DIVERGE)"
+Kirk Cousins,QB,LV,20.8,42.5,28.7,4.7,24.5,24.2,12.2,,,,Vegas+efficiency+matchup+role cool
+Chris Brazzell II,WR,CAR,13.2,,,91.6,,52.4,39.2,0.0166,0.0118,0.0125,"matchup elite, Vegas cool (sources DIVERGE)"
+Samaje Perine,RB,CIN,88.4,28.1,57.1,97.6,78.2,69.9,24.9,0.039,0.0454,0.0432,"Vegas+matchup+role elite, volume cool (sources DIVERGE)"
+Pat Bryant,WR,DEN,26.7,25.6,45.4,67.9,35.4,40.2,15.6,0.0242,0.0253,0.0186,Vegas+volume cool
+Carson Beck,QB,ARI,14.2,96.2,,93.4,,67.9,38.0,0.0784,0.0508,0.0863,"volume+matchup elite, Vegas cool (sources DIVERGE)"
+Jordan James,RB,SF,50.0,26.9,98.2,94.2,14.7,56.8,34.1,0.0102,0.0102,0.0122,"efficiency+matchup elite, volume+role cool (sources DIVERGE)"
+Jerome Ford,RB,WAS,59.6,,11.2,28.6,82.9,45.6,27.7,,,,"role elite, efficiency+matchup cool (sources DIVERGE)"
+Ollie Gordon II,RB,MIA,1.5,8.1,41.8,68.4,12.4,26.4,25.1,0.0014,0.0015,0.0018,Vegas+volume+role cool (sources DIVERGE)
+Quinn Ewers,QB,MIA,1.9,6.6,13.8,10.4,33.0,13.1,10.7,,,,Vegas+volume+efficiency+matchup+role cool
+Will Shipley,RB,PHI,37.9,1.9,0.6,55.3,1.8,19.5,22.8,0.0025,0.0025,0.0024,volume+efficiency+role cool (sources DIVERGE)
+Tyquan Thornton,WR,KC,50.3,37.8,85.4,21.3,88.8,56.7,26.5,0.03,0.0328,0.0248,"efficiency+role elite, matchup cool (sources DIVERGE)"
+Tanner McKee,QB,PHI,43.4,0.9,69.1,17.9,26.6,31.6,23.2,,,,volume+matchup+role cool (sources DIVERGE)
+Kareem Hunt,RB,FA,,46.9,92.4,2.4,80.6,55.6,34.9,,,,"efficiency+role elite, matchup cool (sources DIVERGE)"
+J.J. McCarthy,QB,MIN,56.6,85.8,11.7,12.3,54.3,44.1,28.5,,,,"volume elite, efficiency+matchup cool (sources DIVERGE)"
+Devin Singletary,RB,NYG,32.8,29.4,12.4,62.6,11.2,29.7,18.6,0.0019,0.0014,0.002,Vegas+volume+efficiency+role cool
+Joe Flacco,QB,CIN,88.7,76.4,18.1,80.2,13.8,55.4,32.5,,,,"Vegas+volume+matchup elite, efficiency+role cool (sources DIVERGE)"
+Nick Chubb,RB,FA,,35.6,60.6,29.6,15.9,35.4,16.2,,,,matchup+role cool
+J'Mari Taylor,RB,JAX,63.6,95.6,,42.2,,67.1,21.9,,,,volume elite
+Brashard Smith,RB,KC,46.0,19.4,18.2,9.2,68.8,32.3,22.0,,,,volume+efficiency+matchup cool
+Joe Mixon,RB,FA,,,,,,,0.0,,,,no source data
+Rashod Bateman,WR,BAL,81.4,22.4,6.2,47.0,9.6,33.3,28.0,0.0708,0.0859,0.0768,"Vegas elite, volume+efficiency+role cool (sources DIVERGE)"
+Jaylin Noel,WR,HOU,19.9,8.5,43.8,3.7,42.9,23.8,16.8,0.0182,0.0123,0.0137,Vegas+volume+matchup cool
+Audric Estime,RB,NO,41.4,54.4,94.7,11.2,98.2,60.0,32.9,,,,"efficiency+role elite, matchup cool (sources DIVERGE)"
+Mac Jones,QB,SF,52.8,17.9,77.7,68.9,35.1,50.5,21.8,,,,"efficiency elite, volume cool"
+Odell Beckham Jr.,WR,NYG,38.2,,,18.9,,28.6,9.7,0.0081,0.0065,0.0085,matchup cool
+Brenen Thompson,WR,LAC,74.7,,,40.2,,57.4,17.2,0.0063,0.0071,0.0057,Vegas elite
+Seth McGowan,RB,IND,56.1,,,59.7,,57.9,1.8,0.0009,0.001,0.0008,"mixed reads, no strong driver"
+Mack Hollins,WR,NE,33.8,50.8,62.9,17.2,58.8,44.7,17.0,0.0047,0.0061,0.0055,Vegas+matchup cool
+Luke McCaffrey,WR,WAS,62.2,11.8,83.8,12.8,29.6,40.0,28.5,,,,"efficiency elite, volume+matchup+role cool (sources DIVERGE)"
+Theo Johnson,TE,NYG,30.5,67.0,21.0,11.0,19.0,29.7,19.7,0.0446,0.0374,0.0464,Vegas+efficiency+matchup+role cool
+Malik Davis,RB,DAL,98.0,15.6,30.0,39.3,41.8,44.9,28.1,0.0082,0.0112,0.0123,"Vegas elite, volume+efficiency cool (sources DIVERGE)"
+KaVontae Turpin,WR,DAL,98.6,6.1,90.4,38.2,67.9,60.2,34.2,0.0206,0.0267,0.0288,"Vegas+efficiency elite, volume cool (sources DIVERGE)"
+Roman Hemby,RB,LV,16.7,,,48.5,,32.6,15.9,,,,Vegas cool
+Noah Gray,TE,KC,44.1,19.0,3.0,28.0,3.0,19.4,15.6,0.0474,0.0504,0.0416,volume+efficiency+matchup+role cool
+George Holani,RB,SEA,67.7,16.9,27.6,87.9,13.5,42.7,29.7,0.0061,0.0085,0.0077,"matchup elite, volume+efficiency+role cool (sources DIVERGE)"
+Jalen Royals,WR,KC,50.3,24.0,0.4,21.3,8.8,21.0,17.0,0.0132,0.0144,0.0108,volume+efficiency+matchup+role cool
+Deion Burks,WR,IND,58.8,,,74.3,,66.6,7.8,,,,matchup elite
+Elic Ayomanor,WR,TEN,23.3,58.1,10.4,86.8,18.8,39.5,28.7,0.002,0.0015,0.0016,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Jahan Dotson,WR,ATL,41.9,15.9,2.1,92.9,11.2,32.8,32.8,0.0299,0.0314,0.0314,"matchup elite, volume+efficiency+role cool (sources DIVERGE)"
+Skyler Bell,WR,BUF,92.9,,,82.4,,87.6,5.2,0.0151,0.0108,0.0162,Vegas+matchup elite
+Isaiah Bond,WR,CLE,5.7,15.0,4.6,68.6,6.2,20.0,24.6,0.0015,0.0013,0.002,Vegas+volume+efficiency+role cool (sources DIVERGE)
+Zach Ertz,TE,FA,,85.0,5.0,,21.0,37.0,34.6,,,,"volume elite, efficiency+role cool (sources DIVERGE)"
+Michael Trigg,TE,DAL,98.3,,,19.5,,58.9,39.4,,,,"Vegas elite, matchup cool (sources DIVERGE)"
+Keenan Allen,WR,FA,,91.5,61.3,,32.9,61.9,23.9,,,,"volume elite, role cool (sources DIVERGE)"
+KeAndre Lambert-Smith,WR,LAC,74.7,33.7,18.8,40.2,97.9,53.1,29.0,0.0073,0.0082,0.0067,"Vegas+role elite, volume+efficiency cool (sources DIVERGE)"
+Chimere Dike,WR,TEN,23.3,46.7,14.6,61.8,2.9,29.9,21.5,0.0057,0.0042,0.0044,Vegas+efficiency+role cool
+Luke Musgrave,TE,GB,78.0,15.0,39.0,87.3,75.0,58.9,27.4,0.0226,0.0165,0.0158,"Vegas+matchup+role elite, volume cool (sources DIVERGE)"
+Xavier Hutchinson,WR,HOU,19.9,45.1,26.2,30.7,62.9,37.0,15.4,0.0156,0.0105,0.0117,Vegas+efficiency+matchup cool
+Jaylen Wright,RB,MIA,1.5,30.6,55.9,14.1,70.0,34.4,25.5,0.0023,0.0025,0.0029,"role elite, Vegas+volume+matchup cool (sources DIVERGE)"
+Jordan Whittington,WR,LAR,95.9,5.3,22.1,98.0,50.4,54.3,37.7,0.0139,0.0094,0.0118,"Vegas+matchup elite, volume+efficiency cool (sources DIVERGE)"
+Jaydon Blue,RB,DAL,98.0,25.6,6.5,16.0,35.9,36.4,32.3,0.0038,0.0052,0.0057,"Vegas elite, volume+efficiency+matchup cool (sources DIVERGE)"
+Ty Johnson,RB,BUF,91.4,9.4,26.5,99.5,94.7,64.3,38.3,0.0299,0.0191,0.033,"Vegas+matchup+role elite, volume+efficiency cool (sources DIVERGE)"
+Malik Benson,WR,LV,16.6,,,1.4,,9.0,7.6,,,,Vegas+matchup cool
+Greg Dortch,WR,DET,87.2,99.6,37.9,6.1,10.4,48.2,38.7,0.0019,0.0024,0.002,"Vegas+volume elite, matchup+role cool (sources DIVERGE)"
+Anthony Richardson Sr.,QB,IND,61.3,14.2,94.7,50.0,3.2,44.7,33.0,,,,"efficiency elite, volume+role cool (sources DIVERGE)"
+Adam Randall,RB,BAL,79.3,,,77.7,,78.5,0.8,0.0027,0.0035,0.003,Vegas+matchup elite
+Isaiah Davis,RB,NYJ,6.6,14.4,24.1,66.5,24.1,27.1,20.7,0.0058,0.0037,0.0042,Vegas+volume+efficiency+role cool
+Kendrick Bourne,WR,ARI,10.5,20.7,73.8,88.2,93.8,57.4,34.9,0.012,0.0095,0.0126,"efficiency+matchup+role elite, Vegas+volume cool (sources DIVERGE)"
+Trevor Etienne,RB,CAR,13.6,33.1,85.3,46.1,97.1,55.0,31.5,0.0032,0.0021,0.0023,"efficiency+role elite, Vegas+volume cool (sources DIVERGE)"
+Max Klare,TE,LAR,93.2,,,95.8,,94.5,1.3,0.0031,0.0022,0.0027,Vegas+matchup elite
+Cyrus Allen,WR,KC,50.3,,,21.3,,35.8,14.5,0.0032,0.0035,0.0026,matchup cool
+Darius Slayton,WR,NYG,38.2,48.4,32.1,83.4,40.4,48.5,18.2,0.0336,0.0275,0.0352,"matchup elite, efficiency cool"
+Sam Roush,TE,CHI,72.0,,,38.1,,55.0,17.0,,,,Vegas elite
+Riley Leonard,QB,IND,61.3,16.0,16.0,46.2,7.4,29.4,20.7,,,,volume+efficiency+role cool
+Devaughn Vele,WR,NO,47.3,41.9,51.2,66.6,84.6,58.3,15.5,0.0137,0.0236,0.0153,role elite
+Andrei Iosivas,WR,CIN,89.9,32.9,32.9,53.0,37.1,49.2,21.7,0.0337,0.0381,0.0366,"Vegas elite, volume+efficiency cool"
+Tutu Atwell,WR,MIA,2.0,13.4,97.1,32.8,72.1,43.5,35.9,0.0091,0.0097,0.0109,"efficiency+role elite, Vegas+volume+matchup cool (sources DIVERGE)"
+Devin Neal,RB,NO,41.4,38.1,14.7,18.0,5.3,23.5,13.9,,,,efficiency+matchup+role cool
+Caleb Douglas,WR,MIA,2.0,,,32.8,,17.4,15.4,0.021,0.0224,0.0253,Vegas+matchup cool
+DJ Giddens,RB,IND,56.1,11.9,37.1,85.9,20.6,42.3,26.5,0.0045,0.005,0.0037,"matchup elite, volume+role cool (sources DIVERGE)"
+Joshua Palmer,WR,BUF,92.9,19.9,,82.4,,65.1,32.2,,,,"Vegas+matchup elite, volume cool (sources DIVERGE)"
+John Metchie III,WR,CAR,13.2,39.4,17.1,96.3,19.6,37.1,30.9,,,,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Austin Ekeler,RB,FA,,,64.1,98.5,2.9,55.2,39.5,,,,"matchup elite, role cool (sources DIVERGE)"
+Tyler Higbee,TE,LAR,93.2,27.0,57.0,95.8,85.0,71.6,26.2,0.027,0.0194,0.0234,"Vegas+matchup+role elite, volume cool (sources DIVERGE)"
+Kaleb Johnson,RB,PIT,27.8,3.1,5.3,3.4,27.6,13.4,11.7,0.0001,0.0001,0.0001,Vegas+volume+efficiency+matchup+role cool
+Trey Benson,RB,ARI,10.1,45.6,65.3,36.4,53.5,42.2,18.6,,,,Vegas cool
+Cedric Tillman,WR,CLE,5.7,34.6,17.9,67.2,20.4,29.2,21.1,0.0023,0.002,0.0032,Vegas+volume+efficiency+role cool
+Dyami Brown,WR,WAS,62.2,27.2,12.9,8.4,36.2,29.4,19.2,0.0419,0.0303,0.0319,volume+efficiency+matchup cool
+Marvin Mims Jr.,WR,DEN,26.7,28.0,56.2,59.1,0.4,34.1,21.6,0.0216,0.0226,0.0166,Vegas+volume+role cool
+Colbie Young,WR,CIN,89.9,,,16.6,,53.2,36.6,0.0013,0.0014,0.0014,"Vegas elite, matchup cool (sources DIVERGE)"
+Eli Heidenreich,WR,PIT,30.1,,,85.5,,57.8,27.7,,,,"matchup elite, Vegas cool (sources DIVERGE)"
+Eli Raridon,TE,NE,27.1,,,51.7,,39.4,12.3,0.0149,0.0186,0.0171,Vegas cool
+Darnell Washington,TE,PIT,23.7,35.0,81.0,53.4,93.0,57.2,26.4,0.045,0.0493,0.045,"efficiency+role elite, Vegas+volume cool (sources DIVERGE)"
+Dawson Knox,TE,BUF,88.1,25.0,49.0,85.6,71.0,63.7,23.8,0.0643,0.0474,0.0688,"Vegas+matchup+role elite, volume cool (sources DIVERGE)"
+Xavier Legette,WR,CAR,13.2,40.2,11.2,90.9,14.6,34.0,30.3,0.0186,0.0129,0.0138,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Oscar Delp,TE,NO,39.8,,,71.2,,55.5,15.7,,,,matchup elite
+Cole Kmet,TE,CHI,72.0,17.0,35.0,39.8,55.0,43.8,18.6,0.0323,0.0367,0.0382,"Vegas elite, volume+efficiency cool"
+Emari Demercado,RB,KC,46.0,,38.2,34.5,21.8,35.1,8.7,0.0134,0.015,0.0104,matchup+role cool
+Hollywood Brown,WR,PHI,44.6,,,9.5,,27.0,17.6,,,,matchup cool
+Nick Westbrook-Ikhine,WR,IND,58.8,1.2,5.4,74.3,37.9,35.5,28.8,0.0402,0.0441,0.0347,"matchup elite, volume+efficiency cool (sources DIVERGE)"
+Devontez Walker,WR,BAL,81.4,0.4,94.6,70.6,25.4,54.5,35.7,0.0084,0.0103,0.0091,"Vegas+efficiency+matchup elite, volume+role cool (sources DIVERGE)"
+MarShawn Lloyd,RB,GB,82.8,,,72.3,,77.6,5.2,0.025,0.0167,0.0158,Vegas+matchup elite
+Drew Allar,QB,PIT,30.2,89.6,,87.7,,69.2,27.6,,,,"volume+matchup elite, Vegas cool (sources DIVERGE)"
+Jaylin Lane,WR,WAS,62.2,16.7,8.8,12.8,17.1,23.5,19.6,0.0251,0.0182,0.0192,volume+efficiency+matchup+role cool
+Chris Brooks,RB,GB,82.8,6.9,21.8,72.3,50.0,46.8,28.9,0.0142,0.0094,0.0089,"Vegas+matchup elite, volume+efficiency cool (sources DIVERGE)"
+Tez Johnson,WR,TB,71.3,17.5,57.9,55.7,72.9,55.1,20.0,0.0041,0.0038,0.0038,"Vegas+role elite, volume cool"
+Jack Bech,WR,LV,16.6,10.2,28.7,1.4,81.2,27.6,28.2,0.0251,0.0379,0.0419,"role elite, Vegas+volume+efficiency+matchup cool (sources DIVERGE)"
+Jalen Tolbert,WR,MIA,2.0,23.2,15.4,32.8,59.6,26.6,19.3,0.0104,0.0111,0.0127,Vegas+volume+efficiency+matchup cool
+Jahdae Walker,WR,CHI,78.0,18.3,71.2,36.8,91.2,59.1,27.2,0.0028,0.0033,0.0034,"Vegas+efficiency+role elite, volume cool (sources DIVERGE)"
+Cade Klubnik,QB,NYJ,9.4,27.4,,33.0,,23.3,10.1,,,,Vegas+volume+matchup cool
+Tanner Koziol,TE,JAX,57.6,,,21.2,,39.4,18.2,,,,matchup cool
+Bryce Lance,WR,NO,47.3,,,65.5,,56.4,9.1,0.0089,0.0146,0.0098,"mixed reads, no strong driver"
+Michael Mayer,TE,LV,13.6,45.0,9.0,5.9,37.0,22.1,15.8,0.0363,0.0523,0.0571,Vegas+efficiency+matchup cool
+Elijah Arroyo,TE,SEA,61.0,11.0,1.0,16.1,89.0,35.6,33.7,0.0378,0.0483,0.0447,"role elite, volume+efficiency+matchup cool (sources DIVERGE)"
+LeQuint Allen Jr.,RB,JAX,63.6,0.6,4.1,19.9,74.7,32.6,30.8,0.0065,0.0102,0.0124,"role elite, volume+efficiency+matchup cool (sources DIVERGE)"
+DeMario Douglas,WR,NE,33.8,19.1,92.1,97.0,41.2,56.6,31.8,0.0146,0.0187,0.017,"efficiency+matchup elite, Vegas+volume cool (sources DIVERGE)"
+Darren Waller,TE,FA,,75.0,89.0,,95.0,86.3,8.4,,,,all three sources agree: elite across the board
+Zavion Thomas,WR,CHI,78.0,,,36.8,,57.4,20.6,0.0009,0.001,0.001,Vegas elite
+Najee Harris,RB,FA,,,97.1,17.0,31.2,48.4,34.9,,,,"efficiency elite, matchup+role cool (sources DIVERGE)"
+Mason Taylor,TE,NYJ,5.1,59.0,13.0,92.4,31.0,40.1,32.0,0.0306,0.0212,0.0238,"matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Kalif Raymond,WR,CHI,78.0,3.7,74.6,36.8,1.2,38.9,33.1,0.0174,0.0201,0.021,"Vegas+efficiency elite, volume+role cool (sources DIVERGE)"
+Justin Joly,TE,DEN,20.3,,,83.9,,52.1,31.8,,,,"matchup elite, Vegas cool (sources DIVERGE)"
+Jameis Winston,QB,NYG,35.8,8.5,52.1,36.8,90.4,44.7,26.8,,,,"role elite, volume cool (sources DIVERGE)"
+Kyle Williams,WR,NE,33.8,2.0,27.9,45.6,85.4,38.9,27.3,,,,"role elite, Vegas+volume+efficiency cool (sources DIVERGE)"
+Ja'Kobi Lane,WR,BAL,81.4,14.2,,70.6,,55.4,29.5,0.0336,0.0416,0.0367,"Vegas+matchup elite, volume cool (sources DIVERGE)"
+Ben Sinnott,TE,WAS,54.2,5.0,47.0,13.6,7.0,25.4,20.9,0.0138,0.0102,0.0107,volume+matchup+role cool
+Dont'e Thornton Jr.,WR,LV,16.6,9.3,1.2,7.8,89.6,24.9,32.7,0.0062,0.0092,0.0102,"role elite, Vegas+volume+efficiency+matchup cool (sources DIVERGE)"
+Kevin Coleman Jr.,WR,MIA,2.0,6.9,,32.8,,13.9,13.5,0.0091,0.0097,0.0109,Vegas+volume+matchup cool
+Savion Williams,WR,GB,84.5,4.5,88.8,93.9,73.8,69.1,33.0,0.0341,0.0244,0.0233,"Vegas+efficiency+matchup+role elite, volume cool (sources DIVERGE)"
+Ty Simpson,QB,LAR,94.3,70.8,,99.1,,88.1,12.4,,,,Vegas+volume+matchup elite
+Tahj Brooks,RB,CIN,88.4,4.4,1.8,92.7,7.6,39.0,42.2,0.0017,0.002,0.0019,"Vegas+matchup elite, volume+efficiency+role cool (sources DIVERGE)"
+Erick All Jr.,TE,CIN,83.9,,,23.7,,53.8,30.1,0.0225,0.0252,0.0243,"Vegas elite, matchup cool (sources DIVERGE)"
+Calvin Austin III,WR,NYG,38.2,12.6,12.1,28.0,12.1,20.6,10.7,0.0028,0.0023,0.0029,volume+efficiency+matchup+role cool
+CJ Daniels,WR,LAR,95.9,,,98.0,,97.0,1.0,0.0017,0.0012,0.0014,Vegas+matchup elite
+Ja'Tavion Sanders,TE,CAR,10.2,21.0,29.0,99.2,25.0,36.9,31.8,0.0515,0.0381,0.0402,"matchup elite, Vegas+volume+efficiency+role cool (sources DIVERGE)"
+Marcus Mariota,QB,WAS,66.0,46.2,47.9,78.3,92.6,66.2,17.8,,,,matchup+role elite
+Noah Fant,TE,NO,39.8,3.0,11.0,71.2,51.0,35.2,25.3,0.0206,0.0322,0.0226,"matchup elite, volume+efficiency cool (sources DIVERGE)"
+Trey Lance,QB,LAC,75.5,38.7,1.1,57.5,9.6,36.5,28.1,,,,"Vegas elite, efficiency+role cool (sources DIVERGE)"
+Tommy Tremble,TE,CAR,10.2,7.0,19.0,26.3,23.0,17.1,7.4,0.0374,0.0277,0.0292,all 5 sources agree: weak across the board
+Olamide Zaccheaus,WR,ATL,41.9,28.9,7.1,89.5,13.8,36.2,29.2,0.0171,0.018,0.018,"matchup elite, volume+efficiency+role cool (sources DIVERGE)"
+Treylon Burks,WR,WAS,62.2,26.4,7.9,12.8,7.9,23.4,20.5,0.0127,0.0091,0.0096,volume+efficiency+matchup+role cool
+DeAndre Hopkins,WR,FA,,31.3,63.7,,67.1,54.0,16.1,,,,volume cool
+Jaydn Ott,RB,KC,46.0,,,9.2,,27.6,18.4,,,,matchup cool
+Gardner Minshew II,QB,ARI,14.2,96.2,3.2,89.6,1.1,40.9,42.8,,,,"volume+matchup elite, Vegas+efficiency+role cool (sources DIVERGE)"
+Jack Endries,TE,CIN,83.9,,,23.7,,53.8,30.1,,,,"Vegas elite, matchup cool (sources DIVERGE)"
+Phil Mafah,RB,DAL,98.0,24.4,99.4,79.1,99.4,80.1,28.9,,,,"Vegas+efficiency+matchup+role elite, volume cool (sources DIVERGE)"
+Jarquez Hunter,RB,LAR,94.4,,,63.6,,79.0,15.4,,,,Vegas elite
+JuJu Smith-Schuster,WR,NYG,38.2,35.4,22.9,77.4,26.2,40.0,19.5,0.0067,0.0058,0.0069,"matchup elite, efficiency+role cool"
+Roman Wilson,WR,PIT,30.1,7.7,33.8,85.5,61.3,43.7,27.0,,,,"matchup elite, Vegas+volume+efficiency cool (sources DIVERGE)"
+Damien Martinez,RB,GB,82.8,,,72.3,,77.6,5.2,,,,Vegas+matchup elite
+Tyler Huntley,QB,BAL,81.1,10.4,81.9,42.5,50.0,53.2,26.7,,,,"Vegas+efficiency elite, volume cool (sources DIVERGE)"
+Charlie Kolar,TE,LAC,66.9,1.0,75.0,44.9,1.0,37.8,31.6,0.0073,0.0082,0.0067,"efficiency elite, volume+role cool (sources DIVERGE)"
+Joe Milton III,QB,DAL,98.1,80.2,35.1,19.8,73.4,61.3,29.2,,,,"Vegas+volume+role elite, matchup cool (sources DIVERGE)"

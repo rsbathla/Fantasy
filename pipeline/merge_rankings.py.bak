@@ -1,0 +1,89 @@
+#!/usr/bin/env python3
+"""Merged best-ball ranking engine. Blends trusted sources into one board.
+Add a source: drop a CSV in, add a line to SOURCES below (name,file,name_col,value_col,kind,weight).
+  kind: 'proj' (higher=better, e.g. projected pts), 'rank' (lower=better), 'adp' (lower=better, market)
+Run: python merge_rankings.py   ->  merged_rankings_2026.csv  +  merged_rankings_upload.csv (DK format)
+"""
+import pandas as pd, numpy as np, re, os
+def fn(n):
+    n=str(n).strip().lower(); n=re.sub(r'\s+(jr|sr|ii|iii|iv|v)\.?$','',n); n=n.replace('.','').replace("'","").replace('-',' '); return ' '.join(n.split())
+
+DL="/sessions/vibrant-kind-heisenberg/mnt/Downloads"
+ADP_CAP=5   # max deviation from ADP rank (spots up/down). Set 5-7. Keeps board ADP-anchored.
+# name, file, name_col, value_col, kind, weight   (weights need not sum to 1; normalized internally)
+SOURCES=[
+ ("ours_ceiling","draft_board_signals.csv","name","p95","proj",0.255),       # our edge: simulated playoff ceiling
+ ("clay_proj","clay_2026.csv","name","dk_pg","proj",0.187),                  # validated projection (r=0.75 backtest)
+ ("beat_bb",f"{DL}/DraftKings-Best-Ball-6-12.csv","Name","Rank","rank",0.187),# Beat Best Ball (trusted)
+ ("legup",f"{DL}/dk-ranks.csv","Name","Rank","rank",0.136),                  # Legendary Upside Sidekick
+ ("qual","qual_signal.csv","name","qual_score","proj",0.15),                 # Twitter notes/coachspeak (auto-activates when corpus -> qual_signal.csv)
+ ("dk_adp","/sessions/vibrant-kind-heisenberg/mnt/uploads/DkPreDraftRankings(2).csv","Name","ADP","adp",0.085),     # market anchor (NEW current template)
+ # --- add more when re-uploaded ---  ("etr",...,0.x)  ("dataroma",...,0.x)
+]
+
+frames=[]; weights={}
+for name,f,nc,vc,kind,w in SOURCES:
+    if not os.path.exists(f): print(f"  skip {name}: {f} not found"); continue
+    d=pd.read_csv(f); d=d[[nc,vc]].dropna(); d.columns=['name','val']; d['key']=d['name'].map(fn)
+    d=d.drop_duplicates('key')
+    # to within-source RANK (1=best)
+    asc = (kind in ('rank','adp'))   # rank/adp: lower=better
+    d[name]=d['val'].rank(ascending=asc, method='min')
+    frames.append(d[['key',name]]); weights[name]=w
+    print(f"  loaded {name}: {len(d)} players (w={w})")
+
+# outer-join all sources on key
+M=frames[0]
+for fr in frames[1:]: M=M.merge(fr,on='key',how='outer')
+# weighted average of available within-source ranks (missing sources ignored, weights renormalized per row)
+cols=list(weights); W=np.array([weights[c] for c in cols])
+R=M[cols].values
+mask=~np.isnan(R)
+wmat=np.where(mask,W,0.0); wsum=wmat.sum(1)
+M['merged_rank_score']=np.nansum(np.where(mask,R*W,0.0),1)/np.where(wsum>0,wsum,np.nan)
+M['n_sources']=mask.sum(1)
+# attach display name + team/pos from DK ADP
+dk=pd.read_csv("/sessions/vibrant-kind-heisenberg/mnt/uploads/DkPreDraftRankings(2).csv"); dk['key']=dk['Name'].map(fn)
+M=M.merge(dk[['key','ID','Name','Position','Team','ADP']],on='key',how='left')
+M=M.sort_values('merged_rank_score').reset_index(drop=True)
+M['opinion_rank']=M.index+1                                  # uncapped merged opinion
+M['adp_rank']=M['ADP'].rank(method='first')
+# iterate cap to remove dense re-rank drift -> realized |dev| ~<= ADP_CAP
+cur=M['opinion_rank'].copy()
+for _ in range(6):
+    dev=(cur-M['adp_rank']).clip(-ADP_CAP,ADP_CAP)
+    score=np.where(M['adp_rank'].notna(), M['adp_rank']+dev, cur)
+    cur=pd.Series(score,index=M.index).rank(method='first')
+M['merged_rank']=cur.astype(int)
+M=M.sort_values('merged_rank').reset_index(drop=True)
+M['vs_adp']=M['adp_rank']-M['merged_rank']                   # bounded ~+/- ADP_CAP
+M[['merged_rank','opinion_rank','Name','Position','Team','ADP','vs_adp','n_sources']+cols].to_csv('merged_rankings_2026.csv',index=False)
+
+# DK upload -- EXACT template: ALL players (merged order on top, rest in template order), LF line endings
+import csv as _csv
+INSTR=["1. Rank players in column A and B in order of how you would like them to appear in your pre-draft rankings.",
+"2. Note: The ID in column A is what will determine the order of the pre-draft rankings. Remember to keep these next to the corresponding player. You must include an ID for each player; you cannot use just the player's name.",
+"3. Upload as a CSV file and save ranking."]
+tmpl=pd.read_csv("/sessions/vibrant-kind-heisenberg/mnt/uploads/DkPreDraftRankings(2).csv"); tmpl['key']=tmpl['Name'].map(fn)
+rankmap=dict(zip(M['key'],M['merged_rank']))
+tmpl['mrank']=tmpl['key'].map(rankmap)
+tmpl['torder']=range(len(tmpl))
+tmpl['sortkey']=tmpl['mrank'].where(tmpl['mrank'].notna(), 10_000_000+tmpl['torder'])
+tmpl=tmpl.sort_values('sortkey').reset_index(drop=True)
+with open('merged_rankings_upload.csv','w',newline='') as fh:
+    w=_csv.writer(fh, lineterminator='\n')
+    w.writerow(['ID','Name','Position','ADP','Team','','Instructions'])
+    for i,(_,r) in enumerate(tmpl.iterrows()):
+        adp='' if pd.isna(r['ADP']) else r['ADP']
+        idv='' if pd.isna(r['ID']) else str(int(r['ID']))
+        row=[idv,r['Name'],r['Position'],adp,r['Team']]
+        if i<3: row+=['',INSTR[i]]
+        w.writerow(row)
+print(f"wrote merged_rankings_upload.csv: {len(tmpl)} players (exact DK template, LF)")
+print(f"\nmerged {len(M)} players from {len(cols)} sources -> merged_rankings_2026.csv + _upload.csv")
+print("\nTop 15 merged:")
+print(M[['merged_rank','Name','Position','Team','ADP','vs_adp']].head(15).to_string(index=False))
+print("\nBiggest UP vs market (our edge):")
+print(M[M.n_sources>=2].sort_values('vs_adp',ascending=False)[['Name','Position','Team','ADP','merged_rank']].head(8).to_string(index=False))
+print("\nBiggest DOWN vs market (we fade):")
+print(M[M.n_sources>=2].sort_values('vs_adp')[['Name','Position','Team','ADP','merged_rank']].head(6).to_string(index=False))

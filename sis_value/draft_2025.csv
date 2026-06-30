@@ -1,0 +1,105 @@
+round,pick,team,player,pos,college
+1,1,TEN,Cam Ward,QB,Miami (FL)
+1,2,JAX,Travis Hunter,WR,Colorado
+1,3,NYG,Abdul Carter,DE,Penn St.
+1,4,NE,Will Campbell,OT,LSU
+1,5,CLE,Mason Graham,DT,Michigan
+1,6,LV,Ashton Jeanty,RB,Boise St.
+1,7,NYJ,Armand Membou,OL,Missouri
+1,8,CAR,Tetairoa McMillan,WR,Arizona
+1,9,NO,Kelvin Banks,OL,Texas
+1,10,CHI,Colston Loveland,TE,Michigan
+1,11,SF,Mykel Williams,DL,Georgia
+1,12,DAL,Tyler Booker,OL,Alabama
+1,13,MIA,Kenneth Grant,DT,Michigan
+1,14,IND,Tyler Warren,TE,Penn St.
+1,15,ATL,Jalon Walker,DE,Georgia
+1,16,ARI,Walter Nolen,DT,Mississippi
+1,17,CIN,Shemar Stewart,DE,Texas A&M
+1,18,SEA,Grey Zabel,OT,North Dakota St.
+1,19,TB,Emeka Egbuka,WR,Ohio St.
+1,20,DEN,Jahdae Barron,CB,Texas
+1,21,PIT,Derrick Harmon,DT,Oregon
+1,22,LAC,Omarion Hampton,RB,North Carolina
+1,23,GB,Matthew Golden,WR,Texas
+1,24,MIN,Donovan Jackson,OL,Ohio St.
+1,25,NYG,Jaxson Dart,QB,Mississippi
+1,26,ATL,James Pearce,DE,Tennessee
+1,27,BAL,Malaki Starks,SAF,Georgia
+1,28,DET,Tyleik Williams,DT,Ohio St.
+1,29,WAS,Josh Conerly,OL,Oregon
+1,30,BUF,Maxwell Hairston,CB,Kentucky
+1,31,PHI,Jihaad Campbell,LB,Alabama
+1,32,KC,Josh Simmons,OL,Ohio St.
+2,33,CLE,Carson Schwesinger,LB,UCLA
+2,34,HOU,Jayden Higgins,WR,Iowa St.
+2,35,SEA,Nick Emmanwori,SAF,South Carolina
+2,36,CLE,Quinshon Judkins,RB,Ohio St.
+2,37,MIA,Jonah Savaiinaea,OL,Arizona
+2,38,NE,TreVeyon Henderson,RB,Ohio St.
+2,39,CHI,Luther Burden,WR,Missouri
+2,40,NO,Tyler Shough,QB,Louisville
+2,41,BUF,T.J. Sanders,DT,South Carolina
+2,42,NYJ,Mason Taylor,TE,LSU
+2,43,SF,Alfred Collins,DT,Texas
+2,44,DAL,Donovan Ezeiruaku,DE,Boston Col.
+2,45,IND,JT Tuimoloau,DE,Ohio St.
+2,46,LAR,Terrance Ferguson,TE,Oregon
+2,47,ARI,Will Johnson,CB,Michigan
+2,48,HOU,Aireontae Ersery,OL,Minnesota
+2,49,CIN,Demetrius Knight,LB,South Carolina
+2,50,SEA,Elijah Arroyo,TE,Miami (FL)
+2,51,CAR,Nic Scourton,DE,Texas A&M
+2,52,TEN,Oluwafemi Oladejo,DE,UCLA
+2,53,TB,Benjamin Morrison,CB,Notre Dame
+2,54,GB,Anthony Belton,OT,North Carolina St.
+2,55,LAC,Tre Harris,WR,Mississippi
+2,56,CHI,Ozzy Trapilo,OL,Boston Col.
+2,57,DET,Tate Ratledge,OL,Georgia
+2,58,LV,Jack Bech,WR,TCU
+2,59,BAL,Mike Green,DE,Marshall
+2,60,DEN,RJ Harvey,RB,Central Florida
+2,61,WAS,Trey Amos,CB,Mississippi
+2,62,CHI,Shemar Turner,DE,Texas A&M
+2,63,KC,Omarr Norman-Lott,DT,Tennessee
+2,64,PHI,Andrew Mukuba,SAF,Texas
+3,65,NYG,Darius Alexander,DT,Toledo
+3,66,KC,Ashton Gillotte,DE,Louisville
+3,67,CLE,Harold Fannin,TE,Bowling Green
+3,68,LV,Darien Porter,CB,Iowa St.
+3,69,NE,Kyle Williams,WR,Washington St.
+3,70,DET,Isaac TeSlaa,WR,Arkansas
+3,71,NO,Vernon Broughton,DT,Texas
+3,72,BUF,Landon Jackson,DE,Arkansas
+3,73,NYJ,Azareye'h Thomas,CB,Florida St.
+3,74,DEN,Pat Bryant,WR,Illinois
+3,75,SF,Nick Martin,LB,Oklahoma St.
+3,76,DAL,Shavon Revel,CB,East Carolina
+3,77,CAR,Princely Umanmielen,DE,Mississippi
+3,78,ARI,Jordan Burch,DE,Oregon
+3,79,HOU,Jaylin Noel,WR,Iowa St.
+3,80,IND,Justin Walley,CB,Minnesota
+3,81,CIN,Dylan Fairchild,OL,Georgia
+3,82,TEN,Kevin Winston,SAF,Penn St.
+3,83,PIT,Kaleb Johnson,RB,Iowa
+3,84,TB,Jacob Parrish,CB,Kansas St.
+3,85,KC,Nohl Williams,CB,California
+3,86,LAC,Jamaree Caldwell,DT,Oregon
+3,87,GB,Savion Williams,WR,TCU
+3,88,JAX,Caleb Ransaw,SAF,Tulane
+3,89,JAX,Wyatt Milum,OL,West Virginia
+3,90,LAR,Josaiah Stewart,DE,Michigan
+3,91,BAL,Emery Jones,OL,LSU
+3,92,SEA,Jalen Milroe,QB,Alabama
+3,93,NO,Jonas Sanker,SAF,Virginia
+3,94,CLE,Dillon Gabriel,QB,Oregon
+3,95,NE,Jared Wilson,OL,Georgia
+3,96,ATL,Xavier Watts,SAF,Notre Dame
+3,97,HOU,Jaylin Smith,CB,USC
+3,98,LV,Caleb Rogers,OL,Texas Tech
+3,99,LV,Charles Grant,OL,William & Mary
+3,100,SF,Upton Stout,CB,Western Kentucky
+3,101,DEN,Sai'vion Jones,DE,LSU
+3,102,MIN,Tai Felton,WR,Maryland
+4,103,TEN,Chimere Dike,WR,Florida
+4,104,JAX,Bhayshul Tuten,RB,

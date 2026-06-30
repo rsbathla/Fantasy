@@ -1,0 +1,241 @@
+
+=== QB FLAG MODEL SUMMARY ===
+Total QBs:                  53
+With history (hist=True):   53
+Without history:            0
+Avg skill_flags/player:     4.62
+Players with 18 weeks:      53/53
+Total SMASH weeks:          13
+Total TOUGH weeks:          48
+QBs citing chart2 data:     36/53
+QBs citing env flag:        19/53
+QBs citing pace flag:       39/53
+QBs citing script flag:     37/53
+QBs with cspec skill flag:  24/53
+QBs w/ specialist week lit: 24/53
+Flag count distribution:    [(3, 23), (4, 9), (5, 5), (6, 4), (7, 6), (8, 5), (9, 1)]
+
+==============================================================
+SPOT CHECK: Josh Allen (BUF) -- Strong rusher + elite volume + chart2 deep/pressure + BUF env/pace/script
+==============================================================
+  base=26%  hist=True  n_games=8  boom_games=1
+  skill_flags (8):
+    [Strong dual-threat rushing floor+ceiling]
+      d:   2yr 6.7 rush/g, 34.7 rush yd/g, 0.81 rush TD/g over 32g (2024+2025) -- dual-threat floor raises boom threshold meaningfully every week; 2024 charting: 43 scrambles (FP)
+      amp: soft run-D (runp<=45), man coverage (scramble lanes), open-field matchups, negative script
+    [Elite downfield passing volume (high deep-throw rate)]
+      d:   2024 aDOT 8.6, 14.1% deep throws, CPOE -0.4 (FP charting), ceiling_pctl 83 -- top-tier downfield intent; ceiling erupts vs soft coverage / clean pocket
+      amp: clean pocket (sackp<=35), soft QB tier, dome, soft covp (deep shots complete), weak deep-D (covp<=30)
+    [Elite pass volume / usage value]
+      d:   2yr 7.36 YPA, 1.66 pass TD/g, 31.4 att/g over 32g (value_pctl 99, adv_pctl 99) -- maximum passing volume; pass-funnels and negative scripts supercharge DK output
+      amp: pass-funnel D (runp>=60 + covp<=50), underdog role, soft QB tier, high-pace game
+    [Elite O-line / clean pocket]
+      d:   oline_pctl 93 -- elite run-blocking + pass-pro; neutralizes top pass rushers, extends plays, expands downfield options
+      amp: vs heavy pass rush (sackp>=68): protection edge is LARGEST when opponent's edge rushers are elite
+    [Elite matchup exploitation]
+      d:   matchup_pctl 86 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules
+      amp: soft QB tier (tiers[QB]==SOFT), pass-funnel, dome + soft coverage
+    [SIS above-average efficiency]
+      d:   sis_value_pctl 84 -- above-average SIS score; lifts ceiling in zone-heavy / soft-coverage weeks
+      amp: zone coverage (manp<=40), soft pass tier
+    [Coverage specialist]
+      d:   crushes Cover-4 & Cover-6 (1.65x league FP/DB, 99th pctl over 0 dropbacks) -- lg avg c4=0.4; his scheme-specific efficiency is a clean matchup signal vs Cover-4 & Cover-6-heavy defenses
+      amp: vs defenses that run Cover-4 & Cover-6 heavily (opp c4 >= lg 0.4+3)
+    [High-scoring offense environment]
+      d:   env_idx 78 (top-tier scoring environment) -- pace_pctl 52, win_total 10.5; offense generates ceiling weekly; shootout matchups supercharge QB upside
+      amp: opp covp<=35 (shootout setup), fast-paced opponent game, underdog script
+  line: Josh Allen: strong dual-threat rushing (2yr 6.7 rush/g, 34.7 yd/g over 32g) raises floor AND ceiling every week; elite passing ceiling (pctl 83) erupts vs soft coverage / clean pocket; elite pass volume (value_pctl 99) -- pass-funnels turbocharge DK output; elite O-line (pctl 93) neutralizes top pass rushers.
+  empirical: 1/8 ceiling games (>=26.0 DK pts). 1 at home; 1 vs soft pass-D (opp_passp<=35).
+  Week breakdown: SMASH=1 GOOD=11 NEU=5 TOUGH=0
+  BEST SMASH: wk15 vs CHI home=True dome=False  p=37%  lit=5/13
+    flags: ['rushing upside strong (2yr rush_pg 6.7)', 'deep/explosive passing (2024 aDOT 8.6, deep 14.1%)', 'elite pass volume (value_pctl 99)', 'matchup exploitation (matchup_pctl 86)', 'SIS efficiency (sis_value_pctl 84)']
+  WORST WEEK (no TOUGH): wk1 vs HOU p=26% lab=NEU lit=4/13
+    flags: ['elite O-line protection (oline_pctl 93)', 'faces Cover-4 & Cover-6-heavy D (opp 22.3% vs lg 16.4%) — his best scheme', 'dome environment (elements removed)', 'tough QB tier suppressor']
+  ENV/PACE/SCRIPT flags lit across all weeks:
+    wk2 vs DET  p=32%: ['env shootout (own env_idx 78, opp covp<=35)']
+    wk10 vs NYJ  p=35%: ['env shootout (own env_idx 78, opp covp<=35)']
+    wk11 vs MIA  p=30%: ['env shootout (own env_idx 78, opp covp<=35)']
+    wk12 vs KC  p=30%: ['env shootout (own env_idx 78, opp covp<=35)']
+    wk17 vs MIA  p=30%: ['env shootout (own env_idx 78, opp covp<=35)']
+    wk18 vs NYJ  p=35%: ['env shootout (own env_idx 78, opp covp<=35)']
+  COVERAGE SPECIALIST skill flag:
+    crushes Cover-4 & Cover-6 (1.65x league FP/DB, 99th pctl over 0 dropbacks) -- lg avg c4=0.4; his scheme-specific efficiency is a clean matchup signal vs Cover-4 & Cover-6-heavy defenses
+    amp: vs defenses that run Cover-4 & Cover-6 heavily (opp c4 >= lg 0.4+3)
+  Coverage-specialist week activations:
+    wk1 vs HOU  p=26%  lab=NEU: ['faces Cover-4 & Cover-6-heavy D (opp 22.3% vs lg 16.4%) — his best scheme']
+    wk3 vs LAC  p=28%  lab=NEU: ['faces Cover-4 & Cover-6-heavy D (opp 23.9% vs lg 16.4%) — his best scheme']
+
+==============================================================
+SPOT CHECK: Joe Burrow (CIN) -- Cover-4 specialist (z=2.02) + pocket QB: CIN high env + chart2 pressure
+==============================================================
+  base=28%  hist=True  n_games=6  boom_games=1
+  skill_flags (7):
+    [Elite pass volume / usage value]
+      d:   2yr 6.86 YPA, 2.40 pass TD/g, 39.2 att/g over 25g (value_pctl 95, adv_pctl 83) -- maximum passing volume; pass-funnels and negative scripts supercharge DK output
+      amp: pass-funnel D (runp>=60 + covp<=50), underdog role, soft QB tier, high-pace game
+    [Weak OL -- compensated by elite QB self-protection]
+      d:   oline_pctl 16 (weak unit) but protection_pctl 71 -- QB's quick release and decision-making partially offset the bad line
+      amp: worst: sackp>=78 + covp>=65 -- dual suppressor; best: low sackp, QB dumps off quickly behind this line
+    [Clean-pocket opportunity (weak rush removes OL ceiling penalty)]
+      d:   oline_pctl 16 but protection_pctl 71 -- when opponent sack rate is low (sackp<=30), QB's quick release fully compensates for the bad OL; this is the boom-unlocking condition
+      amp: weak pass rush (sackp<=30) -- bad OL irrelevant when no pressure
+    [Above-average matchup exploitation]
+      d:   matchup_pctl 63 -- solid history of lifting performance in favorable defensive matchups
+      amp: soft QB tier, pass-funnel matchup
+    [Elite boom-game frequency (boom_pctl)]
+      d:   boom_pctl 90 -- elite boom-game composite; TD clustering and big-play rate drive frequent ceiling games
+      amp: positive script (near goal-line), soft QB tier, high game-pace / shootout
+    [Coverage specialist]
+      d:   crushes Cover-4 (1.59x league FP/DB, 96th pctl over 0 dropbacks) -- lg avg c4=0.4; his scheme-specific efficiency is a clean matchup signal vs Cover-4-heavy defenses
+      amp: vs defenses that run Cover-4 heavily (opp c4 >= lg 0.4+3)
+    [High-scoring offense environment]
+      d:   env_idx 90 (top-tier scoring environment) -- pace_pctl 71, win_total 9.5; offense generates ceiling weekly; shootout matchups supercharge QB upside
+      amp: opp covp<=35 (shootout setup), fast-paced opponent game, underdog script
+  line: Joe Burrow: elite pass volume (value_pctl 95) -- pass-funnels turbocharge DK output; fragile line (oline 16) offset by elite self-protection (protection_pctl 71); TD-clustering boom type (boom_pctl 90) -- scores come in bunches.
+  empirical: 1/6 ceiling games (>=26.0 DK pts). 1 vs soft pass-D (opp_passp<=35).
+  Week breakdown: SMASH=0 GOOD=4 NEU=12 TOUGH=1
+  BEST WEEK (no SMASH): wk1 vs TB p=37% lab=GOOD lit=5/15
+    flags: ['elite pass volume (value_pctl 95)', 'clean pocket opportunity (sackp<=30, protection 71)', 'matchup exploitation (matchup_pctl 63)', 'boom-game frequency (boom_pctl 90)', 'pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks']
+  WORST TOUGH: wk2 vs HOU home=False dome=True  p=24%  lit=6/15
+    flags: ['weak OL / heavy rush dual-suppressor (oline 16)', 'faces Cover-4-heavy D (opp 22.3% vs lg 16.4%) — his best scheme', 'dome environment (elements removed)', 'pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks', 'tough QB tier suppressor', 'heavy rush suppressor (pocket, oline_pctl 16)']
+  ENV/PACE/SCRIPT flags lit across all weeks:
+    wk1 vs TB  p=37%: ['pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks']
+    wk2 vs HOU  p=24%: ['pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks']
+    wk5 vs MIA  p=29%: ['env shootout (own env_idx 90, opp covp<=35)', 'script big-favorite suppressor (pocket QB, own wt 9.5, d>=2.5) -- fewer dropbacks']
+    wk8 vs TEN  p=37%: ['env shootout (own env_idx 90, opp covp<=35)', 'script big-favorite suppressor (pocket QB, own wt 9.5, d>=2.5) -- fewer dropbacks']
+    wk9 vs ATL  p=29%: ['pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks', 'script big-favorite suppressor (pocket QB, own wt 9.5, d>=2.5) -- fewer dropbacks']
+    wk11 vs WAS  p=32%: ['env shootout (own env_idx 90, opp covp<=35)']
+    wk12 vs NO  p=27%: ['env shootout (own env_idx 90, opp covp<=35)']
+    wk13 vs CLE  p=26%: ['env shootout (own env_idx 90, opp covp<=35)', 'pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks', 'script big-favorite suppressor (pocket QB, own wt 9.5, d>=2.5) -- fewer dropbacks']
+    wk14 vs KC  p=27%: ['env shootout (own env_idx 90, opp covp<=35)', 'pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks']
+    wk15 vs CAR  p=26%: ['script big-favorite suppressor (pocket QB, own wt 9.5, d>=2.5) -- fewer dropbacks']
+    wk16 vs IND  p=31%: ['env shootout (own env_idx 90, opp covp<=35)']
+    wk18 vs CLE  p=26%: ['env shootout (own env_idx 90, opp covp<=35)', 'pace fast-game (own pace_pctl 71, opp pace>=50) -- more dropbacks', 'script big-favorite suppressor (pocket QB, own wt 9.5, d>=2.5) -- fewer dropbacks']
+  COVERAGE SPECIALIST skill flag:
+    crushes Cover-4 (1.59x league FP/DB, 96th pctl over 0 dropbacks) -- lg avg c4=0.4; his scheme-specific efficiency is a clean matchup signal vs Cover-4-heavy defenses
+    amp: vs defenses that run Cover-4 heavily (opp c4 >= lg 0.4+3)
+  Coverage-specialist week activations:
+    wk2 vs HOU  p=24%  lab=TOUGH: ['faces Cover-4-heavy D (opp 22.3% vs lg 16.4%) — his best scheme']
+    wk8 vs TEN  p=37%  lab=GOOD: ['faces Cover-4-heavy D (opp 23.5% vs lg 16.4%) — his best scheme']
+    wk9 vs ATL  p=29%  lab=NEU: ['faces Cover-4-heavy D (opp 27.3% vs lg 16.4%) — his best scheme']
+    wk11 vs WAS  p=32%  lab=NEU: ['faces Cover-4-heavy D (opp 22.2% vs lg 16.4%) — his best scheme']
+
+==============================================================
+SPOT CHECK: Jayden Daniels (WAS) -- Elite rusher + WAS low env + pace/script + NO favorite-suppressor penalty
+==============================================================
+  base=25%  hist=True  n_games=1  boom_games=0
+  skill_flags (4):
+    [Elite designed-run / rushing ceiling]
+      d:   2yr 8.9 rush/g, 48.7 rush yd/g, 0.35 rush TD/g over 23g (2024+2025) -- rushes add 8-14 pts ceiling; designed runs + scrambles dominate boom games; 2024 charting: 72 scrambles (FP)
+      amp: soft run-box (runp<=45), man coverage (scramble lanes open), red-zone carry opportunities, negative game script
+    [Above-average passing ceiling]
+      d:   ceiling_pctl 69, boom_pctl 45 -- solid ceiling that erupts on soft tiers or clean pockets
+      amp: clean pocket (sackp<=40), soft QB tier, pass-funnel matchup
+    [Strong pass volume / passing value]
+      d:   2yr 6.56 YPA, 1.43 pass TD/g, 32.0 att/g over 23g (value_pctl 89) -- high-volume passer; benefits from pass-funnel matchups
+      amp: pass-funnel D (runp>=60 + covp<=50), underdog role forcing throws
+    [Quick-release pressure resistance (low TTT)]
+      d:   2024 press_pct 29.5%, TTT 2.36s (FP charting) -- quick-release style makes him relatively pressure-resistant; boom ceiling is less pass-rush sensitive than average
+      amp: heavy rush (sackp>=70) hurts less than average; clean pocket still a small positive
+  line: Jayden Daniels: elite rushing (2yr 8.9 rush/g, 48.7 yd/g, 0.35 TD/g over 23g) is the #1 ceiling driver -- designed runs + scrambles add 8-14 pts on soft box/man; above-average passing ceiling (pctl 69) spikes on soft QB tiers; strong volume profile (value_pctl 89) amplified by pass-funnel matchups.
+  empirical: 0 ceiling games (>=26.0 DK pts) in 1 active weeks tracked; small sample or injury-interrupted season.
+  Week breakdown: SMASH=0 GOOD=13 NEU=4 TOUGH=0
+  BEST WEEK (no SMASH): wk2 vs DAL p=32% lab=GOOD lit=3/10
+    flags: ['rushing upside elite (2yr rush_pg 8.9)', 'passing ceiling (ceiling_pctl 69)', 'dome environment (elements removed)']
+  WORST WEEK (no TOUGH): wk14 vs HOU p=22% lab=NEU lit=2/10
+    flags: ['quick-release pressure resistance (2024 TTT 2.36s, press 29.5%)', 'tough QB tier suppressor']
+  ENV/PACE/SCRIPT flags lit across all weeks:
+    wk9 vs LAR  p=26%: ['script underdog (own wt 8.5 vs opp, d<=-2.5) -- pass volume/garbage-time QB ceiling']
+  [no coverage specialist flag for this QB]
+
+==============================================================
+SPOT CHECK: Sam Darnold (SEA) -- Cover-3 specialist (z=1.97): skill flag + week-activation audit
+==============================================================
+  base=12%  hist=True  n_games=7  boom_games=0
+  skill_flags (7):
+    [Downfield passing + above-average accuracy]
+      d:   2024 aDOT 8.9, 12.3% deep throws, CPOE +5.9 (FP charting), ceiling_pctl 55 -- solid aDOT with positive CPOE; finds boom vs clean pocket + soft tier
+      amp: clean pocket (sackp<=35), soft QB tier, dome, soft covp (deep shots complete), weak deep-D (covp<=30)
+    [Elite outlier-game / spike frequency]
+      d:   spike_pctl 89 -- top-tier overdispersed scorer; ceiling games cluster in dome + home environments
+      amp: dome game, home crowd + negative script, soft QB tier
+    [Average OL + elite QB protection quality]
+      d:   oline_pctl 69, protection_pctl 82 -- line is average but QB's quick-release / decision speed compensates
+      amp: vs moderate rush (sackp 50-70); QB neutralizes it with fast reads
+    [Pressure-sensitive pocket passer (high TTT + high press%)]
+      d:   2024 press_pct 34.8%, TTT 2.86s (FP charting) -- faces above-avg pressure AND holds ball long; clean pocket is the UNLOCK; heavy rush is ceiling killer
+      amp: clean pocket (sackp<=30) = big ceiling unlock; heavy rush (sackp>=70) suppresses hard; dome/fast field helps
+    [SIS above-average efficiency]
+      d:   sis_value_pctl 80 -- above-average SIS score; lifts ceiling in zone-heavy / soft-coverage weeks
+      amp: zone coverage (manp<=40), soft pass tier
+    [Coverage specialist]
+      d:   crushes Cover-3 (1.49x league FP/DB, 97th pctl over 0 dropbacks) -- lg avg c3=0.4; his scheme-specific efficiency is a clean matchup signal vs Cover-3-heavy defenses
+      amp: vs defenses that run Cover-3 heavily (opp c3 >= lg 0.4+3)
+    [High-scoring offense environment]
+      d:   env_idx 76 (top-tier scoring environment) -- pace_pctl 26, win_total 10.5; offense generates ceiling weekly; shootout matchups supercharge QB upside
+      amp: opp covp<=35 (shootout setup), fast-paced opponent game, underdog script
+  line: Sam Darnold: elite outlier-game frequency (spike_pctl 89) -- dome + home flip ceiling games on; TD-clustering boom type (boom_pctl 88) -- scores come in bunches.
+  empirical: 0 ceiling games (>=26.0 DK pts) in 7 active weeks tracked; small sample or injury-interrupted season.
+  Week breakdown: SMASH=0 GOOD=9 NEU=7 TOUGH=1
+  BEST WEEK (no SMASH): wk2 vs ARI p=17% lab=GOOD lit=8/18
+    flags: ['deep/explosive passing (2024 aDOT 8.9, deep 12.3%)', 'spike / outlier-game (spike_pctl 89)', 'QB protection quality (protection_pctl 82)', 'pressure-sensitive pocket (2024 press 34.8%, TTT 2.86s) -- clean pocket boost', 'SIS efficiency (sis_value_pctl 80)', 'dome environment (elements removed)', 'env shootout (own env_idx 76, opp covp<=35)', 'script big-favorite suppressor (pocket QB, own wt 10.5, d>=2.5) -- fewer dropbacks']
+  WORST TOUGH: wk4 vs LAC home=True dome=False  p=9%  lit=4/18
+    flags: ['spike / outlier-game (spike_pctl 89)', 'pressure-sensitive pocket (2024 press 34.8%, TTT 2.86s) -- heavy rush suppressor', 'tough QB tier suppressor', 'heavy rush suppressor (pocket, oline_pctl 69)']
+  ENV/PACE/SCRIPT flags lit across all weeks:
+    wk1 vs NE  p=14%: ['pace slow-game suppressor (both pace_pctls<=35)']
+    wk2 vs ARI  p=17%: ['env shootout (own env_idx 76, opp covp<=35)', 'script big-favorite suppressor (pocket QB, own wt 10.5, d>=2.5) -- fewer dropbacks']
+    wk3 vs WAS  p=12%: ['env shootout (own env_idx 76, opp covp<=35)']
+    wk7 vs KC  p=13%: ['env shootout (own env_idx 76, opp covp<=35)']
+    wk9 vs ARI  p=16%: ['env shootout (own env_idx 76, opp covp<=35)', 'script big-favorite suppressor (pocket QB, own wt 10.5, d>=2.5) -- fewer dropbacks']
+    wk10 vs LV  p=13%: ['pace slow-game suppressor (both pace_pctls<=35)', 'script big-favorite suppressor (pocket QB, own wt 10.5, d>=2.5) -- fewer dropbacks']
+    wk14 vs NYG  p=16%: ['env shootout (own env_idx 76, opp covp<=35)', 'script big-favorite suppressor (pocket QB, own wt 10.5, d>=2.5) -- fewer dropbacks']
+    wk17 vs CAR  p=13%: ['pace slow-game suppressor (both pace_pctls<=35)', 'script big-favorite suppressor (pocket QB, own wt 10.5, d>=2.5) -- fewer dropbacks']
+  COVERAGE SPECIALIST skill flag:
+    crushes Cover-3 (1.49x league FP/DB, 97th pctl over 0 dropbacks) -- lg avg c3=0.4; his scheme-specific efficiency is a clean matchup signal vs Cover-3-heavy defenses
+    amp: vs defenses that run Cover-3 heavily (opp c3 >= lg 0.4+3)
+  Coverage-specialist week activations:
+    wk5 vs SF  p=14%  lab=GOOD: ['faces Cover-3-heavy D (opp 40.2% vs lg 32.8%) — his best scheme']
+    wk10 vs LV  p=13%  lab=NEU: ['faces Cover-3-heavy D (opp 45.6% vs lg 32.8%) — his best scheme']
+    wk12 vs SF  p=13%  lab=GOOD: ['faces Cover-3-heavy D (opp 40.2% vs lg 32.8%) — his best scheme']
+    wk13 vs DAL  p=17%  lab=GOOD: ['faces Cover-3-heavy D (opp 36.3% vs lg 32.8%) — his best scheme']
+    wk17 vs CAR  p=13%  lab=NEU: ['faces Cover-3-heavy D (opp 42.5% vs lg 32.8%) — his best scheme']
+
+==============================================================
+DIFFERENTIATION CHECK (proves player-by-player, not templated):
+
+  Josh Allen (BUF)  base=26%  flags=8  conditions=13
+    - Strong dual-threat rushing floor+ceiling
+    - Elite downfield passing volume (high deep-throw rate)
+    - Elite pass volume / usage value
+    - Elite O-line / clean pocket
+    - Elite matchup exploitation
+    - SIS above-average efficiency
+    - Coverage specialist
+    - High-scoring offense environment
+
+  Joe Burrow (CIN)  base=28%  flags=7  conditions=15
+    - Elite pass volume / usage value
+    - Weak OL -- compensated by elite QB self-protection
+    - Clean-pocket opportunity (weak rush removes OL ceiling penalty)
+    - Above-average matchup exploitation
+    - Elite boom-game frequency (boom_pctl)
+    - Coverage specialist
+    - High-scoring offense environment
+
+  Jayden Daniels (WAS)  base=25%  flags=4  conditions=10
+    - Elite designed-run / rushing ceiling
+    - Above-average passing ceiling
+    - Strong pass volume / passing value
+    - Quick-release pressure resistance (low TTT)
+
+  Sam Darnold (SEA)  base=12%  flags=7  conditions=18
+    - Downfield passing + above-average accuracy
+    - Elite outlier-game / spike frequency
+    - Average OL + elite QB protection quality
+    - Pressure-sensitive pocket passer (high TTT + high press%)
+    - SIS above-average efficiency
+    - Coverage specialist
+    - High-scoring offense environment
+wrote flags_QB.json: 53 players, 318 KB (atomic rename)
+flags_QB.json reloaded: 53 keys -- valid JSON confirmed.
+Done.

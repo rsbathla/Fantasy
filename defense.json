@@ -1,0 +1,4756 @@
+{
+  "meta": {
+    "n_teams": 32,
+    "method": "team unit strength = SNAP-WEIGHTED MEAN of PAA-per-play over the projected 2026 roster (movers carry rate+snaps to 2026 team; rookies via draft-round prior calibrated to 2025 class + DB college blend). Replaces the raw Points-Saved SUM. 32-team Hazen percentiles.",
+    "rookie_curves": {
+      "coverage": {
+        "1": {
+          "snaps": 477,
+          "rate": -0.0005,
+          "n_obs": 6
+        },
+        "2": {
+          "snaps": 394,
+          "rate": -0.0005,
+          "n_obs": 13
+        },
+        "3": {
+          "snaps": 363,
+          "rate": -0.0005,
+          "n_obs": 10
+        },
+        "4": {
+          "snaps": 363,
+          "rate": -0.0005,
+          "n_obs": 1
+        },
+        "5": {
+          "snaps": 363,
+          "rate": -0.0005,
+          "n_obs": 4
+        }
+      },
+      "pass_rush": {
+        "1": {
+          "snaps": 366,
+          "rate": 0.0,
+          "n_obs": 9
+        },
+        "2": {
+          "snaps": 347,
+          "rate": 0.0,
+          "n_obs": 10
+        },
+        "3": {
+          "snaps": 305,
+          "rate": 0.0,
+          "n_obs": 3
+        },
+        "4": {
+          "snaps": 305,
+          "rate": 0.0,
+          "n_obs": 0
+        },
+        "5": {
+          "snaps": 290,
+          "rate": 0.0,
+          "n_obs": 1
+        }
+      },
+      "run_def": {
+        "1": {
+          "snaps": 302,
+          "rate": 0.0033,
+          "n_obs": 5
+        },
+        "2": {
+          "snaps": 301,
+          "rate": 0.0033,
+          "n_obs": 9
+        },
+        "3": {
+          "snaps": 280,
+          "rate": 0.0033,
+          "n_obs": 7
+        },
+        "4": {
+          "snaps": 280,
+          "rate": 0.0033,
+          "n_obs": 2
+        },
+        "5": {
+          "snaps": 280,
+          "rate": 0.0033,
+          "n_obs": 2
+        }
+      }
+    },
+    "limitations": [
+      "SIS = top-200 leaderboard, 2025 only; rookie n=9-14/unit -> round curves are shrunk priors",
+      "2024 NFL Value (2nd rookie class) needs a SIS pull",
+      "2026 draft truncated at rd5"
+    ],
+    "fields": {
+      "*_pctl": "canonical 2026 rate+rookie percentile (higher=tougher)",
+      "*_pctl_2025": "2025 no-moves rate baseline",
+      "*_rate_2026": "snap-weighted mean PAA/play",
+      "rookies_2026": "folded-in rookies (name,pos,round,proj_rate)"
+    }
+  },
+  "teams": {
+    "ARI": {
+      "team": "ARI",
+      "pass_cov_pctl": 1.6,
+      "pass_cov_pctl_2025": 1.6,
+      "pass_cov_rate_2026": -0.0135,
+      "pass_rush_pctl": 92.2,
+      "pass_rush_pctl_2025": 92.2,
+      "pass_rush_rate_2026": 0.0001,
+      "run_def_pctl": 10.9,
+      "run_def_pctl_2025": 7.8,
+      "run_def_rate_2026": -0.0032,
+      "pass_cov_epatgt": 0.3136,
+      "pass_cov_strength": -0.0135,
+      "pass_rush_strength": 0.0001,
+      "run_def_strength": -0.0032,
+      "rookies_2026": [
+        [
+          "Kaleb Proctor",
+          "DT",
+          "pass_rush",
+          "R4",
+          0.0
+        ],
+        [
+          "Kaleb Proctor",
+          "DT",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Andrew Wingard",
+          "pos": "S",
+          "ps": 2.0,
+          "rate": 0.0036,
+          "snaps": 566
+        },
+        {
+          "name": "Will Johnson",
+          "pos": "CB",
+          "ps": -0.6,
+          "rate": -0.0014,
+          "snaps": 424
+        },
+        {
+          "name": "Budda Baker",
+          "pos": "S",
+          "ps": -3.6,
+          "rate": -0.0067,
+          "snaps": 545
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Josh Sweat",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 353
+        },
+        {
+          "name": "Zaven Collins",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 322
+        },
+        {
+          "name": "Baron Browning",
+          "pos": "LB",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 295
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Andrew Wingard",
+          "pos": "S",
+          "ps": 5.3,
+          "rate": 0.0183,
+          "snaps": 293
+        },
+        {
+          "name": "Dadrion Taylor-Demerson",
+          "pos": "S",
+          "ps": 4.4,
+          "rate": 0.0303,
+          "snaps": 144
+        },
+        {
+          "name": "Kaleb Proctor",
+          "pos": "DT",
+          "ps": 0.9,
+          "rate": 0.0033,
+          "snaps": 280
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Andrew Wingard",
+          "unit": "coverage",
+          "from": "JAX",
+          "to": "ARI",
+          "ps": 2.0,
+          "conf": true
+        },
+        {
+          "player": "Andrew Wingard",
+          "unit": "run_def",
+          "from": "JAX",
+          "to": "ARI",
+          "ps": 5.3,
+          "conf": true
+        }
+      ]
+    },
+    "ATL": {
+      "team": "ATL",
+      "pass_cov_pctl": 79.7,
+      "pass_cov_pctl_2025": 89.1,
+      "pass_cov_rate_2026": 0.0107,
+      "pass_rush_pctl": 4.7,
+      "pass_rush_pctl_2025": 7.8,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 48.4,
+      "run_def_pctl_2025": 26.6,
+      "run_def_rate_2026": 0.0025,
+      "pass_cov_epatgt": 0.1764,
+      "pass_cov_strength": 0.0107,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0025,
+      "rookies_2026": [
+        [
+          "Avieon Terrell",
+          "CB",
+          "coverage",
+          "R2",
+          -0.0003
+        ],
+        [
+          "Kendal Daniels",
+          "LB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Avieon Terrell",
+          "CB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Kendal Daniels",
+          "LB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Jessie Bates III",
+          "pos": "S",
+          "ps": 9.6,
+          "rate": 0.0156,
+          "snaps": 611
+        },
+        {
+          "name": "A.J. Terrell",
+          "pos": "CB",
+          "ps": 7.5,
+          "rate": 0.0137,
+          "snaps": 547
+        },
+        {
+          "name": "Xavier Watts",
+          "pos": "S",
+          "ps": 7.4,
+          "rate": 0.012,
+          "snaps": 619
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "James Pearce Jr.",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 365
+        },
+        {
+          "name": "Jalon Walker",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 309
+        },
+        {
+          "name": "Leonard Floyd",
+          "pos": "LB",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 293
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "A.J. Terrell",
+          "pos": "CB",
+          "ps": 6.4,
+          "rate": 0.0174,
+          "snaps": 368
+        },
+        {
+          "name": "Xavier Watts",
+          "pos": "S",
+          "ps": 1.1,
+          "rate": 0.0025,
+          "snaps": 420
+        },
+        {
+          "name": "Jessie Bates III",
+          "pos": "S",
+          "ps": 0.9,
+          "rate": 0.0023,
+          "snaps": 417
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Cameron Thomas",
+          "unit": "pass_rush",
+          "from": "CLE",
+          "to": "ATL",
+          "ps": -0.0,
+          "conf": true
+        }
+      ]
+    },
+    "BAL": {
+      "team": "BAL",
+      "pass_cov_pctl": 39.1,
+      "pass_cov_pctl_2025": 45.3,
+      "pass_cov_rate_2026": -0.0034,
+      "pass_rush_pctl": 26.6,
+      "pass_rush_pctl_2025": 4.7,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 73.4,
+      "run_def_pctl_2025": 60.9,
+      "run_def_rate_2026": 0.0071,
+      "pass_cov_epatgt": 0.1859,
+      "pass_cov_strength": -0.0034,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0071,
+      "rookies_2026": [
+        [
+          "Zion Young",
+          "DE",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Zion Young",
+          "DE",
+          "run_def",
+          "R2",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Chidobe Awuzie",
+          "pos": "CB",
+          "ps": 7.7,
+          "rate": 0.02,
+          "snaps": 382
+        },
+        {
+          "name": "Kyle Hamilton",
+          "pos": "S",
+          "ps": 4.6,
+          "rate": 0.0082,
+          "snaps": 559
+        },
+        {
+          "name": "Roquan Smith",
+          "pos": "LB",
+          "ps": -1.4,
+          "rate": -0.0028,
+          "snaps": 521
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Trey Hendrickson",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0002,
+          "snaps": 182
+        },
+        {
+          "name": "Calais Campbell",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 320
+        },
+        {
+          "name": "Zion Young",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 347
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Kyle Hamilton",
+          "pos": "S",
+          "ps": 6.2,
+          "rate": 0.0184,
+          "snaps": 339
+        },
+        {
+          "name": "Roquan Smith",
+          "pos": "LB",
+          "ps": 5.8,
+          "rate": 0.0184,
+          "snaps": 315
+        },
+        {
+          "name": "Jaylinn Hawkins",
+          "pos": "S",
+          "ps": 3.9,
+          "rate": 0.0121,
+          "snaps": 319
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Chidobe Awuzie",
+          "unit": "coverage",
+          "from": "BAL",
+          "to": "BAL",
+          "ps": 7.7,
+          "conf": false
+        },
+        {
+          "player": "Calais Campbell",
+          "unit": "pass_rush",
+          "from": "ARI",
+          "to": "BAL",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Trey Hendrickson",
+          "unit": "pass_rush",
+          "from": "CIN",
+          "to": "BAL",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Jaylinn Hawkins",
+          "unit": "run_def",
+          "from": "NE",
+          "to": "BAL",
+          "ps": 3.9,
+          "conf": true
+        }
+      ]
+    },
+    "BUF": {
+      "team": "BUF",
+      "pass_cov_pctl": 82.8,
+      "pass_cov_pctl_2025": 70.3,
+      "pass_cov_rate_2026": 0.0113,
+      "pass_rush_pctl": 54.7,
+      "pass_rush_pctl_2025": 73.4,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 35.9,
+      "run_def_pctl_2025": 32.8,
+      "run_def_rate_2026": 0.0017,
+      "pass_cov_epatgt": 0.0924,
+      "pass_cov_strength": 0.0113,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0017,
+      "rookies_2026": [
+        [
+          "Davison Igbinosun",
+          "CB",
+          "coverage",
+          "R2",
+          0.0029
+        ],
+        [
+          "Kaleb Elarms-Orr",
+          "LB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "T.J. Parker",
+          "DE",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "T.J. Parker",
+          "DE",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Davison Igbinosun",
+          "CB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Kaleb Elarms-Orr",
+          "LB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Dee Alford",
+          "pos": "CB",
+          "ps": 17.8,
+          "rate": 0.051,
+          "snaps": 348
+        },
+        {
+          "name": "Cole Bishop",
+          "pos": "S",
+          "ps": 13.2,
+          "rate": 0.0287,
+          "snaps": 461
+        },
+        {
+          "name": "Christian Benford",
+          "pos": "CB",
+          "ps": 10.6,
+          "rate": 0.0248,
+          "snaps": 427
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Bradley Chubb",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 428
+        },
+        {
+          "name": "Greg Rousseau",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 372
+        },
+        {
+          "name": "Deone Walker",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 215
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordan Poyer",
+          "pos": "S",
+          "ps": 8.1,
+          "rate": 0.0366,
+          "snaps": 222
+        },
+        {
+          "name": "Geno Stone",
+          "pos": "S",
+          "ps": 1.6,
+          "rate": 0.004,
+          "snaps": 404
+        },
+        {
+          "name": "Cole Bishop",
+          "pos": "S",
+          "ps": 1.0,
+          "rate": 0.0027,
+          "snaps": 387
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Dee Alford",
+          "unit": "coverage",
+          "from": "ATL",
+          "to": "BUF",
+          "ps": 17.8,
+          "conf": true
+        },
+        {
+          "player": "C.J. Gardner-Johnson",
+          "unit": "coverage",
+          "from": "2T",
+          "to": "BUF",
+          "ps": 5.2,
+          "conf": true
+        },
+        {
+          "player": "Geno Stone",
+          "unit": "coverage",
+          "from": "CIN",
+          "to": "BUF",
+          "ps": -12.2,
+          "conf": true
+        },
+        {
+          "player": "Bradley Chubb",
+          "unit": "pass_rush",
+          "from": "MIA",
+          "to": "BUF",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Geno Stone",
+          "unit": "run_def",
+          "from": "CIN",
+          "to": "BUF",
+          "ps": 1.6,
+          "conf": true
+        },
+        {
+          "player": "C.J. Gardner-Johnson",
+          "unit": "run_def",
+          "from": "2T",
+          "to": "BUF",
+          "ps": -2.7,
+          "conf": true
+        },
+        {
+          "player": "Dee Alford",
+          "unit": "run_def",
+          "from": "ATL",
+          "to": "BUF",
+          "ps": 0.3,
+          "conf": true
+        }
+      ]
+    },
+    "CAR": {
+      "team": "CAR",
+      "pass_cov_pctl": 76.6,
+      "pass_cov_pctl_2025": 76.6,
+      "pass_cov_rate_2026": 0.0102,
+      "pass_rush_pctl": 1.6,
+      "pass_rush_pctl_2025": 1.6,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 7.8,
+      "run_def_pctl_2025": 1.6,
+      "run_def_rate_2026": -0.0038,
+      "pass_cov_epatgt": -0.0191,
+      "pass_cov_strength": 0.0102,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": -0.0038,
+      "rookies_2026": [
+        [
+          "Will Lee III",
+          "CB",
+          "coverage",
+          "R4",
+          -0.0012
+        ],
+        [
+          "Lee Hunter",
+          "DT",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Lee Hunter",
+          "DT",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Will Lee III",
+          "CB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Mike Jackson Sr.",
+          "pos": "CB",
+          "ps": 16.2,
+          "rate": 0.0291,
+          "snaps": 557
+        },
+        {
+          "name": "Jaycee Horn",
+          "pos": "CB",
+          "ps": 7.8,
+          "rate": 0.0152,
+          "snaps": 513
+        },
+        {
+          "name": "Tre'von Moehrig",
+          "pos": "S",
+          "ps": 4.4,
+          "rate": 0.0091,
+          "snaps": 485
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jaelan Phillips",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 459
+        },
+        {
+          "name": "Derrick Brown",
+          "pos": "DT",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 430
+        },
+        {
+          "name": "Lee Hunter",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 173
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Derrick Brown",
+          "pos": "DT",
+          "ps": 8.6,
+          "rate": 0.0249,
+          "snaps": 346
+        },
+        {
+          "name": "Jaelan Phillips",
+          "pos": "LB",
+          "ps": 4.4,
+          "rate": 0.0134,
+          "snaps": 328
+        },
+        {
+          "name": "Nick Scott",
+          "pos": "S",
+          "ps": 1.4,
+          "rate": 0.0031,
+          "snaps": 435
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jaelan Phillips",
+          "unit": "pass_rush",
+          "from": "2T",
+          "to": "CAR",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Devin Lloyd",
+          "unit": "pass_rush",
+          "from": "JAX",
+          "to": "CAR",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Jaelan Phillips",
+          "unit": "run_def",
+          "from": "2T",
+          "to": "CAR",
+          "ps": 4.4,
+          "conf": true
+        },
+        {
+          "player": "Devin Lloyd",
+          "unit": "run_def",
+          "from": "JAX",
+          "to": "CAR",
+          "ps": -5.7,
+          "conf": true
+        }
+      ]
+    },
+    "CHI": {
+      "team": "CHI",
+      "pass_cov_pctl": 64.1,
+      "pass_cov_pctl_2025": 51.6,
+      "pass_cov_rate_2026": 0.0054,
+      "pass_rush_pctl": 7.8,
+      "pass_rush_pctl_2025": 14.1,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 39.1,
+      "run_def_pctl_2025": 95.3,
+      "run_def_rate_2026": 0.0019,
+      "pass_cov_epatgt": 0.3356,
+      "pass_cov_strength": 0.0054,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0019,
+      "rookies_2026": [
+        [
+          "Dillon Thieneman",
+          "S",
+          "coverage",
+          "R1",
+          -0.0005
+        ],
+        [
+          "Malik Muhammad",
+          "CB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Dillon Thieneman",
+          "S",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Malik Muhammad",
+          "CB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Devin Bush",
+          "pos": "LB",
+          "ps": 18.6,
+          "rate": 0.0492,
+          "snaps": 377
+        },
+        {
+          "name": "Coby Bryant",
+          "pos": "S",
+          "ps": 6.4,
+          "rate": 0.0109,
+          "snaps": 591
+        },
+        {
+          "name": "T.J. Edwards",
+          "pos": "LB",
+          "ps": 1.8,
+          "rate": 0.0062,
+          "snaps": 284
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Montez Sweat",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 447
+        },
+        {
+          "name": "Gervon Dexter Sr.",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 370
+        },
+        {
+          "name": "Austin Booker",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0001,
+          "snaps": 312
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Devin Bush",
+          "pos": "LB",
+          "ps": 7.8,
+          "rate": 0.0186,
+          "snaps": 422
+        },
+        {
+          "name": "Dillon Thieneman",
+          "pos": "S",
+          "ps": 0.5,
+          "rate": 0.0033,
+          "snaps": 151
+        },
+        {
+          "name": "Malik Muhammad",
+          "pos": "CB",
+          "ps": 0.5,
+          "rate": 0.0033,
+          "snaps": 140
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Devin Bush",
+          "unit": "coverage",
+          "from": "CLE",
+          "to": "CHI",
+          "ps": 18.6,
+          "conf": true
+        },
+        {
+          "player": "Coby Bryant",
+          "unit": "coverage",
+          "from": "SEA",
+          "to": "CHI",
+          "ps": 6.4,
+          "conf": true
+        },
+        {
+          "player": "Devin Bush",
+          "unit": "run_def",
+          "from": "CLE",
+          "to": "CHI",
+          "ps": 7.8,
+          "conf": true
+        },
+        {
+          "player": "Coby Bryant",
+          "unit": "run_def",
+          "from": "SEA",
+          "to": "CHI",
+          "ps": -4.1,
+          "conf": true
+        }
+      ]
+    },
+    "CIN": {
+      "team": "CIN",
+      "pass_cov_pctl": 10.9,
+      "pass_cov_pctl_2025": 10.9,
+      "pass_cov_rate_2026": -0.0085,
+      "pass_rush_pctl": 32.8,
+      "pass_rush_pctl_2025": 67.2,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 70.3,
+      "run_def_pctl_2025": 51.6,
+      "run_def_rate_2026": 0.0068,
+      "pass_cov_epatgt": 0.1351,
+      "pass_cov_strength": -0.0085,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0068,
+      "rookies_2026": [
+        [
+          "Tacario Davis",
+          "CB",
+          "coverage",
+          "R3",
+          -0.0005
+        ],
+        [
+          "Cashius Howell",
+          "DE",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Cashius Howell",
+          "DE",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Tacario Davis",
+          "CB",
+          "run_def",
+          "R3",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Bryan Cook",
+          "pos": "S",
+          "ps": 6.5,
+          "rate": 0.0137,
+          "snaps": 475
+        },
+        {
+          "name": "DJ Turner II",
+          "pos": "CB",
+          "ps": 1.4,
+          "rate": 0.0025,
+          "snaps": 548
+        },
+        {
+          "name": "Tacario Davis",
+          "pos": "CB",
+          "ps": -0.2,
+          "rate": -0.0005,
+          "snaps": 363
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Cedric Johnson",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.0004,
+          "snaps": 137
+        },
+        {
+          "name": "Dexter Lawrence",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 441
+        },
+        {
+          "name": "Myles Murphy",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 374
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordan Battle",
+          "pos": "S",
+          "ps": 10.0,
+          "rate": 0.0235,
+          "snaps": 423
+        },
+        {
+          "name": "BJ Hill",
+          "pos": "DT",
+          "ps": 6.1,
+          "rate": 0.0195,
+          "snaps": 313
+        },
+        {
+          "name": "Jonathan Allen",
+          "pos": "DT",
+          "ps": 4.5,
+          "rate": 0.0119,
+          "snaps": 382
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Bryan Cook",
+          "unit": "coverage",
+          "from": "KC",
+          "to": "CIN",
+          "ps": 6.5,
+          "conf": true
+        },
+        {
+          "player": "Dexter Lawrence",
+          "unit": "pass_rush",
+          "from": "NYG",
+          "to": "CIN",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Jonathan Allen",
+          "unit": "pass_rush",
+          "from": "MIN",
+          "to": "CIN",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Boye Mafe",
+          "unit": "pass_rush",
+          "from": "SEA",
+          "to": "CIN",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Jonathan Allen",
+          "unit": "run_def",
+          "from": "MIN",
+          "to": "CIN",
+          "ps": 4.5,
+          "conf": true
+        },
+        {
+          "player": "Bryan Cook",
+          "unit": "run_def",
+          "from": "KC",
+          "to": "CIN",
+          "ps": 4.2,
+          "conf": true
+        }
+      ]
+    },
+    "CLE": {
+      "team": "CLE",
+      "pass_cov_pctl": 45.3,
+      "pass_cov_pctl_2025": 92.2,
+      "pass_cov_rate_2026": -0.0016,
+      "pass_rush_pctl": 60.9,
+      "pass_rush_pctl_2025": 70.3,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 92.2,
+      "run_def_pctl_2025": 89.1,
+      "run_def_rate_2026": 0.0095,
+      "pass_cov_epatgt": 0.0357,
+      "pass_cov_strength": -0.0016,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0095,
+      "rookies_2026": [
+        [
+          "Emmanuel McNeil-Warren",
+          "S",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "Emmanuel McNeil-Warren",
+          "S",
+          "run_def",
+          "R2",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Denzel Ward",
+          "pos": "CB",
+          "ps": 7.3,
+          "rate": 0.0174,
+          "snaps": 420
+        },
+        {
+          "name": "Grant Delpit",
+          "pos": "S",
+          "ps": 6.1,
+          "rate": 0.0122,
+          "snaps": 503
+        },
+        {
+          "name": "Tyson Campbell",
+          "pos": "CB",
+          "ps": 1.6,
+          "rate": 0.0029,
+          "snaps": 568
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jared Verse",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 501
+        },
+        {
+          "name": "Carson Schwesinger",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 510
+        },
+        {
+          "name": "Maliek Collins",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 271
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Carson Schwesinger",
+          "pos": "LB",
+          "ps": 13.1,
+          "rate": 0.0322,
+          "snaps": 408
+        },
+        {
+          "name": "Tyson Campbell",
+          "pos": "CB",
+          "ps": 12.9,
+          "rate": 0.0358,
+          "snaps": 362
+        },
+        {
+          "name": "Ronnie Hickman",
+          "pos": "S",
+          "ps": 2.5,
+          "rate": 0.0055,
+          "snaps": 445
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Tyson Campbell",
+          "unit": "coverage",
+          "from": "2T",
+          "to": "CLE",
+          "ps": 1.6,
+          "conf": true
+        },
+        {
+          "player": "Quincy Williams",
+          "unit": "coverage",
+          "from": "NYJ",
+          "to": "CLE",
+          "ps": -10.4,
+          "conf": true
+        },
+        {
+          "player": "Jared Verse",
+          "unit": "pass_rush",
+          "from": "LAR",
+          "to": "CLE",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Tyson Campbell",
+          "unit": "run_def",
+          "from": "2T",
+          "to": "CLE",
+          "ps": 12.9,
+          "conf": true
+        },
+        {
+          "player": "Jared Verse",
+          "unit": "run_def",
+          "from": "LAR",
+          "to": "CLE",
+          "ps": 0.8,
+          "conf": true
+        },
+        {
+          "player": "Quincy Williams",
+          "unit": "run_def",
+          "from": "NYJ",
+          "to": "CLE",
+          "ps": -6.8,
+          "conf": true
+        }
+      ]
+    },
+    "DAL": {
+      "team": "DAL",
+      "pass_cov_pctl": 23.4,
+      "pass_cov_pctl_2025": 17.2,
+      "pass_cov_rate_2026": -0.0061,
+      "pass_rush_pctl": 23.4,
+      "pass_rush_pctl_2025": 42.2,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 17.2,
+      "run_def_pctl_2025": 4.7,
+      "run_def_rate_2026": -0.0016,
+      "pass_cov_epatgt": 0.0996,
+      "pass_cov_strength": -0.0061,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": -0.0016,
+      "rookies_2026": [
+        [
+          "Caleb Downs",
+          "S",
+          "coverage",
+          "R1",
+          -0.0005
+        ],
+        [
+          "Devin Moore",
+          "CB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Malachi Lawrence",
+          "DE",
+          "pass_rush",
+          "R1",
+          0.0
+        ],
+        [
+          "Jaishawn Barham",
+          "DE",
+          "pass_rush",
+          "R3",
+          0.0
+        ],
+        [
+          "LT Overton",
+          "DE",
+          "pass_rush",
+          "R4",
+          0.0
+        ],
+        [
+          "Caleb Downs",
+          "S",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Malachi Lawrence",
+          "DE",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Jaishawn Barham",
+          "DE",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Devin Moore",
+          "CB",
+          "run_def",
+          "R4",
+          0.0033
+        ],
+        [
+          "LT Overton",
+          "DE",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Cobie Durant",
+          "pos": "CB",
+          "ps": 9.2,
+          "rate": 0.0193,
+          "snaps": 476
+        },
+        {
+          "name": "Trikweze Bridges",
+          "pos": "CB",
+          "ps": -0.1,
+          "rate": -0.001,
+          "snaps": 153
+        },
+        {
+          "name": "Devin Moore",
+          "pos": "CB",
+          "ps": -0.2,
+          "rate": -0.0005,
+          "snaps": 363
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Rashan Gary",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 395
+        },
+        {
+          "name": "James Houston",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 182
+        },
+        {
+          "name": "Osa Odighizuwa",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 394
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "DaRon Bland",
+          "pos": "CB",
+          "ps": 3.7,
+          "rate": 0.0139,
+          "snaps": 269
+        },
+        {
+          "name": "Donovan Wilson",
+          "pos": "S",
+          "ps": 2.6,
+          "rate": 0.0079,
+          "snaps": 333
+        },
+        {
+          "name": "Jalen Thompson",
+          "pos": "S",
+          "ps": 2.6,
+          "rate": 0.0068,
+          "snaps": 377
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Cobie Durant",
+          "unit": "coverage",
+          "from": "LAR",
+          "to": "DAL",
+          "ps": 9.2,
+          "conf": true
+        },
+        {
+          "player": "Jalen Thompson",
+          "unit": "coverage",
+          "from": "ARI",
+          "to": "DAL",
+          "ps": -9.0,
+          "conf": true
+        },
+        {
+          "player": "Rashan Gary",
+          "unit": "pass_rush",
+          "from": "GB",
+          "to": "DAL",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Jalen Thompson",
+          "unit": "run_def",
+          "from": "ARI",
+          "to": "DAL",
+          "ps": 2.6,
+          "conf": true
+        }
+      ]
+    },
+    "DEN": {
+      "team": "DEN",
+      "pass_cov_pctl": 89.1,
+      "pass_cov_pctl_2025": 82.8,
+      "pass_cov_rate_2026": 0.0136,
+      "pass_rush_pctl": 79.7,
+      "pass_rush_pctl_2025": 79.7,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 57.8,
+      "run_def_pctl_2025": 57.8,
+      "run_def_rate_2026": 0.0051,
+      "pass_cov_epatgt": 0.1088,
+      "pass_cov_strength": 0.0136,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0051,
+      "rookies_2026": [
+        [
+          "Tyler Onyedim",
+          "DT",
+          "pass_rush",
+          "R3",
+          0.0
+        ],
+        [
+          "Tyler Onyedim",
+          "DT",
+          "run_def",
+          "R3",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Pat Surtain II",
+          "pos": "CB",
+          "ps": 21.0,
+          "rate": 0.0398,
+          "snaps": 527
+        },
+        {
+          "name": "Brandon Jones",
+          "pos": "S",
+          "ps": 13.9,
+          "rate": 0.0267,
+          "snaps": 519
+        },
+        {
+          "name": "Riley Moss",
+          "pos": "CB",
+          "ps": 12.9,
+          "rate": 0.0192,
+          "snaps": 674
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Justin Strnad",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 345
+        },
+        {
+          "name": "Nik Bonitto",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 454
+        },
+        {
+          "name": "Zach Allen",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 521
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Talanoa Hufanga",
+          "pos": "S",
+          "ps": 12.7,
+          "rate": 0.0358,
+          "snaps": 354
+        },
+        {
+          "name": "Brandon Jones",
+          "pos": "S",
+          "ps": 3.7,
+          "rate": 0.0135,
+          "snaps": 272
+        },
+        {
+          "name": "Tyler Onyedim",
+          "pos": "DT",
+          "ps": 0.9,
+          "rate": 0.0033,
+          "snaps": 280
+        }
+      ],
+      "moves_2026": []
+    },
+    "DET": {
+      "team": "DET",
+      "pass_cov_pctl": 67.2,
+      "pass_cov_pctl_2025": 48.4,
+      "pass_cov_rate_2026": 0.0079,
+      "pass_rush_pctl": 89.1,
+      "pass_rush_pctl_2025": 95.3,
+      "pass_rush_rate_2026": 0.0001,
+      "run_def_pctl": 95.3,
+      "run_def_pctl_2025": 54.7,
+      "run_def_rate_2026": 0.0105,
+      "pass_cov_epatgt": 0.0667,
+      "pass_cov_strength": 0.0079,
+      "pass_rush_strength": 0.0001,
+      "run_def_strength": 0.0105,
+      "rookies_2026": [
+        [
+          "Jimmy Rolder",
+          "LB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Derrick Moore",
+          "DE",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Derrick Moore",
+          "DE",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Jimmy Rolder",
+          "LB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Rock Ya-Sin",
+          "pos": "CB",
+          "ps": 9.8,
+          "rate": 0.0279,
+          "snaps": 349
+        },
+        {
+          "name": "Jack Campbell",
+          "pos": "LB",
+          "ps": 9.4,
+          "rate": 0.0166,
+          "snaps": 566
+        },
+        {
+          "name": "Terrion Arnold",
+          "pos": "CB",
+          "ps": 0.2,
+          "rate": 0.0009,
+          "snaps": 191
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jack Campbell",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 632
+        },
+        {
+          "name": "Aidan Hutchinson",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.0001,
+          "snaps": 577
+        },
+        {
+          "name": "Alim McNeill",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 290
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jack Campbell",
+          "pos": "LB",
+          "ps": 18.7,
+          "rate": 0.0457,
+          "snaps": 410
+        },
+        {
+          "name": "Brian Branch",
+          "pos": "S",
+          "ps": 7.0,
+          "rate": 0.0237,
+          "snaps": 294
+        },
+        {
+          "name": "Jimmy Rolder",
+          "pos": "LB",
+          "ps": 0.9,
+          "rate": 0.0033,
+          "snaps": 280
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Rock Ya-Sin",
+          "unit": "coverage",
+          "from": "DET",
+          "to": "DET",
+          "ps": 9.8,
+          "conf": true
+        }
+      ]
+    },
+    "GB": {
+      "team": "GB",
+      "pass_cov_pctl": 48.4,
+      "pass_cov_pctl_2025": 29.7,
+      "pass_cov_rate_2026": -0.0011,
+      "pass_rush_pctl": 67.2,
+      "pass_rush_pctl_2025": 82.8,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 26.6,
+      "run_def_pctl_2025": 48.4,
+      "run_def_rate_2026": 0.0007,
+      "pass_cov_epatgt": 0.1929,
+      "pass_cov_strength": -0.0011,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0007,
+      "rookies_2026": [
+        [
+          "Brandon Cisse",
+          "CB",
+          "coverage",
+          "R2",
+          -0.0021
+        ],
+        [
+          "Chris McClellan",
+          "DT",
+          "pass_rush",
+          "R3",
+          0.0
+        ],
+        [
+          "Dani Dennis-Sutton",
+          "DE",
+          "pass_rush",
+          "R4",
+          0.0
+        ],
+        [
+          "Brandon Cisse",
+          "CB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Chris McClellan",
+          "DT",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Dani Dennis-Sutton",
+          "DE",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Benjamin St-Juste",
+          "pos": "CB",
+          "ps": 12.4,
+          "rate": 0.0544,
+          "snaps": 229
+        },
+        {
+          "name": "Edgerrin Cooper",
+          "pos": "LB",
+          "ps": 8.2,
+          "rate": 0.0157,
+          "snaps": 524
+        },
+        {
+          "name": "Keisean Nixon",
+          "pos": "CB",
+          "ps": 0.1,
+          "rate": 0.0003,
+          "snaps": 560
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Micah Parsons",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.0001,
+          "snaps": 410
+        },
+        {
+          "name": "Devonte Wyatt",
+          "pos": "DT",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 209
+        },
+        {
+          "name": "Zaire Franklin",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 661
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Evan Williams",
+          "pos": "S",
+          "ps": 4.9,
+          "rate": 0.0145,
+          "snaps": 336
+        },
+        {
+          "name": "Xavier McKinney",
+          "pos": "S",
+          "ps": 4.2,
+          "rate": 0.0102,
+          "snaps": 417
+        },
+        {
+          "name": "Isaiah McDuffie",
+          "pos": "LB",
+          "ps": 3.6,
+          "rate": 0.0135,
+          "snaps": 265
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Benjamin St-Juste",
+          "unit": "coverage",
+          "from": "LAC",
+          "to": "GB",
+          "ps": 12.4,
+          "conf": true
+        },
+        {
+          "player": "Zaire Franklin",
+          "unit": "coverage",
+          "from": "IND",
+          "to": "GB",
+          "ps": -5.3,
+          "conf": true
+        },
+        {
+          "player": "Zaire Franklin",
+          "unit": "pass_rush",
+          "from": "IND",
+          "to": "GB",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Javon Hargrave",
+          "unit": "pass_rush",
+          "from": "MIN",
+          "to": "GB",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Zaire Franklin",
+          "unit": "run_def",
+          "from": "IND",
+          "to": "GB",
+          "ps": -13.2,
+          "conf": true
+        }
+      ]
+    },
+    "HOU": {
+      "team": "HOU",
+      "pass_cov_pctl": 73.4,
+      "pass_cov_pctl_2025": 73.4,
+      "pass_cov_rate_2026": 0.0083,
+      "pass_rush_pctl": 95.3,
+      "pass_rush_pctl_2025": 98.4,
+      "pass_rush_rate_2026": 0.0001,
+      "run_def_pctl": 79.7,
+      "run_def_pctl_2025": 79.7,
+      "run_def_rate_2026": 0.0082,
+      "pass_cov_epatgt": -0.1249,
+      "pass_cov_strength": 0.0083,
+      "pass_rush_strength": 0.0001,
+      "run_def_strength": 0.0082,
+      "rookies_2026": [
+        [
+          "Wade Woodaz",
+          "LB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Kamari Ramsey",
+          "S",
+          "coverage",
+          "R5",
+          -0.0005
+        ],
+        [
+          "Kayden McDonald",
+          "DT",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Kayden McDonald",
+          "DT",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Wade Woodaz",
+          "LB",
+          "run_def",
+          "R4",
+          0.0033
+        ],
+        [
+          "Kamari Ramsey",
+          "S",
+          "run_def",
+          "R5",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Derek Stingley Jr.",
+          "pos": "CB",
+          "ps": 22.4,
+          "rate": 0.0413,
+          "snaps": 543
+        },
+        {
+          "name": "Jalen Pitre",
+          "pos": "S",
+          "ps": 13.5,
+          "rate": 0.0323,
+          "snaps": 417
+        },
+        {
+          "name": "Calen Bullock",
+          "pos": "S",
+          "ps": 4.3,
+          "rate": 0.0073,
+          "snaps": 597
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Will Anderson Jr.",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 439
+        },
+        {
+          "name": "Danielle Hunter",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.0001,
+          "snaps": 467
+        },
+        {
+          "name": "Tommy Togiai",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 236
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Tommy Togiai",
+          "pos": "DT",
+          "ps": 13.0,
+          "rate": 0.0632,
+          "snaps": 206
+        },
+        {
+          "name": "Reed Blankenship",
+          "pos": "S",
+          "ps": 8.6,
+          "rate": 0.0221,
+          "snaps": 391
+        },
+        {
+          "name": "Kamari Lassiter",
+          "pos": "CB",
+          "ps": 7.8,
+          "rate": 0.0235,
+          "snaps": 332
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Reed Blankenship",
+          "unit": "coverage",
+          "from": "PHI",
+          "to": "HOU",
+          "ps": 0.7,
+          "conf": true
+        },
+        {
+          "player": "Logan Hall",
+          "unit": "pass_rush",
+          "from": "TB",
+          "to": "HOU",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Reed Blankenship",
+          "unit": "run_def",
+          "from": "PHI",
+          "to": "HOU",
+          "ps": 8.6,
+          "conf": true
+        }
+      ]
+    },
+    "IND": {
+      "team": "IND",
+      "pass_cov_pctl": 32.8,
+      "pass_cov_pctl_2025": 14.1,
+      "pass_cov_rate_2026": -0.0046,
+      "pass_rush_pctl": 39.1,
+      "pass_rush_pctl_2025": 51.6,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 51.6,
+      "run_def_pctl_2025": 17.2,
+      "run_def_rate_2026": 0.0035,
+      "pass_cov_epatgt": 0.1664,
+      "pass_cov_strength": -0.0046,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0035,
+      "rookies_2026": [
+        [
+          "CJ Allen",
+          "LB",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "A.J. Haulcy",
+          "S",
+          "coverage",
+          "R3",
+          -0.0005
+        ],
+        [
+          "Bryce Boettcher",
+          "LB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "CJ Allen",
+          "LB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "A.J. Haulcy",
+          "S",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Bryce Boettcher",
+          "LB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Bryce Boettcher",
+          "pos": "LB",
+          "ps": -0.1,
+          "rate": -0.0005,
+          "snaps": 181
+        },
+        {
+          "name": "CJ Allen",
+          "pos": "LB",
+          "ps": -0.1,
+          "rate": -0.0005,
+          "snaps": 197
+        },
+        {
+          "name": "A.J. Haulcy",
+          "pos": "S",
+          "ps": -0.2,
+          "rate": -0.0005,
+          "snaps": 363
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Laiatu Latu",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 479
+        },
+        {
+          "name": "DeForest Buckner",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 305
+        },
+        {
+          "name": "Tyquan Lewis",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 208
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Grover Stewart",
+          "pos": "DT",
+          "ps": 2.8,
+          "rate": 0.0087,
+          "snaps": 318
+        },
+        {
+          "name": "Mekhi Blackmon",
+          "pos": "CB",
+          "ps": 2.5,
+          "rate": 0.0098,
+          "snaps": 258
+        },
+        {
+          "name": "CJ Allen",
+          "pos": "LB",
+          "ps": 1.0,
+          "rate": 0.0033,
+          "snaps": 301
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Arden Key",
+          "unit": "pass_rush",
+          "from": "TEN",
+          "to": "IND",
+          "ps": -0.0,
+          "conf": true
+        }
+      ]
+    },
+    "JAX": {
+      "team": "JAX",
+      "pass_cov_pctl": 98.4,
+      "pass_cov_pctl_2025": 98.4,
+      "pass_cov_rate_2026": 0.0195,
+      "pass_rush_pctl": 48.4,
+      "pass_rush_pctl_2025": 29.7,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 89.1,
+      "run_def_pctl_2025": 70.3,
+      "run_def_rate_2026": 0.0092,
+      "pass_cov_epatgt": -0.1459,
+      "pass_cov_strength": 0.0195,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0092,
+      "rookies_2026": [
+        [
+          "Jalen Huskey",
+          "S",
+          "coverage",
+          "R3",
+          -0.0005
+        ],
+        [
+          "Albert Regis",
+          "DT",
+          "pass_rush",
+          "R3",
+          0.0
+        ],
+        [
+          "Wesley Williams",
+          "DE",
+          "pass_rush",
+          "R4",
+          0.0
+        ],
+        [
+          "Albert Regis",
+          "DT",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Jalen Huskey",
+          "S",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Wesley Williams",
+          "DE",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Antonio Johnson",
+          "pos": "S",
+          "ps": 15.9,
+          "rate": 0.0381,
+          "snaps": 417
+        },
+        {
+          "name": "Jourdan Lewis",
+          "pos": "CB",
+          "ps": 13.4,
+          "rate": 0.0356,
+          "snaps": 377
+        },
+        {
+          "name": "Montaric Brown",
+          "pos": "CB",
+          "ps": 10.4,
+          "rate": 0.0225,
+          "snaps": 463
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Josh Hines-Allen",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 557
+        },
+        {
+          "name": "Arik Armstead",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 441
+        },
+        {
+          "name": "Travon Walker",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 350
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Foyesade Oluokun",
+          "pos": "LB",
+          "ps": 6.3,
+          "rate": 0.0196,
+          "snaps": 321
+        },
+        {
+          "name": "Albert Regis",
+          "pos": "DT",
+          "ps": 0.9,
+          "rate": 0.0033,
+          "snaps": 280
+        },
+        {
+          "name": "Jalen Huskey",
+          "pos": "S",
+          "ps": 0.5,
+          "rate": 0.0033,
+          "snaps": 140
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Greg Newsome II",
+          "unit": "coverage",
+          "from": "2T",
+          "to": "JAX",
+          "ps": 5.2,
+          "conf": true
+        }
+      ]
+    },
+    "KC": {
+      "team": "KC",
+      "pass_cov_pctl": 51.6,
+      "pass_cov_pctl_2025": 60.9,
+      "pass_cov_rate_2026": 0.0004,
+      "pass_rush_pctl": 57.8,
+      "pass_rush_pctl_2025": 57.8,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 45.3,
+      "run_def_pctl_2025": 42.2,
+      "run_def_rate_2026": 0.0023,
+      "pass_cov_epatgt": 0.0676,
+      "pass_cov_strength": 0.0004,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0023,
+      "rookies_2026": [
+        [
+          "Mansoor Delane",
+          "CB",
+          "coverage",
+          "R1",
+          -0.0005
+        ],
+        [
+          "Jadon Canady",
+          "CB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Peter Woods",
+          "DT",
+          "pass_rush",
+          "R1",
+          0.0
+        ],
+        [
+          "R Mason Thomas",
+          "DE",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Mansoor Delane",
+          "CB",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Peter Woods",
+          "DT",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "R Mason Thomas",
+          "DE",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Jadon Canady",
+          "CB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Alohi Gilman",
+          "pos": "S",
+          "ps": 8.8,
+          "rate": 0.0139,
+          "snaps": 634
+        },
+        {
+          "name": "Nohl Williams",
+          "pos": "CB",
+          "ps": 1.7,
+          "rate": 0.0066,
+          "snaps": 256
+        },
+        {
+          "name": "Chamarri Conner",
+          "pos": "S",
+          "ps": 1.4,
+          "rate": 0.0026,
+          "snaps": 529
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Chris Jones",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 459
+        },
+        {
+          "name": "Nick Bolton",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 564
+        },
+        {
+          "name": "George Karlaftis",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 442
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Nick Bolton",
+          "pos": "LB",
+          "ps": 3.7,
+          "rate": 0.0092,
+          "snaps": 401
+        },
+        {
+          "name": "Alohi Gilman",
+          "pos": "S",
+          "ps": 3.0,
+          "rate": 0.0092,
+          "snaps": 330
+        },
+        {
+          "name": "Peter Woods",
+          "pos": "DT",
+          "ps": 1.0,
+          "rate": 0.0033,
+          "snaps": 302
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Alohi Gilman",
+          "unit": "coverage",
+          "from": "2T",
+          "to": "KC",
+          "ps": 8.8,
+          "conf": true
+        },
+        {
+          "player": "Alohi Gilman",
+          "unit": "run_def",
+          "from": "2T",
+          "to": "KC",
+          "ps": 3.0,
+          "conf": true
+        }
+      ]
+    },
+    "LAC": {
+      "team": "LAC",
+      "pass_cov_pctl": 54.7,
+      "pass_cov_pctl_2025": 67.2,
+      "pass_cov_rate_2026": 0.0027,
+      "pass_rush_pctl": 10.9,
+      "pass_rush_pctl_2025": 10.9,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 14.1,
+      "run_def_pctl_2025": 14.1,
+      "run_def_rate_2026": -0.0024,
+      "pass_cov_epatgt": -0.0031,
+      "pass_cov_strength": 0.0027,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": -0.0024,
+      "rookies_2026": [
+        [
+          "Genesis Smith",
+          "S",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Akheem Mesidor",
+          "DE",
+          "pass_rush",
+          "R1",
+          0.0
+        ],
+        [
+          "Akheem Mesidor",
+          "DE",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Genesis Smith",
+          "S",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Donte Jackson",
+          "pos": "CB",
+          "ps": 12.2,
+          "rate": 0.0328,
+          "snaps": 373
+        },
+        {
+          "name": "Daiyan Henley",
+          "pos": "LB",
+          "ps": 1.9,
+          "rate": 0.0038,
+          "snaps": 492
+        },
+        {
+          "name": "Derwin James Jr.",
+          "pos": "S",
+          "ps": 1.6,
+          "rate": 0.0036,
+          "snaps": 454
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Tuli Tuipulotu",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 426
+        },
+        {
+          "name": "Justin Eboigbe",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 224
+        },
+        {
+          "name": "Akheem Mesidor",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 366
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Derwin James Jr.",
+          "pos": "S",
+          "ps": 1.4,
+          "rate": 0.0043,
+          "snaps": 326
+        },
+        {
+          "name": "Akheem Mesidor",
+          "pos": "DE",
+          "ps": 0.5,
+          "rate": 0.0033,
+          "snaps": 151
+        },
+        {
+          "name": "Genesis Smith",
+          "pos": "S",
+          "ps": 0.5,
+          "rate": 0.0033,
+          "snaps": 140
+        }
+      ],
+      "moves_2026": []
+    },
+    "LAR": {
+      "team": "LAR",
+      "pass_cov_pctl": 57.8,
+      "pass_cov_pctl_2025": 64.1,
+      "pass_cov_rate_2026": 0.0032,
+      "pass_rush_pctl": 70.3,
+      "pass_rush_pctl_2025": 48.4,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 60.9,
+      "run_def_pctl_2025": 82.8,
+      "run_def_rate_2026": 0.0058,
+      "pass_cov_epatgt": 0.1877,
+      "pass_cov_strength": 0.0032,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0058,
+      "rookies_2026": [],
+      "top_coverage": [
+        {
+          "name": "Jaylen Watson",
+          "pos": "CB",
+          "ps": 15.4,
+          "rate": 0.0323,
+          "snaps": 477
+        },
+        {
+          "name": "Darious Williams",
+          "pos": "CB",
+          "ps": 7.7,
+          "rate": 0.0281,
+          "snaps": 274
+        },
+        {
+          "name": "Kamren Kinchens",
+          "pos": "S",
+          "ps": 5.7,
+          "rate": 0.0106,
+          "snaps": 540
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Myles Garrett",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 474
+        },
+        {
+          "name": "Desjuan Johnson",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.001,
+          "snaps": 69
+        },
+        {
+          "name": "Byron Young",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 504
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Byron Young",
+          "pos": "LB",
+          "ps": 14.7,
+          "rate": 0.0476,
+          "snaps": 309
+        },
+        {
+          "name": "Kam Curl",
+          "pos": "S",
+          "ps": 5.8,
+          "rate": 0.0145,
+          "snaps": 403
+        },
+        {
+          "name": "Nate Landman",
+          "pos": "LB",
+          "ps": 5.0,
+          "rate": 0.0126,
+          "snaps": 395
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jaylen Watson",
+          "unit": "coverage",
+          "from": "KC",
+          "to": "LAR",
+          "ps": 15.4,
+          "conf": true
+        },
+        {
+          "player": "Trent McDuffie",
+          "unit": "coverage",
+          "from": "KC",
+          "to": "LAR",
+          "ps": -4.6,
+          "conf": true
+        },
+        {
+          "player": "L'Jarius Sneed",
+          "unit": "coverage",
+          "from": "TEN",
+          "to": "LAR",
+          "ps": -12.8,
+          "conf": true
+        },
+        {
+          "player": "Myles Garrett",
+          "unit": "pass_rush",
+          "from": "CLE",
+          "to": "LAR",
+          "ps": 0.1,
+          "conf": true
+        },
+        {
+          "player": "Jaylen Watson",
+          "unit": "run_def",
+          "from": "KC",
+          "to": "LAR",
+          "ps": 1.4,
+          "conf": true
+        },
+        {
+          "player": "Trent McDuffie",
+          "unit": "run_def",
+          "from": "KC",
+          "to": "LAR",
+          "ps": 2.5,
+          "conf": true
+        },
+        {
+          "player": "Myles Garrett",
+          "unit": "run_def",
+          "from": "CLE",
+          "to": "LAR",
+          "ps": -4.8,
+          "conf": true
+        }
+      ]
+    },
+    "LV": {
+      "team": "LV",
+      "pass_cov_pctl": 26.6,
+      "pass_cov_pctl_2025": 32.8,
+      "pass_cov_rate_2026": -0.006,
+      "pass_rush_pctl": 14.1,
+      "pass_rush_pctl_2025": 17.2,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 76.6,
+      "run_def_pctl_2025": 98.4,
+      "run_def_rate_2026": 0.0074,
+      "pass_cov_epatgt": 0.192,
+      "pass_cov_strength": -0.006,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0074,
+      "rookies_2026": [
+        [
+          "Treydan Stukes",
+          "CB",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "Jermod McCoy",
+          "CB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Keyron Crawford",
+          "DE",
+          "pass_rush",
+          "R3",
+          0.0
+        ],
+        [
+          "Treydan Stukes",
+          "CB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Keyron Crawford",
+          "DE",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Jermod McCoy",
+          "CB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Eric Stokes",
+          "pos": "CB",
+          "ps": 7.0,
+          "rate": 0.0127,
+          "snaps": 550
+        },
+        {
+          "name": "Jermod McCoy",
+          "pos": "CB",
+          "ps": -0.2,
+          "rate": -0.0005,
+          "snaps": 363
+        },
+        {
+          "name": "Treydan Stukes",
+          "pos": "CB",
+          "ps": -0.2,
+          "rate": -0.0005,
+          "snaps": 394
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Tyree Wilson",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 287
+        },
+        {
+          "name": "Maxx Crosby",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 487
+        },
+        {
+          "name": "Malcolm Koonce",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 326
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Maxx Crosby",
+          "pos": "DE",
+          "ps": 22.0,
+          "rate": 0.0551,
+          "snaps": 399
+        },
+        {
+          "name": "Jeremy Chinn",
+          "pos": "S",
+          "ps": 6.2,
+          "rate": 0.0145,
+          "snaps": 429
+        },
+        {
+          "name": "Elandon Roberts",
+          "pos": "LB",
+          "ps": 3.7,
+          "rate": 0.0103,
+          "snaps": 361
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Quay Walker",
+          "unit": "coverage",
+          "from": "GB",
+          "to": "LV",
+          "ps": -5.2,
+          "conf": true
+        },
+        {
+          "player": "Taron Johnson",
+          "unit": "coverage",
+          "from": "BUF",
+          "to": "LV",
+          "ps": -6.0,
+          "conf": true
+        },
+        {
+          "player": "Kwity Paye",
+          "unit": "pass_rush",
+          "from": "IND",
+          "to": "LV",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Quay Walker",
+          "unit": "run_def",
+          "from": "GB",
+          "to": "LV",
+          "ps": -3.3,
+          "conf": true
+        },
+        {
+          "player": "Taron Johnson",
+          "unit": "run_def",
+          "from": "BUF",
+          "to": "LV",
+          "ps": -1.8,
+          "conf": true
+        },
+        {
+          "player": "Nakobe Dean",
+          "unit": "run_def",
+          "from": "PHI",
+          "to": "LV",
+          "ps": -1.9,
+          "conf": true
+        }
+      ]
+    },
+    "MIA": {
+      "team": "MIA",
+      "pass_cov_pctl": 42.2,
+      "pass_cov_pctl_2025": 26.6,
+      "pass_cov_rate_2026": -0.0022,
+      "pass_rush_pctl": 76.6,
+      "pass_rush_pctl_2025": 76.6,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 54.7,
+      "run_def_pctl_2025": 76.6,
+      "run_def_rate_2026": 0.0046,
+      "pass_cov_epatgt": 0.0453,
+      "pass_cov_strength": -0.0022,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0046,
+      "rookies_2026": [
+        [
+          "Chris Johnson",
+          "CB",
+          "coverage",
+          "R1",
+          0.0035
+        ],
+        [
+          "Jacob Rodriguez",
+          "LB",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "Trey Moore",
+          "LB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Kyle Louis",
+          "LB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Chris Johnson",
+          "CB",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Jacob Rodriguez",
+          "LB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Trey Moore",
+          "LB",
+          "run_def",
+          "R4",
+          0.0033
+        ],
+        [
+          "Kyle Louis",
+          "LB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Rasul Douglas",
+          "pos": "CB",
+          "ps": 10.8,
+          "rate": 0.0233,
+          "snaps": 465
+        },
+        {
+          "name": "Chris Johnson",
+          "pos": "CB",
+          "ps": 1.7,
+          "rate": 0.0035,
+          "snaps": 477
+        },
+        {
+          "name": "Jack Jones",
+          "pos": "CB",
+          "ps": 1.5,
+          "rate": 0.0027,
+          "snaps": 537
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Tyrel Dodson",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0003,
+          "snaps": 499
+        },
+        {
+          "name": "Zach Sieler",
+          "pos": "DT",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 452
+        },
+        {
+          "name": "Chop Robinson",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0001,
+          "snaps": 251
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordyn Brooks",
+          "pos": "LB",
+          "ps": 16.3,
+          "rate": 0.0402,
+          "snaps": 405
+        },
+        {
+          "name": "Jack Jones",
+          "pos": "CB",
+          "ps": 5.5,
+          "rate": 0.014,
+          "snaps": 394
+        },
+        {
+          "name": "Jacob Rodriguez",
+          "pos": "LB",
+          "ps": 1.0,
+          "rate": 0.0033,
+          "snaps": 301
+        }
+      ],
+      "moves_2026": []
+    },
+    "MIN": {
+      "team": "MIN",
+      "pass_cov_pctl": 70.3,
+      "pass_cov_pctl_2025": 54.7,
+      "pass_cov_rate_2026": 0.0081,
+      "pass_rush_pctl": 98.4,
+      "pass_rush_pctl_2025": 85.9,
+      "pass_rush_rate_2026": 0.0001,
+      "run_def_pctl": 29.7,
+      "run_def_pctl_2025": 35.9,
+      "run_def_rate_2026": 0.0012,
+      "pass_cov_epatgt": -0.0696,
+      "pass_cov_strength": 0.0081,
+      "pass_rush_strength": 0.0001,
+      "run_def_strength": 0.0012,
+      "rookies_2026": [
+        [
+          "Jake Golday",
+          "LB",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "Jakobe Thomas",
+          "S",
+          "coverage",
+          "R3",
+          -0.0005
+        ],
+        [
+          "Caleb Banks",
+          "DT",
+          "pass_rush",
+          "R1",
+          0.0
+        ],
+        [
+          "Domonique Orange",
+          "DT",
+          "pass_rush",
+          "R3",
+          0.0
+        ],
+        [
+          "Caleb Banks",
+          "DT",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Jake Golday",
+          "LB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Domonique Orange",
+          "DT",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Jakobe Thomas",
+          "S",
+          "run_def",
+          "R3",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "James Pierre",
+          "pos": "CB",
+          "ps": 14.9,
+          "rate": 0.0686,
+          "snaps": 218
+        },
+        {
+          "name": "Eric Wilson",
+          "pos": "LB",
+          "ps": 6.7,
+          "rate": 0.0234,
+          "snaps": 287
+        },
+        {
+          "name": "Josh Metellus",
+          "pos": "S",
+          "ps": 1.5,
+          "rate": 0.0035,
+          "snaps": 426
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Andrew Van Ginkel",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0003,
+          "snaps": 286
+        },
+        {
+          "name": "Dallas Turner",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 362
+        },
+        {
+          "name": "Eric Wilson",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 454
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Blake Cashman",
+          "pos": "LB",
+          "ps": 10.4,
+          "rate": 0.0286,
+          "snaps": 366
+        },
+        {
+          "name": "Byron Murphy Jr.",
+          "pos": "CB",
+          "ps": 3.3,
+          "rate": 0.0068,
+          "snaps": 484
+        },
+        {
+          "name": "Jalen Redmond",
+          "pos": "DT",
+          "ps": 1.8,
+          "rate": 0.0045,
+          "snaps": 404
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "James Pierre",
+          "unit": "coverage",
+          "from": "PIT",
+          "to": "MIN",
+          "ps": 14.9,
+          "conf": true
+        }
+      ]
+    },
+    "NE": {
+      "team": "NE",
+      "pass_cov_pctl": 95.3,
+      "pass_cov_pctl_2025": 95.3,
+      "pass_cov_rate_2026": 0.0174,
+      "pass_rush_pctl": 35.9,
+      "pass_rush_pctl_2025": 39.1,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 82.8,
+      "run_def_pctl_2025": 67.2,
+      "run_def_rate_2026": 0.0088,
+      "pass_cov_epatgt": -0.0233,
+      "pass_cov_strength": 0.0174,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0088,
+      "rookies_2026": [
+        [
+          "Gabe Jacas",
+          "DE",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Gabe Jacas",
+          "DE",
+          "run_def",
+          "R2",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Kevin Byard III",
+          "pos": "S",
+          "ps": 12.4,
+          "rate": 0.0212,
+          "snaps": 586
+        },
+        {
+          "name": "Robert Spillane",
+          "pos": "LB",
+          "ps": 12.4,
+          "rate": 0.03,
+          "snaps": 413
+        },
+        {
+          "name": "Christian Gonzalez",
+          "pos": "CB",
+          "ps": 12.2,
+          "rate": 0.0273,
+          "snaps": 447
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Dre'Mont Jones",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 500
+        },
+        {
+          "name": "Milton Williams",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 274
+        },
+        {
+          "name": "Gabe Jacas",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 347
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Kevin Byard III",
+          "pos": "S",
+          "ps": 9.7,
+          "rate": 0.0226,
+          "snaps": 428
+        },
+        {
+          "name": "Christian Gonzalez",
+          "pos": "CB",
+          "ps": 6.4,
+          "rate": 0.0224,
+          "snaps": 285
+        },
+        {
+          "name": "Robert Spillane",
+          "pos": "LB",
+          "ps": 3.5,
+          "rate": 0.0138,
+          "snaps": 250
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Kevin Byard III",
+          "unit": "coverage",
+          "from": "CHI",
+          "to": "NE",
+          "ps": 12.4,
+          "conf": false
+        },
+        {
+          "player": "Dre'Mont Jones",
+          "unit": "pass_rush",
+          "from": "2T",
+          "to": "NE",
+          "ps": 0.0,
+          "conf": false
+        },
+        {
+          "player": "Kevin Byard III",
+          "unit": "run_def",
+          "from": "CHI",
+          "to": "NE",
+          "ps": 9.7,
+          "conf": false
+        }
+      ]
+    },
+    "NO": {
+      "team": "NO",
+      "pass_cov_pctl": 29.7,
+      "pass_cov_pctl_2025": 42.2,
+      "pass_cov_rate_2026": -0.0052,
+      "pass_rush_pctl": 82.8,
+      "pass_rush_pctl_2025": 89.1,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 4.7,
+      "run_def_pctl_2025": 20.3,
+      "run_def_rate_2026": -0.0078,
+      "pass_cov_epatgt": 0.1169,
+      "pass_cov_strength": -0.0052,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": -0.0078,
+      "rookies_2026": [
+        [
+          "Christen Miller",
+          "DT",
+          "pass_rush",
+          "R2",
+          0.0
+        ],
+        [
+          "Christen Miller",
+          "DT",
+          "run_def",
+          "R2",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Alontae Taylor",
+          "pos": "CB",
+          "ps": 6.5,
+          "rate": 0.0126,
+          "snaps": 514
+        },
+        {
+          "name": "Kaden Elliss",
+          "pos": "LB",
+          "ps": -4.7,
+          "rate": -0.01,
+          "snaps": 465
+        },
+        {
+          "name": "Kool-Aid McKinstry",
+          "pos": "CB",
+          "ps": -4.7,
+          "rate": -0.0083,
+          "snaps": 565
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Chase Young",
+          "pos": "DE",
+          "ps": 0.1,
+          "rate": 0.0004,
+          "snaps": 300
+        },
+        {
+          "name": "Cameron Jordan",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 338
+        },
+        {
+          "name": "Jonah Williams",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 159
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Carl Granderson",
+          "pos": "DE",
+          "ps": 2.4,
+          "rate": 0.0075,
+          "snaps": 313
+        },
+        {
+          "name": "Christen Miller",
+          "pos": "DT",
+          "ps": 1.0,
+          "rate": 0.0033,
+          "snaps": 301
+        },
+        {
+          "name": "Kool-Aid McKinstry",
+          "pos": "CB",
+          "ps": -1.4,
+          "rate": -0.0029,
+          "snaps": 464
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Kaden Elliss",
+          "unit": "coverage",
+          "from": "ATL",
+          "to": "NO",
+          "ps": -4.7,
+          "conf": true
+        },
+        {
+          "player": "Kaden Elliss",
+          "unit": "pass_rush",
+          "from": "ATL",
+          "to": "NO",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Kaden Elliss",
+          "unit": "run_def",
+          "from": "ATL",
+          "to": "NO",
+          "ps": -11.9,
+          "conf": true
+        }
+      ]
+    },
+    "NYG": {
+      "team": "NYG",
+      "pass_cov_pctl": 4.7,
+      "pass_cov_pctl_2025": 23.4,
+      "pass_cov_rate_2026": -0.0119,
+      "pass_rush_pctl": 85.9,
+      "pass_rush_pctl_2025": 54.7,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 67.2,
+      "run_def_pctl_2025": 92.2,
+      "run_def_rate_2026": 0.0065,
+      "pass_cov_epatgt": 0.2727,
+      "pass_cov_strength": -0.0119,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0065,
+      "rookies_2026": [
+        [
+          "Arvell Reese",
+          "LB",
+          "coverage",
+          "R1",
+          -0.0005
+        ],
+        [
+          "Colton Hood",
+          "CB",
+          "coverage",
+          "R2",
+          0.0016
+        ],
+        [
+          "Arvell Reese",
+          "LB",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Colton Hood",
+          "CB",
+          "run_def",
+          "R2",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Bobby Okereke",
+          "pos": "LB",
+          "ps": 4.6,
+          "rate": 0.008,
+          "snaps": 573
+        },
+        {
+          "name": "Colton Hood",
+          "pos": "CB",
+          "ps": 0.6,
+          "rate": 0.0016,
+          "snaps": 394
+        },
+        {
+          "name": "Arvell Reese",
+          "pos": "LB",
+          "ps": -0.1,
+          "rate": -0.0005,
+          "snaps": 238
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Brian Burns",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 509
+        },
+        {
+          "name": "Nick Cross",
+          "pos": "S",
+          "ps": 0.1,
+          "rate": 0.0001,
+          "snaps": 661
+        },
+        {
+          "name": "Odafe Oweh",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 357
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Tremaine Edmunds",
+          "pos": "LB",
+          "ps": 9.5,
+          "rate": 0.0294,
+          "snaps": 323
+        },
+        {
+          "name": "Jevon Holland",
+          "pos": "S",
+          "ps": 4.2,
+          "rate": 0.0136,
+          "snaps": 310
+        },
+        {
+          "name": "Paulson Adebo",
+          "pos": "CB",
+          "ps": 4.2,
+          "rate": 0.0144,
+          "snaps": 290
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Tremaine Edmunds",
+          "unit": "coverage",
+          "from": "CHI",
+          "to": "NYG",
+          "ps": -8.0,
+          "conf": true
+        },
+        {
+          "player": "Nick Cross",
+          "unit": "coverage",
+          "from": "IND",
+          "to": "NYG",
+          "ps": -15.1,
+          "conf": true
+        },
+        {
+          "player": "Odafe Oweh",
+          "unit": "pass_rush",
+          "from": "2T",
+          "to": "NYG",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Nick Cross",
+          "unit": "pass_rush",
+          "from": "IND",
+          "to": "NYG",
+          "ps": 0.1,
+          "conf": true
+        },
+        {
+          "player": "Tremaine Edmunds",
+          "unit": "run_def",
+          "from": "CHI",
+          "to": "NYG",
+          "ps": 9.5,
+          "conf": true
+        },
+        {
+          "player": "Nick Cross",
+          "unit": "run_def",
+          "from": "IND",
+          "to": "NYG",
+          "ps": 1.9,
+          "conf": true
+        }
+      ]
+    },
+    "NYJ": {
+      "team": "NYJ",
+      "pass_cov_pctl": 20.3,
+      "pass_cov_pctl_2025": 7.8,
+      "pass_cov_rate_2026": -0.0068,
+      "pass_rush_pctl": 17.2,
+      "pass_rush_pctl_2025": 20.3,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 98.4,
+      "run_def_pctl_2025": 73.4,
+      "run_def_rate_2026": 0.0155,
+      "pass_cov_epatgt": 0.2136,
+      "pass_cov_strength": -0.0068,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0155,
+      "rookies_2026": [
+        [
+          "D'Angelo Ponds",
+          "CB",
+          "coverage",
+          "R2",
+          0.0018
+        ],
+        [
+          "David Bailey",
+          "OLB",
+          "pass_rush",
+          "R1",
+          0.0
+        ],
+        [
+          "Darrell Jackson Jr.",
+          "DT",
+          "pass_rush",
+          "R4",
+          0.0
+        ],
+        [
+          "David Bailey",
+          "OLB",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "D'Angelo Ponds",
+          "CB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Darrell Jackson Jr.",
+          "DT",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Nahshon Wright",
+          "pos": "CB",
+          "ps": 10.0,
+          "rate": 0.0172,
+          "snaps": 580
+        },
+        {
+          "name": "Azareye'h Thomas",
+          "pos": "CB",
+          "ps": 2.3,
+          "rate": 0.0153,
+          "snaps": 150
+        },
+        {
+          "name": "D'Angelo Ponds",
+          "pos": "CB",
+          "ps": 0.7,
+          "rate": 0.0018,
+          "snaps": 394
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jowon Briggs",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 296
+        },
+        {
+          "name": "Will McDonald IV",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 377
+        },
+        {
+          "name": "Joseph Ossai",
+          "pos": "DE",
+          "ps": -0.0,
+          "rate": -0.0,
+          "snaps": 385
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Dane Belton",
+          "pos": "S",
+          "ps": 12.5,
+          "rate": 0.0518,
+          "snaps": 241
+        },
+        {
+          "name": "Nahshon Wright",
+          "pos": "CB",
+          "ps": 8.8,
+          "rate": 0.0211,
+          "snaps": 416
+        },
+        {
+          "name": "David Onyemata",
+          "pos": "DT",
+          "ps": 7.5,
+          "rate": 0.0248,
+          "snaps": 304
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Nahshon Wright",
+          "unit": "coverage",
+          "from": "CHI",
+          "to": "NYJ",
+          "ps": 10.0,
+          "conf": true
+        },
+        {
+          "player": "Dane Belton",
+          "unit": "coverage",
+          "from": "NYG",
+          "to": "NYJ",
+          "ps": -4.2,
+          "conf": true
+        },
+        {
+          "player": "Minkah Fitzpatrick",
+          "unit": "coverage",
+          "from": "MIA",
+          "to": "NYJ",
+          "ps": -8.9,
+          "conf": true
+        },
+        {
+          "player": "Joseph Ossai",
+          "unit": "pass_rush",
+          "from": "CIN",
+          "to": "NYJ",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "T'Vondre Sweat",
+          "unit": "pass_rush",
+          "from": "TEN",
+          "to": "NYJ",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Kingsley Enagbare",
+          "unit": "pass_rush",
+          "from": "GB",
+          "to": "NYJ",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "David Onyemata",
+          "unit": "pass_rush",
+          "from": "ATL",
+          "to": "NYJ",
+          "ps": -0.0,
+          "conf": true
+        },
+        {
+          "player": "Nahshon Wright",
+          "unit": "run_def",
+          "from": "CHI",
+          "to": "NYJ",
+          "ps": 8.8,
+          "conf": true
+        },
+        {
+          "player": "Demario Davis",
+          "unit": "run_def",
+          "from": "NO",
+          "to": "NYJ",
+          "ps": 5.3,
+          "conf": true
+        },
+        {
+          "player": "Dane Belton",
+          "unit": "run_def",
+          "from": "NYG",
+          "to": "NYJ",
+          "ps": 12.5,
+          "conf": true
+        },
+        {
+          "player": "David Onyemata",
+          "unit": "run_def",
+          "from": "ATL",
+          "to": "NYJ",
+          "ps": 7.5,
+          "conf": true
+        },
+        {
+          "player": "Minkah Fitzpatrick",
+          "unit": "run_def",
+          "from": "MIA",
+          "to": "NYJ",
+          "ps": 5.6,
+          "conf": true
+        }
+      ]
+    },
+    "PHI": {
+      "team": "PHI",
+      "pass_cov_pctl": 92.2,
+      "pass_cov_pctl_2025": 79.7,
+      "pass_cov_rate_2026": 0.016,
+      "pass_rush_pctl": 42.2,
+      "pass_rush_pctl_2025": 45.3,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 23.4,
+      "run_def_pctl_2025": 39.1,
+      "run_def_rate_2026": 0.0,
+      "pass_cov_epatgt": -0.0209,
+      "pass_cov_strength": 0.016,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0,
+      "rookies_2026": [],
+      "top_coverage": [
+        {
+          "name": "Cooper DeJean",
+          "pos": "CB",
+          "ps": 18.3,
+          "rate": 0.0319,
+          "snaps": 575
+        },
+        {
+          "name": "Zack Baun",
+          "pos": "LB",
+          "ps": 9.6,
+          "rate": 0.0181,
+          "snaps": 528
+        },
+        {
+          "name": "Quinyon Mitchell",
+          "pos": "CB",
+          "ps": 9.0,
+          "rate": 0.0157,
+          "snaps": 574
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Moro Ojomo",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 424
+        },
+        {
+          "name": "Jalyx Hunt",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 384
+        },
+        {
+          "name": "Jalen Carter",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 380
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Jordan Davis",
+          "pos": "DT",
+          "ps": 9.3,
+          "rate": 0.0305,
+          "snaps": 306
+        },
+        {
+          "name": "Adoree' Jackson",
+          "pos": "CB",
+          "ps": -1.1,
+          "rate": -0.005,
+          "snaps": 209
+        },
+        {
+          "name": "Zack Baun",
+          "pos": "LB",
+          "ps": -1.6,
+          "rate": -0.0041,
+          "snaps": 401
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jonathan Jones",
+          "unit": "coverage",
+          "from": "WAS",
+          "to": "PHI",
+          "ps": 2.6,
+          "conf": true
+        },
+        {
+          "player": "Jonathan Greenard",
+          "unit": "pass_rush",
+          "from": "MIN",
+          "to": "PHI",
+          "ps": -0.0,
+          "conf": true
+        }
+      ]
+    },
+    "PIT": {
+      "team": "PIT",
+      "pass_cov_pctl": 35.9,
+      "pass_cov_pctl_2025": 39.1,
+      "pass_cov_rate_2026": -0.0034,
+      "pass_rush_pctl": 45.3,
+      "pass_rush_pctl_2025": 32.8,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 20.3,
+      "run_def_pctl_2025": 23.4,
+      "run_def_rate_2026": -0.0011,
+      "pass_cov_epatgt": 0.0386,
+      "pass_cov_strength": -0.0034,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": -0.0011,
+      "rookies_2026": [
+        [
+          "Daylen Everette",
+          "CB",
+          "coverage",
+          "R3",
+          0.0007
+        ],
+        [
+          "Daylen Everette",
+          "CB",
+          "run_def",
+          "R3",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Jamel Dean",
+          "pos": "CB",
+          "ps": 16.0,
+          "rate": 0.0383,
+          "snaps": 417
+        },
+        {
+          "name": "Jalen Ramsey",
+          "pos": "CB",
+          "ps": 1.2,
+          "rate": 0.002,
+          "snaps": 618
+        },
+        {
+          "name": "Brandin Echols",
+          "pos": "CB",
+          "ps": 1.2,
+          "rate": 0.0034,
+          "snaps": 349
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Nick Herbig",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 379
+        },
+        {
+          "name": "Alex Highsmith",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 365
+        },
+        {
+          "name": "T.J. Watt",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 478
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Cameron Heyward",
+          "pos": "DT",
+          "ps": 12.8,
+          "rate": 0.0416,
+          "snaps": 307
+        },
+        {
+          "name": "Payton Wilson",
+          "pos": "LB",
+          "ps": 1.6,
+          "rate": 0.0074,
+          "snaps": 218
+        },
+        {
+          "name": "Daylen Everette",
+          "pos": "CB",
+          "ps": 0.5,
+          "rate": 0.0033,
+          "snaps": 140
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Jamel Dean",
+          "unit": "coverage",
+          "from": "TB",
+          "to": "PIT",
+          "ps": 16.0,
+          "conf": true
+        }
+      ]
+    },
+    "SEA": {
+      "team": "SEA",
+      "pass_cov_pctl": 85.9,
+      "pass_cov_pctl_2025": 85.9,
+      "pass_cov_rate_2026": 0.0118,
+      "pass_rush_pctl": 51.6,
+      "pass_rush_pctl_2025": 35.9,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 42.2,
+      "run_def_pctl_2025": 29.7,
+      "run_def_rate_2026": 0.0023,
+      "pass_cov_epatgt": -0.0389,
+      "pass_cov_strength": 0.0118,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0023,
+      "rookies_2026": [
+        [
+          "Bud Clark",
+          "S",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "Julian Neal",
+          "CB",
+          "coverage",
+          "R3",
+          -0.0015
+        ],
+        [
+          "Bud Clark",
+          "S",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Julian Neal",
+          "CB",
+          "run_def",
+          "R3",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Ernest Jones IV",
+          "pos": "LB",
+          "ps": 20.4,
+          "rate": 0.0405,
+          "snaps": 504
+        },
+        {
+          "name": "Riq Woolen",
+          "pos": "CB",
+          "ps": 9.4,
+          "rate": 0.0178,
+          "snaps": 530
+        },
+        {
+          "name": "Devon Witherspoon",
+          "pos": "CB",
+          "ps": 8.2,
+          "rate": 0.0195,
+          "snaps": 423
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "DeMarcus Lawrence",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 390
+        },
+        {
+          "name": "Nick Emmanwori",
+          "pos": "S",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 487
+        },
+        {
+          "name": "Byron Murphy II",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 479
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Devon Witherspoon",
+          "pos": "CB",
+          "ps": 3.8,
+          "rate": 0.0155,
+          "snaps": 247
+        },
+        {
+          "name": "Leonard Williams",
+          "pos": "DE",
+          "ps": 2.6,
+          "rate": 0.0103,
+          "snaps": 256
+        },
+        {
+          "name": "Ernest Jones IV",
+          "pos": "LB",
+          "ps": 0.5,
+          "rate": 0.0017,
+          "snaps": 309
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Dante Fowler Jr.",
+          "unit": "pass_rush",
+          "from": "DAL",
+          "to": "SEA",
+          "ps": 0.0,
+          "conf": true
+        }
+      ]
+    },
+    "SF": {
+      "team": "SF",
+      "pass_cov_pctl": 60.9,
+      "pass_cov_pctl_2025": 57.8,
+      "pass_cov_rate_2026": 0.0032,
+      "pass_rush_pctl": 29.7,
+      "pass_rush_pctl_2025": 23.4,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 85.9,
+      "run_def_pctl_2025": 45.3,
+      "run_def_rate_2026": 0.0092,
+      "pass_cov_epatgt": 0.1626,
+      "pass_cov_strength": 0.0032,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": 0.0092,
+      "rookies_2026": [
+        [
+          "Ephesians Prysock",
+          "CB",
+          "coverage",
+          "R4",
+          0.0021
+        ],
+        [
+          "Romello Height",
+          "DE",
+          "pass_rush",
+          "R3",
+          0.0
+        ],
+        [
+          "Gracen Halton",
+          "DT",
+          "pass_rush",
+          "R4",
+          0.0
+        ],
+        [
+          "Romello Height",
+          "DE",
+          "run_def",
+          "R3",
+          0.0033
+        ],
+        [
+          "Gracen Halton",
+          "DT",
+          "run_def",
+          "R4",
+          0.0033
+        ],
+        [
+          "Ephesians Prysock",
+          "CB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Deommodore Lenoir",
+          "pos": "CB",
+          "ps": 17.3,
+          "rate": 0.028,
+          "snaps": 619
+        },
+        {
+          "name": "Ji'Ayir Brown",
+          "pos": "S",
+          "ps": 5.8,
+          "rate": 0.0127,
+          "snaps": 455
+        },
+        {
+          "name": "Renardo Green",
+          "pos": "CB",
+          "ps": 2.5,
+          "rate": 0.0052,
+          "snaps": 471
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Bryce Huff",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 360
+        },
+        {
+          "name": "Romello Height",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 305
+        },
+        {
+          "name": "Gracen Halton",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 152
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Upton Stout",
+          "pos": "CB",
+          "ps": 6.5,
+          "rate": 0.0402,
+          "snaps": 163
+        },
+        {
+          "name": "Renardo Green",
+          "pos": "CB",
+          "ps": 5.2,
+          "rate": 0.0172,
+          "snaps": 303
+        },
+        {
+          "name": "Malik Mustapha",
+          "pos": "S",
+          "ps": 4.0,
+          "rate": 0.0159,
+          "snaps": 251
+        }
+      ],
+      "moves_2026": []
+    },
+    "TB": {
+      "team": "TB",
+      "pass_cov_pctl": 17.2,
+      "pass_cov_pctl_2025": 35.9,
+      "pass_cov_rate_2026": -0.0078,
+      "pass_rush_pctl": 73.4,
+      "pass_rush_pctl_2025": 60.9,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 32.8,
+      "run_def_pctl_2025": 85.9,
+      "run_def_rate_2026": 0.0014,
+      "pass_cov_epatgt": 0.1897,
+      "pass_cov_strength": -0.0078,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0014,
+      "rookies_2026": [
+        [
+          "Josiah Trotter",
+          "LB",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "Keionte Scott",
+          "CB",
+          "coverage",
+          "R4",
+          -0.0005
+        ],
+        [
+          "Rueben Bain Jr.",
+          "DE",
+          "pass_rush",
+          "R1",
+          0.0
+        ],
+        [
+          "Rueben Bain Jr.",
+          "DE",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Josiah Trotter",
+          "LB",
+          "run_def",
+          "R2",
+          0.0033
+        ],
+        [
+          "Keionte Scott",
+          "CB",
+          "run_def",
+          "R4",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Antoine Winfield Jr.",
+          "pos": "S",
+          "ps": 5.3,
+          "rate": 0.0091,
+          "snaps": 582
+        },
+        {
+          "name": "Josiah Trotter",
+          "pos": "LB",
+          "ps": -0.1,
+          "rate": -0.0005,
+          "snaps": 197
+        },
+        {
+          "name": "Keionte Scott",
+          "pos": "CB",
+          "ps": -0.2,
+          "rate": -0.0005,
+          "snaps": 363
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "SirVocea Dennis",
+          "pos": "LB",
+          "ps": 0.1,
+          "rate": 0.0001,
+          "snaps": 567
+        },
+        {
+          "name": "Antoine Winfield Jr.",
+          "pos": "S",
+          "ps": 0.1,
+          "rate": 0.0001,
+          "snaps": 643
+        },
+        {
+          "name": "Anthony Nelson",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0002,
+          "snaps": 226
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Zyon McCollum",
+          "pos": "CB",
+          "ps": 6.8,
+          "rate": 0.026,
+          "snaps": 263
+        },
+        {
+          "name": "Tykee Smith",
+          "pos": "S",
+          "ps": 5.5,
+          "rate": 0.0201,
+          "snaps": 275
+        },
+        {
+          "name": "Antoine Winfield Jr.",
+          "pos": "S",
+          "ps": 2.6,
+          "rate": 0.0075,
+          "snaps": 351
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Alex Anzalone",
+          "unit": "coverage",
+          "from": "DET",
+          "to": "TB",
+          "ps": -0.5,
+          "conf": true
+        },
+        {
+          "player": "Al-Quadin Muhammad",
+          "unit": "pass_rush",
+          "from": "DET",
+          "to": "TB",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Christian Rozeboom",
+          "unit": "run_def",
+          "from": "CAR",
+          "to": "TB",
+          "ps": -6.8,
+          "conf": true
+        },
+        {
+          "player": "Alex Anzalone",
+          "unit": "run_def",
+          "from": "DET",
+          "to": "TB",
+          "ps": -6.8,
+          "conf": true
+        }
+      ]
+    },
+    "TEN": {
+      "team": "TEN",
+      "pass_cov_pctl": 14.1,
+      "pass_cov_pctl_2025": 4.7,
+      "pass_cov_rate_2026": -0.008,
+      "pass_rush_pctl": 64.1,
+      "pass_rush_pctl_2025": 64.1,
+      "pass_rush_rate_2026": 0.0,
+      "run_def_pctl": 64.1,
+      "run_def_pctl_2025": 64.1,
+      "run_def_rate_2026": 0.0059,
+      "pass_cov_epatgt": 0.162,
+      "pass_cov_strength": -0.008,
+      "pass_rush_strength": 0.0,
+      "run_def_strength": 0.0059,
+      "rookies_2026": [
+        [
+          "Anthony Hill Jr.",
+          "LB",
+          "coverage",
+          "R2",
+          -0.0005
+        ],
+        [
+          "Keldric Faulk",
+          "DE",
+          "pass_rush",
+          "R1",
+          0.0
+        ],
+        [
+          "Keldric Faulk",
+          "DE",
+          "run_def",
+          "R1",
+          0.0033
+        ],
+        [
+          "Anthony Hill Jr.",
+          "LB",
+          "run_def",
+          "R2",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Cody Barton",
+          "pos": "LB",
+          "ps": 11.6,
+          "rate": 0.0213,
+          "snaps": 543
+        },
+        {
+          "name": "Cor'Dale Flott",
+          "pos": "CB",
+          "ps": 1.7,
+          "rate": 0.0038,
+          "snaps": 455
+        },
+        {
+          "name": "Anthony Hill Jr.",
+          "pos": "LB",
+          "ps": -0.1,
+          "rate": -0.0005,
+          "snaps": 197
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "Jeffery Simmons",
+          "pos": "DT",
+          "ps": 0.1,
+          "rate": 0.0002,
+          "snaps": 437
+        },
+        {
+          "name": "John Franklin-Myers",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 357
+        },
+        {
+          "name": "Sebastian Joseph-Day",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 216
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Cedric Gray",
+          "pos": "LB",
+          "ps": 15.0,
+          "rate": 0.0397,
+          "snaps": 377
+        },
+        {
+          "name": "Jeffery Simmons",
+          "pos": "DT",
+          "ps": 13.9,
+          "rate": 0.0491,
+          "snaps": 283
+        },
+        {
+          "name": "Anthony Hill Jr.",
+          "pos": "LB",
+          "ps": 1.0,
+          "rate": 0.0033,
+          "snaps": 301
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Cor'Dale Flott",
+          "unit": "coverage",
+          "from": "NYG",
+          "to": "TEN",
+          "ps": 1.7,
+          "conf": true
+        },
+        {
+          "player": "John Franklin-Myers",
+          "unit": "pass_rush",
+          "from": "DEN",
+          "to": "TEN",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Jermaine Johnson II",
+          "unit": "pass_rush",
+          "from": "NYJ",
+          "to": "TEN",
+          "ps": -0.0,
+          "conf": true
+        }
+      ]
+    },
+    "WAS": {
+      "team": "WAS",
+      "pass_cov_pctl": 7.8,
+      "pass_cov_pctl_2025": 20.3,
+      "pass_cov_rate_2026": -0.0102,
+      "pass_rush_pctl": 20.3,
+      "pass_rush_pctl_2025": 26.6,
+      "pass_rush_rate_2026": -0.0,
+      "run_def_pctl": 1.6,
+      "run_def_pctl_2025": 10.9,
+      "run_def_rate_2026": -0.0133,
+      "pass_cov_epatgt": 0.21,
+      "pass_cov_strength": -0.0102,
+      "pass_rush_strength": -0.0,
+      "run_def_strength": -0.0133,
+      "rookies_2026": [
+        [
+          "Sonny Styles",
+          "LB",
+          "coverage",
+          "R1",
+          -0.0005
+        ],
+        [
+          "Sonny Styles",
+          "LB",
+          "run_def",
+          "R1",
+          0.0033
+        ]
+      ],
+      "top_coverage": [
+        {
+          "name": "Dee Winters",
+          "pos": "LB",
+          "ps": 2.0,
+          "rate": 0.0037,
+          "snaps": 528
+        },
+        {
+          "name": "Sonny Styles",
+          "pos": "LB",
+          "ps": -0.1,
+          "rate": -0.0005,
+          "snaps": 238
+        },
+        {
+          "name": "Marshon Lattimore",
+          "pos": "CB",
+          "ps": -0.9,
+          "rate": -0.0033,
+          "snaps": 288
+        }
+      ],
+      "top_pass_rush": [
+        {
+          "name": "K'Lavon Chaisson",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 386
+        },
+        {
+          "name": "Dorance Armstrong",
+          "pos": "LB",
+          "ps": 0.0,
+          "rate": 0.0002,
+          "snaps": 134
+        },
+        {
+          "name": "Jer'Zhan Newton",
+          "pos": "DT",
+          "ps": 0.0,
+          "rate": 0.0001,
+          "snaps": 215
+        }
+      ],
+      "top_run_def": [
+        {
+          "name": "Quan Martin",
+          "pos": "S",
+          "ps": 4.1,
+          "rate": 0.0115,
+          "snaps": 357
+        },
+        {
+          "name": "Sonny Styles",
+          "pos": "LB",
+          "ps": 1.0,
+          "rate": 0.0033,
+          "snaps": 302
+        },
+        {
+          "name": "Jeremy Reaves",
+          "pos": "S",
+          "ps": -2.1,
+          "rate": -0.0074,
+          "snaps": 292
+        }
+      ],
+      "moves_2026": [
+        {
+          "player": "Dee Winters",
+          "unit": "coverage",
+          "from": "SF",
+          "to": "WAS",
+          "ps": 2.0,
+          "conf": true
+        },
+        {
+          "player": "Amik Robertson",
+          "unit": "coverage",
+          "from": "DET",
+          "to": "WAS",
+          "ps": -10.7,
+          "conf": true
+        },
+        {
+          "player": "K'Lavon Chaisson",
+          "unit": "pass_rush",
+          "from": "NE",
+          "to": "WAS",
+          "ps": 0.0,
+          "conf": true
+        },
+        {
+          "player": "Dee Winters",
+          "unit": "run_def",
+          "from": "SF",
+          "to": "WAS",
+          "ps": -10.7,
+          "conf": true
+        }
+      ]
+    }
+  }
+}

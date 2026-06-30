@@ -1,0 +1,197 @@
+{
+ "defenders": {
+  "A.J. Terrell": {
+   "team": "ATL",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 1,
+   "avg_route_cover_pct": 53.3,
+   "yds_per_tgt_allowed": 5.0,
+   "tds_allowed": 0,
+   "coverage_grade": "shutdown",
+   "shadowed": [
+    "Mike Evans"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves ATL, that WR1 opens up"
+  },
+  "Pat Surtain II": {
+   "team": "DEN",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 4,
+   "avg_route_cover_pct": 74.7,
+   "yds_per_tgt_allowed": 7.5,
+   "tds_allowed": 0,
+   "coverage_grade": "tight",
+   "shadowed": [
+    "Calvin Ridley",
+    "Ja'Marr Chase",
+    "Michael Pittman",
+    "Quentin Johnston"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves DEN, that WR1 opens up"
+  },
+  "L'Jarius Sneed": {
+   "team": "TEN",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 2,
+   "avg_route_cover_pct": 55.8,
+   "yds_per_tgt_allowed": 14.8,
+   "tds_allowed": 0,
+   "coverage_grade": "beatable",
+   "shadowed": [
+    "Courtland Sutton",
+    "Nico Collins"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves TEN, that WR1 opens up"
+  },
+  "Sauce Gardner": {
+   "team": "NYJ",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 2,
+   "avg_route_cover_pct": 74.6,
+   "yds_per_tgt_allowed": 4.1,
+   "tds_allowed": 0,
+   "coverage_grade": "shutdown",
+   "shadowed": [
+    "DK Metcalf",
+    "Mike Evans"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves NYJ, that WR1 opens up"
+  },
+  "Greg Newsome II": {
+   "team": "CLE",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 1,
+   "avg_route_cover_pct": 46.4,
+   "yds_per_tgt_allowed": 9.8,
+   "tds_allowed": 0,
+   "coverage_grade": "beatable",
+   "shadowed": [
+    "Zay Flowers"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves CLE, that WR1 opens up"
+  },
+  "Derek Stingley Jr.": {
+   "team": "HOU",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 1,
+   "avg_route_cover_pct": 77.5,
+   "yds_per_tgt_allowed": 4.0,
+   "tds_allowed": 0,
+   "coverage_grade": "shutdown",
+   "shadowed": [
+    "Mike Evans"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves HOU, that WR1 opens up"
+  },
+  "Kamari Lassiter": {
+   "team": "HOU",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 2,
+   "avg_route_cover_pct": 64.6,
+   "yds_per_tgt_allowed": 30.5,
+   "tds_allowed": 1,
+   "coverage_grade": "beatable",
+   "shadowed": [
+    "Brian Thomas Jr.",
+    "Emeka Egbuka"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves HOU, that WR1 opens up"
+  },
+  "Quinyon Mitchell": {
+   "team": "PHI",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 3,
+   "avg_route_cover_pct": 69.5,
+   "yds_per_tgt_allowed": 5.3,
+   "tds_allowed": 0,
+   "coverage_grade": "shutdown",
+   "shadowed": [
+    "Courtland Sutton",
+    "Davante Adams",
+    "Emeka Egbuka"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves PHI, that WR1 opens up"
+  },
+  "D.J. Reed": {
+   "team": "DET",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 2,
+   "avg_route_cover_pct": 70.6,
+   "yds_per_tgt_allowed": 6.1,
+   "tds_allowed": 0,
+   "coverage_grade": "tight",
+   "shadowed": [
+    "Jerry Jeudy",
+    "Zay Flowers"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves DET, that WR1 opens up"
+  },
+  "Charvarius Ward": {
+   "team": "IND",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 2,
+   "avg_route_cover_pct": 61.5,
+   "yds_per_tgt_allowed": 5.3,
+   "tds_allowed": 1,
+   "coverage_grade": "tight",
+   "shadowed": [
+    "Calvin Ridley",
+    "Davante Adams"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves IND, that WR1 opens up"
+  },
+  "Christian Benford": {
+   "team": "BUF",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 1,
+   "avg_route_cover_pct": 65.6,
+   "yds_per_tgt_allowed": 2.0,
+   "tds_allowed": 1,
+   "coverage_grade": "tight",
+   "shadowed": [
+    "Tyreek Hill"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves BUF, that WR1 opens up"
+  },
+  "Tre'Davious White": {
+   "team": "BUF",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 1,
+   "avg_route_cover_pct": 56.7,
+   "yds_per_tgt_allowed": 6.5,
+   "tds_allowed": 1,
+   "coverage_grade": "tight",
+   "shadowed": [
+    "Jaylen Waddle"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves BUF, that WR1 opens up"
+  },
+  "DJ Turner II": {
+   "team": "CIN",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 1,
+   "avg_route_cover_pct": 55.3,
+   "yds_per_tgt_allowed": 0.0,
+   "tds_allowed": 0,
+   "coverage_grade": "shutdown",
+   "shadowed": [
+    "Courtland Sutton"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves CIN, that WR1 opens up"
+  },
+  "Xavien Howard": {
+   "team": "IND",
+   "role": "shadow CB (travels)",
+   "shadow_games_sample": 1,
+   "avg_route_cover_pct": 54.1,
+   "yds_per_tgt_allowed": 9.4,
+   "tds_allowed": 1,
+   "coverage_grade": "beatable",
+   "shadowed": [
+    "Puka Nacua"
+   ],
+   "funnel_link": "travels -> his team's WR1 stays a fortress; if he leaves IND, that WR1 opens up"
+  }
+ },
+ "note": "shadow CBs are the movement-sensitive nodes; per-CB coverage GRADE enrichment = PFF; full shadow set = FTN CSV (729 rows). On any move: reassign team, re-derive that team funnel."
+}

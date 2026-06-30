@@ -1,0 +1,89 @@
+{
+"min_g25": 4,
+"n_rookies": 96,
+"skill": {
+"n": 31,
+"spearman": 0.3,
+"auc": 0.616,
+"top_tertile_boom": 0.15,
+"bottom_tertile_boom": 0.069,
+"lift": 2.18
+},
+"qb": {
+"n": 3,
+"note": "too small"
+},
+"all": {
+"n": 34,
+"spearman": 0.3,
+"auc": 0.613,
+"top_tertile_boom": 0.141,
+"bottom_tertile_boom": 0.063,
+"lift": 2.25
+},
+"top5": [
+{
+"name": "Cam Skattebo",
+"pos": "RB",
+"ceiling": 99.1,
+"nfl_boom": 0.333
+},
+{
+"name": "Pat Bryant",
+"pos": "WR",
+"ceiling": 97.5,
+"nfl_boom": 0.0
+},
+{
+"name": "RJ Harvey",
+"pos": "RB",
+"ceiling": 94.7,
+"nfl_boom": 0.333
+},
+{
+"name": "Ashton Jeanty",
+"pos": "RB",
+"ceiling": 93.7,
+"nfl_boom": 0.2
+},
+{
+"name": "Jayden Higgins",
+"pos": "WR",
+"ceiling": 93.0,
+"nfl_boom": 0.0
+}
+],
+"bottom5": [
+{
+"name": "Jaylin Noel",
+"pos": "WR",
+"ceiling": 50.1,
+"nfl_boom": 0.0
+},
+{
+"name": "Elic Ayomanor",
+"pos": "WR",
+"ceiling": 48.5,
+"nfl_boom": 0.0
+},
+{
+"name": "Mason Taylor",
+"pos": "TE",
+"ceiling": 42.7,
+"nfl_boom": 0.0
+},
+{
+"name": "Colston Loveland",
+"pos": "TE",
+"ceiling": 26.0,
+"nfl_boom": 0.214
+},
+{
+"name": "Ollie Gordon II",
+"pos": "RB",
+"ceiling": 24.3,
+"nfl_boom": 0.0
+}
+],
+"verdict": "VALIDATES"
+}

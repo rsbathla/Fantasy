@@ -1,0 +1,724 @@
+{
+ "QB": [
+  {
+   "signal": "fus.protection_pctl",
+   "n": 30,
+   "raw": 0.435,
+   "resid": 0.272,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "fus.ceiling_pctl",
+   "n": 30,
+   "raw": 0.475,
+   "resid": 0.242,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "usage.dk_pg",
+   "n": 29,
+   "raw": 0.459,
+   "resid": 0.212,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "team_env.off_q",
+   "n": 30,
+   "raw": 0.4,
+   "resid": 0.21,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "fus.boom_pctl",
+   "n": 30,
+   "raw": 0.396,
+   "resid": 0.186,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "fus.oline_pctl",
+   "n": 30,
+   "raw": 0.027,
+   "resid": -0.167,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "team_env.env_idx",
+   "n": 30,
+   "raw": 0.424,
+   "resid": 0.166,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "adv2.ypa",
+   "n": 30,
+   "raw": 0.457,
+   "resid": 0.165,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "fus.spike_pctl",
+   "n": 30,
+   "raw": 0.036,
+   "resid": 0.152,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "adv2.rushtd_g",
+   "n": 30,
+   "raw": 0.044,
+   "resid": -0.127,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "adv2.rushyd_pg",
+   "n": 30,
+   "raw": 0.138,
+   "resid": -0.111,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "fus.matchup_pctl",
+   "n": 30,
+   "raw": -0.279,
+   "resid": -0.107,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "team_env.pace_pctl",
+   "n": 30,
+   "raw": 0.306,
+   "resid": 0.068,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "adv2.rush_pg",
+   "n": 30,
+   "raw": 0.175,
+   "resid": -0.03,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "adv2.ptd_pg",
+   "n": 30,
+   "raw": 0.442,
+   "resid": 0.027,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "cspec.ratio",
+   "n": 21,
+   "raw": 0.305,
+   "resid": 0.011,
+   "verdict": "LOW-N"
+  }
+ ],
+ "RB": [
+  {
+   "signal": "chart2.yaco_att(25)",
+   "n": 30,
+   "raw": 0.337,
+   "resid": 0.241,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "fus.matchup_pctl",
+   "n": 36,
+   "raw": 0.394,
+   "resid": 0.213,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "fus.oline_pctl",
+   "n": 36,
+   "raw": 0.281,
+   "resid": 0.194,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "usage.carry_share",
+   "n": 33,
+   "raw": 0.223,
+   "resid": -0.145,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "chart2.success(25)",
+   "n": 30,
+   "raw": 0.259,
+   "resid": 0.12,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "team_env.env_idx",
+   "n": 34,
+   "raw": 0.308,
+   "resid": 0.116,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "fus.explosive_pctl",
+   "n": 36,
+   "raw": 0.279,
+   "resid": -0.115,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "fus.yac_pctl",
+   "n": 36,
+   "raw": 0.075,
+   "resid": -0.115,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "fus.boom_pctl",
+   "n": 36,
+   "raw": 0.029,
+   "resid": -0.103,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "usage.ypc",
+   "n": 33,
+   "raw": 0.265,
+   "resid": -0.101,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "opp.route_pct",
+   "n": 36,
+   "raw": 0.367,
+   "resid": -0.082,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "adv2.td_pg",
+   "n": 36,
+   "raw": 0.555,
+   "resid": 0.067,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "team_env.off_q",
+   "n": 34,
+   "raw": 0.264,
+   "resid": 0.057,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "team_env.pace_pctl",
+   "n": 34,
+   "raw": 0.069,
+   "resid": 0.055,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.run_eff_pctl",
+   "n": 36,
+   "raw": 0.075,
+   "resid": -0.05,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "chart2.i5_pct(25)",
+   "n": 30,
+   "raw": 0.211,
+   "resid": 0.047,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "usage.dk_pg",
+   "n": 33,
+   "raw": 0.518,
+   "resid": -0.044,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "usage.tgt_share",
+   "n": 33,
+   "raw": 0.48,
+   "resid": 0.039,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "chart2.exp_run(25)",
+   "n": 30,
+   "raw": 0.242,
+   "resid": 0.028,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.spike_pctl",
+   "n": 36,
+   "raw": -0.48,
+   "resid": 0.019,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "chart2.mtf_att(25)",
+   "n": 30,
+   "raw": 0.295,
+   "resid": 0.017,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.rush_eff_pctl",
+   "n": 36,
+   "raw": 0.163,
+   "resid": -0.006,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.ceiling_pctl",
+   "n": 36,
+   "raw": 0.458,
+   "resid": -0.004,
+   "verdict": "VIEW"
+  }
+ ],
+ "WR": [
+  {
+   "signal": "cspec.ratio",
+   "n": 43,
+   "raw": 0.527,
+   "resid": 0.43,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "chart2.tprr(25)",
+   "n": 50,
+   "raw": 0.662,
+   "resid": 0.405,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "chart2.yprr(25)",
+   "n": 50,
+   "raw": 0.639,
+   "resid": 0.336,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "sep.man_sep_pctl",
+   "n": 56,
+   "raw": 0.457,
+   "resid": 0.316,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "sep.sep_pctl",
+   "n": 56,
+   "raw": 0.456,
+   "resid": 0.291,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "rz.rz_tgt_share",
+   "n": 56,
+   "raw": 0.277,
+   "resid": 0.277,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "fus.matchup_pctl",
+   "n": 56,
+   "raw": 0.151,
+   "resid": 0.257,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "chart2.yaco(25)",
+   "n": 50,
+   "raw": 0.253,
+   "resid": 0.215,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "cspec.pctl",
+   "n": 43,
+   "raw": 0.376,
+   "resid": 0.205,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "team_env.pace_pctl",
+   "n": 53,
+   "raw": 0.31,
+   "resid": 0.186,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "adv2.td_pg",
+   "n": 56,
+   "raw": 0.453,
+   "resid": 0.181,
+   "verdict": "ADD"
+  },
+  {
+   "signal": "chart2.mtf(25)",
+   "n": 50,
+   "raw": 0.138,
+   "resid": 0.149,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "chart2.yac(25)",
+   "n": 50,
+   "raw": 0.181,
+   "resid": 0.128,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "adv2.tgt_share",
+   "n": 56,
+   "raw": 0.523,
+   "resid": 0.118,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "usage.dk_pg",
+   "n": 52,
+   "raw": 0.553,
+   "resid": 0.108,
+   "verdict": "WEAK"
+  },
+  {
+   "signal": "fus.yac_pctl",
+   "n": 56,
+   "raw": 0.24,
+   "resid": 0.098,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "team_env.off_q",
+   "n": 53,
+   "raw": 0.369,
+   "resid": 0.095,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.route_eff_pctl",
+   "n": 56,
+   "raw": 0.407,
+   "resid": 0.091,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "team_env.env_idx",
+   "n": 53,
+   "raw": 0.362,
+   "resid": 0.082,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.spike_pctl",
+   "n": 56,
+   "raw": -0.394,
+   "resid": -0.076,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "opp.route_pct",
+   "n": 56,
+   "raw": 0.216,
+   "resid": -0.072,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "adv2.ypt",
+   "n": 56,
+   "raw": 0.253,
+   "resid": -0.066,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "adv2.ay_share",
+   "n": 56,
+   "raw": 0.248,
+   "resid": 0.065,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "adv2.aDOT",
+   "n": 56,
+   "raw": -0.071,
+   "resid": -0.044,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "rz.ez_tgt_share",
+   "n": 56,
+   "raw": 0.055,
+   "resid": -0.037,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.oline_pctl",
+   "n": 56,
+   "raw": -0.017,
+   "resid": 0.033,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.boom_pctl",
+   "n": 56,
+   "raw": 0.165,
+   "resid": -0.032,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "rz.ez_td_pg",
+   "n": 56,
+   "raw": 0.227,
+   "resid": -0.024,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.coverage_proof_pctl",
+   "n": 56,
+   "raw": -0.078,
+   "resid": 0.02,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.ceiling_pctl",
+   "n": 56,
+   "raw": 0.363,
+   "resid": 0.015,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.explosive_pctl",
+   "n": 56,
+   "raw": -0.002,
+   "resid": 0.01,
+   "verdict": "VIEW"
+  },
+  {
+   "signal": "fus.separation_pctl",
+   "n": 56,
+   "raw": -0.045,
+   "resid": 0.0,
+   "verdict": "VIEW"
+  }
+ ],
+ "TE": [
+  {
+   "signal": "team_env.pace_pctl",
+   "n": 16,
+   "raw": 0.364,
+   "resid": 0.409,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "rz.ez_tgt_share",
+   "n": 16,
+   "raw": -0.178,
+   "resid": -0.401,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "rz.ez_td_pg",
+   "n": 16,
+   "raw": -0.086,
+   "resid": -0.389,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.oline_pctl",
+   "n": 16,
+   "raw": -0.399,
+   "resid": -0.378,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "cspec.ratio",
+   "n": 15,
+   "raw": 0.237,
+   "resid": 0.368,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.coverage_proof_pctl",
+   "n": 16,
+   "raw": 0.415,
+   "resid": 0.322,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "chart2.yaco(25)",
+   "n": 14,
+   "raw": -0.174,
+   "resid": -0.285,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.yac_pctl",
+   "n": 16,
+   "raw": -0.04,
+   "resid": -0.278,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "rz.rz_tgt_share",
+   "n": 16,
+   "raw": -0.091,
+   "resid": -0.223,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.boom_pctl",
+   "n": 16,
+   "raw": -0.262,
+   "resid": -0.198,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "chart2.yprr(25)",
+   "n": 14,
+   "raw": -0.191,
+   "resid": -0.189,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "chart2.yac(25)",
+   "n": 14,
+   "raw": -0.275,
+   "resid": -0.183,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "team_env.env_idx",
+   "n": 16,
+   "raw": -0.186,
+   "resid": -0.172,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.route_eff_pctl",
+   "n": 16,
+   "raw": -0.157,
+   "resid": -0.164,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "cspec.pctl",
+   "n": 15,
+   "raw": 0.293,
+   "resid": 0.162,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "chart2.mtf(25)",
+   "n": 14,
+   "raw": -0.111,
+   "resid": -0.153,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "adv2.ay_share",
+   "n": 16,
+   "raw": 0.201,
+   "resid": -0.15,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "chart2.tprr(25)",
+   "n": 14,
+   "raw": 0.083,
+   "resid": -0.138,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.matchup_pctl",
+   "n": 16,
+   "raw": -0.052,
+   "resid": -0.136,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.ceiling_pctl",
+   "n": 16,
+   "raw": 0.482,
+   "resid": 0.099,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.spike_pctl",
+   "n": 16,
+   "raw": -0.445,
+   "resid": -0.096,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "sep.sep_pctl",
+   "n": 16,
+   "raw": -0.027,
+   "resid": -0.077,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "adv2.td_pg",
+   "n": 16,
+   "raw": 0.288,
+   "resid": 0.058,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "fus.separation_pctl",
+   "n": 16,
+   "raw": -0.312,
+   "resid": 0.05,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "opp.route_pct",
+   "n": 16,
+   "raw": 0.418,
+   "resid": 0.037,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "team_env.off_q",
+   "n": 16,
+   "raw": 0.087,
+   "resid": 0.033,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "sep.man_sep_pctl",
+   "n": 16,
+   "raw": -0.01,
+   "resid": -0.03,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "adv2.aDOT",
+   "n": 16,
+   "raw": -0.103,
+   "resid": -0.029,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "adv2.ypt",
+   "n": 16,
+   "raw": -0.065,
+   "resid": -0.017,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "usage.dk_pg",
+   "n": 16,
+   "raw": 0.458,
+   "resid": -0.011,
+   "verdict": "LOW-N"
+  },
+  {
+   "signal": "adv2.tgt_share",
+   "n": 16,
+   "raw": 0.499,
+   "resid": -0.006,
+   "verdict": "LOW-N"
+  }
+ ]
+}

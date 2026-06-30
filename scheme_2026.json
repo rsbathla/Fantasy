@@ -1,0 +1,286 @@
+{
+ "_meta": {
+  "source": "web_teams.json + parallel web-research agents (June 2026, cited), RE-VERIFIED after SEA/BAL corrections.",
+  "off_dials": "motion/vertical/passcatch/scramble in {-1,0,+1}: +1 = 2026 play-caller's scheme AMPLIFIES that usage (keep lever full), -1 = SUPPRESSES (demote), 0 = neutral.",
+  "def_dials": "single_high/two_high in {-1,0,+1}: push a genuinely-new-DC team's 2025 shell toward the researched lean; man for reference (man-rate handled in coordinator_scheme_2026). All-zero = known-neutral (keep 2025).",
+  "rule": "OFFENSE 'off' entry ONLY where the 2026 PLAY-CALLER actually changed (verified). TRUE-continuity callers (KC Reid, GB LaFleur, JAX Coen, BUF Brady, CHI Ben Johnson, DAL Schottenheimer, NO Kellen Moore) have NO off entry => no discount. DEFENSE 'def' entry only for genuinely-new 2026 DCs.",
+  "verified_changes": "play-caller changed 2026: ARI,ATL,BAL,CAR,CLE,DEN,DET,LAC,LV,MIA,NYG,NYJ,PHI,PIT,SEA,TB,TEN,WAS"
+ },
+ "ARI": {
+  "playcaller": "Mike LaFleur (HC, new; Gannon fired)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Shanahan OZ + motion/PA; Murray gone -> pocket QBs"
+ },
+ "ATL": {
+  "playcaller": "Tommy Rees (OC) / Stefanski",
+  "off": {
+   "motion": -1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": -1
+  },
+  "note": "under-center wide-zone PA, bottom-third motion, possession passing, strict pocket"
+ },
+ "BAL": {
+  "playcaller": "Declan Doyle (OC)",
+  "off": {
+   "motion": 1,
+   "vertical": 1,
+   "passcatch": 1,
+   "scramble": 1
+  },
+  "note": "Payton/Johnson tree: motion + explosive PA + Lamar bootlegs",
+  "dc": "Jesse Minter (DC, confirmed)",
+  "def": {
+   "single_high": 0,
+   "two_high": 1,
+   "man": -1
+  },
+  "def_note": "Minter's 2025 LAC scheme: ~81% zone (man -1), 49.6% two-high (4th-most, +1), single-high mix (0), low blitz, front-four pressure"
+ },
+ "BUF": {
+  "dc": "Jim Leonhard",
+  "def": {
+   "single_high": 1,
+   "two_high": 0,
+   "man": 0
+  },
+  "def_note": "3-4 sim-pressure/creeper, Cover-1/Cover-3 single-high. OFFENSE = continuity (Brady was 2025 play-caller) -> no off entry"
+ },
+ "CAR": {
+  "playcaller": "Brad Idzik (OC, new caller)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Canales wide-zone committing to MORE motion; short aDOT, RB screens"
+ },
+ "CLE": {
+  "playcaller": "Todd Monken (HC, new)",
+  "off": {
+   "motion": 1,
+   "vertical": 1,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Air Coryell vertical PA, ~68% motion, RBs featured",
+  "dc": "Mike Rutenberg",
+  "def": {
+   "single_high": 1,
+   "two_high": 0,
+   "man": 1
+  },
+  "def_note": "keeps single-high/Cover-1 base (#2 Cover-1) + disguise"
+ },
+ "DAL": {
+  "dc": "Christian Parker",
+  "def": {
+   "single_high": -1,
+   "two_high": 1,
+   "man": 0
+  },
+  "def_note": "Fangio-tree two-high, big cushion, low blitz. OFFENSE = continuity (Schottenheimer yr2) -> no off entry"
+ },
+ "DEN": {
+  "playcaller": "Davis Webb (OC, new caller; Payton handed it off)",
+  "off": {
+   "motion": 0,
+   "vertical": 1,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Air Raid/spread roots + Waddle -> vertical; deep RB room"
+ },
+ "DET": {
+  "playcaller": "Drew Petzing (OC, new; replaced Morton)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 0,
+   "scramble": 0
+  },
+  "note": "motion + RPO/PA but Cardinals scheme was run-heavy/short/checkdown; Goff pocket"
+ },
+ "GB": {
+  "dc": "Jonathan Gannon",
+  "def": {
+   "single_high": -1,
+   "two_high": 1,
+   "man": -1
+  },
+  "def_note": "NFL-heaviest Cover-4/quarters, low man, front-four zone. OFFENSE = continuity (LaFleur) -> no off entry"
+ },
+ "LAC": {
+  "playcaller": "Mike McDaniel (OC, new)",
+  "off": {
+   "motion": 1,
+   "vertical": 1,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Miami ~70% motion, PA + screens + zone run, downfield off PA",
+  "dc": "Chris O'Leary",
+  "def": {
+   "single_high": 0,
+   "two_high": 1,
+   "man": -1
+  },
+  "def_note": "heavy zone (~80%), split-field/quarters two-high pre-snap"
+ },
+ "LV": {
+  "playcaller": "Klint Kubiak (HC, new)",
+  "off": {
+   "motion": 1,
+   "vertical": 1,
+   "passcatch": 1,
+   "scramble": 1
+  },
+  "note": "wide-zone, heavy motion + 12-personnel, deep PA bootlegs, RBs as receivers",
+  "dc": "Rob Leonard",
+  "def": {
+   "single_high": 0,
+   "two_high": 0,
+   "man": 0
+  },
+  "def_note": "3-4 multiple/disguise, no clear shell lean -> keep 2025"
+ },
+ "MIA": {
+  "playcaller": "Bobby Slowik (OC, new)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Shanahan motion/PA/screens, spacing/horizontal (not a vertical bomber)",
+  "dc": "Sean Duggan (HC Hafley calls D)",
+  "def": {
+   "single_high": 1,
+   "two_high": -1,
+   "man": 1
+  },
+  "def_note": "Wide-9 + aggressive PRESS-MAN single-high"
+ },
+ "NYG": {
+  "playcaller": "Matt Nagy (OC, calls plays in NY)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Reid-tree West Coast/spread, misdirection, RPO, motion",
+  "dc": "Dennard Wilson",
+  "def": {
+   "single_high": -1,
+   "two_high": 1,
+   "man": -1
+  },
+  "def_note": "Macdonald-tree press + zone-heavy disguised two-high"
+ },
+ "NYJ": {
+  "playcaller": "Frank Reich (OC, new)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": -1
+  },
+  "note": "veteran scheme, RB/TE motion to ID coverage, quick game (Geno), pocket QB",
+  "dc": "Brian Duker (HC Glenn calls D)",
+  "def": {
+   "single_high": 0,
+   "two_high": 0,
+   "man": 0
+  },
+  "def_note": "versatile/multiple, neutral"
+ },
+ "PHI": {
+  "playcaller": "Sean Mannion (OC, new)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 0,
+   "scramble": 1
+  },
+  "note": "McVay/LaFleur-tree motion wide-zone (NOT run-heavy quick game); Hurts designed runs"
+ },
+ "PIT": {
+  "playcaller": "Mike McCarthy (HC, new)",
+  "off": {
+   "motion": 0,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": -1
+  },
+  "note": "West Coast timing, Rodgers quick game + checkdowns",
+  "dc": "Patrick Graham",
+  "def": {
+   "single_high": 0,
+   "two_high": 0,
+   "man": 0
+  },
+  "def_note": "multiple/flexible -> neutral"
+ },
+ "SEA": {
+  "playcaller": "Brian Fleury (OC, NEW; Kubiak left for LV HC)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": -1
+  },
+  "note": "~80% same wide-zone/under-center/PA family but new voice + MORE pre-snap motion/tempo (Fleury from SF); Darnold pocket QB. DC Durde NOT new."
+ },
+ "TB": {
+  "playcaller": "Zac Robinson (OC, NEW; McVay branch)",
+  "off": {
+   "motion": 1,
+   "vertical": 0,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "McVay-tree motion/PA/wide-zone for Mayfield; Bowles DC not new"
+ },
+ "TEN": {
+  "playcaller": "Brian Daboll (OC, new)",
+  "off": {
+   "motion": 1,
+   "vertical": 1,
+   "passcatch": 1,
+   "scramble": 0
+  },
+  "note": "Erhardt-Perkins motion + condensed splits + deep PA, WR/RB featured",
+  "dc": "Gus Bradley (Saleh scheme)",
+  "def": {
+   "single_high": 1,
+   "two_high": -1,
+   "man": -1
+  },
+  "def_note": "4-3 under, Cover-3 single-high zone, rush-4, low blitz"
+ },
+ "WAS": {
+  "playcaller": "David Blough (OC, new)",
+  "off": {
+   "motion": -1,
+   "vertical": 0,
+   "passcatch": 0,
+   "scramble": -1
+  },
+  "note": "more under-center/balanced, less shotgun for Daniels",
+  "dc": "Daronte Jones",
+  "def": {
+   "single_high": -1,
+   "two_high": 1,
+   "man": -1
+  },
+  "def_note": "Flores/Vikings -> more two-high, heavy zone/match, very low man, disguised blitz"
+ }
+}

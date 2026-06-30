@@ -1,0 +1,161 @@
+{
+  "state": {
+    "pick": 55,
+    "round": 5,
+    "seat": 7,
+    "roster": [
+      {
+        "name": "Amon-Ra St. Brown",
+        "pos": "WR",
+        "team": "DET"
+      },
+      {
+        "name": "De'Von Achane",
+        "pos": "RB",
+        "team": "MIA"
+      },
+      {
+        "name": "Breece Hall",
+        "pos": "RB",
+        "team": "NYJ"
+      },
+      {
+        "name": "Tetairoa McMillan",
+        "pos": "WR",
+        "team": "CAR"
+      }
+    ],
+    "counts": {
+      "QB": 0,
+      "RB": 2,
+      "WR": 2,
+      "TE": 0
+    },
+    "anchor": "none"
+  },
+  "headline": {
+    "take": "Courtland Sutton",
+    "dTitle": 56.19,
+    "dAdv": 49.0,
+    "why": "WR (DEN, ADP 83). Best blended d on the board: dTitle +56.19, dAdv +49.0 (score +0.553). WR 2->3 vs target 8-9; advancement window - volume/floor + best ceiling-value (playoff_up ignored)."
+  },
+  "tree": {
+    "label": "Pick 55 (R5)",
+    "branches": [
+      {
+        "cond": "if Courtland Sutton (WR) still on board",
+        "take": "Courtland Sutton",
+        "pos": "WR",
+        "team": "DEN",
+        "dTitle": 56.19,
+        "dAdv": 49.0,
+        "dW17": 10.6,
+        "playoff_up": 0.501,
+        "reason": "blended d +0.533 (dTitle +56.19, dAdv +49.0); WR 2->3 vs target 8-9; ADP 83.",
+        "then": {
+          "label": "Pick 66 (R6) - look-ahead",
+          "branches": [
+            {
+              "cond": "then take Jaxson Dart (QB)",
+              "take": "Jaxson Dart",
+              "pos": "QB",
+              "team": "NYG",
+              "dTitle": 20.76,
+              "dAdv": 21.6,
+              "dW17": 15.6,
+              "playoff_up": 0.46,
+              "reason": "blended d +0.211 (dTitle +20.76, dAdv +21.6); QB 0->1 vs target 2-3; ADP 100."
+            },
+            {
+              "cond": "else best available / need QB",
+              "take": "Brock Purdy",
+              "pos": "QB",
+              "team": "SF",
+              "dTitle": 20.76,
+              "dAdv": 21.6,
+              "dW17": 15.8,
+              "playoff_up": 0.585,
+              "reason": "Catch-all best-available/fill-need: blended d +0.211 (dTitle +20.76, dAdv +21.6); QB 0->1 vs target 2-3; ADP 98."
+            }
+          ]
+        }
+      },
+      {
+        "cond": "else if Rhamondre Stevenson (RB) is the best value",
+        "take": "Rhamondre Stevenson",
+        "pos": "RB",
+        "team": "NE",
+        "dTitle": 53.61,
+        "dAdv": 47.3,
+        "dW17": 8.5,
+        "playoff_up": 0.565,
+        "reason": "blended d +0.511 (dTitle +53.61, dAdv +47.3); RB 2->3 vs target 5-6; ADP 75.",
+        "then": {
+          "label": "Pick 66 (R6) - look-ahead",
+          "branches": [
+            {
+              "cond": "then take Jaxson Dart (QB)",
+              "take": "Jaxson Dart",
+              "pos": "QB",
+              "team": "NYG",
+              "dTitle": 23.48,
+              "dAdv": 23.3,
+              "dW17": 18.0,
+              "playoff_up": 0.46,
+              "reason": "blended d +0.234 (dTitle +23.48, dAdv +23.3); QB 0->1 vs target 2-3; ADP 100."
+            },
+            {
+              "cond": "else best available / need QB",
+              "take": "Brock Purdy",
+              "pos": "QB",
+              "team": "SF",
+              "dTitle": 23.15,
+              "dAdv": 23.3,
+              "dW17": 17.0,
+              "playoff_up": 0.585,
+              "reason": "Catch-all best-available/fill-need: blended d +0.232 (dTitle +23.15, dAdv +23.3); QB 0->1 vs target 2-3; ADP 98."
+            }
+          ]
+        }
+      },
+      {
+        "cond": "else best available / need WR",
+        "take": "DK Metcalf",
+        "pos": "WR",
+        "team": "PIT",
+        "dTitle": 53.06,
+        "dAdv": 47.8,
+        "dW17": 8.8,
+        "playoff_up": 0.433,
+        "reason": "Catch-all best-available/fill-need: blended d +0.510 (dTitle +53.06, dAdv +47.8); WR 2->3 vs target 8-9; ADP 74.",
+        "then": {
+          "label": "Pick 66 (R6) - look-ahead",
+          "branches": [
+            {
+              "cond": "then take Jaxson Dart (QB)",
+              "take": "Jaxson Dart",
+              "pos": "QB",
+              "team": "NYG",
+              "dTitle": 23.96,
+              "dAdv": 23.0,
+              "dW17": 18.0,
+              "playoff_up": 0.46,
+              "reason": "blended d +0.236 (dTitle +23.96, dAdv +23.0); QB 0->1 vs target 2-3; ADP 100."
+            },
+            {
+              "cond": "else best available / need QB",
+              "take": "Brock Purdy",
+              "pos": "QB",
+              "team": "SF",
+              "dTitle": 23.96,
+              "dAdv": 22.9,
+              "dW17": 17.7,
+              "playoff_up": 0.585,
+              "reason": "Catch-all best-available/fill-need: blended d +0.235 (dTitle +23.96, dAdv +22.9); QB 0->1 vs target 2-3; ADP 98."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

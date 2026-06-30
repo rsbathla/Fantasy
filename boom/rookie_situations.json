@@ -1,0 +1,51 @@
+{
+"n_rookie_games": 311,
+"n_rookies": 69,
+"base_boom_rate": 0.141,
+"reliable_findings": {
+"draft_capital_dominates": {
+"early_ADP<=60": 0.244,
+"mid_61-120": 0.08,
+"late_121+": 0.089,
+"lift_early": 1.72,
+"note": "strongest signal; confirms the W-test that ADP is the dominant rookie predictor"
+},
+"position": {
+"TE": 0.2,
+"RB": 0.185,
+"WR": 0.104,
+"QB": 0.026,
+"note": "rookie booms concentrate at RB/TE; rookie WRs lower-hit; rookie QBs essentially never spike (0.026)"
+},
+"role_volume_required": {
+"WRTE_low_tgt_share<=0.16": 0.038,
+"note": "no role = no boom; a rookie needs real volume. Mid/high target-share cells noisy (n<30) but clearly above the no-role floor"
+},
+"venue": {
+"home": 0.163,
+"away": 0.117,
+"lift_home": 1.15,
+"wind>=15mph": 0.0,
+"note": "home edge modest; wind suppresses booms (0/8, small n)"
+}
+},
+"matchup_corrected": {
+"metric_orientation": "low opp_passp/opp_runp = SOFT defense (code: opp_passp<=35 is 'soft pass-D')",
+"full_sample_direction_WRTE": {
+"soft_pass_D": 0.198,
+"tough_pass_D": 0.156,
+"n": 542
+},
+"note": "On the full sample, SOFT pass-D -> more boom (expected). The rookie-only split (n~37/cell) came out INVERTED = small-sample noise, NOT a real 'rookies boom vs tough D' effect. Treat matchup as a real but secondary modifier in the soft->boom direction."
+},
+"meta": {
+"pregame_projection_tertiles": {
+"low": 0.123,
+"mid": 0.157,
+"high": 0.146
+},
+"note": "the model's own weekly projection barely separates rookie booms -> rookie booms are hard to call week-to-week; the predictable part is the SEASON situation (draft capital + role), not the weekly number"
+},
+"actionable_summary": "Boom-enabling rookie situation = EARLY DRAFT CAPITAL (top-60 ADP) + a REAL ROLE (volume), concentrated at RB/TE. Matchup (soft D), home, and calm weather are secondary modifiers. Rookie WRs are lower-hit; rookie QBs almost never spike.",
+"caveats": "n=311 rookie-games / 69 rookies; games repeat per player (non-independent); single-factor splits; 'undrafted 0.155' is survivorship (undrafted rookies only appear once they earned a role)."
+}

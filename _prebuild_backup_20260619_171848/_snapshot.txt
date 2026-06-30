@@ -1,0 +1,10 @@
+features_cols 139
+features_players 371
+fusion_players 371
+dfs_players 371
+defense_teams 32
+spot_fusion Puka Nacua consensus=80.6 div=26.3
+spot_fusion Ja'Marr Chase consensus=67.1 div=29.7
+spot_def NYJ cov26=32.8 rush26=32.8
+spot_def KC cov26=20.3 rush26=57.8
+spot_def CHI cov26=62.5 rush26=23.4

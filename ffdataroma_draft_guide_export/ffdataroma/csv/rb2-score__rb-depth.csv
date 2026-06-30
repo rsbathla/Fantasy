@@ -1,0 +1,191 @@
+team,player,gsisId,posRank
+ARI,Jeremiyah Love,LOV121782,1
+ARI,Tyler Allgeier,00-0037263,2
+ARI,James Conner,00-0033553,3
+ARI,Trey Benson,00-0039921,4
+ARI,Bam Knight,00-0037157,5
+ARI,Corey Kiner,00-0040556,6
+ATL,Bijan Robinson,00-0038542,1
+ATL,Brian Robinson Jr.,00-0037746,2
+ATL,Tyler Goodson,00-0037120,3
+ATL,Nathan Carter,00-0040547,4
+ATL,Cash Jones,JON150008,5
+BAL,Derrick Henry,00-0032764,1
+BAL,Justice Hill,00-0034975,2
+BAL,Rasheen Ali,00-0039796,3
+BAL,Adam Randall,RAN022436,4
+BAL,Dontae McMillan,MCM377911,5
+BAL,Elijah Tau-Tolliver,TAU484505,6
+BUF,James Cook III,00-0037248,1
+BUF,Ty Johnson,00-0035537,2
+BUF,Ray Davis,00-0039875,3
+BUF,Frank Gore,00-0023500,4
+BUF,Desmond Reid,REI258968,5
+CAR,Chuba Hubbard,00-0036555,1
+CAR,Jonathon Brooks,00-0039344,2
+CAR,Trevor Etienne,00-0040644,3
+CAR,AJ Dillon,00-0036265,4
+CAR,Anthony Tyus III,00-0040394,5
+CAR,Miles Davis,DAV568008,6
+CHI,D'Andre Swift,00-0036275,1
+CHI,Kyle Monangai,00-0040236,2
+CHI,Roschon Johnson,00-0039021,3
+CHI,Brittain Brown,00-0037329,4
+CHI,Salvon Ahmed,00-0036020,5
+CHI,Coleman Bennett,BEN309427,6
+CIN,Chase Brown,00-0038597,1
+CIN,Samaje Perine,00-0033526,2
+CIN,Tahj Brooks,00-0040208,3
+CIN,Gary Brightwell,00-0036569,4
+CIN,Kendall Milton,00-0039266,5
+CIN,Kentrel Bullock,BUL521409,6
+CIN,Jamal Haynes,HAY608012,7
+CLE,Quinshon Judkins,00-0040784,1
+CLE,Dylan Sampson,00-0040162,2
+CLE,Raheim Sanders,00-0040466,3
+CLE,Ahmani Marshall,00-0040260,4
+CLE,Davon Booth,BOO560641,5
+DAL,Javonte Williams,00-0036997,1
+DAL,Malik Davis,00-0037563,2
+DAL,Jaydon Blue,00-0040586,3
+DAL,Phil Mafah,00-0040021,4
+DAL,Israel Abanikanda,00-0038389,5
+DAL,Dominic Richardson,RIC410819,6
+DEN,J.K. Dobbins,00-0036158,1
+DEN,RJ Harvey,00-0040730,2
+DEN,Jonah Coleman,COL293648,3
+DEN,Jaleel McLaughlin,00-0038794,4
+DEN,Tyler Badie,00-0037085,5
+DEN,Cody Schrader,00-0039703,6
+DET,Jahmyr Gibbs,00-0039139,1
+DET,Isiah Pacheco,00-0037197,2
+DET,Sione Vaki,00-0039364,3
+DET,Jacob Saylors,00-0038896,4
+DET,Jabari Small,00-0039652,5
+DET,Kye Robichaux,00-0040393,6
+GB,Josh Jacobs,00-0035700,1
+GB,Chris Brooks,00-0038685,2
+GB,MarShawn Lloyd,00-0039811,3
+GB,Pierre Strong Jr.,00-0038098,4
+GB,Damien Martinez,00-0040651,5
+GB,Jaden Nixon,NIX612810,6
+HOU,David Montgomery,00-0035685,1
+HOU,Woody Marks,00-0040583,2
+HOU,Jawhar Jordan,00-0039405,3
+HOU,British Brooks,00-0039603,4
+HOU,Noah Whittington,WHI812467,5
+HOU,Evan Hull,00-0038397,6
+HOU,Josh Pitsenberger,,7
+IND,Jonathan Taylor,00-0036223,1
+IND,DJ Giddens,00-0040179,2
+IND,Seth McGowan,MCG547540,3
+IND,Ulysses Bentley IV,00-0040476,4
+IND,Lincoln Pare,PAR048703,5
+IND,Anderson Castle,CAS763721,6
+JAX,Bhayshul Tuten,00-0040719,1
+JAX,Chris Rodriguez Jr.,00-0038611,2
+JAX,LeQuint Allen Jr.,00-0040238,3
+JAX,Ameer Abdullah,00-0032104,4
+JAX,DeeJay Dallas,00-0036425,5
+JAX,J'Mari Taylor,TAY388181,6
+KC,Kenneth Walker III,00-0038134,1
+KC,Emmett Johnson,JOH224817,2
+KC,Emari Demercado,00-0038705,3
+KC,Brashard Smith,00-0040078,4
+KC,Jaydn Ott,OTT017302,5
+KC,EJ Smith,SMI251720,6
+LA,Kyren Williams,00-0037840,1
+LA,Blake Corum,00-0039738,2
+LA,Ronnie Rivers,00-0037557,3
+LA,Jarquez Hunter,00-0040692,4
+LA,Jordan Waters,00-0040601,5
+LA,Dean Connors,CON545055,6
+LAC,Omarion Hampton,00-0040666,1
+LAC,Keaton Mitchell,00-0038454,2
+LAC,Kimani Vidal,00-0039391,3
+LAC,Jaret Patterson,00-0036755,4
+LAC,Amar Johnson,00-0040039,5
+LAC,Greg Desrosiers Jr.,,6
+LV,Ashton Jeanty,00-0040122,1
+LV,Mike Washington Jr.,WAS569019,2
+LV,Dylan Laube,00-0039407,3
+LV,Chris Collier,00-0039244,4
+LV,Roman Hemby,HEM079286,5
+MIA,De'Von Achane,00-0039040,1
+MIA,Jaylen Wright,00-0039874,2
+MIA,Ollie Gordon II,00-0040198,3
+MIA,Donovan Edwards,00-0040400,4
+MIA,Carlos Washington Jr.,00-0038930,5
+MIA,Anthony Hankerson,HAN168809,6
+MIN,Aaron Jones Sr.,00-0033293,1
+MIN,Jordan Mason,00-0037525,2
+MIN,Demond Claiborne,CLA041524,3
+MIN,Zavier Scott,00-0038440,4
+MIN,Kejon Owens,OWE539873,5
+NE,Rhamondre Stevenson,00-0036875,1
+NE,TreVeyon Henderson,00-0040734,2
+NE,Jam Miller,MIL303300,3
+NE,Terrell Jennings,00-0039757,4
+NE,Lan Larison,00-0040568,5
+NE,Myles Montgomery,MON630042,6
+NO,Travis Etienne Jr.,00-0036973,1
+NO,Alvin Kamara,00-0033906,2
+NO,Devin Neal,00-0040202,3
+NO,Kendre Miller,00-0038551,4
+NO,Ty Chandler,00-0037276,5
+NO,Audric Estime,00-0039373,6
+NO,CJ Donaldson,DON153725,7
+NYG,Cam Skattebo,00-0040715,1
+NYG,Tyrone Tracy Jr.,00-0039384,2
+NYG,Devin Singletary,00-0035250,3
+NYG,Eric Gray,00-0038396,4
+NYG,Dante Miller,00-0039230,5
+NYG,Damon Bankston,BAN673434,6
+NYJ,Breece Hall,00-0038120,1
+NYJ,Braelon Allen,00-0039794,2
+NYJ,Isaiah Davis,00-0039798,3
+NYJ,Kene Nwangwu,00-0036842,4
+NYJ,Sam Scott,SCO645245,5
+NYJ,Chip Trayanum,TRA547801,6
+PHI,Saquon Barkley,00-0034844,1
+PHI,Tank Bigsby,00-0038555,2
+PHI,Will Shipley,00-0039746,3
+PHI,Dameon Pierce,00-0037258,4
+PHI,Elijah Mitchell,00-0036567,5
+PHI,Carson Steele,00-0039325,6
+PIT,Jaylen Warren,00-0037228,1
+PIT,Rico Dowdle,00-0036139,2
+PIT,Kaleb Johnson,00-0040142,3
+PIT,Eli Heidenreich,HEI114391,4
+PIT,Travis Homer,00-0035594,5
+PIT,Lew Nichols,00-0038409,6
+SEA,Zach Charbonnet,00-0039165,1
+SEA,Jadarian Price,PRI206342,2
+SEA,George Holani,00-0039299,3
+SEA,Emanuel Wilson,00-0038797,4
+SEA,Kenny McIntosh,00-0038636,5
+SEA,Velus Jones Jr.,00-0037745,6
+SEA,Jacardia Wright,00-0040067,7
+SF,Christian McCaffrey,00-0033280,1
+SF,Jordan James,00-0040177,2
+SF,Kaelon Black,BLA097235,3
+SF,Isaac Guerendo,00-0039363,4
+SF,Patrick Taylor Jr.,00-0035973,5
+SF,Jordan Mims,00-0038678,6
+TB,Bucky Irving,00-0039361,1
+TB,Kenneth Gainwell,00-0036919,2
+TB,Sean Tucker,00-0038951,3
+TB,Josh Williams,00-0040429,4
+TB,Kadarius Calloway,CAL748214,5
+TEN,Tony Pollard,00-0035261,1
+TEN,Tyjae Spears,00-0039032,2
+TEN,Nicholas Singleton,SIN454221,3
+TEN,Michael Carter,00-0036924,4
+TEN,Kalel Mullings,00-0040205,5
+TEN,Julius Chestnut,00-0037594,6
+WAS,Jacory Croskey-Merritt,00-0040242,1
+WAS,Rachaad White,00-0037256,2
+WAS,Kaytron Allen,ALL532376,3
+WAS,Jerome Ford,00-0037267,4
+WAS,Jeremy McNichols,00-0033955,5
+WAS,Robert Henry Jr.,HEN713719,6

@@ -1,0 +1,69 @@
+/* =============================================================================
+ * bb-components.css — design tokens for the bb-* Web Component library.
+ *
+ * Components read host theme variables FIRST and fall back to these tokens when
+ * the host doesn't define them. Include this file once per page (it sets :root
+ * tokens); the components themselves are styled inside their own shadow roots.
+ *
+ * Resolution order inside each component (see bb-components.js TOKENS):
+ *   var(--bb-accent, var(--acc, #4ea1ff))
+ *        ^ this file / host   ^ legacy host var   ^ hard default
+ *
+ * To re-skin the whole library, override any --bb-* on :root (or any ancestor).
+ * ========================================================================== */
+
+:root {
+  /* --- palette --- */
+  --bb-accent:    #4ea1ff;
+  --bb-good:      #37b87a;
+  --bb-warn:      #e8a33d;
+  --bb-bad:       #e0567a;
+  --bb-info:      #3b8ef0;
+
+  /* --- text + surfaces (light scheme defaults) --- */
+  --bb-text:      #16202c;
+  --bb-muted:     #5a6b7d;
+  --bb-muted-2:   #8a97a6;
+  --bb-bg:        #f5f7fa;
+  --bb-surface:   #ffffff;
+  --bb-surface-2: #eef2f7;
+  --bb-line:      #d7dde6;
+
+  /* --- shape + rhythm --- */
+  --bb-radius:    8px;
+  --bb-radius-sm: 5px;
+  --bb-space:     8px;
+  --bb-space-sm:  4px;
+
+  /* --- type --- */
+  --bb-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* --- focus ring + motion --- */
+  --bb-focus:    var(--bb-accent);
+  --bb-duration: .15s;
+}
+
+/* Dark scheme: matches the Command Center's dark dashboard palette so the
+   components sit naturally inside it even if the host defines no vars. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bb-accent:    #7aa2ff;
+    --bb-good:      #37b87a;
+    --bb-warn:      #e8a33d;
+    --bb-bad:       #e0567a;
+    --bb-info:      #3b8ef0;
+
+    --bb-text:      #e7ebf3;
+    --bb-muted:     #9aa3b6;
+    --bb-muted-2:   #697084;
+    --bb-bg:        #0e1016;
+    --bb-surface:   #161922;
+    --bb-surface-2: #1c2030;
+    --bb-line:      #262b3a;
+  }
+}
+
+/* Respect explicit reduced-motion at the page level too. */
+@media (prefers-reduced-motion: reduce) {
+  :root { --bb-duration: 0s; }
+}

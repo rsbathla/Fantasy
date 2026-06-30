@@ -1,0 +1,1606 @@
+{
+"note": "2025 college pass-defense coverage grades for incoming 2026 rookie DBs. Funnel use: a rookie DB who STARTS tightens his NFL team pass funnel; completing the adjustment needs the 2026 defensive-draft mapping (DB -> NFL team), which best-ball boards omit. Grades are ready to apply once that mapping is supplied.",
+"n": 200,
+"dbs": {
+"chris johnson": {
+"name": "Chris Johnson",
+"college": "San Diego State",
+"pos": "CB",
+"points_saved": 46.31,
+"epa_per_tgt": -0.567,
+"coverage_pctl_2025": 99.3
+},
+"zabien brown": {
+"name": "Zabien Brown",
+"college": "Alabama",
+"pos": "CB",
+"points_saved": 43.53,
+"epa_per_tgt": -0.189,
+"coverage_pctl_2025": 85.5
+},
+"evan johnson": {
+"name": "Evan Johnson",
+"college": "BYU",
+"pos": "CB",
+"points_saved": 41.68,
+"epa_per_tgt": -0.585,
+"coverage_pctl_2025": 99.0
+},
+"dangelo ponds": {
+"name": "D'Angelo Ponds",
+"college": "Indiana",
+"pos": "CB",
+"points_saved": 40.35,
+"epa_per_tgt": -0.099,
+"coverage_pctl_2025": 78.0
+},
+"davison igbinosun": {
+"name": "Davison Igbinosun",
+"college": "Ohio State",
+"pos": "CB",
+"points_saved": 40.31,
+"epa_per_tgt": -0.33,
+"coverage_pctl_2025": 92.5
+},
+"john nestor": {
+"name": "John Nestor",
+"college": "Minnesota",
+"pos": "CB",
+"points_saved": 39.78,
+"epa_per_tgt": -0.317,
+"coverage_pctl_2025": 91.2
+},
+"jamari sharpe": {
+"name": "Jamari Sharpe",
+"college": "Indiana",
+"pos": "CB",
+"points_saved": 39.57,
+"epa_per_tgt": -0.218,
+"coverage_pctl_2025": 86.5
+},
+"alzillion hamilton": {
+"name": "Al'zillion Hamilton",
+"college": "Fresno State",
+"pos": "CB",
+"points_saved": 39.15,
+"epa_per_tgt": -0.306,
+"coverage_pctl_2025": 90.2
+},
+"zach lutmer": {
+"name": "Zach Lutmer",
+"college": "Iowa",
+"pos": "S",
+"points_saved": 37.85,
+"epa_per_tgt": -0.118,
+"coverage_pctl_2025": 77.7
+},
+"brandon finney": {
+"name": "Brandon Finney Jr.",
+"college": "Oregon",
+"pos": "CB",
+"points_saved": 37.54,
+"epa_per_tgt": -0.319,
+"coverage_pctl_2025": 90.5
+},
+"bryce phillips": {
+"name": "Bryce Phillips",
+"college": "San Diego State",
+"pos": "CB",
+"points_saved": 36.24,
+"epa_per_tgt": -0.396,
+"coverage_pctl_2025": 94.0
+},
+"elijah davis": {
+"name": "Elijah Davis",
+"college": "Utah",
+"pos": "CB",
+"points_saved": 34.89,
+"epa_per_tgt": -0.468,
+"coverage_pctl_2025": 95.2
+},
+"colton hood": {
+"name": "Colton Hood",
+"college": "Tennessee",
+"pos": "CB",
+"points_saved": 33.93,
+"epa_per_tgt": -0.086,
+"coverage_pctl_2025": 75.3
+},
+"keith abney": {
+"name": "Keith Abney II",
+"college": "Arizona State",
+"pos": "CB",
+"points_saved": 33.92,
+"epa_per_tgt": -0.462,
+"coverage_pctl_2025": 94.5
+},
+"jaquez white": {
+"name": "Jaquez White",
+"college": "Troy",
+"pos": "CB",
+"points_saved": 32.6,
+"epa_per_tgt": -0.158,
+"coverage_pctl_2025": 79.5
+},
+"brice pollock": {
+"name": "Brice Pollock",
+"college": "Texas Tech",
+"pos": "CB",
+"points_saved": 31.71,
+"epa_per_tgt": -0.451,
+"coverage_pctl_2025": 93.7
+},
+"dezz ricks": {
+"name": "Dezz Ricks",
+"college": "Texas A&M",
+"pos": "CB",
+"points_saved": 30.77,
+"epa_per_tgt": -0.173,
+"coverage_pctl_2025": 79.8
+},
+"toriano pride": {
+"name": "Toriano Pride Jr.",
+"college": "Missouri",
+"pos": "CB",
+"points_saved": 30.72,
+"epa_per_tgt": -0.125,
+"coverage_pctl_2025": 76.7
+},
+"zion frink": {
+"name": "Zion Frink",
+"college": "Old Dominion",
+"pos": "CB",
+"points_saved": 30.5,
+"epa_per_tgt": -0.117,
+"coverage_pctl_2025": 74.8
+},
+"noah avinger": {
+"name": "Noah Avinger",
+"college": "Utah State",
+"pos": "S",
+"points_saved": 30.4,
+"epa_per_tgt": -0.147,
+"coverage_pctl_2025": 77.5
+},
+"hezekiah masses": {
+"name": "Hezekiah Masses",
+"college": "California",
+"pos": "CB",
+"points_saved": 29.94,
+"epa_per_tgt": -0.275,
+"coverage_pctl_2025": 85.7
+},
+"dalton johnson": {
+"name": "Dalton Johnson",
+"college": "Arizona",
+"pos": "S",
+"points_saved": 29.81,
+"epa_per_tgt": -0.305,
+"coverage_pctl_2025": 86.5
+},
+"ashton hampton": {
+"name": "Ashton Hampton",
+"college": "Clemson",
+"pos": "CB",
+"points_saved": 29.79,
+"epa_per_tgt": -0.324,
+"coverage_pctl_2025": 87.5
+},
+"brent austin": {
+"name": "Brent Austin",
+"college": "California",
+"pos": "CB",
+"points_saved": 29.21,
+"epa_per_tgt": -0.126,
+"coverage_pctl_2025": 75.7
+},
+"jakari embry": {
+"name": "Jakari Embry",
+"college": "Fresno State",
+"pos": "CB",
+"points_saved": 26.56,
+"epa_per_tgt": -0.487,
+"coverage_pctl_2025": 92.3
+},
+"brandon nicholson": {
+"name": "Brandon Nicholson",
+"college": "Stanford",
+"pos": "CB",
+"points_saved": 26.35,
+"epa_per_tgt": -0.288,
+"coverage_pctl_2025": 84.7
+},
+"tj hall": {
+"name": "TJ Hall",
+"college": "Iowa",
+"pos": "CB",
+"points_saved": 25.66,
+"epa_per_tgt": -0.182,
+"coverage_pctl_2025": 78.3
+},
+"deshaun lee": {
+"name": "Deshaun Lee",
+"college": "Iowa",
+"pos": "CB",
+"points_saved": 25.64,
+"epa_per_tgt": 0.065,
+"coverage_pctl_2025": 62.5
+},
+"boogie trotter": {
+"name": "Boogie Trotter",
+"college": "Marshall",
+"pos": "CB",
+"points_saved": 25.45,
+"epa_per_tgt": -0.367,
+"coverage_pctl_2025": 88.4
+},
+"elijah green": {
+"name": "Elijah Green",
+"college": "Tulsa",
+"pos": "CB",
+"points_saved": 25.38,
+"epa_per_tgt": 0.09,
+"coverage_pctl_2025": 59.2
+},
+"blake cotton": {
+"name": "Blake Cotton",
+"college": "Utah",
+"pos": "CB",
+"points_saved": 25.35,
+"epa_per_tgt": -0.18,
+"coverage_pctl_2025": 76.8
+},
+"devon marshall": {
+"name": "Devon Marshall",
+"college": "NC State",
+"pos": "CB",
+"points_saved": 25.29,
+"epa_per_tgt": -0.236,
+"coverage_pctl_2025": 81.5
+},
+"ephesians prysock": {
+"name": "Ephesians Prysock",
+"college": "Washington",
+"pos": "CB",
+"points_saved": 25.27,
+"epa_per_tgt": -0.249,
+"coverage_pctl_2025": 81.5
+},
+"therrian alexander": {
+"name": "Therrian Alexander III",
+"college": "BYU",
+"pos": "CB",
+"points_saved": 24.86,
+"epa_per_tgt": -0.231,
+"coverage_pctl_2025": 80.2
+},
+"andre fuller": {
+"name": "Andre Fuller",
+"college": "Toledo",
+"pos": "CB",
+"points_saved": 23.8,
+"epa_per_tgt": -0.528,
+"coverage_pctl_2025": 90.3
+},
+"will james": {
+"name": "Will James",
+"college": "Houston",
+"pos": "CB",
+"points_saved": 23.66,
+"epa_per_tgt": -0.345,
+"coverage_pctl_2025": 85.6
+},
+"justin eaglin": {
+"name": "Justin Eaglin",
+"college": "James Madison",
+"pos": "CB",
+"points_saved": 23.23,
+"epa_per_tgt": -0.196,
+"coverage_pctl_2025": 77.7
+},
+"trenton alan yowe": {
+"name": "Trenton Alan Yowe",
+"college": "Arkansas State",
+"pos": "CB",
+"points_saved": 23.17,
+"epa_per_tgt": -0.001,
+"coverage_pctl_2025": 64.0
+},
+"andrew marshall": {
+"name": "Andrew Marshall",
+"college": "Nebraska",
+"pos": "CB",
+"points_saved": 22.81,
+"epa_per_tgt": -0.196,
+"coverage_pctl_2025": 77.2
+},
+"cam chadwick": {
+"name": "Cam Chadwick",
+"college": "UCONN",
+"pos": "CB",
+"points_saved": 22.49,
+"epa_per_tgt": -0.02,
+"coverage_pctl_2025": 64.2
+},
+"aamaris brown": {
+"name": "Aamaris Brown",
+"college": "UNLV",
+"pos": "S",
+"points_saved": 22.07,
+"epa_per_tgt": -0.134,
+"coverage_pctl_2025": 72.0
+},
+"jabari mack": {
+"name": "Jabari Mack",
+"college": "Louisville",
+"pos": "CB",
+"points_saved": 21.54,
+"epa_per_tgt": 0.058,
+"coverage_pctl_2025": 59.4
+},
+"emmanuel karnley": {
+"name": "Emmanuel Karnley",
+"college": "Virginia",
+"pos": "CB",
+"points_saved": 21.5,
+"epa_per_tgt": -0.021,
+"coverage_pctl_2025": 63.8
+},
+"amier boyd": {
+"name": "Amier Boyd",
+"college": "Texas Tech",
+"pos": "CB",
+"points_saved": 21.41,
+"epa_per_tgt": -0.54,
+"coverage_pctl_2025": 88.2
+},
+"kelley jones": {
+"name": "Kelley Jones",
+"college": "Mississippi State",
+"pos": "CB",
+"points_saved": 21.39,
+"epa_per_tgt": -0.698,
+"coverage_pctl_2025": 88.8
+},
+"ricardo hallman": {
+"name": "Ricardo Hallman",
+"college": "Wisconsin",
+"pos": "CB",
+"points_saved": 21.11,
+"epa_per_tgt": 0.325,
+"coverage_pctl_2025": 43.5
+},
+"mister clark": {
+"name": "Mister Clark",
+"college": "FIU",
+"pos": "S",
+"points_saved": 20.68,
+"epa_per_tgt": -0.182,
+"coverage_pctl_2025": 73.3
+},
+"josh moten": {
+"name": "Josh Moten",
+"college": "Southern Mississippi",
+"pos": "CB",
+"points_saved": 20.62,
+"epa_per_tgt": -0.077,
+"coverage_pctl_2025": 65.5
+},
+"jamare glasker": {
+"name": "Jamare Glasker",
+"college": "Maryland",
+"pos": "CB",
+"points_saved": 20.38,
+"epa_per_tgt": -0.402,
+"coverage_pctl_2025": 85.3
+},
+"emon allen": {
+"name": "Emon Allen",
+"college": "Sam Houston State",
+"pos": "CB",
+"points_saved": 20.34,
+"epa_per_tgt": 0.102,
+"coverage_pctl_2025": 53.5
+},
+"matthew mcdoom": {
+"name": "Matthew McDoom",
+"college": "Cincinnati",
+"pos": "CB",
+"points_saved": 20.28,
+"epa_per_tgt": 0.147,
+"coverage_pctl_2025": 49.5
+},
+"smith snowden": {
+"name": "Smith Snowden",
+"college": "Utah",
+"pos": "CB",
+"points_saved": 20.28,
+"epa_per_tgt": -0.121,
+"coverage_pctl_2025": 67.3
+},
+"karon prunty": {
+"name": "Karon Prunty",
+"college": "Wake Forest",
+"pos": "CB",
+"points_saved": 20.08,
+"epa_per_tgt": -0.074,
+"coverage_pctl_2025": 64.0
+},
+"jayden bellamy": {
+"name": "Jayden Bellamy",
+"college": "UCF",
+"pos": "CB",
+"points_saved": 20.07,
+"epa_per_tgt": -0.199,
+"coverage_pctl_2025": 74.2
+},
+"ayden garnes": {
+"name": "Ayden Garnes",
+"college": "Arizona",
+"pos": "CB",
+"points_saved": 20.06,
+"epa_per_tgt": 0.323,
+"coverage_pctl_2025": 41.5
+},
+"jeremiah earby": {
+"name": "Jeremiah Earby",
+"college": "Boise State",
+"pos": "CB",
+"points_saved": 20.04,
+"epa_per_tgt": 0.221,
+"coverage_pctl_2025": 44.2
+},
+"james chenault": {
+"name": "James Chenault",
+"college": "South Florida",
+"pos": "CB",
+"points_saved": 19.97,
+"epa_per_tgt": -0.118,
+"coverage_pctl_2025": 65.7
+},
+"jamel johnson": {
+"name": "Jamel Johnson",
+"college": "TCU",
+"pos": "S",
+"points_saved": 19.7,
+"epa_per_tgt": 0.118,
+"coverage_pctl_2025": 50.0
+},
+"brenden deasfernandes": {
+"name": "Brenden Deasfernandes",
+"college": "Central Michigan",
+"pos": "CB",
+"points_saved": 19.58,
+"epa_per_tgt": -0.115,
+"coverage_pctl_2025": 64.5
+},
+"joshua franklin": {
+"name": "Joshua Franklin",
+"college": "Western Michigan",
+"pos": "CB",
+"points_saved": 19.49,
+"epa_per_tgt": -0.368,
+"coverage_pctl_2025": 81.0
+},
+"jay green": {
+"name": "Jay Green",
+"college": "Stanford",
+"pos": "S",
+"points_saved": 19.47,
+"epa_per_tgt": 0.004,
+"coverage_pctl_2025": 58.0
+},
+"elijah palmer": {
+"name": "Elijah Palmer",
+"college": "Hawaii",
+"pos": "S",
+"points_saved": 19.18,
+"epa_per_tgt": -0.4,
+"coverage_pctl_2025": 81.7
+},
+"preston hodge": {
+"name": "Preston Hodge",
+"college": "Colorado",
+"pos": "CB",
+"points_saved": 19.05,
+"epa_per_tgt": -0.325,
+"coverage_pctl_2025": 77.8
+},
+"will lee": {
+"name": "Will Lee III",
+"college": "Texas A&M",
+"pos": "CB",
+"points_saved": 18.98,
+"epa_per_tgt": 0.272,
+"coverage_pctl_2025": 40.7
+},
+"juice clarke": {
+"name": "Juice Clarke",
+"college": "Illinois",
+"pos": "CB",
+"points_saved": 18.92,
+"epa_per_tgt": -0.122,
+"coverage_pctl_2025": 64.2
+},
+"ethan oconnor": {
+"name": "Ethan O'Connor",
+"college": "Miami FL",
+"pos": "CB",
+"points_saved": 18.92,
+"epa_per_tgt": -0.232,
+"coverage_pctl_2025": 72.7
+},
+"marcellus barnes": {
+"name": "Marcellus Barnes Jr.",
+"college": "SMU",
+"pos": "CB",
+"points_saved": 18.89,
+"epa_per_tgt": -0.154,
+"coverage_pctl_2025": 66.2
+},
+"antoine jackson": {
+"name": "Antoine Jackson",
+"college": "UCF",
+"pos": "CB",
+"points_saved": 18.8,
+"epa_per_tgt": -0.122,
+"coverage_pctl_2025": 63.6
+},
+"courtland guillory": {
+"name": "Courtland Guillory",
+"college": "Oklahoma",
+"pos": "CB",
+"points_saved": 18.79,
+"epa_per_tgt": -0.188,
+"coverage_pctl_2025": 68.5
+},
+"latrell mccutchin": {
+"name": "Latrell McCutchin Sr.",
+"college": "Houston",
+"pos": "CB",
+"points_saved": 18.73,
+"epa_per_tgt": -0.088,
+"coverage_pctl_2025": 61.2
+},
+"kalen carroll": {
+"name": "Kalen Carroll",
+"college": "Central Michigan",
+"pos": "CB",
+"points_saved": 18.58,
+"epa_per_tgt": -0.347,
+"coverage_pctl_2025": 77.5
+},
+"daylen everette": {
+"name": "Daylen Everette",
+"college": "Georgia",
+"pos": "CB",
+"points_saved": 18.44,
+"epa_per_tgt": -0.132,
+"coverage_pctl_2025": 64.0
+},
+"avieon terrell": {
+"name": "Avieon Terrell",
+"college": "Clemson",
+"pos": "CB",
+"points_saved": 18.17,
+"epa_per_tgt": 0.056,
+"coverage_pctl_2025": 52.0
+},
+"dj barksdale": {
+"name": "DJ Barksdale",
+"college": "James Madison",
+"pos": "CB",
+"points_saved": 18.11,
+"epa_per_tgt": 0.169,
+"coverage_pctl_2025": 42.5
+},
+"rodrick pleasant": {
+"name": "Rodrick Pleasant",
+"college": "UCLA",
+"pos": "CB",
+"points_saved": 17.8,
+"epa_per_tgt": -0.177,
+"coverage_pctl_2025": 65.5
+},
+"elijah culp": {
+"name": "Elijah Culp",
+"college": "James Madison",
+"pos": "CB",
+"points_saved": 17.78,
+"epa_per_tgt": -0.197,
+"coverage_pctl_2025": 68.4
+},
+"christian harrison": {
+"name": "Christian Harrison",
+"college": "Cincinnati",
+"pos": "S",
+"points_saved": 17.73,
+"epa_per_tgt": 0.044,
+"coverage_pctl_2025": 52.0
+},
+"tyrin taylor": {
+"name": "Tyrin Taylor",
+"college": "Jacksonville State",
+"pos": "CB",
+"points_saved": 17.61,
+"epa_per_tgt": -0.201,
+"coverage_pctl_2025": 68.5
+},
+"silas walters": {
+"name": "Silas Walters",
+"college": "Miami OH",
+"pos": "S",
+"points_saved": 17.6,
+"epa_per_tgt": -0.073,
+"coverage_pctl_2025": 57.3
+},
+"ty redmond": {
+"name": "Ty Redmond",
+"college": "Tennessee",
+"pos": "CB",
+"points_saved": 17.52,
+"epa_per_tgt": 0.012,
+"coverage_pctl_2025": 52.9
+},
+"michael dansby": {
+"name": "Michael Dansby",
+"college": "Arizona",
+"pos": "CB",
+"points_saved": 17.44,
+"epa_per_tgt": -0.275,
+"coverage_pctl_2025": 70.7
+},
+"cam miller": {
+"name": "Cam Miller",
+"college": "Rutgers",
+"pos": "CB",
+"points_saved": 17.36,
+"epa_per_tgt": 0.187,
+"coverage_pctl_2025": 39.5
+},
+"javan robinson": {
+"name": "Javan Robinson",
+"college": "Arizona State",
+"pos": "CB",
+"points_saved": 17.35,
+"epa_per_tgt": 0.329,
+"coverage_pctl_2025": 34.0
+},
+"decarlos nicholson": {
+"name": "DeCarlos Nicholson",
+"college": "USC",
+"pos": "CB",
+"points_saved": 17.18,
+"epa_per_tgt": -0.367,
+"coverage_pctl_2025": 74.6
+},
+"lardarius webb": {
+"name": "Lardarius Webb Jr.",
+"college": "Wake Forest",
+"pos": "CB",
+"points_saved": 17.14,
+"epa_per_tgt": -0.164,
+"coverage_pctl_2025": 62.3
+},
+"victor evans": {
+"name": "Victor Evans III",
+"college": "FIU",
+"pos": "CB",
+"points_saved": 16.99,
+"epa_per_tgt": -0.197,
+"coverage_pctl_2025": 65.8
+},
+"jalon kilgore": {
+"name": "Jalon Kilgore",
+"college": "South Carolina",
+"pos": "S",
+"points_saved": 16.95,
+"epa_per_tgt": -0.492,
+"coverage_pctl_2025": 77.0
+},
+"trey glasper": {
+"name": "Trey Glasper",
+"college": "Oregon State",
+"pos": "CB",
+"points_saved": 16.94,
+"epa_per_tgt": 0.132,
+"coverage_pctl_2025": 41.7
+},
+"dalesean staley": {
+"name": "Dalesean Staley",
+"college": "San Diego State",
+"pos": "S",
+"points_saved": 16.46,
+"epa_per_tgt": -0.391,
+"coverage_pctl_2025": 74.3
+},
+"jerry wilson": {
+"name": "Jerry Wilson",
+"college": "Florida State",
+"pos": "CB",
+"points_saved": 16.3,
+"epa_per_tgt": -0.167,
+"coverage_pctl_2025": 61.2
+},
+"nate evans": {
+"name": "Nate Evans",
+"college": "Delaware",
+"pos": "CB",
+"points_saved": 16.21,
+"epa_per_tgt": -0.332,
+"coverage_pctl_2025": 71.3
+},
+"deshawn rucker": {
+"name": "De'Shawn Rucker",
+"college": "South Florida",
+"pos": "CB",
+"points_saved": 16.18,
+"epa_per_tgt": -0.386,
+"coverage_pctl_2025": 73.2
+},
+"avery smith": {
+"name": "Avery Smith",
+"college": "Toledo",
+"pos": "CB",
+"points_saved": 16.0,
+"epa_per_tgt": -0.19,
+"coverage_pctl_2025": 63.1
+},
+"david fisher": {
+"name": "David Fisher",
+"college": "North Texas",
+"pos": "CB",
+"points_saved": 15.94,
+"epa_per_tgt": -0.228,
+"coverage_pctl_2025": 65.0
+},
+"andre jordan": {
+"name": "Andre Jordan Jr.",
+"college": "UCLA",
+"pos": "CB",
+"points_saved": 15.88,
+"epa_per_tgt": -0.032,
+"coverage_pctl_2025": 51.1
+},
+"christian gray": {
+"name": "Christian Gray",
+"college": "Notre Dame",
+"pos": "CB",
+"points_saved": 15.85,
+"epa_per_tgt": -0.038,
+"coverage_pctl_2025": 51.5
+},
+"graceson littleton": {
+"name": "Graceson Littleton",
+"college": "Texas",
+"pos": "CB",
+"points_saved": 15.62,
+"epa_per_tgt": -0.19,
+"coverage_pctl_2025": 62.1
+},
+"jahiem johnson": {
+"name": "Jahiem Johnson",
+"college": "Tulane",
+"pos": "CB",
+"points_saved": 15.51,
+"epa_per_tgt": -0.037,
+"coverage_pctl_2025": 50.7
+},
+"collin wright": {
+"name": "Collin Wright",
+"college": "Stanford",
+"pos": "CB",
+"points_saved": 15.24,
+"epa_per_tgt": -0.065,
+"coverage_pctl_2025": 52.0
+},
+"nazir ward": {
+"name": "Nazir Ward",
+"college": "Western Kentucky",
+"pos": "CB",
+"points_saved": 15.18,
+"epa_per_tgt": 0.079,
+"coverage_pctl_2025": 42.9
+},
+"david godsey": {
+"name": "David Godsey Jr.",
+"college": "Louisiana-Monroe",
+"pos": "CB",
+"points_saved": 14.94,
+"epa_per_tgt": 0.181,
+"coverage_pctl_2025": 35.5
+},
+"malcolm dewalt": {
+"name": "Malcolm DeWalt IV",
+"college": "Akron",
+"pos": "CB",
+"points_saved": 14.77,
+"epa_per_tgt": -0.336,
+"coverage_pctl_2025": 68.7
+},
+"pj woodland": {
+"name": "PJ Woodland",
+"college": "LSU",
+"pos": "CB",
+"points_saved": 14.66,
+"epa_per_tgt": -0.271,
+"coverage_pctl_2025": 64.8
+},
+"aj odums": {
+"name": "AJ Odums",
+"college": "Nevada",
+"pos": "CB",
+"points_saved": 14.63,
+"epa_per_tgt": -0.346,
+"coverage_pctl_2025": 69.0
+},
+"donte harrison": {
+"name": "Donte Harrison",
+"college": "Northern Illinois",
+"pos": "CB",
+"points_saved": 14.61,
+"epa_per_tgt": -0.154,
+"coverage_pctl_2025": 56.6
+},
+"jon johnson": {
+"name": "Jon Johnson",
+"college": "New Mexico",
+"pos": "CB",
+"points_saved": 14.55,
+"epa_per_tgt": 0.038,
+"coverage_pctl_2025": 45.0
+},
+"courtline flowers": {
+"name": "Courtline Flowers",
+"college": "Louisiana",
+"pos": "CB",
+"points_saved": 14.26,
+"epa_per_tgt": 0.109,
+"coverage_pctl_2025": 38.5
+},
+"xavier lucas": {
+"name": "Xavier Lucas",
+"college": "Miami FL",
+"pos": "CB",
+"points_saved": 13.46,
+"epa_per_tgt": 0.381,
+"coverage_pctl_2025": 27.0
+},
+"kolbey taylor": {
+"name": "Kolbey Taylor",
+"college": "Vanderbilt",
+"pos": "CB",
+"points_saved": 13.26,
+"epa_per_tgt": -0.032,
+"coverage_pctl_2025": 47.6
+},
+"tyrese boss": {
+"name": "Tyrese Boss",
+"college": "Wyoming",
+"pos": "CB",
+"points_saved": 12.75,
+"epa_per_tgt": -0.04,
+"coverage_pctl_2025": 48.2
+},
+"jarvarius sims": {
+"name": "Jarvarius Sims",
+"college": "Western Michigan",
+"pos": "CB",
+"points_saved": 12.66,
+"epa_per_tgt": -0.293,
+"coverage_pctl_2025": 64.0
+},
+"julian neal": {
+"name": "Julian Neal",
+"college": "Arkansas",
+"pos": "CB",
+"points_saved": 12.53,
+"epa_per_tgt": 0.115,
+"coverage_pctl_2025": 36.7
+},
+"tre bell": {
+"name": "Tre Bell",
+"college": "Iowa State",
+"pos": "CB",
+"points_saved": 12.52,
+"epa_per_tgt": -0.125,
+"coverage_pctl_2025": 53.0
+},
+"kaleno levine": {
+"name": "Kaleno Levine",
+"college": "Troy",
+"pos": "CB",
+"points_saved": 12.49,
+"epa_per_tgt": 0.392,
+"coverage_pctl_2025": 25.0
+},
+"chris peal": {
+"name": "Chris Peal",
+"college": "Syracuse",
+"pos": "CB",
+"points_saved": 12.47,
+"epa_per_tgt": -0.016,
+"coverage_pctl_2025": 45.3
+},
+"jyaire hill": {
+"name": "Jyaire Hill",
+"college": "Michigan",
+"pos": "CB",
+"points_saved": 12.27,
+"epa_per_tgt": -0.312,
+"coverage_pctl_2025": 63.5
+},
+"chandler rivers": {
+"name": "Chandler Rivers",
+"college": "Duke",
+"pos": "CB",
+"points_saved": 12.25,
+"epa_per_tgt": 0.058,
+"coverage_pctl_2025": 40.6
+},
+"aaron wofford": {
+"name": "Aaron Wofford",
+"college": "Western Michigan",
+"pos": "CB",
+"points_saved": 12.02,
+"epa_per_tgt": 0.183,
+"coverage_pctl_2025": 31.0
+},
+"simeon harris": {
+"name": "Simeon Harris",
+"college": "Fresno State",
+"pos": "CB",
+"points_saved": 11.94,
+"epa_per_tgt": -0.268,
+"coverage_pctl_2025": 60.3
+},
+"jhamal shelby": {
+"name": "Jhamal Shelby Jr.",
+"college": "Louisiana Tech",
+"pos": "CB",
+"points_saved": 11.87,
+"epa_per_tgt": 0.147,
+"coverage_pctl_2025": 32.4
+},
+"vernon glover": {
+"name": "Vernon Glover",
+"college": "TCU",
+"pos": "CB",
+"points_saved": 11.55,
+"epa_per_tgt": 0.071,
+"coverage_pctl_2025": 38.9
+},
+"jaylen thomas": {
+"name": "Jaylen Thomas",
+"college": "San Jose State",
+"pos": "S",
+"points_saved": 11.15,
+"epa_per_tgt": 0.024,
+"coverage_pctl_2025": 41.4
+},
+"ben osueke": {
+"name": "Ben Osueke",
+"college": "Temple",
+"pos": "CB",
+"points_saved": 11.15,
+"epa_per_tgt": -0.183,
+"coverage_pctl_2025": 54.9
+},
+"caleb offord": {
+"name": "Caleb Offord",
+"college": "Kennesaw State",
+"pos": "CB",
+"points_saved": 10.78,
+"epa_per_tgt": -0.057,
+"coverage_pctl_2025": 45.2
+},
+"torrie cox": {
+"name": "Torrie Cox Jr.",
+"college": "Illinois",
+"pos": "CB",
+"points_saved": 10.67,
+"epa_per_tgt": 0.251,
+"coverage_pctl_2025": 26.3
+},
+"dorrian smith": {
+"name": "Dorrian Smith",
+"college": "Georgia Southern",
+"pos": "S",
+"points_saved": 10.62,
+"epa_per_tgt": -0.345,
+"coverage_pctl_2025": 63.1
+},
+"marcelles williams": {
+"name": "Marcelles Williams",
+"college": "USC",
+"pos": "CB",
+"points_saved": 10.46,
+"epa_per_tgt": 0.048,
+"coverage_pctl_2025": 39.0
+},
+"omari porter": {
+"name": "Omari Porter",
+"college": "Rice",
+"pos": "CB",
+"points_saved": 10.36,
+"epa_per_tgt": 0.145,
+"coverage_pctl_2025": 31.2
+},
+"brevin hamblin": {
+"name": "Brevin Hamblin",
+"college": "Utah State",
+"pos": "S",
+"points_saved": 10.22,
+"epa_per_tgt": 0.338,
+"coverage_pctl_2025": 22.3
+},
+"deuce harmon": {
+"name": "Deuce Harmon",
+"college": "SMU",
+"pos": "CB",
+"points_saved": 10.1,
+"epa_per_tgt": 0.408,
+"coverage_pctl_2025": 20.5
+},
+"dmon brinson": {
+"name": "D'Mon Brinson",
+"college": "UCONN",
+"pos": "S",
+"points_saved": 9.93,
+"epa_per_tgt": 0.155,
+"coverage_pctl_2025": 28.8
+},
+"cedric woods": {
+"name": "Cedric Woods",
+"college": "Louisiana Tech",
+"pos": "CB",
+"points_saved": 9.91,
+"epa_per_tgt": -0.235,
+"coverage_pctl_2025": 56.2
+},
+"jaydan mayes": {
+"name": "Jaydan Mayes",
+"college": "Army",
+"pos": "CB",
+"points_saved": 9.9,
+"epa_per_tgt": 0.37,
+"coverage_pctl_2025": 21.0
+},
+"jaire rawlison": {
+"name": "Jaire Rawlison",
+"college": "Kent State",
+"pos": "CB",
+"points_saved": 9.89,
+"epa_per_tgt": 0.149,
+"coverage_pctl_2025": 28.5
+},
+"tracy hill": {
+"name": "Tracy Hill Jr.",
+"college": "Georgia Southern",
+"pos": "CB",
+"points_saved": 9.82,
+"epa_per_tgt": 0.083,
+"coverage_pctl_2025": 33.6
+},
+"jaion jackson": {
+"name": "Jaion Jackson",
+"college": "Central Michigan",
+"pos": "CB",
+"points_saved": 9.78,
+"epa_per_tgt": -0.269,
+"coverage_pctl_2025": 56.2
+},
+"josh fussell": {
+"name": "Josh Fussell",
+"college": "Northwestern",
+"pos": "CB",
+"points_saved": 9.73,
+"epa_per_tgt": 0.047,
+"coverage_pctl_2025": 36.8
+},
+"zeke berry": {
+"name": "Zeke Berry",
+"college": "Michigan",
+"pos": "CB",
+"points_saved": 9.28,
+"epa_per_tgt": -0.046,
+"coverage_pctl_2025": 41.5
+},
+"jahron manning": {
+"name": "Jahron Manning",
+"college": "Mississippi State",
+"pos": "S",
+"points_saved": 9.26,
+"epa_per_tgt": -0.081,
+"coverage_pctl_2025": 43.1
+},
+"jaelyn davis robinson": {
+"name": "Jaelyn Davis-Robinson",
+"college": "SMU",
+"pos": "CB",
+"points_saved": 9.21,
+"epa_per_tgt": 0.083,
+"coverage_pctl_2025": 32.4
+},
+"kani walker": {
+"name": "Kani Walker",
+"college": "Arkansas",
+"pos": "CB",
+"points_saved": 9.03,
+"epa_per_tgt": 0.313,
+"coverage_pctl_2025": 20.4
+},
+"logan wilson": {
+"name": "Logan Wilson",
+"college": "Cincinnati",
+"pos": "CB",
+"points_saved": 9.0,
+"epa_per_tgt": 0.192,
+"coverage_pctl_2025": 24.2
+},
+"jerico washington": {
+"name": "JeRico Washington Jr.",
+"college": "Kennesaw State",
+"pos": "CB",
+"points_saved": 8.9,
+"epa_per_tgt": 0.111,
+"coverage_pctl_2025": 29.1
+},
+"demetres samuel": {
+"name": "Demetres Samuel Jr.",
+"college": "Syracuse",
+"pos": "CB",
+"points_saved": 8.9,
+"epa_per_tgt": 0.036,
+"coverage_pctl_2025": 35.9
+},
+"davaughn patterson": {
+"name": "Davaughn Patterson",
+"college": "Wake Forest",
+"pos": "S",
+"points_saved": 8.81,
+"epa_per_tgt": 0.391,
+"coverage_pctl_2025": 17.5
+},
+"tank pearson": {
+"name": "Tank Pearson",
+"college": "Ohio",
+"pos": "CB",
+"points_saved": 8.74,
+"epa_per_tgt": 0.257,
+"coverage_pctl_2025": 20.8
+},
+"jordan dunbar": {
+"name": "Jordan Dunbar",
+"college": "Missouri State",
+"pos": "CB",
+"points_saved": 8.62,
+"epa_per_tgt": -0.399,
+"coverage_pctl_2025": 60.3
+},
+"ezaiah shine": {
+"name": "E'zaiah Shine",
+"college": "Tulane",
+"pos": "CB",
+"points_saved": 8.6,
+"epa_per_tgt": 0.146,
+"coverage_pctl_2025": 25.9
+},
+"donavon platt": {
+"name": "Donavon Platt",
+"college": "Virginia",
+"pos": "CB",
+"points_saved": 8.51,
+"epa_per_tgt": 0.019,
+"coverage_pctl_2025": 35.3
+},
+"dontay joyner": {
+"name": "Dontay Joyner",
+"college": "Maryland",
+"pos": "CB",
+"points_saved": 8.49,
+"epa_per_tgt": -0.125,
+"coverage_pctl_2025": 43.7
+},
+"lemondre joe": {
+"name": "Lemondre Joe",
+"college": "Colorado State",
+"pos": "CB",
+"points_saved": 8.07,
+"epa_per_tgt": 0.078,
+"coverage_pctl_2025": 30.5
+},
+"damond harmon": {
+"name": "Damond Harmon",
+"college": "Liberty",
+"pos": "CB",
+"points_saved": 7.97,
+"epa_per_tgt": 0.052,
+"coverage_pctl_2025": 32.5
+},
+"marcus allen": {
+"name": "Marcus Allen",
+"college": "North Carolina",
+"pos": "CB",
+"points_saved": 7.95,
+"epa_per_tgt": 0.286,
+"coverage_pctl_2025": 17.9
+},
+"jaheim wilson jones": {
+"name": "Jaheim Wilson-Jones",
+"college": "Hawaii",
+"pos": "CB",
+"points_saved": 7.86,
+"epa_per_tgt": 0.139,
+"coverage_pctl_2025": 25.0
+},
+"deago brumfield": {
+"name": "DeAgo Brumfield",
+"college": "Mississippi State",
+"pos": "CB",
+"points_saved": 7.69,
+"epa_per_tgt": 0.452,
+"coverage_pctl_2025": 13.5
+},
+"brandon cisse": {
+"name": "Brandon Cisse",
+"college": "South Carolina",
+"pos": "CB",
+"points_saved": 7.63,
+"epa_per_tgt": 0.079,
+"coverage_pctl_2025": 28.9
+},
+"daveawn armstead": {
+"name": "Da'Veawn Armstead",
+"college": "North Texas",
+"pos": "CB",
+"points_saved": 7.39,
+"epa_per_tgt": 0.119,
+"coverage_pctl_2025": 25.0
+},
+"devin pringle": {
+"name": "Devin Pringle",
+"college": "UCONN",
+"pos": "CB",
+"points_saved": 7.29,
+"epa_per_tgt": 0.201,
+"coverage_pctl_2025": 20.0
+},
+"jamarion wayne": {
+"name": "Ja'Marion Wayne",
+"college": "Coastal Carolina",
+"pos": "CB",
+"points_saved": 7.21,
+"epa_per_tgt": 0.204,
+"coverage_pctl_2025": 19.5
+},
+"andrew powdrell": {
+"name": "Andrew Powdrell",
+"college": "UNLV",
+"pos": "CB",
+"points_saved": 7.2,
+"epa_per_tgt": 0.123,
+"coverage_pctl_2025": 24.0
+},
+"hudauri hines": {
+"name": "Hudauri Hines",
+"college": "Purdue",
+"pos": "CB",
+"points_saved": 6.65,
+"epa_per_tgt": 0.459,
+"coverage_pctl_2025": 11.8
+},
+"javion white": {
+"name": "Javion White",
+"college": "Tulane",
+"pos": "S",
+"points_saved": 6.6,
+"epa_per_tgt": 0.072,
+"coverage_pctl_2025": 28.2
+},
+"ethan johnson": {
+"name": "Ethan Johnson",
+"college": "Appalachian State",
+"pos": "CB",
+"points_saved": 6.37,
+"epa_per_tgt": 0.146,
+"coverage_pctl_2025": 22.1
+},
+"mychal yharbrough": {
+"name": "Mychal Yharbrough",
+"college": "Miami OH",
+"pos": "CB",
+"points_saved": 6.26,
+"epa_per_tgt": 0.104,
+"coverage_pctl_2025": 24.6
+},
+"jackson vick": {
+"name": "Jackson Vick",
+"college": "NC State",
+"pos": "S",
+"points_saved": 6.09,
+"epa_per_tgt": 0.25,
+"coverage_pctl_2025": 16.5
+},
+"levar thornton": {
+"name": "LeVar Thornton Jr.",
+"college": "Baylor",
+"pos": "CB",
+"points_saved": 6.0,
+"epa_per_tgt": 0.098,
+"coverage_pctl_2025": 24.7
+},
+"justin content": {
+"name": "Justin Content",
+"college": "UTEP",
+"pos": "CB",
+"points_saved": 5.89,
+"epa_per_tgt": 0.104,
+"coverage_pctl_2025": 23.9
+},
+"jahari rogers": {
+"name": "Jahari Rogers",
+"college": "Colorado State",
+"pos": "CB",
+"points_saved": 5.67,
+"epa_per_tgt": -0.012,
+"coverage_pctl_2025": 31.7
+},
+"terez reid": {
+"name": "Terez Reid",
+"college": "Florida Atlantic",
+"pos": "CB",
+"points_saved": 5.06,
+"epa_per_tgt": -0.289,
+"coverage_pctl_2025": 49.3
+},
+"isaiah farris": {
+"name": "Isaiah Farris",
+"college": "Boston College",
+"pos": "CB",
+"points_saved": 4.95,
+"epa_per_tgt": 0.206,
+"coverage_pctl_2025": 16.4
+},
+"darco perkins mcallister": {
+"name": "D'Arco Perkins-McAllister",
+"college": "Louisiana-Monroe",
+"pos": "CB",
+"points_saved": 4.81,
+"epa_per_tgt": -0.062,
+"coverage_pctl_2025": 33.8
+},
+"jaylen castleberry": {
+"name": "Jaylen Castleberry",
+"college": "Temple",
+"pos": "CB",
+"points_saved": 4.77,
+"epa_per_tgt": 0.088,
+"coverage_pctl_2025": 24.0
+},
+"jalil tucker": {
+"name": "Jalil Tucker",
+"college": "Oregon State",
+"pos": "CB",
+"points_saved": 4.76,
+"epa_per_tgt": 0.279,
+"coverage_pctl_2025": 13.3
+},
+"alonzo edwards": {
+"name": "Alonzo Edwards Jr.",
+"college": "Sam Houston State",
+"pos": "CB",
+"points_saved": 4.71,
+"epa_per_tgt": 0.394,
+"coverage_pctl_2025": 9.7
+},
+"kaleb martin": {
+"name": "Kaleb Martin",
+"college": "Miami OH",
+"pos": "CB",
+"points_saved": 4.46,
+"epa_per_tgt": 0.449,
+"coverage_pctl_2025": 8.8
+},
+"terrell miller": {
+"name": "Terrell Miller",
+"college": "Kent State",
+"pos": "CB",
+"points_saved": 4.44,
+"epa_per_tgt": 0.075,
+"coverage_pctl_2025": 24.5
+},
+"brian nelson": {
+"name": "Brian Nelson II",
+"college": "NC State",
+"pos": "CB",
+"points_saved": 4.3,
+"epa_per_tgt": 0.48,
+"coverage_pctl_2025": 7.5
+},
+"thomas anderson": {
+"name": "Thomas Anderson",
+"college": "Missouri State",
+"pos": "CB",
+"points_saved": 4.11,
+"epa_per_tgt": 0.184,
+"coverage_pctl_2025": 15.7
+},
+"zashon rich": {
+"name": "Zashon Rich",
+"college": "Kansas State",
+"pos": "CB",
+"points_saved": 3.99,
+"epa_per_tgt": 0.313,
+"coverage_pctl_2025": 10.9
+},
+"nehemiah chandler": {
+"name": "Nehemiah Chandler",
+"college": "South Alabama",
+"pos": "CB",
+"points_saved": 3.49,
+"epa_per_tgt": 0.206,
+"coverage_pctl_2025": 13.8
+},
+"bryson taylor": {
+"name": "Bryson Taylor",
+"college": "Utah State",
+"pos": "CB",
+"points_saved": 3.48,
+"epa_per_tgt": 0.165,
+"coverage_pctl_2025": 16.0
+},
+"jalen bainer": {
+"name": "Jalen Bainer",
+"college": "San Jose State",
+"pos": "CB",
+"points_saved": 3.3,
+"epa_per_tgt": 0.207,
+"coverage_pctl_2025": 13.0
+},
+"desman hearns": {
+"name": "Desman Hearns",
+"college": "Wyoming",
+"pos": "S",
+"points_saved": 3.24,
+"epa_per_tgt": 0.012,
+"coverage_pctl_2025": 27.1
+},
+"brent gordon": {
+"name": "Brent Gordon Jr.",
+"college": "Louisiana",
+"pos": "CB",
+"points_saved": 2.9,
+"epa_per_tgt": 0.093,
+"coverage_pctl_2025": 20.5
+},
+"jacobie henderson": {
+"name": "Jacobie Henderson",
+"college": "Rutgers",
+"pos": "CB",
+"points_saved": 2.82,
+"epa_per_tgt": 0.481,
+"coverage_pctl_2025": 5.3
+},
+"jacob finley": {
+"name": "Jacob Finley",
+"college": "Northern Illinois",
+"pos": "CB",
+"points_saved": 2.1,
+"epa_per_tgt": 0.02,
+"coverage_pctl_2025": 25.7
+},
+"josiah charles": {
+"name": "Josiah Charles",
+"college": "New Mexico State",
+"pos": "CB",
+"points_saved": 2.03,
+"epa_per_tgt": 0.541,
+"coverage_pctl_2025": 4.0
+},
+"abdul muhammad": {
+"name": "Abdul Muhammad",
+"college": "Middle Tennessee",
+"pos": "CB",
+"points_saved": 2.01,
+"epa_per_tgt": 0.286,
+"coverage_pctl_2025": 9.1
+},
+"michael richard": {
+"name": "Michael Richard",
+"college": "Louisiana Tech",
+"pos": "S",
+"points_saved": 0.73,
+"epa_per_tgt": 0.247,
+"coverage_pctl_2025": 10.8
+},
+"marvae myers": {
+"name": "Marvae Myers",
+"college": "Marshall",
+"pos": "CB",
+"points_saved": 0.2,
+"epa_per_tgt": -0.182,
+"coverage_pctl_2025": 37.5
+},
+"chris bracy": {
+"name": "Chris Bracy",
+"college": "Memphis",
+"pos": "S",
+"points_saved": -0.38,
+"epa_per_tgt": 0.512,
+"coverage_pctl_2025": 3.3
+},
+"emory floyd": {
+"name": "Emory Floyd",
+"college": "Appalachian State",
+"pos": "CB",
+"points_saved": -0.45,
+"epa_per_tgt": 0.071,
+"coverage_pctl_2025": 21.1
+},
+"kenneth harris": {
+"name": "Kenneth Harris",
+"college": "Oklahoma State",
+"pos": "CB",
+"points_saved": -0.51,
+"epa_per_tgt": 0.43,
+"coverage_pctl_2025": 4.5
+},
+"jalen mcclendon": {
+"name": "Jalen McClendon",
+"college": "Bowling Green",
+"pos": "CB",
+"points_saved": -0.64,
+"epa_per_tgt": 0.15,
+"coverage_pctl_2025": 13.2
+},
+"avante dickerson": {
+"name": "Avante Dickerson",
+"college": "Arkansas State",
+"pos": "CB",
+"points_saved": -1.13,
+"epa_per_tgt": 0.504,
+"coverage_pctl_2025": 2.5
+},
+"tony grimes": {
+"name": "Tony Grimes",
+"college": "Purdue",
+"pos": "CB",
+"points_saved": -1.74,
+"epa_per_tgt": 0.639,
+"coverage_pctl_2025": 1.2
+},
+"darius malcolm": {
+"name": "Darius Malcolm Jr.",
+"college": "Wofford",
+"pos": "CB",
+"points_saved": -1.96,
+"epa_per_tgt": -0.081,
+"coverage_pctl_2025": 28.6
+},
+"jonquis hardaway": {
+"name": "Jonquis Hardaway",
+"college": "Kentucky",
+"pos": "CB",
+"points_saved": -2.28,
+"epa_per_tgt": 0.615,
+"coverage_pctl_2025": 1.0
+},
+"willizhuan yates": {
+"name": "Willizhuan Yates",
+"college": "Ball State",
+"pos": "CB",
+"points_saved": -4.65,
+"epa_per_tgt": -0.082,
+"coverage_pctl_2025": 28.5
+},
+"davien kerr": {
+"name": "Davien Kerr",
+"college": "Syracuse",
+"pos": "CB",
+"points_saved": -6.2,
+"epa_per_tgt": 0.27,
+"coverage_pctl_2025": 7.0
+}
+}
+}

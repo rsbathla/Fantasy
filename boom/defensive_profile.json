@@ -1,0 +1,1999 @@
+{
+ "ARI": {
+  "dvoa_fpaa": {
+   "qb": -0.3,
+   "rb": 3.6,
+   "wr": -2.5,
+   "te": 3.3,
+   "wr1": -0.1,
+   "wr2": -0.6,
+   "slot": -1.8
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2025": "RUN",
+  "lean_2026": "BALANCED",
+  "eng2026": {
+   "pass_cov_pctl": 1.6,
+   "run_def_pctl": 10.9,
+   "pass_rush_pctl": 92.2
+  },
+  "rookies": [
+   [
+    "Kaleb Proctor",
+    "DT",
+    "pass_rush",
+    "R4",
+    0.0
+   ],
+   [
+    "Kaleb Proctor",
+    "DT",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "ATL": {
+  "dvoa_fpaa": {
+   "qb": 0.1,
+   "rb": -0.1,
+   "wr": 2.8,
+   "te": -4.2,
+   "wr1": 1.2,
+   "wr2": 0.9,
+   "slot": 0.7
+  },
+  "funnels": [
+   "TE fortress (avoid TEs)",
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "RUN",
+  "eng2026": {
+   "pass_cov_pctl": 79.7,
+   "run_def_pctl": 48.4,
+   "pass_rush_pctl": 4.7
+  },
+  "rookies": [
+   [
+    "Avieon Terrell",
+    "CB",
+    "coverage",
+    "R2",
+    -0.0003
+   ],
+   [
+    "Kendal Daniels",
+    "LB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Avieon Terrell",
+    "CB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Kendal Daniels",
+    "LB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "BAL": {
+  "dvoa_fpaa": {
+   "qb": 0.0,
+   "rb": 1.6,
+   "wr": 5.5,
+   "te": -1.7,
+   "wr1": 4.5,
+   "wr2": -1.7,
+   "slot": 2.8
+  },
+  "funnels": [
+   "WR1 funnel (top-CB beatable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "PASS",
+  "dc": {
+   "name": "Anthony Weaver",
+   "man25": 23.2,
+   "man26": 20.1,
+   "scheme": "Anthony Weaver: multiple, LB-driven, gets pass-rush production",
+   "conf": "blend-prior"
+  },
+  "cb1": {
+   "name": "Chidobe Awuzie",
+   "cov": 77.2,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 39.1,
+   "run_def_pctl": 73.4,
+   "pass_rush_pctl": 26.6
+  },
+  "rookies": [
+   [
+    "Zion Young",
+    "DE",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Zion Young",
+    "DE",
+    "run_def",
+    "R2",
+    0.0033
+   ]
+  ]
+ },
+ "BUF": {
+  "dvoa_fpaa": {
+   "qb": -2.3,
+   "rb": 4.1,
+   "wr": -4.1,
+   "te": -5.6,
+   "wr1": -0.4,
+   "wr2": -1.3,
+   "slot": -2.4
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE fortress (avoid TEs)",
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2025": "RUN",
+  "lean_2026": "RUN",
+  "dc": {
+   "name": "Jim Leonhard",
+   "man25": 18.8,
+   "man26": 18.2,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "cb1": {
+   "name": "Tre'Davious White",
+   "cov": 68.2,
+   "tier": "average",
+   "wr1_funnel": "exploitable"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 82.8,
+   "run_def_pctl": 35.9,
+   "pass_rush_pctl": 54.7
+  },
+  "rookies": [
+   [
+    "Davison Igbinosun",
+    "CB",
+    "coverage",
+    "R2",
+    0.0029
+   ],
+   [
+    "Kaleb Elarms-Orr",
+    "LB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "T.J. Parker",
+    "DE",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "T.J. Parker",
+    "DE",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Davison Igbinosun",
+    "CB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Kaleb Elarms-Orr",
+    "LB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "CAR": {
+  "dvoa_fpaa": {
+   "qb": -1.6,
+   "rb": 1.8,
+   "wr": -1.9,
+   "te": -0.8,
+   "wr1": 2.5,
+   "wr2": -2.7,
+   "slot": -1.7
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2025": "RUN",
+  "lean_2026": "RUN",
+  "cb1": {
+   "name": "Mike Jackson",
+   "cov": 85.8,
+   "tier": "shutdown",
+   "wr1_funnel": "fortress"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 76.6,
+   "run_def_pctl": 7.8,
+   "pass_rush_pctl": 1.6
+  },
+  "rookies": [
+   [
+    "Will Lee III",
+    "CB",
+    "coverage",
+    "R4",
+    -0.0012
+   ],
+   [
+    "Lee Hunter",
+    "DT",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Lee Hunter",
+    "DT",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Will Lee III",
+    "CB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "CHI": {
+  "dvoa_fpaa": {
+   "qb": 0.9,
+   "rb": -1.6,
+   "wr": 2.9,
+   "te": 0.0,
+   "wr1": 2.4,
+   "wr2": 2.3,
+   "slot": -1.8
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "OUTSIDE funnel (boundary WRs exploitable)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "RUN",
+  "cb1": {
+   "name": "Tyrique Stevenson",
+   "cov": 62.3,
+   "tier": "beatable",
+   "wr1_funnel": "exploitable"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 64.1,
+   "run_def_pctl": 39.1,
+   "pass_rush_pctl": 7.8
+  },
+  "rookies": [
+   [
+    "Dillon Thieneman",
+    "S",
+    "coverage",
+    "R1",
+    -0.0005
+   ],
+   [
+    "Malik Muhammad",
+    "CB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Dillon Thieneman",
+    "S",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Malik Muhammad",
+    "CB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "CIN": {
+  "dvoa_fpaa": {
+   "qb": 2.7,
+   "rb": 6.7,
+   "wr": -6.3,
+   "te": 8.3,
+   "wr1": -3.6,
+   "wr2": -2.3,
+   "slot": -0.4
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE funnel (soft vs TE)",
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2025": "RUN",
+  "lean_2026": "PASS",
+  "cb1": {
+   "name": "DJ Turner II",
+   "cov": 78.1,
+   "tier": "shutdown",
+   "wr1_funnel": "fortress"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 10.9,
+   "run_def_pctl": 70.3,
+   "pass_rush_pctl": 32.8
+  },
+  "rookies": [
+   [
+    "Tacario Davis",
+    "CB",
+    "coverage",
+    "R3",
+    -0.0005
+   ],
+   [
+    "Cashius Howell",
+    "DE",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Cashius Howell",
+    "DE",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Tacario Davis",
+    "CB",
+    "run_def",
+    "R3",
+    0.0033
+   ]
+  ]
+ },
+ "CLE": {
+  "dvoa_fpaa": {
+   "qb": -2.8,
+   "rb": -1.3,
+   "wr": -5.3,
+   "te": -2.3,
+   "wr1": -2.2,
+   "wr2": -2.6,
+   "slot": -0.4
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "PASS",
+  "dc": {
+   "name": "Mike Rutenberg",
+   "man25": 10.8,
+   "man26": 14.2,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "cb1": {
+   "name": "Tyson Campbell",
+   "cov": 65.7,
+   "tier": "average",
+   "wr1_funnel": "exploitable"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 45.3,
+   "run_def_pctl": 92.2,
+   "pass_rush_pctl": 60.9
+  },
+  "rookies": [
+   [
+    "Emmanuel McNeil-Warren",
+    "S",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "Emmanuel McNeil-Warren",
+    "S",
+    "run_def",
+    "R2",
+    0.0033
+   ]
+  ]
+ },
+ "DAL": {
+  "dvoa_fpaa": {
+   "qb": 8.1,
+   "rb": 3.1,
+   "wr": 9.5,
+   "te": -0.4,
+   "wr1": 4.2,
+   "wr2": 1.6,
+   "slot": 3.7
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "BALANCED",
+  "dc": {
+   "name": "Christian Parker",
+   "man25": 12.2,
+   "man26": 14.9,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "cb1": {
+   "name": "Cobie Durant",
+   "cov": 65.1,
+   "tier": "average",
+   "wr1_funnel": "exploitable"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 23.4,
+   "run_def_pctl": 17.2,
+   "pass_rush_pctl": 23.4
+  },
+  "rookies": [
+   [
+    "Caleb Downs",
+    "S",
+    "coverage",
+    "R1",
+    -0.0005
+   ],
+   [
+    "Devin Moore",
+    "CB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Malachi Lawrence",
+    "DE",
+    "pass_rush",
+    "R1",
+    0.0
+   ],
+   [
+    "Jaishawn Barham",
+    "DE",
+    "pass_rush",
+    "R3",
+    0.0
+   ],
+   [
+    "LT Overton",
+    "DE",
+    "pass_rush",
+    "R4",
+    0.0
+   ],
+   [
+    "Caleb Downs",
+    "S",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Malachi Lawrence",
+    "DE",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Jaishawn Barham",
+    "DE",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Devin Moore",
+    "CB",
+    "run_def",
+    "R4",
+    0.0033
+   ],
+   [
+    "LT Overton",
+    "DE",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "DEN": {
+  "dvoa_fpaa": {
+   "qb": -1.1,
+   "rb": -3.9,
+   "wr": -1.0,
+   "te": 1.5,
+   "wr1": -4.0,
+   "wr2": -0.1,
+   "slot": 3.1
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+   "SLOT funnel (slot WR exploitable)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "RUN",
+  "cb1": {
+   "name": "Ja'Quan McMillian",
+   "cov": 78.9,
+   "tier": "shutdown",
+   "wr1_funnel": "fortress"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 89.1,
+   "run_def_pctl": 57.8,
+   "pass_rush_pctl": 79.7
+  },
+  "rookies": [
+   [
+    "Tyler Onyedim",
+    "DT",
+    "pass_rush",
+    "R3",
+    0.0
+   ],
+   [
+    "Tyler Onyedim",
+    "DT",
+    "run_def",
+    "R3",
+    0.0033
+   ]
+  ]
+ },
+ "DET": {
+  "dvoa_fpaa": {
+   "qb": 1.7,
+   "rb": -2.1,
+   "wr": 4.9,
+   "te": -0.3,
+   "wr1": 0.8,
+   "wr2": 0.7,
+   "slot": 3.4
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "SLOT funnel (slot WR exploitable)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "PASS",
+  "cb1": {
+   "name": "Roger McCreary",
+   "cov": 72.0,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 67.2,
+   "run_def_pctl": 95.3,
+   "pass_rush_pctl": 89.1
+  },
+  "rookies": [
+   [
+    "Jimmy Rolder",
+    "LB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Derrick Moore",
+    "DE",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Derrick Moore",
+    "DE",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Jimmy Rolder",
+    "LB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "GB": {
+  "dvoa_fpaa": {
+   "qb": -1.5,
+   "rb": -3.1,
+   "wr": 0.9,
+   "te": -0.8,
+   "wr1": 0.8,
+   "wr2": 0.1,
+   "slot": 0.1
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "RUN",
+  "dc": {
+   "name": "Jonathan Gannon",
+   "man25": 19.3,
+   "man26": 17.1,
+   "scheme": "Jonathan Gannon: LOW blitz (~17-18%), front-four pressure, 3-safety looks",
+   "conf": "blend-prior"
+  },
+  "cb1": {
+   "name": "Benjamin St-Juste",
+   "cov": 77.8,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 48.4,
+   "run_def_pctl": 26.6,
+   "pass_rush_pctl": 67.2
+  },
+  "rookies": [
+   [
+    "Brandon Cisse",
+    "CB",
+    "coverage",
+    "R2",
+    -0.0021
+   ],
+   [
+    "Chris McClellan",
+    "DT",
+    "pass_rush",
+    "R3",
+    0.0
+   ],
+   [
+    "Dani Dennis-Sutton",
+    "DE",
+    "pass_rush",
+    "R4",
+    0.0
+   ],
+   [
+    "Brandon Cisse",
+    "CB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Chris McClellan",
+    "DT",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Dani Dennis-Sutton",
+    "DE",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "HOU": {
+  "dvoa_fpaa": {
+   "qb": -5.2,
+   "rb": -2.7,
+   "wr": -5.8,
+   "te": -1.2,
+   "wr1": -3.4,
+   "wr2": 0.0,
+   "slot": -2.4
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "BALANCED",
+  "cb1": {
+   "name": "Kamari Lassiter",
+   "cov": 77.0,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 73.4,
+   "run_def_pctl": 79.7,
+   "pass_rush_pctl": 95.3
+  },
+  "rookies": [
+   [
+    "Wade Woodaz",
+    "LB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Kamari Ramsey",
+    "S",
+    "coverage",
+    "R5",
+    -0.0005
+   ],
+   [
+    "Kayden McDonald",
+    "DT",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Kayden McDonald",
+    "DT",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Wade Woodaz",
+    "LB",
+    "run_def",
+    "R4",
+    0.0033
+   ],
+   [
+    "Kamari Ramsey",
+    "S",
+    "run_def",
+    "R5",
+    0.0033
+   ]
+  ]
+ },
+ "IND": {
+  "dvoa_fpaa": {
+   "qb": 0.0,
+   "rb": -0.8,
+   "wr": 6.2,
+   "te": 2.7,
+   "wr1": -2.6,
+   "wr2": 5.0,
+   "slot": 3.8
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "PASS",
+  "cb1": {
+   "name": "Charvarius Ward",
+   "cov": 77.4,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 32.8,
+   "run_def_pctl": 51.6,
+   "pass_rush_pctl": 39.1
+  },
+  "rookies": [
+   [
+    "CJ Allen",
+    "LB",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "A.J. Haulcy",
+    "S",
+    "coverage",
+    "R3",
+    -0.0005
+   ],
+   [
+    "Bryce Boettcher",
+    "LB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "CJ Allen",
+    "LB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "A.J. Haulcy",
+    "S",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Bryce Boettcher",
+    "LB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "JAX": {
+  "dvoa_fpaa": {
+   "qb": 0.9,
+   "rb": -2.9,
+   "wr": 3.2,
+   "te": 2.1,
+   "wr1": 2.9,
+   "wr2": 0.3,
+   "slot": 0.0
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "BALANCED",
+  "cb1": {
+   "name": "Jarrian Jones",
+   "cov": 74.5,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 98.4,
+   "run_def_pctl": 89.1,
+   "pass_rush_pctl": 48.4
+  },
+  "rookies": [
+   [
+    "Jalen Huskey",
+    "S",
+    "coverage",
+    "R3",
+    -0.0005
+   ],
+   [
+    "Albert Regis",
+    "DT",
+    "pass_rush",
+    "R3",
+    0.0
+   ],
+   [
+    "Wesley Williams",
+    "DE",
+    "pass_rush",
+    "R4",
+    0.0
+   ],
+   [
+    "Albert Regis",
+    "DT",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Jalen Huskey",
+    "S",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Wesley Williams",
+    "DE",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "KC": {
+  "dvoa_fpaa": {
+   "qb": -1.4,
+   "rb": -2.9,
+   "wr": -2.1,
+   "te": -2.0,
+   "wr1": -1.5,
+   "wr2": -0.1,
+   "slot": -0.4
+  },
+  "funnels": [],
+  "lean_2025": "BALANCED",
+  "lean_2026": "BALANCED",
+  "cb1": {
+   "name": "Nohl Williams",
+   "cov": 75.6,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 51.6,
+   "run_def_pctl": 45.3,
+   "pass_rush_pctl": 57.8
+  },
+  "rookies": [
+   [
+    "Mansoor Delane",
+    "CB",
+    "coverage",
+    "R1",
+    -0.0005
+   ],
+   [
+    "Jadon Canady",
+    "CB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Peter Woods",
+    "DT",
+    "pass_rush",
+    "R1",
+    0.0
+   ],
+   [
+    "R Mason Thomas",
+    "DE",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Mansoor Delane",
+    "CB",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Peter Woods",
+    "DT",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "R Mason Thomas",
+    "DE",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Jadon Canady",
+    "CB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "LAC": {
+  "dvoa_fpaa": {
+   "qb": -3.6,
+   "rb": -2.6,
+   "wr": -4.0,
+   "te": -2.2,
+   "wr1": 0.8,
+   "wr2": -2.0,
+   "slot": -2.8
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)",
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "RUN",
+  "dc": {
+   "name": "Chris O'Leary",
+   "man25": 18.2,
+   "man26": 17.9,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "cb1": {
+   "name": "Donte Jackson",
+   "cov": 73.4,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 54.7,
+   "run_def_pctl": 14.1,
+   "pass_rush_pctl": 10.9
+  },
+  "rookies": [
+   [
+    "Genesis Smith",
+    "S",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Akheem Mesidor",
+    "DE",
+    "pass_rush",
+    "R1",
+    0.0
+   ],
+   [
+    "Akheem Mesidor",
+    "DE",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Genesis Smith",
+    "S",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "LAR": {
+  "dvoa_fpaa": {
+   "qb": -1.1,
+   "rb": -3.5,
+   "wr": 2.2,
+   "te": -1.6,
+   "wr1": 2.5,
+   "wr2": -0.5,
+   "slot": 0.2
+  },
+  "funnels": [
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "BALANCED",
+  "cb1": {
+   "name": "Trent McDuffie",
+   "cov": 74.7,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 57.8,
+   "run_def_pctl": 60.9,
+   "pass_rush_pctl": 70.3
+  },
+  "rookies": []
+ },
+ "LV": {
+  "dvoa_fpaa": {
+   "qb": -0.3,
+   "rb": 2.1,
+   "wr": 3.4,
+   "te": -2.9,
+   "wr1": -1.2,
+   "wr2": 0.6,
+   "slot": 4.0
+  },
+  "funnels": [
+   "SLOT funnel (slot WR exploitable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "PASS",
+  "dc": {
+   "name": "Rob Leonard",
+   "man25": 15.6,
+   "man26": 16.6,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "cb1": {
+   "name": "Eric Stokes",
+   "cov": 75.2,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 26.6,
+   "run_def_pctl": 76.6,
+   "pass_rush_pctl": 14.1
+  },
+  "rookies": [
+   [
+    "Treydan Stukes",
+    "CB",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "Jermod McCoy",
+    "CB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Keyron Crawford",
+    "DE",
+    "pass_rush",
+    "R3",
+    0.0
+   ],
+   [
+    "Treydan Stukes",
+    "CB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Keyron Crawford",
+    "DE",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Jermod McCoy",
+    "CB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "MIA": {
+  "dvoa_fpaa": {
+   "qb": 1.8,
+   "rb": 0.7,
+   "wr": -1.7,
+   "te": 3.6,
+   "wr1": -0.3,
+   "wr2": -1.3,
+   "slot": -0.1
+  },
+  "funnels": [
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "BALANCED",
+  "dc": {
+   "name": "Sean Duggan",
+   "man25": 13.7,
+   "man26": 15.6,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "cb1": {
+   "name": "Rasul Douglas",
+   "cov": 72.6,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 42.2,
+   "run_def_pctl": 54.7,
+   "pass_rush_pctl": 76.6
+  },
+  "rookies": [
+   [
+    "Chris Johnson",
+    "CB",
+    "coverage",
+    "R1",
+    0.0035
+   ],
+   [
+    "Jacob Rodriguez",
+    "LB",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "Trey Moore",
+    "LB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Kyle Louis",
+    "LB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Chris Johnson",
+    "CB",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Jacob Rodriguez",
+    "LB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Trey Moore",
+    "LB",
+    "run_def",
+    "R4",
+    0.0033
+   ],
+   [
+    "Kyle Louis",
+    "LB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "MIN": {
+  "dvoa_fpaa": {
+   "qb": -4.6,
+   "rb": -2.1,
+   "wr": -8.3,
+   "te": -1.2,
+   "wr1": -3.7,
+   "wr2": -1.0,
+   "slot": -3.6
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2025": "RUN",
+  "lean_2026": "RUN",
+  "cb1": {
+   "name": "James Pierre",
+   "cov": 88.9,
+   "tier": "shutdown",
+   "wr1_funnel": "fortress"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 70.3,
+   "run_def_pctl": 29.7,
+   "pass_rush_pctl": 98.4
+  },
+  "rookies": [
+   [
+    "Jake Golday",
+    "LB",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "Jakobe Thomas",
+    "S",
+    "coverage",
+    "R3",
+    -0.0005
+   ],
+   [
+    "Caleb Banks",
+    "DT",
+    "pass_rush",
+    "R1",
+    0.0
+   ],
+   [
+    "Domonique Orange",
+    "DT",
+    "pass_rush",
+    "R3",
+    0.0
+   ],
+   [
+    "Caleb Banks",
+    "DT",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Jake Golday",
+    "LB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Domonique Orange",
+    "DT",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Jakobe Thomas",
+    "S",
+    "run_def",
+    "R3",
+    0.0033
+   ]
+  ]
+ },
+ "NE": {
+  "dvoa_fpaa": {
+   "qb": 0.5,
+   "rb": -2.7,
+   "wr": -0.3,
+   "te": 1.1,
+   "wr1": 0.5,
+   "wr2": -0.9,
+   "slot": 0.0
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "BALANCED",
+  "cb1": {
+   "name": "Christian Gonzalez",
+   "cov": 76.9,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 95.3,
+   "run_def_pctl": 82.8,
+   "pass_rush_pctl": 35.9
+  },
+  "rookies": [
+   [
+    "Gabe Jacas",
+    "DE",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Gabe Jacas",
+    "DE",
+    "run_def",
+    "R2",
+    0.0033
+   ]
+  ]
+ },
+ "NO": {
+  "dvoa_fpaa": {
+   "qb": -2.5,
+   "rb": -0.9,
+   "wr": -3.8,
+   "te": -1.4,
+   "wr1": -2.3,
+   "wr2": -0.9,
+   "slot": -0.6
+  },
+  "funnels": [
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "RUN",
+  "cb1": {
+   "name": "Kool-Aid McKinstry",
+   "cov": 71.4,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 29.7,
+   "run_def_pctl": 4.7,
+   "pass_rush_pctl": 82.8
+  },
+  "rookies": [
+   [
+    "Christen Miller",
+    "DT",
+    "pass_rush",
+    "R2",
+    0.0
+   ],
+   [
+    "Christen Miller",
+    "DT",
+    "run_def",
+    "R2",
+    0.0033
+   ]
+  ]
+ },
+ "NYG": {
+  "dvoa_fpaa": {
+   "qb": 2.5,
+   "rb": 4.9,
+   "wr": 3.0,
+   "te": -2.3,
+   "wr1": 2.1,
+   "wr2": 1.4,
+   "slot": -0.5
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)"
+  ],
+  "lean_2025": "RUN",
+  "lean_2026": "PASS",
+  "dc": {
+   "name": "Dennard Wilson",
+   "man25": 11.6,
+   "man26": 15.8,
+   "scheme": "Dennard Wilson: multiple/attacking, smart blitz, DB-coach pass-D emphasis",
+   "conf": "blend-prior"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 4.7,
+   "run_def_pctl": 67.2,
+   "pass_rush_pctl": 85.9
+  },
+  "rookies": [
+   [
+    "Arvell Reese",
+    "LB",
+    "coverage",
+    "R1",
+    -0.0005
+   ],
+   [
+    "Colton Hood",
+    "CB",
+    "coverage",
+    "R2",
+    0.0016
+   ],
+   [
+    "Arvell Reese",
+    "LB",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Colton Hood",
+    "CB",
+    "run_def",
+    "R2",
+    0.0033
+   ]
+  ]
+ },
+ "NYJ": {
+  "dvoa_fpaa": {
+   "qb": 3.0,
+   "rb": 3.0,
+   "wr": -0.3,
+   "te": 0.4,
+   "wr1": 2.4,
+   "wr2": -0.1,
+   "slot": -2.6
+  },
+  "funnels": [
+   "OUTSIDE funnel (boundary WRs exploitable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "PASS",
+  "dc": {
+   "name": "Brian Duker",
+   "man25": 12.4,
+   "man26": 15.0,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "cb1": {
+   "name": "Nahshon Wright",
+   "cov": 64.8,
+   "tier": "average",
+   "wr1_funnel": "exploitable"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 20.3,
+   "run_def_pctl": 98.4,
+   "pass_rush_pctl": 17.2
+  },
+  "rookies": [
+   [
+    "D'Angelo Ponds",
+    "CB",
+    "coverage",
+    "R2",
+    0.0018
+   ],
+   [
+    "David Bailey",
+    "OLB",
+    "pass_rush",
+    "R1",
+    0.0
+   ],
+   [
+    "Darrell Jackson Jr.",
+    "DT",
+    "pass_rush",
+    "R4",
+    0.0
+   ],
+   [
+    "David Bailey",
+    "OLB",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "D'Angelo Ponds",
+    "CB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Darrell Jackson Jr.",
+    "DT",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "PHI": {
+  "dvoa_fpaa": {
+   "qb": -3.6,
+   "rb": 0.5,
+   "wr": -4.8,
+   "te": -4.7,
+   "wr1": -4.5,
+   "wr2": 2.8,
+   "slot": -3.1
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE fortress (avoid TEs)",
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2025": "RUN",
+  "lean_2026": "RUN",
+  "cb1": {
+   "name": "Quinyon Mitchell",
+   "cov": 80.2,
+   "tier": "shutdown",
+   "wr1_funnel": "fortress"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 92.2,
+   "run_def_pctl": 23.4,
+   "pass_rush_pctl": 42.2
+  },
+  "rookies": []
+ },
+ "PIT": {
+  "dvoa_fpaa": {
+   "qb": 2.2,
+   "rb": -2.6,
+   "wr": 3.5,
+   "te": 3.2,
+   "wr1": 0.7,
+   "wr2": 0.4,
+   "slot": 2.4
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2025": "PASS",
+  "lean_2026": "RUN",
+  "dc": {
+   "name": "Patrick Graham",
+   "man25": 13.8,
+   "man26": 13.9,
+   "scheme": "Patrick Graham: two-high split-field, press corners, NOT a heavy blitzer",
+   "conf": "blend-prior"
+  },
+  "cb1": {
+   "name": "Joey Porter Jr.",
+   "cov": 76.6,
+   "tier": "above-avg",
+   "wr1_funnel": "tight"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 35.9,
+   "run_def_pctl": 20.3,
+   "pass_rush_pctl": 45.3
+  },
+  "rookies": [
+   [
+    "Daylen Everette",
+    "CB",
+    "coverage",
+    "R3",
+    0.0007
+   ],
+   [
+    "Daylen Everette",
+    "CB",
+    "run_def",
+    "R3",
+    0.0033
+   ]
+  ]
+ },
+ "SEA": {
+  "dvoa_fpaa": {
+   "qb": -1.6,
+   "rb": -2.9,
+   "wr": -3.1,
+   "te": 2.7,
+   "wr1": -2.1,
+   "wr2": -1.0,
+   "slot": 0.0
+  },
+  "funnels": [
+   "TE funnel (soft vs TE)",
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "RUN",
+  "cb1": {
+   "name": "Devon Witherspoon",
+   "cov": 83.6,
+   "tier": "shutdown",
+   "wr1_funnel": "fortress"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 85.9,
+   "run_def_pctl": 42.2,
+   "pass_rush_pctl": 51.6
+  },
+  "rookies": [
+   [
+    "Bud Clark",
+    "S",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "Julian Neal",
+    "CB",
+    "coverage",
+    "R3",
+    -0.0015
+   ],
+   [
+    "Bud Clark",
+    "S",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Julian Neal",
+    "CB",
+    "run_def",
+    "R3",
+    0.0033
+   ]
+  ]
+ },
+ "SF": {
+  "dvoa_fpaa": {
+   "qb": 1.0,
+   "rb": 1.3,
+   "wr": 2.2,
+   "te": 1.9,
+   "wr1": -1.0,
+   "wr2": 2.0,
+   "slot": 1.1
+  },
+  "funnels": [
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "PASS",
+  "dc": {
+   "name": "Raheem Morris",
+   "man25": null,
+   "man26": null,
+   "scheme": "Raheem Morris: MORE man + aggressive (5+ rushers ~1/3), multiple change-ups vs Saleh zone",
+   "conf": null
+  },
+  "eng2026": {
+   "pass_cov_pctl": 60.9,
+   "run_def_pctl": 85.9,
+   "pass_rush_pctl": 29.7
+  },
+  "rookies": [
+   [
+    "Ephesians Prysock",
+    "CB",
+    "coverage",
+    "R4",
+    0.0021
+   ],
+   [
+    "Romello Height",
+    "DE",
+    "pass_rush",
+    "R3",
+    0.0
+   ],
+   [
+    "Gracen Halton",
+    "DT",
+    "pass_rush",
+    "R4",
+    0.0
+   ],
+   [
+    "Romello Height",
+    "DE",
+    "run_def",
+    "R3",
+    0.0033
+   ],
+   [
+    "Gracen Halton",
+    "DT",
+    "run_def",
+    "R4",
+    0.0033
+   ],
+   [
+    "Ephesians Prysock",
+    "CB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "TB": {
+  "dvoa_fpaa": {
+   "qb": 3.5,
+   "rb": 0.7,
+   "wr": 0.1,
+   "te": 2.2,
+   "wr1": 1.3,
+   "wr2": -2.0,
+   "slot": 0.9
+  },
+  "funnels": [
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "PASS",
+  "cb1": {
+   "name": "Jacob Parrish",
+   "cov": 65.7,
+   "tier": "average",
+   "wr1_funnel": "exploitable"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 17.2,
+   "run_def_pctl": 32.8,
+   "pass_rush_pctl": 73.4
+  },
+  "rookies": [
+   [
+    "Josiah Trotter",
+    "LB",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "Keionte Scott",
+    "CB",
+    "coverage",
+    "R4",
+    -0.0005
+   ],
+   [
+    "Rueben Bain Jr.",
+    "DE",
+    "pass_rush",
+    "R1",
+    0.0
+   ],
+   [
+    "Rueben Bain Jr.",
+    "DE",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Josiah Trotter",
+    "LB",
+    "run_def",
+    "R2",
+    0.0033
+   ],
+   [
+    "Keionte Scott",
+    "CB",
+    "run_def",
+    "R4",
+    0.0033
+   ]
+  ]
+ },
+ "TEN": {
+  "dvoa_fpaa": {
+   "qb": 1.9,
+   "rb": 1.6,
+   "wr": 2.1,
+   "te": 0.0,
+   "wr1": 3.3,
+   "wr2": -0.2,
+   "slot": -1.0
+  },
+  "funnels": [
+   "WR1 funnel (top-CB beatable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2025": "BALANCED",
+  "lean_2026": "PASS",
+  "dc": {
+   "name": "Gus Bradley",
+   "man25": 18.2,
+   "man26": 14.1,
+   "scheme": "Gus Bradley: heavy Cover-3 ZONE (led NFL ~55% Cover-3 in 2023), low man",
+   "conf": "blend-prior"
+  },
+  "cb1": {
+   "name": "Cor'Dale Flott",
+   "cov": 68.1,
+   "tier": "average",
+   "wr1_funnel": "exploitable"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 14.1,
+   "run_def_pctl": 64.1,
+   "pass_rush_pctl": 64.1
+  },
+  "rookies": [
+   [
+    "Anthony Hill Jr.",
+    "LB",
+    "coverage",
+    "R2",
+    -0.0005
+   ],
+   [
+    "Keldric Faulk",
+    "DE",
+    "pass_rush",
+    "R1",
+    0.0
+   ],
+   [
+    "Keldric Faulk",
+    "DE",
+    "run_def",
+    "R1",
+    0.0033
+   ],
+   [
+    "Anthony Hill Jr.",
+    "LB",
+    "run_def",
+    "R2",
+    0.0033
+   ]
+  ]
+ },
+ "WAS": {
+  "dvoa_fpaa": {
+   "qb": 2.8,
+   "rb": 2.9,
+   "wr": 3.1,
+   "te": 2.1,
+   "wr1": 0.3,
+   "wr2": 3.3,
+   "slot": -0.5
+  },
+  "funnels": [],
+  "lean_2025": "BALANCED",
+  "lean_2026": "BALANCED",
+  "dc": {
+   "name": "Daronte Jones",
+   "man25": 15.1,
+   "man26": 16.3,
+   "scheme": null,
+   "conf": "regress-mean"
+  },
+  "eng2026": {
+   "pass_cov_pctl": 7.8,
+   "run_def_pctl": 1.6,
+   "pass_rush_pctl": 20.3
+  },
+  "rookies": [
+   [
+    "Sonny Styles",
+    "LB",
+    "coverage",
+    "R1",
+    -0.0005
+   ],
+   [
+    "Sonny Styles",
+    "LB",
+    "run_def",
+    "R1",
+    0.0033
+   ]
+  ]
+ }
+}

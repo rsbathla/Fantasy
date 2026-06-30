@@ -1,0 +1,42 @@
+==> build_flags_QB
+    ok: outputs ['boom/flags_QB.json']
+==> build_flags_RB
+    ok: outputs ['boom/flags_RB.json']
+==> build_flags_WR
+    ok: outputs ['boom/flags_WR.json']
+==> apply_funnel_overlay
+    ok: outputs ['boom/flags_WR.json']
+==> build_flags_TE
+    ok: outputs ['boom/flags_TE.json']
+==> build_flags_DST
+    ok: outputs ['boom/flags_DST.json']
+==> tighten_flags
+    ok: outputs ['boom/flags_WR.json']
+==> build_stack_overlay
+    ok: outputs ['boom/flags_WR.json', 'boom/flags_TE.json']
+==> mark_fa_players
+    ok: outputs ['boom/flags_WR.json']
+==> build_boom_marks
+    ok: outputs ['boom/boom_marks.json']
+==> build_upside_cases
+    ok: outputs ['upside_cases.html', 'boom/upside_cases.json']
+==> build_player_explorer
+    ok: outputs ['player_explorer.html']
+==> validate_boom (final gate)
+=== validate_boom ===
+  flags_QB.json: 53 players, placeholders=0
+  flags_RB.json: 104 players, placeholders=0
+  flags_WR.json: 153 players, placeholders=0
+  flags_TE.json: 61 players, placeholders=0
+  flags_DST.json: 32 players, placeholders=0
+  statmenu augmentation coverage (clobber check):
+    base_blended   371/371 (100%)
+    adv2           304/371 (82%)
+    chart2         248/371 (67%)
+    cspec          136/371 (37%)
+    rz             173/371 (47%)
+  COVERAGE GAP: 12 player(s) team='FA' (no 2026 schedule -> blank board): kareem hunt, nick chubb, joe mixon, najee harris, austin ekeler, stefon diggs, tyreek hill, deebo samuel ...
+
+PASS: 403 players across 5 position files, schema + interpolation + ranges clean
+
+boom_pipeline OK
