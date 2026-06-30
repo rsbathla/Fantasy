@@ -27,7 +27,17 @@ TW = {}
 for p in (intel.get('players') or []):
     if p.get('about'):
         TW[fn(p['name'])] = {'about': p['about'], 'comp': p.get('comp', []),
-                             'n_about': p.get('n_about'), 'backtests': p.get('backtests', [])}
+                             'n_about': p.get('n_about'), 'backtests': p.get('backtests', []), 'news': []}
+# LIVE X layer (x_dossier_refresh.py -> x_live.json, fed by the X MCP). Prefer live posts; split news.
+xlive = J('x_live.json')
+for fk, posts in (xlive.get('players') or {}).items():
+    cur = TW.setdefault(fk, {'about': [], 'comp': [], 'backtests': [], 'news': []})
+    live_news = [p for p in posts if (p.get('kind') == 'news')]
+    live_tw = [p for p in posts if (p.get('kind') != 'news')]
+    pref = {(t.get('text') or '')[:60] for t in live_tw}
+    cur['about'] = live_tw + [t for t in cur.get('about', []) if (t.get('text') or '')[:60] not in pref]
+    cur['news'] = (cur.get('news') or []) + live_news
+    cur['n_about'] = len(cur['about'])
 # video notes
 VID = {}
 vp = os.path.join(HERE, 'video_notes.csv')
@@ -76,6 +86,7 @@ for k in keys:
         'situations': pr.get('situations'), 'trend': pr.get('trend'),
         # tweets + video
         'tweets': TW.get(k, {}).get('about'), 'n_tweets': TW.get(k, {}).get('n_about'),
+        'news': TW.get(k, {}).get('news'),
         'video': VID.get(k, {}).get('note'), 'n_clips': VID.get(k, {}).get('n_clips'),
     }
     players.append(rec)
@@ -175,8 +186,10 @@ function render(p){if(!p)return;let h='';
  const rf=p.risk_flags||p.flags;if(rf&&rf.length)h+=`<div class="sec"><h3>Risk flags${p.flags_playoff?` · ${p.flags_playoff} hit the playoffs`:''}</h3>${(Array.isArray(rf)?rf:[]).map(f=>`<span class="chip b">${esc(typeof f==='string'?f:(f.q||f.note||JSON.stringify(f)))}</span>`).join('')}</div>`;
  // backtests
  if(p.backtests&&p.backtests.length)h+=`<div class="sec"><h3>Analyst-claim backtests (claim vs our data)</h3>`+p.backtests.map(b=>`<div class="note" style="margin:3px 0"><b style="color:${/STRONG|SUPPORT/i.test(b.verdict)?'var(--good)':/NOT|REJECT/i.test(b.verdict)?'var(--bad)':'var(--warn)'}">${esc(b.verdict)}</b> — ${esc((b.dim||'').replace(/_/g,' '))} ${b.pctl!=null?'('+b.pctl+'th)':''}: ${esc(b.note||'')} ${b.by?'<span class=muted>— '+b.by.map(x=>'@'+esc(x)).join(', ')+'</span>':''}</div>`).join('')+`</div>`;
+ // breaking news (live X news/trends)
+ if(p.news&&p.news.length)h+=`<div class="sec"><h3>📰 Breaking news & trends (live)</h3>`+p.news.slice(0,8).map(t=>`<div class="tweet" style="border-left-color:var(--warn)"><span class="h" style="color:var(--warn)">@${esc(t.handle||'')}</span> <span class="m">${esc(t.date||'')}</span><div>${esc(t.text||'')}</div>${t.url?`<a href="${esc(t.url)}" target="_blank">link →</a>`:''}</div>`).join('')+`</div>`;
  // tweets
- if(p.tweets&&p.tweets.length)h+=`<div class="sec"><h3>Tweets & analyst mentions (${p.n_tweets||p.tweets.length})</h3>`+p.tweets.slice(0,20).map(t=>`<div class="tweet"><span class="h">@${esc(t.handle||t.name||'')}</span> <span class="m">${esc(t.date||'')}${t.likes?' · '+t.likes+'♥':''}</span><div>${esc(t.text||'')}</div>${t.url?`<a href="${esc(t.url)}" target="_blank">link →</a>`:''}</div>`).join('')+`</div>`;
+ if(p.tweets&&p.tweets.length)h+=`<div class="sec"><h3>Tweets & analyst mentions (${p.n_tweets||p.tweets.length})${p.tweets[0]&&p.tweets[0].source==='x_mcp'?' · live':''}</h3>`+p.tweets.slice(0,20).map(t=>`<div class="tweet"><span class="h">@${esc(t.handle||t.name||'')}</span> <span class="m">${esc(t.date||'')}${t.likes?' · '+t.likes+'♥':''}</span><div>${esc(t.text||'')}</div>${t.url?`<a href="${esc(t.url)}" target="_blank">link →</a>`:''}</div>`).join('')+`</div>`;
  // video
  if(p.video)h+=`<div class="sec"><h3>Video mentions${p.n_clips?` (${p.n_clips} clips)`:''}</h3><div class="vid">${esc(p.video)}</div></div>`;
  document.getElementById('detail').innerHTML=h;
