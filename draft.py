@@ -45,8 +45,13 @@ def detect_platform(text):
         return 'DK'
     if re.search(r'Round\s*\d+\s*of\s*20', t, re.I):
         return 'DK'
-    # Underdog Best Ball Mania: 18-round drafts; 'Round X of 18' or UD-specific chrome.
+    # Underdog Best Ball Mania board: the distinctive "POS - TEAM (bye)" player lines (e.g. "RB - DET (6)"),
+    # the QB#/RB#/WR#/TE# count blocks, an 18-round structure, or 'On the clock' without DK's ': Pick N'.
+    if re.search(r'\b(QB|RB|WR|TE)\s*[-–]\s*[A-Za-z]{2,3}\s*\(\d+\)', t):
+        return 'UD'
     if re.search(r'Round\s*\d+\s*of\s*18', t, re.I) or re.search(r'\bUnderdog\b', t, re.I):
+        return 'UD'
+    if 'On the clock' in t and not re.search(r'On the clock:\s*Pick', t, re.I):
         return 'UD'
     return None
 
