@@ -10,3 +10,5 @@ engine/live_tree.json.corrupt_bak
 _dfs_*.png
 _home*.png
 engine/_draft_paste.txt
+_deep*.png
+_dfs*.png

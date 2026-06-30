@@ -64,9 +64,9 @@ td.l,th.l{text-align:left}tr:hover td{background:rgba(122,162,255,.05)}
    <a class="btn" href="dfs_week.html">Open weekly model →</a>
    <div class="links"><a href="command_center.html">Command center</a><a href="player_explorer.html">Player explorer</a></div></div>
   <div class="tool"><div class="tag">Goal 3</div><h2>The Dossier</h2>
-   <p>Fundamental profiles for every <b>player, offense, defense, and coach</b> — who they are and where the edges are, so you know <b>who to press</b> in a good matchup. Browse offense/defense/coaching in the tabs above; players in the linked dossiers.</p>
-   <a class="btn alt" href="dossier.html">Player & team dossier →</a>
-   <div class="links"><a href="intel.html">Intel cards</a><a href="team_scout.html">Team scout</a><a href="team_dashboard.html">Team dashboard</a></div></div>
+   <p>Everything we have on every <b>player, offense, defense, and coach</b> in one place — so you can learn as much as possible and know <b>who to press</b>. The deep player dossier aggregates projections, real EPA, the full situational profile, scheme fit, the 18-week matchup calendar, ceiling levers, risk flags, <b>tweets and video mentions</b>. Offense/defense/coaching are in the tabs above.</p>
+   <a class="btn" href="dossier_deep.html">Deep player dossier →</a>
+   <div class="links"><a href="dossier.html">Team dossier</a><a href="intel.html">Intel cards</a><a href="team_scout.html">Team scout</a></div></div>
  </div>
  <div class="legend">Every player view (here and in each tool) opens the same <b>4-layer context drilldown</b>: situational splits + real NFL Pro EPA · 2026 playcaller fit · vacated/opportunity · W15-17 matchup. The weekly "who to play" board <i>is</i> the by-week "who to press" pivot — sort by edge for the slate's smash spots.</div>
 </div>
