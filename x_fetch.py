@@ -20,6 +20,19 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 API = "https://api.x.com/2/tweets/search/recent"
 COST_PER_READ = 0.005   # pay-per-use post read
 
+def _load_dotenv():
+    """Load KEY=value lines from a .env file (script dir or cwd) into the environment if not already
+    set. Lets you keep X_BEARER_TOKEN in a gitignored .env instead of exporting it each time."""
+    for d in (HERE, os.getcwd()):
+        p = os.path.join(d, '.env')
+        if os.path.exists(p):
+            for line in open(p, encoding='utf-8'):
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    k, v = line.split('=', 1)
+                    os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
+_load_dotenv()
+
 def handles():
     p = os.path.join(HERE, 'x_handles.txt'); out = []
     if os.path.exists(p):

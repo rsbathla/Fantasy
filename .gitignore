@@ -12,3 +12,8 @@ _home*.png
 engine/_draft_paste.txt
 _deep*.png
 _dfs*.png
+
+# secrets — NEVER commit
+.env
+.env.*
+x_posts.json
