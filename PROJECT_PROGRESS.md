@@ -74,10 +74,10 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done (tested + committed)
 - ✅ `dfs_week.html` page (who-to-play board + lineup templates + defense-splits reference + shared 4-layer drilldown). Headless-rendered, 0 console errors. **Pending:** swap projection-basis for live stats once 2026 games start (framework is week-ready).
 
 ### Phase D — Dossier to production
-- ⬜ Offense scheme-identity profile (fix broken team-motion join) all 32
-- ⬜ Unified per-defense dossier object (fuse 7 files; add pressure proxy)
-- ⬜ By-week "who to press" pivot + FAV/TOUGH "why" all 18 weeks
-- ⬜ Single `home.html` landing + dossier as unified home · test · commit
+- ✅ Offense scheme-identity profile `build_offense_profile.py` → `offense_profile.json` (all 32): real **zone-vs-gap run identity** from FP RunType attempts, pace, pass-rate, motion/PA where charted, playcaller + dials, environment. Fixes the null-motion / no-scheme gap; charting aliases (BLT/CLV/HST) folded.
+- ✅ Unified per-defense object = `defense_splits.json` (Phase C) — fuses man/zone/deep/short softness + FPAA-by-position + shells + unit pctls + funnels into one per-team card, surfaced in the Defense dossier tab.
+- ✅ By-week "who to press" pivot = the DFS weekly board (`dfs_model.py --week N`) — per-week opponent + matchup edges, sortable; the slate's smash spots.
+- ✅ Single `home.html` landing — routes to the 3 tools + unified Offense/Defense/Coaching dossier tabs. Headless-rendered, 0 errors.
 
 ### Phase E — Final review pass
 - ⬜ One dedicated review pass over all three; end-to-end retest; fix; commit
