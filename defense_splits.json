@@ -1,0 +1,1351 @@
+{
+ "ARI": {
+  "vs_man": {
+   "allowed_ypr": 1.294,
+   "softness_pctl": 22.6
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.642,
+   "softness_pctl": 80.6
+  },
+  "deep": {
+   "allowed_ypr": 3.028,
+   "softness_pctl": 71.0
+  },
+  "short": {
+   "allowed_ypr": 1.41,
+   "softness_pctl": 48.4
+  },
+  "by_pos": {
+   "qb": -0.3,
+   "rb": 3.6,
+   "wr": -2.5,
+   "te": 3.3,
+   "wr1": -0.1,
+   "wr2": -0.6,
+   "slot": -1.8
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 50.3,
+   "two_high": 49.6
+  },
+  "units": {
+   "pass_cov_pctl": 1.6,
+   "pass_rush_pctl": 92.2,
+   "run_def_pctl": 10.9
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2026": "BALANCED"
+ },
+ "ATL": {
+  "vs_man": {
+   "allowed_ypr": 1.252,
+   "softness_pctl": 12.9
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.559,
+   "softness_pctl": 45.2
+  },
+  "deep": {
+   "allowed_ypr": 2.534,
+   "softness_pctl": 38.7
+  },
+  "short": {
+   "allowed_ypr": 1.401,
+   "softness_pctl": 45.2
+  },
+  "by_pos": {
+   "qb": 0.1,
+   "rb": -0.1,
+   "wr": 2.8,
+   "te": -4.2,
+   "wr1": 1.2,
+   "wr2": 0.9,
+   "slot": 0.7
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 62.0,
+   "two_high": 37.9
+  },
+  "units": {
+   "pass_cov_pctl": 79.7,
+   "pass_rush_pctl": 4.7,
+   "run_def_pctl": 48.4
+  },
+  "funnels": [
+   "TE fortress (avoid TEs)",
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "BAL": {
+  "vs_man": {
+   "allowed_ypr": 1.373,
+   "softness_pctl": 45.2
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.566,
+   "softness_pctl": 51.6
+  },
+  "deep": {
+   "allowed_ypr": 2.878,
+   "softness_pctl": 61.3
+  },
+  "short": {
+   "allowed_ypr": 1.311,
+   "softness_pctl": 3.2
+  },
+  "by_pos": {
+   "qb": 0.0,
+   "rb": 1.6,
+   "wr": 5.5,
+   "te": -1.7,
+   "wr1": 4.5,
+   "wr2": -1.7,
+   "slot": 2.8
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 69.1,
+   "two_high": 30.9
+  },
+  "units": {
+   "pass_cov_pctl": 39.1,
+   "pass_rush_pctl": 26.6,
+   "run_def_pctl": 73.4
+  },
+  "funnels": [
+   "WR1 funnel (top-CB beatable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "PASS",
+  "dc": "Anthony Weaver"
+ },
+ "BUF": {
+  "vs_man": {
+   "allowed_ypr": 1.367,
+   "softness_pctl": 41.9
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.496,
+   "softness_pctl": 29.0
+  },
+  "deep": {
+   "allowed_ypr": 2.762,
+   "softness_pctl": 48.4
+  },
+  "short": {
+   "allowed_ypr": 1.415,
+   "softness_pctl": 51.6
+  },
+  "by_pos": {
+   "qb": -2.3,
+   "rb": 4.1,
+   "wr": -4.1,
+   "te": -5.6,
+   "wr1": -0.4,
+   "wr2": -1.3,
+   "slot": -2.4
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 54.0,
+   "two_high": 45.9
+  },
+  "units": {
+   "pass_cov_pctl": 82.8,
+   "pass_rush_pctl": 54.7,
+   "run_def_pctl": 35.9
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE fortress (avoid TEs)",
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2026": "RUN",
+  "dc": "Jim Leonhard"
+ },
+ "CAR": {
+  "vs_man": {
+   "allowed_ypr": 1.318,
+   "softness_pctl": 29.0
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.652,
+   "softness_pctl": 90.3
+  },
+  "deep": {
+   "allowed_ypr": 3.165,
+   "softness_pctl": 80.6
+  },
+  "short": {
+   "allowed_ypr": 1.475,
+   "softness_pctl": 61.3
+  },
+  "by_pos": {
+   "qb": -1.6,
+   "rb": 1.8,
+   "wr": -1.9,
+   "te": -0.8,
+   "wr1": 2.5,
+   "wr2": -2.7,
+   "slot": -1.7
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 59.5,
+   "two_high": 40.5
+  },
+  "units": {
+   "pass_cov_pctl": 76.6,
+   "pass_rush_pctl": 1.6,
+   "run_def_pctl": 7.8
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "CHI": {
+  "vs_man": {
+   "allowed_ypr": 1.774,
+   "softness_pctl": 96.8
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.636,
+   "softness_pctl": 77.4
+  },
+  "deep": {
+   "allowed_ypr": 3.554,
+   "softness_pctl": 96.8
+  },
+  "short": {
+   "allowed_ypr": 1.314,
+   "softness_pctl": 6.5
+  },
+  "by_pos": {
+   "qb": 0.9,
+   "rb": -1.6,
+   "wr": 2.9,
+   "te": 0.0,
+   "wr1": 2.4,
+   "wr2": 2.3,
+   "slot": -1.8
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 61.6,
+   "two_high": 38.5
+  },
+  "units": {
+   "pass_cov_pctl": 64.1,
+   "pass_rush_pctl": 7.8,
+   "run_def_pctl": 39.1
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "OUTSIDE funnel (boundary WRs exploitable)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "CIN": {
+  "vs_man": {
+   "allowed_ypr": 1.441,
+   "softness_pctl": 61.3
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.598,
+   "softness_pctl": 64.5
+  },
+  "deep": {
+   "allowed_ypr": 2.329,
+   "softness_pctl": 6.5
+  },
+  "short": {
+   "allowed_ypr": 1.524,
+   "softness_pctl": 77.4
+  },
+  "by_pos": {
+   "qb": 2.7,
+   "rb": 6.7,
+   "wr": -6.3,
+   "te": 8.3,
+   "wr1": -3.6,
+   "wr2": -2.3,
+   "slot": -0.4
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 65.5,
+   "two_high": 34.6
+  },
+  "units": {
+   "pass_cov_pctl": 10.9,
+   "pass_rush_pctl": 32.8,
+   "run_def_pctl": 70.3
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE funnel (soft vs TE)",
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2026": "PASS"
+ },
+ "CLE": {
+  "vs_man": {
+   "allowed_ypr": 1.399,
+   "softness_pctl": 48.4
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.547,
+   "softness_pctl": 41.9
+  },
+  "deep": {
+   "allowed_ypr": 2.504,
+   "softness_pctl": 32.3
+  },
+  "short": {
+   "allowed_ypr": 1.555,
+   "softness_pctl": 96.8
+  },
+  "by_pos": {
+   "qb": -2.8,
+   "rb": -1.3,
+   "wr": -5.3,
+   "te": -2.3,
+   "wr1": -2.2,
+   "wr2": -2.6,
+   "slot": -0.4
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 69.2,
+   "two_high": 30.9
+  },
+  "units": {
+   "pass_cov_pctl": 45.3,
+   "pass_rush_pctl": 60.9,
+   "run_def_pctl": 92.2
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "PASS",
+  "dc": "Mike Rutenberg"
+ },
+ "DAL": {
+  "vs_man": {
+   "allowed_ypr": 1.789,
+   "softness_pctl": 100.0
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.651,
+   "softness_pctl": 87.1
+  },
+  "deep": {
+   "allowed_ypr": 3.284,
+   "softness_pctl": 93.5
+  },
+  "short": {
+   "allowed_ypr": 1.546,
+   "softness_pctl": 87.1
+  },
+  "by_pos": {
+   "qb": 8.1,
+   "rb": 3.1,
+   "wr": 9.5,
+   "te": -0.4,
+   "wr1": 4.2,
+   "wr2": 1.6,
+   "slot": 3.7
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 58.8,
+   "two_high": 41.2
+  },
+  "units": {
+   "pass_cov_pctl": 23.4,
+   "pass_rush_pctl": 23.4,
+   "run_def_pctl": 17.2
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2026": "BALANCED",
+  "dc": "Christian Parker"
+ },
+ "DEN": {
+  "vs_man": {
+   "allowed_ypr": 1.31,
+   "softness_pctl": 25.8
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.293,
+   "softness_pctl": 0.0
+  },
+  "deep": {
+   "allowed_ypr": 2.306,
+   "softness_pctl": 0.0
+  },
+  "short": {
+   "allowed_ypr": 1.375,
+   "softness_pctl": 22.6
+  },
+  "by_pos": {
+   "qb": -1.1,
+   "rb": -3.9,
+   "wr": -1.0,
+   "te": 1.5,
+   "wr1": -4.0,
+   "wr2": -0.1,
+   "slot": 3.1
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 62.5,
+   "two_high": 37.6
+  },
+  "units": {
+   "pass_cov_pctl": 89.1,
+   "pass_rush_pctl": 79.7,
+   "run_def_pctl": 57.8
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+   "SLOT funnel (slot WR exploitable)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "DET": {
+  "vs_man": {
+   "allowed_ypr": 1.422,
+   "softness_pctl": 51.6
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.645,
+   "softness_pctl": 83.9
+  },
+  "deep": {
+   "allowed_ypr": 2.848,
+   "softness_pctl": 58.1
+  },
+  "short": {
+   "allowed_ypr": 1.395,
+   "softness_pctl": 38.7
+  },
+  "by_pos": {
+   "qb": 1.7,
+   "rb": -2.1,
+   "wr": 4.9,
+   "te": -0.3,
+   "wr1": 0.8,
+   "wr2": 0.7,
+   "slot": 3.4
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 66.6,
+   "two_high": 33.4
+  },
+  "units": {
+   "pass_cov_pctl": 67.2,
+   "pass_rush_pctl": 89.1,
+   "run_def_pctl": 95.3
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "SLOT funnel (slot WR exploitable)"
+  ],
+  "lean_2026": "PASS"
+ },
+ "GB": {
+  "vs_man": {
+   "allowed_ypr": 1.196,
+   "softness_pctl": 9.7
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.452,
+   "softness_pctl": 12.9
+  },
+  "deep": {
+   "allowed_ypr": 2.315,
+   "softness_pctl": 3.2
+  },
+  "short": {
+   "allowed_ypr": 1.329,
+   "softness_pctl": 16.1
+  },
+  "by_pos": {
+   "qb": -1.5,
+   "rb": -3.1,
+   "wr": 0.9,
+   "te": -0.8,
+   "wr1": 0.8,
+   "wr2": 0.1,
+   "slot": 0.1
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 51.1,
+   "two_high": 48.9
+  },
+  "units": {
+   "pass_cov_pctl": 48.4,
+   "pass_rush_pctl": 67.2,
+   "run_def_pctl": 26.6
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)"
+  ],
+  "lean_2026": "RUN",
+  "dc": "Jonathan Gannon"
+ },
+ "HOU": {
+  "vs_man": {
+   "allowed_ypr": 1.501,
+   "softness_pctl": 74.2
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.36,
+   "softness_pctl": 6.5
+  },
+  "deep": {
+   "allowed_ypr": 2.33,
+   "softness_pctl": 9.7
+  },
+  "short": {
+   "allowed_ypr": 1.328,
+   "softness_pctl": 12.9
+  },
+  "by_pos": {
+   "qb": -5.2,
+   "rb": -2.7,
+   "wr": -5.8,
+   "te": -1.2,
+   "wr1": -3.4,
+   "wr2": 0.0,
+   "slot": -2.4
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 56.0,
+   "two_high": 44.0
+  },
+  "units": {
+   "pass_cov_pctl": 73.4,
+   "pass_rush_pctl": 95.3,
+   "run_def_pctl": 79.7
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2026": "BALANCED"
+ },
+ "IND": {
+  "vs_man": {
+   "allowed_ypr": 1.321,
+   "softness_pctl": 32.3
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.658,
+   "softness_pctl": 93.5
+  },
+  "deep": {
+   "allowed_ypr": 3.1,
+   "softness_pctl": 77.4
+  },
+  "short": {
+   "allowed_ypr": 1.544,
+   "softness_pctl": 83.9
+  },
+  "by_pos": {
+   "qb": 0.0,
+   "rb": -0.8,
+   "wr": 6.2,
+   "te": 2.7,
+   "wr1": -2.6,
+   "wr2": 5.0,
+   "slot": 3.8
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 60.9,
+   "two_high": 39.0
+  },
+  "units": {
+   "pass_cov_pctl": 32.8,
+   "pass_rush_pctl": 39.1,
+   "run_def_pctl": 51.6
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2026": "PASS"
+ },
+ "JAX": {
+  "vs_man": {
+   "allowed_ypr": 1.506,
+   "softness_pctl": 83.9
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.494,
+   "softness_pctl": 22.6
+  },
+  "deep": {
+   "allowed_ypr": 3.203,
+   "softness_pctl": 87.1
+  },
+  "short": {
+   "allowed_ypr": 1.376,
+   "softness_pctl": 25.8
+  },
+  "by_pos": {
+   "qb": 0.9,
+   "rb": -2.9,
+   "wr": 3.2,
+   "te": 2.1,
+   "wr1": 2.9,
+   "wr2": 0.3,
+   "slot": 0.0
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 52.4,
+   "two_high": 47.6
+  },
+  "units": {
+   "pass_cov_pctl": 98.4,
+   "pass_rush_pctl": 48.4,
+   "run_def_pctl": 89.1
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2026": "BALANCED"
+ },
+ "KC": {
+  "vs_man": {
+   "allowed_ypr": 1.442,
+   "softness_pctl": 64.5
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.594,
+   "softness_pctl": 61.3
+  },
+  "deep": {
+   "allowed_ypr": 3.058,
+   "softness_pctl": 74.2
+  },
+  "short": {
+   "allowed_ypr": 1.475,
+   "softness_pctl": 64.5
+  },
+  "by_pos": {
+   "qb": -1.4,
+   "rb": -2.9,
+   "wr": -2.1,
+   "te": -2.0,
+   "wr1": -1.5,
+   "wr2": -0.1,
+   "slot": -0.4
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 56.3,
+   "two_high": 43.7
+  },
+  "units": {
+   "pass_cov_pctl": 51.6,
+   "pass_rush_pctl": 57.8,
+   "run_def_pctl": 45.3
+  },
+  "funnels": [],
+  "lean_2026": "BALANCED"
+ },
+ "LAC": {
+  "vs_man": {
+   "allowed_ypr": 1.107,
+   "softness_pctl": 0.0
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.416,
+   "softness_pctl": 9.7
+  },
+  "deep": {
+   "allowed_ypr": 2.667,
+   "softness_pctl": 41.9
+  },
+  "short": {
+   "allowed_ypr": 1.362,
+   "softness_pctl": 19.4
+  },
+  "by_pos": {
+   "qb": -3.6,
+   "rb": -2.6,
+   "wr": -4.0,
+   "te": -2.2,
+   "wr1": 0.8,
+   "wr2": -2.0,
+   "slot": -2.8
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 52.5,
+   "two_high": 47.5
+  },
+  "units": {
+   "pass_cov_pctl": 54.7,
+   "pass_rush_pctl": 10.9,
+   "run_def_pctl": 14.1
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)",
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "RUN",
+  "dc": "Chris O'Leary"
+ },
+ "LAR": {
+  "vs_man": {
+   "allowed_ypr": 1.285,
+   "softness_pctl": 19.4
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.544,
+   "softness_pctl": 38.7
+  },
+  "deep": {
+   "allowed_ypr": 2.408,
+   "softness_pctl": 22.6
+  },
+  "short": {
+   "allowed_ypr": 1.389,
+   "softness_pctl": 35.5
+  },
+  "by_pos": {
+   "qb": -1.1,
+   "rb": -3.5,
+   "wr": 2.2,
+   "te": -1.6,
+   "wr1": 2.5,
+   "wr2": -0.5,
+   "slot": 0.2
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 54.8,
+   "two_high": 45.3
+  },
+  "units": {
+   "pass_cov_pctl": 57.8,
+   "pass_rush_pctl": 70.3,
+   "run_def_pctl": 60.9
+  },
+  "funnels": [
+   "WR1 funnel (top-CB beatable)"
+  ],
+  "lean_2026": "BALANCED"
+ },
+ "LV": {
+  "vs_man": {
+   "allowed_ypr": 1.438,
+   "softness_pctl": 58.1
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.576,
+   "softness_pctl": 54.8
+  },
+  "deep": {
+   "allowed_ypr": 2.814,
+   "softness_pctl": 54.8
+  },
+  "short": {
+   "allowed_ypr": 1.479,
+   "softness_pctl": 67.7
+  },
+  "by_pos": {
+   "qb": -0.3,
+   "rb": 2.1,
+   "wr": 3.4,
+   "te": -2.9,
+   "wr1": -1.2,
+   "wr2": 0.6,
+   "slot": 4.0
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 60.4,
+   "two_high": 39.6
+  },
+  "units": {
+   "pass_cov_pctl": 26.6,
+   "pass_rush_pctl": 14.1,
+   "run_def_pctl": 76.6
+  },
+  "funnels": [
+   "SLOT funnel (slot WR exploitable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "PASS",
+  "dc": "Rob Leonard"
+ },
+ "MIA": {
+  "vs_man": {
+   "allowed_ypr": 1.492,
+   "softness_pctl": 71.0
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.564,
+   "softness_pctl": 48.4
+  },
+  "deep": {
+   "allowed_ypr": 2.471,
+   "softness_pctl": 29.0
+  },
+  "short": {
+   "allowed_ypr": 1.465,
+   "softness_pctl": 54.8
+  },
+  "by_pos": {
+   "qb": 1.8,
+   "rb": 0.7,
+   "wr": -1.7,
+   "te": 3.6,
+   "wr1": -0.3,
+   "wr2": -1.3,
+   "slot": -0.1
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 53.2,
+   "two_high": 46.8
+  },
+  "units": {
+   "pass_cov_pctl": 42.2,
+   "pass_rush_pctl": 76.6,
+   "run_def_pctl": 54.7
+  },
+  "funnels": [
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2026": "BALANCED",
+  "dc": "Sean Duggan"
+ },
+ "MIN": {
+  "vs_man": {
+   "allowed_ypr": 1.269,
+   "softness_pctl": 16.1
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.612,
+   "softness_pctl": 71.0
+  },
+  "deep": {
+   "allowed_ypr": 3.169,
+   "softness_pctl": 83.9
+  },
+  "short": {
+   "allowed_ypr": 1.467,
+   "softness_pctl": 58.1
+  },
+  "by_pos": {
+   "qb": -4.6,
+   "rb": -2.1,
+   "wr": -8.3,
+   "te": -1.2,
+   "wr1": -3.7,
+   "wr2": -1.0,
+   "slot": -3.6
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 43.9,
+   "two_high": 56.1
+  },
+  "units": {
+   "pass_cov_pctl": 70.3,
+   "pass_rush_pctl": 98.4,
+   "run_def_pctl": 29.7
+  },
+  "funnels": [
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "NE": {
+  "vs_man": {
+   "allowed_ypr": 1.324,
+   "softness_pctl": 35.5
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.588,
+   "softness_pctl": 58.1
+  },
+  "deep": {
+   "allowed_ypr": 2.359,
+   "softness_pctl": 16.1
+  },
+  "short": {
+   "allowed_ypr": 1.547,
+   "softness_pctl": 90.3
+  },
+  "by_pos": {
+   "qb": 0.5,
+   "rb": -2.7,
+   "wr": -0.3,
+   "te": 1.1,
+   "wr1": 0.5,
+   "wr2": -0.9,
+   "slot": 0.0
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 57.2,
+   "two_high": 42.8
+  },
+  "units": {
+   "pass_cov_pctl": 95.3,
+   "pass_rush_pctl": 35.9,
+   "run_def_pctl": 82.8
+  },
+  "funnels": [
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)"
+  ],
+  "lean_2026": "BALANCED"
+ },
+ "NO": {
+  "vs_man": {
+   "allowed_ypr": 1.428,
+   "softness_pctl": 54.8
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.494,
+   "softness_pctl": 19.4
+  },
+  "deep": {
+   "allowed_ypr": 2.802,
+   "softness_pctl": 51.6
+  },
+  "short": {
+   "allowed_ypr": 1.539,
+   "softness_pctl": 80.6
+  },
+  "by_pos": {
+   "qb": -2.5,
+   "rb": -0.9,
+   "wr": -3.8,
+   "te": -1.4,
+   "wr1": -2.3,
+   "wr2": -0.9,
+   "slot": -0.6
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 65.0,
+   "two_high": 35.0
+  },
+  "units": {
+   "pass_cov_pctl": 29.7,
+   "pass_rush_pctl": 82.8,
+   "run_def_pctl": 4.7
+  },
+  "funnels": [
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "NYG": {
+  "vs_man": {
+   "allowed_ypr": 1.365,
+   "softness_pctl": 38.7
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.738,
+   "softness_pctl": 100.0
+  },
+  "deep": {
+   "allowed_ypr": 3.749,
+   "softness_pctl": 100.0
+  },
+  "short": {
+   "allowed_ypr": 1.399,
+   "softness_pctl": 41.9
+  },
+  "by_pos": {
+   "qb": 2.5,
+   "rb": 4.9,
+   "wr": 3.0,
+   "te": -2.3,
+   "wr1": 2.1,
+   "wr2": 1.4,
+   "slot": -0.5
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 65.9,
+   "two_high": 34.2
+  },
+  "units": {
+   "pass_cov_pctl": 4.7,
+   "pass_rush_pctl": 85.9,
+   "run_def_pctl": 67.2
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)"
+  ],
+  "lean_2026": "PASS",
+  "dc": "Dennard Wilson"
+ },
+ "NYJ": {
+  "vs_man": {
+   "allowed_ypr": 1.503,
+   "softness_pctl": 77.4
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.626,
+   "softness_pctl": 74.2
+  },
+  "deep": {
+   "allowed_ypr": 2.366,
+   "softness_pctl": 19.4
+  },
+  "short": {
+   "allowed_ypr": 1.502,
+   "softness_pctl": 74.2
+  },
+  "by_pos": {
+   "qb": 3.0,
+   "rb": 3.0,
+   "wr": -0.3,
+   "te": 0.4,
+   "wr1": 2.4,
+   "wr2": -0.1,
+   "slot": -2.6
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 60.0,
+   "two_high": 40.0
+  },
+  "units": {
+   "pass_cov_pctl": 20.3,
+   "pass_rush_pctl": 17.2,
+   "run_def_pctl": 98.4
+  },
+  "funnels": [
+   "OUTSIDE funnel (boundary WRs exploitable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "PASS",
+  "dc": "Brian Duker"
+ },
+ "PHI": {
+  "vs_man": {
+   "allowed_ypr": 1.154,
+   "softness_pctl": 3.2
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.325,
+   "softness_pctl": 3.2
+  },
+  "deep": {
+   "allowed_ypr": 2.352,
+   "softness_pctl": 12.9
+  },
+  "short": {
+   "allowed_ypr": 1.215,
+   "softness_pctl": 0.0
+  },
+  "by_pos": {
+   "qb": -3.6,
+   "rb": 0.5,
+   "wr": -4.8,
+   "te": -4.7,
+   "wr1": -4.5,
+   "wr2": 2.8,
+   "slot": -3.1
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 58.3,
+   "two_high": 41.7
+  },
+  "units": {
+   "pass_cov_pctl": 92.2,
+   "pass_rush_pctl": 42.2,
+   "run_def_pctl": 23.4
+  },
+  "funnels": [
+   "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+   "TE fortress (avoid TEs)",
+   "WR fortress (avoid WRs)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "PIT": {
+  "vs_man": {
+   "allowed_ypr": 1.518,
+   "softness_pctl": 87.1
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.523,
+   "softness_pctl": 32.3
+  },
+  "deep": {
+   "allowed_ypr": 3.227,
+   "softness_pctl": 90.3
+  },
+  "short": {
+   "allowed_ypr": 1.497,
+   "softness_pctl": 71.0
+  },
+  "by_pos": {
+   "qb": 2.2,
+   "rb": -2.6,
+   "wr": 3.5,
+   "te": 3.2,
+   "wr1": 0.7,
+   "wr2": 0.4,
+   "slot": 2.4
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 65.7,
+   "two_high": 34.3
+  },
+  "units": {
+   "pass_cov_pctl": 35.9,
+   "pass_rush_pctl": 45.3,
+   "run_def_pctl": 20.3
+  },
+  "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+   "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+   "TE funnel (soft vs TE)"
+  ],
+  "lean_2026": "RUN",
+  "dc": "Patrick Graham"
+ },
+ "SEA": {
+  "vs_man": {
+   "allowed_ypr": 1.16,
+   "softness_pctl": 6.5
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.467,
+   "softness_pctl": 16.1
+  },
+  "deep": {
+   "allowed_ypr": 2.451,
+   "softness_pctl": 25.8
+  },
+  "short": {
+   "allowed_ypr": 1.322,
+   "softness_pctl": 9.7
+  },
+  "by_pos": {
+   "qb": -1.6,
+   "rb": -2.9,
+   "wr": -3.1,
+   "te": 2.7,
+   "wr1": -2.1,
+   "wr2": -1.0,
+   "slot": 0.0
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 49.8,
+   "two_high": 50.2
+  },
+  "units": {
+   "pass_cov_pctl": 85.9,
+   "pass_rush_pctl": 51.6,
+   "run_def_pctl": 42.2
+  },
+  "funnels": [
+   "TE funnel (soft vs TE)",
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "RUN"
+ },
+ "SF": {
+  "vs_man": {
+   "allowed_ypr": 1.505,
+   "softness_pctl": 80.6
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.495,
+   "softness_pctl": 25.8
+  },
+  "deep": {
+   "allowed_ypr": 2.741,
+   "softness_pctl": 45.2
+  },
+  "short": {
+   "allowed_ypr": 1.382,
+   "softness_pctl": 29.0
+  },
+  "by_pos": {
+   "qb": 1.0,
+   "rb": 1.3,
+   "wr": 2.2,
+   "te": 1.9,
+   "wr1": -1.0,
+   "wr2": 2.0,
+   "slot": 1.1
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 60.2,
+   "two_high": 39.8
+  },
+  "units": {
+   "pass_cov_pctl": 60.9,
+   "pass_rush_pctl": 29.7,
+   "run_def_pctl": 85.9
+  },
+  "funnels": [
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "PASS",
+  "dc": "Raheem Morris"
+ },
+ "TB": {
+  "vs_man": {
+   "allowed_ypr": 1.707,
+   "softness_pctl": 93.5
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.539,
+   "softness_pctl": 35.5
+  },
+  "deep": {
+   "allowed_ypr": 2.529,
+   "softness_pctl": 35.5
+  },
+  "short": {
+   "allowed_ypr": 1.55,
+   "softness_pctl": 93.5
+  },
+  "by_pos": {
+   "qb": 3.5,
+   "rb": 0.7,
+   "wr": 0.1,
+   "te": 2.2,
+   "wr1": 1.3,
+   "wr2": -2.0,
+   "slot": 0.9
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 59.9,
+   "two_high": 40.2
+  },
+  "units": {
+   "pass_cov_pctl": 17.2,
+   "pass_rush_pctl": 73.4,
+   "run_def_pctl": 32.8
+  },
+  "funnels": [
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "PASS"
+ },
+ "TEN": {
+  "vs_man": {
+   "allowed_ypr": 1.594,
+   "softness_pctl": 90.3
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.603,
+   "softness_pctl": 67.7
+  },
+  "deep": {
+   "allowed_ypr": 2.99,
+   "softness_pctl": 67.7
+  },
+  "short": {
+   "allowed_ypr": 1.385,
+   "softness_pctl": 32.3
+  },
+  "by_pos": {
+   "qb": 1.9,
+   "rb": 1.6,
+   "wr": 2.1,
+   "te": 0.0,
+   "wr1": 3.3,
+   "wr2": -0.2,
+   "slot": -1.0
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 51.7,
+   "two_high": 48.2
+  },
+  "units": {
+   "pass_cov_pctl": 14.1,
+   "pass_rush_pctl": 64.1,
+   "run_def_pctl": 64.1
+  },
+  "funnels": [
+   "WR1 funnel (top-CB beatable)",
+   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+  ],
+  "lean_2026": "PASS",
+  "dc": "Gus Bradley"
+ },
+ "WAS": {
+  "vs_man": {
+   "allowed_ypr": 1.468,
+   "softness_pctl": 67.7
+  },
+  "vs_zone": {
+   "allowed_ypr": 1.683,
+   "softness_pctl": 96.8
+  },
+  "deep": {
+   "allowed_ypr": 2.902,
+   "softness_pctl": 64.5
+  },
+  "short": {
+   "allowed_ypr": 1.663,
+   "softness_pctl": 100.0
+  },
+  "by_pos": {
+   "qb": 2.8,
+   "rb": 2.9,
+   "wr": 3.1,
+   "te": 2.1,
+   "wr1": 0.3,
+   "wr2": 3.3,
+   "slot": -0.5
+  },
+  "shell": {
+   "man_rate": null,
+   "single_high": 53.3,
+   "two_high": 46.7
+  },
+  "units": {
+   "pass_cov_pctl": 7.8,
+   "pass_rush_pctl": 20.3,
+   "run_def_pctl": 1.6
+  },
+  "funnels": [],
+  "lean_2026": "BALANCED",
+  "dc": "Daronte Jones"
+ }
+}

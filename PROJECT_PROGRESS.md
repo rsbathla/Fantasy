@@ -67,10 +67,11 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done (tested + committed)
 - ⬜ (Optional polish) promote fusion/boom/EPA signals from display-only into explicit pick-score levers
 
 ### Phase C — DFS to production
-- ⬜ Defense split-parity: per-team allowed EPA/YPRR vs man/zone/slot/wide/deep/short
-- ⬜ Weekly lineup/winner layer: who-to-play + construction templates from winner structure + correlation rules
-- ⬜ Week parameterization (`--week N`) so it runs week-to-week
-- ⬜ DFS weekly page + orchestration · end-to-end test · commit
+- ✅ Defense split-parity: `build_defense_splits.py` → `defense_splits.json` (32 teams; allowed YPR vs man/zone/deep/short from FP_SWEEP coverageScheme+depthOfTarget, FPAA by position from defensive_profile, shells + unit pctls). Same axes as players.
+- ✅ Weekly model `dfs_model.py --week N`: per-player MATCHUP EDGE (player strength pctl vs opp-defense softness pctl on the SAME axis) + qualitative levers + who-to-play ranking. Verified: Puka #1 vs DAL (softest vs man), edges line up correctly.
+- ✅ Lineup/winner layer: anchor games by total → QB + 2 same-team catchers + bring-back (high-total only), real correlations (QB-WR1 0.35, bring-back 0.16 high-total), winner rules. Templates render (DAL/LAR → Stafford+Puka+Adams+CeeDee).
+- ✅ Week parameterization (`--week N`, reads that week's opponents + Vegas totals); self-provisions defense_splits.
+- ✅ `dfs_week.html` page (who-to-play board + lineup templates + defense-splits reference + shared 4-layer drilldown). Headless-rendered, 0 console errors. **Pending:** swap projection-basis for live stats once 2026 games start (framework is week-ready).
 
 ### Phase D — Dossier to production
 - ⬜ Offense scheme-identity profile (fix broken team-motion join) all 32
