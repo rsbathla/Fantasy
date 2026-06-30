@@ -44,7 +44,7 @@ This is the central progress log. It is updated after every meaningful step. Eac
 
 - **`home.html`** — single landing page routing to the three tools (kills the 13-dashboard fragmentation).
 - **Best Ball:** one entry `draft.py` (paste DK *or* UD → auto-detect platform → grade → recs) → `decision_dashboard.html`. Underdog parser + UD scoring/lineup/rounds wired into the survival-chain sim. Projection coverage closed.
-- **DFS:** `dfs.py --week N` → player profile (sig + qual) + defense same-splits + who-to-play + lineup templates from winner structure → `dfs_week.html`.
+- **DFS:** `dfs_model.py --week N` → player profile (sig + qual) + defense same-splits + who-to-play + lineup templates from winner structure → `dfs_week.html`.
 - **Dossier:** unified `dossier.html` covering player / offense (scheme identity) / defense (one object) / coaching, plus a **by-week "who to press"** slate view.
 
 ---
@@ -55,7 +55,7 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done (tested + committed)
 
 ### Phase A — Infrastructure
 - ✅ Parallel 4-way audit of all three models + data inventory
-- 🔄 git init + .gitignore + baseline commit + this progress doc
+- ✅ git init + .gitignore + baseline commit + this progress doc
 
 ### Phase B — Best Ball to production
 - ✅ Underdog board parser (`engine/ud_parse.py`, name-anchored, apostrophe/round-aware) + platform auto-detect (`draft.py detect_platform`)
@@ -80,9 +80,21 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done (tested + committed)
 - ✅ Single `home.html` landing — routes to the 3 tools + unified Offense/Defense/Coaching dossier tabs. Headless-rendered, 0 errors.
 
 ### Phase E — Final review pass
-- ⬜ One dedicated review pass over all three; end-to-end retest; fix; commit
+- ✅ Independent adversarial review of all three (end-to-end DK+UD drafts, DFS wks 5/15/17, all renders)
+- ✅ Fixed BLOCKER A1: DFS ranked an unprojected 4th-stringer (J'Mari Taylor) #2-3 via a stale dk_max25 ceiling fallback → added a playable-projection floor; top plays now all legit stars
+- ✅ Fixed BLOCKER A2: UD round detection grabbed the first "Round N of" (pinned multi-round pastes to round 1) → round now derives from the authoritative current pick
+- ✅ Fixed B1/B4: dropped the unreliable `dc` field from defense_splits; fixed the shell man-rate key (now 32/32)
+- ✅ Fixed B6: doc drift (dfs.py → dfs_model.py)
+- ✅ Re-verified: grade==chain PASS, 0 console errors, 0 visible NaN/undefined on dfs_week + home
+- ⚠️ FLAGGED (not changed, per golden rule): `dk_adp.csv` lists Kenneth Walker III on KC (top-15 RB ADP) — could be a real 2026 move or a source error; user to verify rather than override on a 2025 assumption.
 
 ---
 
+## Open items (honest)
+- **UD auto my-roster**: drafted-set + round/pick auto-detect now work; "which picks are mine" needs one real UD board paste to finalize (works today via `--mine`).
+- **In-season DFS**: framework is week-parameterized and runs on projection/Vegas/matchup now; swap to live stats once 2026 games start.
+- **Offense motion/PA**: charted for ~17/32 (honest "–" elsewhere); zone/gap run identity is 32/32.
+- Optional: promote fusion/boom/EPA into explicit best-ball pick-score levers (currently rich display + projection-driven).
+
 ## Change log
-- 2026-06-30: Audit complete; architecture defined; git initialized; hardening begun.
+- 2026-06-30: Audit → architecture → git init. Phase B (Best Ball: UD + projection fix + canonical entry), Phase C (DFS: defense split-parity + weekly model + lineup templates), Phase D (Dossier: offense scheme identity + unified home), Phase E (independent review + blocker fixes) — all complete & committed. All three products run end-to-end and render clean.

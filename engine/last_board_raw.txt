@@ -1,9 +1,16 @@
-Best Ball Mania
-Round 4 of 18
-Pick 40
+Round 1 of 18
 1.01 Ja'Marr Chase WR CIN
 1.02 Bijan Robinson RB ATL
-2.01 Justin Jefferson WR MIN
-2.02 CeeDee Lamb WR DAL
-3.01 Jahmyr Gibbs RB DET
-3.02 Puka Nacua WR LAR
+1.03 Justin Jefferson WR MIN
+1.04 Saquon Barkley RB PHI
+1.05 CeeDee Lamb WR DAL
+1.06 Puka Nacua WR LAR
+1.07 Malik Nabers WR NYG
+1.08 Amon-Ra St. Brown WR DET
+1.09 Nico Collins WR HOU
+1.10 Christian McCaffrey RB SF
+1.11 Jahmyr Gibbs RB DET
+1.12 Brian Thomas WR JAX
+Round 2 of 18
+2.01 Drake London WR ATL
+2.02 De'Von Achane RB MIA

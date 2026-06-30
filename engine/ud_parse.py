@@ -82,19 +82,16 @@ def parse_ud_board(text, me='', board=None, mine=None):
 
     # --- current pick / round ---
     picknums = [(int(a), int(b)) for a, b in _PICKNUM.findall(low)]
-    cur_pick = None; rnd = None
-    m = re.search(r'\bpick\s*(\d+)\b', low, re.I)
+    cur_pick = None
+    m = re.search(r'\bon the clock[^0-9]*(\d+)\b', low, re.I) or re.search(r'\bpick\s*(\d+)\b', low, re.I)
     if m:
         cur_pick = int(m.group(1))
-    mr = re.search(r'Round\s*(\d+)\s*of', low, re.I)   # explicit "Round N of 18" wins
-    if mr:
-        rnd = int(mr.group(1))
-    elif picknums:
-        rnd = max(a for a, _ in picknums)
     if cur_pick is None:
         cur_pick = len(drafted) + 1
-    if rnd is None:
-        rnd = (cur_pick - 1) // 12 + 1
+    # Round is DERIVED from the authoritative current pick (12-team pod snake). The "Round N of 18"
+    # text is the format header / repeats per round in a full paste, so it is NOT used for the
+    # current round (that was the bug that pinned multi-round pastes to round 1).
+    rnd = (cur_pick - 1) // 12 + 1
 
     # --- my roster ---
     my_roster = []

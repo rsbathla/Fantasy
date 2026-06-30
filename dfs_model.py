@@ -124,7 +124,10 @@ for f in feat:
     if pos not in ('QB', 'RB', 'WR', 'TE'):
         continue
     opp, home, dome = opp_of(team, WK)
-    proj = num(f.get('proj_pg')); ceil = num(f.get('p95')) or num(f.get('dk_max25'))
+    proj = num(f.get('proj_pg'))
+    if proj is None or proj < 4:
+        continue   # playable floor: skip unprojected / deep-bench names (no stale dk_max25 fallback)
+    ceil = num(f.get('p95')) or round(proj * 2.3, 1)   # ceiling from sim p95, else proj-scaled (NOT dk_max25)
     veg = VEG.get(team, {}).get(WK, {})
     total = num(veg.get('total')); imp = num(veg.get('imp'))
     edges = edges_for(name, pos, team, opp) if opp else []

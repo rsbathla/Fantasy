@@ -105,12 +105,13 @@ for t in TEAMS:
         'short': {'allowed_ypr': round(short[t], 3), 'softness_pctl': short_p.get(t)} if t in short else None,
         # FPAA = fantasy points above average ALLOWED to that position group (higher = softer)
         'by_pos': {k: fpaa.get(k) for k in ('qb', 'rb', 'wr', 'te', 'wr1', 'wr2', 'slot') if k in fpaa} or None,
-        'shell': {'man_rate': shell.get('man_pct') or shell.get('man_rate'),
+        'shell': {'man_rate': shell.get('man'),
                   'single_high': shell.get('single_high'), 'two_high': shell.get('two_high')} if shell else None,
         'units': {'pass_cov_pctl': u.get('pass_cov_pctl'), 'pass_rush_pctl': u.get('pass_rush_pctl'),
                   'run_def_pctl': u.get('run_def_pctl')} if u else None,
         'funnels': prof.get('funnels'), 'lean_2026': prof.get('lean_2026'),
-        'dc': (prof.get('dc') or {}).get('name') if isinstance(prof.get('dc'), dict) else prof.get('dc'),
+        # NOTE: defensive_profile.json's `dc` field is unreliable (scrambled/incomplete) — omitted here
+        # rather than surface a wrong coordinator name. Coaching lives in the coaching dossier.
     }
     out[t] = {k: v for k, v in rec.items() if v is not None}
 
