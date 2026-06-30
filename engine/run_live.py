@@ -247,6 +247,11 @@ def run(board_path, me='rsbathla', plies=2, out=None):
                 "   not the draft-room board.\n"
                 "   FIX: in the DK draft room, click inside the draft BOARD area, then Ctrl+A, Ctrl+C,\n"
                 "        and re-run. (Your previous dashboard was left untouched.)\n")
+    elif os.environ.get('BB_PLATFORM','DK').upper()=='UD':
+        import ud_parse
+        _mine=os.environ.get('BB_MINE','').split('|') if os.environ.get('BB_MINE') else None
+        st=ud_parse.parse_ud_board(txt,me,board,mine=_mine)
+        print(f"[Underdog board: {st['n_drafted']} drafted, my roster {len(st['my_roster'])}]")
     else:
         st=bb.parse_board(txt,me)
     rosters,dropped=reconstruct_field(st,board,me)

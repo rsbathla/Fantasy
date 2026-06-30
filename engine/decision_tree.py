@@ -107,6 +107,8 @@ if _PLAT == "UD":
     SEASON_TARGET = {"QB": (2, 3), "RB": (4, 6), "WR": (6, 8), "TE": (2, 3)}
 else:
     SEASON_TARGET = {"QB": (2, 3), "RB": (5, 6), "WR": (8, 9), "TE": (2, 3)}
+# Roster/round count is platform-specific: DraftKings best ball = 20 rounds (20-man), Underdog = 18.
+ROUNDS = 20 if _PLAT == "DK" else 18
 # Running "want at least this many of POS after this round" band (STRATEGY_SPEC S1 table).
 RUNNING_MIN = {
     1: {"RB": 0, "WR": 0, "QB": 0, "TE": 0},
@@ -127,6 +129,8 @@ RUNNING_MIN = {
     16: {"RB": 6, "WR": 8, "QB": 3, "TE": 3},
     17: {"RB": 6, "WR": 9, "QB": 3, "TE": 3},
     18: {"RB": 6, "WR": 9, "QB": 3, "TE": 3},
+    19: {"RB": 6, "WR": 9, "QB": 3, "TE": 3},   # DK rounds 19-20 (20-round rosters): targets already met,
+    20: {"RB": 6, "WR": 9, "QB": 3, "TE": 3},   # late bench darts — same band as R18.
 }
 
 

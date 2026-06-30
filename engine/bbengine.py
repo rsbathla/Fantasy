@@ -282,16 +282,68 @@ def _read_dk_adp() -> pd.DataFrame:
     return df[["key", "adp_dk", "pos_dk", "team_dk", "name_dk"]]
 
 
-def _read_proj() -> dict:
-    """clay_2026.csv -> {norm_name: dk_pg} (projected DK points per game)."""
-    df = pd.read_csv(_pipe("clay_2026.csv"))
-    col = "dk_pg" if "dk_pg" in df.columns else None
+def _read_proj(platform: str = "DK") -> dict:
+    """Projected per-game points -> {norm_name: pts}. Platform-aware:
+       DK -> clay_2026.csv  (dk_pg, full-PPR)
+       UD -> clay_2026_ud.csv (ud_pg, half-PPR)
+    Falls back to clay_2026.csv/dk_pg if the platform file/column is absent."""
+    plat = (platform or "DK").upper()
+    fname = "clay_2026_ud.csv" if plat == "UD" else "clay_2026.csv"
+    col = "ud_pg" if plat == "UD" else "dk_pg"
+    path = _pipe(fname) if os.path.exists(_pipe(fname)) else _pipe("clay_2026.csv")
+    df = pd.read_csv(path)
+    if col not in df.columns:
+        col = "dk_pg" if "dk_pg" in df.columns else None
     if col is None:
         return {}
     out = {}
     for nm, v in zip(df["name"], df[col]):
         out.setdefault(_norm(nm), v)
     return out
+
+
+def _impute_missing_proj(rows: list) -> int:
+    """Close the projection-coverage hole: a draftable player with an ADP but no projection
+    (stars Clay omits — e.g. Tyreek Hill, Stefon Diggs, Brandon Aiyuk) is UNGRADEABLE and silently
+    ignored by the sim. Impute their per-game projection from a POSITION-AWARE ADP->proj curve fit on
+    players who have both, so every draftable player is gradeable in the correct scoring scale.
+    Imputed players are flagged proj_src='adp_curve'. Returns count imputed."""
+    import bisect
+    by_pos = {}
+    for r in rows:
+        if r.get("proj") is not None and r.get("adp") is not None:
+            by_pos.setdefault(r["pos"], []).append((float(r["adp"]), float(r["proj"])))
+    anchors = {}
+    for pos, pairs in by_pos.items():
+        pairs.sort()
+        adps = [a for a, _ in pairs]; projs = [p for _, p in pairs]
+        for i in range(1, len(projs)):
+            projs[i] = min(projs[i], projs[i - 1])   # isotonic-lite: proj non-increasing in ADP
+        anchors[pos] = (adps, projs)
+    allpairs = sorted((a, p) for pp in by_pos.values() for a, p in pp)
+    g_adps = [a for a, _ in allpairs]; g_projs = [p for _, p in allpairs]
+    for i in range(1, len(g_projs)):
+        g_projs[i] = min(g_projs[i], g_projs[i - 1])
+
+    def interp(adps, projs, x):
+        if not adps:
+            return None
+        if x <= adps[0]:
+            return projs[0]
+        if x >= adps[-1]:
+            return projs[-1]
+        j = bisect.bisect_left(adps, x)
+        x0, x1 = adps[j - 1], adps[j]; y0, y1 = projs[j - 1], projs[j]
+        return y0 + (y1 - y0) * (x - x0) / (x1 - x0) if x1 != x0 else y0
+
+    n = 0
+    for r in rows:
+        if r.get("proj") is None and r.get("adp") is not None:
+            ad, pj = anchors.get(r["pos"], (None, None))
+            val = interp(ad, pj, float(r["adp"])) if ad else interp(g_adps, g_projs, float(r["adp"]))
+            if val is not None:
+                r["proj"] = round(float(val), 2); r["proj_src"] = "adp_curve"; n += 1
+    return n
 
 
 def _read_ceiling() -> dict:
@@ -354,7 +406,7 @@ def load_board() -> list[dict]:
     """
     merged = _read_merged_rankings()
     dk = _read_dk_adp()
-    proj = _read_proj()
+    proj = _read_proj(os.environ.get("BB_PLATFORM", "DK"))
     ceil = _read_ceiling()
     byes = _read_byes()
     overlay = _read_playoff_overlay()
@@ -402,7 +454,10 @@ def load_board() -> list[dict]:
             "ceiling_p95": (float(ceil[lk]) if lk in ceil and pd.notna(ceil[lk]) else None),
             "bye": (int(byes[r["team"]]) if r["team"] in byes else None),
             "playoff_up": (float(overlay[lk]) if lk in overlay and pd.notna(overlay[lk]) else 0.0),
+            "proj_src": ("clay" if (lk in proj and pd.notna(proj[lk])) else None),
         })
+    # close the projection-coverage hole so no draftable star is silently ungradeable
+    _impute_missing_proj(out)
     return out
 
 

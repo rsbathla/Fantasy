@@ -58,12 +58,13 @@ Legend: ⬜ todo · 🔄 in progress · ✅ done (tested + committed)
 - 🔄 git init + .gitignore + baseline commit + this progress doc
 
 ### Phase B — Best Ball to production
-- ⬜ Underdog board parser (`engine/ud_parse.py`) + platform auto-detect
-- ⬜ UD scoring (half-PPR `ud_pg`) + UD lineup config + UD rounds/cuts wired into survival_chain
-- ⬜ Close projection-coverage hole (no ungradeable draftable stars)
-- ⬜ DK 20-round handling fix
-- ⬜ One canonical entry point (`draft.py`) + clean paste UX
-- ⬜ End-to-end test: real DK board AND real UD board → sensible recs · commit
+- ✅ Underdog board parser (`engine/ud_parse.py`, name-anchored, apostrophe/round-aware) + platform auto-detect (`draft.py detect_platform`)
+- ✅ UD scoring (half-PPR `ud_pg` from clay_2026_ud.csv) wired into projection loader; UD lineup/rounds/cuts already platform-gated in decision_tree/survival_chain
+- ✅ Close projection-coverage hole — `_impute_missing_proj` (position-aware ADP→proj curve); all 379 ADP'd players now gradeable (Tyreek Hill/Diggs/Aiyuk no longer silently dropped)
+- ✅ DK 20-round handling fix (`ROUNDS` platform-aware: DK=20, UD=18; RUNNING_MIN extended to R19-20)
+- ✅ One canonical entry point `draft.py` (paste DK *or* UD → auto-detect → grade → dashboard); regression test grade==chain PASS
+- ✅ End-to-end tested: DK fixture → Rome Odunze (dTitle 14.2); synthetic UD → Amon-Ra (half-PPR). **Pending:** validate UD auto my-roster extraction against one real UD paste (works today via `--mine`).
+- ⬜ (Optional polish) promote fusion/boom/EPA signals from display-only into explicit pick-score levers
 
 ### Phase C — DFS to production
 - ⬜ Defense split-parity: per-team allowed EPA/YPRR vs man/zone/slot/wide/deep/short
