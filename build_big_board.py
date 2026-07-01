@@ -40,18 +40,20 @@ def build():
     for key, p in players:
         rows_js.append({
             'adj': p['adj_rank'], 'pos': p['pos'], 'name': p['name'], 'team': p.get('team') or '',
-            'mkt': p['mkt_rank'], 'delta': p['delta'], 'boom': int(round(p['boom_pctl'])),
+            'mkt': p['mkt_rank'], 'delta': p['delta'],
+            'ceil': int(round(p['ceil_pctl'])) if p.get('ceil_pctl') is not None else 50,
             'nflags': p['n_flags'], 'posrank': p['adj_pos_rank'],
-            'pmq': int(round(p['pmq_pctl'])), 'flag_score': p['flag_score'],
+            'pmq': int(round(p['pmq_pctl'])) if p.get('pmq_pctl') is not None else 50,
+            'flag_score': p['flag_score'],
             'flags': ", ".join(p.get('top_flags') or []),
             'why': lines.get(key, ''),
         })
     rows_js.sort(key=lambda z: z['adj'])
 
     w = meta['weights']
-    sub = (f"ADP-anchored flag nudge · market rank is the backbone, flags move a player at most "
-           f"±{int(meta['cap_spots'])} spots · boom {int(w['boom']*100)}% / flag breadth "
-           f"{int(w['flags']*100)}% / 2026 playoff matchup {int(w['playoff_mq']*100)}% · "
+    sub = (f"Forward-looking, ADP-anchored · market rank is the backbone, flags move a player at most "
+           f"±{int(meta['cap_spots'])} spots · 2026 ceiling {int(w['ceiling']*100)}% / portable traits "
+           f"{int(w['traits']*100)}% / 2026 playoff matchup {int(w['playoff_mq']*100)}% · "
            f"{meta['n_players']} players")
 
     doc = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
@@ -85,7 +87,7 @@ td.n{{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}}
 </div>
 <input class="search" id="q" placeholder="filter by name / team…">
 <table><thead><tr>
-<th>Rank</th><th>Δ mkt</th><th>Player</th><th class="n">Mkt</th><th class="n">Boom</th>
+<th>Rank</th><th>Δ mkt</th><th>Player</th><th class="n">Mkt</th><th class="n">Ceil</th>
 <th class="n">Flags</th><th class="n">PO MQ</th><th>Why (top flags)</th>
 </tr></thead><tbody id="tb"></tbody></table>
 </div>
@@ -93,7 +95,7 @@ td.n{{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}}
 const ROWS={json.dumps(rows_js)};
 const tb=document.getElementById('tb'), q=document.getElementById('q');
 let pos='ALL';
-function boomCls(b){{return b>=66?'bhi':(b<=33?'blo':'')}}
+function ceilCls(b){{return b>=66?'bhi':(b<=33?'blo':'')}}
 function dcell(d){{return d>0?`<span class="up">▲ ${{d}}</span>`:(d<0?`<span class="dn">▼ ${{-d}}</span>`:'<span class="fl">·</span>')}}
 function render(){{
   const term=q.value.trim().toLowerCase();
@@ -105,7 +107,7 @@ function render(){{
     <td><span class="name">${{r.name}}</span> <span class="pos">${{r.pos}} · ${{r.team}}</span>
         ${{r.why?`<div class="why">${{r.why.replace(/</g,'&lt;')}}</div>`:''}}</td>
     <td class="n mkt">${{r.mkt}}</td>
-    <td class="n boom ${{boomCls(r.boom)}}">${{r.boom}}</td>
+    <td class="n boom ${{ceilCls(r.ceil)}}">${{r.ceil}}</td>
     <td class="n">${{r.nflags}}</td>
     <td class="n">${{r.pmq}}</td>
     <td class="flags">${{r.flags||''}}</td></tr>`).join('');
