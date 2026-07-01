@@ -386,6 +386,36 @@ def _read_playoff_overlay() -> dict:
     return {_norm(nm): v for nm, v in zip(df["name"], df["playoff_up"])}
 
 
+def _apply_flag_nudge(rows: list) -> int:
+    """Optional ADP-anchored flag nudge. If flag_ranks.json exists, move each flagged player's `rank`
+    by his bounded flag nudge (+/- a few spots; strong boom/skill flags -> earlier, weak -> later).
+    Market ADP is left untouched; the original rank is preserved as `mkt_rank`. Missing file -> no-op.
+    Never raises, so an absent or malformed file can never break a draft grade."""
+    try:
+        path = _repo("flag_ranks.json")
+        if not os.path.exists(path):
+            return 0
+        fr = json.load(open(path, encoding="utf-8")).get("players", {})
+        n = 0
+        for r in rows:
+            f = fr.get(_norm(r["name"]))
+            r["mkt_rank"] = r["rank"]
+            nud = int(round(float(f["nudge"]))) if (f and f.get("nudge") is not None) else 0
+            r["flag_nudge"] = nud
+            if nud:
+                n += 1
+        if not n:
+            return 0
+        # Re-rank contiguously by (market rank + nudge); original rank breaks ties. Board ranks are
+        # already contiguous 1..N, so this is scale-preserving: each player lands ~his own rank +/- a
+        # few spots, with no collisions or underflow.
+        for i, r in enumerate(sorted(rows, key=lambda z: (z["mkt_rank"] + z["flag_nudge"], z["mkt_rank"])), 1):
+            r["rank"] = i
+        return n
+    except Exception:
+        return 0
+
+
 def load_board() -> list[dict]:
     """Return every draftable player as a dict.
 
@@ -458,6 +488,7 @@ def load_board() -> list[dict]:
         })
     # close the projection-coverage hole so no draftable star is silently ungradeable
     _impute_missing_proj(out)
+    _apply_flag_nudge(out)   # ADP-anchored flag nudge (no-op if flag_ranks.json absent)
     return out
 
 
