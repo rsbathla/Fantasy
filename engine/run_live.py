@@ -229,7 +229,8 @@ def _write_json_safely(obj, out, tries=3):
         time.sleep(0.3)
     raise SystemExit(f"!! FAILED to write a complete {out} after {tries} tries; previous file left intact. Re-run.")
 
-def run(board_path, me='rsbathla', plies=2, out=None):
+def run(board_path, me='rsbathla', plies=None, out=None):
+    if plies is None: plies=int(os.environ.get('BB_PLIES','2'))  # BB_PLIES=1 (fast) omits the look-ahead subtree
     out=out or _DEFAULT_OUT
     txt=_board_text(board_path)
     try:

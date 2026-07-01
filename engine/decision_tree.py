@@ -81,11 +81,13 @@ import bbengine as bb  # noqa: E402
 # ---------------------------------------------------------------------------
 # Tunables
 # ---------------------------------------------------------------------------
-TREE_NS = 1000               # survival_chain samples while tree-building (fast, stable enough)
-SHORTLIST_PICK = 12          # candidates we sim at the decision pick
-SHORTLIST_LOOKAHEAD = 6      # candidates we sim at the look-ahead pick
+# These four are env-overridable for a --fast mode (defaults identical to before, so the
+# normal path is unchanged). bb_grade.py --fast sets BB_TREE_NS/BB_SHORTLIST_PICK/BB_PLIES.
+TREE_NS = int(os.environ.get('BB_TREE_NS', '1000'))                        # survival_chain samples while tree-building
+SHORTLIST_PICK = int(os.environ.get('BB_SHORTLIST_PICK', '12'))            # candidates we sim at the decision pick
+SHORTLIST_LOOKAHEAD = int(os.environ.get('BB_SHORTLIST_LOOKAHEAD', '6'))   # candidates we sim at the look-ahead pick
 N_BRANCHES = 3               # availability branches at the decision pick (2-4 allowed by schema)
-GRADED_N = 7                 # top-N available BY RANK graded for title+advancement (panel)
+GRADED_N = int(os.environ.get('BB_GRADED_N', '7'))                         # top-N available BY RANK graded (panel)
 TEAMS = 12
 ROUNDS = 18
 DELTA_SCALE = 100.0          # pick_values returns percentage points; /100 -> probability scale

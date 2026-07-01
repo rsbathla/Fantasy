@@ -95,10 +95,20 @@ def main():
     ap.add_argument('--mine', default=None, help='Underdog: your picks, pipe-separated (recommended for UD)')
     ap.add_argument('--seat', default='rsbathla', help="Your draft handle (default rsbathla)")
     ap.add_argument('--platform', choices=['dk', 'ud'], default=None, help="Force platform (else auto-detect)")
+    ap.add_argument('--fast', action='store_true',
+                    help="On-the-clock mode: ~10s. 600 sims + shortlist 10 + no look-ahead subtree. "
+                         "Keeps the same top pick as the full grade on tested boards; only the look-ahead 'then' advice is dropped.")
     a = ap.parse_args()
 
     if not os.path.exists(a.board):
         raise SystemExit(f"Board file not found: {a.board}")
+
+    if a.fast:
+        # env overrides read by engine/decision_tree.py + run_live.py at import (defaults otherwise unchanged).
+        # Tuned: dropping the look-ahead (BB_PLIES=1) is free — it never changes the current pick, only the
+        # 'then' subtree — and 600 sims held the same top pick as 1000 in testing; 400 was too noisy (flipped it).
+        os.environ.update({'BB_TREE_NS': '600', 'BB_SHORTLIST_PICK': '10', 'BB_PLIES': '1', 'BB_GRADED_N': '5'})
+        print("fast mode ON: 600 sims · shortlist 10 · no look-ahead (~10s)")
 
     cmd = [sys.executable, os.path.join(HERE, 'draft.py'), a.board, '--no-open', '--seat', a.seat]
     if a.mine:
