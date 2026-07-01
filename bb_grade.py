@@ -98,9 +98,12 @@ def main():
     ap.add_argument('--fast', action='store_true',
                     help="On-the-clock mode: ~10s. 600 sims + shortlist 10 + no look-ahead subtree. "
                          "Keeps the same top pick as the full grade on tested boards; only the look-ahead 'then' advice is dropped.")
+    ap.add_argument('--open', dest='open_dash', action='store_true',
+                    help="Open decision_dashboard.html in your browser when done (used by the one-click runner).")
     a = ap.parse_args()
 
-    if not os.path.exists(a.board):
+    is_clip = str(a.board).lower() in ('clip', 'clipboard', '-')
+    if not is_clip and not os.path.exists(a.board):
         raise SystemExit(f"Board file not found: {a.board}")
 
     if a.fast:
@@ -129,6 +132,11 @@ def main():
 
     summarize()
     print(f"dashboard written: {DASH}")
+    if a.open_dash:
+        try:
+            import webbrowser; webbrowser.open('file://' + DASH)
+        except Exception:
+            pass
 
 
 if __name__ == '__main__':
