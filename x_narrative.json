@@ -142,9 +142,10 @@
 "unrealized talent"
 ],
 "take": "Ian Hartitz's self-aware 'tricking myself into drafting MarShawn Lloyd every summer' (282 likes) captures the whole profile: enough talent/landing-spot appeal that the sharp crowd keeps buying, but a track record that has repeatedly burned them. He's the canonical zero-cost dart — fine as a last-pick swing, dangerous if you talk yourself into a real allocation. Sentiment is affectionate skepticism, not conviction.",
-"n_src": 1,
+"n_src": 2,
 "handles": [
-"Ihartitz"
+"Ihartitz",
+"DhananiZain"
 ]
 },
 "matthew stafford": {
@@ -162,15 +163,16 @@
 },
 "xavier worthy": {
 "name": "Xavier Worthy",
-"sentiment": "neutral",
+"sentiment": "bullish",
 "themes": [
-"offseason buzz",
+"Chiefs breakout call",
 "speed"
 ],
-"take": "Light offseason content rather than analysis: an Underdog clip (reposted by Josh Norris) joked that if that was really Worthy 'running around in the grass,' Hayden Winks 'owes everyone an apology' — a nod to the speed/conditioning chatter that follows him. No projection value here, but it confirms Worthy stays top-of-mind in the FF conversation entering the summer.",
-"n_src": 1,
+"take": "The signal firmed up this cycle: in Dhanani's read of a rebuilt Chiefs offense (more structure, real run game), 'their breakout pick is Xavier Worthy' — an explicit breakout call, not just speed chatter. Earlier offseason content (the Underdog 'running around in the grass' clip) keeps him top-of-mind; now there's a role-based thesis under it. A rising best-ball target if the KC offense is as re-tooled as described.",
+"n_src": 2,
 "handles": [
-"UDFootballShow"
+"UDFootballShow",
+"DhananiZain"
 ]
 },
 "emanuel wilson": {
@@ -289,6 +291,151 @@
 "n_src": 1,
 "handles": [
 "32BeatWriters"
+]
+},
+"kenneth walker": {
+"name": "Kenneth Walker",
+"sentiment": "bullish",
+"themes": [
+"new run-game role",
+"health-gated ceiling"
+],
+"take": "Dhanani frames a genuinely new environment: the Chiefs 'made a point to get Kenneth Walker' and want a real run game 'for the first time in years,' with the read that 'Walker should destroy if he stays healthy.' If the team/role is as described (the board also lists this KC move — worth confirming, not assuming), it's a volume-and-efficiency upgrade gated only by his durability. The health caveat is the whole risk.",
+"n_src": 1,
+"handles": [
+"DhananiZain"
+]
+},
+"treveyon henderson": {
+"name": "TreVeyon Henderson",
+"sentiment": "bullish",
+"themes": [
+"hidden production",
+"under-radar"
+],
+"take": "Fantasy Points' hook does the work: 'if I told you TreVeyon Henderson had 911 yards and 9 TDs last year you'd say I'm crazy... but he did.' A Patriots back who quietly posted starter-level counting stats while flying under the ADP radar — the kind of proven-but-unpriced profile that outperforms its cost.",
+"n_src": 1,
+"handles": [
+"FantasyPts"
+]
+},
+"jaylen waddle": {
+"name": "Jaylen Waddle",
+"sentiment": "bullish",
+"themes": [
+"coverage-proof underneath",
+"zone-beater"
+],
+"take": "Two independent signals converge on Waddle as a stable target-earner: Dhanani's route-depth work slots him in the short/intermediate role (the shallower, more fantasy-friendly profile that booms more and busts less), and Fantasy Points' zone-vs-man chart lists him among the best against zone (2.69 zone YPRR, +0.88 over man). A separation-first WR whose value doesn't hinge on deep shots.",
+"n_src": 2,
+"handles": [
+"DBro_FFB",
+"FantasyPts"
+]
+},
+"jamarr chase": {
+"name": "Ja'Marr Chase",
+"sentiment": "bullish",
+"themes": [
+"elite vs all coverage",
+"zone-dominant"
+],
+"take": "Reinforcement of the obvious with detail: Fantasy Points' chart has Chase elite against both looks (2.69 zone / 1.67 man YPRR, a +1.02 zone delta among the league's best). Coverage-agnostic dominance — no scheme neutralizes him — which is exactly the foundation of a first-round, every-week WR1.",
+"n_src": 1,
+"handles": [
+"FantasyPts"
+]
+},
+"jayden reed": {
+"name": "Jayden Reed",
+"sentiment": "bullish",
+"themes": [
+"zone-beater",
+"efficiency"
+],
+"take": "Tops Fantasy Points' zone-vs-man YPRR chart (2.64 vs zone, +1.11 delta) — the biggest zone-coverage edge in the sample. Reads as a receiver who feasts on the soft spots underneath; a stable-floor profile if the target volume is there in Green Bay's committee.",
+"n_src": 1,
+"handles": [
+"FantasyPts"
+]
+},
+"khalil shakir": {
+"name": "Khalil Shakir",
+"sentiment": "bullish",
+"themes": [
+"zone-beater",
+"slot reliability"
+],
+"take": "Featured in Fantasy Points' zone-vs-man chart as a strong zone-beater (2.41 zone YPRR, +0.92 delta). The classic slot profile — finds the soft spot, moves the chains — which travels well for a PPR floor even without alpha target share in Buffalo.",
+"n_src": 1,
+"handles": [
+"FantasyPts"
+]
+},
+"josh jacobs": {
+"name": "Josh Jacobs",
+"sentiment": "bearish",
+"themes": [
+"durability risk",
+"touch pile-up"
+],
+"take": "Dhanani flags the one thing that can sink a workhorse: he's 'slightly worried about the pile-up of right-leg injuries with the amount of touches' Jacobs has absorbed. Nothing acute, but a smart, early durability caution on a high-volume back — a reason to respect the risk at his ADP rather than assume the workload is free.",
+"n_src": 1,
+"handles": [
+"DhananiZain"
+]
+},
+"kc concepcion": {
+"name": "KC Concepcion",
+"sentiment": "bullish",
+"themes": [
+"defined role",
+"versatile weapon",
+"rookie"
+],
+"take": "Dhanani likes the fit: reports the team plans to use Concepcion 'exactly how we WANT him to be used' — as a versatile weapon. Role-clarity buzz for a rookie is the pre-camp signal that precedes an ADP climb; the usage framing (versatile, not niche) is the bullish part.",
+"n_src": 1,
+"handles": [
+"DhananiZain"
+]
+},
+"cj stroud": {
+"name": "CJ Stroud",
+"sentiment": "bullish",
+"themes": [
+"Year-2 scheme comfort",
+"pre-snap in sync"
+],
+"take": "Dhanani surfaces a quiet-but-real positive: in Year 2 of Nick Caley's offense, Stroud's pre-snap operation 'was more in sync' through OTAs/minicamp. Second-year command of a system usually shows up as cleaner reads and fewer stalled drives — a bounce-back/step-forward tailwind for Stroud and his pass-catchers.",
+"n_src": 1,
+"handles": [
+"DhananiZain"
+]
+},
+"jaydon blue": {
+"name": "Jaydon Blue",
+"sentiment": "neutral",
+"themes": [
+"prove-it rookie",
+"contingency role"
+],
+"take": "Cited by Dhanani as the Cowboys' version of the MarShawn Lloyd bet: a back the team 'has to prove it' with (maturity, in Blue's case) — 'something the teams hope for but have contingencies if not.' Talent-with-questions; a cheap upside dart whose path depends on beating out the contingency plan.",
+"n_src": 1,
+"handles": [
+"DhananiZain"
+]
+},
+"pat bryant": {
+"name": "Pat Bryant",
+"sentiment": "neutral",
+"themes": [
+"deep role",
+"route-depth example"
+],
+"take": "Named in Dhanani's route-depth breakdown as the intermediate/deep piece alongside Sutton — i.e., the lower-floor, boom-or-bust side of the route-depth finding (deeper trees bust more). A big-play flier whose weekly consistency the data itself cautions against relying on.",
+"n_src": 1,
+"handles": [
+"DhananiZain"
 ]
 }
 }

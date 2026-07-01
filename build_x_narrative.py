@@ -78,11 +78,11 @@ NARR = {
          "an explicitly jagged résumé read: 'the Super Bowl run was excellent, 2022 a disappointment, 2023 excellent "
          "and underrated, 2024 a disappointment.' The forming view is volatility — a ceiling that has won titles next "
          "to floor years — which argues for treating his fantasy outlook as range-wide rather than a stable median."),
-  "Xavier Worthy": dict(sentiment="neutral", themes=["offseason buzz","speed"],
-    take="Light offseason content rather than analysis: an Underdog clip (reposted by Josh Norris) joked that if that "
-         "was really Worthy 'running around in the grass,' Hayden Winks 'owes everyone an apology' — a nod to the "
-         "speed/conditioning chatter that follows him. No projection value here, but it confirms Worthy stays "
-         "top-of-mind in the FF conversation entering the summer."),
+  "Xavier Worthy": dict(sentiment="bullish", themes=["Chiefs breakout call","speed"],
+    take="The signal firmed up this cycle: in Dhanani's read of a rebuilt Chiefs offense (more structure, real run game), "
+         "'their breakout pick is Xavier Worthy' — an explicit breakout call, not just speed chatter. Earlier offseason "
+         "content (the Underdog 'running around in the grass' clip) keeps him top-of-mind; now there's a role-based thesis "
+         "under it. A rising best-ball target if the KC offense is as re-tooled as described."),
   "Emanuel Wilson": dict(sentiment="neutral", themes=["committee backfield","goal-line role","TD equity"],
     take="Appears in Nathan Jahnke's early backfield role-projection, tagged as the goal-line back. In a committee "
          "that caps any one back's volume, the goal-line tag is the valuable one — it's where the TD equity (and "
@@ -134,6 +134,53 @@ NARR = {
     take="Grouped with Bech in the 32 Beat Writers' sophomore-growth note: prominent role earned last camp, then rookie "
          "pains and team challenges. A field-stretcher archetype whose Year-2 role is still being sorted — deep-league "
          "camp-watch, not a redraft target yet."),
+  # --- pull #3 (2026-07-01, search grab) ---
+  "Kenneth Walker": dict(sentiment="bullish", themes=["new run-game role","health-gated ceiling"],
+    take="Dhanani frames a genuinely new environment: the Chiefs 'made a point to get Kenneth Walker' and want a real "
+         "run game 'for the first time in years,' with the read that 'Walker should destroy if he stays healthy.' If the "
+         "team/role is as described (the board also lists this KC move — worth confirming, not assuming), it's a volume-"
+         "and-efficiency upgrade gated only by his durability. The health caveat is the whole risk."),
+  "TreVeyon Henderson": dict(sentiment="bullish", themes=["hidden production","under-radar"],
+    take="Fantasy Points' hook does the work: 'if I told you TreVeyon Henderson had 911 yards and 9 TDs last year you'd "
+         "say I'm crazy... but he did.' A Patriots back who quietly posted starter-level counting stats while flying under "
+         "the ADP radar — the kind of proven-but-unpriced profile that outperforms its cost."),
+  "Jaylen Waddle": dict(sentiment="bullish", themes=["coverage-proof underneath","zone-beater"],
+    take="Two independent signals converge on Waddle as a stable target-earner: Dhanani's route-depth work slots him in "
+         "the short/intermediate role (the shallower, more fantasy-friendly profile that booms more and busts less), and "
+         "Fantasy Points' zone-vs-man chart lists him among the best against zone (2.69 zone YPRR, +0.88 over man). A "
+         "separation-first WR whose value doesn't hinge on deep shots."),
+  "Ja'Marr Chase": dict(sentiment="bullish", themes=["elite vs all coverage","zone-dominant"],
+    take="Reinforcement of the obvious with detail: Fantasy Points' chart has Chase elite against both looks (2.69 zone / "
+         "1.67 man YPRR, a +1.02 zone delta among the league's best). Coverage-agnostic dominance — no scheme neutralizes "
+         "him — which is exactly the foundation of a first-round, every-week WR1."),
+  "Jayden Reed": dict(sentiment="bullish", themes=["zone-beater","efficiency"],
+    take="Tops Fantasy Points' zone-vs-man YPRR chart (2.64 vs zone, +1.11 delta) — the biggest zone-coverage edge in the "
+         "sample. Reads as a receiver who feasts on the soft spots underneath; a stable-floor profile if the target volume "
+         "is there in Green Bay's committee."),
+  "Khalil Shakir": dict(sentiment="bullish", themes=["zone-beater","slot reliability"],
+    take="Featured in Fantasy Points' zone-vs-man chart as a strong zone-beater (2.41 zone YPRR, +0.92 delta). The classic "
+         "slot profile — finds the soft spot, moves the chains — which travels well for a PPR floor even without alpha "
+         "target share in Buffalo."),
+  "Josh Jacobs": dict(sentiment="bearish", themes=["durability risk","touch pile-up"],
+    take="Dhanani flags the one thing that can sink a workhorse: he's 'slightly worried about the pile-up of right-leg "
+         "injuries with the amount of touches' Jacobs has absorbed. Nothing acute, but a smart, early durability caution on "
+         "a high-volume back — a reason to respect the risk at his ADP rather than assume the workload is free."),
+  "KC Concepcion": dict(sentiment="bullish", themes=["defined role","versatile weapon","rookie"],
+    take="Dhanani likes the fit: reports the team plans to use Concepcion 'exactly how we WANT him to be used' — as a "
+         "versatile weapon. Role-clarity buzz for a rookie is the pre-camp signal that precedes an ADP climb; the usage "
+         "framing (versatile, not niche) is the bullish part."),
+  "CJ Stroud": dict(sentiment="bullish", themes=["Year-2 scheme comfort","pre-snap in sync"],
+    take="Dhanani surfaces a quiet-but-real positive: in Year 2 of Nick Caley's offense, Stroud's pre-snap operation "
+         "'was more in sync' through OTAs/minicamp. Second-year command of a system usually shows up as cleaner reads and "
+         "fewer stalled drives — a bounce-back/step-forward tailwind for Stroud and his pass-catchers."),
+  "Jaydon Blue": dict(sentiment="neutral", themes=["prove-it rookie","contingency role"],
+    take="Cited by Dhanani as the Cowboys' version of the MarShawn Lloyd bet: a back the team 'has to prove it' with "
+         "(maturity, in Blue's case) — 'something the teams hope for but have contingencies if not.' Talent-with-questions; "
+         "a cheap upside dart whose path depends on beating out the contingency plan."),
+  "Pat Bryant": dict(sentiment="neutral", themes=["deep role","route-depth example"],
+    take="Named in Dhanani's route-depth breakdown as the intermediate/deep piece alongside Sutton — i.e., the lower-"
+         "floor, boom-or-bust side of the route-depth finding (deeper trees bust more). A big-play flier whose weekly "
+         "consistency the data itself cautions against relying on."),
 }
 
 def main():
