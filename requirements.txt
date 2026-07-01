@@ -1,7 +1,9 @@
-# Best Ball draft grader — runtime dependencies (the versions verified running).
-# Recommended: Python 3.11 (what this was built/tested on).
-pandas==1.5.3
-numpy==1.26.4
-pyarrow>=14.0        # reads the pipeline/*.parquet inputs; any modern build works
+# Best Ball draft grader — runtime dependencies.
+# Verified working on BOTH pandas 1.5.3 / numpy 1.26.4 (Python 3.11) and
+# pandas 3.0.3 / numpy 2.4.6 (Python 3.14). Floors (not exact pins) let pip pick a
+# build matching your Python, so this installs cleanly on 3.11 through 3.14.
+pandas>=1.5
+numpy>=1.26
+pyarrow>=14         # reads the pipeline/*.parquet inputs; any modern build works
 pyperclip>=1.8       # optional: clipboard fallback (Windows uses PowerShell natively, so not required)
 striprtf>=0.0.26     # optional: parses an RTF clipboard paste (some draft-room copies)
