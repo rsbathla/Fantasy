@@ -212,5 +212,83 @@
 "handles": [
 "FFNateJahnke"
 ]
+},
+"jaxon smith njigba": {
+"name": "Jaxon Smith-Njigba",
+"sentiment": "bullish",
+"themes": [
+"elite route-running",
+"separation vs all coverages"
+],
+"take": "Matt Harmon's 2025 Reception Perception profile is a green light: 77.8% success vs man (94th percentile), 82.5% vs zone, 80% vs press — Harmon's read is JSN was 'convincingly among the best, if not the premier' route runner in the league. Separation that holds up against man, zone AND press is the most stable, coverage-proof skill a WR can have; the profile forming is a bankable target-earner, not a scheme-dependent one.",
+"n_src": 1,
+"handles": [
+"MattHarmon_BYB"
+]
+},
+"aaron rodgers": {
+"name": "Aaron Rodgers",
+"sentiment": "bearish",
+"themes": [
+"dead deep ball",
+"downfield ceiling capped"
+],
+"take": "Drew Davenport (on FantasyPtsData) flags Rodgers 35th in the NFL in deep-throw rate in 2025 at just 9.4%. For fantasy that's less about Rodgers himself and more a ceiling-cap on his pass-catchers: a QB who won't push the ball downfield compresses aDOT and big-play equity for the WRs attached to him. A checkdown-heavy passing environment to price in.",
+"n_src": 1,
+"handles": [
+"DrewDavenportFF"
+]
+},
+"alvin kamara": {
+"name": "Alvin Kamara",
+"sentiment": "mixed",
+"themes": [
+"aging but steady",
+"committee-investment backfield"
+],
+"take": "Fantasy Points frames him bluntly: 'as washed as Kamara might be, he really hasn't been much worse than Travis Etienne' — faint praise that still keeps him in the viable range. Note the team context they flag: only Arizona has more money invested at RB than the Saints, so expect a committee that caps his ceiling even as he holds the lead early-down/passing-down role. A steady-but-fading vet, drafted at cost.",
+"n_src": 1,
+"handles": [
+"FantasyPts"
+]
+},
+"travis etienne": {
+"name": "Travis Etienne",
+"sentiment": "bearish",
+"themes": [
+"efficiency slipped",
+"used as the low bar"
+],
+"take": "Used by Fantasy Points as the *low bar* in a Kamara comparison ('Kamara hasn't been much worse than Etienne') — not where a former high-pick back wants to be cited. The implication is his efficiency has slipped to a level a declining veteran now matches; a name whose draft price should reflect the fade unless the role/volume argues back.",
+"n_src": 1,
+"handles": [
+"FantasyPts"
+]
+},
+"jack bech": {
+"name": "Jack Bech",
+"sentiment": "neutral",
+"themes": [
+"sophomore leap watch",
+"late-season comfort"
+],
+"take": "32 Beat Writers note Bech is looking to grow in Year 2 after rookie growing pains, and 'seemed more comfortable within the offense late in the season.' A developmental camp-watch profile — the trajectory (late-season comfort) is encouraging, but the role isn't locked; one to monitor through August, not draft on faith.",
+"n_src": 1,
+"handles": [
+"32BeatWriters"
+]
+},
+"donte thornton": {
+"name": "Dont'e Thornton",
+"sentiment": "neutral",
+"themes": [
+"sophomore leap watch",
+"role uncertain"
+],
+"take": "Grouped with Bech in the 32 Beat Writers' sophomore-growth note: prominent role earned last camp, then rookie pains and team challenges. A field-stretcher archetype whose Year-2 role is still being sorted — deep-league camp-watch, not a redraft target yet.",
+"n_src": 1,
+"handles": [
+"32BeatWriters"
+]
 }
 }

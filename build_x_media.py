@@ -51,6 +51,25 @@ MEDIA = [
        summary_src="companion to the route-depth article (not transcribed)",
        summary=("Audio companion to Dhanani's route-depth piece — same thesis: shallower route trees are the more "
          "reliable fantasy profile; deep-threat usage is over-valued for weekly scoring.")),
+  # --- pull #2 (2026-07-01) ---
+  dict(type="video", by="32BeatWriters", url="https://youtu.be/hmhefbdwhyU",
+       title="Denzel Boston — offseason profile (32 Beat Writers)",
+       summary_src="from the posting tweet quote (video not transcribed)",
+       summary=("Profile of rookie WR Denzel Boston: per the beat writers he 'hit the ground running' this offseason "
+         "and showed he's 'more than just a big-bodied target in the red zone.' Drafted after Concepcion, but may have "
+         "'stolen the show in the offseason' — an early camp-buzz signal on his role beyond red-zone work.")),
+  dict(type="video", by="HaydenWinks", url="https://youtu.be/pT94M-5niFk",
+       title="The 2 sleeper QBs to draft in all formats (Winks & Norris)",
+       summary_src="from the posting tweets (video not transcribed — the two QBs aren't named in the posts)",
+       summary=("Hayden Winks and Josh Norris pitch two late-round 'perfect' sleeper QB targets to draft in all formats "
+         "as the value fallback if you miss the elite tier. The specific two QBs aren't named in the tweets — identifying "
+         "them needs the video transcript (local whisper tool).")),
+  dict(type="video", by="FantasyPts", url="https://youtu.be/sUX3JTCEYBw",
+       title="Is Zero-RB dead in 2026? (Fantasy Points)",
+       summary_src="from the posting tweet (video not transcribed)",
+       summary=("A draft-strategy debate: \"Zero RB was never alive as far as I'm concerned... it didn't die, it never "
+         "even had a life.\" The panel questions whether loading up on receivers early (Zero-RB) is still viable in 2026 "
+         "— a construction-philosophy discussion rather than a player-specific take.")),
 ]
 
 # Media seen in the pull but whose link wasn't captured (need a re-scroll to grab the t.co) — logged so

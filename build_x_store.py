@@ -16,17 +16,24 @@ Merge rules: new id -> add; existing id -> keep max engagement (likes), union li
 first_seen. Nothing is ever dropped. Tracks last-pull time + newest/oldest so a scheduled pull knows
 its high-water mark.
 """
-import json, os, datetime
+import json, os, datetime, glob
 HERE = os.path.dirname(os.path.abspath(__file__))
 STORE = os.path.join(HERE, 'x_store.json')
 
 def load(p):
     return json.load(open(p, encoding='utf-8')) if os.path.exists(p) else None
 
+def _as_list(x):
+    if isinstance(x, dict):
+        return x.get('posts', [])
+    return x or []
+
 def main():
-    pull = load(os.path.join(HERE, 'x_posts.json')) or []
-    if isinstance(pull, dict):
-        pull = pull.get('posts', [])
+    # merge the canonical latest pull (x_posts.json) + every dated pull (x_pull_*.json)
+    pull_files = [os.path.join(HERE, 'x_posts.json')] + sorted(glob.glob(os.path.join(HERE, 'x_pull_*.json')))
+    pull = []
+    for pf in pull_files:
+        pull += _as_list(load(pf))
     store = load(STORE) or {'_meta': {}, 'posts': []}
     by_id = {p['id']: p for p in store.get('posts', []) if p.get('id')}
     now = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()

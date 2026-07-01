@@ -97,6 +97,43 @@ NARR = {
     take="Jahnke's early projection slots Holani into the third-down role. In PPR/best-ball terms that's the "
          "pass-catching niche — useful for reception floor but typically the lowest-ceiling slice of a committee "
          "unless injuries collapse the timeshare. Role clarity is the story; volume is the question."),
+  # --- pull #2 (2026-07-01) ---
+  "Jaxon Smith-Njigba": dict(sentiment="bullish", themes=["elite route-running","separation vs all coverages"],
+    take="Matt Harmon's 2025 Reception Perception profile is a green light: 77.8% success vs man (94th percentile), "
+         "82.5% vs zone, 80% vs press — Harmon's read is JSN was 'convincingly among the best, if not the premier' route "
+         "runner in the league. Separation that holds up against man, zone AND press is the most stable, coverage-proof "
+         "skill a WR can have; the profile forming is a bankable target-earner, not a scheme-dependent one."),
+  "Aaron Rodgers": dict(sentiment="bearish", themes=["dead deep ball","downfield ceiling capped"],
+    take="Drew Davenport (on FantasyPtsData) flags Rodgers 35th in the NFL in deep-throw rate in 2025 at just 9.4%. "
+         "For fantasy that's less about Rodgers himself and more a ceiling-cap on his pass-catchers: a QB who won't push "
+         "the ball downfield compresses aDOT and big-play equity for the WRs attached to him. A checkdown-heavy passing "
+         "environment to price in."),
+  "Michael Pittman": dict(sentiment="mixed", themes=["ADP discount","volatile finishes","QB headwind"],
+    take="Surfaced in Davenport's thread as a value case with a caveat: PPR-ppg finishes of 28/25/14/47/26 the last five "
+         "years — genuinely volatile — against a current WR41 ADP. The discount is real, but the same thread's point about "
+         "a low-deep-ball QB is a headwind on his downfield upside. A floor-priced target-earner bet, not a ceiling bet."),
+  "Alvin Kamara": dict(sentiment="mixed", themes=["aging but steady","committee-investment backfield"],
+    take="Fantasy Points frames him bluntly: 'as washed as Kamara might be, he really hasn't been much worse than Travis "
+         "Etienne' — faint praise that still keeps him in the viable range. Note the team context they flag: only Arizona "
+         "has more money invested at RB than the Saints, so expect a committee that caps his ceiling even as he holds the "
+         "lead early-down/passing-down role. A steady-but-fading vet, drafted at cost."),
+  "Travis Etienne": dict(sentiment="bearish", themes=["efficiency slipped","used as the low bar"],
+    take="Used by Fantasy Points as the *low bar* in a Kamara comparison ('Kamara hasn't been much worse than Etienne') — "
+         "not where a former high-pick back wants to be cited. The implication is his efficiency has slipped to a level a "
+         "declining veteran now matches; a name whose draft price should reflect the fade unless the role/volume argues back."),
+  "Denzel Boston": dict(sentiment="bullish", themes=["rookie camp buzz","role beyond red zone"],
+    take="32 Beat Writers' offseason profile is an early breakout tell: Boston 'hit the ground running' and showed he's "
+         "'more than just a big-bodied target in the red zone,' possibly having 'stolen the show' over higher-drafted "
+         "Concepcion. Buzz that he's earning a full route role (not just a goal-line body) is exactly the pre-camp signal "
+         "that moves a rookie WR up boards."),
+  "Jack Bech": dict(sentiment="neutral", themes=["sophomore leap watch","late-season comfort"],
+    take="32 Beat Writers note Bech is looking to grow in Year 2 after rookie growing pains, and 'seemed more comfortable "
+         "within the offense late in the season.' A developmental camp-watch profile — the trajectory (late-season comfort) "
+         "is encouraging, but the role isn't locked; one to monitor through August, not draft on faith."),
+  "Dont'e Thornton": dict(sentiment="neutral", themes=["sophomore leap watch","role uncertain"],
+    take="Grouped with Bech in the 32 Beat Writers' sophomore-growth note: prominent role earned last camp, then rookie "
+         "pains and team challenges. A field-stretcher archetype whose Year-2 role is still being sorted — deep-league "
+         "camp-watch, not a redraft target yet."),
 }
 
 def main():
