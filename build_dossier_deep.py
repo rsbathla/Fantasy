@@ -31,6 +31,7 @@ for p in (intel.get('players') or []):
 # LIVE X layer (x_dossier_refresh.py -> x_live.json, fed by the X MCP). Prefer live posts; split news.
 xlive = J('x_live.json')
 xnar = J('x_narrative.json')   # analysis layer: synthesized "what analysts are saying" per player
+xmedia = (J('x_media.json') or {}).get('by_player', {})   # indexed+summarized articles/videos per player
 for fk, posts in (xlive.get('players') or {}).items():
     cur = TW.setdefault(fk, {'about': [], 'comp': [], 'backtests': [], 'news': []})
     live_news = [p for p in posts if (p.get('kind') == 'news')]
@@ -89,6 +90,7 @@ for k in keys:
         'tweets': TW.get(k, {}).get('about'), 'n_tweets': TW.get(k, {}).get('n_about'),
         'news': TW.get(k, {}).get('news'),
         'analyst_take': xnar.get(k),
+        'media': xmedia.get(k),
         'video': VID.get(k, {}).get('note'), 'n_clips': VID.get(k, {}).get('n_clips'),
     }
     players.append(rec)
@@ -194,6 +196,8 @@ function render(p){if(!p)return;let h='';
  if(p.news&&p.news.length)h+=`<div class="sec"><h3>📰 Breaking news & trends (live)</h3>`+p.news.slice(0,8).map(t=>`<div class="tweet" style="border-left-color:var(--warn)"><span class="h" style="color:var(--warn)">@${esc(t.handle||'')}</span> <span class="m">${esc(t.date||'')}</span><div>${esc(t.text||'')}</div>${t.url?`<a href="${esc(t.url)}" target="_blank">link →</a>`:''}</div>`).join('')+`</div>`;
  // tweets
  if(p.tweets&&p.tweets.length)h+=`<div class="sec"><h3>Tweets & analyst mentions (${p.n_tweets||p.tweets.length})${p.tweets[0]&&p.tweets[0].source==='x_mcp'?' · live':''}</h3>`+p.tweets.slice(0,20).map(t=>`<div class="tweet"><span class="h">@${esc(t.handle||t.name||'')}</span> <span class="m">${esc(t.date||'')}${t.likes?' · '+t.likes+'♥':''}</span><div>${esc(t.text||'')}</div>${t.url?`<a href="${esc(t.url)}" target="_blank">link →</a>`:''}</div>`).join('')+`</div>`;
+ // indexed + summarized articles / videos / podcasts (the media layer)
+ if(p.media&&p.media.length){const ic={article:'📄',video:'🎬',podcast:'🎙️'};h+=`<div class="sec"><h3>Articles &amp; video (indexed)</h3>`+p.media.map(mi=>`<div class="note" style="border-left:3px solid var(--acc);padding-left:10px;margin:6px 0"><div><span style="font-weight:700">${ic[mi.type]||'🔗'} ${esc(mi.title||'')}</span> <span class="muted">· @${esc(mi.by||'')} · ${esc(mi.summary_src||'')}</span></div><div style="margin-top:4px">${esc(mi.summary||'')}</div>${mi.url?`<a href="${esc(mi.url)}" target="_blank">open →</a>`:''}</div>`).join('')+`</div>`;}
  // video
  if(p.video)h+=`<div class="sec"><h3>Video mentions${p.n_clips?` (${p.n_clips} clips)`:''}</h3><div class="vid">${esc(p.video)}</div></div>`;
  document.getElementById('detail').innerHTML=h;

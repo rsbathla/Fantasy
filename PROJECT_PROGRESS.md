@@ -100,7 +100,19 @@ Goal (user): "pull the most recent tweets… and start forming ideas and analysi
 
 ---
 
+### Phase G — accumulation store + media (article/video) indexing
+User asked to (a) "pull since the last date, keep going back" and (b) "index and summarize every video or article." Findings + what shipped:
+- **Depth is capped at the source, not the code.** The fresh private list serves only ~50 recent tweets / ~7h and won't deep-paginate under scripted scroll; the Following-feed alternative is diluted by pre-existing media follows AND X rate-limits follows at ~15/window (HTTP 429). The genuinely deep, clean path is either the paid API on the user's machine or the user's original **local "scroller" + faster-whisper** stack (nightly `run_ingest.bat` → `tweets.db`, 63 tweet sources + 237 transcribed videos) — documented in `GOALS_COVERAGE.md`, but the scroller code is gone from the connected Downloads. User chose to **stay with browser pulls + accumulate**.
+- ✅ **Accumulation store** (`build_x_store.py` → `x_store.json`): each browser pull is de-duped by tweet id and merged into a persistent store (max engagement, union links, first-seen), so history **grows forward** ("since the last date") even though any one pull is shallow. Tracks last-pull time + newest/oldest high-water mark. The dossier now maps the whole store, not just the latest ~50.
+- ✅ **Media index** (`build_x_media.py` → `x_media.json`): every article/video/podcast link in the pull is classified, summarized, and mapped to the players it names. Summaries are **fetched in full when public** (the 4for4 "players on bad teams" piece → 14 players incl. flagging Malik Willis as a bad-offense QB avoid) and otherwise **grounded in the posting analyst's own tweet thread**, clearly labelled (route-depth article/podcast → Waddle/Sutton/Pat Bryant; Tee>Ladd video → Higgins/McConkey). Paywalled bodies (FantasyPoints) and video transcripts are honestly marked "not transcribed — needs the local whisper tool." Surfaced as an "Articles & video (indexed)" section on each player card.
+- Enriched harvester now also captures per-tweet **outbound links (t.co + display) and video flags**. WebFetch on tweet URLs requires user provenance (safety boundary) and t.co is robots-blocked, so real URLs are recovered via search.
+- Account note: followed 15/48 analysts on @rsbatz before the rate limit; left the rest since the **list** (which already has all 48 members) is the pull surface and doesn't need follows. Strict-48 cleanup is available on request if we ever switch to the feed.
+
+---
+
 ## Open items (honest)
+- **X depth**: browser pulls are shallow by design (X caps a fresh list/feed); history accumulates forward via `x_store.json`. For instant deep backfill, the paid API (user's machine) or a recreated local scroller+whisper remain the options.
+- **Media transcripts**: article summaries work for public pages; video/podcast full-transcript summaries need the local faster-whisper tool (user opted to stay with browser pulls).
 - **UD auto my-roster**: drafted-set + round/pick auto-detect now work; "which picks are mine" needs one real UD board paste to finalize (works today via `--mine`).
 - **In-season DFS**: framework is week-parameterized and runs on projection/Vegas/matchup now; swap to live stats once 2026 games start.
 - **Offense motion/PA**: charted for ~17/32 (honest "–" elsewhere); zone/gap run identity is 32/32.
@@ -109,3 +121,4 @@ Goal (user): "pull the most recent tweets… and start forming ideas and analysi
 ## Change log
 - 2026-06-30: Audit → architecture → git init. Phase B (Best Ball: UD + projection fix + canonical entry), Phase C (DFS: defense split-parity + weekly model + lineup templates), Phase D (Dossier: offense scheme identity + unified home), Phase E (independent review + blocker fixes) — all complete & committed. All three products run end-to-end and render clean.
 - 2026-06-30: Phase F — live X layer via the free List "scroller" (paid API blocked by sandbox). Created+populated the 48-handle "FF Analysts" list on @rsbatz, scrolled it for 48 recent tweets, mapped to 16 players/12 teams (mapper hardened: require first+last name, false positives eliminated), and added a grounded per-player **analyst narrative** (sentiment+themes+take) merged into `dossier_deep.html`.
+- 2026-07-01: Phase G — **accumulation store** (`build_x_store.py` → `x_store.json`, dedup-merge each pull so history grows forward) + **media indexing** (`build_x_media.py` → `x_media.json`: articles/videos/podcasts classified, summarized, mapped to players, surfaced on cards). Confirmed the list caps ~7h and X rate-limits follows at ~15/window; identified the user's original deep path (local scroller + faster-whisper → tweets.db w/ 63 sources + 237 video transcripts). User chose to stay with browser pulls + accumulate.

@@ -1,0 +1,285 @@
+{
+ "_meta": {
+  "n_items": 4,
+  "n_players": 19,
+  "unresolved": 3
+ },
+ "items": [
+  {
+   "type": "article",
+   "by": "4for4football",
+   "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+   "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+   "summary_src": "fetched (public article)",
+   "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+   "players": [
+    "adonai mitchell",
+    "ashton jeanty",
+    "chris olave",
+    "david montgomery",
+    "garrett wilson",
+    "jalen coker",
+    "jonathan taylor",
+    "malik nabers",
+    "malik willis",
+    "omar cooper",
+    "quinshon judkins",
+    "saquon barkley",
+    "tony pollard",
+    "wandale robinson"
+   ],
+   "teams": [
+    "CAR",
+    "CLE",
+    "HOU",
+    "IND",
+    "LV",
+    "MIA",
+    "NO",
+    "NYG",
+    "NYJ",
+    "PHI",
+    "TEN"
+   ]
+  },
+  {
+   "type": "article",
+   "by": "DhananiZain",
+   "url": "https://x.com/DhananiZain/status/2072028243255759070",
+   "title": "Fantasy Factors: Understanding Route Depth (FantasyPoints)",
+   "summary_src": "grounded in the author's own tweet thread (full article is subscriber-gated)",
+   "summary": "Zain Dhanani's counterintuitive finding from charting route depth: deep threats are NOT the fantasy boom players people assume. WRs who run DEEPER route trees are NOT higher-ceiling week to week — those with SHALLOWER trees both boom MORE and bust LESS. Practical read: for weekly floor+ceiling, favor underneath/intermediate target-earners over pure deep threats. Route-role examples he cites: Jaylen Waddle works short/intermediate, Pat Bryant intermediate, Courtland Sutton the deep role — implying Waddle's shallower profile is the more fantasy-friendly of the group. (RyanJ_Heath amplified the same takeaway.)",
+   "players": [
+    "courtland sutton",
+    "jaylen waddle",
+    "pat bryant"
+   ],
+   "teams": [
+    "DEN"
+   ]
+  },
+  {
+   "type": "video",
+   "by": "FantasyPts",
+   "url": "https://youtu.be/vMdE3xxd944",
+   "title": "TEE > LADD — Tee Higgins vs Ladd McConkey (Fantasy Points)",
+   "summary_src": "from the posting tweet + video title (not transcribed — needs the local whisper tool)",
+   "summary": "A Fantasy Points video staking out the Tee Higgins over Ladd McConkey position at the 3/4 draft turn: \"I will not draft Ladd McConkey over Tee Higgins, no matter what... that's a bridge too far.\" The room's read is Higgins as the firmer back-of-3rd/top-4th anchor over McConkey.",
+   "players": [
+    "ladd mcconkey",
+    "tee higgins"
+   ],
+   "teams": [
+    "CIN",
+    "LAC"
+   ]
+  },
+  {
+   "type": "podcast",
+   "by": "DhananiZain",
+   "url": "https://x.com/DhananiZain/status/2072078040797245906",
+   "title": "Route depth — companion podcast",
+   "summary_src": "companion to the route-depth article (not transcribed)",
+   "summary": "Audio companion to Dhanani's route-depth piece — same thesis: shallower route trees are the more reliable fantasy profile; deep-threat usage is over-valued for weekly scoring.",
+   "players": [],
+   "teams": []
+  }
+ ],
+ "by_player": {
+  "garrett wilson": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "chris olave": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "jonathan taylor": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "adonai mitchell": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "malik willis": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "tony pollard": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "jalen coker": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "quinshon judkins": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "omar cooper": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "wandale robinson": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "malik nabers": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "david montgomery": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "ashton jeanty": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "saquon barkley": [
+   {
+    "type": "article",
+    "by": "4for4football",
+    "title": "Players On Bad Teams Can Be Good For Fantasy Football",
+    "url": "https://www.4for4.com/2026/preseason/players-bad-teams-can-be-good-fantasy-football",
+    "summary": "Justin Edwards analyzed bottom-5 scoring offenses (pts/drive) 2021-2025. Bad offenses badly underperform expectation: 0 top-12 QBs (vs 9.4 expected), 11 top-24 RBs (vs 18.8), 6 top-24 WRs (vs 18.8). WHAT SURVIVES a bad offense: (1) volume-monopoly RBs at 70%+ snaps — David Montgomery, Jonathan Taylor, Saquon Barkley, Tony Pollard, Ashton Jeanty; (2) target-hog WRs — Garrett Wilson (30.4% share), Chris Olave (27.2%), Malik Nabers (32.2%) — production through concentration, though ceilings stay capped; (3) TEs with weak WR competition. AVOID on bad offenses: every QB (none finished top-12 in 5 yrs — explicitly flags Malik Willis); secondary WRs (Wan'Dale Robinson, Jalen Coker, Omar Cooper Jr., Adonai Mitchell); and early-down-only RBs with no receiving work (the Quinshon Judkins archetype: 50% snaps but 7% target share).",
+    "summary_src": "fetched (public article)"
+   }
+  ],
+  "courtland sutton": [
+   {
+    "type": "article",
+    "by": "DhananiZain",
+    "title": "Fantasy Factors: Understanding Route Depth (FantasyPoints)",
+    "url": "https://x.com/DhananiZain/status/2072028243255759070",
+    "summary": "Zain Dhanani's counterintuitive finding from charting route depth: deep threats are NOT the fantasy boom players people assume. WRs who run DEEPER route trees are NOT higher-ceiling week to week — those with SHALLOWER trees both boom MORE and bust LESS. Practical read: for weekly floor+ceiling, favor underneath/intermediate target-earners over pure deep threats. Route-role examples he cites: Jaylen Waddle works short/intermediate, Pat Bryant intermediate, Courtland Sutton the deep role — implying Waddle's shallower profile is the more fantasy-friendly of the group. (RyanJ_Heath amplified the same takeaway.)",
+    "summary_src": "grounded in the author's own tweet thread (full article is subscriber-gated)"
+   }
+  ],
+  "pat bryant": [
+   {
+    "type": "article",
+    "by": "DhananiZain",
+    "title": "Fantasy Factors: Understanding Route Depth (FantasyPoints)",
+    "url": "https://x.com/DhananiZain/status/2072028243255759070",
+    "summary": "Zain Dhanani's counterintuitive finding from charting route depth: deep threats are NOT the fantasy boom players people assume. WRs who run DEEPER route trees are NOT higher-ceiling week to week — those with SHALLOWER trees both boom MORE and bust LESS. Practical read: for weekly floor+ceiling, favor underneath/intermediate target-earners over pure deep threats. Route-role examples he cites: Jaylen Waddle works short/intermediate, Pat Bryant intermediate, Courtland Sutton the deep role — implying Waddle's shallower profile is the more fantasy-friendly of the group. (RyanJ_Heath amplified the same takeaway.)",
+    "summary_src": "grounded in the author's own tweet thread (full article is subscriber-gated)"
+   }
+  ],
+  "jaylen waddle": [
+   {
+    "type": "article",
+    "by": "DhananiZain",
+    "title": "Fantasy Factors: Understanding Route Depth (FantasyPoints)",
+    "url": "https://x.com/DhananiZain/status/2072028243255759070",
+    "summary": "Zain Dhanani's counterintuitive finding from charting route depth: deep threats are NOT the fantasy boom players people assume. WRs who run DEEPER route trees are NOT higher-ceiling week to week — those with SHALLOWER trees both boom MORE and bust LESS. Practical read: for weekly floor+ceiling, favor underneath/intermediate target-earners over pure deep threats. Route-role examples he cites: Jaylen Waddle works short/intermediate, Pat Bryant intermediate, Courtland Sutton the deep role — implying Waddle's shallower profile is the more fantasy-friendly of the group. (RyanJ_Heath amplified the same takeaway.)",
+    "summary_src": "grounded in the author's own tweet thread (full article is subscriber-gated)"
+   }
+  ],
+  "tee higgins": [
+   {
+    "type": "video",
+    "by": "FantasyPts",
+    "title": "TEE > LADD — Tee Higgins vs Ladd McConkey (Fantasy Points)",
+    "url": "https://youtu.be/vMdE3xxd944",
+    "summary": "A Fantasy Points video staking out the Tee Higgins over Ladd McConkey position at the 3/4 draft turn: \"I will not draft Ladd McConkey over Tee Higgins, no matter what... that's a bridge too far.\" The room's read is Higgins as the firmer back-of-3rd/top-4th anchor over McConkey.",
+    "summary_src": "from the posting tweet + video title (not transcribed — needs the local whisper tool)"
+   }
+  ],
+  "ladd mcconkey": [
+   {
+    "type": "video",
+    "by": "FantasyPts",
+    "title": "TEE > LADD — Tee Higgins vs Ladd McConkey (Fantasy Points)",
+    "url": "https://youtu.be/vMdE3xxd944",
+    "summary": "A Fantasy Points video staking out the Tee Higgins over Ladd McConkey position at the 3/4 draft turn: \"I will not draft Ladd McConkey over Tee Higgins, no matter what... that's a bridge too far.\" The room's read is Higgins as the firmer back-of-3rd/top-4th anchor over McConkey.",
+    "summary_src": "from the posting tweet + video title (not transcribed — needs the local whisper tool)"
+   }
+  ]
+ },
+ "unresolved": [
+  "Establish the Edge — 'ETE Projections Special Part 3: AFC West with Ben…' (podcast, ~2h38m)",
+  "ooooftw — fantasy.vip 'Best Ball Player Data' dashboards (Underdog + DraftKings)",
+  "Underdog Fantasy Football (Josh & Hayden) — YouTube: 'Ryan Flournoy might be the most underrated WR in the NFL'"
+ ]
+}
