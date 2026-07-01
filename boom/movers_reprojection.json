@@ -1,8 +1,8 @@
 {
 "note": "2026 mover usage re-projection audit. reproj_clay=Clay 2026 share x new-team volume; reproj_carry=2025 share carried onto new-team volume; raw under *_25raw.",
-"n_movers": 52,
-"n_reproj_clay": 36,
-"n_reproj_carry": 9,
+"n_movers": 56,
+"n_reproj_clay": 38,
+"n_reproj_carry": 10,
 "n_stale_no_volume": 0,
 "movers": [
 {
@@ -310,6 +310,22 @@
 "car_pg_2026": 16.3
 },
 {
+"name": "Nick Westbrook-Ikhine",
+"pos": "WR",
+"team25": "MIA",
+"team": "IND",
+"tgt_share_25raw": 7.4,
+"carry_share_25raw": null,
+"tgt_pg_25raw": 2.2,
+"car_pg_25raw": 0.0,
+"usage_src": "reproj_clay",
+"mover_conf": "high",
+"tgt_share_2026": 11.0,
+"tgt_pg_2026": 3.4,
+"carry_share_2026": "",
+"car_pg_2026": "0.0"
+},
+{
 "name": "Jahan Dotson",
 "pos": "WR",
 "team25": "PHI",
@@ -534,22 +550,6 @@
 "car_pg_2026": "0.1"
 },
 {
-"name": "Kendrick Bourne",
-"pos": "WR",
-"team25": "SF",
-"team": "ARI",
-"tgt_share_25raw": 10.5,
-"carry_share_25raw": null,
-"tgt_pg_25raw": 3.7,
-"car_pg_25raw": 0.0,
-"usage_src": "reproj_clay",
-"mover_conf": "high",
-"tgt_share_2026": 6.0,
-"tgt_pg_2026": 2.1,
-"carry_share_2026": "",
-"car_pg_2026": "0.0"
-},
-{
 "name": "Tutu Atwell",
 "pos": "WR",
 "team25": "LAR",
@@ -561,6 +561,22 @@
 "usage_src": "reproj_clay",
 "mover_conf": "high",
 "tgt_share_2026": 7.0,
+"tgt_pg_2026": 2.1,
+"carry_share_2026": "",
+"car_pg_2026": "0.0"
+},
+{
+"name": "Kendrick Bourne",
+"pos": "WR",
+"team25": "SF",
+"team": "ARI",
+"tgt_share_25raw": 10.5,
+"carry_share_25raw": null,
+"tgt_pg_25raw": 3.7,
+"car_pg_25raw": 0.0,
+"usage_src": "reproj_clay",
+"mover_conf": "high",
+"tgt_share_2026": 6.0,
 "tgt_pg_2026": 2.1,
 "carry_share_2026": "",
 "car_pg_2026": "0.0"
@@ -612,6 +628,22 @@
 "tgt_pg_2026": 1.6,
 "carry_share_2026": "",
 "car_pg_2026": "0.0"
+},
+{
+"name": "Tyler Conklin",
+"pos": "TE",
+"team25": "LAC",
+"team": "DET",
+"tgt_share_25raw": 4.7,
+"carry_share_25raw": 4.0,
+"tgt_pg_25raw": 1.7,
+"car_pg_25raw": 0.2,
+"usage_src": "reproj_carry",
+"mover_conf": "med",
+"tgt_share_2026": 4.7,
+"tgt_pg_2026": 1.5,
+"carry_share_2026": "4.0",
+"car_pg_2026": "0.2"
 },
 {
 "name": "Tyler Allgeier",
@@ -742,6 +774,14 @@
 "mover_conf": "low"
 },
 {
+"name": "Jonnu Smith",
+"pos": "TE",
+"team25": "PIT",
+"team": "FA",
+"usage_src": "moved_to_FA",
+"mover_conf": "low"
+},
+{
 "name": "Kareem Hunt",
 "pos": "RB",
 "team25": "KC",
@@ -758,6 +798,30 @@
 "mover_conf": "low"
 },
 {
+"name": "JuJu Smith-Schuster",
+"pos": "WR",
+"team25": "KC",
+"team": "NYG",
+"tgt_share_25raw": 9.1,
+"carry_share_25raw": null,
+"tgt_pg_25raw": 2.8,
+"car_pg_25raw": 0.0,
+"usage_src": "reproj_clay",
+"mover_conf": "high",
+"tgt_share_2026": 0.0,
+"tgt_pg_2026": 0.0,
+"carry_share_2026": "",
+"car_pg_2026": "0.0"
+},
+{
+"name": "DeAndre Hopkins",
+"pos": "WR",
+"team25": "BAL",
+"team": "FA",
+"usage_src": "moved_to_FA",
+"mover_conf": "low"
+},
+{
 "name": "Zach Ertz",
 "pos": "TE",
 "team25": "WAS",
@@ -769,14 +833,6 @@
 "name": "Darren Waller",
 "pos": "TE",
 "team25": "MIA",
-"team": "FA",
-"usage_src": "moved_to_FA",
-"mover_conf": "low"
-},
-{
-"name": "DeAndre Hopkins",
-"pos": "WR",
-"team25": "BAL",
 "team": "FA",
 "usage_src": "moved_to_FA",
 "mover_conf": "low"

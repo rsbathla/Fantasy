@@ -30,8 +30,8 @@ STAGES = [
     ("build_features",        ["name", "pos", "adp"],                 []),
     ("ingest_advanced",       ["yprr_man", "zone_run_sh"],            []),
     ("ingest_advanced2",      ["route_tprr"],                          []),
-    ("ingest_advanced3",      ["cpoe"],                                []),
-    ("ingest_advanced4",      ["rec_epa_route", "rush_epa_att"],       []),
+    ("ingest_advanced3",      ["recyd_pg"],                            []),   # FP-derived; CPOE is NOT in the FP export
+    ("ingest_advanced4",      ["rec_epa_route", "rush_epa_att", "qb_cpoe"], []),  # REAL CPOE/EPA/NGS from the NFL Pro scrape
     ("ingest_advanced5",      ["sis_epa"],                             []),
     ("ingest_advanced6",      ["snap_share_est"],                      []),
     ("ingest_advanced7",      ["rec_epa_per_tgt_man"],                 []),
