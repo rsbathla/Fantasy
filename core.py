@@ -42,6 +42,52 @@ def safe_json_dump(obj,path,indent=0):
     fd,tmp=tempfile.mkstemp(dir=d,suffix='.tmp')
     with os.fdopen(fd,'w',encoding='utf-8') as f: json.dump(obj,f,ensure_ascii=False,allow_nan=False,indent=indent)
     os.replace(tmp,path)
+
+# --- ONE fuzzy name resolver (first-name variants: ken/kenneth, cam/cameron, chig/chigoziem). -------
+# The ALGORITHM lives here; the CALLER supplies the candidate set (Clay names, sim names, ...), so the
+# engine AND the pipeline share one authority with no import cycle. Exact fn() match wins; otherwise,
+# among candidates with the SAME last token AND token count, keep first-name-COMPATIBLE ones (+ same
+# pos when known) and accept ONLY IF EXACTLY ONE survives -- else None (never an unsafe guess). This
+# recovers ken/kenneth, cam/cameron, josh/joshua while rejecting keenan/kaytron, jmari/jonathan.
+def _lev(a,b):
+    if a==b: return 0
+    if len(a)<len(b): a,b=b,a
+    prev=list(range(len(b)+1))
+    for i,ca in enumerate(a,1):
+        cur=[i]+[0]*len(b)
+        for j,cb in enumerate(b,1): cur[j]=min(prev[j]+1,cur[j-1]+1,prev[j-1]+(ca!=cb))
+        prev=cur
+    return prev[-1]
+def first_compatible(f1,f2):
+    """True iff two first names are likely the same person: prefix (ken/kenneth), shared first 3
+    letters (nick/nicholas), or edit distance <= 1. Empty -> False."""
+    if not f1 or not f2: return False
+    if f1==f2 or f1.startswith(f2) or f2.startswith(f1): return True
+    if len(f1)>=3 and len(f2)>=3 and f1[:3]==f2[:3]: return True
+    return _lev(f1,f2)<=1
+def build_name_index(pairs):
+    """pairs: iterable of (display_name, pos|None) from the source you'll join AGAINST. Returns an
+    opaque index for resolve(). Built once, reused for every lookup (O(1) exact, O(#same-last-name) fuzzy)."""
+    n2d={}; by_last=collections.defaultdict(list); pos_of={}
+    for disp,pos in pairs:
+        nk=fn(disp)
+        if not nk: continue
+        n2d.setdefault(nk,disp)
+        p=nk.split(); by_last[(len(p),p[-1])].append((nk,disp))
+        if pos is not None: pos_of.setdefault(disp,pos)
+    return {'n2d':n2d,'by_last':by_last,'pos':pos_of}
+def resolve(name,pos,index):
+    """Board name -> the matching display name in `index`, or None (no unsafe guess). Safe by design:
+    exact fn() match, else same-last-name + same-token-count + first-compatible (+ same pos) + unique."""
+    k=fn(name)
+    if not k: return None
+    if k in index['n2d']: return index['n2d'][k]
+    p=k.split()
+    cands=index['by_last'].get((len(p),p[-1]),[])
+    compat=[disp for nk,disp in cands if first_compatible(p[0],nk.split()[0])]
+    if pos is not None: compat=[d for d in compat if index['pos'].get(d)==pos]
+    return compat[0] if len(compat)==1 else None
+
 def build_usage_index():
     """2025 PBP aggregates per pid + a (surname,initial) index + usage shares. Built ONCE, reused by all."""
     g=pd.read_parquet(PP('player_games.parquet')); g25=g[g.season==2025].copy()
@@ -56,7 +102,10 @@ def build_usage_index():
     ag['ipos']=ag.apply(ipos,axis=1)
     IDX=collections.defaultdict(list)
     for _,r in ag.iterrows():
-        nm=str(r['name']).replace('.',' ').replace("'",' ').lower().split()
+        # normalize the index key EXACTLY as fn()/match_usage does -- incl. hyphen->space -- so
+        # hyphenated surnames (Smith-Njigba, Valdes-Scantling, ...) key on the true last token and
+        # actually match the board side instead of silently missing the usage join.
+        nm=str(r['name']).replace('.',' ').replace("'",' ').replace('-',' ').lower().split()
         if len(nm)>=2: IDX[(nm[-1],nm[0][0])].append(r)
     us=pd.read_parquet(PP('usage_shares.parquet')); us=us[us.season==2025]
     SH={m:{p:(mn,cv) for p,mn,cv in zip(s.pid,s['mean'],s['cv'])} for m,s in [(m,us[us.metric==m]) for m in ('tgt_share','carry_share')]}
