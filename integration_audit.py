@@ -336,6 +336,25 @@ def split_source(src):
     return [(b, sorted(find[b]), sorted(rel[b])) for b in sorted(set(find) & set(rel))]
 
 
+# ---- deliverables that must be pipeline-fresh (built AFTER flag_ranks in the DOSSIER chain) ----
+CORE_DELIVERABLES = ['rankings.html', 'dossier.html', 'dossier_deep.html', 'lever_board.html',
+                     'adp_cluster_board.html', 'big_board_2026.html']
+def stale_deliverables():
+    """A core rendered deliverable OLDER than the model tip (flag_ranks.json) shipped stale under a
+    fresher model -- the adp_cluster_board bug (board built off yesterday's ranks). HTML-only builders
+    are invisible to the off-pipeline check (terminal output), so this catches the class by freshness."""
+    tip = os.path.join(HERE, 'flag_ranks.json')
+    if not os.path.exists(tip):
+        return []
+    t = os.path.getmtime(tip)
+    out = []
+    for d in CORE_DELIVERABLES:
+        p = os.path.join(HERE, d)
+        if os.path.exists(p) and os.path.getmtime(p) < t - 5:   # 5s grace
+            out.append((d, int(t - os.path.getmtime(p))))
+    return out
+
+
 def main():
     strict = '--strict' in sys.argv
     src = builders()
@@ -368,16 +387,18 @@ def main():
     inv = check_invariants(src, graph)
     fb = fallbacks()
     ss = split_source(src)
+    sd = stale_deliverables()
 
     # ---- write report ----
     L = []
     L.append('# INTEGRATION AUDIT\n')
     L.append('_Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._\n')
     L.append('_Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._\n')
-    p0 = len(inv) + len(ss)
+    p0 = len(inv) + len(ss) + len(sd)
     L.append('## Summary\n')
     L.append(f'- **{len(inv)} invariant violations** (P0 -- a layer is being under-used)')
     L.append(f'- **{len(ss)} split-source files** (P0 -- one logical file read from two drifting copies)')
+    L.append(f'- **{len(sd)} stale deliverables** (P0 -- a rendered board older than the model tip it renders)')
     L.append(f'- **{len(orphans)} orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)')
     L.append(f'- **{len(missing_from_pipeline)} builders** produce artifacts but are absent from the pipeline runner')
     L.append(f'- **{sum(len(r["unused"]) for r in fld)} unused fields** across {len(fld)} record-structured layers (auto-discovered, repo-wide)')
@@ -444,6 +465,14 @@ def main():
         L.append('_None — every near-repo data file is read through a single access convention._')
     L.append('')
 
+    L.append('## F. Stale deliverables (P0 — a board older than the model it renders)\n')
+    if sd:
+        for d, age in sd:
+            L.append(f'- `{d}` is {age}s older than `flag_ranks.json` — rebuild it (add its builder to run_all).')
+    else:
+        L.append('_None — every core board is at least as fresh as the model tip._')
+    L.append('')
+
     open(os.path.join(HERE, 'INTEGRATION_AUDIT.md'), 'w', encoding='utf-8').write('\n'.join(L))
 
     # ---- console summary ----
@@ -461,6 +490,7 @@ def main():
         print(f'     - {a}: {d} under-use vs peers')
     print(f'  fallback counters firing: {len(fb)}')
     print(f'  split-source files       : {len(ss)}' + (f'  {[b for b, _, _ in ss]}' if ss else ''))
+    print(f'  stale deliverables       : {len(sd)}' + (f'  {[d for d, _ in sd]}' if sd else ''))
     if strict and p0:
         print(f'\nSTRICT: {p0} P0 finding(s) -> exit 1')
         sys.exit(1)

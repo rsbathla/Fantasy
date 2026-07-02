@@ -618,7 +618,7 @@
 },
 {
 "f": "Elite matchup exploitation",
-"d": "matchup_pctl 88 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
+"d": "matchup_pctl 91 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
 }
 ],
 "amps": [
@@ -850,6 +850,10 @@
 "d": "2024 press_pct 35.5%, TTT 2.60s (FP charting) -- faces above-avg pressure but quick release partially neutralizes; still benefits from clean pocket"
 },
 {
+"f": "Above-average matchup exploitation",
+"d": "matchup_pctl 55 -- solid history of lifting performance in favorable defensive matchups"
+},
+{
 "f": "SIS above-average efficiency",
 "d": "sis_value_pctl 70 -- above-average SIS score; lifts ceiling in zone-heavy / soft-coverage weeks"
 }
@@ -861,6 +865,7 @@
 "suppressed by: heavy pass-rush (sackp>=70) -> sacks, throwaways, INTs",
 "clean pocket (sackp<=35) = modest ceiling lift",
 "heavy rush (sackp>=72) still suppresses via disruption",
+"soft QB tier, pass-funnel matchup",
 "zone coverage (manp<=40), soft pass tier"
 ],
 "killers": [
@@ -1367,7 +1372,7 @@
 },
 {
 "f": "Elite matchup exploitation",
-"d": "matchup_pctl 91 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
+"d": "matchup_pctl 88 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
 }
 ],
 "amps": [
@@ -1807,7 +1812,7 @@
 },
 {
 "f": "Above-average matchup exploitation",
-"d": "matchup_pctl 60 -- solid history of lifting performance in favorable defensive matchups"
+"d": "matchup_pctl 58 -- solid history of lifting performance in favorable defensive matchups"
 }
 ],
 "amps": [
@@ -2018,10 +2023,6 @@
 "d": "2024 press_pct 33.2%, TTT 2.69s (FP charting) -- faces above-avg pressure but quick release partially neutralizes; still benefits from clean pocket"
 },
 {
-"f": "Above-average matchup exploitation",
-"d": "matchup_pctl 56 -- solid history of lifting performance in favorable defensive matchups"
-},
-{
 "f": "SIS above-average efficiency",
 "d": "sis_value_pctl 81 -- above-average SIS score; lifts ceiling in zone-heavy / soft-coverage weeks"
 },
@@ -2038,7 +2039,6 @@
 "QB neutralizes it with fast reads",
 "clean pocket (sackp<=35) = modest ceiling lift",
 "heavy rush (sackp>=72) still suppresses via disruption",
-"soft QB tier, pass-funnel matchup",
 "zone coverage (manp<=40), soft pass tier",
 "opp covp<=35 (shootout setup), fast-paced opponent game, underdog script"
 ],
@@ -2111,7 +2111,7 @@
 },
 {
 "f": "Elite matchup exploitation",
-"d": "matchup_pctl 81 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
+"d": "matchup_pctl 78 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
 }
 ],
 "amps": [
@@ -2373,7 +2373,7 @@
 },
 {
 "f": "Above-average matchup exploitation",
-"d": "matchup_pctl 58 -- solid history of lifting performance in favorable defensive matchups"
+"d": "matchup_pctl 60 -- solid history of lifting performance in favorable defensive matchups"
 },
 {
 "f": "Advanced composite upside",
@@ -2810,7 +2810,7 @@
 },
 {
 "f": "Elite matchup exploitation",
-"d": "matchup_pctl 79 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
+"d": "matchup_pctl 80 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
 }
 ],
 "amps": [
@@ -2841,7 +2841,7 @@
 },
 {
 "f": "Elite matchup exploitation",
-"d": "matchup_pctl 79 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
+"d": "matchup_pctl 80 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
 },
 {
 "f": "Advanced composite upside",
@@ -3036,7 +3036,7 @@
 },
 {
 "f": "Elite matchup exploitation",
-"d": "matchup_pctl 88 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
+"d": "matchup_pctl 91 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
 }
 ],
 "amps": [
@@ -3428,7 +3428,7 @@
 },
 {
 "f": "Elite matchup exploitation",
-"d": "matchup_pctl 91 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
+"d": "matchup_pctl 88 -- consistently outperforms vs favorable matchups; boom frequency spikes on soft schedules"
 },
 {
 "f": "Elite boom-game frequency (boom_pctl)",
@@ -3485,8 +3485,8 @@
 "d": "adv_pctl 15, boom_pctl 50 -- advanced metrics signal ceiling potential; dk_pg 0.0"
 },
 {
-"f": "Matchup context (matchup_pctl 37)",
-"d": "matchup_pctl 37 -- limited data but fusion matchup metric available as soft signal"
+"f": "Matchup context (matchup_pctl 40)",
+"d": "matchup_pctl 40 -- limited data but fusion matchup metric available as soft signal"
 }
 ],
 "amps": [
@@ -3555,8 +3555,8 @@
 "d": "adv_pctl 15, boom_pctl 50 -- advanced metrics signal ceiling potential; dk_pg 0.0"
 },
 {
-"f": "Matchup context (matchup_pctl 37)",
-"d": "matchup_pctl 37 -- limited data but fusion matchup metric available as soft signal"
+"f": "Matchup context (matchup_pctl 40)",
+"d": "matchup_pctl 40 -- limited data but fusion matchup metric available as soft signal"
 }
 ],
 "amps": [
@@ -3977,13 +3977,18 @@
 {
 "f": "Above-avg pressure rate, quick-release mitigated",
 "d": "2024 press_pct 37.7%, TTT 2.46s (FP charting) -- faces above-avg pressure but quick release partially neutralizes; still benefits from clean pocket"
+},
+{
+"f": "Above-average matchup exploitation",
+"d": "matchup_pctl 55 -- solid history of lifting performance in favorable defensive matchups"
 }
 ],
 "amps": [
 "soft run-box (runp<=45), man coverage (scramble lanes open), red-zone carry opportunities, negative game script",
 "suppressed by: heavy pass-rush (sackp>=70) -> sacks, throwaways, INTs",
 "clean pocket (sackp<=35) = modest ceiling lift",
-"heavy rush (sackp>=72) still suppresses via disruption"
+"heavy rush (sackp>=72) still suppresses via disruption",
+"soft QB tier, pass-funnel matchup"
 ],
 "killers": [
 "heavy rush suppressor",
@@ -6753,7 +6758,7 @@
 },
 {
 "f": "Advanced composite value leader",
-"d": "adv_pctl 79th, value_pctl 78th, matchup_pctl 55th -- elite across multiple advanced metrics"
+"d": "adv_pctl 79th, value_pctl 78th, matchup_pctl 51th -- elite across multiple advanced metrics"
 },
 {
 "f": "High scoring floor / DK ceiling enabler",
@@ -6959,7 +6964,7 @@
 },
 {
 "f": "Advanced composite value leader",
-"d": "adv_pctl 74th, value_pctl 75th, matchup_pctl 52th -- elite across multiple advanced metrics"
+"d": "adv_pctl 74th, value_pctl 75th, matchup_pctl 54th -- elite across multiple advanced metrics"
 },
 {
 "f": "High-scoring offense (ENV signal)",
@@ -7218,7 +7223,7 @@
 },
 {
 "f": "Advanced composite value leader",
-"d": "adv_pctl 75th, value_pctl 73th, matchup_pctl 55th -- elite across multiple advanced metrics"
+"d": "adv_pctl 75th, value_pctl 73th, matchup_pctl 51th -- elite across multiple advanced metrics"
 },
 {
 "f": "Boom-week concentration",
@@ -14424,7 +14429,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 82th -- finds favorable coverage"
+"d": "matchup_pctl 78th -- finds favorable coverage"
 }
 ],
 "amps": [
@@ -14770,7 +14775,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 64th -- finds favorable coverage"
+"d": "matchup_pctl 60th -- finds favorable coverage"
 }
 ],
 "amps": [
@@ -15488,7 +15493,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 88th -- finds favorable coverage"
+"d": "matchup_pctl 93th -- finds favorable coverage"
 },
 {
 "f": "High usage value",
@@ -16538,7 +16543,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 78th -- finds favorable coverage"
+"d": "matchup_pctl 82th -- finds favorable coverage"
 },
 {
 "f": "High usage value",
@@ -17348,7 +17353,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 78th -- finds favorable coverage"
+"d": "matchup_pctl 82th -- finds favorable coverage"
 },
 {
 "f": "High usage value",
@@ -18631,7 +18636,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 92th -- finds favorable coverage"
+"d": "matchup_pctl 89th -- finds favorable coverage"
 },
 {
 "f": "Ceiling variance",
@@ -19110,7 +19115,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 61th -- finds favorable coverage"
+"d": "matchup_pctl 63th -- finds favorable coverage"
 },
 {
 "f": "Ceiling variance",
@@ -19151,7 +19156,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 92th -- finds favorable coverage"
+"d": "matchup_pctl 89th -- finds favorable coverage"
 }
 ],
 "amps": [
@@ -19477,7 +19482,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 88th -- finds favorable coverage"
+"d": "matchup_pctl 93th -- finds favorable coverage"
 },
 {
 "f": "Ceiling variance",
@@ -19635,7 +19640,7 @@
 },
 {
 "f": "Matchup hunter",
-"d": "matchup_pctl 64th -- finds favorable coverage"
+"d": "matchup_pctl 60th -- finds favorable coverage"
 },
 {
 "f": "Ceiling variance",

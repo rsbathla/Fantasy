@@ -6,13 +6,18 @@ backward-looking historical boom rate (which is stale for anyone who changed tea
 Walker III -> KC -- and barely persists year-to-year anyway). It is still a BOUNDED nudge on top of
 market ADP (the "ADP-anchored" choice), and still a SEPARATE layer from the fusion consensus.
 
-Per player, within his own position, three forward/portable components:
+Per player, within his own position, three forward/portable components (+ one RB-only term):
   1. 2026 projected CEILING (p95)  -- the upside best ball pays for. Forward. From the engine board,
        which recovers first-name variants via canon() (so movers like "Ken Walker III" join). Falls
        back to the 2026 mean projection where a p95 isn't modeled, so coverage is complete.
   2. Skill-flag breadth            -- portable TRAITS (route/sep/YAC/man-zone), which carry across
        teams, from the charting flag files. This is the flag work, minus the backward boom rate.
+       KEPT as a COUNT: the 2025 point-in-time backtest (backtest_composite_2025.py) found the
+       count is the stronger market-orthogonal predictor (WR partial rho +0.21, perm p=.013,
+       LOO-stable) vs a graded coverage-YPRR + NFL-Pro-EPA skill blend (-0.05, ns).
   3. 2026 playoff-week matchup     -- mean weeks-15/16/17 matchup grade (fantasy playoffs). Forward.
+  4. OPPORTUNITY (RB only)         -- prior-season (2025) carry+target share. The one candidate that
+       cleanly beat the market out-of-sample in the 2025 point-in-time backtest (see W_OPP note).
 Each -> within-position percentile -> centered to [-1,1]. Weighted blend (reweighted over whatever
 is present) = flag_score in ~[-1,1]. nudge = -CAP*flag_score (strong -> earlier). CAP caps the move.
 """
@@ -41,7 +46,22 @@ W_CEIL, W_TRAIT, W_MATCH = 0.30, 0.35, 0.35
 # do-or-die playoff weeks tilted heavier per-week. (wk18 is unused in Best Ball Mania.)
 REGULAR_WEEKS = set(range(1, 15))   # 1-14: accumulate to advance
 PLAYOFF_WEEKS = {15, 16, 17}        # 15-17: elimination weeks to win
-PLAYOFF_TILT = 1.5                  # each playoff week counts 1.5x a regular-season week in the season matchup
+PLAYOFF_TILT = 1.5                  # ('flat' mode) each playoff week counts 1.5x a regular-season week
+# Season-matchup WEEK WEIGHTS (proposal 2026-07-02): value the schedule the way BBMania PAYS OUT.
+# Playoffs (W15-17) = 60% of the matchup term vs regular season (W1-14) = 40%; and within the 60 the
+# CHAMPIONSHIP week 17 takes 30 (half), W15/W16 15 each. Rationale: the tournament is won in the W17
+# final, so a strong W17 matchup is worth ~10x a single regular-season week. TRADE-OFF: concentrates
+# the term on one far-out, single-opponent week -> noisier than the flat tilt, and leans harder on
+# W17 opponent-defense projections that can drift by December. REVERT = MATCHUP_WEEK_MODE = 'flat'.
+MATCHUP_WEEK_MODE = 'bbmania'                       # 'bbmania' = 40/60 with W17 heavy | 'flat' = PLAYOFF_TILT
+REG_TOTAL = 40.0                                    # total weight spread across weeks 1-14 (2.86 each)
+PLAYOFF_WEEK_W = {15: 15.0, 16: 15.0, 17: 30.0}     # sums to 60 (W17 = half the playoff weight)
+def _wk_weight(wk):
+    if MATCHUP_WEEK_MODE == 'flat':
+        return PLAYOFF_TILT if wk in PLAYOFF_WEEKS else (1.0 if wk in REGULAR_WEEKS else 0.0)
+    if wk in PLAYOFF_WEEK_W:
+        return PLAYOFF_WEEK_W[wk]
+    return REG_TOTAL / 14.0 if wk in REGULAR_WEEKS else 0.0
 # --- SCHEME-FIT lever (added 2026-07-02): coverage-specialist skill x 2026 opponent coverage ---
 # boom/scheme_fit.json 'season' (build_scheme_fit.py: differential coverage skill x how far the 2026
 # slate tilts toward it, playoff-tilted like smq) nudges the season-matchup PERCENTILE before it
@@ -51,6 +71,21 @@ PLAYOFF_TILT = 1.5                  # each playoff week counts 1.5x a regular-se
 # alongside for transparency). Revert = set SF_SCALE to 0.
 SF_PCTL_CAP = 12.0
 SF_SCALE = 300.0
+# --- OPPORTUNITY term (added 2026-07-02, backtest-derived; see backtest_composite_2025.py) ---
+# Point-in-time 2025 test (2024-only predictors + 2025 preseason FP ADP vs realized 2025 spike
+# counts / boom rate): RB prior-season volume share (carry+tgt share) was the ONLY candidate to
+# clear the market-orthogonal OUT-OF-SAMPLE bar: OOS delta rho +0.030 with 77% of 200 split-halves
+# positive; ADP-partialed rho 0.29 (perm p=.016; boom-rate outcome 0.24, p=.076). FRAGILE at n=50:
+# leave-one-out (Brian Robinson) drops it to 0.19 (p=.10) and the bootstrap 90% CI [-0.04,0.53]
+# crosses 0 -> weighted 0.20, NOT the in-sample optimum (~0.4), and the CAP still bounds the move.
+# WR/TE opportunity showed no earn (partial .075/.11, ns); QB pressure slate, RZ equity, and the
+# graded cov/EPA skill blend all failed the same bar -> those stay dossier-only. The same backtest
+# DEMOTED the RB trait count (2024-only proxy partial -0.22) -> W_TRAIT_POS shifts RB weight from
+# traits to opportunity. Source: features.json carry_share/tgt_share (2025 season = prior year,
+# the exact tested form; rookies lack it and reweight over the other terms, so no rookie penalty).
+# REVERT = set W_OPP = {} and W_TRAIT_POS = {} (restores the pure 3-term 0.30/0.35/0.35 blend).
+W_OPP = {'RB': 0.20}                # per-position opportunity weight; positions absent get 0
+W_TRAIT_POS = {'RB': 0.15}          # per-position trait override; positions absent keep W_TRAIT
 
 
 def forward_signals():
@@ -76,13 +111,16 @@ def flag_traits():
             continue
         for k, r in json.load(open(path, encoding='utf-8')).items():
             wks = r.get('weeks') or []
-            reg = [w.get('p') for w in wks if isinstance(w, dict) and w.get('wk') in REGULAR_WEEKS and w.get('p') is not None]
-            pl  = [w.get('p') for w in wks if isinstance(w, dict) and w.get('wk') in PLAYOFF_WEEKS and w.get('p') is not None]
+            wkp = [(w.get('wk'), w.get('p')) for w in wks
+                   if isinstance(w, dict) and w.get('p') is not None and w.get('wk') is not None]
+            reg = [p for wk, p in wkp if wk in REGULAR_WEEKS]
+            pl  = [p for wk, p in wkp if wk in PLAYOFF_WEEKS]
             rmq = statistics.mean(reg) if reg else None            # weeks 1-14 (advance)
             pmq = statistics.mean(pl) if pl else None              # weeks 15-17 (win)
-            # season matchup = whole-schedule mean, playoff weeks tilted heavier per-week
-            _num = sum(reg) + PLAYOFF_TILT * sum(pl)
-            _den = len(reg) + PLAYOFF_TILT * len(pl)
+            # season matchup = per-week WEIGHTED mean over available weeks (see MATCHUP_WEEK_MODE:
+            # bbmania -> playoffs 60% / reg 40%, W17 = 30; flat -> the old 1.5x playoff tilt)
+            _num = sum(p * _wk_weight(wk) for wk, p in wkp)
+            _den = sum(_wk_weight(wk) for wk, p in wkp)
             smq = (_num / _den) if _den else (pmq if pmq is not None else rmq)
             out[core.fn(r.get('name', k))] = {
                 'n_flags': len(r.get('skill_flags') or []),
@@ -108,18 +146,40 @@ def scheme_fit():
             (json.load(open(path, encoding='utf-8')).get('players') or {}).items()}
 
 
+def opportunity_shares():
+    """key -> {car_sh, tgt_sh} prior-season (2025) volume shares from features.json — the exact
+    form validated by backtest_composite_2025.py. {} when the artifact is absent (term abstains)."""
+    path = os.path.join(HERE, 'features.json')
+    if not os.path.exists(path):
+        return {}
+    def _num(v):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return None
+    out = {}
+    for p in json.load(open(path, encoding='utf-8')).get('players') or []:
+        cs, ts = _num(p.get('carry_share')), _num(p.get('tgt_share'))
+        if cs is not None or ts is not None:
+            out[core.fn(p['name'])] = {'car_sh': cs, 'tgt_sh': ts}
+    return out
+
+
 def build():
     fwd = forward_signals()
     tr = flag_traits()
     sf = scheme_fit()
+    opp = opportunity_shares()
     players = []
     for key, t in tr.items():
         f = fwd.get(key)
         if not f:
             continue                     # not draftable / no forward line -> not on the board
+        o = opp.get(key) or {}
         players.append({'key': key, 'name': f['name'], 'pos': f['pos'], 'team': f['team'],
                         'adp': f['adp'], 'ceil': f['ceil'], 'proj': f['proj'],
                         'n_flags': t['n_flags'], 'rmq': t['rmq'], 'pmq': t['pmq'], 'smq': t['smq'],
+                        'car_sh': o.get('car_sh'), 'tgt_sh': o.get('tgt_sh'),
                         'top_flags': t['top_flags']})
 
     by_pos = {}
@@ -132,6 +192,10 @@ def build():
         smqs = [p['smq'] for p in grp]
         rmqs = [p['rmq'] for p in grp]
         pmqs = [p['pmq'] for p in grp]
+        cars = [p['car_sh'] for p in grp]
+        tgts = [p['tgt_sh'] for p in grp]
+        w_opp = W_OPP.get(pos, 0.0)
+        w_trait = W_TRAIT_POS.get(pos, W_TRAIT)
         for p in grp:
             # forward UPSIDE percentile: p95 ceiling where modeled, else the mean-projection percentile
             up = _pctl(ceils, p['ceil']) if p['ceil'] is not None else _pctl(projs, p['proj'])
@@ -141,13 +205,20 @@ def build():
             sfv = sf.get(p['key'])
             sf_adj = max(-SF_PCTL_CAP, min(SF_PCTL_CAP, sfv * SF_SCALE)) if sfv is not None else 0.0
             mp_eff = max(0.0, min(100.0, mp + sf_adj)) if mp is not None else None
+            # opportunity percentile (backtest form: mean of within-pos carry-share + tgt-share pctls)
+            op = None
+            if w_opp > 0:
+                op_parts = [x for x in (_pctl(cars, p['car_sh']), _pctl(tgts, p['tgt_sh'])) if x is not None]
+                op = sum(op_parts) / len(op_parts) if op_parts else None
             comps = []
             if up is not None:
                 comps.append((W_CEIL, (up - 50) / 50.0))
             if tp is not None:
-                comps.append((W_TRAIT, (tp - 50) / 50.0))
+                comps.append((w_trait, (tp - 50) / 50.0))
             if mp_eff is not None:
                 comps.append((W_MATCH, (mp_eff - 50) / 50.0))
+            if op is not None and w_opp > 0:
+                comps.append((w_opp, (op - 50) / 50.0))
             wsum = sum(w for w, _ in comps) or 1.0
             score = sum(w * c for w, c in comps) / wsum      # reweighted over present components
             # keep reg-season + playoff percentiles alongside the season matchup for transparency
@@ -156,6 +227,7 @@ def build():
             p['scheme_fit'] = sfv
             p['sf_adj'] = round(sf_adj, 1)
             p['smq_pctl_adj'] = round(mp_eff, 1) if mp_eff is not None else None
+            p['opp_pctl'] = round(op, 1) if op is not None else None
             p['flag_score'] = round(score, 3)
             p['nudge'] = round(-CAP * score, 2)
 
@@ -174,11 +246,19 @@ def build():
     out = {p['key']: {k: p[k] for k in (
         'name', 'pos', 'team', 'adp', 'ceil', 'n_flags', 'rmq', 'pmq', 'smq',
         'ceil_pctl', 'trait_pctl', 'smq_pctl', 'rmq_pctl', 'pmq_pctl',
-        'scheme_fit', 'sf_adj', 'smq_pctl_adj', 'flag_score', 'nudge',
+        'scheme_fit', 'sf_adj', 'smq_pctl_adj', 'car_sh', 'tgt_sh', 'opp_pctl',
+        'flag_score', 'nudge',
         'adj_order', 'mkt_rank', 'adj_rank', 'adj_pos_rank', 'delta', 'top_flags')}
         for p in players}
     meta = {'n_players': len(players), 'cap_spots': CAP,
             'weights': {'ceiling': W_CEIL, 'traits': W_TRAIT, 'season_mq': W_MATCH},
+            'weights_pos_overrides': {'traits': W_TRAIT_POS, 'opportunity': W_OPP},
+            'opportunity': {'weights': W_OPP,
+                            'note': 'RB-only prior-season (2025) carry+tgt share pctl '
+                                    '(features.json). Earned via backtest_composite_2025.py: only '
+                                    'candidate with positive OOS market-orthogonal lift (+0.030 '
+                                    'rho, 77% split-halves; partial 0.29 p=.016; FRAGILE n=50). '
+                                    'Revert = W_OPP {} + W_TRAIT_POS {}.'},
             'matchup': {'regular_weeks': '1-14 (advance: top-2 of 12)', 'playoff_weeks': '15-17 (win)',
                         'playoff_tilt': PLAYOFF_TILT,
                         'note': 'matchup component = full-season schedule mean with playoff weeks tilted %.1fx; '
@@ -193,7 +273,9 @@ def build():
     core.safe_json_dump({'_meta': meta, 'players': out}, os.path.join(HERE, 'flag_ranks.json'), indent=1)
 
     print(f"flag_ranks.json: {len(players)} players | FORWARD (ceil {int(W_CEIL*100)}/traits "
-          f"{int(W_TRAIT*100)}/season-mq {int(W_MATCH*100)}, playoff-tilt {PLAYOFF_TILT}) | CAP +/-{CAP:.0f}")
+          f"{int(W_TRAIT*100)}/season-mq {int(W_MATCH*100)}, playoff-tilt {PLAYOFF_TILT}) | CAP +/-{CAP:.0f}"
+          + (f" | RB 4-term: traits {int(W_TRAIT_POS.get('RB', W_TRAIT)*100)} + opp {int(W_OPP.get('RB',0)*100)}"
+             if W_OPP else ""))
     print("\nBIGGEST RISERS (2026 upside says earlier than market):")
     for p in sorted(players, key=lambda z: -z['delta'])[:10]:
         print(f"  +{p['delta']:>2}  {p['name']:<22} {p['pos']} mkt#{p['mkt_rank']:>3} -> #{p['adj_rank']:<3} "

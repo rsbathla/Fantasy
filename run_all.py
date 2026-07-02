@@ -39,6 +39,8 @@ DOSSIER=[(["build_coverage_spec.py"],["boom/coverage_route_spec.json"]),   # FP 
  (["build_flags_layer.py"],["flags_2026.json","flag_rank_delta.csv"]),
  (["build_lever_board.py"],["lever_board.html"]),
  (["build_rankings.py"],["rankings.html","rankings_2026.csv"]),
+ (["build_adp_clusters.py"],["adp_cluster_board.html"]),   # "best pick per ADP cluster" board (reads flag_ranks) -- was off-pipeline + going stale
+ (["build_big_board.py"],["big_board_2026.html"]),         # 2026 big board view of adj_rank -- was off-pipeline + going stale
  (["render_dossier.py"],["dossier.html"]),
  (["build_dossier_deep.py"],["dossier_deep.html"]),   # analyst-narrative + media + EPA deep-dive (was orphaned -> now kept fresh)
  (["build_offense_profile.py"],["offense_profile.json"]),  # offense scheme-identity layer -> build_home.py (home.html landing; build_home itself is run manually, so keep its input fresh here)

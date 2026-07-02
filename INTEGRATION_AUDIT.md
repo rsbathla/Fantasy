@@ -8,10 +8,11 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 
 - **0 invariant violations** (P0 -- a layer is being under-used)
 - **0 split-source files** (P0 -- one logical file read from two drifting copies)
+- **0 stale deliverables** (P0 -- a rendered board older than the model tip it renders)
 - **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **2 builders** produce artifacts but are absent from the pipeline runner
-- **462 unused fields** across 70 record-structured layers (auto-discovered, repo-wide)
-- **26 divergent consumers** (a consumer under-using a layer its peers read fully)
+- **459 unused fields** across 70 record-structured layers (auto-discovered, repo-wide)
+- **27 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
 ## A. Invariant violations (P0)
@@ -27,11 +28,12 @@ _None._
 
 **Unused by ALL consumers:** `aDOT`, `ay_share`, `int_pg`, `patt_pg`, `ptd_pg`, `rec_pg`, `recyd_pg`, `rush_pg`, `rushtd_g`, `rushyd_pg`, `td_pg`, `ypa`, `yptouch`
 
-### `boom/base2yr.json`  (10 fields, 9 consumers)
+### `boom/base2yr.json`  (10 fields, 10 consumers)
 | consumer | # fields read |
 |---|---|
 | analyze_rookie_manzone.py | 3 |
 | analyze_rookie_situations.py | 2 |
+| backtest_composite_2025.py | 2 |
 | backtest_rookie.py | 3 |
 | build_manzone_tags.py | 2 |
 | build_player_explorer.py | 9 |
@@ -40,7 +42,7 @@ _None._
 | validate_signal_stability.py | 0 |
 | woptimize_rookie.py | 3 |
 
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `analyze_rookie_situations.py`, `build_manzone_tags.py`, `validate_signal_stability.py`
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `analyze_rookie_situations.py`, `backtest_composite_2025.py`, `build_manzone_tags.py`, `validate_signal_stability.py`
 
 ### `boom/boom_marks.json`  (19 fields, 7 consumers)
 | consumer | # fields read |
@@ -63,14 +65,15 @@ _None._
 
 **Unused by ALL consumers:** `N_startable`, `anchors_agree_within_8pct`, `boom_rate_startable`, `booms_per_17g`, `mean`, `mean_plus_1sd`, `n_obs`, `p85`, `sd`, `threshold`
 
-### `boom/chart2yr.json`  (29 fields, 3 consumers)
+### `boom/chart2yr.json`  (29 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
+| backtest_composite_2025.py | 17 |
 | build_dossier.py | 11 |
 | build_intel.py | 9 |
 | build_player_explorer.py | 7 |
 
-**Unused by ALL consumers:** `aDOT`, `ay_share`, `fp_rr`, `fr_pct`, `mtf_rec`, `threat`, `y2024`, `y2025`, `yaco_rec`
+**Unused by ALL consumers:** `fp_rr`, `threat`, `y2025`
 
 ### `boom/cover_spec.json`  (16 fields, 5 consumers)
 | consumer | # fields read |
@@ -85,9 +88,10 @@ _None._
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_player_explorer.py`
 
-### `boom/coverage_route_spec.json`  (13 fields, 1 consumers)
+### `boom/coverage_route_spec.json`  (13 fields, 2 consumers)
 | consumer | # fields read |
 |---|---|
+| backtest_composite_2025.py | 2 |
 | build_scheme_fit.py | 4 |
 
 **Unused by ALL consumers:** `cells`, `elite_pctl`, `min_peers`, `min_rte`, `min_rte_overall`, `min_rte_route`, `routes`, `scheme_groups`, `weak_pctl`
@@ -445,10 +449,12 @@ _None._
 | bb_grade.py | 18 |
 | build_decision_dashboard.py | 20 |
 
-### `features.json`  (1 fields, 13 consumers)
+### `features.json`  (1 fields, 15 consumers)
 | consumer | # fields read |
 |---|---|
+| backtest_composite_2025.py | 1 |
 | build_features.py | 1 |
+| build_flag_ranks.py | 1 |
 | build_intel.py | 1 |
 | correlate_upside.py | 1 |
 | dfs_scenarios.py | 1 |
@@ -462,7 +468,7 @@ _None._
 | reweight_defense_2026.py | 1 |
 | validate_signal_stability.py | 1 |
 
-### `flag_ranks.json`  (25 fields, 4 consumers)
+### `flag_ranks.json`  (28 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
 | audit_roster_moves.py | 4 |
@@ -470,7 +476,7 @@ _None._
 | build_big_board.py | 14 |
 | build_rankings.py | 7 |
 
-**Unused by ALL consumers:** `adj_order`, `nudge`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`
+**Unused by ALL consumers:** `adj_order`, `car_sh`, `nudge`, `opp_pctl`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`, `tgt_sh`
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `audit_roster_moves.py`
 
@@ -625,7 +631,6 @@ _Cleared by CURATED dynamic/subdir reads (needle re-verified this run; an entry 
 - `sis_value/cfb/cfb_rushing_value_2024.csv` ← `build_rookie_profiles.py`
 - `sis_value/cfb/cfb_rushing_value_2025.csv` ← `build_rookie_profiles.py`
 - `sis_value/pass_defense_2024.csv` ← `normalize_defense_2026.py`
-- `sis_value/pass_rush_2024.csv` ← `normalize_defense_2026.py`
 - `sis_value/run_defense_2024.csv` ← `normalize_defense_2026.py`
 
 ## Builders missing from the pipeline runner
@@ -642,3 +647,7 @@ _Cleared by CURATED dynamic/subdir reads (needle re-verified this run; an entry 
 ## E. Split-source files (P0 — one logical file, two drifting copies)
 
 _None — every near-repo data file is read through a single access convention._
+
+## F. Stale deliverables (P0 — a board older than the model it renders)
+
+_None — every core board is at least as fresh as the model tip._
