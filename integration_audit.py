@@ -338,7 +338,7 @@ def split_source(src):
 
 # ---- deliverables that must be pipeline-fresh (built AFTER flag_ranks in the DOSSIER chain) ----
 CORE_DELIVERABLES = ['rankings.html', 'dossier.html', 'dossier_deep.html', 'lever_board.html',
-                     'adp_cluster_board.html', 'big_board_2026.html']
+                     'adp_cluster_board.html', 'big_board_2026.html', 'draft_strategy_board.html']
 def stale_deliverables():
     """A core rendered deliverable OLDER than the model tip (flag_ranks.json) shipped stale under a
     fresher model -- the adp_cluster_board bug (board built off yesterday's ranks). HTML-only builders

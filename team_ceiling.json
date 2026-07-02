@@ -1,0 +1,1221 @@
+{
+  "_meta": {
+    "artifact": "team_ceiling.json",
+    "what": "Per-team probability-of-CEILING-SEASON score (offense dramatically overperforms projection) -- variance/upside read, NOT expected value.",
+    "for_season": 2026,
+    "n_teams": 32,
+    "score_scale": "0-100, relative probability-of-ceiling ordering (not a calibrated absolute probability).",
+    "tiers": {
+      "ELITE": "top 6",
+      "HIGH": "next 8",
+      "MID": "middle 12",
+      "LOW": "bottom 6"
+    },
+    "drivers": [
+      "env_quality (0.30)",
+      "win_total (0.22)",
+      "pace (0.16)",
+      "pass_rate (0.16)",
+      "qb_ascend (0.16)",
+      "scheme_upgrade (+0.14)",
+      "concentrated_tree (+0.12)",
+      "ol_improve (+0.06)",
+      "shootout_script (+0.08)"
+    ],
+    "sources": [
+      "offense_profile.json",
+      "boom/team_env.json",
+      "coordinator_scheme_2026.json",
+      "boom/defensive_profile.json"
+    ],
+    "validation": {
+      "status": "PARTIAL_CONVERGENT_ONLY",
+      "note": "Convergent-validity ONLY. Repo has 2024/2025 REALIZED team offensive FP (FP_ADVANCED) but NO preseason projection for any past season, so a true 'overperformed-its-projection' retrodiction is NOT possible. Reported Spearman is (structural environment proxy) vs (realized team offensive FP) -- it tests whether the design points at genuinely high-output offensive environments, NOT whether it predicts BEATING a projection.",
+      "caveats": [
+        "n=32 teams per season -> small sample; a few teams swing rho by ~0.05-0.10.",
+        "FP_ADVANCED = QUALIFIED players only; deep bench/committee FP is truncated, so team totals slightly favor concentrated offenses.",
+        "Multi-team (traded) player rows are DROPPED, so a few teams lose a partial contributor -> minor downward noise on those teams.",
+        "The QUANTITY being validated is EXPECTED output alignment, not the VARIANCE / overperformance thesis that the full ceiling score (with kickers) is built on. The overperformance thesis remains UNVALIDATED pending a historical preseason projection feed (2024/2025 Vegas win totals or team point projections).",
+        "CIRCULARITY: the struct proxy includes env_idx/off_q, which are 2026 preseason indices that partially encode 2024-2025 results -> struct-vs-2025 rho (~0.86) is inflated. The honest, non-circular floor is win-total-ALONE vs realized FP (~0.46 in 2024, ~0.61 in 2025): a positive, moderate relationship both years."
+      ],
+      "seasons": {
+        "2024": {
+          "available": true,
+          "n_teams": 32,
+          "spearman_struct_vs_realizedFP": 0.411,
+          "spearman_winTotalAlone_vs_realizedFP": 0.461,
+          "top8_realized_offenses": [
+            "DET (1850)",
+            "TB (1779)",
+            "CIN (1755)",
+            "BAL (1738)",
+            "WAS (1606)",
+            "BUF (1525)",
+            "GB (1521)",
+            "PHI (1504)"
+          ]
+        },
+        "2025": {
+          "available": true,
+          "n_teams": 32,
+          "spearman_struct_vs_realizedFP": 0.861,
+          "spearman_winTotalAlone_vs_realizedFP": 0.612,
+          "top8_realized_offenses": [
+            "LAR (1810)",
+            "DAL (1704)",
+            "DET (1700)",
+            "NE (1635)",
+            "BUF (1615)",
+            "SF (1581)",
+            "CHI (1529)",
+            "ARI (1515)"
+          ]
+        }
+      }
+    },
+    "standalone": "Foundation layer; NOT wired into rankings/pipeline."
+  },
+  "teams": {
+    "ARI": {
+      "ceiling_score": 73.7,
+      "raw": 0.7915,
+      "base_core": 0.5499,
+      "drivers": {
+        "env_quality": 0.2488,
+        "win_total": 0.0,
+        "pace": 0.0851,
+        "pass_rate": 0.16,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0933,
+        "concentrated_tree": 0.0661,
+        "ol_improve": 0.0108,
+        "shootout_script": 0.0713
+      },
+      "flags": [
+        "elite scoring environment",
+        "pass-heavy (58.9%)",
+        "new-OC scheme upgrade",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 76,
+        "off_q": 94,
+        "win_total": 4.5,
+        "pace_pctl": 58,
+        "plays_pg": 62.3,
+        "pass_rate": 58.9,
+        "vacated_tgt_pct": 103.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 10.9,
+        "playcaller": "Mike LaFleur (HC, new; Gannon fired)"
+      },
+      "rank": 8,
+      "tier": "HIGH"
+    },
+    "ATL": {
+      "ceiling_score": 28.0,
+      "raw": 0.4626,
+      "base_core": 0.3612,
+      "drivers": {
+        "env_quality": 0.0816,
+        "win_total": 0.0629,
+        "pace": 0.1019,
+        "pass_rate": 0.1148,
+        "qb_ascend": 0.0,
+        "scheme_upgrade": 0.0156,
+        "concentrated_tree": 0.0796,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0062
+      },
+      "flags": [
+        "up-tempo (63.0 plays/g)",
+        "pass-heavy (55.4%)",
+        "QB uncertainty (caps ceiling)",
+        "concentrated tree (vacated tgt 124.0%)"
+      ],
+      "inputs": {
+        "env_idx": 35,
+        "off_q": 23,
+        "win_total": 6.5,
+        "pace_pctl": 68,
+        "plays_pg": 63.0,
+        "pass_rate": 55.4,
+        "vacated_tgt_pct": 124.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 92.2,
+        "playcaller": "Tommy Rees (OC) / Stefanski"
+      },
+      "rank": 27,
+      "tier": "LOW"
+    },
+    "BAL": {
+      "ceiling_score": 67.7,
+      "raw": 0.7431,
+      "base_core": 0.4967,
+      "drivers": {
+        "env_quality": 0.2052,
+        "win_total": 0.22,
+        "pace": 0.0155,
+        "pass_rate": 0.0,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.14,
+        "concentrated_tree": 0.0468,
+        "ol_improve": 0.0408,
+        "shootout_script": 0.0187
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (11.5)",
+        "new-OC scheme upgrade",
+        "OL improvement"
+      ],
+      "inputs": {
+        "env_idx": 68,
+        "off_q": 71,
+        "win_total": 11.5,
+        "pace_pctl": 10,
+        "plays_pg": 59.8,
+        "pass_rate": 46.5,
+        "vacated_tgt_pct": 73.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 76.6,
+        "playcaller": "Declan Doyle (OC)"
+      },
+      "rank": 11,
+      "tier": "HIGH"
+    },
+    "BUF": {
+      "ceiling_score": 54.9,
+      "raw": 0.6526,
+      "base_core": 0.5917,
+      "drivers": {
+        "env_quality": 0.2216,
+        "win_total": 0.1886,
+        "pace": 0.0803,
+        "pass_rate": 0.0452,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0122,
+        "ol_improve": 0.015,
+        "shootout_script": 0.0338
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (10.5)"
+      ],
+      "inputs": {
+        "env_idx": 78,
+        "off_q": 68,
+        "win_total": 10.5,
+        "pace_pctl": 52,
+        "plays_pg": 62.3,
+        "pass_rate": 50.0,
+        "vacated_tgt_pct": 19.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 57.8,
+        "playcaller": "(continuity)"
+      },
+      "rank": 19,
+      "tier": "MID"
+    },
+    "CAR": {
+      "ceiling_score": 13.8,
+      "raw": 0.3142,
+      "base_core": 0.24,
+      "drivers": {
+        "env_quality": 0.0192,
+        "win_total": 0.0629,
+        "pace": 0.0,
+        "pass_rate": 0.1019,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0321,
+        "ol_improve": 0.0108,
+        "shootout_script": 0.0313
+      },
+      "flags": [
+        "pass-heavy (54.4%)"
+      ],
+      "inputs": {
+        "env_idx": 14,
+        "off_q": 6,
+        "win_total": 6.5,
+        "pace_pctl": 0,
+        "plays_pg": 59.2,
+        "pass_rate": 54.4,
+        "vacated_tgt_pct": 50.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 60.9,
+        "playcaller": "Brad Idzik (OC, new caller)"
+      },
+      "rank": 32,
+      "tier": "LOW"
+    },
+    "CHI": {
+      "ceiling_score": 77.5,
+      "raw": 0.8262,
+      "base_core": 0.633,
+      "drivers": {
+        "env_quality": 0.2164,
+        "win_total": 0.1571,
+        "pace": 0.1377,
+        "pass_rate": 0.0658,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.042,
+        "concentrated_tree": 0.1033,
+        "ol_improve": 0.0216,
+        "shootout_script": 0.0262
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (9.5)",
+        "up-tempo (64.2 plays/g)",
+        "concentrated tree (vacated tgt 161.0%)"
+      ],
+      "inputs": {
+        "env_idx": 70,
+        "off_q": 77,
+        "win_total": 9.5,
+        "pace_pctl": 94,
+        "plays_pg": 64.2,
+        "pass_rate": 51.6,
+        "vacated_tgt_pct": 161.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 67.2,
+        "playcaller": "(continuity)"
+      },
+      "rank": 6,
+      "tier": "ELITE"
+    },
+    "CIN": {
+      "ceiling_score": 84.1,
+      "raw": 0.8977,
+      "base_core": 0.7627,
+      "drivers": {
+        "env_quality": 0.2684,
+        "win_total": 0.1571,
+        "pace": 0.1056,
+        "pass_rate": 0.1484,
+        "qb_ascend": 0.0832,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0263,
+        "ol_improve": 0.03,
+        "shootout_script": 0.0787
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (9.5)",
+        "up-tempo (63.1 plays/g)",
+        "pass-heavy (58.0%)",
+        "OL improvement",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 90,
+        "off_q": 87,
+        "win_total": 9.5,
+        "pace_pctl": 71,
+        "plays_pg": 63.1,
+        "pass_rate": 58.0,
+        "vacated_tgt_pct": 41.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 1.6,
+        "playcaller": "(continuity)"
+      },
+      "rank": 2,
+      "tier": "ELITE"
+    },
+    "CLE": {
+      "ceiling_score": 46.2,
+      "raw": 0.5948,
+      "base_core": 0.2879,
+      "drivers": {
+        "env_quality": 0.0036,
+        "win_total": 0.0629,
+        "pace": 0.1234,
+        "pass_rate": 0.0981,
+        "qb_ascend": 0.0,
+        "scheme_upgrade": 0.1244,
+        "concentrated_tree": 0.0821,
+        "ol_improve": 0.0366,
+        "shootout_script": 0.0638
+      },
+      "flags": [
+        "up-tempo (63.5 plays/g)",
+        "QB uncertainty (caps ceiling)",
+        "new-OC scheme upgrade",
+        "concentrated tree (vacated tgt 128.0%)",
+        "OL improvement",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 8,
+        "off_q": 3,
+        "win_total": 6.5,
+        "pace_pctl": 87,
+        "plays_pg": 63.5,
+        "pass_rate": 54.1,
+        "vacated_tgt_pct": 128.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 20.3,
+        "playcaller": "Todd Monken (HC, new)"
+      },
+      "rank": 23,
+      "tier": "MID"
+    },
+    "DAL": {
+      "ceiling_score": 82.7,
+      "raw": 0.8811,
+      "base_core": 0.768,
+      "drivers": {
+        "env_quality": 0.28,
+        "win_total": 0.1571,
+        "pace": 0.16,
+        "pass_rate": 0.1148,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0218,
+        "ol_improve": 0.03,
+        "shootout_script": 0.0613
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (9.5)",
+        "up-tempo (65.6 plays/g)",
+        "pass-heavy (55.4%)",
+        "OL improvement",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 94,
+        "off_q": 90,
+        "win_total": 9.5,
+        "pace_pctl": 100,
+        "plays_pg": 65.6,
+        "pass_rate": 55.4,
+        "vacated_tgt_pct": 34.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 23.4,
+        "playcaller": "(continuity)"
+      },
+      "rank": 3,
+      "tier": "ELITE"
+    },
+    "DEN": {
+      "ceiling_score": 60.0,
+      "raw": 0.6875,
+      "base_core": 0.5929,
+      "drivers": {
+        "env_quality": 0.0924,
+        "win_total": 0.1571,
+        "pace": 0.1117,
+        "pass_rate": 0.1213,
+        "qb_ascend": 0.1104,
+        "scheme_upgrade": 0.0933,
+        "concentrated_tree": 0.0,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0013
+      },
+      "flags": [
+        "high win total (9.5)",
+        "up-tempo (63.4 plays/g)",
+        "pass-heavy (55.9%)",
+        "ascending/returning QB",
+        "new-OC scheme upgrade"
+      ],
+      "inputs": {
+        "env_idx": 35,
+        "off_q": 32,
+        "win_total": 9.5,
+        "pace_pctl": 74,
+        "plays_pg": 63.4,
+        "pass_rate": 55.9,
+        "vacated_tgt_pct": 0.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 98.4,
+        "playcaller": "Davis Webb (OC, new caller; Payton handed it off)"
+      },
+      "rank": 17,
+      "tier": "MID"
+    },
+    "DET": {
+      "ceiling_score": 84.5,
+      "raw": 0.9022,
+      "base_core": 0.7446,
+      "drivers": {
+        "env_quality": 0.272,
+        "win_total": 0.1886,
+        "pace": 0.1377,
+        "pass_rate": 0.0903,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0622,
+        "concentrated_tree": 0.0475,
+        "ol_improve": 0.0366,
+        "shootout_script": 0.0113
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (10.5)",
+        "up-tempo (64.2 plays/g)",
+        "OL improvement"
+      ],
+      "inputs": {
+        "env_idx": 84,
+        "off_q": 100,
+        "win_total": 10.5,
+        "pace_pctl": 94,
+        "plays_pg": 64.2,
+        "pass_rate": 53.5,
+        "vacated_tgt_pct": 74.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 85.9,
+        "playcaller": "Drew Petzing (OC, new; replaced Morton)"
+      },
+      "rank": 1,
+      "tier": "ELITE"
+    },
+    "GB": {
+      "ceiling_score": 63.4,
+      "raw": 0.7115,
+      "base_core": 0.5578,
+      "drivers": {
+        "env_quality": 0.1712,
+        "win_total": 0.1886,
+        "pace": 0.0296,
+        "pass_rate": 0.0852,
+        "qb_ascend": 0.0832,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.095,
+        "ol_improve": 0.015,
+        "shootout_script": 0.0438
+      },
+      "flags": [
+        "high win total (10.5)",
+        "concentrated tree (vacated tgt 148.0%)"
+      ],
+      "inputs": {
+        "env_idx": 57,
+        "off_q": 61,
+        "win_total": 10.5,
+        "pace_pctl": 23,
+        "plays_pg": 60.1,
+        "pass_rate": 53.1,
+        "vacated_tgt_pct": 148.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 45.3,
+        "playcaller": "(continuity)"
+      },
+      "rank": 15,
+      "tier": "MID"
+    },
+    "HOU": {
+      "ceiling_score": 46.9,
+      "raw": 0.5994,
+      "base_core": 0.4817,
+      "drivers": {
+        "env_quality": 0.0472,
+        "win_total": 0.1571,
+        "pace": 0.1117,
+        "pass_rate": 0.1097,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0424,
+        "ol_improve": 0.0516,
+        "shootout_script": 0.0238
+      },
+      "flags": [
+        "high win total (9.5)",
+        "up-tempo (63.4 plays/g)",
+        "pass-heavy (55.0%)",
+        "OL improvement"
+      ],
+      "inputs": {
+        "env_idx": 22,
+        "off_q": 16,
+        "win_total": 9.5,
+        "pace_pctl": 74,
+        "plays_pg": 63.4,
+        "pass_rate": 55.0,
+        "vacated_tgt_pct": 66.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 70.3,
+        "playcaller": "(continuity)"
+      },
+      "rank": 22,
+      "tier": "MID"
+    },
+    "IND": {
+      "ceiling_score": 32.4,
+      "raw": 0.4971,
+      "base_core": 0.3618,
+      "drivers": {
+        "env_quality": 0.134,
+        "win_total": 0.0943,
+        "pace": 0.0444,
+        "pass_rate": 0.089,
+        "qb_ascend": 0.0,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0841,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0513
+      },
+      "flags": [
+        "QB uncertainty (caps ceiling)",
+        "concentrated tree (vacated tgt 131.0%)",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 48,
+        "off_q": 45,
+        "win_total": 7.5,
+        "pace_pctl": 29,
+        "plays_pg": 60.9,
+        "pass_rate": 53.4,
+        "vacated_tgt_pct": 131.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 35.9,
+        "playcaller": "(continuity)"
+      },
+      "rank": 25,
+      "tier": "MID"
+    },
+    "JAX": {
+      "ceiling_score": 50.3,
+      "raw": 0.6222,
+      "base_core": 0.5288,
+      "drivers": {
+        "env_quality": 0.162,
+        "win_total": 0.1257,
+        "pace": 0.0612,
+        "pass_rate": 0.1239,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0847,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0087
+      },
+      "flags": [
+        "pass-heavy (56.1%)",
+        "concentrated tree (vacated tgt 132.0%)"
+      ],
+      "inputs": {
+        "env_idx": 56,
+        "off_q": 55,
+        "win_total": 8.5,
+        "pace_pctl": 39,
+        "plays_pg": 61.6,
+        "pass_rate": 56.1,
+        "vacated_tgt_pct": 132.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 89.1,
+        "playcaller": "(continuity)"
+      },
+      "rank": 21,
+      "tier": "MID"
+    },
+    "KC": {
+      "ceiling_score": 82.6,
+      "raw": 0.8792,
+      "base_core": 0.743,
+      "drivers": {
+        "env_quality": 0.208,
+        "win_total": 0.1886,
+        "pace": 0.1173,
+        "pass_rate": 0.1187,
+        "qb_ascend": 0.1104,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.095,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0413
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (10.5)",
+        "up-tempo (63.4 plays/g)",
+        "pass-heavy (55.7%)",
+        "ascending/returning QB",
+        "concentrated tree (vacated tgt 148.0%)"
+      ],
+      "inputs": {
+        "env_idx": 73,
+        "off_q": 65,
+        "win_total": 10.5,
+        "pace_pctl": 81,
+        "plays_pg": 63.4,
+        "pass_rate": 55.7,
+        "vacated_tgt_pct": 148.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 48.4,
+        "playcaller": "(continuity)"
+      },
+      "rank": 4,
+      "tier": "ELITE"
+    },
+    "LAC": {
+      "ceiling_score": 70.5,
+      "raw": 0.7649,
+      "base_core": 0.5662,
+      "drivers": {
+        "env_quality": 0.146,
+        "win_total": 0.1886,
+        "pace": 0.0827,
+        "pass_rate": 0.0929,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.1244,
+        "concentrated_tree": 0.0064,
+        "ol_improve": 0.0516,
+        "shootout_script": 0.0162
+      },
+      "flags": [
+        "high win total (10.5)",
+        "new-OC scheme upgrade",
+        "OL improvement"
+      ],
+      "inputs": {
+        "env_idx": 60,
+        "off_q": 35,
+        "win_total": 10.5,
+        "pace_pctl": 55,
+        "plays_pg": 62.3,
+        "pass_rate": 53.7,
+        "vacated_tgt_pct": 10.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 79.7,
+        "playcaller": "Mike McDaniel (OC, new)"
+      },
+      "rank": 9,
+      "tier": "HIGH"
+    },
+    "LAR": {
+      "ceiling_score": 76.6,
+      "raw": 0.8179,
+      "base_core": 0.7695,
+      "drivers": {
+        "env_quality": 0.2964,
+        "win_total": 0.22,
+        "pace": 0.0913,
+        "pass_rate": 0.1058,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0096,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0387
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (11.5)",
+        "pass-heavy (54.7%)"
+      ],
+      "inputs": {
+        "env_idx": 98,
+        "off_q": 97,
+        "win_total": 11.5,
+        "pace_pctl": 61,
+        "plays_pg": 62.6,
+        "pass_rate": 54.7,
+        "vacated_tgt_pct": 15.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 51.6,
+        "playcaller": "(continuity)"
+      },
+      "rank": 7,
+      "tier": "HIGH"
+    },
+    "LV": {
+      "ceiling_score": 30.7,
+      "raw": 0.4842,
+      "base_core": 0.2371,
+      "drivers": {
+        "env_quality": 0.016,
+        "win_total": 0.0314,
+        "pace": 0.0073,
+        "pass_rate": 0.12,
+        "qb_ascend": 0.0624,
+        "scheme_upgrade": 0.14,
+        "concentrated_tree": 0.0,
+        "ol_improve": 0.0408,
+        "shootout_script": 0.0662
+      },
+      "flags": [
+        "pass-heavy (55.8%)",
+        "new-OC scheme upgrade",
+        "OL improvement",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 10,
+        "off_q": 10,
+        "win_total": 5.5,
+        "pace_pctl": 6,
+        "plays_pg": 59.4,
+        "pass_rate": 55.8,
+        "vacated_tgt_pct": 0.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 17.2,
+        "playcaller": "Klint Kubiak (HC, new)"
+      },
+      "rank": 26,
+      "tier": "MID"
+    },
+    "MIA": {
+      "ceiling_score": 23.9,
+      "raw": 0.4273,
+      "base_core": 0.1622,
+      "drivers": {
+        "env_quality": 0.024,
+        "win_total": 0.0,
+        "pace": 0.0228,
+        "pass_rate": 0.0594,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0933,
+        "concentrated_tree": 0.1123,
+        "ol_improve": 0.0108,
+        "shootout_script": 0.0487
+      },
+      "flags": [
+        "new-OC scheme upgrade",
+        "concentrated tree (vacated tgt 175.0%)"
+      ],
+      "inputs": {
+        "env_idx": 20,
+        "off_q": 0,
+        "win_total": 4.5,
+        "pace_pctl": 16,
+        "plays_pg": 60.0,
+        "pass_rate": 51.1,
+        "vacated_tgt_pct": 175.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 39.1,
+        "playcaller": "Bobby Slowik (OC, new)"
+      },
+      "rank": 30,
+      "tier": "LOW"
+    },
+    "MIN": {
+      "ceiling_score": 24.4,
+      "raw": 0.4316,
+      "base_core": 0.3775,
+      "drivers": {
+        "env_quality": 0.1216,
+        "win_total": 0.1257,
+        "pace": 0.0024,
+        "pass_rate": 0.1277,
+        "qb_ascend": 0.0,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0404,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0138
+      },
+      "flags": [
+        "pass-heavy (56.4%)",
+        "QB uncertainty (caps ceiling)"
+      ],
+      "inputs": {
+        "env_idx": 40,
+        "off_q": 48,
+        "win_total": 8.5,
+        "pace_pctl": 3,
+        "plays_pg": 59.2,
+        "pass_rate": 56.4,
+        "vacated_tgt_pct": 63.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 82.8,
+        "playcaller": "(continuity)"
+      },
+      "rank": 29,
+      "tier": "LOW"
+    },
+    "NE": {
+      "ceiling_score": 70.0,
+      "raw": 0.7611,
+      "base_core": 0.7149,
+      "drivers": {
+        "env_quality": 0.2608,
+        "win_total": 0.1886,
+        "pace": 0.0518,
+        "pass_rate": 0.0761,
+        "qb_ascend": 0.1376,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0167,
+        "ol_improve": 0.0258,
+        "shootout_script": 0.0038
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (10.5)",
+        "ascending/returning QB",
+        "OL improvement"
+      ],
+      "inputs": {
+        "env_idx": 88,
+        "off_q": 84,
+        "win_total": 10.5,
+        "pace_pctl": 35,
+        "plays_pg": 61.1,
+        "pass_rate": 52.4,
+        "vacated_tgt_pct": 26.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 95.3,
+        "playcaller": "(continuity)"
+      },
+      "rank": 10,
+      "tier": "HIGH"
+    },
+    "NO": {
+      "ceiling_score": 45.8,
+      "raw": 0.5922,
+      "base_core": 0.4816,
+      "drivers": {
+        "env_quality": 0.1028,
+        "win_total": 0.0943,
+        "pace": 0.0735,
+        "pass_rate": 0.1006,
+        "qb_ascend": 0.1104,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.016,
+        "ol_improve": 0.0258,
+        "shootout_script": 0.0687
+      },
+      "flags": [
+        "pass-heavy (54.3%)",
+        "ascending/returning QB",
+        "OL improvement",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 36,
+        "off_q": 39,
+        "win_total": 7.5,
+        "pace_pctl": 45,
+        "plays_pg": 62.2,
+        "pass_rate": 54.3,
+        "vacated_tgt_pct": 25.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 14.1,
+        "playcaller": "(continuity)"
+      },
+      "rank": 24,
+      "tier": "MID"
+    },
+    "NYG": {
+      "ceiling_score": 63.5,
+      "raw": 0.7126,
+      "base_core": 0.4457,
+      "drivers": {
+        "env_quality": 0.0672,
+        "win_total": 0.0943,
+        "pace": 0.121,
+        "pass_rate": 0.0529,
+        "qb_ascend": 0.1104,
+        "scheme_upgrade": 0.0933,
+        "concentrated_tree": 0.1065,
+        "ol_improve": 0.0108,
+        "shootout_script": 0.0562
+      },
+      "flags": [
+        "up-tempo (63.5 plays/g)",
+        "ascending/returning QB",
+        "new-OC scheme upgrade",
+        "concentrated tree (vacated tgt 166.0%)",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 26,
+        "off_q": 26,
+        "win_total": 7.5,
+        "pace_pctl": 84,
+        "plays_pg": 63.5,
+        "pass_rate": 50.6,
+        "vacated_tgt_pct": 166.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 29.7,
+        "playcaller": "Matt Nagy (OC, calls plays in NY)"
+      },
+      "rank": 14,
+      "tier": "HIGH"
+    },
+    "NYJ": {
+      "ceiling_score": 22.8,
+      "raw": 0.4169,
+      "base_core": 0.2023,
+      "drivers": {
+        "env_quality": 0.0508,
+        "win_total": 0.0314,
+        "pace": 0.0191,
+        "pass_rate": 0.0929,
+        "qb_ascend": 0.008,
+        "scheme_upgrade": 0.0778,
+        "concentrated_tree": 0.0481,
+        "ol_improve": 0.03,
+        "shootout_script": 0.0587
+      },
+      "flags": [
+        "QB uncertainty (caps ceiling)",
+        "new-OC scheme upgrade",
+        "OL improvement",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 16,
+        "off_q": 29,
+        "win_total": 5.5,
+        "pace_pctl": 13,
+        "plays_pg": 59.9,
+        "pass_rate": 53.7,
+        "vacated_tgt_pct": 75.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 26.6,
+        "playcaller": "Frank Reich (OC, new)"
+      },
+      "rank": 31,
+      "tier": "LOW"
+    },
+    "PHI": {
+      "ceiling_score": 66.8,
+      "raw": 0.7363,
+      "base_core": 0.5125,
+      "drivers": {
+        "env_quality": 0.1296,
+        "win_total": 0.1886,
+        "pace": 0.0958,
+        "pass_rate": 0.0426,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0778,
+        "concentrated_tree": 0.1097,
+        "ol_improve": 0.015,
+        "shootout_script": 0.0213
+      },
+      "flags": [
+        "high win total (10.5)",
+        "new-OC scheme upgrade",
+        "concentrated tree (vacated tgt 171.0%)"
+      ],
+      "inputs": {
+        "env_idx": 38,
+        "off_q": 58,
+        "win_total": 10.5,
+        "pace_pctl": 65,
+        "plays_pg": 62.7,
+        "pass_rate": 49.8,
+        "vacated_tgt_pct": 171.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 73.4,
+        "playcaller": "Sean Mannion (OC, new)"
+      },
+      "rank": 12,
+      "tier": "HIGH"
+    },
+    "PIT": {
+      "ceiling_score": 54.2,
+      "raw": 0.6478,
+      "base_core": 0.4274,
+      "drivers": {
+        "env_quality": 0.1204,
+        "win_total": 0.1257,
+        "pace": 0.0481,
+        "pass_rate": 0.1252,
+        "qb_ascend": 0.008,
+        "scheme_upgrade": 0.0467,
+        "concentrated_tree": 0.12,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0538
+      },
+      "flags": [
+        "pass-heavy (56.2%)",
+        "QB uncertainty (caps ceiling)",
+        "concentrated tree (vacated tgt 187.0%)",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 43,
+        "off_q": 42,
+        "win_total": 8.5,
+        "pace_pctl": 32,
+        "plays_pg": 61.0,
+        "pass_rate": 56.2,
+        "vacated_tgt_pct": 187.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 32.8,
+        "playcaller": "Mike McCarthy (HC, new)"
+      },
+      "rank": 20,
+      "tier": "MID"
+    },
+    "SEA": {
+      "ceiling_score": 62.1,
+      "raw": 0.7025,
+      "base_core": 0.571,
+      "drivers": {
+        "env_quality": 0.2248,
+        "win_total": 0.1886,
+        "pace": 0.0345,
+        "pass_rate": 0.0671,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0778,
+        "concentrated_tree": 0.025,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0287
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (10.5)",
+        "new-OC scheme upgrade"
+      ],
+      "inputs": {
+        "env_idx": 76,
+        "off_q": 74,
+        "win_total": 10.5,
+        "pace_pctl": 26,
+        "plays_pg": 60.3,
+        "pass_rate": 51.7,
+        "vacated_tgt_pct": 39.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 64.1,
+        "playcaller": "Brian Fleury (OC, NEW; Kubiak left for LV HC)"
+      },
+      "rank": 16,
+      "tier": "MID"
+    },
+    "SF": {
+      "ceiling_score": 66.8,
+      "raw": 0.7367,
+      "base_core": 0.5857,
+      "drivers": {
+        "env_quality": 0.2332,
+        "win_total": 0.1886,
+        "pace": 0.0759,
+        "pass_rate": 0.08,
+        "qb_ascend": 0.008,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.104,
+        "ol_improve": 0.0108,
+        "shootout_script": 0.0362
+      },
+      "flags": [
+        "elite scoring environment",
+        "high win total (10.5)",
+        "QB uncertainty (caps ceiling)",
+        "concentrated tree (vacated tgt 162.0%)"
+      ],
+      "inputs": {
+        "env_idx": 76,
+        "off_q": 81,
+        "win_total": 10.5,
+        "pace_pctl": 48,
+        "plays_pg": 62.2,
+        "pass_rate": 52.7,
+        "vacated_tgt_pct": 162.0,
+        "oc_new": false,
+        "own_pass_cov_pctl": 54.7,
+        "playcaller": "(continuity)"
+      },
+      "rank": 13,
+      "tier": "HIGH"
+    },
+    "TB": {
+      "ceiling_score": 79.0,
+      "raw": 0.8404,
+      "base_core": 0.5996,
+      "drivers": {
+        "env_quality": 0.1744,
+        "win_total": 0.1571,
+        "pace": 0.1308,
+        "pass_rate": 0.0813,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0933,
+        "concentrated_tree": 0.0712,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0762
+      },
+      "flags": [
+        "high win total (9.5)",
+        "up-tempo (63.9 plays/g)",
+        "new-OC scheme upgrade",
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 64,
+        "off_q": 52,
+        "win_total": 9.5,
+        "pace_pctl": 90,
+        "plays_pg": 63.9,
+        "pass_rate": 52.8,
+        "vacated_tgt_pct": 111.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 4.7,
+        "playcaller": "Zac Robinson (OC, NEW; McVay branch)"
+      },
+      "rank": 5,
+      "tier": "ELITE"
+    },
+    "TEN": {
+      "ceiling_score": 56.2,
+      "raw": 0.6613,
+      "base_core": 0.4066,
+      "drivers": {
+        "env_quality": 0.0308,
+        "win_total": 0.0629,
+        "pace": 0.0252,
+        "pass_rate": 0.1277,
+        "qb_ascend": 0.16,
+        "scheme_upgrade": 0.1244,
+        "concentrated_tree": 0.0841,
+        "ol_improve": 0.0,
+        "shootout_script": 0.0462
+      },
+      "flags": [
+        "pass-heavy (56.4%)",
+        "ascending/returning QB",
+        "new-OC scheme upgrade",
+        "concentrated tree (vacated tgt 131.0%)"
+      ],
+      "inputs": {
+        "env_idx": 12,
+        "off_q": 19,
+        "win_total": 6.5,
+        "pace_pctl": 19,
+        "plays_pg": 60.0,
+        "pass_rate": 56.4,
+        "vacated_tgt_pct": 131.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 42.2,
+        "playcaller": "Brian Daboll (OC, new)"
+      },
+      "rank": 18,
+      "tier": "MID"
+    },
+    "WAS": {
+      "ceiling_score": 24.9,
+      "raw": 0.436,
+      "base_core": 0.3489,
+      "drivers": {
+        "env_quality": 0.0276,
+        "win_total": 0.1257,
+        "pace": 0.0673,
+        "pass_rate": 0.0723,
+        "qb_ascend": 0.056,
+        "scheme_upgrade": 0.0,
+        "concentrated_tree": 0.0026,
+        "ol_improve": 0.0108,
+        "shootout_script": 0.0738
+      },
+      "flags": [
+        "weak own pass-D -> shootout volume"
+      ],
+      "inputs": {
+        "env_idx": 14,
+        "off_q": 13,
+        "win_total": 8.5,
+        "pace_pctl": 42,
+        "plays_pg": 61.9,
+        "pass_rate": 52.1,
+        "vacated_tgt_pct": 4.0,
+        "oc_new": true,
+        "own_pass_cov_pctl": 7.8,
+        "playcaller": "David Blough (OC, new)"
+      },
+      "rank": 28,
+      "tier": "LOW"
+    }
+  }
+}
