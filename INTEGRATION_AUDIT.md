@@ -2,12 +2,15 @@
 
 _Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._
 
+_Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._
+
 ## Summary
 
 - **0 invariant violations** (P0 -- a layer is being under-used)
-- **9 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
-- **4 builders** produce artifacts but are absent from the pipeline runner
-- **460 unused fields** across 71 record-structured layers (auto-discovered, repo-wide)
+- **0 split-source files** (P0 -- one logical file read from two drifting copies)
+- **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
+- **2 builders** produce artifacts but are absent from the pipeline runner
+- **462 unused fields** across 70 record-structured layers (auto-discovered, repo-wide)
 - **26 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
@@ -16,11 +19,6 @@ _Catches "layer built but not properly consumed". Re-run: `python3 integration_a
 _None._
 
 ## B. Field utilization (per rich layer)
-
-### `_archive/player_tweets.json`  (1 fields, 1 consumers)
-| consumer | # fields read |
-|---|---|
-| build_player_explorer.py | 1 |
 
 ### `boom/adv2.json`  (18 fields, 1 consumers)
 | consumer | # fields read |
@@ -140,18 +138,15 @@ _None._
 
 **Unused by ALL consumers:** `mtf_allowed`, `mtf_att_allowed`, `rush_att`
 
-### `boom/defensive_profile.json`  (26 fields, 5 consumers)
+### `boom/defensive_profile.json`  (26 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
 | apply_funnel_overlay.py | 5 |
-| build_defenders.py | 0 |
 | build_defense_splits.py | 13 |
 | build_intel.py | 13 |
 | command_center.py | 12 |
 
 **Unused by ALL consumers:** `eng2026`, `man25`, `man26`, `scheme`, `wr1_funnel`
-
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_defenders.py`
 
 ### `boom/flags_DST.json`  (12 fields, 0 consumers)
 
@@ -214,9 +209,10 @@ _None._
 | build_dossier.py | 5 |
 | ingest_motion.py | 6 |
 
-### `boom/movers_reprojection.json`  (6 fields, 1 consumers)
+### `boom/movers_reprojection.json`  (6 fields, 2 consumers)
 | consumer | # fields read |
 |---|---|
+| audit_roster_moves.py | 2 |
 | reproject_movers.py | 6 |
 
 ### `boom/oline_2026.json`  (3 fields, 2 consumers)
@@ -225,13 +221,12 @@ _None._
 | build_dossier.py | 3 |
 | build_flags_layer.py | 2 |
 
-### `boom/opp_offense.json`  (5 fields, 2 consumers)
+### `boom/opp_offense.json`  (5 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
+| audit_roster_moves.py | 2 |
 | build_extra_signals.py | 1 |
 | build_flags_DST.py | 4 |
-
-**Unused by ALL consumers:** `qb`
 
 ### `boom/opportunity.json`  (5 fields, 2 consumers)
 | consumer | # fields read |
@@ -467,14 +462,17 @@ _None._
 | reweight_defense_2026.py | 1 |
 | validate_signal_stability.py | 1 |
 
-### `flag_ranks.json`  (25 fields, 3 consumers)
+### `flag_ranks.json`  (25 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
+| audit_roster_moves.py | 4 |
 | build_adp_clusters.py | 17 |
 | build_big_board.py | 14 |
 | build_rankings.py | 7 |
 
 **Unused by ALL consumers:** `adj_order`, `nudge`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`
+
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `audit_roster_moves.py`
 
 ### `flags_2026.json`  (12 fields, 2 consumers)
 | consumer | # fields read |
@@ -547,12 +545,9 @@ _None._
 
 **Unused by ALL consumers:** `intercept`, `score_diff`, `team_spread`, `total_line`
 
-### `player_splits.json`  (5 fields, 1 consumers)
-| consumer | # fields read |
-|---|---|
-| build_player_boom.py | 3 |
+### `player_splits.json`  (5 fields, 0 consumers)
 
-**Unused by ALL consumers:** `tough`, `weeks`
+**Unused by ALL consumers:** `fav`, `man_lean`, `profile`, `tough`, `weeks`
 
 ### `profiles/player_profiles.json`  (34 fields, 3 consumers)
 | consumer | # fields read |
@@ -615,15 +610,7 @@ _None._
 
 ## C. Orphan candidates
 
-- `boom/defender_profiles.json` — produced by ['build_defenders.py'] but consumed by none
-- `boom/funnel_projection_2026.json` — on disk, referenced by no builder
-- `boom/separation.json` — on disk, referenced by no builder
-- `boom/sis_defenders.json` — on disk, referenced by no builder
-- `player_boom.json` — produced by ['build_player_boom.py'] but consumed by none
-- `sis_value/cfb/cfb_passdef_value_2024.csv` — on disk, referenced by no builder
-- `sis_value/cfb/cfb_passrush_value_2025.csv` — on disk, referenced by no builder
-- `sis_value/cfb/cfb_rundef_value_2025.csv` — on disk, referenced by no builder
-- `sis_value/receiving_manzone_nfl_2025.csv` — on disk, referenced by no builder
+_None._
 
 _Cleared by CURATED dynamic/subdir reads (needle re-verified this run; an entry drops back to orphan the moment its read is refactored away):_
 
@@ -643,8 +630,6 @@ _Cleared by CURATED dynamic/subdir reads (needle re-verified this run; an entry 
 
 ## Builders missing from the pipeline runner
 
-- `build_defenders.py`
-- `build_player_boom.py`
 - `build_profiles.py`
 - `build_x_store.py`
 
@@ -653,3 +638,7 @@ _Cleared by CURATED dynamic/subdir reads (needle re-verified this run; an entry 
 - `fusion.json` · `missing_input_policy` = "Players missing a signal ABSTAIN on that vote: excluded from that signal's coverage count and from their own consensus/
 - `boom/scheme_fit.json` · `new_dc_regressed` = ["BUF", "CLE", "DAL", "LAC", "LV", "MIA", "NYJ", "WAS"]
 - `boom/scheme_fit.json` · `skipped` = {"no_bucket": 52, "no_pair": 66, "no_team": 6}
+
+## E. Split-source files (P0 — one logical file, two drifting copies)
+
+_None — every near-repo data file is read through a single access convention._

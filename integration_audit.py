@@ -26,13 +26,15 @@ Run:  python3 integration_audit.py            # write report + console summary
 Producer map is read from the authoritative pipeline declarations (boom_pipeline.py STAGES and
 run_all.py chains) first, then falls back to write-call heuristics, so it is not fooled by reads
 through variables/globs.
+Data-side companion: audit_roster_moves.py cross-checks every player's TEAM across independent
+sources and reconciles 2026 roster moves against curated provenance -> ROSTER_MOVES_2026.md.
 """
 import os, re, glob, json, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 RAW_DIRS = ('NFL-master', 'ffdataroma_draft_guide_export', 'pff_', 'ftn_', 'nfl_pro',
             'FP_SWEEP', 'node_modules', '.git', 'api/', '__pycache__', 'refactor/',
-            '_prebuild_backup', '_prune_baseline', 'backup')
+            '_prebuild_backup', '_prune_baseline', 'backup', 'archive/')
 SELF = os.path.basename(__file__)
 # orchestrators name artifacts for existence-checks/sequencing -- they are NOT field consumers
 ORCHESTRATORS = ('run_all.py', 'boom_pipeline.py')
@@ -317,6 +319,23 @@ def fallbacks():
     return hits
 
 
+def split_source(src):
+    """FROZEN/DUP-INPUT class: a data file read via BOTH core.find_data(...) (the parent-level,
+    resync-fresh copy) AND a repo-relative accessor (J('..')/core.P('..')/os.path.join(HERE,..))
+    -- two physical copies of one logical file that silently drift. This is the cc_context matchup
+    bug (build_cc_context read the repo-local copy while sync_boom_defense/boom_foundation/build_splits
+    read the parent copy). One logical file, one access convention."""
+    find, rel = {}, {}
+    for f, t in src.items():
+        for m in re.finditer(r"find_data\(([^)]*)\)", t):
+            a = re.findall(r"['\"]([^'\"]+)['\"]", m.group(1))
+            if a:
+                find.setdefault(a[-1].split('/')[-1], set()).add(f)
+        for m in re.finditer(r"(?:\bJ\(|core\.P\(|\bP\(|os\.path\.join\(HERE,\s*)['\"]([^'\"]+\.(?:json|csv))['\"]", t):
+            rel.setdefault(os.path.basename(m.group(1)), set()).add(f)
+    return [(b, sorted(find[b]), sorted(rel[b])) for b in sorted(set(find) & set(rel))]
+
+
 def main():
     strict = '--strict' in sys.argv
     src = builders()
@@ -348,14 +367,17 @@ def main():
     fld = field_use(src, graph)
     inv = check_invariants(src, graph)
     fb = fallbacks()
+    ss = split_source(src)
 
     # ---- write report ----
     L = []
     L.append('# INTEGRATION AUDIT\n')
     L.append('_Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._\n')
-    p0 = len(inv)
+    L.append('_Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._\n')
+    p0 = len(inv) + len(ss)
     L.append('## Summary\n')
     L.append(f'- **{len(inv)} invariant violations** (P0 -- a layer is being under-used)')
+    L.append(f'- **{len(ss)} split-source files** (P0 -- one logical file read from two drifting copies)')
     L.append(f'- **{len(orphans)} orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)')
     L.append(f'- **{len(missing_from_pipeline)} builders** produce artifacts but are absent from the pipeline runner')
     L.append(f'- **{sum(len(r["unused"]) for r in fld)} unused fields** across {len(fld)} record-structured layers (auto-discovered, repo-wide)')
@@ -413,6 +435,15 @@ def main():
         L.append('_No fallback counters found in output metas. (Add `_meta.fallbacks` to builders to populate.)_')
     L.append('')
 
+    L.append('## E. Split-source files (P0 — one logical file, two drifting copies)\n')
+    if ss:
+        for base, fnd, rl in ss:
+            L.append(f'- `{base}` — via `core.find_data` in {", ".join("`%s`" % c for c in fnd)}; '
+                     f'via repo-relative accessor in {", ".join("`%s`" % c for c in rl)}. Pick one convention.')
+    else:
+        L.append('_None — every near-repo data file is read through a single access convention._')
+    L.append('')
+
     open(os.path.join(HERE, 'INTEGRATION_AUDIT.md'), 'w', encoding='utf-8').write('\n'.join(L))
 
     # ---- console summary ----
@@ -429,6 +460,7 @@ def main():
     for a, d in div:
         print(f'     - {a}: {d} under-use vs peers')
     print(f'  fallback counters firing: {len(fb)}')
+    print(f'  split-source files       : {len(ss)}' + (f'  {[b for b, _, _ in ss]}' if ss else ''))
     if strict and p0:
         print(f'\nSTRICT: {p0} P0 finding(s) -> exit 1')
         sys.exit(1)

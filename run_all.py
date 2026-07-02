@@ -42,7 +42,8 @@ DOSSIER=[(["build_coverage_spec.py"],["boom/coverage_route_spec.json"]),   # FP 
  (["render_dossier.py"],["dossier.html"]),
  (["build_dossier_deep.py"],["dossier_deep.html"]),   # analyst-narrative + media + EPA deep-dive (was orphaned -> now kept fresh)
  (["build_offense_profile.py"],["offense_profile.json"]),  # offense scheme-identity layer -> build_home.py (home.html landing; build_home itself is run manually, so keep its input fresh here)
- (["integration_audit.py"],["INTEGRATION_AUDIT.md"])]  # FINAL GATE: flags any layer built-but-not-consumed (orphans, ignored fields, divergences)
+ (["integration_audit.py"],["INTEGRATION_AUDIT.md"]),  # FINAL GATE: flags any layer built-but-not-consumed (orphans, ignored fields, divergences)
+ (["audit_roster_moves.py"],["ROSTER_MOVES_2026.md"])]  # DATA-SIDE FINAL GATE: cross-source team check + roster-move reconciliation (real move = all sources agree; mis-join = they disagree)
 FULL=[(["refactor/pipeline.py"],["features.csv","defense.json"]),(["boom_pipeline.py"],["boom/boom_marks.json"])]
 def main():
     chain=(FULL+DOSSIER) if "--full" in sys.argv else DOSSIER

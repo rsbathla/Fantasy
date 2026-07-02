@@ -17,7 +17,7 @@ def J(p): return json.load(open(os.path.join(HERE, p), encoding='utf-8'))
 feats = list(csv.DictReader(open(core.P('features.csv'), encoding='utf-8')))
 scheme = J('scheme_2026.json')
 opp = J('boom/opportunity.json')
-matchup = J('dfs_review/out/defense_2026_matchup.json')
+matchup = json.load(open(core.find_data('dfs_review', 'out', 'defense_2026_matchup.json'), encoding='utf-8'))  # parent-level fresh copy (core.find_data), matching sync_boom_defense / boom_foundation / build_splits — not the stale repo-local copy
 nflpro = J('nfl_pro_epa.json')
 
 # vacated targets at the player level (NJ feed)
