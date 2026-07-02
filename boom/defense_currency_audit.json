@@ -1,0 +1,1375 @@
+{
+ "missing_contributors": [
+  {
+   "name": "Kerby Joseph",
+   "key": "kerby joseph",
+   "unit": "coverage",
+   "pos": "S",
+   "team_2024": "DET",
+   "grade_2024": 91.5,
+   "snaps_2024": 781,
+   "grade_2025": 57.7,
+   "snaps_2025": 211,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "DET"
+  },
+  {
+   "name": "Xavier McKinney",
+   "key": "xavier mckinney",
+   "unit": "coverage",
+   "pos": "S",
+   "team_2024": "GB",
+   "grade_2024": 90.2,
+   "snaps_2024": 678,
+   "grade_2025": 77.4,
+   "snaps_2025": 665,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "GB"
+  },
+  {
+   "name": "Julian Love",
+   "key": "julian love",
+   "unit": "run_def",
+   "pos": "S",
+   "team_2024": "SEA",
+   "grade_2024": 89.5,
+   "snaps_2024": 408,
+   "grade_2025": 65.4,
+   "snaps_2025": 217,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "SEA"
+  },
+  {
+   "name": "Nick Bosa",
+   "key": "nick bosa",
+   "unit": "pass_rush",
+   "pos": "ED",
+   "team_2024": "SF",
+   "grade_2024": 89.3,
+   "snaps_2024": 420,
+   "grade_2025": 79.6,
+   "snaps_2025": 70,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "SF"
+  },
+  {
+   "name": "Fred Warner",
+   "key": "fred warner",
+   "unit": "coverage",
+   "pos": "LB",
+   "team_2024": "SF",
+   "grade_2024": 88.4,
+   "snaps_2024": 528,
+   "grade_2025": 91.5,
+   "snaps_2025": 193,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "SF"
+  },
+  {
+   "name": "Ar'Darius Washington",
+   "key": "ardarius washington",
+   "unit": "coverage",
+   "pos": "S",
+   "team_2024": "BAL",
+   "grade_2024": 86.1,
+   "snaps_2024": 559,
+   "grade_2025": 45.1,
+   "snaps_2025": 46,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "BAL"
+  },
+  {
+   "name": "Taylor Rapp",
+   "key": "taylor rapp",
+   "unit": "run_def",
+   "pos": "S",
+   "team_2024": "BUF",
+   "grade_2024": 86.0,
+   "snaps_2024": 323,
+   "grade_2025": 45.4,
+   "snaps_2025": 144,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "BUF"
+  },
+  {
+   "name": "DeShon Elliott",
+   "key": "deshon elliott",
+   "unit": "run_def",
+   "pos": "S",
+   "team_2024": "PIT",
+   "grade_2024": 83.9,
+   "snaps_2024": 352,
+   "grade_2025": 79.0,
+   "snaps_2025": 84,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "PIT"
+  },
+  {
+   "name": "Harold Landry III",
+   "key": "harold landry",
+   "unit": "run_def",
+   "pos": "ED",
+   "team_2024": "TEN",
+   "grade_2024": 82.2,
+   "snaps_2024": 366,
+   "grade_2025": 63.4,
+   "snaps_2025": 243,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "TEN"
+  },
+  {
+   "name": "Pat Surtain II",
+   "key": "pat surtain",
+   "unit": "run_def",
+   "pos": "CB",
+   "team_2024": "DEN",
+   "grade_2024": 81.8,
+   "snaps_2024": 369,
+   "grade_2025": 63.3,
+   "snaps_2025": 360,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "DEN"
+  },
+  {
+   "name": "Jaycee Horn",
+   "key": "jaycee horn",
+   "unit": "run_def",
+   "pos": "CB",
+   "team_2024": "CAR",
+   "grade_2024": 80.9,
+   "snaps_2024": 482,
+   "grade_2025": 53.7,
+   "snaps_2025": 430,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "CAR"
+  },
+  {
+   "name": "Jaylon Johnson",
+   "key": "jaylon johnson",
+   "unit": "run_def",
+   "pos": "CB",
+   "team_2024": "CHI",
+   "grade_2024": 79.9,
+   "snaps_2024": 456,
+   "grade_2025": 51.2,
+   "snaps_2025": 167,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "CHI"
+  },
+  {
+   "name": "Ed Oliver",
+   "key": "ed oliver",
+   "unit": "pass_rush",
+   "pos": "DI",
+   "team_2024": "BUF",
+   "grade_2024": 78.6,
+   "snaps_2024": 470,
+   "grade_2025": 64.2,
+   "snaps_2025": 73,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "BUF"
+  },
+  {
+   "name": "Eric Kendricks",
+   "key": "eric kendricks",
+   "unit": "run_def",
+   "pos": "LB",
+   "team_2024": "DAL",
+   "grade_2024": 78.3,
+   "snaps_2024": 384,
+   "grade_2025": 58.9,
+   "snaps_2025": 96,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "DAL"
+  },
+  {
+   "name": "Malik Hooker",
+   "key": "malik hooker",
+   "unit": "run_def",
+   "pos": "S",
+   "team_2024": "DAL",
+   "grade_2024": 77.8,
+   "snaps_2024": 427,
+   "grade_2025": 83.4,
+   "snaps_2025": 219,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "DAL"
+  },
+  {
+   "name": "Jarvis Brownlee Jr.",
+   "key": "jarvis brownlee",
+   "unit": "run_def",
+   "pos": "CB",
+   "team_2024": "TEN",
+   "grade_2024": 77.7,
+   "snaps_2024": 398,
+   "grade_2025": 78.2,
+   "snaps_2025": 144,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "TEN"
+  },
+  {
+   "name": "Za'Darius Smith",
+   "key": "zadarius smith",
+   "unit": "pass_rush",
+   "pos": "ED",
+   "team_2024": "DET",
+   "grade_2024": 76.6,
+   "snaps_2024": 445,
+   "grade_2025": 74.4,
+   "snaps_2025": 92,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "DET"
+  },
+  {
+   "name": "Justin Reid",
+   "key": "justin reid",
+   "unit": "coverage",
+   "pos": "S",
+   "team_2024": "KC",
+   "grade_2024": 76.5,
+   "snaps_2024": 707,
+   "grade_2025": 59.2,
+   "snaps_2025": 442,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "KC"
+  },
+  {
+   "name": "Tariq Woolen",
+   "key": "tariq woolen",
+   "unit": "run_def",
+   "pos": "CB",
+   "team_2024": "SEA",
+   "grade_2024": 76.2,
+   "snaps_2024": 336,
+   "grade_2025": 64.1,
+   "snaps_2025": 283,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "SEA"
+  },
+  {
+   "name": "T'Vondre Sweat",
+   "key": "tvondre sweat",
+   "unit": "run_def",
+   "pos": "DI",
+   "team_2024": "TEN",
+   "grade_2024": 75.0,
+   "snaps_2024": 331,
+   "grade_2025": 79.3,
+   "snaps_2025": 180,
+   "in_sis_2025": false,
+   "moves_dest": "NYJ",
+   "team_2026": "NYJ"
+  },
+  {
+   "name": "Kobie Turner",
+   "key": "kobie turner",
+   "unit": "run_def",
+   "pos": "DI",
+   "team_2024": "LAR",
+   "grade_2024": 74.8,
+   "snaps_2024": 341,
+   "grade_2025": 66.1,
+   "snaps_2025": 309,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "LAR"
+  },
+  {
+   "name": "Donte Jackson",
+   "key": "donte jackson",
+   "unit": "run_def",
+   "pos": "CB",
+   "team_2024": "PIT",
+   "grade_2024": 74.5,
+   "snaps_2024": 301,
+   "grade_2025": 47.3,
+   "snaps_2025": 214,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "PIT"
+  },
+  {
+   "name": "Dorian Williams",
+   "key": "dorian williams",
+   "unit": "run_def",
+   "pos": "LB",
+   "team_2024": "BUF",
+   "grade_2024": 74.2,
+   "snaps_2024": 305,
+   "grade_2025": 63.2,
+   "snaps_2025": 222,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "BUF"
+  },
+  {
+   "name": "Elijah Molden",
+   "key": "elijah molden",
+   "unit": "coverage",
+   "pos": "S",
+   "team_2024": "LAC",
+   "grade_2024": 74.1,
+   "snaps_2024": 500,
+   "grade_2025": 49.2,
+   "snaps_2025": 356,
+   "in_sis_2025": false,
+   "moves_dest": null,
+   "team_2026": "LAC"
+  }
+ ],
+ "assumed_staying_top": {
+  "HOU": [
+   {
+    "name": "Will Anderson Jr.",
+    "unit": "pass_rush",
+    "ps": 57.4,
+    "key": "will anderson"
+   },
+   {
+    "name": "Danielle Hunter",
+    "unit": "pass_rush",
+    "ps": 47.2,
+    "key": "danielle hunter"
+   },
+   {
+    "name": "Derek Stingley Jr.",
+    "unit": "coverage",
+    "ps": 41.9,
+    "key": "derek stingley"
+   },
+   {
+    "name": "Jalen Pitre",
+    "unit": "coverage",
+    "ps": 28.3,
+    "key": "jalen pitre"
+   },
+   {
+    "name": "Calen Bullock",
+    "unit": "coverage",
+    "ps": 25.4,
+    "key": "calen bullock"
+   }
+  ],
+  "DEN": [
+   {
+    "name": "Pat Surtain II",
+    "unit": "coverage",
+    "ps": 38.5,
+    "key": "pat surtain"
+   },
+   {
+    "name": "Riley Moss",
+    "unit": "coverage",
+    "ps": 35.1,
+    "key": "riley moss"
+   },
+   {
+    "name": "Brandon Jones",
+    "unit": "coverage",
+    "ps": 30.7,
+    "key": "brandon jones"
+   },
+   {
+    "name": "Nik Bonitto",
+    "unit": "pass_rush",
+    "ps": 27.3,
+    "key": "nik bonitto"
+   },
+   {
+    "name": "Ja'Quan McMillian",
+    "unit": "coverage",
+    "ps": 27.0,
+    "key": "jaquan mcmillian"
+   }
+  ],
+  "SF": [
+   {
+    "name": "Deommodore Lenoir",
+    "unit": "coverage",
+    "ps": 38.2,
+    "key": "deommodore lenoir"
+   },
+   {
+    "name": "Ji'Ayir Brown",
+    "unit": "coverage",
+    "ps": 21.4,
+    "key": "jiayir brown"
+   },
+   {
+    "name": "Renardo Green",
+    "unit": "coverage",
+    "ps": 18.4,
+    "key": "renardo green"
+   },
+   {
+    "name": "Renardo Green",
+    "unit": "run_def",
+    "ps": 15.3,
+    "key": "renardo green"
+   },
+   {
+    "name": "Bryce Huff",
+    "unit": "pass_rush",
+    "ps": 14.9,
+    "key": "bryce huff"
+   }
+  ],
+  "PHI": [
+   {
+    "name": "Cooper DeJean",
+    "unit": "coverage",
+    "ps": 36.7,
+    "key": "cooper dejean"
+   },
+   {
+    "name": "Quinyon Mitchell",
+    "unit": "coverage",
+    "ps": 27.4,
+    "key": "quinyon mitchell"
+   },
+   {
+    "name": "Zack Baun",
+    "unit": "coverage",
+    "ps": 25.6,
+    "key": "zack baun"
+   },
+   {
+    "name": "Moro Ojomo",
+    "unit": "pass_rush",
+    "ps": 20.5,
+    "key": "moro ojomo"
+   },
+   {
+    "name": "Jordan Davis",
+    "unit": "run_def",
+    "ps": 18.9,
+    "key": "jordan davis"
+   }
+  ],
+  "SEA": [
+   {
+    "name": "Ernest Jones IV",
+    "unit": "coverage",
+    "ps": 36.2,
+    "key": "ernest jones"
+   },
+   {
+    "name": "Riq Woolen",
+    "unit": "coverage",
+    "ps": 26.8,
+    "key": "riq woolen"
+   },
+   {
+    "name": "Josh Jobe",
+    "unit": "coverage",
+    "ps": 23.3,
+    "key": "josh jobe"
+   },
+   {
+    "name": "Devon Witherspoon",
+    "unit": "coverage",
+    "ps": 22.2,
+    "key": "devon witherspoon"
+   },
+   {
+    "name": "Byron Murphy II",
+    "unit": "pass_rush",
+    "ps": 18.8,
+    "key": "byron murphy"
+   }
+  ],
+  "CAR": [
+   {
+    "name": "Mike Jackson Sr.",
+    "unit": "coverage",
+    "ps": 35.4,
+    "key": "mike jackson"
+   },
+   {
+    "name": "Jaycee Horn",
+    "unit": "coverage",
+    "ps": 25.3,
+    "key": "jaycee horn"
+   },
+   {
+    "name": "Tre'von Moehrig",
+    "unit": "coverage",
+    "ps": 20.8,
+    "key": "trevon moehrig"
+   },
+   {
+    "name": "Derrick Brown",
+    "unit": "run_def",
+    "ps": 20.0,
+    "key": "derrick brown"
+   },
+   {
+    "name": "Nick Scott",
+    "unit": "run_def",
+    "ps": 15.5,
+    "key": "nick scott"
+   }
+  ],
+  "BUF": [
+   {
+    "name": "Cole Bishop",
+    "unit": "coverage",
+    "ps": 29.8,
+    "key": "cole bishop"
+   },
+   {
+    "name": "Christian Benford",
+    "unit": "coverage",
+    "ps": 25.7,
+    "key": "christian benford"
+   },
+   {
+    "name": "Greg Rousseau",
+    "unit": "pass_rush",
+    "ps": 18.9,
+    "key": "greg rousseau"
+   },
+   {
+    "name": "Jordan Poyer",
+    "unit": "run_def",
+    "ps": 15.8,
+    "key": "jordan poyer"
+   },
+   {
+    "name": "Tre'Davious White",
+    "unit": "coverage",
+    "ps": 15.1,
+    "key": "tredavious white"
+   }
+  ],
+  "JAX": [
+   {
+    "name": "Antonio Johnson",
+    "unit": "coverage",
+    "ps": 29.8,
+    "key": "antonio johnson"
+   },
+   {
+    "name": "Josh Hines-Allen",
+    "unit": "pass_rush",
+    "ps": 28.7,
+    "key": "josh hines allen"
+   },
+   {
+    "name": "Montaric Brown",
+    "unit": "coverage",
+    "ps": 25.9,
+    "key": "montaric brown"
+   },
+   {
+    "name": "Jourdan Lewis",
+    "unit": "coverage",
+    "ps": 25.8,
+    "key": "jourdan lewis"
+   },
+   {
+    "name": "Foyesade Oluokun",
+    "unit": "coverage",
+    "ps": 24.2,
+    "key": "foyesade oluokun"
+   }
+  ],
+  "ATL": [
+   {
+    "name": "Jessie Bates III",
+    "unit": "coverage",
+    "ps": 29.3,
+    "key": "jessie bates"
+   },
+   {
+    "name": "Xavier Watts",
+    "unit": "coverage",
+    "ps": 27.6,
+    "key": "xavier watts"
+   },
+   {
+    "name": "A.J. Terrell",
+    "unit": "coverage",
+    "ps": 25.1,
+    "key": "aj terrell"
+   },
+   {
+    "name": "James Pearce Jr.",
+    "unit": "pass_rush",
+    "ps": 21.0,
+    "key": "james pearce"
+   },
+   {
+    "name": "Mike Hughes",
+    "unit": "coverage",
+    "ps": 18.1,
+    "key": "mike hughes"
+   }
+  ],
+  "TEN": [
+   {
+    "name": "Jeffery Simmons",
+    "unit": "pass_rush",
+    "ps": 45.6,
+    "key": "jeffery simmons"
+   },
+   {
+    "name": "Cody Barton",
+    "unit": "coverage",
+    "ps": 29.0,
+    "key": "cody barton"
+   },
+   {
+    "name": "Cedric Gray",
+    "unit": "run_def",
+    "ps": 27.3,
+    "key": "cedric gray"
+   },
+   {
+    "name": "Jeffery Simmons",
+    "unit": "run_def",
+    "ps": 23.3,
+    "key": "jeffery simmons"
+   },
+   {
+    "name": "Amani Hooker",
+    "unit": "run_def",
+    "ps": 10.4,
+    "key": "amani hooker"
+   }
+  ],
+  "NE": [
+   {
+    "name": "Christian Gonzalez",
+    "unit": "coverage",
+    "ps": 28.1,
+    "key": "christian gonzalez"
+   },
+   {
+    "name": "Robert Spillane",
+    "unit": "coverage",
+    "ps": 26.6,
+    "key": "robert spillane"
+   },
+   {
+    "name": "Carlton Davis III",
+    "unit": "coverage",
+    "ps": 25.9,
+    "key": "carlton davis"
+   },
+   {
+    "name": "Marcus Jones",
+    "unit": "coverage",
+    "ps": 24.4,
+    "key": "marcus jones"
+   },
+   {
+    "name": "Craig Woodson",
+    "unit": "coverage",
+    "ps": 17.5,
+    "key": "craig woodson"
+   }
+  ],
+  "DET": [
+   {
+    "name": "Aidan Hutchinson",
+    "unit": "pass_rush",
+    "ps": 63.7,
+    "key": "aidan hutchinson"
+   },
+   {
+    "name": "Jack Campbell",
+    "unit": "run_def",
+    "ps": 31.9,
+    "key": "jack campbell"
+   },
+   {
+    "name": "Jack Campbell",
+    "unit": "coverage",
+    "ps": 26.9,
+    "key": "jack campbell"
+   },
+   {
+    "name": "Brian Branch",
+    "unit": "run_def",
+    "ps": 16.3,
+    "key": "brian branch"
+   },
+   {
+    "name": "D.J. Reed",
+    "unit": "coverage",
+    "ps": 11.4,
+    "key": "dj reed"
+   }
+  ],
+  "MIA": [
+   {
+    "name": "Jordyn Brooks",
+    "unit": "run_def",
+    "ps": 29.8,
+    "key": "jordyn brooks"
+   },
+   {
+    "name": "Rasul Douglas",
+    "unit": "coverage",
+    "ps": 26.8,
+    "key": "rasul douglas"
+   },
+   {
+    "name": "Jack Jones",
+    "unit": "coverage",
+    "ps": 19.6,
+    "key": "jack jones"
+   },
+   {
+    "name": "Jack Jones",
+    "unit": "run_def",
+    "ps": 18.6,
+    "key": "jack jones"
+   },
+   {
+    "name": "Tyrel Dodson",
+    "unit": "pass_rush",
+    "ps": 10.9,
+    "key": "tyrel dodson"
+   }
+  ],
+  "LAC": [
+   {
+    "name": "Tuli Tuipulotu",
+    "unit": "pass_rush",
+    "ps": 26.8,
+    "key": "tuli tuipulotu"
+   },
+   {
+    "name": "Donte Jackson",
+    "unit": "coverage",
+    "ps": 25.8,
+    "key": "donte jackson"
+   },
+   {
+    "name": "Daiyan Henley",
+    "unit": "coverage",
+    "ps": 18.6,
+    "key": "daiyan henley"
+   },
+   {
+    "name": "Derwin James Jr.",
+    "unit": "coverage",
+    "ps": 17.4,
+    "key": "derwin james"
+   },
+   {
+    "name": "Tarheeb Still",
+    "unit": "coverage",
+    "ps": 16.0,
+    "key": "tarheeb still"
+   }
+  ],
+  "TB": [
+   {
+    "name": "Antoine Winfield Jr.",
+    "unit": "coverage",
+    "ps": 25.2,
+    "key": "antoine winfield"
+   },
+   {
+    "name": "Yaya Diaby",
+    "unit": "pass_rush",
+    "ps": 21.9,
+    "key": "yaya diaby"
+   },
+   {
+    "name": "Lavonte David",
+    "unit": "coverage",
+    "ps": 16.5,
+    "key": "lavonte david"
+   },
+   {
+    "name": "Zyon McCollum",
+    "unit": "run_def",
+    "ps": 15.8,
+    "key": "zyon mccollum"
+   },
+   {
+    "name": "Tykee Smith",
+    "unit": "run_def",
+    "ps": 15.0,
+    "key": "tykee smith"
+   }
+  ],
+  "GB": [
+   {
+    "name": "Micah Parsons",
+    "unit": "pass_rush",
+    "ps": 36.4,
+    "key": "micah parsons"
+   },
+   {
+    "name": "Edgerrin Cooper",
+    "unit": "coverage",
+    "ps": 24.7,
+    "key": "edgerrin cooper"
+   },
+   {
+    "name": "Keisean Nixon",
+    "unit": "coverage",
+    "ps": 18.3,
+    "key": "keisean nixon"
+   },
+   {
+    "name": "Xavier McKinney",
+    "unit": "run_def",
+    "ps": 17.7,
+    "key": "xavier mckinney"
+   },
+   {
+    "name": "Devonte Wyatt",
+    "unit": "pass_rush",
+    "ps": 17.1,
+    "key": "devonte wyatt"
+   }
+  ],
+  "LAR": [
+   {
+    "name": "Kam Curl",
+    "unit": "coverage",
+    "ps": 24.6,
+    "key": "kam curl"
+   },
+   {
+    "name": "Byron Young",
+    "unit": "run_def",
+    "ps": 24.6,
+    "key": "byron young"
+   },
+   {
+    "name": "Kamren Kinchens",
+    "unit": "coverage",
+    "ps": 23.4,
+    "key": "kamren kinchens"
+   },
+   {
+    "name": "Nate Landman",
+    "unit": "coverage",
+    "ps": 19.6,
+    "key": "nate landman"
+   },
+   {
+    "name": "Kam Curl",
+    "unit": "run_def",
+    "ps": 18.7,
+    "key": "kam curl"
+   }
+  ],
+  "LV": [
+   {
+    "name": "Maxx Crosby",
+    "unit": "run_def",
+    "ps": 34.6,
+    "key": "maxx crosby"
+   },
+   {
+    "name": "Eric Stokes",
+    "unit": "coverage",
+    "ps": 24.5,
+    "key": "eric stokes"
+   },
+   {
+    "name": "Jeremy Chinn",
+    "unit": "run_def",
+    "ps": 19.7,
+    "key": "jeremy chinn"
+   },
+   {
+    "name": "Maxx Crosby",
+    "unit": "pass_rush",
+    "ps": 15.1,
+    "key": "maxx crosby"
+   },
+   {
+    "name": "Elandon Roberts",
+    "unit": "run_def",
+    "ps": 14.9,
+    "key": "elandon roberts"
+   }
+  ],
+  "NO": [
+   {
+    "name": "Chase Young",
+    "unit": "pass_rush",
+    "ps": 40.7,
+    "key": "chase young"
+   },
+   {
+    "name": "Alontae Taylor",
+    "unit": "coverage",
+    "ps": 23.1,
+    "key": "alontae taylor"
+   },
+   {
+    "name": "Cameron Jordan",
+    "unit": "pass_rush",
+    "ps": 16.4,
+    "key": "cameron jordan"
+   },
+   {
+    "name": "Kool-Aid McKinstry",
+    "unit": "coverage",
+    "ps": 13.8,
+    "key": "kool aid mckinstry"
+   },
+   {
+    "name": "Nathan Shepherd",
+    "unit": "pass_rush",
+    "ps": 13.3,
+    "key": "nathan shepherd"
+   }
+  ],
+  "CLE": [
+   {
+    "name": "Carson Schwesinger",
+    "unit": "run_def",
+    "ps": 26.9,
+    "key": "carson schwesinger"
+   },
+   {
+    "name": "Grant Delpit",
+    "unit": "coverage",
+    "ps": 22.9,
+    "key": "grant delpit"
+   },
+   {
+    "name": "Denzel Ward",
+    "unit": "coverage",
+    "ps": 21.5,
+    "key": "denzel ward"
+   },
+   {
+    "name": "Ronnie Hickman",
+    "unit": "run_def",
+    "ps": 17.1,
+    "key": "ronnie hickman"
+   },
+   {
+    "name": "Maliek Collins",
+    "unit": "pass_rush",
+    "ps": 15.6,
+    "key": "maliek collins"
+   }
+  ],
+  "NYG": [
+   {
+    "name": "Brian Burns",
+    "unit": "pass_rush",
+    "ps": 47.0,
+    "key": "brian burns"
+   },
+   {
+    "name": "Bobby Okereke",
+    "unit": "coverage",
+    "ps": 22.3,
+    "key": "bobby okereke"
+   },
+   {
+    "name": "Bobby Okereke",
+    "unit": "run_def",
+    "ps": 17.6,
+    "key": "bobby okereke"
+   },
+   {
+    "name": "Abdul Carter",
+    "unit": "pass_rush",
+    "ps": 15.7,
+    "key": "abdul carter"
+   },
+   {
+    "name": "Jevon Holland",
+    "unit": "run_def",
+    "ps": 13.8,
+    "key": "jevon holland"
+   }
+  ],
+  "BAL": [
+   {
+    "name": "Kyle Hamilton",
+    "unit": "coverage",
+    "ps": 21.6,
+    "key": "kyle hamilton"
+   },
+   {
+    "name": "Nate Wiggins",
+    "unit": "coverage",
+    "ps": 18.7,
+    "key": "nate wiggins"
+   },
+   {
+    "name": "Malaki Starks",
+    "unit": "coverage",
+    "ps": 17.1,
+    "key": "malaki starks"
+   },
+   {
+    "name": "Kyle Hamilton",
+    "unit": "run_def",
+    "ps": 16.8,
+    "key": "kyle hamilton"
+   },
+   {
+    "name": "Roquan Smith",
+    "unit": "run_def",
+    "ps": 15.5,
+    "key": "roquan smith"
+   }
+  ],
+  "PIT": [
+   {
+    "name": "Nick Herbig",
+    "unit": "pass_rush",
+    "ps": 29.8,
+    "key": "nick herbig"
+   },
+   {
+    "name": "Cameron Heyward",
+    "unit": "run_def",
+    "ps": 22.4,
+    "key": "cameron heyward"
+   },
+   {
+    "name": "Alex Highsmith",
+    "unit": "pass_rush",
+    "ps": 21.8,
+    "key": "alex highsmith"
+   },
+   {
+    "name": "T.J. Watt",
+    "unit": "pass_rush",
+    "ps": 20.7,
+    "key": "tj watt"
+   },
+   {
+    "name": "Jalen Ramsey",
+    "unit": "coverage",
+    "ps": 20.3,
+    "key": "jalen ramsey"
+   }
+  ],
+  "KC": [
+   {
+    "name": "Chris Jones",
+    "unit": "pass_rush",
+    "ps": 34.9,
+    "key": "chris jones"
+   },
+   {
+    "name": "Chamarri Conner",
+    "unit": "coverage",
+    "ps": 19.6,
+    "key": "chamarri conner"
+   },
+   {
+    "name": "George Karlaftis",
+    "unit": "pass_rush",
+    "ps": 18.5,
+    "key": "george karlaftis"
+   },
+   {
+    "name": "Nick Bolton",
+    "unit": "run_def",
+    "ps": 16.9,
+    "key": "nick bolton"
+   },
+   {
+    "name": "Drue Tranquill",
+    "unit": "run_def",
+    "ps": 12.4,
+    "key": "drue tranquill"
+   }
+  ],
+  "CIN": [
+   {
+    "name": "Jordan Battle",
+    "unit": "run_def",
+    "ps": 23.4,
+    "key": "jordan battle"
+   },
+   {
+    "name": "DJ Turner II",
+    "unit": "coverage",
+    "ps": 19.4,
+    "key": "dj turner"
+   },
+   {
+    "name": "Dax Hill",
+    "unit": "run_def",
+    "ps": 16.8,
+    "key": "dax hill"
+   },
+   {
+    "name": "BJ Hill",
+    "unit": "run_def",
+    "ps": 16.0,
+    "key": "bj hill"
+   },
+   {
+    "name": "Dax Hill",
+    "unit": "coverage",
+    "ps": 13.5,
+    "key": "dax hill"
+   }
+  ],
+  "CHI": [
+   {
+    "name": "Montez Sweat",
+    "unit": "pass_rush",
+    "ps": 20.7,
+    "key": "montez sweat"
+   },
+   {
+    "name": "Jaquan Brisker",
+    "unit": "coverage",
+    "ps": 19.3,
+    "key": "jaquan brisker"
+   },
+   {
+    "name": "Gervon Dexter Sr.",
+    "unit": "pass_rush",
+    "ps": 16.2,
+    "key": "gervon dexter"
+   },
+   {
+    "name": "Jaquan Brisker",
+    "unit": "run_def",
+    "ps": 14.7,
+    "key": "jaquan brisker"
+   },
+   {
+    "name": "T.J. Edwards",
+    "unit": "coverage",
+    "ps": 10.6,
+    "key": "tj edwards"
+   }
+  ],
+  "WAS": [
+   {
+    "name": "Mike Sainristil",
+    "unit": "coverage",
+    "ps": 16.2,
+    "key": "mike sainristil"
+   },
+   {
+    "name": "Quan Martin",
+    "unit": "run_def",
+    "ps": 15.4,
+    "key": "quan martin"
+   },
+   {
+    "name": "Jer'Zhan Newton",
+    "unit": "pass_rush",
+    "ps": 11.1,
+    "key": "jerzhan newton"
+   },
+   {
+    "name": "Daron Payne",
+    "unit": "pass_rush",
+    "ps": 9.3,
+    "key": "daron payne"
+   },
+   {
+    "name": "Marshon Lattimore",
+    "unit": "coverage",
+    "ps": 8.6,
+    "key": "marshon lattimore"
+   }
+  ],
+  "MIN": [
+   {
+    "name": "Dallas Turner",
+    "unit": "pass_rush",
+    "ps": 26.0,
+    "key": "dallas turner"
+   },
+   {
+    "name": "Blake Cashman",
+    "unit": "run_def",
+    "ps": 22.6,
+    "key": "blake cashman"
+   },
+   {
+    "name": "Andrew Van Ginkel",
+    "unit": "pass_rush",
+    "ps": 21.7,
+    "key": "andrew van ginkel"
+   },
+   {
+    "name": "Jalen Redmond",
+    "unit": "pass_rush",
+    "ps": 16.8,
+    "key": "jalen redmond"
+   },
+   {
+    "name": "Byron Murphy Jr.",
+    "unit": "coverage",
+    "ps": 15.9,
+    "key": "byron murphy"
+   }
+  ],
+  "ARI": [
+   {
+    "name": "Josh Sweat",
+    "unit": "pass_rush",
+    "ps": 32.2,
+    "key": "josh sweat"
+   },
+   {
+    "name": "Budda Baker",
+    "unit": "coverage",
+    "ps": 13.6,
+    "key": "budda baker"
+   },
+   {
+    "name": "Will Johnson",
+    "unit": "coverage",
+    "ps": 12.6,
+    "key": "will johnson"
+   },
+   {
+    "name": "Zaven Collins",
+    "unit": "pass_rush",
+    "ps": 11.7,
+    "key": "zaven collins"
+   },
+   {
+    "name": "Budda Baker",
+    "unit": "run_def",
+    "ps": 9.4,
+    "key": "budda baker"
+   }
+  ],
+  "DAL": [
+   {
+    "name": "Osa Odighizuwa",
+    "unit": "pass_rush",
+    "ps": 13.9,
+    "key": "osa odighizuwa"
+   },
+   {
+    "name": "Donovan Wilson",
+    "unit": "run_def",
+    "ps": 13.2,
+    "key": "donovan wilson"
+   },
+   {
+    "name": "Donovan Wilson",
+    "unit": "coverage",
+    "ps": 12.3,
+    "key": "donovan wilson"
+   },
+   {
+    "name": "DaRon Bland",
+    "unit": "run_def",
+    "ps": 12.1,
+    "key": "daron bland"
+   },
+   {
+    "name": "DaRon Bland",
+    "unit": "coverage",
+    "ps": 11.2,
+    "key": "daron bland"
+   }
+  ],
+  "IND": [
+   {
+    "name": "Laiatu Latu",
+    "unit": "pass_rush",
+    "ps": 28.5,
+    "key": "laiatu latu"
+   },
+   {
+    "name": "DeForest Buckner",
+    "unit": "pass_rush",
+    "ps": 16.9,
+    "key": "deforest buckner"
+   },
+   {
+    "name": "Grover Stewart",
+    "unit": "run_def",
+    "ps": 12.7,
+    "key": "grover stewart"
+   },
+   {
+    "name": "Kenny Moore II",
+    "unit": "coverage",
+    "ps": 11.7,
+    "key": "kenny moore"
+   },
+   {
+    "name": "Camryn Bynum",
+    "unit": "run_def",
+    "ps": 11.4,
+    "key": "camryn bynum"
+   }
+  ],
+  "NYJ": [
+   {
+    "name": "Brandon Stephens",
+    "unit": "run_def",
+    "ps": 21.2,
+    "key": "brandon stephens"
+   },
+   {
+    "name": "Jamien Sherwood",
+    "unit": "run_def",
+    "ps": 20.6,
+    "key": "jamien sherwood"
+   },
+   {
+    "name": "Malachi Moore",
+    "unit": "run_def",
+    "ps": 19.2,
+    "key": "malachi moore"
+   },
+   {
+    "name": "Jowon Briggs",
+    "unit": "pass_rush",
+    "ps": 14.8,
+    "key": "jowon briggs"
+   },
+   {
+    "name": "Will McDonald IV",
+    "unit": "pass_rush",
+    "ps": 14.5,
+    "key": "will mcdonald"
+   }
+  ]
+ },
+ "params": {
+  "grade_min": 74.0,
+  "snap_min": {
+   "coverage": 400,
+   "pass_rush": 300,
+   "run_def": 300
+  },
+  "note": "read-only currency audit; fabricates nothing"
+ }
+}

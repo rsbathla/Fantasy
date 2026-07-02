@@ -28,6 +28,13 @@ def num(x, d=None):
     except Exception: return d
 def rows(p):
     return list(csv.DictReader(open(p, encoding='utf-8'))) if os.path.exists(p) else []
+def _firstpath(*cands):
+    """First existing path among candidates -> robust to repo-INSIDE-Downloads (user machine, where these
+    lived at {DL}/NFL-master/... and {DL}/*.csv) vs repo-BESIDE-Downloads (this sandbox, where the same
+    files sit at repo root / repo/ffdataroma_...). Returns cands[0] if none exist (for a legible error)."""
+    for c in cands:
+        if c and os.path.exists(c): return c
+    return cands[0] if cands else ''
 
 # weather-neutral venues (fixed/retractable dome or covered) -> no wind penalty on deep balls
 DOME = {'ATL','NO','DET','MIN','LV','ARI','DAL','HOU','IND','LAR','LAC'}
@@ -84,12 +91,15 @@ for k, g in gamelog.items():
 # ---------- 2) stat menu (fusion + aDOT/TPRR + YACoe/MTF + usage + SIS) ----------
 FUS = {fn(r['name']): r for r in rows(f"{HERE}/fusion_table.csv")}
 ADOT = {}
-for r in rows(f"{DL}/adot-tprr.csv"):
+for r in rows(_firstpath(f"{DL}/adot-tprr.csv",
+        f"{HERE}/ffdataroma_draft_guide_export/ffdataroma/csv/adot-tprr.csv",
+        f"{DL}/ffdataroma_draft_guide_export/ffdataroma/csv/adot-tprr.csv")):
     nm = r.get('Name');
     if nm: ADOT[fn(nm)] = {'aDOT': num(r.get('aDOT')), 'TPRR': num(r.get('TPRR')),
         'surplus_TPRR': num(r.get('Surplus TPRR')), 'routes': num(r.get('Routes'))}
 YACO = {}
-for r in rows(f"{DL}/ffdataroma_draft_guide_export/ffdataroma/csv/adot-adjusted-yac.csv"):
+for r in rows(_firstpath(f"{DL}/ffdataroma_draft_guide_export/ffdataroma/csv/adot-adjusted-yac.csv",
+        f"{HERE}/ffdataroma_draft_guide_export/ffdataroma/csv/adot-adjusted-yac.csv")):
     raw = r.get('Player', '');
     m = re.match(r'^(.*?)([A-Z]{2,3})$', raw)  # "DK MetcalfPIT" -> name, team
     nm = m.group(1) if m else raw
@@ -101,7 +111,8 @@ if not os.path.exists(_l2p): _l2p = f"{DL}/pipeline/layer2_player_params.csv"
 for r in rows(_l2p): L2[fn(r['name'])] = r
 # SIS WR coverage master (last-6 efficiency, opp-weighted)
 SISWR = {}
-_wr = f"{DL}/NFL-master/AGG_COVERAGE_SHEETS_WR_LAST6/AGG_MASTER_ALL_COVERAGES_WR.csv"
+_wr = _firstpath(f"{DL}/NFL-master/AGG_COVERAGE_SHEETS_WR_LAST6/AGG_MASTER_ALL_COVERAGES_WR.csv",
+        f"{HERE}/AGG_COVERAGE_SHEETS_WR_LAST6/AGG_MASTER_ALL_COVERAGES_WR.csv")
 for r in rows(_wr):
     nm = r.get('Player')
     if not nm: continue
@@ -114,7 +125,8 @@ for r in rows(_wr):
         'tgt_share_w': g('Target Share'), 'eff_combined': g('EFFICIENCY COMBINED'), 'FP_RR': g('FP/RR')}
 # SIS RB runtypes
 SISRB = {}
-_rb = f"{DL}/NFL-master/AGG_COVERAGE_SHEETS_RB_LAST6/AGG_MASTER_ALL_RUNTYPES_WITH_TARGETS.csv"
+_rb = _firstpath(f"{DL}/NFL-master/AGG_COVERAGE_SHEETS_RB_LAST6/AGG_MASTER_ALL_RUNTYPES_WITH_TARGETS.csv",
+        f"{HERE}/AGG_COVERAGE_SHEETS_RB_LAST6/AGG_MASTER_ALL_RUNTYPES_WITH_TARGETS.csv")
 for r in rows(_rb):
     nm = r.get('Player')
     if not nm: continue
@@ -267,9 +279,17 @@ print('SPIKE thresholds:', SPIKE)
 print('position base boom rate (active games):', {p: round(v, 3) for p, v in posbase.items()})
 print('statmenu players:', len(statmenu), '| with >=4 game history:', sum(1 for v in statmenu.values() if v['base_boom'] is not None))
 print('schedule2026 teams:', len(schedule2026), '| defense2026 teams:', len(defense2026))
-print('SIS WR enriched:', sum(1 for v in statmenu.values() if v['pos'] in ('WR','TE') and v['sis'].get('YPRR') is not None),
-      '| SIS RB enriched:', sum(1 for v in statmenu.values() if v['pos']=='RB' and v['sis'].get('success') is not None),
-      '| aDOT enriched:', sum(1 for v in statmenu.values() if v['adot'].get('aDOT') is not None))
+_sis_wr = sum(1 for v in statmenu.values() if v['pos'] in ('WR','TE') and v['sis'].get('YPRR') is not None)
+_adot_n = sum(1 for v in statmenu.values() if v['adot'].get('aDOT') is not None)
+_yaco_n = sum(1 for v in statmenu.values() if v['yaco'].get('YACoe') is not None)
+print(f'SIS WR enriched: {_sis_wr} | SIS RB enriched:',
+      sum(1 for v in statmenu.values() if v['pos']=='RB' and v['sis'].get('success') is not None),
+      f'| aDOT enriched: {_adot_n} | YACoe enriched: {_yaco_n}')
+# fail-loud canary: aDOT/YACoe come from committed ffdataroma CSVs, so 0 means a dead input path
+# (the {DL}-vs-repo layout bug) silently wiped the layer -> crash instead of shipping empty {} everywhere.
+if _adot_n == 0 or _yaco_n == 0:
+    raise SystemExit(f"boom_foundation: aDOT({_adot_n})/YACoe({_yaco_n}) layer EMPTY -> input path dead "
+                     "(check the _firstpath candidates for adot-tprr.csv / adot-adjusted-yac.csv).")
 for nm in ['Jahmyr Gibbs','Puka Nacua','Josh Allen','Trey McBride']:
     v = statmenu.get(fn(nm))
     if v: print(f"  {nm}: base_boom={v['base_boom']} ({v['boom_games']}/{v['n_games']}) aDOT={v['adot'].get('aDOT')} explosive={v['fus'].get('explosive_pctl')}")

@@ -35,8 +35,29 @@ _FT=C('features.csv'); FEAT={fn(r['name']):r for _,r in _FT.iterrows()} if (not 
 _DS=J('division_splits.json'); DSPLIT={fn(p['name']):p for p in (_DS.get('players') or [])} if isinstance(_DS,dict) else {}
 MOT=J('boom/motion.json') if os.path.exists(core.P('boom/motion.json')) else {}
 COV=J('boom/coverage_split.json') if os.path.exists(core.P('boom/coverage_split.json')) else {}
+DEEPQB=J('boom/deep_pass.json') if os.path.exists(core.P('boom/deep_pass.json')) else {}  # 2yr QB deep-throw rate -> QB vertical lever
+# PFF/FTN situational matrix (where a player wins: man/zone, deep/short, YPRR) + 2024->2025 trend,
+# and rookie college-production profiles -> surfaced on the dossier card (previously main-dossier-hidden).
+PROF={fn(k2):v for k2,v in (J('profiles/player_profiles.json') or {}).items()}
+RKC={fn(k2):v for k2,v in ((J('boom/rookie_college_profile.json') or {}).get('players') or {}).items()}
+RKPRI={fn(k2):v for k2,v in ((J('boom/rookie_prior.json') or {}).get('priors') or {}).items()}
 # 2-yr (2024+2025) man/zone confidence overlay (FantasyPoints, pulled programmatically). Re-key by fn() to match k.
 MZ2={fn(k2):v for k2,v in (J('boom/manzone_2yr.json') or {}).items()} if os.path.exists(core.P('boom/manzone_2yr.json')) else {}
+# SCHEME FIT (build_scheme_fit.py): coverage-specialist skill x 2026 opponent coverage tendency.
+# Joined by core.fn(name); only attached when the scheme-fit 2026 team matches this dossier record's
+# team (both are moves-aware, so a mismatch means a stale artifact -> degrade by omission).
+_SF=J('boom/scheme_fit.json') or {}
+SFIT=(_SF.get('players') or {})
+def _sfview(k,tm):
+    v=SFIT.get(k)
+    if not v or v.get('team')!=tm: return None
+    pick=lambda w:{'wk':w.get('wk'),'opp':w.get('opp'),'fit':w.get('fit'),'why':w.get('why'),'nd':bool(w.get('new_dc'))}
+    return {'season':v.get('season'),'playoff':v.get('playoff'),
+            'buckets':{b:{'pctl':d.get('pctl'),'rte':d.get('rte')} for b,d in (v.get('buckets') or {}).items()},
+            'elite':(v.get('elite') or [])[:4],'weak':(v.get('weak') or [])[:4],
+            'best':[pick(w) for w in (v.get('best') or []) if (w.get('fit') or 0)>0][:2],
+            'worst':[pick(w) for w in (v.get('worst') or []) if (w.get('fit') or 0)<0][:2],
+            'po':[pick(w) for w in (v.get('playoff_weeks') or [])]}
 # FP audit-verified extra levers (gets-open-vs-man, contested, scramble-QB, elusive-RB) keyed by fn(name)
 _XL=J('boom/fp_levers_extra.json') or {}
 EXTRA={}
@@ -101,8 +122,10 @@ def player_record(k):
         'qual':r1(ql['qual_score']) if ql is not None else None,
         'about':[{'handle':x['handle'],'date':x['date'],'text':x['text'][:280]} for x in ((ip or {}).get('about') or [])[:3]],
         'align':{'slot':r1((ALIGN.get(k) or {}).get('slot_pct')),'wide':r1((ALIGN.get(k) or {}).get('wide_pct')),'design':r1((ALIGN.get(k) or {}).get('design_pct')),'inline':r1((ALIGN.get(k) or {}).get('inline_pct')),'back':r1((ALIGN.get(k) or {}).get('back_pct'))},
-        'divsplit':DSPLIT.get(k),'motion':MOT.get(k),'cov':COV.get(k),'cov2y':MZ2.get(k),'oline':(OLINE26.get(tm) if OLINE26.get(tm) is not None else (r1(fu['oline_pctl']) if fu is not None and 'oline_pctl' in fu else None)),
-        'rz':{'i20_pg':r1((ALIGN.get(k) or {}).get('i20_pg')),'ez':ri((ALIGN.get(k) or {}).get('ez_tgt')),'rate':ri((ALIGN.get(k) or {}).get('rz_tgt_rate'))}}
+        'divsplit':DSPLIT.get(k),'motion':MOT.get(k),'cov':COV.get(k),'cov2y':MZ2.get(k),'deeppass':DEEPQB.get(k),'schemefit':_sfview(k,tm),'oline':(OLINE26.get(tm) if OLINE26.get(tm) is not None else (r1(fu['oline_pctl']) if fu is not None and 'oline_pctl' in fu else None)),
+        'rz':{'i20_pg':r1((ALIGN.get(k) or {}).get('i20_pg')),'ez':ri((ALIGN.get(k) or {}).get('ez_tgt')),'rate':ri((ALIGN.get(k) or {}).get('rz_tgt_rate'))},
+        'situations':(PROF.get(k) or {}).get('situations'),'trend':(PROF.get(k) or {}).get('trend'),
+        'rookie_college':RKC.get(k),'rookie_prior':RKPRI.get(k)}
 ALLK=set(FU)|set(IPL)
 rec_by_team={}
 for k in ALLK:
@@ -384,6 +407,10 @@ def analyze(p,ident,is_alpha=False,alpha_name=None,behind_alpha=None):
         elif _al['slot']<=38: addl("boundary X → defenses with a beatable outside CB / soft single-high",'solid')
     if pos in ('WR','TE') and ((s.get('Explosive') or 0)>=70 or _dp(p,'deep')>=78):
         addl("vertical / big-play threat → single-high or aggressive shells that allow shots",'tendency')
+    if pos=='QB':
+        _dqb=p.get('deeppass') or {}
+        if _dqb.get('deep_pctl') is not None and _dqb['deep_pctl']>=70:
+            addl(f"vertical / big-play passer — {_dqb['deep_rate']}% deep-throw rate (2yr, {_ord(_dqb['deep_pctl'])} pctl among QBs) → single-high / soft-deep shells that allow shots",'tendency')
     _rzlv=p.get('rz') or {}
     if _rzlv.get('i20_pg') is not None and _rzlv['i20_pg']>=1.1:
         addl(f"red-zone target hog ({_rzlv['i20_pg']} inside-20 looks/g, {_rzlv.get('ez') or 0} end-zone) → TD/ceiling equity vs RZ-soft defenses",'solid')
@@ -391,8 +418,12 @@ def analyze(p,ident,is_alpha=False,alpha_name=None,behind_alpha=None):
         addl("pass-catching back → light-box / two-high looks (checkdowns & targets open up)",'solid')
     if s.get('Matchup') is not None and s['Matchup']>=70:
         addl("soft slate — favorable opposing defenses on this year's schedule",'tendency')
-    if ident.get('env') and ident['env']>=60 and (ident.get('pace') or 0)>=58:
-        addl("shootout upside → high-total, up-tempo game environments",'solid')
+    # shootout / high-total: activated per-week on the OPPONENT's implied-total environment (team_env.json,
+    # which blends off_q with real Vegas-derived implied totals) — so a strong-offense opponent lifts
+    # QB / pass-catcher ceiling regardless of that opponent's coverage scheme.
+    _passy = (pos=='QB') or (pos in ('WR','TE') and _dp(p,'volume')>=55) or (pos=='RB' and (p['proj'].get('rec') or 0)>=40)
+    if _passy:
+        addl("shootout / high-total environment → opponents whose offenses drive up the game total",'solid' if pos=='QB' else 'tendency')
     # reconcile coverage reads so no player carries opposing man/zone levers (count would double-activate)
     _go=[x for x in lev if 'wins separation vs man' in x['t']]
     _mb=[x for x in lev if 'wins vs man' in x['t']]

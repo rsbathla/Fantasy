@@ -130,7 +130,7 @@ Tiers are **ADP bands** (a tier = an ADP range worth prioritising for ceiling), 
 | 9 | Cam Ward | QB | TEN | 138.2 | 27.4 | 52% | 0.51 | POLARIZING |
 | 10 | Malik Willis | QB | MIA | 129.6 | 27.9 | 57% | 0.432 | MARKET DARLING, POLARIZING, EFFICIENCY EDGE, QB-MAN-BEATER |
 | 11 | KC Concepcion | WR | CLE | 126.3 | 25.2 | 67% | 0.424 |  |
-| 12 | Chig Okonkwo | TE | WAS | 141.3 | 20.8 | 62% | 0.409 |  |
+| 12 | Chig Okonkwo | TE | WAS | 141.3 | 20.8 | 62% | 0.409 | POLARIZING |
 | ... | *+18 more in band* | | | | | | | |
 
 ### Tier 8 - ADP 156-191 (R13-16) - 35 players
@@ -221,37 +221,37 @@ Attack score = 0.42*ceiling-capital + 0.26*scoring-env + 0.18*pass-volume/pace +
 
 | Rank | Team | Attack | a-ceil | Sum p95(a) | TD/g | rk_TD | rk_passvol | vac_tgt | Why |
 |---:|:--:|---:|:--:|---:|---:|:--:|:--:|---:|---|
-| 1 | LAR | 100.0 | 4 | 155.1 | 3.24 | 1 | 11 | 8.9 | 4 alpha-ceiling bats (sum p95 155); elite scoring env (TD/g 3.24, rk1) |
-| 2 | DAL | 95.0 | 4 | 148.4 | 2.76 | 5 | 3 | 5.7 | 4 alpha-ceiling bats (sum p95 148); elite scoring env (TD/g 2.76, rk5); top pass volume (rk3) |
-| 3 | DET | 84.1 | 3 | 124.5 | 2.94 | 3 | 15 | 14.8 | 3 alpha-ceiling bats (sum p95 125); elite scoring env (TD/g 2.94, rk3) |
-| 4 | KC | 82.4 | 3 | 108.4 | 2.59 | 9 | 5 | 30.8 | 3 alpha-ceiling bats (sum p95 108); good scoring env (TD/g 2.59); top pass volume (rk5); huge vacated targets (31) |
-| 5 | SF | 77.7 | 3 | 113.1 | 2.59 | 9 | 20 | 38.6 | 3 alpha-ceiling bats (sum p95 113); good scoring env (TD/g 2.59); huge vacated targets (39) |
-| 6 | CIN | 71.6 | 2 | 82.0 | 2.76 | 4 | 1 | 6.7 | 2 alpha ceiling(s) (sum p95 82); elite scoring env (TD/g 2.76, rk4); top pass volume (rk1) |
-| 7 | PHI | 66.1 | 3 | 102.9 | 2.65 | 7 | 31 | 33.3 | 3 alpha-ceiling bats (sum p95 103); good scoring env (TD/g 2.65); run-leaning (low pass volume); huge vacated targets (33) |
-| 8 | BUF | 61.7 | 2 | 79.3 | 3.06 | 2 | 28 | 16.8 | 2 alpha ceiling(s) (sum p95 79); elite scoring env (TD/g 3.06, rk2); run-leaning (low pass volume) |
-| 9 | BAL | 59.2 | 3 | 109.5 | 2.71 | 6 | 32 | 18.3 | 3 alpha-ceiling bats (sum p95 110); elite scoring env (TD/g 2.71, rk6); run-leaning (low pass volume); notable vacated targets (18) |
-| 10 | LAC | 58.3 | 3 | 103.8 | 2.41 | 14 | 21 | 22.7 | 3 alpha-ceiling bats (sum p95 104); notable vacated targets (23) |
-| 11 | NE | 56.2 | 2 | 74.5 | 2.65 | 8 | 25 | 30.4 | 2 alpha ceiling(s) (sum p95 75); good scoring env (TD/g 2.65); run-leaning (low pass volume); huge vacated targets (30) |
-| 12 | ATL | 49.0 | 2 | 84.5 | 1.88 | 23 | 7 | 20.7 | 2 alpha ceiling(s) (sum p95 85); notable vacated targets (21) |
-| 13 | SEA | 46.7 | 1 | 46.6 | 2.53 | 11 | 27 | 38.7 | 1 alpha ceiling(s) (sum p95 47); good scoring env (TD/g 2.53); run-leaning (low pass volume); huge vacated targets (39) |
-| 14 | NYJ | 45.9 | 2 | 74.2 | 2.0 | 22 | 18 | 40.5 | 2 alpha ceiling(s) (sum p95 74); huge vacated targets (40) |
-| 15 | ARI | 44.1 | 2 | 72.7 | 1.71 | 28 | 2 | 23.6 | 2 alpha ceiling(s) (sum p95 73); top pass volume (rk2); notable vacated targets (24) |
-| 16 | WAS | 43.9 | 1 | 35.6 | 2.29 | 17 | 25 | 59.5 | 1 alpha ceiling(s) (sum p95 36); run-leaning (low pass volume); huge vacated targets (60) |
-| 17 | NYG | 42.1 | 2 | 71.5 | 2.18 | 20 | 30 | 33.8 | 2 alpha ceiling(s) (sum p95 72); run-leaning (low pass volume); huge vacated targets (34) |
-| 18 | GB | 41.8 | 1 | 36.7 | 2.47 | 12 | 18 | 28.6 | 1 alpha ceiling(s) (sum p95 37); good scoring env (TD/g 2.47); notable vacated targets (29) |
-| 19 | IND | 40.5 | 1 | 40.4 | 2.29 | 17 | 23 | 41.1 | 1 alpha ceiling(s) (sum p95 40); huge vacated targets (41) |
-| 20 | CHI | 40.5 | 1 | 33.3 | 2.41 | 14 | 21 | 27.2 | 1 alpha ceiling(s) (sum p95 33); notable vacated targets (27) |
-| 21 | MIN | 40.5 | 1 | 41.2 | 2.12 | 21 | 4 | 22.8 | 1 alpha ceiling(s) (sum p95 41); top pass volume (rk4); notable vacated targets (23) |
-| 22 | JAX | 35.1 | 1 | 35.0 | 2.35 | 16 | 10 | 15.0 | 1 alpha ceiling(s) (sum p95 35) |
-| 23 | LV | 34.2 | 2 | 71.1 | 1.71 | 28 | 8 | 12.0 | 2 alpha ceiling(s) (sum p95 71) |
-| 24 | TB | 32.7 | 1 | 33.1 | 2.24 | 19 | 23 | 29.6 | 1 alpha ceiling(s) (sum p95 33); notable vacated targets (30) |
-| 25 | NO | 27.0 | 1 | 35.8 | 1.88 | 23 | 14 | 13.4 | 1 alpha ceiling(s) (sum p95 36) |
-| 26 | DEN | 26.6 | 0 | 0.0 | 2.47 | 13 | 9 | 9.8 | thin on alpha ceilings |
-| 27 | PIT | 26.3 | 0 | 0.0 | 1.76 | 27 | 6 | 44.8 | thin on alpha ceilings; top pass volume (rk6); huge vacated targets (45) |
-| 28 | HOU | 22.6 | 1 | 37.5 | 1.88 | 23 | 13 | 10.8 | 1 alpha ceiling(s) (sum p95 37) |
-| 29 | CAR | 18.4 | 1 | 36.4 | 1.82 | 26 | 17 | 20.0 | 1 alpha ceiling(s) (sum p95 36); notable vacated targets (20) |
-| 30 | MIA | 12.9 | 1 | 40.3 | 1.35 | 32 | 29 | 44.0 | 1 alpha ceiling(s) (sum p95 40); run-leaning (low pass volume); huge vacated targets (44) |
-| 31 | TEN | 10.6 | 0 | 0.0 | 1.71 | 30 | 11 | 25.7 | thin on alpha ceilings; notable vacated targets (26) |
+| 1 | LAR | 100.0 | 4 | 155.1 | 3.24 | 1 | 11 | 4.7 | 4 alpha-ceiling bats (sum p95 155); elite scoring env (TD/g 3.24, rk1) |
+| 2 | DAL | 96.7 | 4 | 148.4 | 2.76 | 5 | 3 | 5.7 | 4 alpha-ceiling bats (sum p95 148); elite scoring env (TD/g 2.76, rk5); top pass volume (rk3) |
+| 3 | DET | 85.8 | 3 | 124.5 | 2.94 | 3 | 15 | 14.8 | 3 alpha-ceiling bats (sum p95 125); elite scoring env (TD/g 2.94, rk3) |
+| 4 | KC | 84.4 | 3 | 108.4 | 2.59 | 9 | 5 | 30.8 | 3 alpha-ceiling bats (sum p95 108); good scoring env (TD/g 2.59); top pass volume (rk5); huge vacated targets (31) |
+| 5 | SF | 76.4 | 3 | 113.1 | 2.59 | 9 | 20 | 31.3 | 3 alpha-ceiling bats (sum p95 113); good scoring env (TD/g 2.59); huge vacated targets (31) |
+| 6 | CIN | 72.9 | 2 | 82.0 | 2.76 | 4 | 1 | 6.7 | 2 alpha ceiling(s) (sum p95 82); elite scoring env (TD/g 2.76, rk4); top pass volume (rk1) |
+| 7 | PHI | 67.8 | 3 | 102.9 | 2.65 | 7 | 31 | 33.3 | 3 alpha-ceiling bats (sum p95 103); good scoring env (TD/g 2.65); run-leaning (low pass volume); huge vacated targets (33) |
+| 8 | BUF | 63.0 | 2 | 79.3 | 3.06 | 2 | 28 | 16.8 | 2 alpha ceiling(s) (sum p95 79); elite scoring env (TD/g 3.06, rk2); run-leaning (low pass volume) |
+| 9 | BAL | 60.5 | 3 | 109.5 | 2.71 | 6 | 32 | 18.3 | 3 alpha-ceiling bats (sum p95 110); elite scoring env (TD/g 2.71, rk6); run-leaning (low pass volume); notable vacated targets (18) |
+| 10 | LAC | 59.7 | 3 | 103.8 | 2.41 | 14 | 21 | 22.7 | 3 alpha-ceiling bats (sum p95 104); notable vacated targets (23) |
+| 11 | NE | 55.5 | 2 | 74.5 | 2.65 | 8 | 25 | 25.9 | 2 alpha ceiling(s) (sum p95 75); good scoring env (TD/g 2.65); run-leaning (low pass volume); notable vacated targets (26) |
+| 12 | ATL | 50.1 | 2 | 84.5 | 1.88 | 23 | 7 | 20.7 | 2 alpha ceiling(s) (sum p95 85); notable vacated targets (21) |
+| 13 | NYJ | 47.3 | 2 | 74.2 | 2.0 | 22 | 18 | 40.5 | 2 alpha ceiling(s) (sum p95 74); huge vacated targets (40) |
+| 14 | ARI | 45.2 | 2 | 72.7 | 1.71 | 28 | 2 | 23.6 | 2 alpha ceiling(s) (sum p95 73); top pass volume (rk2); notable vacated targets (24) |
+| 15 | NYG | 43.3 | 2 | 71.5 | 2.18 | 20 | 30 | 33.8 | 2 alpha ceiling(s) (sum p95 72); run-leaning (low pass volume); huge vacated targets (34) |
+| 16 | GB | 42.9 | 1 | 36.7 | 2.47 | 12 | 18 | 28.6 | 1 alpha ceiling(s) (sum p95 37); good scoring env (TD/g 2.47); notable vacated targets (29) |
+| 17 | WAS | 42.3 | 1 | 35.6 | 2.29 | 17 | 25 | 52.2 | 1 alpha ceiling(s) (sum p95 36); run-leaning (low pass volume); huge vacated targets (52) |
+| 18 | IND | 41.9 | 1 | 40.4 | 2.29 | 17 | 23 | 41.1 | 1 alpha ceiling(s) (sum p95 40); huge vacated targets (41) |
+| 19 | CHI | 41.6 | 1 | 33.3 | 2.41 | 14 | 21 | 27.2 | 1 alpha ceiling(s) (sum p95 33); notable vacated targets (27) |
+| 20 | MIN | 41.4 | 1 | 41.2 | 2.12 | 21 | 4 | 22.8 | 1 alpha ceiling(s) (sum p95 41); top pass volume (rk4); notable vacated targets (23) |
+| 21 | JAX | 35.8 | 1 | 35.0 | 2.35 | 16 | 10 | 15.0 | 1 alpha ceiling(s) (sum p95 35) |
+| 22 | LV | 34.9 | 2 | 71.1 | 1.71 | 28 | 8 | 12.0 | 2 alpha ceiling(s) (sum p95 71) |
+| 23 | SEA | 33.9 | 1 | 46.6 | 2.53 | 11 | 27 | 7.7 | 1 alpha ceiling(s) (sum p95 47); good scoring env (TD/g 2.53); run-leaning (low pass volume) |
+| 24 | TB | 33.7 | 1 | 33.1 | 2.24 | 19 | 23 | 29.6 | 1 alpha ceiling(s) (sum p95 33); notable vacated targets (30) |
+| 25 | NO | 27.5 | 1 | 35.8 | 1.88 | 23 | 14 | 13.4 | 1 alpha ceiling(s) (sum p95 36) |
+| 26 | PIT | 27.4 | 0 | 0.0 | 1.76 | 27 | 6 | 44.8 | thin on alpha ceilings; top pass volume (rk6); huge vacated targets (45) |
+| 27 | DEN | 27.0 | 0 | 0.0 | 2.47 | 13 | 9 | 9.8 | thin on alpha ceilings |
+| 28 | HOU | 23.0 | 1 | 37.5 | 1.88 | 23 | 13 | 10.8 | 1 alpha ceiling(s) (sum p95 37) |
+| 29 | CAR | 18.9 | 1 | 36.4 | 1.82 | 26 | 17 | 20.0 | 1 alpha ceiling(s) (sum p95 36); notable vacated targets (20) |
+| 30 | MIA | 13.7 | 1 | 40.3 | 1.35 | 32 | 29 | 44.0 | 1 alpha ceiling(s) (sum p95 40); run-leaning (low pass volume); huge vacated targets (44) |
+| 31 | TEN | 11.0 | 0 | 0.0 | 1.71 | 30 | 11 | 25.7 | thin on alpha ceilings; notable vacated targets (26) |
 | 32 | CLE | 0.0 | 0 | 0.0 | 1.47 | 31 | 15 | 15.2 | thin on alpha ceilings |
 
 ## 3. Stacks - QB + WR1 (+WR2/TE) + Week-17 Bring-Back

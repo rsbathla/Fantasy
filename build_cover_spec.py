@@ -25,7 +25,8 @@ MZ = {'man':(10,13),'zone':(14,17),'single_high':(18,21),'two_high':(22,25)}
 def parse_mz(files):
     agg = {}
     for f in files:
-        p = os.path.join(DL, f)
+        p = os.path.join(HERE, f)                 # repo-root first (sandbox layout)...
+        if not os.path.exists(p): p = os.path.join(DL, f)   # ...then Downloads (user-machine layout)
         if not os.path.exists(p): continue
         for r in list(csv.reader(open(p, encoding='utf-8-sig')))[1:]:
             if len(r) < 26: continue
@@ -61,15 +62,23 @@ def specialize(recs, keys):
                          'profile':{b:round(vals[b],2) for b in vals},'pctls':{b:round(pc[b]) for b in pc}}
     return out
 
-# WR/TE — 2 season man-vs-zone
+# WR/TE — man-vs-zone (2024 file was never pulled in this checkout -> effectively 1-season/2025;
+# auto-upgrades to 2-season if receivingManVsZone_2024.csv is added later)
 mz = parse_mz(["receivingManVsZone_2024.csv","receivingManVsZone_2025.csv"])
+if not mz:
+    raise SystemExit("build_cover_spec: no man-vs-zone data found (receivingManVsZone_*.csv missing at HERE and DL) "
+                     "-> WR/TE cover_spec would be empty. Fix the input path/pull instead of shipping {}.")
 out = {}
 out.update(specialize([r for r in mz if r[1]=='WR'], list(MZ)))
 out.update(specialize([r for r in mz if r[1]=='TE'], list(MZ)))
 
 # QB — unchanged (2025 cover-matchup, Cover-2/3/4/6)
 def parse_qb():
-    rows=list(csv.reader(open(os.path.join(DL,"qbCoverageMatchupExport.csv"),encoding='utf-8-sig')))[1:]
+    _src=os.path.join(DL,"qbCoverageMatchupExport.csv")
+    if not os.path.exists(_src):
+        print("build_cover_spec: qbCoverageMatchupExport.csv absent -> skipping QB cover-spec (WR/TE unchanged)")
+        return []
+    rows=list(csv.reader(open(_src,encoding='utf-8-sig')))[1:]
     perf={'c2':19,'c3':23,'c4':27,'c6':31,'man':15}; use={'c2':18,'c3':22,'c4':26,'c6':30,'man':14}; vol=7
     recs=[]
     for r in rows:

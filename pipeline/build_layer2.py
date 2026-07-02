@@ -42,12 +42,20 @@ team_out.to_csv('layer2_team_params.csv',index=False)
 us=pd.read_parquet('usage_shares.parquet')   # has name, season, metric, cv, mean, n
 us['key']=us['name'].map(norm)
 # take most-recent-season cv per key/metric with n>=6
-us=us[us['n']>=6].sort_values('season').drop_duplicates(['key','metric'],keep='last')
-cv_t=us[us['metric']=='tgt_share'].set_index('key')['cv'].to_dict()
-cv_c=us[us['metric']=='carry_share'].set_index('key')['cv'].to_dict()
+us=us[us['n']>=6].copy()
+# C4 FIX: the first-initial key collides DISTINCT players (A.J. Brown / Amon-Ra St. Brown -> 'a.brown';
+# Jordan Love / Jeremiyah Love -> 'j.love'). The old drop_duplicates(keep='last') then silently handed
+# one player the OTHER's usage-CV (a sim-variance input). Detect keys fed by >1 distinct source name and
+# DROP them, so those players fall back to the position-archetype CV -- refuse a wrong value, never swap.
+_coll={m:{k for k,g in us[us['metric']==m].groupby('key') if g['name'].nunique()>1} for m in ('tgt_share','carry_share')}
+us=us.sort_values('season').drop_duplicates(['key','metric'],keep='last')
+cv_t={k:v for k,v in us[us['metric']=='tgt_share'].set_index('key')['cv'].to_dict().items() if k not in _coll['tgt_share']}
+cv_c={k:v for k,v in us[us['metric']=='carry_share'].set_index('key')['cv'].to_dict().items() if k not in _coll['carry_share']}
 # position-archetype fallback CV (median of measured)
 pos_cv_t=us[us['metric']=='tgt_share']['cv'].median()
 pos_cv_c=us[us['metric']=='carry_share']['cv'].median()
+if _coll['tgt_share'] or _coll['carry_share']:
+    print(f"  [C4] dropped colliding CV keys -> archetype fallback: tgt={sorted(_coll['tgt_share'])} carry={sorted(_coll['carry_share'])}")
 
 # ---- PLAYER PARAMS ----
 rows=[]

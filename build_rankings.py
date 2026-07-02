@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
-"""Rankings board: merged_rankings_2026 (ADP-anchored blend of fusion+ceiling+clay+playoff+ADP)
-enriched with our model reads -> rankings_2026.csv + rankings.html (sortable draft board)."""
+"""Rankings board -> rankings_2026.csv + rankings.html (sortable draft board).
+
+ORDER = the model's forward-looking rank (flag_ranks.json `adj_rank`: 2026 p95 ceiling 0.30 +
+portable traits 0.35 + season matchup 0.35, ADP-anchored, bounded +/-8) so this board agrees with
+the ADP cluster board / big board. Players deeper than the flag_ranks pool (~376) follow after,
+in their merged_rankings_2026 (consensus blend) order. Rows keep the merged-board enrichment
+(proj/ceiling/consensus/risk flags); Edge = the model's delta (mkt_rank - adj_rank) where modeled."""
 import csv, json, os, re, core, datetime
 def fn(n): n=str(n).strip().lower(); n=re.sub(r'\s+(jr|sr|ii|iii|iv|v)\.?$','',n); return ' '.join(n.replace('.','').replace("'","").replace('-',' ').split())
 def num(x):
@@ -13,21 +18,33 @@ sig={fn(r['name']):r for r in csv.DictReader(open(core.P('draft_board_signals.cs
 intel={fn(p['name']):p for p in (json.load(open(core.P('intel_data.json'))).get('players',[]) if os.path.exists(core.P('intel_data.json')) else [])}
 _FL=(json.load(open(core.P('flags_2026.json'))).get('players',{}) if os.path.exists(core.P('flags_2026.json')) else {})
 FLG={fn(v['name']):v for v in _FL.values()}  # data-backed risk flags (total/playoff/avail/adj)
+# the model's forward-looking rank (authoritative order; same source as the ADP cluster board)
+FR=(json.load(open(core.P('flag_ranks.json'))).get('players',{}) if os.path.exists(core.P('flag_ranks.json')) else {})
 def cons(p):
     c=(p or {}).get('consensus'); return c.get('mean') if isinstance(c,dict) else c
-rows=[]; posn={}
-for m in MR:
-    k=fn(m['Name']); pos=m['Position']; posn[pos]=posn.get(pos,0)+1
-    fp=fus.get(k); bm=boom.get(k); s=sig.get(k,{}); it=intel.get(k,{})
+rows=[]
+for mi,m in enumerate(MR):
+    k=fn(m['Name']); pos=m['Position']
+    fp=fus.get(k); bm=boom.get(k); s=sig.get(k,{}); it=intel.get(k,{}); fr=FR.get(k)
     up=[u for u in (it.get('upside') or []) if u.get('group')=='model'][:2]
-    rows.append({'rank':int(float(m['merged_rank'])),'pos':pos,'posrank':posn[pos],'name':m['Name'],'team':m['Team'],
+    # Edge = the model's delta (mkt_rank - adj_rank; + = market undervalues). Deep, unmodeled
+    # players keep the merged board's bounded vs_adp so the column stays populated end-to-end.
+    edge=(int(fr['delta']) if (fr and fr.get('delta') is not None)
+          else (int(float(m['vs_adp'])) if m.get('vs_adp') not in (None,'','nan') else None))
+    rows.append({'rank':None,'pos':pos,'posrank':None,'name':m['Name'],'team':m['Team'],
         'adp':round(num(m['ADP']),1) if num(m['ADP']) is not None else None,
-        'edge':int(float(m['vs_adp'])) if m.get('vs_adp') not in (None,'','nan') else None,
+        'edge':edge,
         'proj':round(num(s.get('proj_pg')),1) if num(s.get('proj_pg')) is not None else None,
         'ceil':(bm or {}).get('ceiling_pct'),'cons':round(cons(fp)) if cons(fp) is not None else None,
         'flags':(fp or {}).get('flags',[])[:2],'up':[u['dim'] for u in up],
         'nsrc':int(float(m.get('n_sources') or 0)),
-        'ft':(FLG.get(k) or {}).get('total'),'fp':(FLG.get(k) or {}).get('playoff'),'av':(FLG.get(k) or {}).get('avail'),'adj':(FLG.get(k) or {}).get('adj_pg')})
+        'ft':(FLG.get(k) or {}).get('total'),'fp':(FLG.get(k) or {}).get('playoff'),'av':(FLG.get(k) or {}).get('avail'),'adj':(FLG.get(k) or {}).get('adj_pg'),
+        '_sort':(0,fr['adj_rank']) if (fr and fr.get('adj_rank') is not None) else (1,mi)})
+# order: model adj_rank first (matches the cluster board), then unmodeled players in merged order
+rows.sort(key=lambda r:r['_sort'])
+posn={}
+for i,r in enumerate(rows,1):
+    r['rank']=i; posn[r['pos']]=posn.get(r['pos'],0)+1; r['posrank']=posn[r['pos']]; del r['_sort']
 # enriched CSV
 with open(core.P('rankings_2026.csv'),'w',newline='') as fh:
     w=csv.writer(fh); w.writerow(['rank','pos','posrank','name','team','adp','edge_vs_adp','proj_pg','ceiling_pct','consensus','flags_total','flags_playoff','avail','adj_proj_pg','model_flags','upside'])
@@ -51,11 +68,11 @@ tr:hover td{background:rgba(91,157,255,.06)}
 .fl{font-size:10.5px;color:var(--warn)}.up{font-size:10px;color:var(--good);font-family:var(--mono)}
 .nm{font-weight:600}
 </style></head><body>
-<div class="top"><h1>2026 Rankings</h1><span class="sub">__N__ players · ADP-anchored blend of fusion + ceiling + Clay + playoff overlay · built __BUILT__ · &#9873; total risk flags, &#9670;PO = affects playoffs (W15-17), &rarr; = availability-adjusted proj/g</span>
+<div class="top"><h1>2026 Rankings</h1><span class="sub">__N__ players · model forward rank (2026 ceiling 50 / traits 25 / season matchup 25, ADP-anchored ±8 — matches the ADP cluster board; deeper players in merged-blend order) · built __BUILT__ · &#9873; total risk flags, &#9670;PO = affects playoffs (W15-17), &rarr; = availability-adjusted proj/g</span>
 <div class="ctl"><span class="fb on" data-p="ALL">ALL</span><span class="fb" data-p="QB">QB</span><span class="fb" data-p="RB">RB</span><span class="fb" data-p="WR">WR</span><span class="fb" data-p="TE">TE</span><input id="q" placeholder="search"></div></div>
 <table id="t"><thead><tr>
 <th class="r" data-k="rank">Rank</th><th data-k="pos">Pos</th><th class="nm" data-k="name">Player</th><th data-k="team">Tm</th>
-<th class="r" data-k="adp">ADP</th><th class="r" data-k="edge">Edge</th><th class="r" data-k="proj">Proj/g</th><th class="r" data-k="ceil">Ceil%</th><th class="r" data-k="cons">Cons</th><th class="r" data-k="ft" title="total risk flags">&#9873;</th><th class="r" data-k="fp" title="flags affecting fantasy playoffs (W15-17)">&#9670;PO</th><th data-k="flags">Model flags / upside</th>
+<th class="r" data-k="adp">ADP</th><th class="r" data-k="edge" title="model rank vs ADP, in draft spots — positive = market undervalues">Edge</th><th class="r" data-k="proj" title="projected fantasy points per game">Proj/g</th><th class="r" data-k="ceil" title="ceiling rate — % of weeks with a ceiling game">Ceil%</th><th class="r" data-k="cons" title="consensus — mean of model percentiles (0-100)">Cons</th><th class="r" data-k="ft" title="total risk flags">&#9873;</th><th class="r" data-k="fp" title="flags affecting fantasy playoffs (W15-17)">&#9670;PO</th><th data-k="flags">Model flags / upside</th>
 </tr></thead><tbody id="tb"></tbody></table>
 <script>
 const D=__DATA__; let pf='ALL',q='',sk='rank',sd=1;

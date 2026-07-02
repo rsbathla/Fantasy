@@ -10,15 +10,16 @@
    "slot": -1.8
   },
   "funnels": [
+   "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
    "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
    "TE funnel (soft vs TE)"
   ],
   "lean_2025": "RUN",
-  "lean_2026": "BALANCED",
+  "lean_2026": "PASS",
   "eng2026": {
-   "pass_cov_pctl": 1.6,
-   "run_def_pctl": 10.9,
-   "pass_rush_pctl": 92.2
+   "pass_cov_pctl": 10.9,
+   "run_def_pctl": 35.9,
+   "pass_rush_pctl": 79.7
   },
   "rookies": [
    [
@@ -54,9 +55,9 @@
   "lean_2025": "BALANCED",
   "lean_2026": "RUN",
   "eng2026": {
-   "pass_cov_pctl": 79.7,
-   "run_def_pctl": 48.4,
-   "pass_rush_pctl": 4.7
+   "pass_cov_pctl": 92.2,
+   "run_def_pctl": 32.8,
+   "pass_rush_pctl": 14.1
   },
   "rookies": [
    [
@@ -101,15 +102,15 @@
   },
   "funnels": [
    "WR1 funnel (top-CB beatable)",
-   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
   ],
   "lean_2025": "BALANCED",
-  "lean_2026": "PASS",
+  "lean_2026": "RUN",
   "dc": {
-   "name": "Anthony Weaver",
+   "name": "Jesse Minter",
    "man25": 23.2,
-   "man26": 20.1,
-   "scheme": "Anthony Weaver: multiple, LB-driven, gets pass-rush production",
+   "man26": 21.1,
+   "scheme": "Jesse Minter: heavy zone (~81%), two-high split-field, low man, low blitz, front-four pressure (ex-LAC DC)",
    "conf": "blend-prior"
   },
   "cb1": {
@@ -119,9 +120,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 39.1,
-   "run_def_pctl": 73.4,
-   "pass_rush_pctl": 26.6
+   "pass_cov_pctl": 76.6,
+   "run_def_pctl": 57.8,
+   "pass_rush_pctl": 54.7
   },
   "rookies": [
    [
@@ -171,9 +172,9 @@
    "wr1_funnel": "exploitable"
   },
   "eng2026": {
-   "pass_cov_pctl": 82.8,
-   "run_def_pctl": 35.9,
-   "pass_rush_pctl": 54.7
+   "pass_cov_pctl": 57.8,
+   "run_def_pctl": 23.4,
+   "pass_rush_pctl": 64.1
   },
   "rookies": [
    [
@@ -243,9 +244,9 @@
    "wr1_funnel": "fortress"
   },
   "eng2026": {
-   "pass_cov_pctl": 76.6,
+   "pass_cov_pctl": 60.9,
    "run_def_pctl": 7.8,
-   "pass_rush_pctl": 1.6
+   "pass_rush_pctl": 4.7
   },
   "rookies": [
    [
@@ -302,8 +303,8 @@
    "wr1_funnel": "exploitable"
   },
   "eng2026": {
-   "pass_cov_pctl": 64.1,
-   "run_def_pctl": 39.1,
+   "pass_cov_pctl": 67.2,
+   "run_def_pctl": 26.6,
    "pass_rush_pctl": 7.8
   },
   "rookies": [
@@ -362,9 +363,9 @@
    "wr1_funnel": "fortress"
   },
   "eng2026": {
-   "pass_cov_pctl": 10.9,
-   "run_def_pctl": 70.3,
-   "pass_rush_pctl": 32.8
+   "pass_cov_pctl": 1.6,
+   "run_def_pctl": 64.1,
+   "pass_rush_pctl": 23.4
   },
   "rookies": [
    [
@@ -427,9 +428,9 @@
    "wr1_funnel": "exploitable"
   },
   "eng2026": {
-   "pass_cov_pctl": 45.3,
+   "pass_cov_pctl": 20.3,
    "run_def_pctl": 92.2,
-   "pass_rush_pctl": 60.9
+   "pass_rush_pctl": 45.3
   },
   "rookies": [
    [
@@ -479,8 +480,8 @@
   },
   "eng2026": {
    "pass_cov_pctl": 23.4,
-   "run_def_pctl": 17.2,
-   "pass_rush_pctl": 23.4
+   "run_def_pctl": 10.9,
+   "pass_rush_pctl": 17.2
   },
   "rookies": [
    [
@@ -578,9 +579,9 @@
    "wr1_funnel": "fortress"
   },
   "eng2026": {
-   "pass_cov_pctl": 89.1,
-   "run_def_pctl": 57.8,
-   "pass_rush_pctl": 79.7
+   "pass_cov_pctl": 98.4,
+   "run_def_pctl": 73.4,
+   "pass_rush_pctl": 70.3
   },
   "rookies": [
    [
@@ -614,7 +615,7 @@
    "SLOT funnel (slot WR exploitable)"
   ],
   "lean_2025": "PASS",
-  "lean_2026": "PASS",
+  "lean_2026": "BALANCED",
   "cb1": {
    "name": "Roger McCreary",
    "cov": 72.0,
@@ -622,9 +623,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 67.2,
-   "run_def_pctl": 95.3,
-   "pass_rush_pctl": 89.1
+   "pass_cov_pctl": 85.9,
+   "run_def_pctl": 79.7,
+   "pass_rush_pctl": 98.4
   },
   "rookies": [
    [
@@ -667,11 +668,9 @@
    "wr2": 0.1,
    "slot": 0.1
   },
-  "funnels": [
-   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)"
-  ],
+  "funnels": [],
   "lean_2025": "PASS",
-  "lean_2026": "RUN",
+  "lean_2026": "BALANCED",
   "dc": {
    "name": "Jonathan Gannon",
    "man25": 19.3,
@@ -686,9 +685,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 48.4,
-   "run_def_pctl": 26.6,
-   "pass_rush_pctl": 67.2
+   "pass_cov_pctl": 45.3,
+   "run_def_pctl": 39.1,
+   "pass_rush_pctl": 82.8
   },
   "rookies": [
    [
@@ -757,9 +756,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 73.4,
-   "run_def_pctl": 79.7,
-   "pass_rush_pctl": 95.3
+   "pass_cov_pctl": 70.3,
+   "run_def_pctl": 76.6,
+   "pass_rush_pctl": 92.2
   },
   "rookies": [
    [
@@ -829,9 +828,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 32.8,
-   "run_def_pctl": 51.6,
-   "pass_rush_pctl": 39.1
+   "pass_cov_pctl": 35.9,
+   "run_def_pctl": 70.3,
+   "pass_rush_pctl": 29.7
   },
   "rookies": [
    [
@@ -889,11 +888,12 @@
    "slot": 0.0
   },
   "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
    "WR1 funnel (top-CB beatable)"
   ],
   "lean_2025": "PASS",
-  "lean_2026": "BALANCED",
+  "lean_2026": "RUN",
   "cb1": {
    "name": "Jarrian Jones",
    "cov": 74.5,
@@ -901,9 +901,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 98.4,
-   "run_def_pctl": 89.1,
-   "pass_rush_pctl": 48.4
+   "pass_cov_pctl": 89.1,
+   "run_def_pctl": 42.2,
+   "pass_rush_pctl": 39.1
   },
   "rookies": [
    [
@@ -970,9 +970,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 51.6,
-   "run_def_pctl": 45.3,
-   "pass_rush_pctl": 57.8
+   "pass_cov_pctl": 48.4,
+   "run_def_pctl": 51.6,
+   "pass_rush_pctl": 51.6
   },
   "rookies": [
    [
@@ -1063,9 +1063,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 54.7,
-   "run_def_pctl": 14.1,
-   "pass_rush_pctl": 10.9
+   "pass_cov_pctl": 79.7,
+   "run_def_pctl": 29.7,
+   "pass_rush_pctl": 42.2
   },
   "rookies": [
    [
@@ -1120,9 +1120,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 57.8,
+   "pass_cov_pctl": 51.6,
    "run_def_pctl": 60.9,
-   "pass_rush_pctl": 70.3
+   "pass_rush_pctl": 85.9
   },
   "rookies": []
  },
@@ -1156,9 +1156,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 26.6,
-   "run_def_pctl": 76.6,
-   "pass_rush_pctl": 14.1
+   "pass_cov_pctl": 17.2,
+   "run_def_pctl": 85.9,
+   "pass_rush_pctl": 10.9
   },
   "rookies": [
    [
@@ -1234,9 +1234,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 42.2,
-   "run_def_pctl": 54.7,
-   "pass_rush_pctl": 76.6
+   "pass_cov_pctl": 39.1,
+   "run_def_pctl": 45.3,
+   "pass_rush_pctl": 1.6
   },
   "rookies": [
    [
@@ -1319,9 +1319,9 @@
    "wr1_funnel": "fortress"
   },
   "eng2026": {
-   "pass_cov_pctl": 70.3,
-   "run_def_pctl": 29.7,
-   "pass_rush_pctl": 98.4
+   "pass_cov_pctl": 82.8,
+   "run_def_pctl": 14.1,
+   "pass_rush_pctl": 95.3
   },
   "rookies": [
    [
@@ -1405,8 +1405,8 @@
   },
   "eng2026": {
    "pass_cov_pctl": 95.3,
-   "run_def_pctl": 82.8,
-   "pass_rush_pctl": 35.9
+   "run_def_pctl": 89.1,
+   "pass_rush_pctl": 32.8
   },
   "rookies": [
    [
@@ -1435,11 +1435,9 @@
    "wr2": -0.9,
    "slot": -0.6
   },
-  "funnels": [
-   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
-  ],
+  "funnels": [],
   "lean_2025": "BALANCED",
-  "lean_2026": "RUN",
+  "lean_2026": "BALANCED",
   "cb1": {
    "name": "Kool-Aid McKinstry",
    "cov": 71.4,
@@ -1447,9 +1445,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 29.7,
+   "pass_cov_pctl": 14.1,
    "run_def_pctl": 4.7,
-   "pass_rush_pctl": 82.8
+   "pass_rush_pctl": 60.9
   },
   "rookies": [
    [
@@ -1492,9 +1490,9 @@
    "conf": "blend-prior"
   },
   "eng2026": {
-   "pass_cov_pctl": 4.7,
+   "pass_cov_pctl": 29.7,
    "run_def_pctl": 67.2,
-   "pass_rush_pctl": 85.9
+   "pass_rush_pctl": 76.6
   },
   "rookies": [
    [
@@ -1557,9 +1555,9 @@
    "wr1_funnel": "exploitable"
   },
   "eng2026": {
-   "pass_cov_pctl": 20.3,
+   "pass_cov_pctl": 26.6,
    "run_def_pctl": 98.4,
-   "pass_rush_pctl": 17.2
+   "pass_rush_pctl": 26.6
   },
   "rookies": [
    [
@@ -1630,9 +1628,9 @@
    "wr1_funnel": "fortress"
   },
   "eng2026": {
-   "pass_cov_pctl": 92.2,
-   "run_def_pctl": 23.4,
-   "pass_rush_pctl": 42.2
+   "pass_cov_pctl": 73.4,
+   "run_def_pctl": 54.7,
+   "pass_rush_pctl": 67.2
   },
   "rookies": []
  },
@@ -1647,12 +1645,11 @@
    "slot": 2.4
   },
   "funnels": [
-   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
    "TE funnel (soft vs TE)"
   ],
   "lean_2025": "PASS",
-  "lean_2026": "RUN",
+  "lean_2026": "BALANCED",
   "dc": {
    "name": "Patrick Graham",
    "man25": 13.8,
@@ -1667,9 +1664,9 @@
    "wr1_funnel": "tight"
   },
   "eng2026": {
-   "pass_cov_pctl": 35.9,
+   "pass_cov_pctl": 32.8,
    "run_def_pctl": 20.3,
-   "pass_rush_pctl": 45.3
+   "pass_rush_pctl": 89.1
   },
   "rookies": [
    [
@@ -1711,9 +1708,9 @@
    "wr1_funnel": "fortress"
   },
   "eng2026": {
-   "pass_cov_pctl": 85.9,
-   "run_def_pctl": 42.2,
-   "pass_rush_pctl": 51.6
+   "pass_cov_pctl": 64.1,
+   "run_def_pctl": 48.4,
+   "pass_rush_pctl": 73.4
   },
   "rookies": [
    [
@@ -1769,9 +1766,9 @@
    "conf": null
   },
   "eng2026": {
-   "pass_cov_pctl": 60.9,
-   "run_def_pctl": 85.9,
-   "pass_rush_pctl": 29.7
+   "pass_cov_pctl": 54.7,
+   "run_def_pctl": 82.8,
+   "pass_rush_pctl": 48.4
   },
   "rookies": [
    [
@@ -1828,11 +1825,9 @@
    "wr2": -2.0,
    "slot": 0.9
   },
-  "funnels": [
-   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
-  ],
+  "funnels": [],
   "lean_2025": "BALANCED",
-  "lean_2026": "PASS",
+  "lean_2026": "BALANCED",
   "cb1": {
    "name": "Jacob Parrish",
    "cov": 65.7,
@@ -1840,9 +1835,9 @@
    "wr1_funnel": "exploitable"
   },
   "eng2026": {
-   "pass_cov_pctl": 17.2,
-   "run_def_pctl": 32.8,
-   "pass_rush_pctl": 73.4
+   "pass_cov_pctl": 4.7,
+   "run_def_pctl": 17.2,
+   "pass_rush_pctl": 35.9
   },
   "rookies": [
    [
@@ -1919,9 +1914,9 @@
    "wr1_funnel": "exploitable"
   },
   "eng2026": {
-   "pass_cov_pctl": 14.1,
-   "run_def_pctl": 64.1,
-   "pass_rush_pctl": 64.1
+   "pass_cov_pctl": 42.2,
+   "run_def_pctl": 95.3,
+   "pass_rush_pctl": 57.8
   },
   "rookies": [
    [

@@ -30,7 +30,7 @@ for name,v in (lc.get('players') or {}).items():
 rows.sort(key=lambda r:(-(r['po'] or 0), -(r['peak'] or 0)))
 data=json.dumps(rows)
 meta=lc.get('meta',{})
-doc=f"""<!doctype html><html><head><meta charset=utf-8><title>Ceiling-Lever Stack Board — 2026</title>
+doc=f"""<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Ceiling-Lever Stack Board — 2026</title>
 <style>
 :root{{--bg:#0b0f17;--card:#121a29;--line:#1e2a3d;--line2:#2a3a52;--ink:#eef2f8;--ink2:#aab8cc;--ink3:#6f819b;--accent:#5b9dff;--good:#5fd08a;--warn:#e6b34d}}
 *{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--ink);font:13px/1.5 -apple-system,Segoe UI,Roboto,Arial,sans-serif}}

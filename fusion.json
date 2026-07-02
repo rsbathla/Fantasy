@@ -161,7 +161,7 @@
         "adv": 99.68,
         "coachspeak": 81.58,
         "oline": 82.12,
-        "matchup": 83.11,
+        "matchup": 85.1,
         "sis_value": 99.5,
         "boom": 99.5,
         "route_eff": 97.15,
@@ -171,8 +171,8 @@
         "yac": 87.16,
         "explosive": 80.08
       },
-      "consensus": 82.53,
-      "divergence": 23.67,
+      "consensus": 82.64,
+      "divergence": 23.68,
       "flags": [
         "CONSENSUS STUD",
         "POLARIZING"
@@ -192,7 +192,7 @@
         "adv": 99.52,
         "coachspeak": 92.0,
         "oline": 47.47,
-        "matchup": 83.33,
+        "matchup": 90.4,
         "sis_value": 63.25,
         "boom": 75.9,
         "run_eff": 50.0,
@@ -200,8 +200,8 @@
         "yac": 69.64,
         "explosive": 97.92
       },
-      "consensus": 75.36,
-      "divergence": 25.35,
+      "consensus": 75.83,
+      "divergence": 25.56,
       "flags": [
         "POLARIZING",
         "FLOOR RISK",
@@ -222,7 +222,7 @@
         "adv": 98.4,
         "coachspeak": 81.58,
         "oline": 63.91,
-        "matchup": 58.28,
+        "matchup": 57.62,
         "sis_value": 98.51,
         "boom": 93.07,
         "route_eff": 98.78,
@@ -232,8 +232,8 @@
         "yac": 73.65,
         "explosive": 19.11
       },
-      "consensus": 73.5,
-      "divergence": 29.99,
+      "consensus": 73.46,
+      "divergence": 30.01,
       "flags": [
         "CONSENSUS STUD",
         "POLARIZING"
@@ -253,7 +253,7 @@
         "adv": 97.6,
         "coachspeak": 82.0,
         "oline": 20.71,
-        "matchup": 85.86,
+        "matchup": 95.96,
         "sis_value": 50.6,
         "boom": 72.89,
         "run_eff": 50.0,
@@ -261,8 +261,8 @@
         "yac": 98.21,
         "explosive": 90.62
       },
-      "consensus": 72.85,
-      "divergence": 28.09,
+      "consensus": 73.52,
+      "divergence": 28.51,
       "flags": [
         "CONSENSUS STUD",
         "POLARIZING",
@@ -283,7 +283,7 @@
         "adv": 96.63,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 22.73,
+        "matchup": 38.89,
         "sis_value": 70.48,
         "boom": 49.4,
         "run_eff": 50.0,
@@ -291,8 +291,8 @@
         "yac": 73.21,
         "explosive": 97.92
       },
-      "consensus": 70.22,
-      "divergence": 28.53,
+      "consensus": 71.38,
+      "divergence": 26.86,
       "flags": [
         "POLARIZING",
         "RB-GAP-SCHEME"
@@ -312,7 +312,7 @@
         "adv": 99.04,
         "coachspeak": 81.58,
         "oline": 15.89,
-        "matchup": 77.48,
+        "matchup": 72.19,
         "sis_value": 88.61,
         "boom": 38.12,
         "route_eff": 77.24,
@@ -322,8 +322,8 @@
         "yac": 84.46,
         "explosive": 55.69
       },
-      "consensus": 67.59,
-      "divergence": 29.96,
+      "consensus": 67.27,
+      "divergence": 29.88,
       "flags": [
         "CONSENSUS STUD",
         "POLARIZING"
@@ -343,7 +343,7 @@
         "adv": 97.76,
         "coachspeak": 81.58,
         "oline": 7.62,
-        "matchup": 55.63,
+        "matchup": 38.41,
         "sis_value": 95.54,
         "boom": 75.74,
         "route_eff": 80.89,
@@ -353,8 +353,8 @@
         "yac": 50.0,
         "explosive": 9.35
       },
-      "consensus": 67.79,
-      "divergence": 31.62,
+      "consensus": 66.78,
+      "divergence": 32.26,
       "flags": [
         "POLARIZING"
       ]
@@ -373,7 +373,7 @@
         "adv": 97.12,
         "coachspeak": 53.95,
         "oline": 38.41,
-        "matchup": 63.58,
+        "matchup": 66.23,
         "sis_value": 87.62,
         "boom": 51.49,
         "route_eff": 91.87,
@@ -383,8 +383,8 @@
         "yac": 56.08,
         "explosive": 15.45
       },
-      "consensus": 64.4,
-      "divergence": 28.57,
+      "consensus": 64.55,
+      "divergence": 28.58,
       "flags": [
         "POLARIZING"
       ]
@@ -403,7 +403,7 @@
         "adv": 94.71,
         "coachspeak": 54.0,
         "oline": 98.48,
-        "matchup": 4.55,
+        "matchup": 8.59,
         "sis_value": 87.35,
         "boom": 61.45,
         "run_eff": 50.0,
@@ -411,8 +411,8 @@
         "yac": 55.36,
         "explosive": 82.29
       },
-      "consensus": 68.94,
-      "divergence": 29.82,
+      "consensus": 69.21,
+      "divergence": 29.25,
       "flags": [
         "POLARIZING"
       ]
@@ -431,7 +431,7 @@
         "adv": 98.56,
         "coachspeak": 58.0,
         "oline": 66.67,
-        "matchup": 94.95,
+        "matchup": 71.72,
         "sis_value": 6.63,
         "boom": 24.7,
         "run_eff": 50.0,
@@ -439,8 +439,8 @@
         "yac": 62.5,
         "explosive": 25.0
       },
-      "consensus": 57.96,
-      "divergence": 34.48,
+      "consensus": 56.42,
+      "divergence": 33.29,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP"
@@ -460,7 +460,7 @@
         "adv": 95.19,
         "coachspeak": 59.21,
         "oline": 52.32,
-        "matchup": 92.72,
+        "matchup": 98.68,
         "sis_value": 77.72,
         "boom": 67.82,
         "route_eff": 93.09,
@@ -470,8 +470,8 @@
         "yac": 62.16,
         "explosive": 36.99
       },
-      "consensus": 65.28,
-      "divergence": 28.84,
+      "consensus": 65.63,
+      "divergence": 29.21,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -491,7 +491,7 @@
         "adv": 96.47,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 36.75,
+        "matchup": 55.3,
         "sis_value": 15.35,
         "boom": 58.42,
         "route_eff": 67.89,
@@ -501,8 +501,8 @@
         "yac": 71.62,
         "explosive": 49.59
       },
-      "consensus": 58.29,
-      "divergence": 29.8,
+      "consensus": 59.45,
+      "divergence": 29.29,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP",
@@ -523,7 +523,7 @@
         "adv": 87.98,
         "coachspeak": 92.0,
         "oline": 47.47,
-        "matchup": 88.38,
+        "matchup": 84.34,
         "sis_value": 36.75,
         "boom": 69.28,
         "run_eff": 50.0,
@@ -531,8 +531,8 @@
         "yac": 51.79,
         "explosive": 90.62
       },
-      "consensus": 66.16,
-      "divergence": 26.59,
+      "consensus": 65.89,
+      "divergence": 26.38,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP"
@@ -552,7 +552,7 @@
         "adv": 92.79,
         "coachspeak": 70.0,
         "oline": 20.71,
-        "matchup": 41.92,
+        "matchup": 21.72,
         "sis_value": 0.6,
         "boom": 12.65,
         "run_eff": 50.0,
@@ -560,8 +560,8 @@
         "yac": 80.36,
         "explosive": 61.46
       },
-      "consensus": 53.26,
-      "divergence": 34.13,
+      "consensus": 51.91,
+      "divergence": 34.94,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP"
@@ -581,7 +581,7 @@
         "adv": 87.02,
         "coachspeak": 46.0,
         "oline": 47.47,
-        "matchup": 55.05,
+        "matchup": 62.12,
         "sis_value": 82.53,
         "boom": 61.45,
         "run_eff": 50.0,
@@ -589,8 +589,8 @@
         "yac": 50.0,
         "explosive": 90.62
       },
-      "consensus": 69.3,
-      "divergence": 23.19,
+      "consensus": 69.8,
+      "divergence": 22.95,
       "flags": [
         "POLARIZING"
       ]
@@ -609,7 +609,7 @@
         "adv": 95.67,
         "coachspeak": 78.0,
         "oline": 20.71,
-        "matchup": 10.61,
+        "matchup": 14.65,
         "sis_value": 95.78,
         "boom": 88.55,
         "run_eff": 50.0,
@@ -617,8 +617,8 @@
         "yac": 8.93,
         "explosive": 90.62
       },
-      "consensus": 66.34,
-      "divergence": 34.71,
+      "consensus": 66.61,
+      "divergence": 34.29,
       "flags": [
         "POLARIZING"
       ]
@@ -637,7 +637,7 @@
         "adv": 88.94,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 29.29,
+        "matchup": 18.18,
         "sis_value": 25.9,
         "boom": 45.78,
         "run_eff": 50.0,
@@ -645,8 +645,8 @@
         "yac": 50.0,
         "explosive": 77.08
       },
-      "consensus": 55.98,
-      "divergence": 28.33,
+      "consensus": 55.12,
+      "divergence": 29.27,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES"
@@ -666,7 +666,7 @@
         "adv": 90.71,
         "coachspeak": 81.58,
         "oline": 38.41,
-        "matchup": 63.58,
+        "matchup": 66.23,
         "sis_value": 97.52,
         "boom": 93.07,
         "route_eff": 95.53,
@@ -676,8 +676,8 @@
         "yac": 96.62,
         "explosive": 17.07
       },
-      "consensus": 68.07,
-      "divergence": 33.28,
+      "consensus": 68.23,
+      "divergence": 33.26,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -697,7 +697,7 @@
         "adv": 93.75,
         "coachspeak": 50.0,
         "oline": 3.54,
-        "matchup": 7.58,
+        "matchup": 1.52,
         "sis_value": 64.46,
         "boom": 53.01,
         "run_eff": 50.0,
@@ -705,8 +705,8 @@
         "yac": 35.71,
         "explosive": 61.46
       },
-      "consensus": 56.59,
-      "divergence": 30.78,
+      "consensus": 56.16,
+      "divergence": 31.5,
       "flags": [
         "POLARIZING"
       ]
@@ -725,13 +725,13 @@
         "adv": 99.11,
         "coachspeak": 67.86,
         "oline": 91.07,
-        "matchup": 6.25,
+        "matchup": 0.89,
         "sis_value": 84.69,
         "boom": 78.57,
         "protection": 76.53
       },
-      "consensus": 76.68,
-      "divergence": 27.42,
+      "consensus": 76.23,
+      "divergence": 28.58,
       "flags": [
         "POLARIZING",
         "QB-ZONE-BEATER"
@@ -751,7 +751,7 @@
         "adv": 86.06,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 63.13,
+        "matchup": 77.27,
         "sis_value": 50.6,
         "boom": 10.24,
         "run_eff": 50.0,
@@ -759,8 +759,8 @@
         "yac": 41.07,
         "explosive": 61.46
       },
-      "consensus": 60.22,
-      "divergence": 23.4,
+      "consensus": 61.23,
+      "divergence": 23.8,
       "flags": [
         "POLARIZING"
       ]
@@ -779,7 +779,7 @@
         "adv": 93.91,
         "coachspeak": 81.58,
         "oline": 7.62,
-        "matchup": 72.19,
+        "matchup": 75.17,
         "sis_value": 89.6,
         "boom": 63.86,
         "route_eff": 78.46,
@@ -789,8 +789,8 @@
         "yac": 88.51,
         "explosive": 25.2
       },
-      "consensus": 66.59,
-      "divergence": 30.39,
+      "consensus": 66.76,
+      "divergence": 30.43,
       "flags": [
         "POLARIZING"
       ]
@@ -809,7 +809,7 @@
         "adv": 90.06,
         "coachspeak": 81.58,
         "oline": 52.32,
-        "matchup": 95.36,
+        "matchup": 88.08,
         "sis_value": 93.56,
         "boom": 65.35,
         "route_eff": 67.07,
@@ -819,8 +819,8 @@
         "yac": 22.3,
         "explosive": 45.93
       },
-      "consensus": 67.47,
-      "divergence": 26.06,
+      "consensus": 67.04,
+      "divergence": 25.65,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -840,7 +840,7 @@
         "adv": 92.63,
         "coachspeak": 40.79,
         "oline": 52.32,
-        "matchup": 5.3,
+        "matchup": 13.25,
         "sis_value": 85.64,
         "boom": 39.11,
         "route_eff": 88.62,
@@ -850,8 +850,8 @@
         "yac": 80.41,
         "explosive": 42.28
       },
-      "consensus": 58.84,
-      "divergence": 31.44,
+      "consensus": 59.3,
+      "divergence": 30.69,
       "flags": [
         "POLARIZING"
       ]
@@ -899,7 +899,7 @@
         "adv": 97.62,
         "coachspeak": 83.33,
         "oline": 31.67,
-        "matchup": 25.0,
+        "matchup": 23.33,
         "sis_value": 59.78,
         "boom": 65.22,
         "route_eff": 47.12,
@@ -908,8 +908,8 @@
         "separation": 18.06,
         "yac": 79.17
       },
-      "consensus": 64.99,
-      "divergence": 30.53,
+      "consensus": 64.88,
+      "divergence": 30.67,
       "flags": [
         "POLARIZING",
         "FLOOR RISK",
@@ -930,7 +930,7 @@
         "adv": 91.83,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 50.51,
+        "matchup": 45.45,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -938,8 +938,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 67.62,
-      "divergence": 26.61,
+      "consensus": 66.98,
+      "divergence": 27.07,
       "flags": [
         "POLARIZING"
       ]
@@ -958,7 +958,7 @@
         "adv": 84.13,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 98.48,
+        "matchup": 65.15,
         "sis_value": 94.58,
         "boom": 66.87,
         "run_eff": 50.0,
@@ -966,8 +966,8 @@
         "yac": 1.79,
         "explosive": 25.0
       },
-      "consensus": 67.69,
-      "divergence": 27.94,
+      "consensus": 65.31,
+      "divergence": 26.61,
       "flags": [
         "POLARIZING"
       ]
@@ -986,7 +986,7 @@
         "adv": 91.35,
         "coachspeak": 81.58,
         "oline": 82.12,
-        "matchup": 66.56,
+        "matchup": 95.7,
         "sis_value": 91.58,
         "boom": 90.59,
         "route_eff": 86.18,
@@ -996,8 +996,8 @@
         "yac": 37.16,
         "explosive": 76.83
       },
-      "consensus": 78.57,
-      "divergence": 20.3,
+      "consensus": 80.28,
+      "divergence": 20.45,
       "flags": []
     },
     {
@@ -1046,7 +1046,7 @@
         "adv": 90.87,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 25.76,
+        "matchup": 27.78,
         "sis_value": 13.86,
         "boom": 57.83,
         "run_eff": 50.0,
@@ -1054,8 +1054,8 @@
         "yac": 87.5,
         "explosive": 90.62
       },
-      "consensus": 60.72,
-      "divergence": 27.01,
+      "consensus": 60.85,
+      "divergence": 26.84,
       "flags": [
         "POLARIZING",
         "RB-ZONE-SCHEME"
@@ -1075,7 +1075,7 @@
         "adv": 85.1,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 45.45,
+        "matchup": 35.35,
         "sis_value": 99.4,
         "boom": 37.95,
         "run_eff": 50.0,
@@ -1083,8 +1083,8 @@
         "yac": 5.36,
         "explosive": 25.0
       },
-      "consensus": 60.31,
-      "divergence": 27.69,
+      "consensus": 59.58,
+      "divergence": 28.19,
       "flags": [
         "POLARIZING"
       ]
@@ -1103,7 +1103,7 @@
         "adv": 91.99,
         "coachspeak": 81.58,
         "oline": 7.62,
-        "matchup": 60.93,
+        "matchup": 63.58,
         "sis_value": 86.63,
         "boom": 21.78,
         "route_eff": 62.6,
@@ -1113,8 +1113,8 @@
         "yac": 7.43,
         "explosive": 33.74
       },
-      "consensus": 59.06,
-      "divergence": 29.78,
+      "consensus": 59.22,
+      "divergence": 29.8,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -1134,7 +1134,7 @@
         "adv": 86.22,
         "coachspeak": 81.58,
         "oline": 15.89,
-        "matchup": 77.48,
+        "matchup": 72.19,
         "sis_value": 68.81,
         "boom": 82.67,
         "route_eff": 79.27,
@@ -1144,8 +1144,8 @@
         "yac": 50.0,
         "explosive": 44.31
       },
-      "consensus": 62.03,
-      "divergence": 27.76,
+      "consensus": 61.72,
+      "divergence": 27.62,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -1165,7 +1165,7 @@
         "adv": 86.86,
         "coachspeak": 81.58,
         "oline": 52.32,
-        "matchup": 30.79,
+        "matchup": 23.51,
         "sis_value": 35.15,
         "boom": 15.84,
         "route_eff": 69.92,
@@ -1175,8 +1175,8 @@
         "yac": 58.78,
         "explosive": 82.93
       },
-      "consensus": 56.04,
-      "divergence": 27.57,
+      "consensus": 55.62,
+      "divergence": 28.02,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -1196,7 +1196,7 @@
         "adv": 87.5,
         "coachspeak": 56.58,
         "oline": 1.66,
-        "matchup": 43.38,
+        "matchup": 52.65,
         "sis_value": 57.92,
         "boom": 47.03,
         "route_eff": 45.93,
@@ -1206,8 +1206,8 @@
         "yac": 79.05,
         "explosive": 14.23
       },
-      "consensus": 57.93,
-      "divergence": 27.7,
+      "consensus": 58.47,
+      "divergence": 27.5,
       "flags": [
         "POLARIZING"
       ]
@@ -1226,7 +1226,7 @@
         "adv": 94.44,
         "coachspeak": 38.89,
         "oline": 97.5,
-        "matchup": 2.5,
+        "matchup": 5.83,
         "sis_value": 92.39,
         "boom": 79.35,
         "route_eff": 85.58,
@@ -1235,8 +1235,8 @@
         "separation": 76.39,
         "yac": 62.5
       },
-      "consensus": 70.62,
-      "divergence": 30.52,
+      "consensus": 70.83,
+      "divergence": 30.06,
       "flags": [
         "POLARIZING"
       ]
@@ -1255,7 +1255,7 @@
         "adv": 82.21,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 69.7,
+        "matchup": 80.81,
         "sis_value": 4.22,
         "boom": 34.94,
         "run_eff": 50.0,
@@ -1263,8 +1263,8 @@
         "yac": 66.07,
         "explosive": 61.46
       },
-      "consensus": 54.3,
-      "divergence": 26.09,
+      "consensus": 55.09,
+      "divergence": 26.71,
       "flags": [
         "POLARIZING"
       ]
@@ -1283,7 +1283,7 @@
         "adv": 93.27,
         "coachspeak": 38.16,
         "oline": 63.91,
-        "matchup": 72.19,
+        "matchup": 91.72,
         "sis_value": 34.16,
         "boom": 4.95,
         "route_eff": 93.9,
@@ -1293,8 +1293,8 @@
         "yac": 50.0,
         "explosive": 98.78
       },
-      "consensus": 62.93,
-      "divergence": 31.61,
+      "consensus": 64.23,
+      "divergence": 32.36,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -1314,7 +1314,7 @@
         "adv": 88.78,
         "coachspeak": 25.0,
         "oline": 82.12,
-        "matchup": 83.11,
+        "matchup": 85.1,
         "sis_value": 61.88,
         "boom": 24.26,
         "route_eff": 73.58,
@@ -1324,8 +1324,8 @@
         "yac": 3.38,
         "explosive": 74.39
       },
-      "consensus": 57.41,
-      "divergence": 29.48,
+      "consensus": 57.53,
+      "divergence": 29.58,
       "flags": [
         "POLARIZING"
       ]
@@ -1344,7 +1344,7 @@
         "adv": 94.55,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 14.24,
+        "matchup": 7.62,
         "sis_value": 23.27,
         "boom": 49.01,
         "route_eff": 77.24,
@@ -1354,8 +1354,8 @@
         "yac": 25.0,
         "explosive": 2.03
       },
-      "consensus": 48.92,
-      "divergence": 32.92,
+      "consensus": 48.5,
+      "divergence": 33.39,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -1375,7 +1375,7 @@
         "adv": 81.73,
         "coachspeak": 48.68,
         "oline": 98.34,
-        "matchup": 1.66,
+        "matchup": 4.97,
         "sis_value": 83.66,
         "boom": 77.23,
         "route_eff": 84.96,
@@ -1385,8 +1385,8 @@
         "yac": 75.0,
         "explosive": 10.16
       },
-      "consensus": 67.81,
-      "divergence": 29.77,
+      "consensus": 68.01,
+      "divergence": 29.34,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -1406,7 +1406,7 @@
         "adv": 89.42,
         "coachspeak": 7.89,
         "oline": 24.5,
-        "matchup": 46.69,
+        "matchup": 60.6,
         "sis_value": 73.76,
         "boom": 79.7,
         "route_eff": 56.91,
@@ -1416,8 +1416,8 @@
         "yac": 30.41,
         "explosive": 33.74
       },
-      "consensus": 56.01,
-      "divergence": 26.96,
+      "consensus": 56.83,
+      "divergence": 26.88,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -1437,7 +1437,7 @@
         "adv": 84.29,
         "coachspeak": 30.26,
         "oline": 74.5,
-        "matchup": 27.48,
+        "matchup": 44.7,
         "sis_value": 76.73,
         "boom": 80.69,
         "route_eff": 83.33,
@@ -1447,8 +1447,8 @@
         "yac": 34.46,
         "explosive": 55.69
       },
-      "consensus": 60.71,
-      "divergence": 25.39,
+      "consensus": 61.72,
+      "divergence": 24.36,
       "flags": [
         "POLARIZING"
       ]
@@ -1467,7 +1467,7 @@
         "adv": 84.94,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 55.63,
+        "matchup": 38.41,
         "sis_value": 94.55,
         "boom": 89.6,
         "route_eff": 76.02,
@@ -1477,8 +1477,8 @@
         "yac": 92.57,
         "explosive": 8.54
       },
-      "consensus": 67.14,
-      "divergence": 27.88,
+      "consensus": 66.06,
+      "divergence": 28.62,
       "flags": [
         "POLARIZING"
       ]
@@ -1497,13 +1497,13 @@
         "adv": 97.32,
         "coachspeak": 50.0,
         "oline": 81.25,
-        "matchup": 64.29,
+        "matchup": 94.64,
         "sis_value": 47.96,
         "boom": 66.33,
         "protection": 47.96
       },
-      "consensus": 72.11,
-      "divergence": 23.85,
+      "consensus": 74.87,
+      "divergence": 24.53,
       "flags": [
         "POLARIZING",
         "FLOOR RISK"
@@ -1523,7 +1523,7 @@
         "adv": 89.9,
         "coachspeak": 14.0,
         "oline": 47.47,
-        "matchup": 66.16,
+        "matchup": 93.43,
         "sis_value": 7.83,
         "boom": 28.31,
         "run_eff": 50.0,
@@ -1531,8 +1531,8 @@
         "yac": 83.93,
         "explosive": 25.0
       },
-      "consensus": 51.89,
-      "divergence": 29.54,
+      "consensus": 53.71,
+      "divergence": 31.16,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP"
@@ -1552,7 +1552,7 @@
         "adv": 77.24,
         "coachspeak": 81.58,
         "oline": 82.12,
-        "matchup": 11.92,
+        "matchup": 9.93,
         "sis_value": 81.68,
         "boom": 91.58,
         "route_eff": 84.15,
@@ -1562,8 +1562,8 @@
         "yac": 67.57,
         "explosive": 63.82
       },
-      "consensus": 70.07,
-      "divergence": 25.74,
+      "consensus": 69.95,
+      "divergence": 26.01,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -1583,7 +1583,7 @@
         "adv": 83.17,
         "coachspeak": 6.0,
         "oline": 47.47,
-        "matchup": 73.23,
+        "matchup": 59.09,
         "sis_value": 15.06,
         "boom": 83.13,
         "run_eff": 50.0,
@@ -1591,8 +1591,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 57.06,
-      "divergence": 28.49,
+      "consensus": 55.88,
+      "divergence": 28.09,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES",
@@ -1613,7 +1613,7 @@
         "adv": 88.14,
         "coachspeak": 61.84,
         "oline": 38.41,
-        "matchup": 52.32,
+        "matchup": 35.1,
         "sis_value": 66.83,
         "boom": 77.23,
         "route_eff": 88.62,
@@ -1623,8 +1623,8 @@
         "yac": 29.05,
         "explosive": 52.44
       },
-      "consensus": 59.36,
-      "divergence": 27.26,
+      "consensus": 58.34,
+      "divergence": 27.81,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -1644,7 +1644,7 @@
         "adv": 83.01,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 8.94,
+        "matchup": 1.66,
         "sis_value": 46.04,
         "boom": 65.35,
         "route_eff": 25.61,
@@ -1654,8 +1654,8 @@
         "yac": 54.73,
         "explosive": 44.31
       },
-      "consensus": 56.79,
-      "divergence": 25.62,
+      "consensus": 56.34,
+      "divergence": 26.52,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -1675,7 +1675,7 @@
         "adv": 78.37,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 50.51,
+        "matchup": 74.75,
         "sis_value": 96.99,
         "boom": 89.76,
         "run_eff": 50.0,
@@ -1683,8 +1683,8 @@
         "yac": 44.64,
         "explosive": 25.0
       },
-      "consensus": 67.47,
-      "divergence": 22.56,
+      "consensus": 69.21,
+      "divergence": 22.12,
       "flags": [
         "POLARIZING",
         "RB-ZONE-SCHEME"
@@ -1704,7 +1704,7 @@
         "adv": 75.48,
         "coachspeak": 50.0,
         "oline": 1.01,
-        "matchup": 57.58,
+        "matchup": 56.57,
         "sis_value": 39.16,
         "boom": 43.98,
         "run_eff": 50.0,
@@ -1712,7 +1712,7 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 55.54,
+      "consensus": 55.46,
       "divergence": 23.26,
       "flags": [
         "POLARIZING",
@@ -1733,7 +1733,7 @@
         "adv": 76.6,
         "coachspeak": 50.0,
         "oline": 69.54,
-        "matchup": 39.74,
+        "matchup": 31.13,
         "sis_value": 18.32,
         "boom": 15.84,
         "route_eff": 41.87,
@@ -1743,8 +1743,8 @@
         "yac": 50.0,
         "explosive": 93.9
       },
-      "consensus": 58.55,
-      "divergence": 25.51,
+      "consensus": 57.94,
+      "divergence": 26.05,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -1764,7 +1764,7 @@
         "adv": 85.58,
         "coachspeak": 35.53,
         "oline": 52.32,
-        "matchup": 86.42,
+        "matchup": 81.79,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -1774,8 +1774,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 66.26,
-      "divergence": 23.22,
+      "consensus": 65.75,
+      "divergence": 22.82,
       "flags": [
         "POLARIZING"
       ]
@@ -1794,7 +1794,7 @@
         "adv": 81.25,
         "coachspeak": 2.0,
         "oline": 20.71,
-        "matchup": 20.2,
+        "matchup": 48.48,
         "sis_value": 5.42,
         "boom": 53.01,
         "run_eff": 50.0,
@@ -1802,8 +1802,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 43.6,
-      "divergence": 28.4,
+      "consensus": 45.62,
+      "divergence": 27.66,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES",
@@ -1824,7 +1824,7 @@
         "adv": 79.33,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 32.32,
+        "matchup": 54.55,
         "sis_value": 83.73,
         "boom": 41.57,
         "run_eff": 50.0,
@@ -1832,11 +1832,9 @@
         "yac": 23.21,
         "explosive": 84.38
       },
-      "consensus": 62.48,
-      "divergence": 22.96,
-      "flags": [
-        "POLARIZING"
-      ]
+      "consensus": 64.06,
+      "divergence": 21.54,
+      "flags": []
     },
     {
       "name": "Drake Maye",
@@ -1852,13 +1850,13 @@
         "adv": 95.54,
         "coachspeak": 50.0,
         "oline": 58.04,
-        "matchup": 4.46,
+        "matchup": 11.61,
         "sis_value": 98.98,
         "boom": 90.82,
         "protection": 94.9
       },
-      "consensus": 77.08,
-      "divergence": 29.21,
+      "consensus": 77.73,
+      "divergence": 27.62,
       "flags": [
         "CONSENSUS STUD",
         "POLARIZING"
@@ -1878,7 +1876,7 @@
         "adv": 77.4,
         "coachspeak": 74.0,
         "oline": 80.3,
-        "matchup": 17.17,
+        "matchup": 5.05,
         "sis_value": 43.98,
         "boom": 66.87,
         "run_eff": 50.0,
@@ -1886,9 +1884,10 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 61.6,
-      "divergence": 19.89,
+      "consensus": 60.59,
+      "divergence": 22.28,
       "flags": [
+        "POLARIZING",
         "EMPTY CALORIES",
         "RB-GAP-SCHEME"
       ]
@@ -1907,7 +1906,7 @@
         "adv": 83.65,
         "coachspeak": 32.89,
         "oline": 98.34,
-        "matchup": 1.66,
+        "matchup": 4.97,
         "sis_value": 50.0,
         "boom": 60.4,
         "route_eff": 56.91,
@@ -1917,8 +1916,8 @@
         "yac": 81.76,
         "explosive": 42.28
       },
-      "consensus": 60.08,
-      "divergence": 24.16,
+      "consensus": 60.27,
+      "divergence": 23.7,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES",
@@ -1939,13 +1938,13 @@
         "adv": 88.39,
         "coachspeak": 50.0,
         "oline": 16.96,
-        "matchup": 75.0,
+        "matchup": 71.43,
         "sis_value": 66.33,
         "boom": 88.78,
         "protection": 66.33
       },
-      "consensus": 64.4,
-      "divergence": 32.01,
+      "consensus": 64.07,
+      "divergence": 31.92,
       "flags": [
         "MARKET DARLING",
         "POLARIZING",
@@ -1966,13 +1965,13 @@
         "adv": 91.96,
         "coachspeak": 89.29,
         "oline": 43.75,
-        "matchup": 51.79,
+        "matchup": 30.36,
         "sis_value": 31.63,
         "boom": 44.9,
         "protection": 43.88
       },
-      "consensus": 64.36,
-      "divergence": 24.75,
+      "consensus": 62.57,
+      "divergence": 26.31,
       "flags": [
         "POLARIZING",
         "FLOOR RISK",
@@ -1993,13 +1992,13 @@
         "adv": 74.11,
         "coachspeak": 32.14,
         "oline": 98.21,
-        "matchup": 1.79,
+        "matchup": 3.57,
         "sis_value": 74.49,
         "boom": 60.2,
         "protection": 56.12
       },
-      "consensus": 62.82,
-      "divergence": 26.14,
+      "consensus": 62.97,
+      "divergence": 25.79,
       "flags": [
         "MARKET DARLING",
         "POLARIZING"
@@ -2019,7 +2018,7 @@
         "adv": 80.29,
         "coachspeak": 30.0,
         "oline": 20.71,
-        "matchup": 91.41,
+        "matchup": 98.48,
         "sis_value": 1.81,
         "boom": 19.88,
         "run_eff": 50.0,
@@ -2027,8 +2026,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 46.51,
-      "divergence": 30.22,
+      "consensus": 47.01,
+      "divergence": 31.01,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES",
@@ -2050,7 +2049,7 @@
         "adv": 92.86,
         "coachspeak": 50.0,
         "oline": 19.17,
-        "matchup": 92.5,
+        "matchup": 72.5,
         "sis_value": 51.09,
         "boom": 25.0,
         "route_eff": 71.15,
@@ -2059,8 +2058,8 @@
         "separation": 36.11,
         "yac": 59.72
       },
-      "consensus": 57.04,
-      "divergence": 31.58,
+      "consensus": 55.7,
+      "divergence": 30.46,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES"
@@ -2080,7 +2079,7 @@
         "adv": 73.4,
         "coachspeak": 50.0,
         "oline": 74.5,
-        "matchup": 80.13,
+        "matchup": 47.68,
         "sis_value": 45.05,
         "boom": 23.27,
         "route_eff": 60.98,
@@ -2090,8 +2089,8 @@
         "yac": 35.81,
         "explosive": 66.67
       },
-      "consensus": 57.04,
-      "divergence": 18.97,
+      "consensus": 55.01,
+      "divergence": 18.11,
       "flags": [
         "EMPTY CALORIES"
       ]
@@ -2110,7 +2109,7 @@
         "adv": 73.56,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 79.8,
+        "matchup": 51.52,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -2118,8 +2117,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 70.1,
-      "divergence": 12.54,
+      "consensus": 66.56,
+      "divergence": 13.27,
       "flags": []
     },
     {
@@ -2136,7 +2135,7 @@
         "adv": 75.96,
         "coachspeak": 46.05,
         "oline": 74.5,
-        "matchup": 80.13,
+        "matchup": 47.68,
         "sis_value": 69.8,
         "boom": 44.06,
         "route_eff": 80.08,
@@ -2146,8 +2145,8 @@
         "yac": 89.86,
         "explosive": 35.37
       },
-      "consensus": 62.29,
-      "divergence": 20.07,
+      "consensus": 60.38,
+      "divergence": 19.83,
       "flags": []
     },
     {
@@ -2164,13 +2163,13 @@
         "adv": 93.75,
         "coachspeak": 25.0,
         "oline": 58.04,
-        "matchup": 94.64,
+        "matchup": 87.5,
         "sis_value": 58.16,
         "boom": 20.41,
         "protection": 64.29
       },
-      "consensus": 61.82,
-      "divergence": 29.54,
+      "consensus": 61.23,
+      "divergence": 28.93,
       "flags": [
         "POLARIZING"
       ]
@@ -2189,7 +2188,7 @@
         "adv": 79.17,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 49.34,
+        "matchup": 50.0,
         "sis_value": 74.75,
         "boom": 87.62,
         "route_eff": 66.26,
@@ -2199,8 +2198,8 @@
         "yac": 60.14,
         "explosive": 55.69
       },
-      "consensus": 59.55,
-      "divergence": 21.73,
+      "consensus": 59.6,
+      "divergence": 21.71,
       "flags": []
     },
     {
@@ -2217,7 +2216,7 @@
         "adv": 78.53,
         "coachspeak": 81.58,
         "oline": 7.62,
-        "matchup": 60.93,
+        "matchup": 63.58,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -2227,7 +2226,7 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 61.5,
+      "consensus": 61.8,
       "divergence": 25.17,
       "flags": [
         "POLARIZING"
@@ -2247,13 +2246,13 @@
         "adv": 79.46,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 60.71,
+        "matchup": 62.5,
         "sis_value": 90.82,
         "boom": 74.49,
         "protection": 92.86
       },
-      "consensus": 78.0,
-      "divergence": 13.66,
+      "consensus": 78.17,
+      "divergence": 13.46,
       "flags": [
         "CONSENSUS STUD"
       ]
@@ -2272,7 +2271,7 @@
         "adv": 81.09,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 89.74,
+        "matchup": 69.21,
         "sis_value": 92.57,
         "boom": 95.54,
         "route_eff": 71.95,
@@ -2282,8 +2281,8 @@
         "yac": 85.81,
         "explosive": 89.84
       },
-      "consensus": 69.95,
-      "divergence": 27.33,
+      "consensus": 68.66,
+      "divergence": 26.85,
       "flags": [
         "POLARIZING"
       ]
@@ -2302,7 +2301,7 @@
         "adv": 72.6,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 1.52,
+        "matchup": 24.75,
         "sis_value": 18.67,
         "boom": 24.7,
         "run_eff": 50.0,
@@ -2310,8 +2309,8 @@
         "yac": 16.07,
         "explosive": 61.46
       },
-      "consensus": 43.56,
-      "divergence": 24.69,
+      "consensus": 45.22,
+      "divergence": 22.49,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES",
@@ -2332,7 +2331,7 @@
         "adv": 70.19,
         "coachspeak": 50.0,
         "oline": 1.66,
-        "matchup": 43.38,
+        "matchup": 52.65,
         "sis_value": 78.71,
         "boom": 46.04,
         "route_eff": 47.56,
@@ -2342,8 +2341,8 @@
         "yac": 71.62,
         "explosive": 22.36
       },
-      "consensus": 54.42,
-      "divergence": 23.23,
+      "consensus": 55.0,
+      "divergence": 23.07,
       "flags": [
         "POLARIZING"
       ]
@@ -2362,13 +2361,13 @@
         "adv": 75.89,
         "coachspeak": 50.0,
         "oline": 1.79,
-        "matchup": 41.07,
+        "matchup": 50.0,
         "sis_value": 70.41,
         "boom": 57.14,
         "protection": 45.92
       },
-      "consensus": 58.05,
-      "divergence": 23.5,
+      "consensus": 58.86,
+      "divergence": 23.05,
       "flags": [
         "POLARIZING"
       ]
@@ -2387,7 +2386,7 @@
         "adv": 79.81,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 34.11,
+        "matchup": 41.39,
         "sis_value": 67.82,
         "boom": 27.72,
         "route_eff": 69.92,
@@ -2397,8 +2396,8 @@
         "yac": 99.32,
         "explosive": 86.59
       },
-      "consensus": 64.62,
-      "divergence": 22.82,
+      "consensus": 65.07,
+      "divergence": 22.27,
       "flags": [
         "POLARIZING"
       ]
@@ -2417,13 +2416,13 @@
         "adv": 83.04,
         "coachspeak": 50.0,
         "oline": 75.0,
-        "matchup": 77.68,
+        "matchup": 41.96,
         "sis_value": 39.8,
         "boom": 54.08,
         "protection": 41.84
       },
-      "consensus": 67.85,
-      "divergence": 16.26,
+      "consensus": 64.6,
+      "divergence": 17.49,
       "flags": []
     },
     {
@@ -2440,7 +2439,7 @@
         "adv": 68.75,
         "coachspeak": 64.0,
         "oline": 20.71,
-        "matchup": 76.26,
+        "matchup": 87.37,
         "sis_value": 45.18,
         "boom": 30.72,
         "run_eff": 50.0,
@@ -2448,9 +2447,10 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 50.22,
-      "divergence": 21.11,
+      "consensus": 51.01,
+      "divergence": 22.25,
       "flags": [
+        "POLARIZING",
         "EMPTY CALORIES",
         "EFFICIENCY TRAP",
         "RB-GAP-SCHEME"
@@ -2470,7 +2470,7 @@
         "adv": 74.52,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 32.32,
+        "matchup": 54.55,
         "sis_value": 3.01,
         "boom": 70.48,
         "run_eff": 50.0,
@@ -2478,8 +2478,8 @@
         "yac": 76.79,
         "explosive": 25.0
       },
-      "consensus": 54.62,
-      "divergence": 21.93,
+      "consensus": 56.21,
+      "divergence": 21.04,
       "flags": [
         "FLOOR RISK"
       ]
@@ -2498,7 +2498,7 @@
         "adv": 75.32,
         "coachspeak": 27.63,
         "oline": 52.32,
-        "matchup": 95.36,
+        "matchup": 88.08,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -2508,11 +2508,9 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 62.39,
-      "divergence": 22.37,
-      "flags": [
-        "POLARIZING"
-      ]
+      "consensus": 61.58,
+      "divergence": 21.27,
+      "flags": []
     },
     {
       "name": "Jaylen Warren",
@@ -2528,7 +2526,7 @@
         "adv": 70.67,
         "coachspeak": 34.0,
         "oline": 66.67,
-        "matchup": 13.64,
+        "matchup": 11.62,
         "sis_value": 92.17,
         "boom": 34.94,
         "run_eff": 50.0,
@@ -2536,8 +2534,8 @@
         "yac": 94.64,
         "explosive": 25.0
       },
-      "consensus": 58.88,
-      "divergence": 23.89,
+      "consensus": 58.75,
+      "divergence": 24.15,
       "flags": [
         "POLARIZING"
       ]
@@ -2586,13 +2584,13 @@
         "adv": 84.82,
         "coachspeak": 60.71,
         "oline": 81.25,
-        "matchup": 80.36,
+        "matchup": 83.93,
         "sis_value": 96.94,
         "boom": 84.69,
         "protection": 96.94
       },
-      "consensus": 85.11,
-      "divergence": 9.61,
+      "consensus": 85.41,
+      "divergence": 9.52,
       "flags": [
         "MARKET FADE"
       ]
@@ -2611,7 +2609,7 @@
         "adv": 82.37,
         "coachspeak": 50.0,
         "oline": 74.5,
-        "matchup": 27.48,
+        "matchup": 44.7,
         "sis_value": 90.59,
         "boom": 70.79,
         "route_eff": 86.18,
@@ -2621,8 +2619,8 @@
         "yac": 27.03,
         "explosive": 82.93
       },
-      "consensus": 60.6,
-      "divergence": 27.61,
+      "consensus": 61.68,
+      "divergence": 26.62,
       "flags": [
         "POLARIZING"
       ]
@@ -2641,7 +2639,7 @@
         "adv": 88.1,
         "coachspeak": 61.11,
         "oline": 49.17,
-        "matchup": 94.17,
+        "matchup": 99.17,
         "sis_value": 81.52,
         "boom": 68.48,
         "route_eff": 87.5,
@@ -2650,8 +2648,8 @@
         "separation": 61.11,
         "yac": 1.39
       },
-      "consensus": 67.29,
-      "divergence": 26.64,
+      "consensus": 67.6,
+      "divergence": 26.98,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -2671,7 +2669,7 @@
         "adv": 91.27,
         "coachspeak": 27.78,
         "oline": 10.0,
-        "matchup": 55.0,
+        "matchup": 36.67,
         "sis_value": 79.35,
         "boom": 88.04,
         "route_eff": 91.35,
@@ -2680,8 +2678,8 @@
         "separation": 43.06,
         "yac": 81.94
       },
-      "consensus": 63.65,
-      "divergence": 31.21,
+      "consensus": 62.51,
+      "divergence": 31.84,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -2701,7 +2699,7 @@
         "adv": 68.27,
         "coachspeak": 7.89,
         "oline": 38.41,
-        "matchup": 49.34,
+        "matchup": 50.0,
         "sis_value": 59.9,
         "boom": 50.0,
         "route_eff": 68.7,
@@ -2711,7 +2709,7 @@
         "yac": 53.38,
         "explosive": 40.24
       },
-      "consensus": 49.34,
+      "consensus": 49.38,
       "divergence": 19.18,
       "flags": [
         "FLOOR RISK"
@@ -2754,7 +2752,7 @@
         "adv": 66.99,
         "coachspeak": 14.47,
         "oline": 52.32,
-        "matchup": 30.79,
+        "matchup": 23.51,
         "sis_value": 43.07,
         "boom": 73.76,
         "route_eff": 29.67,
@@ -2764,8 +2762,8 @@
         "yac": 97.97,
         "explosive": 89.02
       },
-      "consensus": 60.23,
-      "divergence": 22.17,
+      "consensus": 59.8,
+      "divergence": 22.79,
       "flags": [
         "POLARIZING"
       ]
@@ -2784,7 +2782,7 @@
         "adv": 64.9,
         "coachspeak": 42.0,
         "oline": 91.41,
-        "matchup": 34.85,
+        "matchup": 41.92,
         "sis_value": 12.65,
         "boom": 27.11,
         "run_eff": 50.0,
@@ -2792,8 +2790,8 @@
         "yac": 58.93,
         "explosive": 61.46
       },
-      "consensus": 50.49,
-      "divergence": 22.34,
+      "consensus": 50.96,
+      "divergence": 22.08,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP",
@@ -2815,13 +2813,13 @@
         "adv": 86.61,
         "coachspeak": 82.14,
         "oline": 71.43,
-        "matchup": 37.5,
+        "matchup": 26.79,
         "sis_value": 78.57,
         "boom": 92.86,
         "protection": 88.78
       },
-      "consensus": 78.17,
-      "divergence": 13.61,
+      "consensus": 77.28,
+      "divergence": 16.33,
       "flags": [
         "MARKET FADE",
         "CONSENSUS STUD",
@@ -2842,7 +2840,7 @@
         "adv": 80.45,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 34.11,
+        "matchup": 41.39,
         "sis_value": 75.74,
         "boom": 53.47,
         "route_eff": 32.11,
@@ -2852,8 +2850,8 @@
         "yac": 45.27,
         "explosive": 67.89
       },
-      "consensus": 58.87,
-      "divergence": 20.47,
+      "consensus": 59.33,
+      "divergence": 19.99,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -2872,7 +2870,7 @@
         "adv": 69.71,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 13.64,
+        "matchup": 11.62,
         "sis_value": 48.8,
         "boom": 63.86,
         "run_eff": 50.0,
@@ -2880,8 +2878,8 @@
         "yac": 12.5,
         "explosive": 61.46
       },
-      "consensus": 54.34,
-      "divergence": 18.9,
+      "consensus": 54.19,
+      "divergence": 19.22,
       "flags": []
     },
     {
@@ -2898,7 +2896,7 @@
         "adv": 89.68,
         "coachspeak": 50.0,
         "oline": 38.33,
-        "matchup": 99.17,
+        "matchup": 79.17,
         "sis_value": 33.7,
         "boom": 38.04,
         "route_eff": 60.58,
@@ -2907,8 +2905,8 @@
         "separation": 9.72,
         "yac": 90.28
       },
-      "consensus": 62.46,
-      "divergence": 29.63,
+      "consensus": 61.21,
+      "divergence": 28.45,
       "flags": [
         "POLARIZING",
         "FLOOR RISK",
@@ -2929,7 +2927,7 @@
         "adv": 68.91,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 11.92,
+        "matchup": 9.93,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 59.76,
@@ -2939,8 +2937,8 @@
         "yac": 50.0,
         "explosive": 47.15
       },
-      "consensus": 60.82,
-      "divergence": 19.86,
+      "consensus": 60.65,
+      "divergence": 20.28,
       "flags": []
     },
     {
@@ -2957,13 +2955,13 @@
         "adv": 90.18,
         "coachspeak": 53.57,
         "oline": 66.96,
-        "matchup": 69.64,
+        "matchup": 91.07,
         "sis_value": 17.35,
         "boom": 40.82,
         "protection": 29.59
       },
-      "consensus": 58.85,
-      "divergence": 23.01,
+      "consensus": 60.63,
+      "divergence": 24.56,
       "flags": [
         "MARKET FADE",
         "POLARIZING",
@@ -2985,7 +2983,7 @@
         "adv": 62.02,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 98.48,
+        "matchup": 65.15,
         "sis_value": 75.3,
         "boom": 47.59,
         "run_eff": 50.0,
@@ -2993,8 +2991,8 @@
         "yac": 50.0,
         "explosive": 77.08
       },
-      "consensus": 70.58,
-      "divergence": 16.27,
+      "consensus": 68.02,
+      "divergence": 14.16,
       "flags": [
         "EFFICIENCY EDGE"
       ]
@@ -3013,7 +3011,7 @@
         "adv": 63.94,
         "coachspeak": 64.0,
         "oline": 20.71,
-        "matchup": 91.41,
+        "matchup": 98.48,
         "sis_value": 65.66,
         "boom": 83.13,
         "run_eff": 50.0,
@@ -3021,8 +3019,8 @@
         "yac": 48.21,
         "explosive": 61.46
       },
-      "consensus": 60.31,
-      "divergence": 15.8,
+      "consensus": 60.78,
+      "divergence": 16.79,
       "flags": [
         "RB-ZONE-SCHEME"
       ]
@@ -3041,13 +3039,13 @@
         "adv": 70.54,
         "coachspeak": 50.0,
         "oline": 7.14,
-        "matchup": 54.46,
+        "matchup": 33.04,
         "sis_value": 94.9,
         "boom": 82.65,
         "protection": 80.61
       },
-      "consensus": 71.14,
-      "divergence": 23.24,
+      "consensus": 69.19,
+      "divergence": 25.35,
       "flags": [
         "POLARIZING"
       ]
@@ -3066,7 +3064,7 @@
         "adv": 69.55,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 89.74,
+        "matchup": 69.21,
         "sis_value": 29.7,
         "boom": 31.19,
         "route_eff": 37.8,
@@ -3076,10 +3074,9 @@
         "yac": 31.76,
         "explosive": 79.27
       },
-      "consensus": 51.19,
-      "divergence": 22.03,
+      "consensus": 49.91,
+      "divergence": 20.28,
       "flags": [
-        "POLARIZING",
         "EMPTY CALORIES",
         "EFFICIENCY TRAP",
         "ZONE-BEATER"
@@ -3099,7 +3096,7 @@
         "adv": 96.03,
         "coachspeak": 16.67,
         "oline": 63.33,
-        "matchup": 38.33,
+        "matchup": 30.0,
         "sis_value": 94.57,
         "boom": 83.7,
         "route_eff": 93.27,
@@ -3108,8 +3105,8 @@
         "separation": 72.22,
         "yac": 76.39
       },
-      "consensus": 72.94,
-      "divergence": 25.41,
+      "consensus": 72.42,
+      "divergence": 26.18,
       "flags": [
         "MARKET FADE",
         "POLARIZING"
@@ -3129,7 +3126,7 @@
         "adv": 65.87,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 50.51,
+        "matchup": 74.75,
         "sis_value": 89.76,
         "boom": 81.33,
         "run_eff": 50.0,
@@ -3137,7 +3134,7 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 61.78,
+      "consensus": 63.65,
       "divergence": 18.14,
       "flags": [
         "EMPTY CALORIES"
@@ -3157,7 +3154,7 @@
         "adv": 70.83,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 36.75,
+        "matchup": 55.3,
         "sis_value": 58.91,
         "boom": 12.87,
         "route_eff": 41.06,
@@ -3167,8 +3164,8 @@
         "yac": 65.54,
         "explosive": 72.36
       },
-      "consensus": 51.96,
-      "divergence": 18.36,
+      "consensus": 53.12,
+      "divergence": 17.95,
       "flags": [
         "EMPTY CALORIES"
       ]
@@ -3187,7 +3184,7 @@
         "adv": 74.68,
         "coachspeak": 50.0,
         "oline": 74.5,
-        "matchup": 80.13,
+        "matchup": 47.68,
         "sis_value": 63.86,
         "boom": 85.15,
         "route_eff": 36.99,
@@ -3197,7 +3194,7 @@
         "yac": 42.57,
         "explosive": 72.36
       },
-      "consensus": 64.91,
+      "consensus": 62.88,
       "divergence": 17.94,
       "flags": [
         "EFFICIENCY EDGE",
@@ -3218,7 +3215,7 @@
         "adv": 60.1,
         "coachspeak": 92.0,
         "oline": 20.71,
-        "matchup": 76.26,
+        "matchup": 87.37,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -3226,8 +3223,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 61.04,
-      "divergence": 18.21,
+      "consensus": 62.27,
+      "divergence": 19.53,
       "flags": []
     },
     {
@@ -3244,7 +3241,7 @@
         "adv": 67.79,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 34.85,
+        "matchup": 41.92,
         "sis_value": 90.96,
         "boom": 78.92,
         "run_eff": 50.0,
@@ -3252,8 +3249,8 @@
         "yac": 50.0,
         "explosive": 77.08
       },
-      "consensus": 67.85,
-      "divergence": 17.21,
+      "consensus": 68.4,
+      "divergence": 16.25,
       "flags": [
         "EFFICIENCY EDGE",
         "RB-ZONE-SCHEME"
@@ -3273,13 +3270,13 @@
         "adv": 65.18,
         "coachspeak": 50.0,
         "oline": 81.25,
-        "matchup": 8.04,
+        "matchup": 9.82,
         "sis_value": 92.86,
         "boom": 72.45,
         "protection": 84.69
       },
-      "consensus": 67.72,
-      "divergence": 21.08,
+      "consensus": 67.88,
+      "divergence": 20.62,
       "flags": []
     },
     {
@@ -3296,16 +3293,15 @@
         "adv": 81.25,
         "coachspeak": 50.0,
         "oline": 75.0,
-        "matchup": 24.11,
+        "matchup": 40.18,
         "sis_value": 68.37,
         "boom": 25.51,
         "protection": 62.24
       },
-      "consensus": 55.82,
-      "divergence": 22.95,
+      "consensus": 57.28,
+      "divergence": 21.34,
       "flags": [
-        "MARKET FADE",
-        "POLARIZING"
+        "MARKET FADE"
       ]
     },
     {
@@ -3322,7 +3318,7 @@
         "adv": 73.81,
         "coachspeak": 50.0,
         "oline": 90.0,
-        "matchup": 10.0,
+        "matchup": 1.67,
         "sis_value": 83.7,
         "boom": 96.74,
         "route_eff": 97.12,
@@ -3331,8 +3327,8 @@
         "separation": 45.83,
         "yac": 84.72
       },
-      "consensus": 69.67,
-      "divergence": 28.24,
+      "consensus": 69.12,
+      "divergence": 29.47,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -3352,7 +3348,7 @@
         "adv": 67.63,
         "coachspeak": 50.0,
         "oline": 69.54,
-        "matchup": 39.74,
+        "matchup": 31.13,
         "sis_value": 72.77,
         "boom": 98.51,
         "route_eff": 74.39,
@@ -3362,8 +3358,8 @@
         "yac": 2.03,
         "explosive": 4.47
       },
-      "consensus": 54.77,
-      "divergence": 28.27,
+      "consensus": 54.23,
+      "divergence": 28.63,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -3383,7 +3379,7 @@
         "adv": 77.88,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 11.92,
+        "matchup": 9.93,
         "sis_value": 55.94,
         "boom": 69.31,
         "route_eff": 43.9,
@@ -3393,8 +3389,8 @@
         "yac": 50.0,
         "explosive": 47.15
       },
-      "consensus": 60.6,
-      "divergence": 19.58,
+      "consensus": 60.46,
+      "divergence": 19.94,
       "flags": [
         "MARKET FADE"
       ]
@@ -3413,7 +3409,7 @@
         "adv": 72.76,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 86.42,
+        "matchup": 81.79,
         "sis_value": 41.09,
         "boom": 29.21,
         "route_eff": 64.63,
@@ -3423,8 +3419,8 @@
         "yac": 39.86,
         "explosive": 92.28
       },
-      "consensus": 60.35,
-      "divergence": 18.93,
+      "consensus": 60.06,
+      "divergence": 18.56,
       "flags": [
         "FLOOR RISK"
       ]
@@ -3474,13 +3470,13 @@
         "adv": 66.96,
         "coachspeak": 96.43,
         "oline": 7.14,
-        "matchup": 58.04,
+        "matchup": 59.82,
         "sis_value": 33.67,
         "boom": 40.82,
         "protection": 54.08
       },
-      "consensus": 55.05,
-      "divergence": 21.09,
+      "consensus": 55.2,
+      "divergence": 21.11,
       "flags": []
     },
     {
@@ -3497,13 +3493,13 @@
         "adv": 61.61,
         "coachspeak": 50.0,
         "oline": 27.68,
-        "matchup": 33.93,
+        "matchup": 53.57,
         "sis_value": 41.84,
         "boom": 37.76,
         "protection": 35.71
       },
-      "consensus": 41.65,
-      "divergence": 20.91,
+      "consensus": 43.44,
+      "divergence": 21.01,
       "flags": [
         "MARKET DARLING",
         "QB-MAN-BEATER"
@@ -3552,7 +3548,7 @@
         "adv": 66.83,
         "coachspeak": 26.0,
         "oline": 20.71,
-        "matchup": 38.38,
+        "matchup": 31.31,
         "sis_value": 88.55,
         "boom": 32.53,
         "run_eff": 50.0,
@@ -3560,8 +3556,8 @@
         "yac": 26.79,
         "explosive": 25.0
       },
-      "consensus": 48.27,
-      "divergence": 19.22,
+      "consensus": 47.8,
+      "divergence": 19.54,
       "flags": []
     },
     {
@@ -3578,7 +3574,7 @@
         "adv": 72.12,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 5.3,
+        "matchup": 13.25,
         "sis_value": 79.7,
         "boom": 56.44,
         "route_eff": 56.91,
@@ -3588,8 +3584,8 @@
         "yac": 46.62,
         "explosive": 23.17
       },
-      "consensus": 53.25,
-      "divergence": 21.93,
+      "consensus": 53.75,
+      "divergence": 20.9,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -3608,13 +3604,13 @@
         "adv": 68.75,
         "coachspeak": 10.71,
         "oline": 58.04,
-        "matchup": 25.89,
+        "matchup": 20.54,
         "sis_value": 23.47,
         "boom": 34.69,
         "protection": 39.8
       },
-      "consensus": 47.81,
-      "divergence": 19.21,
+      "consensus": 47.37,
+      "divergence": 19.77,
       "flags": [
         "QB-ZONE-BEATER"
       ]
@@ -3633,7 +3629,7 @@
         "adv": 71.47,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 8.94,
+        "matchup": 1.66,
         "sis_value": 40.1,
         "boom": 21.78,
         "route_eff": 46.75,
@@ -3643,8 +3639,8 @@
         "yac": 93.92,
         "explosive": 65.04
       },
-      "consensus": 61.95,
-      "divergence": 25.37,
+      "consensus": 61.49,
+      "divergence": 26.36,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE"
@@ -3664,7 +3660,7 @@
         "adv": 71.63,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 60.1,
+        "matchup": 68.18,
         "sis_value": 81.33,
         "boom": 21.08,
         "run_eff": 50.0,
@@ -3672,8 +3668,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 56.47,
-      "divergence": 20.37,
+      "consensus": 57.09,
+      "divergence": 20.59,
       "flags": [
         "MARKET FADE",
         "RB-GAP-SCHEME"
@@ -3693,7 +3689,7 @@
         "adv": 86.51,
         "coachspeak": 50.0,
         "oline": 49.17,
-        "matchup": 96.67,
+        "matchup": 90.0,
         "sis_value": 72.83,
         "boom": 29.35,
         "route_eff": 35.58,
@@ -3702,8 +3698,8 @@
         "separation": 40.28,
         "yac": 30.56
       },
-      "consensus": 58.63,
-      "divergence": 23.68,
+      "consensus": 58.19,
+      "divergence": 23.02,
       "flags": [
         "POLARIZING",
         "EMPTY CALORIES",
@@ -3724,7 +3720,7 @@
         "adv": 75.4,
         "coachspeak": 50.0,
         "oline": 58.33,
-        "matchup": 74.17,
+        "matchup": 93.33,
         "sis_value": 31.52,
         "boom": 11.96,
         "route_eff": 23.08,
@@ -3733,8 +3729,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 57.13,
-      "divergence": 24.87,
+      "consensus": 58.61,
+      "divergence": 26.36,
       "flags": [
         "POLARIZING",
         "FLOOR RISK",
@@ -3755,7 +3751,7 @@
         "adv": 61.06,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 38.38,
+        "matchup": 31.31,
         "sis_value": 23.49,
         "boom": 45.78,
         "run_eff": 50.0,
@@ -3763,8 +3759,8 @@
         "yac": 50.0,
         "explosive": 77.08
       },
-      "consensus": 50.98,
-      "divergence": 15.46,
+      "consensus": 50.44,
+      "divergence": 16.01,
       "flags": [
         "RB-ZONE-SCHEME"
       ]
@@ -3783,7 +3779,7 @@
         "adv": 66.35,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 98.34,
+        "matchup": 78.48,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -3793,8 +3789,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 62.35,
-      "divergence": 17.67,
+      "consensus": 59.87,
+      "divergence": 13.29,
       "flags": []
     },
     {
@@ -3866,7 +3862,7 @@
         "adv": 81.75,
         "coachspeak": 50.0,
         "oline": 38.33,
-        "matchup": 66.67,
+        "matchup": 70.0,
         "sis_value": 53.26,
         "boom": 14.13,
         "route_eff": 16.35,
@@ -3875,8 +3871,8 @@
         "separation": 36.11,
         "yac": 37.5
       },
-      "consensus": 52.16,
-      "divergence": 24.56,
+      "consensus": 52.38,
+      "divergence": 24.7,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP"
@@ -3896,7 +3892,7 @@
         "adv": 65.71,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 46.69,
+        "matchup": 60.6,
         "sis_value": 39.11,
         "boom": 54.95,
         "route_eff": 75.2,
@@ -3906,8 +3902,8 @@
         "yac": 42.57,
         "explosive": 19.92
       },
-      "consensus": 52.54,
-      "divergence": 21.14,
+      "consensus": 53.41,
+      "divergence": 21.17,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -3926,13 +3922,13 @@
         "adv": 58.04,
         "coachspeak": 50.0,
         "oline": 7.14,
-        "matchup": 69.64,
+        "matchup": 75.0,
         "sis_value": 82.65,
         "boom": 66.33,
         "protection": 70.41
       },
-      "consensus": 57.52,
-      "divergence": 18.83,
+      "consensus": 58.0,
+      "divergence": 19.21,
       "flags": [
         "QB-MAN-BEATER"
       ]
@@ -3951,7 +3947,7 @@
         "adv": 58.17,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 60.1,
+        "matchup": 68.18,
         "sis_value": 93.37,
         "boom": 75.9,
         "run_eff": 50.0,
@@ -3959,8 +3955,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 63.16,
-      "divergence": 17.11,
+      "consensus": 63.78,
+      "divergence": 17.14,
       "flags": [
         "EFFICIENCY EDGE"
       ]
@@ -3979,13 +3975,13 @@
         "adv": 56.25,
         "coachspeak": 50.0,
         "oline": 27.68,
-        "matchup": 17.86,
+        "matchup": 23.21,
         "sis_value": 72.45,
         "boom": 94.9,
         "protection": 98.98
       },
-      "consensus": 54.4,
-      "divergence": 26.64,
+      "consensus": 54.88,
+      "divergence": 26.01,
       "flags": [
         "MARKET DARLING",
         "POLARIZING",
@@ -4007,7 +4003,7 @@
         "adv": 61.11,
         "coachspeak": 94.44,
         "oline": 38.33,
-        "matchup": 51.67,
+        "matchup": 33.33,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 37.5,
@@ -4016,9 +4012,11 @@
         "separation": 87.5,
         "yac": 87.5
       },
-      "consensus": 59.19,
-      "divergence": 21.97,
-      "flags": []
+      "consensus": 57.88,
+      "divergence": 22.91,
+      "flags": [
+        "POLARIZING"
+      ]
     },
     {
       "name": "Jayden Higgins",
@@ -4034,7 +4032,7 @@
         "adv": 63.14,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 72.19,
+        "matchup": 75.17,
         "sis_value": 44.06,
         "boom": 53.47,
         "route_eff": 30.89,
@@ -4044,8 +4042,8 @@
         "yac": 20.95,
         "explosive": 66.67
       },
-      "consensus": 49.78,
-      "divergence": 17.88,
+      "consensus": 49.97,
+      "divergence": 18.12,
       "flags": [
         "EMPTY CALORIES",
         "ZONE-BEATER"
@@ -4065,13 +4063,13 @@
         "adv": 72.32,
         "coachspeak": 50.0,
         "oline": 16.96,
-        "matchup": 86.61,
+        "matchup": 66.96,
         "sis_value": 88.78,
         "boom": 57.14,
         "protection": 72.45
       },
-      "consensus": 55.5,
-      "divergence": 26.68,
+      "consensus": 53.72,
+      "divergence": 25.15,
       "flags": [
         "MARKET FADE",
         "POLARIZING",
@@ -4092,7 +4090,7 @@
         "adv": 83.33,
         "coachspeak": 50.0,
         "oline": 78.33,
-        "matchup": 70.0,
+        "matchup": 96.67,
         "sis_value": 18.48,
         "boom": 38.04,
         "route_eff": 54.81,
@@ -4101,8 +4099,8 @@
         "separation": 6.94,
         "yac": 15.28
       },
-      "consensus": 52.39,
-      "divergence": 27.15,
+      "consensus": 54.16,
+      "divergence": 29.05,
       "flags": [
         "POLARIZING",
         "EFFICIENCY TRAP",
@@ -4124,7 +4122,7 @@
         "adv": 48.56,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 73.23,
+        "matchup": 59.09,
         "sis_value": 35.54,
         "boom": 15.06,
         "run_eff": 50.0,
@@ -4132,8 +4130,8 @@
         "yac": 30.36,
         "explosive": 61.46
       },
-      "consensus": 48.69,
-      "divergence": 16.04,
+      "consensus": 47.68,
+      "divergence": 14.86,
       "flags": []
     },
     {
@@ -4150,7 +4148,7 @@
         "adv": 47.6,
         "coachspeak": 22.0,
         "oline": 80.3,
-        "matchup": 17.17,
+        "matchup": 5.05,
         "sis_value": 71.69,
         "boom": 72.89,
         "run_eff": 50.0,
@@ -4158,9 +4156,10 @@
         "yac": 50.0,
         "explosive": 61.46
       },
-      "consensus": 58.22,
-      "divergence": 20.96,
+      "consensus": 57.36,
+      "divergence": 22.81,
       "flags": [
+        "POLARIZING",
         "EFFICIENCY EDGE"
       ]
     },
@@ -4178,7 +4177,7 @@
         "adv": 76.44,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 79.8,
+        "matchup": 51.52,
         "sis_value": 29.52,
         "boom": 66.87,
         "run_eff": 50.0,
@@ -4186,8 +4185,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 60.9,
-      "divergence": 18.22,
+      "consensus": 58.73,
+      "divergence": 17.51,
       "flags": [
         "MARKET FADE",
         "EMPTY CALORIES",
@@ -4208,13 +4207,13 @@
         "adv": 50.89,
         "coachspeak": 17.86,
         "oline": 58.04,
-        "matchup": 83.04,
+        "matchup": 81.25,
         "sis_value": 1.02,
         "boom": 15.31,
         "protection": 7.14
       },
-      "consensus": 42.93,
-      "divergence": 26.25,
+      "consensus": 42.78,
+      "divergence": 26.02,
       "flags": [
         "POLARIZING"
       ]
@@ -4233,7 +4232,7 @@
         "adv": 60.58,
         "coachspeak": 3.95,
         "oline": 52.32,
-        "matchup": 30.79,
+        "matchup": 23.51,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 94.72,
@@ -4243,8 +4242,8 @@
         "yac": 50.0,
         "explosive": 75.61
       },
-      "consensus": 55.1,
-      "divergence": 26.48,
+      "consensus": 54.54,
+      "divergence": 27.06,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE"
@@ -4264,7 +4263,7 @@
         "adv": 69.05,
         "coachspeak": 50.0,
         "oline": 68.33,
-        "matchup": 81.67,
+        "matchup": 46.67,
         "sis_value": 85.87,
         "boom": 77.17,
         "route_eff": 81.73,
@@ -4273,8 +4272,8 @@
         "separation": 90.28,
         "yac": 18.06
       },
-      "consensus": 71.01,
-      "divergence": 18.95,
+      "consensus": 68.68,
+      "divergence": 19.64,
       "flags": []
     },
     {
@@ -4291,7 +4290,7 @@
         "adv": 44.71,
         "coachspeak": 92.0,
         "oline": 3.54,
-        "matchup": 7.58,
+        "matchup": 1.52,
         "sis_value": 80.12,
         "boom": 63.86,
         "run_eff": 50.0,
@@ -4299,8 +4298,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 53.94,
-      "divergence": 27.27,
+      "consensus": 53.44,
+      "divergence": 28.17,
       "flags": [
         "POLARIZING"
       ]
@@ -4319,7 +4318,7 @@
         "adv": 70.63,
         "coachspeak": 50.0,
         "oline": 10.0,
-        "matchup": 62.5,
+        "matchup": 65.83,
         "sis_value": 77.17,
         "boom": 45.65,
         "route_eff": 50.96,
@@ -4328,8 +4327,8 @@
         "separation": 72.22,
         "yac": 34.72
       },
-      "consensus": 55.75,
-      "divergence": 18.73,
+      "consensus": 55.97,
+      "divergence": 18.83,
       "flags": []
     },
     {
@@ -4346,7 +4345,7 @@
         "adv": 59.52,
         "coachspeak": 50.0,
         "oline": 2.5,
-        "matchup": 42.5,
+        "matchup": 52.5,
         "sis_value": 48.91,
         "boom": 59.78,
         "route_eff": 89.42,
@@ -4355,8 +4354,8 @@
         "separation": 23.61,
         "yac": 93.06
       },
-      "consensus": 54.33,
-      "divergence": 25.54,
+      "consensus": 55.0,
+      "divergence": 25.35,
       "flags": [
         "POLARIZING",
         "FLOOR RISK"
@@ -4376,7 +4375,7 @@
         "adv": 56.09,
         "coachspeak": 43.42,
         "oline": 74.5,
-        "matchup": 80.13,
+        "matchup": 47.68,
         "sis_value": 31.19,
         "boom": 31.19,
         "route_eff": 56.91,
@@ -4386,8 +4385,8 @@
         "yac": 50.0,
         "explosive": 73.58
       },
-      "consensus": 54.49,
-      "divergence": 16.69,
+      "consensus": 52.33,
+      "divergence": 15.27,
       "flags": [
         "MAN-BEATER"
       ]
@@ -4406,7 +4405,7 @@
         "adv": 59.13,
         "coachspeak": 38.0,
         "oline": 47.47,
-        "matchup": 83.33,
+        "matchup": 90.4,
         "sis_value": 22.29,
         "boom": 3.01,
         "run_eff": 50.0,
@@ -4414,8 +4413,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 45.29,
-      "divergence": 22.08,
+      "consensus": 45.79,
+      "divergence": 23.01,
       "flags": [
         "POLARIZING",
         "RB-ZONE-SCHEME"
@@ -4435,7 +4434,7 @@
         "adv": 64.42,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 58.28,
+        "matchup": 57.62,
         "sis_value": 24.26,
         "boom": 41.09,
         "route_eff": 34.96,
@@ -4445,8 +4444,8 @@
         "yac": 18.92,
         "explosive": 10.98
       },
-      "consensus": 46.22,
-      "divergence": 17.74,
+      "consensus": 46.18,
+      "divergence": 17.72,
       "flags": [
         "EFFICIENCY TRAP"
       ]
@@ -4465,7 +4464,7 @@
         "adv": 57.21,
         "coachspeak": 50.0,
         "oline": 1.01,
-        "matchup": 57.58,
+        "matchup": 56.57,
         "sis_value": 9.04,
         "boom": 51.2,
         "run_eff": 50.0,
@@ -4473,8 +4472,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 41.51,
-      "divergence": 20.3,
+      "consensus": 41.43,
+      "divergence": 20.24,
       "flags": []
     },
     {
@@ -4491,7 +4490,7 @@
         "adv": 72.22,
         "coachspeak": 50.0,
         "oline": 49.17,
-        "matchup": 6.67,
+        "matchup": 16.67,
         "sis_value": 88.04,
         "boom": 94.57,
         "route_eff": 58.65,
@@ -4500,8 +4499,8 @@
         "separation": 15.28,
         "yac": 48.61
       },
-      "consensus": 58.61,
-      "divergence": 23.74,
+      "consensus": 59.27,
+      "divergence": 22.37,
       "flags": [
         "POLARIZING"
       ]
@@ -4520,7 +4519,7 @@
         "adv": 78.57,
         "coachspeak": 50.0,
         "oline": 19.17,
-        "matchup": 16.67,
+        "matchup": 10.0,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -4529,8 +4528,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 53.43,
-      "divergence": 24.11,
+      "consensus": 52.6,
+      "divergence": 25.45,
       "flags": [
         "MARKET FADE",
         "POLARIZING"
@@ -4550,13 +4549,13 @@
         "adv": 54.46,
         "coachspeak": 50.0,
         "oline": 27.68,
-        "matchup": 43.75,
+        "matchup": 58.04,
         "sis_value": 13.27,
         "boom": 20.41,
         "protection": 17.35
       },
-      "consensus": 33.85,
-      "divergence": 17.45,
+      "consensus": 35.15,
+      "divergence": 18.63,
       "flags": [
         "QB-ZONE-BEATER"
       ]
@@ -4575,7 +4574,7 @@
         "adv": 55.45,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 14.24,
+        "matchup": 7.62,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -4585,8 +4584,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 48.25,
-      "divergence": 19.52,
+      "consensus": 47.42,
+      "divergence": 21.03,
       "flags": []
     },
     {
@@ -4603,7 +4602,7 @@
         "adv": 56.73,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 36.75,
+        "matchup": 55.3,
         "sis_value": 38.12,
         "boom": 74.75,
         "route_eff": 34.96,
@@ -4613,8 +4612,8 @@
         "yac": 67.57,
         "explosive": 36.99
       },
-      "consensus": 46.92,
-      "divergence": 18.25,
+      "consensus": 48.08,
+      "divergence": 18.16,
       "flags": [
         "EFFICIENCY TRAP",
         "FLOOR RISK"
@@ -4634,7 +4633,7 @@
         "adv": 58.65,
         "coachspeak": 50.0,
         "oline": 30.79,
-        "matchup": 24.17,
+        "matchup": 20.2,
         "sis_value": 37.13,
         "boom": 66.83,
         "route_eff": 62.6,
@@ -4644,8 +4643,8 @@
         "yac": 50.0,
         "explosive": 55.69
       },
-      "consensus": 49.45,
-      "divergence": 13.6,
+      "consensus": 49.16,
+      "divergence": 14.15,
       "flags": [
         "FLOOR RISK",
         "MAN-BEATER"
@@ -4665,7 +4664,7 @@
         "adv": 61.22,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 98.34,
+        "matchup": 78.48,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -4675,8 +4674,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 60.36,
-      "divergence": 16.08,
+      "consensus": 57.88,
+      "divergence": 10.63,
       "flags": []
     },
     {
@@ -4693,13 +4692,13 @@
         "adv": 49.11,
         "coachspeak": 3.57,
         "oline": 91.07,
-        "matchup": 29.46,
+        "matchup": 36.61,
         "sis_value": 35.71,
         "boom": 13.27,
         "protection": 60.2
       },
-      "consensus": 47.21,
-      "divergence": 24.45,
+      "consensus": 47.81,
+      "divergence": 24.1,
       "flags": [
         "POLARIZING"
       ]
@@ -4718,7 +4717,7 @@
         "adv": 62.98,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 1.52,
+        "matchup": 24.75,
         "sis_value": 77.71,
         "boom": 72.89,
         "run_eff": 50.0,
@@ -4726,8 +4725,8 @@
         "yac": 35.71,
         "explosive": 50.0
       },
-      "consensus": 49.84,
-      "divergence": 20.6,
+      "consensus": 51.77,
+      "divergence": 16.69,
       "flags": [
         "MARKET FADE",
         "RB-ZONE-SCHEME"
@@ -4747,7 +4746,7 @@
         "adv": 51.44,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 50.51,
+        "matchup": 45.45,
         "sis_value": 17.47,
         "boom": 80.12,
         "run_eff": 50.0,
@@ -4755,8 +4754,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 48.58,
-      "divergence": 18.83,
+      "consensus": 48.19,
+      "divergence": 18.84,
       "flags": [
         "BOOM MERCHANT",
         "RB-GAP-SCHEME"
@@ -4776,7 +4775,7 @@
         "adv": 50.32,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 63.58,
+        "matchup": 66.23,
         "sis_value": 80.69,
         "boom": 71.78,
         "route_eff": 82.52,
@@ -4786,8 +4785,8 @@
         "yac": 57.43,
         "explosive": 7.72
       },
-      "consensus": 58.2,
-      "divergence": 19.64,
+      "consensus": 58.37,
+      "divergence": 19.69,
       "flags": [
         "MAN-BEATER"
       ]
@@ -4806,7 +4805,7 @@
         "adv": 62.5,
         "coachspeak": 50.0,
         "oline": 30.79,
-        "matchup": 24.17,
+        "matchup": 20.2,
         "sis_value": 65.84,
         "boom": 51.49,
         "route_eff": 19.11,
@@ -4816,8 +4815,8 @@
         "yac": 33.11,
         "explosive": 55.69
       },
-      "consensus": 52.79,
-      "divergence": 20.74,
+      "consensus": 52.54,
+      "divergence": 21.1,
       "flags": [
         "EFFICIENCY EDGE"
       ]
@@ -4836,7 +4835,7 @@
         "adv": 53.53,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 20.53,
+        "matchup": 27.15,
         "sis_value": 5.45,
         "boom": 12.87,
         "route_eff": 5.28,
@@ -4846,8 +4845,8 @@
         "yac": 76.35,
         "explosive": 62.6
       },
-      "consensus": 43.5,
-      "divergence": 25.97,
+      "consensus": 43.92,
+      "divergence": 25.66,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE",
@@ -4868,7 +4867,7 @@
         "adv": 76.98,
         "coachspeak": 50.0,
         "oline": 26.67,
-        "matchup": 35.83,
+        "matchup": 55.83,
         "sis_value": 46.74,
         "boom": 42.39,
         "route_eff": 25.96,
@@ -4877,8 +4876,8 @@
         "separation": 79.17,
         "yac": 23.61
       },
-      "consensus": 47.18,
-      "divergence": 20.59,
+      "consensus": 48.52,
+      "divergence": 20.46,
       "flags": [
         "MARKET FADE",
         "MAN-BEATER"
@@ -4898,7 +4897,7 @@
         "adv": 65.87,
         "coachspeak": 50.0,
         "oline": 10.0,
-        "matchup": 74.17,
+        "matchup": 77.5,
         "sis_value": 96.74,
         "boom": 65.22,
         "route_eff": 66.35,
@@ -4907,8 +4906,8 @@
         "separation": 83.33,
         "yac": 40.28
       },
-      "consensus": 59.96,
-      "divergence": 20.74,
+      "consensus": 60.18,
+      "divergence": 20.91,
       "flags": []
     },
     {
@@ -4925,7 +4924,7 @@
         "adv": 56.25,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 69.7,
+        "matchup": 80.81,
         "sis_value": 16.27,
         "boom": 16.27,
         "run_eff": 50.0,
@@ -4933,8 +4932,8 @@
         "yac": 19.64,
         "explosive": 25.0
       },
-      "consensus": 38.98,
-      "divergence": 20.6,
+      "consensus": 39.77,
+      "divergence": 21.94,
       "flags": []
     },
     {
@@ -4951,7 +4950,7 @@
         "adv": 57.37,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 52.32,
+        "matchup": 35.1,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -4961,8 +4960,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 54.59,
-      "divergence": 6.51,
+      "consensus": 52.44,
+      "divergence": 9.2,
       "flags": []
     },
     {
@@ -5009,13 +5008,13 @@
         "adv": 47.32,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 47.32,
+        "matchup": 45.54,
         "sis_value": 45.92,
         "boom": 51.02,
         "protection": 27.55
       },
-      "consensus": 45.78,
-      "divergence": 6.86,
+      "consensus": 45.58,
+      "divergence": 6.84,
       "flags": []
     },
     {
@@ -5032,7 +5031,7 @@
         "adv": 27.4,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 34.85,
+        "matchup": 41.92,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -5040,8 +5039,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 47.27,
-      "divergence": 21.35,
+      "consensus": 48.16,
+      "divergence": 20.96,
       "flags": []
     },
     {
@@ -5058,13 +5057,13 @@
         "adv": 45.54,
         "coachspeak": 50.0,
         "oline": 33.93,
-        "matchup": 21.43,
+        "matchup": 17.86,
         "sis_value": 50.0,
         "boom": 50.0,
         "protection": 50.0
       },
-      "consensus": 42.3,
-      "divergence": 14.83,
+      "consensus": 41.86,
+      "divergence": 15.49,
       "flags": []
     },
     {
@@ -5081,7 +5080,7 @@
         "adv": 43.91,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 55.63,
+        "matchup": 38.41,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 9.35,
@@ -5091,8 +5090,8 @@
         "yac": 50.0,
         "explosive": 6.1
       },
-      "consensus": 41.33,
-      "divergence": 23.3,
+      "consensus": 39.9,
+      "divergence": 22.9,
       "flags": [
         "POLARIZING"
       ]
@@ -5111,7 +5110,7 @@
         "adv": 57.14,
         "coachspeak": 50.0,
         "oline": 26.67,
-        "matchup": 22.5,
+        "matchup": 27.5,
         "sis_value": 64.13,
         "boom": 75.0,
         "route_eff": 95.19,
@@ -5120,8 +5119,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 55.48,
-      "divergence": 23.57,
+      "consensus": 55.86,
+      "divergence": 23.07,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE"
@@ -5141,7 +5140,7 @@
         "adv": 64.29,
         "coachspeak": 50.0,
         "oline": 49.17,
-        "matchup": 90.83,
+        "matchup": 80.83,
         "sis_value": 22.83,
         "boom": 3.26,
         "route_eff": 41.35,
@@ -5150,8 +5149,8 @@
         "separation": 56.94,
         "yac": 4.17
       },
-      "consensus": 49.78,
-      "divergence": 23.23,
+      "consensus": 49.12,
+      "divergence": 22.17,
       "flags": [
         "POLARIZING"
       ]
@@ -5170,7 +5169,7 @@
         "adv": 50.48,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 20.2,
+        "matchup": 48.48,
         "sis_value": 27.11,
         "boom": 17.47,
         "run_eff": 50.0,
@@ -5178,8 +5177,8 @@
         "yac": 91.07,
         "explosive": 50.0
       },
-      "consensus": 46.4,
-      "divergence": 21.7,
+      "consensus": 48.76,
+      "divergence": 20.22,
       "flags": [
         "EFFICIENCY EDGE",
         "RB-ZONE-SCHEME"
@@ -5228,7 +5227,7 @@
         "adv": 53.37,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 85.86,
+        "matchup": 95.96,
         "sis_value": 53.61,
         "boom": 24.7,
         "run_eff": 50.0,
@@ -5236,8 +5235,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 50.98,
-      "divergence": 17.03,
+      "consensus": 51.9,
+      "divergence": 19.04,
       "flags": []
     },
     {
@@ -5254,7 +5253,7 @@
         "adv": 42.79,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 88.38,
+        "matchup": 84.34,
         "sis_value": 84.94,
         "boom": 96.99,
         "run_eff": 50.0,
@@ -5262,8 +5261,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 62.37,
-      "divergence": 21.26,
+      "consensus": 62.01,
+      "divergence": 20.84,
       "flags": [
         "BOOM MERCHANT"
       ]
@@ -5312,7 +5311,7 @@
         "adv": 49.04,
         "coachspeak": 50.0,
         "oline": 1.66,
-        "matchup": 43.38,
+        "matchup": 52.65,
         "sis_value": 51.98,
         "boom": 81.68,
         "route_eff": 21.54,
@@ -5322,8 +5321,8 @@
         "yac": 50.0,
         "explosive": 20.73
       },
-      "consensus": 49.31,
-      "divergence": 21.61,
+      "consensus": 49.97,
+      "divergence": 21.56,
       "flags": [
         "MAN-BEATER"
       ]
@@ -5342,7 +5341,7 @@
         "adv": 58.01,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 14.24,
+        "matchup": 7.62,
         "sis_value": 2.48,
         "boom": 6.44,
         "route_eff": 28.86,
@@ -5352,8 +5351,8 @@
         "yac": 77.7,
         "explosive": 51.22
       },
-      "consensus": 40.65,
-      "divergence": 22.75,
+      "consensus": 40.23,
+      "divergence": 23.28,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -5373,13 +5372,13 @@
         "adv": 52.68,
         "coachspeak": 50.0,
         "oline": 16.96,
-        "matchup": 10.71,
+        "matchup": 7.14,
         "sis_value": 5.1,
         "boom": 51.02,
         "protection": 15.31
       },
-      "consensus": 29.53,
-      "divergence": 19.15,
+      "consensus": 29.21,
+      "divergence": 19.49,
       "flags": []
     },
     {
@@ -5396,7 +5395,7 @@
         "adv": 54.81,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 72.19,
+        "matchup": 75.17,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -5406,8 +5405,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 53.31,
-      "divergence": 19.03,
+      "consensus": 53.68,
+      "divergence": 19.43,
       "flags": []
     },
     {
@@ -5424,7 +5423,7 @@
         "adv": 35.9,
         "coachspeak": 50.0,
         "oline": 69.54,
-        "matchup": 39.74,
+        "matchup": 31.13,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -5434,8 +5433,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 53.45,
-      "divergence": 17.95,
+      "consensus": 52.37,
+      "divergence": 18.97,
       "flags": []
     },
     {
@@ -5452,7 +5451,7 @@
         "adv": 25.48,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 91.41,
+        "matchup": 98.48,
         "sis_value": 42.77,
         "boom": 86.14,
         "run_eff": 50.0,
@@ -5460,8 +5459,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 47.03,
-      "divergence": 22.98,
+      "consensus": 47.68,
+      "divergence": 24.28,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -5482,7 +5481,7 @@
         "adv": 63.78,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 98.34,
+        "matchup": 78.48,
         "sis_value": 0.5,
         "boom": 2.48,
         "route_eff": 15.45,
@@ -5492,8 +5491,8 @@
         "yac": 23.65,
         "explosive": 36.99
       },
-      "consensus": 41.84,
-      "divergence": 29.18,
+      "consensus": 40.6,
+      "divergence": 27.09,
       "flags": [
         "MARKET FADE",
         "POLARIZING",
@@ -5515,7 +5514,7 @@
         "adv": 65.06,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 86.42,
+        "matchup": 81.79,
         "sis_value": 13.37,
         "boom": 45.05,
         "route_eff": 58.94,
@@ -5525,8 +5524,8 @@
         "yac": 50.0,
         "explosive": 78.46
       },
-      "consensus": 55.52,
-      "divergence": 20.46,
+      "consensus": 55.18,
+      "divergence": 19.99,
       "flags": [
         "MARKET FADE",
         "ZONE-BEATER"
@@ -5546,7 +5545,7 @@
         "adv": 53.17,
         "coachspeak": 50.0,
         "oline": 49.17,
-        "matchup": 30.83,
+        "matchup": 25.83,
         "sis_value": 61.96,
         "boom": 51.09,
         "route_eff": 28.85,
@@ -5555,8 +5554,8 @@
         "separation": 52.78,
         "yac": 66.67
       },
-      "consensus": 49.08,
-      "divergence": 12.43,
+      "consensus": 48.75,
+      "divergence": 12.97,
       "flags": []
     },
     {
@@ -5573,7 +5572,7 @@
         "adv": 59.94,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 34.11,
+        "matchup": 41.39,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -5583,8 +5582,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 57.77,
-      "divergence": 15.1,
+      "consensus": 58.68,
+      "divergence": 13.81,
       "flags": [
         "MARKET FADE"
       ]
@@ -5603,7 +5602,7 @@
         "adv": 27.24,
         "coachspeak": 50.0,
         "oline": 69.54,
-        "matchup": 39.74,
+        "matchup": 31.13,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -5613,8 +5612,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 43.96,
-      "divergence": 14.74,
+      "consensus": 42.52,
+      "divergence": 15.49,
       "flags": []
     },
     {
@@ -5631,7 +5630,7 @@
         "adv": 27.88,
         "coachspeak": 51.32,
         "oline": 52.32,
-        "matchup": 92.72,
+        "matchup": 98.68,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -5641,8 +5640,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 52.55,
-      "divergence": 20.59,
+      "consensus": 53.21,
+      "divergence": 21.93,
       "flags": []
     },
     {
@@ -5659,7 +5658,7 @@
         "adv": 67.46,
         "coachspeak": 50.0,
         "oline": 90.0,
-        "matchup": 33.33,
+        "matchup": 40.0,
         "sis_value": 75.0,
         "boom": 70.65,
         "route_eff": 62.5,
@@ -5668,8 +5667,8 @@
         "separation": 26.39,
         "yac": 95.83
       },
-      "consensus": 62.64,
-      "divergence": 18.49,
+      "consensus": 63.08,
+      "divergence": 17.85,
       "flags": [
         "MARKET FADE",
         "ZONE-BEATER"
@@ -5689,7 +5688,7 @@
         "adv": 52.4,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 25.76,
+        "matchup": 27.78,
         "sis_value": 19.88,
         "boom": 4.82,
         "run_eff": 50.0,
@@ -5697,8 +5696,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 43.65,
-      "divergence": 19.48,
+      "consensus": 43.84,
+      "divergence": 19.32,
       "flags": []
     },
     {
@@ -5715,7 +5714,7 @@
         "adv": 52.88,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 58.28,
+        "matchup": 57.62,
         "sis_value": 33.17,
         "boom": 72.77,
         "route_eff": 36.18,
@@ -5725,8 +5724,8 @@
         "yac": 95.27,
         "explosive": 11.79
       },
-      "consensus": 54.2,
-      "divergence": 18.01,
+      "consensus": 54.16,
+      "divergence": 18.0,
       "flags": []
     },
     {
@@ -5743,7 +5742,7 @@
         "adv": 21.63,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 1.52,
+        "matchup": 24.75,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -5751,8 +5750,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 25.89,
-      "divergence": 14.31,
+      "consensus": 28.79,
+      "divergence": 11.05,
       "flags": []
     },
     {
@@ -5769,7 +5768,7 @@
         "adv": 42.06,
         "coachspeak": 50.0,
         "oline": 78.33,
-        "matchup": 86.67,
+        "matchup": 85.0,
         "sis_value": 35.87,
         "boom": 55.43,
         "route_eff": 83.65,
@@ -5778,8 +5777,8 @@
         "separation": 61.11,
         "yac": 56.94
       },
-      "consensus": 59.56,
-      "divergence": 18.22,
+      "consensus": 59.45,
+      "divergence": 18.05,
       "flags": []
     },
     {
@@ -5796,13 +5795,13 @@
         "adv": 41.96,
         "coachspeak": 50.0,
         "oline": 58.04,
-        "matchup": 91.07,
+        "matchup": 98.21,
         "sis_value": 21.43,
         "boom": 70.41,
         "protection": 52.04
       },
-      "consensus": 53.13,
-      "divergence": 22.35,
+      "consensus": 53.78,
+      "divergence": 23.52,
       "flags": [
         "POLARIZING",
         "QB-MAN-BEATER"
@@ -5822,7 +5821,7 @@
         "adv": 32.37,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 95.36,
+        "matchup": 88.08,
         "sis_value": 48.02,
         "boom": 58.42,
         "route_eff": 52.44,
@@ -5832,8 +5831,8 @@
         "yac": 50.0,
         "explosive": 15.45
       },
-      "consensus": 53.5,
-      "divergence": 21.43,
+      "consensus": 52.98,
+      "divergence": 20.48,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -5852,7 +5851,7 @@
         "adv": 38.94,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 29.29,
+        "matchup": 18.18,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -5860,8 +5859,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 44.33,
-      "divergence": 20.24,
+      "consensus": 42.94,
+      "divergence": 21.57,
       "flags": []
     },
     {
@@ -5878,7 +5877,7 @@
         "adv": 50.0,
         "coachspeak": 50.0,
         "oline": 2.5,
-        "matchup": 42.5,
+        "matchup": 52.5,
         "sis_value": 16.3,
         "boom": 48.91,
         "route_eff": 14.42,
@@ -5887,8 +5886,8 @@
         "separation": 1.39,
         "yac": 72.22
       },
-      "consensus": 40.57,
-      "divergence": 25.29,
+      "consensus": 41.24,
+      "divergence": 25.47,
       "flags": [
         "POLARIZING"
       ]
@@ -5907,7 +5906,7 @@
         "adv": 62.7,
         "coachspeak": 50.0,
         "oline": 78.33,
-        "matchup": 86.67,
+        "matchup": 85.0,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 66.35,
@@ -5916,8 +5915,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 63.73,
-      "divergence": 10.83,
+      "consensus": 63.58,
+      "divergence": 10.51,
       "flags": [
         "MARKET FADE"
       ]
@@ -5936,7 +5935,7 @@
         "adv": 41.67,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 5.3,
+        "matchup": 13.25,
         "sis_value": 82.67,
         "boom": 97.52,
         "route_eff": 39.84,
@@ -5946,8 +5945,8 @@
         "yac": 11.49,
         "explosive": 80.89
       },
-      "consensus": 54.85,
-      "divergence": 29.23,
+      "consensus": 55.35,
+      "divergence": 28.45,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE",
@@ -5968,7 +5967,7 @@
         "adv": 10.1,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 38.38,
+        "matchup": 31.31,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -5976,8 +5975,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 24.44,
-      "divergence": 14.42,
+      "consensus": 23.56,
+      "divergence": 13.74,
       "flags": []
     },
     {
@@ -5994,7 +5993,7 @@
         "adv": 32.21,
         "coachspeak": 50.0,
         "oline": 98.48,
-        "matchup": 4.55,
+        "matchup": 8.59,
         "sis_value": 74.1,
         "boom": 91.57,
         "run_eff": 50.0,
@@ -6002,8 +6001,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 53.76,
-      "divergence": 28.38,
+      "consensus": 54.13,
+      "divergence": 27.76,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -6024,7 +6023,7 @@
         "adv": 55.29,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 55.05,
+        "matchup": 62.12,
         "sis_value": 69.28,
         "boom": 4.82,
         "run_eff": 50.0,
@@ -6032,8 +6031,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 47.09,
-      "divergence": 15.46,
+      "consensus": 47.73,
+      "divergence": 15.92,
       "flags": [
         "MARKET FADE"
       ]
@@ -6052,7 +6051,7 @@
         "adv": 38.78,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 30.79,
+        "matchup": 23.51,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -6062,8 +6061,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 50.18,
-      "divergence": 18.49,
+      "consensus": 49.27,
+      "divergence": 19.57,
       "flags": []
     },
     {
@@ -6080,7 +6079,7 @@
         "adv": 46.63,
         "coachspeak": 10.0,
         "oline": 47.47,
-        "matchup": 66.16,
+        "matchup": 93.43,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -6088,8 +6087,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 50.05,
-      "divergence": 22.06,
+      "consensus": 53.08,
+      "divergence": 25.64,
       "flags": [
         "POLARIZING"
       ]
@@ -6108,7 +6107,7 @@
         "adv": 43.75,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 41.92,
+        "matchup": 21.72,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -6116,8 +6115,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 46.75,
-      "divergence": 19.73,
+      "consensus": 44.23,
+      "divergence": 21.41,
       "flags": []
     },
     {
@@ -6134,7 +6133,7 @@
         "adv": 54.76,
         "coachspeak": 50.0,
         "oline": 19.17,
-        "matchup": 78.33,
+        "matchup": 75.0,
         "sis_value": 25.0,
         "boom": 72.83,
         "route_eff": 28.85,
@@ -6143,8 +6142,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 49.14,
-      "divergence": 18.41,
+      "consensus": 48.88,
+      "divergence": 18.02,
       "flags": []
     },
     {
@@ -6161,7 +6160,7 @@
         "adv": 40.06,
         "coachspeak": 50.0,
         "oline": 69.54,
-        "matchup": 39.74,
+        "matchup": 31.13,
         "sis_value": 1.49,
         "boom": 0.5,
         "route_eff": 6.91,
@@ -6171,8 +6170,8 @@
         "yac": 50.0,
         "explosive": 21.54
       },
-      "consensus": 36.71,
-      "divergence": 26.61,
+      "consensus": 36.09,
+      "divergence": 26.64,
       "flags": [
         "POLARIZING"
       ]
@@ -6191,7 +6190,7 @@
         "adv": 34.13,
         "coachspeak": 50.0,
         "oline": 3.54,
-        "matchup": 7.58,
+        "matchup": 1.52,
         "sis_value": 10.24,
         "boom": 37.95,
         "run_eff": 50.0,
@@ -6199,8 +6198,8 @@
         "yac": 50.0,
         "explosive": 61.46
       },
-      "consensus": 35.87,
-      "divergence": 19.09,
+      "consensus": 35.4,
+      "divergence": 19.83,
       "flags": [
         "RB-GAP-SCHEME"
       ]
@@ -6219,7 +6218,7 @@
         "adv": 31.25,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 45.45,
+        "matchup": 35.35,
         "sis_value": 28.31,
         "boom": 40.36,
         "run_eff": 50.0,
@@ -6227,8 +6226,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 42.17,
-      "divergence": 12.91,
+      "consensus": 41.25,
+      "divergence": 13.0,
       "flags": [
         "RB-GAP-SCHEME"
       ]
@@ -6247,7 +6246,7 @@
         "adv": 24.6,
         "coachspeak": 50.0,
         "oline": 49.17,
-        "matchup": 96.67,
+        "matchup": 90.0,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -6256,8 +6255,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 48.83,
-      "divergence": 24.04,
+      "consensus": 47.99,
+      "divergence": 22.42,
       "flags": [
         "POLARIZING"
       ]
@@ -6276,7 +6275,7 @@
         "adv": 54.17,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 20.53,
+        "matchup": 27.15,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -6286,8 +6285,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 43.68,
-      "divergence": 12.64,
+      "consensus": 44.51,
+      "divergence": 11.24,
       "flags": []
     },
     {
@@ -6304,7 +6303,7 @@
         "adv": 30.45,
         "coachspeak": 11.84,
         "oline": 91.72,
-        "matchup": 8.94,
+        "matchup": 1.66,
         "sis_value": 49.01,
         "boom": 60.4,
         "route_eff": 26.42,
@@ -6314,8 +6313,8 @@
         "yac": 10.14,
         "explosive": 59.35
       },
-      "consensus": 46.19,
-      "divergence": 26.79,
+      "consensus": 45.76,
+      "divergence": 27.43,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE"
@@ -6335,7 +6334,7 @@
         "adv": 51.6,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 72.19,
+        "matchup": 91.72,
         "sis_value": 25.25,
         "boom": 40.1,
         "route_eff": 8.54,
@@ -6345,8 +6344,8 @@
         "yac": 12.84,
         "explosive": 53.25
       },
-      "consensus": 47.54,
-      "divergence": 22.53,
+      "consensus": 48.76,
+      "divergence": 24.3,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -6366,7 +6365,7 @@
         "adv": 18.27,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 72.19,
+        "matchup": 91.72,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -6376,9 +6375,11 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 43.49,
-      "divergence": 19.93,
-      "flags": []
+      "consensus": 45.93,
+      "divergence": 24.06,
+      "flags": [
+        "POLARIZING"
+      ]
     },
     {
       "name": "Jordan James",
@@ -6394,7 +6395,7 @@
         "adv": 41.83,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 94.95,
+        "matchup": 71.72,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -6402,11 +6403,9 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 58.05,
-      "divergence": 24.44,
-      "flags": [
-        "POLARIZING"
-      ]
+      "consensus": 55.15,
+      "divergence": 21.03,
+      "flags": []
     },
     {
       "name": "Deshaun Watson",
@@ -6422,13 +6421,13 @@
         "adv": 43.75,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 98.21,
+        "matchup": 78.57,
         "sis_value": 50.0,
         "boom": 50.0,
         "protection": 50.0
       },
-      "consensus": 50.07,
-      "divergence": 21.35,
+      "consensus": 47.61,
+      "divergence": 16.17,
       "flags": []
     },
     {
@@ -6445,13 +6444,13 @@
         "adv": 38.39,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 98.21,
+        "matchup": 78.57,
         "sis_value": 3.06,
         "boom": 7.14,
         "protection": 11.22
       },
-      "consensus": 36.01,
-      "divergence": 26.97,
+      "consensus": 33.83,
+      "divergence": 22.22,
       "flags": [
         "QB-MAN-BEATER"
       ]
@@ -6470,7 +6469,7 @@
         "adv": 37.02,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 79.8,
+        "matchup": 51.52,
         "sis_value": 31.93,
         "boom": 29.52,
         "run_eff": 50.0,
@@ -6478,8 +6477,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 49.74,
-      "divergence": 20.84,
+      "consensus": 47.17,
+      "divergence": 18.6,
       "flags": [
         "RB-ZONE-SCHEME"
       ]
@@ -6498,13 +6497,13 @@
         "adv": 40.18,
         "coachspeak": 39.29,
         "oline": 58.04,
-        "matchup": 91.07,
+        "matchup": 98.21,
         "sis_value": 64.29,
         "boom": 80.61,
         "protection": 50.0
       },
-      "consensus": 54.22,
-      "divergence": 18.04,
+      "consensus": 54.94,
+      "divergence": 19.56,
       "flags": [
         "BOOM MERCHANT"
       ]
@@ -6523,7 +6522,7 @@
         "adv": 20.67,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 79.8,
+        "matchup": 51.52,
         "sis_value": 52.41,
         "boom": 18.67,
         "run_eff": 50.0,
@@ -6531,11 +6530,9 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 34.21,
-      "divergence": 24.21,
-      "flags": [
-        "POLARIZING"
-      ]
+      "consensus": 32.04,
+      "divergence": 21.08,
+      "flags": []
     },
     {
       "name": "Troy Franklin",
@@ -6551,7 +6548,7 @@
         "adv": 26.6,
         "coachspeak": 50.0,
         "oline": 74.5,
-        "matchup": 27.48,
+        "matchup": 44.7,
         "sis_value": 12.38,
         "boom": 4.95,
         "route_eff": 32.93,
@@ -6561,8 +6558,8 @@
         "yac": 38.51,
         "explosive": 71.14
       },
-      "consensus": 39.43,
-      "divergence": 22.59,
+      "consensus": 40.51,
+      "divergence": 22.41,
       "flags": [
         "POLARIZING"
       ]
@@ -6581,7 +6578,7 @@
         "adv": 23.56,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 60.1,
+        "matchup": 68.18,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -6589,8 +6586,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 43.58,
-      "divergence": 22.83,
+      "consensus": 44.59,
+      "divergence": 23.7,
       "flags": [
         "POLARIZING"
       ]
@@ -6609,7 +6606,7 @@
         "adv": 33.01,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 66.56,
+        "matchup": 95.7,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -6619,9 +6616,11 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 54.26,
-      "divergence": 20.8,
-      "flags": []
+      "consensus": 57.91,
+      "divergence": 24.8,
+      "flags": [
+        "POLARIZING"
+      ]
     },
     {
       "name": "Kirk Cousins",
@@ -6637,13 +6636,13 @@
         "adv": 36.61,
         "coachspeak": 50.0,
         "oline": 33.93,
-        "matchup": 21.43,
+        "matchup": 17.86,
         "sis_value": 54.08,
         "boom": 44.9,
         "protection": 21.43
       },
-      "consensus": 36.4,
-      "divergence": 9.76,
+      "consensus": 36.0,
+      "divergence": 10.41,
       "flags": []
     },
     {
@@ -6689,7 +6688,7 @@
         "adv": 51.59,
         "coachspeak": 50.0,
         "oline": 68.33,
-        "matchup": 28.33,
+        "matchup": 43.33,
         "sis_value": 3.26,
         "boom": 7.61,
         "route_eff": 23.08,
@@ -6698,8 +6697,8 @@
         "separation": 95.83,
         "yac": 26.39
       },
-      "consensus": 38.74,
-      "divergence": 24.38,
+      "consensus": 39.74,
+      "divergence": 24.24,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE",
@@ -6721,13 +6720,13 @@
         "adv": 34.82,
         "coachspeak": 50.0,
         "oline": 58.04,
-        "matchup": 94.64,
+        "matchup": 87.5,
         "sis_value": 50.0,
         "boom": 31.63,
         "protection": 37.76
       },
-      "consensus": 46.1,
-      "divergence": 18.94,
+      "consensus": 45.31,
+      "divergence": 16.93,
       "flags": [
         "QB-ZONE-BEATER"
       ]
@@ -6772,7 +6771,7 @@
         "adv": 43.27,
         "coachspeak": 50.0,
         "oline": 74.5,
-        "matchup": 27.48,
+        "matchup": 44.7,
         "sis_value": 26.24,
         "boom": 42.57,
         "route_eff": 27.24,
@@ -6782,8 +6781,8 @@
         "yac": 50.0,
         "explosive": 69.11
       },
-      "consensus": 46.62,
-      "divergence": 18.08,
+      "consensus": 47.85,
+      "divergence": 17.31,
       "flags": [
         "MAN-BEATER"
       ]
@@ -6802,7 +6801,7 @@
         "adv": 38.14,
         "coachspeak": 17.11,
         "oline": 63.91,
-        "matchup": 58.28,
+        "matchup": 57.62,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 11.79,
@@ -6812,8 +6811,8 @@
         "yac": 50.0,
         "explosive": 27.24
       },
-      "consensus": 46.67,
-      "divergence": 23.22,
+      "consensus": 46.62,
+      "divergence": 23.2,
       "flags": [
         "POLARIZING"
       ]
@@ -6832,7 +6831,7 @@
         "adv": 30.29,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 94.95,
+        "matchup": 71.72,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -6840,11 +6839,9 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 47.44,
-      "divergence": 23.78,
-      "flags": [
-        "POLARIZING"
-      ]
+      "consensus": 44.54,
+      "divergence": 18.68,
+      "flags": []
     },
     {
       "name": "Tyquan Thornton",
@@ -6891,7 +6888,7 @@
         "adv": 29.81,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 72.19,
+        "matchup": 75.17,
         "sis_value": 29.7,
         "boom": 19.8,
         "route_eff": 50.81,
@@ -6901,8 +6898,8 @@
         "yac": 50.0,
         "explosive": 61.38
       },
-      "consensus": 42.78,
-      "divergence": 20.29,
+      "consensus": 42.99,
+      "divergence": 20.61,
       "flags": []
     },
     {
@@ -6919,7 +6916,7 @@
         "adv": 54.33,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 63.13,
+        "matchup": 77.27,
         "sis_value": 72.89,
         "boom": 94.58,
         "run_eff": 50.0,
@@ -6927,8 +6924,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 58.95,
-      "divergence": 18.79,
+      "consensus": 60.24,
+      "divergence": 19.5,
       "flags": [
         "BOOM MERCHANT",
         "RB-ZONE-SCHEME"
@@ -6948,7 +6945,7 @@
         "adv": 28.37,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 76.26,
+        "matchup": 87.37,
         "sis_value": 76.51,
         "boom": 84.94,
         "run_eff": 50.0,
@@ -6956,8 +6953,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 47.08,
-      "divergence": 22.86,
+      "consensus": 48.09,
+      "divergence": 24.32,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT"
@@ -6977,7 +6974,7 @@
         "adv": 14.42,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 50.51,
+        "matchup": 45.45,
         "sis_value": 54.82,
         "boom": 6.63,
         "run_eff": 50.0,
@@ -6985,8 +6982,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 32.89,
-      "divergence": 17.33,
+      "consensus": 32.32,
+      "divergence": 16.82,
       "flags": [
         "RB-GAP-SCHEME"
       ]
@@ -7005,7 +7002,7 @@
         "adv": 40.87,
         "coachspeak": 18.0,
         "oline": 47.47,
-        "matchup": 66.16,
+        "matchup": 93.43,
         "sis_value": 58.43,
         "boom": 49.4,
         "run_eff": 50.0,
@@ -7013,9 +7010,11 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 46.73,
-      "divergence": 19.14,
-      "flags": []
+      "consensus": 49.0,
+      "divergence": 22.61,
+      "flags": [
+        "POLARIZING"
+      ]
     },
     {
       "name": "Darnell Washington",
@@ -7031,7 +7030,7 @@
         "adv": 45.24,
         "coachspeak": 50.0,
         "oline": 90.0,
-        "matchup": 33.33,
+        "matchup": 40.0,
         "sis_value": 44.57,
         "boom": 92.39,
         "route_eff": 75.0,
@@ -7040,8 +7039,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 58.3,
-      "divergence": 21.87,
+      "consensus": 58.81,
+      "divergence": 21.35,
       "flags": [
         "BOOM MERCHANT",
         "ZONE-BEATER"
@@ -7061,7 +7060,7 @@
         "adv": 34.62,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 46.69,
+        "matchup": 60.6,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -7071,8 +7070,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 45.96,
-      "divergence": 21.08,
+      "consensus": 47.7,
+      "divergence": 21.63,
       "flags": []
     },
     {
@@ -7089,13 +7088,13 @@
         "adv": 33.04,
         "coachspeak": 75.0,
         "oline": 27.68,
-        "matchup": 33.93,
+        "matchup": 53.57,
         "sis_value": 7.14,
         "boom": 27.55,
         "protection": 5.1
       },
-      "consensus": 31.21,
-      "divergence": 18.01,
+      "consensus": 33.18,
+      "divergence": 19.23,
       "flags": []
     },
     {
@@ -7112,7 +7111,7 @@
         "adv": 14.42,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 41.92,
+        "matchup": 21.72,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -7120,8 +7119,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 24.22,
-      "divergence": 9.42,
+      "consensus": 20.85,
+      "divergence": 5.13,
       "flags": []
     },
     {
@@ -7166,7 +7165,7 @@
         "adv": 19.55,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 72.19,
+        "matchup": 91.72,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -7176,9 +7175,11 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 43.79,
-      "divergence": 20.42,
-      "flags": []
+      "consensus": 46.23,
+      "divergence": 24.44,
+      "flags": [
+        "POLARIZING"
+      ]
     },
     {
       "name": "Jerome Ford",
@@ -7194,7 +7195,7 @@
         "adv": 14.42,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 38.38,
+        "matchup": 31.31,
         "sis_value": 60.84,
         "boom": 98.19,
         "run_eff": 50.0,
@@ -7202,8 +7203,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 38.55,
-      "divergence": 25.9,
+      "consensus": 37.77,
+      "divergence": 26.0,
       "flags": [
         "BOOM MERCHANT",
         "RB-GAP-SCHEME"
@@ -7254,7 +7255,7 @@
         "adv": 59.29,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 66.56,
+        "matchup": 95.7,
         "sis_value": 8.42,
         "boom": 14.36,
         "route_eff": 12.6,
@@ -7264,8 +7265,8 @@
         "yac": 50.0,
         "explosive": 81.71
       },
-      "consensus": 47.08,
-      "divergence": 26.24,
+      "consensus": 49.16,
+      "divergence": 28.74,
       "flags": [
         "MARKET FADE",
         "POLARIZING",
@@ -7286,7 +7287,7 @@
         "adv": 9.94,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 95.36,
+        "matchup": 88.08,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -7296,8 +7297,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 39.78,
-      "divergence": 29.06,
+      "consensus": 38.57,
+      "divergence": 26.77,
       "flags": []
     },
     {
@@ -7314,7 +7315,7 @@
         "adv": 39.42,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 20.53,
+        "matchup": 27.15,
         "sis_value": 19.31,
         "boom": 42.57,
         "route_eff": 4.47,
@@ -7324,8 +7325,8 @@
         "yac": 50.0,
         "explosive": 40.24
       },
-      "consensus": 37.35,
-      "divergence": 20.86,
+      "consensus": 37.82,
+      "divergence": 20.55,
       "flags": []
     },
     {
@@ -7372,7 +7373,7 @@
         "adv": 26.44,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 73.23,
+        "matchup": 59.09,
         "sis_value": 11.45,
         "boom": 22.29,
         "run_eff": 50.0,
@@ -7380,8 +7381,8 @@
         "yac": 50.0,
         "explosive": 25.0
       },
-      "consensus": 36.25,
-      "divergence": 19.65,
+      "consensus": 35.16,
+      "divergence": 17.88,
       "flags": []
     },
     {
@@ -7398,7 +7399,7 @@
         "adv": 16.35,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 5.3,
+        "matchup": 13.25,
         "sis_value": 71.78,
         "boom": 35.15,
         "route_eff": 42.68,
@@ -7408,8 +7409,8 @@
         "yac": 15.54,
         "explosive": 40.24
       },
-      "consensus": 38.92,
-      "divergence": 20.22,
+      "consensus": 39.42,
+      "divergence": 19.47,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -7428,13 +7429,13 @@
         "adv": 0.89,
         "coachspeak": 50.0,
         "oline": 16.96,
-        "matchup": 75.0,
+        "matchup": 71.43,
         "sis_value": 9.18,
         "boom": 23.47,
         "protection": 19.39
       },
-      "consensus": 23.54,
-      "divergence": 21.4,
+      "consensus": 23.14,
+      "divergence": 20.45,
       "flags": []
     },
     {
@@ -7451,7 +7452,7 @@
         "adv": 35.1,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 25.76,
+        "matchup": 27.78,
         "sis_value": 56.02,
         "boom": 59.64,
         "run_eff": 50.0,
@@ -7459,8 +7460,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 41.85,
-      "divergence": 15.32,
+      "consensus": 42.03,
+      "divergence": 15.13,
       "flags": []
     },
     {
@@ -7477,7 +7478,7 @@
         "adv": 9.94,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 72.19,
+        "matchup": 91.72,
         "sis_value": 28.22,
         "boom": 48.02,
         "route_eff": 30.89,
@@ -7487,8 +7488,8 @@
         "yac": 27.03,
         "explosive": 30.49
       },
-      "consensus": 34.86,
-      "divergence": 23.48,
+      "consensus": 36.08,
+      "divergence": 25.78,
       "flags": [
         "POLARIZING",
         "SEPARATION KING",
@@ -7509,7 +7510,7 @@
         "adv": 49.52,
         "coachspeak": 50.0,
         "oline": 98.48,
-        "matchup": 4.55,
+        "matchup": 8.59,
         "sis_value": 57.23,
         "boom": 95.78,
         "run_eff": 50.0,
@@ -7517,8 +7518,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 51.81,
-      "divergence": 28.62,
+      "consensus": 52.18,
+      "divergence": 28.04,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -7565,7 +7566,7 @@
         "adv": 29.33,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 10.61,
+        "matchup": 14.65,
         "sis_value": 41.57,
         "boom": 55.42,
         "run_eff": 50.0,
@@ -7573,8 +7574,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 34.67,
-      "divergence": 18.21,
+      "consensus": 35.04,
+      "divergence": 17.76,
       "flags": [
         "RB-ZONE-SCHEME"
       ]
@@ -7593,7 +7594,7 @@
         "adv": 22.6,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 88.38,
+        "matchup": 84.34,
         "sis_value": 37.95,
         "boom": 12.65,
         "run_eff": 50.0,
@@ -7601,8 +7602,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 35.77,
-      "divergence": 21.46,
+      "consensus": 35.41,
+      "divergence": 20.57,
       "flags": []
     },
     {
@@ -7619,7 +7620,7 @@
         "adv": 13.78,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 98.34,
+        "matchup": 78.48,
         "sis_value": 27.23,
         "boom": 17.82,
         "route_eff": 13.82,
@@ -7629,8 +7630,8 @@
         "yac": 50.0,
         "explosive": 59.35
       },
-      "consensus": 38.27,
-      "divergence": 25.77,
+      "consensus": 36.85,
+      "divergence": 22.79,
       "flags": [
         "POLARIZING"
       ]
@@ -7649,7 +7650,7 @@
         "adv": 14.42,
         "coachspeak": 50.0,
         "oline": 1.66,
-        "matchup": 43.38,
+        "matchup": 52.65,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 3.66,
@@ -7659,8 +7660,8 @@
         "yac": 50.0,
         "explosive": 1.22
       },
-      "consensus": 25.74,
-      "divergence": 23.95,
+      "consensus": 26.51,
+      "divergence": 24.65,
       "flags": [
         "POLARIZING"
       ]
@@ -7679,13 +7680,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 16.96,
-        "matchup": 86.61,
+        "matchup": 66.96,
         "sis_value": 37.76,
         "boom": 1.02,
         "protection": 3.06
       },
-      "consensus": 26.47,
-      "divergence": 24.34,
+      "consensus": 24.29,
+      "divergence": 19.18,
       "flags": []
     },
     {
@@ -7702,7 +7703,7 @@
         "adv": 22.12,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 60.93,
+        "matchup": 63.58,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -7712,8 +7713,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 34.05,
-      "divergence": 18.36,
+      "consensus": 34.38,
+      "divergence": 18.86,
       "flags": []
     },
     {
@@ -7730,7 +7731,7 @@
         "adv": 14.42,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 69.7,
+        "matchup": 80.81,
         "sis_value": 86.14,
         "boom": 99.4,
         "run_eff": 50.0,
@@ -7738,8 +7739,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 43.37,
-      "divergence": 31.98,
+      "consensus": 44.61,
+      "divergence": 33.16,
       "flags": [
         "BOOM MERCHANT",
         "RB-GAP-SCHEME"
@@ -7759,7 +7760,7 @@
         "adv": 9.94,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 46.69,
+        "matchup": 60.6,
         "sis_value": 14.36,
         "boom": 7.43,
         "route_eff": 72.76,
@@ -7769,8 +7770,8 @@
         "yac": 0.68,
         "explosive": 6.91
       },
-      "consensus": 26.52,
-      "divergence": 27.07,
+      "consensus": 27.51,
+      "divergence": 28.03,
       "flags": [
         "EFFICIENCY EDGE",
         "SEPARATION KING",
@@ -7791,7 +7792,7 @@
         "adv": 13.49,
         "coachspeak": 50.0,
         "oline": 63.33,
-        "matchup": 38.33,
+        "matchup": 30.0,
         "sis_value": 55.43,
         "boom": 20.65,
         "route_eff": 18.27,
@@ -7800,8 +7801,8 @@
         "separation": 65.28,
         "yac": 20.83
       },
-      "consensus": 36.95,
-      "divergence": 17.72,
+      "consensus": 36.39,
+      "divergence": 17.8,
       "flags": []
     },
     {
@@ -7818,7 +7819,7 @@
         "adv": 9.94,
         "coachspeak": 50.0,
         "oline": 30.79,
-        "matchup": 24.17,
+        "matchup": 20.2,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -7828,8 +7829,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 22.84,
-      "divergence": 9.43,
+      "consensus": 22.17,
+      "divergence": 9.46,
       "flags": []
     },
     {
@@ -7846,7 +7847,7 @@
         "adv": 45.19,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 77.48,
+        "matchup": 72.19,
         "sis_value": 47.03,
         "boom": 33.66,
         "route_eff": 7.72,
@@ -7856,10 +7857,9 @@
         "yac": 18.92,
         "explosive": 32.11
       },
-      "consensus": 40.71,
-      "divergence": 22.41,
+      "consensus": 40.38,
+      "divergence": 21.9,
       "flags": [
-        "POLARIZING",
         "MAN-BEATER"
       ]
     },
@@ -7905,7 +7905,7 @@
         "adv": 36.06,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 10.61,
+        "matchup": 14.65,
         "sis_value": 24.7,
         "boom": 55.42,
         "run_eff": 50.0,
@@ -7913,8 +7913,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 35.29,
-      "divergence": 20.34,
+      "consensus": 35.66,
+      "divergence": 19.92,
       "flags": [
         "RB-GAP-SCHEME"
       ]
@@ -7933,7 +7933,7 @@
         "adv": 34.62,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 60.93,
+        "matchup": 63.58,
         "sis_value": 42.08,
         "boom": 85.15,
         "route_eff": 24.8,
@@ -7943,8 +7943,8 @@
         "yac": 50.0,
         "explosive": 23.98
       },
-      "consensus": 44.86,
-      "divergence": 24.23,
+      "consensus": 45.05,
+      "divergence": 24.36,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT"
@@ -7964,13 +7964,13 @@
         "adv": 59.82,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 47.32,
+        "matchup": 45.54,
         "sis_value": 50.0,
         "boom": 50.0,
         "protection": 50.0
       },
-      "consensus": 47.86,
-      "divergence": 13.02,
+      "consensus": 47.64,
+      "divergence": 13.05,
       "flags": [
         "MARKET FADE"
       ]
@@ -7989,7 +7989,7 @@
         "adv": 9.13,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 17.17,
+        "matchup": 5.05,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -7997,8 +7997,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 24.58,
-      "divergence": 25.13,
+      "consensus": 22.56,
+      "divergence": 26.11,
       "flags": []
     },
     {
@@ -8015,7 +8015,7 @@
         "adv": 18.25,
         "coachspeak": 50.0,
         "oline": 78.33,
-        "matchup": 70.0,
+        "matchup": 96.67,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -8024,8 +8024,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 44.82,
-      "divergence": 23.04,
+      "consensus": 49.27,
+      "divergence": 29.21,
       "flags": []
     },
     {
@@ -8042,7 +8042,7 @@
         "adv": 3.85,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 29.29,
+        "matchup": 18.18,
         "sis_value": 21.08,
         "boom": 8.43,
         "run_eff": 50.0,
@@ -8050,8 +8050,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 18.56,
-      "divergence": 13.65,
+      "consensus": 17.32,
+      "divergence": 13.11,
       "flags": []
     },
     {
@@ -8068,7 +8068,7 @@
         "adv": 42.63,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 46.69,
+        "matchup": 60.6,
         "sis_value": 21.29,
         "boom": 10.89,
         "route_eff": 15.45,
@@ -8078,9 +8078,10 @@
         "yac": 6.08,
         "explosive": 69.11
       },
-      "consensus": 35.89,
-      "divergence": 22.0,
+      "consensus": 36.76,
+      "divergence": 22.68,
       "flags": [
+        "POLARIZING",
         "MAN-BEATER"
       ]
     },
@@ -8127,7 +8128,7 @@
         "adv": 3.85,
         "coachspeak": 50.0,
         "oline": 91.41,
-        "matchup": 98.48,
+        "matchup": 65.15,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -8135,8 +8136,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 37.58,
-      "divergence": 40.82,
+      "consensus": 32.02,
+      "divergence": 33.83,
       "flags": []
     },
     {
@@ -8153,7 +8154,7 @@
         "adv": 1.6,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 52.32,
+        "matchup": 35.1,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 87.4,
@@ -8163,8 +8164,8 @@
         "yac": 50.0,
         "explosive": 3.66
       },
-      "consensus": 31.96,
-      "divergence": 30.39,
+      "consensus": 30.24,
+      "divergence": 29.67,
       "flags": []
     },
     {
@@ -8181,13 +8182,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 27.68,
-        "matchup": 17.86,
+        "matchup": 23.21,
         "sis_value": 27.55,
         "boom": 34.69,
         "protection": 25.51
       },
-      "consensus": 24.33,
-      "divergence": 6.34,
+      "consensus": 24.93,
+      "divergence": 5.95,
       "flags": [
         "QB-ZONE-BEATER"
       ]
@@ -8258,7 +8259,7 @@
         "adv": 39.9,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 45.45,
+        "matchup": 35.35,
         "sis_value": 62.05,
         "boom": 57.83,
         "run_eff": 50.0,
@@ -8266,8 +8267,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 47.4,
-      "divergence": 21.63,
+      "consensus": 46.48,
+      "divergence": 21.91,
       "flags": [
         "RB-GAP-SCHEME"
       ]
@@ -8286,7 +8287,7 @@
         "adv": 18.25,
         "coachspeak": 50.0,
         "oline": 38.33,
-        "matchup": 66.67,
+        "matchup": 70.0,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -8295,8 +8296,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 36.02,
-      "divergence": 16.23,
+      "consensus": 36.57,
+      "divergence": 17.29,
       "flags": []
     },
     {
@@ -8313,13 +8314,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 66.96,
-        "matchup": 69.64,
+        "matchup": 91.07,
         "sis_value": 60.2,
         "boom": 96.94,
         "protection": 82.65
       },
-      "consensus": 50.55,
-      "divergence": 29.46,
+      "consensus": 52.93,
+      "divergence": 31.69,
       "flags": [
         "BOOM MERCHANT",
         "QB-ZONE-BEATER"
@@ -8339,7 +8340,7 @@
         "adv": 17.63,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 66.56,
+        "matchup": 95.7,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 96.34,
@@ -8349,8 +8350,8 @@
         "yac": 50.0,
         "explosive": 99.59
       },
-      "consensus": 52.51,
-      "divergence": 32.94,
+      "consensus": 54.94,
+      "divergence": 34.9,
       "flags": [
         "POLARIZING"
       ]
@@ -8369,7 +8370,7 @@
         "adv": 18.25,
         "coachspeak": 50.0,
         "oline": 10.0,
-        "matchup": 62.5,
+        "matchup": 65.83,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -8378,8 +8379,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 30.07,
-      "divergence": 17.31,
+      "consensus": 30.62,
+      "divergence": 18.36,
       "flags": []
     },
     {
@@ -8396,7 +8397,7 @@
         "adv": 5.45,
         "coachspeak": 50.0,
         "oline": 69.54,
-        "matchup": 39.74,
+        "matchup": 31.13,
         "sis_value": 20.3,
         "boom": 19.8,
         "route_eff": 20.73,
@@ -8406,8 +8407,8 @@
         "yac": 50.0,
         "explosive": 13.01
       },
-      "consensus": 22.51,
-      "divergence": 18.22,
+      "consensus": 21.89,
+      "divergence": 17.77,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -8426,12 +8427,12 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 91.07,
-        "matchup": 29.46,
+        "matchup": 36.61,
         "sis_value": 50.0,
         "boom": 50.0,
         "protection": 50.0
       },
-      "consensus": 32.59,
+      "consensus": 33.78,
       "divergence": 26.6,
       "flags": []
     },
@@ -8449,7 +8450,7 @@
         "adv": 24.52,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 55.05,
+        "matchup": 62.12,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -8457,8 +8458,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 32.15,
-      "divergence": 18.34,
+      "consensus": 33.03,
+      "divergence": 19.56,
       "flags": []
     },
     {
@@ -8475,7 +8476,7 @@
         "adv": 31.09,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 5.3,
+        "matchup": 13.25,
         "sis_value": 64.85,
         "boom": 86.63,
         "route_eff": 97.97,
@@ -8485,8 +8486,8 @@
         "yac": 50.0,
         "explosive": 85.77
       },
-      "consensus": 50.44,
-      "divergence": 30.5,
+      "consensus": 51.0,
+      "divergence": 29.72,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -8507,7 +8508,7 @@
         "adv": 8.01,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 72.19,
+        "matchup": 91.72,
         "sis_value": 6.44,
         "boom": 3.47,
         "route_eff": 39.84,
@@ -8517,8 +8518,8 @@
         "yac": 50.0,
         "explosive": 87.8
       },
-      "consensus": 33.25,
-      "divergence": 28.03,
+      "consensus": 34.65,
+      "divergence": 30.33,
       "flags": [
         "POLARIZING"
       ]
@@ -8537,7 +8538,7 @@
         "adv": 6.09,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 55.63,
+        "matchup": 38.41,
         "sis_value": 32.18,
         "boom": 31.19,
         "route_eff": 6.1,
@@ -8547,11 +8548,9 @@
         "yac": 50.0,
         "explosive": 84.96
       },
-      "consensus": 25.83,
-      "divergence": 22.74,
-      "flags": [
-        "POLARIZING"
-      ]
+      "consensus": 24.6,
+      "divergence": 21.53,
+      "flags": []
     },
     {
       "name": "Davis Mills",
@@ -8567,13 +8566,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 7.14,
-        "matchup": 69.64,
+        "matchup": 75.0,
         "sis_value": 19.39,
         "boom": 11.22,
         "protection": 23.47
       },
-      "consensus": 22.48,
-      "divergence": 17.36,
+      "consensus": 23.07,
+      "divergence": 18.98,
       "flags": [
         "QB-ZONE-BEATER"
       ]
@@ -8592,7 +8591,7 @@
         "adv": 47.76,
         "coachspeak": 50.0,
         "oline": 63.91,
-        "matchup": 72.19,
+        "matchup": 91.72,
         "sis_value": 53.96,
         "boom": 69.31,
         "route_eff": 33.74,
@@ -8602,8 +8601,8 @@
         "yac": 64.19,
         "explosive": 93.09
       },
-      "consensus": 52.87,
-      "divergence": 18.27,
+      "consensus": 54.09,
+      "divergence": 20.08,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -8622,7 +8621,7 @@
         "adv": 32.54,
         "coachspeak": 50.0,
         "oline": 97.5,
-        "matchup": 2.5,
+        "matchup": 5.83,
         "sis_value": 40.22,
         "boom": 38.04,
         "route_eff": 8.65,
@@ -8631,8 +8630,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 42.96,
-      "divergence": 29.31,
+      "consensus": 43.22,
+      "divergence": 28.97,
       "flags": [
         "POLARIZING"
       ]
@@ -8651,7 +8650,7 @@
         "adv": 15.71,
         "coachspeak": 50.0,
         "oline": 1.66,
-        "matchup": 43.38,
+        "matchup": 52.65,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -8661,8 +8660,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 25.24,
-      "divergence": 15.91,
+      "consensus": 26.4,
+      "divergence": 17.45,
       "flags": []
     },
     {
@@ -8679,7 +8678,7 @@
         "adv": 3.53,
         "coachspeak": 50.0,
         "oline": 98.34,
-        "matchup": 1.66,
+        "matchup": 4.97,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -8689,8 +8688,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 19.56,
-      "divergence": 30.99,
+      "consensus": 19.97,
+      "divergence": 30.77,
       "flags": [
         "POLARIZING"
       ]
@@ -8709,7 +8708,7 @@
         "adv": 28.53,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 49.34,
+        "matchup": 50.0,
         "sis_value": 70.79,
         "boom": 96.53,
         "route_eff": 45.12,
@@ -8719,7 +8718,7 @@
         "yac": 91.22,
         "explosive": 17.07
       },
-      "consensus": 48.95,
+      "consensus": 49.0,
       "divergence": 25.76,
       "flags": [
         "POLARIZING",
@@ -8740,7 +8739,7 @@
         "adv": 3.85,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 50.51,
+        "matchup": 45.45,
         "sis_value": 47.59,
         "boom": 37.95,
         "run_eff": 50.0,
@@ -8748,8 +8747,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 29.26,
-      "divergence": 19.94,
+      "consensus": 28.7,
+      "divergence": 19.4,
       "flags": []
     },
     {
@@ -8766,7 +8765,7 @@
         "adv": 33.65,
         "coachspeak": 50.0,
         "oline": 98.34,
-        "matchup": 1.66,
+        "matchup": 4.97,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 38.62,
@@ -8776,8 +8775,8 @@
         "yac": 50.0,
         "explosive": 18.29
       },
-      "consensus": 45.87,
-      "divergence": 29.61,
+      "consensus": 46.15,
+      "divergence": 29.21,
       "flags": [
         "POLARIZING"
       ]
@@ -8796,13 +8795,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 91.07,
-        "matchup": 29.46,
+        "matchup": 36.61,
         "sis_value": 50.0,
         "boom": 50.0,
         "protection": 50.0
       },
-      "consensus": 31.4,
-      "divergence": 27.11,
+      "consensus": 32.59,
+      "divergence": 27.16,
       "flags": []
     },
     {
@@ -8819,7 +8818,7 @@
         "adv": 40.71,
         "coachspeak": 50.0,
         "oline": 74.5,
-        "matchup": 27.48,
+        "matchup": 44.7,
         "sis_value": 17.33,
         "boom": 1.49,
         "route_eff": 89.84,
@@ -8829,8 +8828,8 @@
         "yac": 47.97,
         "explosive": 95.53
       },
-      "consensus": 46.91,
-      "divergence": 32.72,
+      "consensus": 47.99,
+      "divergence": 32.34,
       "flags": [
         "POLARIZING",
         "SEPARATION KING",
@@ -8851,7 +8850,7 @@
         "adv": 33.17,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 22.73,
+        "matchup": 38.89,
         "sis_value": 66.87,
         "boom": 87.35,
         "run_eff": 50.0,
@@ -8859,8 +8858,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 46.77,
-      "divergence": 27.56,
+      "consensus": 48.24,
+      "divergence": 26.66,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -8881,13 +8880,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 51.79,
+        "matchup": 30.36,
         "sis_value": 43.88,
         "boom": 47.96,
         "protection": 58.16
       },
-      "consensus": 34.42,
-      "divergence": 16.92,
+      "consensus": 32.04,
+      "divergence": 15.77,
       "flags": [
         "QB-ZONE-BEATER"
       ]
@@ -8906,7 +8905,7 @@
         "adv": 7.37,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 98.34,
+        "matchup": 78.48,
         "sis_value": 11.39,
         "boom": 17.82,
         "route_eff": 60.98,
@@ -8916,8 +8915,8 @@
         "yac": 50.0,
         "explosive": 70.33
       },
-      "consensus": 29.52,
-      "divergence": 26.78,
+      "consensus": 28.11,
+      "divergence": 23.41,
       "flags": [
         "POLARIZING"
       ]
@@ -8936,7 +8935,7 @@
         "adv": 4.49,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 83.11,
+        "matchup": 85.1,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -8946,8 +8945,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 27.32,
-      "divergence": 32.59,
+      "consensus": 27.57,
+      "divergence": 33.02,
       "flags": [
         "POLARIZING"
       ]
@@ -8966,7 +8965,7 @@
         "adv": 36.86,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 63.58,
+        "matchup": 66.23,
         "sis_value": 56.93,
         "boom": 78.71,
         "route_eff": 48.37,
@@ -8976,8 +8975,8 @@
         "yac": 50.0,
         "explosive": 62.6
       },
-      "consensus": 50.63,
-      "divergence": 23.83,
+      "consensus": 50.82,
+      "divergence": 23.94,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -8998,7 +8997,7 @@
         "adv": 47.12,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 92.72,
+        "matchup": 98.68,
         "sis_value": 3.47,
         "boom": 10.89,
         "route_eff": 2.85,
@@ -9008,8 +9007,8 @@
         "yac": 50.0,
         "explosive": 28.86
       },
-      "consensus": 38.08,
-      "divergence": 29.79,
+      "consensus": 38.51,
+      "divergence": 30.6,
       "flags": [
         "POLARIZING",
         "ZONE-BEATER"
@@ -9029,7 +9028,7 @@
         "adv": 37.5,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 92.72,
+        "matchup": 98.68,
         "sis_value": 7.43,
         "boom": 25.74,
         "route_eff": 10.16,
@@ -9039,8 +9038,8 @@
         "yac": 8.78,
         "explosive": 5.28
       },
-      "consensus": 36.73,
-      "divergence": 29.29,
+      "consensus": 37.1,
+      "divergence": 30.03,
       "flags": [
         "POLARIZING",
         "SEPARATION KING"
@@ -9060,7 +9059,7 @@
         "adv": 48.41,
         "coachspeak": 50.0,
         "oline": 31.67,
-        "matchup": 25.0,
+        "matchup": 23.33,
         "sis_value": 5.43,
         "boom": 31.52,
         "route_eff": 33.65,
@@ -9069,8 +9068,8 @@
         "separation": 48.61,
         "yac": 44.44
       },
-      "consensus": 41.13,
-      "divergence": 20.47,
+      "consensus": 41.02,
+      "divergence": 20.56,
       "flags": [
         "EFFICIENCY EDGE"
       ]
@@ -9089,7 +9088,7 @@
         "adv": 21.47,
         "coachspeak": 50.0,
         "oline": 30.79,
-        "matchup": 24.17,
+        "matchup": 20.2,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 17.89,
@@ -9099,8 +9098,8 @@
         "yac": 50.0,
         "explosive": 59.35
       },
-      "consensus": 28.95,
-      "divergence": 18.41,
+      "consensus": 28.62,
+      "divergence": 18.53,
       "flags": []
     },
     {
@@ -9117,7 +9116,7 @@
         "adv": 52.24,
         "coachspeak": 50.0,
         "oline": 30.79,
-        "matchup": 24.17,
+        "matchup": 20.2,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 16.67,
@@ -9127,8 +9126,8 @@
         "yac": 50.0,
         "explosive": 48.37
       },
-      "consensus": 41.79,
-      "divergence": 21.48,
+      "consensus": 41.46,
+      "divergence": 21.78,
       "flags": []
     },
     {
@@ -9145,7 +9144,7 @@
         "adv": 11.86,
         "coachspeak": 50.0,
         "oline": 98.34,
-        "matchup": 1.66,
+        "matchup": 4.97,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.81,
@@ -9155,8 +9154,8 @@
         "yac": 50.0,
         "explosive": 2.85
       },
-      "consensus": 27.58,
-      "divergence": 30.65,
+      "consensus": 27.85,
+      "divergence": 30.43,
       "flags": [
         "POLARIZING"
       ]
@@ -9175,7 +9174,7 @@
         "adv": 3.85,
         "coachspeak": 50.0,
         "oline": 47.47,
-        "matchup": 83.33,
+        "matchup": 90.4,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -9183,8 +9182,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 26.13,
-      "divergence": 29.72,
+      "consensus": 27.31,
+      "divergence": 32.01,
       "flags": []
     },
     {
@@ -9201,7 +9200,7 @@
         "adv": 25.96,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 20.53,
+        "matchup": 27.15,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 63.82,
@@ -9211,8 +9210,8 @@
         "yac": 50.0,
         "explosive": 75.61
       },
-      "consensus": 38.04,
-      "divergence": 20.09,
+      "consensus": 38.6,
+      "divergence": 19.69,
       "flags": []
     },
     {
@@ -9229,7 +9228,7 @@
         "adv": 37.98,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 17.17,
+        "matchup": 5.05,
         "sis_value": 59.64,
         "boom": 93.37,
         "run_eff": 50.0,
@@ -9237,8 +9236,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 47.36,
-      "divergence": 28.61,
+      "consensus": 46.26,
+      "divergence": 29.96,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -9259,7 +9258,7 @@
         "adv": 16.99,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 86.42,
+        "matchup": 81.79,
         "sis_value": 9.41,
         "boom": 8.42,
         "route_eff": 22.36,
@@ -9269,8 +9268,8 @@
         "yac": 14.19,
         "explosive": 84.15
       },
-      "consensus": 37.31,
-      "divergence": 29.64,
+      "consensus": 37.02,
+      "divergence": 29.18,
       "flags": [
         "POLARIZING",
         "SEPARATION KING",
@@ -9291,7 +9290,7 @@
         "adv": 10.32,
         "coachspeak": 50.0,
         "oline": 2.5,
-        "matchup": 42.5,
+        "matchup": 52.5,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 49.04,
@@ -9300,8 +9299,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 31.86,
-      "divergence": 28.26,
+      "consensus": 32.77,
+      "divergence": 28.75,
       "flags": [
         "POLARIZING",
         "EFFICIENCY EDGE"
@@ -9321,13 +9320,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 81.25,
-        "matchup": 64.29,
+        "matchup": 94.64,
         "sis_value": 62.24,
         "boom": 62.24,
         "protection": 78.57
       },
-      "consensus": 45.48,
-      "divergence": 27.81,
+      "consensus": 48.85,
+      "divergence": 31.49,
       "flags": [
         "QB-MAN-BEATER"
       ]
@@ -9346,7 +9345,7 @@
         "adv": 20.83,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 8.94,
+        "matchup": 1.66,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -9356,8 +9355,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 33.18,
-      "divergence": 27.85,
+      "consensus": 32.28,
+      "divergence": 28.73,
       "flags": [
         "POLARIZING"
       ]
@@ -9376,7 +9375,7 @@
         "adv": 1.6,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 89.74,
+        "matchup": 69.21,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -9386,8 +9385,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 22.52,
-      "divergence": 30.59,
+      "consensus": 19.1,
+      "divergence": 23.11,
       "flags": []
     },
     {
@@ -9404,7 +9403,7 @@
         "adv": 49.68,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 20.53,
+        "matchup": 27.15,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -9414,8 +9413,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 37.26,
-      "divergence": 21.51,
+      "consensus": 38.09,
+      "divergence": 20.97,
       "flags": []
     },
     {
@@ -9432,7 +9431,7 @@
         "adv": 40.48,
         "coachspeak": 50.0,
         "oline": 58.33,
-        "matchup": 74.17,
+        "matchup": 93.33,
         "sis_value": 20.65,
         "boom": 45.65,
         "route_eff": 45.19,
@@ -9441,8 +9440,8 @@
         "separation": 12.5,
         "yac": 12.5
       },
-      "consensus": 44.0,
-      "divergence": 22.9,
+      "consensus": 45.27,
+      "divergence": 24.98,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -9491,7 +9490,7 @@
         "adv": 26.19,
         "coachspeak": 50.0,
         "oline": 78.33,
-        "matchup": 86.67,
+        "matchup": 85.0,
         "sis_value": 42.39,
         "boom": 85.87,
         "route_eff": 78.85,
@@ -9500,8 +9499,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 50.01,
-      "divergence": 24.12,
+      "consensus": 49.88,
+      "divergence": 23.93,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT"
@@ -9521,7 +9520,7 @@
         "adv": 48.4,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 52.32,
+        "matchup": 35.1,
         "sis_value": 10.4,
         "boom": 27.72,
         "route_eff": 23.98,
@@ -9531,8 +9530,8 @@
         "yac": 50.0,
         "explosive": 77.64
       },
-      "consensus": 38.91,
-      "divergence": 22.45,
+      "consensus": 37.68,
+      "divergence": 22.15,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -9552,7 +9551,7 @@
         "adv": 3.85,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 69.7,
+        "matchup": 80.81,
         "sis_value": 30.72,
         "boom": 1.81,
         "run_eff": 50.0,
@@ -9560,8 +9559,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 21.46,
-      "divergence": 22.84,
+      "consensus": 22.69,
+      "divergence": 25.56,
       "flags": []
     },
     {
@@ -9578,7 +9577,7 @@
         "adv": 1.6,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 34.11,
+        "matchup": 41.39,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -9588,8 +9587,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 25.24,
-      "divergence": 31.65,
+      "consensus": 26.46,
+      "divergence": 32.1,
       "flags": []
     },
     {
@@ -9606,13 +9605,13 @@
         "adv": 29.46,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 60.71,
+        "matchup": 62.5,
         "sis_value": 56.12,
         "boom": 9.18,
         "protection": 33.67
       },
-      "consensus": 32.13,
-      "divergence": 17.55,
+      "consensus": 32.32,
+      "divergence": 17.88,
       "flags": [
         "QB-MAN-BEATER"
       ]
@@ -9631,7 +9630,7 @@
         "adv": 7.14,
         "coachspeak": 50.0,
         "oline": 10.0,
-        "matchup": 55.0,
+        "matchup": 36.67,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 10.58,
@@ -9640,8 +9639,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 28.41,
-      "divergence": 23.04,
+      "consensus": 26.37,
+      "divergence": 21.35,
       "flags": []
     },
     {
@@ -9658,7 +9657,7 @@
         "adv": 13.14,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 30.79,
+        "matchup": 23.51,
         "sis_value": 52.97,
         "boom": 56.44,
         "route_eff": 19.92,
@@ -9668,8 +9667,8 @@
         "yac": 50.0,
         "explosive": 30.49
       },
-      "consensus": 32.26,
-      "divergence": 18.9,
+      "consensus": 31.74,
+      "divergence": 19.03,
       "flags": []
     },
     {
@@ -9686,7 +9685,7 @@
         "adv": 38.89,
         "coachspeak": 50.0,
         "oline": 26.67,
-        "matchup": 46.67,
+        "matchup": 61.67,
         "sis_value": 27.17,
         "boom": 9.78,
         "route_eff": 6.73,
@@ -9695,9 +9694,10 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 35.13,
-      "divergence": 21.17,
+      "consensus": 36.28,
+      "divergence": 22.15,
       "flags": [
+        "POLARIZING",
         "ZONE-BEATER"
       ]
     },
@@ -9715,7 +9715,7 @@
         "adv": 1.6,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 34.11,
+        "matchup": 41.39,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 43.9,
@@ -9725,7 +9725,7 @@
         "yac": 50.0,
         "explosive": 90.65
       },
-      "consensus": 37.27,
+      "consensus": 37.99,
       "divergence": 31.88,
       "flags": []
     },
@@ -9743,7 +9743,7 @@
         "adv": 20.19,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 83.11,
+        "matchup": 85.1,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 10.98,
@@ -9753,8 +9753,8 @@
         "yac": 50.0,
         "explosive": 13.01
       },
-      "consensus": 37.42,
-      "divergence": 27.67,
+      "consensus": 37.58,
+      "divergence": 27.94,
       "flags": [
         "POLARIZING"
       ]
@@ -9773,7 +9773,7 @@
         "adv": 6.73,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 86.42,
+        "matchup": 81.79,
         "sis_value": 4.46,
         "boom": 36.14,
         "route_eff": 13.82,
@@ -9783,8 +9783,8 @@
         "yac": 16.89,
         "explosive": 91.46
       },
-      "consensus": 28.27,
-      "divergence": 28.94,
+      "consensus": 27.98,
+      "divergence": 28.37,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -9804,7 +9804,7 @@
         "adv": 46.47,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 66.56,
+        "matchup": 95.7,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -9814,8 +9814,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 48.84,
-      "divergence": 27.0,
+      "consensus": 52.48,
+      "divergence": 30.84,
       "flags": [
         "POLARIZING"
       ]
@@ -9834,7 +9834,7 @@
         "adv": 8.17,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 13.64,
+        "matchup": 11.62,
         "sis_value": 33.13,
         "boom": 42.77,
         "run_eff": 50.0,
@@ -9842,8 +9842,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 21.3,
-      "divergence": 21.86,
+      "consensus": 21.11,
+      "divergence": 21.94,
       "flags": [
         "RB-GAP-SCHEME"
       ]
@@ -9862,7 +9862,7 @@
         "adv": 22.76,
         "coachspeak": 50.0,
         "oline": 91.72,
-        "matchup": 8.94,
+        "matchup": 1.66,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -9872,8 +9872,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 33.23,
-      "divergence": 30.0,
+      "consensus": 32.32,
+      "divergence": 30.82,
       "flags": [
         "POLARIZING"
       ]
@@ -9892,7 +9892,7 @@
         "adv": 45.67,
         "coachspeak": 50.0,
         "oline": 20.71,
-        "matchup": 29.29,
+        "matchup": 18.18,
         "sis_value": 34.34,
         "boom": 8.43,
         "run_eff": 50.0,
@@ -9900,8 +9900,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 35.58,
-      "divergence": 25.94,
+      "consensus": 34.57,
+      "divergence": 26.38,
       "flags": [
         "POLARIZING",
         "RB-ZONE-SCHEME"
@@ -9921,13 +9921,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 81.25,
-        "matchup": 80.36,
+        "matchup": 83.93,
         "sis_value": 50.0,
         "boom": 50.0,
         "protection": 50.0
       },
-      "consensus": 35.86,
-      "divergence": 31.81,
+      "consensus": 36.46,
+      "divergence": 32.66,
       "flags": []
     },
     {
@@ -9944,13 +9944,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 16.96,
-        "matchup": 10.71,
+        "matchup": 7.14,
         "sis_value": 50.0,
         "boom": 50.0,
         "protection": 50.0
       },
-      "consensus": 12.95,
-      "divergence": 2.91,
+      "consensus": 12.35,
+      "divergence": 3.59,
       "flags": []
     },
     {
@@ -9967,7 +9967,7 @@
         "adv": 11.9,
         "coachspeak": 50.0,
         "oline": 38.33,
-        "matchup": 51.67,
+        "matchup": 33.33,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 41.35,
@@ -9976,8 +9976,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 35.53,
-      "divergence": 19.41,
+      "consensus": 33.87,
+      "divergence": 18.73,
       "flags": []
     },
     {
@@ -9994,7 +9994,7 @@
         "adv": 7.14,
         "coachspeak": 50.0,
         "oline": 97.5,
-        "matchup": 2.5,
+        "matchup": 5.83,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10003,8 +10003,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 26.19,
-      "divergence": 32.7,
+      "consensus": 26.74,
+      "divergence": 32.32,
       "flags": []
     },
     {
@@ -10050,7 +10050,7 @@
         "adv": 3.85,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 45.45,
+        "matchup": 35.35,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -10058,8 +10058,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 25.22,
-      "divergence": 25.66,
+      "consensus": 23.78,
+      "divergence": 24.75,
       "flags": []
     },
     {
@@ -10076,7 +10076,7 @@
         "adv": 18.75,
         "coachspeak": 50.0,
         "oline": 80.3,
-        "matchup": 22.73,
+        "matchup": 38.89,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -10084,8 +10084,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 22.04,
-      "divergence": 23.37,
+      "consensus": 24.06,
+      "divergence": 24.03,
       "flags": [
         "POLARIZING"
       ]
@@ -10104,7 +10104,7 @@
         "adv": 4.49,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 77.48,
+        "matchup": 72.19,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10114,8 +10114,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 14.98,
-      "divergence": 23.98,
+      "consensus": 14.32,
+      "divergence": 22.26,
       "flags": [
         "POLARIZING"
       ]
@@ -10134,7 +10134,7 @@
         "adv": 46.83,
         "coachspeak": 50.0,
         "oline": 26.67,
-        "matchup": 46.67,
+        "matchup": 61.67,
         "sis_value": 14.13,
         "boom": 18.48,
         "route_eff": 4.81,
@@ -10143,8 +10143,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 33.43,
-      "divergence": 20.21,
+      "consensus": 34.58,
+      "divergence": 21.33,
       "flags": [
         "MAN-BEATER"
       ]
@@ -10163,7 +10163,7 @@
         "adv": 27.78,
         "coachspeak": 50.0,
         "oline": 49.17,
-        "matchup": 6.67,
+        "matchup": 16.67,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10172,8 +10172,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 30.18,
-      "divergence": 18.68,
+      "consensus": 31.43,
+      "divergence": 17.36,
       "flags": []
     },
     {
@@ -10217,7 +10217,7 @@
         "adv": 29.17,
         "coachspeak": 50.0,
         "oline": 24.5,
-        "matchup": 20.53,
+        "matchup": 27.15,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10227,8 +10227,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 28.37,
-      "divergence": 20.34,
+      "consensus": 29.2,
+      "divergence": 20.14,
       "flags": []
     },
     {
@@ -10245,7 +10245,7 @@
         "adv": 43.65,
         "coachspeak": 50.0,
         "oline": 90.0,
-        "matchup": 10.0,
+        "matchup": 1.67,
         "sis_value": 57.61,
         "boom": 81.52,
         "route_eff": 52.88,
@@ -10254,8 +10254,8 @@
         "separation": 68.06,
         "yac": 51.39
       },
-      "consensus": 50.31,
-      "divergence": 26.05,
+      "consensus": 49.76,
+      "divergence": 26.98,
       "flags": [
         "POLARIZING",
         "BOOM MERCHANT",
@@ -10276,7 +10276,7 @@
         "adv": 34.13,
         "coachspeak": 50.0,
         "oline": 19.17,
-        "matchup": 16.67,
+        "matchup": 10.0,
         "sis_value": 29.35,
         "boom": 16.3,
         "route_eff": 12.5,
@@ -10285,8 +10285,8 @@
         "separation": 31.94,
         "yac": 9.72
       },
-      "consensus": 25.12,
-      "divergence": 18.7,
+      "consensus": 24.68,
+      "divergence": 18.97,
       "flags": [
         "ZONE-BEATER"
       ]
@@ -10305,7 +10305,7 @@
         "adv": 35.9,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 52.32,
+        "matchup": 35.1,
         "sis_value": 16.34,
         "boom": 9.41,
         "route_eff": 54.47,
@@ -10315,8 +10315,8 @@
         "yac": 50.0,
         "explosive": 49.59
       },
-      "consensus": 36.04,
-      "divergence": 23.05,
+      "consensus": 34.81,
+      "divergence": 22.6,
       "flags": [
         "POLARIZING"
       ]
@@ -10335,7 +10335,7 @@
         "adv": 41.67,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 11.92,
+        "matchup": 9.93,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 71.14,
@@ -10345,8 +10345,8 @@
         "yac": 50.0,
         "explosive": 65.04
       },
-      "consensus": 46.3,
-      "divergence": 30.63,
+      "consensus": 46.14,
+      "divergence": 30.82,
       "flags": [
         "POLARIZING"
       ]
@@ -10395,7 +10395,7 @@
         "adv": 30.95,
         "coachspeak": 50.0,
         "oline": 10.0,
-        "matchup": 62.5,
+        "matchup": 65.83,
         "sis_value": 1.09,
         "boom": 22.83,
         "route_eff": 66.35,
@@ -10404,8 +10404,8 @@
         "separation": 98.61,
         "yac": 44.44
       },
-      "consensus": 34.08,
-      "divergence": 29.03,
+      "consensus": 34.3,
+      "divergence": 29.26,
       "flags": [
         "POLARIZING",
         "SEPARATION KING"
@@ -10425,7 +10425,7 @@
         "adv": 29.37,
         "coachspeak": 50.0,
         "oline": 19.17,
-        "matchup": 78.33,
+        "matchup": 75.0,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10434,8 +10434,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 35.16,
-      "divergence": 25.74,
+      "consensus": 34.74,
+      "divergence": 25.06,
       "flags": [
         "POLARIZING"
       ]
@@ -10454,13 +10454,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 98.21,
-        "matchup": 1.79,
+        "matchup": 3.57,
         "sis_value": 52.04,
         "boom": 98.98,
         "protection": 74.49
       },
-      "consensus": 41.33,
-      "divergence": 37.89,
+      "consensus": 41.53,
+      "divergence": 37.69,
       "flags": [
         "BOOM MERCHANT",
         "QB-MAN-BEATER"
@@ -10480,13 +10480,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 71.43,
-        "matchup": 37.5,
+        "matchup": 26.79,
         "sis_value": 86.73,
         "boom": 76.53,
         "protection": 86.73
       },
-      "consensus": 44.64,
-      "divergence": 33.35,
+      "consensus": 43.45,
+      "divergence": 33.78,
       "flags": [
         "BOOM MERCHANT"
       ]
@@ -10505,7 +10505,7 @@
         "adv": 23.4,
         "coachspeak": 50.0,
         "oline": 38.41,
-        "matchup": 52.32,
+        "matchup": 35.1,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 17.89,
@@ -10515,8 +10515,8 @@
         "yac": 50.0,
         "explosive": 44.31
       },
-      "consensus": 31.67,
-      "divergence": 21.31,
+      "consensus": 30.24,
+      "divergence": 20.43,
       "flags": []
     },
     {
@@ -10533,7 +10533,7 @@
         "adv": 7.14,
         "coachspeak": 50.0,
         "oline": 68.33,
-        "matchup": 81.67,
+        "matchup": 46.67,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10542,8 +10542,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 29.76,
-      "divergence": 32.22,
+      "consensus": 23.93,
+      "divergence": 24.55,
       "flags": []
     },
     {
@@ -10560,13 +10560,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 16.96,
-        "matchup": 86.61,
+        "matchup": 66.96,
         "sis_value": 25.51,
         "boom": 29.59,
         "protection": 31.63
       },
-      "consensus": 25.51,
-      "divergence": 23.48,
+      "consensus": 23.33,
+      "divergence": 17.96,
       "flags": [
         "QB-MAN-BEATER"
       ]
@@ -10585,7 +10585,7 @@
         "adv": 3.85,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 94.95,
+        "matchup": 71.72,
         "sis_value": 50.0,
         "boom": 50.0,
         "run_eff": 50.0,
@@ -10593,8 +10593,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 28.7,
-      "divergence": 37.75,
+      "consensus": 24.83,
+      "divergence": 31.42,
       "flags": []
     },
     {
@@ -10611,7 +10611,7 @@
         "adv": 50.96,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 89.74,
+        "matchup": 69.21,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 1.22,
@@ -10621,8 +10621,8 @@
         "yac": 50.0,
         "explosive": 27.24
       },
-      "consensus": 33.5,
-      "divergence": 29.0,
+      "consensus": 31.63,
+      "divergence": 25.8,
       "flags": [
         "POLARIZING"
       ]
@@ -10670,7 +10670,7 @@
         "adv": 0.79,
         "coachspeak": 50.0,
         "oline": 78.33,
-        "matchup": 86.67,
+        "matchup": 85.0,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10679,8 +10679,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 22.05,
-      "divergence": 34.99,
+      "consensus": 21.84,
+      "divergence": 34.6,
       "flags": [
         "POLARIZING"
       ]
@@ -10699,7 +10699,7 @@
         "adv": 15.06,
         "coachspeak": 50.0,
         "oline": 82.12,
-        "matchup": 83.11,
+        "matchup": 85.1,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 2.03,
@@ -10709,8 +10709,8 @@
         "yac": 50.0,
         "explosive": 96.34
       },
-      "consensus": 37.76,
-      "divergence": 36.44,
+      "consensus": 37.92,
+      "divergence": 36.65,
       "flags": [
         "POLARIZING"
       ]
@@ -10729,7 +10729,7 @@
         "adv": 19.71,
         "coachspeak": 50.0,
         "oline": 66.67,
-        "matchup": 63.13,
+        "matchup": 77.27,
         "sis_value": 46.39,
         "boom": 0.6,
         "run_eff": 50.0,
@@ -10737,8 +10737,8 @@
         "yac": 50.0,
         "explosive": 50.0
       },
-      "consensus": 27.84,
-      "divergence": 23.83,
+      "consensus": 29.13,
+      "divergence": 25.98,
       "flags": [
         "POLARIZING"
       ]
@@ -10757,7 +10757,7 @@
         "adv": 3.17,
         "coachspeak": 50.0,
         "oline": 68.33,
-        "matchup": 28.33,
+        "matchup": 43.33,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 50.0,
@@ -10766,8 +10766,8 @@
         "separation": 50.0,
         "yac": 50.0
       },
-      "consensus": 17.96,
-      "divergence": 24.38,
+      "consensus": 20.46,
+      "divergence": 26.03,
       "flags": []
     },
     {
@@ -10784,7 +10784,7 @@
         "adv": 24.04,
         "coachspeak": 50.0,
         "oline": 15.89,
-        "matchup": 89.74,
+        "matchup": 69.21,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 99.59,
@@ -10794,8 +10794,8 @@
         "yac": 50.0,
         "explosive": 51.22
       },
-      "consensus": 37.91,
-      "divergence": 33.11,
+      "consensus": 36.2,
+      "divergence": 30.84,
       "flags": [
         "POLARIZING"
       ]
@@ -10814,7 +10814,7 @@
         "adv": 25.32,
         "coachspeak": 50.0,
         "oline": 7.62,
-        "matchup": 72.19,
+        "matchup": 75.17,
         "sis_value": 36.14,
         "boom": 33.66,
         "route_eff": 23.17,
@@ -10824,8 +10824,8 @@
         "yac": 52.03,
         "explosive": 30.49
       },
-      "consensus": 36.65,
-      "divergence": 24.43,
+      "consensus": 36.84,
+      "divergence": 24.71,
       "flags": [
         "POLARIZING",
         "MAN-BEATER"
@@ -10845,13 +10845,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 1.79,
-        "matchup": 41.07,
+        "matchup": 50.0,
         "sis_value": 11.22,
         "boom": 5.1,
         "protection": 1.02
       },
-      "consensus": 10.66,
-      "divergence": 12.0,
+      "consensus": 11.65,
+      "divergence": 14.57,
       "flags": [
         "QB-ZONE-BEATER"
       ]
@@ -10899,13 +10899,13 @@
         "adv": 15.18,
         "coachspeak": 50.0,
         "oline": 43.75,
-        "matchup": 47.32,
+        "matchup": 45.54,
         "sis_value": 29.59,
         "boom": 3.06,
         "protection": 9.18
       },
-      "consensus": 18.34,
-      "divergence": 16.86,
+      "consensus": 18.14,
+      "divergence": 16.53,
       "flags": [
         "QB-MAN-BEATER"
       ]
@@ -10924,7 +10924,7 @@
         "adv": 1.6,
         "coachspeak": 50.0,
         "oline": 52.32,
-        "matchup": 5.3,
+        "matchup": 13.25,
         "sis_value": 50.0,
         "boom": 50.0,
         "route_eff": 54.47,
@@ -10934,8 +10934,8 @@
         "yac": 50.0,
         "explosive": 87.8
       },
-      "consensus": 23.16,
-      "divergence": 29.15,
+      "consensus": 23.96,
+      "divergence": 28.76,
       "flags": []
     }
   ]

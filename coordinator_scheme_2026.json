@@ -34,12 +34,12 @@
 },
 "BAL": {
 "man_rate_2025": 23.2,
-"man_rate_adj": 20.1,
+"man_rate_adj": 21.1,
 "sack_rate_2025": 4.3,
-"sack_rate_adj": 5.4,
+"sack_rate_adj": 4.9,
 "dc_new": true,
 "oc_new": true,
-"dc_name": "Anthony Weaver",
+"dc_name": "Jesse Minter",
 "conf": "blend-prior",
 "verified": true,
 "source": "cbssports.com/2026-coordinator-hires"

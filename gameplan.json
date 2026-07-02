@@ -912,6 +912,7 @@
           "adv": 0.779,
           "ceiling_score": 0.597,
           "flags": [
+            "POLARIZING",
             "EMPTY CALORIES",
             "RB-GAP-SCHEME"
           ]
@@ -938,9 +939,7 @@
           "spike": 0.175,
           "adv": 0.798,
           "ceiling_score": 0.589,
-          "flags": [
-            "POLARIZING"
-          ]
+          "flags": []
         },
         {
           "name": "Joe Burrow",
@@ -1195,9 +1194,7 @@
           "spike": 0.178,
           "adv": 0.756,
           "ceiling_score": 0.603,
-          "flags": [
-            "POLARIZING"
-          ]
+          "flags": []
         },
         {
           "name": "Quentin Johnston",
@@ -1274,6 +1271,7 @@
           "adv": 0.692,
           "ceiling_score": 0.479,
           "flags": [
+            "POLARIZING",
             "EMPTY CALORIES",
             "EFFICIENCY TRAP",
             "RB-GAP-SCHEME"
@@ -1622,8 +1620,7 @@
           "adv": 0.821,
           "ceiling_score": 0.53,
           "flags": [
-            "MARKET FADE",
-            "POLARIZING"
+            "MARKET FADE"
           ]
         },
         {
@@ -1650,7 +1647,6 @@
           "adv": 0.699,
           "ceiling_score": 0.487,
           "flags": [
-            "POLARIZING",
             "EMPTY CALORIES",
             "EFFICIENCY TRAP",
             "ZONE-BEATER"
@@ -1922,7 +1918,9 @@
           "spike": 0.202,
           "adv": 0.619,
           "ceiling_score": 0.409,
-          "flags": []
+          "flags": [
+            "POLARIZING"
+          ]
         },
         {
           "name": "Oronde Gadsden II",
@@ -2120,6 +2118,7 @@
           "adv": 0.481,
           "ceiling_score": 0.141,
           "flags": [
+            "POLARIZING",
             "EFFICIENCY EDGE"
           ]
         },
@@ -3492,7 +3491,9 @@
           "p95": 20.8,
           "ceiling_score": 0.409,
           "merged_rank": 134.0,
-          "flags": [],
+          "flags": [
+            "POLARIZING"
+          ],
           "kind": "ceiling"
         },
         {
@@ -3993,9 +3994,7 @@
           "p95": 11.2,
           "ceiling_score": 0.246,
           "merged_rank": 219.0,
-          "flags": [
-            "POLARIZING"
-          ],
+          "flags": [],
           "kind": "ceiling"
         },
         {
@@ -4084,6 +4083,7 @@
           "ceiling_score": 0.084,
           "merged_rank": 342.0,
           "flags": [
+            "POLARIZING",
             "ZONE-BEATER"
           ],
           "kind": "ceiling"
@@ -4102,13 +4102,13 @@
       "total_td": 3.24,
       "rk_td": 1,
       "rk_passvol": 11,
-      "vac_tgt": 8.9,
+      "vac_tgt": 4.7,
       "why": "4 alpha-ceiling bats (sum p95 155); elite scoring env (TD/g 3.24, rk1)"
     },
     {
       "rank": 2,
       "team": "DAL",
-      "attack_score": 95.0,
+      "attack_score": 96.7,
       "nalpha": 4,
       "sum_p95_alpha": 148.4,
       "total_td": 2.76,
@@ -4120,7 +4120,7 @@
     {
       "rank": 3,
       "team": "DET",
-      "attack_score": 84.1,
+      "attack_score": 85.8,
       "nalpha": 3,
       "sum_p95_alpha": 124.5,
       "total_td": 2.94,
@@ -4132,7 +4132,7 @@
     {
       "rank": 4,
       "team": "KC",
-      "attack_score": 82.4,
+      "attack_score": 84.4,
       "nalpha": 3,
       "sum_p95_alpha": 108.4,
       "total_td": 2.59,
@@ -4144,19 +4144,19 @@
     {
       "rank": 5,
       "team": "SF",
-      "attack_score": 77.7,
+      "attack_score": 76.4,
       "nalpha": 3,
       "sum_p95_alpha": 113.1,
       "total_td": 2.59,
       "rk_td": 9,
       "rk_passvol": 20,
-      "vac_tgt": 38.6,
-      "why": "3 alpha-ceiling bats (sum p95 113); good scoring env (TD/g 2.59); huge vacated targets (39)"
+      "vac_tgt": 31.3,
+      "why": "3 alpha-ceiling bats (sum p95 113); good scoring env (TD/g 2.59); huge vacated targets (31)"
     },
     {
       "rank": 6,
       "team": "CIN",
-      "attack_score": 71.6,
+      "attack_score": 72.9,
       "nalpha": 2,
       "sum_p95_alpha": 82.0,
       "total_td": 2.76,
@@ -4168,7 +4168,7 @@
     {
       "rank": 7,
       "team": "PHI",
-      "attack_score": 66.1,
+      "attack_score": 67.8,
       "nalpha": 3,
       "sum_p95_alpha": 102.9,
       "total_td": 2.65,
@@ -4180,7 +4180,7 @@
     {
       "rank": 8,
       "team": "BUF",
-      "attack_score": 61.7,
+      "attack_score": 63.0,
       "nalpha": 2,
       "sum_p95_alpha": 79.3,
       "total_td": 3.06,
@@ -4192,7 +4192,7 @@
     {
       "rank": 9,
       "team": "BAL",
-      "attack_score": 59.2,
+      "attack_score": 60.5,
       "nalpha": 3,
       "sum_p95_alpha": 109.5,
       "total_td": 2.71,
@@ -4204,7 +4204,7 @@
     {
       "rank": 10,
       "team": "LAC",
-      "attack_score": 58.3,
+      "attack_score": 59.7,
       "nalpha": 3,
       "sum_p95_alpha": 103.8,
       "total_td": 2.41,
@@ -4216,19 +4216,19 @@
     {
       "rank": 11,
       "team": "NE",
-      "attack_score": 56.2,
+      "attack_score": 55.5,
       "nalpha": 2,
       "sum_p95_alpha": 74.5,
       "total_td": 2.65,
       "rk_td": 8,
       "rk_passvol": 25,
-      "vac_tgt": 30.4,
-      "why": "2 alpha ceiling(s) (sum p95 75); good scoring env (TD/g 2.65); run-leaning (low pass volume); huge vacated targets (30)"
+      "vac_tgt": 25.9,
+      "why": "2 alpha ceiling(s) (sum p95 75); good scoring env (TD/g 2.65); run-leaning (low pass volume); notable vacated targets (26)"
     },
     {
       "rank": 12,
       "team": "ATL",
-      "attack_score": 49.0,
+      "attack_score": 50.1,
       "nalpha": 2,
       "sum_p95_alpha": 84.5,
       "total_td": 1.88,
@@ -4239,20 +4239,8 @@
     },
     {
       "rank": 13,
-      "team": "SEA",
-      "attack_score": 46.7,
-      "nalpha": 1,
-      "sum_p95_alpha": 46.6,
-      "total_td": 2.53,
-      "rk_td": 11,
-      "rk_passvol": 27,
-      "vac_tgt": 38.7,
-      "why": "1 alpha ceiling(s) (sum p95 47); good scoring env (TD/g 2.53); run-leaning (low pass volume); huge vacated targets (39)"
-    },
-    {
-      "rank": 14,
       "team": "NYJ",
-      "attack_score": 45.9,
+      "attack_score": 47.3,
       "nalpha": 2,
       "sum_p95_alpha": 74.2,
       "total_td": 2.0,
@@ -4262,9 +4250,9 @@
       "why": "2 alpha ceiling(s) (sum p95 74); huge vacated targets (40)"
     },
     {
-      "rank": 15,
+      "rank": 14,
       "team": "ARI",
-      "attack_score": 44.1,
+      "attack_score": 45.2,
       "nalpha": 2,
       "sum_p95_alpha": 72.7,
       "total_td": 1.71,
@@ -4274,21 +4262,9 @@
       "why": "2 alpha ceiling(s) (sum p95 73); top pass volume (rk2); notable vacated targets (24)"
     },
     {
-      "rank": 16,
-      "team": "WAS",
-      "attack_score": 43.9,
-      "nalpha": 1,
-      "sum_p95_alpha": 35.6,
-      "total_td": 2.29,
-      "rk_td": 17,
-      "rk_passvol": 25,
-      "vac_tgt": 59.5,
-      "why": "1 alpha ceiling(s) (sum p95 36); run-leaning (low pass volume); huge vacated targets (60)"
-    },
-    {
-      "rank": 17,
+      "rank": 15,
       "team": "NYG",
-      "attack_score": 42.1,
+      "attack_score": 43.3,
       "nalpha": 2,
       "sum_p95_alpha": 71.5,
       "total_td": 2.18,
@@ -4298,9 +4274,9 @@
       "why": "2 alpha ceiling(s) (sum p95 72); run-leaning (low pass volume); huge vacated targets (34)"
     },
     {
-      "rank": 18,
+      "rank": 16,
       "team": "GB",
-      "attack_score": 41.8,
+      "attack_score": 42.9,
       "nalpha": 1,
       "sum_p95_alpha": 36.7,
       "total_td": 2.47,
@@ -4310,9 +4286,21 @@
       "why": "1 alpha ceiling(s) (sum p95 37); good scoring env (TD/g 2.47); notable vacated targets (29)"
     },
     {
-      "rank": 19,
+      "rank": 17,
+      "team": "WAS",
+      "attack_score": 42.3,
+      "nalpha": 1,
+      "sum_p95_alpha": 35.6,
+      "total_td": 2.29,
+      "rk_td": 17,
+      "rk_passvol": 25,
+      "vac_tgt": 52.2,
+      "why": "1 alpha ceiling(s) (sum p95 36); run-leaning (low pass volume); huge vacated targets (52)"
+    },
+    {
+      "rank": 18,
       "team": "IND",
-      "attack_score": 40.5,
+      "attack_score": 41.9,
       "nalpha": 1,
       "sum_p95_alpha": 40.4,
       "total_td": 2.29,
@@ -4322,9 +4310,9 @@
       "why": "1 alpha ceiling(s) (sum p95 40); huge vacated targets (41)"
     },
     {
-      "rank": 20,
+      "rank": 19,
       "team": "CHI",
-      "attack_score": 40.5,
+      "attack_score": 41.6,
       "nalpha": 1,
       "sum_p95_alpha": 33.3,
       "total_td": 2.41,
@@ -4334,9 +4322,9 @@
       "why": "1 alpha ceiling(s) (sum p95 33); notable vacated targets (27)"
     },
     {
-      "rank": 21,
+      "rank": 20,
       "team": "MIN",
-      "attack_score": 40.5,
+      "attack_score": 41.4,
       "nalpha": 1,
       "sum_p95_alpha": 41.2,
       "total_td": 2.12,
@@ -4346,9 +4334,9 @@
       "why": "1 alpha ceiling(s) (sum p95 41); top pass volume (rk4); notable vacated targets (23)"
     },
     {
-      "rank": 22,
+      "rank": 21,
       "team": "JAX",
-      "attack_score": 35.1,
+      "attack_score": 35.8,
       "nalpha": 1,
       "sum_p95_alpha": 35.0,
       "total_td": 2.35,
@@ -4358,9 +4346,9 @@
       "why": "1 alpha ceiling(s) (sum p95 35)"
     },
     {
-      "rank": 23,
+      "rank": 22,
       "team": "LV",
-      "attack_score": 34.2,
+      "attack_score": 34.9,
       "nalpha": 2,
       "sum_p95_alpha": 71.1,
       "total_td": 1.71,
@@ -4370,9 +4358,21 @@
       "why": "2 alpha ceiling(s) (sum p95 71)"
     },
     {
+      "rank": 23,
+      "team": "SEA",
+      "attack_score": 33.9,
+      "nalpha": 1,
+      "sum_p95_alpha": 46.6,
+      "total_td": 2.53,
+      "rk_td": 11,
+      "rk_passvol": 27,
+      "vac_tgt": 7.7,
+      "why": "1 alpha ceiling(s) (sum p95 47); good scoring env (TD/g 2.53); run-leaning (low pass volume)"
+    },
+    {
       "rank": 24,
       "team": "TB",
-      "attack_score": 32.7,
+      "attack_score": 33.7,
       "nalpha": 1,
       "sum_p95_alpha": 33.1,
       "total_td": 2.24,
@@ -4384,7 +4384,7 @@
     {
       "rank": 25,
       "team": "NO",
-      "attack_score": 27.0,
+      "attack_score": 27.5,
       "nalpha": 1,
       "sum_p95_alpha": 35.8,
       "total_td": 1.88,
@@ -4395,20 +4395,8 @@
     },
     {
       "rank": 26,
-      "team": "DEN",
-      "attack_score": 26.6,
-      "nalpha": 0,
-      "sum_p95_alpha": 0.0,
-      "total_td": 2.47,
-      "rk_td": 13,
-      "rk_passvol": 9,
-      "vac_tgt": 9.8,
-      "why": "thin on alpha ceilings"
-    },
-    {
-      "rank": 27,
       "team": "PIT",
-      "attack_score": 26.3,
+      "attack_score": 27.4,
       "nalpha": 0,
       "sum_p95_alpha": 0.0,
       "total_td": 1.76,
@@ -4418,9 +4406,21 @@
       "why": "thin on alpha ceilings; top pass volume (rk6); huge vacated targets (45)"
     },
     {
+      "rank": 27,
+      "team": "DEN",
+      "attack_score": 27.0,
+      "nalpha": 0,
+      "sum_p95_alpha": 0.0,
+      "total_td": 2.47,
+      "rk_td": 13,
+      "rk_passvol": 9,
+      "vac_tgt": 9.8,
+      "why": "thin on alpha ceilings"
+    },
+    {
       "rank": 28,
       "team": "HOU",
-      "attack_score": 22.6,
+      "attack_score": 23.0,
       "nalpha": 1,
       "sum_p95_alpha": 37.5,
       "total_td": 1.88,
@@ -4432,7 +4432,7 @@
     {
       "rank": 29,
       "team": "CAR",
-      "attack_score": 18.4,
+      "attack_score": 18.9,
       "nalpha": 1,
       "sum_p95_alpha": 36.4,
       "total_td": 1.82,
@@ -4444,7 +4444,7 @@
     {
       "rank": 30,
       "team": "MIA",
-      "attack_score": 12.9,
+      "attack_score": 13.7,
       "nalpha": 1,
       "sum_p95_alpha": 40.3,
       "total_td": 1.35,
@@ -4456,7 +4456,7 @@
     {
       "rank": 31,
       "team": "TEN",
-      "attack_score": 10.6,
+      "attack_score": 11.0,
       "nalpha": 0,
       "sum_p95_alpha": 0.0,
       "total_td": 1.71,

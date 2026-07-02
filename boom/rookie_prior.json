@@ -13,46 +13,6 @@
 },
 "n": 49,
 "priors": {
-"germie bernard": {
-"name": "Germie Bernard",
-"pos": "WR",
-"college": "Alabama",
-"ceiling_pctl_2025": 58.0,
-"board_adp": 187.46487,
-"boom_prior": 0.095
-},
-"makai lemon": {
-"name": "Makai Lemon",
-"pos": "WR",
-"college": "USC",
-"ceiling_pctl_2025": 92.9,
-"board_adp": 81.56206,
-"boom_prior": 0.124
-},
-"jeremiyah love": {
-"name": "Jeremiyah Love",
-"pos": "RB",
-"college": "Notre Dame",
-"ceiling_pctl_2025": 97.3,
-"board_adp": 26.482162,
-"boom_prior": 0.127
-},
-"kc concepcion": {
-"name": "KC Concepcion",
-"pos": "WR",
-"college": "Texas A&M",
-"ceiling_pctl_2025": 63.5,
-"board_adp": 125.716125,
-"boom_prior": 0.099
-},
-"michael trigg": {
-"name": "Michael Trigg",
-"pos": "TE",
-"college": "Baylor",
-"ceiling_pctl_2025": 68.0,
-"board_adp": 229.1707,
-"boom_prior": 0.103
-},
 "deion burks": {
 "name": "Deion Burks",
 "pos": "WR",
@@ -69,85 +29,21 @@
 "board_adp": 228.89859,
 "boom_prior": 0.086
 },
-"jadarian price": {
-"name": "Jadarian Price",
-"pos": "RB",
-"college": "Notre Dame",
-"ceiling_pctl_2025": 72.8,
-"board_adp": 60.171886,
-"boom_prior": 0.107
+"sam roush": {
+"name": "Sam Roush",
+"pos": "TE",
+"college": "Stanford",
+"ceiling_pctl_2025": 19.2,
+"board_adp": 228.1167,
+"boom_prior": 0.062
 },
-"cj daniels": {
-"name": "CJ Daniels",
+"josh cameron": {
+"name": "Josh Cameron",
 "pos": "WR",
-"college": "Miami FL",
-"ceiling_pctl_2025": 64.6,
-"board_adp": 225.82692,
-"boom_prior": 0.1
-},
-"reggie virgil": {
-"name": "Reggie Virgil",
-"pos": "WR",
-"college": "Texas Tech",
-"ceiling_pctl_2025": 34.3,
+"college": "Baylor",
+"ceiling_pctl_2025": 51.3,
 "board_adp": null,
-"boom_prior": 0.075
-},
-"kenyon sadiq": {
-"name": "Kenyon Sadiq",
-"pos": "TE",
-"college": "Oregon",
-"ceiling_pctl_2025": 70.5,
-"board_adp": 151.36978,
-"boom_prior": 0.105
-},
-"jonah coleman": {
-"name": "Jonah Coleman",
-"pos": "RB",
-"college": "Washington",
-"ceiling_pctl_2025": 78.7,
-"board_adp": 168.32324,
-"boom_prior": 0.112
-},
-"justin joly": {
-"name": "Justin Joly",
-"pos": "TE",
-"college": "NC State",
-"ceiling_pctl_2025": 44.9,
-"board_adp": 231.37352,
-"boom_prior": 0.084
-},
-"carson beck": {
-"name": "Carson Beck",
-"pos": "QB",
-"college": "Miami FL",
-"ceiling_pctl_2025": 91.0,
-"board_adp": 226.76997,
-"boom_prior": 0.122
-},
-"omar cooper": {
-"name": "Omar Cooper Jr.",
-"pos": "WR",
-"college": "Indiana",
-"ceiling_pctl_2025": 87.7,
-"board_adp": 149.29099,
-"boom_prior": 0.119
-},
-"fernando mendoza": {
-"name": "Fernando Mendoza",
-"pos": "QB",
-"college": "Indiana",
-"ceiling_pctl_2025": 97.9,
-"board_adp": 165.63075,
-"boom_prior": 0.128
-},
-"zachariah branch": {
-"name": "Zachariah Branch",
-"pos": "WR",
-"college": "Georgia",
-"ceiling_pctl_2025": 82.3,
-"board_adp": 199.74522,
-"boom_prior": 0.115
+"boom_prior": 0.089
 },
 "elijah sarratt": {
 "name": "Elijah Sarratt",
@@ -157,52 +53,12 @@
 "board_adp": 224.32172,
 "boom_prior": 0.112
 },
-"skyler bell": {
-"name": "Skyler Bell",
-"pos": "WR",
-"college": "UCONN",
-"ceiling_pctl_2025": 66.8,
-"board_adp": 228.88832,
-"boom_prior": 0.102
-},
-"malik washington": {
-"name": "Malik Washington",
+"carson beck": {
+"name": "Carson Beck",
 "pos": "QB",
-"college": "Maryland",
-"ceiling_pctl_2025": 54.7,
-"board_adp": 170.75723,
-"boom_prior": 0.092
-},
-"mike washington": {
-"name": "Mike Washington Jr.",
-"pos": "RB",
-"college": "Arkansas",
-"ceiling_pctl_2025": 68.7,
-"board_adp": 204.55705,
-"boom_prior": 0.103
-},
-"chris brazzell": {
-"name": "Chris Brazzell II",
-"pos": "WR",
-"college": "Tennessee",
-"ceiling_pctl_2025": 95.0,
-"board_adp": 221.60799,
-"boom_prior": 0.125
-},
-"drew allar": {
-"name": "Drew Allar",
-"pos": "QB",
-"college": "Penn State",
-"ceiling_pctl_2025": 52.8,
-"board_adp": 229.1321,
-"boom_prior": 0.09
-},
-"carnell tate": {
-"name": "Carnell Tate",
-"pos": "WR",
-"college": "Ohio State",
-"ceiling_pctl_2025": 91.4,
-"board_adp": 62.137684,
+"college": "Miami FL",
+"ceiling_pctl_2025": 91.0,
+"board_adp": 226.76997,
 "boom_prior": 0.122
 },
 "seth mcgowan": {
@@ -213,53 +69,37 @@
 "board_adp": 229.5,
 "boom_prior": 0.081
 },
-"tanner koziol": {
-"name": "Tanner Koziol",
-"pos": "TE",
-"college": "Houston",
-"ceiling_pctl_2025": 50.0,
-"board_adp": 228.75,
-"boom_prior": 0.088
-},
-"ted hurst": {
-"name": "Ted Hurst",
+"cyrus allen": {
+"name": "Cyrus Allen",
 "pos": "WR",
-"college": "Georgia State",
-"ceiling_pctl_2025": 58.5,
-"board_adp": 197.2044,
-"boom_prior": 0.095
+"college": "Cincinnati",
+"ceiling_pctl_2025": 65.0,
+"board_adp": 229.58871,
+"boom_prior": 0.1
 },
-"adam randall": {
-"name": "Adam Randall",
-"pos": "RB",
+"makai lemon": {
+"name": "Makai Lemon",
+"pos": "WR",
+"college": "USC",
+"ceiling_pctl_2025": 92.9,
+"board_adp": 81.56206,
+"boom_prior": 0.124
+},
+"antonio williams": {
+"name": "Antonio Williams",
+"pos": "WR",
 "college": "Clemson",
-"ceiling_pctl_2025": 45.7,
-"board_adp": 229.49042,
-"boom_prior": 0.084
+"ceiling_pctl_2025": 60.1,
+"board_adp": 159.28468,
+"boom_prior": 0.096
 },
-"barion brown": {
-"name": "Barion Brown",
+"brenen thompson": {
+"name": "Brenen Thompson",
 "pos": "WR",
-"college": "LSU",
-"ceiling_pctl_2025": 30.1,
-"board_adp": null,
-"boom_prior": 0.071
-},
-"emmett johnson": {
-"name": "Emmett Johnson",
-"pos": "RB",
-"college": "Nebraska",
-"ceiling_pctl_2025": 70.7,
-"board_adp": 193.1929,
-"boom_prior": 0.105
-},
-"chris bell": {
-"name": "Chris Bell",
-"pos": "WR",
-"college": "Louisville",
-"ceiling_pctl_2025": 72.0,
-"board_adp": 205.90941,
-"boom_prior": 0.106
+"college": "Mississippi State",
+"ceiling_pctl_2025": 96.1,
+"board_adp": 229.8309,
+"boom_prior": 0.126
 },
 "kevin coleman": {
 "name": "Kevin Coleman Jr.",
@@ -269,21 +109,141 @@
 "board_adp": 230.91026,
 "boom_prior": 0.095
 },
-"denzel boston": {
-"name": "Denzel Boston",
-"pos": "WR",
+"jonah coleman": {
+"name": "Jonah Coleman",
+"pos": "RB",
 "college": "Washington",
-"ceiling_pctl_2025": 66.0,
-"board_adp": 166.92941,
-"boom_prior": 0.101
+"ceiling_pctl_2025": 78.7,
+"board_adp": 168.32324,
+"boom_prior": 0.112
 },
-"josh cameron": {
-"name": "Josh Cameron",
+"tanner koziol": {
+"name": "Tanner Koziol",
+"pos": "TE",
+"college": "Houston",
+"ceiling_pctl_2025": 50.0,
+"board_adp": 228.75,
+"boom_prior": 0.088
+},
+"kenyon sadiq": {
+"name": "Kenyon Sadiq",
+"pos": "TE",
+"college": "Oregon",
+"ceiling_pctl_2025": 70.5,
+"board_adp": 151.36978,
+"boom_prior": 0.105
+},
+"jmari taylor": {
+"name": "J'Mari Taylor",
+"pos": "RB",
+"college": "Virginia",
+"ceiling_pctl_2025": 67.8,
+"board_adp": 227.47997,
+"boom_prior": 0.103
+},
+"roman hemby": {
+"name": "Roman Hemby",
+"pos": "RB",
+"college": "Indiana",
+"ceiling_pctl_2025": 36.7,
+"board_adp": 233.5,
+"boom_prior": 0.077
+},
+"drew allar": {
+"name": "Drew Allar",
+"pos": "QB",
+"college": "Penn State",
+"ceiling_pctl_2025": 52.8,
+"board_adp": 229.1321,
+"boom_prior": 0.09
+},
+"reggie virgil": {
+"name": "Reggie Virgil",
 "pos": "WR",
-"college": "Baylor",
-"ceiling_pctl_2025": 51.3,
+"college": "Texas Tech",
+"ceiling_pctl_2025": 34.3,
 "board_adp": null,
-"boom_prior": 0.089
+"boom_prior": 0.075
+},
+"justin joly": {
+"name": "Justin Joly",
+"pos": "TE",
+"college": "NC State",
+"ceiling_pctl_2025": 44.9,
+"board_adp": 231.37352,
+"boom_prior": 0.084
+},
+"adam randall": {
+"name": "Adam Randall",
+"pos": "RB",
+"college": "Clemson",
+"ceiling_pctl_2025": 45.7,
+"board_adp": 229.49042,
+"boom_prior": 0.084
+},
+"jordyn tyson": {
+"name": "Jordyn Tyson",
+"pos": "WR",
+"college": "Arizona State",
+"ceiling_pctl_2025": 34.6,
+"board_adp": 68.170204,
+"boom_prior": 0.075
+},
+"fernando mendoza": {
+"name": "Fernando Mendoza",
+"pos": "QB",
+"college": "Indiana",
+"ceiling_pctl_2025": 97.9,
+"board_adp": 165.63075,
+"boom_prior": 0.128
+},
+"ty simpson": {
+"name": "Ty Simpson",
+"pos": "QB",
+"college": "Alabama",
+"ceiling_pctl_2025": 86.0,
+"board_adp": 224.55002,
+"boom_prior": 0.118
+},
+"kaytron allen": {
+"name": "Kaytron Allen",
+"pos": "RB",
+"college": "Penn State",
+"ceiling_pctl_2025": 86.1,
+"board_adp": 195.82819,
+"boom_prior": 0.118
+},
+"kc concepcion": {
+"name": "KC Concepcion",
+"pos": "WR",
+"college": "Texas A&M",
+"ceiling_pctl_2025": 63.5,
+"board_adp": 125.716125,
+"boom_prior": 0.099
+},
+"jeremiyah love": {
+"name": "Jeremiyah Love",
+"pos": "RB",
+"college": "Notre Dame",
+"ceiling_pctl_2025": 97.3,
+"board_adp": 26.482162,
+"boom_prior": 0.127
+},
+"carnell tate": {
+"name": "Carnell Tate",
+"pos": "WR",
+"college": "Ohio State",
+"ceiling_pctl_2025": 91.4,
+"board_adp": 62.137684,
+"boom_prior": 0.122
+},
+"omar cooper": {
+"name": "Omar Cooper Jr.",
+"pos": "WR",
+"college": "Indiana",
+"ceiling_pctl_2025": 87.7,
+"board_adp": 149.29099,
+"boom_prior": 0.119
 },
 "dezhaun stribling": {
 "name": "De'Zhaun Stribling",
@@ -293,13 +253,133 @@
 "board_adp": 176.92694,
 "boom_prior": 0.119
 },
-"sam roush": {
-"name": "Sam Roush",
+"cade klubnik": {
+"name": "Cade Klubnik",
+"pos": "QB",
+"college": "Clemson",
+"ceiling_pctl_2025": 67.5,
+"board_adp": 230.66663,
+"boom_prior": 0.102
+},
+"zachariah branch": {
+"name": "Zachariah Branch",
+"pos": "WR",
+"college": "Georgia",
+"ceiling_pctl_2025": 82.3,
+"board_adp": 199.74522,
+"boom_prior": 0.115
+},
+"demond claiborne": {
+"name": "Demond Claiborne",
+"pos": "RB",
+"college": "Wake Forest",
+"ceiling_pctl_2025": 9.5,
+"board_adp": 224.31154,
+"boom_prior": 0.054
+},
+"chris bell": {
+"name": "Chris Bell",
+"pos": "WR",
+"college": "Louisville",
+"ceiling_pctl_2025": 72.0,
+"board_adp": 205.90941,
+"boom_prior": 0.106
+},
+"emmett johnson": {
+"name": "Emmett Johnson",
+"pos": "RB",
+"college": "Nebraska",
+"ceiling_pctl_2025": 70.7,
+"board_adp": 193.1929,
+"boom_prior": 0.105
+},
+"germie bernard": {
+"name": "Germie Bernard",
+"pos": "WR",
+"college": "Alabama",
+"ceiling_pctl_2025": 58.0,
+"board_adp": 187.46487,
+"boom_prior": 0.095
+},
+"michael trigg": {
+"name": "Michael Trigg",
 "pos": "TE",
-"college": "Stanford",
-"ceiling_pctl_2025": 19.2,
-"board_adp": 228.1167,
-"boom_prior": 0.062
+"college": "Baylor",
+"ceiling_pctl_2025": 68.0,
+"board_adp": 229.1707,
+"boom_prior": 0.103
+},
+"jakobi lane": {
+"name": "Ja'Kobi Lane",
+"pos": "WR",
+"college": "USC",
+"ceiling_pctl_2025": 80.5,
+"board_adp": 230.5272,
+"boom_prior": 0.113
+},
+"chris brazzell": {
+"name": "Chris Brazzell II",
+"pos": "WR",
+"college": "Tennessee",
+"ceiling_pctl_2025": 95.0,
+"board_adp": 221.60799,
+"boom_prior": 0.125
+},
+"skyler bell": {
+"name": "Skyler Bell",
+"pos": "WR",
+"college": "UCONN",
+"ceiling_pctl_2025": 66.8,
+"board_adp": 228.88832,
+"boom_prior": 0.102
+},
+"denzel boston": {
+"name": "Denzel Boston",
+"pos": "WR",
+"college": "Washington",
+"ceiling_pctl_2025": 66.0,
+"board_adp": 166.92941,
+"boom_prior": 0.101
+},
+"malik washington": {
+"name": "Malik Washington",
+"pos": "QB",
+"college": "Maryland",
+"ceiling_pctl_2025": 54.7,
+"board_adp": 170.75723,
+"boom_prior": 0.092
+},
+"ted hurst": {
+"name": "Ted Hurst",
+"pos": "WR",
+"college": "Georgia State",
+"ceiling_pctl_2025": 58.5,
+"board_adp": 197.2044,
+"boom_prior": 0.095
+},
+"jadarian price": {
+"name": "Jadarian Price",
+"pos": "RB",
+"college": "Notre Dame",
+"ceiling_pctl_2025": 72.8,
+"board_adp": 60.171886,
+"boom_prior": 0.107
+},
+"barion brown": {
+"name": "Barion Brown",
+"pos": "WR",
+"college": "LSU",
+"ceiling_pctl_2025": 30.1,
+"board_adp": null,
+"boom_prior": 0.071
+},
+"cj daniels": {
+"name": "CJ Daniels",
+"pos": "WR",
+"college": "Miami FL",
+"ceiling_pctl_2025": 64.6,
+"board_adp": 225.82692,
+"boom_prior": 0.1
 },
 "eli stowers": {
 "name": "Eli Stowers",
@@ -317,93 +397,13 @@
 "board_adp": 217.60669,
 "boom_prior": 0.109
 },
-"jordyn tyson": {
-"name": "Jordyn Tyson",
-"pos": "WR",
-"college": "Arizona State",
-"ceiling_pctl_2025": 34.6,
-"board_adp": 68.170204,
-"boom_prior": 0.075
-},
-"jmari taylor": {
-"name": "J'Mari Taylor",
+"mike washington": {
+"name": "Mike Washington Jr.",
 "pos": "RB",
-"college": "Virginia",
-"ceiling_pctl_2025": 67.8,
-"board_adp": 227.47997,
+"college": "Arkansas",
+"ceiling_pctl_2025": 68.7,
+"board_adp": 204.55705,
 "boom_prior": 0.103
-},
-"antonio williams": {
-"name": "Antonio Williams",
-"pos": "WR",
-"college": "Clemson",
-"ceiling_pctl_2025": 60.1,
-"board_adp": 159.28468,
-"boom_prior": 0.096
-},
-"ty simpson": {
-"name": "Ty Simpson",
-"pos": "QB",
-"college": "Alabama",
-"ceiling_pctl_2025": 86.0,
-"board_adp": 224.55002,
-"boom_prior": 0.118
-},
-"cade klubnik": {
-"name": "Cade Klubnik",
-"pos": "QB",
-"college": "Clemson",
-"ceiling_pctl_2025": 67.5,
-"board_adp": 230.66663,
-"boom_prior": 0.102
-},
-"brenen thompson": {
-"name": "Brenen Thompson",
-"pos": "WR",
-"college": "Mississippi State",
-"ceiling_pctl_2025": 96.1,
-"board_adp": 229.8309,
-"boom_prior": 0.126
-},
-"kaytron allen": {
-"name": "Kaytron Allen",
-"pos": "RB",
-"college": "Penn State",
-"ceiling_pctl_2025": 86.1,
-"board_adp": 195.82819,
-"boom_prior": 0.118
-},
-"cyrus allen": {
-"name": "Cyrus Allen",
-"pos": "WR",
-"college": "Cincinnati",
-"ceiling_pctl_2025": 65.0,
-"board_adp": 229.58871,
-"boom_prior": 0.1
-},
-"demond claiborne": {
-"name": "Demond Claiborne",
-"pos": "RB",
-"college": "Wake Forest",
-"ceiling_pctl_2025": 9.5,
-"board_adp": 224.31154,
-"boom_prior": 0.054
-},
-"roman hemby": {
-"name": "Roman Hemby",
-"pos": "RB",
-"college": "Indiana",
-"ceiling_pctl_2025": 36.7,
-"board_adp": 233.5,
-"boom_prior": 0.077
-},
-"jakobi lane": {
-"name": "Ja'Kobi Lane",
-"pos": "WR",
-"college": "USC",
-"ceiling_pctl_2025": 80.5,
-"board_adp": 230.5272,
-"boom_prior": 0.113
 }
 }
 }

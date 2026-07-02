@@ -1,13 +1,13 @@
 {
 "meta": {
 "n_players": 369,
-"n_flagged": 117,
-"n_playoff_flagged": 104,
-"total_flags": 132,
-"playoff_flags": 105,
+"n_flagged": 87,
+"n_playoff_flagged": 74,
+"total_flags": 105,
+"playoff_flags": 75,
 "by_category": {
-"oline": 15,
-"playoff": 104,
+"oline": 18,
+"playoff": 74,
 "availability": 6,
 "durability": 1,
 "roster": 1,
@@ -307,14 +307,22 @@
 "pos": "QB",
 "team": "BAL",
 "rank": 47,
-"total": 0,
+"total": 1,
 "playoff": 0,
 "avail": 1.0,
 "pg": 20.0,
 "adj_pg": 20.0,
 "proj_posrank": 2,
 "adj_posrank": 2,
-"flags": []
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
 },
 "tyler huntley": {
 "name": "Tyler Huntley",
@@ -517,7 +525,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -581,7 +589,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -603,7 +611,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -625,7 +633,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -647,7 +655,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -669,7 +677,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -691,7 +699,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -713,7 +721,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~65 pctl: CHI, DEN, MIA)",
+"label": "tough W15-17 slate (opp pass D ~68 pctl: CHI, DEN, MIA)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -894,44 +902,28 @@
 "pos": "QB",
 "team": "CHI",
 "rank": 64,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 17.2,
 "adj_pg": 17.2,
 "proj_posrank": 15,
 "adj_posrank": 15,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "tyson bagent": {
 "name": "Tyson Bagent",
 "pos": "QB",
 "team": "CHI",
 "rank": 378,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 0.6,
 "adj_pg": 0.6,
 "proj_posrank": 42,
 "adj_posrank": 42,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "dandre swift": {
 "name": "D'Andre Swift",
@@ -966,66 +958,42 @@
 "pos": "WR",
 "team": "CHI",
 "rank": 43,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 12.0,
 "adj_pg": 12.0,
 "proj_posrank": 29,
 "adj_posrank": 29,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "rome odunze": {
 "name": "Rome Odunze",
 "pos": "WR",
 "team": "CHI",
 "rank": 61,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 12.4,
 "adj_pg": 12.4,
 "proj_posrank": 26,
 "adj_posrank": 26,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "zavion thomas": {
 "name": "Zavion Thomas",
 "pos": "WR",
 "team": "CHI",
 "rank": 310,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 0.4,
 "adj_pg": 0.4,
 "proj_posrank": 143,
 "adj_posrank": 142,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "kalif raymond": {
 "name": "Kalif Raymond",
@@ -1041,8 +1009,8 @@
 "adj_posrank": 98,
 "flags": [
 {
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.6 -> playoff 0.34)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -1054,88 +1022,56 @@
 "pos": "WR",
 "team": "CHI",
 "rank": 326,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 1.1,
 "adj_pg": 1.1,
 "proj_posrank": 135,
 "adj_posrank": 134,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "colston loveland": {
 "name": "Colston Loveland",
 "pos": "TE",
 "team": "CHI",
 "rank": 38,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 12.1,
 "adj_pg": 12.1,
 "proj_posrank": 4,
 "adj_posrank": 3,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "cole kmet": {
 "name": "Cole Kmet",
 "pos": "TE",
 "team": "CHI",
 "rank": 307,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 3.3,
 "adj_pg": 3.3,
 "proj_posrank": 43,
 "adj_posrank": 43,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "sam roush": {
 "name": "Sam Roush",
 "pos": "TE",
 "team": "CHI",
 "rank": 359,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 1.2,
 "adj_pg": 1.2,
 "proj_posrank": 55,
 "adj_posrank": 55,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: BUF, GB, DET)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "joe burrow": {
 "name": "Joe Burrow",
@@ -1170,22 +1106,14 @@
 "pos": "RB",
 "team": "CIN",
 "rank": 21,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 16.0,
 "adj_pg": 16.0,
 "proj_posrank": 15,
 "adj_posrank": 15,
-"flags": [
-{
-"code": "PO-COLD",
-"label": "matchup levers cool in W15-17 (season 0.79 -> playoff 0.43)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "samaje perine": {
 "name": "Samaje Perine",
@@ -1356,7 +1284,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~64 pctl: NYG, BAL, IND)",
+"label": "tough W15-17 slate (opp run D ~65 pctl: NYG, BAL, IND)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -1378,7 +1306,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~64 pctl: NYG, BAL, IND)",
+"label": "tough W15-17 slate (opp run D ~65 pctl: NYG, BAL, IND)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -1502,88 +1430,56 @@
 "pos": "RB",
 "team": "DAL",
 "rank": 33,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 15.4,
 "adj_pg": 15.4,
 "proj_posrank": 16,
 "adj_posrank": 16,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "jaydon blue": {
 "name": "Jaydon Blue",
 "pos": "RB",
 "team": "DAL",
 "rank": 216,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 1.9,
 "adj_pg": 1.9,
 "proj_posrank": 72,
 "adj_posrank": 72,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "malik davis": {
 "name": "Malik Davis",
 "pos": "RB",
 "team": "DAL",
 "rank": 292,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 2.8,
 "adj_pg": 2.8,
 "proj_posrank": 63,
 "adj_posrank": 63,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "phil mafah": {
 "name": "Phil Mafah",
 "pos": "RB",
 "team": "DAL",
 "rank": 361,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 0.0,
 "adj_pg": 0.0,
 "proj_posrank": 94,
 "adj_posrank": 94,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~72 pctl: LAR, JAX, NYG)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "ceedee lamb": {
 "name": "CeeDee Lamb",
@@ -1674,22 +1570,14 @@
 "pos": "QB",
 "team": "DEN",
 "rank": 110,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 18.1,
 "adj_pg": 18.1,
 "proj_posrank": 10,
 "adj_posrank": 10,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "rj harvey": {
 "name": "RJ Harvey",
@@ -1706,7 +1594,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~65 pctl: LV, BUF, NE)",
+"label": "tough W15-17 slate (opp run D ~66 pctl: LV, BUF, NE)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -1728,7 +1616,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~65 pctl: LV, BUF, NE)",
+"label": "tough W15-17 slate (opp run D ~66 pctl: LV, BUF, NE)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -1750,7 +1638,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~65 pctl: LV, BUF, NE)",
+"label": "tough W15-17 slate (opp run D ~66 pctl: LV, BUF, NE)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -1762,154 +1650,98 @@
 "pos": "WR",
 "team": "DEN",
 "rank": 45,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 12.5,
 "adj_pg": 12.5,
 "proj_posrank": 25,
 "adj_posrank": 25,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "courtland sutton": {
 "name": "Courtland Sutton",
 "pos": "WR",
 "team": "DEN",
 "rank": 86,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 12.1,
 "adj_pg": 12.1,
 "proj_posrank": 28,
 "adj_posrank": 28,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "troy franklin": {
 "name": "Troy Franklin",
 "pos": "WR",
 "team": "DEN",
 "rank": 228,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 3.0,
 "adj_pg": 3.0,
 "proj_posrank": 112,
 "adj_posrank": 111,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "pat bryant": {
 "name": "Pat Bryant",
 "pos": "WR",
 "team": "DEN",
 "rank": 236,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 4.2,
 "adj_pg": 4.2,
 "proj_posrank": 87,
 "adj_posrank": 87,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "marvin mims": {
 "name": "Marvin Mims Jr.",
 "pos": "WR",
 "team": "DEN",
 "rank": 315,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 4.0,
 "adj_pg": 4.0,
 "proj_posrank": 89,
 "adj_posrank": 89,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "evan engram": {
 "name": "Evan Engram",
 "pos": "TE",
 "team": "DEN",
 "rank": 233,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 6.2,
 "adj_pg": 6.2,
 "proj_posrank": 31,
 "adj_posrank": 31,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "justin joly": {
 "name": "Justin Joly",
 "pos": "TE",
 "team": "DEN",
 "rank": 391,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 0.5,
 "adj_pg": 0.5,
 "proj_posrank": 59,
 "adj_posrank": 59,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~68 pctl: LV, BUF, NE)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "jared goff": {
 "name": "Jared Goff",
@@ -2056,14 +1888,22 @@
 "pos": "QB",
 "team": "GB",
 "rank": 109,
-"total": 0,
+"total": 1,
 "playoff": 0,
 "avail": 1.0,
 "pg": 16.2,
 "adj_pg": 16.2,
 "proj_posrank": 20,
 "adj_posrank": 20,
-"flags": []
+"flags": [
+{
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+}
+]
 },
 "josh jacobs": {
 "name": "Josh Jacobs",
@@ -2244,8 +2084,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2266,8 +2106,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2316,8 +2156,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2338,8 +2178,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2367,8 +2207,8 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2389,8 +2229,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2411,8 +2251,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2433,8 +2273,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~80 pctl: JAX, PHI, GB)",
-"sev": 2,
+"label": "tough W15-17 slate (opp pass D ~69 pctl: JAX, PHI, GB)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -2497,7 +2337,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~76 pctl: TEN, CIN, CLE)",
+"label": "tough W15-17 slate (opp run D ~84 pctl: TEN, CIN, CLE)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -2519,7 +2359,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~76 pctl: TEN, CIN, CLE)",
+"label": "tough W15-17 slate (opp run D ~84 pctl: TEN, CIN, CLE)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -2541,7 +2381,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~76 pctl: TEN, CIN, CLE)",
+"label": "tough W15-17 slate (opp run D ~84 pctl: TEN, CIN, CLE)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -2801,8 +2641,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -2823,8 +2663,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -2835,70 +2675,110 @@
 "pos": "RB",
 "team": "KC",
 "rank": 17,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 16.2,
 "adj_pg": 16.2,
 "proj_posrank": 12,
 "adj_posrank": 12,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~67 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "emmett johnson": {
 "name": "Emmett Johnson",
 "pos": "RB",
 "team": "KC",
 "rank": 202,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 2.7,
 "adj_pg": 2.7,
 "proj_posrank": 65,
 "adj_posrank": 65,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~67 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "brashard smith": {
 "name": "Brashard Smith",
 "pos": "RB",
 "team": "KC",
 "rank": 283,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 0.0,
 "adj_pg": 0.0,
 "proj_posrank": 96,
 "adj_posrank": 96,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~67 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "emari demercado": {
 "name": "Emari Demercado",
 "pos": "RB",
 "team": "KC",
 "rank": 355,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 3.8,
 "adj_pg": 3.8,
 "proj_posrank": 57,
 "adj_posrank": 57,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~67 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "jaydn ott": {
 "name": "Jaydn Ott",
 "pos": "RB",
 "team": "KC",
 "rank": 425,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": null,
 "adj_pg": null,
 "proj_posrank": null,
 "adj_posrank": null,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~67 pctl: NE, SF, LAC)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "rashee rice": {
 "name": "Rashee Rice",
@@ -2915,8 +2795,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -2937,8 +2817,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -2966,8 +2846,8 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -2988,8 +2868,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -3017,8 +2897,8 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -3039,8 +2919,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -3061,8 +2941,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~70 pctl: NE, SF, LAC)",
-"sev": 1,
+"label": "tough W15-17 slate (opp pass D ~77 pctl: NE, SF, LAC)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -3479,42 +3359,66 @@
 "pos": "RB",
 "team": "LV",
 "rank": 14,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 16.6,
 "adj_pg": 16.6,
 "proj_posrank": 8,
 "adj_posrank": 8,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~68 pctl: DEN, TEN, ARI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "mike washington": {
 "name": "Mike Washington Jr.",
 "pos": "RB",
 "team": "LV",
 "rank": 212,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 3.7,
 "adj_pg": 3.7,
 "proj_posrank": 59,
 "adj_posrank": 59,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~68 pctl: DEN, TEN, ARI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "roman hemby": {
 "name": "Roman Hemby",
 "pos": "RB",
 "team": "LV",
 "rank": 248,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 0.7,
 "adj_pg": 0.7,
 "proj_posrank": 87,
 "adj_posrank": 87,
-"flags": []
+"flags": [
+{
+"code": "PO-SLATE",
+"label": "tough W15-17 slate (opp run D ~68 pctl: DEN, TEN, ARI)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "jalen nailor": {
 "name": "Jalen Nailor",
@@ -3823,66 +3727,42 @@
 "pos": "RB",
 "team": "MIN",
 "rank": 123,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 11.3,
 "adj_pg": 11.3,
 "proj_posrank": 29,
 "adj_posrank": 28,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~65 pctl: DET, WAS, NYJ)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "jordan mason": {
 "name": "Jordan Mason",
 "pos": "RB",
 "team": "MIN",
 "rank": 133,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 7.4,
 "adj_pg": 7.4,
 "proj_posrank": 45,
 "adj_posrank": 45,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~65 pctl: DET, WAS, NYJ)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "demond claiborne": {
 "name": "Demond Claiborne",
 "pos": "RB",
 "team": "MIN",
 "rank": 229,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 1.5,
 "adj_pg": 1.5,
 "proj_posrank": 80,
 "adj_posrank": 80,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~65 pctl: DET, WAS, NYJ)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "justin jefferson": {
 "name": "Justin Jefferson",
@@ -3969,8 +3849,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~67 pctl: KC, NYJ, DEN)",
-"sev": 1,
+"label": "tough W15-17 slate (opp run D ~74 pctl: KC, NYJ, DEN)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -3991,8 +3871,8 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~67 pctl: KC, NYJ, DEN)",
-"sev": 1,
+"label": "tough W15-17 slate (opp run D ~74 pctl: KC, NYJ, DEN)",
+"sev": 2,
 "cat": "playoff",
 "playoff": true
 }
@@ -4087,14 +3967,22 @@
 "pos": "TE",
 "team": "NE",
 "rank": 153,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 8.8,
 "adj_pg": 8.8,
 "proj_posrank": 18,
 "adj_posrank": 18,
-"flags": []
+"flags": [
+{
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.47 -> playoff 0.26)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "eli raridon": {
 "name": "Eli Raridon",
@@ -4311,66 +4199,42 @@
 "pos": "RB",
 "team": "NYG",
 "rank": 50,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 14.4,
 "adj_pg": 14.4,
 "proj_posrank": 18,
 "adj_posrank": 18,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~68 pctl: CLE, DET, DAL)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "tyrone tracy": {
 "name": "Tyrone Tracy Jr.",
 "pos": "RB",
 "team": "NYG",
 "rank": 139,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 4.8,
 "adj_pg": 4.8,
 "proj_posrank": 54,
 "adj_posrank": 54,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~68 pctl: CLE, DET, DAL)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "devin singletary": {
 "name": "Devin Singletary",
 "pos": "RB",
 "team": "NYG",
 "rank": 257,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 1.6,
 "adj_pg": 1.6,
 "proj_posrank": 77,
 "adj_posrank": 77,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp run D ~68 pctl: CLE, DET, DAL)",
-"sev": 1,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "malik nabers": {
 "name": "Malik Nabers",
@@ -4651,44 +4515,28 @@
 "pos": "QB",
 "team": "PHI",
 "rank": 70,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 19.8,
 "adj_pg": 19.8,
 "proj_posrank": 4,
 "adj_posrank": 4,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "tanner mckee": {
 "name": "Tanner McKee",
 "pos": "QB",
 "team": "PHI",
 "rank": 234,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 2.7,
 "adj_pg": 2.7,
 "proj_posrank": 37,
 "adj_posrank": 37,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "saquon barkley": {
 "name": "Saquon Barkley",
@@ -4761,132 +4609,84 @@
 "pos": "WR",
 "team": "PHI",
 "rank": 23,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 14.0,
 "adj_pg": 14.0,
 "proj_posrank": 17,
 "adj_posrank": 16,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "makai lemon": {
 "name": "Makai Lemon",
 "pos": "WR",
 "team": "PHI",
 "rank": 82,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 10.6,
 "adj_pg": 10.6,
 "proj_posrank": 40,
 "adj_posrank": 40,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "dontayvion wicks": {
 "name": "Dontayvion Wicks",
 "pos": "WR",
 "team": "PHI",
 "rank": 201,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 3.5,
 "adj_pg": 3.5,
 "proj_posrank": 104,
 "adj_posrank": 104,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "hollywood brown": {
 "name": "Hollywood Brown",
 "pos": "WR",
 "team": "PHI",
 "rank": 254,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 1.1,
 "adj_pg": 1.1,
 "proj_posrank": 138,
 "adj_posrank": 137,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "dallas goedert": {
 "name": "Dallas Goedert",
 "pos": "TE",
 "team": "PHI",
 "rank": 124,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 10.5,
 "adj_pg": 10.5,
 "proj_posrank": 9,
 "adj_posrank": 9,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "eli stowers": {
 "name": "Eli Stowers",
 "pos": "TE",
 "team": "PHI",
 "rank": 217,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 2.1,
 "adj_pg": 2.1,
 "proj_posrank": 48,
 "adj_posrank": 48,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~73 pctl: SEA, HOU, SF)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "aaron rodgers": {
 "name": "Aaron Rodgers",
@@ -4977,8 +4777,8 @@
 "pos": "WR",
 "team": "PIT",
 "rank": 78,
-"total": 1,
-"playoff": 0,
+"total": 2,
+"playoff": 1,
 "avail": 1.0,
 "pg": 11.5,
 "adj_pg": 11.5,
@@ -4991,6 +4791,13 @@
 "sev": 1,
 "cat": "oline",
 "playoff": false
+},
+{
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.91 -> playoff 0.52)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
 }
 ]
 },
@@ -5041,8 +4848,8 @@
 "pos": "WR",
 "team": "PIT",
 "rank": 348,
-"total": 1,
-"playoff": 0,
+"total": 2,
+"playoff": 1,
 "avail": 1.0,
 "pg": 0.0,
 "adj_pg": 0.0,
@@ -5055,6 +4862,13 @@
 "sev": 1,
 "cat": "oline",
 "playoff": false
+},
+{
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.57 -> playoff 0.3)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
 }
 ]
 },
@@ -5091,22 +4905,14 @@
 "pos": "QB",
 "team": "SEA",
 "rank": 129,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 15.5,
 "adj_pg": 15.5,
 "proj_posrank": 21,
 "adj_posrank": 21,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "jadarian price": {
 "name": "Jadarian Price",
@@ -5177,22 +4983,14 @@
 "pos": "WR",
 "team": "SEA",
 "rank": 3,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 19.4,
 "adj_pg": 19.4,
 "proj_posrank": 3,
 "adj_posrank": 3,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "rashid shaheed": {
 "name": "Rashid Shaheed",
@@ -5208,9 +5006,9 @@
 "adj_posrank": 56,
 "flags": [
 {
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
-"sev": 2,
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.48 -> playoff 0.11)",
+"sev": 1,
 "cat": "playoff",
 "playoff": true
 }
@@ -5221,88 +5019,56 @@
 "pos": "WR",
 "team": "SEA",
 "rank": 197,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 6.1,
 "adj_pg": 6.1,
 "proj_posrank": 73,
 "adj_posrank": 72,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "tory horton": {
 "name": "Tory Horton",
 "pos": "WR",
 "team": "SEA",
 "rank": 237,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 3.8,
 "adj_pg": 3.8,
 "proj_posrank": 94,
 "adj_posrank": 94,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "aj barner": {
 "name": "AJ Barner",
 "pos": "TE",
 "team": "SEA",
 "rank": 179,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 6.7,
 "adj_pg": 6.7,
 "proj_posrank": 28,
 "adj_posrank": 28,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "elijah arroyo": {
 "name": "Elijah Arroyo",
 "pos": "TE",
 "team": "SEA",
 "rank": 386,
-"total": 1,
-"playoff": 1,
+"total": 0,
+"playoff": 0,
 "avail": 1.0,
 "pg": 3.7,
 "adj_pg": 3.7,
 "proj_posrank": 40,
 "adj_posrank": 40,
-"flags": [
-{
-"code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~76 pctl: PHI, LAR, CAR)",
-"sev": 2,
-"cat": "playoff",
-"playoff": true
-}
-]
+"flags": []
 },
 "brock purdy": {
 "name": "Brock Purdy",
@@ -5319,7 +5085,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5341,7 +5107,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5419,7 +5185,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5441,7 +5207,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5463,7 +5229,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5492,7 +5258,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5514,7 +5280,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5536,7 +5302,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5565,7 +5331,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5587,7 +5353,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~66 pctl: LAC, KC, PHI)",
+"label": "tough W15-17 slate (opp pass D ~67 pctl: LAC, KC, PHI)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5679,7 +5445,7 @@
 "flags": [
 {
 "code": "PO-COLD",
-"label": "matchup levers cool in W15-17 (season 1.16 -> playoff 0.6)",
+"label": "matchup levers cool in W15-17 (season 0.96 -> playoff 0.54)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5701,7 +5467,7 @@
 "flags": [
 {
 "code": "PO-COLD",
-"label": "matchup levers cool in W15-17 (season 1.16 -> playoff 0.6)",
+"label": "matchup levers cool in W15-17 (season 0.87 -> playoff 0.43)",
 "sev": 1,
 "cat": "playoff",
 "playoff": true
@@ -5912,7 +5678,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -5924,7 +5690,7 @@
 "pos": "QB",
 "team": "WAS",
 "rank": 317,
-"total": 2,
+"total": 3,
 "playoff": 1,
 "avail": 1.0,
 "pg": 0.6,
@@ -5940,8 +5706,15 @@
 "playoff": false
 },
 {
+"code": "OL",
+"label": "below-average OL (tier 2) caps the deep-shot lever",
+"sev": 1,
+"cat": "oline",
+"playoff": false
+},
+{
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -5953,14 +5726,22 @@
 "pos": "RB",
 "team": "WAS",
 "rank": 119,
-"total": 0,
-"playoff": 0,
+"total": 1,
+"playoff": 1,
 "avail": 1.0,
 "pg": 10.3,
 "adj_pg": 10.3,
 "proj_posrank": 35,
 "adj_posrank": 34,
-"flags": []
+"flags": [
+{
+"code": "PO-COLD",
+"label": "matchup levers cool in W15-17 (season 0.51 -> playoff 0.2)",
+"sev": 1,
+"cat": "playoff",
+"playoff": true
+}
+]
 },
 "jacory croskey merritt": {
 "name": "Jacory Croskey-Merritt",
@@ -6026,7 +5807,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -6048,7 +5829,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -6070,7 +5851,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -6106,7 +5887,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -6128,7 +5909,7 @@
 "flags": [
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -6157,7 +5938,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -6186,7 +5967,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true
@@ -6222,7 +6003,7 @@
 },
 {
 "code": "PO-SLATE",
-"label": "tough W15-17 slate (opp pass D ~83 pctl: ATL, MIN, JAX)",
+"label": "tough W15-17 slate (opp pass D ~88 pctl: ATL, MIN, JAX)",
 "sev": 2,
 "cat": "playoff",
 "playoff": true

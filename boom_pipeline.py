@@ -25,6 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); B = os.path.join(HERE, 'boom'
 STAGES = [
     ("derive_boom_threshold", ["boom/boomdef.json"], None),
     ("sync_boom_defense",     [], None),  # BRIDGE: refresh move-aware defense_2026_matchup before foundation reads it
+    ("build_splits",          ["player_splits.json"], None),  # live-draft boom-conditions (engine/run_live, build_player_boom) -- reads the matchup file sync_boom_defense just refreshed
     ("boom_foundation",       ["boom/statmenu.json", "boom/gamelog.json",
                                "boom/schedule2026.json", "boom/defense2026.json",
                                "boom/opp_offense.json"], None),
@@ -35,6 +36,7 @@ STAGES = [
     ("build_defense_shell",   ["boom/defense_shell.json"], None),
     ("build_cover_spec",      ["boom/cover_spec.json"],  "cspec"),
     ("build_rookie_profiles", ["boom/rookie_college_profile.json"], None),
+    ("build_rookie_manzone_pff", ["boom/rookie_college_profile.json"], None),  # PFF NCAA man/zone tags -- build_rookie_profiles rewrites the profile wholesale, so re-tag EVERY run (clobber fix)
     ("build_rookie_prior",    ["boom/rookie_prior.json"], None),
     ("build_rookie_db_funnel",["boom/rookie_db_grades.json"], None),
     ("apply_rookie_to_statmenu", ["boom/statmenu.json"], None),
@@ -53,6 +55,7 @@ STAGES = [
     ("build_boom_marks",      ["boom/boom_marks.json"], None),
     ("build_upside_cases",    ["upside_cases.html","boom/upside_cases.json"], None),
     ("build_player_explorer", ["player_explorer.html"],  None),
+    ("build_cc_context",      ["cc_context.json"], None),  # per-player 4-layer drilldown context -> command_center (next stage) + ctx_panel/dfs_model/build_dossier_deep
     ("command_center",        ["command_center.html"], None),  # final: refresh board with fresh boom_marks
 ]
 

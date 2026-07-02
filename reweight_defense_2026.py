@@ -55,10 +55,13 @@ MOVES={
  'tremaine edmunds':{'to':'NYG','src':'https://chicago.suntimes.com/bears/2026/03/09/former-bears-linebacker-tremaine-edmunds-gets-3-year-36-million-deal-from-giants-report'},
  'reed blankenship':{'to':'HOU','src':'https://www.inquirer.com/eagles/reed-blankenship-houston-texans-2026-nfl-free-agency-20260309.html'},
  'dane belton':{'to':'NYJ','src':'https://www.newyorkjets.com/news/jets-sign-s-dane-belton-free-agency-03-12-2026'},
- # --- RETIRED / UNSIGNED (subtract only) ---
+ # --- RETIRED / UNSIGNED / RELEASED (subtract only; production leaves the 2026 team) ---
  'joey bosa':{'to':'UFA','src':'https://www.si.com/nfl/bills/onsi/free-agency-why-buffalo-bills-haven-t-re-signed-de-joey-bosa-yet'},
  'jadeveon clowney':{'to':'UFA','src':'https://www.profootballrumors.com/2026/05/jadeveon-clowney-drawing-interest'},
  'bobby wagner':{'to':'UFA','src':'https://heavy.com/sports/nfl/washington-commanders/bobby-wagner-situation-turn-after-nfl-draft/'},
+ # Terrion Arnold RELEASED by DET (legal case); off the 2026 roster. Web-verified Jul 2026 (CBS/FOX/SI/ESPN).
+ # 2025 coverage PS 6.93 no longer credited to DET; replacement CB has no 2025 SIS data (replacement floor).
+ 'terrion arnold':{'to':'UFA','src':'https://www.foxsports.com/stories/nfl/lions-forced-cornerback-free-agent-market-after-releasing-terrion-arnold','note':'released by DET mid-2026 (legal case) -> off DET roster'},
  # --- PART C other major movers ---
  'jaelan phillips':{'to':'CAR','src':'https://www.nfl.com/news/top-101-nfl-free-agents-of-2026','note':'2 teams 2025 -> CAR 2026'},
  'devin lloyd':{'to':'CAR','src':'https://www.cbssports.com/nfl/news/2026-nfl-free-agency-panthers-jets-defense/'},
@@ -115,6 +118,23 @@ MOVES={
  'cordale flott':{'to':'TEN','src':'https://www.tennesseetitans.com/news/titans-sign-cornerback-cor-dale-flott','note':'CB NYG->TEN'},
  'john franklin myers':{'to':'TEN','src':'https://www.aol.com/articles/titans-sign-john-franklin-myers-192951802.html','note':'DE DEN->TEN'},
 }
+
+# ----------------------------------------------------------------------------------------------------
+# KNOWN DATA GAPS: players who materially affect a unit but are ABSENT from the SIS Points Saved source,
+# so the reweight cannot credit them. Documented, NOT patched with a fabricated value -- grafting an
+# off-scale PFF grade onto SIS Points Saved would be an arbitrary override AND would assume 2026 health.
+# Surfaced honestly in defense.json meta so the reader can judge the residual uncertainty themselves.
+# ----------------------------------------------------------------------------------------------------
+KNOWN_GAPS=[
+ {'player':'Kerby Joseph','team':'DET','unit':'coverage',
+  'reason':('Absent from SIS coverage Points Saved top-200 in BOTH 2024 and 2025. 2025: injured '
+            '(211 coverage snaps, PFF grade 57.7). 2024: healthy and elite by PFF (grade 91.5, 781 snaps) '
+            'yet SIS PS still did not rank him top-200 -- SIS Points Saved structurally discounts his '
+            'gambling / ball-hawk safety style. 2026 availability reported UNCERTAIN.'),
+  'effect':('DET coverage is not credited for a healthy-Joseph outcome. If he returns to 2024 form, '
+            "DET's coverage unit would rank materially higher than the SIS-based number shows."),
+  'src':'https://www.detroitnews.com/story/sports/nfl/lions/2026/02/24/detroit-lions-give-update-on-injured-safeties-kerby-joseph-brian-branch/88846250007/'},
+]
 
 UNITS=[('coverage','sis_value/pass_defense.csv'),('pass_rush','sis_value/pass_rush.csv'),('run_def','sis_value/run_defense.csv')]
 applied_log=collections.defaultdict(list)  # team-code -> list of move dicts (for moves_2026)
@@ -258,6 +278,7 @@ defense_doc={'meta':{'n_teams':len(team_profiles),
                    'Rookies/incoming players with no 2025 SIS data add nothing (honest replacement-level floor).',
                    'RETIRED/UFA-unsigned: production leaves the league (subtract only).',
                    'Low-confidence moves (conf=false): Kevin Byard->NE, Dre\'Mont Jones->NE, K\'Lavon Chaisson->WAS (sources disagreed).'],
+    'known_gaps':KNOWN_GAPS,
     'unmatched_movers':unmatched},
     'teams':team_profiles}
 core.safe_json_dump(defense_doc, core.P('defense.json'), indent=2)

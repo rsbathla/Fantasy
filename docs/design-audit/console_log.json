@@ -1,0 +1,530 @@
+{
+ "home": {
+  "file": "home.html",
+  "desktop": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 900,
+    "innerW": 1440,
+    "title": "Fantasy Command \u2014 Home",
+    "hasViewportMeta": true,
+    "nLinks": 11,
+    "bodyTextLen": 1621
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.5,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 1465,
+    "innerW": 390,
+    "title": "Fantasy Command \u2014 Home",
+    "hasViewportMeta": true,
+    "nLinks": 11,
+    "bodyTextLen": 1621
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "command_center": {
+  "file": "command_center.html",
+  "desktop": {
+   "load_s": 3.3,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 11869,
+    "innerW": 1440,
+    "title": "Best Ball / DFS 2026 \u2014 Command Center",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 30828
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.8,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 12012,
+    "innerW": 390,
+    "title": "Best Ball / DFS 2026 \u2014 Command Center",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 30828
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "rankings": {
+  "file": "rankings.html",
+  "desktop": {
+   "load_s": 2.8,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 15455,
+    "innerW": 1440,
+    "title": "Rankings 2026",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 30484
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.8,
+   "metrics": {
+    "scrollW": 655,
+    "scrollH": 31967,
+    "innerW": 390,
+    "title": "Rankings 2026",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 30484
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "adp_cluster_board": {
+  "file": "adp_cluster_board.html",
+  "desktop": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 22507,
+    "innerW": 1440,
+    "title": "ADP Cluster Board \u2014 Best Pick per Tier (2026)",
+    "hasViewportMeta": false,
+    "nLinks": 0,
+    "bodyTextLen": 66717
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 75683,
+    "innerW": 390,
+    "title": "ADP Cluster Board \u2014 Best Pick per Tier (2026)",
+    "hasViewportMeta": false,
+    "nLinks": 0,
+    "bodyTextLen": 66717
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "big_board": {
+  "file": "big_board_2026.html",
+  "desktop": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 30933,
+    "innerW": 1440,
+    "title": "2026 Best Ball Big Board \u2014 flag-adjusted",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 119833
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 495,
+    "scrollH": 108086,
+    "innerW": 390,
+    "title": "2026 Best Ball Big Board \u2014 flag-adjusted",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 119833
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "dossier": {
+  "file": "dossier.html",
+  "desktop": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 908,
+    "innerW": 1440,
+    "title": "2026 Team Dossiers",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 760
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 956,
+    "innerW": 390,
+    "title": "2026 Team Dossiers",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 760
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "dossier_deep": {
+  "file": "dossier_deep.html",
+  "desktop": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 900,
+    "innerW": 1440,
+    "title": "Player Dossier \u2014 Deep",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 10568
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 844,
+    "innerW": 390,
+    "title": "Player Dossier \u2014 Deep",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 10568
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "player_explorer": {
+  "file": "player_explorer.html",
+  "desktop": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 900,
+    "innerW": 1440,
+    "title": "NFL 2026 Player Explorer",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 21798
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 893,
+    "innerW": 390,
+    "title": "NFL 2026 Player Explorer",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 21798
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "lever_board": {
+  "file": "lever_board.html",
+  "desktop": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 8202,
+    "innerW": 1440,
+    "title": "Ceiling-Lever Stack Board \u2014 2026",
+    "hasViewportMeta": false,
+    "nLinks": 0,
+    "bodyTextLen": 19222
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 701,
+    "scrollH": 18509,
+    "innerW": 390,
+    "title": "Ceiling-Lever Stack Board \u2014 2026",
+    "hasViewportMeta": false,
+    "nLinks": 0,
+    "bodyTextLen": 19222
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "upside_cases": {
+  "file": "upside_cases.html",
+  "desktop": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 924,
+    "innerW": 1440,
+    "title": "Upside Cases \u2014 what unlocks each player's ceiling",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 12507
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 951,
+    "innerW": 390,
+    "title": "Upside Cases \u2014 what unlocks each player's ceiling",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 12507
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "dfs_week": {
+  "file": "dfs_week.html",
+  "desktop": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 7542,
+    "innerW": 1440,
+    "title": "DFS Weekly Model \u2014 Week 15",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 29713
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 7701,
+    "innerW": 390,
+    "title": "DFS Weekly Model \u2014 Week 15",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 29713
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "pick_dashboard": {
+  "file": "pick_dashboard.html",
+  "desktop": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 900,
+    "innerW": 1440,
+    "title": "Draft assistant \u00b7 pick 106",
+    "hasViewportMeta": false,
+    "nLinks": 0,
+    "bodyTextLen": 2022
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.5,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 858,
+    "innerW": 390,
+    "title": "Draft assistant \u00b7 pick 106",
+    "hasViewportMeta": false,
+    "nLinks": 0,
+    "bodyTextLen": 2022
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "decision_dashboard": {
+  "file": "decision_dashboard.html",
+  "desktop": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 10632,
+    "innerW": 1440,
+    "title": "Best Ball 2026 - Decision Dashboard",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 23969
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 495,
+    "scrollH": 12100,
+    "innerW": 390,
+    "title": "Best Ball 2026 - Decision Dashboard",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 23969
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "team_dashboard": {
+  "file": "team_dashboard.html",
+  "desktop": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 2454,
+    "innerW": 1440,
+    "title": "Best Ball 2026 \u2014 Team Intel Board",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 2729
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.6,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 3567,
+    "innerW": 390,
+    "title": "Best Ball 2026 \u2014 Team Intel Board",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 2729
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "team_scout": {
+  "file": "team_scout.html",
+  "desktop": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 14677,
+    "innerW": 1440,
+    "title": "NFL 2026 Team Scouting",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 57248
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 396,
+    "scrollH": 42385,
+    "innerW": 390,
+    "title": "NFL 2026 Team Scouting",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 57248
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ },
+ "intel": {
+  "file": "intel.html",
+  "desktop": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 1440,
+    "scrollH": 903,
+    "innerW": 1440,
+    "title": "Intel",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 8787
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  },
+  "mobile": {
+   "load_s": 2.7,
+   "metrics": {
+    "scrollW": 390,
+    "scrollH": 877,
+    "innerW": 390,
+    "title": "Intel",
+    "hasViewportMeta": true,
+    "nLinks": 0,
+    "bodyTextLen": 8787
+   },
+   "console": [],
+   "console_all_count": 0,
+   "pageerrors": []
+  }
+ }
+}

@@ -10,16 +10,15 @@ from collections import defaultdict
 import pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__)); DL = os.path.dirname(HERE); B = os.path.join(HERE, 'boom')
 from boomutil import fn, team as tm, num   # was: local fn/TMAP/tm/num (audit B3 dedup)
-def dr(p): return list(csv.DictReader(open(f"{DL}/{p}",encoding='utf-8-sig')))
+FPADV = os.path.join(HERE, 'NFL-master', 'FP_ADVANCED')  # in-repo FP advanced exports (both years, aggregate)
+def dr(p): return list(csv.DictReader(open(os.path.join(FPADV, p), encoding='utf-8-sig')))
 
 # ---------- RED ZONE (WR/TE), 2-yr ----------
 rz_tot = defaultdict(lambda: {'i20':0.0,'ez':0.0,'eztd':0.0,'tgt':0.0,'g':0})
-for r in dr("receivingAdvancedExport (3).csv"):  # 2024 agg
-    k=fn(r['Name']); rz_tot[k]['i20']+=num(r.get('i20 TGT')) or 0; rz_tot[k]['ez']+=num(r.get('EZTGT')) or 0
-    rz_tot[k]['eztd']+=num(r.get('EZTD')) or 0; rz_tot[k]['tgt']+=num(r.get('TGT')) or 0; rz_tot[k]['g']+=num(r.get('G')) or 0
-for r in dr("receivingAdvancedExport (2).csv"):  # 2025 per-game
-    k=fn(r['Name']); rz_tot[k]['i20']+=num(r.get('i20 TGT')) or 0; rz_tot[k]['ez']+=num(r.get('EZTGT')) or 0
-    rz_tot[k]['eztd']+=num(r.get('EZTD')) or 0; rz_tot[k]['tgt']+=num(r.get('TGT')) or 0; rz_tot[k]['g']+=1
+for _f in ("receiving_2024.csv", "receiving_2025.csv"):   # both season aggregates now (was 2024 agg + 2025 per-game)
+    for r in dr(_f):
+        k=fn(r['Name']); rz_tot[k]['i20']+=num(r.get('i20 TGT')) or 0; rz_tot[k]['ez']+=num(r.get('EZTGT')) or 0
+        rz_tot[k]['eztd']+=num(r.get('EZTD')) or 0; rz_tot[k]['tgt']+=num(r.get('TGT')) or 0; rz_tot[k]['g']+=num(r.get('G')) or 0
 RZ={}
 for k,t in rz_tot.items():
     if t['tgt']>=10:

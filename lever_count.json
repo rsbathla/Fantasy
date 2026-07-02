@@ -12,25 +12,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.27,
-    "peak": 0.95,
+    "mean": 0.28,
+    "peak": 0.86,
     "smash_weeks": [],
-    "playoff_mean": 0.74,
+    "playoff_mean": 0.0,
     "best_wks": [
      {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 8,
+      "opp": "DAL",
+      "score": 0.86
      },
      {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 0.92
+      "wk": 6,
+      "opp": "LAR",
+      "score": 0.66
      },
      {
-      "wk": 15,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 10,
+      "opp": "LAR",
+      "score": 0.66
      }
     ]
    }
@@ -47,25 +47,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.27,
-    "peak": 0.95,
+    "mean": 0.28,
+    "peak": 0.86,
     "smash_weeks": [],
-    "playoff_mean": 0.74,
+    "playoff_mean": 0.0,
     "best_wks": [
      {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 8,
+      "opp": "DAL",
+      "score": 0.86
      },
      {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 0.92
+      "wk": 6,
+      "opp": "LAR",
+      "score": 0.66
      },
      {
-      "wk": 15,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 10,
+      "opp": "LAR",
+      "score": 0.66
      }
     ]
    }
@@ -82,25 +82,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.27,
-    "peak": 0.95,
+    "mean": 0.28,
+    "peak": 0.86,
     "smash_weeks": [],
-    "playoff_mean": 0.74,
+    "playoff_mean": 0.0,
     "best_wks": [
      {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 8,
+      "opp": "DAL",
+      "score": 0.86
      },
      {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 0.92
+      "wk": 6,
+      "opp": "LAR",
+      "score": 0.66
      },
      {
-      "wk": 15,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 10,
+      "opp": "LAR",
+      "score": 0.66
      }
     ]
    }
@@ -116,69 +116,30 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.66,
-    "peak": 1.79,
-    "smash_weeks": [
-     4,
-     8,
-     12
-    ],
-    "playoff_mean": 1.12,
+    "mean": 0.56,
+    "peak": 1.17,
+    "smash_weeks": [],
+    "playoff_mean": 0.56,
     "best_wks": [
-     {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 1.79
-     },
-     {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 1.68
-     },
      {
       "wk": 8,
       "opp": "DAL",
-      "score": 1.51
-     }
-    ]
-   }
-  },
-  "Tyler Allgeier": {
-   "pos": "RB",
-   "team": "ARI",
-   "rank": 163,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.27,
-    "peak": 0.95,
-    "smash_weeks": [],
-    "playoff_mean": 0.74,
-    "best_wks": [
+      "score": 1.17
+     },
      {
-      "wk": 4,
-      "opp": "NYG",
+      "wk": 6,
+      "opp": "LAR",
       "score": 0.95
      },
      {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 0.92
-     },
-     {
-      "wk": 15,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 10,
+      "opp": "LAR",
+      "score": 0.95
      }
     ]
    }
@@ -191,33 +152,29 @@
     {
      "type": "elusive_rb",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.5,
-    "peak": 1.38,
+    "n_levers": 1,
+    "mean": 0.23,
+    "peak": 0.47,
     "smash_weeks": [],
-    "playoff_mean": 1.05,
+    "playoff_mean": 0.3,
     "best_wks": [
+     {
+      "wk": 3,
+      "opp": "SF",
+      "score": 0.47
+     },
+     {
+      "wk": 18,
+      "opp": "SF",
+      "score": 0.47
+     },
      {
       "wk": 4,
       "opp": "NYG",
-      "score": 1.38
-     },
-     {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 1.27
-     },
-     {
-      "wk": 17,
-      "opp": "LV",
-      "score": 1.08
+      "score": 0.42
      }
     ]
    }
@@ -230,33 +187,29 @@
     {
      "type": "elusive_rb",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.5,
-    "peak": 1.38,
+    "n_levers": 1,
+    "mean": 0.23,
+    "peak": 0.47,
     "smash_weeks": [],
-    "playoff_mean": 1.05,
+    "playoff_mean": 0.3,
     "best_wks": [
+     {
+      "wk": 3,
+      "opp": "SF",
+      "score": 0.47
+     },
+     {
+      "wk": 18,
+      "opp": "SF",
+      "score": 0.47
+     },
      {
       "wk": 4,
       "opp": "NYG",
-      "score": 1.38
-     },
-     {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 1.27
-     },
-     {
-      "wk": 17,
-      "opp": "LV",
-      "score": 1.08
+      "score": 0.42
      }
     ]
    }
@@ -280,36 +233,36 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 4,
-    "mean": 1.0,
-    "peak": 2.39,
+    "mean": 0.89,
+    "peak": 2.0,
     "smash_weeks": [
-     4,
-     8,
-     12,
+     2,
+     9,
+     11,
      15,
      17
     ],
-    "playoff_mean": 2.06,
+    "playoff_mean": 1.36,
     "best_wks": [
+     {
+      "wk": 11,
+      "opp": "KC",
+      "score": 2.0
+     },
      {
       "wk": 17,
       "opp": "LV",
-      "score": 2.39
+      "score": 1.7
      },
      {
-      "wk": 15,
-      "opp": "NYJ",
-      "score": 2.37
-     },
-     {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 1.91
+      "wk": 2,
+      "opp": "SEA",
+      "score": 1.52
      }
     ]
    }
@@ -330,39 +283,33 @@
     {
      "type": "boundary",
      "tier": "solid"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 4,
-    "mean": 1.0,
-    "peak": 2.39,
+    "n_levers": 3,
+    "mean": 0.75,
+    "peak": 1.73,
     "smash_weeks": [
-     4,
-     8,
-     12,
+     11,
      15,
      17
     ],
-    "playoff_mean": 2.06,
+    "playoff_mean": 1.36,
     "best_wks": [
+     {
+      "wk": 11,
+      "opp": "KC",
+      "score": 1.73
+     },
      {
       "wk": 17,
       "opp": "LV",
-      "score": 2.39
+      "score": 1.7
      },
      {
       "wk": 15,
       "opp": "NYJ",
-      "score": 2.37
-     },
-     {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 1.91
+      "score": 1.51
      }
     ]
    }
@@ -379,39 +326,29 @@
     {
      "type": "boundary",
      "tier": "solid"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.69,
-    "peak": 2.33,
-    "smash_weeks": [
-     4,
-     8,
-     12,
-     15,
-     16
-    ],
-    "playoff_mean": 1.58,
+    "n_levers": 2,
+    "mean": 0.45,
+    "peak": 1.33,
+    "smash_weeks": [],
+    "playoff_mean": 0.9,
     "best_wks": [
-     {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 2.33
-     },
      {
       "wk": 12,
       "opp": "WAS",
-      "score": 2.25
+      "score": 1.33
      },
      {
-      "wk": 8,
-      "opp": "DAL",
-      "score": 1.79
+      "wk": 16,
+      "opp": "NO",
+      "score": 1.13
+     },
+     {
+      "wk": 4,
+      "opp": "NYG",
+      "score": 1.12
      }
     ]
    }
@@ -431,35 +368,102 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 0.67,
-    "peak": 2.28,
+    "mean": 0.5,
+    "peak": 1.52,
     "smash_weeks": [
-     4,
-     8,
-     12,
-     16
+     8
     ],
-    "playoff_mean": 1.11,
+    "playoff_mean": 0.39,
     "best_wks": [
-     {
-      "wk": 12,
-      "opp": "WAS",
-      "score": 2.28
-     },
-     {
-      "wk": 4,
-      "opp": "NYG",
-      "score": 2.01
-     },
      {
       "wk": 8,
       "opp": "DAL",
-      "score": 1.82
+      "score": 1.52
+     },
+     {
+      "wk": 12,
+      "opp": "WAS",
+      "score": 1.36
+     },
+     {
+      "wk": 16,
+      "opp": "NO",
+      "score": 1.18
+     }
+    ]
+   }
+  },
+  "Tua Tagovailoa": {
+   "pos": "QB",
+   "team": "ATL",
+   "rank": 200,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.21,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.19,
+    "best_wks": [
+     {
+      "wk": 9,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 7,
+      "opp": "SF",
+      "score": 0.6
+     },
+     {
+      "wk": 6,
+      "opp": "CHI",
+      "score": 0.56
+     }
+    ]
+   }
+  },
+  "Michael Penix Jr.": {
+   "pos": "QB",
+   "team": "ATL",
+   "rank": 226,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.21,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.19,
+    "best_wks": [
+     {
+      "wk": 9,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 7,
+      "opp": "SF",
+      "score": 0.6
+     },
+     {
+      "wk": 6,
+      "opp": "CHI",
+      "score": 0.56
      }
     ]
    }
@@ -480,16 +484,20 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.62,
+    "n_levers": 4,
+    "mean": 0.78,
     "peak": 1.62,
     "smash_weeks": [
      15
     ],
-    "playoff_mean": 1.06,
+    "playoff_mean": 1.35,
     "best_wks": [
      {
       "wk": 15,
@@ -497,14 +505,14 @@
       "score": 1.62
      },
      {
-      "wk": 3,
-      "opp": "GB",
-      "score": 1.1
-     },
-     {
       "wk": 8,
       "opp": "TB",
-      "score": 1.0
+      "score": 1.35
+     },
+     {
+      "wk": 9,
+      "opp": "CIN",
+      "score": 1.35
      }
     ]
    }
@@ -525,36 +533,41 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 1.01,
-    "peak": 1.99,
+    "n_levers": 4,
+    "mean": 1.22,
+    "peak": 2.59,
     "smash_weeks": [
      4,
      8,
      9,
+     10,
      15,
      16,
      17
     ],
-    "playoff_mean": 1.66,
+    "playoff_mean": 1.92,
     "best_wks": [
      {
       "wk": 9,
       "opp": "CIN",
-      "score": 1.99
-     },
-     {
-      "wk": 15,
-      "opp": "WAS",
-      "score": 1.88
+      "score": 2.59
      },
      {
       "wk": 8,
       "opp": "TB",
-      "score": 1.58
+      "score": 2.12
+     },
+     {
+      "wk": 16,
+      "opp": "TB",
+      "score": 2.12
      }
     ]
    }
@@ -571,25 +584,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.4,
-    "peak": 0.92,
+    "mean": 0.45,
+    "peak": 0.98,
     "smash_weeks": [],
-    "playoff_mean": 0.82,
+    "playoff_mean": 0.91,
     "best_wks": [
-     {
-      "wk": 15,
-      "opp": "WAS",
-      "score": 0.92
-     },
      {
       "wk": 9,
       "opp": "CIN",
-      "score": 0.89
+      "score": 0.98
      },
      {
       "wk": 8,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.95
+     },
+     {
+      "wk": 16,
+      "opp": "TB",
+      "score": 0.95
      }
     ]
    }
@@ -602,29 +615,33 @@
     {
      "type": "zone_beater",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.18,
-    "peak": 0.47,
+    "n_levers": 2,
+    "mean": 0.28,
+    "peak": 0.65,
     "smash_weeks": [],
-    "playoff_mean": 0.35,
+    "playoff_mean": 0.44,
     "best_wks": [
      {
-      "wk": 13,
-      "opp": "DET",
-      "score": 0.47
+      "wk": 8,
+      "opp": "TB",
+      "score": 0.65
      },
      {
-      "wk": 15,
-      "opp": "WAS",
-      "score": 0.4
+      "wk": 16,
+      "opp": "TB",
+      "score": 0.65
      },
      {
-      "wk": 3,
-      "opp": "GB",
-      "score": 0.39
+      "wk": 6,
+      "opp": "CHI",
+      "score": 0.59
      }
     ]
    }
@@ -637,29 +654,33 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.24,
-    "peak": 0.44,
+    "n_levers": 2,
+    "mean": 0.34,
+    "peak": 0.9,
     "smash_weeks": [],
-    "playoff_mean": 0.35,
+    "playoff_mean": 0.46,
     "best_wks": [
      {
       "wk": 9,
       "opp": "CIN",
-      "score": 0.44
+      "score": 0.9
      },
      {
-      "wk": 5,
-      "opp": "BAL",
-      "score": 0.4
+      "wk": 8,
+      "opp": "TB",
+      "score": 0.67
      },
      {
-      "wk": 1,
-      "opp": "PIT",
-      "score": 0.39
+      "wk": 16,
+      "opp": "TB",
+      "score": 0.67
      }
     ]
    }
@@ -676,34 +697,45 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.78,
-    "peak": 2.0,
+    "n_levers": 4,
+    "mean": 1.21,
+    "peak": 3.34,
     "smash_weeks": [
      1,
+     6,
      7,
+     8,
      9,
+     16,
      17
     ],
-    "playoff_mean": 1.12,
+    "playoff_mean": 1.84,
     "best_wks": [
      {
       "wk": 7,
       "opp": "CIN",
-      "score": 2.0
+      "score": 3.34
      },
      {
       "wk": 17,
       "opp": "CIN",
-      "score": 2.0
+      "score": 3.34
      },
      {
-      "wk": 9,
-      "opp": "JAX",
-      "score": 1.87
+      "wk": 8,
+      "opp": "BUF",
+      "score": 1.95
      }
     ]
    }
@@ -716,29 +748,36 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.39,
-    "peak": 1.0,
-    "smash_weeks": [],
-    "playoff_mean": 0.56,
+    "n_levers": 2,
+    "mean": 0.6,
+    "peak": 1.88,
+    "smash_weeks": [
+     7,
+     17
+    ],
+    "playoff_mean": 0.85,
     "best_wks": [
      {
       "wk": 7,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
       "wk": 17,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
-      "wk": 9,
-      "opp": "JAX",
-      "score": 0.94
+      "wk": 8,
+      "opp": "BUF",
+      "score": 1.27
      }
     ]
    }
@@ -794,35 +833,40 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 1.06,
-    "peak": 2.33,
+    "n_levers": 4,
+    "mean": 1.2,
+    "peak": 2.89,
     "smash_weeks": [
      1,
      6,
      7,
+     14,
      16,
      17
     ],
-    "playoff_mean": 1.65,
+    "playoff_mean": 1.96,
     "best_wks": [
      {
       "wk": 7,
       "opp": "CIN",
-      "score": 2.33
+      "score": 2.89
      },
      {
       "wk": 17,
       "opp": "CIN",
-      "score": 2.33
+      "score": 2.89
      },
      {
-      "wk": 1,
-      "opp": "IND",
-      "score": 1.79
+      "wk": 6,
+      "opp": "CLE",
+      "score": 1.92
      }
     ]
    }
@@ -843,25 +887,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.67,
-    "peak": 1.33,
+    "mean": 0.71,
+    "peak": 1.45,
     "smash_weeks": [],
-    "playoff_mean": 1.1,
+    "playoff_mean": 1.25,
     "best_wks": [
      {
       "wk": 7,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
       "wk": 17,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
-      "wk": 4,
-      "opp": "TEN",
-      "score": 1.18
+      "wk": 14,
+      "opp": "TB",
+      "score": 1.34
      }
     ]
    }
@@ -882,25 +926,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.67,
-    "peak": 1.33,
+    "mean": 0.71,
+    "peak": 1.45,
     "smash_weeks": [],
-    "playoff_mean": 1.1,
+    "playoff_mean": 1.25,
     "best_wks": [
      {
       "wk": 7,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
       "wk": 17,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
-      "wk": 4,
-      "opp": "TEN",
-      "score": 1.18
+      "wk": 14,
+      "opp": "TB",
+      "score": 1.34
      }
     ]
    }
@@ -913,29 +957,33 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.23,
-    "peak": 0.44,
+    "n_levers": 2,
+    "mean": 0.33,
+    "peak": 0.9,
     "smash_weeks": [],
-    "playoff_mean": 0.4,
+    "playoff_mean": 0.58,
     "best_wks": [
      {
       "wk": 7,
       "opp": "CIN",
-      "score": 0.44
+      "score": 0.9
      },
      {
       "wk": 17,
       "opp": "CIN",
-      "score": 0.44
+      "score": 0.9
      },
      {
-      "wk": 2,
-      "opp": "NO",
-      "score": 0.39
+      "wk": 3,
+      "opp": "DAL",
+      "score": 0.69
      }
     ]
    }
@@ -952,33 +1000,45 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.76,
-    "peak": 1.81,
+    "n_levers": 4,
+    "mean": 1.06,
+    "peak": 2.15,
     "smash_weeks": [
+     6,
+     8,
      9,
+     11,
      12,
-     16
+     16,
+     17
     ],
-    "playoff_mean": 1.07,
+    "playoff_mean": 1.44,
     "best_wks": [
+     {
+      "wk": 12,
+      "opp": "KC",
+      "score": 2.15
+     },
      {
       "wk": 9,
       "opp": "MIN",
       "score": 1.81
      },
      {
-      "wk": 16,
-      "opp": "DEN",
-      "score": 1.74
-     },
-     {
-      "wk": 12,
-      "opp": "KC",
-      "score": 1.61
+      "wk": 11,
+      "opp": "MIA",
+      "score": 1.75
      }
     ]
    }
@@ -999,7 +1059,7 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.38,
+    "mean": 0.39,
     "peak": 0.73,
     "smash_weeks": [],
     "playoff_mean": 0.59,
@@ -1104,29 +1164,33 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.4,
-    "peak": 0.9,
+    "n_levers": 3,
+    "mean": 0.48,
+    "peak": 0.93,
     "smash_weeks": [],
-    "playoff_mean": 0.3,
+    "playoff_mean": 0.4,
     "best_wks": [
      {
       "wk": 14,
       "opp": "GB",
-      "score": 0.9
+      "score": 0.93
      },
      {
-      "wk": 10,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 6,
+      "opp": "LV",
+      "score": 0.83
      },
      {
-      "wk": 18,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 12,
+      "opp": "KC",
+      "score": 0.79
      }
     ]
    }
@@ -1139,28 +1203,32 @@
     {
      "type": "slot",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.26,
-    "peak": 0.8,
+    "n_levers": 2,
+    "mean": 0.34,
+    "peak": 0.83,
     "smash_weeks": [],
-    "playoff_mean": 0.19,
+    "playoff_mean": 0.3,
     "best_wks": [
-     {
-      "wk": 10,
-      "opp": "NYJ",
-      "score": 0.8
-     },
-     {
-      "wk": 18,
-      "opp": "NYJ",
-      "score": 0.8
-     },
      {
       "wk": 6,
       "opp": "LV",
+      "score": 0.83
+     },
+     {
+      "wk": 12,
+      "opp": "KC",
+      "score": 0.79
+     },
+     {
+      "wk": 10,
+      "opp": "NYJ",
       "score": 0.73
      }
     ]
@@ -1182,29 +1250,35 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.59,
-    "peak": 1.41,
-    "smash_weeks": [],
-    "playoff_mean": 0.64,
+    "n_levers": 4,
+    "mean": 0.66,
+    "peak": 1.5,
+    "smash_weeks": [
+     6
+    ],
+    "playoff_mean": 0.75,
     "best_wks": [
+     {
+      "wk": 6,
+      "opp": "LV",
+      "score": 1.5
+     },
      {
       "wk": 10,
       "opp": "NYJ",
-      "score": 1.41
+      "score": 1.33
      },
      {
       "wk": 18,
       "opp": "NYJ",
-      "score": 1.41
-     },
-     {
-      "wk": 6,
-      "opp": "LV",
-      "score": 1.4
+      "score": 1.33
      }
     ]
    }
@@ -1217,29 +1291,33 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.14,
-    "peak": 0.4,
+    "n_levers": 2,
+    "mean": 0.22,
+    "peak": 0.55,
     "smash_weeks": [],
-    "playoff_mean": 0.18,
+    "playoff_mean": 0.27,
     "best_wks": [
      {
-      "wk": 8,
-      "opp": "BAL",
-      "score": 0.4
+      "wk": 15,
+      "opp": "CHI",
+      "score": 0.55
      },
      {
       "wk": 6,
       "opp": "LV",
-      "score": 0.36
+      "score": 0.38
      },
      {
       "wk": 10,
       "opp": "NYJ",
-      "score": 0.36
+      "score": 0.34
      }
     ]
    }
@@ -1260,15 +1338,15 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.29,
-    "peak": 0.78,
+    "mean": 0.28,
+    "peak": 0.74,
     "smash_weeks": [],
     "playoff_mean": 0.28,
     "best_wks": [
      {
       "wk": 2,
       "opp": "DET",
-      "score": 0.78
+      "score": 0.74
      },
      {
       "wk": 15,
@@ -1283,6 +1361,41 @@
     ]
    }
   },
+  "Bryce Young": {
+   "pos": "QB",
+   "team": "CAR",
+   "rank": 155,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.17,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.47,
+    "best_wks": [
+     {
+      "wk": 15,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 1,
+      "opp": "CHI",
+      "score": 0.56
+     },
+     {
+      "wk": 7,
+      "opp": "TB",
+      "score": 0.56
+     }
+    ]
+   }
+  },
   "Chuba Hubbard": {
    "pos": "RB",
    "team": "CAR",
@@ -1291,29 +1404,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.2,
-    "peak": 0.71,
+    "n_levers": 2,
+    "mean": 0.36,
+    "peak": 0.99,
     "smash_weeks": [],
-    "playoff_mean": 0.35,
+    "playoff_mean": 0.64,
     "best_wks": [
      {
-      "wk": 8,
-      "opp": "GB",
-      "score": 0.71
-     },
-     {
-      "wk": 13,
-      "opp": "MIN",
-      "score": 0.65
+      "wk": 15,
+      "opp": "CIN",
+      "score": 0.99
      },
      {
       "wk": 7,
       "opp": "TB",
-      "score": 0.63
+      "score": 0.98
+     },
+     {
+      "wk": 12,
+      "opp": "TB",
+      "score": 0.98
      }
     ]
    }
@@ -1326,29 +1443,33 @@
     {
      "type": "contested",
      "tier": "tendency"
+    },
+    {
+     "type": "boundary",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.16,
-    "peak": 0.5,
+    "n_levers": 2,
+    "mean": 0.53,
+    "peak": 1.48,
     "smash_weeks": [],
-    "playoff_mean": 0.31,
+    "playoff_mean": 0.86,
     "best_wks": [
      {
       "wk": 15,
       "opp": "CIN",
-      "score": 0.5
+      "score": 1.48
      },
      {
-      "wk": 6,
-      "opp": "PHI",
-      "score": 0.48
+      "wk": 3,
+      "opp": "CLE",
+      "score": 1.14
      },
      {
-      "wk": 13,
-      "opp": "MIN",
-      "score": 0.45
+      "wk": 7,
+      "opp": "TB",
+      "score": 0.95
      }
     ]
    }
@@ -1369,27 +1490,27 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.67,
-    "peak": 1.89,
+    "mean": 0.69,
+    "peak": 1.98,
     "smash_weeks": [
      15
     ],
-    "playoff_mean": 1.12,
+    "playoff_mean": 1.16,
     "best_wks": [
      {
       "wk": 15,
       "opp": "CIN",
-      "score": 1.89
+      "score": 1.98
      },
      {
       "wk": 3,
       "opp": "CLE",
-      "score": 1.22
+      "score": 1.47
      },
      {
-      "wk": 11,
-      "opp": "BAL",
-      "score": 1.16
+      "wk": 6,
+      "opp": "PHI",
+      "score": 0.97
      }
     ]
    }
@@ -1406,25 +1527,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.35,
-    "peak": 0.89,
+    "mean": 0.37,
+    "peak": 0.98,
     "smash_weeks": [],
-    "playoff_mean": 0.51,
+    "playoff_mean": 0.55,
     "best_wks": [
      {
       "wk": 15,
       "opp": "CIN",
-      "score": 0.89
+      "score": 0.98
      },
      {
       "wk": 7,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.95
      },
      {
       "wk": 12,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.95
      }
     ]
    }
@@ -1474,31 +1595,35 @@
      "tier": "solid"
     },
     {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
      "type": "shootout",
      "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.62,
-    "peak": 1.32,
+    "n_levers": 3,
+    "mean": 0.64,
+    "peak": 1.37,
     "smash_weeks": [],
-    "playoff_mean": 0.4,
+    "playoff_mean": 0.51,
     "best_wks": [
+     {
+      "wk": 8,
+      "opp": "SEA",
+      "score": 1.37
+     },
+     {
+      "wk": 15,
+      "opp": "BUF",
+      "score": 1.27
+     },
      {
       "wk": 14,
       "opp": "MIA",
-      "score": 1.32
-     },
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 1.31
-     },
-     {
-      "wk": 3,
-      "opp": "PHI",
-      "score": 0.97
+      "score": 1.01
      }
     ]
    }
@@ -1515,25 +1640,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.83,
+    "mean": 0.13,
+    "peak": 0.62,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.2,
     "best_wks": [
+     {
+      "wk": 7,
+      "opp": "NE",
+      "score": 0.62
+     },
+     {
+      "wk": 15,
+      "opp": "BUF",
+      "score": 0.6
+     },
      {
       "wk": 9,
       "opp": "TB",
-      "score": 0.83
-     },
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 0.8
-     },
-     {
-      "wk": 11,
-      "opp": "NO",
-      "score": 0.7
+      "score": 0.56
      }
     ]
    }
@@ -1546,103 +1671,29 @@
     {
      "type": "man_beater",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 2,
-    "mean": 0.42,
-    "peak": 1.06,
-    "smash_weeks": [],
-    "playoff_mean": 0.29,
-    "best_wks": [
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 1.06
-     },
-     {
-      "wk": 14,
-      "opp": "MIA",
-      "score": 0.95
-     },
-     {
-      "wk": 9,
-      "opp": "TB",
-      "score": 0.83
-     }
-    ]
-   }
-  },
-  "Kyle Monangai": {
-   "pos": "RB",
-   "team": "CHI",
-   "rank": 104,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.83,
+    "mean": 0.2,
+    "peak": 0.48,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.11,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "TB",
-      "score": 0.83
+      "wk": 3,
+      "opp": "PHI",
+      "score": 0.48
      },
      {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 13,
+      "opp": "JAX",
+      "score": 0.47
      },
      {
-      "wk": 11,
-      "opp": "NO",
-      "score": 0.7
-     }
-    ]
-   }
-  },
-  "Luther Burden III": {
-   "pos": "WR",
-   "team": "CHI",
-   "rank": 43,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.83,
-    "smash_weeks": [],
-    "playoff_mean": 0.17,
-    "best_wks": [
-     {
-      "wk": 9,
-      "opp": "TB",
-      "score": 0.83
-     },
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 0.8
-     },
-     {
-      "wk": 11,
-      "opp": "NO",
-      "score": 0.7
+      "wk": 2,
+      "opp": "MIN",
+      "score": 0.45
      }
     ]
    }
@@ -1662,69 +1713,32 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 0.55,
-    "peak": 2.01,
+    "mean": 0.41,
+    "peak": 1.62,
     "smash_weeks": [
-     4,
-     9,
-     11
+     9
     ],
-    "playoff_mean": 0.45,
+    "playoff_mean": 0.37,
     "best_wks": [
      {
       "wk": 9,
       "opp": "TB",
-      "score": 2.01
-     },
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 1.95
+      "score": 1.62
      },
      {
       "wk": 11,
       "opp": "NO",
-      "score": 1.79
-     }
-    ]
-   }
-  },
-  "Zavion Thomas": {
-   "pos": "WR",
-   "team": "CHI",
-   "rank": 310,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.83,
-    "smash_weeks": [],
-    "playoff_mean": 0.17,
-    "best_wks": [
-     {
-      "wk": 9,
-      "opp": "TB",
-      "score": 0.83
+      "score": 1.28
      },
      {
       "wk": 4,
       "opp": "NYJ",
-      "score": 0.8
-     },
-     {
-      "wk": 11,
-      "opp": "NO",
-      "score": 0.7
+      "score": 1.07
      }
     ]
    }
@@ -1741,36 +1755,29 @@
     {
      "type": "gets_open_man",
      "tier": "solid"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.82,
-    "peak": 1.69,
-    "smash_weeks": [
-     4,
-     14
-    ],
-    "playoff_mean": 0.51,
+    "n_levers": 2,
+    "mean": 0.6,
+    "peak": 1.45,
+    "smash_weeks": [],
+    "playoff_mean": 0.34,
     "best_wks": [
-     {
-      "wk": 14,
-      "opp": "MIA",
-      "score": 1.69
-     },
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 1.57
-     },
      {
       "wk": 3,
       "opp": "PHI",
       "score": 1.45
+     },
+     {
+      "wk": 13,
+      "opp": "JAX",
+      "score": 1.4
+     },
+     {
+      "wk": 2,
+      "opp": "MIN",
+      "score": 1.35
      }
     ]
    }
@@ -1781,31 +1788,31 @@
    "rank": 326,
    "levers": [
     {
-     "type": "shootout",
+     "type": "boundary",
      "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.83,
+    "mean": 0.24,
+    "peak": 0.95,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.18,
     "best_wks": [
      {
       "wk": 9,
       "opp": "TB",
-      "score": 0.83
-     },
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 0.8
+      "score": 0.95
      },
      {
       "wk": 11,
       "opp": "NO",
-      "score": 0.7
+      "score": 0.86
+     },
+     {
+      "wk": 4,
+      "opp": "NYJ",
+      "score": 0.73
      }
     ]
    }
@@ -1818,33 +1825,29 @@
     {
      "type": "zone_beater",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.4,
-    "peak": 1.2,
+    "n_levers": 1,
+    "mean": 0.18,
+    "peak": 0.48,
     "smash_weeks": [],
-    "playoff_mean": 0.46,
+    "playoff_mean": 0.29,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "TB",
-      "score": 1.2
+      "wk": 6,
+      "opp": "ATL",
+      "score": 0.48
      },
      {
-      "wk": 11,
-      "opp": "NO",
-      "score": 0.98
+      "wk": 12,
+      "opp": "DET",
+      "score": 0.47
      },
      {
-      "wk": 5,
-      "opp": "GB",
-      "score": 0.9
+      "wk": 17,
+      "opp": "DET",
+      "score": 0.47
      }
     ]
    }
@@ -1857,68 +1860,29 @@
     {
      "type": "vertical",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 2,
-    "mean": 0.33,
-    "peak": 1.18,
-    "smash_weeks": [],
-    "playoff_mean": 0.28,
-    "best_wks": [
-     {
-      "wk": 9,
-      "opp": "TB",
-      "score": 1.18
-     },
-     {
-      "wk": 4,
-      "opp": "NYJ",
-      "score": 1.15
-     },
-     {
-      "wk": 11,
-      "opp": "NO",
-      "score": 1.09
-     }
-    ]
-   }
-  },
-  "Sam Roush": {
-   "pos": "TE",
-   "team": "CHI",
-   "rank": 359,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.83,
+    "mean": 0.11,
+    "peak": 0.43,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.09,
     "best_wks": [
+     {
+      "wk": 11,
+      "opp": "NO",
+      "score": 0.43
+     },
      {
       "wk": 9,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.39
      },
      {
       "wk": 4,
       "opp": "NYJ",
-      "score": 0.8
-     },
-     {
-      "wk": 11,
-      "opp": "NO",
-      "score": 0.7
+      "score": 0.34
      }
     ]
    }
@@ -1935,25 +1899,20 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.45,
-    "peak": 0.92,
+    "mean": 0.06,
+    "peak": 0.56,
     "smash_weeks": [],
-    "playoff_mean": 0.43,
+    "playoff_mean": 0.0,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 0.92
-     },
-     {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 0.86
-     },
      {
       "wk": 1,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.56
+     },
+     {
+      "wk": 14,
+      "opp": "KC",
+      "score": 0.54
      }
     ]
    }
@@ -1970,25 +1929,20 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.45,
-    "peak": 0.92,
+    "mean": 0.06,
+    "peak": 0.56,
     "smash_weeks": [],
-    "playoff_mean": 0.43,
+    "playoff_mean": 0.0,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 0.92
-     },
-     {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 0.86
-     },
      {
       "wk": 1,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.56
+     },
+     {
+      "wk": 14,
+      "opp": "KC",
+      "score": 0.54
      }
     ]
    }
@@ -2008,104 +1962,30 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 0.79,
-    "peak": 2.19,
-    "smash_weeks": [
-     1,
-     8,
-     11
-    ],
-    "playoff_mean": 0.43,
-    "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 2.19
-     },
-     {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 2.04
-     },
-     {
-      "wk": 1,
-      "opp": "TB",
-      "score": 1.83
-     }
-    ]
-   }
-  },
-  "Samaje Perine": {
-   "pos": "RB",
-   "team": "CIN",
-   "rank": 241,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.45,
-    "peak": 0.92,
+    "mean": 0.39,
+    "peak": 1.35,
     "smash_weeks": [],
-    "playoff_mean": 0.43,
+    "playoff_mean": 0.0,
     "best_wks": [
+     {
+      "wk": 1,
+      "opp": "TB",
+      "score": 1.35
+     },
      {
       "wk": 11,
       "opp": "WAS",
-      "score": 0.92
+      "score": 1.27
      },
      {
       "wk": 8,
       "opp": "TEN",
-      "score": 0.86
-     },
-     {
-      "wk": 1,
-      "opp": "TB",
-      "score": 0.83
-     }
-    ]
-   }
-  },
-  "Tahj Brooks": {
-   "pos": "RB",
-   "team": "CIN",
-   "rank": 389,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.45,
-    "peak": 0.92,
-    "smash_weeks": [],
-    "playoff_mean": 0.43,
-    "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 0.92
-     },
-     {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 0.86
-     },
-     {
-      "wk": 1,
-      "opp": "TB",
-      "score": 0.83
+      "score": 1.04
      }
     ]
    }
@@ -2129,43 +2009,36 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 4,
-    "mean": 1.67,
-    "peak": 2.8,
+    "mean": 1.2,
+    "peak": 2.12,
     "smash_weeks": [
      1,
-     3,
      5,
-     7,
-     8,
-     10,
      11,
      12,
-     13,
-     16,
-     17,
-     18
+     14
     ],
-    "playoff_mean": 1.93,
+    "playoff_mean": 1.14,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 2.8
-     },
-     {
-      "wk": 16,
-      "opp": "IND",
-      "score": 2.7
-     },
      {
       "wk": 1,
       "opp": "TB",
-      "score": 2.41
+      "score": 2.12
+     },
+     {
+      "wk": 14,
+      "opp": "KC",
+      "score": 2.09
+     },
+     {
+      "wk": 5,
+      "opp": "MIA",
+      "score": 1.93
      }
     ]
    }
@@ -2189,39 +2062,36 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 4,
-    "mean": 1.48,
-    "peak": 2.8,
+    "mean": 1.01,
+    "peak": 2.12,
     "smash_weeks": [
      1,
-     3,
      5,
-     8,
-     10,
      11,
      12,
-     16
+     14
     ],
-    "playoff_mean": 1.58,
+    "playoff_mean": 0.79,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 2.8
-     },
      {
       "wk": 1,
       "opp": "TB",
-      "score": 2.41
+      "score": 2.12
      },
      {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 2.33
+      "wk": 11,
+      "opp": "WAS",
+      "score": 1.88
+     },
+     {
+      "wk": 12,
+      "opp": "NO",
+      "score": 1.76
      }
     ]
    }
@@ -2238,73 +2108,29 @@
     {
      "type": "contested",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 1.04,
-    "peak": 1.83,
-    "smash_weeks": [
-     5,
-     13,
-     16,
-     18
-    ],
-    "playoff_mean": 1.46,
+    "n_levers": 2,
+    "mean": 0.59,
+    "peak": 1.4,
+    "smash_weeks": [],
+    "playoff_mean": 1.06,
     "best_wks": [
+     {
+      "wk": 4,
+      "opp": "JAX",
+      "score": 1.4
+     },
+     {
+      "wk": 14,
+      "opp": "KC",
+      "score": 1.21
+     },
      {
       "wk": 16,
       "opp": "IND",
-      "score": 1.83
-     },
-     {
-      "wk": 5,
-      "opp": "MIA",
-      "score": 1.69
-     },
-     {
-      "wk": 13,
-      "opp": "CLE",
-      "score": 1.56
-     }
-    ]
-   }
-  },
-  "Colbie Young": {
-   "pos": "WR",
-   "team": "CIN",
-   "rank": 364,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.45,
-    "peak": 0.92,
-    "smash_weeks": [],
-    "playoff_mean": 0.43,
-    "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 0.92
-     },
-     {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 0.86
-     },
-     {
-      "wk": 1,
-      "opp": "TB",
-      "score": 0.83
+      "score": 1.16
      }
     ]
    }
@@ -2320,65 +2146,30 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.65,
-    "peak": 1.06,
+    "mean": 0.23,
+    "peak": 0.67,
     "smash_weeks": [],
-    "playoff_mean": 0.77,
+    "playoff_mean": 0.36,
     "best_wks": [
+     {
+      "wk": 14,
+      "opp": "KC",
+      "score": 0.67
+     },
+     {
+      "wk": 4,
+      "opp": "JAX",
+      "score": 0.47
+     },
      {
       "wk": 16,
       "opp": "IND",
-      "score": 1.06
-     },
-     {
-      "wk": 5,
-      "opp": "MIA",
-      "score": 0.95
-     },
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 0.92
-     }
-    ]
-   }
-  },
-  "Jack Endries": {
-   "pos": "TE",
-   "team": "CIN",
-   "rank": 308,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.45,
-    "peak": 0.92,
-    "smash_weeks": [],
-    "playoff_mean": 0.43,
-    "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 0.92
-     },
-     {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 0.86
-     },
-     {
-      "wk": 1,
-      "opp": "TB",
-      "score": 0.83
+      "score": 0.39
      }
     ]
    }
@@ -2390,30 +2181,25 @@
    "levers": [
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.45,
-    "peak": 0.92,
+    "mean": 0.03,
+    "peak": 0.28,
     "smash_weeks": [],
-    "playoff_mean": 0.43,
+    "playoff_mean": 0.0,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "WAS",
-      "score": 0.92
-     },
-     {
-      "wk": 8,
-      "opp": "TEN",
-      "score": 0.86
-     },
      {
       "wk": 1,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.28
+     },
+     {
+      "wk": 14,
+      "opp": "KC",
+      "score": 0.27
      }
     ]
    }
@@ -2426,24 +2212,31 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.4,
-    "peak": 1.0,
-    "smash_weeks": [],
-    "playoff_mean": 0.44,
+    "n_levers": 2,
+    "mean": 0.54,
+    "peak": 1.88,
+    "smash_weeks": [
+     13,
+     18
+    ],
+    "playoff_mean": 0.46,
     "best_wks": [
      {
       "wk": 13,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
       "wk": 18,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
       "wk": 1,
@@ -2461,24 +2254,31 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.4,
-    "peak": 1.0,
-    "smash_weeks": [],
-    "playoff_mean": 0.44,
+    "n_levers": 2,
+    "mean": 0.54,
+    "peak": 1.88,
+    "smash_weeks": [
+     13,
+     18
+    ],
+    "playoff_mean": 0.46,
     "best_wks": [
      {
       "wk": 13,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
       "wk": 18,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
       "wk": 1,
@@ -2496,29 +2296,33 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.55,
-    "peak": 0.95,
+    "n_levers": 2,
+    "mean": 0.54,
+    "peak": 1.42,
     "smash_weeks": [],
-    "playoff_mean": 0.74,
+    "playoff_mean": 0.45,
     "best_wks": [
-     {
-      "wk": 15,
-      "opp": "NYG",
-      "score": 0.95
-     },
      {
       "wk": 13,
       "opp": "CIN",
-      "score": 0.89
+      "score": 1.42
      },
      {
       "wk": 18,
       "opp": "CIN",
-      "score": 0.89
+      "score": 1.42
+     },
+     {
+      "wk": 2,
+      "opp": "TB",
+      "score": 1.23
      }
     ]
    }
@@ -2539,28 +2343,28 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.95,
-    "peak": 1.89,
+    "mean": 0.88,
+    "peak": 1.98,
     "smash_weeks": [
      13,
      18
     ],
-    "playoff_mean": 1.19,
+    "playoff_mean": 0.91,
     "best_wks": [
      {
       "wk": 13,
       "opp": "CIN",
-      "score": 1.89
+      "score": 1.98
      },
      {
       "wk": 18,
       "opp": "CIN",
-      "score": 1.89
+      "score": 1.98
      },
      {
       "wk": 17,
       "opp": "IND",
-      "score": 1.45
+      "score": 1.42
      }
     ]
    }
@@ -2580,7 +2384,7 @@
     "mean": 0.2,
     "peak": 0.5,
     "smash_weeks": [],
-    "playoff_mean": 0.22,
+    "playoff_mean": 0.23,
     "best_wks": [
      {
       "wk": 13,
@@ -2616,25 +2420,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.77,
-    "peak": 1.45,
+    "mean": 0.48,
+    "peak": 1.37,
     "smash_weeks": [],
-    "playoff_mean": 0.63,
+    "playoff_mean": 0.53,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "IND",
-      "score": 1.45
+      "wk": 13,
+      "opp": "SEA",
+      "score": 1.37
      },
      {
-      "wk": 3,
-      "opp": "BAL",
-      "score": 1.16
+      "wk": 7,
+      "opp": "PHI",
+      "score": 0.97
      },
      {
-      "wk": 8,
-      "opp": "ARI",
-      "score": 0.98
+      "wk": 12,
+      "opp": "PHI",
+      "score": 0.97
      }
     ]
    }
@@ -2651,165 +2455,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.46,
-    "peak": 0.98,
+    "mean": 0.17,
+    "peak": 0.66,
     "smash_weeks": [],
-    "playoff_mean": 0.32,
+    "playoff_mean": 0.22,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "LAR",
+      "score": 0.66
+     },
      {
       "wk": 8,
       "opp": "ARI",
-      "score": 0.98
+      "score": 0.63
      },
      {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 0.95
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Javonte Williams": {
-   "pos": "RB",
-   "team": "DAL",
-   "rank": 33,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.46,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.32,
-    "best_wks": [
-     {
-      "wk": 8,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 0.95
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Jaydon Blue": {
-   "pos": "RB",
-   "team": "DAL",
-   "rank": 216,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.46,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.32,
-    "best_wks": [
-     {
-      "wk": 8,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 0.95
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Malik Davis": {
-   "pos": "RB",
-   "team": "DAL",
-   "rank": 292,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.46,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.32,
-    "best_wks": [
-     {
-      "wk": 8,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 0.95
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Phil Mafah": {
-   "pos": "RB",
-   "team": "DAL",
-   "rank": 361,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.46,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.32,
-    "best_wks": [
-     {
-      "wk": 8,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 0.95
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 10,
+      "opp": "SF",
+      "score": 0.6
      }
     ]
    }
@@ -2829,38 +2493,30 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 1.14,
-    "peak": 2.02,
-    "smash_weeks": [
-     1,
-     2,
-     5,
-     8,
-     9,
-     17,
-     18
-    ],
-    "playoff_mean": 0.84,
+    "mean": 0.68,
+    "peak": 1.17,
+    "smash_weeks": [],
+    "playoff_mean": 0.6,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "IND",
-      "score": 2.02
+      "wk": 5,
+      "opp": "TB",
+      "score": 1.17
+     },
+     {
+      "wk": 13,
+      "opp": "SEA",
+      "score": 1.11
      },
      {
       "wk": 8,
       "opp": "ARI",
-      "score": 1.92
-     },
-     {
-      "wk": 2,
-      "opp": "WAS",
-      "score": 1.88
+      "score": 1.08
      }
     ]
    }
@@ -2888,41 +2544,37 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 5,
-    "mean": 1.75,
-    "peak": 3.08,
+    "mean": 1.22,
+    "peak": 2.12,
     "smash_weeks": [
-     1,
      2,
-     3,
      5,
-     6,
      8,
      9,
-     11,
-     17,
+     13,
      18
     ],
-    "playoff_mean": 1.32,
+    "playoff_mean": 0.98,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "IND",
-      "score": 3.08
+      "wk": 5,
+      "opp": "TB",
+      "score": 2.12
      },
      {
       "wk": 8,
       "opp": "ARI",
-      "score": 2.91
+      "score": 1.97
      },
      {
       "wk": 2,
       "opp": "WAS",
-      "score": 2.8
+      "score": 1.88
      }
     ]
    }
@@ -2942,39 +2594,30 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 1.07,
-    "peak": 1.97,
-    "smash_weeks": [
-     1,
-     2,
-     5,
-     8,
-     9,
-     11,
-     17,
-     18
-    ],
-    "playoff_mean": 0.79,
+    "mean": 0.62,
+    "peak": 1.23,
+    "smash_weeks": [],
+    "playoff_mean": 0.5,
     "best_wks": [
+     {
+      "wk": 5,
+      "opp": "TB",
+      "score": 1.23
+     },
      {
       "wk": 8,
       "opp": "ARI",
-      "score": 1.97
+      "score": 1.21
      },
      {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 1.91
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 1.91
+      "wk": 9,
+      "opp": "IND",
+      "score": 1.03
      }
     ]
    }
@@ -2990,38 +2633,30 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.91,
-    "peak": 1.97,
-    "smash_weeks": [
-     1,
-     2,
-     5,
-     8,
-     11,
-     17,
-     18
-    ],
-    "playoff_mean": 0.64,
+    "mean": 0.46,
+    "peak": 1.23,
+    "smash_weeks": [],
+    "playoff_mean": 0.34,
     "best_wks": [
+     {
+      "wk": 5,
+      "opp": "TB",
+      "score": 1.23
+     },
      {
       "wk": 8,
       "opp": "ARI",
-      "score": 1.97
+      "score": 1.21
      },
      {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 1.91
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 1.91
+      "wk": 2,
+      "opp": "WAS",
+      "score": 0.92
      }
     ]
    }
@@ -3037,38 +2672,38 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.65,
-    "peak": 1.37,
+    "mean": 0.28,
+    "peak": 0.67,
     "smash_weeks": [],
-    "playoff_mean": 0.55,
+    "playoff_mean": 0.35,
     "best_wks": [
-     {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 1.37
-     },
-     {
-      "wk": 17,
-      "opp": "NYG",
-      "score": 1.37
-     },
      {
       "wk": 8,
       "opp": "ARI",
-      "score": 1.34
+      "score": 0.67
+     },
+     {
+      "wk": 5,
+      "opp": "TB",
+      "score": 0.65
+     },
+     {
+      "wk": 15,
+      "opp": "LAR",
+      "score": 0.62
      }
     ]
    }
   },
-  "Michael Trigg": {
-   "pos": "TE",
-   "team": "DAL",
-   "rank": 293,
+  "Bo Nix": {
+   "pos": "QB",
+   "team": "DEN",
+   "rank": 110,
    "levers": [
     {
      "type": "shootout",
@@ -3077,25 +2712,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.46,
-    "peak": 0.98,
+    "mean": 0.26,
+    "peak": 0.66,
     "smash_weeks": [],
-    "playoff_mean": 0.32,
+    "playoff_mean": 0.41,
     "best_wks": [
      {
-      "wk": 8,
-      "opp": "ARI",
-      "score": 0.98
+      "wk": 3,
+      "opp": "LAR",
+      "score": 0.66
      },
      {
-      "wk": 1,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 7,
+      "opp": "ARI",
+      "score": 0.63
      },
      {
       "wk": 17,
-      "opp": "NYG",
-      "score": 0.95
+      "opp": "NE",
+      "score": 0.62
      }
     ]
    }
@@ -3108,29 +2743,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.38,
-    "peak": 0.96,
+    "n_levers": 2,
+    "mean": 0.54,
+    "peak": 1.23,
     "smash_weeks": [],
-    "playoff_mean": 0.18,
+    "playoff_mean": 0.6,
     "best_wks": [
      {
       "wk": 7,
       "opp": "ARI",
-      "score": 0.96
+      "score": 1.23
      },
      {
-      "wk": 5,
-      "opp": "LAC",
-      "score": 0.65
+      "wk": 3,
+      "opp": "LAR",
+      "score": 0.95
      },
      {
-      "wk": 18,
-      "opp": "LAC",
-      "score": 0.65
+      "wk": 6,
+      "opp": "SEA",
+      "score": 0.93
      }
     ]
    }
@@ -3182,29 +2821,36 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.65,
-    "peak": 1.35,
-    "smash_weeks": [],
-    "playoff_mean": 0.68,
+    "n_levers": 3,
+    "mean": 0.84,
+    "peak": 1.59,
+    "smash_weeks": [
+     1,
+     8
+    ],
+    "playoff_mean": 0.9,
     "best_wks": [
+     {
+      "wk": 1,
+      "opp": "KC",
+      "score": 1.59
+     },
+     {
+      "wk": 8,
+      "opp": "KC",
+      "score": 1.59
+     },
      {
       "wk": 11,
       "opp": "LV",
-      "score": 1.35
-     },
-     {
-      "wk": 15,
-      "opp": "LV",
-      "score": 1.35
-     },
-     {
-      "wk": 13,
-      "opp": "MIA",
-      "score": 1.32
+      "score": 1.41
      }
     ]
    }
@@ -3237,8 +2883,8 @@
    ],
    "summary": {
     "n_levers": 5,
-    "mean": 1.26,
-    "peak": 2.47,
+    "mean": 1.27,
+    "peak": 2.57,
     "smash_weeks": [
      1,
      7,
@@ -3248,24 +2894,25 @@
      12,
      13,
      14,
-     15
+     15,
+     16
     ],
-    "playoff_mean": 1.01,
+    "playoff_mean": 1.23,
     "best_wks": [
      {
       "wk": 13,
       "opp": "MIA",
-      "score": 2.47
+      "score": 2.57
      },
      {
-      "wk": 7,
-      "opp": "ARI",
-      "score": 2.19
+      "wk": 1,
+      "opp": "KC",
+      "score": 2.23
      },
      {
-      "wk": 11,
-      "opp": "LV",
-      "score": 2.01
+      "wk": 8,
+      "opp": "KC",
+      "score": 2.23
      }
     ]
    }
@@ -3282,29 +2929,68 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.53,
-    "peak": 1.0,
+    "n_levers": 3,
+    "mean": 0.65,
+    "peak": 1.11,
     "smash_weeks": [],
-    "playoff_mean": 0.55,
+    "playoff_mean": 0.75,
     "best_wks": [
      {
-      "wk": 13,
-      "opp": "MIA",
-      "score": 1.0
+      "wk": 6,
+      "opp": "SEA",
+      "score": 1.11
+     },
+     {
+      "wk": 1,
+      "opp": "KC",
+      "score": 1.08
+     },
+     {
+      "wk": 8,
+      "opp": "KC",
+      "score": 1.08
+     }
+    ]
+   }
+  },
+  "Pat Bryant": {
+   "pos": "WR",
+   "team": "DEN",
+   "rank": 236,
+   "levers": [
+    {
+     "type": "slot",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.31,
+    "peak": 0.89,
+    "smash_weeks": [],
+    "playoff_mean": 0.28,
+    "best_wks": [
+     {
+      "wk": 7,
+      "opp": "ARI",
+      "score": 0.89
      },
      {
       "wk": 11,
       "opp": "LV",
-      "score": 0.97
+      "score": 0.83
      },
      {
       "wk": 15,
       "opp": "LV",
-      "score": 0.97
+      "score": 0.83
      }
     ]
    }
@@ -3325,29 +3011,36 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.58,
-    "peak": 1.41,
-    "smash_weeks": [],
-    "playoff_mean": 0.58,
+    "n_levers": 4,
+    "mean": 0.76,
+    "peak": 1.5,
+    "smash_weeks": [
+     11,
+     15
+    ],
+    "playoff_mean": 0.82,
     "best_wks": [
-     {
-      "wk": 14,
-      "opp": "NYJ",
-      "score": 1.41
-     },
      {
       "wk": 11,
       "opp": "LV",
-      "score": 1.4
+      "score": 1.5
      },
      {
       "wk": 15,
       "opp": "LV",
-      "score": 1.4
+      "score": 1.5
+     },
+     {
+      "wk": 14,
+      "opp": "NYJ",
+      "score": 1.33
      }
     ]
    }
@@ -3360,29 +3053,33 @@
     {
      "type": "zone_beater",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.11,
-    "peak": 0.44,
+    "n_levers": 2,
+    "mean": 0.24,
+    "peak": 0.74,
     "smash_weeks": [],
-    "playoff_mean": 0.15,
+    "playoff_mean": 0.35,
     "best_wks": [
      {
       "wk": 17,
       "opp": "NE",
-      "score": 0.44
+      "score": 0.74
      },
      {
       "wk": 7,
       "opp": "ARI",
-      "score": 0.35
+      "score": 0.67
      },
      {
-      "wk": 5,
-      "opp": "LAC",
-      "score": 0.32
+      "wk": 3,
+      "opp": "LAR",
+      "score": 0.62
      }
     ]
    }
@@ -3403,25 +3100,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.62,
-    "peak": 1.32,
+    "mean": 0.44,
+    "peak": 1.27,
     "smash_weeks": [],
-    "playoff_mean": 0.62,
+    "playoff_mean": 0.49,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "MIA",
-      "score": 1.32
+      "wk": 2,
+      "opp": "BUF",
+      "score": 1.27
      },
      {
-      "wk": 3,
-      "opp": "NYJ",
-      "score": 1.31
+      "wk": 8,
+      "opp": "MIN",
+      "score": 0.9
      },
      {
-      "wk": 5,
-      "opp": "ARI",
-      "score": 0.98
+      "wk": 15,
+      "opp": "MIN",
+      "score": 0.9
      }
     ]
    }
@@ -3441,105 +3138,32 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 0.96,
-    "peak": 2.43,
+    "mean": 0.73,
+    "peak": 1.71,
     "smash_weeks": [
-     3,
-     5,
-     14,
-     16
+     5
     ],
-    "playoff_mean": 1.04,
+    "playoff_mean": 0.75,
     "best_wks": [
      {
       "wk": 5,
       "opp": "ARI",
-      "score": 2.43
+      "score": 1.71
+     },
+     {
+      "wk": 2,
+      "opp": "BUF",
+      "score": 1.26
      },
      {
       "wk": 16,
       "opp": "NYG",
-      "score": 2.1
-     },
-     {
-      "wk": 3,
-      "opp": "NYJ",
-      "score": 1.67
-     }
-    ]
-   }
-  },
-  "Isiah Pacheco": {
-   "pos": "RB",
-   "team": "DET",
-   "rank": 150,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.32,
-    "best_wks": [
-     {
-      "wk": 5,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 0.95
-     },
-     {
-      "wk": 14,
-      "opp": "TEN",
-      "score": 0.86
-     }
-    ]
-   }
-  },
-  "Sione Vaki": {
-   "pos": "RB",
-   "team": "DET",
-   "rank": 327,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.32,
-    "best_wks": [
-     {
-      "wk": 5,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 0.95
-     },
-     {
-      "wk": 14,
-      "opp": "TEN",
-      "score": 0.86
+      "score": 1.03
      }
     ]
    }
@@ -3559,36 +3183,32 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 1.02,
-    "peak": 1.92,
+    "mean": 0.8,
+    "peak": 1.57,
     "smash_weeks": [
-     1,
-     5,
-     9,
-     11,
-     16
+     2
     ],
-    "playoff_mean": 1.0,
+    "playoff_mean": 0.92,
     "best_wks": [
      {
-      "wk": 5,
-      "opp": "ARI",
-      "score": 1.92
+      "wk": 2,
+      "opp": "BUF",
+      "score": 1.57
      },
      {
-      "wk": 9,
-      "opp": "MIA",
-      "score": 1.84
+      "wk": 8,
+      "opp": "MIN",
+      "score": 1.42
      },
      {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 1.59
+      "wk": 15,
+      "opp": "MIN",
+      "score": 1.42
      }
     ]
    }
@@ -3605,40 +3225,29 @@
     {
      "type": "boundary",
      "tier": "solid"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 1.0,
-    "peak": 2.11,
-    "smash_weeks": [
-     3,
-     5,
-     9,
-     11,
-     14,
-     16
-    ],
-    "playoff_mean": 0.94,
+    "n_levers": 2,
+    "mean": 0.61,
+    "peak": 1.35,
+    "smash_weeks": [],
+    "playoff_mean": 0.53,
     "best_wks": [
+     {
+      "wk": 9,
+      "opp": "MIA",
+      "score": 1.35
+     },
      {
       "wk": 3,
       "opp": "NYJ",
-      "score": 2.11
+      "score": 1.25
      },
      {
-      "wk": 5,
-      "opp": "ARI",
-      "score": 1.97
-     },
-     {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 1.91
+      "wk": 11,
+      "opp": "TB",
+      "score": 0.95
      }
     ]
    }
@@ -3653,31 +3262,31 @@
      "tier": "tendency"
     },
     {
-     "type": "shootout",
+     "type": "boundary",
      "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.61,
-    "peak": 1.37,
+    "mean": 0.59,
+    "peak": 1.32,
     "smash_weeks": [],
-    "playoff_mean": 0.56,
+    "playoff_mean": 0.48,
     "best_wks": [
      {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 1.37
+      "wk": 11,
+      "opp": "TB",
+      "score": 1.32
      },
      {
       "wk": 5,
       "opp": "ARI",
-      "score": 1.34
+      "score": 1.25
      },
      {
-      "wk": 14,
-      "opp": "TEN",
-      "score": 1.31
+      "wk": 1,
+      "opp": "NO",
+      "score": 1.13
      }
     ]
    }
@@ -3694,40 +3303,29 @@
     {
      "type": "vertical",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.91,
-    "peak": 2.27,
-    "smash_weeks": [
-     1,
-     3,
-     5,
-     11,
-     14,
-     16
-    ],
-    "playoff_mean": 0.85,
+    "n_levers": 2,
+    "mean": 0.48,
+    "peak": 1.34,
+    "smash_weeks": [],
+    "playoff_mean": 0.42,
     "best_wks": [
      {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 2.27
+      "wk": 11,
+      "opp": "TB",
+      "score": 1.34
      },
      {
-      "wk": 5,
-      "opp": "ARI",
-      "score": 2.24
+      "wk": 1,
+      "opp": "NO",
+      "score": 1.28
      },
      {
-      "wk": 14,
-      "opp": "TEN",
-      "score": 2.03
+      "wk": 3,
+      "opp": "NYJ",
+      "score": 1.07
      }
     ]
    }
@@ -3739,30 +3337,30 @@
    "levers": [
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
+    "mean": 0.1,
+    "peak": 0.31,
     "smash_weeks": [],
-    "playoff_mean": 0.32,
+    "playoff_mean": 0.09,
     "best_wks": [
      {
       "wk": 5,
       "opp": "ARI",
-      "score": 0.98
+      "score": 0.31
      },
      {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 10,
+      "opp": "NE",
+      "score": 0.31
      },
      {
-      "wk": 14,
-      "opp": "TEN",
-      "score": 0.86
+      "wk": 2,
+      "opp": "BUF",
+      "score": 0.3
      }
     ]
    }
@@ -3775,6 +3373,41 @@
     {
      "type": "zone_beater",
      "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.23,
+    "peak": 0.48,
+    "smash_weeks": [],
+    "playoff_mean": 0.24,
+    "best_wks": [
+     {
+      "wk": 13,
+      "opp": "ATL",
+      "score": 0.48
+     },
+     {
+      "wk": 14,
+      "opp": "TEN",
+      "score": 0.45
+     },
+     {
+      "wk": 10,
+      "opp": "NE",
+      "score": 0.44
+     }
+    ]
+   }
+  },
+  "Jordan Love": {
+   "pos": "QB",
+   "team": "GB",
+   "rank": 109,
+   "levers": [
+    {
+     "type": "vertical",
+     "tier": "tendency"
     },
     {
      "type": "shootout",
@@ -3783,25 +3416,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.61,
-    "peak": 1.37,
+    "mean": 0.4,
+    "peak": 1.12,
     "smash_weeks": [],
-    "playoff_mean": 0.56,
+    "playoff_mean": 0.37,
     "best_wks": [
      {
-      "wk": 16,
-      "opp": "NYG",
-      "score": 1.37
+      "wk": 6,
+      "opp": "DAL",
+      "score": 1.12
+     },
+     {
+      "wk": 4,
+      "opp": "TB",
+      "score": 0.95
      },
      {
       "wk": 5,
-      "opp": "ARI",
-      "score": 1.34
-     },
-     {
-      "wk": 14,
-      "opp": "TEN",
-      "score": 1.31
+      "opp": "CHI",
+      "score": 0.83
      }
     ]
    }
@@ -3861,29 +3494,35 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.5,
-    "peak": 1.41,
-    "smash_weeks": [],
-    "playoff_mean": 0.59,
+    "n_levers": 4,
+    "mean": 0.63,
+    "peak": 1.62,
+    "smash_weeks": [
+     4
+    ],
+    "playoff_mean": 0.69,
     "best_wks": [
-     {
-      "wk": 2,
-      "opp": "NYJ",
-      "score": 1.41
-     },
-     {
-      "wk": 15,
-      "opp": "MIA",
-      "score": 1.21
-     },
      {
       "wk": 4,
       "opp": "TB",
-      "score": 1.18
+      "score": 1.62
+     },
+     {
+      "wk": 6,
+      "opp": "DAL",
+      "score": 1.46
+     },
+     {
+      "wk": 2,
+      "opp": "NYJ",
+      "score": 1.33
      }
     ]
    }
@@ -3900,29 +3539,70 @@
     {
      "type": "slot",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.41,
-    "peak": 1.2,
-    "smash_weeks": [],
-    "playoff_mean": 0.3,
+    "n_levers": 3,
+    "mean": 0.54,
+    "peak": 1.6,
+    "smash_weeks": [
+     4
+    ],
+    "playoff_mean": 0.4,
     "best_wks": [
      {
       "wk": 4,
       "opp": "TB",
-      "score": 1.2
+      "score": 1.6
      },
      {
       "wk": 6,
       "opp": "DAL",
-      "score": 1.02
+      "score": 1.45
      },
      {
       "wk": 13,
       "opp": "NO",
-      "score": 0.98
+      "score": 1.13
+     }
+    ]
+   }
+  },
+  "Tucker Kraft": {
+   "pos": "TE",
+   "team": "GB",
+   "rank": 84,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.12,
+    "peak": 0.43,
+    "smash_weeks": [],
+    "playoff_mean": 0.09,
+    "best_wks": [
+     {
+      "wk": 6,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 12,
+      "opp": "LAR",
+      "score": 0.33
+     },
+     {
+      "wk": 9,
+      "opp": "NE",
+      "score": 0.31
      }
     ]
    }
@@ -3939,25 +3619,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.16,
-    "peak": 0.39,
+    "mean": 0.15,
+    "peak": 0.43,
     "smash_weeks": [],
     "playoff_mean": 0.18,
     "best_wks": [
      {
       "wk": 13,
       "opp": "NO",
+      "score": 0.43
+     },
+     {
+      "wk": 4,
+      "opp": "TB",
       "score": 0.39
      },
      {
       "wk": 2,
       "opp": "NYJ",
-      "score": 0.36
-     },
-     {
-      "wk": 4,
-      "opp": "TB",
-      "score": 0.36
+      "score": 0.34
      }
     ]
    }
@@ -3970,29 +3650,70 @@
     {
      "type": "qb_man",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.41,
-    "peak": 1.0,
-    "smash_weeks": [],
+    "n_levers": 2,
+    "mean": 0.54,
+    "peak": 1.88,
+    "smash_weeks": [
+     2
+    ],
     "playoff_mean": 0.64,
     "best_wks": [
      {
       "wk": 2,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
+     },
+     {
+      "wk": 1,
+      "opp": "BUF",
+      "score": 1.27
      },
      {
       "wk": 16,
       "opp": "PHI",
       "score": 0.97
+     }
+    ]
+   }
+  },
+  "Davis Mills": {
+   "pos": "QB",
+   "team": "HOU",
+   "rank": 305,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.13,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 2,
+      "opp": "CIN",
+      "score": 0.88
      },
      {
-      "wk": 6,
-      "opp": "JAX",
-      "score": 0.94
+      "wk": 4,
+      "opp": "DAL",
+      "score": 0.86
+     },
+     {
+      "wk": 1,
+      "opp": "BUF",
+      "score": 0.6
      }
     ]
    }
@@ -4013,36 +3734,37 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 1.11,
-    "peak": 1.99,
+    "n_levers": 4,
+    "mean": 0.98,
+    "peak": 2.59,
     "smash_weeks": [
      2,
-     3,
      4,
-     7,
-     11,
      14
     ],
-    "playoff_mean": 0.7,
+    "playoff_mean": 0.69,
     "best_wks": [
      {
       "wk": 2,
       "opp": "CIN",
-      "score": 1.99
+      "score": 2.59
+     },
+     {
+      "wk": 4,
+      "opp": "DAL",
+      "score": 2.02
      },
      {
       "wk": 14,
       "opp": "WAS",
       "score": 1.88
-     },
-     {
-      "wk": 3,
-      "opp": "IND",
-      "score": 1.64
      }
     ]
    }
@@ -4055,29 +3777,33 @@
     {
      "type": "zone_beater",
      "tier": "tendency"
+    },
+    {
+     "type": "boundary",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.17,
-    "peak": 0.45,
+    "n_levers": 2,
+    "mean": 0.6,
+    "peak": 1.33,
     "smash_weeks": [],
-    "playoff_mean": 0.13,
+    "playoff_mean": 0.31,
     "best_wks": [
      {
-      "wk": 5,
-      "opp": "TEN",
-      "score": 0.45
-     },
-     {
-      "wk": 18,
-      "opp": "TEN",
-      "score": 0.45
+      "wk": 14,
+      "opp": "WAS",
+      "score": 1.33
      },
      {
       "wk": 7,
       "opp": "NYG",
-      "score": 0.42
+      "score": 1.12
+     },
+     {
+      "wk": 5,
+      "opp": "TEN",
+      "score": 1.03
      }
     ]
    }
@@ -4102,30 +3828,65 @@
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 1.1,
-    "peak": 2.39,
+    "mean": 1.05,
+    "peak": 2.48,
     "smash_weeks": [
      2,
      3,
      10,
      11
     ],
-    "playoff_mean": 1.12,
+    "playoff_mean": 1.13,
     "best_wks": [
      {
       "wk": 2,
       "opp": "CIN",
-      "score": 2.39
+      "score": 2.48
+     },
+     {
+      "wk": 10,
+      "opp": "CLE",
+      "score": 1.81
      },
      {
       "wk": 3,
       "opp": "IND",
-      "score": 1.83
+      "score": 1.8
+     }
+    ]
+   }
+  },
+  "Jaylin Noel": {
+   "pos": "WR",
+   "team": "HOU",
+   "rank": 240,
+   "levers": [
+    {
+     "type": "slot",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.43,
+    "peak": 0.98,
+    "smash_weeks": [],
+    "playoff_mean": 0.18,
+    "best_wks": [
+     {
+      "wk": 2,
+      "opp": "CIN",
+      "score": 0.98
      },
      {
-      "wk": 11,
-      "opp": "IND",
-      "score": 1.83
+      "wk": 14,
+      "opp": "WAS",
+      "score": 0.92
+     },
+     {
+      "wk": 10,
+      "opp": "CLE",
+      "score": 0.8
      }
     ]
    }
@@ -4142,15 +3903,15 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.49,
-    "peak": 0.95,
+    "mean": 0.43,
+    "peak": 0.98,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.18,
     "best_wks": [
      {
-      "wk": 7,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 2,
+      "opp": "CIN",
+      "score": 0.98
      },
      {
       "wk": 14,
@@ -4158,9 +3919,153 @@
       "score": 0.92
      },
      {
+      "wk": 10,
+      "opp": "CLE",
+      "score": 0.8
+     }
+    ]
+   }
+  },
+  "Dalton Schultz": {
+   "pos": "TE",
+   "team": "HOU",
+   "rank": 168,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.07,
+    "peak": 0.44,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
       "wk": 2,
       "opp": "CIN",
-      "score": 0.89
+      "score": 0.44
+     },
+     {
+      "wk": 4,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 1,
+      "opp": "BUF",
+      "score": 0.3
+     }
+    ]
+   }
+  },
+  "Daniel Jones": {
+   "pos": "QB",
+   "team": "IND",
+   "rank": 137,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.13,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.29,
+    "best_wks": [
+     {
+      "wk": 16,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 9,
+      "opp": "DAL",
+      "score": 0.86
+     },
+     {
+      "wk": 2,
+      "opp": "KC",
+      "score": 0.54
+     }
+    ]
+   }
+  },
+  "Anthony Richardson Sr.": {
+   "pos": "QB",
+   "team": "IND",
+   "rank": 270,
+   "levers": [
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 2,
+    "mean": 0.28,
+    "peak": 1.34,
+    "smash_weeks": [],
+    "playoff_mean": 0.59,
+    "best_wks": [
+     {
+      "wk": 16,
+      "opp": "CIN",
+      "score": 1.34
+     },
+     {
+      "wk": 9,
+      "opp": "DAL",
+      "score": 1.12
+     },
+     {
+      "wk": 2,
+      "opp": "KC",
+      "score": 0.54
+     }
+    ]
+   }
+  },
+  "Riley Leonard": {
+   "pos": "QB",
+   "team": "IND",
+   "rank": 382,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.13,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.29,
+    "best_wks": [
+     {
+      "wk": 16,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 9,
+      "opp": "DAL",
+      "score": 0.86
+     },
+     {
+      "wk": 2,
+      "opp": "KC",
+      "score": 0.54
      }
     ]
    }
@@ -4173,29 +4078,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.34,
-    "peak": 0.87,
+    "n_levers": 2,
+    "mean": 0.38,
+    "peak": 1.17,
     "smash_weeks": [],
-    "playoff_mean": 0.41,
+    "playoff_mean": 0.53,
     "best_wks": [
+     {
+      "wk": 9,
+      "opp": "DAL",
+      "score": 1.17
+     },
+     {
+      "wk": 16,
+      "opp": "CIN",
+      "score": 0.99
+     },
      {
       "wk": 4,
       "opp": "WAS",
       "score": 0.87
-     },
-     {
-      "wk": 9,
-      "opp": "DAL",
-      "score": 0.74
-     },
-     {
-      "wk": 6,
-      "opp": "TEN",
-      "score": 0.73
      }
     ]
    }
@@ -4224,31 +4133,29 @@
    ],
    "summary": {
     "n_levers": 4,
-    "mean": 0.98,
-    "peak": 1.83,
+    "mean": 0.92,
+    "peak": 1.95,
     "smash_weeks": [
      4,
-     6,
-     12,
-     15,
-     16
+     16,
+     17
     ],
-    "playoff_mean": 1.57,
+    "playoff_mean": 1.52,
     "best_wks": [
      {
       "wk": 16,
       "opp": "CIN",
-      "score": 1.83
+      "score": 1.95
      },
      {
-      "wk": 12,
-      "opp": "NYG",
-      "score": 1.74
+      "wk": 4,
+      "opp": "WAS",
+      "score": 1.61
      },
      {
-      "wk": 6,
-      "opp": "TEN",
-      "score": 1.63
+      "wk": 17,
+      "opp": "CLE",
+      "score": 1.58
      }
     ]
    }
@@ -4265,29 +4172,35 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
+    "n_levers": 3,
     "mean": 0.61,
-    "peak": 1.33,
-    "smash_weeks": [],
-    "playoff_mean": 1.15,
+    "peak": 1.89,
+    "smash_weeks": [
+     16
+    ],
+    "playoff_mean": 1.24,
     "best_wks": [
      {
       "wk": 16,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.89
      },
      {
-      "wk": 12,
-      "opp": "NYG",
-      "score": 1.32
+      "wk": 9,
+      "opp": "DAL",
+      "score": 1.46
      },
      {
-      "wk": 4,
-      "opp": "WAS",
-      "score": 1.21
+      "wk": 17,
+      "opp": "CLE",
+      "score": 1.24
      }
     ]
    }
@@ -4304,15 +4217,15 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.42,
-    "peak": 0.95,
+    "mean": 0.4,
+    "peak": 0.98,
     "smash_weeks": [],
-    "playoff_mean": 0.77,
+    "playoff_mean": 0.79,
     "best_wks": [
      {
-      "wk": 12,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 16,
+      "opp": "CIN",
+      "score": 0.98
      },
      {
       "wk": 4,
@@ -4320,9 +4233,9 @@
       "score": 0.92
      },
      {
-      "wk": 16,
-      "opp": "CIN",
-      "score": 0.89
+      "wk": 17,
+      "opp": "CLE",
+      "score": 0.8
      }
     ]
    }
@@ -4339,15 +4252,15 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.42,
-    "peak": 0.95,
+    "mean": 0.4,
+    "peak": 0.98,
     "smash_weeks": [],
-    "playoff_mean": 0.77,
+    "playoff_mean": 0.79,
     "best_wks": [
      {
-      "wk": 12,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 16,
+      "opp": "CIN",
+      "score": 0.98
      },
      {
       "wk": 4,
@@ -4355,9 +4268,9 @@
       "score": 0.92
      },
      {
-      "wk": 16,
-      "opp": "CIN",
-      "score": 0.89
+      "wk": 17,
+      "opp": "CLE",
+      "score": 0.8
      }
     ]
    }
@@ -4374,29 +4287,33 @@
     {
      "type": "contested",
      "tier": "tendency"
+    },
+    {
+     "type": "redzone",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.37,
-    "peak": 0.5,
+    "n_levers": 3,
+    "mean": 0.66,
+    "peak": 1.36,
     "smash_weeks": [],
-    "playoff_mean": 0.43,
+    "playoff_mean": 0.65,
     "best_wks": [
+     {
+      "wk": 4,
+      "opp": "WAS",
+      "score": 1.36
+     },
      {
       "wk": 16,
       "opp": "CIN",
-      "score": 0.5
+      "score": 1.17
      },
      {
-      "wk": 14,
-      "opp": "PHI",
-      "score": 0.48
-     },
-     {
-      "wk": 8,
-      "opp": "JAX",
-      "score": 0.47
+      "wk": 9,
+      "opp": "DAL",
+      "score": 1.09
      }
     ]
    }
@@ -4409,29 +4326,39 @@
     {
      "type": "qb_man",
      "tier": "solid"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.38,
-    "peak": 1.0,
-    "smash_weeks": [],
-    "playoff_mean": 0.19,
+    "n_levers": 3,
+    "mean": 0.73,
+    "peak": 2.34,
+    "smash_weeks": [
+     4
+    ],
+    "playoff_mean": 0.65,
     "best_wks": [
      {
       "wk": 4,
       "opp": "CIN",
-      "score": 1.0
+      "score": 2.34
      },
      {
-      "wk": 5,
-      "opp": "PHI",
-      "score": 0.97
+      "wk": 1,
+      "opp": "CLE",
+      "score": 1.12
      },
      {
-      "wk": 2,
-      "opp": "DEN",
-      "score": 0.87
+      "wk": 16,
+      "opp": "DAL",
+      "score": 1.12
      }
     ]
    }
@@ -4518,29 +4445,70 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.7,
-    "peak": 1.33,
-    "smash_weeks": [],
-    "playoff_mean": 0.75,
+    "n_levers": 3,
+    "mean": 0.68,
+    "peak": 1.89,
+    "smash_weeks": [
+     4
+    ],
+    "playoff_mean": 0.89,
     "best_wks": [
      {
       "wk": 4,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.89
      },
      {
-      "wk": 11,
-      "opp": "NYG",
-      "score": 1.32
+      "wk": 16,
+      "opp": "DAL",
+      "score": 1.46
      },
      {
-      "wk": 17,
-      "opp": "WAS",
-      "score": 1.21
+      "wk": 1,
+      "opp": "CLE",
+      "score": 1.24
+     }
+    ]
+   }
+  },
+  "Parker Washington": {
+   "pos": "WR",
+   "team": "JAX",
+   "rank": 69,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.08,
+    "peak": 0.44,
+    "smash_weeks": [],
+    "playoff_mean": 0.14,
+    "best_wks": [
+     {
+      "wk": 4,
+      "opp": "CIN",
+      "score": 0.44
+     },
+     {
+      "wk": 16,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 3,
+      "opp": "NE",
+      "score": 0.31
      }
     ]
    }
@@ -4553,29 +4521,33 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.23,
-    "peak": 0.44,
+    "n_levers": 2,
+    "mean": 0.27,
+    "peak": 0.9,
     "smash_weeks": [],
-    "playoff_mean": 0.18,
+    "playoff_mean": 0.33,
     "best_wks": [
      {
       "wk": 4,
       "opp": "CIN",
-      "score": 0.44
+      "score": 0.9
      },
      {
-      "wk": 9,
-      "opp": "BAL",
-      "score": 0.4
+      "wk": 16,
+      "opp": "DAL",
+      "score": 0.69
      },
      {
-      "wk": 14,
-      "opp": "PIT",
-      "score": 0.39
+      "wk": 13,
+      "opp": "CHI",
+      "score": 0.55
      }
     ]
    }
@@ -4586,16 +4558,55 @@
    "rank": 149,
    "levers": [
     {
+     "type": "slot",
+     "tier": "solid"
+    },
+    {
      "type": "vertical",
      "tier": "tendency"
     }
    ],
    "summary": {
+    "n_levers": 2,
+    "mean": 0.59,
+    "peak": 1.45,
+    "smash_weeks": [],
+    "playoff_mean": 0.75,
+    "best_wks": [
+     {
+      "wk": 4,
+      "opp": "CIN",
+      "score": 1.45
+     },
+     {
+      "wk": 1,
+      "opp": "CLE",
+      "score": 1.24
+     },
+     {
+      "wk": 17,
+      "opp": "WAS",
+      "score": 1.21
+     }
+    ]
+   }
+  },
+  "Brenton Strange": {
+   "pos": "TE",
+   "team": "JAX",
+   "rank": 145,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
     "n_levers": 1,
-    "mean": 0.23,
+    "mean": 0.08,
     "peak": 0.44,
     "smash_weeks": [],
-    "playoff_mean": 0.18,
+    "playoff_mean": 0.14,
     "best_wks": [
      {
       "wk": 4,
@@ -4603,14 +4614,14 @@
       "score": 0.44
      },
      {
-      "wk": 9,
-      "opp": "BAL",
-      "score": 0.4
+      "wk": 16,
+      "opp": "DAL",
+      "score": 0.43
      },
      {
-      "wk": 14,
-      "opp": "PIT",
-      "score": 0.39
+      "wk": 3,
+      "opp": "NE",
+      "score": 0.31
      }
     ]
    }
@@ -4623,29 +4634,35 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.42,
-    "peak": 1.0,
-    "smash_weeks": [],
-    "playoff_mean": 0.0,
+    "n_levers": 2,
+    "mean": 0.66,
+    "peak": 1.88,
+    "smash_weeks": [
+     14
+    ],
+    "playoff_mean": 0.41,
     "best_wks": [
      {
       "wk": 14,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
-      "wk": 1,
-      "opp": "DEN",
-      "score": 0.87
+      "wk": 7,
+      "opp": "SEA",
+      "score": 1.37
      },
      {
-      "wk": 8,
-      "opp": "DEN",
-      "score": 0.87
+      "wk": 12,
+      "opp": "BUF",
+      "score": 1.27
      }
     ]
    }
@@ -4658,29 +4675,35 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.42,
-    "peak": 1.0,
-    "smash_weeks": [],
-    "playoff_mean": 0.0,
+    "n_levers": 2,
+    "mean": 0.66,
+    "peak": 1.88,
+    "smash_weeks": [
+     14
+    ],
+    "playoff_mean": 0.41,
     "best_wks": [
      {
       "wk": 14,
       "opp": "CIN",
-      "score": 1.0
+      "score": 1.88
      },
      {
-      "wk": 1,
-      "opp": "DEN",
-      "score": 0.87
+      "wk": 7,
+      "opp": "SEA",
+      "score": 1.37
      },
      {
-      "wk": 8,
-      "opp": "DEN",
-      "score": 0.87
+      "wk": 12,
+      "opp": "BUF",
+      "score": 1.27
      }
     ]
    }
@@ -4736,29 +4759,33 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.34,
-    "peak": 1.29,
+    "n_levers": 3,
+    "mean": 0.39,
+    "peak": 1.44,
     "smash_weeks": [],
-    "playoff_mean": 0.47,
+    "playoff_mean": 0.45,
     "best_wks": [
      {
       "wk": 11,
       "opp": "ARI",
-      "score": 1.29
+      "score": 1.44
      },
      {
-      "wk": 6,
-      "opp": "LAC",
-      "score": 0.98
+      "wk": 14,
+      "opp": "CIN",
+      "score": 1.11
      },
      {
-      "wk": 17,
-      "opp": "LAC",
-      "score": 0.98
+      "wk": 12,
+      "opp": "BUF",
+      "score": 0.89
      }
     ]
    }
@@ -4771,29 +4798,33 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.3,
-    "peak": 0.98,
+    "n_levers": 2,
+    "mean": 0.43,
+    "peak": 1.42,
     "smash_weeks": [],
-    "playoff_mean": 0.0,
+    "playoff_mean": 0.2,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "ARI",
-      "score": 0.98
-     },
      {
       "wk": 14,
       "opp": "CIN",
-      "score": 0.89
+      "score": 1.42
      },
      {
-      "wk": 9,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 11,
+      "opp": "ARI",
+      "score": 1.21
+     },
+     {
+      "wk": 4,
+      "opp": "LV",
+      "score": 0.83
      }
     ]
    }
@@ -4819,26 +4850,24 @@
    "summary": {
     "n_levers": 3,
     "mean": 0.57,
-    "peak": 1.61,
-    "smash_weeks": [
-     11
-    ],
-    "playoff_mean": 0.34,
+    "peak": 1.45,
+    "smash_weeks": [],
+    "playoff_mean": 0.35,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "ARI",
-      "score": 1.61
-     },
      {
       "wk": 14,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
-      "wk": 9,
-      "opp": "NYJ",
-      "score": 1.15
+      "wk": 11,
+      "opp": "ARI",
+      "score": 1.25
+     },
+     {
+      "wk": 4,
+      "opp": "LV",
+      "score": 1.21
      }
     ]
    }
@@ -4849,31 +4878,35 @@
    "rank": 373,
    "levers": [
     {
+     "type": "boundary",
+     "tier": "solid"
+    },
+    {
      "type": "vertical",
      "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.15,
-    "peak": 0.44,
+    "n_levers": 2,
+    "mean": 0.44,
+    "peak": 1.45,
     "smash_weeks": [],
     "playoff_mean": 0.09,
     "best_wks": [
      {
       "wk": 14,
       "opp": "CIN",
-      "score": 0.44
+      "score": 1.45
      },
      {
       "wk": 4,
       "opp": "LV",
-      "score": 0.36
+      "score": 1.21
      },
      {
-      "wk": 9,
-      "opp": "NYJ",
-      "score": 0.36
+      "wk": 18,
+      "opp": "LV",
+      "score": 1.21
      }
     ]
    }
@@ -4886,29 +4919,107 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 2,
+    "mean": 0.27,
+    "peak": 1.11,
+    "smash_weeks": [],
+    "playoff_mean": 0.2,
+    "best_wks": [
+     {
+      "wk": 14,
+      "opp": "CIN",
+      "score": 1.11
+     },
+     {
+      "wk": 11,
+      "opp": "ARI",
+      "score": 1.08
+     },
+     {
+      "wk": 12,
+      "opp": "BUF",
+      "score": 0.89
+     }
+    ]
+   }
+  },
+  "Justin Herbert": {
+   "pos": "QB",
+   "team": "LAC",
+   "rank": 77,
+   "levers": [
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 2,
+    "mean": 0.42,
+    "peak": 0.95,
+    "smash_weeks": [],
+    "playoff_mean": 0.56,
+    "best_wks": [
+     {
+      "wk": 13,
+      "opp": "TB",
+      "score": 0.95
+     },
+     {
+      "wk": 15,
+      "opp": "SF",
+      "score": 0.88
+     },
+     {
+      "wk": 8,
+      "opp": "LAR",
+      "score": 0.66
+     }
+    ]
+   }
+  },
+  "Trey Lance": {
+   "pos": "QB",
+   "team": "LAC",
+   "rank": 394,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.94,
+    "mean": 0.29,
+    "peak": 0.66,
     "smash_weeks": [],
-    "playoff_mean": 0.22,
+    "playoff_mean": 0.38,
     "best_wks": [
      {
-      "wk": 11,
+      "wk": 8,
+      "opp": "LAR",
+      "score": 0.66
+     },
+     {
+      "wk": 1,
       "opp": "ARI",
-      "score": 0.94
+      "score": 0.63
      },
      {
-      "wk": 6,
-      "opp": "LAC",
-      "score": 0.66
-     },
-     {
-      "wk": 17,
-      "opp": "LAC",
-      "score": 0.66
+      "wk": 12,
+      "opp": "NE",
+      "score": 0.62
      }
     ]
    }
@@ -4921,29 +5032,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.34,
-    "peak": 0.96,
+    "n_levers": 2,
+    "mean": 0.54,
+    "peak": 1.23,
     "smash_weeks": [],
-    "playoff_mean": 0.37,
+    "playoff_mean": 0.58,
     "best_wks": [
      {
       "wk": 1,
       "opp": "ARI",
-      "score": 0.96
+      "score": 1.23
      },
      {
       "wk": 13,
       "opp": "TB",
-      "score": 0.63
+      "score": 0.98
      },
      {
-      "wk": 11,
-      "opp": "NYJ",
-      "score": 0.6
+      "wk": 8,
+      "opp": "LAR",
+      "score": 0.95
      }
     ]
    }
@@ -4960,29 +5075,36 @@
     {
      "type": "slot",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.76,
-    "peak": 1.35,
-    "smash_weeks": [],
-    "playoff_mean": 0.71,
+    "n_levers": 3,
+    "mean": 0.94,
+    "peak": 1.59,
+    "smash_weeks": [
+     6,
+     17
+    ],
+    "playoff_mean": 1.08,
     "best_wks": [
+     {
+      "wk": 6,
+      "opp": "KC",
+      "score": 1.59
+     },
+     {
+      "wk": 17,
+      "opp": "KC",
+      "score": 1.59
+     },
      {
       "wk": 2,
       "opp": "LV",
-      "score": 1.35
-     },
-     {
-      "wk": 14,
-      "opp": "LV",
-      "score": 1.35
-     },
-     {
-      "wk": 16,
-      "opp": "MIA",
-      "score": 1.32
+      "score": 1.41
      }
     ]
    }
@@ -4995,29 +5117,103 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 2,
+    "mean": 0.47,
+    "peak": 1.23,
+    "smash_weeks": [],
+    "playoff_mean": 0.57,
+    "best_wks": [
+     {
+      "wk": 13,
+      "opp": "TB",
+      "score": 1.23
+     },
+     {
+      "wk": 1,
+      "opp": "ARI",
+      "score": 1.21
+     },
+     {
+      "wk": 2,
+      "opp": "LV",
+      "score": 0.83
+     }
+    ]
+   }
+  },
+  "Tre' Harris": {
+   "pos": "WR",
+   "team": "LAC",
+   "rank": 183,
+   "levers": [
+    {
+     "type": "boundary",
+     "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.29,
-    "peak": 0.98,
+    "mean": 0.33,
+    "peak": 0.95,
     "smash_weeks": [],
-    "playoff_mean": 0.19,
+    "playoff_mean": 0.38,
     "best_wks": [
-     {
-      "wk": 1,
-      "opp": "ARI",
-      "score": 0.98
-     },
      {
       "wk": 13,
       "opp": "TB",
-      "score": 0.83
+      "score": 0.95
      },
      {
-      "wk": 11,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 1,
+      "opp": "ARI",
+      "score": 0.89
+     },
+     {
+      "wk": 2,
+      "opp": "LV",
+      "score": 0.83
+     }
+    ]
+   }
+  },
+  "KeAndre Lambert-Smith": {
+   "pos": "WR",
+   "team": "LAC",
+   "rank": 269,
+   "levers": [
+    {
+     "type": "boundary",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.33,
+    "peak": 0.95,
+    "smash_weeks": [],
+    "playoff_mean": 0.38,
+    "best_wks": [
+     {
+      "wk": 13,
+      "opp": "TB",
+      "score": 0.95
+     },
+     {
+      "wk": 1,
+      "opp": "ARI",
+      "score": 0.89
+     },
+     {
+      "wk": 2,
+      "opp": "LV",
+      "score": 0.83
      }
     ]
    }
@@ -5057,6 +5253,41 @@
     ]
    }
   },
+  "David Njoku": {
+   "pos": "TE",
+   "team": "LAC",
+   "rank": 203,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.15,
+    "peak": 0.33,
+    "smash_weeks": [],
+    "playoff_mean": 0.19,
+    "best_wks": [
+     {
+      "wk": 8,
+      "opp": "LAR",
+      "score": 0.33
+     },
+     {
+      "wk": 1,
+      "opp": "ARI",
+      "score": 0.31
+     },
+     {
+      "wk": 12,
+      "opp": "NE",
+      "score": 0.31
+     }
+    ]
+   }
+  },
   "Charlie Kolar": {
    "pos": "TE",
    "team": "LAC",
@@ -5069,25 +5300,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.15,
-    "peak": 0.4,
+    "mean": 0.13,
+    "peak": 0.39,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.18,
     "best_wks": [
      {
-      "wk": 10,
-      "opp": "BAL",
-      "score": 0.4
+      "wk": 13,
+      "opp": "TB",
+      "score": 0.39
      },
      {
       "wk": 2,
       "opp": "LV",
-      "score": 0.36
+      "score": 0.38
      },
      {
-      "wk": 11,
-      "opp": "NYJ",
-      "score": 0.36
+      "wk": 14,
+      "opp": "LV",
+      "score": 0.38
      }
     ]
    }
@@ -5104,25 +5335,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
+    "mean": 0.34,
+    "peak": 0.86,
     "smash_weeks": [],
-    "playoff_mean": 0.53,
+    "playoff_mean": 0.65,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "DAL",
+      "score": 0.86
+     },
      {
       "wk": 6,
       "opp": "ARI",
-      "score": 0.98
+      "score": 0.63
      },
      {
       "wk": 10,
       "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
+      "score": 0.63
      }
     ]
    }
@@ -5139,130 +5370,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
+    "mean": 0.34,
+    "peak": 0.86,
     "smash_weeks": [],
-    "playoff_mean": 0.53,
+    "playoff_mean": 0.65,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "DAL",
+      "score": 0.86
+     },
      {
       "wk": 6,
       "opp": "ARI",
-      "score": 0.98
+      "score": 0.63
      },
      {
       "wk": 10,
       "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Kyren Williams": {
-   "pos": "RB",
-   "team": "LAR",
-   "rank": 28,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.53,
-    "best_wks": [
-     {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Blake Corum": {
-   "pos": "RB",
-   "team": "LAR",
-   "rank": 99,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.53,
-    "best_wks": [
-     {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Jarquez Hunter": {
-   "pos": "RB",
-   "team": "LAR",
-   "rank": 287,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.53,
-    "best_wks": [
-     {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
+      "score": 0.63
      }
     ]
    }
@@ -5290,39 +5416,40 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 5,
-    "mean": 1.58,
-    "peak": 3.17,
+    "mean": 1.34,
+    "peak": 2.51,
     "smash_weeks": [
      2,
+     5,
      6,
      7,
      9,
      10,
-     12,
+     13,
      15,
      17
     ],
-    "playoff_mean": 2.06,
+    "playoff_mean": 1.97,
     "best_wks": [
      {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 3.17
+      "wk": 17,
+      "opp": "TB",
+      "score": 2.51
      },
      {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 3.17
+      "wk": 15,
+      "opp": "DAL",
+      "score": 2.28
      },
      {
       "wk": 9,
       "opp": "WAS",
-      "score": 3.08
+      "score": 2.16
      }
     ]
    }
@@ -5350,109 +5477,40 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 5,
-    "mean": 1.58,
-    "peak": 3.17,
+    "mean": 1.34,
+    "peak": 2.51,
     "smash_weeks": [
      2,
+     5,
      6,
      7,
      9,
      10,
-     12,
+     13,
      15,
      17
     ],
-    "playoff_mean": 2.06,
+    "playoff_mean": 1.97,
     "best_wks": [
      {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 3.17
+      "wk": 17,
+      "opp": "TB",
+      "score": 2.51
      },
      {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 3.17
+      "wk": 15,
+      "opp": "DAL",
+      "score": 2.28
      },
      {
       "wk": 9,
       "opp": "WAS",
-      "score": 3.08
-     }
-    ]
-   }
-  },
-  "CJ Daniels": {
-   "pos": "WR",
-   "team": "LAR",
-   "rank": 319,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.53,
-    "best_wks": [
-     {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Jordan Whittington": {
-   "pos": "WR",
-   "team": "LAR",
-   "rank": 350,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.53,
-    "best_wks": [
-     {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
+      "score": 2.16
      }
     ]
    }
@@ -5463,35 +5521,35 @@
    "rank": 388,
    "levers": [
     {
-     "type": "vertical",
-     "tier": "tendency"
+     "type": "boundary",
+     "tier": "solid"
     },
     {
-     "type": "shootout",
-     "tier": "solid"
+     "type": "vertical",
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.52,
-    "peak": 1.32,
+    "mean": 0.51,
+    "peak": 1.34,
     "smash_weeks": [],
-    "playoff_mean": 0.74,
+    "playoff_mean": 0.79,
     "best_wks": [
      {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 1.32
+      "wk": 17,
+      "opp": "TB",
+      "score": 1.34
      },
      {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 1.25
+      "wk": 7,
+      "opp": "LV",
+      "score": 1.21
      },
      {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 1.25
+      "wk": 9,
+      "opp": "WAS",
+      "score": 1.21
      }
     ]
    }
@@ -5503,65 +5561,30 @@
    "levers": [
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
+    "mean": 0.17,
+    "peak": 0.43,
     "smash_weeks": [],
-    "playoff_mean": 0.53,
+    "playoff_mean": 0.33,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "DAL",
+      "score": 0.43
+     },
      {
       "wk": 6,
       "opp": "ARI",
-      "score": 0.98
+      "score": 0.31
      },
      {
       "wk": 10,
       "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
-     }
-    ]
-   }
-  },
-  "Terrance Ferguson": {
-   "pos": "TE",
-   "team": "LAR",
-   "rank": 204,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
-    "smash_weeks": [],
-    "playoff_mean": 0.53,
-    "best_wks": [
-     {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 0.98
-     },
-     {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
+      "score": 0.31
      }
     ]
    }
@@ -5581,46 +5604,41 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 0.91,
-    "peak": 2.28,
+    "mean": 0.68,
+    "peak": 1.54,
     "smash_weeks": [
-     2,
-     6,
-     9,
-     10,
-     12,
      15,
      17
     ],
-    "playoff_mean": 1.26,
+    "playoff_mean": 1.11,
     "best_wks": [
+     {
+      "wk": 17,
+      "opp": "TB",
+      "score": 1.54
+     },
+     {
+      "wk": 15,
+      "opp": "DAL",
+      "score": 1.52
+     },
      {
       "wk": 6,
       "opp": "ARI",
-      "score": 2.28
-     },
-     {
-      "wk": 9,
-      "opp": "WAS",
-      "score": 2.28
-     },
-     {
-      "wk": 10,
-      "opp": "ARI",
-      "score": 2.28
+      "score": 1.44
      }
     ]
    }
   },
-  "Max Klare": {
-   "pos": "TE",
-   "team": "LAR",
-   "rank": 387,
+  "Fernando Mendoza": {
+   "pos": "QB",
+   "team": "LV",
+   "rank": 174,
    "levers": [
     {
      "type": "shootout",
@@ -5629,25 +5647,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.98,
+    "mean": 0.26,
+    "peak": 0.66,
     "smash_weeks": [],
-    "playoff_mean": 0.53,
+    "playoff_mean": 0.21,
     "best_wks": [
      {
-      "wk": 6,
-      "opp": "ARI",
-      "score": 0.98
+      "wk": 7,
+      "opp": "LAR",
+      "score": 0.66
      },
      {
-      "wk": 10,
+      "wk": 17,
       "opp": "ARI",
-      "score": 0.98
+      "score": 0.63
      },
      {
-      "wk": 2,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 5,
+      "opp": "NE",
+      "score": 0.62
      }
     ]
    }
@@ -5660,29 +5678,33 @@
     {
      "type": "qb_man",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.38,
-    "peak": 0.87,
+    "n_levers": 2,
+    "mean": 0.64,
+    "peak": 1.37,
     "smash_weeks": [],
-    "playoff_mean": 0.29,
+    "playoff_mean": 0.5,
     "best_wks": [
-     {
-      "wk": 11,
-      "opp": "DEN",
-      "score": 0.87
-     },
-     {
-      "wk": 15,
-      "opp": "DEN",
-      "score": 0.87
-     },
      {
       "wk": 10,
       "opp": "SEA",
-      "score": 0.84
+      "score": 1.37
+     },
+     {
+      "wk": 4,
+      "opp": "KC",
+      "score": 1.35
+     },
+     {
+      "wk": 18,
+      "opp": "KC",
+      "score": 1.35
      }
     ]
    }
@@ -5699,29 +5721,35 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.6,
-    "peak": 1.45,
-    "smash_weeks": [],
-    "playoff_mean": 0.82,
+    "n_levers": 3,
+    "mean": 0.78,
+    "peak": 1.71,
+    "smash_weeks": [
+     17
+    ],
+    "playoff_mean": 0.86,
     "best_wks": [
      {
       "wk": 17,
       "opp": "ARI",
-      "score": 1.45
+      "score": 1.71
      },
      {
-      "wk": 2,
-      "opp": "LAC",
-      "score": 0.99
+      "wk": 6,
+      "opp": "BUF",
+      "score": 1.26
      },
      {
-      "wk": 14,
-      "opp": "LAC",
-      "score": 0.99
+      "wk": 7,
+      "opp": "LAR",
+      "score": 1.24
      }
     ]
    }
@@ -5773,24 +5801,94 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.25,
-    "peak": 0.98,
+    "mean": 0.31,
+    "peak": 0.89,
     "smash_weeks": [],
-    "playoff_mean": 0.61,
+    "playoff_mean": 0.49,
     "best_wks": [
      {
       "wk": 17,
       "opp": "ARI",
-      "score": 0.98
+      "score": 0.89
      },
      {
-      "wk": 16,
-      "opp": "TEN",
+      "wk": 3,
+      "opp": "NO",
       "score": 0.86
      },
      {
-      "wk": 8,
-      "opp": "NYJ",
+      "wk": 12,
+      "opp": "CLE",
+      "score": 0.8
+     }
+    ]
+   }
+  },
+  "Dont'e Thornton Jr.": {
+   "pos": "WR",
+   "team": "LV",
+   "rank": 324,
+   "levers": [
+    {
+     "type": "boundary",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.31,
+    "peak": 0.89,
+    "smash_weeks": [],
+    "playoff_mean": 0.49,
+    "best_wks": [
+     {
+      "wk": 17,
+      "opp": "ARI",
+      "score": 0.89
+     },
+     {
+      "wk": 3,
+      "opp": "NO",
+      "score": 0.86
+     },
+     {
+      "wk": 12,
+      "opp": "CLE",
+      "score": 0.8
+     }
+    ]
+   }
+  },
+  "Jack Bech": {
+   "pos": "WR",
+   "team": "LV",
+   "rank": 325,
+   "levers": [
+    {
+     "type": "boundary",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.31,
+    "peak": 0.89,
+    "smash_weeks": [],
+    "playoff_mean": 0.49,
+    "best_wks": [
+     {
+      "wk": 17,
+      "opp": "ARI",
+      "score": 0.89
+     },
+     {
+      "wk": 3,
+      "opp": "NO",
+      "score": 0.86
+     },
+     {
+      "wk": 12,
+      "opp": "CLE",
       "score": 0.8
      }
     ]
@@ -5808,29 +5906,138 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.42,
-    "peak": 1.21,
+    "n_levers": 3,
+    "mean": 0.44,
+    "peak": 1.33,
     "smash_weeks": [],
-    "playoff_mean": 0.71,
+    "playoff_mean": 0.36,
     "best_wks": [
      {
       "wk": 3,
       "opp": "NO",
-      "score": 1.21
+      "score": 1.33
      },
      {
       "wk": 17,
       "opp": "ARI",
-      "score": 1.21
+      "score": 1.08
      },
      {
-      "wk": 16,
-      "opp": "TEN",
-      "score": 0.93
+      "wk": 6,
+      "opp": "BUF",
+      "score": 0.89
+     }
+    ]
+   }
+  },
+  "Michael Mayer": {
+   "pos": "TE",
+   "team": "LV",
+   "rank": 323,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.13,
+    "peak": 0.33,
+    "smash_weeks": [],
+    "playoff_mean": 0.1,
+    "best_wks": [
+     {
+      "wk": 7,
+      "opp": "LAR",
+      "score": 0.33
+     },
+     {
+      "wk": 5,
+      "opp": "NE",
+      "score": 0.31
+     },
+     {
+      "wk": 17,
+      "opp": "ARI",
+      "score": 0.31
+     }
+    ]
+   }
+  },
+  "Malik Willis": {
+   "pos": "QB",
+   "team": "MIA",
+   "rank": 134,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.28,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.2,
+    "best_wks": [
+     {
+      "wk": 5,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 8,
+      "opp": "NE",
+      "score": 0.62
+     },
+     {
+      "wk": 18,
+      "opp": "NE",
+      "score": 0.62
+     }
+    ]
+   }
+  },
+  "Quinn Ewers": {
+   "pos": "QB",
+   "team": "MIA",
+   "rank": 289,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.28,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.2,
+    "best_wks": [
+     {
+      "wk": 5,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 8,
+      "opp": "NE",
+      "score": 0.62
+     },
+     {
+      "wk": 18,
+      "opp": "NE",
+      "score": 0.62
      }
     ]
    }
@@ -5843,29 +6050,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.27,
-    "peak": 0.71,
+    "n_levers": 2,
+    "mean": 0.47,
+    "peak": 0.99,
     "smash_weeks": [],
-    "playoff_mean": 0.45,
+    "playoff_mean": 0.72,
     "best_wks": [
      {
-      "wk": 15,
-      "opp": "GB",
-      "score": 0.71
+      "wk": 5,
+      "opp": "CIN",
+      "score": 0.99
      },
      {
-      "wk": 4,
-      "opp": "MIN",
-      "score": 0.65
+      "wk": 11,
+      "opp": "BUF",
+      "score": 0.9
      },
      {
-      "wk": 16,
-      "opp": "LAC",
-      "score": 0.65
+      "wk": 17,
+      "opp": "BUF",
+      "score": 0.9
      }
     ]
    }
@@ -5917,25 +6128,95 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.24,
-    "peak": 0.89,
+    "mean": 0.28,
+    "peak": 0.98,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.18,
     "best_wks": [
      {
       "wk": 5,
       "opp": "CIN",
-      "score": 0.89
+      "score": 0.98
+     },
+     {
+      "wk": 1,
+      "opp": "LV",
+      "score": 0.83
      },
      {
       "wk": 7,
       "opp": "NYJ",
-      "score": 0.8
+      "score": 0.73
+     }
+    ]
+   }
+  },
+  "Tutu Atwell": {
+   "pos": "WR",
+   "team": "MIA",
+   "rank": 329,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.14,
+    "peak": 0.44,
+    "smash_weeks": [],
+    "playoff_mean": 0.1,
+    "best_wks": [
+     {
+      "wk": 5,
+      "opp": "CIN",
+      "score": 0.44
      },
      {
-      "wk": 12,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 8,
+      "opp": "NE",
+      "score": 0.31
+     },
+     {
+      "wk": 18,
+      "opp": "NE",
+      "score": 0.31
+     }
+    ]
+   }
+  },
+  "Greg Dulcich": {
+   "pos": "TE",
+   "team": "MIA",
+   "rank": 176,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.14,
+    "peak": 0.44,
+    "smash_weeks": [],
+    "playoff_mean": 0.1,
+    "best_wks": [
+     {
+      "wk": 5,
+      "opp": "CIN",
+      "score": 0.44
+     },
+     {
+      "wk": 8,
+      "opp": "NE",
+      "score": 0.31
+     },
+     {
+      "wk": 18,
+      "opp": "NE",
+      "score": 0.31
      }
     ]
    }
@@ -5948,15 +6229,24 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.19,
-    "peak": 0.77,
+    "n_levers": 2,
+    "mean": 0.39,
+    "peak": 1.27,
     "smash_weeks": [],
     "playoff_mean": 0.17,
     "best_wks": [
+     {
+      "wk": 9,
+      "opp": "BUF",
+      "score": 1.27
+     },
      {
       "wk": 7,
       "opp": "IND",
@@ -5965,11 +6255,6 @@
      {
       "wk": 4,
       "opp": "MIA",
-      "score": 0.74
-     },
-     {
-      "wk": 13,
-      "opp": "CAR",
       "score": 0.74
      }
     ]
@@ -5983,29 +6268,37 @@
     {
      "type": "qb_man",
      "tier": "solid"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.19,
-    "peak": 0.77,
+    "n_levers": 3,
+    "mean": 0.58,
+    "peak": 1.27,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.47,
     "best_wks": [
+     {
+      "wk": 9,
+      "opp": "BUF",
+      "score": 1.27
+     },
      {
       "wk": 7,
       "opp": "IND",
-      "score": 0.77
+      "score": 1.11
      },
      {
       "wk": 4,
       "opp": "MIA",
-      "score": 0.74
-     },
-     {
-      "wk": 13,
-      "opp": "CAR",
-      "score": 0.74
+      "score": 1.01
      }
     ]
    }
@@ -6018,29 +6311,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.23,
-    "peak": 0.87,
+    "n_levers": 2,
+    "mean": 0.39,
+    "peak": 0.98,
     "smash_weeks": [],
-    "playoff_mean": 0.49,
+    "playoff_mean": 0.48,
     "best_wks": [
+     {
+      "wk": 3,
+      "opp": "TB",
+      "score": 0.98
+     },
+     {
+      "wk": 9,
+      "opp": "BUF",
+      "score": 0.9
+     },
      {
       "wk": 16,
       "opp": "WAS",
       "score": 0.87
-     },
-     {
-      "wk": 1,
-      "opp": "GB",
-      "score": 0.71
-     },
-     {
-      "wk": 10,
-      "opp": "GB",
-      "score": 0.71
      }
     ]
    }
@@ -6092,33 +6389,37 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.61,
-    "peak": 1.88,
+    "n_levers": 3,
+    "mean": 0.8,
+    "peak": 2.12,
     "smash_weeks": [
      3,
      5,
      16
     ],
-    "playoff_mean": 0.89,
+    "playoff_mean": 0.87,
     "best_wks": [
+     {
+      "wk": 3,
+      "opp": "TB",
+      "score": 2.12
+     },
      {
       "wk": 16,
       "opp": "WAS",
       "score": 1.88
      },
      {
-      "wk": 3,
-      "opp": "TB",
-      "score": 1.58
-     },
-     {
       "wk": 5,
       "opp": "NO",
-      "score": 1.53
+      "score": 1.76
      }
     ]
    }
@@ -6139,32 +6440,37 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.73,
-    "peak": 1.61,
+    "n_levers": 4,
+    "mean": 0.85,
+    "peak": 1.99,
     "smash_weeks": [
      3,
+     5,
      16
     ],
-    "playoff_mean": 1.18,
+    "playoff_mean": 1.14,
     "best_wks": [
+     {
+      "wk": 3,
+      "opp": "TB",
+      "score": 1.99
+     },
      {
       "wk": 16,
       "opp": "WAS",
       "score": 1.61
      },
      {
-      "wk": 3,
-      "opp": "TB",
-      "score": 1.55
-     },
-     {
       "wk": 5,
       "opp": "NO",
-      "score": 1.36
+      "score": 1.56
      }
     ]
    }
@@ -6185,33 +6491,72 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.59,
-    "peak": 1.83,
+    "n_levers": 4,
+    "mean": 0.71,
+    "peak": 1.8,
     "smash_weeks": [
      4,
      7,
      17
     ],
-    "playoff_mean": 0.83,
+    "playoff_mean": 0.81,
     "best_wks": [
      {
       "wk": 7,
       "opp": "IND",
-      "score": 1.83
+      "score": 1.8
      },
      {
       "wk": 4,
       "opp": "MIA",
-      "score": 1.69
+      "score": 1.72
      },
      {
       "wk": 17,
       "opp": "NYJ",
-      "score": 1.57
+      "score": 1.51
+     }
+    ]
+   }
+  },
+  "T.J. Hockenson": {
+   "pos": "TE",
+   "team": "MIN",
+   "rank": 167,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.1,
+    "peak": 0.31,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 14,
+      "opp": "NE",
+      "score": 0.31
+     },
+     {
+      "wk": 9,
+      "opp": "BUF",
+      "score": 0.3
+     },
+     {
+      "wk": 11,
+      "opp": "SF",
+      "score": 0.3
      }
     ]
    }
@@ -6228,35 +6573,41 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.98,
-    "peak": 1.87,
+    "n_levers": 3,
+    "mean": 1.13,
+    "peak": 2.21,
     "smash_weeks": [
      1,
      3,
+     4,
+     13,
      14,
      15,
      17
     ],
-    "playoff_mean": 1.46,
+    "playoff_mean": 1.64,
     "best_wks": [
      {
-      "wk": 3,
-      "opp": "JAX",
-      "score": 1.87
+      "wk": 1,
+      "opp": "SEA",
+      "score": 2.21
      },
      {
-      "wk": 14,
-      "opp": "MIN",
-      "score": 1.81
+      "wk": 15,
+      "opp": "KC",
+      "score": 2.15
      },
      {
-      "wk": 17,
-      "opp": "DEN",
-      "score": 1.74
+      "wk": 4,
+      "opp": "BUF",
+      "score": 1.95
      }
     ]
    }
@@ -6269,29 +6620,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.33,
-    "peak": 0.71,
+    "n_levers": 2,
+    "mean": 0.48,
+    "peak": 0.93,
     "smash_weeks": [],
-    "playoff_mean": 0.39,
+    "playoff_mean": 0.48,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "GB",
-      "score": 0.71
+      "wk": 1,
+      "opp": "SEA",
+      "score": 0.93
      },
      {
-      "wk": 12,
-      "opp": "LAC",
-      "score": 0.65
+      "wk": 4,
+      "opp": "BUF",
+      "score": 0.9
      },
      {
-      "wk": 14,
-      "opp": "MIN",
-      "score": 0.65
+      "wk": 13,
+      "opp": "BUF",
+      "score": 0.9
      }
     ]
    }
@@ -6308,7 +6663,7 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.25,
+    "mean": 0.24,
     "peak": 0.47,
     "smash_weeks": [],
     "playoff_mean": 0.37,
@@ -6343,29 +6698,35 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.75,
-    "peak": 1.35,
-    "smash_weeks": [],
-    "playoff_mean": 1.0,
+    "n_levers": 3,
+    "mean": 0.86,
+    "peak": 1.59,
+    "smash_weeks": [
+     15
+    ],
+    "playoff_mean": 1.24,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "KC",
+      "score": 1.59
+     },
      {
       "wk": 5,
       "opp": "LV",
-      "score": 1.35
+      "score": 1.41
      },
      {
       "wk": 8,
       "opp": "MIA",
-      "score": 1.32
-     },
-     {
-      "wk": 18,
-      "opp": "MIA",
-      "score": 1.32
+      "score": 1.35
      }
     ]
    }
@@ -6386,35 +6747,41 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.99,
-    "peak": 1.69,
+    "n_levers": 4,
+    "mean": 1.1,
+    "peak": 2.0,
     "smash_weeks": [
+     1,
      5,
      6,
      8,
+     15,
      16,
      18
     ],
-    "playoff_mean": 1.36,
+    "playoff_mean": 1.61,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "KC",
+      "score": 2.0
+     },
      {
       "wk": 8,
       "opp": "MIA",
-      "score": 1.69
+      "score": 1.72
      },
      {
       "wk": 18,
       "opp": "MIA",
-      "score": 1.69
-     },
-     {
-      "wk": 5,
-      "opp": "LV",
-      "score": 1.65
+      "score": 1.72
      }
     ]
    }
@@ -6435,25 +6802,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.4,
-    "peak": 1.15,
+    "mean": 0.43,
+    "peak": 1.21,
     "smash_weeks": [],
-    "playoff_mean": 0.38,
+    "playoff_mean": 0.53,
     "best_wks": [
-     {
-      "wk": 6,
-      "opp": "NYJ",
-      "score": 1.15
-     },
-     {
-      "wk": 16,
-      "opp": "NYJ",
-      "score": 1.15
-     },
      {
       "wk": 5,
       "opp": "LV",
-      "score": 1.09
+      "score": 1.21
+     },
+     {
+      "wk": 2,
+      "opp": "PIT",
+      "score": 1.07
+     },
+     {
+      "wk": 6,
+      "opp": "NYJ",
+      "score": 1.07
      }
     ]
    }
@@ -6474,25 +6841,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.36,
-    "peak": 0.96,
+    "mean": 0.39,
+    "peak": 0.99,
     "smash_weeks": [],
-    "playoff_mean": 0.27,
+    "playoff_mean": 0.42,
     "best_wks": [
      {
       "wk": 2,
       "opp": "PIT",
-      "score": 0.96
+      "score": 0.99
      },
      {
       "wk": 9,
       "opp": "GB",
-      "score": 0.9
+      "score": 0.93
      },
      {
-      "wk": 6,
-      "opp": "NYJ",
-      "score": 0.8
+      "wk": 5,
+      "opp": "LV",
+      "score": 0.83
      }
     ]
    }
@@ -6513,35 +6880,40 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.89,
-    "peak": 1.7,
+    "n_levers": 4,
+    "mean": 1.0,
+    "peak": 1.79,
     "smash_weeks": [
      5,
      6,
      8,
+     15,
      16,
      18
     ],
-    "playoff_mean": 1.12,
+    "playoff_mean": 1.35,
     "best_wks": [
      {
       "wk": 5,
       "opp": "LV",
-      "score": 1.7
+      "score": 1.79
      },
      {
-      "wk": 6,
-      "opp": "NYJ",
-      "score": 1.67
+      "wk": 8,
+      "opp": "MIA",
+      "score": 1.62
      },
      {
-      "wk": 16,
-      "opp": "NYJ",
-      "score": 1.67
+      "wk": 18,
+      "opp": "MIA",
+      "score": 1.62
      }
     ]
    }
@@ -6552,31 +6924,35 @@
    "rank": 409,
    "levers": [
     {
+     "type": "boundary",
+     "tier": "solid"
+    },
+    {
      "type": "vertical",
      "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.14,
-    "peak": 0.39,
+    "n_levers": 2,
+    "mean": 0.43,
+    "peak": 1.21,
     "smash_weeks": [],
-    "playoff_mean": 0.12,
+    "playoff_mean": 0.53,
     "best_wks": [
-     {
-      "wk": 2,
-      "opp": "PIT",
-      "score": 0.39
-     },
      {
       "wk": 5,
       "opp": "LV",
-      "score": 0.36
+      "score": 1.21
+     },
+     {
+      "wk": 2,
+      "opp": "PIT",
+      "score": 1.07
      },
      {
       "wk": 6,
       "opp": "NYJ",
-      "score": 0.36
+      "score": 1.07
      }
     ]
    }
@@ -6593,29 +6969,33 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.33,
-    "peak": 1.04,
+    "n_levers": 3,
+    "mean": 0.47,
+    "peak": 1.12,
     "smash_weeks": [],
-    "playoff_mean": 0.17,
+    "playoff_mean": 0.26,
     "best_wks": [
+     {
+      "wk": 7,
+      "opp": "CHI",
+      "score": 1.12
+     },
      {
       "wk": 2,
       "opp": "PIT",
-      "score": 1.04
+      "score": 1.06
      },
      {
       "wk": 9,
       "opp": "GB",
-      "score": 1.01
-     },
-     {
-      "wk": 12,
-      "opp": "LAC",
-      "score": 0.98
+      "score": 0.97
      }
     ]
    }
@@ -6628,29 +7008,39 @@
     {
      "type": "qb_man",
      "tier": "solid"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.29,
-    "peak": 1.0,
-    "smash_weeks": [],
-    "playoff_mean": 0.0,
+    "n_levers": 3,
+    "mean": 0.67,
+    "peak": 2.34,
+    "smash_weeks": [
+     12
+    ],
+    "playoff_mean": 0.53,
     "best_wks": [
      {
       "wk": 12,
       "opp": "CIN",
-      "score": 1.0
+      "score": 2.34
      },
      {
-      "wk": 5,
-      "opp": "MIN",
-      "score": 0.9
+      "wk": 9,
+      "opp": "CLE",
+      "score": 1.12
      },
      {
-      "wk": 10,
-      "opp": "CAR",
-      "score": 0.74
+      "wk": 3,
+      "opp": "LV",
+      "score": 0.96
      }
     ]
    }
@@ -6663,29 +7053,68 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.3,
-    "peak": 0.96,
+    "n_levers": 2,
+    "mean": 0.39,
+    "peak": 1.23,
     "smash_weeks": [],
-    "playoff_mean": 0.53,
+    "playoff_mean": 0.74,
     "best_wks": [
      {
       "wk": 16,
       "opp": "ARI",
-      "score": 0.96
+      "score": 1.23
      },
      {
-      "wk": 6,
-      "opp": "NYG",
-      "score": 0.73
+      "wk": 12,
+      "opp": "CIN",
+      "score": 0.99
      },
      {
-      "wk": 13,
-      "opp": "GB",
-      "score": 0.71
+      "wk": 15,
+      "opp": "TB",
+      "score": 0.98
+     }
+    ]
+   }
+  },
+  "Chris Olave": {
+   "pos": "WR",
+   "team": "NO",
+   "rank": 34,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.09,
+    "peak": 0.44,
+    "smash_weeks": [],
+    "playoff_mean": 0.2,
+    "best_wks": [
+     {
+      "wk": 12,
+      "opp": "CIN",
+      "score": 0.44
+     },
+     {
+      "wk": 16,
+      "opp": "ARI",
+      "score": 0.31
+     },
+     {
+      "wk": 11,
+      "opp": "CHI",
+      "score": 0.28
      }
     ]
    }
@@ -6706,7 +7135,7 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.36,
+    "mean": 0.37,
     "peak": 0.5,
     "smash_weeks": [],
     "playoff_mean": 0.4,
@@ -6772,29 +7201,72 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 3,
+    "mean": 0.71,
+    "peak": 1.37,
+    "smash_weeks": [],
+    "playoff_mean": 0.84,
+    "best_wks": [
+     {
+      "wk": 14,
+      "opp": "SEA",
+      "score": 1.37
+     },
+     {
+      "wk": 1,
+      "opp": "DAL",
+      "score": 1.12
+     },
+     {
+      "wk": 15,
+      "opp": "CLE",
+      "score": 1.12
+     }
+    ]
+   }
+  },
+  "Jameis Winston": {
+   "pos": "QB",
+   "team": "NYG",
+   "rank": 295,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.32,
-    "peak": 0.97,
+    "mean": 0.23,
+    "peak": 0.86,
     "smash_weeks": [],
-    "playoff_mean": 0.23,
+    "playoff_mean": 0.29,
     "best_wks": [
      {
-      "wk": 9,
-      "opp": "PHI",
-      "score": 0.97
+      "wk": 1,
+      "opp": "DAL",
+      "score": 0.86
      },
      {
-      "wk": 18,
-      "opp": "PHI",
-      "score": 0.97
+      "wk": 17,
+      "opp": "DAL",
+      "score": 0.86
      },
      {
-      "wk": 11,
-      "opp": "JAX",
-      "score": 0.94
+      "wk": 2,
+      "opp": "LAR",
+      "score": 0.66
      }
     ]
    }
@@ -6811,29 +7283,35 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.51,
-    "peak": 1.45,
-    "smash_weeks": [],
-    "playoff_mean": 0.45,
+    "n_levers": 3,
+    "mean": 0.65,
+    "peak": 1.71,
+    "smash_weeks": [
+     4
+    ],
+    "playoff_mean": 0.59,
     "best_wks": [
      {
       "wk": 4,
       "opp": "ARI",
-      "score": 1.45
+      "score": 1.71
      },
      {
-      "wk": 5,
-      "opp": "WAS",
-      "score": 1.21
+      "wk": 1,
+      "opp": "DAL",
+      "score": 1.44
      },
      {
-      "wk": 10,
-      "opp": "WAS",
-      "score": 1.21
+      "wk": 17,
+      "opp": "DAL",
+      "score": 1.44
      }
     ]
    }
@@ -6854,29 +7332,35 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.74,
-    "peak": 1.41,
-    "smash_weeks": [],
-    "playoff_mean": 0.87,
+    "n_levers": 4,
+    "mean": 0.83,
+    "peak": 1.58,
+    "smash_weeks": [
+     15
+    ],
+    "playoff_mean": 1.1,
     "best_wks": [
-     {
-      "wk": 12,
-      "opp": "IND",
-      "score": 1.41
-     },
      {
       "wk": 15,
       "opp": "CLE",
-      "score": 1.26
+      "score": 1.58
      },
      {
-      "wk": 4,
-      "opp": "ARI",
-      "score": 1.25
+      "wk": 1,
+      "opp": "DAL",
+      "score": 1.46
+     },
+     {
+      "wk": 17,
+      "opp": "DAL",
+      "score": 1.46
      }
     ]
    }
@@ -6893,25 +7377,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.19,
-    "peak": 0.39,
+    "mean": 0.16,
+    "peak": 0.44,
     "smash_weeks": [],
     "playoff_mean": 0.32,
     "best_wks": [
      {
-      "wk": 6,
-      "opp": "NO",
-      "score": 0.39
-     },
-     {
       "wk": 15,
       "opp": "CLE",
-      "score": 0.38
+      "score": 0.44
+     },
+     {
+      "wk": 6,
+      "opp": "NO",
+      "score": 0.43
      },
      {
       "wk": 12,
       "opp": "IND",
-      "score": 0.35
+      "score": 0.34
      }
     ]
    }
@@ -6932,23 +7416,23 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.58,
-    "peak": 1.25,
+    "mean": 0.56,
+    "peak": 1.28,
     "smash_weeks": [],
-    "playoff_mean": 0.76,
+    "playoff_mean": 0.85,
     "best_wks": [
      {
-      "wk": 4,
-      "opp": "ARI",
-      "score": 1.25
+      "wk": 6,
+      "opp": "NO",
+      "score": 1.28
+     },
+     {
+      "wk": 15,
+      "opp": "CLE",
+      "score": 1.24
      },
      {
       "wk": 5,
-      "opp": "WAS",
-      "score": 1.21
-     },
-     {
-      "wk": 10,
       "opp": "WAS",
       "score": 1.21
      }
@@ -6963,29 +7447,33 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.19,
-    "peak": 0.39,
+    "n_levers": 2,
+    "mean": 0.27,
+    "peak": 0.69,
     "smash_weeks": [],
-    "playoff_mean": 0.32,
+    "playoff_mean": 0.47,
     "best_wks": [
      {
-      "wk": 6,
-      "opp": "NO",
-      "score": 0.39
+      "wk": 1,
+      "opp": "DAL",
+      "score": 0.69
      },
      {
-      "wk": 15,
-      "opp": "CLE",
-      "score": 0.38
+      "wk": 17,
+      "opp": "DAL",
+      "score": 0.69
      },
      {
-      "wk": 12,
-      "opp": "IND",
-      "score": 0.35
+      "wk": 13,
+      "opp": "SF",
+      "score": 0.58
      }
     ]
    }
@@ -7025,6 +7513,76 @@
     ]
    }
   },
+  "Geno Smith": {
+   "pos": "QB",
+   "team": "NYJ",
+   "rank": 185,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.23,
+    "peak": 0.63,
+    "smash_weeks": [],
+    "playoff_mean": 0.42,
+    "best_wks": [
+     {
+      "wk": 15,
+      "opp": "ARI",
+      "score": 0.63
+     },
+     {
+      "wk": 6,
+      "opp": "NE",
+      "score": 0.62
+     },
+     {
+      "wk": 16,
+      "opp": "NE",
+      "score": 0.62
+     }
+    ]
+   }
+  },
+  "Cade Klubnik": {
+   "pos": "QB",
+   "team": "NYJ",
+   "rank": 357,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.23,
+    "peak": 0.63,
+    "smash_weeks": [],
+    "playoff_mean": 0.42,
+    "best_wks": [
+     {
+      "wk": 15,
+      "opp": "ARI",
+      "score": 0.63
+     },
+     {
+      "wk": 6,
+      "opp": "NE",
+      "score": 0.62
+     },
+     {
+      "wk": 16,
+      "opp": "NE",
+      "score": 0.62
+     }
+    ]
+   }
+  },
   "Breece Hall": {
    "pos": "RB",
    "team": "NYJ",
@@ -7037,29 +7595,35 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.51,
-    "peak": 1.32,
-    "smash_weeks": [],
-    "playoff_mean": 0.8,
+    "n_levers": 3,
+    "mean": 0.67,
+    "peak": 1.58,
+    "smash_weeks": [
+     15
+    ],
+    "playoff_mean": 0.97,
     "best_wks": [
      {
       "wk": 15,
       "opp": "ARI",
-      "score": 1.32
-     },
-     {
-      "wk": 1,
-      "opp": "TEN",
-      "score": 1.18
+      "score": 1.58
      },
      {
       "wk": 2,
       "opp": "GB",
-      "score": 1.1
+      "score": 1.11
+     },
+     {
+      "wk": 1,
+      "opp": "TEN",
+      "score": 1.04
      }
     ]
    }
@@ -7076,31 +7640,35 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.54,
-    "peak": 1.92,
+    "n_levers": 3,
+    "mean": 0.71,
+    "peak": 1.97,
     "smash_weeks": [
      15
     ],
-    "playoff_mean": 0.81,
+    "playoff_mean": 0.93,
     "best_wks": [
      {
       "wk": 15,
       "opp": "ARI",
-      "score": 1.92
+      "score": 1.97
      },
      {
-      "wk": 1,
-      "opp": "TEN",
-      "score": 1.47
+      "wk": 9,
+      "opp": "KC",
+      "score": 1.29
      },
      {
-      "wk": 2,
-      "opp": "GB",
-      "score": 1.14
+      "wk": 7,
+      "opp": "MIA",
+      "score": 1.19
      }
     ]
    }
@@ -7121,34 +7689,39 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.77,
-    "peak": 1.7,
+    "n_levers": 4,
+    "mean": 0.89,
+    "peak": 1.92,
     "smash_weeks": [
      5,
      7,
      8,
+     9,
      12
     ],
-    "playoff_mean": 0.72,
+    "playoff_mean": 0.81,
     "best_wks": [
-     {
-      "wk": 8,
-      "opp": "LV",
-      "score": 1.7
-     },
      {
       "wk": 5,
       "opp": "CLE",
-      "score": 1.6
+      "score": 1.92
+     },
+     {
+      "wk": 8,
+      "opp": "LV",
+      "score": 1.79
      },
      {
       "wk": 7,
       "opp": "MIA",
-      "score": 1.58
+      "score": 1.62
      }
     ]
    }
@@ -7200,33 +7773,76 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.43,
-    "peak": 1.87,
+    "n_levers": 4,
+    "mean": 0.85,
+    "peak": 2.21,
     "smash_weeks": [
      5,
      14,
      15
     ],
-    "playoff_mean": 0.95,
+    "playoff_mean": 1.4,
     "best_wks": [
-     {
-      "wk": 5,
-      "opp": "JAX",
-      "score": 1.87
-     },
      {
       "wk": 15,
       "opp": "SEA",
-      "score": 1.68
+      "score": 2.21
      },
      {
       "wk": 14,
       "opp": "IND",
-      "score": 1.55
+      "score": 1.89
+     },
+     {
+      "wk": 5,
+      "opp": "JAX",
+      "score": 1.87
+     }
+    ]
+   }
+  },
+  "Tanner McKee": {
+   "pos": "QB",
+   "team": "PHI",
+   "rank": 234,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.26,
+    "peak": 0.86,
+    "smash_weeks": [],
+    "playoff_mean": 0.38,
+    "best_wks": [
+     {
+      "wk": 7,
+      "opp": "DAL",
+      "score": 0.86
+     },
+     {
+      "wk": 12,
+      "opp": "DAL",
+      "score": 0.86
+     },
+     {
+      "wk": 4,
+      "opp": "LAR",
+      "score": 0.66
      }
     ]
    }
@@ -7243,29 +7859,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.53,
-    "peak": 0.97,
+    "n_levers": 3,
+    "mean": 0.64,
+    "peak": 1.35,
     "smash_weeks": [],
-    "playoff_mean": 0.42,
+    "playoff_mean": 0.64,
     "best_wks": [
      {
       "wk": 15,
       "opp": "SEA",
-      "score": 0.97
+      "score": 1.35
      },
      {
       "wk": 13,
       "opp": "ARI",
-      "score": 0.96
+      "score": 1.23
      },
      {
-      "wk": 1,
-      "opp": "WAS",
-      "score": 0.87
+      "wk": 7,
+      "opp": "DAL",
+      "score": 1.17
      }
     ]
    }
@@ -7317,24 +7937,30 @@
     {
      "type": "contested",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.32,
-    "peak": 1.4,
-    "smash_weeks": [],
-    "playoff_mean": 0.71,
+    "n_levers": 3,
+    "mean": 0.45,
+    "peak": 1.52,
+    "smash_weeks": [
+     15
+    ],
+    "playoff_mean": 0.88,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "SEA",
+      "score": 1.52
+     },
      {
       "wk": 5,
       "opp": "JAX",
       "score": 1.4
-     },
-     {
-      "wk": 15,
-      "opp": "SEA",
-      "score": 1.26
      },
      {
       "wk": 14,
@@ -7352,29 +7978,173 @@
     {
      "type": "gets_open_man",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.21,
-    "peak": 0.94,
+    "n_levers": 2,
+    "mean": 0.34,
+    "peak": 1.11,
     "smash_weeks": [],
-    "playoff_mean": 0.47,
+    "playoff_mean": 0.65,
     "best_wks": [
+     {
+      "wk": 15,
+      "opp": "SEA",
+      "score": 1.11
+     },
      {
       "wk": 5,
       "opp": "JAX",
       "score": 0.94
      },
      {
-      "wk": 15,
-      "opp": "SEA",
-      "score": 0.84
-     },
-     {
       "wk": 14,
       "opp": "IND",
       "score": 0.77
+     }
+    ]
+   }
+  },
+  "Dallas Goedert": {
+   "pos": "TE",
+   "team": "PHI",
+   "rank": 124,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.13,
+    "peak": 0.43,
+    "smash_weeks": [],
+    "playoff_mean": 0.19,
+    "best_wks": [
+     {
+      "wk": 7,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 12,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 4,
+      "opp": "LAR",
+      "score": 0.33
+     }
+    ]
+   }
+  },
+  "Aaron Rodgers": {
+   "pos": "QB",
+   "team": "PIT",
+   "rank": 161,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.16,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 3,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 10,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 2,
+      "opp": "NE",
+      "score": 0.62
+     }
+    ]
+   }
+  },
+  "Drew Allar": {
+   "pos": "QB",
+   "team": "PIT",
+   "rank": 299,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.16,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 3,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 10,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 2,
+      "opp": "NE",
+      "score": 0.62
+     }
+    ]
+   }
+  },
+  "Will Howard": {
+   "pos": "QB",
+   "team": "PIT",
+   "rank": 314,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.16,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 3,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 10,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 2,
+      "opp": "NE",
+      "score": 0.62
      }
     ]
    }
@@ -7391,29 +8161,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.29,
-    "peak": 0.87,
+    "n_levers": 3,
+    "mean": 0.4,
+    "peak": 1.35,
     "smash_weeks": [],
-    "playoff_mean": 0.39,
+    "playoff_mean": 0.34,
     "best_wks": [
      {
       "wk": 3,
       "opp": "CIN",
-      "score": 0.87
+      "score": 1.35
      },
      {
       "wk": 10,
       "opp": "CIN",
-      "score": 0.87
+      "score": 1.35
      },
      {
-      "wk": 17,
-      "opp": "TEN",
-      "score": 0.73
+      "wk": 6,
+      "opp": "TB",
+      "score": 0.98
      }
     ]
    }
@@ -7469,32 +8243,39 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.87,
-    "peak": 1.83,
+    "n_levers": 4,
+    "mean": 0.91,
+    "peak": 2.39,
     "smash_weeks": [
      3,
+     4,
+     6,
+     8,
      10
     ],
-    "playoff_mean": 0.95,
+    "playoff_mean": 0.52,
     "best_wks": [
      {
       "wk": 3,
       "opp": "CIN",
-      "score": 1.83
+      "score": 2.39
      },
      {
       "wk": 10,
       "opp": "CIN",
-      "score": 1.83
+      "score": 2.39
      },
      {
-      "wk": 5,
-      "opp": "IND",
-      "score": 1.41
+      "wk": 6,
+      "opp": "TB",
+      "score": 1.62
      }
     ]
    }
@@ -7515,29 +8296,37 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.77,
-    "peak": 1.39,
-    "smash_weeks": [],
-    "playoff_mean": 0.85,
+    "n_levers": 4,
+    "mean": 0.82,
+    "peak": 1.92,
+    "smash_weeks": [
+     3,
+     6,
+     10
+    ],
+    "playoff_mean": 0.57,
     "best_wks": [
      {
       "wk": 3,
       "opp": "CIN",
-      "score": 1.39
+      "score": 1.92
      },
      {
       "wk": 10,
       "opp": "CIN",
-      "score": 1.39
+      "score": 1.92
      },
      {
-      "wk": 17,
-      "opp": "TEN",
-      "score": 1.31
+      "wk": 6,
+      "opp": "TB",
+      "score": 1.6
      }
     ]
    }
@@ -7558,25 +8347,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.61,
-    "peak": 1.33,
+    "mean": 0.57,
+    "peak": 1.45,
     "smash_weeks": [],
-    "playoff_mean": 0.73,
+    "playoff_mean": 0.3,
     "best_wks": [
      {
       "wk": 3,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
       "wk": 10,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
       "wk": 6,
       "opp": "TB",
-      "score": 1.18
+      "score": 1.34
      }
     ]
    }
@@ -7616,6 +8405,41 @@
     ]
    }
   },
+  "Darnell Washington": {
+   "pos": "TE",
+   "team": "PIT",
+   "rank": 245,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.08,
+    "peak": 0.44,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 3,
+      "opp": "CIN",
+      "score": 0.44
+     },
+     {
+      "wk": 10,
+      "opp": "CIN",
+      "score": 0.44
+     },
+     {
+      "wk": 2,
+      "opp": "NE",
+      "score": 0.31
+     }
+    ]
+   }
+  },
   "Sam Darnold": {
    "pos": "QB",
    "team": "SEA",
@@ -7624,15 +8448,24 @@
     {
      "type": "qb_man",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.97,
+    "n_levers": 2,
+    "mean": 0.57,
+    "peak": 1.35,
     "smash_weeks": [],
-    "playoff_mean": 0.57,
+    "playoff_mean": 0.79,
     "best_wks": [
+     {
+      "wk": 7,
+      "opp": "KC",
+      "score": 1.35
+     },
      {
       "wk": 15,
       "opp": "PHI",
@@ -7642,11 +8475,6 @@
       "wk": 6,
       "opp": "DEN",
       "score": 0.87
-     },
-     {
-      "wk": 7,
-      "opp": "KC",
-      "score": 0.81
      }
     ]
    }
@@ -7698,15 +8526,24 @@
     {
      "type": "man_beater",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.22,
-    "peak": 0.97,
+    "n_levers": 2,
+    "mean": 0.4,
+    "peak": 1.08,
     "smash_weeks": [],
-    "playoff_mean": 0.57,
+    "playoff_mean": 0.68,
     "best_wks": [
+     {
+      "wk": 7,
+      "opp": "KC",
+      "score": 1.08
+     },
      {
       "wk": 15,
       "opp": "PHI",
@@ -7716,11 +8553,6 @@
       "wk": 6,
       "opp": "DEN",
       "score": 0.87
-     },
-     {
-      "wk": 7,
-      "opp": "KC",
-      "score": 0.81
      }
     ]
    }
@@ -7733,29 +8565,138 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.3,
-    "peak": 0.98,
+    "n_levers": 2,
+    "mean": 0.48,
+    "peak": 1.21,
     "smash_weeks": [],
-    "playoff_mean": 0.0,
+    "playoff_mean": 0.11,
     "best_wks": [
      {
       "wk": 2,
       "opp": "ARI",
-      "score": 0.98
+      "score": 1.21
      },
      {
       "wk": 9,
       "opp": "ARI",
-      "score": 0.98
+      "score": 1.21
      },
      {
-      "wk": 14,
-      "opp": "NYG",
-      "score": 0.95
+      "wk": 13,
+      "opp": "DAL",
+      "score": 1.19
+     }
+    ]
+   }
+  },
+  "Cooper Kupp": {
+   "pos": "WR",
+   "team": "SEA",
+   "rank": 197,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.18,
+    "peak": 0.43,
+    "smash_weeks": [],
+    "playoff_mean": 0.11,
+    "best_wks": [
+     {
+      "wk": 13,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 16,
+      "opp": "LAR",
+      "score": 0.33
+     },
+     {
+      "wk": 18,
+      "opp": "LAR",
+      "score": 0.33
+     }
+    ]
+   }
+  },
+  "Tory Horton": {
+   "pos": "WR",
+   "team": "SEA",
+   "rank": 237,
+   "levers": [
+    {
+     "type": "boundary",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.31,
+    "peak": 0.92,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 3,
+      "opp": "WAS",
+      "score": 0.92
+     },
+     {
+      "wk": 2,
+      "opp": "ARI",
+      "score": 0.89
+     },
+     {
+      "wk": 9,
+      "opp": "ARI",
+      "score": 0.89
+     }
+    ]
+   }
+  },
+  "AJ Barner": {
+   "pos": "TE",
+   "team": "SEA",
+   "rank": 179,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.18,
+    "peak": 0.43,
+    "smash_weeks": [],
+    "playoff_mean": 0.11,
+    "best_wks": [
+     {
+      "wk": 13,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 16,
+      "opp": "LAR",
+      "score": 0.33
+     },
+     {
+      "wk": 18,
+      "opp": "LAR",
+      "score": 0.33
      }
     ]
    }
@@ -7768,29 +8709,68 @@
     {
      "type": "scramble_qb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 2,
+    "mean": 0.64,
+    "peak": 1.37,
+    "smash_weeks": [],
+    "playoff_mean": 0.77,
+    "best_wks": [
+     {
+      "wk": 5,
+      "opp": "SEA",
+      "score": 1.37
+     },
+     {
+      "wk": 12,
+      "opp": "SEA",
+      "score": 1.37
+     },
+     {
+      "wk": 16,
+      "opp": "KC",
+      "score": 1.35
+     }
+    ]
+   }
+  },
+  "Mac Jones": {
+   "pos": "QB",
+   "team": "SF",
+   "rank": 379,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.37,
-    "peak": 0.97,
+    "mean": 0.28,
+    "peak": 0.86,
     "smash_weeks": [],
-    "playoff_mean": 0.59,
+    "playoff_mean": 0.18,
     "best_wks": [
      {
-      "wk": 17,
-      "opp": "PHI",
-      "score": 0.97
+      "wk": 10,
+      "opp": "DAL",
+      "score": 0.86
      },
      {
-      "wk": 11,
-      "opp": "MIN",
-      "score": 0.9
+      "wk": 1,
+      "opp": "LAR",
+      "score": 0.66
      },
      {
-      "wk": 4,
-      "opp": "DEN",
-      "score": 0.87
+      "wk": 14,
+      "opp": "LAR",
+      "score": 0.66
      }
     ]
    }
@@ -7807,29 +8787,36 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.7,
-    "peak": 1.32,
-    "smash_weeks": [],
-    "playoff_mean": 0.51,
+    "n_levers": 3,
+    "mean": 0.84,
+    "peak": 1.58,
+    "smash_weeks": [
+     3,
+     18
+    ],
+    "playoff_mean": 0.57,
     "best_wks": [
      {
       "wk": 3,
       "opp": "ARI",
-      "score": 1.32
+      "score": 1.58
      },
      {
       "wk": 18,
       "opp": "ARI",
-      "score": 1.32
+      "score": 1.58
      },
      {
-      "wk": 6,
-      "opp": "WAS",
-      "score": 1.27
+      "wk": 10,
+      "opp": "DAL",
+      "score": 1.43
      }
     ]
    }
@@ -7893,39 +8880,45 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 5,
-    "mean": 1.35,
-    "peak": 2.47,
+    "n_levers": 6,
+    "mean": 1.41,
+    "peak": 2.57,
     "smash_weeks": [
      2,
      3,
+     5,
      6,
      9,
      10,
      11,
+     12,
      13,
      16,
      18
     ],
-    "playoff_mean": 1.28,
+    "playoff_mean": 1.32,
     "best_wks": [
      {
       "wk": 2,
       "opp": "MIA",
-      "score": 2.47
+      "score": 2.57
      },
      {
-      "wk": 3,
-      "opp": "ARI",
-      "score": 2.19
+      "wk": 16,
+      "opp": "KC",
+      "score": 2.5
      },
      {
-      "wk": 18,
-      "opp": "ARI",
-      "score": 2.19
+      "wk": 10,
+      "opp": "DAL",
+      "score": 2.28
      }
     ]
    }
@@ -7946,25 +8939,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.69,
-    "peak": 1.35,
+    "mean": 0.7,
+    "peak": 1.41,
     "smash_weeks": [],
-    "playoff_mean": 0.59,
+    "playoff_mean": 0.76,
     "best_wks": [
      {
       "wk": 9,
       "opp": "LV",
-      "score": 1.35
+      "score": 1.41
      },
      {
       "wk": 2,
       "opp": "MIA",
-      "score": 1.32
+      "score": 1.35
      },
      {
-      "wk": 3,
-      "opp": "ARI",
-      "score": 0.98
+      "wk": 16,
+      "opp": "KC",
+      "score": 1.32
      }
     ]
    }
@@ -7981,29 +8974,35 @@
     {
      "type": "slot",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.69,
-    "peak": 1.35,
-    "smash_weeks": [],
-    "playoff_mean": 0.59,
+    "n_levers": 3,
+    "mean": 0.84,
+    "peak": 1.59,
+    "smash_weeks": [
+     16
+    ],
+    "playoff_mean": 0.85,
     "best_wks": [
+     {
+      "wk": 16,
+      "opp": "KC",
+      "score": 1.59
+     },
      {
       "wk": 9,
       "opp": "LV",
-      "score": 1.35
+      "score": 1.41
      },
      {
       "wk": 2,
       "opp": "MIA",
-      "score": 1.32
-     },
-     {
-      "wk": 3,
-      "opp": "ARI",
-      "score": 0.98
+      "score": 1.35
      }
     ]
    }
@@ -8024,25 +9023,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.69,
-    "peak": 1.35,
+    "mean": 0.7,
+    "peak": 1.41,
     "smash_weeks": [],
-    "playoff_mean": 0.59,
+    "playoff_mean": 0.76,
     "best_wks": [
      {
       "wk": 9,
       "opp": "LV",
-      "score": 1.35
+      "score": 1.41
      },
      {
       "wk": 2,
       "opp": "MIA",
-      "score": 1.32
+      "score": 1.35
      },
      {
-      "wk": 3,
-      "opp": "ARI",
-      "score": 0.98
+      "wk": 16,
+      "opp": "KC",
+      "score": 1.32
      }
     ]
    }
@@ -8063,29 +9062,70 @@
     {
      "type": "redzone",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.72,
-    "peak": 1.36,
-    "smash_weeks": [],
-    "playoff_mean": 0.79,
+    "n_levers": 4,
+    "mean": 0.8,
+    "peak": 1.52,
+    "smash_weeks": [
+     10
+    ],
+    "playoff_mean": 0.66,
     "best_wks": [
      {
-      "wk": 6,
-      "opp": "WAS",
-      "score": 1.36
+      "wk": 10,
+      "opp": "DAL",
+      "score": 1.52
      },
      {
       "wk": 3,
       "opp": "ARI",
-      "score": 1.29
+      "score": 1.44
      },
      {
       "wk": 18,
       "opp": "ARI",
-      "score": 1.29
+      "score": 1.44
+     }
+    ]
+   }
+  },
+  "Jake Tonges": {
+   "pos": "TE",
+   "team": "SF",
+   "rank": 274,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "tendency"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.14,
+    "peak": 0.43,
+    "smash_weeks": [],
+    "playoff_mean": 0.09,
+    "best_wks": [
+     {
+      "wk": 10,
+      "opp": "DAL",
+      "score": 0.43
+     },
+     {
+      "wk": 1,
+      "opp": "LAR",
+      "score": 0.33
+     },
+     {
+      "wk": 14,
+      "opp": "LAR",
+      "score": 0.33
      }
     ]
    }
@@ -8102,25 +9142,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.3,
-    "peak": 0.89,
+    "mean": 0.16,
+    "peak": 0.88,
     "smash_weeks": [],
-    "playoff_mean": 0.23,
+    "playoff_mean": 0.22,
     "best_wks": [
      {
       "wk": 1,
       "opp": "CIN",
-      "score": 0.89
+      "score": 0.88
      },
      {
       "wk": 5,
       "opp": "DAL",
-      "score": 0.77
+      "score": 0.86
      },
      {
-      "wk": 15,
-      "opp": "NO",
-      "score": 0.7
+      "wk": 17,
+      "opp": "LAR",
+      "score": 0.66
      }
     ]
    }
@@ -8137,33 +9177,29 @@
     {
      "type": "elusive_rb",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.7,
-    "peak": 1.29,
+    "n_levers": 2,
+    "mean": 0.41,
+    "peak": 0.67,
     "smash_weeks": [],
-    "playoff_mean": 0.78,
+    "playoff_mean": 0.55,
     "best_wks": [
      {
-      "wk": 5,
-      "opp": "DAL",
-      "score": 1.29
+      "wk": 9,
+      "opp": "CHI",
+      "score": 0.67
      },
      {
-      "wk": 15,
-      "opp": "NO",
-      "score": 1.27
+      "wk": 13,
+      "opp": "LAC",
+      "score": 0.67
      },
      {
-      "wk": 18,
-      "opp": "NO",
-      "score": 1.27
+      "wk": 17,
+      "opp": "LAR",
+      "score": 0.59
      }
     ]
    }
@@ -8179,67 +9215,30 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.51,
-    "peak": 1.51,
-    "smash_weeks": [
-     5
-    ],
-    "playoff_mean": 0.43,
-    "best_wks": [
-     {
-      "wk": 5,
-      "opp": "DAL",
-      "score": 1.51
-     },
-     {
-      "wk": 1,
-      "opp": "CIN",
-      "score": 1.4
-     },
-     {
-      "wk": 4,
-      "opp": "GB",
-      "score": 1.23
-     }
-    ]
-   }
-  },
-  "Sean Tucker": {
-   "pos": "RB",
-   "team": "TB",
-   "rank": 188,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.3,
-    "peak": 0.89,
+    "mean": 0.35,
+    "peak": 1.17,
     "smash_weeks": [],
-    "playoff_mean": 0.23,
+    "playoff_mean": 0.49,
     "best_wks": [
-     {
-      "wk": 1,
-      "opp": "CIN",
-      "score": 0.89
-     },
      {
       "wk": 5,
       "opp": "DAL",
-      "score": 0.77
+      "score": 1.17
      },
      {
-      "wk": 15,
-      "opp": "NO",
-      "score": 0.7
+      "wk": 1,
+      "opp": "CIN",
+      "score": 0.99
+     },
+     {
+      "wk": 17,
+      "opp": "LAR",
+      "score": 0.95
      }
     ]
    }
@@ -8254,35 +9253,38 @@
      "tier": "tendency"
     },
     {
-     "type": "vertical",
-     "tier": "tendency"
+     "type": "boundary",
+     "tier": "solid"
     },
     {
-     "type": "shootout",
-     "tier": "solid"
+     "type": "vertical",
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 0.69,
-    "peak": 1.36,
-    "smash_weeks": [],
-    "playoff_mean": 0.71,
+    "mean": 0.7,
+    "peak": 1.56,
+    "smash_weeks": [
+     15,
+     18
+    ],
+    "playoff_mean": 0.78,
     "best_wks": [
      {
       "wk": 15,
       "opp": "NO",
-      "score": 1.36
+      "score": 1.56
      },
      {
       "wk": 18,
       "opp": "NO",
-      "score": 1.36
+      "score": 1.56
      },
      {
-      "wk": 6,
-      "opp": "PIT",
-      "score": 1.35
+      "wk": 1,
+      "opp": "CIN",
+      "score": 1.45
      }
     ]
    }
@@ -8310,38 +9312,33 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 5,
-    "mean": 1.16,
-    "peak": 3.72,
+    "mean": 0.96,
+    "peak": 3.39,
     "smash_weeks": [
      1,
-     2,
-     5,
-     6,
-     14,
-     15,
-     18
+     2
     ],
-    "playoff_mean": 0.6,
+    "playoff_mean": 0.54,
     "best_wks": [
      {
       "wk": 1,
       "opp": "CIN",
-      "score": 3.72
+      "score": 3.39
      },
      {
       "wk": 2,
       "opp": "CLE",
-      "score": 2.49
+      "score": 2.25
      },
      {
-      "wk": 14,
-      "opp": "BAL",
-      "score": 2.44
+      "wk": 5,
+      "opp": "DAL",
+      "score": 1.46
      }
     ]
    }
@@ -8366,76 +9363,32 @@
     {
      "type": "vertical",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 5,
-    "mean": 1.16,
-    "peak": 3.72,
+    "n_levers": 4,
+    "mean": 0.87,
+    "peak": 2.95,
     "smash_weeks": [
      1,
-     2,
-     5,
-     6,
-     14,
-     15,
-     18
+     2
     ],
-    "playoff_mean": 0.6,
+    "playoff_mean": 0.43,
     "best_wks": [
      {
       "wk": 1,
       "opp": "CIN",
-      "score": 3.72
+      "score": 2.95
      },
      {
       "wk": 2,
       "opp": "CLE",
-      "score": 2.49
+      "score": 2.25
      },
      {
-      "wk": 14,
-      "opp": "BAL",
-      "score": 2.44
-     }
-    ]
-   }
-  },
-  "Ted Hurst": {
-   "pos": "WR",
-   "team": "TB",
-   "rank": 210,
-   "levers": [
-    {
-     "type": "shootout",
-     "tier": "solid"
-    }
-   ],
-   "summary": {
-    "n_levers": 1,
-    "mean": 0.3,
-    "peak": 0.89,
-    "smash_weeks": [],
-    "playoff_mean": 0.23,
-    "best_wks": [
-     {
-      "wk": 1,
-      "opp": "CIN",
-      "score": 0.89
-     },
-     {
-      "wk": 5,
-      "opp": "DAL",
-      "score": 0.77
-     },
-     {
-      "wk": 15,
-      "opp": "NO",
-      "score": 0.7
+      "wk": 3,
+      "opp": "MIN",
+      "score": 1.35
      }
     ]
    }
@@ -8448,33 +9401,29 @@
     {
      "type": "zone_beater",
      "tier": "tendency"
-    },
-    {
-     "type": "shootout",
-     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.51,
-    "peak": 1.02,
+    "n_levers": 1,
+    "mean": 0.21,
+    "peak": 0.48,
     "smash_weeks": [],
-    "playoff_mean": 0.58,
+    "playoff_mean": 0.35,
     "best_wks": [
      {
-      "wk": 5,
-      "opp": "DAL",
-      "score": 1.02
+      "wk": 8,
+      "opp": "ATL",
+      "score": 0.48
      },
      {
-      "wk": 15,
-      "opp": "NO",
-      "score": 0.98
+      "wk": 16,
+      "opp": "ATL",
+      "score": 0.48
      },
      {
-      "wk": 18,
-      "opp": "NO",
-      "score": 0.98
+      "wk": 11,
+      "opp": "DET",
+      "score": 0.47
      }
     ]
    }
@@ -8490,30 +9439,60 @@
     },
     {
      "type": "shootout",
-     "tier": "solid"
+     "tier": "tendency"
     }
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.51,
-    "peak": 1.02,
+    "mean": 0.3,
+    "peak": 0.69,
     "smash_weeks": [],
-    "playoff_mean": 0.58,
+    "playoff_mean": 0.46,
     "best_wks": [
      {
       "wk": 5,
       "opp": "DAL",
-      "score": 1.02
+      "score": 0.69
      },
      {
-      "wk": 15,
-      "opp": "NO",
-      "score": 0.98
+      "wk": 17,
+      "opp": "LAR",
+      "score": 0.62
      },
      {
-      "wk": 18,
-      "opp": "NO",
-      "score": 0.98
+      "wk": 9,
+      "opp": "CHI",
+      "score": 0.59
+     }
+    ]
+   }
+  },
+  "Cam Ward": {
+   "pos": "QB",
+   "team": "TEN",
+   "rank": 143,
+   "levers": [
+    {
+     "type": "shootout",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.1,
+    "peak": 0.88,
+    "smash_weeks": [],
+    "playoff_mean": 0.0,
+    "best_wks": [
+     {
+      "wk": 8,
+      "opp": "CIN",
+      "score": 0.88
+     },
+     {
+      "wk": 11,
+      "opp": "DAL",
+      "score": 0.86
      }
     ]
    }
@@ -8530,15 +9509,24 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.33,
-    "peak": 1.27,
+    "n_levers": 3,
+    "mean": 0.37,
+    "peak": 1.43,
     "smash_weeks": [],
-    "playoff_mean": 0.29,
+    "playoff_mean": 0.3,
     "best_wks": [
+     {
+      "wk": 11,
+      "opp": "DAL",
+      "score": 1.43
+     },
      {
       "wk": 13,
       "opp": "WAS",
@@ -8547,12 +9535,7 @@
      {
       "wk": 3,
       "opp": "NYG",
-      "score": 1.15
-     },
-     {
-      "wk": 11,
-      "opp": "DAL",
-      "score": 1.0
+      "score": 1.02
      }
     ]
    }
@@ -8569,29 +9552,33 @@
     {
      "type": "slot",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.56,
-    "peak": 1.37,
+    "n_levers": 3,
+    "mean": 0.58,
+    "peak": 1.45,
     "smash_weeks": [],
-    "playoff_mean": 0.79,
+    "playoff_mean": 0.82,
     "best_wks": [
      {
-      "wk": 3,
-      "opp": "NYG",
-      "score": 1.37
+      "wk": 11,
+      "opp": "DAL",
+      "score": 1.45
+     },
+     {
+      "wk": 8,
+      "opp": "CIN",
+      "score": 1.42
      },
      {
       "wk": 13,
       "opp": "WAS",
       "score": 1.33
-     },
-     {
-      "wk": 11,
-      "opp": "DAL",
-      "score": 1.02
      }
     ]
    }
@@ -8608,29 +9595,70 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.7,
-    "peak": 1.39,
-    "smash_weeks": [],
-    "playoff_mean": 0.91,
+    "n_levers": 3,
+    "mean": 0.72,
+    "peak": 1.92,
+    "smash_weeks": [
+     8
+    ],
+    "playoff_mean": 0.94,
     "best_wks": [
      {
       "wk": 8,
       "opp": "CIN",
-      "score": 1.39
+      "score": 1.92
      },
      {
-      "wk": 1,
-      "opp": "NYJ",
-      "score": 1.06
+      "wk": 11,
+      "opp": "DAL",
+      "score": 1.19
      },
      {
-      "wk": 6,
-      "opp": "IND",
-      "score": 1.06
+      "wk": 7,
+      "opp": "CLE",
+      "score": 1.14
+     }
+    ]
+   }
+  },
+  "Chimere Dike": {
+   "pos": "WR",
+   "team": "TEN",
+   "rank": 331,
+   "levers": [
+    {
+     "type": "slot",
+     "tier": "solid"
+    }
+   ],
+   "summary": {
+    "n_levers": 1,
+    "mean": 0.43,
+    "peak": 0.98,
+    "smash_weeks": [],
+    "playoff_mean": 0.71,
+    "best_wks": [
+     {
+      "wk": 8,
+      "opp": "CIN",
+      "score": 0.98
+     },
+     {
+      "wk": 13,
+      "opp": "WAS",
+      "score": 0.92
+     },
+     {
+      "wk": 16,
+      "opp": "LV",
+      "score": 0.83
      }
     ]
    }
@@ -8643,29 +9671,33 @@
     {
      "type": "contested",
      "tier": "tendency"
+    },
+    {
+     "type": "boundary",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.25,
-    "peak": 0.5,
+    "n_levers": 2,
+    "mean": 0.67,
+    "peak": 1.48,
     "smash_weeks": [],
-    "playoff_mean": 0.23,
+    "playoff_mean": 0.94,
     "best_wks": [
      {
       "wk": 8,
       "opp": "CIN",
-      "score": 0.5
+      "score": 1.48
      },
      {
-      "wk": 2,
-      "opp": "PHI",
-      "score": 0.48
+      "wk": 7,
+      "opp": "CLE",
+      "score": 1.14
      },
      {
-      "wk": 10,
-      "opp": "JAX",
-      "score": 0.47
+      "wk": 16,
+      "opp": "LV",
+      "score": 1.12
      }
     ]
    }
@@ -8678,29 +9710,33 @@
     {
      "type": "scramble_qb",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.19,
-    "peak": 0.5,
+    "n_levers": 2,
+    "mean": 0.47,
+    "peak": 1.38,
     "smash_weeks": [],
     "playoff_mean": 0.31,
     "best_wks": [
      {
       "wk": 11,
       "opp": "CIN",
-      "score": 0.5
+      "score": 1.38
      },
      {
-      "wk": 1,
-      "opp": "PHI",
-      "score": 0.48
+      "wk": 3,
+      "opp": "SEA",
+      "score": 0.95
      },
      {
-      "wk": 8,
-      "opp": "PHI",
-      "score": 0.48
+      "wk": 2,
+      "opp": "DAL",
+      "score": 0.86
      }
     ]
    }
@@ -8713,29 +9749,39 @@
     {
      "type": "scramble_qb",
      "tier": "tendency"
+    },
+    {
+     "type": "vertical",
+     "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "solid"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.19,
-    "peak": 0.5,
-    "smash_weeks": [],
+    "n_levers": 3,
+    "mean": 0.59,
+    "peak": 1.84,
+    "smash_weeks": [
+     11
+    ],
     "playoff_mean": 0.31,
     "best_wks": [
      {
       "wk": 11,
       "opp": "CIN",
-      "score": 0.5
+      "score": 1.84
      },
      {
-      "wk": 1,
-      "opp": "PHI",
-      "score": 0.48
+      "wk": 2,
+      "opp": "DAL",
+      "score": 1.12
      },
      {
-      "wk": 8,
-      "opp": "PHI",
-      "score": 0.48
+      "wk": 18,
+      "opp": "DAL",
+      "score": 1.12
      }
     ]
    }
@@ -8748,29 +9794,33 @@
     {
      "type": "passcatch_rb",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 1,
-    "mean": 0.39,
-    "peak": 0.96,
+    "n_levers": 2,
+    "mean": 0.51,
+    "peak": 1.23,
     "smash_weeks": [],
-    "playoff_mean": 0.22,
+    "playoff_mean": 0.2,
     "best_wks": [
      {
       "wk": 12,
       "opp": "ARI",
-      "score": 0.96
+      "score": 1.23
      },
      {
       "wk": 2,
       "opp": "DAL",
-      "score": 0.74
+      "score": 1.17
      },
      {
       "wk": 18,
       "opp": "DAL",
-      "score": 0.74
+      "score": 1.17
      }
     ]
    }
@@ -8826,29 +9876,36 @@
     {
      "type": "boundary",
      "tier": "solid"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 3,
-    "mean": 0.74,
-    "peak": 1.39,
-    "smash_weeks": [],
+    "n_levers": 4,
+    "mean": 0.83,
+    "peak": 1.92,
+    "smash_weeks": [
+     11,
+     12
+    ],
     "playoff_mean": 0.47,
     "best_wks": [
      {
       "wk": 11,
       "opp": "CIN",
-      "score": 1.39
+      "score": 1.92
      },
      {
-      "wk": 5,
-      "opp": "NYG",
-      "score": 1.37
+      "wk": 12,
+      "opp": "ARI",
+      "score": 1.56
      },
      {
-      "wk": 10,
-      "opp": "NYG",
-      "score": 1.37
+      "wk": 2,
+      "opp": "DAL",
+      "score": 1.45
      }
     ]
    }
@@ -8869,25 +9926,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.54,
-    "peak": 1.37,
+    "mean": 0.5,
+    "peak": 1.25,
     "smash_weeks": [],
     "playoff_mean": 0.16,
     "best_wks": [
      {
+      "wk": 12,
+      "opp": "ARI",
+      "score": 1.25
+     },
+     {
       "wk": 5,
       "opp": "NYG",
-      "score": 1.37
+      "score": 1.12
      },
      {
       "wk": 10,
       "opp": "NYG",
-      "score": 1.37
-     },
-     {
-      "wk": 12,
-      "opp": "ARI",
-      "score": 1.34
+      "score": 1.12
      }
     ]
    }
@@ -8912,8 +9969,8 @@
    ],
    "summary": {
     "n_levers": 3,
-    "mean": 0.73,
-    "peak": 1.83,
+    "mean": 0.65,
+    "peak": 1.95,
     "smash_weeks": [
      11
     ],
@@ -8922,17 +9979,17 @@
      {
       "wk": 11,
       "opp": "CIN",
-      "score": 1.83
+      "score": 1.95
      },
      {
       "wk": 4,
       "opp": "IND",
-      "score": 1.41
+      "score": 1.37
      },
      {
-      "wk": 5,
-      "opp": "NYG",
-      "score": 1.32
+      "wk": 2,
+      "opp": "DAL",
+      "score": 1.03
      }
     ]
    }
@@ -8988,25 +10045,25 @@
    ],
    "summary": {
     "n_levers": 2,
-    "mean": 0.54,
-    "peak": 1.33,
+    "mean": 0.46,
+    "peak": 1.45,
     "smash_weeks": [],
     "playoff_mean": 0.0,
     "best_wks": [
      {
       "wk": 11,
       "opp": "CIN",
-      "score": 1.33
+      "score": 1.45
      },
      {
-      "wk": 5,
-      "opp": "NYG",
-      "score": 1.32
+      "wk": 2,
+      "opp": "DAL",
+      "score": 1.03
      },
      {
-      "wk": 10,
-      "opp": "NYG",
-      "score": 1.32
+      "wk": 18,
+      "opp": "DAL",
+      "score": 1.03
      }
     ]
    }
@@ -9023,29 +10080,33 @@
     {
      "type": "vertical",
      "tier": "tendency"
+    },
+    {
+     "type": "shootout",
+     "tier": "tendency"
     }
    ],
    "summary": {
-    "n_levers": 2,
-    "mean": 0.32,
-    "peak": 0.78,
+    "n_levers": 3,
+    "mean": 0.43,
+    "peak": 0.95,
     "smash_weeks": [],
     "playoff_mean": 0.16,
     "best_wks": [
      {
-      "wk": 5,
-      "opp": "NYG",
-      "score": 0.78
+      "wk": 2,
+      "opp": "DAL",
+      "score": 0.95
      },
      {
-      "wk": 10,
-      "opp": "NYG",
-      "score": 0.78
+      "wk": 18,
+      "opp": "DAL",
+      "score": 0.95
      },
      {
-      "wk": 13,
-      "opp": "TEN",
-      "score": 0.77
+      "wk": 11,
+      "opp": "CIN",
+      "score": 0.9
      }
     ]
    }
@@ -9062,25 +10123,25 @@
    ],
    "summary": {
     "n_levers": 1,
-    "mean": 0.16,
-    "peak": 0.44,
+    "mean": 0.12,
+    "peak": 0.46,
     "smash_weeks": [],
     "playoff_mean": 0.0,
     "best_wks": [
      {
       "wk": 11,
       "opp": "CIN",
-      "score": 0.44
+      "score": 0.46
+     },
+     {
+      "wk": 4,
+      "opp": "IND",
+      "score": 0.34
      },
      {
       "wk": 5,
       "opp": "NYG",
-      "score": 0.36
-     },
-     {
-      "wk": 10,
-      "opp": "NYG",
-      "score": 0.36
+      "score": 0.3
      }
     ]
    }
@@ -9093,6 +10154,6 @@
   },
   "act_min": 0.5,
   "smash": 1.5,
-  "n": 231
+  "n": 252
  }
 }

@@ -1,0 +1,58 @@
+<!doctype html><html><head><meta charset=utf-8>
+<title>Josh Allen — 2026 Matchup-Lever Calendar</title><style>
+:root{--bg:#0b0f17;--card:#121a29;--line:#233247;--ink:#eef2f8;--ink2:#aab8cc;--ink3:#7286a0;--accent:#5b9dff;--good:#5fd08a;--warm:#e6b34d;--dark:#37445c}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:22px}
+h1{font-size:22px;margin:0 0 2px}.sub{color:var(--ink3);margin-bottom:16px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.panel h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--ink2);margin:0 0 8px}
+ul.lev{margin:0;padding-left:18px}ul.lev li{margin:3px 0}
+.tier{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.5px;padding:1px 6px;border-radius:5px;margin-right:6px;vertical-align:middle}
+.tier.solid{background:rgba(95,208,138,.18);color:var(--good);border:1px solid rgba(95,208,138,.4)}
+.tier.tendency{background:rgba(230,179,77,.15);color:var(--warm);border:1px solid rgba(230,179,77,.35)}
+.stats{display:flex;gap:22px;flex-wrap:wrap}.stat{}.stat b{font-size:20px}.stat span{color:var(--ink3);font-size:12px;display:block}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:9px}
+.cell{border:1px solid var(--line);border-radius:10px;padding:9px 10px;min-height:96px;position:relative;background:#0e1523}
+.cell .wk{font-size:11px;color:var(--ink3);font-weight:700}
+.cell .opp{font-size:15px;font-weight:700;margin:1px 0 3px}
+.cell .score{font-size:18px;font-variant-numeric:tabular-nums}
+.cell .manln{font-size:10.5px;color:var(--ink3)}
+.cell .acts{font-size:10.5px;color:var(--good);margin-top:4px;line-height:1.3}
+.cell .note{font-size:10px;color:var(--ink3);margin-top:4px;line-height:1.3;font-style:italic}
+.cell.smash{background:linear-gradient(180deg,rgba(95,208,138,.16),rgba(95,208,138,.05));border-color:rgba(95,208,138,.55)}
+.cell.smash .score{color:var(--good)}
+.cell.warm{background:linear-gradient(180deg,rgba(230,179,77,.10),rgba(230,179,77,.03));border-color:rgba(230,179,77,.35)}
+.cell.dark .score{color:var(--dark)}
+.cell.bye{opacity:.45;min-height:96px}
+.cell.po{box-shadow:inset 0 0 0 2px rgba(91,157,255,.5)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;color:var(--ink3);font-size:12px;margin:12px 0}
+.dot{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:middle;margin-right:5px}
+.callout{border-left:3px solid var(--accent);padding:4px 0 4px 12px;color:var(--ink2);margin:8px 0}
+b.g{color:var(--good)}b.w{color:var(--warm)}b.a{color:var(--accent)}
+</style></head><body><div class=wrap>
+<h1>Josh Allen <span style="color:var(--ink3);font-weight:400">— QB, BUF</span></h1>
+<div class=sub>2026 matchup-lever calendar. Each week is scored only when an <b>opponent's defensive trait turns one of his levers ON</b> (tier-weighted). Smash week = score ≥ 1.5. ★ = fantasy playoff week (15–17).</div>
+
+<div class=panel><h2>His ceiling levers (4)</h2><ul class=lev><li><span class='tier solid'>solid</span> handles man coverage — 7.25 Y/A vs man (top-tier QB) → exploit man-heavy / blitz-heavy defenses</li><li><span class='tier solid'>solid</span> scrambling QB — high scramble rate (2yr) → rushing ceiling vs man-heavy coverage (lanes open)</li><li><span class='tier tendency'>tendency</span> vertical / big-play passer — 13.5% deep-throw rate (2yr, 76th pctl among QBs) → single-high / soft-deep shells that allow shots (OL holds up — time for shots)</li><li><span class='tier solid'>solid</span> shootout / high-total environment → opponents whose offenses drive up the game total</li></ul>
+<div class=callout>Activates on: <b class=a>man-coverage rate; opponent implied game total (shootout); single-high / soft-deep shells (deep ball)</b>. A week lights up when the opponent's defense (or game environment) turns one of these on.</div></div>
+
+<div class=panel><h2>Season summary</h2><div class=stats>
+<div class=stat><b>1.06</b><span>season mean</span></div>
+<div class=stat><b>2.15</b><span>peak week</span></div>
+<div class=stat><b class=g>1.44</b><span>playoff (15–17) mean</span></div>
+<div class=stat><b>7</b><span>smash weeks: W6, W8, W9, W11, W12, W16, W17</span></div>
+</div></div>
+
+<div class=legend>
+<span><span class=dot style="background:var(--good)"></span>smash (≥1.5)</span>
+<span><span class=dot style="background:var(--warm)"></span>partial (0–1.5)</span>
+<span><span class=dot style="background:var(--dark)"></span>dark (0 — no lever fires)</span>
+<span><span class=dot style="box-shadow:inset 0 0 0 2px rgba(91,157,255,.6)"></span>playoff week</span>
+</div>
+<div class=grid><div class='cell warm'><div class='wk'>W1</div><div class='opp'>@ HOU</div><div class='score'>1.10</div><div class='manln'>man 55%ile</div><div class='acts'>qb man, scramble qb</div></div><div class='cell warm'><div class='wk'>W2</div><div class='opp'>vs DET</div><div class='score'>0.27</div><div class='manln'>man 6%ile</div><div class='acts'>vertical</div></div><div class='cell dark'><div class='wk'>W3</div><div class='opp'>vs LAC</div><div class='score'>0.00</div><div class='manln'>man 35%ile</div><div class='note'>zone-heavy D (man 35th pctl) → man levers stay dark; above-average pass D (cov 80th pctl)</div></div><div class='cell warm'><div class='wk'>W4</div><div class='opp'>vs NE</div><div class='score'>0.62</div><div class='manln'>man 13%ile</div><div class='acts'>shootout</div></div><div class='cell warm'><div class='wk'>W5</div><div class='opp'>@ LAR</div><div class='score'>0.66</div><div class='manln'>man 42%ile</div><div class='acts'>shootout</div></div><div class='cell smash'><div class='wk'>W6</div><div class='opp'>@ LV</div><div class='score'>1.54</div><div class='manln'>man 58%ile</div><div class='acts'>qb man, scramble qb, vertical</div></div><div class='cell bye'><div class='wk'>W7</div><div class='opp'>BYE</div></div><div class='cell smash'><div class='wk'>W8</div><div class='opp'>vs BAL</div><div class='score'>1.53</div><div class='manln'>man 61%ile</div><div class='acts'>qb man, scramble qb, vertical</div></div><div class='cell smash'><div class='wk'>W9</div><div class='opp'>@ MIN</div><div class='score'>1.81</div><div class='manln'>man 90%ile</div><div class='acts'>qb man, scramble qb</div></div><div class='cell warm'><div class='wk'>W10</div><div class='opp'>@ NYJ</div><div class='score'>1.37</div><div class='manln'>man 52%ile</div><div class='acts'>qb man, scramble qb, vertical</div></div><div class='cell smash'><div class='wk'>W11</div><div class='opp'>vs MIA</div><div class='score'>1.75</div><div class='manln'>man 74%ile</div><div class='acts'>qb man, scramble qb, vertical</div></div><div class='cell smash'><div class='wk'>W12</div><div class='opp'>vs KC</div><div class='score'>2.15</div><div class='manln'>man 81%ile</div><div class='acts'>qb man, scramble qb, shootout</div></div><div class='cell warm'><div class='wk'>W13</div><div class='opp'>@ NE</div><div class='score'>0.62</div><div class='manln'>man 13%ile</div><div class='acts'>shootout</div></div><div class='cell dark'><div class='wk'>W14</div><div class='opp'>@ GB</div><div class='score'>0.00</div><div class='manln'>man 23%ile</div><div class='note'>zone-heavy D (man 23th pctl) → man levers stay dark</div></div><div class='cell warm po'><div class='wk'>W15 ★</div><div class='opp'>vs CHI</div><div class='score'>0.83</div><div class='manln'>man 39%ile</div><div class='acts'>vertical, shootout</div></div><div class='cell smash po'><div class='wk'>W16 ★</div><div class='opp'>@ DEN</div><div class='score'>1.74</div><div class='manln'>man 87%ile</div><div class='acts'>qb man, scramble qb</div></div><div class='cell smash po'><div class='wk'>W17 ★</div><div class='opp'>@ MIA</div><div class='score'>1.75</div><div class='manln'>man 74%ile</div><div class='acts'>qb man, scramble qb, vertical</div></div><div class='cell warm'><div class='wk'>W18</div><div class='opp'>vs NYJ</div><div class='score'>1.37</div><div class='manln'>man 52%ile</div><div class='acts'>qb man, scramble qb, vertical</div></div></div>
+
+<div class=panel style="margin-top:16px"><h2>DET (W2) &amp; LAR (W5) — spotlight</h2>
+<div class=callout>W2 vs <b class=a>DET</b> — score <b>0.27</b>, now lights up. active levers: <b>vertical</b>. · opponent implied-total env 84 (88th pctl)</div><div class=callout>W5 vs <b class=a>LAR</b> — score <b>0.66</b>, now lights up. active levers: <b>shootout</b>. · opponent implied-total env 98 (100th pctl)</div>
+<div class=callout style="border-color:var(--good)">Both now register after two lever upgrades: a <b>QB vertical/deep lever</b> (his 2yr deep-throw rate is 76th-pctl among QBs) that lights single-high-heavy defenses like <b class=a>DET</b>, and a <b>game-total layer</b> that credits high implied-total opponents (<b class=a>LAR</b> is the league's #1 environment) regardless of their coverage scheme. Man-coverage rate still drives his biggest smashes (BAL, MIN, KC).</div>
+</div>
+</div></body></html>

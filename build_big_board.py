@@ -51,9 +51,10 @@ def build():
     rows_js.sort(key=lambda z: z['adj'])
 
     w = meta['weights']
+    mq = w.get('season_mq', w.get('playoff_mq', 0))   # flag_ranks meta renamed playoff_mq -> season_mq
     sub = (f"Forward-looking, ADP-anchored · market rank is the backbone, flags move a player at most "
            f"±{int(meta['cap_spots'])} spots · 2026 ceiling {int(w['ceiling']*100)}% / portable traits "
-           f"{int(w['traits']*100)}% / 2026 playoff matchup {int(w['playoff_mq']*100)}% · "
+           f"{int(w['traits']*100)}% / 2026 season matchup {int(mq*100)}% · "
            f"{meta['n_players']} players")
 
     doc = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">

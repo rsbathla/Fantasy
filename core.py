@@ -126,5 +126,15 @@ def match_usage(bname,pos,tm,IDX):
     bfull=fn(bname)
     def sc(x): return (1 if x['team']==tm else 0)+difflib.SequenceMatcher(None,bfull,_full(x['name'])).ratio()
     r=sorted(cc,key=sc,reverse=True)
-    if len(r)>1 and r[0]['team']!=tm and r[1]['team']!=tm and abs(sc(r[0])-sc(r[1]))<0.08: return None
+    if len(r)>1 and r[0]['team']!=tm and r[1]['team']!=tm and abs(sc(r[0])-sc(r[1]))<0.08:
+        # Scores tie and NEITHER candidate is on the board team -> a mover changed teams, so the team
+        # tiebreak can't fire (this dropped DJ Moore=CHI-vs-CAR, Mike Evans=TB-vs-CAR). Break the tie by
+        # dominant 2025 opportunity: the real fantasy player carries a clear starter-level role. Accept
+        # ONLY when that gap is decisive (>=40 opp, >=6 games, >=1.8x the runner-up); else None (no guess).
+        # position-aware volume: a WR/TE is defined by TARGETS (using tgt+car here would let a
+        # carry-heavy same-name hybrid like Taysom Hill outrank a WR like Tyreek Hill -> false match).
+        opp=(lambda x:(x.get('tgt') or 0)) if posg=='WRTE' else (lambda x:(x.get('tgt') or 0)+(x.get('car') or 0))
+        rv=sorted(cc,key=opp,reverse=True); top,sec=rv[0],rv[1]
+        if opp(top)>=40 and (top.get('g') or 0)>=6 and opp(top)>=1.8*max(opp(sec),1): return top
+        return None
     return r[0]

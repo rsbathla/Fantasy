@@ -45,13 +45,13 @@ HTML=r'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="
 .muted{color:var(--ink3)}
 </style></head><body>
 <div class="top"><h1>Intel</h1><div class="mode"><span class="mbtn on" id="mP">Players</span><span class="mbtn" id="mT">Teams</span></div><span class="sub">__N__ players · __NT__ teams · built __BUILT__</span></div>
-<div class="wrap"><div class="list"><div class="search"><input id="q" placeholder="search"></div><div id="plist"></div></div><div class="detail" id="detail"><div class="muted">Select.</div></div></div>
+<div class="wrap"><div class="list"><div class="search"><input id="q" placeholder="search"></div><div id="plist"></div></div><div class="detail" id="detail"><div class="muted">Select a player to see their tweet &amp; video intel — analyst takes backtested against our data.</div></div></div>
 <script>
 const D=__DATA__; let mode='players',sel=null,tw='about';
 const esc=s=>(s==null?'':String(s)).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
 const vcl=v=>v&&v.indexOf('SUPPORTED')>=0?'vSUP':(v==='MIXED'?'vMIX':(v==='NOT SUPPORTED'?'vNOT':'vUNT'));
 const tname=a=>(Object.entries({ARI:'Cardinals',ATL:'Falcons',BAL:'Ravens',BUF:'Bills',CAR:'Panthers',CHI:'Bears',CIN:'Bengals',CLE:'Browns',DAL:'Cowboys',DEN:'Broncos',DET:'Lions',GB:'Packers',HOU:'Texans',IND:'Colts',JAX:'Jaguars',KC:'Chiefs',LAC:'Chargers',LAR:'Rams',LV:'Raiders',MIA:'Dolphins',MIN:'Vikings',NE:'Patriots',NO:'Saints',NYG:'Giants',NYJ:'Jets',PHI:'Eagles',PIT:'Steelers',SEA:'Seahawks',SF:'49ers',TB:'Buccaneers',TEN:'Titans',WAS:'Commanders'}).find(([k])=>k===a)||[a,a])[1];
-function setMode(m){mode=m;sel=null;document.getElementById('mP').classList.toggle('on',m==='players');document.getElementById('mT').classList.toggle('on',m==='teams');document.getElementById('detail').innerHTML='<div class="muted">Select.</div>';rlist('');}
+function setMode(m){mode=m;sel=null;document.getElementById('mP').classList.toggle('on',m==='players');document.getElementById('mT').classList.toggle('on',m==='teams');document.getElementById('detail').innerHTML='<div class="muted">Select '+(m==='players'?'a player to see their tweet & video intel — analyst takes backtested against our data.':'a team to see its collected intel.')+'</div>';rlist('');}
 document.getElementById('mP').onclick=()=>setMode('players');document.getElementById('mT').onclick=()=>setMode('teams');
 function rlist(q){q=(q||'').toLowerCase();const el=document.getElementById('plist');
  if(mode==='players'){const rows=D.players.filter(p=>!q||(p.name+' '+p.team+' '+p.pos).toLowerCase().includes(q));

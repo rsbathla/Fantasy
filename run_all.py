@@ -10,6 +10,9 @@ Default: rebuild the DOSSIER + FLAGS + RANKINGS chain (fast; depends only on alr
 Chain (each stage asserts its output exists & is non-empty; fails loud):
   [--full] refactor/pipeline.py   -> features.csv, defense.json, fusion.json ...
   [--full] boom_pipeline.py       -> boom/*.json, command_center.html
+  build_coverage_spec.py          -> boom/coverage_route_spec.json  (FP charting 2024+25 per-scheme/route spec)
+  build_scheme_fit.py             -> boom/scheme_fit.json     (spec x 2026 schedule, coordinator-aware new-DC)
+  build_flag_ranks.py             -> flag_ranks.json          (ADP-anchored nudge; consumes scheme_fit)
   build_dossier.py                -> dossier_data.json        (verified 2026 OL wired in)
   build_lever_count.py            -> lever_count.json         (+ lever_cal/sum into dossier)
   build_flags_layer.py            -> flags_2026.json, flag_rank_delta.csv  (+ flags into dossier)
@@ -28,12 +31,18 @@ def stage(cmd, outs):
         if not (os.path.exists(p) and os.path.getsize(p)>0): sys.exit("[FAIL] %s: missing/empty %s"%(name,o))
     tail=(r.stdout.strip().splitlines() or [''])[-1]
     print("    ok (%.1fs) %s  %s"%(time.time()-t, outs, tail[:80]))
-DOSSIER=[(["build_dossier.py"],["dossier_data.json"]),
+DOSSIER=[(["build_coverage_spec.py"],["boom/coverage_route_spec.json"]),   # FP charting 2024+25 -> per-scheme/route spec
+ (["build_scheme_fit.py"],["boom/scheme_fit.json"]),                       # spec x 2026 schedule (coordinator-aware new-DC)
+ (["build_flag_ranks.py"],["flag_ranks.json"]),                            # ADP-anchored nudge (consumes scheme_fit)
+ (["build_dossier.py"],["dossier_data.json"]),
  (["build_lever_count.py"],["lever_count.json"]),
  (["build_flags_layer.py"],["flags_2026.json","flag_rank_delta.csv"]),
  (["build_lever_board.py"],["lever_board.html"]),
  (["build_rankings.py"],["rankings.html","rankings_2026.csv"]),
- (["render_dossier.py"],["dossier.html"])]
+ (["render_dossier.py"],["dossier.html"]),
+ (["build_dossier_deep.py"],["dossier_deep.html"]),   # analyst-narrative + media + EPA deep-dive (was orphaned -> now kept fresh)
+ (["build_offense_profile.py"],["offense_profile.json"]),  # offense scheme-identity layer -> build_home.py (home.html landing; build_home itself is run manually, so keep its input fresh here)
+ (["integration_audit.py"],["INTEGRATION_AUDIT.md"])]  # FINAL GATE: flags any layer built-but-not-consumed (orphans, ignored fields, divergences)
 FULL=[(["refactor/pipeline.py"],["features.csv","defense.json"]),(["boom_pipeline.py"],["boom/boom_marks.json"])]
 def main():
     chain=(FULL+DOSSIER) if "--full" in sys.argv else DOSSIER

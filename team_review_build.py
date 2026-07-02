@@ -35,7 +35,10 @@ us=pd.read_parquet(PP('usage_shares.parquet')); us=us[(us.season==2025)&(us.metr
 TSHpid={p:(m,c) for p,m,c in zip(us.pid,us['mean'],us['cv'])}
 IDX=collections.defaultdict(list)
 for _,r in ag.iterrows():
-    nm=str(r['name']).replace('.',' ').replace("'",' ').strip().lower().split()
+    # H2 FIX: hyphen->space (as core.build_usage_index does) so hyphenated surnames key on the TRUE last
+    # token. Without it the index stored 'smith-njigba' while the lookup asks for 'njigba' -> silent miss
+    # (Jaxon Smith-Njigba ADP 5.4, Croskey-Merritt, Smith-Schuster, Lambert-Smith, Westbrook-Ikhine).
+    nm=str(r['name']).replace('.',' ').replace("'",' ').replace('-',' ').strip().lower().split()
     if len(nm)>=2: IDX[(nm[-1],nm[0][0])].append(r)
 import difflib
 def _full(s): s=str(s).replace('.',' ').replace("'",' ').lower(); return ' '.join(s.split())

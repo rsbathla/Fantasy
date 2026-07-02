@@ -83,7 +83,7 @@ const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&g
 const root=document.getElementById('root'), nav=document.getElementById('nav');
 function tags(p){let o='';if(p.cl>=33)o+='<span class="tg a">α-ceiling</span>';
  if(p.rk&&p.adp&&p.rk<=p.adp-8)o+='<span class="tg v">value</span>';
- if(p.boom&&(p.boom.tier=='ELITE'||p.boom.tier=='HIGH'))o+='<span class="tg b">'+p.boom.badge.split(' \u00b7 ')[0]+' ceil</span>';
+ if(p.boom&&(p.boom.tier=='ELITE'||p.boom.tier=='HIGH'))o+='<span class="tg b">'+p.boom.badge.split(' \u00b7 ')[0]+'</span>';
  if(p.boom&&p.boom.tier=='FA')o+='<span class="tg r">FA</span>';
  if(p.rk&&p.adp&&p.rk>=p.adp+10)o+='<span class="tg x">reach</span>';
  if(p.ov&&p.ov.length)o+='<span class="tg r">risk</span>';return o;}

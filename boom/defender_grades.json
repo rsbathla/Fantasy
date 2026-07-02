@@ -9,13 +9,7 @@
    "college": "Illinois",
    "draft_yr": 2023,
    "tier": "shutdown",
-   "rookie_2025": false,
-   "sis_points_saved": 22.2,
-   "sis_epa": -4.0,
-   "sis_epa_per_tgt": -0.12,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 55,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "James Pierre": {
    "team": "MIN",
@@ -26,13 +20,7 @@
    "college": "FAU",
    "draft_yr": 2020,
    "tier": "shutdown",
-   "rookie_2025": false,
-   "sis_points_saved": 21.6,
-   "sis_epa": -4.8,
-   "sis_epa_per_tgt": -0.2,
-   "sis_war": 0.5,
-   "sis_cov_pctl": 53,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Mike Jackson": {
    "team": "CAR",
@@ -43,13 +31,7 @@
    "college": "Miami FL",
    "draft_yr": 2019,
    "tier": "shutdown",
-   "rookie_2025": false,
-   "sis_points_saved": 35.4,
-   "sis_epa": -11.7,
-   "sis_epa_per_tgt": -0.15,
-   "sis_war": 0.6,
-   "sis_cov_pctl": 91,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Ja'Quan McMillian": {
    "team": "DEN",
@@ -60,13 +42,7 @@
    "college": "E Carolina",
    "draft_yr": 2022,
    "tier": "shutdown",
-   "rookie_2025": false,
-   "sis_points_saved": 27.0,
-   "sis_epa": -2.4,
-   "sis_epa_per_tgt": -0.04,
-   "sis_war": 0.5,
-   "sis_cov_pctl": 77,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Jamel Dean": {
    "team": "PIT",
@@ -77,13 +53,7 @@
    "college": "Auburn",
    "draft_yr": 2019,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 29.8,
-   "sis_epa": -24.3,
-   "sis_epa_per_tgt": -0.51,
-   "sis_war": 0.6,
-   "sis_cov_pctl": 85,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Quinyon Mitchell": {
    "team": "PHI",
@@ -94,13 +64,7 @@
    "college": "Toledo",
    "draft_yr": 2024,
    "tier": "shutdown",
-   "rookie_2025": false,
-   "sis_points_saved": 27.4,
-   "sis_epa": -5.9,
-   "sis_epa_per_tgt": -0.07,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 79,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Kamari Lassiter": {
    "team": "HOU",
@@ -111,13 +75,7 @@
    "college": "Georgia",
    "draft_yr": 2024,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 18.5,
-   "sis_epa": -2.4,
-   "sis_epa_per_tgt": -0.03,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 40,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Cooper DeJean": {
    "team": "PHI",
@@ -128,13 +86,7 @@
    "college": "Iowa",
    "draft_yr": 2024,
    "tier": "shutdown",
-   "rookie_2025": false,
-   "sis_points_saved": 36.7,
-   "sis_epa": -2.1,
-   "sis_epa_per_tgt": -0.03,
-   "sis_war": 0.7,
-   "sis_cov_pctl": 94,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Charvarius Ward": {
    "team": "IND",
@@ -145,13 +97,7 @@
    "college": "Middle TN",
    "draft_yr": 2018,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 6.5,
-   "sis_epa": 1.5,
-   "sis_epa_per_tgt": 0.05,
-   "sis_war": 0.0,
-   "sis_cov_pctl": 4,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Sauce Gardner": {
    "team": "IND",
@@ -162,13 +108,7 @@
    "college": "Cincinnati",
    "draft_yr": 2022,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 6.2,
-   "sis_epa": 2.9,
-   "sis_epa_per_tgt": 0.08,
-   "sis_war": -0.0,
-   "sis_cov_pctl": 2,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Chidobe Awuzie": {
    "team": "BAL",
@@ -179,13 +119,7 @@
    "college": "Colorado",
    "draft_yr": 2017,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 19.5,
-   "sis_epa": 8.5,
-   "sis_epa_per_tgt": 0.17,
-   "sis_war": 0.3,
-   "sis_cov_pctl": 47,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Benjamin St-Juste": {
    "team": "GB",
@@ -196,13 +130,7 @@
    "college": "Minnesota",
    "draft_yr": 2021,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 21.1,
-   "sis_epa": 2.7,
-   "sis_epa_per_tgt": 0.08,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 51,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Trent McDuffie": {
    "team": "LAR",
@@ -213,13 +141,7 @@
    "college": "Washington",
    "draft_yr": 2022,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 9.1,
-   "sis_epa": 3.4,
-   "sis_epa_per_tgt": 0.08,
-   "sis_war": -0.1,
-   "sis_cov_pctl": 6,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Eric Stokes": {
    "team": "LV",
@@ -230,13 +152,7 @@
    "college": "Georgia",
    "draft_yr": 2021,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 24.5,
-   "sis_epa": -1.2,
-   "sis_epa_per_tgt": -0.03,
-   "sis_war": 0.3,
-   "sis_cov_pctl": 60,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Christian Gonzalez": {
    "team": "NE",
@@ -247,13 +163,7 @@
    "college": "Oregon",
    "draft_yr": 2023,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 28.1,
-   "sis_epa": -17.7,
-   "sis_epa_per_tgt": -0.29,
-   "sis_war": 0.5,
-   "sis_cov_pctl": 81,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Jarrian Jones": {
    "team": "JAX",
@@ -264,13 +174,7 @@
    "college": "Florida St",
    "draft_yr": 2024,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 18.8,
-   "sis_epa": -9.5,
-   "sis_epa_per_tgt": -0.23,
-   "sis_war": 0.3,
-   "sis_cov_pctl": 43,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Nohl Williams": {
    "team": "KC",
@@ -281,13 +185,7 @@
    "college": "Cal",
    "draft_yr": 2025,
    "tier": "above-avg",
-   "rookie_2025": true,
-   "sis_points_saved": 10.6,
-   "sis_epa": -4.6,
-   "sis_epa_per_tgt": -0.14,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 11,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": true
   },
   "Jaylen Watson": {
    "team": "LAR",
@@ -298,13 +196,7 @@
    "college": "Wash State",
    "draft_yr": 2022,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 32.4,
-   "sis_epa": -5.9,
-   "sis_epa_per_tgt": -0.11,
-   "sis_war": 0.6,
-   "sis_cov_pctl": 87,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Carlton Davis III": {
    "team": "NE",
@@ -315,13 +207,7 @@
    "college": "Auburn",
    "draft_yr": 2018,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 25.9,
-   "sis_epa": -4.1,
-   "sis_epa_per_tgt": -0.08,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 70,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Isaiah Rodgers": {
    "team": "MIN",
@@ -332,13 +218,7 @@
    "college": "UMass",
    "draft_yr": 2020,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 14.7,
-   "sis_epa": 3.0,
-   "sis_epa_per_tgt": 0.05,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 26,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Marcus Jones": {
    "team": "NE",
@@ -349,13 +229,7 @@
    "college": "Houston",
    "draft_yr": 2022,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 24.4,
-   "sis_epa": 7.5,
-   "sis_epa_per_tgt": 0.18,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 57,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Pat Surtain II": {
    "team": "DEN",
@@ -366,13 +240,7 @@
    "college": "Alabama",
    "draft_yr": 2021,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 38.5,
-   "sis_epa": -10.9,
-   "sis_epa_per_tgt": -0.18,
-   "sis_war": 0.8,
-   "sis_cov_pctl": 96,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "DJ Turner II": {
    "team": "CIN",
@@ -383,13 +251,7 @@
    "college": "Michigan",
    "draft_yr": 2023,
    "tier": "shutdown",
-   "rookie_2025": false,
-   "sis_points_saved": 19.4,
-   "sis_epa": -14.2,
-   "sis_epa_per_tgt": -0.24,
-   "sis_war": 0.2,
-   "sis_cov_pctl": 45,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Rasul Douglas": {
    "team": "MIA",
@@ -400,13 +262,7 @@
    "college": "W Virginia",
    "draft_yr": 2017,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 26.8,
-   "sis_epa": -10.3,
-   "sis_epa_per_tgt": -0.16,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 74,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Roger McCreary": {
    "team": "DET",
@@ -428,13 +284,7 @@
    "college": "Arkansas",
    "draft_yr": 2022,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 25.9,
-   "sis_epa": -11.6,
-   "sis_epa_per_tgt": -0.22,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 70,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Donte Jackson": {
    "team": "LAC",
@@ -445,13 +295,7 @@
    "college": "LSU",
    "draft_yr": 2018,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 25.8,
-   "sis_epa": -13.8,
-   "sis_epa_per_tgt": -0.34,
-   "sis_war": 0.5,
-   "sis_cov_pctl": 66,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Joey Porter Jr.": {
    "team": "PIT",
@@ -462,13 +306,7 @@
    "college": "Penn State",
    "draft_yr": 2023,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 15.1,
-   "sis_epa": -2.5,
-   "sis_epa_per_tgt": -0.05,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 28,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Kool-Aid McKinstry": {
    "team": "NO",
@@ -479,13 +317,7 @@
    "college": "Alabama",
    "draft_yr": 2024,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 13.8,
-   "sis_epa": 9.4,
-   "sis_epa_per_tgt": 0.12,
-   "sis_war": -0.0,
-   "sis_cov_pctl": 23,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Tyson Campbell": {
    "team": "CLE",
@@ -496,13 +328,7 @@
    "college": "Georgia",
    "draft_yr": 2021,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 20.3,
-   "sis_epa": 0.2,
-   "sis_epa_per_tgt": 0.0,
-   "sis_war": 0.2,
-   "sis_cov_pctl": 49,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Jacob Parrish": {
    "team": "TB",
@@ -513,13 +339,7 @@
    "college": "Kansas St",
    "draft_yr": 2025,
    "tier": "average",
-   "rookie_2025": true,
-   "sis_points_saved": 11.3,
-   "sis_epa": 10.8,
-   "sis_epa_per_tgt": 0.22,
-   "sis_war": -0.0,
-   "sis_cov_pctl": 15,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": true
   },
   "Marcus Harris": {
    "team": "TEN",
@@ -541,13 +361,7 @@
    "college": "Maryland",
    "draft_yr": 2024,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 16.0,
-   "sis_epa": -9.0,
-   "sis_epa_per_tgt": -0.27,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 34,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Jourdan Lewis": {
    "team": "JAX",
@@ -558,13 +372,7 @@
    "college": "Michigan",
    "draft_yr": 2017,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 25.8,
-   "sis_epa": -9.4,
-   "sis_epa_per_tgt": -0.28,
-   "sis_war": 0.5,
-   "sis_cov_pctl": 66,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Brandon Stephens": {
    "team": "NYJ",
@@ -575,13 +383,7 @@
    "college": "SMU",
    "draft_yr": 2021,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 10.1,
-   "sis_epa": 17.3,
-   "sis_epa_per_tgt": 0.32,
-   "sis_war": -0.1,
-   "sis_cov_pctl": 9,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Christian Benford": {
    "team": "BUF",
@@ -592,13 +394,7 @@
    "college": "Villanova",
    "draft_yr": 2022,
    "tier": "beatable",
-   "rookie_2025": false,
-   "sis_points_saved": 25.7,
-   "sis_epa": -3.7,
-   "sis_epa_per_tgt": -0.08,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 64,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Keisean Nixon": {
    "team": "GB",
@@ -609,13 +405,7 @@
    "college": "S Carolina",
    "draft_yr": 2019,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 18.3,
-   "sis_epa": 14.9,
-   "sis_epa_per_tgt": 0.2,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 38,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Kenny Moore II": {
    "team": "IND",
@@ -626,13 +416,7 @@
    "college": "Valdosta",
    "draft_yr": 2017,
    "tier": "beatable",
-   "rookie_2025": false,
-   "sis_points_saved": 11.7,
-   "sis_epa": 8.9,
-   "sis_epa_per_tgt": 0.2,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 19,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Tyrique Stevenson": {
    "team": "CHI",
@@ -643,13 +427,7 @@
    "college": "Miami FL",
    "draft_yr": 2023,
    "tier": "beatable",
-   "rookie_2025": false,
-   "sis_points_saved": 3.8,
-   "sis_epa": 18.6,
-   "sis_epa_per_tgt": 0.39,
-   "sis_war": -0.2,
-   "sis_cov_pctl": 0,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Nahshon Wright": {
    "team": "NYJ",
@@ -660,13 +438,7 @@
    "college": "Oregon St",
    "draft_yr": 2021,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 29.6,
-   "sis_epa": -2.6,
-   "sis_epa_per_tgt": -0.03,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 83,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Cor'Dale Flott": {
    "team": "TEN",
@@ -677,13 +449,7 @@
    "college": "LSU",
    "draft_yr": 2022,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 16.3,
-   "sis_epa": -10.3,
-   "sis_epa_per_tgt": -0.17,
-   "sis_war": 0.2,
-   "sis_cov_pctl": 36,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Derek Stingley Jr.": {
    "team": "HOU",
@@ -694,13 +460,7 @@
    "college": "LSU",
    "draft_yr": 2022,
    "tier": "above-avg",
-   "rookie_2025": false,
-   "sis_points_saved": 41.9,
-   "sis_epa": -2.1,
-   "sis_epa_per_tgt": -0.03,
-   "sis_war": 0.8,
-   "sis_cov_pctl": 98,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Cobie Durant": {
    "team": "DAL",
@@ -711,13 +471,7 @@
    "college": "SCar State",
    "draft_yr": 2022,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 24.8,
-   "sis_epa": -15.0,
-   "sis_epa_per_tgt": -0.26,
-   "sis_war": 0.4,
-   "sis_cov_pctl": 62,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "DaRon Bland": {
    "team": "DAL",
@@ -728,13 +482,7 @@
    "college": "Fresno St",
    "draft_yr": 2022,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 11.2,
-   "sis_epa": -1.9,
-   "sis_epa_per_tgt": -0.03,
-   "sis_war": 0.0,
-   "sis_cov_pctl": 13,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "D.J. Reed": {
    "team": "DET",
@@ -745,13 +493,7 @@
    "college": "Kansas St",
    "draft_yr": 2018,
    "tier": "beatable",
-   "rookie_2025": false,
-   "sis_points_saved": 11.4,
-   "sis_epa": 8.8,
-   "sis_epa_per_tgt": 0.18,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 17,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Dax Hill": {
    "team": "CIN",
@@ -762,13 +504,7 @@
    "college": "Michigan",
    "draft_yr": 2022,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 13.5,
-   "sis_epa": 16.8,
-   "sis_epa_per_tgt": 0.31,
-   "sis_war": 0.0,
-   "sis_cov_pctl": 21,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Darious Williams": {
    "team": "LAR",
@@ -779,13 +515,7 @@
    "college": "UAB",
    "draft_yr": 2018,
    "tier": "beatable",
-   "rookie_2025": false,
-   "sis_points_saved": 15.8,
-   "sis_epa": -2.2,
-   "sis_epa_per_tgt": -0.07,
-   "sis_war": 0.3,
-   "sis_cov_pctl": 32,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   },
   "Maxwell Hairston": {
    "team": "BUF",
@@ -807,13 +537,7 @@
    "college": "Iowa",
    "draft_yr": 2023,
    "tier": "beatable",
-   "rookie_2025": false,
-   "sis_points_saved": 35.1,
-   "sis_epa": 7.3,
-   "sis_epa_per_tgt": 0.07,
-   "sis_war": 0.6,
-   "sis_cov_pctl": 89,
-   "quality_note": "PFF/SIS disagree (investigate)"
+   "rookie_2025": false
   },
   "Tre'Davious White": {
    "team": "BUF",
@@ -824,13 +548,7 @@
    "college": "LSU",
    "draft_yr": 2017,
    "tier": "average",
-   "rookie_2025": false,
-   "sis_points_saved": 15.1,
-   "sis_epa": 4.1,
-   "sis_epa_per_tgt": 0.1,
-   "sis_war": 0.1,
-   "sis_cov_pctl": 28,
-   "quality_note": "PFF+SIS agree"
+   "rookie_2025": false
   }
  },
  "team_cb_profile": {

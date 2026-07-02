@@ -6,7 +6,10 @@ signals (YPRR, TPRR, aDOT, air-yard share, YAC/YACO, MTF, 1st-read, contested, a
 YBCO/explosive/stuff/i5/success; QB aDOT/deep/pressure/CPOE) that single-season fusion lacked for 2024.
 """
 import csv, json, os, re
-HERE = os.path.dirname(os.path.abspath(__file__)); DL = os.path.dirname(HERE); B = os.path.join(HERE, 'boom')
+HERE = os.path.dirname(os.path.abspath(__file__)); B = os.path.join(HERE, 'boom')
+# FP Advanced exports now live IN-REPO (version-controlled; re-pulled 2026) as SEASON AGGREGATES for BOTH
+# years -- so they can't silently vanish from the ephemeral Downloads folder again.
+FPADV = os.path.join(HERE, 'NFL-master', 'FP_ADVANCED')
 def fn(n):
     n = str(n).strip().lower(); n = re.sub(r'\s+(jr|sr|ii|iii|iv|v)\.?$', '', n)
     return n.replace('.', '').replace("'", "").replace('-', ' ')
@@ -14,13 +17,13 @@ def num(x):
     try: return float(str(x).replace('%', '').replace(',', '').strip())
     except Exception: return None
 def dr(path):  # DictReader (utf-8-sig strips BOM)
-    return list(csv.DictReader(open(f"{DL}/{path}", encoding='utf-8-sig')))
+    return list(csv.DictReader(open(os.path.join(FPADV, path), encoding='utf-8-sig')))
 def rdr(path):  # raw rows (for dup-header files)
-    rows = list(csv.reader(open(f"{DL}/{path}", encoding='utf-8-sig'))); return rows[0], rows[1:]
+    rows = list(csv.reader(open(os.path.join(FPADV, path), encoding='utf-8-sig'))); return rows[0], rows[1:]
 
 # ---------------- RECEIVING (WR/TE) ----------------
-REC24 = dr("receivingAdvancedExport (3).csv")      # per-player aggregate 2024
-REC25g = dr("receivingAdvancedExport (2).csv")     # per-game 2025
+REC24 = dr("receiving_2024.csv")     # per-player season aggregate 2024
+REC25 = dr("receiving_2025.csv")     # per-player season aggregate 2025 (now aggregate, was per-game)
 def rec_tot_from_agg(r):
     return {'g': num(r['G']) or 0, 'rte': num(r['RTE']) or 0, 'tgt': num(r['TGT']) or 0, 'ay': num(r['AY']) or 0,
         'rec': num(r['REC']) or 0, 'yds': num(r['YDS']) or 0, 'yac': num(r['YAC']) or 0, 'yaco': num(r['YACO']) or 0,
@@ -68,8 +71,8 @@ def rec_rates(t):
         'fp_rr': round(t['fprr'],2) if t.get('fprr') is not None else None}
 
 # ---------------- RUSHING (RB) — positional (dup headers) ----------------
-RU24h, RU24 = rdr("rushingAdvancedExport (2).csv")  # 2024 agg
-RU25h, RU25 = rdr("rushingAdvancedExport (1).csv")  # 2025 per-game (cols shifted by Season Type/WEEK/Opp = +3)
+RU24h, RU24 = rdr("rushing_2024.csv")  # 2024 season aggregate
+RU25h, RU25 = rdr("rushing_2025.csv")  # 2025 season aggregate (identical column layout; was per-game +3 offset)
 def ru_tot_agg(r):  # 2024 agg col indices
     g=num(r[4]); return {'g':g or 0,'att':num(r[6]) or 0,'yds':num(r[7]) or 0,'td':num(r[10]) or 0,'mtf':num(r[20]) or 0,
         'yaco':num(r[22]) or 0,'ybco_att':num(r[25]),'succ':num(r[18]),'stuff':num(r[19]),'exprun':num(r[13]),
@@ -100,8 +103,8 @@ def ru_rates(t):
         'i5_pct':round(t['i5'],1) if t.get('i5') is not None else None,
         'td_rate':round(t['tdrate'],1) if t.get('tdrate') is not None else None}
 
-# ---------------- PASSING (QB) — 2024 only ----------------
-PA24 = dr("passingAdvancedExport.csv")
+# ---------------- PASSING (QB) — 2024 + 2025 ----------------
+PA24 = dr("passing_2024.csv"); PA25 = dr("passing_2025.csv")
 def qb_chart(r):
     return {'g':round(num(r['G']) or 0),'aDOT':num(r['aDOT']),'deep_pct':num(r['Deep Throw %']),'cpoe':num(r['CPOE']),
         'press_pct':num(r['PRESS %']),'ttt':num(r['TTT']),'scrm':num(r['SCRM']),'oneread_pct':num(r['1Read %']),'acc_pct':num(r['ACC %'])}
@@ -113,37 +116,48 @@ def gw(v24, v25, g24, g25):  # games-weighted blend of two per-year rates
 
 # ---- assemble ----
 chart = {}
-# receiving: index 2025 per-game by player
-from collections import defaultdict
-r25 = defaultdict(list)
-for r in REC25g: r25[fn(r['Name'])].append(r)
-for r in REC24:
-    k = fn(r['Name']); t24 = rec_tot_from_agg(r); c24 = rec_rates(t24)
-    pg = r25.get(k); t25 = rec_tot_from_pg(pg) if pg else None; c25 = rec_rates(t25) if t25 else None
-    comb = {kk: (t24.get(kk,0) + (t25.get(kk,0) if t25 else 0)) for kk in ['rte','tgt','ay','rec','yds','yac','yaco','mtf','td','fr','dp','cc','i20','ez']}
-    comb['g'] = t24['g'] + (t25['g'] if t25 else 0)
+# receiving: UNION of 2024 + 2025 players (both season aggregates) -> 2025-only sophomores/rookies
+# (Egbuka, McMillan, Loveland, ...) are now charted instead of being silently dropped by the old
+# 2024-anchored loop. Blend = summed counts (rates recomputed) + games-weighted shares/rate fields.
+rec24 = {fn(r['Name']): r for r in REC24}; rec25 = {fn(r['Name']): r for r in REC25}
+for k in set(rec24) | set(rec25):
+    a24 = rec24.get(k); a25 = rec25.get(k)
+    t24 = rec_tot_from_agg(a24) if a24 else None; c24 = rec_rates(t24) if t24 else None
+    t25 = rec_tot_from_agg(a25) if a25 else None; c25 = rec_rates(t25) if t25 else None
+    comb = {kk: ((t24.get(kk,0) if t24 else 0) + (t25.get(kk,0) if t25 else 0)) for kk in ['rte','tgt','ay','rec','yds','yac','yaco','mtf','td','fr','dp','cc','i20','ez']}
+    comb['g'] = (t24['g'] if t24 else 0) + (t25['g'] if t25 else 0)
     blend = rec_rates(comb)
     for shf in ['ay_share','slot_pct','wide_pct','inline_pct','back_pct','design_pct','threat','fp_rr']:
-        blend[shf] = gw(c24.get(shf), (c25 or {}).get(shf), t24['g'], (t25['g'] if t25 else 0))
-    chart[k] = {'pos': r['POS'], 'name': r['Name'], 'g24': c24['g'], 'g25': (c25['g'] if c25 else 0),
+        blend[shf] = gw((c24 or {}).get(shf), (c25 or {}).get(shf), (t24['g'] if t24 else 0), (t25['g'] if t25 else 0))
+    disp = a25 or a24
+    chart[k] = {'pos': disp['POS'], 'name': disp['Name'], 'g24': (c24['g'] if c24 else 0), 'g25': (c25['g'] if c25 else 0),
                 'y2024': c24, 'y2025': c25, 'blend': blend}
-# rushing
-ru25 = defaultdict(list)
-for r in RU25: ru25[fn(r[1])].append(r)   # col1 = Name
-for r in RU24:
-    k = fn(r[1]); t24 = ru_tot_agg(r); c24 = ru_rates(t24)
-    pg = ru25.get(k); t25 = ru_tot_pg(pg) if pg else None; c25 = ru_rates(t25) if t25 else None
-    comb = {kk: (t24.get(kk,0) + (t25.get(kk,0) if t25 else 0)) for kk in ['att','yds','td','mtf','yaco']}
-    comb['g'] = t24['g'] + (t25['g'] if t25 else 0)
+# rushing: UNION of 2024 + 2025 (both season aggregates, identical layout)
+rush24 = {fn(r[1]): r for r in RU24}; rush25 = {fn(r[1]): r for r in RU25}
+for k in set(rush24) | set(rush25):
+    b24 = rush24.get(k); b25 = rush25.get(k)
+    t24 = ru_tot_agg(b24) if b24 else None; c24 = ru_rates(t24) if t24 else None
+    t25 = ru_tot_agg(b25) if b25 else None; c25 = ru_rates(t25) if t25 else None
+    comb = {kk: ((t24.get(kk,0) if t24 else 0) + (t25.get(kk,0) if t25 else 0)) for kk in ['att','yds','td','mtf','yaco']}
+    comb['g'] = (t24['g'] if t24 else 0) + (t25['g'] if t25 else 0)
     for sh in ['ybco_att','succ','stuff','exprun','i5','tdrate']:
-        comb[sh] = gw(t24.get(sh), (t25 or {}).get(sh), t24['g'], (t25['g'] if t25 else 0))
+        comb[sh] = gw((t24 or {}).get(sh), (t25 or {}).get(sh), (t24['g'] if t24 else 0), (t25['g'] if t25 else 0))
     blend = ru_rates(comb)
-    chart[k] = {'pos': r[3], 'name': r[1], 'g24': c24['g'], 'g25': (c25['g'] if c25 else 0),
+    disp = b25 or b24
+    chart[k] = {'pos': disp[3], 'name': disp[1], 'g24': (c24['g'] if c24 else 0), 'g25': (c25['g'] if c25 else 0),
                 'y2024': c24, 'y2025': c25, 'blend': blend}
-# passing (2024 only)
-for r in PA24:
-    chart[fn(r['Name'])] = {'pos': r['POS'], 'name': r['Name'], 'g24': round(num(r['G']) or 0), 'g25': 0,
-                            'y2024': qb_chart(r), 'y2025': None, 'blend': qb_chart(r)}
+# passing: UNION of 2024 + 2025 -> QBs now get 2-YEAR charting (was 2024-only)
+pa24 = {fn(r['Name']): r for r in PA24}; pa25 = {fn(r['Name']): r for r in PA25}
+for k in set(pa24) | set(pa25):
+    q24 = pa24.get(k); q25 = pa25.get(k)
+    c24 = qb_chart(q24) if q24 else None; c25 = qb_chart(q25) if q25 else None
+    g24 = (c24['g'] if c24 else 0); g25 = (c25['g'] if c25 else 0)
+    blend = {'g': g24 + g25}
+    for f in ['aDOT','deep_pct','cpoe','press_pct','ttt','scrm','oneread_pct','acc_pct']:
+        blend[f] = gw((c24 or {}).get(f), (c25 or {}).get(f), g24, g25)
+    disp = q25 or q24
+    chart[k] = {'pos': disp['POS'], 'name': disp['Name'], 'g24': g24, 'g25': g25,
+                'y2024': c24, 'y2025': c25, 'blend': blend}
 
 json.dump(chart, open(f"{B}/chart2yr.json", 'w'), ensure_ascii=False)
 # augment statmenu

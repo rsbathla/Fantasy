@@ -9,7 +9,11 @@ import csv, json, os, bisect
 HERE = os.path.dirname(os.path.abspath(__file__)); DL = os.path.dirname(HERE); B = os.path.join(HERE, 'boom')
 from boomutil import team as tm, num   # was: local FPMAP/tm/num (audit B3 dedup; boomutil.team == FPMAP, verified)
 
-rows = list(csv.reader(open(f"{DL}/qbCoverageMatchupExport.csv", encoding='utf-8-sig')))
+_SRC = f"{DL}/qbCoverageMatchupExport.csv"
+if not os.path.exists(_SRC) and os.path.exists(os.path.join(B, 'defense_shell.json')):
+    print("build_defense_shell: qbCoverageMatchupExport.csv absent -> keeping existing boom/defense_shell.json (static 2025 shells)")
+    raise SystemExit(0)
+rows = list(csv.reader(open(_SRC, encoding='utf-8-sig')))
 hdr, data = rows[0], rows[1:]
 # 0-indexed: OPP=6, DEF MAN%=12, DEF C2%=16, DEF C3%=20, DEF C4%=24, DEF C6%=28
 by = {}

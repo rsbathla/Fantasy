@@ -21,10 +21,14 @@ def num(x):
     try: return float(x)
     except: return None
 def pct(v):
-    """normalize a share to 0-100 percent (accept fraction or percent)."""
+    """Return a target/carry SHARE as a percent. The Clay shares (clay_targ_pct/clay_car_pct) and the
+    2025 fallback shares are ALL already in percent (verified: clay_targ 0-33, clay_car 0-78,
+    tgt_share 0-100). The old `v*100 if v<=1.0` auto-scaling turned a legit sub-1% share into 100%
+    (Chris Rodriguez, Greg Dortch -> 100% target share, 32+ tgt/g). Parse as percent; clamp to a sane
+    ceiling as a guard against a future 100x data error (no real share exceeds ~80%)."""
     v=num(v)
     if v is None: return None
-    return v*100 if v<=1.0 else v
+    return min(v, 90.0)
 
 d=json.load(open(core.P('features.json'),encoding='utf-8'))
 players=d['players']
@@ -39,7 +43,11 @@ for f in players:
     is_mover = bool(t25) and bool(tmn) and t25!=tmn and t25 not in ('NONE','NAN')
     f['mover']=is_mover
     if not is_mover:
-        f['usage_src']='2025_actual'; f['mover_conf']=None
+        # provenance: only claim '2025_actual' when the row actually carries 2025 usage. A blank row
+        # (usage-join miss, or a rookie / no-2025-data player) is NOT real 2025 data and must not
+        # masquerade as it (this is how DJ Moore / Mike Evans got stamped 2025_actual on empty usage).
+        has_usage = any(num(f.get(k)) is not None for k in ('tgt_pg','car_pg','rec_pg','tgt_share','carry_share'))
+        f['usage_src']='2025_actual' if has_usage else 'no_2025_usage'; f['mover_conf']=None
         continue
     if tmn=='FA':  # released / unsigned -> no NFL role to project; flag, keep raw
         f['usage_src']='moved_to_FA'; f['mover_conf']='low'
