@@ -3894,7 +3894,97 @@
      "q": "Highest-ranked ARI player + why he booms?",
      "a": "Trey McBride (our #25): elite weekly producer — 99th projection at the position; coverage-agnostic — wins vs both man and zone"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 73.7,
+    "tier": "HIGH",
+    "rank": 8,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 24.9
+     },
+     {
+      "label": "Pass rate",
+      "value": 16.0
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 9.3
+     },
+     {
+      "label": "Pace",
+      "value": 8.5
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "pass-heavy (58.9%)",
+     "new-OC scheme upgrade",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Jacoby Brissett",
+      "pieces": [
+       "Trey McBride",
+       "Marvin Harrison Jr.",
+       "Michael Wilson"
+      ],
+      "round_costs": [
+       14,
+       3,
+       6,
+       7
+      ],
+      "stack_score": 0.7468,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     },
+     {
+      "qb": "Jacoby Brissett",
+      "pieces": [
+       "Trey McBride",
+       "Marvin Harrison Jr."
+      ],
+      "round_costs": [
+       14,
+       3,
+       6
+      ],
+      "stack_score": 0.7301,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Jacoby Brissett",
+      "pieces": [
+       "Trey McBride",
+       "Michael Wilson"
+      ],
+      "round_costs": [
+       14,
+       3,
+       7
+      ],
+      "stack_score": 0.7301,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "LV",
+    "w17_game_env": 52.2,
+    "bringback": [
+     "Brock Bowers",
+     "Jalen Nailor",
+     "Tre Tucker"
+    ]
+   }
   },
   {
    "team": "ATL",
@@ -7619,7 +7709,93 @@
      "q": "Highest-ranked ATL player + why he booms?",
      "a": "Bijan Robinson (our #4): elite weekly producer — 98th projection at the position; dangerous after the catch (YAC) (98th)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 28.0,
+    "tier": "LOW",
+    "rank": 27,
+    "top_drivers": [
+     {
+      "label": "Pass rate",
+      "value": 11.5
+     },
+     {
+      "label": "Pace",
+      "value": 10.2
+     },
+     {
+      "label": "Env quality",
+      "value": 8.2
+     },
+     {
+      "label": "Conc. tree",
+      "value": 8.0
+     }
+    ],
+    "fade_flags": [
+     "up-tempo (63.0 plays/g)",
+     "pass-heavy (55.4%)",
+     "QB uncertainty (caps ceiling)",
+     "concentrated tree (vacated tgt 124.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Tua Tagovailoa",
+      "pieces": [
+       "Drake London"
+      ],
+      "round_costs": [
+       17,
+       2
+      ],
+      "stack_score": 0.4454,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Tua Tagovailoa",
+      "pieces": [
+       "Drake London",
+       "Kyle Pitts Sr."
+      ],
+      "round_costs": [
+       17,
+       2,
+       8
+      ],
+      "stack_score": 0.412,
+      "stack_type": "standard",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Tua Tagovailoa",
+      "pieces": [
+       "Drake London",
+       "Zachariah Branch"
+      ],
+      "round_costs": [
+       17,
+       2,
+       16
+      ],
+      "stack_score": 0.412,
+      "stack_type": "standard",
+      "value_ct": 1,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "NO",
+    "w17_game_env": 36.9,
+    "bringback": [
+     "Chris Olave",
+     "Jordyn Tyson",
+     "Juwan Johnson"
+    ]
+   }
   },
   {
    "team": "BAL",
@@ -11505,7 +11681,91 @@
      "q": "The BAL best-ball stack?",
      "a": "Lamar Jackson + Zay Flowers"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 67.7,
+    "tier": "HIGH",
+    "rank": 11,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 22.0
+     },
+     {
+      "label": "Env quality",
+      "value": 20.5
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 14.0
+     },
+     {
+      "label": "QB ascend",
+      "value": 5.6
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (11.5)",
+     "new-OC scheme upgrade",
+     "OL improvement"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Lamar Jackson",
+      "pieces": [
+       "Zay Flowers"
+      ],
+      "round_costs": [
+       5,
+       3
+      ],
+      "stack_score": 0.6523,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Lamar Jackson",
+      "pieces": [
+       "Mark Andrews"
+      ],
+      "round_costs": [
+       5,
+       11
+      ],
+      "stack_score": 0.6523,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Lamar Jackson",
+      "pieces": [
+       "Zay Flowers",
+       "Mark Andrews"
+      ],
+      "round_costs": [
+       5,
+       3,
+       11
+      ],
+      "stack_score": 0.6523,
+      "stack_type": "standard",
+      "value_ct": 3,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "CIN",
+    "w17_game_env": 75.9,
+    "bringback": [
+     "Ja'Marr Chase",
+     "Tee Higgins",
+     "Mike Gesicki"
+    ]
+   }
   },
   {
    "team": "BUF",
@@ -16005,7 +16265,87 @@
      "q": "Highest-ranked BUF player + why he booms?",
      "a": "James Cook III (our #9): elite weekly producer — 95th projection at the position; breaks tackles / forces missed tackles (82nd)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 54.9,
+    "tier": "MID",
+    "rank": 19,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 22.2
+     },
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Pace",
+      "value": 8.0
+     },
+     {
+      "label": "QB ascend",
+      "value": 5.6
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (10.5)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Josh Allen",
+      "pieces": [
+       "Dalton Kincaid"
+      ],
+      "round_costs": [
+       3,
+       10
+      ],
+      "stack_score": 0.5336,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Josh Allen",
+      "pieces": [
+       "Khalil Shakir"
+      ],
+      "round_costs": [
+       3,
+       11
+      ],
+      "stack_score": 0.5336,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Josh Allen",
+      "pieces": [
+       "Keon Coleman"
+      ],
+      "round_costs": [
+       3,
+       18
+      ],
+      "stack_score": 0.5336,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "MIA",
+    "w17_game_env": 39.4,
+    "bringback": [
+     "Malik Washington",
+     "Greg Dulcich",
+     "Chris Bell"
+    ]
+   }
   },
   {
    "team": "CAR",
@@ -20251,7 +20591,88 @@
      "q": "Highest-ranked CAR player + why he booms?",
      "a": "Tetairoa McMillan (our #44): elite weekly producer — 89th projection at the position; vs man coverage — wins one-on-one"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 13.8,
+    "tier": "LOW",
+    "rank": 32,
+    "top_drivers": [
+     {
+      "label": "Pass rate",
+      "value": 10.2
+     },
+     {
+      "label": "Win total",
+      "value": 6.3
+     },
+     {
+      "label": "QB ascend",
+      "value": 5.6
+     },
+     {
+      "label": "Conc. tree",
+      "value": 3.2
+     }
+    ],
+    "fade_flags": [
+     "pass-heavy (54.4%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Bryce Young",
+      "pieces": [
+       "Jalen Coker"
+      ],
+      "round_costs": [
+       13,
+       11
+      ],
+      "stack_score": 0.3759,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Bryce Young",
+      "pieces": [
+       "Tetairoa McMillan",
+       "Jalen Coker"
+      ],
+      "round_costs": [
+       13,
+       4,
+       11
+      ],
+      "stack_score": 0.3426,
+      "stack_type": "standard",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Bryce Young",
+      "pieces": [
+       "Tetairoa McMillan"
+      ],
+      "round_costs": [
+       13,
+       4
+      ],
+      "stack_score": 0.2759,
+      "stack_type": "skinny",
+      "value_ct": 0,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "SEA",
+    "w17_game_env": 37.95,
+    "bringback": [
+     "Jaxon Smith-Njigba",
+     "Rashid Shaheed",
+     "AJ Barner"
+    ]
+   }
   },
   {
    "team": "CHI",
@@ -24697,7 +25118,91 @@
      "q": "The CHI best-ball stack?",
      "a": "Caleb Williams + Rome Odunze, Luther Burden III"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 77.5,
+    "tier": "ELITE",
+    "rank": 6,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 21.6
+     },
+     {
+      "label": "Win total",
+      "value": 15.7
+     },
+     {
+      "label": "Pace",
+      "value": 13.8
+     },
+     {
+      "label": "Conc. tree",
+      "value": 10.3
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (9.5)",
+     "up-tempo (64.2 plays/g)",
+     "concentrated tree (vacated tgt 161.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Caleb Williams",
+      "pieces": [
+       "Colston Loveland"
+      ],
+      "round_costs": [
+       6,
+       4
+      ],
+      "stack_score": 0.709,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Caleb Williams",
+      "pieces": [
+       "Rome Odunze"
+      ],
+      "round_costs": [
+       6,
+       5
+      ],
+      "stack_score": 0.709,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Caleb Williams",
+      "pieces": [
+       "Colston Loveland",
+       "Rome Odunze"
+      ],
+      "round_costs": [
+       6,
+       4,
+       5
+      ],
+      "stack_score": 0.709,
+      "stack_type": "standard",
+      "value_ct": 3,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "DET",
+    "w17_game_env": 81.0,
+    "bringback": [
+     "Amon-Ra St. Brown",
+     "Jameson Williams",
+     "Sam LaPorta"
+    ]
+   }
   },
   {
    "team": "CIN",
@@ -28873,7 +29378,92 @@
      "q": "The CIN best-ball stack?",
      "a": "Joe Burrow + Ja'Marr Chase, Tee Higgins"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 84.1,
+    "tier": "ELITE",
+    "rank": 2,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 26.8
+     },
+     {
+      "label": "Win total",
+      "value": 15.7
+     },
+     {
+      "label": "Pass rate",
+      "value": 14.8
+     },
+     {
+      "label": "Pace",
+      "value": 10.6
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (9.5)",
+     "up-tempo (63.1 plays/g)",
+     "pass-heavy (58.0%)",
+     "OL improvement",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Joe Burrow",
+      "pieces": [
+       "Tee Higgins",
+       "Mike Gesicki"
+      ],
+      "round_costs": [
+       5,
+       3,
+       18
+      ],
+      "stack_score": 0.6677,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Joe Burrow",
+      "pieces": [
+       "Tee Higgins"
+      ],
+      "round_costs": [
+       5,
+       3
+      ],
+      "stack_score": 0.6343,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": false
+     },
+     {
+      "qb": "Joe Burrow",
+      "pieces": [
+       "Mike Gesicki"
+      ],
+      "round_costs": [
+       5,
+       18
+      ],
+      "stack_score": 0.6343,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "BAL",
+    "w17_game_env": 75.9,
+    "bringback": [
+     "Zay Flowers",
+     "Mark Andrews"
+    ]
+   }
   },
   {
    "team": "CLE",
@@ -32444,7 +33034,91 @@
      "q": "Highest-ranked CLE player + why he booms?",
      "a": "Quinshon Judkins (our #57): solid baseline projection (81st); steady week to week (low volatility = high floor)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 46.2,
+    "tier": "MID",
+    "rank": 23,
+    "top_drivers": [
+     {
+      "label": "Scheme upgrade",
+      "value": 12.4
+     },
+     {
+      "label": "Pace",
+      "value": 12.3
+     },
+     {
+      "label": "Pass rate",
+      "value": 9.8
+     },
+     {
+      "label": "Conc. tree",
+      "value": 8.2
+     }
+    ],
+    "fade_flags": [
+     "up-tempo (63.5 plays/g)",
+     "QB uncertainty (caps ceiling)",
+     "new-OC scheme upgrade",
+     "concentrated tree (vacated tgt 128.0%)",
+     "OL improvement",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Shedeur Sanders",
+      "pieces": [
+       "Harold Fannin Jr."
+      ],
+      "round_costs": [
+       19,
+       9
+      ],
+      "stack_score": 0.64,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Shedeur Sanders",
+      "pieces": [
+       "Denzel Boston"
+      ],
+      "round_costs": [
+       19,
+       14
+      ],
+      "stack_score": 0.64,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Shedeur Sanders",
+      "pieces": [
+       "Jerry Jeudy"
+      ],
+      "round_costs": [
+       19,
+       16
+      ],
+      "stack_score": 0.64,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "IND",
+    "w17_game_env": 39.3,
+    "bringback": [
+     "Tyler Warren",
+     "Alec Pierce",
+     "Josh Downs"
+    ]
+   }
   },
   {
    "team": "DAL",
@@ -36896,7 +37570,91 @@
      "q": "The DAL best-ball stack?",
      "a": "Dak Prescott + CeeDee Lamb, George Pickens"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 82.7,
+    "tier": "ELITE",
+    "rank": 3,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 28.0
+     },
+     {
+      "label": "Pace",
+      "value": 16.0
+     },
+     {
+      "label": "Win total",
+      "value": 15.7
+     },
+     {
+      "label": "Pass rate",
+      "value": 11.5
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (9.5)",
+     "up-tempo (65.6 plays/g)",
+     "pass-heavy (55.4%)",
+     "OL improvement",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Dak Prescott",
+      "pieces": [
+       "CeeDee Lamb"
+      ],
+      "round_costs": [
+       7,
+       1
+      ],
+      "stack_score": 0.7232,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Dak Prescott",
+      "pieces": [
+       "Jake Ferguson"
+      ],
+      "round_costs": [
+       7,
+       11
+      ],
+      "stack_score": 0.7232,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Dak Prescott",
+      "pieces": [
+       "Ryan Flournoy"
+      ],
+      "round_costs": [
+       7,
+       14
+      ],
+      "stack_score": 0.7232,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "NYG",
+    "w17_game_env": 73.1,
+    "bringback": [
+     "Malik Nabers",
+     "Isaiah Likely",
+     "Malachi Fields"
+    ]
+   }
   },
   {
    "team": "DEN",
@@ -41583,7 +42341,92 @@
      "q": "The DEN best-ball stack?",
      "a": "Bo Nix + Jaylen Waddle, Courtland Sutton"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 60.0,
+    "tier": "MID",
+    "rank": 17,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 15.7
+     },
+     {
+      "label": "Pass rate",
+      "value": 12.1
+     },
+     {
+      "label": "Pace",
+      "value": 11.2
+     },
+     {
+      "label": "QB ascend",
+      "value": 11.0
+     }
+    ],
+    "fade_flags": [
+     "high win total (9.5)",
+     "up-tempo (63.4 plays/g)",
+     "pass-heavy (55.9%)",
+     "ascending/returning QB",
+     "new-OC scheme upgrade"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Bo Nix",
+      "pieces": [
+       "Courtland Sutton"
+      ],
+      "round_costs": [
+       10,
+       7
+      ],
+      "stack_score": 0.7475,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Bo Nix",
+      "pieces": [
+       "Troy Franklin"
+      ],
+      "round_costs": [
+       10,
+       19
+      ],
+      "stack_score": 0.7475,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Bo Nix",
+      "pieces": [
+       "Courtland Sutton",
+       "Troy Franklin"
+      ],
+      "round_costs": [
+       10,
+       7,
+       19
+      ],
+      "stack_score": 0.7475,
+      "stack_type": "standard",
+      "value_ct": 3,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "NE",
+    "w17_game_env": 65.0,
+    "bringback": [
+     "A.J. Brown",
+     "Romeo Doubs",
+     "Hunter Henry"
+    ]
+   }
   },
   {
    "team": "DET",
@@ -45689,7 +46532,89 @@
      "q": "The DET best-ball stack?",
      "a": "Jared Goff + Amon-Ra St. Brown, Jameson Williams"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 84.5,
+    "tier": "ELITE",
+    "rank": 1,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 27.2
+     },
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Pace",
+      "value": 13.8
+     },
+     {
+      "label": "Pass rate",
+      "value": 9.0
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (10.5)",
+     "up-tempo (64.2 plays/g)",
+     "OL improvement"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Jared Goff",
+      "pieces": [
+       "Amon-Ra St. Brown"
+      ],
+      "round_costs": [
+       9,
+       1
+      ],
+      "stack_score": 0.894,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Jared Goff",
+      "pieces": [
+       "Jameson Williams"
+      ],
+      "round_costs": [
+       9,
+       5
+      ],
+      "stack_score": 0.894,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Jared Goff",
+      "pieces": [
+       "Sam LaPorta"
+      ],
+      "round_costs": [
+       9,
+       8
+      ],
+      "stack_score": 0.894,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "CHI",
+    "w17_game_env": 81.0,
+    "bringback": [
+     "Colston Loveland",
+     "Luther Burden III",
+     "Rome Odunze"
+    ]
+   }
   },
   {
    "team": "GB",
@@ -49706,7 +50631,89 @@
      "q": "Highest-ranked GB player + why he booms?",
      "a": "Josh Jacobs (our #48): elite weekly producer — 90th projection at the position; soft slate of opposing defenses this season (93rd)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 63.4,
+    "tier": "MID",
+    "rank": 15,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Env quality",
+      "value": 17.1
+     },
+     {
+      "label": "Conc. tree",
+      "value": 9.5
+     },
+     {
+      "label": "Pass rate",
+      "value": 8.5
+     }
+    ],
+    "fade_flags": [
+     "high win total (10.5)",
+     "concentrated tree (vacated tgt 148.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Jordan Love",
+      "pieces": [
+       "Christian Watson"
+      ],
+      "round_costs": [
+       10,
+       5
+      ],
+      "stack_score": 0.7497,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Jordan Love",
+      "pieces": [
+       "Tucker Kraft"
+      ],
+      "round_costs": [
+       10,
+       7
+      ],
+      "stack_score": 0.7497,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Jordan Love",
+      "pieces": [
+       "Christian Watson",
+       "Tucker Kraft"
+      ],
+      "round_costs": [
+       10,
+       5,
+       7
+      ],
+      "stack_score": 0.7497,
+      "stack_type": "standard",
+      "value_ct": 3,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "HOU",
+    "w17_game_env": 55.15,
+    "bringback": [
+     "Nico Collins",
+     "Jayden Higgins",
+     "Dalton Schultz"
+    ]
+   }
   },
   {
    "team": "HOU",
@@ -53913,7 +54920,93 @@
      "q": "Highest-ranked HOU player + why he booms?",
      "a": "Nico Collins (our #22): elite weekly producer — 94th projection at the position; coverage-agnostic — wins vs both man and zone"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 46.9,
+    "tier": "MID",
+    "rank": 22,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 15.7
+     },
+     {
+      "label": "Pace",
+      "value": 11.2
+     },
+     {
+      "label": "Pass rate",
+      "value": 11.0
+     },
+     {
+      "label": "QB ascend",
+      "value": 5.6
+     }
+    ],
+    "fade_flags": [
+     "high win total (9.5)",
+     "up-tempo (63.4 plays/g)",
+     "pass-heavy (55.0%)",
+     "OL improvement"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "C.J. Stroud",
+      "pieces": [
+       "Dalton Schultz"
+      ],
+      "round_costs": [
+       12,
+       15
+      ],
+      "stack_score": 0.6672,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "C.J. Stroud",
+      "pieces": [
+       "Nico Collins",
+       "Dalton Schultz"
+      ],
+      "round_costs": [
+       12,
+       2,
+       15
+      ],
+      "stack_score": 0.6006,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "C.J. Stroud",
+      "pieces": [
+       "Jayden Higgins",
+       "Dalton Schultz"
+      ],
+      "round_costs": [
+       12,
+       11,
+       15
+      ],
+      "stack_score": 0.6006,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "GB",
+    "w17_game_env": 55.15,
+    "bringback": [
+     "Christian Watson",
+     "Tucker Kraft",
+     "Jayden Reed"
+    ]
+   }
   },
   {
    "team": "IND",
@@ -57943,7 +59036,90 @@
      "q": "Highest-ranked IND player + why he booms?",
      "a": "Jonathan Taylor (our #5): elite weekly producer — 97th projection at the position; explosive big-play threat (98th)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 32.4,
+    "tier": "MID",
+    "rank": 25,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 13.4
+     },
+     {
+      "label": "Win total",
+      "value": 9.4
+     },
+     {
+      "label": "Pass rate",
+      "value": 8.9
+     },
+     {
+      "label": "Conc. tree",
+      "value": 8.4
+     }
+    ],
+    "fade_flags": [
+     "QB uncertainty (caps ceiling)",
+     "concentrated tree (vacated tgt 131.0%)",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Daniel Jones",
+      "pieces": [
+       "Tyler Warren",
+       "Alec Pierce"
+      ],
+      "round_costs": [
+       12,
+       6,
+       7
+      ],
+      "stack_score": 0.5043,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Daniel Jones",
+      "pieces": [
+       "Tyler Warren"
+      ],
+      "round_costs": [
+       12,
+       6
+      ],
+      "stack_score": 0.471,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Daniel Jones",
+      "pieces": [
+       "Alec Pierce"
+      ],
+      "round_costs": [
+       12,
+       7
+      ],
+      "stack_score": 0.471,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "CLE",
+    "w17_game_env": 39.3,
+    "bringback": [
+     "Harold Fannin Jr.",
+     "KC Concepcion",
+     "Denzel Boston"
+    ]
+   }
   },
   {
    "team": "JAX",
@@ -62194,7 +63370,99 @@
      "q": "Highest-ranked JAX player + why he booms?",
      "a": "Bhayshul Tuten (our #60): solid baseline projection (77th); fits gap/power runs vs undersized fronts"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 50.3,
+    "tier": "MID",
+    "rank": 21,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 16.2
+     },
+     {
+      "label": "Win total",
+      "value": 12.6
+     },
+     {
+      "label": "Pass rate",
+      "value": 12.4
+     },
+     {
+      "label": "Conc. tree",
+      "value": 8.5
+     }
+    ],
+    "fade_flags": [
+     "pass-heavy (56.1%)",
+     "concentrated tree (vacated tgt 132.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Trevor Lawrence",
+      "pieces": [
+       "Brian Thomas Jr.",
+       "Parker Washington",
+       "Jakobi Meyers"
+      ],
+      "round_costs": [
+       8,
+       6,
+       6,
+       10
+      ],
+      "stack_score": 0.4579,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": false
+     },
+     {
+      "qb": "Trevor Lawrence",
+      "pieces": [
+       "Brian Thomas Jr.",
+       "Parker Washington",
+       "Brenton Strange"
+      ],
+      "round_costs": [
+       8,
+       6,
+       6,
+       13
+      ],
+      "stack_score": 0.4579,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": false
+     },
+     {
+      "qb": "Trevor Lawrence",
+      "pieces": [
+       "Brian Thomas Jr.",
+       "Jakobi Meyers",
+       "Brenton Strange"
+      ],
+      "round_costs": [
+       8,
+       6,
+       10,
+       13
+      ],
+      "stack_score": 0.4579,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "WAS",
+    "w17_game_env": 37.6,
+    "bringback": [
+     "Terry McLaurin",
+     "Chig Okonkwo",
+     "Antonio Williams"
+    ]
+   }
   },
   {
    "team": "KC",
@@ -66975,7 +68243,93 @@
      "q": "The KC best-ball stack?",
      "a": "Patrick Mahomes + Rashee Rice"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 82.6,
+    "tier": "ELITE",
+    "rank": 4,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 20.8
+     },
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Pass rate",
+      "value": 11.9
+     },
+     {
+      "label": "Pace",
+      "value": 11.7
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (10.5)",
+     "up-tempo (63.4 plays/g)",
+     "pass-heavy (55.7%)",
+     "ascending/returning QB",
+     "concentrated tree (vacated tgt 148.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Patrick Mahomes",
+      "pieces": [
+       "Rashee Rice"
+      ],
+      "round_costs": [
+       8,
+       3
+      ],
+      "stack_score": 0.7278,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Patrick Mahomes",
+      "pieces": [
+       "Travis Kelce"
+      ],
+      "round_costs": [
+       8,
+       10
+      ],
+      "stack_score": 0.7278,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Patrick Mahomes",
+      "pieces": [
+       "Rashee Rice",
+       "Travis Kelce"
+      ],
+      "round_costs": [
+       8,
+       3,
+       10
+      ],
+      "stack_score": 0.7278,
+      "stack_type": "standard",
+      "value_ct": 3,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "LAC",
+    "w17_game_env": 76.55,
+    "bringback": [
+     "Ladd McConkey",
+     "Quentin Johnston",
+     "Oronde Gadsden II"
+    ]
+   }
   },
   {
    "team": "LAC",
@@ -71795,7 +73149,88 @@
      "q": "The LAC best-ball stack?",
      "a": "Justin Herbert + Ladd McConkey"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 70.5,
+    "tier": "HIGH",
+    "rank": 9,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Env quality",
+      "value": 14.6
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 12.4
+     },
+     {
+      "label": "Pass rate",
+      "value": 9.3
+     }
+    ],
+    "fade_flags": [
+     "high win total (10.5)",
+     "new-OC scheme upgrade",
+     "OL improvement"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Justin Herbert",
+      "pieces": [
+       "Quentin Johnston"
+      ],
+      "round_costs": [
+       7,
+       7
+      ],
+      "stack_score": 0.6673,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Justin Herbert",
+      "pieces": [
+       "Oronde Gadsden II"
+      ],
+      "round_costs": [
+       7,
+       12
+      ],
+      "stack_score": 0.6673,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Justin Herbert",
+      "pieces": [
+       "David Njoku"
+      ],
+      "round_costs": [
+       7,
+       17
+      ],
+      "stack_score": 0.6673,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "KC",
+    "w17_game_env": 76.55,
+    "bringback": [
+     "Rashee Rice",
+     "Xavier Worthy",
+     "Travis Kelce"
+    ]
+   }
   },
   {
    "team": "LAR",
@@ -76806,7 +78241,88 @@
      "q": "The LAR best-ball stack?",
      "a": "Matthew Stafford + Puka Nacua, Davante Adams"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 76.6,
+    "tier": "HIGH",
+    "rank": 7,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 29.6
+     },
+     {
+      "label": "Win total",
+      "value": 22.0
+     },
+     {
+      "label": "Pass rate",
+      "value": 10.6
+     },
+     {
+      "label": "Pace",
+      "value": 9.1
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (11.5)",
+     "pass-heavy (54.7%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Matthew Stafford",
+      "pieces": [
+       "Puka Nacua"
+      ],
+      "round_costs": [
+       8,
+       1
+      ],
+      "stack_score": 0.6997,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Matthew Stafford",
+      "pieces": [
+       "Davante Adams"
+      ],
+      "round_costs": [
+       8,
+       4
+      ],
+      "stack_score": 0.6997,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Matthew Stafford",
+      "pieces": [
+       "Colby Parkinson"
+      ],
+      "round_costs": [
+       8,
+       17
+      ],
+      "stack_score": 0.6997,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "TB",
+    "w17_game_env": 77.8,
+    "bringback": [
+     "Emeka Egbuka",
+     "Chris Godwin Jr.",
+     "Jalen McMillan"
+    ]
+   }
   },
   {
    "team": "LV",
@@ -81175,7 +82691,97 @@
      "q": "Highest-ranked LV player + why he booms?",
      "a": "Ashton Jeanty (our #14): elite weekly producer — 93rd projection at the position; dangerous after the catch (YAC) (80th)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 30.7,
+    "tier": "MID",
+    "rank": 26,
+    "top_drivers": [
+     {
+      "label": "Scheme upgrade",
+      "value": 14.0
+     },
+     {
+      "label": "Pass rate",
+      "value": 12.0
+     },
+     {
+      "label": "Shootout script",
+      "value": 6.6
+     },
+     {
+      "label": "QB ascend",
+      "value": 6.2
+     }
+    ],
+    "fade_flags": [
+     "pass-heavy (55.8%)",
+     "new-OC scheme upgrade",
+     "OL improvement",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Fernando Mendoza",
+      "pieces": [
+       "Brock Bowers",
+       "Jalen Nailor",
+       "Tre Tucker"
+      ],
+      "round_costs": [
+       15,
+       2,
+       13,
+       14
+      ],
+      "stack_score": 0.5318,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     },
+     {
+      "qb": "Fernando Mendoza",
+      "pieces": [
+       "Brock Bowers",
+       "Jalen Nailor"
+      ],
+      "round_costs": [
+       15,
+       2,
+       13
+      ],
+      "stack_score": 0.5151,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Fernando Mendoza",
+      "pieces": [
+       "Brock Bowers",
+       "Tre Tucker"
+      ],
+      "round_costs": [
+       15,
+       2,
+       14
+      ],
+      "stack_score": 0.5151,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "ARI",
+    "w17_game_env": 52.2,
+    "bringback": [
+     "Trey McBride",
+     "Marvin Harrison Jr.",
+     "Michael Wilson"
+    ]
+   }
   },
   {
    "team": "MIA",
@@ -84965,7 +86571,87 @@
      "q": "Highest-ranked MIA player + why he booms?",
      "a": "De'Von Achane (our #16): elite weekly producer — 96th projection at the position; raises his game vs division rivals (21.8 vs 17.4 FP/g)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 23.9,
+    "tier": "LOW",
+    "rank": 30,
+    "top_drivers": [
+     {
+      "label": "Conc. tree",
+      "value": 11.2
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 9.3
+     },
+     {
+      "label": "Pass rate",
+      "value": 5.9
+     },
+     {
+      "label": "QB ascend",
+      "value": 5.6
+     }
+    ],
+    "fade_flags": [
+     "new-OC scheme upgrade",
+     "concentrated tree (vacated tgt 175.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Malik Willis",
+      "pieces": [
+       "Malik Washington"
+      ],
+      "round_costs": [
+       11,
+       14
+      ],
+      "stack_score": 0.3286,
+      "stack_type": "skinny",
+      "value_ct": 0,
+      "qb_late": true
+     },
+     {
+      "qb": "Malik Willis",
+      "pieces": [
+       "Greg Dulcich"
+      ],
+      "round_costs": [
+       11,
+       15
+      ],
+      "stack_score": 0.3286,
+      "stack_type": "skinny",
+      "value_ct": 0,
+      "qb_late": true
+     },
+     {
+      "qb": "Malik Willis",
+      "pieces": [
+       "Chris Bell"
+      ],
+      "round_costs": [
+       11,
+       18
+      ],
+      "stack_score": 0.3286,
+      "stack_type": "skinny",
+      "value_ct": 0,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "BUF",
+    "w17_game_env": 39.4,
+    "bringback": [
+     "DJ Moore",
+     "Dalton Kincaid",
+     "Khalil Shakir"
+    ]
+   }
   },
   {
    "team": "MIN",
@@ -88661,7 +90347,95 @@
      "q": "Highest-ranked MIN player + why he booms?",
      "a": "Justin Jefferson (our #12): elite weekly producer — 96th projection at the position; vs zone coverage — finds the soft spots"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 24.4,
+    "tier": "LOW",
+    "rank": 29,
+    "top_drivers": [
+     {
+      "label": "Pass rate",
+      "value": 12.8
+     },
+     {
+      "label": "Win total",
+      "value": 12.6
+     },
+     {
+      "label": "Env quality",
+      "value": 12.2
+     },
+     {
+      "label": "Conc. tree",
+      "value": 4.0
+     }
+    ],
+    "fade_flags": [
+     "pass-heavy (56.4%)",
+     "QB uncertainty (caps ceiling)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Kyler Murray",
+      "pieces": [
+       "Justin Jefferson",
+       "Jordan Addison",
+       "Jauan Jennings"
+      ],
+      "round_costs": [
+       10,
+       1,
+       9,
+       13
+      ],
+      "stack_score": 0.4574,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     },
+     {
+      "qb": "Kyler Murray",
+      "pieces": [
+       "Justin Jefferson",
+       "Jordan Addison"
+      ],
+      "round_costs": [
+       10,
+       1,
+       9
+      ],
+      "stack_score": 0.4407,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Kyler Murray",
+      "pieces": [
+       "Justin Jefferson",
+       "Jauan Jennings"
+      ],
+      "round_costs": [
+       10,
+       1,
+       13
+      ],
+      "stack_score": 0.4407,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "NYJ",
+    "w17_game_env": 23.6,
+    "bringback": [
+     "Garrett Wilson",
+     "Omar Cooper Jr.",
+     "Kenyon Sadiq"
+    ]
+   }
   },
   {
    "team": "NE",
@@ -93574,7 +95348,89 @@
      "q": "The NE best-ball stack?",
      "a": "Drake Maye + A.J. Brown"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 70.0,
+    "tier": "HIGH",
+    "rank": 10,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 26.1
+     },
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "QB ascend",
+      "value": 13.8
+     },
+     {
+      "label": "Pass rate",
+      "value": 7.6
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (10.5)",
+     "ascending/returning QB",
+     "OL improvement"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Drake Maye",
+      "pieces": [
+       "Romeo Doubs"
+      ],
+      "round_costs": [
+       6,
+       11
+      ],
+      "stack_score": 0.6475,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Drake Maye",
+      "pieces": [
+       "Hunter Henry"
+      ],
+      "round_costs": [
+       6,
+       13
+      ],
+      "stack_score": 0.6475,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Drake Maye",
+      "pieces": [
+       "Kayshon Boutte"
+      ],
+      "round_costs": [
+       6,
+       18
+      ],
+      "stack_score": 0.6475,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "DEN",
+    "w17_game_env": 65.0,
+    "bringback": [
+     "Jaylen Waddle",
+     "Courtland Sutton",
+     "Troy Franklin"
+    ]
+   }
   },
   {
    "team": "NO",
@@ -97553,7 +99409,93 @@
      "q": "The NO best-ball stack?",
      "a": "Tyler Shough + Chris Olave, Jordyn Tyson"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 45.8,
+    "tier": "MID",
+    "rank": 24,
+    "top_drivers": [
+     {
+      "label": "QB ascend",
+      "value": 11.0
+     },
+     {
+      "label": "Env quality",
+      "value": 10.3
+     },
+     {
+      "label": "Pass rate",
+      "value": 10.1
+     },
+     {
+      "label": "Win total",
+      "value": 9.4
+     }
+    ],
+    "fade_flags": [
+     "pass-heavy (54.3%)",
+     "ascending/returning QB",
+     "OL improvement",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Tyler Shough",
+      "pieces": [
+       "Chris Olave"
+      ],
+      "round_costs": [
+       10,
+       3
+      ],
+      "stack_score": 0.5343,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Tyler Shough",
+      "pieces": [
+       "Chris Olave",
+       "Jordyn Tyson"
+      ],
+      "round_costs": [
+       10,
+       3,
+       6
+      ],
+      "stack_score": 0.501,
+      "stack_type": "standard",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Tyler Shough",
+      "pieces": [
+       "Chris Olave",
+       "Juwan Johnson"
+      ],
+      "round_costs": [
+       10,
+       3,
+       13
+      ],
+      "stack_score": 0.501,
+      "stack_type": "standard",
+      "value_ct": 1,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "ATL",
+    "w17_game_env": 36.9,
+    "bringback": [
+     "Drake London",
+     "Kyle Pitts Sr.",
+     "Zachariah Branch"
+    ]
+   }
   },
   {
    "team": "NYG",
@@ -102976,7 +104918,90 @@
      "q": "The NYG best-ball stack?",
      "a": "Jaxson Dart + Malik Nabers"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 63.5,
+    "tier": "HIGH",
+    "rank": 14,
+    "top_drivers": [
+     {
+      "label": "Pace",
+      "value": 12.1
+     },
+     {
+      "label": "QB ascend",
+      "value": 11.0
+     },
+     {
+      "label": "Conc. tree",
+      "value": 10.7
+     },
+     {
+      "label": "Win total",
+      "value": 9.4
+     }
+    ],
+    "fade_flags": [
+     "up-tempo (63.5 plays/g)",
+     "ascending/returning QB",
+     "new-OC scheme upgrade",
+     "concentrated tree (vacated tgt 166.0%)",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Jaxson Dart",
+      "pieces": [
+       "Malik Nabers"
+      ],
+      "round_costs": [
+       9,
+       4
+      ],
+      "stack_score": 0.7772,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Jaxson Dart",
+      "pieces": [
+       "Malachi Fields"
+      ],
+      "round_costs": [
+       9,
+       18
+      ],
+      "stack_score": 0.7772,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Jaxson Dart",
+      "pieces": [
+       "Darnell Mooney"
+      ],
+      "round_costs": [
+       9,
+       19
+      ],
+      "stack_score": 0.7772,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "DAL",
+    "w17_game_env": 73.1,
+    "bringback": [
+     "CeeDee Lamb",
+     "George Pickens",
+     "Jake Ferguson"
+    ]
+   }
   },
   {
    "team": "NYJ",
@@ -106349,7 +108374,91 @@
      "q": "Highest-ranked NYJ player + why he booms?",
      "a": "Breece Hall (our #32): elite weekly producer — 91st projection at the position; explosive big-play threat (91st)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 22.8,
+    "tier": "LOW",
+    "rank": 31,
+    "top_drivers": [
+     {
+      "label": "Pass rate",
+      "value": 9.3
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 7.8
+     },
+     {
+      "label": "Shootout script",
+      "value": 5.9
+     },
+     {
+      "label": "Env quality",
+      "value": 5.1
+     }
+    ],
+    "fade_flags": [
+     "QB uncertainty (caps ceiling)",
+     "new-OC scheme upgrade",
+     "OL improvement",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Geno Smith",
+      "pieces": [
+       "Garrett Wilson",
+       "Adonai Mitchell"
+      ],
+      "round_costs": [
+       16,
+       4,
+       15
+      ],
+      "stack_score": 0.4327,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Geno Smith",
+      "pieces": [
+       "Garrett Wilson"
+      ],
+      "round_costs": [
+       16,
+       4
+      ],
+      "stack_score": 0.3994,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": true
+     },
+     {
+      "qb": "Geno Smith",
+      "pieces": [
+       "Adonai Mitchell"
+      ],
+      "round_costs": [
+       16,
+       15
+      ],
+      "stack_score": 0.3994,
+      "stack_type": "skinny",
+      "value_ct": 1,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "MIN",
+    "w17_game_env": 23.6,
+    "bringback": [
+     "Justin Jefferson",
+     "Jordan Addison",
+     "Jauan Jennings"
+    ]
+   }
   },
   {
    "team": "PHI",
@@ -110054,7 +112163,88 @@
      "q": "The PHI best-ball stack?",
      "a": "Jalen Hurts + DeVonta Smith, Makai Lemon"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 66.8,
+    "tier": "HIGH",
+    "rank": 12,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Env quality",
+      "value": 13.0
+     },
+     {
+      "label": "Conc. tree",
+      "value": 11.0
+     },
+     {
+      "label": "Pace",
+      "value": 9.6
+     }
+    ],
+    "fade_flags": [
+     "high win total (10.5)",
+     "new-OC scheme upgrade",
+     "concentrated tree (vacated tgt 171.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Jalen Hurts",
+      "pieces": [
+       "DeVonta Smith"
+      ],
+      "round_costs": [
+       7,
+       3
+      ],
+      "stack_score": 0.6342,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Jalen Hurts",
+      "pieces": [
+       "Dallas Goedert"
+      ],
+      "round_costs": [
+       7,
+       11
+      ],
+      "stack_score": 0.6342,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Jalen Hurts",
+      "pieces": [
+       "Dontayvion Wicks"
+      ],
+      "round_costs": [
+       7,
+       17
+      ],
+      "stack_score": 0.6342,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "SF",
+    "w17_game_env": 66.8,
+    "bringback": [
+     "Mike Evans",
+     "George Kittle",
+     "Ricky Pearsall"
+    ]
+   }
   },
   {
    "team": "PIT",
@@ -114461,7 +116651,97 @@
      "q": "Highest-ranked PIT player + why he booms?",
      "a": "DK Metcalf (our #78): solid baseline projection (80th); vs zone coverage — finds the soft spots"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 54.2,
+    "tier": "MID",
+    "rank": 20,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 12.6
+     },
+     {
+      "label": "Pass rate",
+      "value": 12.5
+     },
+     {
+      "label": "Env quality",
+      "value": 12.0
+     },
+     {
+      "label": "Conc. tree",
+      "value": 12.0
+     }
+    ],
+    "fade_flags": [
+     "pass-heavy (56.2%)",
+     "QB uncertainty (caps ceiling)",
+     "concentrated tree (vacated tgt 187.0%)",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Aaron Rodgers",
+      "pieces": [
+       "DK Metcalf",
+       "Michael Pittman Jr.",
+       "Pat Freiermuth"
+      ],
+      "round_costs": [
+       14,
+       7,
+       8,
+       17
+      ],
+      "stack_score": 0.6538,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     },
+     {
+      "qb": "Aaron Rodgers",
+      "pieces": [
+       "DK Metcalf",
+       "Michael Pittman Jr."
+      ],
+      "round_costs": [
+       14,
+       7,
+       8
+      ],
+      "stack_score": 0.6371,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Aaron Rodgers",
+      "pieces": [
+       "DK Metcalf",
+       "Pat Freiermuth"
+      ],
+      "round_costs": [
+       14,
+       7,
+       17
+      ],
+      "stack_score": 0.6371,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "TEN",
+    "w17_game_env": 55.2,
+    "bringback": [
+     "Carnell Tate",
+     "Wan'Dale Robinson",
+     "Gunnar Helm"
+    ]
+   }
   },
   {
    "team": "SEA",
@@ -118514,7 +120794,87 @@
      "q": "Highest-ranked SEA player + why he booms?",
      "a": "Jaxon Smith-Njigba (our #3): elite weekly producer — 98th projection at the position; coverage-agnostic — wins vs both man and zone"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 62.1,
+    "tier": "MID",
+    "rank": 16,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 22.5
+     },
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 7.8
+     },
+     {
+      "label": "Pass rate",
+      "value": 6.7
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (10.5)",
+     "new-OC scheme upgrade"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Sam Darnold",
+      "pieces": [
+       "Jaxon Smith-Njigba"
+      ],
+      "round_costs": [
+       12,
+       1
+      ],
+      "stack_score": 0.7174,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Sam Darnold",
+      "pieces": [
+       "AJ Barner"
+      ],
+      "round_costs": [
+       12,
+       16
+      ],
+      "stack_score": 0.7174,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Sam Darnold",
+      "pieces": [
+       "Cooper Kupp"
+      ],
+      "round_costs": [
+       12,
+       17
+      ],
+      "stack_score": 0.7174,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "CAR",
+    "w17_game_env": 37.95,
+    "bringback": [
+     "Tetairoa McMillan",
+     "Jalen Coker"
+    ]
+   }
   },
   {
    "team": "SF",
@@ -123629,7 +125989,89 @@
      "q": "The SF best-ball stack?",
      "a": "Brock Purdy + George Kittle, Mike Evans"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 66.8,
+    "tier": "HIGH",
+    "rank": 13,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 23.3
+     },
+     {
+      "label": "Win total",
+      "value": 18.9
+     },
+     {
+      "label": "Conc. tree",
+      "value": 10.4
+     },
+     {
+      "label": "Pass rate",
+      "value": 8.0
+     }
+    ],
+    "fade_flags": [
+     "elite scoring environment",
+     "high win total (10.5)",
+     "QB uncertainty (caps ceiling)",
+     "concentrated tree (vacated tgt 162.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Brock Purdy",
+      "pieces": [
+       "Mike Evans"
+      ],
+      "round_costs": [
+       9,
+       5
+      ],
+      "stack_score": 0.7842,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Brock Purdy",
+      "pieces": [
+       "George Kittle"
+      ],
+      "round_costs": [
+       9,
+       9
+      ],
+      "stack_score": 0.7842,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Brock Purdy",
+      "pieces": [
+       "Ricky Pearsall"
+      ],
+      "round_costs": [
+       9,
+       9
+      ],
+      "stack_score": 0.7842,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "PHI",
+    "w17_game_env": 66.8,
+    "bringback": [
+     "DeVonta Smith",
+     "Makai Lemon",
+     "Dallas Goedert"
+    ]
+   }
   },
   {
    "team": "TB",
@@ -127734,7 +130176,101 @@
      "q": "The TB best-ball stack?",
      "a": "Baker Mayfield + Emeka Egbuka"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 79.0,
+    "tier": "ELITE",
+    "rank": 5,
+    "top_drivers": [
+     {
+      "label": "Env quality",
+      "value": 17.4
+     },
+     {
+      "label": "Win total",
+      "value": 15.7
+     },
+     {
+      "label": "Pace",
+      "value": 13.1
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 9.3
+     }
+    ],
+    "fade_flags": [
+     "high win total (9.5)",
+     "up-tempo (63.9 plays/g)",
+     "new-OC scheme upgrade",
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Baker Mayfield",
+      "pieces": [
+       "Emeka Egbuka",
+       "Chris Godwin Jr.",
+       "Jalen McMillan"
+      ],
+      "round_costs": [
+       11,
+       3,
+       8,
+       12
+      ],
+      "stack_score": 0.8117,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     },
+     {
+      "qb": "Baker Mayfield",
+      "pieces": [
+       "Emeka Egbuka",
+       "Chris Godwin Jr.",
+       "Cade Otton"
+      ],
+      "round_costs": [
+       11,
+       3,
+       8,
+       16
+      ],
+      "stack_score": 0.8117,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     },
+     {
+      "qb": "Baker Mayfield",
+      "pieces": [
+       "Emeka Egbuka",
+       "Jalen McMillan",
+       "Cade Otton"
+      ],
+      "round_costs": [
+       11,
+       3,
+       12,
+       16
+      ],
+      "stack_score": 0.8117,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "LAR",
+    "w17_game_env": 77.8,
+    "bringback": [
+     "Puka Nacua",
+     "Davante Adams",
+     "Colby Parkinson"
+    ]
+   }
   },
   {
    "team": "TEN",
@@ -131711,7 +134247,97 @@
      "q": "Highest-ranked TEN player + why he booms?",
      "a": "Carnell Tate (our #56): solid baseline projection (86th); soft slate of opposing defenses this season (78th)"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 56.2,
+    "tier": "MID",
+    "rank": 18,
+    "top_drivers": [
+     {
+      "label": "QB ascend",
+      "value": 16.0
+     },
+     {
+      "label": "Pass rate",
+      "value": 12.8
+     },
+     {
+      "label": "Scheme upgrade",
+      "value": 12.4
+     },
+     {
+      "label": "Conc. tree",
+      "value": 8.4
+     }
+    ],
+    "fade_flags": [
+     "pass-heavy (56.4%)",
+     "ascending/returning QB",
+     "new-OC scheme upgrade",
+     "concentrated tree (vacated tgt 131.0%)"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Cam Ward",
+      "pieces": [
+       "Wan'Dale Robinson",
+       "Gunnar Helm",
+       "Calvin Ridley"
+      ],
+      "round_costs": [
+       12,
+       9,
+       16,
+       16
+      ],
+      "stack_score": 0.6638,
+      "stack_type": "heavy",
+      "value_ct": 3,
+      "qb_late": true
+     },
+     {
+      "qb": "Cam Ward",
+      "pieces": [
+       "Wan'Dale Robinson",
+       "Gunnar Helm"
+      ],
+      "round_costs": [
+       12,
+       9,
+       16
+      ],
+      "stack_score": 0.6471,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     },
+     {
+      "qb": "Cam Ward",
+      "pieces": [
+       "Wan'Dale Robinson",
+       "Calvin Ridley"
+      ],
+      "round_costs": [
+       12,
+       9,
+       16
+      ],
+      "stack_score": 0.6471,
+      "stack_type": "standard",
+      "value_ct": 2,
+      "qb_late": true
+     }
+    ],
+    "w17_opp": "PIT",
+    "w17_game_env": 55.2,
+    "bringback": [
+     "DK Metcalf",
+     "Michael Pittman Jr.",
+     "Germie Bernard"
+    ]
+   }
   },
   {
    "team": "WAS",
@@ -136700,7 +139326,86 @@
      "q": "Highest-ranked WAS player + why he booms?",
      "a": "Terry McLaurin (our #51): elite weekly producer — 88th projection at the position; coverage-agnostic — wins vs both man and zone"
     }
-   ]
+   ],
+   "ceiling": {
+    "score": 24.9,
+    "tier": "LOW",
+    "rank": 28,
+    "top_drivers": [
+     {
+      "label": "Win total",
+      "value": 12.6
+     },
+     {
+      "label": "Shootout script",
+      "value": 7.4
+     },
+     {
+      "label": "Pass rate",
+      "value": 7.2
+     },
+     {
+      "label": "Pace",
+      "value": 6.7
+     }
+    ],
+    "fade_flags": [
+     "weak own pass-D -> shootout volume"
+    ]
+   },
+   "stacks": {
+    "best_stacks": [
+     {
+      "qb": "Jayden Daniels",
+      "pieces": [
+       "Terry McLaurin"
+      ],
+      "round_costs": [
+       6,
+       4
+      ],
+      "stack_score": 0.3809,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Jayden Daniels",
+      "pieces": [
+       "Chig Okonkwo"
+      ],
+      "round_costs": [
+       6,
+       12
+      ],
+      "stack_score": 0.3809,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     },
+     {
+      "qb": "Jayden Daniels",
+      "pieces": [
+       "Antonio Williams"
+      ],
+      "round_costs": [
+       6,
+       14
+      ],
+      "stack_score": 0.3809,
+      "stack_type": "skinny",
+      "value_ct": 2,
+      "qb_late": false
+     }
+    ],
+    "w17_opp": "JAX",
+    "w17_game_env": 37.6,
+    "bringback": [
+     "Brian Thomas Jr.",
+     "Parker Washington",
+     "Jakobi Meyers"
+    ]
+   }
   }
  ],
  "meta": {

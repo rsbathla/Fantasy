@@ -317,7 +317,7 @@ def build_stack_menu():
                     "w17_game_env/100": "crude mean-ceiling proxy for W17 game environment",
                 },
             },
-            "surfaces": ["predraft", "live"],
+            "surfaces": ["predraft", "live", "dossier"],
             "adp_ceil": ADP_CEIL,
             "picks_per_round": PICKS_PER_ROUND,
             "top_pcs_per_team": TOP_PC_N,

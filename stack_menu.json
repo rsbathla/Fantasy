@@ -28,7 +28,8 @@
     },
     "surfaces": [
       "predraft",
-      "live"
+      "live",
+      "dossier"
     ],
     "adp_ceil": 220,
     "picks_per_round": 12,

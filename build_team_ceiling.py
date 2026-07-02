@@ -602,7 +602,7 @@ def main():
             ],
             "validation": validation,
             "standalone": "Foundation layer; NOT wired into rankings/pipeline.",
-            "surfaces": ["predraft", "live"],
+            "surfaces": ["predraft", "live", "dossier"],
         },
         "teams": scores,
     }

@@ -18,7 +18,7 @@
 "total_picks": 216,
 "format": "snake"
 },
-"built_date": "2026-07-02T21:56:11Z",
+"built_date": "2026-07-02T23:16:39Z",
 "board_source": "flag_ranks.json (adj_rank + adp)",
 "ud_adp_source": "ffdataroma_draft_guide_export/ffdataroma/csv/underdog-adp.csv",
 "team_ceiling_source": "team_ceiling.json",

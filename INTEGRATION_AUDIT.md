@@ -14,8 +14,8 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 
 - **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **2 builders** produce artifacts but are absent from the pipeline runner
-- **508 unused fields** across 76 record-structured layers (auto-discovered, repo-wide)
-- **31 divergent consumers** (a consumer under-using a layer its peers read fully)
+- **494 unused fields** across 76 record-structured layers (auto-discovered, repo-wide)
+- **35 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
 ## G. Surface declarations (P0)
@@ -33,10 +33,12 @@ _None — all surface declarations are satisfied._
 | `slot_paths.json` | predraft | `[curated chain] slot_paths.json -> strategy_board.json (agent-built from slot_paths decision zones) -> render_strategy_board.py` |
 | `stack_menu.json` | predraft | `[curated chain] stack_menu.json -> strategy_board.json (agent-built using stack_menu stacks) -> render_strategy_board.py` |
 | `stack_menu.json` | live | `engine/run_live.py` |
+| `stack_menu.json` | dossier | `build_dossier.py` |
 | `strategy_board.json` | predraft | `render_strategy_board.py` |
 | `strategy_board.json` | live | `engine/run_live.py` |
 | `team_ceiling.json` | predraft | `[curated chain] team_ceiling.json -> build_slot_paths.py / build_stack_menu.py (predraft pipeline) -> strategy_board.json -> render_strategy_board.py` |
 | `team_ceiling.json` | live | `engine/run_live.py` |
+| `team_ceiling.json` | dossier | `build_dossier.py` |
 
 ## G2. Undeclared layers (triage: declare surfaces or exempt)
 
@@ -648,13 +650,14 @@ _None._
 
 **Unused by ALL consumers:** `picks`, `rounds`
 
-### `stack_menu.json`  (9 fields, 2 consumers)
+### `stack_menu.json`  (9 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
+| build_dossier.py | 6 |
 | engine/run_live.py | 0 |
 | engine/strategy_live.py | 4 |
 
-**Unused by ALL consumers:** `n_pcs_on_board`, `n_qbs_on_board`, `w17_game_env`, `w17_opp`, `w17_opp_ceiling`
+**Unused by ALL consumers:** `n_pcs_on_board`, `n_qbs_on_board`, `w17_opp_ceiling`
 
 ### `strategy_board.json`  (3 fields, 3 consumers)
 | consumer | # fields read |
@@ -663,15 +666,18 @@ _None._
 | engine/strategy_live.py | 2 |
 | render_strategy_board.py | 3 |
 
-### `team_ceiling.json`  (25 fields, 4 consumers)
+### `team_ceiling.json`  (25 fields, 5 consumers)
 | consumer | # fields read |
 |---|---|
+| build_dossier.py | 16 |
 | build_slot_paths.py | 1 |
 | build_stack_menu.py | 3 |
 | engine/run_live.py | 2 |
 | engine/strategy_live.py | 2 |
 
-**Unused by ALL consumers:** `base_core`, `concentrated_tree`, `drivers`, `env_idx`, `env_quality`, `oc_new`, `off_q`, `ol_improve`, `own_pass_cov_pctl`, `pace`, `pace_pctl`, `pass_rate`, `playcaller`, `plays_pg`, `qb_ascend`, `raw`, `scheme_upgrade`, `shootout_script`, `vacated_tgt_pct`, `win_total`
+**Unused by ALL consumers:** `base_core`, `env_idx`, `own_pass_cov_pctl`, `pace_pctl`, `playcaller`, `plays_pg`, `raw`, `vacated_tgt_pct`
+
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`
 
 ### `team_review_data.json`  (36 fields, 4 consumers)
 | consumer | # fields read |

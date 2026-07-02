@@ -325,6 +325,48 @@ function dossier(t){const i=t.identity,d=t.defense;
    h+=`<div class="bbcol"><div class="bbh bust">&#9660; Offense busts when</div>`+(tp.off_bust||[]).map(x=>`<div class="bbi">${esc(x)}</div>`).join('')+`</div></div>`;
   }
  }
+ // CEILING & STACKS panel
+ const cl=t.ceiling,sk=t.stacks;
+ if(cl||sk){
+  h+=`<div class="sec">Ceiling &amp; Stacks</div>`;
+  if(cl){
+   const tcol=cl.tier==='ELITE'?'var(--mint)':cl.tier==='HIGH'?'#3fa876':cl.tier==='MID'?'var(--slate)':'var(--coral)';
+   const tbg=cl.tier==='ELITE'?'rgba(79,208,138,.15)':cl.tier==='HIGH'?'rgba(63,168,118,.12)':cl.tier==='MID'?'rgba(142,163,160,.10)':'rgba(255,119,89,.12)';
+   h+=`<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0">`;
+   h+=`<span style="font-family:var(--mono);font-size:13px;font-weight:700;padding:4px 14px;border-radius:20px;border:1px solid ${tcol};color:${tcol};background:${tbg}">${esc(cl.tier)}</span>`;
+   h+=`<span class="badge">Score <b>${cl.score!=null?cl.score.toFixed(1):'—'}</b></span>`;
+   h+=`<span class="badge">Rank <b>#${cl.rank!=null?cl.rank:'—'}</b> of 32</span>`;
+   h+=`</div>`;
+   if((cl.top_drivers||[]).length){
+    h+=`<div style="display:flex;gap:6px;flex-wrap:wrap;margin:4px 0 8px">`;
+    h+=(cl.top_drivers||[]).map(d=>`<span class="chip" style="color:var(--mint);border-color:rgba(79,208,138,.3)">${esc(d.label)} <b>${d.value}%</b></span>`).join('');
+    h+=`</div>`;
+   }
+   if((cl.fade_flags||[]).length){
+    h+=`<div style="font-size:11.5px;color:var(--ink2);margin:2px 0 6px">${cl.fade_flags.map(esc).join(' &middot; ')}</div>`;
+   }
+  }
+  if(sk){
+   if((sk.best_stacks||[]).length){
+    h+=`<div class="dlab">Best draftable stacks</div>`;
+    (sk.best_stacks||[]).forEach(s=>{
+     const pcs=s.pieces||[];
+     const rounds=(s.round_costs||[]).map(r=>`R${r}`).join('+');
+     const val=s.value_ct!=null&&s.stack_type?`${esc(s.stack_type)} · value ${s.value_ct}/${(s.round_costs||[]).length}`:'';
+     h+=`<div class="pl"><span class="nm"><b style="color:var(--mint)">${esc(s.qb||'?')}</b>${pcs.length?' + '+pcs.map(esc).join(' + '):''}</span>`;
+     h+=`<span class="mt">${rounds}${s.qb_late?' · late QB':''}</span>`;
+     if(val)h+=`<span class="chip">${val}</span>`;
+     if(s.stack_score!=null)h+=`<span class="chip" style="color:var(--mint)">&#9650; ${s.stack_score.toFixed(3)}</span>`;
+     h+=`</div>`;
+    });
+   }
+   if(sk.w17_opp||sk.bringback){
+    h+=`<div class="dlab">W17 game &amp; bring-backs</div>`;
+    if(sk.w17_opp)h+=`<div style="font-size:12.5px;color:var(--ink);margin:3px 0">vs <b>${esc(sk.w17_opp)}</b>${sk.w17_game_env!=null?` &middot; game env <b style="color:var(--mint)">${sk.w17_game_env.toFixed(1)}</b>`:''}</div>`;
+    if((sk.bringback||[]).length)h+=`<div style="font-size:12px;color:var(--ink2);margin:3px 0">Bring-backs: ${sk.bringback.map(esc).join(' &middot; ')}</div>`;
+   }
+  }
+ }
  // roster
  h+=`<div class="sec">Roster &mdash; full detail (${t.players.length})<span class="tools"><button class="tbtn" id="expall">Expand all</button><button class="tbtn" id="colall">Collapse</button></span></div>`;
  let lastpos=null;

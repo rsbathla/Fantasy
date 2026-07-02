@@ -63,6 +63,37 @@ _XL=J('boom/fp_levers_extra.json') or {}
 EXTRA={}
 for _typ in ('getopen_man','contested','scramble','elusive'):
     for _nm in (_XL.get(_typ) or []): EXTRA.setdefault(fn(_nm),set()).add(_typ)
+# CEILING + STACKS join (team_ceiling.json + stack_menu.json -> per-team 'ceiling' + 'stacks' blocks)
+_TC=J('team_ceiling.json')
+_TCEILING={core.norm_team(k):v for k,v in (_TC.get('teams') or {}).items()}
+_SM=J('stack_menu.json')
+_SMTEAMS={core.norm_team(k):v for k,v in (_SM.get('teams') or {}).items()}
+# driver label map for human-readable top-drivers
+_DRIVER_LABELS={'env_quality':'Env quality','win_total':'Win total','pace':'Pace','pass_rate':'Pass rate',
+  'qb_ascend':'QB ascend','scheme_upgrade':'Scheme upgrade','concentrated_tree':'Conc. tree',
+  'ol_improve':'OL improve','shootout_script':'Shootout script'}
+def _ceiling_block(tm):
+    c=_TCEILING.get(tm)
+    if not c: return None
+    drivers=c.get('drivers') or {}
+    top_drivers=sorted(drivers.items(),key=lambda x:-x[1])[:4]
+    return {'score':c.get('ceiling_score'),'tier':c.get('tier'),'rank':c.get('rank'),
+            'top_drivers':[{'label':_DRIVER_LABELS.get(k,k),'value':round(v*100,1)} for k,v in top_drivers if v>0.01],
+            'fade_flags':c.get('flags') or []}
+def _stacks_block(tm):
+    s=_SMTEAMS.get(tm)
+    if not s: return None
+    best=[]
+    for st in (s.get('stacks') or [])[:3]:
+        pieces=[m['name'] for m in st.get('members',[]) if m.get('pos')!='QB']
+        rounds=[m.get('round_est') for m in st.get('members',[])]
+        best.append({'qb':st.get('qb_name'),'pieces':pieces,
+                     'round_costs':rounds,'stack_score':st.get('stack_score'),
+                     'stack_type':st.get('stack_type'),'value_ct':st.get('value_ct'),
+                     'qb_late':st.get('qb_late')})
+    bringback=[b['name'] for b in (s.get('bringback') or [])[:3]]
+    return {'best_stacks':best,'w17_opp':s.get('w17_opp'),'w17_game_env':s.get('w17_game_env'),
+            'bringback':bringback}
 SCH=J('scheme_2026.json') or {}  # directional 2026 scheme dials (web-verified)
 if os.environ.get('NOADJ'): SCH={}
 _OL26=J('boom/oline_2026.json') or {}
@@ -569,7 +600,8 @@ for tm in sorted(TEAMS):
         quiz.append({'q':f'Highest-ranked {tm} player + why he booms?','a':f"{tgt['name']} (our #{tgt['rank']}): "+'; '.join(x['t'] for x in tgt['bb']['boom'][:2])})
     if stack: quiz.append({'q':f'The {tm} best-ball stack?','a':f"{stack['qb']} + "+", ".join([p for p in stack['pieces'] if p!=stack['qb']][:3])})
     out.append({'team':tm,'name':FULL.get(tm,tm),'division':DIV.get(tm,''),'note':t.get('note'),'profile':prof,
-        'identity':ident,'players':players,'defense':deff,'stack':stack,'intel':intel,'quiz':quiz})
+        'identity':ident,'players':players,'defense':deff,'stack':stack,'intel':intel,'quiz':quiz,
+        'ceiling':_ceiling_block(tm),'stacks':_stacks_block(tm)})
 json.dump({'teams':out,'meta':{'n':len(out),'n_players':sum(len(x['players']) for x in out)}},
           open(core.P('dossier_data.json'),'w'),ensure_ascii=False,indent=1)
 print(f"dossier_data.json: {len(out)} teams, {sum(len(x['players']) for x in out)} player records")

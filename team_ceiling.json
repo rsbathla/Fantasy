@@ -76,7 +76,8 @@
     "standalone": "Foundation layer; NOT wired into rankings/pipeline.",
     "surfaces": [
       "predraft",
-      "live"
+      "live",
+      "dossier"
     ]
   },
   "teams": {
