@@ -6,7 +6,7 @@ _A REAL move = every source agrees on the new team. A DATA ERROR (mis-join / sta
 ## Summary
 - **379 board players** audited across 6 team views (dk / ffdataroma / clay independent+market; signals / features / flags model-side)
 - **0 cross-source team disagreements** (P0 — each one is a mis-join or a source conflict)
-- **59 roster moves** detected vs 2025 gamelog team (306 players with 2025 priors): **0 documented** (curated defense MOVES) · **50 undocumented** (offensive, ADP-sourced) · **9 to-FA/unsigned**
+- **59 roster moves** detected vs 2025 gamelog team (306 players with 2025 priors): **50 documented** (0 defense MOVES · 19 offense registry news-sourced · 31 offense registry consensus-only) · **0 undocumented** · **9 to-FA/unsigned** (9 curated)
 - propagation: **0** stale-schedule rows · **0** stale QB-context teams · **0** movers without usage re-projection · **0** stale `team25` rows
 - presence gaps: ffdataroma missing 0 non-FA (+13 FA, expected) · clay missing 41 non-FA (+13 FA) · features missing 0 · flags missing 3
 
@@ -26,69 +26,69 @@ _A non-FA player missing from an independent source is a soft catch: he cannot b
 
 ## 3. Move reconciliation — 2025 gamelog team → 2026 board team
 
-_Prior team = 2025 PBP mode team (pipeline/player_games.parquet, canonical join). DOCUMENTED = in the curated defense MOVES dict (reweight_defense_2026.py, with source URL). UNDOCUMENTED = offensive move known only through the ADP feeds — legit once cross-source-clean (column `all agree`), but with no curated provenance; this is the class to eyeball._
+_Prior team = 2025 PBP mode team (pipeline/player_games.parquet, canonical join). DOCUMENTED = in a curated registry: defense MOVES (reweight_defense_2026.py, source URL) or offense MOVES (roster_moves_offense_2026.py — news URL actually retrieved for notable players; recorded cross-source consensus, honestly src-less, for the long tail). UNDOCUMENTED = in NO registry — known only through the ADP feeds; this is the class to eyeball. Curated destinations are re-checked against the board on every run (mismatch = P0)._
 
 | player | pos | adp | 2025 | 2026 | all agree | status | usage reproj | provenance |
 |---|---|---|---|---|---|---|---|---|
-| Kenneth Walker III | RB | 14.8 | SEA | KC | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| A.J. Brown | WR | 17.7 | PHI | NE | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Travis Etienne Jr. | RB | 36.6 | JAX | NO | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| DJ Moore | WR | 46.3 | CHI | BUF | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Jaylen Waddle | WR | 47.4 | MIA | DEN | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| David Montgomery | RB | 49.9 | DET | HOU | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Mike Evans | WR | 50.5 | TB | SF | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Rico Dowdle | RB | 89.8 | CAR | PIT | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Kenneth Gainwell | RB | 94.8 | PIT | TB | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Michael Pittman Jr. | WR | 95.8 | IND | PIT | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Wan'Dale Robinson | WR | 107.8 | NYG | TEN | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Kyler Murray | QB | 111.2 | ARI | MIN | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Rachaad White | RB | 112.3 | TB | WAS | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Romeo Doubs | WR | 120.3 | GB | NE | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Isaiah Likely | TE | 121.9 | BAL | NYG | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Stefon Diggs | WR | 135.5 | NE | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| Chris Rodriguez Jr. | RB | 137.7 | WAS | JAX | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Chig Okonkwo | TE | 141.3 | TEN | WAS | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Isiah Pacheco | RB | 144.3 | KC | DET | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Jauan Jennings | WR | 151.7 | SF | MIN | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Jalen Nailor | WR | 152.7 | MIN | LV | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Tyler Allgeier | RB | 157.9 | ATL | ARI | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Deebo Samuel Sr. | WR | 176.3 | WAS | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| Adonai Mitchell | WR | 177.1 | IND | NYJ | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Geno Smith | QB | 180.2 | LV | NYJ | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Tua Tagovailoa | QB | 194.6 | MIA | ATL | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Dontayvion Wicks | WR | 196.4 | GB | PHI | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| David Njoku | TE | 197.9 | CLE | LAC | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Christian Kirk | WR | 208.7 | HOU | SF | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Darnell Mooney | WR | 218.8 | ATL | NYG | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Emanuel Wilson | RB | 219.0 | GB | SEA | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Kirk Cousins | QB | 221.0 | ATL | LV | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Nick Chubb | RB | 223.0 | HOU | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| Kareem Hunt | RB | 223.2 | KC | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| Trevor Etienne | RB | 224.8 | JAX | CAR | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| DeAndre Hopkins | WR | 226.7 | BAL | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| Jalen Tolbert | WR | 226.9 | DAL | MIA | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| JuJu Smith-Schuster | WR | 227.4 | KC | NYG | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| John Metchie III | WR | 227.8 | NYJ | CAR | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Keenan Allen | WR | 228.1 | LAC | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| J'Mari Taylor | RB | 228.2 | IND | JAX | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Darren Waller | TE | 228.4 | MIA | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| Zach Ertz | TE | 228.5 | WAS | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
-| Justin Fields | QB | 228.5 | NYJ | KC | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Calvin Austin III | WR | 228.7 | PIT | NYG | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Greg Dortch | WR | 228.8 | ARI | DET | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Kendrick Bourne | WR | 228.9 | SF | ARI | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Kalif Raymond | WR | 229.0 | DET | CHI | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Jahan Dotson | WR | 229.3 | PHI | ATL | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Olamide Zaccheaus | WR | 229.3 | CHI | ATL | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Tutu Atwell | WR | 229.5 | LAR | MIA | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Charlie Kolar | TE | 229.6 | BAL | LAC | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Dyami Brown | WR | 229.8 | JAX | WAS | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Tyler Conklin | TE | 230.0 | LAC | DET | YES | UNDOCUMENTED (ADP-sourced) | reproj_carry (med) | no curated source; team = ADP feeds only |
-| Ja'Kobi Lane | WR | 230.5 | WAS | BAL | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Kevin Coleman Jr. | WR | 231.3 | BUF | MIA | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Noah Fant | TE | 231.5 | CIN | NO | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Nick Westbrook-Ikhine | WR | 232.2 | MIA | IND | YES | UNDOCUMENTED (ADP-sourced) | reproj_clay (high) | no curated source; team = ADP feeds only |
-| Jonnu Smith | TE | 234.2 | PIT | FA | YES | UNSIGNED-FA | moved_to_FA (low) | DK lists no 2026 team (unsigned) |
+| Kenneth Walker III | RB | 14.8 | SEA | KC | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.nfl.com/news/chiefs-signing-ex-seahawks-rb-kenneth-walker-iii-mvp-of-super-bowl-lx |
+| A.J. Brown | WR | 17.7 | PHI | NE | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.patriots.com/news/patriots-acquire-wr-a-j-brown-in-a-trade-with-the-philadelphia-eagles |
+| Travis Etienne Jr. | RB | 36.6 | JAX | NO | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.nfl.com/news/saints-signing-ex-jaguars-rb-travis-etienne-ex-bills-ol-david-edwards |
+| DJ Moore | WR | 46.3 | CHI | BUF | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.nfl.com/news/bears-trading-wr-dj-moore-to-bills-for-mid-round-draft-pick |
+| Jaylen Waddle | WR | 47.4 | MIA | DEN | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.nfl.com/news/dolphins-trading-wr-jaylen-waddle-to-broncos-for-draft-picks-including-2026-first-rounder |
+| David Montgomery | RB | 49.9 | DET | HOU | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.detroitlions.com/news/lions-trade-rb-david-montgomery-to-houston-texans |
+| Mike Evans | WR | 50.5 | TB | SF | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.nfl.com/news/mike-evans-to-sign-with-49ers-ending-12-year-tenure-with-buccaneers |
+| Rico Dowdle | RB | 89.8 | CAR | PIT | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://sports.yahoo.com/nfl/breaking-news/article/steelers-sign-former-panthers-standout-rb-rico-dowdle-to-2-year-deal-232129628.html |
+| Kenneth Gainwell | RB | 94.8 | PIT | TB | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.buccaneers.com/news/rb-kenneth-gainwell-signs-bucs-2026-nfl-free-agency |
+| Michael Pittman Jr. | WR | 95.8 | IND | PIT | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.nfl.com/news/michael-pittman-jr-trade-steelers-colts |
+| Wan'Dale Robinson | WR | 107.8 | NYG | TEN | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.nfl.com/news/titans-signing-ex-giants-wr-wan-dale-robinson-to-four-year-78-million-deal |
+| Kyler Murray | QB | 111.2 | ARI | MIN | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.nfl.com/news/vikings-sign-kyler-murray-one-year-deal-release-cardinals |
+| Rachaad White | RB | 112.3 | TB | WAS | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.commanders.com/news/commanders-sign-rb-rachaad-white |
+| Romeo Doubs | WR | 120.3 | GB | NE | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.nfl.com/news/romeo-doubs-patriots-sign-former-packers-wr-four-year-contract |
+| Isaiah Likely | TE | 121.9 | BAL | NYG | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.baltimoreravens.com/news/isaiah-likely-signing-new-york-giants-ravens-free-agent-tight-end |
+| Stefon Diggs | WR | 135.5 | NE | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | https://www.espn.com/nfl/story/_/id/48103213/new-england-patriots-release-stefon-diggs-free-agent-means-wr-nfl-draft |
+| Chris Rodriguez Jr. | RB | 137.7 | WAS | JAX | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Chig Okonkwo | TE | 141.3 | TEN | WAS | YES | DOCUMENTED (offense registry, consensus) | reproj_carry (med) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Isiah Pacheco | RB | 144.3 | KC | DET | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Jauan Jennings | WR | 151.7 | SF | MIN | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Jalen Nailor | WR | 152.7 | MIN | LV | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Tyler Allgeier | RB | 157.9 | ATL | ARI | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Deebo Samuel Sr. | WR | 176.3 | WAS | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
+| Adonai Mitchell | WR | 177.1 | IND | NYJ | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Geno Smith | QB | 180.2 | LV | NYJ | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.newyorkjets.com/news/jets-acquire-quarterback-geno-smith-trade-raiders-03-11-2026 |
+| Tua Tagovailoa | QB | 194.6 | MIA | ATL | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.atlantafalcons.com/news/atlanta-falcons-sign-qb-tua-tagovailoa |
+| Dontayvion Wicks | WR | 196.4 | GB | PHI | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| David Njoku | TE | 197.9 | CLE | LAC | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Christian Kirk | WR | 208.7 | HOU | SF | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Darnell Mooney | WR | 218.8 | ATL | NYG | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Emanuel Wilson | RB | 219.0 | GB | SEA | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Kirk Cousins | QB | 221.0 | ATL | LV | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.nfl.com/news/former-falcons-qb-kirk-cousins-signing-with-raiders |
+| Nick Chubb | RB | 223.0 | HOU | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
+| Kareem Hunt | RB | 223.2 | KC | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
+| Trevor Etienne | RB | 224.8 | JAX | CAR | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| DeAndre Hopkins | WR | 226.7 | BAL | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
+| Jalen Tolbert | WR | 226.9 | DAL | MIA | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| JuJu Smith-Schuster | WR | 227.4 | KC | NYG | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| John Metchie III | WR | 227.8 | NYJ | CAR | YES | DOCUMENTED (offense registry, consensus) | reproj_carry (med) | cross-source consensus: dk+ffdataroma+signals+features+flags [conf=med] |
+| Keenan Allen | WR | 228.1 | LAC | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
+| J'Mari Taylor | RB | 228.2 | IND | JAX | YES | DOCUMENTED (offense registry, consensus) | reproj_carry (med) | cross-source consensus: dk+ffdataroma+signals+features+flags [conf=med] |
+| Darren Waller | TE | 228.4 | MIA | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
+| Zach Ertz | TE | 228.5 | WAS | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
+| Justin Fields | QB | 228.5 | NYJ | KC | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.newyorkjets.com/news/jets-trade-justin-fields-kansas-city-chiefs-03-18-2026 |
+| Calvin Austin III | WR | 228.7 | PIT | NYG | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Greg Dortch | WR | 228.8 | ARI | DET | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Kendrick Bourne | WR | 228.9 | SF | ARI | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Kalif Raymond | WR | 229.0 | DET | CHI | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Jahan Dotson | WR | 229.3 | PHI | ATL | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Olamide Zaccheaus | WR | 229.3 | CHI | ATL | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Tutu Atwell | WR | 229.5 | LAR | MIA | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Charlie Kolar | TE | 229.6 | BAL | LAC | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Dyami Brown | WR | 229.8 | JAX | WAS | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Tyler Conklin | TE | 230.0 | LAC | DET | YES | DOCUMENTED (offense registry, consensus) | reproj_carry (med) | cross-source consensus: dk+ffdataroma+signals+features [conf=med] |
+| Ja'Kobi Lane | WR | 230.5 | WAS | BAL | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Kevin Coleman Jr. | WR | 231.3 | BUF | MIA | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Noah Fant | TE | 231.5 | CIN | NO | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Nick Westbrook-Ikhine | WR | 232.2 | MIA | IND | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Jonnu Smith | TE | 234.2 | PIT | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features [conf=med] |
 
 ## 4. Propagation spot-checks (the ripple a move must carry)
 
@@ -115,5 +115,5 @@ _proj is per-game WHEN PLAYING (Clay dk_pg): a deep backup can show a high pg ov
 
 - signals/features/flags inherit team from dk_adp.csv at build time — agreement there proves the model is NOT drifting/mis-joining; INDEPENDENT confirmation of a move comes from ffdataroma + clay.
 - Names joined with `core.fn` + `core.resolve` (pos-aware, first-name-variant-safe, no unsafe guesses); a resolver miss reports as a presence gap (section 2), never as a fake disagreement.
-- The curated defense MOVES dict stays the provenance gold standard; offensive moves that matter should graduate into a curated offensive analogue over time (add source URLs as they are verified).
+- Curated provenance lives in TWO registries: defense MOVES (reweight_defense_2026.py) and offense MOVES (roster_moves_offense_2026.py). Offense entries record `provenance` = the in-repo team views that attest the 2026 team (recomputed at curation time), `src` = a news URL ONLY when it was actually retrieved and confirmed to report the exact move (never guessed), and `conf` (high = both independent sources attest; med = an attesting source is missing). To-FA departures are curated as `to: UFA`, separating "moved teams" from "left to free agency".
 - `--strict` exits 1 on: cross-source disagreements, documented-destination mismatches, stale schedule/QB-context/usage/team25 (the P0 classes).

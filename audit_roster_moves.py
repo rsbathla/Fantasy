@@ -4,12 +4,16 @@ Data-side companion of integration_audit.py (which audits code wiring; this audi
 
 WHY THIS EXISTS (the Kyler Murray gap): DEFENSIVE roster moves have curated, sourced provenance
 (reweight_defense_2026.py MOVES = {player: {'to','src','note','conf'}}), but OFFENSIVE team
-assignments are taken on faith from the ADP source files with no verification layer. So a REAL
+assignments were taken on faith from the ADP source files with no verification layer. So a REAL
 move (Kyler Murray ARI->MIN) and a DATA ERROR (a stray name-join putting a player on the wrong
 team) looked identical -- Kyler->MIN was only confirmed because a Q&A agent stumbled on it.
 The separating signature is CROSS-SOURCE AGREEMENT: a real move shows every independent source
 agreeing on the new team; a mis-join/stale row shows sources disagreeing. This audit makes that
-signature systematic and re-checks it on every rebuild.
+signature systematic and re-checks it on every rebuild. The offensive gap is now closed by a
+curated offensive registry (roster_moves_offense_2026.py MOVES = {player: {'from','to','src',
+'conf','provenance','note'}}): every detected offensive move carries either a retrieved news URL
+(notable players) or explicit cross-source-consensus provenance (long tail), and this audit
+cross-checks the curated destination against the board on every run.
 
 CHECK 1 -- CROSS-SOURCE TEAM CONSISTENCY (the catch). For every board player, compare the team
   assigned by each source:
@@ -28,9 +32,11 @@ CHECK 1 -- CROSS-SOURCE TEAM CONSISTENCY (the catch). For every board player, co
 CHECK 2 -- MOVE RECONCILIATION (legibility/provenance). Prior team = each player's 2025 gamelog
   team (mode team over 2025 PBP, pipeline/player_games.parquet, via the canonical
   core.build_usage_index/match_usage join -- the same authority features.csv team25 uses).
-  Every player whose 2026 board team differs is a MOVE, cross-referenced against the curated
-  defense MOVES dict: DOCUMENTED (curated, with source URL) vs UNDOCUMENTED (offensive,
-  ADP-sourced only -- the class that needs eyeballing) vs UNSIGNED-FA.
+  Every player whose 2026 board team differs is a MOVE, cross-referenced against BOTH curated
+  registries (defense MOVES in reweight_defense_2026.py; offense MOVES in
+  roster_moves_offense_2026.py): DOCUMENTED (curated -- news URL or recorded cross-source
+  consensus) vs UNDOCUMENTED (in NO registry -- the class that needs eyeballing) vs UNSIGNED-FA
+  (curated FA departures distinguish "moved teams" from "left to free agency").
 
 CHECK 3 -- MOVE PROPAGATION (the ripple). A move must not leave stale context behind:
     a. schedule: every player's W15/W16/W17 in features.csv must be his 2026 team's schedule.
@@ -55,10 +61,15 @@ def rows_csv(path):
     return list(csv.DictReader(open(path, encoding='utf-8')))
 
 
-def load_defense_moves():
-    """Parse the curated MOVES dict out of reweight_defense_2026.py WITHOUT importing it
-    (that module executes its full reweight at import time). ast.literal_eval = data only."""
-    src = open(core.P('reweight_defense_2026.py'), encoding='utf-8').read()
+def load_curated_moves(fname):
+    """Parse a curated MOVES dict out of a registry .py WITHOUT importing it (the defense module
+    executes its full reweight at import time). ast.literal_eval = data only. Used for BOTH the
+    defense registry (reweight_defense_2026.py) and the offense registry
+    (roster_moves_offense_2026.py, keys core.fn-normalized)."""
+    p = core.P(fname)
+    if not os.path.exists(p):
+        return {}
+    src = open(p, encoding='utf-8').read()
     for node in ast.walk(ast.parse(src)):
         if isinstance(node, ast.Assign) and any(getattr(t, 'id', None) == 'MOVES' for t in node.targets):
             return ast.literal_eval(node.value)
@@ -151,7 +162,8 @@ def main():
         return ([x for x in lst if x[2] != 'FA'], [x for x in lst if x[2] == 'FA'])
 
     # ---------- CHECK 2: move reconciliation ----------
-    DEF_MOVES = load_defense_moves()
+    DEF_MOVES = load_curated_moves('reweight_defense_2026.py')
+    OFF_MOVES = load_curated_moves('roster_moves_offense_2026.py')
     ag, IDX, _SH = core.build_usage_index()      # 2025 PBP mode team (canonical join)
     fmap = {core.fn(r['name']): r for r in featr}
     mrs = {}
@@ -179,10 +191,23 @@ def main():
         if not t25 or not tm26 or t25 == tm26:
             continue
         dm = DEF_MOVES.get(k)
+        om = OFF_MOVES.get(k)
         if dm:
             status, prov = 'DOCUMENTED (defense MOVES)', dm.get('src', '')
             if dm.get('to') not in (tm26, 'RETIRED', 'UFA'):
                 doc_mismatch.append((nm, dm.get('to'), tm26))
+        elif om:
+            # curated offense registry: destination must still match the board ('UFA' matches board 'FA');
+            # the recorded 'from' must still match the recomputed 2025 team (keeps the registry honest).
+            if om.get('to') != ('UFA' if tm26 == 'FA' else tm26):
+                doc_mismatch.append((nm, om.get('to'), tm26))
+            if om.get('from') and om.get('from') != t25:
+                doc_mismatch.append(('%s (from-side)' % nm, om.get('from'), t25))
+            prov = om.get('src') or ('cross-source consensus: ' + '+'.join(om.get('provenance', [])))
+            if om.get('conf') and om.get('conf') != 'high':
+                prov += ' [conf=%s]' % om['conf']
+            status = ('UNSIGNED-FA (curated)' if tm26 == 'FA' else
+                      'DOCUMENTED (offense registry%s)' % (', news-sourced' if om.get('src') else ', consensus'))
         elif tm26 == 'FA':
             status, prov = 'UNSIGNED-FA', 'DK lists no 2026 team (unsigned)'
         else:
@@ -197,7 +222,11 @@ def main():
                       'usage_src': mrec.get('usage_src'), 'conf': mrec.get('mover_conf')})
     moves.sort(key=lambda m: m['adp'])
     n_doc = sum(1 for m in moves if m['status'].startswith('DOCUMENTED'))
-    n_fa = sum(1 for m in moves if m['status'] == 'UNSIGNED-FA')
+    n_doc_def = sum(1 for m in moves if m['status'] == 'DOCUMENTED (defense MOVES)')
+    n_doc_url = sum(1 for m in moves if m['status'] == 'DOCUMENTED (offense registry, news-sourced)')
+    n_doc_con = sum(1 for m in moves if m['status'] == 'DOCUMENTED (offense registry, consensus)')
+    n_fa = sum(1 for m in moves if m['status'].startswith('UNSIGNED-FA'))
+    n_fa_cur = sum(1 for m in moves if m['status'] == 'UNSIGNED-FA (curated)')
     n_undoc = len(moves) - n_doc - n_fa
 
     # ---------- CHECK 3a: schedule follows the 2026 team ----------
@@ -252,7 +281,9 @@ def main():
              f'(dk / ffdataroma / clay independent+market; signals / features / flags model-side)')
     L.append(f'- **{len(disagreements)} cross-source team disagreements** (P0 — each one is a mis-join or a source conflict)')
     L.append(f'- **{len(moves)} roster moves** detected vs 2025 gamelog team ({n_prior} players with 2025 priors): '
-             f'**{n_doc} documented** (curated defense MOVES) · **{n_undoc} undocumented** (offensive, ADP-sourced) · **{n_fa} to-FA/unsigned**')
+             f'**{n_doc} documented** ({n_doc_def} defense MOVES · {n_doc_url} offense registry news-sourced · '
+             f'{n_doc_con} offense registry consensus-only) · **{n_undoc} undocumented** · '
+             f'**{n_fa} to-FA/unsigned** ({n_fa_cur} curated)')
     L.append(f'- propagation: **{len(sched_bad)}** stale-schedule rows · **{len(qbctx_bad)}** stale QB-context teams · '
              f'**{len(unreproj)}** movers without usage re-projection · **{len(stale25)}** stale `team25` rows'
              + (f' _({mr_note})_' if mr_note else ''))
@@ -306,9 +337,11 @@ def main():
     L.append('## 3. Move reconciliation — 2025 gamelog team → 2026 board team')
     L.append('')
     L.append('_Prior team = 2025 PBP mode team (pipeline/player_games.parquet, canonical join). '
-             'DOCUMENTED = in the curated defense MOVES dict (reweight_defense_2026.py, with source URL). '
-             'UNDOCUMENTED = offensive move known only through the ADP feeds — legit once cross-source-clean '
-             '(column `all agree`), but with no curated provenance; this is the class to eyeball._')
+             'DOCUMENTED = in a curated registry: defense MOVES (reweight_defense_2026.py, source URL) or '
+             'offense MOVES (roster_moves_offense_2026.py — news URL actually retrieved for notable players; '
+             'recorded cross-source consensus, honestly src-less, for the long tail). '
+             'UNDOCUMENTED = in NO registry — known only through the ADP feeds; this is the class to eyeball. '
+             'Curated destinations are re-checked against the board on every run (mismatch = P0)._')
     L.append('')
     if moves:
         L.append('| player | pos | adp | 2025 | 2026 | all agree | status | usage reproj | provenance |')
@@ -365,8 +398,12 @@ def main():
              'the model is NOT drifting/mis-joining; INDEPENDENT confirmation of a move comes from ffdataroma + clay.')
     L.append('- Names joined with `core.fn` + `core.resolve` (pos-aware, first-name-variant-safe, no unsafe guesses); '
              'a resolver miss reports as a presence gap (section 2), never as a fake disagreement.')
-    L.append('- The curated defense MOVES dict stays the provenance gold standard; offensive moves that matter '
-             'should graduate into a curated offensive analogue over time (add source URLs as they are verified).')
+    L.append('- Curated provenance lives in TWO registries: defense MOVES (reweight_defense_2026.py) and offense '
+             'MOVES (roster_moves_offense_2026.py). Offense entries record `provenance` = the in-repo team views '
+             'that attest the 2026 team (recomputed at curation time), `src` = a news URL ONLY when it was actually '
+             'retrieved and confirmed to report the exact move (never guessed), and `conf` (high = both independent '
+             'sources attest; med = an attesting source is missing). To-FA departures are curated as `to: UFA`, '
+             'separating "moved teams" from "left to free agency".')
     L.append('- `--strict` exits 1 on: cross-source disagreements, documented-destination mismatches, '
              'stale schedule/QB-context/usage/team25 (the P0 classes).')
     L.append('')
@@ -378,9 +415,11 @@ def main():
     print(f'  cross-source disagreements: {len(disagreements)}')
     for d in disagreements[:12]:
         print('     - %-24s %s  %s' % (d['name'], d['pos'], d['teams']))
-    print(f'  moves 2025->2026         : {len(moves)}  (documented {n_doc} | undocumented {n_undoc} | to-FA {n_fa})')
-    for m in moves:
-        if not m['clean'] or m['status'].startswith('DOCUMENTED'):
+    print(f'  moves 2025->2026         : {len(moves)}  (documented {n_doc} = {n_doc_def} defense '
+          f'+ {n_doc_url} offense news-sourced + {n_doc_con} offense consensus-only | '
+          f'undocumented {n_undoc} | to-FA {n_fa} [{n_fa_cur} curated])')
+    for m in moves:                      # loud only where eyeballs are needed
+        if not m['clean'] or m['status'].startswith('UNDOCUMENTED'):
             print('     - %-24s %s->%s %s clean=%s' % (m['name'], m['from'], m['to'], m['status'], m['clean']))
     print(f'  doc-destination mismatch : {len(doc_mismatch)}')
     print(f'  stale schedule rows      : {len(sched_bad)}')
