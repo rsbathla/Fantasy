@@ -53,11 +53,12 @@ def value_badge(player):
 
 
 def capital_gap_chip(player, pick_number, is_stack_pick=False):
-    """FIX 5: CAPITAL GAP chip for every primary-target card.
+    """FIX 5 (+ sign fix in the P5 window pass): CAPITAL GAP chip for every primary-target card.
 
-    gap = pick_number (slot's overall pick for this round) - player ADP.
-    Positive gap means drafting EARLY relative to ADP (you're reaching).
-    Negative gap means drafting AT or AFTER ADP (market or value).
+    gap = player ADP - pick_number (slot's overall pick for this round).
+    Positive gap means the pick lands BEFORE the player's ADP -> drafting EARLY (capital ahead
+    of market; you're reaching). Negative/zero means the pick is AT or AFTER his ADP (market
+    price or value). This matches strategy_board.json window.capital_at_prefer.
 
     Display:
       gap > 0  -> '+N early'   (coral + bold warning when N>6 AND is_stack_pick)
@@ -66,7 +67,7 @@ def capital_gap_chip(player, pick_number, is_stack_pick=False):
     adp = player.get('adp')
     if adp is None or pick_number is None:
         return ''
-    gap = round(pick_number - adp)
+    gap = round(adp - pick_number)
     if gap > 0:
         warn_cls = ' cap-gap-warn' if (gap > 6 and is_stack_pick) else ''
         return (
@@ -79,6 +80,43 @@ def capital_gap_chip(player, pick_number, is_stack_pick=False):
             f'<span class="cap-gap cap-gap-value" '
             f'title="At or after ADP — no capital gap">at/after ADP</span>'
         )
+
+
+WINDOW_CLASS_CSS = {
+    'flexible': 'win-flexible',
+    'unavoidable-premium': 'win-unavoidable',
+    'conscious-stack-premium': 'win-conscious',
+}
+WINDOW_CLASS_LABEL = {
+    'flexible': 'FLEXIBLE',
+    'unavoidable-premium': 'UNAVOIDABLE PREMIUM',
+    'conscious-stack-premium': 'CONSCIOUS STACK PREMIUM',
+}
+
+
+def render_window_line(w):
+    """P5: latest-safe WINDOW line for stack-pick cards.
+
+    strategy_board.json window contract: {earliest, latest, prefer, p_at_prefer,
+    capital_at_prefer, class, note}. Shown as e.g. 'R6–R7 · prefer R7 (57% · +1.6)'
+    with a class-colored chip (flexible = green outline, unavoidable-premium = neutral,
+    conscious-stack-premium = coral). The note rides in the title tooltip.
+    """
+    if not w:
+        return ''
+    cls = WINDOW_CLASS_CSS.get(w.get('class'), 'win-unavoidable')
+    label = WINDOW_CLASS_LABEL.get(w.get('class'), esc(w.get('class', '')))
+    p_pct = w.get('p_at_prefer')
+    p_str = f'{p_pct*100:.0f}%' if isinstance(p_pct, (int, float)) else '?'
+    cap = w.get('capital_at_prefer')
+    cap_str = f'{cap:+.1f}' if isinstance(cap, (int, float)) else '?'
+    rng = f"R{w.get('earliest','?')}–R{w.get('latest','?')}"
+    return (
+        f'<div class="win-line" title="{esc(w.get("note",""))}">'
+        f'<span class="win-chip {cls}">{label}</span>'
+        f'<span class="win-range">{rng} · prefer R{w.get("prefer","?")} ({p_str} · {cap_str})</span>'
+        f'</div>'
+    )
 
 
 def tier_badge(tier):
@@ -178,6 +216,9 @@ def render_round_card(r_id, r_data, is_late, pick_number=None):
         p = primary[0]
         primary_html = render_player_chip(p, is_stack=stack_pick, pick_number=pick_number)
 
+    # P5: latest-safe window line (window contract lives on the round entry).
+    window_html = render_window_line(r_data.get('window'))
+
     pivots_html = ''
     if pivots:
         pivot_chips = ''.join(render_pivot_chip(p) for p in pivots)
@@ -187,6 +228,7 @@ def render_round_card(r_id, r_data, is_late, pick_number=None):
         f'<div class="{round_cls}">'
         f'<div class="rc-header"><span class="rc-rnum">R{r_id}</span>{stack_mark}</div>'
         f'{primary_html}'
+        f'{window_html}'
         f'{pivots_html}'
         f'<div class="rc-why">{esc(why)}</div>'
         f'</div>'
@@ -273,6 +315,12 @@ def render_stack_plan(sp):
         pieces = esc(s.get('pieces', ''))
         target_rounds = esc(s.get('target_rounds', ''))
         w17_bb = esc(s.get('w17_bringback', ''))
+        # P5: latest-safe windows summary for this stack's designated pieces.
+        window_text = esc(s.get('window_text', ''))
+        window_row = (
+            f'<div class="sb-row sb-windows"><span class="sb-key">Windows:</span> {window_text}</div>'
+            if window_text else ''
+        )
         parts.append(
             f'<div class="stack-block">'
             f'<div class="sb-label">{label}</div>'
@@ -280,6 +328,7 @@ def render_stack_plan(sp):
             f'<div class="sb-row"><span class="sb-key">QB:</span> {qb}</div>'
             f'<div class="sb-row"><span class="sb-key">Pieces:</span> {pieces}</div>'
             f'<div class="sb-row"><span class="sb-key">Rounds:</span> {target_rounds}</div>'
+            f'{window_row}'
             f'<div class="sb-row sb-bringback"><span class="sb-key">W17 bring-back:</span> {w17_bb}</div>'
             f'</div>'
         )
@@ -533,6 +582,14 @@ body{{background:var(--canvas);color:var(--ink);font:15px/1.5 var(--body);-webki
 .cap-gap-early{{background:#fff0ed;color:var(--coral);border:1px solid var(--softcoral)}}
 .cap-gap-early.cap-gap-warn{{background:var(--coral);color:#fff;border-color:var(--coral)}}
 .cap-gap-value{{background:var(--palegreen);color:var(--green);border:1px solid #c3efd9}}
+/* ---- P5 LATEST-SAFE WINDOW LINE (stack picks) ---- */
+.win-line{{display:flex;gap:6px;align-items:center;margin:4px 0 5px;flex-wrap:wrap}}
+.win-chip{{font-family:var(--mono);font-size:8.5px;font-weight:700;border-radius:4px;padding:2px 6px;letter-spacing:.4px;flex-shrink:0}}
+.win-flexible{{background:#fff;color:var(--green);border:1.5px solid var(--green)}}
+.win-unavoidable{{background:var(--cardb);color:var(--slate);border:1px solid var(--hair)}}
+.win-conscious{{background:var(--coral);color:#fff;border:1px solid var(--coral)}}
+.win-range{{font-family:var(--mono);font-size:10px;color:var(--ink);letter-spacing:.2px}}
+.sb-windows{{font-family:var(--mono);font-size:10.5px;color:var(--slate)}}
 /* ---- PIVOTS ---- */
 .pivots-row{{display:flex;gap:4px;flex-wrap:wrap;margin:5px 0;align-items:center}}
 .pivots-label{{font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:.3px;flex-shrink:0;margin-right:2px}}

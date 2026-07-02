@@ -359,6 +359,7 @@ def main():
         'ud_adp_source': 'ffdataroma_draft_guide_export/ffdataroma/csv/underdog-adp.csv',
         'team_ceiling_source': 'team_ceiling.json',
         'schedule_source': 'boom/schedule2026.json',
+        'surfaces': ['predraft'],
     }
 
     output = {

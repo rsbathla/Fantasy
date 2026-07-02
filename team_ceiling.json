@@ -73,7 +73,11 @@
         }
       }
     },
-    "standalone": "Foundation layer; NOT wired into rankings/pipeline."
+    "standalone": "Foundation layer; NOT wired into rankings/pipeline.",
+    "surfaces": [
+      "predraft",
+      "live"
+    ]
   },
   "teams": {
     "ARI": {

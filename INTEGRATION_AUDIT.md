@@ -9,11 +9,38 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 - **0 invariant violations** (P0 -- a layer is being under-used)
 - **0 split-source files** (P0 -- one logical file read from two drifting copies)
 - **0 stale deliverables** (P0 -- a rendered board older than the model tip it renders)
+- **0 surface declaration violations** (P0 -- a layer declares a surface but no entry file consumes it)
+- **0 undeclared layers** (triage -- record-structured layers without surfaces declaration)
+
 - **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **2 builders** produce artifacts but are absent from the pipeline runner
 - **508 unused fields** across 76 record-structured layers (auto-discovered, repo-wide)
 - **31 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
+
+## G. Surface declarations (P0)
+
+_None — all surface declarations are satisfied._
+
+**Passing surface declarations:**
+
+| artifact | declared surface | consumed by |
+|---|---|---|
+| `boom/scheme_fit.json` | rankings | `build_flag_ranks.py` |
+| `boom/scheme_fit.json` | dossier | `build_dossier.py` |
+| `flag_ranks.json` | predraft | `build_adp_clusters.py` |
+| `flag_ranks.json` | rankings | `build_rankings.py` |
+| `slot_paths.json` | predraft | `[curated chain] slot_paths.json -> strategy_board.json (agent-built from slot_paths decision zones) -> render_strategy_board.py` |
+| `stack_menu.json` | predraft | `[curated chain] stack_menu.json -> strategy_board.json (agent-built using stack_menu stacks) -> render_strategy_board.py` |
+| `stack_menu.json` | live | `engine/run_live.py` |
+| `strategy_board.json` | predraft | `render_strategy_board.py` |
+| `strategy_board.json` | live | `engine/run_live.py` |
+| `team_ceiling.json` | predraft | `[curated chain] team_ceiling.json -> build_slot_paths.py / build_stack_menu.py (predraft pipeline) -> strategy_board.json -> render_strategy_board.py` |
+| `team_ceiling.json` | live | `engine/run_live.py` |
+
+## G2. Undeclared layers (triage: declare surfaces or exempt)
+
+_None — all eligible layers have declared surfaces or are explicitly exempted._
 
 ## A. Invariant violations (P0)
 

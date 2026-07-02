@@ -32,7 +32,11 @@
    "cap_pctl": 12.0,
    "note": "season matchup pctl nudged by boom/scheme_fit.json season fit (coverage-specialist x 2026 opponent coverage tendency), capped +/-12 pctl; raw smq_pctl kept; revert = SF_SCALE 0"
   },
-  "note": "Forward-looking ADP-anchored nudge: 2026 p95 ceiling + portable traits + 2026 SEASON matchup (weeks 1-14 advance + 15-17 win, playoff-tilted). No backward boom rate. Bounded +/-CAP spots off market ADP."
+  "note": "Forward-looking ADP-anchored nudge: 2026 p95 ceiling + portable traits + 2026 SEASON matchup (weeks 1-14 advance + 15-17 win, playoff-tilted). No backward boom rate. Bounded +/-CAP spots off market ADP.",
+  "surfaces": [
+   "predraft",
+   "rankings"
+  ]
  },
  "players": {
   "josh allen": {

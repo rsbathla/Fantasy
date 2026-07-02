@@ -26,6 +26,10 @@
         "w17_game_env/100": "crude mean-ceiling proxy for W17 game environment"
       }
     },
+    "surfaces": [
+      "predraft",
+      "live"
+    ],
     "adp_ceil": 220,
     "picks_per_round": 12,
     "top_pcs_per_team": 5,

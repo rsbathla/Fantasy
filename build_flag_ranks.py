@@ -269,7 +269,8 @@ def build():
                                    'capped +/-%.0f pctl; raw smq_pctl kept; revert = SF_SCALE 0' % SF_PCTL_CAP},
             'note': 'Forward-looking ADP-anchored nudge: 2026 p95 ceiling + portable traits + 2026 '
                     'SEASON matchup (weeks 1-14 advance + 15-17 win, playoff-tilted). No backward boom '
-                    'rate. Bounded +/-CAP spots off market ADP.'}
+                    'rate. Bounded +/-CAP spots off market ADP.',
+            'surfaces': ['predraft', 'rankings']}
     core.safe_json_dump({'_meta': meta, 'players': out}, os.path.join(HERE, 'flag_ranks.json'), indent=1)
 
     print(f"flag_ranks.json: {len(players)} players | FORWARD (ceil {int(W_CEIL*100)}/traits "

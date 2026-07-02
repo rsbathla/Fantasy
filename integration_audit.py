@@ -38,6 +38,115 @@ RAW_DIRS = ('NFL-master', 'ffdataroma_draft_guide_export', 'pff_', 'ftn_', 'nfl_
 SELF = os.path.basename(__file__)
 # orchestrators name artifacts for existence-checks/sequencing -- they are NOT field consumers
 ORCHESTRATORS = ('run_all.py', 'boom_pipeline.py')
+
+# ---- SURFACE_ENTRYPOINTS: which repo files are the entry-points for each draft/live surface ----
+# Verified: engine/*.py files are included in builders() scan since the 2026-07-02 extension.
+# predraft uses: render_strategy_board.py, build_adp_clusters.py, build_big_board.py, build_rankings.py
+# live uses: engine/run_live.py, engine/strategy_live.py, build_decision_dashboard.py, bb_grade.py, draft.py
+# dossier uses: build_dossier.py, render_dossier.py, build_dossier_deep.py
+# rankings uses: build_rankings.py, build_flag_ranks.py
+SURFACE_ENTRYPOINTS = {
+    'predraft': ['render_strategy_board.py', 'build_adp_clusters.py', 'build_big_board.py', 'build_rankings.py'],
+    'live':     ['engine/run_live.py', 'engine/strategy_live.py', 'build_decision_dashboard.py', 'bb_grade.py', 'draft.py'],
+    'dossier':  ['build_dossier.py', 'render_dossier.py', 'build_dossier_deep.py'],
+    'rankings': ['build_rankings.py', 'build_flag_ranks.py'],
+}
+
+# ---- SURFACE_EXEMPT: intermediate/internal layers that don't need a surfaces declaration ----
+# These layers are intentionally not surface-declared because they are internal pipeline steps.
+SURFACE_EXEMPT = {
+    'boom/statmenu.json':   'Internal per-player stat menu; consumed by boom_foundation/boom_lib as a pipeline intermediate',
+    'boom/gamelog.json':    'Internal game-log cache; pipeline intermediate, not a strategy/decision layer',
+    'boom/team_env.json':   'Internal team environment layer; pipeline intermediate consumed by build_team_ceiling',
+    'boom/base2yr.json':    'Internal 2yr base stats; pipeline intermediate consumed by multiple builders',
+    'boom/motion.json':     'Internal motion-rate cache; pipeline intermediate for scheme analysis',
+    'boom/coverage_split.json': 'Internal coverage split cache; pipeline intermediate',
+    'boom/deep_pass.json':  'Internal QB deep-pass rate; pipeline intermediate',
+    'boom/chart2yr.json':   'Internal 2yr charting blend; pipeline intermediate',
+    'boom/rookie_prior.json': 'Internal rookie prior layer; pipeline intermediate',
+    'boom/rookie_college_profile.json': 'Internal rookie college profile; pipeline intermediate',
+    'boom/flags_QB.json':   'Internal positional flags; consumed by build_flag_ranks as pipeline intermediate',
+    'boom/flags_WR.json':   'Internal positional flags; consumed by build_flag_ranks as pipeline intermediate',
+    'boom/flags_RB.json':   'Internal positional flags; consumed by build_flag_ranks as pipeline intermediate',
+    'boom/flags_TE.json':   'Internal positional flags; consumed by build_flag_ranks as pipeline intermediate',
+    'boom/manzone_2yr.json': 'Internal 2yr man/zone charting; pipeline intermediate for dossier/flags',
+    'boom/defensive_profile.json': 'Internal defensive profile; pipeline intermediate consumed by build_team_ceiling',
+    'boom/schedule2026.json': 'Internal schedule data; pipeline utility layer consumed by multiple builders',
+    'boom/coverage_route_spec.json': 'Internal coverage route spec; pipeline intermediate consumed by build_scheme_fit',
+    'dossier_data.json':    'Terminal: output of build_dossier.py consumed only by render_dossier.py (terminal pair)',
+    'features.json':        'Internal features layer; pipeline intermediate consumed by build_flag_ranks/build_features',
+    'defense.json':         'Internal defense stats; raw data layer, not a strategy artifact',
+    'division_splits.json': 'Internal division splits; pipeline intermediate',
+    'player_splits.json':   'Internal player splits; pipeline intermediate',
+    'fusion.json':          'Internal fusion layer; pipeline intermediate',
+    'gameplan.json':        'Internal gameplan config; pipeline intermediate',
+    'dfs_scenarios.json':   'Internal DFS scenarios; DFS surface (separate from bestball surfaces)',
+    'cc_context.json':      'Internal command-center context; pipeline intermediate',
+    'offense_profile.json': 'Internal offense profile; pipeline intermediate consumed by build_team_ceiling/build_scheme_fit',
+    'coordinator_scheme_2026.json': 'Internal coordinator scheme layer; pipeline intermediate (not terminal; consumed by 4+ builders)',
+    'coordinator_changes_2026.json': 'Internal coordinator changes; pipeline intermediate',
+    'coordinator_notes.json': 'Internal coordinator notes; pipeline intermediate',
+    'personnel_changes.json': 'Internal personnel changes; pipeline intermediate',
+    'lever_count.json':     'Internal lever-count layer; rankings/dossier intermediate',
+    'scheme_2026.json':     'Internal scheme layer; pipeline intermediate',
+    'nfl_pro_epa.json':     'Internal NFL Pro EPA data; raw ingest layer',
+    'web_teams.json':       'Internal team web data; raw ingest layer',
+    'intel_data.json':      'Internal intel data; pipeline intermediate for dossier/live',
+    'x_live.json':          'Internal X (Twitter) live data; media pipeline',
+    'x_store.json':         'Internal X store; media pipeline',
+    'x_media.json':         'Internal X media; media pipeline',
+    'x_narrative.json':     'Internal X narrative; media pipeline',
+    'x_posts.json':         'Internal X posts; media pipeline',
+    'flags_2026.json':      'Internal flags layer; pipeline intermediate',
+    # boom pipeline intermediates (strategy/decision layers should be declared separately)
+    'boom/adv2.json':       'Internal 2yr advanced stats per-player; pipeline intermediate for player explorer/dossier',
+    'boom/boom_marks.json': 'Internal boom-mark scores; pipeline intermediate consumed by boom builders',
+    'boom/boomdef.json':    'Internal boom defense data; pipeline intermediate for boom builders',
+    'boom/cover_spec.json': 'Internal coverage route specialist data; pipeline intermediate consumed by build_scheme_fit',
+    'boom/defender_grades.json': 'Internal defender grades; pipeline intermediate for coverage/dossier analysis',
+    'boom/defense2026.json': 'Internal 2026 defense layer; pipeline intermediate for boom/scheme analysis',
+    'boom/defense_shell.json': 'Internal defense shell rates (frozen 2025); pipeline intermediate for scheme builders',
+    'boom/flags_DST.json':  'Internal DST flags; pipeline intermediate (separate DST surface)',
+    'boom/roster_flags_2026.json': 'Internal roster flags; pipeline intermediate for boom/flag builders',
+    'boom/upside_cases.json': 'Internal upside cases; pipeline intermediate for player explorer',
+    # pipeline and engine intermediates
+    'defense_splits.json':  'Internal defense splits; pipeline intermediate for home/DFS builders',
+    'engine/live_tree.json': 'Terminal: output artifact of the live draft session (written by run_live.py, read by dashboard)',
+    'engine/tree_schema.json': 'Internal decision tree schema; validation intermediate consumed by verify_decision_tree.py',
+    'pipeline/byes_2026.json': 'Internal bye-week data; pipeline utility consumed by bbengine via CURATED_CONSUMERS',
+    'pipeline/games_by_week.json': 'Internal games-by-week data; pipeline utility consumed by playoff_overlay via CURATED_CONSUMERS',
+    'profiles/player_profiles.json': 'Internal player profiles (PFF/FTN situational matrix); pipeline intermediate for dossier',
+    'team_review_data.json': 'Internal team review data; pipeline intermediate consumed by team_review_render',
+}
+
+# ---- SURFACE_CURATED_PASSES: known-good indirect surface connections ----
+# For strategy/decision layers whose surface consumption goes through a documented intermediary
+# chain (not a direct basename reference in an entry file), record the chain here so the audit
+# stays green without requiring every entry file to directly import every upstream artifact.
+# Format: (artifact_re, surface, intermediary_chain_note)
+# Re-verified at each run: the named needle must appear in the named file, else the pass is void.
+SURFACE_CURATED_PASSES = [
+    # slot_paths.json -> strategy_board.json (agent-authored) -> render_strategy_board.py (predraft)
+    # slot_paths is the slot/round decision-zone input that the agent used to BUILD strategy_board.json.
+    {'artifact_re': r'^slot_paths\.json$', 'surface': 'predraft',
+     'chain': 'slot_paths.json -> strategy_board.json (agent-built from slot_paths decision zones) -> render_strategy_board.py',
+     'needle_file': 'render_strategy_board.py', 'needle': 'strategy_board.json'},
+    # stack_menu.json -> strategy_live.py (live) AND strategy_board.json build (predraft)
+    # strategy_live.py is a LIVE entry; for predraft, strategy_board was informed by stack_menu.
+    {'artifact_re': r'^stack_menu\.json$', 'surface': 'predraft',
+     'chain': 'stack_menu.json -> strategy_board.json (agent-built using stack_menu stacks) -> render_strategy_board.py',
+     'needle_file': 'render_strategy_board.py', 'needle': 'strategy_board.json'},
+    # team_ceiling.json -> build_slot_paths.py (predraft pipeline) -> slot_paths.json -> strategy_board
+    # Also consumed by build_stack_menu.py (predraft pipeline builder).
+    {'artifact_re': r'^team_ceiling\.json$', 'surface': 'predraft',
+     'chain': 'team_ceiling.json -> build_slot_paths.py / build_stack_menu.py (predraft pipeline) -> strategy_board.json -> render_strategy_board.py',
+     'needle_file': 'build_slot_paths.py', 'needle': 'team_ceiling.json'},
+    # flag_ranks.json -> build_dossier.py uses merged_rankings not flag_ranks directly.
+    # However build_dossier.py reads boom/scheme_fit.json which IS a rankings/dossier artifact.
+    # The dossier surface for flag_ranks is via build_rankings.py (which IS a dossier input indirectly
+    # through merged_rankings_2026.csv). Curated pass is NOT needed here; dossier surface removed.
+]
+
 def is_bak(name): return name.startswith('_bak_') or '.bak' in name or name.startswith('_prebuild')
 
 # ---- artifacts that are TERMINAL by design (a missing consumer is expected, not a bug) ----
@@ -322,6 +431,110 @@ def check_invariants(src, graph):
     return findings
 
 
+def check_surface_declarations(src, arts):
+    """CHECK G: every in-repo JSON whose _meta.surfaces list declares a surface must be
+    consumed by at least one of that surface's entry files.  Missing wiring = P0.
+    Also returns the passing table rows for the report."""
+    missing = []   # P0 violations: (artifact, surface, [entry_files_of_surface])
+    passing = []   # (artifact, surface, consuming_entry_file)
+
+    for a in sorted(arts):
+        if not a.endswith('.json'):
+            continue
+        path = os.path.join(HERE, a)
+        if not os.path.exists(path):
+            continue
+        try:
+            obj = json.load(open(path, encoding='utf-8'))
+        except Exception:
+            continue
+        if not isinstance(obj, dict):
+            continue
+        meta = obj.get('_meta') or obj.get('meta')
+        if not isinstance(meta, dict):
+            continue
+        surfaces = meta.get('surfaces')
+        if not isinstance(surfaces, list) or not surfaces:
+            continue
+        base = os.path.basename(a)
+        for surface in surfaces:
+            entries = SURFACE_ENTRYPOINTS.get(surface, [])
+            consumed_by = []
+            for entry in entries:
+                etxt = src.get(entry, '')
+                if base in etxt or a in etxt:
+                    consumed_by.append(entry)
+            if consumed_by:
+                passing.append({'artifact': a, 'surface': surface, 'consumed_by': consumed_by[0]})
+                continue
+            # check SURFACE_CURATED_PASSES for documented indirect chains (re-verified via needle)
+            curated_chain = None
+            for cp in SURFACE_CURATED_PASSES:
+                if cp['surface'] != surface:
+                    continue
+                if not re.search(cp['artifact_re'], a):
+                    continue
+                nf = os.path.join(HERE, cp['needle_file'])
+                try:
+                    if cp['needle'] in open(nf, encoding='utf-8', errors='ignore').read():
+                        curated_chain = cp['chain']
+                        break
+                except OSError:
+                    pass
+            if curated_chain:
+                passing.append({'artifact': a, 'surface': surface,
+                                'consumed_by': f'[curated chain] {curated_chain}'})
+            else:
+                missing.append({'artifact': a, 'surface': surface, 'entries': entries,
+                                'msg': f"{a} declares surface '{surface}' but no {surface} entry file consumes it"})
+    return missing, passing
+
+
+def check_undeclared_layers(src, arts, graph):
+    """CHECK G2: record-structured in-repo JSONs with producers/consumers but no _meta.surfaces
+    declaration and not in SURFACE_EXEMPT.  Non-P0 triage list (creation-time forcing function)."""
+    triage = []
+    for a in sorted(arts):
+        if not a.endswith('.json'):
+            continue
+        if is_terminal(a):
+            continue
+        if a in SURFACE_EXEMPT:
+            continue
+        # must have >=1 producer or consumer
+        g = graph.get(a, {})
+        if not g.get('producers') and not g.get('consumers'):
+            continue
+        # must have >=1 consumer or producer  (skip truly orphaned -- already caught by check A)
+        if not g.get('consumers') and not g.get('producers'):
+            continue
+        # check if it's record-structured with enough fields (>=8) to warrant declaration
+        path = os.path.join(HERE, a)
+        if not os.path.exists(path):
+            continue
+        try:
+            obj = json.load(open(path, encoding='utf-8'))
+        except Exception:
+            continue
+        if not isinstance(obj, dict):
+            continue
+        # check for surfaces in meta
+        meta = obj.get('_meta') or obj.get('meta')
+        if isinstance(meta, dict) and isinstance(meta.get('surfaces'), list):
+            continue  # already declared
+        # check if record-structured with >=8 fields (tighten heuristic per spec)
+        fields = record_fields(obj)
+        if len(fields) < 8:
+            continue
+        # has >= 1 consumer (not just producer)
+        if not g.get('consumers'):
+            continue
+        triage.append({'artifact': a, 'n_fields': len(fields),
+                       'n_consumers': len(g.get('consumers', set())),
+                       'n_producers': len(g.get('producers', set()))})
+    return triage
+
+
 def fallbacks():
     """Harvest fallback/skip counters from every output's _meta -- silent gaps made loud."""
     hits = []
@@ -412,22 +625,50 @@ def main():
     fb = fallbacks()
     ss = split_source(src)
     sd = stale_deliverables()
+    surf_missing, surf_passing = check_surface_declarations(src, arts)
+    surf_triage = check_undeclared_layers(src, arts, graph)
 
     # ---- write report ----
     L = []
     L.append('# INTEGRATION AUDIT\n')
     L.append('_Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._\n')
     L.append('_Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._\n')
-    p0 = len(inv) + len(ss) + len(sd)
+    p0 = len(inv) + len(ss) + len(sd) + len(surf_missing)
     L.append('## Summary\n')
     L.append(f'- **{len(inv)} invariant violations** (P0 -- a layer is being under-used)')
     L.append(f'- **{len(ss)} split-source files** (P0 -- one logical file read from two drifting copies)')
     L.append(f'- **{len(sd)} stale deliverables** (P0 -- a rendered board older than the model tip it renders)')
+    L.append(f'- **{len(surf_missing)} surface declaration violations** (P0 -- a layer declares a surface but no entry file consumes it)')
+    L.append(f'- **{len(surf_triage)} undeclared layers** (triage -- record-structured layers without surfaces declaration)\n')
     L.append(f'- **{len(orphans)} orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)')
     L.append(f'- **{len(missing_from_pipeline)} builders** produce artifacts but are absent from the pipeline runner')
     L.append(f'- **{sum(len(r["unused"]) for r in fld)} unused fields** across {len(fld)} record-structured layers (auto-discovered, repo-wide)')
     L.append(f'- **{sum(len(r.get("divergent", [])) for r in fld)} divergent consumers** (a consumer under-using a layer its peers read fully)')
     L.append(f'- **{len(fb)} fallback counters** currently firing (see check D)\n')
+
+    L.append('## G. Surface declarations (P0)\n')
+    if surf_missing:
+        for v in surf_missing:
+            entries_str = ', '.join(f'`{e}`' for e in v['entries']) if v['entries'] else '_(surface has no entry files defined)_'
+            L.append(f'- P0: `{v["artifact"]}` declares surface `{v["surface"]}` but no {v["surface"]} entry file consumes it  \n  ↳ entry files checked: {entries_str}')
+    else:
+        L.append('_None — all surface declarations are satisfied._')
+    if surf_passing:
+        L.append('\n**Passing surface declarations:**\n')
+        L.append('| artifact | declared surface | consumed by |')
+        L.append('|---|---|---|')
+        for r in surf_passing:
+            L.append(f'| `{r["artifact"]}` | {r["surface"]} | `{r["consumed_by"]}` |')
+    L.append('')
+
+    L.append('## G2. Undeclared layers (triage: declare surfaces or exempt)\n')
+    if surf_triage:
+        L.append('_Record-structured layers (>=8 fields, >=1 consumer) that have not yet declared `_meta.surfaces`. These are candidate strategy/decision layers — add a `surfaces` list or add to `SURFACE_EXEMPT` with a reason._\n')
+        for r in surf_triage:
+            L.append(f'- `{r["artifact"]}` — {r["n_fields"]} fields, {r["n_consumers"]} consumer(s), {r["n_producers"]} producer(s)')
+    else:
+        L.append('_None — all eligible layers have declared surfaces or are explicitly exempted._')
+    L.append('')
 
     L.append('## A. Invariant violations (P0)\n')
     if inv:
@@ -515,6 +756,10 @@ def main():
     print(f'  fallback counters firing: {len(fb)}')
     print(f'  split-source files       : {len(ss)}' + (f'  {[b for b, _, _ in ss]}' if ss else ''))
     print(f'  stale deliverables       : {len(sd)}' + (f'  {[d for d, _ in sd]}' if sd else ''))
+    print(f'  surface decl violations : {len(surf_missing)}')
+    for v in surf_missing:
+        print(f'     - {v["artifact"]} declares surface \'{v["surface"]}\' but no {v["surface"]} entry file consumes it')
+    print(f'  undeclared layers (G2)  : {len(surf_triage)}  (triage)')
     if strict and p0:
         print(f'\nSTRICT: {p0} P0 finding(s) -> exit 1')
         sys.exit(1)

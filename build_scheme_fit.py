@@ -340,7 +340,8 @@ def build():
             'formula': 'fit_wk = sum_b [(pctl_b-50)/50] * [(opp_rate_b - lg_b)/100], clamp +/-%.2f; '
                        'season = (sum W1-14 + %.1f * sum W15-17) / (n + %.1f*n_po)' % (WEEK_CAP, PLAYOFF_TILT, PLAYOFF_TILT),
             'n_players': len(players), 'skipped': skipped,
-            'defense_table': tbl}
+            'defense_table': tbl,
+            'surfaces': ['rankings', 'dossier']}
     core.safe_json_dump({'_meta': meta, 'players': players},
                         os.path.join(HERE, 'boom', 'scheme_fit.json'), indent=1)
 

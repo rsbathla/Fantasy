@@ -425,7 +425,11 @@
     "zone": 71.4,
     "new_dc": true
    }
-  }
+  },
+  "surfaces": [
+   "rankings",
+   "dossier"
+  ]
  },
  "players": {
   "jamarr chase": {
