@@ -58,6 +58,58 @@ def _print_branch(br, indent="   "):
             print(f"{indent}      {s.get('cond','')} — {st} ({sp}) ΔTitle {_fmt_delta(s.get('dTitle'))}")
 
 
+def _strategy_lines(t):
+    """Compact 5-10 line strategy summary from tree['strategy']."""
+    sp = t.get('strategy')
+    if not sp:
+        return []
+    if sp.get('error') and not sp.get('slot_detected'):
+        return [f"   Strategy: {sp['error']}"]
+    bf = sp.get('best_fit') or {}
+    lines = []
+    slot = sp.get('slot')
+    adh = bf.get('adherence', '?')
+    sid = bf.get('id', '?')
+    sname = bf.get('name', '')
+    score = bf.get('score', 0)
+    lines.append(f"   Slot S{slot} | Best-fit: {sid} — {sname.split(',')[0]}")
+    lines.append(f"   Adherence: {adh} (score {score:.1f})")
+    # Live targets
+    targets = sp.get('live_targets', [])
+    avail_tgts = [t2 for t2 in targets if t2.get('available')]
+    if avail_tgts:
+        names = [f"{t2['name']}{'*' if t2.get('synergy') else ''}{'[S]' if t2.get('stack_pick') else ''}" for t2 in avail_tgts[:4]]
+        lines.append(f"   This-round targets (avail): {', '.join(names)}")
+    else:
+        lines.append(f"   This-round targets: all gone or none defined")
+    # Stack status
+    for ss in (sp.get('stack_status') or [])[:2]:
+        team = ss.get('team', '?')
+        tier = ss.get('tier', '?')
+        held = ss.get('held', [])
+        avail_rem = ss.get('available_remaining', [])
+        parts = []
+        if held:
+            parts.append(f"held: {', '.join(held[:2])}")
+        if avail_rem:
+            parts.append(f"avail: {', '.join(avail_rem[:2])}")
+        elif ss.get('remaining'):
+            parts.append("(stack pieces gone)")
+        lines.append(f"   Stack {team} ({tier}): {' | '.join(parts) if parts else 'no data'}")
+    # Checkpoint warnings
+    for cp in (sp.get('checkpoints') or [])[:2]:
+        imp = cp.get('impossible', [])
+        risk = cp.get('at_risk', [])
+        if imp:
+            lines.append(f"   ⚠ R{cp['round']} IMPOSSIBLE: {', '.join(imp)}")
+        elif risk:
+            lines.append(f"   ⚠ R{cp['round']} AT RISK: {', '.join(risk)}")
+    # Floor warnings
+    for fw in (sp.get('floor_warnings') or [])[:2]:
+        lines.append(f"   ⚠ {fw}")
+    return lines
+
+
 def summarize():
     if not os.path.exists(TREE):
         print("(no live_tree.json — the grade did not complete)")
@@ -84,6 +136,9 @@ def summarize():
         for br in branches[:3]:
             _print_branch(br)
             print()
+    print("\n──── STRATEGY (advisory) " + "─" * 37)
+    for ln in _strategy_lines(t):
+        print(ln)
     print(bar)
     print(f" Full dashboard (signals · stacks · scouting): decision_dashboard.html")
     print(bar + "\n")

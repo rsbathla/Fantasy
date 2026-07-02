@@ -74,6 +74,9 @@ CURATED_CONSUMERS = [
     {'artifact_re': r'^sis_value/cfb/cfb_passing_value_20(24|25)\.csv$',   'consumer': 'build_rookie_profiles.py',  'needle': 'cfb_passing_value_'},
     {'artifact_re': r'^sis_value/(pass_defense|pass_rush|run_defense)_2024\.csv$',
      'consumer': 'normalize_defense_2026.py', 'needle': "_2024.csv"},  # 2024 recovery blend via path.replace
+    # -- strategy stack (2026-07-02): run_live consumes strategy_board + team_ceiling via engine/strategy_live.py --
+    {'artifact_re': r'^strategy_board\.json$', 'consumer': 'engine/run_live.py',  'needle': 'strategy'},
+    {'artifact_re': r'^team_ceiling\.json$',   'consumer': 'engine/run_live.py',  'needle': 'strategy'},
 ]
 
 # ---- CURATED PRODUCERS the write-call heuristic misses (variable path, or a ')' inside open(...) ----
@@ -137,6 +140,19 @@ INVARIANTS = [
             "the coordinator-aware 2026 sack projection (sack_rate_2025 -> sack_rate_adj, computed per new-DC "
             "team by build_coordinator_scheme.py:31); build_flags_QB's sackp amps are 2025-frozen too "
             "(boom_foundation.py:192)  [OPEN gap -- fires until wired]"},
+    # -- added 2026-07-02 (strategy integration): live payload assembler must reference strategy stack --
+    # Field checked is the import alias 'strategy_live' (quoted in the import statement in run_live.py).
+    # Removing the import from run_live.py will cause these invariants to fire, making the unwiring loud.
+    {'artifact': 'strategy_board.json', 'field': 'strategy_live',
+     'applies_to': ['engine/run_live'],
+     'msg': "engine/run_live.py must import strategy_live (which consumes strategy_board.json) so the "
+            "live payload carries slot strategy fit, live targets, and leverage note — "
+            "if this fires, the strategy layer has been silently unwired from the payload assembler"},
+    {'artifact': 'team_ceiling.json', 'field': 'strategy_live',
+     'applies_to': ['engine/run_live'],
+     'msg': "engine/run_live.py must import strategy_live (which consumes team_ceiling.json) so team "
+            "ceiling tiers appear on live targets — "
+            "if this fires, the strategy layer has been silently unwired from the payload assembler"},
 ]
 
 
@@ -145,6 +161,14 @@ def builders():
     for f in glob.glob(os.path.join(HERE, '*.py')):
         b = os.path.basename(f)
         if b == SELF or is_bak(b):
+            continue
+        out[b] = open(f, encoding='utf-8', errors='ignore').read()
+    # Also include engine/ py files under their relative path so INVARIANTS can target them
+    # (engine/run_live.py is the live-payload assembler; adding it here lets check_invariants
+    # fire when it loses its strategy_board / team_ceiling references).
+    for f in glob.glob(os.path.join(HERE, 'engine', '*.py')):
+        b = 'engine/' + os.path.basename(f)
+        if is_bak(b):
             continue
         out[b] = open(f, encoding='utf-8', errors='ignore').read()
     return out

@@ -11,7 +11,7 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 - **0 stale deliverables** (P0 -- a rendered board older than the model tip it renders)
 - **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **2 builders** produce artifacts but are absent from the pipeline runner
-- **474 unused fields** across 74 record-structured layers (auto-discovered, repo-wide)
+- **508 unused fields** across 76 record-structured layers (auto-discovered, repo-wide)
 - **31 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
@@ -450,11 +450,23 @@ _None._
 | build_lever_count.py | 1 |
 | render_dossier.py | 0 |
 
-### `engine/live_tree.json`  (20 fields, 2 consumers)
+### `engine/live_tree.json`  (37 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
-| bb_grade.py | 18 |
-| build_decision_dashboard.py | 20 |
+| bb_grade.py | 30 |
+| build_decision_dashboard.py | 21 |
+| engine/run_live.py | 24 |
+| test_strategy_live.py | 27 |
+
+**Unused by ALL consumers:** `archetype`, `thesis`
+
+### `engine/tree_schema.json`  (8 fields, 2 consumers)
+| consumer | # fields read |
+|---|---|
+| engine/decision_tree.py | 0 |
+| engine/verify_decision_tree.py | 0 |
+
+**Unused by ALL consumers:** `additionalProperties`, `definitions`, `description`, `example`, `properties`, `required`, `title`, `type`
 
 ### `features.json`  (1 fields, 15 consumers)
 | consumer | # fields read |
@@ -475,7 +487,7 @@ _None._
 | reweight_defense_2026.py | 1 |
 | validate_signal_stability.py | 1 |
 
-### `flag_ranks.json`  (28 fields, 6 consumers)
+### `flag_ranks.json`  (28 fields, 7 consumers)
 | consumer | # fields read |
 |---|---|
 | audit_roster_moves.py | 4 |
@@ -484,8 +496,9 @@ _None._
 | build_rankings.py | 7 |
 | build_slot_paths.py | 5 |
 | build_stack_menu.py | 5 |
+| engine/bbengine.py | 6 |
 
-**Unused by ALL consumers:** `adj_order`, `car_sh`, `nudge`, `opp_pctl`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`, `tgt_sh`
+**Unused by ALL consumers:** `adj_order`, `car_sh`, `opp_pctl`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`, `tgt_sh`
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `audit_roster_moves.py`
 
@@ -511,13 +524,14 @@ _None._
 | command_center.py | 3 |
 | gameplan.py | 4 |
 
-### `intel_data.json`  (2 fields, 7 consumers)
+### `intel_data.json`  (2 fields, 8 consumers)
 | consumer | # fields read |
 |---|---|
 | build_dossier.py | 2 |
 | build_dossier_deep.py | 2 |
 | build_intel.py | 2 |
 | build_rankings.py | 1 |
+| engine/run_live.py | 1 |
 | refresh_intel.py | 0 |
 | render_intel.py | 2 |
 | x_dossier_refresh.py | 2 |
@@ -548,6 +562,13 @@ _None._
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_offense_profile.py`, `command_center.py`
 
+### `pipeline/byes_2026.json`  (32 fields, 1 consumers)
+| consumer | # fields read |
+|---|---|
+| engine/bbengine.py | 1 |
+
+**Unused by ALL consumers:** `ARI`, `ATL`, `BAL`, `BUF`, `CAR`, `CHI`, `CIN`, `CLE`, `DAL`, `DEN`, `DET`, `GB`, `HOU`, `IND`, `JAX`, `KC`, `LAC`, `LV`, `MIA`, `MIN`, `NE`, `NO`, `NYG`, `NYJ`, `PHI`, `PIT`, `SEA`, `SF`, `TB`, `TEN`, `WAS`
+
 ### `pipeline/correlation_structure.json`  (4 fields, 2 consumers)
 | consumer | # fields read |
 |---|---|
@@ -563,7 +584,10 @@ _None._
 
 **Unused by ALL consumers:** `intercept`, `score_diff`, `team_spread`, `total_line`
 
-### `player_splits.json`  (5 fields, 0 consumers)
+### `player_splits.json`  (5 fields, 1 consumers)
+| consumer | # fields read |
+|---|---|
+| engine/run_live.py | 0 |
 
 **Unused by ALL consumers:** `fav`, `man_lean`, `profile`, `tough`, `weeks`
 
@@ -597,22 +621,30 @@ _None._
 
 **Unused by ALL consumers:** `picks`, `rounds`
 
-### `stack_menu.json`  (9 fields, 0 consumers)
-
-**Unused by ALL consumers:** `bringback`, `ceiling_score`, `n_pcs_on_board`, `n_qbs_on_board`, `stacks`, `tier`, `w17_game_env`, `w17_opp`, `w17_opp_ceiling`
-
-### `strategy_board.json`  (3 fields, 1 consumers)
+### `stack_menu.json`  (9 fields, 2 consumers)
 | consumer | # fields read |
 |---|---|
+| engine/run_live.py | 0 |
+| engine/strategy_live.py | 4 |
+
+**Unused by ALL consumers:** `n_pcs_on_board`, `n_qbs_on_board`, `w17_game_env`, `w17_opp`, `w17_opp_ceiling`
+
+### `strategy_board.json`  (3 fields, 3 consumers)
+| consumer | # fields read |
+|---|---|
+| engine/run_live.py | 0 |
+| engine/strategy_live.py | 2 |
 | render_strategy_board.py | 3 |
 
-### `team_ceiling.json`  (25 fields, 2 consumers)
+### `team_ceiling.json`  (25 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
 | build_slot_paths.py | 1 |
 | build_stack_menu.py | 3 |
+| engine/run_live.py | 2 |
+| engine/strategy_live.py | 2 |
 
-**Unused by ALL consumers:** `base_core`, `concentrated_tree`, `drivers`, `env_idx`, `env_quality`, `flags`, `oc_new`, `off_q`, `ol_improve`, `own_pass_cov_pctl`, `pace`, `pace_pctl`, `pass_rate`, `playcaller`, `plays_pg`, `qb_ascend`, `rank`, `raw`, `scheme_upgrade`, `shootout_script`, `vacated_tgt_pct`, `win_total`
+**Unused by ALL consumers:** `base_core`, `concentrated_tree`, `drivers`, `env_idx`, `env_quality`, `oc_new`, `off_q`, `ol_improve`, `own_pass_cov_pctl`, `pace`, `pace_pctl`, `pass_rate`, `playcaller`, `plays_pg`, `qb_ascend`, `raw`, `scheme_upgrade`, `shootout_script`, `vacated_tgt_pct`, `win_total`
 
 ### `team_review_data.json`  (36 fields, 4 consumers)
 | consumer | # fields read |
@@ -654,10 +686,6 @@ _None._
 
 _Cleared by CURATED dynamic/subdir reads (needle re-verified this run; an entry drops back to orphan the moment its read is refactored away):_
 
-- `engine/tree_schema.json` ← `engine/verify_decision_tree.py`
-- `pipeline/byes_2026.json` ← `engine/bbengine.py`
-- `pipeline/clay_2026_ud.csv` ← `engine/bbengine.py`
-- `pipeline/games_by_week.json` ← `engine/playoff_overlay.py`
 - `sis_value/cfb/cfb_passing_value_2024.csv` ← `build_rookie_profiles.py`
 - `sis_value/cfb/cfb_passing_value_2025.csv` ← `build_rookie_profiles.py`
 - `sis_value/cfb/cfb_receiving_value_2024.csv` ← `build_rookie_profiles.py`

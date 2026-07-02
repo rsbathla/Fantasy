@@ -440,6 +440,90 @@ HTML = r"""<!DOCTYPE html>
   .sw{width:10px;height:10px;border-radius:3px;display:inline-block}
   footer{margin-top:26px; color:var(--ink3); font-size:11px; text-align:center}
   code.k{font-family:var(--mono)}
+
+  /* ---- STRATEGY PANEL (advisory; separate from grader recommendation) ---- */
+  .strat-panel{
+    background:linear-gradient(180deg,#0f1e30,#0b1420);
+    border:1px solid #2a4a6a; border-radius:var(--radius);
+    padding:16px 18px; box-shadow:var(--shadow); margin-bottom:18px;
+    border-left:4px solid #3b82f6;
+  }
+  .strat-panel .sp-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+  .strat-panel .sp-badge{
+    font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+    background:#1e3a5f;color:#93c5fd;border:1px solid #2563eb;
+    border-radius:6px;padding:3px 8px;
+  }
+  .strat-panel .sp-advisory{
+    font-size:10.5px;color:#64748b;font-style:italic;
+    border:1px solid #1e293b;border-radius:6px;padding:2px 8px;
+  }
+  .strat-panel .sp-slot{font-family:var(--mono);font-size:22px;font-weight:800;color:#93c5fd}
+  .strat-panel .sp-slot-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.7px;color:#64748b}
+  /* adherence badge */
+  .adh-badge{font-size:11px;font-weight:800;letter-spacing:.6px;padding:4px 10px;border-radius:8px;border:1px solid}
+  .adh-badge.ON_PLAN{background:#0e2a22;color:#34d399;border-color:#1c5a45}
+  .adh-badge.DRIFTING{background:#2a210a;color:#fbbf24;border-color:#7a5a16}
+  .adh-badge.OFF_PLAN{background:#2c1117;color:#fb7185;border-color:#5e2330}
+  /* strategy selector tabs */
+  .strat-tabs{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
+  .strat-tab{font-size:11px;font-weight:700;padding:4px 10px;border-radius:8px;border:1px solid #26324a;
+    background:var(--panel2);color:var(--ink2);cursor:default}
+  .strat-tab.best{background:#1e3a5f;color:#93c5fd;border-color:#2563eb}
+  /* section dividers within the panel */
+  .sp-section{margin:14px 0 10px;padding-top:12px;border-top:1px dashed #1e293b}
+  .sp-section-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.7px;color:#64748b;margin-bottom:8px;font-weight:700}
+  /* live targets grid */
+  .sp-targets{display:flex;flex-direction:column;gap:6px}
+  .sp-target{
+    display:flex;align-items:center;gap:8px;background:#0c1a2c;
+    border:1px solid #1e293b;border-radius:10px;padding:7px 10px;flex-wrap:wrap;
+  }
+  .sp-target.avail{border-color:#1c5a45}
+  .sp-target.unavail{opacity:.45}
+  .sp-target .tgt-name{font-weight:700;font-size:13px;flex:1 1 auto}
+  .sp-target .tgt-meta{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .sp-target .tgt-adp{font-family:var(--mono);font-size:11px;color:#64748b}
+  .sp-tgt-chip{font-size:10px;font-weight:700;border-radius:5px;padding:2px 7px;border:1px solid}
+  .tgt-prim{background:#1e3a5f;color:#93c5fd;border-color:#2563eb}
+  .tgt-pivot{background:#1c2740;color:#bcd0ff;border-color:#26324a}
+  .tgt-stack{background:#0e2a22;color:#6ee7b7;border-color:#1c5a45}
+  .tgt-syn{background:rgba(124,92,255,.18);color:#a78bfa;border-color:#4c1d95}
+  .tgt-unavail{background:#2c1117;color:#fb7185;border-color:#5e2330}
+  .tgt-avail{background:#0e2a22;color:#34d399;border-color:#1c5a45}
+  .tgt-tier{font-size:10px;font-weight:800;border-radius:5px;padding:2px 6px;border:1px solid #26324a;color:#64748b}
+  .tgt-tier.ELITE{background:rgba(251,191,36,.14);color:#fbbf24;border-color:rgba(251,191,36,.4)}
+  .tgt-tier.HIGH{background:rgba(91,157,255,.14);color:#93c5fd;border-color:rgba(91,157,255,.4)}
+  .tgt-tier.MID{background:#1c2740;color:#bcd0ff;border-color:#26324a}
+  .tgt-tier.LOW{background:#1a1a1a;color:#64748b;border-color:#26324a}
+  /* stack status */
+  .sp-stack-item{background:#0c1a2c;border:1px solid #1e293b;border-radius:10px;padding:8px 12px;margin-bottom:6px}
+  .sp-stack-team{font-size:13px;font-weight:800;color:#fbbf24;margin-bottom:4px}
+  .sp-stack-row{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0;font-size:11.5px;color:var(--ink2)}
+  .sp-stack-row .sp-lbl{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:#64748b;min-width:70px}
+  .sp-name-chip{background:var(--panel2);border:1px solid #26324a;border-radius:6px;padding:2px 7px;font-size:11px;color:var(--ink2)}
+  .sp-name-chip.held{background:#0e2a22;color:#6ee7b7;border-color:#1c5a45}
+  .sp-name-chip.avail{background:#1e3a5f;color:#93c5fd;border-color:#2563eb}
+  /* checkpoints */
+  .sp-cp-item{display:flex;gap:8px;align-items:flex-start;background:#0c1a2c;border:1px solid #1e293b;border-radius:10px;padding:7px 10px;margin-bottom:6px;flex-wrap:wrap}
+  .sp-cp-rnd{font-family:var(--mono);font-size:18px;font-weight:800;color:#64748b;min-width:28px}
+  .sp-cp-body{flex:1}
+  .sp-cp-grid{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+  .sp-cp-pos{display:flex;flex-direction:column;align-items:center;gap:2px;background:#111826;border:1px solid #1e293b;border-radius:7px;padding:3px 8px}
+  .sp-cp-pos .cp-pos-lbl{font-size:9px;text-transform:uppercase;letter-spacing:.5px;color:#64748b}
+  .sp-cp-pos .cp-pos-val{font-family:var(--mono);font-size:13px;font-weight:700}
+  .sp-cp-pos.at-risk .cp-pos-val{color:#fbbf24}
+  .sp-cp-pos.impossible .cp-pos-val{color:#fb7185}
+  .sp-cp-pos.ok .cp-pos-val{color:#34d399}
+  /* floor warnings */
+  .sp-warn{display:inline-flex;align-items:center;gap:6px;background:#2c1117;border:1px solid #5e2330;
+    border-radius:8px;padding:5px 10px;font-size:12px;color:#ffd9de;margin:3px 0}
+  /* leverage note */
+  .sp-leverage{background:#0f1e30;border:1px solid #1e3a5f;border-radius:10px;padding:10px 14px;
+    font-size:12.5px;color:#aab6cf;line-height:1.6;margin-top:4px}
+  .sp-leverage .lev-lbl{font-size:10px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;color:#64748b;margin-bottom:5px}
+  /* error state */
+  .sp-error{color:#fb7185;font-size:12px;padding:12px;background:#2c1117;border:1px solid #5e2330;border-radius:10px}
 </style>
 </head>
 <body>
@@ -458,6 +542,9 @@ HTML = r"""<!DOCTYPE html>
 
   <!-- 1. draft state header -->
   <div class="statecard" id="stateCard"></div>
+
+  <!-- 1b. STRATEGY panel (advisory — separate from grader) -->
+  <div id="strategyPanel"></div>
 
   <!-- 2. headline pick -->
   <div class="headline" id="headline"></div>
@@ -1451,6 +1538,246 @@ function renderRoster(detail){
 }
 
 /* ====================================================================
+   STRATEGY PANEL  (advisory -- never alters grader recommendation)
+   Renders data.strategy (strategy_panel from engine/strategy_live.py).
+   ==================================================================== */
+function renderStrategy(sp){
+  var host = document.getElementById("strategyPanel");
+  if(!host) return;
+  host.innerHTML = "";
+  if(!sp){ return; }  /* no strategy key at all -> silent */
+
+  var panel = el("div","strat-panel");
+
+  /* ---- header row ---- */
+  var hdr = el("div","sp-header");
+  var badge = el("span","sp-badge","STRATEGY");
+  var advisory = el("span","sp-advisory","advisory panel  —  does not alter grader");
+  hdr.appendChild(badge);
+
+  if(sp.error && !sp.slot_detected){
+    hdr.appendChild(el("span","sp-advisory","Slot undetectable — " + esc(sp.error)));
+    panel.appendChild(hdr);
+    host.appendChild(panel);
+    return;
+  }
+  if(sp.error){
+    hdr.appendChild(advisory);
+    panel.appendChild(hdr);
+    var err = el("div","sp-error","Strategy data unavailable: " + esc(sp.error));
+    panel.appendChild(err);
+    host.appendChild(panel);
+    return;
+  }
+
+  /* slot */
+  var slotWrap = el("div","kv");
+  slotWrap.appendChild(el("div","sp-slot-lbl","Draft Slot"));
+  slotWrap.appendChild(el("div","sp-slot","S" + (sp.slot || "?")));
+  hdr.appendChild(slotWrap);
+  hdr.appendChild(advisory);
+
+  /* best-fit adherence */
+  var bf = sp.best_fit || {};
+  if(bf.id){
+    var adh = bf.adherence || "OFF PLAN";
+    var adhKey = adh.replace(/\s+/g,"_");
+    var adhBadge = el("span","adh-badge " + adhKey, adh);
+    hdr.appendChild(adhBadge);
+    var bfName = el("span",null);
+    bfName.style.cssText = "font-size:12px;font-weight:700;color:#93c5fd;";
+    bfName.textContent = bf.id + " — " + (bf.name||"").split(",")[0];
+    hdr.appendChild(bfName);
+  }
+  panel.appendChild(hdr);
+
+  /* ---- strategy tabs ---- */
+  if(sp.strategies && sp.strategies.length){
+    var tabs = el("div","strat-tabs");
+    sp.strategies.forEach(function(s){
+      var isBest = bf && s.id === bf.id;
+      var tab = el("div","strat-tab" + (isBest?" best":""));
+      tab.textContent = s.id + " (" + (s.score||0).toFixed(1) + " — " + (s.adherence||"") + ")";
+      tabs.appendChild(tab);
+    });
+    panel.appendChild(tabs);
+  }
+
+  /* ---- best-fit thesis ---- */
+  if(bf.thesis){
+    var th = el("div");
+    th.style.cssText = "font-size:12px;color:#64748b;font-style:italic;margin-bottom:10px;";
+    th.textContent = bf.thesis + (bf.thesis.length >= 250 ? "..." : "");
+    panel.appendChild(th);
+  }
+
+  /* ---- live targets ---- */
+  if(sp.live_targets && sp.live_targets.length){
+    var sec = el("div","sp-section");
+    var secLbl = el("div","sp-section-lbl","Live Targets — this round");
+    sec.appendChild(secLbl);
+    var tgtList = el("div","sp-targets");
+    sp.live_targets.forEach(function(t){
+      var row = el("div","sp-target" + (t.available?" avail":" unavail"));
+      /* availability badge */
+      var avBadge = el("span","sp-tgt-chip " + (t.available?"tgt-avail":"tgt-unavail"),
+                       t.available ? "✓ AVAIL" : "× GONE");
+      row.appendChild(avBadge);
+      /* primary/pivot */
+      row.appendChild(el("span","sp-tgt-chip " + (t.is_primary?"tgt-prim":"tgt-pivot"),
+                         t.is_primary ? "PRIMARY" : "PIVOT"));
+      /* stack pick */
+      if(t.stack_pick) row.appendChild(el("span","sp-tgt-chip tgt-stack","STACK"));
+      /* synergy */
+      if(t.synergy) row.appendChild(el("span","sp-tgt-chip tgt-syn","SYNERGY"));
+      /* name */
+      var nm = el("span","tgt-name", t.name);
+      row.appendChild(nm);
+      /* meta */
+      var meta = el("div","tgt-meta");
+      if(t.pos){
+        var posPill = el("span","pos-pill p-" + (t.pos||"FLEX"), t.pos||"");
+        meta.appendChild(posPill);
+      }
+      if(t.team) meta.appendChild(el("span","tgt-adp", t.team));
+      if(t.adp != null) meta.appendChild(el("span","tgt-adp", "ADP " + Number(t.adp).toFixed(0)));
+      if(t.tier) meta.appendChild(el("span","tgt-tier " + esc(t.tier), t.tier));
+      row.appendChild(meta);
+      tgtList.appendChild(row);
+    });
+    sec.appendChild(tgtList);
+    panel.appendChild(sec);
+  }
+
+  /* ---- stack status ---- */
+  if(sp.stack_status && sp.stack_status.length){
+    var ss = el("div","sp-section");
+    ss.appendChild(el("div","sp-section-lbl","Stack Status"));
+    sp.stack_status.forEach(function(st){
+      var item = el("div","sp-stack-item");
+      var teamHdr = el("div","sp-stack-team");
+      teamHdr.textContent = st.team + " — " + (st.tier||"?") + (st.ceiling_score!=null ? " (" + Math.round(st.ceiling_score) + ")" : "");
+      item.appendChild(teamHdr);
+      function nameChips(names, cls){
+        var row = el("div","sp-stack-row");
+        names.forEach(function(n){
+          row.appendChild(el("span","sp-name-chip " + (cls||""), n));
+        });
+        return row;
+      }
+      if(st.held && st.held.length){
+        var heldRow = el("div","sp-stack-row");
+        heldRow.appendChild(el("span","sp-lbl","Held"));
+        st.held.forEach(function(n){ heldRow.appendChild(el("span","sp-name-chip held", n)); });
+        item.appendChild(heldRow);
+      }
+      if(st.available_remaining && st.available_remaining.length){
+        var remRow = el("div","sp-stack-row");
+        remRow.appendChild(el("span","sp-lbl","Available"));
+        st.available_remaining.forEach(function(n){ remRow.appendChild(el("span","sp-name-chip avail", n)); });
+        item.appendChild(remRow);
+      } else if(st.remaining && st.remaining.length){
+        var remRow2 = el("div","sp-stack-row");
+        remRow2.appendChild(el("span","sp-lbl","Remaining"));
+        st.remaining.forEach(function(n){ remRow2.appendChild(el("span","sp-name-chip", n)); });
+        item.appendChild(remRow2);
+      }
+      if(st.bringbacks_available && st.bringbacks_available.length){
+        var bbRow = el("div","sp-stack-row");
+        bbRow.appendChild(el("span","sp-lbl","Bring-backs"));
+        st.bringbacks_available.slice(0,3).forEach(function(b){
+          bbRow.appendChild(el("span","sp-name-chip avail", b.name + (b.adp?" (ADP "+Math.round(b.adp)+")" : "")));
+        });
+        item.appendChild(bbRow);
+      }
+      ss.appendChild(item);
+    });
+    panel.appendChild(ss);
+  }
+
+  /* ---- checkpoint tracker ---- */
+  if(sp.checkpoints && sp.checkpoints.length){
+    var cpsec = el("div","sp-section");
+    cpsec.appendChild(el("div","sp-section-lbl","Checkpoint Tracker (upcoming)"));
+    sp.checkpoints.slice(0,3).forEach(function(cp){
+      var item = el("div","sp-cp-item");
+      var rndEl = el("div","sp-cp-rnd","R" + cp.round);
+      item.appendChild(rndEl);
+      var body = el("div","sp-cp-body");
+      if(cp.impossible && cp.impossible.length){
+        var impEl = el("div");
+        impEl.style.cssText = "font-size:11px;color:#fb7185;margin-bottom:4px;";
+        impEl.textContent = "IMPOSSIBLE: " + cp.impossible.join(", ");
+        body.appendChild(impEl);
+      } else if(cp.at_risk && cp.at_risk.length){
+        var riskEl = el("div");
+        riskEl.style.cssText = "font-size:11px;color:#fbbf24;margin-bottom:4px;";
+        riskEl.textContent = "AT RISK: " + cp.at_risk.join(", ");
+        body.appendChild(riskEl);
+      }
+      var grid = el("div","sp-cp-grid");
+      ["QB","RB","WR","TE"].forEach(function(pos){
+        var cur = (cp.current||{})[pos] || 0;
+        var tgt = (cp.target||{})[pos] || 0;
+        var gap = (cp.gaps||{})[pos];
+        var posEl = el("div","sp-cp-pos");
+        if(cp.impossible && cp.impossible.indexOf(pos) !== -1){
+          posEl.classList.add("impossible");
+        } else if(cp.at_risk && cp.at_risk.indexOf(pos) !== -1){
+          posEl.classList.add("at-risk");
+        } else {
+          posEl.classList.add("ok");
+        }
+        posEl.appendChild(el("span","cp-pos-lbl", pos));
+        posEl.appendChild(el("span","cp-pos-val", cur + "/" + tgt));
+        grid.appendChild(posEl);
+      });
+      body.appendChild(grid);
+      var rrEl = el("div");
+      rrEl.style.cssText = "font-size:10.5px;color:#64748b;margin-top:4px;";
+      rrEl.textContent = cp.rounds_remaining + " rounds to checkpoint";
+      body.appendChild(rrEl);
+      item.appendChild(body);
+      cpsec.appendChild(item);
+    });
+    panel.appendChild(cpsec);
+  }
+
+  /* ---- floor warnings ---- */
+  if(sp.floor_warnings && sp.floor_warnings.length){
+    var fw = el("div","sp-section");
+    fw.appendChild(el("div","sp-section-lbl","Floor Warnings"));
+    sp.floor_warnings.forEach(function(w){
+      fw.appendChild(el("div","sp-warn", "⚠️ " + w));
+    });
+    panel.appendChild(fw);
+  }
+
+  /* ---- score breakdown ---- */
+  if(bf.score_breakdown && bf.score_breakdown !== "No roster yet"){
+    var bd = el("div","sp-section");
+    bd.appendChild(el("div","sp-section-lbl","Fit Breakdown"));
+    var bdTxt = el("div");
+    bdTxt.style.cssText = "font-size:11.5px;color:#64748b;";
+    bdTxt.textContent = bf.score_breakdown;
+    bd.appendChild(bdTxt);
+    panel.appendChild(bd);
+  }
+
+  /* ---- leverage note ---- */
+  if(sp.leverage_pivot){
+    var lsec = el("div","sp-section");
+    lsec.appendChild(el("div","sp-section-lbl","Leverage / De-chalk"));
+    var lev = el("div","sp-leverage");
+    lev.textContent = sp.leverage_pivot;
+    lsec.appendChild(lev);
+    panel.appendChild(lsec);
+  }
+
+  host.appendChild(panel);
+}
+
+/* ====================================================================
    SINGLE ENTRY POINT. Consumes the live_tree.json object unchanged:
    { state, headline, tree, board, roster_detail, construction }
    ==================================================================== */
@@ -1474,6 +1801,7 @@ function renderDashboard(data){
   CURRENT = data;
   var treeSet = treeTakeSet(data.tree);
   renderState(data.state, data.construction);
+  renderStrategy(data.strategy);
   renderHeadline(data.headline, data.board);
   renderTree(data.tree);
   renderGraded7(data.graded7);

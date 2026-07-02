@@ -263,6 +263,19 @@ def run(board_path, me='rsbathla', plies=None, out=None):
     tree['state']['modeled_n']=int(modeled_n); tree['state']['drafted_n']=int(drafted_n)
     if dropped: tree['state']['untracked']=list(dropped); tree['state']['dropped']=list(dropped)
     tree=enrich(tree,st,board,me)
+    # ---- strategy layer (advisory; never alters grader output) ----
+    # Reads: strategy_board.json (slot strategies + leverage_pivot),
+    #        team_ceiling.json (per-team ceiling tier for live targets),
+    #        stack_menu.json (stack completion pieces + W17 bringbacks).
+    # Wired via engine/strategy_live.py -- INVARIANTS in integration_audit.py fire if unwired.
+    try:
+        import strategy_live as _sl  # 'strategy_live' consumes strategy_board.json, team_ceiling.json
+        tree['strategy'] = _sl.analyse(tree, _REPO)
+        _slot = tree['strategy'].get('slot'); _fit = (tree['strategy'].get('best_fit') or {})
+        print(f"strategy: slot={_slot} best={_fit.get('id','?')} adherence={_fit.get('adherence','?')}")
+    except Exception as _se:
+        print(f"[strategy layer skipped: {_se}]")
+        tree.setdefault('strategy', {'error': str(_se)})
     _write_json_safely(tree,out)
     print(f"wrote {out}  (board {len(tree['board'])} w/ notes+stacks, roster {len(tree['roster_detail'])})")
     return tree
