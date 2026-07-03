@@ -20,7 +20,7 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 
 - **2 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **3 builders** produce artifacts but are absent from the pipeline runner
-- **489 unused fields** across 83 record-structured layers (auto-discovered, repo-wide)
+- **478 unused fields** across 83 record-structured layers (auto-discovered, repo-wide)
 - **47 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
@@ -76,7 +76,7 @@ _None — registry intact, consumed, and uncontradicted._
 - `ffdataroma_draft_guide_export/ffdataroma/csv/weekly-vegas-lines.csv` — 4 consumer(s)
 - `coordinator_changes_2026.json` — 5 consumer(s)
 - `COACHING_CHANGES_2026.md` — 1 consumer(s)
-- `offense_profile.json` — 6 consumer(s)
+- `offense_profile.json` — 7 consumer(s)
 - `data/nflverse/games_2021_2025.csv` — 2 consumer(s)
 - `boom/roster_flags_2026.json` — 2 consumer(s)
 
@@ -169,15 +169,16 @@ _None._
 
 **Unused by ALL consumers:** `N_startable`, `anchors_agree_within_8pct`, `boom_rate_startable`, `booms_per_17g`, `mean`, `mean_plus_1sd`, `n_obs`, `p85`, `sd`, `threshold`
 
-### `boom/chart2yr.json`  (29 fields, 4 consumers)
+### `boom/chart2yr.json`  (29 fields, 5 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 8 |
 | backtest_composite_2025.py | 17 |
 | build_dossier.py | 11 |
 | build_intel.py | 9 |
 | build_player_explorer.py | 7 |
 
-**Unused by ALL consumers:** `fp_rr`, `threat`, `y2025`
+**Unused by ALL consumers:** `fp_rr`, `threat`
 
 ### `boom/cover_spec.json`  (16 fields, 5 consumers)
 | consumer | # fields read |
@@ -192,17 +193,19 @@ _None._
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_player_explorer.py`
 
-### `boom/coverage_route_spec.json`  (13 fields, 2 consumers)
+### `boom/coverage_route_spec.json`  (13 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 2 |
 | backtest_composite_2025.py | 2 |
 | build_scheme_fit.py | 4 |
 
 **Unused by ALL consumers:** `cells`, `elite_pctl`, `min_peers`, `min_rte`, `min_rte_overall`, `min_rte_route`, `routes`, `scheme_groups`, `weak_pctl`
 
-### `boom/coverage_split.json`  (6 fields, 2 consumers)
+### `boom/coverage_split.json`  (6 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 4 |
 | build_dossier.py | 4 |
 | ingest_coverage.py | 6 |
 
@@ -226,9 +229,10 @@ _None._
 
 **Unused by ALL consumers:** `covp`, `man_rate`, `manp`, `runp`, `sack_rate`, `sackp`, `tiers`
 
-### `boom/defense_shell.json`  (8 fields, 7 consumers)
+### `boom/defense_shell.json`  (8 fields, 8 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 7 |
 | build_defense_splits.py | 3 |
 | build_flags_QB.py | 1 |
 | build_flags_TE.py | 8 |
@@ -301,9 +305,10 @@ _None._
 
 **Unused by ALL consumers:** `dst_ari`, `dst_atl`, `dst_bal`, `dst_buf`, `dst_car`, `dst_chi`, `dst_cin`, `dst_cle`, `dst_den`, `dst_det`, `dst_gb`, `dst_hou`, `dst_ind`, `dst_jax`, `dst_kc`, `dst_lac`, `dst_lar`, `dst_lv`, `dst_mia`, `dst_min`, `dst_ne`, `dst_no`, `dst_nyj`, `dst_phi`, `dst_pit`, `dst_sea`, `dst_sf`, `dst_tb`, `dst_ten`, `dst_was`
 
-### `boom/manzone_2yr.json`  (12 fields, 3 consumers)
+### `boom/manzone_2yr.json`  (12 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 6 |
 | build_dossier.py | 6 |
 | build_manzone_2yr.py | 12 |
 | refresh_intel.py | 0 |
@@ -315,9 +320,10 @@ _None._
 |---|---|
 | build_manzone_tags.py | 2 |
 
-### `boom/motion.json`  (6 fields, 2 consumers)
+### `boom/motion.json`  (6 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 3 |
 | build_dossier.py | 5 |
 | ingest_motion.py | 6 |
 
@@ -346,12 +352,13 @@ _None._
 | apply_funnel_overlay.py | 1 |
 | build_cc_context.py | 5 |
 
-### `boom/redzone.json`  (4 fields, 1 consumers)
+### `boom/redzone.json`  (4 fields, 2 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 2 |
 | build_player_explorer.py | 0 |
 
-**Unused by ALL consumers:** `ez_td`, `ez_td_pg`, `ez_tgt_share`, `rz_tgt_share`
+**Unused by ALL consumers:** `ez_td`, `ez_tgt_share`
 
 ### `boom/rookie_college_profile.json`  (21 fields, 2 consumers)
 | consumer | # fields read |
@@ -450,16 +457,17 @@ _None._
 |---|---|
 | correlate_upside.py | 3 |
 
-### `cc_context.json`  (47 fields, 5 consumers)
+### `cc_context.json`  (47 fields, 6 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 6 |
 | build_dfs_weekly_breakdown.py | 10 |
 | build_dossier_deep.py | 7 |
 | command_center.py | 1 |
 | ctx_panel.py | 1 |
 | dfs_model.py | 7 |
 
-**Unused by ALL consumers:** `adot25`, `align_pct`, `deep_ball_sh`, `deep_route_sh`, `dials`, `man_route_sh`, `man_zone_delta`, `metric`, `outside_run_sh`, `qb_anya`, `qb_cpoe`, `qb_epa_db`, `qb_pressure_rate`, `qb_rush_ypg`, `qb_scramble`, `qb_ttt`, `rb_rec_ypg`, `rb_topspeed`, `rec_croe`, `rec_epa_route`, `rec_separation`, `rec_yacoe`, `route_pct`, `route_tprr`, `route_yprr`, `routes_2yr`, `rush_epa_att`, `ryoe_att`, `self_moves`, `ypa25`, `yprr_man`, `yprr_zone`, `zone_run_sh`
+**Unused by ALL consumers:** `adot25`, `align_pct`, `deep_ball_sh`, `deep_route_sh`, `dials`, `man_zone_delta`, `metric`, `outside_run_sh`, `qb_anya`, `qb_cpoe`, `qb_epa_db`, `qb_pressure_rate`, `qb_rush_ypg`, `qb_scramble`, `qb_ttt`, `rb_rec_ypg`, `rb_topspeed`, `rec_croe`, `rec_epa_route`, `rec_separation`, `rec_yacoe`, `route_pct`, `route_tprr`, `route_yprr`, `routes_2yr`, `rush_epa_att`, `ryoe_att`, `self_moves`, `ypa25`, `zone_run_sh`
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `command_center.py`, `ctx_panel.py`
 
@@ -514,9 +522,10 @@ _None._
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `boom_foundation.py`, `build_defense_splits.py`, `build_flags_layer.py`, `build_lever_calendar.py`, `build_team_scout.py`, `fusion.py`, `sync_boom_defense.py`
 
-### `defense_splits.json`  (24 fields, 5 consumers)
+### `defense_splits.json`  (24 fields, 6 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 8 |
 | build_defense_splits.py | 24 |
 | build_dfs_weekly_breakdown.py | 0 |
 | build_home.py | 0 |
@@ -608,9 +617,10 @@ _None._
 | reweight_defense_2026.py | 1 |
 | validate_signal_stability.py | 1 |
 
-### `flag_ranks.json`  (28 fields, 8 consumers)
+### `flag_ranks.json`  (28 fields, 9 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 6 |
 | audit_roster_moves.py | 4 |
 | build_adp_clusters.py | 17 |
 | build_big_board.py | 14 |
@@ -620,7 +630,7 @@ _None._
 | build_stack_menu.py | 5 |
 | engine/bbengine.py | 6 |
 
-**Unused by ALL consumers:** `adj_order`, `opp_pctl`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`, `tgt_sh`
+**Unused by ALL consumers:** `adj_order`, `opp_pctl`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `audit_roster_moves.py`
 
@@ -689,9 +699,10 @@ _None._
 | build_matchup_notes.py | 1 |
 | render_game_sim.py | 1 |
 
-### `offense_profile.json`  (26 fields, 4 consumers)
+### `offense_profile.json`  (26 fields, 5 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 6 |
 | build_home.py | 1 |
 | build_matchup_notes.py | 3 |
 | build_team_ceiling.py | 17 |
@@ -740,25 +751,28 @@ _None._
 
 **Unused by ALL consumers:** `fav`, `man_lean`, `profile`, `tough`, `weeks`
 
-### `proe_tendency_2026.json`  (5 fields, 3 consumers)
+### `proe_tendency_2026.json`  (5 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 2 |
 | build_dfs_weekly_breakdown.py | 3 |
 | build_proe_2026.py | 5 |
 | dfs_model.py | 1 |
 
-### `profiles/player_profiles.json`  (34 fields, 3 consumers)
+### `profiles/player_profiles.json`  (34 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 7 |
 | build_dossier.py | 5 |
 | build_dossier_deep.py | 4 |
 | dfs_model.py | 7 |
 
-**Unused by ALL consumers:** `metric`, `rec_adot`, `rec_contested`, `rec_croe_pro`, `rec_drop`, `rec_dvoa`, `rec_epa_route_pro`, `rec_epa_tgt_pro`, `rec_man_qbr`, `rec_qbr`, `rec_rz`, `rec_rz_vol`, `rec_sep`, `rec_sep_pro`, `rec_short_routes`, `rec_slot`, `rec_success`, `rec_vman_ftn`, `rec_vzone_ftn`, `rec_wide`, `rec_yac`, `rec_yacoe_pro`, `rec_yprr`, `y2024`, `y2025`
+**Unused by ALL consumers:** `metric`, `rec_adot`, `rec_contested`, `rec_croe_pro`, `rec_drop`, `rec_dvoa`, `rec_epa_route_pro`, `rec_epa_tgt_pro`, `rec_man_qbr`, `rec_qbr`, `rec_rz`, `rec_rz_vol`, `rec_sep`, `rec_sep_pro`, `rec_short_routes`, `rec_slot`, `rec_success`, `rec_vman_ftn`, `rec_vzone_ftn`, `rec_wide`, `rec_yac`, `rec_yacoe_pro`, `rec_yprr`
 
-### `rz_equity_2026.json`  (5 fields, 3 consumers)
+### `rz_equity_2026.json`  (5 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 1 |
 | build_dfs_weekly_breakdown.py | 2 |
 | build_rz_equity.py | 5 |
 | dfs_model.py | 2 |
@@ -805,9 +819,10 @@ _None._
 | engine/strategy_live.py | 2 |
 | render_strategy_board.py | 3 |
 
-### `team_ceiling.json`  (25 fields, 10 consumers)
+### `team_ceiling.json`  (25 fields, 11 consumers)
 | consumer | # fields read |
 |---|---|
+| ask_data.py | 5 |
 | build_dfs_weekly_breakdown.py | 3 |
 | build_dossier.py | 16 |
 | build_matchup_notes.py | 3 |
@@ -819,7 +834,7 @@ _None._
 | env_blend.py | 1 |
 | game_sim.py | 2 |
 
-**Unused by ALL consumers:** `base_core`, `env_idx`, `own_pass_cov_pctl`, `pace_pctl`, `playcaller`, `plays_pg`, `raw`, `vacated_tgt_pct`
+**Unused by ALL consumers:** `base_core`, `env_idx`, `own_pass_cov_pctl`, `pace_pctl`, `raw`, `vacated_tgt_pct`
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_dfs_weekly_breakdown.py`, `build_matchup_notes.py`, `build_pdf.py`, `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`, `env_blend.py`, `game_sim.py`
 
