@@ -14,8 +14,8 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 
 - **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **2 builders** produce artifacts but are absent from the pipeline runner
-- **494 unused fields** across 77 record-structured layers (auto-discovered, repo-wide)
-- **36 divergent consumers** (a consumer under-using a layer its peers read fully)
+- **493 unused fields** across 78 record-structured layers (auto-discovered, repo-wide)
+- **39 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
 ## G. Surface declarations (P0)
@@ -31,6 +31,7 @@ _None — all surface declarations are satisfied._
 | `dfs_season_baseline.json` | dfs | `build_dfs_season_baseline.py` |
 | `flag_ranks.json` | predraft | `build_adp_clusters.py` |
 | `flag_ranks.json` | rankings | `build_rankings.py` |
+| `matchup_notes.json` | dfs | `build_matchup_notes.py` |
 | `slot_paths.json` | predraft | `[curated chain] slot_paths.json -> strategy_board.json (agent-built from slot_paths decision zones) -> render_strategy_board.py` |
 | `stack_menu.json` | predraft | `[curated chain] stack_menu.json -> strategy_board.json (agent-built using stack_menu stacks) -> render_strategy_board.py` |
 | `stack_menu.json` | live | `engine/run_live.py` |
@@ -172,12 +173,13 @@ _None._
 
 **Unused by ALL consumers:** `mtf_allowed`, `mtf_att_allowed`, `rush_att`
 
-### `boom/defensive_profile.json`  (26 fields, 5 consumers)
+### `boom/defensive_profile.json`  (26 fields, 6 consumers)
 | consumer | # fields read |
 |---|---|
 | apply_funnel_overlay.py | 5 |
 | build_defense_splits.py | 13 |
 | build_intel.py | 13 |
+| build_matchup_notes.py | 8 |
 | build_team_ceiling.py | 3 |
 | command_center.py | 12 |
 
@@ -309,13 +311,14 @@ _None._
 
 **Unused by ALL consumers:** `CAR`, `CHI`, `MIA`, `PHI`, `src`
 
-### `boom/schedule2026.json`  (32 fields, 8 consumers)
+### `boom/schedule2026.json`  (32 fields, 9 consumers)
 | consumer | # fields read |
 |---|---|
 | boom_lib.py | 0 |
 | build_flags_layer.py | 9 |
 | build_lever_calendar.py | 10 |
 | build_lever_count.py | 9 |
+| build_matchup_notes.py | 0 |
 | build_scheme_fit.py | 1 |
 | build_slot_paths.py | 0 |
 | build_stack_menu.py | 0 |
@@ -323,7 +326,7 @@ _None._
 
 **Unused by ALL consumers:** `ATL`, `BUF`, `CAR`, `CHI`, `CIN`, `DAL`, `DEN`, `GB`, `IND`, `KC`, `MIA`, `MIN`, `NE`, `NO`, `NYG`, `NYJ`, `PHI`, `PIT`, `SEA`, `TB`, `TEN`
 
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `boom_lib.py`, `build_scheme_fit.py`, `build_slot_paths.py`, `build_stack_menu.py`, `dfs_model.py`
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `boom_lib.py`, `build_matchup_notes.py`, `build_scheme_fit.py`, `build_slot_paths.py`, `build_stack_menu.py`, `dfs_model.py`
 
 ### `boom/scheme_fit.json`  (18 fields, 2 consumers)
 | consumer | # fields read |
@@ -458,10 +461,11 @@ _None._
 | command_center.py | 1 |
 | dfs_scenarios.py | 1 |
 
-### `dfs_season_baseline.json`  (3 fields, 2 consumers)
+### `dfs_season_baseline.json`  (3 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
 | build_dfs_season_baseline.py | 3 |
+| build_matchup_notes.py | 1 |
 | gen_dfs_weekly_baseline.py | 0 |
 
 ### `dfs_week.json`  (7 fields, 3 consumers)
@@ -580,15 +584,21 @@ _None._
 
 **Unused by ALL consumers:** `best_wks`
 
-### `offense_profile.json`  (26 fields, 2 consumers)
+### `matchup_notes.json`  (1 fields, 1 consumers)
+| consumer | # fields read |
+|---|---|
+| build_matchup_notes.py | 1 |
+
+### `offense_profile.json`  (26 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
 | build_home.py | 1 |
+| build_matchup_notes.py | 3 |
 | build_team_ceiling.py | 17 |
 
-**Unused by ALL consumers:** `environment`, `identity`, `lean`, `pctl`, `play_action`, `rank_band`, `run_scheme`, `softness_band`, `zone_rate`
+**Unused by ALL consumers:** `environment`, `identity`, `lean`, `play_action`, `rank_band`, `run_scheme`, `softness_band`, `zone_rate`
 
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_home.py`
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_home.py`, `build_matchup_notes.py`
 
 ### `personnel_changes.json`  (22 fields, 3 consumers)
 | consumer | # fields read |
@@ -674,10 +684,11 @@ _None._
 | engine/strategy_live.py | 2 |
 | render_strategy_board.py | 3 |
 
-### `team_ceiling.json`  (25 fields, 6 consumers)
+### `team_ceiling.json`  (25 fields, 7 consumers)
 | consumer | # fields read |
 |---|---|
 | build_dossier.py | 16 |
+| build_matchup_notes.py | 2 |
 | build_pdf.py | 3 |
 | build_slot_paths.py | 1 |
 | build_stack_menu.py | 3 |
@@ -686,7 +697,7 @@ _None._
 
 **Unused by ALL consumers:** `base_core`, `env_idx`, `own_pass_cov_pctl`, `pace_pctl`, `playcaller`, `plays_pg`, `raw`, `vacated_tgt_pct`
 
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_pdf.py`, `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_matchup_notes.py`, `build_pdf.py`, `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`
 
 ### `team_review_data.json`  (36 fields, 4 consumers)
 | consumer | # fields read |
