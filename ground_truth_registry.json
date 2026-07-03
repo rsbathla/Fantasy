@@ -43,6 +43,15 @@
       "note": "The outlook HC/OC names are REAL 2026 facts, not scrambled data."
     },
     {
+      "path": "data/nflverse/games_2021_2025.csv",
+      "asserts": "VERIFIED 2021-2025 game results (final scores, margins, totals) AND closing Vegas lines (spread_line, total_line) for every NFL game. The 2025 season is complete and actual. Used to calibrate the game-script sim against reality and to run the position x script backtest.",
+      "provenance": "nflverse / Lee Sharpe games data, pulled from the nflverse GitHub mirror (raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv) 2026-07 at user direction; habitatring.com host is network-blocked in this env.",
+      "verified_by": "user directed the nflverse source; open-licensed public data; 285 completed 2025 games confirmed on pull",
+      "min_consumers": 1,
+      "forbidden_claims": [],
+      "note": "2025 actuals postdate the training cutoff — treat as ground truth, not a projection to second-guess."
+    },
+    {
       "path": "boom/roster_flags_2026.json",
       "asserts": "Verified 2026 roster/injury/availability flags (single edit point for injuries, FAs, non-usable players).",
       "provenance": "assembled from verified roster moves; cross-source reconciliation in audit_roster_moves.py -> ROSTER_MOVES_2026.md",

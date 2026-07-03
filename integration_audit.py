@@ -51,7 +51,9 @@ SURFACE_ENTRYPOINTS = {
     'dossier':  ['build_dossier.py', 'render_dossier.py', 'build_dossier_deep.py'],
     'rankings': ['build_rankings.py', 'build_flag_ranks.py'],
     'dfs':      ['render_dfs_week.py', 'dfs_model.py', 'build_dfs_season_baseline.py', 'build_matchup_notes.py',
-                 'build_dfs_weekly_breakdown.py', 'render_dfs_weekly_pdf.py'],
+                 'build_dfs_weekly_breakdown.py', 'render_dfs_weekly_pdf.py', 'game_sim.py', 'render_game_sim.py',
+                 'build_script_study.py', 'validate_proe_conversion.py', 'build_proe_2026.py',
+                 'build_dfs_week_report.py', 'build_rz_equity.py'],
 }
 
 # ---- SURFACE_EXEMPT: intermediate/internal layers that don't need a surfaces declaration ----
@@ -165,6 +167,9 @@ REQUIRED_CONSUMPTION = {
         ('defense split-parity layer',           ['defense_splits']),
         ('coverage FREQUENCY weighting (C8)',    ['man_rate']),
         ('qualitative player levers',            ['cc_context']),
+        ('game-script multiplier',               ['game_sim', 'script_mult']),
+        ('PROE pass/run conversion (validated)', ['proe_convert', 'proe_tendency_2026']),
+        ('red-zone / TD-equity interaction',     ['rz_convert', 'rz_equity_2026']),
     ],
     'build_matchup_notes.py': [
         ('team-ceiling blend via env_blend',     ['env_blend']),
@@ -176,6 +181,49 @@ REQUIRED_CONSUMPTION = {
         ('blended environment ranking',          ['blend']),
         ('season board flags',                   ['flag_ranks.json']),
         ('player lever context',                 ['cc_context.json']),
+    ],
+    # game-script sim must anchor to Vegas (means+spread) AND shape with our layers, never a
+    # single signal (C5) — enforce the composition it was built to demonstrate.
+    'game_sim.py': [
+        ('posted Vegas anchor (means+spread)',   ['weekly-vegas-lines']),
+        ('team-ceiling variance shaping',        ['team_ceiling']),
+        ('offense identity for script lean',     ['offense_profile']),
+    ],
+    'render_game_sim.py': [
+        ('sim output',                           ['game_sim.json']),
+        ('matchup funnels for who-benefits',     ['matchup_notes']),
+    ],
+    # the position x script backtest must rest on REAL data: nflverse closing lines + actual scoring
+    'build_script_study.py': [
+        ('nflverse closing lines (ground truth)', ['games_2021_2025', 'nflverse']),
+        ('actual fantasy scoring',                ['gamelog']),
+    ],
+    # the PROE->conversion validation must rest on COMPLETE per-game data (not the sampled
+    # gamelog), real closing lines, and must validate its proxy against real FantasyPoints
+    # PROE before trusting it for the prior-year (2024) replication.
+    'validate_proe_conversion.py': [
+        ('complete per-game DK (ground truth, 2024+2025)',   ['player_games']),
+        ('nflverse closing lines (ground truth)',            ['games_2021_2025', 'nflverse']),
+        ('real FantasyPoints PROE (proxy validated vs this)', ['proe_offense']),
+    ],
+    # the 2026 PROE tendency must rest on the 2025 ACTUAL base + the VERIFIED carousel (separated:
+    # base is fact, carousel_adj is a flagged assumption) — never a free-floating projection.
+    'build_proe_2026.py': [
+        ('2025 actual PROE base (ground truth)', ['proe_offense']),
+        ('verified carousel lean shifts',        ['COACHING_CHANGES_2026']),
+    ],
+    # the single-week HTML report must reuse the GROUNDED prose helpers (every clause traces to a
+    # field) rather than free-write, and must surface the validated PROE conversion as a lever.
+    'build_dfs_week_report.py': [
+        ('grounded prose helpers (traceable clauses)', ['build_dfs_weekly_breakdown']),
+        ('PROE conversion surfaced as a lever',        ['proe_mult']),
+        ('holistic game-script sim read surfaced',     ['game_sim']),
+    ],
+    # the RZ index must rest on the validated sources: RZ target share (pass-catchers) + actual TD/game
+    # (RBs) — never a free-floating TD guess.
+    'build_rz_equity.py': [
+        ('RZ target share (WR/TE, statmenu rz)', ['statmenu']),
+        ('actual RB TD/game (player_games)',     ['player_games']),
     ],
     # C1: scheme_fit once blanket-regressed every new-DC team instead of using the
     # coordinator intelligence that had been built. Never again.
@@ -662,6 +710,40 @@ def stale_deliverables():
     return out
 
 
+# ---- CHECK: input-freshness (an output built BEFORE an input layer it depends on) ----
+# stale_deliverables() only guards the bestball boards vs the flag_ranks tip. The DFS play score also
+# rests on defense_splits / game_sim / proe_tendency / rz_equity, and when defense_splits was rebuilt
+# AFTER the baseline, the report shipped stale coverage grades (Tee Higgins' man smash vanished). This
+# check compares each declared output against EVERY input layer it is built from — the general class.
+FRESHNESS_DEPS = {
+    'dfs_season_baseline.json': ['defense_splits.json', 'game_sim.json', 'proe_tendency_2026.json',
+                                 'rz_equity_2026.json', 'team_ceiling.json', 'cc_context.json',
+                                 'offense_profile.json',
+                                 'ffdataroma_draft_guide_export/ffdataroma/csv/weekly-vegas-lines.csv'],
+    'dfs_weekly_breakdown.md':  ['dfs_season_baseline.json', 'matchup_notes.json',
+                                 'proe_tendency_2026.json', 'rz_equity_2026.json'],
+    'dfs_week1_report.html':    ['dfs_season_baseline.json', 'game_sim.json',
+                                 'proe_tendency_2026.json', 'rz_equity_2026.json'],
+    'proe_tendency_2026.json':  ['data/fantasypoints/proe_offense_2025.csv', 'COACHING_CHANGES_2026.md'],
+    'game_sim.json':            ['team_ceiling.json', 'offense_profile.json',
+                                 'ffdataroma_draft_guide_export/ffdataroma/csv/weekly-vegas-lines.csv'],
+}
+def stale_inputs():
+    """P0: an output older than an input layer it is built from -- it shipped stale.
+    This is the class that hid Tee Higgins' smash (defense_splits rebuilt after the baseline)."""
+    out = []
+    for output, inputs in FRESHNESS_DEPS.items():
+        op = os.path.join(HERE, output)
+        if not os.path.exists(op):
+            continue
+        ot = os.path.getmtime(op)
+        for inp in inputs:
+            ip = os.path.join(HERE, inp)
+            if os.path.exists(ip) and os.path.getmtime(ip) > ot + 5:   # input newer than output (5s grace)
+                out.append((output, inp, int(os.path.getmtime(ip) - ot)))
+    return out
+
+
 def check_required_layers(src):
     """CHECK H (P0): each builder in REQUIRED_CONSUMPTION must show every required token group."""
     viol = []
@@ -804,6 +886,7 @@ def main():
     fb = fallbacks()
     ss = split_source(src)
     sd = stale_deliverables()
+    si = stale_inputs()
     surf_missing, surf_passing = check_surface_declarations(src, arts)
     surf_triage = check_undeclared_layers(src, arts, graph)
     req_viol = check_required_layers(src)
@@ -817,11 +900,12 @@ def main():
     L.append('_Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._\n')
     L.append('_Standing orders: `CLAUDE.md` · case law: `PLAYBOOK.md` · verified 2026 facts: `ground_truth_registry.json`._\n')
     L.append('_Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._\n')
-    p0 = len(inv) + len(ss) + len(sd) + len(surf_missing) + len(req_viol) + len(man_viol) + len(gt_viol)
+    p0 = len(inv) + len(ss) + len(sd) + len(si) + len(surf_missing) + len(req_viol) + len(man_viol) + len(gt_viol)
     L.append('## Summary\n')
     L.append(f'- **{len(inv)} invariant violations** (P0 -- a layer is being under-used)')
     L.append(f'- **{len(ss)} split-source files** (P0 -- one logical file read from two drifting copies)')
     L.append(f'- **{len(sd)} stale deliverables** (P0 -- a rendered board older than the model tip it renders)')
+    L.append(f'- **{len(si)} stale-input outputs** (P0 -- an output built before an input layer it depends on)')
     L.append(f'- **{len(surf_missing)} surface declaration violations** (P0 -- a layer declares a surface but no entry file consumes it)')
     L.append(f'- **{len(req_viol)} required-consumption violations** (P0 -- a builder is missing a layer its analysis must rest on)')
     L.append(f'- **{len(man_viol)} deliverable-manifest violations** (P0 -- hand-authored deliverable with undeclared/unjustified layer usage)')
@@ -968,6 +1052,15 @@ def main():
         L.append('_None — every core board is at least as fresh as the model tip._')
     L.append('')
 
+    L.append('## F2. Stale-input outputs (P0 — an output built before an input layer it depends on)\n')
+    if si:
+        for output, inp, age in si:
+            L.append(f'- `{output}` is {age}s older than its input `{inp}` — rebuild `{output}` '
+                     f'(this is the class that shipped stale coverage grades to the DFS report).')
+    else:
+        L.append('_None — every declared output is at least as fresh as all of its input layers._')
+    L.append('')
+
     open(os.path.join(HERE, 'INTEGRATION_AUDIT.md'), 'w', encoding='utf-8').write('\n'.join(L))
 
     # ---- console summary ----
@@ -986,6 +1079,7 @@ def main():
     print(f'  fallback counters firing: {len(fb)}')
     print(f'  split-source files       : {len(ss)}' + (f'  {[b for b, _, _ in ss]}' if ss else ''))
     print(f'  stale deliverables       : {len(sd)}' + (f'  {[d for d, _ in sd]}' if sd else ''))
+    print(f'  stale-input outputs      : {len(si)}' + (f'  {[o for o, _, _ in si]}' if si else ''))
     print(f'  surface decl violations : {len(surf_missing)}')
     for v in surf_missing:
         print(f'     - {v["artifact"]} declares surface \'{v["surface"]}\' but no {v["surface"]} entry file consumes it')

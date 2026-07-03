@@ -31,15 +31,16 @@
    "two_high": 49.6
   },
   "units": {
-   "pass_cov_pctl": 1.6,
-   "pass_rush_pctl": 92.2,
-   "run_def_pctl": 10.9
+   "pass_cov_pctl": 10.9,
+   "pass_rush_pctl": 79.7,
+   "run_def_pctl": 35.9
   },
   "funnels": [
+   "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
    "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
    "TE funnel (soft vs TE)"
   ],
-  "lean_2026": "BALANCED"
+  "lean_2026": "PASS"
  },
  "ATL": {
   "vs_man": {
@@ -73,9 +74,9 @@
    "two_high": 37.9
   },
   "units": {
-   "pass_cov_pctl": 79.7,
-   "pass_rush_pctl": 4.7,
-   "run_def_pctl": 48.4
+   "pass_cov_pctl": 92.2,
+   "pass_rush_pctl": 14.1,
+   "run_def_pctl": 32.8
   },
   "funnels": [
    "TE fortress (avoid TEs)",
@@ -115,15 +116,15 @@
    "two_high": 30.9
   },
   "units": {
-   "pass_cov_pctl": 39.1,
-   "pass_rush_pctl": 26.6,
-   "run_def_pctl": 73.4
+   "pass_cov_pctl": 76.6,
+   "pass_rush_pctl": 54.7,
+   "run_def_pctl": 57.8
   },
   "funnels": [
    "WR1 funnel (top-CB beatable)",
-   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
   ],
-  "lean_2026": "PASS"
+  "lean_2026": "RUN"
  },
  "BUF": {
   "vs_man": {
@@ -157,9 +158,9 @@
    "two_high": 45.9
   },
   "units": {
-   "pass_cov_pctl": 82.8,
-   "pass_rush_pctl": 54.7,
-   "run_def_pctl": 35.9
+   "pass_cov_pctl": 57.8,
+   "pass_rush_pctl": 64.1,
+   "run_def_pctl": 23.4
   },
   "funnels": [
    "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
@@ -200,8 +201,8 @@
    "two_high": 40.5
   },
   "units": {
-   "pass_cov_pctl": 76.6,
-   "pass_rush_pctl": 1.6,
+   "pass_cov_pctl": 60.9,
+   "pass_rush_pctl": 4.7,
    "run_def_pctl": 7.8
   },
   "funnels": [
@@ -242,9 +243,9 @@
    "two_high": 38.5
   },
   "units": {
-   "pass_cov_pctl": 64.1,
+   "pass_cov_pctl": 67.2,
    "pass_rush_pctl": 7.8,
-   "run_def_pctl": 39.1
+   "run_def_pctl": 26.6
   },
   "funnels": [
    "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
@@ -285,9 +286,9 @@
    "two_high": 34.6
   },
   "units": {
-   "pass_cov_pctl": 10.9,
-   "pass_rush_pctl": 32.8,
-   "run_def_pctl": 70.3
+   "pass_cov_pctl": 1.6,
+   "pass_rush_pctl": 23.4,
+   "run_def_pctl": 64.1
   },
   "funnels": [
    "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
@@ -329,8 +330,8 @@
    "two_high": 30.9
   },
   "units": {
-   "pass_cov_pctl": 45.3,
-   "pass_rush_pctl": 60.9,
+   "pass_cov_pctl": 20.3,
+   "pass_rush_pctl": 45.3,
    "run_def_pctl": 92.2
   },
   "funnels": [
@@ -372,8 +373,8 @@
   },
   "units": {
    "pass_cov_pctl": 23.4,
-   "pass_rush_pctl": 23.4,
-   "run_def_pctl": 17.2
+   "pass_rush_pctl": 17.2,
+   "run_def_pctl": 10.9
   },
   "funnels": [
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
@@ -413,9 +414,9 @@
    "two_high": 37.6
   },
   "units": {
-   "pass_cov_pctl": 89.1,
-   "pass_rush_pctl": 79.7,
-   "run_def_pctl": 57.8
+   "pass_cov_pctl": 98.4,
+   "pass_rush_pctl": 70.3,
+   "run_def_pctl": 73.4
   },
   "funnels": [
    "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
@@ -455,15 +456,15 @@
    "two_high": 33.4
   },
   "units": {
-   "pass_cov_pctl": 67.2,
-   "pass_rush_pctl": 89.1,
-   "run_def_pctl": 95.3
+   "pass_cov_pctl": 85.9,
+   "pass_rush_pctl": 98.4,
+   "run_def_pctl": 79.7
   },
   "funnels": [
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
    "SLOT funnel (slot WR exploitable)"
   ],
-  "lean_2026": "PASS"
+  "lean_2026": "BALANCED"
  },
  "GB": {
   "vs_man": {
@@ -497,14 +498,12 @@
    "two_high": 48.9
   },
   "units": {
-   "pass_cov_pctl": 48.4,
-   "pass_rush_pctl": 67.2,
-   "run_def_pctl": 26.6
+   "pass_cov_pctl": 45.3,
+   "pass_rush_pctl": 82.8,
+   "run_def_pctl": 39.1
   },
-  "funnels": [
-   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)"
-  ],
-  "lean_2026": "RUN"
+  "funnels": [],
+  "lean_2026": "BALANCED"
  },
  "HOU": {
   "vs_man": {
@@ -538,9 +537,9 @@
    "two_high": 44.0
   },
   "units": {
-   "pass_cov_pctl": 73.4,
-   "pass_rush_pctl": 95.3,
-   "run_def_pctl": 79.7
+   "pass_cov_pctl": 70.3,
+   "pass_rush_pctl": 92.2,
+   "run_def_pctl": 76.6
   },
   "funnels": [
    "WR fortress (avoid WRs)"
@@ -579,9 +578,9 @@
    "two_high": 39.0
   },
   "units": {
-   "pass_cov_pctl": 32.8,
-   "pass_rush_pctl": 39.1,
-   "run_def_pctl": 51.6
+   "pass_cov_pctl": 35.9,
+   "pass_rush_pctl": 29.7,
+   "run_def_pctl": 70.3
   },
   "funnels": [
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
@@ -621,15 +620,16 @@
    "two_high": 47.6
   },
   "units": {
-   "pass_cov_pctl": 98.4,
-   "pass_rush_pctl": 48.4,
-   "run_def_pctl": 89.1
+   "pass_cov_pctl": 89.1,
+   "pass_rush_pctl": 39.1,
+   "run_def_pctl": 42.2
   },
   "funnels": [
+   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
    "WR1 funnel (top-CB beatable)"
   ],
-  "lean_2026": "BALANCED"
+  "lean_2026": "RUN"
  },
  "KC": {
   "vs_man": {
@@ -663,9 +663,9 @@
    "two_high": 43.7
   },
   "units": {
-   "pass_cov_pctl": 51.6,
-   "pass_rush_pctl": 57.8,
-   "run_def_pctl": 45.3
+   "pass_cov_pctl": 48.4,
+   "pass_rush_pctl": 51.6,
+   "run_def_pctl": 51.6
   },
   "funnels": [],
   "lean_2026": "BALANCED"
@@ -702,9 +702,9 @@
    "two_high": 47.5
   },
   "units": {
-   "pass_cov_pctl": 54.7,
-   "pass_rush_pctl": 10.9,
-   "run_def_pctl": 14.1
+   "pass_cov_pctl": 79.7,
+   "pass_rush_pctl": 42.2,
+   "run_def_pctl": 29.7
   },
   "funnels": [
    "WR fortress (avoid WRs)",
@@ -744,8 +744,8 @@
    "two_high": 45.3
   },
   "units": {
-   "pass_cov_pctl": 57.8,
-   "pass_rush_pctl": 70.3,
+   "pass_cov_pctl": 51.6,
+   "pass_rush_pctl": 85.9,
    "run_def_pctl": 60.9
   },
   "funnels": [
@@ -785,9 +785,9 @@
    "two_high": 39.6
   },
   "units": {
-   "pass_cov_pctl": 26.6,
-   "pass_rush_pctl": 14.1,
-   "run_def_pctl": 76.6
+   "pass_cov_pctl": 17.2,
+   "pass_rush_pctl": 10.9,
+   "run_def_pctl": 85.9
   },
   "funnels": [
    "SLOT funnel (slot WR exploitable)",
@@ -827,9 +827,9 @@
    "two_high": 46.8
   },
   "units": {
-   "pass_cov_pctl": 42.2,
-   "pass_rush_pctl": 76.6,
-   "run_def_pctl": 54.7
+   "pass_cov_pctl": 39.1,
+   "pass_rush_pctl": 1.6,
+   "run_def_pctl": 45.3
   },
   "funnels": [
    "TE funnel (soft vs TE)"
@@ -868,9 +868,9 @@
    "two_high": 56.1
   },
   "units": {
-   "pass_cov_pctl": 70.3,
-   "pass_rush_pctl": 98.4,
-   "run_def_pctl": 29.7
+   "pass_cov_pctl": 82.8,
+   "pass_rush_pctl": 95.3,
+   "run_def_pctl": 14.1
   },
   "funnels": [
    "WR fortress (avoid WRs)"
@@ -910,8 +910,8 @@
   },
   "units": {
    "pass_cov_pctl": 95.3,
-   "pass_rush_pctl": 35.9,
-   "run_def_pctl": 82.8
+   "pass_rush_pctl": 32.8,
+   "run_def_pctl": 89.1
   },
   "funnels": [
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)"
@@ -950,14 +950,12 @@
    "two_high": 35.0
   },
   "units": {
-   "pass_cov_pctl": 29.7,
-   "pass_rush_pctl": 82.8,
+   "pass_cov_pctl": 14.1,
+   "pass_rush_pctl": 60.9,
    "run_def_pctl": 4.7
   },
-  "funnels": [
-   "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
-  ],
-  "lean_2026": "RUN"
+  "funnels": [],
+  "lean_2026": "BALANCED"
  },
  "NYG": {
   "vs_man": {
@@ -991,8 +989,8 @@
    "two_high": 34.2
   },
   "units": {
-   "pass_cov_pctl": 4.7,
-   "pass_rush_pctl": 85.9,
+   "pass_cov_pctl": 29.7,
+   "pass_rush_pctl": 76.6,
    "run_def_pctl": 67.2
   },
   "funnels": [
@@ -1033,8 +1031,8 @@
    "two_high": 40.0
   },
   "units": {
-   "pass_cov_pctl": 20.3,
-   "pass_rush_pctl": 17.2,
+   "pass_cov_pctl": 26.6,
+   "pass_rush_pctl": 26.6,
    "run_def_pctl": 98.4
   },
   "funnels": [
@@ -1075,9 +1073,9 @@
    "two_high": 41.7
   },
   "units": {
-   "pass_cov_pctl": 92.2,
-   "pass_rush_pctl": 42.2,
-   "run_def_pctl": 23.4
+   "pass_cov_pctl": 73.4,
+   "pass_rush_pctl": 67.2,
+   "run_def_pctl": 54.7
   },
   "funnels": [
    "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
@@ -1118,16 +1116,15 @@
    "two_high": 34.3
   },
   "units": {
-   "pass_cov_pctl": 35.9,
-   "pass_rush_pctl": 45.3,
+   "pass_cov_pctl": 32.8,
+   "pass_rush_pctl": 89.1,
    "run_def_pctl": 20.3
   },
   "funnels": [
-   "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
    "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
    "TE funnel (soft vs TE)"
   ],
-  "lean_2026": "RUN"
+  "lean_2026": "BALANCED"
  },
  "SEA": {
   "vs_man": {
@@ -1161,9 +1158,9 @@
    "two_high": 50.2
   },
   "units": {
-   "pass_cov_pctl": 85.9,
-   "pass_rush_pctl": 51.6,
-   "run_def_pctl": 42.2
+   "pass_cov_pctl": 64.1,
+   "pass_rush_pctl": 73.4,
+   "run_def_pctl": 48.4
   },
   "funnels": [
    "TE funnel (soft vs TE)",
@@ -1203,9 +1200,9 @@
    "two_high": 39.8
   },
   "units": {
-   "pass_cov_pctl": 60.9,
-   "pass_rush_pctl": 29.7,
-   "run_def_pctl": 85.9
+   "pass_cov_pctl": 54.7,
+   "pass_rush_pctl": 48.4,
+   "run_def_pctl": 82.8
   },
   "funnels": [
    "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
@@ -1244,14 +1241,12 @@
    "two_high": 40.2
   },
   "units": {
-   "pass_cov_pctl": 17.2,
-   "pass_rush_pctl": 73.4,
-   "run_def_pctl": 32.8
+   "pass_cov_pctl": 4.7,
+   "pass_rush_pctl": 35.9,
+   "run_def_pctl": 17.2
   },
-  "funnels": [
-   "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
-  ],
-  "lean_2026": "PASS"
+  "funnels": [],
+  "lean_2026": "BALANCED"
  },
  "TEN": {
   "vs_man": {
@@ -1285,9 +1280,9 @@
    "two_high": 48.2
   },
   "units": {
-   "pass_cov_pctl": 14.1,
-   "pass_rush_pctl": 64.1,
-   "run_def_pctl": 64.1
+   "pass_cov_pctl": 42.2,
+   "pass_rush_pctl": 57.8,
+   "run_def_pctl": 95.3
   },
   "funnels": [
    "WR1 funnel (top-CB beatable)",

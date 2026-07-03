@@ -35,6 +35,114 @@ if not os.path.exists(os.path.join(HERE, 'defense_splits.json')):
     subprocess.run([_s.executable, os.path.join(HERE, 'build_defense_splits.py')])
 defs = J('defense_splits.json')
 sched = J('boom/schedule2026.json')
+
+# ---- game-script multiplier (from game_sim.py) — STATED PRIORS, revert with K_SCRIPT_*=0.0 ----
+# Given the same environment (implied total), HOW the points come — run vs pass — depends on game
+# flow: a lead back cashes when his team controls with a lead; a WR/QB cash when their team trails
+# or the game shoots out. game_sim quantifies both; this tilts the play score by that script fit.
+# Not backtested on 2026 (no actuals); capped so it refines rather than dominates. (PLAYBOOK: env
+# is implied total; this is the orthogonal run/pass split, so it is NOT double-counting.)
+# REVERTED 2026-07 to 0.0 — the 2025 position x script backtest (boom/gamelog actuals vs nflverse
+# closing lines) showed the stated-prior tilt DOUBLE-COUNTS implied total and is MIS-SIGNED for
+# favorites: after removing implied total, a 10+ favorite RB scores -1.1 BELOW its team-total
+# prediction (blowout starter-rest), not above. Only dog pass-catchers show a small (+1.1) real
+# residual. Plumbing retained; coefficients zeroed pending PROE-based recalibration via the same
+# implied-total-isolation method. Revert-to-prior: K_SCRIPT_RB=0.35, K_SCRIPT_PASS=0.30.
+K_SCRIPT_RB   = 0.0
+K_SCRIPT_PASS = 0.0
+SCRIPT_CAP    = 0.12   # |script_mult - 1| ceiling
+_gs = J('game_sim.json')
+SCRIPT = {}   # team -> {lead_big, trail, shootout} for THIS week
+for _g in (_gs.get('weeks', {}).get(str(WK), {}) or {}).get('games', []):
+    _sh = _g.get('script', {}).get('shootout_bothpass', 15)
+    for _tm, _d in _g.get('script', {}).get('script_pass_lean', {}).items():
+        SCRIPT[_tm] = {'lead_big': _d.get('lead_big_p', 25), 'trail': _d.get('trail_p', 25), 'shootout': _sh}
+
+def script_mult(pos, team):
+    sc = SCRIPT.get(team)
+    if not sc: return 1.0
+    if pos == 'RB':
+        tilt = sc['lead_big'] - 25                                     # lead big -> more carries
+        if tilt < 0:
+            tilt *= 0.5   # trailing dings RBs only HALF: pass-catching backs stay involved (v1 limit:
+                          # not yet role-aware; a pure early-down back loses more than a receiving back)
+        m = 1 + K_SCRIPT_RB * tilt / 100.0
+    else:  # QB/WR/TE
+        pass_tilt = (sc['trail'] - 25) + 0.4 * (sc['shootout'] - 15)    # trail/shootout -> more pass volume
+        m = 1 + K_SCRIPT_PASS * pass_tilt / 100.0
+    return max(1 - SCRIPT_CAP, min(1 + SCRIPT_CAP, m))
+
+# ---- PROE pass/run CONVERSION multiplier (calibrated: validate_proe_conversion.py) ----
+# The env term (implied total) sets a team's points; PROE reallocates WITHIN the team: on a
+# pass-over-expected offense the WR/TE convert MORE fantasy than the total alone implies and the RBs
+# LESS — run-lean is the mirror. Calibrated on COMPLETE 2024+2025 per-game data (team-week grain),
+# residualized on implied total so it is ORTHOGONAL to the env term (NOT double-counting, PLAYBOOK
+# C5), and REPLICATED across both seasons (trailing corr +0.12/+0.14; RB mirror -0.34/-0.37).
+# Coefficients = forward-usable (trailing) DK slope / position-group DK baseline:
+#   PC(WR/TE) +0.674/45.2 = +0.015    RB -0.285/22.6 = -0.013    QB +0.289/17.0 -> +0.010 (shrunk:
+#   single-year, weaker r=+0.14). Input: proe_tendency_2026.json = 2025 ACTUAL + bounded carousel
+# assumption. Capped so it refines, never dominates. This is the validated replacement for the
+# reverted, mis-signed script_mult (K_SCRIPT_*=0).
+K_PROE_PC = 0.015    # WR/TE: +0.674 DK/pt / 45.2 base; script-FLAT (slopes +0.55..+0.76), stays static
+K_PROE_RB = -0.011   # RB NON-LED baseline: -0.23 DK/pt / 22.6 base (was -0.013 = script-avg; re-based)
+K_PROE_QB = 0.010    # QB shrunk (single-year, r=+0.14)
+PROE_CAP  = 0.12
+# --- RB script coupling (validate_proe_conversion.py interaction probe) ---------------------------
+# The RB conversion is the one piece that is SCRIPT-dependent: the RB slope roughly DOUBLES when a
+# team actually LEADS (-0.43 DK/pt led vs -0.23 close/trailed) — low-PROE favorites pound the rock in
+# a lead (RB resid +7.0), high-PROE favorites keep throwing (RB resid -2.9). Data shows trailing ~=
+# close, so amplification is ONE-SIDED: baseline off a lead, scaled UP by the sim's projected lead_big_p.
+# This is where game_sim's script distribution finally feeds player scoring. Center = observed
+# lead_big_p mean (~22); LEAD_AMP set so a heavy favorite (~40) gets ~1.8x the RB tilt; capped 2x.
+SCRIPT_CENTER = 22.0
+LEAD_AMP      = 0.8
+LEAD_AMP_CAP  = 2.0
+_pt = J('proe_tendency_2026.json').get('teams', {})
+PROE_2026 = {ab(t): d.get('proe_2026') for t, d in _pt.items()}
+
+def _rb_lead_amp(team):
+    """RB-tilt amplifier from the sim's projected lead_big_p; 1.0 off a lead, up to LEAD_AMP_CAP."""
+    lb = (SCRIPT.get(team) or SCRIPT.get(ab(team)) or {}).get('lead_big', SCRIPT_CENTER)
+    return min(LEAD_AMP_CAP, 1.0 + LEAD_AMP * max(0.0, (lb - SCRIPT_CENTER) / SCRIPT_CENTER))
+
+def proe_convert(pos, team):
+    """WR/TE up, RB down (amplified when the sim projects a lead), QB up-small as team PROE rises."""
+    p = PROE_2026.get(ab(team))
+    if p is None:
+        return 1.0
+    if pos == 'RB':
+        k = K_PROE_RB * _rb_lead_amp(team)
+    elif pos == 'QB':
+        k = K_PROE_QB
+    else:
+        k = K_PROE_PC
+    m = 1 + k * p
+    return max(1 - PROE_CAP, min(1 + PROE_CAP, m))
+
+# ---- Red-zone / TD-equity multiplier (build_rz_equity.py; validated) --------------------------
+# The implied total sets team points; RZ role sets WHO gets the 6-point plays. Validated: RZ target
+# share -> end-zone TDs (r=+0.29, WR/TE); RB TD/game is YoY-stable (r=+0.51). Wired as an INTERACTION
+# with the implied total (not a flat bonus): a goal-line-dominant player captures MORE of the team's
+# TDs when there is more scoring to capture, and nothing when the team is implied low. Centered so
+# average-role players are unaffected and the baseline TD rate (already in the ceiling) is not
+# double-counted. RB steeper than PC (backs are more TD-dependent). Capped so it refines, not dominates.
+K_RZ_PC = 0.025
+K_RZ_RB = 0.040
+RZ_CAP  = 0.10
+_rz = J('rz_equity_2026.json').get('teams', {})
+RZ_Z = {fn(k): v.get('rz_role_z') for k, v in _rz.items()}
+
+def rz_convert(pos, name, imp):
+    """TD-equity tilt scaled by the implied total; 1.0 for average-role players or low-total teams."""
+    z = RZ_Z.get(fn(name))
+    if z is None or imp is None:
+        return 1.0
+    k = K_RZ_RB if pos == 'RB' else (K_RZ_PC if pos in ('WR', 'TE') else 0.0)
+    if k == 0.0:
+        return 1.0
+    env_scale = max(0.0, min(1.5, (imp - 21) / 7.0))   # TDs matter only when there is scoring to capture
+    m = 1 + k * z * env_scale
+    return max(1 - RZ_CAP, min(1 + RZ_CAP, m))
 profiles = J('profiles/player_profiles.json')
 ctx = J('cc_context.json')
 corr = J('pipeline/correlation_structure.json')
@@ -167,13 +275,19 @@ for f in feat:
     opp_blk = c.get('opp') or {}
     if (opp_blk.get('team_vacated_tgt') or 0) and opp_blk['team_vacated_tgt'] > 40:
         quals.append(f"{opp_blk['team_vacated_tgt']:.0f}% team tgts vacated")
-    # weekly play score: ceiling-anchored, matchup-tilted, environment (implied total)-aware
+    # weekly play score: ceiling-anchored, matchup-tilted, environment (implied total)-aware, then
+    # PROE-CONVERTED (run/pass reallocation within the team — validate_proe_conversion.py). script_mult
+    # is retained plumbing but zeroed (reverted, mis-signed); proe_convert is the validated replacement.
     base = (ceil or (proj * 2.2 if proj else 0)) or 0
-    play = round(base * (1 + edge_score / 250.0) * (1 + ((imp or 21) - 21) / 60.0), 1)
+    smult = script_mult(pos, team)
+    pconv = proe_convert(pos, team)
+    rzm = rz_convert(pos, name, imp)
+    play = round(base * (1 + edge_score / 250.0) * (1 + ((imp or 21) - 21) / 60.0) * smult * pconv * rzm, 1)
     players.append({'name': name, 'pos': pos, 'team': team, 'opp': opp, 'home': home, 'dome': dome,
                     'proj': proj, 'ceil': ceil, 'total': total, 'imp': imp,
                     'edges': edges, 'n_smash': len(smash), 'edge_score': edge_score,
-                    'quals': quals[:4], 'play': play})
+                    'quals': quals[:4], 'script_mult': round(smult, 3),
+                    'proe_mult': round(pconv, 3), 'rz_mult': round(rzm, 3), 'play': play})
 
 players.sort(key=lambda p: -p['play'])
 for i, p in enumerate(players):

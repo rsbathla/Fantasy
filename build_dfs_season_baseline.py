@@ -19,7 +19,7 @@ OUTPUT_JSON = os.path.join(SCRIPT_DIR, "dfs_season_baseline.json")
 PLAYER_FIELDS = {
     "name", "pos", "team", "opp", "play", "edge_score",
     "n_smash", "imp", "total", "ceil", "proj", "rank",
-    "pos_rank", "home", "dome", "edges"
+    "pos_rank", "home", "dome", "edges", "script_mult", "proe_mult", "rz_mult"
 }
 
 TOP_N_BY_PLAY = 60

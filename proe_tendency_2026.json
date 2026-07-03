@@ -1,0 +1,239 @@
+{
+  "_meta": {
+    "purpose": "Per-team 2026 PROE tendency = 2025 ACTUAL PROE + bounded directional carousel assumption. Feeds dfs_model.proe_convert (pass-catchers UP / RBs DOWN as team PROE rises), calibrated by validate_proe_conversion.py.",
+    "base_provenance": "data/fantasypoints/proe_offense_2025.csv \u2014 VERIFIED 2025 actual (ground truth).",
+    "carousel_provenance": "COACHING_CHANGES_2026.md off-lean column (verified coaching facts). The numeric PROE delta is a MODELED ASSUMPTION: STEP=1.0 pt/step, cap +-2.5.",
+    "concept_caveat": "off-lean labels are RAW run/pass identity; PROE is pass-over-EXPECTED. Correlated, not identical \u2014 hence the carousel is a gentle nudge only, kept subordinate to the measured 2025 base (league SD ~3.6).",
+    "warning": "proe_2026 is NOT a fact. proe_2025 is actual; carousel_adj is an assumption. Never present proe_2026 as a posted/known number.",
+    "built_from": [
+      "data/fantasypoints/proe_offense_2025.csv",
+      "COACHING_CHANGES_2026.md"
+    ]
+  },
+  "teams": {
+    "ARI": {
+      "proe_2025": 7.3,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": 8.3,
+      "note": "carousel off-lean 'RUN\u2192BALANCED' (+1 step) -> +1.0 PROE assumed"
+    },
+    "ATL": {
+      "proe_2025": -2.7,
+      "carousel_adj": -1.0,
+      "carousel_assumption": true,
+      "proe_2026": -3.7,
+      "note": "carousel off-lean 'BALANCED\u2192RUN' (-1 step) -> -1.0 PROE assumed"
+    },
+    "BAL": {
+      "proe_2025": -6.3,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": -5.3,
+      "note": "carousel off-lean 'BALANCED\u2192PASS' (+1 step) -> +1.0 PROE assumed"
+    },
+    "BUF": {
+      "proe_2025": -3.0,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": -3.0,
+      "note": "new coordinator; lean noted 'RUN', no directional arrow -> 2025 retained"
+    },
+    "CAR": {
+      "proe_2025": -4.0,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": -4.0,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "CHI": {
+      "proe_2025": -1.0,
+      "carousel_adj": -2.0,
+      "carousel_assumption": true,
+      "proe_2026": -3.0,
+      "note": "carousel off-lean 'PASS\u2192RUN' (-2 step) -> -2.0 PROE assumed"
+    },
+    "CIN": {
+      "proe_2025": 4.3,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 4.3,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "CLE": {
+      "proe_2025": -1.3,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": -0.3,
+      "note": "carousel off-lean 'BALANCED\u2192PASS' (+1 step) -> +1.0 PROE assumed"
+    },
+    "DAL": {
+      "proe_2025": 1.7,
+      "carousel_adj": -1.0,
+      "carousel_assumption": true,
+      "proe_2026": 0.7,
+      "note": "carousel off-lean 'PASS\u2192BALANCED' (-1 step) -> -1.0 PROE assumed"
+    },
+    "DEN": {
+      "proe_2025": 5.5,
+      "carousel_adj": -2.0,
+      "carousel_assumption": true,
+      "proe_2026": 3.5,
+      "note": "carousel off-lean 'PASS\u2192RUN' (-2 step) -> -2.0 PROE assumed"
+    },
+    "DET": {
+      "proe_2025": -0.1,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": -0.1,
+      "note": "new coordinator; lean noted 'PASS', no directional arrow -> 2025 retained"
+    },
+    "GB": {
+      "proe_2025": -2.1,
+      "carousel_adj": -2.0,
+      "carousel_assumption": true,
+      "proe_2026": -4.1,
+      "note": "carousel off-lean 'PASS\u2192RUN' (-2 step) -> -2.0 PROE assumed"
+    },
+    "HOU": {
+      "proe_2025": 1.7,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 1.7,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "IND": {
+      "proe_2025": 1.0,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 1.0,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "JAX": {
+      "proe_2025": 4.3,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 4.3,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "KC": {
+      "proe_2025": 6.8,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 6.8,
+      "note": "new coordinator; lean noted 'BALANCED', no directional arrow -> 2025 retained"
+    },
+    "LAC": {
+      "proe_2025": 3.4,
+      "carousel_adj": -1.0,
+      "carousel_assumption": true,
+      "proe_2026": 2.4,
+      "note": "carousel off-lean 'BALANCED\u2192RUN' (-1 step) -> -1.0 PROE assumed"
+    },
+    "LAR": {
+      "proe_2025": 5.8,
+      "carousel_adj": -1.0,
+      "carousel_assumption": true,
+      "proe_2026": 4.8,
+      "note": "carousel off-lean 'PASS\u2192BALANCED' (-1 step) -> -1.0 PROE assumed"
+    },
+    "LV": {
+      "proe_2025": 0.5,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": 1.5,
+      "note": "carousel off-lean 'BALANCED\u2192PASS' (+1 step) -> +1.0 PROE assumed"
+    },
+    "MIA": {
+      "proe_2025": -4.2,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": -4.2,
+      "note": "new coordinator; lean noted 'BALANCED', no directional arrow -> 2025 retained"
+    },
+    "MIN": {
+      "proe_2025": 0.2,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 0.2,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "NE": {
+      "proe_2025": 5.4,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 5.4,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "NO": {
+      "proe_2025": -0.6,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": -0.6,
+      "note": "no 2026 coaching change on file -> 2025 tendency retained"
+    },
+    "NYG": {
+      "proe_2025": -2.0,
+      "carousel_adj": 2.0,
+      "carousel_assumption": true,
+      "proe_2026": 0.0,
+      "note": "carousel off-lean 'RUN\u2192PASS' (+2 step) -> +2.0 PROE assumed"
+    },
+    "NYJ": {
+      "proe_2025": -6.7,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": -5.7,
+      "note": "carousel off-lean 'BALANCED\u2192PASS' (+1 step) -> +1.0 PROE assumed"
+    },
+    "PHI": {
+      "proe_2025": 0.4,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": 0.4,
+      "note": "new coordinator; lean noted 'RUN', no directional arrow -> 2025 retained"
+    },
+    "PIT": {
+      "proe_2025": 1.4,
+      "carousel_adj": -2.0,
+      "carousel_assumption": true,
+      "proe_2026": -0.6,
+      "note": "carousel off-lean 'PASS\u2192RUN' (-2 step) -> -2.0 PROE assumed"
+    },
+    "SEA": {
+      "proe_2025": -2.8,
+      "carousel_adj": -1.0,
+      "carousel_assumption": true,
+      "proe_2026": -3.8,
+      "note": "carousel off-lean 'BALANCED\u2192RUN' (-1 step) -> -1.0 PROE assumed"
+    },
+    "SF": {
+      "proe_2025": 2.2,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": 3.2,
+      "note": "carousel off-lean 'BALANCED\u2192PASS' (+1 step) -> +1.0 PROE assumed"
+    },
+    "TB": {
+      "proe_2025": -0.3,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": 0.7,
+      "note": "carousel off-lean 'BALANCED\u2192PASS' (+1 step) -> +1.0 PROE assumed"
+    },
+    "TEN": {
+      "proe_2025": -1.1,
+      "carousel_adj": 1.0,
+      "carousel_assumption": true,
+      "proe_2026": -0.1,
+      "note": "carousel off-lean 'BALANCED\u2192PASS' (+1 step) -> +1.0 PROE assumed"
+    },
+    "WAS": {
+      "proe_2025": -2.3,
+      "carousel_adj": 0.0,
+      "carousel_assumption": false,
+      "proe_2026": -2.3,
+      "note": "new coordinator; lean noted 'BALANCED', no directional arrow -> 2025 retained"
+    }
+  }
+}

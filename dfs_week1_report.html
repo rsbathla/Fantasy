@@ -1,344 +1,264 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Week 1 · 2026 DFS Report</title>
-<style>
-  :root{
-    --bg:#f5f7fa; --surface:#ffffff; --surface-2:#eef2f7;
-    --text:#16202c; --muted:#5a6b7d; --muted-2:#8a97a6; --line:#d7dde6;
-    --accent:#2f6dbf; --accent-soft:#4ea1ff; --good:#2f9e6b; --warn:#c8791f; --bad:#c8456a; --info:#3b8ef0;
-    --qb:#e0567a; --rb:#37b87a; --wr:#3b8ef0; --te:#e8a33d;
-    --radius:12px; --radius-sm:6px;
-    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
-    font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:880px;margin:0 auto;padding:0 22px 96px}
-  .sheet{background:var(--surface);margin-top:26px;border:1px solid var(--line);
-    border-radius:var(--radius);padding:44px 52px 52px;box-shadow:0 1px 3px rgba(20,40,60,.05)}
-
-  /* masthead */
-  .kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
-    font-weight:700;margin:0 0 6px}
-  h1{font-size:40px;line-height:1.08;letter-spacing:-.02em;margin:0 0 10px;font-weight:800}
-  .dateline{color:var(--muted);font-size:14.5px;margin:0 0 20px}
-  .rule{height:4px;background:linear-gradient(90deg,var(--accent),var(--accent-soft));
-    border-radius:2px;margin:0 0 26px;width:100%}
-  .lead{font-size:18.5px;line-height:1.6;color:#25323f;margin:0 0 8px}
-  .lead b{color:var(--text)}
-
-  h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
-    font-weight:700;margin:44px 0 4px;padding-top:22px;border-top:1px solid var(--line)}
-  h2 .sub{display:block;text-transform:none;letter-spacing:normal;font-size:24px;
-    color:var(--text);font-weight:800;margin-top:7px;line-height:1.2}
-  h3{font-size:18px;margin:26px 0 2px;font-weight:800;letter-spacing:-.01em}
-  p{margin:11px 0}
-  .muted{color:var(--muted)}
-  small{font-size:13px}
-
-  /* chips */
-  .chip{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.04em;
-    padding:2px 8px;border-radius:999px;vertical-align:middle;line-height:1.5;white-space:nowrap}
-  .pos{color:#fff}
-  .pos.QB{background:var(--qb)} .pos.RB{background:var(--rb)}
-  .pos.WR{background:var(--wr)} .pos.TE{background:var(--te)}
-  .t-elite{background:#1d3a5f;color:#fff}
-  .t-high{background:#dcebfa;color:#1c4e86}
-  .t-mid{background:var(--surface-2);color:var(--muted);border:1px solid var(--line)}
-  .t-low{background:#f7ede1;color:var(--warn);border:1px solid #ecd6b8}
-  .c-smash{background:#e3f5ec;color:var(--good);border:1px solid #bfe6d1}
-  .c-lev{background:#e7f0fb;color:var(--accent);border:1px solid #c6ddf5}
-  .c-obv{background:#faf0df;color:var(--warn);border:1px solid #eeddbf}
-
-  /* env board table */
-  table{width:100%;border-collapse:collapse;margin:16px 0 6px;font-size:14.5px}
-  th{ text-align:left;color:var(--muted);font-weight:700;font-size:11px;letter-spacing:.08em;
-    text-transform:uppercase;padding:0 10px 8px;border-bottom:2px solid var(--line)}
-  td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
-  td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
-  tr:last-child td{border-bottom:none}
-  .tier-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:middle}
-  .d-elite{background:#1d3a5f}.d-high{background:var(--info)}.d-mid{background:var(--muted-2)}.d-low{background:var(--warn)}
-
-  /* game note */
-  .game{padding:16px 0 15px;border-bottom:1px solid var(--line)}
-  .game:last-child{border-bottom:none}
-  .game .gh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:2px}
-  .game .gt{font-size:17px;font-weight:800;letter-spacing:-.01em}
-  .game .gv{font-variant-numeric:tabular-nums;color:var(--muted);font-weight:700;font-size:14px}
-  .game p{margin:6px 0 0;font-size:14.7px;line-height:1.55}
-  .names{color:var(--muted);font-size:13.5px}
-
-  /* team case */
-  .team{padding:18px 20px;border:1px solid var(--line);border-radius:var(--radius-sm);
-    margin:14px 0;background:var(--surface)}
-  .team .th{display:flex;align-items:center;gap:10px;margin-bottom:2px}
-  .team .tn{font-size:18px;font-weight:800}
-  .team p{margin:8px 0 0;font-size:15px}
-
-  /* player */
-  .plr{padding:15px 0 14px;border-bottom:1px solid var(--line)}
-  .plr:last-child{border-bottom:none}
-  .plr .ph{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-  .plr .pn{font-size:17px;font-weight:800}
-  .plr .pmeta{color:var(--muted);font-size:13.5px;font-weight:600}
-  .plr p{margin:7px 0 0;font-size:15px;line-height:1.56}
-
-  .note{background:var(--surface-2);border-radius:var(--radius-sm);padding:16px 20px;margin:16px 0;
-    font-size:14.5px;color:#2b3742}
-  .note b{color:var(--text)}
-  .foot{margin-top:20px;font-size:13px;color:var(--muted);line-height:1.55}
-  .foot h2{color:var(--muted)}
-  ul.tight{margin:8px 0;padding-left:20px}
-  ul.tight li{margin:5px 0;font-size:14.7px}
-  a{color:var(--accent);text-decoration:none}
-  @media (max-width:640px){ .sheet{padding:28px 20px 36px} h1{font-size:30px} .lead{font-size:16.5px} }
-  @media print{ body{background:#fff} .sheet{border:none;box-shadow:none;margin:0;padding:0}
-    h2{break-after:avoid} .game,.team,.plr{break-inside:avoid} }
-</style>
-</head>
-<body>
-<div class="wrap">
-<div class="sheet">
-
-  <p class="kicker">2026 DFS · Weekly Report</p>
-  <h1>Week 1</h1>
-  <p class="dateline">Forward-looking baseline · Vegas O/U × team-ceiling blend + frequency-weighted charting matchups · offseason edition (no live slate yet)</p>
-  <div class="rule"></div>
-
-  <p class="lead">Sixteen games, four of them sitting at a <b>50-point Vegas total or higher</b>. Below are the neutral game-by-game notes first — read them and form your own slate before scrolling to the summary and the plays. The one thing worth knowing up front: after we corrected the matchup model to account for <b>how often each defense actually plays man vs zone</b>, most of the marquee names grade as ceiling-and-environment plays rather than matchup smashes, and the genuine coverage edges land on a handful of secondary pieces.</p>
-
-  <!-- ============ HOW TO READ (process only, no conclusions) ============ -->
-  <h2>Before you start<span class="sub">How to read this — the method, not the verdict</span></h2>
-  <p><b>Environments are Vegas-anchored, team-ceiling adjusted.</b> The game totals and implied team totals are the posted 2026 look-ahead O/U (pulled by ffdataroma and cross-checked against a book screenshot) — real market numbers, not our own projection. But the environment <i>ranking</i> is not the O/U alone: each game gets a small adjustment (±3.5 max) from the two teams' season-ceiling conditions — pace, pass rate, scheme upgrade, QB ascension, shootout script — the upside layer a median market number under-expresses. Vegas is the anchor; the ceiling layer re-orders comparable games but can never override the market. Both numbers are shown everywhere.</p>
-  <p><b>The matchup edge is charting vs charting, now frequency-weighted.</b> A player's man/zone/deep percentiles are lined up against this week's opponent on the same axis — and, new this version, discounted by how often that defense actually plays the coverage. A man-beater versus a defense that plays man 20% of the time (like San Francisco) no longer gets credit for a "man smash" that will barely appear. A "SMASH" chip means a real, frequency-weighted edge.</p>
-  <p><b>No salaries or ownership exist yet.</b> DraftKings/FanDuel haven't posted 2026 slates, so there is no salary value and no ownership leverage in this edition — everything here is projected points and matchup, i.e., the plays everyone can see. That also means we are <i>not</i> using best-ball ADP as a stand-in for DFS cost; ADP is a season-long draft signal and is left out entirely. Where we flag "leverage," it is <b>structural</b> (a bring-back side, a secondary pass-catcher, a favorite whose blow-out script the game total hides), and it only becomes real leverage once ownership posts.</p>
-
-  <!-- ============ ENVIRONMENT BOARD ============ -->
-  <h2>The board<span class="sub">Every game — Vegas O/U, blend-ranked</span></h2>
-  <table>
-    <thead><tr><th>Game</th><th>Tier</th><th class="num">O/U</th><th class="num">Blend</th><th>Favorite / implied edge</th></tr></thead>
-    <tbody>
-      <tr><td><b>TB @ CIN</b></td><td><span class="tier-dot d-elite"></span>Elite</td><td class="num">50.0</td><td class="num">52.6</td><td class="muted">CIN −5.0</td></tr>
-      <tr><td><b>DAL @ NYG</b></td><td><span class="tier-dot d-elite"></span>Elite</td><td class="num">50.5</td><td class="num">52.2</td><td class="muted">DAL −1.0 (near pick-em)</td></tr>
-      <tr><td><b>SF @ LAR</b></td><td><span class="tier-dot d-elite"></span>Elite</td><td class="num">50.0</td><td class="num">51.6</td><td class="muted">LAR −4.0</td></tr>
-      <tr><td><b>BAL @ IND</b></td><td><span class="tier-dot d-elite"></span>Elite</td><td class="num">50.0</td><td class="num">49.4</td><td class="muted">BAL −3.0</td></tr>
-      <tr><td><b>NO @ DET</b></td><td><span class="tier-dot d-high"></span>High</td><td class="num">47.5</td><td class="num">48.4</td><td class="muted">DET −7.5</td></tr>
-      <tr><td><b>ARI @ LAC</b></td><td><span class="tier-dot d-mid"></span>Mid</td><td class="num">45.0</td><td class="num">46.6</td><td class="muted">LAC −13.0 → LAC implied 29 (slate high)</td></tr>
-      <tr><td><b>WAS @ PHI</b></td><td><span class="tier-dot d-high"></span>High</td><td class="num">47.5</td><td class="num">46.5</td><td class="muted">PHI −6.5</td></tr>
-      <tr><td><b>BUF @ HOU</b></td><td><span class="tier-dot d-mid"></span>Mid</td><td class="num">46.5</td><td class="num">46.0</td><td class="muted">HOU −0.5 (pick-em)</td></tr>
-      <tr><td><b>NE @ SEA</b></td><td><span class="tier-dot d-mid"></span>Mid</td><td class="num">45.0</td><td class="num">46.0</td><td class="muted">SEA −3.5</td></tr>
-      <tr><td><b>GB @ MIN</b></td><td><span class="tier-dot d-mid"></span>Mid</td><td class="num">46.0</td><td class="num">44.8</td><td class="muted">GB −1.0</td></tr>
-      <tr><td><b>CHI @ CAR</b></td><td><span class="tier-dot d-mid"></span>Mid</td><td class="num">45.5</td><td class="num">44.5</td><td class="muted">CHI −2.5</td></tr>
-      <tr><td><b>DEN @ KC</b></td><td><span class="tier-dot d-low"></span>Low</td><td class="num">42.5</td><td class="num">44.0</td><td class="muted">KC −3.5</td></tr>
-      <tr><td><b>ATL @ PIT</b></td><td><span class="tier-dot d-mid"></span>Mid</td><td class="num">43.0</td><td class="num">41.5</td><td class="muted">near pick-em</td></tr>
-      <tr><td><b>CLE @ JAX</b></td><td><span class="tier-dot d-low"></span>Low</td><td class="num">41.5</td><td class="num">40.7</td><td class="muted">JAX −6.0</td></tr>
-      <tr><td><b>NYJ @ TEN</b></td><td><span class="tier-dot d-low"></span>Low</td><td class="num">41.0</td><td class="num">39.4</td><td class="muted">TEN −3.0</td></tr>
-      <tr><td><b>MIA @ LV</b></td><td><span class="tier-dot d-low"></span>Low</td><td class="num">42.0</td><td class="num">39.1</td><td class="muted">LV −4.0</td></tr>
-    </tbody>
-  </table>
-  <p class="muted"><small>The blend column is what the O/U alone hides: <b>CIN/TB</b> overtakes the higher-total DAL/NYG because both offenses grade elite-ceiling, and <b>ARI @ LAC</b> — only a 45.0 game — climbs onto the top-six bubble on two high-ceiling offenses. LAC is also the sharper lesson in implied totals: 13-point favorites, implied 29, the highest team number of the week. Blend ranks the game; implied total ranks the team inside it.</small></p>
-
-  <!-- ============ GAME NOTES (FIRST — neutral) ============ -->
-  <h2>Game by game<span class="sub">The neutral read, before any conclusions</span></h2>
-
-  <div class="game">
-    <div class="gh"><span class="gt">DAL @ NYG</span> <span class="chip t-elite">ELITE</span> <span class="gv">O/U 50.5 · blend 52.2 · DAL −1.0</span></div>
-    <p>The slate's top total, and almost a pick-em (Dallas implied 26.0, New York 25.0), which is what makes it the cleanest game to attack from either side. Both defenses leak: the Giants grade 11th-percentile against the run and have a beatable perimeter corner, while Dallas has tilted toward stopping the pass and can be run on. Two fast, pass-leaning offenses. The model's soft spots are the Giants secondary on <b>deep and zone routes</b> (Dallas: CeeDee Lamb, George Pickens) and the Dallas run funnel (New York: Malik Nabers, Jaxson Dart, Cam Skattebo).</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">BAL @ IND</span> <span class="chip t-elite">ELITE</span> <span class="gv">O/U 50.0 · blend 49.4 · BAL −3.0</span></div>
-    <p>Both offenses run slow, so this is an efficiency-driven 50 rather than a track meet — points come from touchdowns, not 70-play volume. Indianapolis's coverage is soft to WRs and TEs; Baltimore's defense has shifted to stopping the run and leaves a beatable top corner. Model tags: Zay Flowers, Lamar Jackson and Mark Andrews for Baltimore (Flowers with real edges into a soft Indy zone), and Alec Pierce, Daniel Jones, Josh Downs for Indianapolis.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">TB @ CIN</span> <span class="chip t-elite">ELITE</span> <span class="gv">O/U 50.0 · blend 52.6 · CIN −5.0</span></div>
-    <p>Cincinnati is the biggest favorite among the elite-total games and gets the softest pass funnel on the board: Tampa Bay's coverage grades 5th-percentile and its run defense 17th. Both fast offenses. One structural quirk to respect — Cincinnati's defense is a <b>"WR fortress" but soft to TEs and RBs</b>, so the Tampa Bay side of the bring-back flows through Cade Otton and the backfield rather than the wideouts. Model tags: Tee Higgins, Joe Burrow, Chase Brown (CIN); Baker Mayfield, Emeka Egbuka, Cade Otton (TB).</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">SF @ LAR</span> <span class="chip t-elite">ELITE</span> <span class="gv">O/U 50.0 · blend 51.6 · LAR −4.0</span></div>
-    <p>A 50-total dome game, but the coverage matchups are quiet: San Francisco's defense exposes <b>no clear funnel</b> (which is exactly why the Rams' pass-catchers grade as environment plays, not matchup smashes — see the Nacua note below), and the Rams' defense is average with a beatable top corner. Model tags: none flagged on the Rams' side; Ricky Pearsall and Mike Evans for San Francisco. This is a game you play for the total and the ceilings, not for a defensive weakness.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">NO @ DET</span> <span class="chip t-high">HIGH</span> <span class="gv">O/U 47.5 · blend 48.4 · DET −7.5</span></div>
-    <p>The largest spread among the high-total games, and the softest overall defense the slate offers: New Orleans grades 14th-percentile in coverage and 5th against the run. Detroit is a fast, balanced offense pointed at a defense with no answer. The model lights up the Lions — Jahmyr Gibbs, Isiah Pacheco and Jared Goff — with Gibbs carrying a genuine run-defense smash. New Orleans can throw on a Detroit secondary that's soft in the slot (Chris Olave, Juwan Johnson).</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">WAS @ PHI</span> <span class="chip t-high">HIGH</span> <span class="gv">O/U 47.5 · blend 46.5 · PHI −6.5</span></div>
-    <p>Philadelphia gets a Washington defense grading 8th-percentile in coverage and 2nd against the run — one of the most exploitable units on the board. The Eagles are fast and balanced; the model flags DeVonta Smith, Jalen Hurts and Saquon Barkley. The reverse funnel matters on the Washington side: Philadelphia is a <b>WR and TE fortress but soft to RBs</b>, so the bring-back is Rachaad White, not the wideouts.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">BUF @ HOU</span> <span class="chip t-mid">MID</span> <span class="gv">O/U 46.5 · blend 46.0 · HOU −0.5</span></div>
-    <p>A pick-em with a mid total, and both defenses play "fortress" against wide receivers. That pushes the value to running backs and tight ends: Houston can be run on (David Montgomery, Woody Marks), and Buffalo's one exposed axis is the tight end (Dalton Kincaid). Not a wideout game.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">GB @ MIN</span> <span class="chip t-mid">MID</span> <span class="gv">O/U 46.0 · blend 44.8 · GB −1.0</span></div>
-    <p>Two slow offenses, near pick-em. Minnesota's run defense grades 14th-percentile soft, which is the game's clearest funnel — but Minnesota is also a WR fortress, so Green Bay's edge is its backs and tight end (Christian Watson, Tucker Kraft, Matthew Golden) more than the perimeter. The Vikings' backfield (Aaron Jones, Jordan Mason) is the reciprocal angle.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">CHI @ CAR</span> <span class="chip t-mid">MID</span> <span class="gv">O/U 45.5 · blend 44.5 · CHI −2.5</span></div>
-    <p>Chicago is fast and gets a Carolina defense soft to the run with a beatable top corner (Luther Burden III, Colston Loveland, Rome Odunze). Carolina attacks back into a Chicago secondary exposed on the boundary (Jalen Coker, Tetairoa McMillan, Chuba Hubbard). A live mid-total game on both sides.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">ARI @ LAC</span> <span class="chip t-mid">MID</span> <span class="gv">O/U 45.0 · blend 46.6 · LAC −13.0</span></div>
-    <p>The total says mid, but the 13-point spread makes the Chargers the story: implied 29, the highest team total on the slate, in a likely blow-out script. Arizona's defense has shifted toward the pass and grades soft in coverage and to the tight end (Oronde Gadsden II, Quentin Johnston, Omarion Hampton — Hampton with a run-defense smash). Arizona itself is a heavy passing offense but runs into a Chargers WR fortress, so its value routes through the backfield.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">NE @ SEA</span> <span class="chip t-mid">MID</span> <span class="gv">O/U 45.0 · blend 46.0 · SEA −3.5</span></div>
-    <p>Two slow offenses. Seattle can attack a New England secondary soft to WRs/TEs (no individual smash cleared the frequency filter), and New England's one open axis is the tight end into a Seattle defense soft to the position (Hunter Henry). A muted game to build around.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">ATL @ PIT</span> <span class="chip t-mid">MID</span> <span class="gv">O/U 43.0 · blend 41.5 · pick-em</span></div>
-    <p>Pittsburgh's defense is a tight-end fortress and hard to attack; Atlanta's is the softer side, leaking to WRs/TEs with a run defense grading 20th-percentile. That makes the Atlanta pass game (Drake London, Kyle Pitts, Michael Penix Jr.) the cleaner side of a middling total.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">DEN @ KC</span> <span class="chip t-low">LOW</span> <span class="gv">O/U 42.5 · blend 44.0 · KC −3.5</span></div>
-    <p>Low total, and neither defense presents a clean funnel. The model's read is to fade both offenses in a vacuum — the environment suppresses ceilings. Denver's pass-catchers (Waddle, Sutton) are the only flagged names, and even those are matchup-driven rather than environment-driven.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">MIA @ LV</span> <span class="chip t-low">LOW</span> <span class="gv">O/U 42.0 · blend 39.1 · LV −4.0</span></div>
-    <p>A low-total game whose only real axis is the tight end: Las Vegas can attack Miami there (Michael Mayer, Brock Bowers), and Miami into a soft Raiders coverage. Fade-leaning outside of Bowers, whose talent floats above the environment.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">CLE @ JAX</span> <span class="chip t-low">LOW</span> <span class="gv">O/U 41.5 · blend 40.7 · JAX −6.0</span></div>
-    <p>Jacksonville is a WR fortress; Cleveland is the softer defense, leaking to WRs/TEs with a beatable top corner (Jerry Jeudy, Harold Fannin Jr.). Low total, so this is a leverage-only game, not a place to anchor.</p>
-  </div>
-
-  <div class="game">
-    <div class="gh"><span class="gt">NYJ @ TEN</span> <span class="chip t-low">LOW</span> <span class="gv">O/U 41.0 · blend 39.4 · TEN −3.0</span></div>
-    <p>The lowest total on the slate. Both secondaries have a beatable top corner, so the top wideouts are the only points of interest (Garrett Wilson for the Jets; Calvin Ridley for Tennessee). Fade the environment; isolate the individual matchup if you play here at all.</p>
-  </div>
-
-  <!-- ============ OVERALL SUMMARY (after game notes) ============ -->
-  <h2>Now the read<span class="sub">Overall summary</span></h2>
-  <p>The slate concentrates its scoring at the top: four games at 50+ and two more at 47.5 hold almost all of the ceiling, and everything below is a step function lower. On the blended ranking the order inside that top group shifts — <b>CIN/TB is the No. 1 environment</b> (two elite-ceiling offenses on a 50.0 total), DAL/NYG second despite the higher O/U, and ARI/LAC climbs onto the top-six bubble. If you build one anchor game, it comes from that group.</p>
-  <p>The more useful pattern is <b>where the actual matchup edges live once you weight for coverage frequency</b>. The obvious studs in the best environments — Nacua, Chase, Smith-Njigba, St. Brown, McCaffrey — mostly grade out with <i>zero</i> frequency-weighted smashes this week. They're strong plays, but on ceiling, target share, and a rich team total, not on a defensive weakness. The genuine coverage smashes instead cluster on a smaller, less obvious group: <b>CeeDee Lamb and George Pickens</b> into a Giants secondary that's 100th-percentile soft on deep and zone; <b>Malik Nabers</b> (the highest smash count on the board, three) as the bring-back; <b>Zay Flowers</b> into a soft Indy zone; and two backs — <b>Jahmyr Gibbs</b> and <b>Omarion Hampton</b> — into bottom-five run defenses.</p>
-  <p>Two structural notes that the total alone won't tell you. First, the <b>Chargers</b> are the slate's highest implied team (29) despite only a 45 game total — a blow-out script the environment board buries, which makes the Los Angeles backfield and short passing game a quiet concentration point. Second, several of the best totals are <b>fortress-funnel</b> games where the wideouts are suppressed and the value bends to backs and tight ends: Cincinnati (soft to TE/RB, WR fortress), Philadelphia (soft to RB), Buffalo/Houston (both WR fortresses). Read the funnel before you default to the No. 1 receiver.</p>
-
-  <!-- ============ TEAM UPSIDE CASES ============ -->
-  <h2>The environments, one level deeper<span class="sub">Team upside cases</span></h2>
-  <p class="muted" style="font-size:14px">Which offenses carry real season-ceiling behind this week's total — blending the model's ceiling drivers with the quantitative offensive identity (pace, pass rate, run scheme, motion, vacated opportunity). Coordinator context is noted where the ceiling model itself credits a scheme change; see the data note at the end on why the specific new-head-coach names in the source text are being withheld.</p>
-
-  <div class="team">
-    <div class="th"><span class="tn">Dallas Cowboys</span> <span class="chip t-elite">ELITE · #3</span></div>
-    <p>The model's third-highest team ceiling, and the identity backs it: a 94 environment index, a 9.5 win total, 100th-percentile pace (65.6 plays a game), pass-leaning (55.4%) with heavy pre-snap motion (58.6%). Schottenheimer's play-calling is continuity — no scheme learning curve — and the ceiling driver the model leans on hardest is "weak own pass defense → shootout volume," reinforced by an off-season that shed corners (Bland, Lewis) and the defensive coordinator. The one caveat it flags is a rebuilt interior offensive line. This is a volume-and-shootout ceiling, and Week 1's near-pick-em 50.5 is the perfect stage for it.</p>
-  </div>
-
-  <div class="team">
-    <div class="th"><span class="tn">Detroit Lions</span> <span class="chip t-elite">ELITE</span></div>
-    <p>An elite scoring environment paired with a fast, balanced offense and a Week 1 draw (New Orleans) that grades among the softest defenses on the board. The upside is concentrated and dual-threat: Gibbs owns 56% of the backfield carries plus a receiving role, and St. Brown anchors a 32% target share with a +motion scheme fit. When the environment and the matchup agree like this, the Lions are the rare elite-ceiling team that is <i>also</i> a clean matchup — Gibbs is the only top-of-slate stud carrying a genuine smash.</p>
-  </div>
-
-  <div class="team">
-    <div class="th"><span class="tn">Cincinnati Bengals</span> <span class="chip t-elite">ELITE</span></div>
-    <p>Elite environment, pass-heavy identity (58%), and the biggest implied edge (−5) among the 50-total games. The ceiling is a Burrow-to-Chase/Higgins passing tree against a Tampa Bay coverage grading 5th-percentile. The nuance for weekly builds: Chase and Higgins are volume-and-ceiling plays here rather than matchup smashes (Tampa Bay's softness doesn't line up with Chase's zone-beating profile once frequency-weighted), so you're paying for talent and total, which in an elite environment is a fair price.</p>
-  </div>
-
-  <div class="team">
-    <div class="th"><span class="tn">New York Giants</span> <span class="chip t-high">HIGH · sleeper</span></div>
-    <p>The most interesting upside case on the slate because it doesn't look like one. A HIGH team ceiling built on four drivers: an up-tempo offense (63.5 plays a game), an ascending second-year quarterback (Jaxson Dart), a verified scheme upgrade — new HC John Harbaugh with OC Matt Nagy calling an Andy Reid-tree offense (heavy RPO, pre-snap motion, screens: KC ran the 2nd-most RPOs in 2025, and Dart comes from an RPO college system) — and the slate's most concentrated target tree, a 166% vacated-target index funneling to Malik Nabers (who adds a +motion fit). Pair that with a weak own pass defense (shootout script), and you have a cheap environment with a real ceiling in a near-pick-em 50.5 game.</p>
-  </div>
-
-  <div class="team">
-    <div class="th"><span class="tn">Baltimore Ravens</span> <span class="chip t-high">HIGH</span></div>
-    <p>An elite scoring environment and an 11.5 win total, but read the identity carefully: Baltimore runs <i>slow</i> (10th-percentile pace, 59.8 plays a game) and run-leaning (46.5% pass). This is an efficiency ceiling, not a volume one — points arrive as touchdowns, so the tree is tight and top-heavy around Lamar Jackson, with Zay Flowers (+motion, +vertical fit) the concentrated pass-game beneficiary and the one Raven with a genuine Week 1 smash into a soft Indy zone. The 2026 scheme change is real and verified: new HC Jesse Minter with OC Declan Doyle, whose Bears offense led the league in outside-zone success and ran play-action a third of dropbacks — more motion, more play-action, more manufactured touches than the Monken offense it replaces.</p>
-  </div>
-
-  <div class="team">
-    <div class="th"><span class="tn">Los Angeles Chargers</span> <span class="chip t-high">HIGH · buried by total</span></div>
-    <p>The team the environment board hides. A 45.0 game total reads as "mid," but a 13-point spread makes the Chargers the slate's highest implied team (29) in a blow-out script — the exact condition that inflates a lead back's carry volume and a quarterback's efficiency. Omarion Hampton (49% of the carries, +RB-pass-game fit) draws a run-defense smash and a positive RB fantasy-points-allowed edge against Arizona. When a game total and a team total disagree this much, trust the team total for player selection.</p>
-  </div>
-
-  <!-- ============ BEST PLAYS (after summary) ============ -->
-  <h2>Best plays<span class="sub">Ranked by the model's play score — ceiling × frequency-weighted edge × implied total</span></h2>
-  <p class="muted" style="font-size:14px">The chips separate the two ways a name earns its spot: <span class="chip c-smash">SMASH</span> a genuine, frequency-weighted matchup edge · <span class="chip c-obv">ENVIRONMENT</span> carried by total + ceiling + volume, no matchup edge · <span class="chip c-lev">STRUCTURAL LEVERAGE</span> a correlated or buried angle the field may underweight. No ownership yet, so these are qualitative, not a substitute for salary/ownership leverage.</p>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos WR">WR</span> <span class="pn">Puka Nacua</span> <span class="pmeta">LAR vs SF · 50.0 total, 27 implied</span> <span class="chip c-obv">ENVIRONMENT</span></div>
-    <p>The top play score on the board — and the cleanest illustration of the frequency fix. His headline "97th-percentile vs man" edge doesn't cash here: San Francisco plays man only 20% of the time and defends its base zone (80% of snaps) well, so his weighted smash count is <b>zero</b>. You're not playing Nacua for the matchup; you're playing a 50-total dome game, a 27-point implied team, a 99th-percentile ceiling and a 31% target share. That is plenty — just know it's environment and talent, not a defensive hole.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos WR">WR</span> <span class="pn">CeeDee Lamb</span> <span class="pmeta">DAL vs NYG · 50.5 total, 26 implied</span> <span class="chip c-smash">SMASH ×2</span></div>
-    <p>Two real edges in the slate's top game: a 94th-percentile deep profile and a 78th-percentile zone profile into a Giants secondary grading 100th-percentile soft on both. His elite man skill (99th) doesn't add a third smash — the Giants play man but defend it — but he doesn't need it. Lamb is the rare name that is both chalk-obvious and matchup-correct.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos RB">RB</span> <span class="pn">Jahmyr Gibbs</span> <span class="pmeta">DET vs NO · 47.5 total, 27.5 implied</span> <span class="chip c-smash">SMASH</span></div>
-    <p>The best environment-plus-matchup combination among running backs: an elite Detroit offense implied for 27.5 against a New Orleans run defense grading 95th-percentile soft. Gibbs carries 56% of the backfield work and a receiving role, so the volume floor is high and the ceiling is a two-way game script. The one back on the slate where total, team, and matchup all point the same direction.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos WR">WR</span> <span class="pn">Ja'Marr Chase</span> <span class="pmeta">CIN vs TB · 50.0 total, 27.5 implied</span> <span class="chip c-obv">ENVIRONMENT</span></div>
-    <p>Elite everything on the season — 98th-percentile ceiling, 32% target share, a Burrow tree in a 50-total game — but the Week 1 matchup is a mirage once weighted: Tampa Bay is soft against man (94th) yet Chase is a zone-winner (91st) facing a defense that's tough against zone and plays man just 24% of the time. Zero smashes. A ceiling-and-volume play in a great spot, not a matchup exploit.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos WR">WR</span> <span class="pn">Jaxon Smith-Njigba</span> <span class="pmeta">SEA vs NE · 45.0 total, 24 implied</span> <span class="chip c-obv">ENVIRONMENT</span></div>
-    <p>A 97th-percentile ceiling on a 35.5% target share with a +motion fit and the best year-over-year efficiency trend of any featured receiver. But the environment is only mid (45 total, 24 implied) and New England defends every coverage axis he wins, so there's no matchup smash. A talent-and-usage play whose ceiling has to overcome a merely-okay game.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos WR">WR</span> <span class="pn">Malik Nabers</span> <span class="pmeta">NYG vs DAL · 50.5 total, 25 implied</span> <span class="chip c-smash">SMASH ×3</span> <span class="chip c-lev">STRUCTURAL LEVERAGE</span></div>
-    <p>The highest smash count on the slate — three: an 88th-percentile zone profile into a 87th-soft Dallas zone (which the Cowboys play 78% of the time), a deep edge, and a positive fantasy-points-allowed edge. He's also the bring-back in the top game, funneled a 166% vacated-target share, with a +motion fit. If you want DAL @ NYG, Nabers is the correlated New York side, and the one whose matchup case is strongest.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos WR">WR</span> <span class="pn">George Pickens</span> <span class="pmeta">DAL vs NYG · 50.5 total, 26 implied</span> <span class="chip c-smash">SMASH ×2</span> <span class="chip c-lev">STRUCTURAL LEVERAGE</span></div>
-    <p>The second Dallas smash, and the structural-leverage side of the game's best stack: a 89th-percentile zone profile and a deep profile both into a Giants secondary grading 100th-soft. He wins the same axes as Lamb against the same defense — the correlated second piece in the top environment rather than the headliner.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos RB">RB</span> <span class="pn">Omarion Hampton</span> <span class="pmeta">LAC vs ARI · 45.0 total, 29 implied</span> <span class="chip c-smash">SMASH ×2</span> <span class="chip c-lev">STRUCTURAL LEVERAGE</span></div>
-    <p>The back the game total hides. Los Angeles is only a 45-total game but the slate's highest implied team (29) in a blow-out script, and Hampton draws two edges — a 89th-percentile-soft Arizona run defense plus a positive RB fantasy-points-allowed number — on 49% of the carries with a pass-game role. Environment (via implied total), matchup, and volume all align on a name the surface board underrates.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos WR">WR</span> <span class="pn">Zay Flowers</span> <span class="pmeta">BAL vs IND · 50.0 total, 26.5 implied</span> <span class="chip c-smash">SMASH ×2</span></div>
-    <p>Two edges into a soft Indianapolis zone — a 96th-percentile zone profile (they play zone 70%) and a deep edge — as the concentrated pass-game beneficiary of a Baltimore offense that just vacated 73% of its targets. The +motion, +vertical fit is the scheme cue. The caveat is pace: Baltimore is a slow, run-leaning offense, so the ceiling is efficiency, not target volume.</p>
-  </div>
-
-  <div class="plr">
-    <div class="ph"><span class="chip pos RB">RB</span> <span class="pn">Christian McCaffrey</span> <span class="pmeta">SF vs LAR · 50.0 total, 23 implied</span> <span class="chip c-obv">ENVIRONMENT</span></div>
-    <p>A 50-total game and a workhorse role — 64% of the carries plus a 23% target share, funneled a 162% vacated-target index — but San Francisco is implied for only 23 (the Rams are the favorite) and the Los Angeles run defense isn't soft (39th-percentile). Volume keeps the floor high; the lack of matchup and the modest team total keep this a role play rather than a smash.</p>
-  </div>
-
-  <!-- ============ STACKS ============ -->
-  <h2>How to build it<span class="sub">Anchor-game stacks from the top environments</span></h2>
-  <ul class="tight">
-    <li><b>DAL @ NYG (50.5)</b> — the premier stack. Lead Dallas with Dak Prescott + CeeDee Lamb and the correlated George Pickens; bring back Malik Nabers. Near-pick-em, two smash-heavy sides — the cleanest 4-piece game on the board.</li>
-    <li><b>BAL @ IND (50.0)</b> — Lamar Jackson + Zay Flowers, bring back an Indianapolis pass-catcher. Efficiency ceiling; keep it to a tight 3-piece given the slow pace.</li>
-    <li><b>TB @ CIN (50.0, top blended environment on the slate)</b> — Joe Burrow + Tee Higgins/Chase; the correct bring-back is Cade Otton or the Tampa backfield, not a Tampa wideout (Cincinnati is a WR fortress, soft to TE/RB).</li>
-    <li><b>DET vs NO (47.5)</b> — Jared Goff + Gibbs is the environment-plus-matchup anchor if you'd rather concentrate a favorite than chase a shootout.</li>
-  </ul>
-
-  <!-- ============ FOOTNOTES ============ -->
-  <div class="foot">
-    <h2 style="border-top:1px solid var(--line)">Method &amp; data notes</h2>
-    <p><b>Environment source.</b> Totals and implied totals are the posted 2026 Vegas look-ahead O/U (ffdataroma pull, cross-checked against a book screenshot; provenance recorded in the ground-truth registry). The environment RANKING is the blend from <code>env_blend.py</code>: that O/U anchored, adjusted ±3.5 max by the two teams' ceiling conditions (slope 0.10, a stated prior with a revert flag — direction user-mandated, magnitude to be backtested when 2026 actuals exist).</p>
-    <p><b>Frequency-weighted edges (new this version).</b> Man/zone matchup scores are now discounted by how often the opponent actually plays that coverage (a defense's man rate vs the league average of ~25.5%). A coverage "smash" now requires the defense to play that coverage at roughly league-average frequency or more — which removed several phantom edges (e.g., Nacua's "vs man" edge against a 20%-man San Francisco) and preserved the real ones (Lamb/Pickens/Nabers into heavy-zone-soft defenses).</p>
-    <p><b>No salaries or ownership.</b> There is no DFS salary or projected ownership for 2026 yet, so this edition can't rank value or true leverage; "structural leverage" here means correlation/implied-total angles, not ownership. Best-ball ADP is intentionally excluded — it's a season-long draft price, not a weekly DFS cost.</p>
-    <p><b>Coaching data — verified.</b> The 2026 coaching carousel encoded in the repo's coaching layers is real and web-confirmed (2026-07-03): John Harbaugh is the Giants' head coach with OC Matt Nagy; Jesse Minter leads the Ravens with OC Declan Doyle; Mike McDaniel is the Chargers' OC. An earlier draft of this note wrongly doubted those facts against stale prior knowledge — the correction, and the rule it produced (verified repo data outranks model priors), is recorded in PLAYBOOK.md and enforced by the ground-truth registry.</p>
-  </div>
-
+<title>Week 1 · 2026 DFS Report</title><style>
+:root{
+  --bg:#f5f7fa;--surface:#ffffff;--surface-2:#eef2f7;
+  --text:#16202c;--muted:#5a6b7d;--muted-2:#8a97a6;--line:#d7dde6;
+  --accent:#2f6dbf;--accent-soft:#4ea1ff;--good:#2f9e6b;--warn:#c8791f;--bad:#c8456a;--info:#3b8ef0;
+  --qb:#e0567a;--rb:#37b87a;--wr:#3b8ef0;--te:#e8a33d;
+  --radius:12px;--radius-sm:6px;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
+  font-size:16px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px 96px}
+.sheet{background:var(--surface);margin-top:26px;border:1px solid var(--line);
+  border-radius:var(--radius);padding:44px 52px 52px;box-shadow:0 1px 3px rgba(20,40,60,.05)}
+.kicker{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);
+  font-weight:700;margin:0 0 6px}
+h1{font-size:40px;line-height:1.08;letter-spacing:-.02em;margin:0 0 10px;font-weight:800}
+.dateline{color:var(--muted);font-size:14.5px;margin:0 0 20px}
+.rule{height:4px;background:linear-gradient(90deg,var(--accent),var(--accent-soft));
+  border-radius:2px;margin:0 0 26px;width:100%}
+.lead{font-size:18.5px;line-height:1.6;color:#25323f;margin:0 0 8px}
+h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);
+  font-weight:700;margin:46px 0 4px;padding-top:22px;border-top:1px solid var(--line)}
+h2 .sub{display:block;text-transform:none;letter-spacing:normal;font-size:24px;
+  color:var(--text);font-weight:800;margin-top:7px;line-height:1.2}
+p{margin:11px 0}
+.muted{color:var(--muted)}
+.callout{background:var(--surface-2);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:var(--radius-sm);padding:16px 20px;margin:20px 0;font-size:15px}
+.callout b{color:var(--text)}
+.env{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid var(--line)}
+.env .g{font-weight:800;font-size:17px}
+.env .n{color:var(--accent);font-weight:700}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin:14px 0;
+  background:var(--surface)}
+.card .hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.rankno{font-size:13px;font-weight:800;color:var(--muted-2);min-width:26px}
+.pname{font-size:18px;font-weight:800;letter-spacing:-.01em}
+.pos{font-size:11px;font-weight:800;color:#fff;padding:2px 7px;border-radius:20px;letter-spacing:.02em}
+.play{margin-left:auto;font-weight:800;font-size:16px;color:var(--accent)}
+.play .lbl{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-right:5px}
+.body{font-size:14.7px;color:#2a3846;margin-top:6px}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:20px;
+  margin-left:2px;border:1px solid var(--line);vertical-align:middle}
+.pill.good{background:rgba(47,158,107,.12);color:var(--good);border-color:rgba(47,158,107,.3)}
+.pill.bad{background:rgba(200,69,106,.12);color:var(--bad);border-color:rgba(200,69,106,.3)}
+.pill.muted{background:var(--surface-2);color:var(--muted)}
+.gg{padding:10px 0;border-bottom:1px solid var(--line);font-size:14.7px}
+.gcard{border:1px solid var(--line);border-radius:var(--radius);padding:16px 20px;margin:14px 0;background:var(--surface)}
+.ghd{font-weight:800;font-size:17px;margin-bottom:10px}
+.simstrip{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:13px}
+.chip{background:var(--surface-2);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:5px 11px;font-size:13.5px;font-weight:800;color:var(--text);text-align:center}
+.chip .cl{display:block;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-2);font-weight:700;margin-bottom:1px}
+.chip.good{border-color:rgba(47,158,107,.4);background:rgba(47,158,107,.09)}
+.gbody{font-size:14.7px;color:#2a3846;line-height:1.66}
+.gbody b{color:var(--text)}
+.stack{padding:8px 0;font-size:15px;border-bottom:1px solid var(--line)}
+.foot{margin-top:40px;padding-top:18px;border-top:2px solid var(--line);font-size:13px;color:var(--muted)}
+</style></head><body>
+<div class="wrap"><div class="sheet">
+<div class="kicker">2026 DFS · Forward-Looking Baseline</div>
+<h1>Week 1</h1>
+<div class="dateline">Built 2026-07-03 · anchored on posted look-ahead Vegas O/U, blended with team ceiling, converted by team pass/run tendency</div>
+<div class="rule"></div>
+<p class="lead">16 games. Environments ranked by the blended score (Vegas O/U anchored, team-ceiling adjusted), then each player scored on ceiling × matchup edge × implied total × <b>pass/run conversion</b> — so talent, matchup, environment, and how a team routes its points all separate the plays.</p>
+<div class="callout"><b>New this week — the pass/run conversion lever.</b> The implied total says how many points a team scores; a team's <b>PROE</b> (pass-rate-over-expected) tendency says where they go. Measured on complete 2024+2025 games (and it replicates across both years), a pass-lean offense routes fantasy <i>above</i> the total's expectation to its WR/TE and away from RBs — the mirror on run-lean teams. The RB side roughly doubles when the game-script sim projects a lead (clock-kill), <i>unless</i> the offense is high-PROE (those coaches keep throwing when up). Shown as a <span class="pill good">conv ▲</span> / <span class="pill bad">conv ▼</span> pill below; capped at ±12% so it refines, never dominates.</div>
+<h2>Best environments<span class="sub">Where a correlated build has the most room</span></h2>
+<div class="env"><span class="g">CIN vs TB</span><span>blended <span class="n">52.6</span> (O/U 50.0)</span><span class="pill good">ceiling adj +2.6</span></div>
+<div class="env"><span class="g">DAL vs NYG</span><span>blended <span class="n">52.2</span> (O/U 50.5)</span><span class="pill good">ceiling adj +1.7</span></div>
+<div class="env"><span class="g">LAR vs SF</span><span>blended <span class="n">51.6</span> (O/U 50.0)</span><span class="pill good">ceiling adj +1.6</span></div>
+<h2>Who we like<span class="sub">The upside case, lever by lever</span></h2>
+<div class="card"><div class="hd">
+<span class="rankno">1</span>
+<span class="pname">Puka Nacua</span>
+<span class="pos" style="background:var(--wr)">WR</span>
+<span class="muted">LAR vs SF</span>
+<span class="pill good">conv ▲ ×1.07 (+7%)</span>
+<span class="play"><span class="lbl">play</span>68.0</span>
 </div>
+<div class="body"><b>Puka Nacua</b> (WR, LAR vs SF) is our top play of the week. This week the game projects at 50.0 (elite environment), LAR is implied for 27.0 points. No outright smash edge this week (edge score 43.1); the case is ceiling and environment, not matchup. Coverage scheme: Nacua wins vs both looks (97th-pctl man / 100th-pctl zone), so SF&#x27;s zone-heavy tendency (20% man) can&#x27;t scheme him out. Season case: LAR grades HIGH for season ceiling (elite scoring environment); 99th-pctl ceiling on a 92nd-pctl trait base. Levers: 31.1% target share; Rec EPA/route up +0.051 year-over-year. Pass/run conversion: LAR projects pass-lean (PROE +5, carousel -1), which historically routes fantasy above the team total to pass-catchers — Nacua up ×1.07 (+7%). Board flags: Deep/vertical threat, Separator / route-winner, Route technician / YPRR / zone-beater.</div>
 </div>
-</body>
-</html>
+<div class="card"><div class="hd">
+<span class="rankno">2</span>
+<span class="pname">Jahmyr Gibbs</span>
+<span class="pos" style="background:var(--rb)">RB</span>
+<span class="muted">DET vs NO</span>
+
+<span class="play"><span class="lbl">play</span>62.2</span>
+</div>
+<div class="body"><b>Jahmyr Gibbs</b> (RB, DET vs NO) is a headliner this week. This week the game projects at 47.5 (high environment), DET is implied for 27.5 points. The matchup lines up: NO grades 95th-pctl soft on run defense — 1 smash edge flagged. Season case: DET grades ELITE for season ceiling (elite scoring environment); 98th-pctl ceiling on a 98th-pctl trait base. Levers: 55.7% of the backfield carries; heavy vacated opportunity in the offense (DET vacated-target index 74). Red-zone equity: Gibbs is TD-dominant (1.08 rush+rec TD/game (pos-centered z=+2.33)); in a high-scoring spot that captures more of the team&#x27;s touchdowns than volume alone implies — up ×1.09 (+9%). Board flags: Workhorse volume, Explosive / big-play ceiling, Receiving back / PPR ceiling.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">3</span>
+<span class="pname">Ja&#x27;Marr Chase</span>
+<span class="pos" style="background:var(--wr)">WR</span>
+<span class="muted">CIN vs TB</span>
+<span class="pill good">conv ▲ ×1.06 (+6%)</span>
+<span class="play"><span class="lbl">play</span>61.4</span>
+</div>
+<div class="body"><b>Ja&#x27;Marr Chase</b> (WR, CIN vs TB) is a headliner this week. This week the game projects at 50.0 (elite environment), CIN is implied for 27.5 points. No outright smash edge this week (edge score 25.2); the case is ceiling and environment, not matchup. Coverage scheme: TB is zone-heavy (24% man); Chase is a zone specialist (91st-pctl vs zone vs 33rd-pctl vs man), so he sees his coverage on most snaps — but TB defends zone well (36th-pctl), which mutes it despite the soft overall grade. Season case: CIN grades ELITE for season ceiling (elite scoring environment); 99th-pctl ceiling on a 72nd-pctl trait base. Levers: 32.0% target share; heavy vacated opportunity in the offense (CIN vacated-target index 41). Pass/run conversion: CIN projects pass-lean (PROE +4), which historically routes fantasy above the team total to pass-catchers — Chase up ×1.06 (+6%). Board flags: Separator / route-winner, Route technician / YPRR / zone-beater, YAC / RAC machine.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">4</span>
+<span class="pname">CeeDee Lamb</span>
+<span class="pos" style="background:var(--wr)">WR</span>
+<span class="muted">DAL vs NYG</span>
+
+<span class="play"><span class="lbl">play</span>59.8</span>
+</div>
+<div class="body"><b>CeeDee Lamb</b> (WR, DAL vs NYG). This week the game projects at 50.5 (elite environment), DAL is implied for 26.0 points. The matchup lines up: his 94th-pctl deep profile meets NYG, which grades 100th-pctl soft on that same axis; his 78th-pctl vs zone profile meets NYG, which grades 100th-pctl soft on that same axis — 2 smash edges flagged. Coverage scheme: Lamb is a man-beater (99th-pctl vs man vs 78th-pctl vs zone); NYG plays man 37% — often enough to matter, though NYG holds up in man (39th-pctl). Season case: DAL grades ELITE for season ceiling (elite scoring environment); 96th-pctl ceiling on a 60th-pctl trait base. Levers: 25.0% target share; Rec EPA/route up +0.024 year-over-year. Board flags: Deep/vertical threat, Separator / route-winner, Route technician / YPRR / zone-beater.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">5</span>
+<span class="pname">Amon-Ra St. Brown</span>
+<span class="pos" style="background:var(--wr)">WR</span>
+<span class="muted">DET vs NO</span>
+
+<span class="play"><span class="lbl">play</span>56.9</span>
+</div>
+<div class="body"><b>Amon-Ra St. Brown</b> (WR, DET vs NO). This week the game projects at 47.5 (high environment), DET is implied for 27.5 points. No outright smash edge this week (edge score 25.7); the case is ceiling and environment, not matchup. Coverage scheme: Brown wins vs both looks (89th-pctl man / 93rd-pctl zone), so NO&#x27;s zone-heavy tendency (20% man) can&#x27;t scheme him out. Season case: DET grades ELITE for season ceiling (elite scoring environment); 97th-pctl ceiling on a 72nd-pctl trait base. Levers: 31.7% target share; heavy vacated opportunity in the offense (DET vacated-target index 74); scheme fit — +motion (scheme separation). Red-zone equity: Brown is TD-dominant (21% red-zone target share (pos-centered z=+1.66)); in a high-scoring spot that captures more of the team&#x27;s touchdowns than volume alone implies — up ×1.04 (+4%). Board flags: Separator / route-winner, Route technician / YPRR / zone-beater, YAC / RAC machine.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">6</span>
+<span class="pname">Jaxon Smith-Njigba</span>
+<span class="pos" style="background:var(--wr)">WR</span>
+<span class="muted">SEA vs NE</span>
+<span class="pill bad">conv ▼ ×0.94 (-6%)</span>
+<span class="play"><span class="lbl">play</span>52.7</span>
+</div>
+<div class="body"><b>Jaxon Smith-Njigba</b> (WR, SEA vs NE). This week the game projects at 45.0 (mid environment), SEA is implied for 24.0 points. No outright smash edge this week (edge score 37.0); the case is ceiling and environment, not matchup. Coverage scheme: Smith-Njigba wins vs both looks (100th-pctl man / 99th-pctl zone), so NE&#x27;s balanced-coverage tendency (28% man) can&#x27;t scheme him out. Season case: 98th-pctl ceiling on a 72nd-pctl trait base. Levers: 35.5% target share; Rec EPA/route up +0.093 year-over-year; scheme fit — +motion (scheme separation). Pass/run conversion: SEA projects run-lean (PROE -4, carousel -1), which historically is a headwind for pass-catcher conversion — Smith-Njigba down ×0.94 (-6%). Board flags: Deep/vertical threat, Separator / route-winner, Route technician / YPRR / zone-beater.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">7</span>
+<span class="pname">Bijan Robinson</span>
+<span class="pos" style="background:var(--rb)">RB</span>
+<span class="muted">ATL vs PIT</span>
+<span class="pill good">conv ▲ ×1.04 (+4%)</span>
+<span class="play"><span class="lbl">play</span>51.7</span>
+</div>
+<div class="body"><b>Bijan Robinson</b> (RB, ATL vs PIT). This week the game projects at 43.0 (mid environment), ATL is implied for 19.5 points. The matchup lines up: PIT grades 80th-pctl soft on run defense — 1 smash edge flagged. Season case: 99th-pctl ceiling on a 98th-pctl trait base. Levers: 61.6% of the backfield carries; heavy vacated opportunity in the offense (ATL vacated-target index 124); Rec EPA/route up +0.035 year-over-year; scheme fit — +RB pass game (receiving role). Pass/run conversion: ATL projects run-lean (PROE -4, carousel -1); given the sim&#x27;s projected game script the backfield converts above the total — Robinson up ×1.04 (+4%). Board flags: Workhorse volume, Explosive / big-play ceiling, Receiving back / PPR ceiling.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">8</span>
+<span class="pname">George Pickens</span>
+<span class="pos" style="background:var(--wr)">WR</span>
+<span class="muted">DAL vs NYG</span>
+
+<span class="play"><span class="lbl">play</span>49.8</span>
+</div>
+<div class="body"><b>George Pickens</b> (WR, DAL vs NYG). This week the game projects at 50.5 (elite environment), DAL is implied for 26.0 points. The matchup lines up: his 89th-pctl vs zone profile meets NYG, which grades 100th-pctl soft on that same axis; his 61st-pctl deep profile meets NYG, which grades 100th-pctl soft on that same axis — 2 smash edges flagged. Coverage scheme: Pickens wins vs both looks (98th-pctl man / 89th-pctl zone), so NYG&#x27;s man-heavy tendency (37% man) can&#x27;t scheme him out. Season case: DAL grades ELITE for season ceiling (elite scoring environment); 89th-pctl ceiling on a 72nd-pctl trait base. Levers: 22.6% target share; Rec EPA/route up +0.087 year-over-year. Board flags: Deep/vertical threat, Separator / route-winner, Route technician / YPRR / zone-beater.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">9</span>
+<span class="pname">Derrick Henry</span>
+<span class="pos" style="background:var(--rb)">RB</span>
+<span class="muted">BAL vs IND</span>
+<span class="pill good">conv ▲ ×1.07 (+7%)</span>
+<span class="play"><span class="lbl">play</span>47.9</span>
+</div>
+<div class="body"><b>Derrick Henry</b> (RB, BAL vs IND). This week the game projects at 50.0 (elite environment), BAL is implied for 26.5 points. No outright smash edge this week (edge score 9.9); the case is ceiling and environment, not matchup. Season case: BAL grades HIGH for season ceiling (elite scoring environment); 91st-pctl ceiling on a 89th-pctl trait base. Levers: 59.8% of the backfield carries; heavy vacated opportunity in the offense (BAL vacated-target index 73); scheme fit — +RB pass game (receiving role). Pass/run conversion: BAL projects run-lean (PROE -5, carousel +1); given the sim&#x27;s projected game script the backfield converts above the total — Henry up ×1.07 (+7%). Red-zone equity: Henry is TD-dominant (0.99 rush+rec TD/game (pos-centered z=+2.00)); in a high-scoring spot that captures more of the team&#x27;s touchdowns than volume alone implies — up ×1.06 (+6%). Board flags: Workhorse volume, Explosive / big-play ceiling, Receiving back / PPR ceiling.</div>
+</div>
+<div class="card"><div class="hd">
+<span class="rankno">10</span>
+<span class="pname">Malik Nabers</span>
+<span class="pos" style="background:var(--wr)">WR</span>
+<span class="muted">NYG vs DAL</span>
+
+<span class="play"><span class="lbl">play</span>47.6</span>
+</div>
+<div class="body"><b>Malik Nabers</b> (WR, NYG vs DAL). This week the game projects at 50.5 (elite environment), NYG is implied for 25.0 points. The matchup lines up: his 88th-pctl vs zone profile meets DAL, which grades 87th-pctl soft on that same axis; his 78th-pctl deep profile meets DAL, which grades 94th-pctl soft on that same axis — 3 smash edges flagged. Season case: NYG grades HIGH for season ceiling (up-tempo (63.5 plays/g)); 92nd-pctl ceiling on a 92nd-pctl trait base. Levers: 27.1% target share; heavy vacated opportunity in the offense (NYG vacated-target index 166); scheme fit — +motion (scheme separation). Board flags: Deep/vertical threat, Separator / route-winner, Route technician / YPRR / zone-beater.</div>
+</div>
+<h2>How to build it<span class="sub">QB-anchored stack templates</span></h2>
+<div class="stack"><b>CIN vs TB</b> (total 50.0): anchor <b>Joe Burrow</b> (CIN) + Ja&#x27;Marr Chase &amp; Tee Higgins, bring back <b>Emeka Egbuka</b> (TB) — high total, correlated bring-back plays.</div>
+<div class="stack"><b>DAL vs NYG</b> (total 50.5): anchor <b>Jaxson Dart</b> (NYG) + Malik Nabers &amp; Isaiah Likely, bring back <b>CeeDee Lamb</b> (DAL) — high total, correlated bring-back plays.</div>
+<div class="stack"><b>LAR vs SF</b> (total 50.0): anchor <b>Matthew Stafford</b> (LAR) + Puka Nacua &amp; Davante Adams, bring back <b>George Kittle</b> (SF) — high total, correlated bring-back plays.</div>
+<div class="stack"><b>BAL vs IND</b> (total 50.0): anchor <b>Lamar Jackson</b> (BAL) + Zay Flowers &amp; Mark Andrews, bring back <b>Alec Pierce</b> (IND) — high total, correlated bring-back plays.</div>
+<h2>Game by game<span class="sub">Every game simulated 40,000 times — the holistic read</span></h2>
+<p class="muted" style="font-size:14px;margin:0 0 6px">Ordered by blended environment. Each game shows the sim's glanceable numbers — win probability, how often it becomes a shootout or a blowout, and the projected script — then a plain read of what is happening and who it feeds.</p>
+<div class="gcard">
+<div class="ghd">TB @ CIN · <span class="muted">O/U 50.0 → blend 52.6 (elite)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">CIN win</span>65%</span><span class="chip good"><span class="cl">shootout 51+</span>44%</span><span class="chip "><span class="cl">blowout 14+</span>32%</span><span class="chip "><span class="cl">nailbiter ≤3</span>22%</span><span class="chip "><span class="cl">CIN control-run</span>35%</span><span class="chip "><span class="cl">TB comeback-pass</span>44%</span></div>
+<div class="gbody"><b>The setup.</b> Cincinnati is implied for 27.5 and favored by 5.0; Tampa Bay sits at 22.5. Posted total 50.0, which our ceiling blend nudges to 52.6. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a shootout — it clears 51 points 44% of the time and tops the posted total in 46%. CIN wins 65% of sims, but it's a two-score blowout in only 32% and a one-score game or closer in 48%, so CIN controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is CIN pulling ahead (35% of sims lead-and-control) while TB trails and throws to catch up (44%). But CIN is pass-lean (PROE +4) — one of the offenses that keeps throwing even with a lead, so the fantasy stays with the passing game rather than the back even in a control script. TB trailing and passing is what puts its receivers in play as a bring-back. <b>CIN</b> (pass-heavy (58.0%), fast pace) attacks a secondary grading 5th-percentile — one of the very softest in the league — the plays are Tee Higgins, Joe Burrow. <b>TB</b> (pass-leaning (52.8%), fast pace) attacks a secondary grading 2nd-percentile — one of the very softest in the league; a defense that leaks to tight ends (that CIN defense has shifted run→pass on the carousel) — the plays are Baker Mayfield, Emeka Egbuka; note their WRs are muted (opponent locks the perimeter), so it is a TE/RB read. <b>Build.</b> Elite game stack; lead CIN (Tee Higgins, Joe Burrow), bring back TB WR/TE.</div>
+</div>
+<div class="gcard">
+<div class="ghd">DAL @ NYG · <span class="muted">O/U 50.5 → blend 52.2 (elite)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">DAL win</span>52%</span><span class="chip good"><span class="cl">shootout 51+</span>46%</span><span class="chip "><span class="cl">blowout 14+</span>28%</span><span class="chip "><span class="cl">nailbiter ≤3</span>25%</span><span class="chip "><span class="cl">DAL control-run</span>24%</span><span class="chip "><span class="cl">NYG comeback-pass</span>31%</span></div>
+<div class="gbody"><b>The setup.</b> Dallas is implied for 26.0 and favored by 1.0; N.Y. Giants sits at 25.0. Posted total 50.5, which our ceiling blend nudges to 52.2. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a shootout — it clears 51 points 46% of the time and tops the posted total in 48%. DAL wins 52% of sims, but it's a two-score blowout in only 28% and a one-score game or closer in 52%, so DAL controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is DAL pulling ahead (24% of sims lead-and-control) while NYG trails and throws to catch up (31%). NYG trailing and passing is what puts its receivers in play as a bring-back. <b>NYG</b> (balanced (50.6%), fast pace) attacks a run defense grading 11th-percentile — among the softest in the league (that DAL defense has shifted pass→balanced on the carousel) — the plays are Malik Nabers, Jaxson Dart. <b>Build.</b> Elite game stack; lead DAL (CeeDee Lamb, George Pickens), bring back NYG WR/TE.</div>
+</div>
+<div class="gcard">
+<div class="ghd">SF @ LAR · <span class="muted">O/U 50.0 → blend 51.6 (elite)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">LAR win</span>63%</span><span class="chip good"><span class="cl">shootout 51+</span>44%</span><span class="chip "><span class="cl">blowout 14+</span>29%</span><span class="chip "><span class="cl">nailbiter ≤3</span>24%</span><span class="chip "><span class="cl">LAR control-run</span>32%</span><span class="chip "><span class="cl">SF comeback-pass</span>41%</span></div>
+<div class="gbody"><b>The setup.</b> L.A. Rams is implied for 27.0 and favored by 3.5; San Francisco sits at 23.0. Posted total 50.0, which our ceiling blend nudges to 51.6. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a shootout — it clears 51 points 44% of the time and tops the posted total in 46%. LAR wins 63% of sims, but it's a two-score blowout in only 29% and a one-score game or closer in 50%, so LAR controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is LAR pulling ahead (32% of sims lead-and-control) while SF trails and throws to catch up (41%). But LAR is pass-lean (PROE +5) — one of the offenses that keeps throwing even with a lead, so the fantasy stays with the passing game rather than the back even in a control script. SF trailing and passing is what puts its receivers in play as a bring-back. <b>Build.</b> Elite game stack; lead LAR, bring back SF WR/TE.</div>
+</div>
+<div class="gcard">
+<div class="ghd">BAL @ IND · <span class="muted">O/U 50.0 → blend 49.4 (elite)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">BAL win</span>60%</span><span class="chip good"><span class="cl">shootout 51+</span>43%</span><span class="chip "><span class="cl">blowout 14+</span>24%</span><span class="chip "><span class="cl">nailbiter ≤3</span>27%</span><span class="chip "><span class="cl">BAL control-run</span>27%</span><span class="chip "><span class="cl">IND comeback-pass</span>36%</span></div>
+<div class="gbody"><b>The setup.</b> Baltimore is implied for 26.5 and favored by 3.0; Indianapolis sits at 23.5. Posted total 50.0, which our ceiling blend nudges to 49.4. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a shootout — it clears 51 points 43% of the time and tops the posted total in 46%. BAL wins 60% of sims, but it's a two-score blowout in only 24% and a one-score game or closer in 55%, so BAL controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is BAL pulling ahead (27% of sims lead-and-control) while IND trails and throws to catch up (36%). And BAL is run-lean (PROE -5), so a lead means the back eats clock-killing carries — the RB is the script's biggest beneficiary. IND trailing and passing is what puts its receivers in play as a bring-back. <b>Build.</b> Elite game stack; lead BAL (Zay Flowers, Lamar Jackson), bring back IND WR/TE.</div>
+</div>
+<div class="gcard">
+<div class="ghd">NO @ DET · <span class="muted">O/U 47.5 → blend 48.4 (high)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">DET win</span>73%</span><span class="chip "><span class="cl">shootout 51+</span>36%</span><span class="chip "><span class="cl">blowout 14+</span>32%</span><span class="chip "><span class="cl">nailbiter ≤3</span>22%</span><span class="chip "><span class="cl">DET control-run</span>41%</span><span class="chip "><span class="cl">NO comeback-pass</span>51%</span></div>
+<div class="gbody"><b>The setup.</b> Detroit is implied for 27.5 and favored by 7.5; New Orleans sits at 20.0. Posted total 47.5, which our ceiling blend nudges to 48.4. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a mid-range game — it clears 51 points 36% of the time and tops the posted total in 47%. DET wins 73% of sims, but it's a two-score blowout in only 32% and a one-score game or closer in 47%, so DET controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is DET pulling ahead (41% of sims lead-and-control) while NO trails and throws to catch up (51%). NO trailing and passing is what puts its receivers in play as a bring-back. <b>DET</b> (pass-leaning (53.5%), fast pace) attacks a secondary grading 14th-percentile — among the softest in the league — the plays are Jahmyr Gibbs, Isiah Pacheco. <b>Build.</b> Solid stack game; DET preferred (Jahmyr Gibbs, Isiah Pacheco).</div>
+</div>
+<div class="gcard">
+<div class="ghd">ARI @ LAC · <span class="muted">O/U 45.0 → blend 46.6 (mid)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">LAC win</span>86%</span><span class="chip "><span class="cl">shootout 51+</span>29%</span><span class="chip "><span class="cl">blowout 14+</span>49%</span><span class="chip "><span class="cl">nailbiter ≤3</span>13%</span><span class="chip "><span class="cl">LAC control-run</span>61%</span><span class="chip "><span class="cl">ARI comeback-pass</span>70%</span></div>
+<div class="gbody"><b>The setup.</b> L.A. Chargers is implied for 29.0 and favored by 13.0; Arizona sits at 16.0. Posted total 45.0, which our ceiling blend nudges to 46.6. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a mid-range game — it clears 51 points 29% of the time and tops the posted total in 46%. LAC wins 86% of sims, but it's a two-score blowout in only 49% and a one-score game or closer in 32%, so LAC has real blowout equity. <b>The script, and who it feeds.</b> The most common path is LAC pulling ahead (61% of sims lead-and-control) while ARI trails and throws to catch up (70%). But LAC is pass-lean (PROE +2) — one of the offenses that keeps throwing even with a lead, so the fantasy stays with the passing game rather than the back even in a control script. ARI trailing and passing is what puts its receivers in play as a bring-back. <b>LAC</b> (pass-leaning (53.7%), up-tempo pace) attacks a secondary grading 11th-percentile — among the softest in the league; a defense that leaks to tight ends (that ARI defense has shifted run→pass on the carousel) — the plays are Oronde Gadsden II, Quentin Johnston. <b>Build.</b> Moderate stack interest; LAC side has edge (Oronde Gadsden II, Quentin Johnston).</div>
+</div>
+<div class="gcard">
+<div class="ghd">WAS @ PHI · <span class="muted">O/U 47.5 → blend 46.5 (high)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">PHI win</span>72%</span><span class="chip "><span class="cl">shootout 51+</span>36%</span><span class="chip "><span class="cl">blowout 14+</span>28%</span><span class="chip "><span class="cl">nailbiter ≤3</span>24%</span><span class="chip "><span class="cl">PHI control-run</span>37%</span><span class="chip "><span class="cl">WAS comeback-pass</span>47%</span></div>
+<div class="gbody"><b>The setup.</b> Philadelphia is implied for 27.0 and favored by 6.5; Washington sits at 20.5. Posted total 47.5, which our ceiling blend nudges to 46.5. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a mid-range game — it clears 51 points 36% of the time and tops the posted total in 47%. PHI wins 72% of sims, but it's a two-score blowout in only 28% and a one-score game or closer in 52%, so PHI controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is PHI pulling ahead (37% of sims lead-and-control) while WAS trails and throws to catch up (47%). WAS trailing and passing is what puts its receivers in play as a bring-back. <b>PHI</b> (balanced (49.8%), fast pace) attacks a secondary grading 8th-percentile — among the softest in the league — the plays are DeVonta Smith, Jalen Hurts. <b>Build.</b> Solid stack game; PHI preferred (DeVonta Smith, Jalen Hurts).</div>
+</div>
+<div class="gcard">
+<div class="ghd">BUF @ HOU · <span class="muted">O/U 46.5 → blend 46.0 (mid)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">HOU win</span>52%</span><span class="chip "><span class="cl">shootout 51+</span>34%</span><span class="chip "><span class="cl">blowout 14+</span>25%</span><span class="chip "><span class="cl">nailbiter ≤3</span>26%</span><span class="chip "><span class="cl">HOU control-run</span>21%</span><span class="chip "><span class="cl">BUF comeback-pass</span>29%</span></div>
+<div class="gbody"><b>The setup.</b> Houston is implied for 23.5 and favored by 0.5; Buffalo sits at 23.0. Posted total 46.5, which our ceiling blend nudges to 46.0. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a mid-range game — it clears 51 points 34% of the time and tops the posted total in 47%. HOU wins 52% of sims, but it's a two-score blowout in only 25% and a one-score game or closer in 55%, so HOU controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is HOU pulling ahead (21% of sims lead-and-control) while BUF trails and throws to catch up (29%). BUF trailing and passing is what puts its receivers in play as a bring-back. <b>Build.</b> Moderate stack interest; HOU side has edge (David Montgomery, Woody Marks).</div>
+</div>
+<div class="gcard">
+<div class="ghd">NE @ SEA · <span class="muted">O/U 45.0 → blend 46.0 (mid)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">SEA win</span>62%</span><span class="chip "><span class="cl">shootout 51+</span>29%</span><span class="chip "><span class="cl">blowout 14+</span>29%</span><span class="chip "><span class="cl">nailbiter ≤3</span>25%</span><span class="chip "><span class="cl">SEA control-run</span>30%</span><span class="chip "><span class="cl">NE comeback-pass</span>39%</span></div>
+<div class="gbody"><b>The setup.</b> Seattle is implied for 24.0 and favored by 3.5; New England sits at 20.5. Posted total 45.0, which our ceiling blend nudges to 46.0. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a mid-range game — it clears 51 points 29% of the time and tops the posted total in 45%. SEA wins 62% of sims, but it's a two-score blowout in only 29% and a one-score game or closer in 51%, so SEA controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is SEA pulling ahead (30% of sims lead-and-control) while NE trails and throws to catch up (39%). And SEA is run-lean (PROE -4), so a lead means the back eats clock-killing carries — the RB is the script's biggest beneficiary. NE trailing and passing is what puts its receivers in play as a bring-back. <b>NE</b> (pass-leaning (52.4%), slow pace) attacks a defense that leaks to tight ends (that SEA defense has shifted balanced→run on the carousel) — the plays are Hunter Henry. <b>Build.</b> Moderate stack interest; SEA side has edge.</div>
+</div>
+<div class="gcard">
+<div class="ghd">GB @ MIN · <span class="muted">O/U 46.0 → blend 44.8 (mid)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">GB win</span>53%</span><span class="chip "><span class="cl">shootout 51+</span>32%</span><span class="chip "><span class="cl">blowout 14+</span>23%</span><span class="chip "><span class="cl">nailbiter ≤3</span>28%</span><span class="chip "><span class="cl">GB control-run</span>22%</span><span class="chip "><span class="cl">MIN comeback-pass</span>29%</span></div>
+<div class="gbody"><b>The setup.</b> Green Bay is implied for 23.5 and favored by 1.0; Minnesota sits at 22.5. Posted total 46.0, which our ceiling blend nudges to 44.8. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a mid-range game — it clears 51 points 32% of the time and tops the posted total in 47%. GB wins 53% of sims, but it's a two-score blowout in only 23% and a one-score game or closer in 57%, so GB controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is GB pulling ahead (22% of sims lead-and-control) while MIN trails and throws to catch up (29%). And GB is run-lean (PROE -4), so a lead means the back eats clock-killing carries — the RB is the script's biggest beneficiary. MIN trailing and passing is what puts its receivers in play as a bring-back. <b>GB</b> (pass-leaning (53.1%), slow pace) attacks a run defense grading 14th-percentile — among the softest in the league — the plays are Christian Watson, Tucker Kraft; note their WRs are muted (opponent locks the perimeter), so it is a TE/RB read. <b>Build.</b> Moderate stack interest; GB side has edge (Christian Watson, Tucker Kraft).</div>
+</div>
+<div class="gcard">
+<div class="ghd">CHI @ CAR · <span class="muted">O/U 45.5 → blend 44.5 (mid)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">CHI win</span>57%</span><span class="chip "><span class="cl">shootout 51+</span>30%</span><span class="chip "><span class="cl">blowout 14+</span>23%</span><span class="chip "><span class="cl">nailbiter ≤3</span>27%</span><span class="chip "><span class="cl">CHI control-run</span>25%</span><span class="chip "><span class="cl">CAR comeback-pass</span>33%</span></div>
+<div class="gbody"><b>The setup.</b> Chicago is implied for 24.0 and favored by 2.0; Carolina sits at 21.5. Posted total 45.5, which our ceiling blend nudges to 44.5. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a mid-range game — it clears 51 points 30% of the time and tops the posted total in 46%. CHI wins 57% of sims, but it's a two-score blowout in only 23% and a one-score game or closer in 57%, so CHI controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is CHI pulling ahead (25% of sims lead-and-control) while CAR trails and throws to catch up (33%). And CHI is run-lean (PROE -3), so a lead means the back eats clock-killing carries — the RB is the script's biggest beneficiary. CAR trailing and passing is what puts its receivers in play as a bring-back. <b>Build.</b> Moderate stack interest; CHI side has edge (Luther Burden III, Colston Loveland).</div>
+</div>
+<div class="gcard">
+<div class="ghd">DEN @ KC · <span class="muted">O/U 42.5 → blend 44.0 (low)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">KC win</span>61%</span><span class="chip "><span class="cl">shootout 51+</span>24%</span><span class="chip "><span class="cl">blowout 14+</span>29%</span><span class="chip "><span class="cl">nailbiter ≤3</span>24%</span><span class="chip "><span class="cl">KC control-run</span>30%</span><span class="chip "><span class="cl">DEN comeback-pass</span>39%</span></div>
+<div class="gbody"><b>The setup.</b> Kansas City is implied for 23.0 and favored by 3.0; Denver sits at 19.5. Posted total 42.5, which our ceiling blend nudges to 44.0. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a lower-scoring grind — it clears 51 points 24% of the time and tops the posted total in 46%. KC wins 61% of sims, but it's a two-score blowout in only 29% and a one-score game or closer in 51%, so KC controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is KC pulling ahead (30% of sims lead-and-control) while DEN trails and throws to catch up (39%). But KC is pass-lean (PROE +7) — one of the offenses that keeps throwing even with a lead, so the fantasy stays with the passing game rather than the back even in a control script. DEN trailing and passing is what puts its receivers in play as a bring-back. <b>Build.</b> Fade both offenses in DFS; low total suppresses ceilings.</div>
+</div>
+<div class="gcard">
+<div class="ghd">ATL @ PIT · <span class="muted">O/U 43.0 → blend 41.5 (mid)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">PIT win</span>66%</span><span class="chip "><span class="cl">shootout 51+</span>24%</span><span class="chip "><span class="cl">blowout 14+</span>24%</span><span class="chip "><span class="cl">nailbiter ≤3</span>26%</span><span class="chip "><span class="cl">PIT control-run</span>31%</span><span class="chip "><span class="cl">ATL comeback-pass</span>41%</span></div>
+<div class="gbody"><b>The setup.</b> Pittsburgh is implied for 24.0 and favored by 4.5; Atlanta sits at 19.5. Posted total 43.0, which our ceiling blend nudges to 41.5. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a lower-scoring grind — it clears 51 points 24% of the time and tops the posted total in 48%. PIT wins 66% of sims, but it's a two-score blowout in only 24% and a one-score game or closer in 55%, so PIT controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is PIT pulling ahead (31% of sims lead-and-control) while ATL trails and throws to catch up (41%). ATL trailing and passing is what puts its receivers in play as a bring-back. <b>ATL</b> (pass-leaning (55.4%), fast pace) attacks a run defense grading 20th-percentile — soft and exploitable (that PIT defense has shifted pass→balanced on the carousel) — the plays are Kyle Pitts Sr., Drake London. <b>Build.</b> Moderate stack interest; PIT side has edge.</div>
+</div>
+<div class="gcard">
+<div class="ghd">CLE @ JAX · <span class="muted">O/U 41.5 → blend 40.7 (low)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">JAX win</span>71%</span><span class="chip "><span class="cl">shootout 51+</span>21%</span><span class="chip "><span class="cl">blowout 14+</span>28%</span><span class="chip "><span class="cl">nailbiter ≤3</span>24%</span><span class="chip "><span class="cl">JAX control-run</span>36%</span><span class="chip "><span class="cl">CLE comeback-pass</span>47%</span></div>
+<div class="gbody"><b>The setup.</b> Jacksonville is implied for 24.0 and favored by 6.0; Cleveland sits at 18.0. Posted total 41.5, which our ceiling blend nudges to 40.7. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a lower-scoring grind — it clears 51 points 21% of the time and tops the posted total in 48%. JAX wins 71% of sims, but it's a two-score blowout in only 28% and a one-score game or closer in 51%, so JAX controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is JAX pulling ahead (36% of sims lead-and-control) while CLE trails and throws to catch up (47%). But JAX is pass-lean (PROE +4) — one of the offenses that keeps throwing even with a lead, so the fantasy stays with the passing game rather than the back even in a control script. CLE trailing and passing is what puts its receivers in play as a bring-back. <b>Build.</b> Fade both offenses in DFS; low total suppresses ceilings.</div>
+</div>
+<div class="gcard">
+<div class="ghd">NYJ @ TEN · <span class="muted">O/U 41.0 → blend 39.4 (low)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">TEN win</span>60%</span><span class="chip "><span class="cl">shootout 51+</span>18%</span><span class="chip "><span class="cl">blowout 14+</span>23%</span><span class="chip "><span class="cl">nailbiter ≤3</span>28%</span><span class="chip "><span class="cl">TEN control-run</span>26%</span><span class="chip "><span class="cl">NYJ comeback-pass</span>35%</span></div>
+<div class="gbody"><b>The setup.</b> Tennessee is implied for 22.0 and favored by 3.5; N.Y. Jets sits at 19.0. Posted total 41.0, which our ceiling blend nudges to 39.4. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a lower-scoring grind — it clears 51 points 18% of the time and tops the posted total in 46%. TEN wins 60% of sims, but it's a two-score blowout in only 23% and a one-score game or closer in 57%, so TEN controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is TEN pulling ahead (26% of sims lead-and-control) while NYJ trails and throws to catch up (35%). NYJ trailing and passing is what puts its receivers in play as a bring-back. <b>Build.</b> Fade both offenses in DFS; low total suppresses ceilings.</div>
+</div>
+<div class="gcard">
+<div class="ghd">MIA @ LV · <span class="muted">O/U 42.0 → blend 39.1 (low)</span></div>
+<div class="simstrip"><span class="chip "><span class="cl">LV win</span>65%</span><span class="chip "><span class="cl">shootout 51+</span>20%</span><span class="chip "><span class="cl">blowout 14+</span>21%</span><span class="chip "><span class="cl">nailbiter ≤3</span>28%</span><span class="chip "><span class="cl">LV control-run</span>28%</span><span class="chip "><span class="cl">MIA comeback-pass</span>38%</span></div>
+<div class="gbody"><b>The setup.</b> Las Vegas is implied for 23.0 and favored by 4.0; Miami sits at 19.0. Posted total 42.0, which our ceiling blend nudges to 39.1. <b>How the sim sees it.</b> Run 40,000 times, this profiles as a lower-scoring grind — it clears 51 points 20% of the time and tops the posted total in 47%. LV wins 65% of sims, but it's a two-score blowout in only 21% and a one-score game or closer in 58%, so LV controls the game more than it buries it. <b>The script, and who it feeds.</b> The most common path is LV pulling ahead (28% of sims lead-and-control) while MIA trails and throws to catch up (38%). MIA trailing and passing is what puts its receivers in play as a bring-back. <b>LV</b> (pass-leaning (55.8%), slow pace) attacks a defense that leaks to tight ends — the plays are Michael Mayer, Brock Bowers. <b>MIA</b> (balanced (51.1%), slow pace) attacks a secondary grading 17th-percentile — soft and exploitable (that LV defense has shifted balanced→pass on the carousel) — the plays are Malik Willis. <b>Build.</b> Fade both offenses in DFS; low total suppresses ceilings.</div>
+</div>
+<div class="foot">Forward-looking projections, not results — no live 2026 slates, salaries, or ownership exist yet. Every factual clause traces to a model layer (env_blend, game_sim, defense_splits, team_ceiling, flag_ranks, proe_tendency_2026). Pass/run conversion calibrated in validate_proe_conversion.py; full 18-week prose in dfs_weekly_breakdown.md.</div>
+</div></div></body></html>

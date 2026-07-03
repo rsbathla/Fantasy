@@ -1,0 +1,1658 @@
+{
+  "_meta": {
+    "purpose": "Per-player red-zone / TD-equity index (position-centered). Feeds dfs_model.rz_convert, which interacts it with the implied total (a goal-line-dominant player captures more of the team's TDs when there is more scoring). Centered so average-role players are unaffected and the baseline TD rate is not double-counted against the ceiling.",
+    "validated": "rz_tgt_share->end-zone TD r=+0.29 (WR/TE); RB TD/game YoY stability r=+0.51. See validate step; calibration in dfs_model (K_RZ_PC/K_RZ_RB).",
+    "sources": [
+      "boom/statmenu.json (rz field, WR/TE)",
+      "pipeline/player_games.parquet (RB actual TD/game)"
+    ],
+    "caveat": "No in-repo goal-line-CARRY opportunity metric for RBs; actual TD/game is the honest proxy (year-over-year stable). Refresh if a goal-line-touch source is added."
+  },
+  "teams": {
+    "puka nacua": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "jaxon smith njigba": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "jamarr chase": {
+      "pos": "WR",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "amon ra st brown": {
+      "pos": "WR",
+      "rz_role_z": 1.66,
+      "basis": "rz_tgt_share",
+      "value": 21.0,
+      "note": "21% red-zone target share (pos-centered z=+1.66)"
+    },
+    "ceedee lamb": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "drake london": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "justin jefferson": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "george pickens": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "trey mcbride": {
+      "pos": "TE",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "nico collins": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "aj brown": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "brock bowers": {
+      "pos": "TE",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "devonta smith": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "zay flowers": {
+      "pos": "WR",
+      "rz_role_z": -1.18,
+      "basis": "rz_tgt_share",
+      "value": 8.0,
+      "note": "8% red-zone target share (pos-centered z=-1.18)"
+    },
+    "chris olave": {
+      "pos": "WR",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "rashee rice": {
+      "pos": "WR",
+      "rz_role_z": 1.0,
+      "basis": "rz_tgt_share",
+      "value": 18.0,
+      "note": "18% red-zone target share (pos-centered z=+1.00)"
+    },
+    "emeka egbuka": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "ladd mcconkey": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "tee higgins": {
+      "pos": "WR",
+      "rz_role_z": 1.0,
+      "basis": "rz_tgt_share",
+      "value": 18.0,
+      "note": "18% red-zone target share (pos-centered z=+1.00)"
+    },
+    "colston loveland": {
+      "pos": "TE",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "malik nabers": {
+      "pos": "WR",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "davante adams": {
+      "pos": "WR",
+      "rz_role_z": 2.09,
+      "basis": "rz_tgt_share",
+      "value": 23.0,
+      "note": "23% red-zone target share (pos-centered z=+2.09)"
+    },
+    "garrett wilson": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "jameson williams": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "tetairoa mcmillan": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "jaylen waddle": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "luther burden": {
+      "pos": "WR",
+      "rz_role_z": -1.4,
+      "basis": "rz_tgt_share",
+      "value": 7.0,
+      "note": "7% red-zone target share (pos-centered z=-1.40)"
+    },
+    "dj moore": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "christian watson": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "terry mclaurin": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "mike evans": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "rome odunze": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "alec pierce": {
+      "pos": "WR",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "tyler warren": {
+      "pos": "TE",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "parker washington": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "marvin harrison": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "brian thomas": {
+      "pos": "WR",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "dk metcalf": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "courtland sutton": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "tucker kraft": {
+      "pos": "TE",
+      "rz_role_z": 2.09,
+      "basis": "rz_tgt_share",
+      "value": 23.0,
+      "note": "23% red-zone target share (pos-centered z=+2.09)"
+    },
+    "michael wilson": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "jayden reed": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "sam laporta": {
+      "pos": "TE",
+      "rz_role_z": 1.44,
+      "basis": "rz_tgt_share",
+      "value": 20.0,
+      "note": "20% red-zone target share (pos-centered z=+1.44)"
+    },
+    "harold fannin": {
+      "pos": "TE",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "kyle pitts": {
+      "pos": "TE",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "chris godwin": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "quentin johnston": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "michael pittman": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "george kittle": {
+      "pos": "TE",
+      "rz_role_z": 1.66,
+      "basis": "rz_tgt_share",
+      "value": 21.0,
+      "note": "21% red-zone target share (pos-centered z=+1.66)"
+    },
+    "jordan addison": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "jakobi meyers": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "dalton kincaid": {
+      "pos": "TE",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "josh downs": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "matthew golden": {
+      "pos": "WR",
+      "rz_role_z": -1.83,
+      "basis": "rz_tgt_share",
+      "value": 5.0,
+      "note": "5% red-zone target share (pos-centered z=-1.83)"
+    },
+    "wandale robinson": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "ricky pearsall": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "travis kelce": {
+      "pos": "TE",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "romeo doubs": {
+      "pos": "WR",
+      "rz_role_z": 1.0,
+      "basis": "rz_tgt_share",
+      "value": 18.0,
+      "note": "18% red-zone target share (pos-centered z=+1.00)"
+    },
+    "xavier worthy": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "khalil shakir": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "dallas goedert": {
+      "pos": "TE",
+      "rz_role_z": 1.0,
+      "basis": "rz_tgt_share",
+      "value": 18.0,
+      "note": "18% red-zone target share (pos-centered z=+1.00)"
+    },
+    "isaiah likely": {
+      "pos": "TE",
+      "rz_role_z": 1.22,
+      "basis": "rz_tgt_share",
+      "value": 19.0,
+      "note": "19% red-zone target share (pos-centered z=+1.22)"
+    },
+    "jake ferguson": {
+      "pos": "TE",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "stefon diggs": {
+      "pos": "WR",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "mark andrews": {
+      "pos": "TE",
+      "rz_role_z": 1.87,
+      "basis": "rz_tgt_share",
+      "value": 22.0,
+      "note": "22% red-zone target share (pos-centered z=+1.87)"
+    },
+    "jalen coker": {
+      "pos": "WR",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "jayden higgins": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "chig okonkwo": {
+      "pos": "TE",
+      "rz_role_z": -1.4,
+      "basis": "rz_tgt_share",
+      "value": 7.0,
+      "note": "7% red-zone target share (pos-centered z=-1.40)"
+    },
+    "jalen mcmillan": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "oronde gadsden": {
+      "pos": "TE",
+      "rz_role_z": 1.87,
+      "basis": "rz_tgt_share",
+      "value": 22.0,
+      "note": "22% red-zone target share (pos-centered z=+1.87)"
+    },
+    "brenton strange": {
+      "pos": "TE",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "juwan johnson": {
+      "pos": "TE",
+      "rz_role_z": -1.4,
+      "basis": "rz_tgt_share",
+      "value": 7.0,
+      "note": "7% red-zone target share (pos-centered z=-1.40)"
+    },
+    "rashid shaheed": {
+      "pos": "WR",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "jauan jennings": {
+      "pos": "WR",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "hunter henry": {
+      "pos": "TE",
+      "rz_role_z": 1.87,
+      "basis": "rz_tgt_share",
+      "value": 22.0,
+      "note": "22% red-zone target share (pos-centered z=+1.87)"
+    },
+    "tj hockenson": {
+      "pos": "TE",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "jalen nailor": {
+      "pos": "WR",
+      "rz_role_z": 1.44,
+      "basis": "rz_tgt_share",
+      "value": 20.0,
+      "note": "20% red-zone target share (pos-centered z=+1.44)"
+    },
+    "tre tucker": {
+      "pos": "WR",
+      "rz_role_z": -1.18,
+      "basis": "rz_tgt_share",
+      "value": 8.0,
+      "note": "8% red-zone target share (pos-centered z=-1.18)"
+    },
+    "dalton schultz": {
+      "pos": "TE",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "ryan flournoy": {
+      "pos": "WR",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "tyreek hill": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "isaac teslaa": {
+      "pos": "WR",
+      "rz_role_z": 2.5,
+      "basis": "rz_tgt_share",
+      "value": 26.6,
+      "note": "27% red-zone target share (pos-centered z=+2.50)"
+    },
+    "malik washington": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "deebo samuel": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "aj barner": {
+      "pos": "TE",
+      "rz_role_z": 1.44,
+      "basis": "rz_tgt_share",
+      "value": 20.0,
+      "note": "20% red-zone target share (pos-centered z=+1.44)"
+    },
+    "jerry jeudy": {
+      "pos": "WR",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "gunnar helm": {
+      "pos": "TE",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "calvin ridley": {
+      "pos": "WR",
+      "rz_role_z": -1.61,
+      "basis": "rz_tgt_share",
+      "value": 6.0,
+      "note": "6% red-zone target share (pos-centered z=-1.61)"
+    },
+    "greg dulcich": {
+      "pos": "TE",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "tre harris": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "tank dell": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "cooper kupp": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "cade otton": {
+      "pos": "TE",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "david njoku": {
+      "pos": "TE",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "adonai mitchell": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "pat freiermuth": {
+      "pos": "TE",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "colby parkinson": {
+      "pos": "TE",
+      "rz_role_z": 2.5,
+      "basis": "rz_tgt_share",
+      "value": 26.6,
+      "note": "27% red-zone target share (pos-centered z=+2.50)"
+    },
+    "kayshon boutte": {
+      "pos": "WR",
+      "rz_role_z": -1.61,
+      "basis": "rz_tgt_share",
+      "value": 6.0,
+      "note": "6% red-zone target share (pos-centered z=-1.61)"
+    },
+    "terrance ferguson": {
+      "pos": "TE",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "christian kirk": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "dontayvion wicks": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "keon coleman": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "mike gesicki": {
+      "pos": "TE",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "darnell mooney": {
+      "pos": "WR",
+      "rz_role_z": -1.18,
+      "basis": "rz_tgt_share",
+      "value": 8.0,
+      "note": "8% red-zone target share (pos-centered z=-1.18)"
+    },
+    "evan engram": {
+      "pos": "TE",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "jonnu smith": {
+      "pos": "TE",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "troy franklin": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "pat bryant": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "noah fant": {
+      "pos": "TE",
+      "rz_role_z": -1.18,
+      "basis": "rz_tgt_share",
+      "value": 8.0,
+      "note": "8% red-zone target share (pos-centered z=-1.18)"
+    },
+    "tyquan thornton": {
+      "pos": "WR",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "jake tonges": {
+      "pos": "TE",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "juju smith schuster": {
+      "pos": "WR",
+      "rz_role_z": 1.66,
+      "basis": "rz_tgt_share",
+      "value": 21.0,
+      "note": "21% red-zone target share (pos-centered z=+1.66)"
+    },
+    "darnell washington": {
+      "pos": "TE",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "deandre hopkins": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "noah gray": {
+      "pos": "TE",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "jaylin noel": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "tyler higbee": {
+      "pos": "TE",
+      "rz_role_z": 2.5,
+      "basis": "rz_tgt_share",
+      "value": 26.6,
+      "note": "27% red-zone target share (pos-centered z=+2.50)"
+    },
+    "rashod bateman": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "isaiah bond": {
+      "pos": "WR",
+      "rz_role_z": -1.4,
+      "basis": "rz_tgt_share",
+      "value": 7.0,
+      "note": "7% red-zone target share (pos-centered z=-1.40)"
+    },
+    "keenan allen": {
+      "pos": "WR",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "tutu atwell": {
+      "pos": "WR",
+      "rz_role_z": -1.83,
+      "basis": "rz_tgt_share",
+      "value": 5.0,
+      "note": "5% red-zone target share (pos-centered z=-1.83)"
+    },
+    "marvin mims": {
+      "pos": "WR",
+      "rz_role_z": -1.18,
+      "basis": "rz_tgt_share",
+      "value": 8.0,
+      "note": "8% red-zone target share (pos-centered z=-1.18)"
+    },
+    "charlie kolar": {
+      "pos": "TE",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "donte thornton": {
+      "pos": "WR",
+      "rz_role_z": -1.4,
+      "basis": "rz_tgt_share",
+      "value": 7.0,
+      "note": "7% red-zone target share (pos-centered z=-1.40)"
+    },
+    "devontez walker": {
+      "pos": "WR",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "jalen tolbert": {
+      "pos": "WR",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "mack hollins": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "zach ertz": {
+      "pos": "TE",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "demario douglas": {
+      "pos": "WR",
+      "rz_role_z": -0.74,
+      "basis": "rz_tgt_share",
+      "value": 10.0,
+      "note": "10% red-zone target share (pos-centered z=-0.74)"
+    },
+    "andrei iosivas": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "greg dortch": {
+      "pos": "WR",
+      "rz_role_z": 1.22,
+      "basis": "rz_tgt_share",
+      "value": 19.0,
+      "note": "19% red-zone target share (pos-centered z=+1.22)"
+    },
+    "kendrick bourne": {
+      "pos": "WR",
+      "rz_role_z": -1.83,
+      "basis": "rz_tgt_share",
+      "value": 5.0,
+      "note": "5% red-zone target share (pos-centered z=-1.83)"
+    },
+    "theo johnson": {
+      "pos": "TE",
+      "rz_role_z": -0.31,
+      "basis": "rz_tgt_share",
+      "value": 12.0,
+      "note": "12% red-zone target share (pos-centered z=-0.31)"
+    },
+    "kavontae turpin": {
+      "pos": "WR",
+      "rz_role_z": 0.13,
+      "basis": "rz_tgt_share",
+      "value": 14.0,
+      "note": "14% red-zone target share (pos-centered z=+0.13)"
+    },
+    "darius slayton": {
+      "pos": "WR",
+      "rz_role_z": -1.18,
+      "basis": "rz_tgt_share",
+      "value": 8.0,
+      "note": "8% red-zone target share (pos-centered z=-1.18)"
+    },
+    "luke mccaffrey": {
+      "pos": "WR",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "chimere dike": {
+      "pos": "WR",
+      "rz_role_z": 1.22,
+      "basis": "rz_tgt_share",
+      "value": 19.0,
+      "note": "19% red-zone target share (pos-centered z=+1.22)"
+    },
+    "ashton dulin": {
+      "pos": "WR",
+      "rz_role_z": -1.61,
+      "basis": "rz_tgt_share",
+      "value": 6.0,
+      "note": "6% red-zone target share (pos-centered z=-1.61)"
+    },
+    "calvin austin": {
+      "pos": "WR",
+      "rz_role_z": -1.4,
+      "basis": "rz_tgt_share",
+      "value": 7.0,
+      "note": "7% red-zone target share (pos-centered z=-1.40)"
+    },
+    "roman wilson": {
+      "pos": "WR",
+      "rz_role_z": -1.83,
+      "basis": "rz_tgt_share",
+      "value": 5.0,
+      "note": "5% red-zone target share (pos-centered z=-1.83)"
+    },
+    "elic ayomanor": {
+      "pos": "WR",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "cole kmet": {
+      "pos": "TE",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "michael mayer": {
+      "pos": "TE",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "jack bech": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "luke musgrave": {
+      "pos": "TE",
+      "rz_role_z": -1.83,
+      "basis": "rz_tgt_share",
+      "value": 5.0,
+      "note": "5% red-zone target share (pos-centered z=-1.83)"
+    },
+    "devaughn vele": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "cedric tillman": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "tommy tremble": {
+      "pos": "TE",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "mason taylor": {
+      "pos": "TE",
+      "rz_role_z": -0.09,
+      "basis": "rz_tgt_share",
+      "value": 13.0,
+      "note": "13% red-zone target share (pos-centered z=-0.09)"
+    },
+    "jahan dotson": {
+      "pos": "WR",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "xavier hutchinson": {
+      "pos": "WR",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "jordan whittington": {
+      "pos": "WR",
+      "rz_role_z": -1.61,
+      "basis": "rz_tgt_share",
+      "value": 6.0,
+      "note": "6% red-zone target share (pos-centered z=-1.61)"
+    },
+    "elijah arroyo": {
+      "pos": "TE",
+      "rz_role_z": 1.44,
+      "basis": "rz_tgt_share",
+      "value": 20.0,
+      "note": "20% red-zone target share (pos-centered z=+1.44)"
+    },
+    "jatavion sanders": {
+      "pos": "TE",
+      "rz_role_z": 1.66,
+      "basis": "rz_tgt_share",
+      "value": 21.0,
+      "note": "21% red-zone target share (pos-centered z=+1.66)"
+    },
+    "xavier legette": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "savion williams": {
+      "pos": "WR",
+      "rz_role_z": 2.5,
+      "basis": "rz_tgt_share",
+      "value": 26.6,
+      "note": "27% red-zone target share (pos-centered z=+2.50)"
+    },
+    "tez johnson": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "john metchie": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "kalif raymond": {
+      "pos": "WR",
+      "rz_role_z": -1.18,
+      "basis": "rz_tgt_share",
+      "value": 8.0,
+      "note": "8% red-zone target share (pos-centered z=-1.18)"
+    },
+    "jaylin lane": {
+      "pos": "WR",
+      "rz_role_z": -1.61,
+      "basis": "rz_tgt_share",
+      "value": 6.0,
+      "note": "6% red-zone target share (pos-centered z=-1.61)"
+    },
+    "ben sinnott": {
+      "pos": "TE",
+      "rz_role_z": -0.52,
+      "basis": "rz_tgt_share",
+      "value": 11.0,
+      "note": "11% red-zone target share (pos-centered z=-0.52)"
+    },
+    "dawson knox": {
+      "pos": "TE",
+      "rz_role_z": 1.22,
+      "basis": "rz_tgt_share",
+      "value": 19.0,
+      "note": "19% red-zone target share (pos-centered z=+1.22)"
+    },
+    "treylon burks": {
+      "pos": "WR",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "nick westbrook ikhine": {
+      "pos": "WR",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "olamide zaccheaus": {
+      "pos": "WR",
+      "rz_role_z": 0.57,
+      "basis": "rz_tgt_share",
+      "value": 16.0,
+      "note": "16% red-zone target share (pos-centered z=+0.57)"
+    },
+    "keandre lambert smith": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "dyami brown": {
+      "pos": "WR",
+      "rz_role_z": 0.78,
+      "basis": "rz_tgt_share",
+      "value": 17.0,
+      "note": "17% red-zone target share (pos-centered z=+0.78)"
+    },
+    "konata mumpfield": {
+      "pos": "WR",
+      "rz_role_z": 1.0,
+      "basis": "rz_tgt_share",
+      "value": 18.0,
+      "note": "18% red-zone target share (pos-centered z=+1.00)"
+    },
+    "kyle williams": {
+      "pos": "WR",
+      "rz_role_z": -1.83,
+      "basis": "rz_tgt_share",
+      "value": 5.0,
+      "note": "5% red-zone target share (pos-centered z=-1.83)"
+    },
+    "demarcus robinson": {
+      "pos": "WR",
+      "rz_role_z": 0.35,
+      "basis": "rz_tgt_share",
+      "value": 15.0,
+      "note": "15% red-zone target share (pos-centered z=+0.35)"
+    },
+    "tyler conklin": {
+      "pos": "TE",
+      "rz_role_z": -0.96,
+      "basis": "rz_tgt_share",
+      "value": 9.0,
+      "note": "9% red-zone target share (pos-centered z=-0.96)"
+    },
+    "jahmyr gibbs": {
+      "pos": "RB",
+      "rz_role_z": 2.33,
+      "basis": "td_per_game",
+      "value": 1.08,
+      "note": "1.08 rush+rec TD/game (pos-centered z=+2.33)"
+    },
+    "bijan robinson": {
+      "pos": "RB",
+      "rz_role_z": 1.14,
+      "basis": "td_per_game",
+      "value": 0.74,
+      "note": "0.74 rush+rec TD/game (pos-centered z=+1.14)"
+    },
+    "jonathan taylor": {
+      "pos": "RB",
+      "rz_role_z": 2.28,
+      "basis": "td_per_game",
+      "value": 1.07,
+      "note": "1.07 rush+rec TD/game (pos-centered z=+2.28)"
+    },
+    "james cook": {
+      "pos": "RB",
+      "rz_role_z": 1.82,
+      "basis": "td_per_game",
+      "value": 0.94,
+      "note": "0.94 rush+rec TD/game (pos-centered z=+1.82)"
+    },
+    "christian mccaffrey": {
+      "pos": "RB",
+      "rz_role_z": 1.6,
+      "basis": "td_per_game",
+      "value": 0.87,
+      "note": "0.87 rush+rec TD/game (pos-centered z=+1.60)"
+    },
+    "devon achane": {
+      "pos": "RB",
+      "rz_role_z": 1.12,
+      "basis": "td_per_game",
+      "value": 0.73,
+      "note": "0.73 rush+rec TD/game (pos-centered z=+1.12)"
+    },
+    "ashton jeanty": {
+      "pos": "RB",
+      "rz_role_z": 0.62,
+      "basis": "td_per_game",
+      "value": 0.59,
+      "note": "0.59 rush+rec TD/game (pos-centered z=+0.62)"
+    },
+    "derrick henry": {
+      "pos": "RB",
+      "rz_role_z": 2.0,
+      "basis": "td_per_game",
+      "value": 0.99,
+      "note": "0.99 rush+rec TD/game (pos-centered z=+2.00)"
+    },
+    "saquon barkley": {
+      "pos": "RB",
+      "rz_role_z": 1.03,
+      "basis": "td_per_game",
+      "value": 0.71,
+      "note": "0.71 rush+rec TD/game (pos-centered z=+1.03)"
+    },
+    "omarion hampton": {
+      "pos": "RB",
+      "rz_role_z": 0.51,
+      "basis": "td_per_game",
+      "value": 0.56,
+      "note": "0.56 rush+rec TD/game (pos-centered z=+0.51)"
+    },
+    "chase brown": {
+      "pos": "RB",
+      "rz_role_z": 0.88,
+      "basis": "td_per_game",
+      "value": 0.66,
+      "note": "0.66 rush+rec TD/game (pos-centered z=+0.88)"
+    },
+    "breece hall": {
+      "pos": "RB",
+      "rz_role_z": -0.08,
+      "basis": "td_per_game",
+      "value": 0.38,
+      "note": "0.38 rush+rec TD/game (pos-centered z=-0.08)"
+    },
+    "javonte williams": {
+      "pos": "RB",
+      "rz_role_z": 1.4,
+      "basis": "td_per_game",
+      "value": 0.81,
+      "note": "0.81 rush+rec TD/game (pos-centered z=+1.40)"
+    },
+    "josh jacobs": {
+      "pos": "RB",
+      "rz_role_z": 1.83,
+      "basis": "td_per_game",
+      "value": 0.94,
+      "note": "0.94 rush+rec TD/game (pos-centered z=+1.83)"
+    },
+    "cam skattebo": {
+      "pos": "RB",
+      "rz_role_z": 1.61,
+      "basis": "td_per_game",
+      "value": 0.88,
+      "note": "0.88 rush+rec TD/game (pos-centered z=+1.61)"
+    },
+    "dandre swift": {
+      "pos": "RB",
+      "rz_role_z": 0.37,
+      "basis": "td_per_game",
+      "value": 0.52,
+      "note": "0.52 rush+rec TD/game (pos-centered z=+0.37)"
+    },
+    "quinshon judkins": {
+      "pos": "RB",
+      "rz_role_z": 0.32,
+      "basis": "td_per_game",
+      "value": 0.5,
+      "note": "0.50 rush+rec TD/game (pos-centered z=+0.32)"
+    },
+    "treveyon henderson": {
+      "pos": "RB",
+      "rz_role_z": 0.62,
+      "basis": "td_per_game",
+      "value": 0.59,
+      "note": "0.59 rush+rec TD/game (pos-centered z=+0.62)"
+    },
+    "bucky irving": {
+      "pos": "RB",
+      "rz_role_z": 0.1,
+      "basis": "td_per_game",
+      "value": 0.44,
+      "note": "0.44 rush+rec TD/game (pos-centered z=+0.10)"
+    },
+    "bhayshul tuten": {
+      "pos": "RB",
+      "rz_role_z": 0.2,
+      "basis": "td_per_game",
+      "value": 0.47,
+      "note": "0.47 rush+rec TD/game (pos-centered z=+0.20)"
+    },
+    "chuba hubbard": {
+      "pos": "RB",
+      "rz_role_z": 0.13,
+      "basis": "td_per_game",
+      "value": 0.45,
+      "note": "0.45 rush+rec TD/game (pos-centered z=+0.13)"
+    },
+    "rhamondre stevenson": {
+      "pos": "RB",
+      "rz_role_z": 0.66,
+      "basis": "td_per_game",
+      "value": 0.6,
+      "note": "0.60 rush+rec TD/game (pos-centered z=+0.66)"
+    },
+    "tony pollard": {
+      "pos": "RB",
+      "rz_role_z": -0.37,
+      "basis": "td_per_game",
+      "value": 0.3,
+      "note": "0.30 rush+rec TD/game (pos-centered z=-0.37)"
+    },
+    "rj harvey": {
+      "pos": "RB",
+      "rz_role_z": 1.03,
+      "basis": "td_per_game",
+      "value": 0.71,
+      "note": "0.71 rush+rec TD/game (pos-centered z=+1.03)"
+    },
+    "jaylen warren": {
+      "pos": "RB",
+      "rz_role_z": -0.24,
+      "basis": "td_per_game",
+      "value": 0.34,
+      "note": "0.34 rush+rec TD/game (pos-centered z=-0.24)"
+    },
+    "kyle monangai": {
+      "pos": "RB",
+      "rz_role_z": -0.4,
+      "basis": "td_per_game",
+      "value": 0.29,
+      "note": "0.29 rush+rec TD/game (pos-centered z=-0.40)"
+    },
+    "jk dobbins": {
+      "pos": "RB",
+      "rz_role_z": -0.03,
+      "basis": "td_per_game",
+      "value": 0.4,
+      "note": "0.40 rush+rec TD/game (pos-centered z=-0.03)"
+    },
+    "aaron jones": {
+      "pos": "RB",
+      "rz_role_z": -0.29,
+      "basis": "td_per_game",
+      "value": 0.33,
+      "note": "0.33 rush+rec TD/game (pos-centered z=-0.29)"
+    },
+    "jacory croskey merritt": {
+      "pos": "RB",
+      "rz_role_z": 0.21,
+      "basis": "td_per_game",
+      "value": 0.47,
+      "note": "0.47 rush+rec TD/game (pos-centered z=+0.21)"
+    },
+    "jordan mason": {
+      "pos": "RB",
+      "rz_role_z": -0.12,
+      "basis": "td_per_game",
+      "value": 0.38,
+      "note": "0.38 rush+rec TD/game (pos-centered z=-0.12)"
+    },
+    "tyrone tracy": {
+      "pos": "RB",
+      "rz_role_z": -0.37,
+      "basis": "td_per_game",
+      "value": 0.3,
+      "note": "0.30 rush+rec TD/game (pos-centered z=-0.37)"
+    },
+    "zach charbonnet": {
+      "pos": "RB",
+      "rz_role_z": 0.88,
+      "basis": "td_per_game",
+      "value": 0.66,
+      "note": "0.66 rush+rec TD/game (pos-centered z=+0.88)"
+    },
+    "woody marks": {
+      "pos": "RB",
+      "rz_role_z": -0.33,
+      "basis": "td_per_game",
+      "value": 0.31,
+      "note": "0.31 rush+rec TD/game (pos-centered z=-0.33)"
+    },
+    "tyjae spears": {
+      "pos": "RB",
+      "rz_role_z": -0.55,
+      "basis": "td_per_game",
+      "value": 0.25,
+      "note": "0.25 rush+rec TD/game (pos-centered z=-0.55)"
+    },
+    "alvin kamara": {
+      "pos": "RB",
+      "rz_role_z": -0.36,
+      "basis": "td_per_game",
+      "value": 0.3,
+      "note": "0.30 rush+rec TD/game (pos-centered z=-0.36)"
+    },
+    "brian robinson": {
+      "pos": "RB",
+      "rz_role_z": 1.14,
+      "basis": "td_per_game",
+      "value": 0.74,
+      "note": "0.74 rush+rec TD/game (pos-centered z=+1.14)"
+    },
+    "dylan sampson": {
+      "pos": "RB",
+      "rz_role_z": -0.95,
+      "basis": "td_per_game",
+      "value": 0.13,
+      "note": "0.13 rush+rec TD/game (pos-centered z=-0.95)"
+    },
+    "tank bigsby": {
+      "pos": "RB",
+      "rz_role_z": -0.72,
+      "basis": "td_per_game",
+      "value": 0.2,
+      "note": "0.20 rush+rec TD/game (pos-centered z=-0.72)"
+    },
+    "sean tucker": {
+      "pos": "RB",
+      "rz_role_z": 0.22,
+      "basis": "td_per_game",
+      "value": 0.47,
+      "note": "0.47 rush+rec TD/game (pos-centered z=+0.22)"
+    },
+    "braelon allen": {
+      "pos": "RB",
+      "rz_role_z": -0.73,
+      "basis": "td_per_game",
+      "value": 0.2,
+      "note": "0.20 rush+rec TD/game (pos-centered z=-0.73)"
+    },
+    "ray davis": {
+      "pos": "RB",
+      "rz_role_z": -0.55,
+      "basis": "td_per_game",
+      "value": 0.25,
+      "note": "0.25 rush+rec TD/game (pos-centered z=-0.55)"
+    },
+    "kimani vidal": {
+      "pos": "RB",
+      "rz_role_z": -0.51,
+      "basis": "td_per_game",
+      "value": 0.26,
+      "note": "0.26 rush+rec TD/game (pos-centered z=-0.51)"
+    },
+    "james conner": {
+      "pos": "RB",
+      "rz_role_z": 0.61,
+      "basis": "td_per_game",
+      "value": 0.59,
+      "note": "0.59 rush+rec TD/game (pos-centered z=+0.61)"
+    },
+    "jaydon blue": {
+      "pos": "RB",
+      "rz_role_z": -0.72,
+      "basis": "td_per_game",
+      "value": 0.2,
+      "note": "0.20 rush+rec TD/game (pos-centered z=-0.72)"
+    },
+    "samaje perine": {
+      "pos": "RB",
+      "rz_role_z": -0.67,
+      "basis": "td_per_game",
+      "value": 0.21,
+      "note": "0.21 rush+rec TD/game (pos-centered z=-0.67)"
+    },
+    "chris brooks": {
+      "pos": "RB",
+      "rz_role_z": -1.31,
+      "basis": "td_per_game",
+      "value": 0.03,
+      "note": "0.03 rush+rec TD/game (pos-centered z=-1.31)"
+    },
+    "george holani": {
+      "pos": "RB",
+      "rz_role_z": -0.55,
+      "basis": "td_per_game",
+      "value": 0.25,
+      "note": "0.25 rush+rec TD/game (pos-centered z=-0.55)"
+    },
+    "trevor etienne": {
+      "pos": "RB",
+      "rz_role_z": -1.42,
+      "basis": "td_per_game",
+      "value": 0.0,
+      "note": "0.00 rush+rec TD/game (pos-centered z=-1.42)"
+    },
+    "brashard smith": {
+      "pos": "RB",
+      "rz_role_z": -1.18,
+      "basis": "td_per_game",
+      "value": 0.07,
+      "note": "0.07 rush+rec TD/game (pos-centered z=-1.18)"
+    },
+    "ollie gordon": {
+      "pos": "RB",
+      "rz_role_z": -0.55,
+      "basis": "td_per_game",
+      "value": 0.25,
+      "note": "0.25 rush+rec TD/game (pos-centered z=-0.55)"
+    },
+    "ty johnson": {
+      "pos": "RB",
+      "rz_role_z": -0.48,
+      "basis": "td_per_game",
+      "value": 0.27,
+      "note": "0.27 rush+rec TD/game (pos-centered z=-0.48)"
+    },
+    "kaleb johnson": {
+      "pos": "RB",
+      "rz_role_z": -1.42,
+      "basis": "td_per_game",
+      "value": 0.0,
+      "note": "0.00 rush+rec TD/game (pos-centered z=-1.42)"
+    },
+    "will shipley": {
+      "pos": "RB",
+      "rz_role_z": -1.42,
+      "basis": "td_per_game",
+      "value": 0.0,
+      "note": "0.00 rush+rec TD/game (pos-centered z=-1.42)"
+    },
+    "devin singletary": {
+      "pos": "RB",
+      "rz_role_z": -0.43,
+      "basis": "td_per_game",
+      "value": 0.28,
+      "note": "0.28 rush+rec TD/game (pos-centered z=-0.43)"
+    },
+    "isaiah davis": {
+      "pos": "RB",
+      "rz_role_z": -1.04,
+      "basis": "td_per_game",
+      "value": 0.11,
+      "note": "0.11 rush+rec TD/game (pos-centered z=-1.04)"
+    },
+    "devin neal": {
+      "pos": "RB",
+      "rz_role_z": -0.65,
+      "basis": "td_per_game",
+      "value": 0.22,
+      "note": "0.22 rush+rec TD/game (pos-centered z=-0.65)"
+    },
+    "dj giddens": {
+      "pos": "RB",
+      "rz_role_z": -1.42,
+      "basis": "td_per_game",
+      "value": 0.0,
+      "note": "0.00 rush+rec TD/game (pos-centered z=-1.42)"
+    },
+    "malik davis": {
+      "pos": "RB",
+      "rz_role_z": -0.65,
+      "basis": "td_per_game",
+      "value": 0.22,
+      "note": "0.22 rush+rec TD/game (pos-centered z=-0.65)"
+    },
+    "lequint allen": {
+      "pos": "RB",
+      "rz_role_z": -1.42,
+      "basis": "td_per_game",
+      "value": 0.0,
+      "note": "0.00 rush+rec TD/game (pos-centered z=-1.42)"
+    },
+    "jaylen wright": {
+      "pos": "RB",
+      "rz_role_z": -1.01,
+      "basis": "td_per_game",
+      "value": 0.12,
+      "note": "0.12 rush+rec TD/game (pos-centered z=-1.01)"
+    },
+    "trey benson": {
+      "pos": "RB",
+      "rz_role_z": -1.23,
+      "basis": "td_per_game",
+      "value": 0.05,
+      "note": "0.05 rush+rec TD/game (pos-centered z=-1.23)"
+    },
+    "tahj brooks": {
+      "pos": "RB",
+      "rz_role_z": -1.42,
+      "basis": "td_per_game",
+      "value": 0.0,
+      "note": "0.00 rush+rec TD/game (pos-centered z=-1.42)"
+    },
+    "audric estime": {
+      "pos": "RB",
+      "rz_role_z": -0.72,
+      "basis": "td_per_game",
+      "value": 0.2,
+      "note": "0.20 rush+rec TD/game (pos-centered z=-0.72)"
+    },
+    "isaac guerendo": {
+      "pos": "RB",
+      "rz_role_z": -0.35,
+      "basis": "td_per_game",
+      "value": 0.31,
+      "note": "0.31 rush+rec TD/game (pos-centered z=-0.35)"
+    }
+  }
+}

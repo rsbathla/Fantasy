@@ -34,6 +34,14 @@ _FR = J('flag_ranks.json')
 FR_META = _FR['_meta']
 FLAG_IDX = {fn(v['name']): v for v in _FR['players'].values()}   # fn-normalized (resolves Ja'Marr/St. Brown)
 BUILT = J('matchup_notes.json')['_meta'].get('built', '')
+try:
+    PT = J('proe_tendency_2026.json')['teams']   # 2026 PROE tendency (2025 actual + carousel)
+except Exception:
+    PT = {}
+try:
+    PT_RZ = {fn(k): v for k, v in J('rz_equity_2026.json')['teams'].items()}   # red-zone / TD-equity index
+except Exception:
+    PT_RZ = {}
 
 TEAM_FULL = {  # for readable game headers where useful
     'ARI':'Arizona','ATL':'Atlanta','BAL':'Baltimore','BUF':'Buffalo','CAR':'Carolina',
@@ -72,6 +80,91 @@ def _flag_phrase(flags):
     if not flags: return None
     fs = [f.split('(')[0].strip().rstrip('.') for f in flags[:3]]
     return ", ".join(fs)
+
+def coverage_scheme_clause(p):
+    """Explain the man/zone SCHEME fit: does the player's coverage strength meet the coverage this
+    defense actually plays, and how soft are they on it? (This is the mechanic the raw edge list
+    hides — a zone specialist vs a man-heavy D is schemed out even against a 'soft' coverage grade.)"""
+    if p['pos'] not in ('WR', 'TE'):
+        return ""
+    opp = p.get('opp')
+    E = {e.get('axis'): e for e in (p.get('edges') or [])}
+    man, zone = E.get('vs Man'), E.get('vs Zone')
+    if not man or not zone or not opp:
+        return ""
+    mp, zp = man.get('player_pctl'), zone.get('player_pctl')
+    ms, zs = man.get('def_soft_pctl'), zone.get('def_soft_pctl')
+    mrate = man.get('cov_rate')   # this defense's man coverage rate (%)
+    if None in (mp, zp, mrate):
+        return ""
+    lean = "man-heavy" if mrate >= 29 else ("zone-heavy" if mrate <= 24 else "balanced-coverage")
+    who = p['name'].split()[-1]
+    # zone specialist
+    if zp >= 65 and zp - mp >= 15:
+        sees = "sees his coverage on most snaps" if mrate <= 40 else "sees less zone than usual"
+        if zs is not None and zs >= 60:
+            tail = f"and {opp} is soft against it ({ordinal(zs)}-pctl) — a genuine edge"
+        elif zs is not None:
+            tail = f"but {opp} defends zone well ({ordinal(zs)}-pctl), which mutes it despite the soft overall grade"
+        else:
+            tail = "against an average zone unit"
+        return (f"Coverage scheme: {opp} is {lean} ({mrate:.0f}% man); {who} is a zone specialist "
+                f"({ordinal(zp)}-pctl vs zone vs {ordinal(mp)}-pctl vs man), so he {sees} — {tail}.")
+    # man-beater
+    if mp >= 65 and mp - zp >= 15:
+        freq = "often enough to matter" if mrate >= 23 else "sparingly, which caps the edge"
+        if ms is not None and ms >= 60:
+            tail = f"and {opp} is soft vs man ({ordinal(ms)}-pctl) — that is the exploit"
+        elif ms is not None:
+            tail = f"though {opp} holds up in man ({ordinal(ms)}-pctl)"
+        else:
+            tail = ""
+        return (f"Coverage scheme: {who} is a man-beater ({ordinal(mp)}-pctl vs man vs {ordinal(zp)}-pctl "
+                f"vs zone); {opp} plays man {mrate:.0f}% — {freq}, {tail}.")
+    # wins vs both looks
+    if mp >= 60 and zp >= 60:
+        return (f"Coverage scheme: {who} wins vs both looks ({ordinal(mp)}-pctl man / {ordinal(zp)}-pctl "
+                f"zone), so {opp}'s {lean} tendency ({mrate:.0f}% man) can't scheme him out.")
+    return ""
+
+def rz_clause(p):
+    """Surface the red-zone / TD-equity tilt as a readable lever (validated, implied-total-scaled)."""
+    rm = p.get('rz_mult')
+    if rm is None or abs(rm - 1.0) < 0.015:
+        return ""
+    rz = (PT_RZ.get(fn(p['name'])) or {})
+    pct = (rm - 1.0) * 100
+    who = p['name'].split()[-1]
+    basis = rz.get('note', 'red-zone role')
+    if rm > 1:
+        return (f"Red-zone equity: {who} is TD-dominant ({basis}); in a high-scoring spot that captures "
+                f"more of the team's touchdowns than volume alone implies — up ×{rm:.2f} ({pct:+.0f}%).")
+    return (f"Red-zone equity: {who} carries a below-average red-zone role ({basis}), a mild TD-equity "
+            f"drag in this spot — down ×{rm:.2f} ({pct:+.0f}%).")
+
+def conversion_clause(p):
+    """Surface the PROE pass/run conversion multiplier as a readable lever (validated layer)."""
+    pm = p.get('proe_mult')
+    if pm is None or abs(pm - 1.0) < 0.015:
+        return ""   # negligible tilt — don't clutter
+    team, pos = p['team'], p['pos']
+    pt = PT.get(team, {})
+    proe = pt.get('proe_2026'); adj = pt.get('carousel_adj') or 0
+    if proe is None:
+        return ""
+    lean = 'pass-lean' if proe > 1 else ('run-lean' if proe < -1 else 'balanced')
+    car = f", carousel {adj:+.0f}" if adj else ""
+    pct = (pm - 1.0) * 100
+    last = p['name'].split()[-1]
+    if pos in ('WR', 'TE'):
+        why = ("routes fantasy above the team total to pass-catchers" if pm > 1
+               else "is a headwind for pass-catcher conversion")
+        return f"Pass/run conversion: {team} projects {lean} (PROE {proe:+.0f}{car}), which historically {why} — {last} {'up' if pm>1 else 'down'} ×{pm:.2f} ({pct:+.0f}%)."
+    if pos == 'RB':
+        if pm > 1:
+            return f"Pass/run conversion: {team} projects {lean} (PROE {proe:+.0f}{car}); given the sim's projected game script the backfield converts above the total — {last} up ×{pm:.2f} ({pct:+.0f}%)."
+        return f"Pass/run conversion: {team} projects {lean} (PROE {proe:+.0f}{car}), tilting fantasy to the pass game — {last} down ×{pm:.2f} ({pct:+.0f}%)."
+    return ""
 
 def upside_paragraph(p, rank_in_week):
     """A flowing, fully-grounded upside case for one liked player this week."""
@@ -150,7 +243,10 @@ def upside_paragraph(p, rank_in_week):
     fp = _flag_phrase(fl.get('top_flags'))
     flag_sent = f"Board flags: {fp}." if fp else ""
 
-    body = " ".join(s for s in [lead, env_sent, edge_sent, season_sent, lever_sent, flag_sent] if s)
+    cov_sent = coverage_scheme_clause(p)
+    conv_sent = conversion_clause(p)
+    rz_sent = rz_clause(p)
+    body = " ".join(s for s in [lead, env_sent, edge_sent, cov_sent, season_sent, lever_sent, conv_sent, rz_sent, flag_sent] if s)
     return body
 
 # ---------------------------------------------------------------- per-game prose
@@ -315,10 +411,24 @@ with a revert flag), so the blend can re-order comparable games but never overri
 are always shown. When in-season lines post, the same field refreshes and the blend sharpens.
 
 **2. The per-player play score is NOT the total alone.** Each player's weekly play score is
-`ceiling x (1 + matchup_edge/250) x (1 + (implied_total - 21)/60)`. Three levers: the player's own
-**ceiling** (simulated 95th-percentile week), this week's **matchup edge**, and the **environment**
-(implied team total). A big projected total lifts everyone in the game, but talent and matchup still
+`ceiling x (1 + matchup_edge/250) x (1 + (implied_total - 21)/60) x pass_run_conversion`. Four levers:
+the player's own **ceiling** (simulated 95th-percentile week), this week's **matchup edge**, the
+**environment** (implied team total), and the **pass/run conversion** (lever 7 below). A big projected
+total lifts everyone in the game, but talent, matchup, and how a team *converts* its points still
 separate the plays. That is why the "who we like" list is not just the players in the highest-total game.
+
+**7. Pass/run conversion — where a team's points actually go.** The implied total sets *how many*
+points a team scores; it does not say whether they flow to pass-catchers or to the backfield. That
+split is a team's **PROE** (pass rate over expected) tendency, and it is a real, orthogonal signal:
+measured on complete 2024+2025 per-game data — after removing the implied total — a pass-lean offense
+routes about +0.67 DK per PROE point *above the total's expectation* to its WR/TE, and the mirror to
+RBs, and the effect **replicates across both seasons**. So on a pass-lean team the pass-catchers are
+upgraded and the RBs shaded, and vice-versa. One refinement matters: the RB side is **game-script
+dependent** — a back's clock-kill value roughly doubles when his team is projected to lead (from the
+game-script sim), *unless* the offense is high-PROE (those coaches keep throwing even with a lead). The
+2026 PROE input is each team's 2025 actual tendency plus a bounded, flagged coaching-carousel adjustment
+(`proe_tendency_2026.json`); the multiplier is calibrated and capped at ±12% so it refines, never
+dominates.
 
 **3. What a "matchup edge / smash" is.** Real charting percentiles — a receiver's man-coverage, zone,
 or deep strength; a back's run-game profile — lined up against **this week's opponent** defense's
@@ -361,6 +471,15 @@ move with camp news, injuries, and role changes. Refresh when real lines and sla
   the floor under the ceiling.
 - **Scheme fit** — where the 2026 playcaller amplifies a specific skill (motion separation, vertical
   aDOT, RB pass-game usage).
+- **Pass/run conversion** — a team's PROE (pass-over-expected) tendency reallocates fantasy *within*
+  the team on top of the implied total: WR/TE up and RB down on pass-lean offenses, the mirror on
+  run-lean. The RB side amplifies when the game-script sim projects a lead (clock-kill), unless the
+  offense is high-PROE. Calibrated on 2024+2025 actuals, capped at ±12%.
+- **Red-zone / TD equity** — who captures the six-point plays. A player's red-zone role (RZ target
+  share for pass-catchers; TD/game for backs) *interacts with the implied total*: a goal-line-dominant
+  player gets extra lift when the team is projected to score, and none when it isn't — so it never
+  double-counts the flat total. Validated (RZ share → end-zone TDs r=+0.29; RB TD/game year-over-year
+  r=+0.51), centered on the positional average, capped at ±10%.
 
 ---
 """
