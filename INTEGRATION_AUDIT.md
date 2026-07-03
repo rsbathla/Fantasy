@@ -14,8 +14,8 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 
 - **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **2 builders** produce artifacts but are absent from the pipeline runner
-- **494 unused fields** across 76 record-structured layers (auto-discovered, repo-wide)
-- **35 divergent consumers** (a consumer under-using a layer its peers read fully)
+- **494 unused fields** across 77 record-structured layers (auto-discovered, repo-wide)
+- **36 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
 ## G. Surface declarations (P0)
@@ -28,6 +28,7 @@ _None — all surface declarations are satisfied._
 |---|---|---|
 | `boom/scheme_fit.json` | rankings | `build_flag_ranks.py` |
 | `boom/scheme_fit.json` | dossier | `build_dossier.py` |
+| `dfs_season_baseline.json` | dfs | `build_dfs_season_baseline.py` |
 | `flag_ranks.json` | predraft | `build_adp_clusters.py` |
 | `flag_ranks.json` | rankings | `build_rankings.py` |
 | `slot_paths.json` | predraft | `[curated chain] slot_paths.json -> strategy_board.json (agent-built from slot_paths decision zones) -> render_strategy_board.py` |
@@ -457,9 +458,16 @@ _None._
 | command_center.py | 1 |
 | dfs_scenarios.py | 1 |
 
-### `dfs_week.json`  (7 fields, 2 consumers)
+### `dfs_season_baseline.json`  (3 fields, 2 consumers)
 | consumer | # fields read |
 |---|---|
+| build_dfs_season_baseline.py | 3 |
+| gen_dfs_weekly_baseline.py | 0 |
+
+### `dfs_week.json`  (7 fields, 3 consumers)
+| consumer | # fields read |
+|---|---|
+| build_dfs_season_baseline.py | 4 |
 | dfs_model.py | 7 |
 | render_dfs_week.py | 2 |
 
@@ -666,10 +674,11 @@ _None._
 | engine/strategy_live.py | 2 |
 | render_strategy_board.py | 3 |
 
-### `team_ceiling.json`  (25 fields, 5 consumers)
+### `team_ceiling.json`  (25 fields, 6 consumers)
 | consumer | # fields read |
 |---|---|
 | build_dossier.py | 16 |
+| build_pdf.py | 3 |
 | build_slot_paths.py | 1 |
 | build_stack_menu.py | 3 |
 | engine/run_live.py | 2 |
@@ -677,7 +686,7 @@ _None._
 
 **Unused by ALL consumers:** `base_core`, `env_idx`, `own_pass_cov_pctl`, `pace_pctl`, `playcaller`, `plays_pg`, `raw`, `vacated_tgt_pct`
 
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_pdf.py`, `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`
 
 ### `team_review_data.json`  (36 fields, 4 consumers)
 | consumer | # fields read |

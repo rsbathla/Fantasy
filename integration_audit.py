@@ -50,6 +50,7 @@ SURFACE_ENTRYPOINTS = {
     'live':     ['engine/run_live.py', 'engine/strategy_live.py', 'build_decision_dashboard.py', 'bb_grade.py', 'draft.py'],
     'dossier':  ['build_dossier.py', 'render_dossier.py', 'build_dossier_deep.py'],
     'rankings': ['build_rankings.py', 'build_flag_ranks.py'],
+    'dfs':      ['render_dfs_week.py', 'dfs_model.py', 'build_dfs_season_baseline.py'],
 }
 
 # ---- SURFACE_EXEMPT: intermediate/internal layers that don't need a surfaces declaration ----
