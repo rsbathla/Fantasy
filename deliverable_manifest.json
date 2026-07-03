@@ -1,0 +1,101 @@
+{
+  "_meta": {
+    "purpose": "Layer-utilization manifests for HAND-AUTHORED deliverables (agent-written prose/boards that no token scan can audit). Each entry declares which core intelligence layers fed the deliverable and JUSTIFIES every core layer it did not use. Enforced by integration_audit.py Check H2: an undeclared or unjustified omission is a P0. This makes 'we built a layer and the deliverable quietly ignored it' impossible to ship silently (PLAYBOOK.md C5/C6).",
+    "rule": "When you author or regenerate a deliverable, update its entry IN THE SAME CHANGE. An entry is a claim about the CURRENT file on disk.",
+    "built": "2026-07-03"
+  },
+  "deliverables": {
+    "dfs_week1_report.html": {
+      "authored": "agent-written Week 1 DFS report (game notes -> summary -> team cases -> best plays)",
+      "layers_used": [
+        "weekly-vegas-lines.csv",
+        "team_ceiling.json",
+        "offense_profile.json",
+        "defense_splits.json",
+        "coordinator_changes_2026.json",
+        "cc_context.json",
+        "flag_ranks.json",
+        "boom/defensive_profile.json",
+        "pipeline/correlation_structure.json"
+      ],
+      "layers_unused_justified": {
+        "boom/scheme_fit.json": "player-level playoff-week scheme fit is a season-long (W15-17) construct; the weekly report uses the week's own frequency-weighted edges from defense_splits instead",
+        "slot_paths.json": "draft-slot availability is a best-ball draft construct; no meaning for a DFS weekly slate",
+        "stack_menu.json": "best-ball stack windows are ADP/draft-capital constructs; DFS stacks are rebuilt from the week's dfs_model templates (correlation_structure)"
+      },
+      "notes": "ADP fields of flag_ranks are deliberately excluded (domain rule: ADP is a best-ball price, never a DFS cost proxy). Vegas O/U + team_ceiling blend govern environment ranking per env_blend.py."
+    },
+    "strategy_board.json": {
+      "authored": "agent-authored pick-#-specific draft strategies (12 slots x 3 strategies)",
+      "layers_used": [
+        "flag_ranks.json",
+        "team_ceiling.json",
+        "slot_paths.json",
+        "stack_menu.json",
+        "pipeline/correlation_structure.json"
+      ],
+      "layers_unused_justified": {
+        "weekly-vegas-lines.csv": "single-week O/U environments do not drive season-long draft strategy; season environment enters via team_ceiling env drivers",
+        "defense_splits.json": "weekly opponent softness is a DFS construct; season-long matchup quality enters flag_ranks via the W15-17 weighted smq",
+        "offense_profile.json": "consumed indirectly: team_ceiling is built FROM offense_profile; the board reads the distilled tier",
+        "coordinator_changes_2026.json": "consumed indirectly through team_ceiling scheme_upgrade driver and scheme_fit-adjusted flag_ranks",
+        "boom/scheme_fit.json": "consumed indirectly: flag_ranks smq_pctl_adj already folds scheme fit in",
+        "cc_context.json": "per-player drilldown context; board strategies operate at the flag_ranks composite level",
+        "boom/defensive_profile.json": "weekly funnel intelligence; not a draft-capital input"
+      },
+      "notes": "Window contract per strategy (earliest/latest/prefer/p_avail) from slot_paths availability model."
+    },
+    "analysis/team_analysis_1.md": {
+      "authored": "agent-written team analyses (ARI-DAL), source for bestball_2026_team_analysis.pdf",
+      "layers_used": ["team_ceiling.json", "offense_profile.json", "flag_ranks.json", "stack_menu.json", "coordinator_changes_2026.json", "cc_context.json"],
+      "layers_unused_justified": {
+        "weekly-vegas-lines.csv": "season dossier, not weekly DFS; schedule arc uses matchup layers instead",
+        "defense_splits.json": "weekly DFS construct; playoff matchup strength enters via flag_ranks smq",
+        "boom/scheme_fit.json": "folded in via flag_ranks smq_pctl_adj",
+        "slot_paths.json": "draft-slot mechanics live on the strategy board, not the team dossier",
+        "pipeline/correlation_structure.json": "stack correlation distilled via stack_menu",
+        "boom/defensive_profile.json": "own-defense shootout conditions enter via team_ceiling drivers"
+      },
+      "notes": "Six-subsection format: verdict, full-season environment, schedule arc, key players, stacks, draft takeaway."
+    },
+    "analysis/team_analysis_2.md": {
+      "authored": "agent-written team analyses (DEN-LAC), source for bestball_2026_team_analysis.pdf",
+      "layers_used": ["team_ceiling.json", "offense_profile.json", "flag_ranks.json", "stack_menu.json", "coordinator_changes_2026.json", "cc_context.json"],
+      "layers_unused_justified": {
+        "weekly-vegas-lines.csv": "season dossier, not weekly DFS; schedule arc uses matchup layers instead",
+        "defense_splits.json": "weekly DFS construct; playoff matchup strength enters via flag_ranks smq",
+        "boom/scheme_fit.json": "folded in via flag_ranks smq_pctl_adj",
+        "slot_paths.json": "draft-slot mechanics live on the strategy board, not the team dossier",
+        "pipeline/correlation_structure.json": "stack correlation distilled via stack_menu",
+        "boom/defensive_profile.json": "own-defense shootout conditions enter via team_ceiling drivers"
+      },
+      "notes": "Same contract as team_analysis_1.md."
+    },
+    "analysis/team_analysis_3.md": {
+      "authored": "agent-written team analyses (LAR-PIT), source for bestball_2026_team_analysis.pdf",
+      "layers_used": ["team_ceiling.json", "offense_profile.json", "flag_ranks.json", "stack_menu.json", "coordinator_changes_2026.json", "cc_context.json"],
+      "layers_unused_justified": {
+        "weekly-vegas-lines.csv": "season dossier, not weekly DFS; schedule arc uses matchup layers instead",
+        "defense_splits.json": "weekly DFS construct; playoff matchup strength enters via flag_ranks smq",
+        "boom/scheme_fit.json": "folded in via flag_ranks smq_pctl_adj",
+        "slot_paths.json": "draft-slot mechanics live on the strategy board, not the team dossier",
+        "pipeline/correlation_structure.json": "stack correlation distilled via stack_menu",
+        "boom/defensive_profile.json": "own-defense shootout conditions enter via team_ceiling drivers"
+      },
+      "notes": "Same contract as team_analysis_1.md."
+    },
+    "analysis/team_analysis_4.md": {
+      "authored": "agent-written team analyses (SF-WAS), source for bestball_2026_team_analysis.pdf",
+      "layers_used": ["team_ceiling.json", "offense_profile.json", "flag_ranks.json", "stack_menu.json", "coordinator_changes_2026.json", "cc_context.json"],
+      "layers_unused_justified": {
+        "weekly-vegas-lines.csv": "season dossier, not weekly DFS; schedule arc uses matchup layers instead",
+        "defense_splits.json": "weekly DFS construct; playoff matchup strength enters via flag_ranks smq",
+        "boom/scheme_fit.json": "folded in via flag_ranks smq_pctl_adj",
+        "slot_paths.json": "draft-slot mechanics live on the strategy board, not the team dossier",
+        "pipeline/correlation_structure.json": "stack correlation distilled via stack_menu",
+        "boom/defensive_profile.json": "own-defense shootout conditions enter via team_ceiling drivers"
+      },
+      "notes": "Same contract as team_analysis_1.md."
+    }
+  }
+}

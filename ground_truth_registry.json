@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "purpose": "Registry of VERIFIED post-training-cutoff facts. Every model working this repo has a knowledge cutoff BEFORE the 2026 league year. Entries here are ground truth: they OUTRANK any model's priors. Authority order: (1) these layers, (2) fresh web search to confirm/extend, (3) model priors — never authoritative for 2026 facts. If your knowledge contradicts an entry: assume YOU are stale, search to confirm, and if a genuine conflict survives, FLAG it to the user. Never silently withhold, 'correct', or re-derive a registered fact. Case law: PLAYBOOK.md C6/C7.",
+    "enforced_by": "integration_audit.py Check I (existence, consumption, forbidden-claim scan)",
+    "built": "2026-07-03",
+    "surfaces_note": "meta-layer consumed by integration_audit.py; exempt from surface declarations"
+  },
+  "entries": [
+    {
+      "path": "ffdataroma_draft_guide_export/ffdataroma/csv/weekly-vegas-lines.csv",
+      "asserts": "TRUE posted look-ahead Vegas O/U, implied totals and spreads for all 2026 regular-season games (18 weeks x 32 teams). These are real market numbers, not a model projection.",
+      "provenance": "ffdataroma draft-guide export (pulls posted look-ahead lines); user cross-checked against a sportsbook screenshot shared on Twitter/X.",
+      "verified_by": "user attestation, 2026-07-03 session ('that preseason vegas odds are true vegas odds... we also get it from a twitter picture as well')",
+      "min_consumers": 2,
+      "forbidden_claims": ["not live Vegas", "power-rating-derived", "Vegas-FORMAT projected", "real sportsbooks never post"],
+      "note": "A prior deliverable mis-labeled this file as a power-rating projection. The forbidden_claims scan exists so that specific mistake can never ship again."
+    },
+    {
+      "path": "coordinator_changes_2026.json",
+      "asserts": "2026 offensive-coordinator hires per team (oc_new/oc_name), CBS-sourced with per-entry verified flags.",
+      "provenance": "cbssports.com 2026 coordinator-hire grades (URL in file _README).",
+      "verified_by": "in-file verified:true flags; re-confirmed 2026-07-03 via nfl.com / giants.com / baltimoreravens.com searches",
+      "min_consumers": 1,
+      "forbidden_claims": [],
+      "note": "Feeds scheme_fit + team_ceiling scheme_upgrade drivers."
+    },
+    {
+      "path": "COACHING_CHANGES_2026.md",
+      "asserts": "The full verified 2026 coaching carousel, team by team: new OCs, new DCs with quantified scheme priors (man%/sack%), and offensive lean shifts. Includes the HC moves a pre-2026 model will not know: John Harbaugh (HC, NYG) with OC Matt Nagy; Jesse Minter (HC, BAL) with OC Declan Doyle; Todd Monken (HC, CLE); Klint Kubiak (HC, LV); Mike LaFleur (HC, ARI); Mike McDaniel (OC, LAC); Mike McCarthy (HC, PIT); Kevin Stefanski (HC, ATL).",
+      "provenance": "CBS Sports 2026 coordinator hires (verified); HC moves re-confirmed 2026-07-03 via giants.com/news/john-harbaugh-hired-head-coach-new-york-giants-nfl, baltimoreravens.com/news/ravens-announce-2026-coaching-staff, baltimoresun.com 2026/06/24 Monken-Browns exclusive, chargers.com/news/mike-mcdaniel-offensive-coordinator-hire, sports.yahoo.com 'full list of 10 new NFL head coach hires 2026'.",
+      "verified_by": "web re-confirmation 2026-07-03 (this session); companion detail files: COACHING_CHANGES_2026_DETAIL.md, COACHING_CHANGES_2026_PLAYCALLERS.md",
+      "min_consumers": 0,
+      "forbidden_claims": ["coaching carousel that can't be verified", "conflicts with known reality", "cannot be verified and conflicts"],
+      "note": "A prior session WITHHELD these facts from a report because they contradicted its stale priors. That is the exact inversion the Prime Rule forbids."
+    },
+    {
+      "path": "offense_profile.json",
+      "asserts": "2026 offensive identities per team (pace, pass rate, run scheme, motion, PA, environment) with coaching-carousel-aware outlook text (playcaller, adds/losses).",
+      "provenance": "built by build_offense_profile.py from verified coaching + roster layers",
+      "verified_by": "carousel facts cross-checked against COACHING_CHANGES_2026.md and coordinator_changes_2026.json",
+      "min_consumers": 2,
+      "forbidden_claims": [],
+      "note": "The outlook HC/OC names are REAL 2026 facts, not scrambled data."
+    },
+    {
+      "path": "boom/roster_flags_2026.json",
+      "asserts": "Verified 2026 roster/injury/availability flags (single edit point for injuries, FAs, non-usable players).",
+      "provenance": "assembled from verified roster moves; cross-source reconciliation in audit_roster_moves.py -> ROSTER_MOVES_2026.md",
+      "verified_by": "audit_roster_moves.py data-side gate (real move = all sources agree)",
+      "min_consumers": 1,
+      "forbidden_claims": [],
+      "note": "Re-verify before drafting; roster reality moves with camp news."
+    }
+  ]
+}

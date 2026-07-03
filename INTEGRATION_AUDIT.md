@@ -2,6 +2,8 @@
 
 _Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._
 
+_Standing orders: `CLAUDE.md` · case law: `PLAYBOOK.md` · verified 2026 facts: `ground_truth_registry.json`._
+
 _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._
 
 ## Summary
@@ -10,12 +12,15 @@ _Data-side companion: `audit_roster_moves.py` (cross-source player-team check + 
 - **0 split-source files** (P0 -- one logical file read from two drifting copies)
 - **0 stale deliverables** (P0 -- a rendered board older than the model tip it renders)
 - **0 surface declaration violations** (P0 -- a layer declares a surface but no entry file consumes it)
-- **0 undeclared layers** (triage -- record-structured layers without surfaces declaration)
+- **0 required-consumption violations** (P0 -- a builder is missing a layer its analysis must rest on)
+- **0 deliverable-manifest violations** (P0 -- hand-authored deliverable with undeclared/unjustified layer usage)
+- **0 ground-truth violations** (P0 -- verified post-cutoff facts missing, unconsumed, or contradicted)
+- **1 undeclared layers** (triage -- record-structured layers without surfaces declaration)
 
-- **0 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
+- **1 orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)
 - **2 builders** produce artifacts but are absent from the pipeline runner
-- **493 unused fields** across 78 record-structured layers (auto-discovered, repo-wide)
-- **39 divergent consumers** (a consumer under-using a layer its peers read fully)
+- **490 unused fields** across 79 record-structured layers (auto-discovered, repo-wide)
+- **44 divergent consumers** (a consumer under-using a layer its peers read fully)
 - **3 fallback counters** currently firing (see check D)
 
 ## G. Surface declarations (P0)
@@ -42,9 +47,66 @@ _None — all surface declarations are satisfied._
 | `team_ceiling.json` | live | `engine/run_live.py` |
 | `team_ceiling.json` | dossier | `build_dossier.py` |
 
+## H. Required consumption (P0 — analytical fidelity)
+
+_None — every gated builder consumes the layers its analysis must rest on._
+
+## H2. Hand-authored deliverable manifests (P0)
+
+_None — every hand-authored deliverable declares its layer utilization._
+
+**Declared manifests:**
+
+- `dfs_week1_report.html` — uses 9 layers; 3 justified-unused
+- `strategy_board.json` — uses 5 layers; 7 justified-unused
+- `analysis/team_analysis_1.md` — uses 6 layers; 6 justified-unused
+- `analysis/team_analysis_2.md` — uses 6 layers; 6 justified-unused
+- `analysis/team_analysis_3.md` — uses 6 layers; 6 justified-unused
+- `analysis/team_analysis_4.md` — uses 6 layers; 6 justified-unused
+
+## I. Ground truth (P0 — verified 2026 facts are protected)
+
+_None — registry intact, consumed, and uncontradicted._
+
+**Registry entries verified this run:**
+
+- `ffdataroma_draft_guide_export/ffdataroma/csv/weekly-vegas-lines.csv` — 3 consumer(s)
+- `coordinator_changes_2026.json` — 5 consumer(s)
+- `COACHING_CHANGES_2026.md` — 0 consumer(s)
+- `offense_profile.json` — 5 consumer(s)
+- `boom/roster_flags_2026.json` — 2 consumer(s)
+
+## Utilization map (informational — core intel layers x surface builders)
+
+_A `·` is not automatically wrong; the enforced subset is Check H. But a column of `·` under a layer someone built is exactly how "we did all this work and nothing uses it" looks. Read it._
+
+| surface | builder | team_ceiling.json | offense_profile.json | defense_splits.json | scheme_fit.json | cc_context.json | flag_ranks.json | coordinator_changes_2026.json | weekly-vegas-lines.csv | correlation_structure.json | defensive_profile.json | slot_paths.json | stack_menu.json |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| predraft | `render_strategy_board.py` | · | · | · | · | · | · | · | · | · | · | · | · |
+| predraft | `build_adp_clusters.py` | · | · | · | · | · | ✓ | · | · | · | · | · | · |
+| predraft | `build_big_board.py` | · | · | · | · | · | ✓ | · | · | · | · | · | · |
+| predraft | `build_rankings.py` | · | · | · | · | · | ✓ | · | · | · | · | · | · |
+| live | `engine/run_live.py` | ✓ | · | · | · | · | · | · | · | · | · | · | ✓ |
+| live | `engine/strategy_live.py` | ✓ | · | · | · | · | · | · | · | · | · | · | ✓ |
+| live | `build_decision_dashboard.py` | · | · | · | · | · | · | · | · | · | · | · | · |
+| live | `bb_grade.py` | · | · | · | · | · | · | · | · | · | · | · | · |
+| live | `draft.py` | · | · | · | · | · | · | · | · | · | · | · | · |
+| dossier | `build_dossier.py` | ✓ | · | · | ✓ | · | · | ✓ | · | · | · | · | ✓ |
+| dossier | `render_dossier.py` | · | · | · | · | · | · | · | · | · | · | · | · |
+| dossier | `build_dossier_deep.py` | · | · | · | · | ✓ | · | · | · | · | · | · | · |
+| rankings | `build_flag_ranks.py` | · | · | · | ✓ | · | ✓ | · | · | · | · | · | · |
+| dfs | `render_dfs_week.py` | · | · | ✓ | · | · | · | · | · | · | · | · | · |
+| dfs | `dfs_model.py` | ✓ | · | ✓ | · | ✓ | · | · | ✓ | ✓ | · | · | · |
+| dfs | `build_dfs_season_baseline.py` | · | · | · | · | · | · | · | · | · | · | · | · |
+| dfs | `build_matchup_notes.py` | ✓ | ✓ | · | · | · | · | · | · | · | ✓ | · | · |
+| dfs | `build_dfs_weekly_breakdown.py` | ✓ | · | ✓ | · | ✓ | ✓ | · | ✓ | · | · | · | · |
+| dfs | `render_dfs_weekly_pdf.py` | · | · | · | · | · | · | · | · | · | · | · | · |
+
 ## G2. Undeclared layers (triage: declare surfaces or exempt)
 
-_None — all eligible layers have declared surfaces or are explicitly exempted._
+_Record-structured layers (>=8 fields, >=1 consumer) that have not yet declared `_meta.surfaces`. These are candidate strategy/decision layers — add a `surfaces` list or add to `SURFACE_EXEMPT` with a reason._
+
+- `dfs_week.json` — 8 fields, 3 consumer(s), 0 producer(s)
 
 ## A. Invariant violations (P0)
 
@@ -179,7 +241,7 @@ _None._
 | apply_funnel_overlay.py | 5 |
 | build_defense_splits.py | 13 |
 | build_intel.py | 13 |
-| build_matchup_notes.py | 8 |
+| build_matchup_notes.py | 9 |
 | build_team_ceiling.py | 3 |
 | command_center.py | 12 |
 
@@ -375,15 +437,18 @@ _None._
 |---|---|
 | correlate_upside.py | 3 |
 
-### `cc_context.json`  (47 fields, 4 consumers)
+### `cc_context.json`  (47 fields, 5 consumers)
 | consumer | # fields read |
 |---|---|
+| build_dfs_weekly_breakdown.py | 9 |
 | build_dossier_deep.py | 7 |
 | command_center.py | 1 |
 | ctx_panel.py | 1 |
 | dfs_model.py | 6 |
 
-**Unused by ALL consumers:** `adot25`, `align_pct`, `deep_ball_sh`, `deep_route_sh`, `dials`, `man_route_sh`, `man_zone_delta`, `metric`, `outside_run_sh`, `qb_anya`, `qb_cpoe`, `qb_epa_db`, `qb_pressure_rate`, `qb_rush_ypg`, `qb_scramble`, `qb_ttt`, `rb_rec_ypg`, `rb_topspeed`, `rec_croe`, `rec_epa_route`, `rec_separation`, `rec_yacoe`, `route_pct`, `route_tprr`, `route_yprr`, `routes_2yr`, `rush_epa_att`, `ryoe_att`, `self_moves`, `tgt_share`, `weeks`, `yoy`, `ypa25`, `yprr_man`, `yprr_zone`, `zone_run_sh`
+**Unused by ALL consumers:** `adot25`, `align_pct`, `deep_ball_sh`, `deep_route_sh`, `dials`, `man_route_sh`, `man_zone_delta`, `metric`, `outside_run_sh`, `qb_anya`, `qb_cpoe`, `qb_epa_db`, `qb_pressure_rate`, `qb_rush_ypg`, `qb_scramble`, `qb_ttt`, `rb_rec_ypg`, `rb_topspeed`, `rec_croe`, `rec_epa_route`, `rec_separation`, `rec_yacoe`, `route_pct`, `route_tprr`, `route_yprr`, `routes_2yr`, `rush_epa_att`, `ryoe_att`, `self_moves`, `ypa25`, `yprr_man`, `yprr_zone`, `zone_run_sh`
+
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `command_center.py`, `ctx_panel.py`
 
 ### `coordinator_changes_2026.json`  (11 fields, 5 consumers)
 | consumer | # fields read |
@@ -436,15 +501,16 @@ _None._
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `boom_foundation.py`, `build_defense_splits.py`, `build_flags_layer.py`, `build_lever_calendar.py`, `build_team_scout.py`, `fusion.py`, `sync_boom_defense.py`
 
-### `defense_splits.json`  (24 fields, 4 consumers)
+### `defense_splits.json`  (24 fields, 5 consumers)
 | consumer | # fields read |
 |---|---|
 | build_defense_splits.py | 24 |
+| build_dfs_weekly_breakdown.py | 0 |
 | build_home.py | 0 |
-| dfs_model.py | 13 |
+| dfs_model.py | 15 |
 | render_dfs_week.py | 0 |
 
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_home.py`, `render_dfs_week.py`
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_dfs_weekly_breakdown.py`, `build_home.py`, `render_dfs_week.py`
 
 ### `dfs_review/out/defense_2026_matchup.json`  (2 fields, 5 consumers)
 | consumer | # fields read |
@@ -461,18 +527,19 @@ _None._
 | command_center.py | 1 |
 | dfs_scenarios.py | 1 |
 
-### `dfs_season_baseline.json`  (3 fields, 3 consumers)
+### `dfs_season_baseline.json`  (3 fields, 4 consumers)
 | consumer | # fields read |
 |---|---|
 | build_dfs_season_baseline.py | 3 |
+| build_dfs_weekly_breakdown.py | 2 |
 | build_matchup_notes.py | 1 |
 | gen_dfs_weekly_baseline.py | 0 |
 
-### `dfs_week.json`  (7 fields, 3 consumers)
+### `dfs_week.json`  (8 fields, 3 consumers)
 | consumer | # fields read |
 |---|---|
 | build_dfs_season_baseline.py | 4 |
-| dfs_model.py | 7 |
+| dfs_model.py | 8 |
 | render_dfs_week.py | 2 |
 
 ### `division_splits.json`  (3 fields, 2 consumers)
@@ -528,18 +595,19 @@ _None._
 | reweight_defense_2026.py | 1 |
 | validate_signal_stability.py | 1 |
 
-### `flag_ranks.json`  (28 fields, 7 consumers)
+### `flag_ranks.json`  (28 fields, 8 consumers)
 | consumer | # fields read |
 |---|---|
 | audit_roster_moves.py | 4 |
 | build_adp_clusters.py | 17 |
 | build_big_board.py | 14 |
+| build_dfs_weekly_breakdown.py | 8 |
 | build_rankings.py | 7 |
 | build_slot_paths.py | 5 |
 | build_stack_menu.py | 5 |
 | engine/bbengine.py | 6 |
 
-**Unused by ALL consumers:** `adj_order`, `car_sh`, `opp_pctl`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`, `tgt_sh`
+**Unused by ALL consumers:** `adj_order`, `opp_pctl`, `scheme_fit`, `sf_adj`, `smq_pctl_adj`, `tgt_sh`
 
 **Divergent consumers (read <40% of peer max — likely under-using the layer):** `audit_roster_moves.py`
 
@@ -565,6 +633,14 @@ _None._
 | command_center.py | 3 |
 | gameplan.py | 4 |
 
+### `ground_truth_registry.json`  (1 fields, 2 consumers)
+| consumer | # fields read |
+|---|---|
+| build_dfs_weekly_breakdown.py | 0 |
+| env_blend.py | 0 |
+
+**Unused by ALL consumers:** `entries`
+
 ### `intel_data.json`  (2 fields, 8 consumers)
 | consumer | # fields read |
 |---|---|
@@ -584,9 +660,10 @@ _None._
 
 **Unused by ALL consumers:** `best_wks`
 
-### `matchup_notes.json`  (1 fields, 1 consumers)
+### `matchup_notes.json`  (1 fields, 2 consumers)
 | consumer | # fields read |
 |---|---|
+| build_dfs_weekly_breakdown.py | 1 |
 | build_matchup_notes.py | 1 |
 
 ### `offense_profile.json`  (26 fields, 3 consumers)
@@ -684,20 +761,22 @@ _None._
 | engine/strategy_live.py | 2 |
 | render_strategy_board.py | 3 |
 
-### `team_ceiling.json`  (25 fields, 7 consumers)
+### `team_ceiling.json`  (25 fields, 9 consumers)
 | consumer | # fields read |
 |---|---|
+| build_dfs_weekly_breakdown.py | 3 |
 | build_dossier.py | 16 |
-| build_matchup_notes.py | 2 |
+| build_matchup_notes.py | 3 |
 | build_pdf.py | 3 |
 | build_slot_paths.py | 1 |
 | build_stack_menu.py | 3 |
 | engine/run_live.py | 2 |
 | engine/strategy_live.py | 2 |
+| env_blend.py | 1 |
 
 **Unused by ALL consumers:** `base_core`, `env_idx`, `own_pass_cov_pctl`, `pace_pctl`, `playcaller`, `plays_pg`, `raw`, `vacated_tgt_pct`
 
-**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_matchup_notes.py`, `build_pdf.py`, `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`
+**Divergent consumers (read <40% of peer max — likely under-using the layer):** `build_dfs_weekly_breakdown.py`, `build_matchup_notes.py`, `build_pdf.py`, `build_slot_paths.py`, `build_stack_menu.py`, `engine/run_live.py`, `engine/strategy_live.py`, `env_blend.py`
 
 ### `team_review_data.json`  (36 fields, 4 consumers)
 | consumer | # fields read |
@@ -735,7 +814,7 @@ _None._
 
 ## C. Orphan candidates
 
-_None._
+- `deliverable_manifest.json` — on disk, referenced by no builder
 
 _Cleared by CURATED dynamic/subdir reads (needle re-verified this run; an entry drops back to orphan the moment its read is refactored away):_
 

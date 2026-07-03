@@ -50,12 +50,15 @@ SURFACE_ENTRYPOINTS = {
     'live':     ['engine/run_live.py', 'engine/strategy_live.py', 'build_decision_dashboard.py', 'bb_grade.py', 'draft.py'],
     'dossier':  ['build_dossier.py', 'render_dossier.py', 'build_dossier_deep.py'],
     'rankings': ['build_rankings.py', 'build_flag_ranks.py'],
-    'dfs':      ['render_dfs_week.py', 'dfs_model.py', 'build_dfs_season_baseline.py', 'build_matchup_notes.py'],
+    'dfs':      ['render_dfs_week.py', 'dfs_model.py', 'build_dfs_season_baseline.py', 'build_matchup_notes.py',
+                 'build_dfs_weekly_breakdown.py', 'render_dfs_weekly_pdf.py'],
 }
 
 # ---- SURFACE_EXEMPT: intermediate/internal layers that don't need a surfaces declaration ----
 # These layers are intentionally not surface-declared because they are internal pipeline steps.
 SURFACE_EXEMPT = {
+    'ground_truth_registry.json': 'Meta-registry of verified post-cutoff facts; consumed by the auditor itself (Check I)',
+    'deliverable_manifest.json':  'Meta-manifest of hand-authored deliverable layer usage; consumed by the auditor itself (Check H2)',
     'boom/statmenu.json':   'Internal per-player stat menu; consumed by boom_foundation/boom_lib as a pipeline intermediate',
     'boom/gamelog.json':    'Internal game-log cache; pipeline intermediate, not a strategy/decision layer',
     'boom/team_env.json':   'Internal team environment layer; pipeline intermediate consumed by build_team_ceiling',
@@ -147,6 +150,72 @@ SURFACE_CURATED_PASSES = [
     # The dossier surface for flag_ranks is via build_rankings.py (which IS a dossier input indirectly
     # through merged_rankings_2026.csv). Curated pass is NOT needed here; dossier surface removed.
 ]
+
+# ---- CHECK H: REQUIRED CONSUMPTION — analytical-fidelity gates (PLAYBOOK.md case law) ----
+# Check G asks "does ANY entry file consume the layer?"; Check H asks the sharper question:
+# "does THIS builder consume the layers its analysis is required to rest on?"  Each entry encodes
+# a real incident where a deliverable anchored on one signal while a built layer sat unused.
+# A requirement is satisfied if ANY of its tokens appears in the builder's source.
+REQUIRED_CONSUMPTION = {
+    # C5: environments were once ranked on Vegas O/U alone; env_blend.py (Vegas x team_ceiling)
+    # is the single sanctioned formula and these builders must go through it.
+    'dfs_model.py': [
+        ('posted Vegas O/U (ground truth)',      ['weekly-vegas-lines']),
+        ('team-ceiling blend via env_blend',     ['env_blend']),
+        ('defense split-parity layer',           ['defense_splits']),
+        ('coverage FREQUENCY weighting (C8)',    ['man_rate']),
+        ('qualitative player levers',            ['cc_context']),
+    ],
+    'build_matchup_notes.py': [
+        ('team-ceiling blend via env_blend',     ['env_blend']),
+        ('team ceiling consumed (not just loaded)', ['ceiling_tier', "team_ceiling.get"]),
+        ('offense identity layer',               ['offense_profile']),
+    ],
+    'build_dfs_weekly_breakdown.py': [
+        ('team-ceiling layer',                   ['team_ceiling.json']),
+        ('blended environment ranking',          ['blend']),
+        ('season board flags',                   ['flag_ranks.json']),
+        ('player lever context',                 ['cc_context.json']),
+    ],
+    # C1: scheme_fit once blanket-regressed every new-DC team instead of using the
+    # coordinator intelligence that had been built. Never again.
+    'build_scheme_fit.py': [
+        ('coordinator intelligence',             ['coordinator', 'dc_scheme', 'man_rate_adj']),
+    ],
+    'build_flag_ranks.py': [
+        ('scheme_fit layer',                     ['scheme_fit']),
+    ],
+    'build_team_ceiling.py': [
+        ('offense identity layer',               ['offense_profile']),
+        ('coordinator/scheme-change layer',      ['coordinator', 'oc_new']),
+    ],
+}
+
+# ---- CHECK H2: hand-authored deliverables must carry a utilization manifest ----
+# Builders are token-scannable; agent-authored artifacts are not. Each file listed here must
+# have an entry in deliverable_manifest.json declaring layers_used, and a written justification
+# for every CORE_INTEL_LAYER it does NOT use. "Built-but-ignored" becomes visible, not silent.
+HAND_AUTHORED = [
+    'dfs_week1_report.html',
+    'strategy_board.json',
+    'analysis/team_analysis_1.md', 'analysis/team_analysis_2.md',
+    'analysis/team_analysis_3.md', 'analysis/team_analysis_4.md',
+]
+CORE_INTEL_LAYERS = [
+    'team_ceiling.json', 'offense_profile.json', 'defense_splits.json', 'boom/scheme_fit.json',
+    'cc_context.json', 'flag_ranks.json', 'coordinator_changes_2026.json', 'weekly-vegas-lines.csv',
+    'pipeline/correlation_structure.json', 'boom/defensive_profile.json', 'slot_paths.json', 'stack_menu.json',
+]
+MANIFEST_FILE = 'deliverable_manifest.json'
+
+# ---- CHECK I: ground-truth registry — verified post-cutoff facts are protected ----
+# ground_truth_registry.json entries outrank any model's priors (the 2026 world postdates every
+# training cutoff). This check enforces: registry files exist and are consumed, and NO builder or
+# text deliverable ships a forbidden claim that contradicts recorded provenance (C6/C7).
+GT_REGISTRY = 'ground_truth_registry.json'
+# forbidden-claim scan allow-list: builder sources + these text deliverables (doc/case-law files
+# like PLAYBOOK.md are deliberately NOT scanned — they may describe past mistakes)
+GT_SCAN_TEXT = ['*.html', 'dfs_weekly_breakdown.md', 'analysis/*.md']
 
 def is_bak(name): return name.startswith('_bak_') or '.bak' in name or name.startswith('_prebuild')
 
@@ -593,6 +662,115 @@ def stale_deliverables():
     return out
 
 
+def check_required_layers(src):
+    """CHECK H (P0): each builder in REQUIRED_CONSUMPTION must show every required token group."""
+    viol = []
+    for builder, reqs in REQUIRED_CONSUMPTION.items():
+        body = src.get(builder)
+        if body is None:
+            viol.append({'builder': builder, 'req': '(builder missing from repo)',
+                         'msg': 'listed in REQUIRED_CONSUMPTION but not found — renamed? update the map'})
+            continue
+        for label, tokens in reqs:
+            if not any(t in body for t in tokens):
+                viol.append({'builder': builder, 'req': label,
+                             'msg': f"none of {tokens} found — the analysis is missing a required layer"})
+    return viol
+
+
+def check_deliverable_manifest():
+    """CHECK H2 (P0): hand-authored deliverables need a manifest entry; every core intel layer
+    must be either declared used or justified unused. Silent omission is the failure mode."""
+    viol, entries = [], {}
+    mpath = os.path.join(HERE, MANIFEST_FILE)
+    manifest = {}
+    if os.path.exists(mpath):
+        try:
+            manifest = json.load(open(mpath, encoding='utf-8'))
+        except Exception as e:
+            viol.append({'deliverable': MANIFEST_FILE, 'msg': f'unreadable: {e}'})
+    for d in HAND_AUTHORED:
+        if not os.path.exists(os.path.join(HERE, d)):
+            continue   # deliverable not present -> nothing to declare
+        ent = (manifest.get('deliverables') or {}).get(d)
+        if not ent:
+            viol.append({'deliverable': d, 'msg': f'no entry in {MANIFEST_FILE} — declare layers_used + justifications'})
+            continue
+        used = set(ent.get('layers_used') or [])
+        just = ent.get('layers_unused_justified') or {}
+        missing = [c for c in CORE_INTEL_LAYERS if c not in used and c not in just]
+        if missing:
+            viol.append({'deliverable': d,
+                         'msg': f'core layers neither used nor justified-unused: {missing}'})
+        entries[d] = {'used': sorted(used), 'justified': sorted(just)}
+    return viol, entries
+
+
+def check_ground_truth(src):
+    """CHECK I (P0): ground-truth registry integrity + forbidden-claim scan.
+    (a) every registered file exists and is non-empty; (b) registered min_consumers satisfied
+    (basename token scan across builders); (c) no builder source or text deliverable contains a
+    forbidden claim contradicting recorded provenance."""
+    viol, ok = [], []
+    rpath = os.path.join(HERE, GT_REGISTRY)
+    if not os.path.exists(rpath):
+        return [{'kind': 'registry', 'what': GT_REGISTRY, 'msg': 'ground-truth registry missing'}], []
+    reg = json.load(open(rpath, encoding='utf-8'))
+    # assemble the forbidden-claim scan corpus: builders + allow-listed text deliverables
+    corpus = {b: t for b, t in src.items()}
+    for pat in GT_SCAN_TEXT:
+        for fp in glob.glob(os.path.join(HERE, pat)):
+            rel = os.path.relpath(fp, HERE)
+            if rel == 'INTEGRATION_AUDIT.md':
+                continue
+            try:
+                corpus[rel] = open(fp, encoding='utf-8', errors='ignore').read()
+            except Exception:
+                pass
+    for e in reg.get('entries', []):
+        p = os.path.join(HERE, e['path'])
+        base = os.path.basename(e['path'])
+        if not (os.path.exists(p) and os.path.getsize(p) > 0):
+            viol.append({'kind': 'missing', 'what': e['path'], 'msg': 'registered ground-truth file missing/empty'})
+            continue
+        n_cons = sum(1 for b, t in src.items() if base in t and b != SELF)
+        if n_cons < e.get('min_consumers', 0):
+            viol.append({'kind': 'unconsumed', 'what': e['path'],
+                         'msg': f'only {n_cons} consumer(s), registry requires >= {e["min_consumers"]} — verified intelligence is going unused'})
+        hits = []
+        for claim in e.get('forbidden_claims', []):
+            for rel, txt in corpus.items():
+                if claim in txt:
+                    hits.append((claim, rel))
+        for claim, rel in hits:
+            viol.append({'kind': 'contradiction', 'what': e['path'],
+                         'msg': f'`{rel}` contains forbidden claim "{claim}" — contradicts registered provenance'})
+        if not hits and os.path.exists(p):
+            ok.append((e['path'], n_cons))
+    return viol, ok
+
+
+def utilization_map(src):
+    """Informational: surface-entrypoint builders x core intel layers (token scan).
+    Makes 'built-but-ignored' visible at a glance; REQUIRED_CONSUMPTION is the enforced subset."""
+    builders_flat = []
+    for surface, files in SURFACE_ENTRYPOINTS.items():
+        for f in files:
+            if f in src and f not in [b for _, b in builders_flat]:
+                builders_flat.append((surface, f))
+    rows = []
+    for surface, f in builders_flat:
+        marks = {}
+        for layer in CORE_INTEL_LAYERS:
+            tok = os.path.basename(layer)
+            hit = tok in src[f]
+            if not hit and layer == 'team_ceiling.json':
+                hit = 'env_blend' in src[f]   # blend module carries the team-ceiling signal
+            marks[layer] = hit
+        rows.append({'surface': surface, 'builder': f, 'marks': marks})
+    return rows
+
+
 def main():
     strict = '--strict' in sys.argv
     src = builders()
@@ -628,18 +806,26 @@ def main():
     sd = stale_deliverables()
     surf_missing, surf_passing = check_surface_declarations(src, arts)
     surf_triage = check_undeclared_layers(src, arts, graph)
+    req_viol = check_required_layers(src)
+    man_viol, man_entries = check_deliverable_manifest()
+    gt_viol, gt_ok = check_ground_truth(src)
+    util = utilization_map(src)
 
     # ---- write report ----
     L = []
     L.append('# INTEGRATION AUDIT\n')
     L.append('_Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._\n')
+    L.append('_Standing orders: `CLAUDE.md` · case law: `PLAYBOOK.md` · verified 2026 facts: `ground_truth_registry.json`._\n')
     L.append('_Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._\n')
-    p0 = len(inv) + len(ss) + len(sd) + len(surf_missing)
+    p0 = len(inv) + len(ss) + len(sd) + len(surf_missing) + len(req_viol) + len(man_viol) + len(gt_viol)
     L.append('## Summary\n')
     L.append(f'- **{len(inv)} invariant violations** (P0 -- a layer is being under-used)')
     L.append(f'- **{len(ss)} split-source files** (P0 -- one logical file read from two drifting copies)')
     L.append(f'- **{len(sd)} stale deliverables** (P0 -- a rendered board older than the model tip it renders)')
     L.append(f'- **{len(surf_missing)} surface declaration violations** (P0 -- a layer declares a surface but no entry file consumes it)')
+    L.append(f'- **{len(req_viol)} required-consumption violations** (P0 -- a builder is missing a layer its analysis must rest on)')
+    L.append(f'- **{len(man_viol)} deliverable-manifest violations** (P0 -- hand-authored deliverable with undeclared/unjustified layer usage)')
+    L.append(f'- **{len(gt_viol)} ground-truth violations** (P0 -- verified post-cutoff facts missing, unconsumed, or contradicted)')
     L.append(f'- **{len(surf_triage)} undeclared layers** (triage -- record-structured layers without surfaces declaration)\n')
     L.append(f'- **{len(orphans)} orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)')
     L.append(f'- **{len(missing_from_pipeline)} builders** produce artifacts but are absent from the pipeline runner')
@@ -660,6 +846,49 @@ def main():
         L.append('|---|---|---|')
         for r in surf_passing:
             L.append(f'| `{r["artifact"]}` | {r["surface"]} | `{r["consumed_by"]}` |')
+    L.append('')
+
+    L.append('## H. Required consumption (P0 — analytical fidelity)\n')
+    if req_viol:
+        for v in req_viol:
+            L.append(f'- P0: `{v["builder"]}` missing required layer **{v["req"]}**  \n  ↳ {v["msg"]}')
+    else:
+        L.append('_None — every gated builder consumes the layers its analysis must rest on._')
+    L.append('')
+
+    L.append('## H2. Hand-authored deliverable manifests (P0)\n')
+    if man_viol:
+        for v in man_viol:
+            L.append(f'- P0: `{v["deliverable"]}` — {v["msg"]}')
+    else:
+        L.append('_None — every hand-authored deliverable declares its layer utilization._')
+    if man_entries:
+        L.append('\n**Declared manifests:**\n')
+        for d, e in man_entries.items():
+            L.append(f'- `{d}` — uses {len(e["used"])} layers; {len(e["justified"])} justified-unused')
+    L.append('')
+
+    L.append('## I. Ground truth (P0 — verified 2026 facts are protected)\n')
+    if gt_viol:
+        for v in gt_viol:
+            L.append(f'- P0 ({v["kind"]}): `{v["what"]}` — {v["msg"]}')
+    else:
+        L.append('_None — registry intact, consumed, and uncontradicted._')
+    if gt_ok:
+        L.append('\n**Registry entries verified this run:**\n')
+        for pth, n in gt_ok:
+            L.append(f'- `{pth}` — {n} consumer(s)')
+    L.append('')
+
+    L.append('## Utilization map (informational — core intel layers x surface builders)\n')
+    L.append('_A `·` is not automatically wrong; the enforced subset is Check H. But a column of `·` under a'
+             ' layer someone built is exactly how "we did all this work and nothing uses it" looks. Read it._\n')
+    hdr = '| surface | builder | ' + ' | '.join(os.path.basename(c) for c in CORE_INTEL_LAYERS) + ' |'
+    L.append(hdr)
+    L.append('|---|---|' + '---|' * len(CORE_INTEL_LAYERS))
+    for r in util:
+        cells = ' | '.join('✓' if r['marks'][c] else '·' for c in CORE_INTEL_LAYERS)
+        L.append(f"| {r['surface']} | `{r['builder']}` | {cells} |")
     L.append('')
 
     L.append('## G2. Undeclared layers (triage: declare surfaces or exempt)\n')
@@ -760,7 +989,17 @@ def main():
     print(f'  surface decl violations : {len(surf_missing)}')
     for v in surf_missing:
         print(f'     - {v["artifact"]} declares surface \'{v["surface"]}\' but no {v["surface"]} entry file consumes it')
+    print(f'  required-consumption (H): {len(req_viol)}')
+    for v in req_viol:
+        print(f'     - {v["builder"]} missing: {v["req"]}')
+    print(f'  manifest violations (H2): {len(man_viol)}')
+    for v in man_viol:
+        print(f'     - {v["deliverable"]}: {v["msg"][:100]}')
+    print(f'  ground-truth (I)        : {len(gt_viol)}')
+    for v in gt_viol:
+        print(f'     - [{v["kind"]}] {v["what"]}: {v["msg"][:110]}')
     print(f'  undeclared layers (G2)  : {len(surf_triage)}  (triage)')
+    print('  standing orders: CLAUDE.md | case law: PLAYBOOK.md | verified 2026 facts: ground_truth_registry.json')
     if strict and p0:
         print(f'\nSTRICT: {p0} P0 finding(s) -> exit 1')
         sys.exit(1)

@@ -9,6 +9,8 @@ import json
 import os
 from collections import defaultdict
 
+import env_blend  # sanctioned environment formula: Vegas O/U x team_ceiling (PLAYBOOK C5)
+
 # ── File paths ────────────────────────────────────────────────────────────────
 BASE = os.path.dirname(os.path.abspath(__file__))
 SCHEDULE_PATH = os.path.join(BASE, "boom", "schedule2026.json")
@@ -393,12 +395,14 @@ def main():
                         "smash": home_smash,
                         "off_id": home_off_id,
                         "pace": home_pace_str,
+                        "ceiling_tier": (team_ceiling.get(home_team) or {}).get("tier"),
                     },
                     away_team: {
                         "attack": away_attack,
                         "smash": away_smash,
                         "off_id": away_off_id,
                         "pace": away_pace_str,
+                        "ceiling_tier": (team_ceiling.get(away_team) or {}).get("tier"),
                     },
                 },
                 "note": note,
@@ -409,6 +413,8 @@ def main():
             if total is not None:
                 game_record["total"] = total
                 game_record["env_tier"] = tier
+                # blended environment: Vegas anchor + team-ceiling upside conditions
+                game_record["blend"] = env_blend.blend_total(total, home_team, away_team)
             if fav is not None:
                 game_record["fav"] = fav
             if spread_read is not None:
@@ -416,9 +422,10 @@ def main():
 
             games_this_week.append(game_record)
 
-        # Sort by total desc within week (games without total go last)
+        # Sort by BLENDED environment desc within week (Vegas + team ceiling;
+        # games without a total go last). Raw total stays visible on every record.
         games_this_week.sort(
-            key=lambda g: g.get("total", -1), reverse=True
+            key=lambda g: g.get("blend", g.get("total", -1)) or -1, reverse=True
         )
 
         output_weeks[wk] = {"games": games_this_week}

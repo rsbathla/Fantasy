@@ -16,6 +16,7 @@ Vegas / matchup basis and is week-parameterized — point it at any week; it rea
 and Vegas totals. Output: dfs_week.html + dfs_week.json.
 """
 import core, pandas as pd, numpy as np, json, os, argparse, datetime
+import env_blend   # THE sanctioned environment formula: Vegas O/U x team_ceiling (PLAYBOOK C5)
 HERE = os.path.dirname(os.path.abspath(__file__))
 def J(p):
     fp = os.path.join(HERE, p)
@@ -61,6 +62,14 @@ REC_AXES = [
     ('Deep', 'rec_deep', 'deep'),
 ]
 
+# League-average man-coverage rate — baseline for frequency-weighting the man/zone edges.
+# A player's man-beating strength only cashes as often as the defense actually PLAYS man; a
+# heavy-zone defense (e.g. SF ~20% man) makes a man edge far less actionable than raw softness
+# implies, and vice-versa for a high-man defense (e.g. NYG ~37%).
+_mrs = [(v.get('shell') or {}).get('man_rate') for v in defs.values() if isinstance(v, dict)]
+_mrs = [x for x in _mrs if x is not None]
+AVG_MAN = round(sum(_mrs) / len(_mrs), 1) if _mrs else 26.0
+
 def player_pct(prof, key):
     s = (prof.get('situations') or {}).get(key)
     return s.get('pct') if s else None
@@ -78,10 +87,24 @@ def edges_for(name, pos, team, opp):
             pp = player_pct(prof, pkey)
             dd = (d.get(dkey) or {}).get('softness_pctl')
             if pp is not None and dd is not None:
+                # frequency-weight man/zone by how often THIS defense actually plays that coverage
+                mr = (d.get('shell') or {}).get('man_rate')
+                freq_w = 1.0; cov_rate = None
+                if mr is not None and label in ('vs Man', 'vs Zone'):
+                    if label == 'vs Man':
+                        cov_rate = mr; freq_w = mr / AVG_MAN if AVG_MAN else 1.0
+                    else:  # vs Zone: complement of man rate
+                        cov_rate = 100 - mr; freq_w = (100 - mr) / (100 - AVG_MAN) if AVG_MAN < 100 else 1.0
+                    freq_w = max(0.3, min(1.8, freq_w))
                 strong = pp >= 60; soft = dd >= 60
-                score = round((pp / 100.0) * (dd / 100.0) * 100, 1)
-                edges.append({'axis': label, 'player_pctl': round(pp, 0), 'def_soft_pctl': round(dd, 0),
-                              'score': score, 'smash': bool(strong and soft)})
+                score = round((pp / 100.0) * (dd / 100.0) * 100 * freq_w, 1)
+                # a coverage-axis smash requires the defense to play that coverage at least ~average often
+                smash = bool(strong and soft and freq_w >= 0.8)
+                e = {'axis': label, 'player_pctl': round(pp, 0), 'def_soft_pctl': round(dd, 0),
+                     'score': score, 'smash': smash}
+                if cov_rate is not None:
+                    e['cov_rate'] = round(cov_rate, 0); e['freq_w'] = round(freq_w, 2)
+                edges.append(e)
                 used.add(label)
         # position-group FPAA allowed (soft to this position)
         bypos = d.get('by_pos') or {}
@@ -166,7 +189,11 @@ for p in players:
     key = tuple(sorted([p['team'], p['opp']]))
     g = games.setdefault(key, {'teams': key, 'total': p['total'], 'players': []})
     g['players'].append(p)
-anchor_games = sorted([g for g in games.values() if g['total']], key=lambda g: -(g['total'] or 0))[:6]
+# environment rank = BLENDED score (Vegas anchor + team-ceiling upside conditions), never O/U alone
+for g in games.values():
+    a, b = g['teams']
+    g['blend'] = env_blend.blend_total(g['total'], a, b)
+anchor_games = sorted([g for g in games.values() if g['total']], key=lambda g: -(g['blend'] or 0))[:6]
 
 def best(team, pos, n=1):
     pool = [p for p in players if p['team'] == team and p['pos'] == pos]
@@ -201,8 +228,9 @@ WINNER_RULES = [
 
 out = {'week': WK, 'built': None, 'n_players': len(players),
        'players': players, 'templates': templates, 'winner_rules': WINNER_RULES,
-       'anchor_games': [{'g': f"{a} vs {b}", 'total': gg['total']} for (a, b), gg in
-                        sorted(games.items(), key=lambda kv: -(kv[1]['total'] or 0))[:8] if gg['total']]}
+       'env_note': 'anchor_games ranked by blend (Vegas O/U + team_ceiling adj, env_blend.py); total = raw posted O/U',
+       'anchor_games': [{'g': f"{a} vs {b}", 'total': gg['total'], 'blend': gg['blend']} for (a, b), gg in
+                        sorted(games.items(), key=lambda kv: -(kv[1].get('blend') or 0))[:8] if gg['total']]}
 json.dump(out, open(os.path.join(HERE, 'dfs_week.json'), 'w'), ensure_ascii=False)
 print(f"dfs_week.json: week {WK} | {len(players)} players | {len(templates)} lineup templates | anchor games {len(out['anchor_games'])}")
 top = [p for p in players if not A.pos or p['pos'] == A.pos][:12]
