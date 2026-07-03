@@ -16,4 +16,9 @@ _dfs*.png
 # secrets — NEVER commit
 .env
 .env.*
-x_posts.json
+*BEARER*
+*.pem
+*.pem.txt
+
+# note: x_posts.json (raw tweet pulls) is intentionally TRACKED — it is tweet data, not a secret,
+# and all its posts also accumulate into the tracked x_store.json.
