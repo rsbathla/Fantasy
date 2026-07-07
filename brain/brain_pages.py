@@ -24,6 +24,72 @@ import brain_common as bc
 
 MARK_A = "%% auto:model-read:begin — refreshed by brain_pages.py; edit below the end marker, not here %%"
 MARK_B = "%% auto:model-read:end %%"
+TRAIL_A = "%% auto:mention-trail:begin — every tweet/source note mentioning this player; refreshed by brain_pages.py %%"
+TRAIL_B = "%% auto:mention-trail:end %%"
+
+import glob as _glob
+
+def build_mention_index(vault):
+    """One pass over the vault's Tweets/ and Sources/ notes -> {display name: [records]}.
+    This is the FULL trail (the export caps highlights; the vault does not)."""
+    tw_idx, src_idx = {}, {}
+    def fm_fields(txt):
+        parts = txt.split("---", 2)
+        if len(parts) < 3: return None, ""
+        return parts[1], parts[2]
+    for p in _glob.glob(os.path.join(vault, "Tweets", "*", "*.md")):
+        head, body = fm_fields(open(p, encoding="utf-8").read())
+        if head is None or "mentions:" not in head: continue
+        ments = re.findall(r"\[\[([^\]]+)\]\]", head.split("mentions:", 1)[1].split("\n", 1)[0])
+        d = re.search(r"^date:\s*(\S+)", head, re.M)
+        a = re.search(r'^author:\s*"?(@[\w]+)', head, re.M)
+        ql = [l[2:] for l in body.split("\n") if l.startswith("> ") and not l.startswith("> [!")]
+        text = " ".join(" ".join(ql).split())[:220]
+        rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text)
+        for m in ments: tw_idx.setdefault(m, []).append(rec)
+    for p in _glob.glob(os.path.join(vault, "Sources", "*.md")):
+        head, _ = fm_fields(open(p, encoding="utf-8").read())
+        if head is None or "mentions:" not in head: continue
+        ments = re.findall(r"\[\[([^\]]+)\]\]", head.split("mentions:", 1)[1].split("\n", 1)[0])
+        d = re.search(r"^date:\s*(\S+)", head, re.M)
+        ty = re.search(r"^type:\s*(\S+)", head, re.M)
+        ot = re.search(r'^outlet:\s*"?([^"\n]+)', head, re.M)
+        rec = (d.group(1) if d else "", ty.group(1) if ty else "source",
+               os.path.splitext(os.path.basename(p))[0], (ot.group(1).strip() if ot else ""))
+        for m in ments: src_idx.setdefault(m, []).append(rec)
+    for idx in (tw_idx, src_idx):
+        for k in idx: idx[k].sort(key=lambda r: r[0], reverse=True)
+    return tw_idx, src_idx
+
+
+def render_trail(nm, tw_idx, src_idx):
+    tws, srcs = tw_idx.get(nm, []), src_idx.get(nm, [])
+    if not tws and not srcs: return ""
+    L = []
+    if tws:
+        L.append(f"### Tweets ({len(tws)})")
+        for d, a, base, text in tws:
+            L.append(f"- **{d}** {a} — {text} → [[{base}]]")
+    if srcs:
+        L.append(f"\n### Sources ({len(srcs)})")
+        for d, ty, base, outlet in srcs:
+            L.append(f"- {d} · {ty}" + (f" · {outlet}" if outlet else "") + f" · [[{base}]]")
+    return "\n".join(L)
+
+
+def upsert_trail(page_path, trail):
+    """Insert/replace the '## Mention trail' managed zone (before ## Notes)."""
+    if not trail or not os.path.exists(page_path): return
+    txt = open(page_path, encoding="utf-8").read()
+    block = f"## Mention trail\n{TRAIL_A}\n{trail}\n{TRAIL_B}"
+    if TRAIL_A in txt and TRAIL_B in txt:
+        pre, rest = txt.split(TRAIL_A, 1); _, post = rest.split(TRAIL_B, 1)
+        new = pre + TRAIL_A + "\n" + trail + "\n" + TRAIL_B + post
+    else:
+        i = txt.find("## Notes")
+        new = (txt[:i] + block + "\n\n" + txt[i:]) if i >= 0 else txt + "\n" + block + "\n"
+    if new != txt:
+        open(page_path, "w", encoding="utf-8").write(new)
 
 
 def fmt(v, nd=1):
@@ -64,9 +130,21 @@ def player_best_worst(v, sc, spl, pf_entry):
     weak = [(k, x) for k, x in dims.items() if isinstance(x, (int, float)) and x < 40 and not k.startswith("environment_w")]
     for k, x in sorted(weak, key=lambda t: t[1])[:2]:
         worst.append(f"{k} ({x:.0f} pctl)")
+    strong = [(k, x) for k, x in dims.items() if isinstance(x, (int, float)) and x >= 90 and not k.startswith("environment_w")]
+    for k, x in sorted(strong, key=lambda t: -t[1])[:3]:
+        best.append(f"{k} ({x:.0f} pctl)")
+    drv = (sc or {}).get("drivers") or {}
+    if isinstance(drv.get("sis_boom"), (int, float)) and drv["sis_boom"] >= 35:
+        best.append(f"SIS boom {drv['sis_boom']:.0f}%")
+    if isinstance(drv.get("sis_bust"), (int, float)) and drv["sis_bust"] >= 20:
+        worst.append(f"SIS bust {drv['sis_bust']:.0f}%")
+    rz = v.get("_rz_equity") or {}
+    if isinstance(rz.get("rz_role_z"), (int, float)):
+        if rz["rz_role_z"] >= 0.5: best.append(f"red-zone role (z+{rz['rz_role_z']:.1f})")
+        elif rz["rz_role_z"] <= -0.5: worst.append(f"thin red-zone role (z{rz['rz_role_z']:.1f})")
     L = []
-    if best: L.append("- **Best:** " + " · ".join(best[:5]))
-    if worst: L.append("- **Worst:** " + " · ".join(worst[:5]))
+    if best: L.append("- **Best:** " + " · ".join(best[:7]))
+    if worst: L.append("- **Worst:** " + " · ".join(worst[:6]))
     return L
 
 
@@ -343,6 +421,11 @@ def main():
     bip = os.path.join(repo, "brain_intel.json")
     if os.path.exists(bip):
         intel = {_fn(k): e for k, e in json.load(open(bip)).get("players", {}).items()}
+    rzp = os.path.join(repo, "rz_equity_2026.json")
+    rzq = {}
+    if os.path.exists(rzp):
+        rzq = json.load(open(rzp)).get("teams", {})   # keyed by normalized player name
+    tw_idx, src_idx = build_mention_index(vault)      # the FULL vault trail, uncapped
 
     # ---- players ----
     for v in sm.values():
@@ -352,6 +435,7 @@ def main():
         if not nm:
             continue
         k = _fn(nm)
+        v["_rz_equity"] = rzq.get(k)
         v["_funnel_lines"] = (player_best_worst(v, scen.get(k), spls.get(k), pf.get(k))
                               + player_scenario_read(scen.get(k), spls.get(k), fpp.get(k))
                               + player_funnel_read(pf.get(k), fpa.get(k), pf_vint)
@@ -365,6 +449,7 @@ def main():
         if aliases:
             fm.insert(1, "aliases: [" + ", ".join(f'"{x}"' for x in aliases) + "]")
         upsert(vault, "Players", nm, "\n".join(fm), player_model_read(v, tf, refresh), created, updated, skipped)
+        upsert_trail(os.path.join(vault, "Players", bc.slug(nm, 80) + ".md"), render_trail(nm, tw_idx, src_idx))
 
     # ---- teams ----
     for t in wt:
