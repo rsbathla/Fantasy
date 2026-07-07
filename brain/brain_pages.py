@@ -44,7 +44,7 @@ def build_mention_index(vault):
         d = re.search(r"^date:\s*(\S+)", head, re.M)
         a = re.search(r'^author:\s*"?(@[\w]+)', head, re.M)
         ql = [l[2:] for l in body.split("\n") if l.startswith("> ") and not l.startswith("> [!")]
-        text = " ".join(" ".join(ql).split())[:220]
+        text = " ".join(" ".join(ql).split())          # FULL tweet text — the trail is the record
         rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text)
         for m in ments: tw_idx.setdefault(m, []).append(rec)
     for p in _glob.glob(os.path.join(vault, "Sources", "*.md")):
