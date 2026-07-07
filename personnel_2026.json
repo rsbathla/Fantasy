@@ -1,0 +1,553 @@
+{
+ "_meta": {
+  "schema": "personnel v1 — team-level only",
+  "source_2025": "ffdataroma draft-guide export (pass-catcher-offenses.csv)",
+  "league_note": "vault macro: 'We're going from ~10 teams that felt comfortable in 12/13 personnel to nearly 2/3s of the league chasing it' — the TE/heavy-personnel revolution thesis",
+  "v2_unlock": "drop FantasyPoints personnel-cut exports into NFL-master/FP_SWEEP/<yr>/*/personnel/ to enable per-player and per-defense splits",
+  "fp_personnel_added": true
+ },
+ "teams": {
+  "LAR": {
+   "heavy_2025": 28.0,
+   "pa_2025": 34.6,
+   "motion_2025": 58.2,
+   "pace_2025": 74.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 18,
+   "fp_heavy_rate_2025": 26.5,
+   "fp_personnel_mix": {
+    "11": 0.735,
+    "13": 0.194,
+    "12": 0.071
+   }
+  },
+  "SF": {
+   "heavy_2025": 45.9,
+   "pa_2025": 22.3,
+   "motion_2025": 72.0,
+   "pace_2025": 63.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 5,
+   "fp_heavy_rate_2025": 44.9,
+   "fp_personnel_mix": {
+    "11": 0.551,
+    "21": 0.305,
+    "12": 0.091,
+    "22": 0.05,
+    "13": 0.004
+   }
+  },
+  "CHI": {
+   "heavy_2025": 39.1,
+   "pa_2025": 31.5,
+   "motion_2025": 55.0,
+   "pace_2025": 83.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 9,
+   "fp_heavy_rate_2025": 38.8,
+   "fp_personnel_mix": {
+    "11": 0.612,
+    "12": 0.312,
+    "13": 0.076
+   }
+  },
+  "DAL": {
+   "heavy_2025": 22.8,
+   "pa_2025": 26.8,
+   "motion_2025": 58.6,
+   "pace_2025": 87.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 23,
+   "fp_heavy_rate_2025": 21.4,
+   "fp_personnel_mix": {
+    "11": 0.786,
+    "12": 0.138,
+    "21": 0.05,
+    "13": 0.017,
+    "22": 0.009
+   }
+  },
+  "SEA": {
+   "heavy_2025": 44.4,
+   "pa_2025": 25.2,
+   "motion_2025": 62.5,
+   "pace_2025": 31.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 7,
+   "fp_heavy_rate_2025": 41.4,
+   "fp_personnel_mix": {
+    "11": 0.586,
+    "12": 0.275,
+    "21": 0.094,
+    "22": 0.026,
+    "13": 0.018
+   }
+  },
+  "ATL": {
+   "heavy_2025": 41.5,
+   "pa_2025": 20.0,
+   "motion_2025": 64.5,
+   "pace_2025": 52.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 8,
+   "fp_heavy_rate_2025": 39.8,
+   "fp_personnel_mix": {
+    "11": 0.602,
+    "12": 0.275,
+    "21": 0.094,
+    "13": 0.025,
+    "22": 0.004
+   }
+  },
+  "BUF": {
+   "heavy_2025": 23.8,
+   "pa_2025": 25.6,
+   "motion_2025": 62.7,
+   "pace_2025": 40.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 21,
+   "fp_heavy_rate_2025": 21.5,
+   "fp_personnel_mix": {
+    "11": 0.785,
+    "12": 0.095,
+    "21": 0.052,
+    "22": 0.045,
+    "13": 0.023
+   }
+  },
+  "DET": {
+   "heavy_2025": 24.5,
+   "pa_2025": 25.5,
+   "motion_2025": 59.1,
+   "pace_2025": 55.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 19,
+   "fp_heavy_rate_2025": 23.2,
+   "fp_personnel_mix": {
+    "11": 0.768,
+    "12": 0.177,
+    "21": 0.028,
+    "13": 0.025,
+    "22": 0.002
+   }
+  },
+  "MIA": {
+   "heavy_2025": 46.3,
+   "pa_2025": 27.4,
+   "motion_2025": 61.5,
+   "pace_2025": 2.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 4,
+   "fp_heavy_rate_2025": 43.3,
+   "fp_personnel_mix": {
+    "11": 0.567,
+    "21": 0.205,
+    "12": 0.129,
+    "22": 0.081,
+    "13": 0.018
+   }
+  },
+  "IND": {
+   "heavy_2025": 31.6,
+   "pa_2025": 27.8,
+   "motion_2025": 55.0,
+   "pace_2025": 38.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 13,
+   "fp_heavy_rate_2025": 29.1,
+   "fp_personnel_mix": {
+    "11": 0.709,
+    "12": 0.235,
+    "13": 0.055,
+    "21": 0.0
+   }
+  },
+  "NO": {
+   "heavy_2025": 13.0,
+   "pa_2025": 18.5,
+   "motion_2025": 60.5,
+   "pace_2025": 85.0,
+   "direction_2026": "up",
+   "evidence": [
+    "canon: HC Kellen Moore calls plays in a heavy two-TE scheme (web_teams outlook)"
+   ],
+   "heavy_rank_2025": 32,
+   "fp_heavy_rate_2025": 20.3,
+   "fp_personnel_mix": {
+    "11": 0.797,
+    "12": 0.157,
+    "13": 0.042,
+    "21": 0.002,
+    "22": 0.002
+   }
+  },
+  "ARI": {
+   "heavy_2025": 44.5,
+   "pa_2025": 24.6,
+   "motion_2025": 44.4,
+   "pace_2025": 71.0,
+   "direction_2026": "up",
+   "evidence": [
+    "Mike LaFleur keeps name dropping Tip Reiman, signaling more 12 personnel in 2026",
+    "Cardinals starting offense (listed in 12 Personnel): QB Brissett · RB Love · WRs Harrison, Wilson · TE McBride · TE Reiman"
+   ],
+   "heavy_rank_2025": 6,
+   "fp_heavy_rate_2025": 45.5,
+   "fp_personnel_mix": {
+    "11": 0.545,
+    "12": 0.333,
+    "13": 0.121,
+    "22": 0.001
+   }
+  },
+  "JAX": {
+   "heavy_2025": 18.0,
+   "pa_2025": 21.8,
+   "motion_2025": 58.5,
+   "pace_2025": 55.0,
+   "direction_2026": "up",
+   "evidence": [
+    "If the Jaguars are trying to play more heavy personnel packages this season, especially 13 personnel…"
+   ],
+   "heavy_rank_2025": 29,
+   "fp_heavy_rate_2025": 17.8,
+   "fp_personnel_mix": {
+    "11": 0.822,
+    "12": 0.141,
+    "21": 0.023,
+    "13": 0.012,
+    "22": 0.003
+   }
+  },
+  "NE": {
+   "heavy_2025": 37.2,
+   "pa_2025": 24.1,
+   "motion_2025": 52.9,
+   "pace_2025": 42.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 11,
+   "fp_heavy_rate_2025": 37.3,
+   "fp_personnel_mix": {
+    "11": 0.627,
+    "12": 0.2,
+    "21": 0.137,
+    "22": 0.03,
+    "13": 0.006
+   }
+  },
+  "NYJ": {
+   "heavy_2025": 22.7,
+   "pa_2025": 17.8,
+   "motion_2025": 63.9,
+   "pace_2025": 50.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 24,
+   "fp_heavy_rate_2025": 21.5,
+   "fp_personnel_mix": {
+    "11": 0.785,
+    "12": 0.143,
+    "21": 0.04,
+    "22": 0.019,
+    "13": 0.013
+   }
+  },
+  "GB": {
+   "heavy_2025": 29.6,
+   "pa_2025": 25.5,
+   "motion_2025": 52.3,
+   "pace_2025": 39.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 15,
+   "fp_heavy_rate_2025": 30.4,
+   "fp_personnel_mix": {
+    "11": 0.696,
+    "12": 0.271,
+    "21": 0.024,
+    "13": 0.01
+   }
+  },
+  "BAL": {
+   "heavy_2025": 60.2,
+   "pa_2025": 22.3,
+   "motion_2025": 54.7,
+   "pace_2025": 15.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 1,
+   "fp_heavy_rate_2025": 58.4,
+   "fp_personnel_mix": {
+    "12": 0.427,
+    "11": 0.416,
+    "21": 0.115,
+    "13": 0.025,
+    "22": 0.017
+   }
+  },
+  "LV": {
+   "heavy_2025": 38.3,
+   "pa_2025": 24.8,
+   "motion_2025": 55.8,
+   "pace_2025": 13.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 10,
+   "fp_heavy_rate_2025": 39.3,
+   "fp_personnel_mix": {
+    "11": 0.607,
+    "12": 0.337,
+    "13": 0.053,
+    "21": 0.004
+   }
+  },
+  "HOU": {
+   "heavy_2025": 14.0,
+   "pa_2025": 22.8,
+   "motion_2025": 51.9,
+   "pace_2025": 64.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 31,
+   "fp_heavy_rate_2025": 13.6,
+   "fp_personnel_mix": {
+    "11": 0.864,
+    "12": 0.086,
+    "21": 0.026,
+    "13": 0.017,
+    "22": 0.007
+   }
+  },
+  "CLE": {
+   "heavy_2025": 47.7,
+   "pa_2025": 22.0,
+   "motion_2025": 47.7,
+   "pace_2025": 50.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 3,
+   "fp_heavy_rate_2025": 47.7,
+   "fp_personnel_mix": {
+    "11": 0.523,
+    "12": 0.424,
+    "13": 0.036,
+    "21": 0.016
+   }
+  },
+  "WAS": {
+   "heavy_2025": 28.9,
+   "pa_2025": 25.7,
+   "motion_2025": 50.4,
+   "pace_2025": 32.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 16,
+   "fp_heavy_rate_2025": 28.4,
+   "fp_personnel_mix": {
+    "11": 0.716,
+    "12": 0.209,
+    "13": 0.049,
+    "21": 0.025,
+    "22": 0.001
+   }
+  },
+  "DEN": {
+   "heavy_2025": 21.3,
+   "pa_2025": 24.1,
+   "motion_2025": 45.9,
+   "pace_2025": 68.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 26,
+   "fp_heavy_rate_2025": 20.6,
+   "fp_personnel_mix": {
+    "11": 0.794,
+    "12": 0.112,
+    "21": 0.04,
+    "22": 0.039,
+    "13": 0.016
+   }
+  },
+  "LAC": {
+   "heavy_2025": 22.3,
+   "pa_2025": 23.1,
+   "motion_2025": 49.5,
+   "pace_2025": 50.0,
+   "direction_2026": "up",
+   "evidence": [
+    "the heavy-personnel/McDaniels stuff is exclusively good for Ladd… maybe QJ gets a nice boost as well"
+   ],
+   "heavy_rank_2025": 25,
+   "fp_heavy_rate_2025": 17.9,
+   "fp_personnel_mix": {
+    "11": 0.821,
+    "12": 0.07,
+    "21": 0.065,
+    "22": 0.032,
+    "13": 0.013
+   }
+  },
+  "PHI": {
+   "heavy_2025": 24.5,
+   "pa_2025": 22.3,
+   "motion_2025": 52.3,
+   "pace_2025": 31.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 20,
+   "fp_heavy_rate_2025": 22.7,
+   "fp_personnel_mix": {
+    "11": 0.773,
+    "12": 0.192,
+    "13": 0.02,
+    "21": 0.013,
+    "22": 0.002
+   }
+  },
+  "PIT": {
+   "heavy_2025": 48.7,
+   "pa_2025": 19.4,
+   "motion_2025": 50.3,
+   "pace_2025": 33.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 2,
+   "fp_heavy_rate_2025": 53.0,
+   "fp_personnel_mix": {
+    "11": 0.47,
+    "12": 0.338,
+    "13": 0.159,
+    "21": 0.023,
+    "22": 0.01
+   }
+  },
+  "MIN": {
+   "heavy_2025": 23.3,
+   "pa_2025": 25.6,
+   "motion_2025": 50.4,
+   "pace_2025": 13.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 22,
+   "fp_heavy_rate_2025": 21.2,
+   "fp_personnel_mix": {
+    "11": 0.788,
+    "12": 0.133,
+    "21": 0.047,
+    "13": 0.02,
+    "22": 0.012
+   }
+  },
+  "TB": {
+   "heavy_2025": 14.8,
+   "pa_2025": 16.8,
+   "motion_2025": 58.5,
+   "pace_2025": 43.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 30,
+   "fp_heavy_rate_2025": 13.1,
+   "fp_personnel_mix": {
+    "11": 0.869,
+    "12": 0.095,
+    "21": 0.025,
+    "13": 0.012
+   }
+  },
+  "KC": {
+   "heavy_2025": 37.0,
+   "pa_2025": 15.2,
+   "motion_2025": 50.9,
+   "pace_2025": 59.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 12,
+   "fp_heavy_rate_2025": 35.6,
+   "fp_personnel_mix": {
+    "11": 0.644,
+    "12": 0.29,
+    "13": 0.05,
+    "21": 0.017
+   }
+  },
+  "NYG": {
+   "heavy_2025": 28.5,
+   "pa_2025": 22.8,
+   "motion_2025": 38.4,
+   "pace_2025": 64.0,
+   "direction_2026": "up",
+   "evidence": [
+    "Pairing Likely with Theo Johnson will result in the Giants deploying plenty of 12 personnel"
+   ],
+   "heavy_rank_2025": 17,
+   "fp_heavy_rate_2025": 26.1,
+   "fp_personnel_mix": {
+    "11": 0.739,
+    "12": 0.249,
+    "13": 0.007,
+    "22": 0.003,
+    "21": 0.002
+   }
+  },
+  "CIN": {
+   "heavy_2025": 30.2,
+   "pa_2025": 15.9,
+   "motion_2025": 49.5,
+   "pace_2025": 56.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 14,
+   "fp_heavy_rate_2025": 29.7,
+   "fp_personnel_mix": {
+    "11": 0.703,
+    "12": 0.278,
+    "21": 0.017,
+    "13": 0.002
+   }
+  },
+  "CAR": {
+   "heavy_2025": 20.9,
+   "pa_2025": 21.9,
+   "motion_2025": 39.0,
+   "pace_2025": 35.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 27,
+   "fp_heavy_rate_2025": 19.4,
+   "fp_personnel_mix": {
+    "11": 0.806,
+    "12": 0.146,
+    "13": 0.03,
+    "21": 0.011,
+    "22": 0.007
+   }
+  },
+  "TEN": {
+   "heavy_2025": 19.5,
+   "pa_2025": 18.7,
+   "motion_2025": 40.2,
+   "pace_2025": 36.0,
+   "direction_2026": null,
+   "evidence": [],
+   "heavy_rank_2025": 28,
+   "fp_heavy_rate_2025": 19.4,
+   "fp_personnel_mix": {
+    "11": 0.806,
+    "12": 0.156,
+    "13": 0.027,
+    "21": 0.011
+   }
+  }
+ }
+}

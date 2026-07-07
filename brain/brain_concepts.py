@@ -136,33 +136,48 @@ def _environment(ab, gs, statmenu):
           " — favored often; lead scripts feed the run game" if dogs <= tot * 0.35 else "")
     return f"Underdog in **{dogs}/{tot}** simmed games · avg implied **{avg:.1f}** pts{tag}."
 
+def _fp_split_rates(v):
+    """Per-route rate suffix for one player: 11-personnel vs heavy TPRR + DK pts/route
+    (from fp_personnel.json; present only when the FP personnel sweep has been pulled)."""
+    segs = []
+    if v.get("tprr_11") is not None and v.get("dkfp_rr_11") is not None:
+        segs.append(f"11P {v['tprr_11']:.2f} TPRR · {v['dkfp_rr_11']:.2f} DK/RR")
+    if v.get("tprr_heavy") is not None and v.get("dkfp_rr_heavy") is not None:
+        segs.append(f"heavy {v['tprr_heavy']:.2f} · {v['dkfp_rr_heavy']:.2f}")
+    return f" ({' | '.join(segs)})" if segs else ""
+
 def _personnel(ab, pers):
     p = (pers or {}).get(ab, {})
-    if not p: return ""
-    d = p.get("direction_2026"); arrow = {"up": "▲ trending heavier", "down": "▼ trending lighter"}.get(d, "")
-    s = f"Heavy personnel **{p.get('heavy_2025','–')}%** (#{p.get('heavy_rank_2025','–')} in 2025) · PA {p.get('pa_2025','–')}% · motion {p.get('motion_2025','–')}% {arrow}".strip()
+    s = ""
+    if p:
+        d = p.get("direction_2026"); arrow = {"up": "▲ trending heavier", "down": "▼ trending lighter"}.get(d, "")
+        s = f"Heavy personnel **{p.get('heavy_2025','–')}%** (#{p.get('heavy_rank_2025','–')} in 2025) · PA {p.get('pa_2025','–')}% · motion {p.get('motion_2025','–')}% {arrow}".strip()
     fp = (EXTRAS.get("fp_pers") or {}).get(ab, {})
     if fp.get("heavy_rate") is not None:
-        s += f" · FP charting cross-check: heavy {fp['heavy_rate']*100:.0f}%"
+        cross = f"FP charting{' cross-check' if p else ''}: heavy {fp['heavy_rate']*100:.0f}%"
+        s = f"{s} · {cross}" if s else cross
+    # FP-split exposure — rendered for EVERY team's route-runners (routes >= 150), whether or
+    # not a 2026 projection exists. heavy_share = % of 2025 routes run from heavy (non-11)
+    # sets (FP charting); the (...) rates are 11-personnel vs heavy TPRR + DK pts per route.
+    # Deterministic 2025 usage, not a projection of outcomes.
+    fpl = EXTRAS.get("fp_players") or {}
+    dep = sorted(((k.title(), v.get("pos", ""), v["heavy_share"], v) for k, v in fpl.items()
+                  if v.get("team") == ab and v.get("routes", 0) >= 150 and v.get("heavy_share") is not None),
+                 key=lambda x: -x[2])
+    if dep:
+        s += ("\n\n" if s else "") + "**FP-split exposure (2025 heavy-set route share):** " + \
+             " · ".join(f"{n} {ps} {h*100:.0f}%{_fp_split_rates(v)}" for n, ps, h, v in dep[:6])
     # 2026 EXPECTATION from personnel_2026_projection.json (coordinator-change aware) —
-    # previously built but never rendered: 2025 actuals showed with no 2026 direction
+    # the direction line and its read of the exposure list stay conditional on a projection.
     pj = (EXTRAS.get("pers_proj") or {}).get(ab, {})
     prj = pj.get("projection_2026") or {}
     if prj.get("heavy_direction"):
         d = prj["heavy_direction"]
         arr = {"down": "▼ LIGHTER", "up": "▲ HEAVIER"}.get(d, d)
         why = prj.get("rationale") or ""
-        s += f"\n\n**2026 projection: {arr}**" + (f" — {why}" if why else "")
-        # FP-split lens: who is exposed to the shift. heavy_share = % of 2025 routes run
-        # from heavy sets (FP charting). Lighter -> 3-WR routes grow, TE2/FB snaps shrink;
-        # heavier -> the reverse. Deterministic exposure, not a projection of outcomes.
-        fpl = EXTRAS.get("fp_players") or {}
-        dep = sorted(((k.title(), v.get("pos", ""), v["heavy_share"]) for k, v in fpl.items()
-                      if v.get("team") == ab and v.get("routes", 0) >= 150 and v.get("heavy_share") is not None),
-                     key=lambda x: -x[2])
+        s += ("\n\n" if s else "") + f"**2026 projection: {arr}**" + (f" — {why}" if why else "")
+        # Lighter -> 3-WR routes grow, TE2/FB snaps shrink; heavier -> the reverse.
         if dep:
-            s += "\n\n**FP-split exposure (2025 heavy-set route share):** " + \
-                 " · ".join(f"{n} {p} {h*100:.0f}%" for n, p, h in dep[:6])
             s += ("\n→ lighter favors the 3-WR routes (low-% names above gain); high-% TE/FB usage is at risk"
                   if d == "down" else
                   "\n→ heavier favors the high-% names above; 3-WR-dependent routes are at risk")
