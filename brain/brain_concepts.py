@@ -144,6 +144,14 @@ def _personnel(ab, pers):
     fp = (EXTRAS.get("fp_pers") or {}).get(ab, {})
     if fp.get("heavy_rate") is not None:
         s += f" · FP charting cross-check: heavy {fp['heavy_rate']*100:.0f}%"
+    # 2026 EXPECTATION from personnel_2026_projection.json (coordinator-change aware) —
+    # previously built but never rendered: 2025 actuals showed with no 2026 direction
+    pj = (EXTRAS.get("pers_proj") or {}).get(ab, {})
+    prj = pj.get("projection_2026") or {}
+    if prj.get("heavy_direction"):
+        arr = {"down": "▼ LIGHTER", "up": "▲ HEAVIER"}.get(prj["heavy_direction"], prj["heavy_direction"])
+        why = (prj.get("rationale") or "")[:200]
+        s += f"\n\n**2026 projection: {arr}**" + (f" — {why}…" if why else "")
     return s
 
 def _players(ab, sig_by_team, brain):
@@ -229,6 +237,8 @@ def main():
     EXTRAS["proe"] = (load(repo, "proe_tendency_2026.json") or {}).get("teams", {})
     EXTRAS["stacks"] = (load(repo, "stack_menu.json") or {}).get("teams", {})
     EXTRAS["fp_pers"] = (load(repo, "fp_personnel.json") or {}).get("teams", {})
+    _pp = load(repo, "personnel_2026_projection.json") or {}
+    EXTRAS["pers_proj"] = _pp.get("teams", _pp)
     sig_by_team = {}
     for r in csv.DictReader(open(os.path.join(repo, "draft_board_signals.csv"))):
         sig_by_team.setdefault(r["team"], []).append(r)
