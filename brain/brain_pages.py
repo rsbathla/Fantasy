@@ -46,7 +46,7 @@ def build_mention_index(vault):
         ql = [l[2:] for l in body.split("\n") if l.startswith("> ") and not l.startswith("> [!")]
         text = " ".join(" ".join(ql).split())          # FULL tweet text — the trail is the record
         imgs = re.findall(r"!\[\[([^\]]+)\]\]", body)  # chart images downloaded to _media/
-        rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text, imgs)
+        rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text, imgs, len(ments))
         for m in ments: tw_idx.setdefault(m, []).append(rec)
     for p in _glob.glob(os.path.join(vault, "Sources", "*.md")):
         head, body = fm_fields(open(p, encoding="utf-8").read())
@@ -102,11 +102,26 @@ def render_trail(nm, tw_idx, src_idx):
     if not tws and not srcs: return ""
     L = []
     if tws:
-        L.append(f"### Tweets ({len(tws)})")
-        for d, a, base, text, imgs in tws:
-            L.append(f"- **{d}** {a} — {_bold_name(text, nm)} → [[{base}]]")
-            for im in imgs:                            # the graphs, inline
-                L.append(f"    ![[{im}|450]]")
+        # contextual split: is HE the subject, or one name in a crowd?
+        # focused = few entities tagged, or his name leads the text
+        surname = nm.split()[-1]
+        def is_focused(r):
+            _, _, _, text, _, n_ment = r
+            lead = text.find(nm) if nm in text else text.find(surname)
+            return n_ment <= 3 or (0 <= lead < 90)
+        foc = [r for r in tws if is_focused(r)]
+        grp = [r for r in tws if not is_focused(r)]
+        def emit(rows):
+            for d, a, base, text, imgs, _ in rows:
+                L.append(f"- **{d}** {a} — {_bold_name(text, nm)} → [[{base}]]")
+                for im in imgs:                        # the graphs, inline
+                    L.append(f"    ![[{im}|450]]")
+        if foc:
+            L.append(f"### Tweets about {nm.split()[0] if ' ' in nm else nm} ({len(foc)})")
+            emit(foc)
+        if grp:
+            L.append(f"\n### Group mentions — rankings/leaderboards ({len(grp)})")
+            emit(grp)
     if srcs:
         L.append(f"\n### Sources ({len(srcs)})")
         for d, ty, base, outlet, ex in srcs:
