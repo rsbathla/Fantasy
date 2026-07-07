@@ -85,6 +85,17 @@ def build_mention_index(vault):
     return tw_idx, src_idx
 
 
+def _bold_name(text, nm):
+    """Bold the page's entity in running text so it pops when scanning: full name first,
+    else the surname (len>=5) — e.g. '...Puka Nacua...' or bare '...Nacua...'."""
+    if nm in text:
+        return text.replace(nm, f"**{nm}**")
+    t = nm.split()[-1]
+    if len(t) >= 5 and t in text:
+        return text.replace(t, f"**{t}**")
+    return text
+
+
 def render_trail(nm, tw_idx, src_idx):
     tws, srcs = tw_idx.get(nm, []), src_idx.get(nm, [])
     if not tws and not srcs: return ""
@@ -92,12 +103,12 @@ def render_trail(nm, tw_idx, src_idx):
     if tws:
         L.append(f"### Tweets ({len(tws)})")
         for d, a, base, text in tws:
-            L.append(f"- **{d}** {a} — {text} → [[{base}]]")
+            L.append(f"- **{d}** {a} — {_bold_name(text, nm)} → [[{base}]]")
     if srcs:
         L.append(f"\n### Sources ({len(srcs)})")
         for d, ty, base, outlet, ex in srcs:
             line = f"- {d} · {ty}" + (f" · {outlet}" if outlet else "")
-            if ex: line += f" — “{ex}”"
+            if ex: line += f" — “{_bold_name(ex, nm)}”"
             L.append(line + f" → [[{base}]]")
     return "\n".join(L)
 
