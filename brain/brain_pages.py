@@ -55,6 +55,12 @@ def build_mention_index(vault):
         ty = re.search(r"^type:\s*(\S+)", head, re.M)
         ot = re.search(r'^outlet:\s*"?([^"\n]+)', head, re.M)
         base = os.path.splitext(os.path.basename(p))[0]
+        # search the PROSE only — the note body embeds its own **Mentions:** wikilink block,
+        # which would otherwise always match first and quote the useless name list
+        if "**Mentions:**" in body:
+            _pre, _rest = body.split("**Mentions:**", 1)
+            _k = _rest.find("---")
+            body = _pre + (_rest[_k + 3:] if _k >= 0 else "")
         # what THIS source said about each player: the window around his name mention.
         # Surname fallback only when unique among this source's mentions (Brown collision).
         surname_ct = {}
@@ -68,7 +74,7 @@ def build_mention_index(vault):
                 if len(t) >= 5 and surname_ct.get(t) == 1: j = body.find(t)
             ex = ""
             if j >= 0:
-                ex = " ".join(body[max(0, j - 120):j + 300].split())
+                ex = " ".join(body[max(0, j - 120):j + 300].split()).replace("[[", "").replace("]]", "")
                 if j > 120: ex = "…" + ex
                 if len(ex) > 380: ex = ex[:380] + "…"
             src_idx.setdefault(m, []).append(
