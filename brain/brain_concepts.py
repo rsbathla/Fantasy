@@ -149,9 +149,23 @@ def _personnel(ab, pers):
     pj = (EXTRAS.get("pers_proj") or {}).get(ab, {})
     prj = pj.get("projection_2026") or {}
     if prj.get("heavy_direction"):
-        arr = {"down": "▼ LIGHTER", "up": "▲ HEAVIER"}.get(prj["heavy_direction"], prj["heavy_direction"])
-        why = (prj.get("rationale") or "")[:200]
-        s += f"\n\n**2026 projection: {arr}**" + (f" — {why}…" if why else "")
+        d = prj["heavy_direction"]
+        arr = {"down": "▼ LIGHTER", "up": "▲ HEAVIER"}.get(d, d)
+        why = prj.get("rationale") or ""
+        s += f"\n\n**2026 projection: {arr}**" + (f" — {why}" if why else "")
+        # FP-split lens: who is exposed to the shift. heavy_share = % of 2025 routes run
+        # from heavy sets (FP charting). Lighter -> 3-WR routes grow, TE2/FB snaps shrink;
+        # heavier -> the reverse. Deterministic exposure, not a projection of outcomes.
+        fpl = EXTRAS.get("fp_players") or {}
+        dep = sorted(((k.title(), v.get("pos", ""), v["heavy_share"]) for k, v in fpl.items()
+                      if v.get("team") == ab and v.get("routes", 0) >= 150 and v.get("heavy_share") is not None),
+                     key=lambda x: -x[2])
+        if dep:
+            s += "\n\n**FP-split exposure (2025 heavy-set route share):** " + \
+                 " · ".join(f"{n} {p} {h*100:.0f}%" for n, p, h in dep[:6])
+            s += ("\n→ lighter favors the 3-WR routes (low-% names above gain); high-% TE/FB usage is at risk"
+                  if d == "down" else
+                  "\n→ heavier favors the high-% names above; 3-WR-dependent routes are at risk")
     return s
 
 def _players(ab, sig_by_team, brain):
@@ -239,6 +253,7 @@ def main():
     EXTRAS["fp_pers"] = (load(repo, "fp_personnel.json") or {}).get("teams", {})
     _pp = load(repo, "personnel_2026_projection.json") or {}
     EXTRAS["pers_proj"] = _pp.get("teams", _pp)
+    EXTRAS["fp_players"] = (load(repo, "fp_personnel.json") or {}).get("players", {})
     sig_by_team = {}
     for r in csv.DictReader(open(os.path.join(repo, "draft_board_signals.csv"))):
         sig_by_team.setdefault(r["team"], []).append(r)
