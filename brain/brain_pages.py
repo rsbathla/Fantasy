@@ -48,15 +48,32 @@ def build_mention_index(vault):
         rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text)
         for m in ments: tw_idx.setdefault(m, []).append(rec)
     for p in _glob.glob(os.path.join(vault, "Sources", "*.md")):
-        head, _ = fm_fields(open(p, encoding="utf-8").read())
+        head, body = fm_fields(open(p, encoding="utf-8").read())
         if head is None or "mentions:" not in head: continue
         ments = re.findall(r"\[\[([^\]]+)\]\]", head.split("mentions:", 1)[1].split("\n", 1)[0])
         d = re.search(r"^date:\s*(\S+)", head, re.M)
         ty = re.search(r"^type:\s*(\S+)", head, re.M)
         ot = re.search(r'^outlet:\s*"?([^"\n]+)', head, re.M)
-        rec = (d.group(1) if d else "", ty.group(1) if ty else "source",
-               os.path.splitext(os.path.basename(p))[0], (ot.group(1).strip() if ot else ""))
-        for m in ments: src_idx.setdefault(m, []).append(rec)
+        base = os.path.splitext(os.path.basename(p))[0]
+        # what THIS source said about each player: the window around his name mention.
+        # Surname fallback only when unique among this source's mentions (Brown collision).
+        surname_ct = {}
+        for m in ments:
+            t = m.split()[-1]
+            if len(t) >= 5: surname_ct[t] = surname_ct.get(t, 0) + 1
+        for m in ments:
+            j = body.find(m)
+            if j < 0:
+                t = m.split()[-1]
+                if len(t) >= 5 and surname_ct.get(t) == 1: j = body.find(t)
+            ex = ""
+            if j >= 0:
+                ex = " ".join(body[max(0, j - 120):j + 300].split())
+                if j > 120: ex = "…" + ex
+                if len(ex) > 380: ex = ex[:380] + "…"
+            src_idx.setdefault(m, []).append(
+                (d.group(1) if d else "", ty.group(1) if ty else "source", base,
+                 (ot.group(1).strip() if ot else ""), ex))
     for idx in (tw_idx, src_idx):
         for k in idx: idx[k].sort(key=lambda r: r[0], reverse=True)
     return tw_idx, src_idx
@@ -72,8 +89,10 @@ def render_trail(nm, tw_idx, src_idx):
             L.append(f"- **{d}** {a} — {text} → [[{base}]]")
     if srcs:
         L.append(f"\n### Sources ({len(srcs)})")
-        for d, ty, base, outlet in srcs:
-            L.append(f"- {d} · {ty}" + (f" · {outlet}" if outlet else "") + f" · [[{base}]]")
+        for d, ty, base, outlet, ex in srcs:
+            line = f"- {d} · {ty}" + (f" · {outlet}" if outlet else "")
+            if ex: line += f" — “{ex}”"
+            L.append(line + f" → [[{base}]]")
     return "\n".join(L)
 
 
