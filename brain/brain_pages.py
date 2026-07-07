@@ -43,6 +43,47 @@ def _fn(n):
     n = n.replace('.', '').replace("'", '').replace('-', ' '); return ' '.join(n.split())
 
 
+def player_best_worst(v, sc, spl, pf_entry):
+    """One-glance Best/Worst synthesis from the layers already computed: coverage spec,
+    man/zone lean, alignment wins-from, favorable/tough playoff weeks, weak scenario dims."""
+    best, worst = [], []
+    cs = v.get("cspec") or {}
+    if cs.get("best"):
+        best.append(f"vs {cs['best']} ({pct(cs.get('pctl'))})")
+    if spl:
+        lean = spl.get("man_lean")
+        if lean == "zone": worst.append("man-heavy Ds")
+        elif lean == "man": worst.append("zone-heavy Ds")
+        for w in (spl.get("weeks") or []):
+            tgt = best if w.get("v") == "FAV" else worst
+            tgt.append(f"W{str(w.get('wk','')).lstrip('W')} {w.get('opp')}" + (f" ({w['why']})" if w.get("why") else ""))
+    af = (pf_entry or {}).get("alignment_funnel") or {}
+    if af.get("wins_from"):
+        best.insert(0, f"{af['wins_from']} alignment")
+    dims = (sc or {}).get("sources") or {}
+    weak = [(k, x) for k, x in dims.items() if isinstance(x, (int, float)) and x < 40 and not k.startswith("environment_w")]
+    for k, x in sorted(weak, key=lambda t: t[1])[:2]:
+        worst.append(f"{k} ({x:.0f} pctl)")
+    L = []
+    if best: L.append("- **Best:** " + " · ".join(best[:5]))
+    if worst: L.append("- **Worst:** " + " · ".join(worst[:5]))
+    return L
+
+
+def player_tweet_intel(intel_entry, n=5):
+    """The actual discussion — newest scored tweets about this player from the brain export."""
+    tws = (intel_entry or {}).get("tw") or []
+    if not tws:
+        return []
+    recent = sorted(tws, key=lambda t: t.get("d", ""), reverse=True)[:n]
+    L = ["- **Tweet intel (latest):**"]
+    for t in recent:
+        txt = " ".join(str(t.get("t", "")).split())[:190]
+        url = t.get("u")
+        L.append(f"    - {t.get('d','?')} {t.get('a','')}: {txt}" + (f" [↗]({url})" if url else ""))
+    return L
+
+
 def player_scenario_read(sc, spl, fpp_entry):
     """Render the decision layers: dfs_scenarios (5-source ceiling consensus + W15-17 spike
     probabilities), player_splits (playoff-week matchup verdicts + style profile), and
@@ -297,6 +338,11 @@ def main():
     fppp = os.path.join(repo, "fp_personnel.json")
     if os.path.exists(fppp):
         fpp = json.load(open(fppp)).get("players", {})
+    # tweet highlights: brain_intel.json is written BEFORE pages in both run scripts
+    intel = {}
+    bip = os.path.join(repo, "brain_intel.json")
+    if os.path.exists(bip):
+        intel = {_fn(k): e for k, e in json.load(open(bip)).get("players", {}).items()}
 
     # ---- players ----
     for v in sm.values():
@@ -306,8 +352,10 @@ def main():
         if not nm:
             continue
         k = _fn(nm)
-        v["_funnel_lines"] = (player_scenario_read(scen.get(k), spls.get(k), fpp.get(k))
-                              + player_funnel_read(pf.get(k), fpa.get(k), pf_vint))
+        v["_funnel_lines"] = (player_best_worst(v, scen.get(k), spls.get(k), pf.get(k))
+                              + player_scenario_read(scen.get(k), spls.get(k), fpp.get(k))
+                              + player_funnel_read(pf.get(k), fpa.get(k), pf_vint)
+                              + player_tweet_intel(intel.get(k)))
         tf = team_full.get(v.get("team"))
         aliases = list(alias_rev.get(nm, []))
         if bc.slug(nm, 80) != nm:

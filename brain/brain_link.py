@@ -81,17 +81,30 @@ def parse_stealing_signals(text):
     return out
 
 
+_DATE_RE = re.compile(r"\d{4}-\d{2}-\d{2}")
+
+def _claim_date(line):
+    """Sort key: the LAST date in the line (the source-note link), '' if undated."""
+    m = _DATE_RE.findall(line)
+    return m[-1] if m else ""
+
 def intel_append(page_path, lines):
-    """Append lines under '## Intel log' (after the zone hint if present). Append-only."""
+    """Add lines under '## Intel log' and keep the zone NEWEST-FIRST. Only dated claim
+    bullets are (re)ordered; the header, zone hint, and user free-text stay in place."""
     txt = open(page_path, encoding="utf-8").read()
     i = txt.find("## Intel log")
     if i < 0:
         return False
-    insert_at = txt.find("\n## ", i + 5)             # end of the Intel log zone (next section)
-    if insert_at < 0:
-        insert_at = len(txt)
-    block = "".join(f"- {ln}\n" for ln in lines)
-    new = txt[:insert_at].rstrip() + "\n" + block + txt[insert_at:]
+    end = txt.find("\n## ", i + 5)                   # end of the Intel log zone (next section)
+    if end < 0:
+        end = len(txt)
+    zone = txt[i:end]
+    zlines = zone.split("\n")
+    bullets = [l for l in zlines if l.lstrip().startswith("- ") and _claim_date(l)]
+    keep = [l for l in zlines if l not in bullets and l.strip()]   # header, hint, user notes
+    bullets += [f"- {ln}" for ln in lines]
+    bullets.sort(key=_claim_date, reverse=True)      # newest first
+    new = txt[:i] + "\n".join(keep + bullets) + "\n" + txt[end:].lstrip("\n")
     open(page_path, "w", encoding="utf-8").write(new)
     return True
 
