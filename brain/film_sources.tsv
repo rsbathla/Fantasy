@@ -1,0 +1,17 @@
+# film_sources.tsv — the STANDING film/scheme analysts we ingest, made explicit (this is the
+# "who do we pull film from" answer, formalized). brain_film.sh iterates rows with a channel_url and
+# transcribes their recent uploads via brain_video.py, tagging each note analyst=<name> for provenance.
+#
+# handle              name                role                         channel_url (fill/confirm; blank = tweets-only for now)
+brettkollmann         Brett Kollmann       All-22 film breakdown        https://www.youtube.com/@BrettKollmann
+benjaminsolak         Ben Solak            film / scheme analyst
+syedschemes           Syed Schemes         scheme + coverage film
+mattharmon_byb        Matt Harmon          Reception Perception (route/alignment charting)
+coachspeakindex       CoachSpeak Index     coaching-quote / scheme aggregation
+johntoddnfl           John Todd            film / matchup
+connorallennfl        Connor Allen         film / dynasty
+chriswechtff          Chris Wecht          film / prospect
+yardspergretch        Ben Gretch           Stealing Signals film-signal (ingested via Substack, not video)
+nextgenstats          NFL Next Gen Stats   tracking data (charts, ingested via tweets)
+pff_fantasy           PFF Fantasy          charting / grades (tweets)
+fantasyptsdata        FantasyPoints Data   charting (tweets + FP Data Suite pulls)

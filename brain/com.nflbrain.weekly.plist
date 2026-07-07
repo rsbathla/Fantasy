@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  NFL-Brain WEEKLY quantitative model refresh — fires run_brain_weekly.sh Tuesdays 8:30am local.
+  Preseason-safe: with SCRAPE_2026 unset it refreshes on the 2025 prior (blend weight 0).
+  In-season, Step 0 (NFL Pro scrape + Vegas lines) is still a manual pre-step — see the script header.
+  Install:
+    cp brain/com.nflbrain.weekly.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.nflbrain.weekly.plist
+  Disable:
+    launchctl unload ~/Library/LaunchAgents/com.nflbrain.weekly.plist
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.nflbrain.weekly</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/rsbathla/Downloads/Fantasy/brain/run_brain_weekly.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>2</integer>
+    <key>Hour</key><integer>8</integer>
+    <key>Minute</key><integer>30</integer>
+  </dict>
+  <key>RunAtLoad</key>
+  <false/>
+  <key>StandardOutPath</key>
+  <string>/Users/rsbathla/Downloads/NFL-Brain/_status/launchd.weekly.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/rsbathla/Downloads/NFL-Brain/_status/launchd.weekly.err.log</string>
+</dict>
+</plist>
