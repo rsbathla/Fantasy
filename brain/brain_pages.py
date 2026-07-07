@@ -483,6 +483,7 @@ def main():
             continue
         fm = [f'type: team', f'abbr: {t["team"]}', f'tags: [entity/team]']
         upsert(vault, "Teams", tf, "\n".join(fm), team_model_read(t, sch, cc), created, updated, skipped)
+        upsert_trail(os.path.join(vault, "Teams", bc.slug(tf, 80) + ".md"), render_trail(tf, tw_idx, src_idx))
 
     # ---- coaches ----
     seen = set()
@@ -498,6 +499,7 @@ def main():
                 fm.insert(1, f'aliases: ["{nm}"]')   # e.g. Kevin O'Connell -> Kevin OConnell.md
             upsert(vault, "Coaches", nm, "\n".join(fm), coach_model_read(nm, role, t["team"], tf, sch),
                    created, updated, skipped)
+            upsert_trail(os.path.join(vault, "Coaches", bc.slug(nm, 80) + ".md"), render_trail(nm, tw_idx, src_idx))
 
     bc.log(f"pages: {len(created)} created · {len(updated)} refreshed · {len(skipped)} skipped (hand-made, no markers)")
     for s in skipped[:10]:
