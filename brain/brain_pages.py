@@ -29,6 +29,13 @@ TRAIL_B = "%% auto:mention-trail:end %%"
 
 import glob as _glob
 
+# inferred semantic labels (model-written cache; see render_trail) — absent file = no icons
+_SEM = {}
+try:
+    _SEM = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tweet_semantics.json")))
+except Exception:
+    pass
+
 def build_mention_index(vault):
     """One pass over the vault's Tweets/ and Sources/ notes -> {display name: [records]}.
     This is the FULL trail (the export caps highlights; the vault does not)."""
@@ -46,7 +53,8 @@ def build_mention_index(vault):
         ql = [l[2:] for l in body.split("\n") if l.startswith("> ") and not l.startswith("> [!")]
         text = " ".join(" ".join(ql).split())          # FULL tweet text — the trail is the record
         imgs = re.findall(r"!\[\[([^\]]+)\]\]", body)  # chart images downloaded to _media/
-        rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text, imgs, len(ments))
+        u = re.search(r"^url:\s*(\S+)", head, re.M)
+        rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text, imgs, len(ments), u.group(1) if u else "")
         for m in ments: tw_idx.setdefault(m, []).append(rec)
     for p in _glob.glob(os.path.join(vault, "Sources", "*.md")):
         head, body = fm_fields(open(p, encoding="utf-8").read())
@@ -106,14 +114,19 @@ def render_trail(nm, tw_idx, src_idx):
         # focused = few entities tagged, or his name leads the text
         surname = nm.split()[-1]
         def is_focused(r):
-            _, _, _, text, _, n_ment = r
+            text, n_ment = r[3], r[5]
             lead = text.find(nm) if nm in text else text.find(surname)
             return n_ment <= 3 or (0 <= lead < 90)
         foc = [r for r in tws if is_focused(r)]
         grp = [r for r in tws if not is_focused(r)]
+        # SEMANTIC layer (clearly-labeled INFERRED data, never pipeline-guessed):
+        # brain/tweet_semantics.json {url: {"s": bull|bear|injury|role|neutral}} is written
+        # by a Claude session/agent pass; this renderer only maps cached labels to icons.
+        SEM_ICON = {"bull": "🟢", "bear": "🔴", "injury": "🩹", "role": "🔀"}
         def emit(rows):
-            for d, a, base, text, imgs, _ in rows:
-                L.append(f"- **{d}** {a} — {_bold_name(text, nm)} → [[{base}]]")
+            for d, a, base, text, imgs, _, url in rows:
+                icon = SEM_ICON.get((_SEM.get(url) or {}).get("s"), "")
+                L.append(f"- {icon + ' ' if icon else ''}**{d}** {a} — {_bold_name(text, nm)} → [[{base}]]")
                 for im in imgs:                        # the graphs, inline
                     L.append(f"    ![[{im}|450]]")
         if foc:
