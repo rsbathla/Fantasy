@@ -45,7 +45,8 @@ def build_mention_index(vault):
         a = re.search(r'^author:\s*"?(@[\w]+)', head, re.M)
         ql = [l[2:] for l in body.split("\n") if l.startswith("> ") and not l.startswith("> [!")]
         text = " ".join(" ".join(ql).split())          # FULL tweet text — the trail is the record
-        rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text)
+        imgs = re.findall(r"!\[\[([^\]]+)\]\]", body)  # chart images downloaded to _media/
+        rec = (d.group(1) if d else "", a.group(1) if a else "", os.path.splitext(os.path.basename(p))[0], text, imgs)
         for m in ments: tw_idx.setdefault(m, []).append(rec)
     for p in _glob.glob(os.path.join(vault, "Sources", "*.md")):
         head, body = fm_fields(open(p, encoding="utf-8").read())
@@ -102,8 +103,10 @@ def render_trail(nm, tw_idx, src_idx):
     L = []
     if tws:
         L.append(f"### Tweets ({len(tws)})")
-        for d, a, base, text in tws:
+        for d, a, base, text, imgs in tws:
             L.append(f"- **{d}** {a} — {_bold_name(text, nm)} → [[{base}]]")
+            for im in imgs:                            # the graphs, inline
+                L.append(f"    ![[{im}|450]]")
     if srcs:
         L.append(f"\n### Sources ({len(srcs)})")
         for d, ty, base, outlet, ex in srcs:
