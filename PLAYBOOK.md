@@ -126,6 +126,26 @@ it's quite frustrating."
 `INTEGRATION_AUDIT.md`, grep for the concept. Extend what exists; cite what you reuse.
 *Tripwire:* this file; the Utilization map making existing layers visible per deliverable.
 
+**C12 — The impossibility asserted without a probe.**
+Asked to build a retrospective analyst-narrative layer, a session (this one) told the user
+"historical X has no retrieval path from here" — declared an external capability impossible from
+priors, with zero checking. One socket probe disproved it: the cloud sandbox reaches
+`api.twitterapi.io`, `youtube.com`, `api.spotify.com` on :443. The true constraint was
+credentials + where-it-runs, not possibility.
+*Pattern:* C6 pointed outward — priors over the world, doubting a real capability instead of a
+real fact. "Can't / impossible / no path" is the tell.
+*Rule:* "impossible/can't/no path" about anything external is a Known-grade claim and ships only
+after the cheapest existence probe (socket, `command -v`, dir listing, docs lookup). Cost: seconds.
+*Tripwire:* OPERATING_MANUAL.md §9/§13; retrieval capability matrix recorded there. Before writing
+an impossibility, probe first.
+
+*Retrieval capability (verified 2026-07-08, cloud sandbox):* twitterapi.io / YouTube / Spotify all
+reachable on :443. ffmpeg present; yt-dlp installable; no source API keys in env yet. The brain
+pipeline (`brain_video.py`/`brain_article.py`) already ingests YouTube+podcasts+articles Mac-side.
+Constraint = twitterapi.io key (paid) for the X half; free path = YouTube/podcasts via the Mac
+pipeline. Respect the web-content restriction: user-directed API/key ingestion ≠ WebFetch
+circumvention; when unsure, run the pull Mac-side where the pipeline is authenticated.
+
 ---
 
 ## §3 · The layers (what exists, so you never rebuild it)
@@ -154,6 +174,7 @@ it's quite frustrating."
 | `boom/roster_flags_2026.json` / `boom/oline_2026.json` | verified availability + OL tiers (single edit points) |
 | `backtest_composite_2025.py` | the weight gate: does a signal beat ADP out of sample? |
 | `ground_truth_registry.json` / `deliverable_manifest.json` | protected facts; hand-authored utilization declarations |
+| `middle_funnel.json` (`build_middle_funnel.py`) | the MISSING horizontal axis: per-defense middle-of-field softness (EPA/CPOE allowed, funnel-vs-perimeter, softness_pctl) + per-receiver middle-win + exposure. `middle_edge(player,opp)` crosses them C8-style (strength×softness×EXPOSURE). Built 2yr from pbp `pass_location=middle`. TODO consume in the film-room weekly pack + buy-the-dip board (C1). Boundary: target-based, not all-route separation. |
 
 ---
 

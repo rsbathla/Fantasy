@@ -16,14 +16,50 @@ if os.environ.get('BB_PLATFORM','DK').upper()=='UD':
 else:
     CUT={'W15':0.50,'W16':0.50,'W17':0.90}
 
+# ---- total-dependent bring-back correlation (backtest_correlation.py, 2026-07-06) --------------
+# Empirically (correlation_structure.json) the QB<->opposing-WR1 bring-back is total-dependent:
+# r=0.062 in low-total grinds, r=0.159 in high-total shootouts (median total 45). The default sim
+# shares ONE identical per-game shock (rho=1) -> a FLAT 0.122 bring-back for every game, which
+# over-couples grind-game stacks. With BB_CORR_TOTAL=1 the two teams PARTIALLY share the shock,
+#   g_team = sqrt(rho)*g_shared + sqrt(1-rho)*g_own      (corr(g_A,g_B)=rho, marginals unchanged)
+# with rho rising in the game's Vegas total -> grind bring-backs de-correlate toward 0.062 as the
+# data says. BACKTEST-EARNED (SG=0.31 fixed): rho(total)=clip(0.728+0.0906*(total-45),0,1). This
+# nails the LOW end and the DIRECTION but plateaus at the 0.122 shared-shock ceiling on the high end
+# (measured). Matching 0.159 needs the JOINT change SG 0.31->~0.40 in sim_prod.py, which ALSO lifts
+# intra qb_wr1 0.31->0.34 toward its 0.351 target -> broader semantic change, owner call (not wired).
+# Default OFF = byte-identical to the fully-shared model. Revert = leave BB_CORR_TOTAL unset.
+BB_CORR_TOTAL = os.environ.get('BB_CORR_TOTAL','0') == '1'
+_RHO_A, _RHO_B, _RHO_MED = 0.728, 0.0906, 45.0
+_GTOT = {}
+if BB_CORR_TOTAL:
+    import csv as _csv
+    _vp = '../ffdataroma_draft_guide_export/ffdataroma/csv/weekly-vegas-lines.csv'
+    if os.path.exists(_vp):
+        for _r in _csv.DictReader(open(_vp, encoding='utf-8')):
+            _t, _o, _w, _tot = _r.get('team'), _r.get('opp'), _r.get('week'), _r.get('total')
+            if _t and _o and _w and _tot:
+                try: _GTOT[(tuple(sorted((_t, _o))), int(_w))] = float(_tot)
+                except ValueError: pass
+    print(f"[survival_chain] BB_CORR_TOTAL on: total-dependent bring-back, {len(_GTOT)} game totals loaded")
+def _rho_total(a, b, w):
+    tot = _GTOT.get((tuple(sorted((a, b))), int(w)))
+    if tot is None:
+        return 1.0                                  # no Vegas total -> keep current full sharing
+    return float(np.clip(_RHO_A + _RHO_B * (tot - _RHO_MED), 0.0, 1.0))
+
 def gen_weeks(rng, weeks):
     tl=list(tp.index); nW=len(weeks); gz={t:np.zeros((NS,nW)) for t in tl}
     for wi,w in enumerate(weeks):
         play=set()
         for (a,b) in games_by_week[w]:
-            g=rng.normal(0,1,NS)
-            if a in gz: gz[a][:,wi]=g; play.add(a)
-            if b in gz: gz[b][:,wi]=g; play.add(b)
+            if BB_CORR_TOTAL:
+                rho=_rho_total(a,b,w); gsh=rng.normal(0,1,NS)
+                ga=np.sqrt(rho)*gsh+np.sqrt(1-rho)*rng.normal(0,1,NS)
+                gb=np.sqrt(rho)*gsh+np.sqrt(1-rho)*rng.normal(0,1,NS)
+            else:
+                ga=gb=rng.normal(0,1,NS)             # default: identical shared shock (byte-identical)
+            if a in gz: gz[a][:,wi]=ga; play.add(a)
+            if b in gz: gz[b][:,wi]=gb; play.add(b)
         for t in tl:
             if t not in play: gz[t][:,wi]=rng.normal(0,1,NS)
     out={}

@@ -9,6 +9,10 @@ def norm(n):
     return p[0][0]+'.'+p[-1] if len(p)>=2 else (p[0] if p else None)
 
 clay=pd.read_csv('clay_2026.csv')
+try:                                              # carry the UD half-PPR mean so the sim can score UD, not just DK (F3 fix)
+    clay=clay.merge(pd.read_csv('clay_2026_ud.csv')[['name','ud_pg']], on='name', how='left')
+except Exception:
+    pass
 clay['key']=clay['name'].map(norm)
 clay['g']=clay['g'].replace(0,np.nan).fillna(17)
 
@@ -62,7 +66,8 @@ rows=[]
 for _,r in clay.iterrows():
     pos=r['pos']; tm=r['team']; g=r['g']; k=r['key']
     trow=team[team['team']==tm]
-    rec={'name':r['name'],'key':k,'team':tm,'pos':pos,'g':g,'source':SRC,'dk_pg':r['dk_pg']}
+    _udp=(r['ud_pg'] if ('ud_pg' in r and pd.notna(r['ud_pg'])) else r['dk_pg'])   # UD half-PPR mean; fall back to dk_pg if missing
+    rec={'name':r['name'],'key':k,'team':tm,'pos':pos,'g':g,'source':SRC,'dk_pg':r['dk_pg'],'ud_pg':_udp}
     if pos=='QB':
         rec.update(dict(role='QB',
             pass_att_pg=r['p_att']/g, ypa=r['p_yds']/max(r['p_att'],1), comp_rate=r['comp']/max(r['p_att'],1),

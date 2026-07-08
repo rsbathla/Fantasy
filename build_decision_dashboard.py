@@ -359,6 +359,22 @@ HTML = r"""<!DOCTYPE html>
     color:var(--ink2); font-style:italic; font-size:12.5px; line-height:1.55}
   .buzz{color:var(--ink2); font-size:12.5px; line-height:1.55}
   .buzz .nlbl{color:var(--accent)}
+  /* NFL-BRAIN block (brain_intel.json — dated SS claims / forward-2026 leans / tweet buzz) */
+  .brainrow{margin:10px 0 9px;padding-top:9px;border-top:1px dashed var(--line2)}
+  .brainrow .bhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-bottom:7px}
+  .brainrow .bhead .nlbl{color:#b3a6ff;margin-right:0}
+  .brainrow .bhead .bstat{font-family:var(--mono);font-size:11px;color:var(--ink3)}
+  .brainrow .bitem{display:flex;gap:7px;align-items:flex-start;margin:0 0 6px;font-size:12.3px;
+    line-height:1.5;color:var(--ink2);max-width:110ch}
+  .brainrow .btag{flex:none;font-size:9px;font-weight:800;letter-spacing:.4px;text-transform:uppercase;
+    border-radius:5px;padding:2px 6px;margin-top:1px}
+  .brainrow .btag.sig{background:rgba(46,160,90,.16);color:#5fd08a;border:1px solid rgba(46,160,90,.4)}
+  .brainrow .btag.noi{background:rgba(150,150,160,.12);color:var(--ink3);border:1px solid var(--line2)}
+  .brainrow .btag.lean{background:rgba(157,140,255,.14);color:#b3a6ff;border:1px solid rgba(157,140,255,.4)}
+  .brainrow .btag.tw{background:rgba(80,150,220,.12);color:#7fb5e8;border:1px solid rgba(80,150,220,.35)}
+  .brainrow .bmeta{font-family:var(--mono);font-size:10.5px;color:var(--ink3);white-space:nowrap}
+  .brainrow .bgame{color:var(--ink3);font-style:italic}
+  .brainrow .bcoach{font-size:11px;color:var(--ink3);margin-top:2px}
   .notebox .nmeta{display:inline-flex;gap:10px 14px;flex-wrap:wrap;margin-top:10px;padding-top:9px;
     border-top:1px dashed var(--line2);font-family:var(--mono);font-size:11.5px;color:var(--ink3)}
   .notebox .nmeta b{color:var(--ink2)}
@@ -728,13 +744,22 @@ function parseTargetLow(t){
   var m = String(t).match(/(\d+)/);
   return m ? Number(m[1]) : null;
 }
-function renderState(state, construction){
+function renderState(state, construction, brainMeta){
   var host = document.getElementById("stateCard");
   host.innerHTML = "";
   if(!state){ host.appendChild(el("div","empty","No state provided.")); return; }
   construction = construction || {};
   var targets = construction.targets || {};
   var byes = construction.byes || [];
+
+  // FIELD-COMPLETENESS warning - a partial board copy means drafted players show as available
+  if(state.board_warning){
+    var wb = el("div");
+    wb.style.cssText = "margin:0 0 12px;padding:10px 14px;border-radius:9px;background:var(--badbg,#3a1a20);"+
+      "color:#ffd9de;border:1px solid #5e2330;font-size:12.5px;line-height:1.55;font-weight:600";
+    wb.textContent = "⚠ " + String(state.board_warning);
+    host.appendChild(wb);
+  }
 
   var grid = el("div","stategrid");
   function kv(k, v){
@@ -812,6 +837,19 @@ function renderState(state, construction){
     });
     dp.appendChild(dl);
     modeled.appendChild(dp);
+  }
+  // NFL-Brain freshness badge — proves at a glance the intel layer loaded and how current it is
+  if(brainMeta && (brainMeta.as_of || brainMeta.matched != null)){
+    var bm = el("div");
+    bm.appendChild(el("div","lbl","🧠 Brain intel"));
+    bm.appendChild(el("div","big", brainMeta.matched != null ? (brainMeta.matched + " players carded") : "loaded"));
+    if(brainMeta.as_of){
+      var bsm = el("div");
+      bsm.style.cssText = "font-size:10px;color:var(--ink3);margin-top:2px;font-family:var(--mono)";
+      bsm.textContent = "as of " + String(brainMeta.as_of).slice(0,16).replace("T"," ") + " UTC";
+      bm.appendChild(bsm);
+    }
+    modeled.appendChild(bm);
   }
   host.appendChild(modeled);
 
@@ -1182,6 +1220,47 @@ function buildScoutCard(row){
     if(cmeta.length) cchip.appendChild(el("span","cvmeta", cmeta.join(" \u00B7 ")));
     cr.appendChild(cchip);
     box.appendChild(cr);
+  }
+
+  // 2b2) NFL-BRAIN (dated, sourced vault intel — annotate-only; refreshed daily by brain_export)
+  if(row.brain && typeof row.brain === "object"){
+    var bz = row.brain;
+    var brow = el("div","brainrow");
+    var bh = el("div","bhead");
+    bh.appendChild(el("span","nlbl","🧠 Brain"));
+    var bstats = [];
+    if((bz.n_sig||0)+(bz.n_noise||0) > 0) bstats.push("film log " + (bz.n_sig||0) + " Signal / " + (bz.n_noise||0) + " Noise (vault)");
+    if(bz.n_tw) bstats.push(bz.n_tw + " tweets" + (bz.n_chart ? " ("+bz.n_chart+" charts)" : ""));
+    if(bz.n_src) bstats.push(bz.n_src + " sources");
+    if(bstats.length) bh.appendChild(el("span","bstat", bstats.join(" · ")));
+    brow.appendChild(bh);
+    function bitem(tagCls, tagTxt, body, meta){
+      var it = el("div","bitem");
+      it.appendChild(el("span","btag " + tagCls, tagTxt));
+      var sp = el("span", null, String(body||""));
+      it.appendChild(sp);
+      if(meta) it.appendChild(el("span","bmeta", meta));
+      return it;
+    }
+    // forward-2026 leans (deep rows carry the array; compact rows carry the single top lean)
+    var bfwd = Array.isArray(bz.fwd) && bz.fwd.length ? bz.fwd : (bz.lean ? [bz.lean] : []);
+    bfwd.forEach(function(c){
+      brow.appendChild(bitem("lean","2026 lean", c.t, c.s ? "["+c.s+"]" : ""));
+    });
+    (Array.isArray(bz.claims) ? bz.claims : []).forEach(function(c){
+      var isSig = String(c.s||"").indexOf("Noise") < 0;
+      var it = bitem(isSig ? "sig" : "noi", isSig ? "Signal" : "Noise", c.t, c.s ? "["+c.s+"]" : "");
+      if(c.g) it.insertBefore(el("span","bgame","("+c.g+") "), it.lastChild);
+      brow.appendChild(it);
+    });
+    (Array.isArray(bz.tw) ? bz.tw : []).forEach(function(x){
+      brow.appendChild(bitem("tw", x.tg || "tweet", x.t, ((x.d||"") + " " + (x.a||"")).trim()));
+    });
+    (Array.isArray(bz.src26) ? bz.src26 : []).forEach(function(x){
+      brow.appendChild(bitem("noi","2026 src", x.t, x.d || ""));
+    });
+    if(bz.coach) brow.appendChild(el("div","bcoach","🏈 " + String(bz.coach)));
+    box.appendChild(brow);
   }
 
   // 2c) SPLITS / boom conditions (matchup-aware ceiling read)
@@ -1800,7 +1879,7 @@ function renderDashboard(data){
   data = data || {};
   CURRENT = data;
   var treeSet = treeTakeSet(data.tree);
-  renderState(data.state, data.construction);
+  renderState(data.state, data.construction, data.brain_meta);
   renderStrategy(data.strategy);
   renderHeadline(data.headline, data.board);
   renderTree(data.tree);
@@ -1933,9 +2012,29 @@ def write_dashboard(data, out, src="in-memory"):
     payload = json.dumps(data, separators=(",", ":"), ensure_ascii=False)   # compact embedded data
     html = HTML.replace("__DATA__", payload)
     nb = len(data.get("board", []) or [])
-    _ts = time.strftime("%b %d  %I:%M %p")
-    _banner = ('<div class="pill" style="background:rgba(46,160,90,.14);color:#5fd08a;border:1px solid rgba(46,160,90,.45)">'
-               '\u2713 data complete \u00b7 {:,} players \u00b7 built {}</div>').format(nb, _ts)
+    # Honest freshness banner (C2 fix 2026-07): NEVER unconditionally green. Red when the board is
+    # field-incomplete, amber when we can't vouch for recency (no capture stamp, or stale), green only
+    # when complete AND recent. captured_at is stamped by run_live at board-capture time (travels with
+    # the payload, so a re-render later shows real age). Known-bad cases that must NOT be green:
+    # empty board, board_warning present, captured_at missing, captured_at older than STALE_MIN.
+    STALE_MIN = 20
+    _st = (data.get("state") or {})
+    _warn = _st.get("board_warning")
+    _cap = _st.get("captured_at")
+    _age = (time.time() - _cap) / 60.0 if isinstance(_cap, (int, float)) else None
+    if nb == 0 or _warn:                                  # RED \u2014 incomplete / no board
+        _bg, _c, _br = "rgba(210,60,60,.16)", "#ff8a8a", "rgba(210,60,60,.55)"
+        _txt = "\u26a0 FIELD INCOMPLETE \u2014 do not trust picks \u00b7 {:,} players".format(nb)
+    elif _age is None:                                    # AMBER \u2014 no capture timestamp to vouch for
+        _bg, _c, _br = "rgba(210,160,60,.15)", "#ffcf7a", "rgba(210,160,60,.5)"
+        _txt = "\u26a0 age unverified (no capture stamp) \u00b7 {:,} players".format(nb)
+    elif _age > STALE_MIN:                                # AMBER \u2014 stale board
+        _bg, _c, _br = "rgba(210,160,60,.15)", "#ffcf7a", "rgba(210,160,60,.5)"
+        _txt = "\u26a0 board {:.0f} min old \u2014 re-capture \u00b7 {:,} players".format(_age, nb)
+    else:                                                 # GREEN \u2014 complete AND recent
+        _bg, _c, _br = "rgba(46,160,90,.14)", "#5fd08a", "rgba(46,160,90,.45)"
+        _txt = "\u2713 live \u00b7 complete \u00b7 {:,} players \u00b7 {:.0f} min old".format(nb, _age)
+    _banner = ('<div class="pill" style="background:{};color:{};border:1px solid {}">{}</div>').format(_bg, _c, _br, _txt)
     html = html.replace('<div class="pill">live_tree.json renderer',
                         _banner + '<div class="pill">live_tree.json renderer', 1)
     import ctx_panel; html = ctx_panel.inject(html)   # 4-layer NFL Pro EPA drilldown (click the EPA chip on a player row)

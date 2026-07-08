@@ -151,7 +151,6 @@
   "losses": [
    "Sean McDermott (HC)",
    "Joey Bosa (EDGE)",
-   "Greg Rousseau (EDGE)",
    "Taron Johnson (CB)"
   ]
  },
@@ -336,7 +335,6 @@
   ],
   "losses": [
    "Matt Eberflus (DC, fired)",
-   "DaRon Bland (CB)",
    "Jourdan Lewis (CB)",
    "Osa Odighizuwa (DT)"
   ]
@@ -878,7 +876,8 @@
    "Daniel Faalele (G, FA)"
   ],
   "losses": [
-   "Russell Wilson (QB)"
+   "Russell Wilson (QB)",
+   "Dexter Lawrence (DT, trade to CIN)"
   ]
  },
  "NYJ": {
@@ -915,13 +914,13 @@
    "Geno Smith (QB, trade)",
    "Minkah Fitzpatrick (S, trade)",
    "Breece Hall (RB, re-sign)",
-   "Cade Klubnik (QB, draft)"
+   "Cade Klubnik (QB, draft)",
+   "T'Vondre Sweat (DL, trade)"
   ],
   "losses": [
    "Justin Fields (QB)",
    "Jermaine Johnson II (EDGE)",
-   "Davante Adams (WR)",
-   "T'Vondre Sweat (DL)"
+   "Davante Adams (WR)"
   ]
  },
  "PHI": {
@@ -1189,7 +1188,6 @@
   "scheme_note": "more under-center/balanced, less shotgun for Daniels",
   "outlook": "New OC David Blough shifts to a balanced offense using QB Jayden Daniels more under center; a consistent No. 2 WR opposite Terry McLaurin is the need.",
   "adds": [
-   "Dexter Lawrence (DT, trade)",
    "Odafe Oweh (EDGE, FA)",
    "Laremy Tunsil (OT, extension)",
    "Sonny Styles (LB, draft)"

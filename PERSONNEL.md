@@ -19,9 +19,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## ARI -- Arizona Cardinals
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 23.6% | d_pa: -7.5/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 17.6% | d_pa: -7.5/g
 
-24% of 2025 target volume departs (M.Carter (7% of '25 tgt vol -> gone); E.Higgins (6% of '25 tgt vol -> gone); G.Dortch (5% of '25 tgt vol -> DET); Z.Knight (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Tyler Allgeier, Kendrick Bourne; rookies: Jeremiyah Love. With projected pass attempts DOWN -7.5/g vs 2025, the vacated work most plausibly flows to Jeremiyah Love (RB, ADP 27.3, p95 37), Trey McBride (TE, ADP 24.2, p95 36), Marvin Harrison Jr. (WR, ADP 67.8, p95 30).
+18% of 2025 target volume departs (M.Carter (7% of '25 tgt vol -> gone); G.Dortch (5% of '25 tgt vol -> DET); Z.Knight (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Tyler Allgeier, Kendrick Bourne; rookies: Jeremiyah Love. With projected pass attempts DOWN -7.5/g vs 2025, the vacated work most plausibly flows to Jeremiyah Love (RB, ADP 27.3, p95 37), Trey McBride (TE, ADP 24.2, p95 36), Marvin Harrison Jr. (WR, ADP 67.8, p95 30).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -72,9 +72,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## BUF -- Buffalo Bills
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 16.8% | d_pa: -2.8/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 4.6% | d_pa: -2.8/g
 
-17% of 2025 target volume departs (K.Coleman (12% of '25 tgt vol -> MIA); T.Shavers (5% of '25 tgt vol -> gone)). Incoming -- rookies: DJ Moore. With projected pass attempts DOWN -2.8/g vs 2025, the vacated work most plausibly flows to James Cook III (RB, ADP 11.1, p95 37), DJ Moore (WR, ADP 46.3, p95 31), Khalil Shakir (WR, ADP 123.2, p95 27).
+5% of 2025 target volume departs (T.Shavers (5% of '25 tgt vol -> gone)). Incoming -- rookies: DJ Moore. With projected pass attempts DOWN -2.8/g vs 2025, the vacated work most plausibly flows to James Cook III (RB, ADP 11.1, p95 37), DJ Moore (WR, ADP 46.3, p95 31), Khalil Shakir (WR, ADP 123.2, p95 27).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -89,9 +89,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## CAR -- Carolina Panthers
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 20.0% | d_pa: -1.5/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 15.0% | d_pa: -1.5/g
 
-20% of 2025 target volume departs (R.Dowdle (10% of '25 tgt vol -> PIT); H.Renfrow (5% of '25 tgt vol -> gone); M.Evans (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Trevor Etienne, John Metchie III; rookies: Jonathon Brooks. With projected pass attempts DOWN -1.5/g vs 2025, the vacated work most plausibly flows to Tetairoa McMillan (WR, ADP 42.9, p95 36), Chuba Hubbard (RB, ADP 75.8, p95 26), Jalen Coker (WR, ADP 127.3, p95 23).
+15% of 2025 target volume departs (R.Dowdle (10% of '25 tgt vol -> PIT); H.Renfrow (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Trevor Etienne, John Metchie III; rookies: Jonathon Brooks. With projected pass attempts DOWN -1.5/g vs 2025, the vacated work most plausibly flows to Tetairoa McMillan (WR, ADP 42.9, p95 36), Chuba Hubbard (RB, ADP 75.8, p95 26), Jalen Coker (WR, ADP 127.3, p95 23).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -191,9 +191,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## DET -- Detroit Lions
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 14.8% | d_pa: -4.5/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 10.8% | d_pa: -4.5/g
 
-15% of 2025 target volume departs (K.Raymond (6% of '25 tgt vol -> CHI); D.Montgomery (5% of '25 tgt vol -> HOU); B.Wright (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Isiah Pacheco, Greg Dortch, Tyler Conklin. With projected pass attempts DOWN -4.5/g vs 2025, the vacated work most plausibly flows to Jahmyr Gibbs (RB, ADP 1.2, p95 46), Amon-Ra St. Brown (WR, ADP 7.2, p95 45), Jameson Williams (WR, ADP 52.6, p95 33).
+11% of 2025 target volume departs (K.Raymond (6% of '25 tgt vol -> CHI); D.Montgomery (5% of '25 tgt vol -> HOU)). Incoming -- arrivals: Isiah Pacheco, Greg Dortch, Tyler Conklin. With projected pass attempts DOWN -4.5/g vs 2025, the vacated work most plausibly flows to Jahmyr Gibbs (RB, ADP 1.2, p95 46), Amon-Ra St. Brown (WR, ADP 7.2, p95 45), Jameson Williams (WR, ADP 52.6, p95 33).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -246,9 +246,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## IND -- Indianapolis Colts
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 41.1% | d_pa: -3.2/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 31.7% | d_pa: -3.2/g
 
-41% of 2025 target volume departs (M.Pittman (19% of '25 tgt vol -> PIT); A.Mitchell (12% of '25 tgt vol -> NYJ); J.Taylor (9% of '25 tgt vol -> JAX)). Incoming -- arrivals: Nick Westbrook-Ikhine. With projected pass attempts DOWN -3.2/g vs 2025, the vacated work most plausibly flows to Jonathan Taylor (RB, ADP 8.4, p95 40), Alec Pierce (WR, ADP 80.2, p95 31), Tyler Warren (TE, ADP 61.3, p95 30).
+32% of 2025 target volume departs (M.Pittman (19% of '25 tgt vol -> PIT); A.Mitchell (12% of '25 tgt vol -> NYJ)). Incoming -- arrivals: Nick Westbrook-Ikhine. With projected pass attempts DOWN -3.2/g vs 2025, the vacated work most plausibly flows to Jonathan Taylor (RB, ADP 8.4, p95 40), Alec Pierce (WR, ADP 80.2, p95 31), Tyler Warren (TE, ADP 61.3, p95 30).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -316,9 +316,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## LAR -- Los Angeles Rams
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 4.7% | d_pa: n/a/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 0% | d_pa: n/a/g
 
-5% of 2025 target volume departs (D.Allen (5% of '25 tgt vol -> gone)). No notable skill arrivals. With pass-volume change not modeled (skill group tagged to prior-name team in source), the vacated work most plausibly flows to Puka Nacua (WR, ADP 3.9, p95 50), Davante Adams (WR, ADP 47.2, p95 35), Kyren Williams (RB, ADP 30.1, p95 34).
+LAR skill room returns intact in source (Stafford/Nacua/Kyren/Adams tagged to prior name) so no vacated-target delta is modeled here; treat continuity as the signal. With pass-volume change not modeled (skill group tagged to prior-name team in source), the vacated work most plausibly flows to Puka Nacua (WR, ADP 3.9, p95 50), Davante Adams (WR, ADP 47.2, p95 35), Kyren Williams (RB, ADP 30.1, p95 34).
 
 **DEFENSE** _(corpus)_
 - “The Los Angeles Rams were the favorite to win the Super Bowl, and then they added the NFL's best defensive player in Myles Garrett.” (@thepowerrank)
@@ -353,9 +353,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## MIA -- Miami Dolphins
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 44.0% | d_pa: -0.9/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 39.7% | d_pa: -0.9/g
 
-44% of 2025 target volume departs (J.Waddle (22% of '25 tgt vol -> DEN); D.Waller (8% of '25 tgt vol -> FA); T.Hill (6% of '25 tgt vol -> gone); J.Hill (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Jalen Tolbert, Tutu Atwell, Kevin Coleman Jr.; rookies: Malik Willis. With pass volume roughly flat (-0.9/g), the vacated work most plausibly flows to De'Von Achane (RB, ADP 19.1, p95 40), Greg Dulcich (TE, ADP 174.8, p95 19), Chris Bell (WR, ADP 213.4, p95 19).
+40% of 2025 target volume departs (J.Waddle (22% of '25 tgt vol -> DEN); D.Waller (8% of '25 tgt vol -> FA); T.Hill (6% of '25 tgt vol -> gone); J.Hill (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Jalen Tolbert, Tutu Atwell, Kevin Coleman Jr.; rookies: Malik Willis. With pass volume roughly flat (-0.9/g), the vacated work most plausibly flows to De'Von Achane (RB, ADP 19.1, p95 40), Greg Dulcich (TE, ADP 174.8, p95 19), Chris Bell (WR, ADP 213.4, p95 19).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -372,9 +372,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## MIN -- Minnesota Vikings
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 22.8% | d_pa: 1.7/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 18.7% | d_pa: 1.7/g
 
-23% of 2025 target volume departs (J.Nailor (11% of '25 tgt vol -> LV); A.Thielen (8% of '25 tgt vol -> gone); J.Oliver (4% of '25 tgt vol -> gone)). Incoming -- arrivals: Kyler Murray, Jauan Jennings. With projected pass attempts UP +1.7/g vs 2025, the vacated work most plausibly flows to Justin Jefferson (WR, ADP 9.0, p95 41), Jordan Addison (WR, ADP 99.4, p95 27), Aaron Jones Sr. (RB, ADP 118.9, p95 27).
+19% of 2025 target volume departs (J.Nailor (11% of '25 tgt vol -> LV); A.Thielen (8% of '25 tgt vol -> gone)). Incoming -- arrivals: Kyler Murray, Jauan Jennings. With projected pass attempts UP +1.7/g vs 2025, the vacated work most plausibly flows to Justin Jefferson (WR, ADP 9.0, p95 41), Jordan Addison (WR, ADP 99.4, p95 27), Aaron Jones Sr. (RB, ADP 118.9, p95 27).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -440,9 +440,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## NYJ -- New York Jets
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 40.5% | d_pa: -1.7/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 25.0% | d_pa: -1.7/g
 
-40% of 2025 target volume departs (J.Metchie (11% of '25 tgt vol -> CAR); I.Williams (8% of '25 tgt vol -> gone); J.Ruckert (7% of '25 tgt vol -> gone); J.Reynolds (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Adonai Mitchell, Geno Smith; rookies: Kenyon Sadiq, Omar Cooper Jr.. With projected pass attempts DOWN -1.7/g vs 2025, the vacated work most plausibly flows to Breece Hall (RB, ADP 31.9, p95 37), Garrett Wilson (WR, ADP 39.0, p95 37), Kenyon Sadiq (TE, ADP 159.2, p95 25).
+25% of 2025 target volume departs (J.Metchie (11% of '25 tgt vol -> CAR); I.Williams (8% of '25 tgt vol -> gone); J.Reynolds (5% of '25 tgt vol -> gone)). Incoming -- arrivals: Adonai Mitchell, Geno Smith; rookies: Kenyon Sadiq, Omar Cooper Jr.. With projected pass attempts DOWN -1.7/g vs 2025, the vacated work most plausibly flows to Breece Hall (RB, ADP 31.9, p95 37), Garrett Wilson (WR, ADP 39.0, p95 37), Kenyon Sadiq (TE, ADP 159.2, p95 25).
 
 **DEFENSE** _(corpus)_
 - no corpus signal
@@ -512,9 +512,9 @@ Per-team view of how each roster looks **different** in 2026 across Offense, Def
 
 ## SF -- San Francisco 49ers
 
-**OFFENSE** _(modeled)_ -- vacated tgt: 31.3% | d_pa: -4.2/g
+**OFFENSE** _(modeled)_ -- vacated tgt: 25.8% | d_pa: -4.2/g
 
-31% of 2025 target volume departs (J.Jennings (17% of '25 tgt vol -> MIN); K.Bourne (9% of '25 tgt vol -> ARI); K.Juszczyk (6% of '25 tgt vol -> gone)). Incoming -- arrivals: Christian Kirk; rookies: Mike Evans, De'Zhaun Stribling, Brandon Aiyuk. With projected pass attempts DOWN -4.2/g vs 2025, the vacated work most plausibly flows to Christian McCaffrey (RB, ADP 6.3, p95 44), George Kittle (TE, ADP 104.7, p95 33), Mike Evans (WR, ADP 50.5, p95 30).
+26% of 2025 target volume departs (J.Jennings (17% of '25 tgt vol -> MIN); K.Bourne (9% of '25 tgt vol -> ARI)). Incoming -- arrivals: Christian Kirk; rookies: Mike Evans, De'Zhaun Stribling, Brandon Aiyuk. With projected pass attempts DOWN -4.2/g vs 2025, the vacated work most plausibly flows to Christian McCaffrey (RB, ADP 6.3, p95 44), George Kittle (TE, ADP 104.7, p95 33), Mike Evans (WR, ADP 50.5, p95 30).
 
 **DEFENSE** _(corpus)_
 - no corpus signal

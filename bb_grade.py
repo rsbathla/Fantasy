@@ -121,11 +121,23 @@ def summarize():
     print("\n" + bar)
     print(f" BEST BALL DRAFT GRADE — {plat}")
     print(bar)
+    # Field-completeness guard: run_live writes board_warning into state when the captured board is
+    # short of the current pick (drafted players will wrongly show as available). The fast text path
+    # used to swallow it; surface it LOUDLY, above the pick, so a recommendation off a partial board
+    # can never look clean. (bb_grade C-fix 2026-07 — known-bad: a 13/55 board must show this.)
+    warn = state.get('board_warning')
+    if warn:
+        R = "\033[1;37;41m"; X = "\033[0m"          # bold white on red
+        print(R + " !! " + "!" * 57 + X)
+        print(R + " !! " + warn + X)
+        print(R + " !! The BEST PICK below is UNRELIABLE until the full board is captured. " + X)
+        print(R + " !! " + "!" * 57 + X)
     print(f" Pick {state.get('pick','?')} · Round {state.get('round','?')} · Seat {state.get('seat','?')}")
     print(f" Your roster ({len(state.get('roster',[]))}): {_roster_line(state)}")
     print(f" Construction: {_construction_line(con)}")
     print("\n──── BEST PICK " + "─" * 47)
-    print(f" → {hl.get('take','?')}")
+    _cau = "   ⚠ UNVERIFIED — board incomplete" if warn else ""
+    print(f" → {hl.get('take','?')}{_cau}")
     print(f"   ΔTitle {_fmt_delta(hl.get('dTitle'))}   ΔAdvance {_fmt_delta(hl.get('dAdv'))}")
     why = hl.get('why', '')
     if why:

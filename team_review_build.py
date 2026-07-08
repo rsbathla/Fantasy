@@ -99,12 +99,21 @@ for r in sp:
         if pl.get('proj') is not None and pl.get('u_dkmean') is not None: pl['d_pg']=round(pl['proj']-pl['u_dkmean'],1)
     teams.setdefault(tm,[]).append(pl)
 TEAMTGT={t:gr.tgt.sum() for t,gr in ag.groupby('team')}     # vacated from actual target COUNTS (bounded)
+def _abbr(full):
+    import re
+    p=[x for x in re.sub(r"\b(jr|sr|ii|iii|iv|v)\b","",str(full).lower()).replace("."," ").replace("'","").split() if x]
+    return (p[0][0],p[-1]) if len(p)>=2 else (str(full).lower(),str(full).lower())
+# returning 2026 players per team (abbreviated PBP-name key) — used to catch name-collision "departures":
+# an abbreviated 2025 name (e.g. "K.Coleman") that matches a RETURNING starter is that starter's usage,
+# NOT a departure (fixes Keon vs Kevin Coleman Jr., Jonathan vs J'Mari Taylor). Canonical-join guard.
+_RETURNING={tm:{_abbr(p['name']) for p in pls if not p.get('mover')} for tm,pls in teams.items()}
 departures=collections.defaultdict(list)
 for _,row in ag.iterrows():
     t25=row['team']; tt=TEAMTGT.get(t25,0)
     if not t25 or tt<50 or row['tgt']<1: continue
     share=row['tgt']/tt*100
     if share<4: continue
+    if _abbr(row['name']) in _RETURNING.get(t25,()): continue   # collision w/ returning starter -> not a departure
     t26=MATCHEDPID.get(row['pid'])
     if t26!=t25: departures[t25].append((row['name'],round(share,1),t26 or 'gone'))
 for kk in departures: departures[kk].sort(key=lambda x:-x[1])

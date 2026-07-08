@@ -1,0 +1,7942 @@
+{
+"_meta": {
+"source": "FP base (season, unfiltered)",
+"cross_check": "vs NFL Pro player_funnels.json (SLOT%/WIDE% axes)",
+"flag_threshold": ">8pt slot or wide gap = DIVERGE",
+"agree": 318,
+"diverge": 78
+},
+"players": {
+"kimani vidal": {
+"pos": "RB",
+"routes": 191,
+"align": {
+"slot": 0.047,
+"wide": 0.031,
+"inline": 0.01,
+"backfield": 0.911
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.016,
+"wide": 0.037,
+"tight": 0.005
+},
+"consensus_slot": 0.032
+},
+"terrell jennings": {
+"pos": "RB",
+"routes": 4,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"juwan johnson": {
+"pos": "TE",
+"routes": 504,
+"align": {
+"slot": 0.556,
+"wide": 0.163,
+"inline": 0.26,
+"backfield": 0.022
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.572,
+"wide": 0.134,
+"tight": 0.27
+},
+"consensus_slot": 0.564
+},
+"josh oliver": {
+"pos": "TE",
+"routes": 103,
+"align": {
+"slot": 0.155,
+"wide": 0.058,
+"inline": 0.786,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.269,
+"wide": 0.048,
+"tight": 0.673
+},
+"consensus_slot": 0.212
+},
+"sean tucker": {
+"pos": "RB",
+"routes": 46,
+"align": {
+"slot": 0.065,
+"wide": 0.152,
+"inline": 0,
+"backfield": 0.783
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.019,
+"wide": 0.154,
+"tight": null
+},
+"consensus_slot": 0.042
+},
+"pat bryant": {
+"pos": "WR",
+"routes": 279,
+"align": {
+"slot": 0.577,
+"wide": 0.412,
+"inline": 0.011,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.586,
+"wide": 0.366,
+"tight": 0.045
+},
+"consensus_slot": 0.581
+},
+"dare ogunbowale": {
+"pos": "RB",
+"routes": 63,
+"align": {
+"slot": 0.127,
+"wide": 0.063,
+"inline": 0,
+"backfield": 0.81
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.1,
+"wide": 0.08,
+"tight": null
+},
+"consensus_slot": 0.114
+},
+"keshawn williams": {
+"pos": "WR",
+"routes": 13,
+"align": {
+"slot": 0.308,
+"wide": 0.692,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"cj dippre": {
+"pos": "TE",
+"routes": 3,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"michael wilson": {
+"pos": "WR",
+"routes": 601,
+"align": {
+"slot": 0.286,
+"wide": 0.714,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.306,
+"wide": 0.681,
+"tight": 0.012
+},
+"consensus_slot": 0.296
+},
+"oronde gadsden": {
+"pos": "TE",
+"routes": 375,
+"align": {
+"slot": 0.456,
+"wide": 0.149,
+"inline": 0.384,
+"backfield": 0.011
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.654,
+"wide": 0.148,
+"tight": 0.189
+},
+"consensus_slot": 0.555
+},
+"javonte williams": {
+"pos": "RB",
+"routes": 305,
+"align": {
+"slot": 0.052,
+"wide": 0.036,
+"inline": 0,
+"backfield": 0.911
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.022,
+"wide": 0.035,
+"tight": 0.022
+},
+"consensus_slot": 0.037
+},
+"dylan sampson": {
+"pos": "RB",
+"routes": 135,
+"align": {
+"slot": 0.089,
+"wide": 0.119,
+"inline": 0.067,
+"backfield": 0.726
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.078,
+"wide": 0.156,
+"tight": 0.047
+},
+"consensus_slot": 0.083
+},
+"isaiah bond": {
+"pos": "WR",
+"routes": 325,
+"align": {
+"slot": 0.443,
+"wide": 0.554,
+"inline": 0,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.432,
+"wide": 0.549,
+"tight": 0.013
+},
+"consensus_slot": 0.438
+},
+"jayden higgins": {
+"pos": "WR",
+"routes": 341,
+"align": {
+"slot": 0.214,
+"wide": 0.783,
+"inline": 0.003,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.244,
+"wide": 0.744,
+"tight": 0.013
+},
+"consensus_slot": 0.229
+},
+"darren waller": {
+"pos": "TE",
+"routes": 148,
+"align": {
+"slot": 0.405,
+"wide": 0.378,
+"inline": 0.216,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.43,
+"wide": 0.364,
+"tight": 0.205
+},
+"consensus_slot": 0.417
+},
+"garrett wilson": {
+"pos": "WR",
+"routes": 218,
+"align": {
+"slot": 0.39,
+"wide": 0.61,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.354,
+"wide": 0.626,
+"tight": 0.021
+},
+"consensus_slot": 0.372
+},
+"jalin hyatt": {
+"pos": "WR",
+"routes": 96,
+"align": {
+"slot": 0.188,
+"wide": 0.812,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.172,
+"wide": 0.828,
+"tight": null
+},
+"consensus_slot": 0.18
+},
+"james proche": {
+"pos": "WR",
+"routes": 91,
+"align": {
+"slot": 0.297,
+"wide": 0.692,
+"inline": 0,
+"backfield": 0.011
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.266,
+"wide": 0.681,
+"tight": 0.053
+},
+"consensus_slot": 0.281
+},
+"mo alie cox": {
+"pos": "TE",
+"routes": 111,
+"align": {
+"slot": 0.09,
+"wide": 0.009,
+"inline": 0.901,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.113,
+"wide": 0.01,
+"tight": 0.876
+},
+"consensus_slot": 0.102
+},
+"david martin robinson": {
+"pos": "TE",
+"routes": 25,
+"align": {
+"slot": 0.16,
+"wide": 0.16,
+"inline": 0.64,
+"backfield": 0.04
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.2,
+"wide": 0.2,
+"tight": 0.55
+},
+"consensus_slot": 0.18
+},
+"jawhar jordan": {
+"pos": "RB",
+"routes": 20,
+"align": {
+"slot": 0.15,
+"wide": 0.15,
+"inline": 0,
+"backfield": 0.7
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.048,
+"wide": 0.095,
+"tight": null
+},
+"consensus_slot": 0.099
+},
+"mitchell evans": {
+"pos": "TE",
+"routes": 122,
+"align": {
+"slot": 0.18,
+"wide": 0.057,
+"inline": 0.762,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.202,
+"wide": 0.046,
+"tight": 0.743
+},
+"consensus_slot": 0.191
+},
+"casey washington": {
+"pos": "WR",
+"routes": 95,
+"align": {
+"slot": 0.347,
+"wide": 0.653,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.33,
+"wide": 0.66,
+"tight": 0.011
+},
+"consensus_slot": 0.339
+},
+"xavier restrepo": {
+"pos": "WR",
+"routes": 21,
+"align": {
+"slot": 0.762,
+"wide": 0.238,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.636,
+"wide": 0.273,
+"tight": 0.091
+},
+"consensus_slot": 0.699
+},
+"donte thornton": {
+"pos": "WR",
+"routes": 224,
+"align": {
+"slot": 0.312,
+"wide": 0.688,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.323,
+"wide": 0.672,
+"tight": 0.004
+},
+"consensus_slot": 0.318
+},
+"xavier smith": {
+"pos": "WR",
+"routes": 130,
+"align": {
+"slot": 0.723,
+"wide": 0.277,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.677,
+"wide": 0.254,
+"tight": 0.054
+},
+"consensus_slot": 0.7
+},
+"jack bech": {
+"pos": "WR",
+"routes": 178,
+"align": {
+"slot": 0.23,
+"wide": 0.764,
+"inline": 0.006,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.237,
+"wide": 0.723,
+"tight": 0.04
+},
+"consensus_slot": 0.233
+},
+"najee harris": {
+"pos": "RB",
+"routes": 15,
+"align": {
+"slot": 0,
+"wide": 0.067,
+"inline": 0,
+"backfield": 0.933
+},
+"xcheck": "no NFL Pro match"
+},
+"jonnu smith": {
+"pos": "TE",
+"routes": 273,
+"align": {
+"slot": 0.451,
+"wide": 0.168,
+"inline": 0.366,
+"backfield": 0.015
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.514,
+"wide": 0.178,
+"tight": 0.279
+},
+"consensus_slot": 0.483
+},
+"brian thomas": {
+"pos": "WR",
+"routes": 436,
+"align": {
+"slot": 0.245,
+"wide": 0.755,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.256,
+"wide": 0.729,
+"tight": 0.014
+},
+"consensus_slot": 0.251
+},
+"brenton strange": {
+"pos": "TE",
+"routes": 285,
+"align": {
+"slot": 0.354,
+"wide": 0.161,
+"inline": 0.477,
+"backfield": 0.007
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.42,
+"wide": 0.153,
+"tight": 0.416
+},
+"consensus_slot": 0.387
+},
+"george kittle": {
+"pos": "TE",
+"routes": 273,
+"align": {
+"slot": 0.286,
+"wide": 0.084,
+"inline": 0.619,
+"backfield": 0.011
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.366,
+"wide": 0.091,
+"tight": 0.531
+},
+"consensus_slot": 0.326
+},
+"kenneth gainwell": {
+"pos": "RB",
+"routes": 304,
+"align": {
+"slot": 0.145,
+"wide": 0.082,
+"inline": 0.204,
+"backfield": 0.569
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.276,
+"wide": 0.086,
+"tight": 0.056
+},
+"consensus_slot": 0.211
+},
+"anthony firkser": {
+"pos": "TE",
+"routes": 96,
+"align": {
+"slot": 0.438,
+"wide": 0.24,
+"inline": 0.312,
+"backfield": 0.01
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.417,
+"wide": 0.181,
+"tight": 0.375
+},
+"consensus_slot": 0.427
+},
+"dawson knox": {
+"pos": "TE",
+"routes": 282,
+"align": {
+"slot": 0.348,
+"wide": 0.138,
+"inline": 0.493,
+"backfield": 0.021
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.438,
+"wide": 0.114,
+"tight": 0.419
+},
+"consensus_slot": 0.393
+},
+"james conner": {
+"pos": "RB",
+"routes": 34,
+"align": {
+"slot": 0,
+"wide": 0.029,
+"inline": 0,
+"backfield": 0.971
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.027,
+"tight": null
+},
+"consensus_slot": 0.0
+},
+"kyle williams": {
+"pos": "WR",
+"routes": 169,
+"align": {
+"slot": 0.101,
+"wide": 0.899,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.103,
+"wide": 0.89,
+"tight": 0.006
+},
+"consensus_slot": 0.102
+},
+"ben yurosek": {
+"pos": "TE",
+"routes": 18,
+"align": {
+"slot": 0.056,
+"wide": 0.056,
+"inline": 0.889,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.143,
+"wide": 0.048,
+"tight": 0.762
+},
+"consensus_slot": 0.099
+},
+"nick westbrook ikhine": {
+"pos": "WR",
+"routes": 179,
+"align": {
+"slot": 0.419,
+"wide": 0.581,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.377,
+"wide": 0.603,
+"tight": 0.02
+},
+"consensus_slot": 0.398
+},
+"rico dowdle": {
+"pos": "RB",
+"routes": 213,
+"align": {
+"slot": 0.066,
+"wide": 0.164,
+"inline": 0,
+"backfield": 0.77
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.04,
+"wide": 0.166,
+"tight": 0.013
+},
+"consensus_slot": 0.053
+},
+"khalil shakir": {
+"pos": "WR",
+"routes": 393,
+"align": {
+"slot": 0.7,
+"wide": 0.267,
+"inline": 0.02,
+"backfield": 0.013
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.618,
+"wide": 0.255,
+"tight": 0.086
+},
+"consensus_slot": 0.659
+},
+"malik davis": {
+"pos": "RB",
+"routes": 47,
+"align": {
+"slot": 0.043,
+"wide": 0.021,
+"inline": 0,
+"backfield": 0.936
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.038,
+"wide": 0.019,
+"tight": null
+},
+"consensus_slot": 0.04
+},
+"sam laporta": {
+"pos": "TE",
+"routes": 229,
+"align": {
+"slot": 0.419,
+"wide": 0.197,
+"inline": 0.376,
+"backfield": 0.009
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.438,
+"wide": 0.182,
+"tight": 0.368
+},
+"consensus_slot": 0.428
+},
+"david montgomery": {
+"pos": "RB",
+"routes": 154,
+"align": {
+"slot": 0,
+"wide": 0.019,
+"inline": 0,
+"backfield": 0.981
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.02,
+"tight": null
+},
+"consensus_slot": 0.0
+},
+"tre tucker": {
+"pos": "WR",
+"routes": 554,
+"align": {
+"slot": 0.179,
+"wide": 0.809,
+"inline": 0.011,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.147,
+"wide": 0.83,
+"tight": 0.019
+},
+"consensus_slot": 0.163
+},
+"justin jefferson": {
+"pos": "WR",
+"routes": 535,
+"align": {
+"slot": 0.262,
+"wide": 0.727,
+"inline": 0,
+"backfield": 0.011
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.249,
+"wide": 0.721,
+"tight": 0.014
+},
+"consensus_slot": 0.256
+},
+"quentin johnston": {
+"pos": "WR",
+"routes": 470,
+"align": {
+"slot": 0.149,
+"wide": 0.851,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.147,
+"wide": 0.851,
+"tight": 0.002
+},
+"consensus_slot": 0.148
+},
+"marvin harrison": {
+"pos": "WR",
+"routes": 359,
+"align": {
+"slot": 0.231,
+"wide": 0.769,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.224,
+"wide": 0.776,
+"tight": null
+},
+"consensus_slot": 0.228
+},
+"owen wright": {
+"pos": "RB",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"zaire mitchell paden": {
+"pos": "TE",
+"routes": 9,
+"align": {
+"slot": 0.222,
+"wide": 0,
+"inline": 0.111,
+"backfield": 0.667
+},
+"xcheck": "no NFL Pro match"
+},
+"hunter renfrow": {
+"pos": "WR",
+"routes": 143,
+"align": {
+"slot": 0.804,
+"wide": 0.196,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.775,
+"wide": 0.197,
+"tight": 0.028
+},
+"consensus_slot": 0.79
+},
+"kevin austin": {
+"pos": "WR",
+"routes": 134,
+"align": {
+"slot": 0.358,
+"wide": 0.642,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.398,
+"wide": 0.565,
+"tight": 0.037
+},
+"consensus_slot": 0.378
+},
+"omarion hampton": {
+"pos": "RB",
+"routes": 171,
+"align": {
+"slot": 0.053,
+"wide": 0.047,
+"inline": 0.018,
+"backfield": 0.883
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.024,
+"wide": 0.048,
+"tight": 0.006
+},
+"consensus_slot": 0.038
+},
+"emari demercado": {
+"pos": "RB",
+"routes": 112,
+"align": {
+"slot": 0.054,
+"wide": 0.062,
+"inline": 0,
+"backfield": 0.884
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.022,
+"wide": 0.075,
+"tight": null
+},
+"consensus_slot": 0.038
+},
+"nick kallerup": {
+"pos": "TE",
+"routes": 9,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"johnny mundt": {
+"pos": "TE",
+"routes": 114,
+"align": {
+"slot": 0.132,
+"wide": 0.088,
+"inline": 0.781,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.301,
+"wide": 0.065,
+"tight": 0.618
+},
+"consensus_slot": 0.216
+},
+"dontayvion wicks": {
+"pos": "WR",
+"routes": 213,
+"align": {
+"slot": 0.474,
+"wide": 0.507,
+"inline": 0.019,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.455,
+"wide": 0.482,
+"tight": 0.063
+},
+"consensus_slot": 0.465
+},
+"evan hull": {
+"pos": "RB",
+"routes": 32,
+"align": {
+"slot": 0,
+"wide": 0.188,
+"inline": 0,
+"backfield": 0.812
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.167,
+"tight": null
+},
+"consensus_slot": 0.0
+},
+"jared wayne": {
+"pos": "WR",
+"routes": 14,
+"align": {
+"slot": 0.214,
+"wide": 0.786,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"christian watson": {
+"pos": "WR",
+"routes": 229,
+"align": {
+"slot": 0.297,
+"wide": 0.681,
+"inline": 0.022,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.323,
+"wide": 0.634,
+"tight": 0.043
+},
+"consensus_slot": 0.31
+},
+"rasheen ali": {
+"pos": "RB",
+"routes": 70,
+"align": {
+"slot": 0.043,
+"wide": 0.014,
+"inline": 0.086,
+"backfield": 0.857
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.115,
+"wide": 0.016,
+"tight": null
+},
+"consensus_slot": 0.079
+},
+"tyrell shavers": {
+"pos": "WR",
+"routes": 170,
+"align": {
+"slot": 0.253,
+"wide": 0.659,
+"inline": 0.088,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.223,
+"wide": 0.649,
+"tight": 0.112
+},
+"consensus_slot": 0.238
+},
+"braelon allen": {
+"pos": "RB",
+"routes": 16,
+"align": {
+"slot": 0.062,
+"wide": 0,
+"inline": 0,
+"backfield": 0.938
+},
+"xcheck": "no NFL Pro match"
+},
+"colson yankoff": {
+"pos": "TE",
+"routes": 26,
+"align": {
+"slot": 0.385,
+"wide": 0.154,
+"inline": 0.385,
+"backfield": 0.077
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.312,
+"wide": 0.125,
+"tight": 0.5
+},
+"consensus_slot": 0.349
+},
+"theo johnson": {
+"pos": "TE",
+"routes": 402,
+"align": {
+"slot": 0.537,
+"wide": 0.157,
+"inline": 0.259,
+"backfield": 0.047
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.444,
+"wide": 0.143,
+"tight": 0.366
+},
+"consensus_slot": 0.491
+},
+"dk metcalf": {
+"pos": "WR",
+"routes": 429,
+"align": {
+"slot": 0.21,
+"wide": 0.788,
+"inline": 0,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.196,
+"wide": 0.796,
+"tight": 0.004
+},
+"consensus_slot": 0.203
+},
+"michael carter": {
+"pos": "RB",
+"routes": 222,
+"align": {
+"slot": 0.036,
+"wide": 0.05,
+"inline": 0.005,
+"backfield": 0.91
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.028,
+"wide": 0.047,
+"tight": null
+},
+"consensus_slot": 0.032
+},
+"elijah higgins": {
+"pos": "TE",
+"routes": 279,
+"align": {
+"slot": 0.416,
+"wide": 0.108,
+"inline": 0.452,
+"backfield": 0.025
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.421,
+"wide": 0.091,
+"tight": 0.46
+},
+"consensus_slot": 0.418
+},
+"skyy moore": {
+"pos": "WR",
+"routes": 62,
+"align": {
+"slot": 0.29,
+"wide": 0.71,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.266,
+"wide": 0.734,
+"tight": null
+},
+"consensus_slot": 0.278
+},
+"jordan mason": {
+"pos": "RB",
+"routes": 134,
+"align": {
+"slot": 0.015,
+"wide": 0.045,
+"inline": 0.09,
+"backfield": 0.851
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.055,
+"wide": 0.041,
+"tight": 0.034
+},
+"consensus_slot": 0.035
+},
+"dalton kincaid": {
+"pos": "TE",
+"routes": 179,
+"align": {
+"slot": 0.514,
+"wide": 0.235,
+"inline": 0.251,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.545,
+"wide": 0.251,
+"tight": 0.203
+},
+"consensus_slot": 0.53
+},
+"john bates": {
+"pos": "TE",
+"routes": 123,
+"align": {
+"slot": 0.13,
+"wide": 0.057,
+"inline": 0.813,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.193,
+"wide": 0.044,
+"tight": 0.719
+},
+"consensus_slot": 0.162
+},
+"chig okonkwo": {
+"pos": "TE",
+"routes": 376,
+"align": {
+"slot": 0.46,
+"wide": 0.152,
+"inline": 0.38,
+"backfield": 0.008
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.589,
+"wide": 0.132,
+"tight": 0.265
+},
+"consensus_slot": 0.524
+},
+"jamari thrash": {
+"pos": "WR",
+"routes": 128,
+"align": {
+"slot": 0.562,
+"wide": 0.438,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.574,
+"wide": 0.38,
+"tight": 0.047
+},
+"consensus_slot": 0.568
+},
+"isaiah davis": {
+"pos": "RB",
+"routes": 151,
+"align": {
+"slot": 0.073,
+"wide": 0.033,
+"inline": 0,
+"backfield": 0.894
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.035,
+"wide": 0.049,
+"tight": 0.007
+},
+"consensus_slot": 0.054
+},
+"chris rodriguez": {
+"pos": "RB",
+"routes": 76,
+"align": {
+"slot": 0.118,
+"wide": 0.053,
+"inline": 0,
+"backfield": 0.829
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.052,
+"wide": 0.039,
+"tight": null
+},
+"consensus_slot": 0.085
+},
+"ronnie bell": {
+"pos": "WR",
+"routes": 20,
+"align": {
+"slot": 0.2,
+"wide": 0.8,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tanner hudson": {
+"pos": "TE",
+"routes": 106,
+"align": {
+"slot": 0.462,
+"wide": 0.198,
+"inline": 0.311,
+"backfield": 0.028
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.602,
+"wide": 0.214,
+"tight": 0.165
+},
+"consensus_slot": 0.532
+},
+"malik nabers": {
+"pos": "WR",
+"routes": 127,
+"align": {
+"slot": 0.236,
+"wide": 0.764,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.244,
+"wide": 0.732,
+"tight": 0.024
+},
+"consensus_slot": 0.24
+},
+"albert okwuegbunam": {
+"pos": "TE",
+"routes": 23,
+"align": {
+"slot": 0.478,
+"wide": 0,
+"inline": 0.522,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.545,
+"wide": 0.045,
+"tight": 0.409
+},
+"consensus_slot": 0.512
+},
+"pat freiermuth": {
+"pos": "TE",
+"routes": 297,
+"align": {
+"slot": 0.609,
+"wide": 0.175,
+"inline": 0.215,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.698,
+"wide": 0.181,
+"tight": 0.121
+},
+"consensus_slot": 0.653
+},
+"elijah mitchell": {
+"pos": "RB",
+"routes": 4,
+"align": {
+"slot": 0.25,
+"wide": 0,
+"inline": 0,
+"backfield": 0.75
+},
+"xcheck": "no NFL Pro match"
+},
+"austin hooper": {
+"pos": "TE",
+"routes": 185,
+"align": {
+"slot": 0.092,
+"wide": 0.162,
+"inline": 0.741,
+"backfield": 0.005
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.241,
+"wide": 0.145,
+"tight": 0.602
+},
+"consensus_slot": 0.166
+},
+"evan engram": {
+"pos": "TE",
+"routes": 337,
+"align": {
+"slot": 0.451,
+"wide": 0.128,
+"inline": 0.407,
+"backfield": 0.015
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.68,
+"wide": 0.121,
+"tight": 0.175
+},
+"consensus_slot": 0.566
+},
+"lucas krull": {
+"pos": "TE",
+"routes": 26,
+"align": {
+"slot": 0.385,
+"wide": 0.115,
+"inline": 0.5,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.68,
+"wide": 0.12,
+"tight": 0.2
+},
+"consensus_slot": 0.532
+},
+"rashod bateman": {
+"pos": "WR",
+"routes": 296,
+"align": {
+"slot": 0.118,
+"wide": 0.878,
+"inline": 0,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.117,
+"wide": 0.877,
+"tight": 0.003
+},
+"consensus_slot": 0.117
+},
+"jalen brooks": {
+"pos": "WR",
+"routes": 68,
+"align": {
+"slot": 0.25,
+"wide": 0.75,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.2,
+"wide": 0.8,
+"tight": null
+},
+"consensus_slot": 0.225
+},
+"rachaad white": {
+"pos": "RB",
+"routes": 280,
+"align": {
+"slot": 0.096,
+"wide": 0.071,
+"inline": 0,
+"backfield": 0.832
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.058,
+"wide": 0.09,
+"tight": 0.007
+},
+"consensus_slot": 0.077
+},
+"calvin austin": {
+"pos": "WR",
+"routes": 282,
+"align": {
+"slot": 0.507,
+"wide": 0.486,
+"inline": 0,
+"backfield": 0.007
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.472,
+"wide": 0.506,
+"tight": 0.019
+},
+"consensus_slot": 0.489
+},
+"jordan watkins": {
+"pos": "WR",
+"routes": 14,
+"align": {
+"slot": 0.429,
+"wide": 0.571,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"josh whyle": {
+"pos": "TE",
+"routes": 63,
+"align": {
+"slot": 0.159,
+"wide": 0.19,
+"inline": 0.619,
+"backfield": 0.032
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.371,
+"wide": 0.129,
+"tight": 0.468
+},
+"consensus_slot": 0.265
+},
+"tim patrick": {
+"pos": "WR",
+"routes": 141,
+"align": {
+"slot": 0.397,
+"wide": 0.603,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.352,
+"wide": 0.6,
+"tight": 0.048
+},
+"consensus_slot": 0.374
+},
+"darius slayton": {
+"pos": "WR",
+"routes": 396,
+"align": {
+"slot": 0.174,
+"wide": 0.826,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.177,
+"wide": 0.82,
+"tight": null
+},
+"consensus_slot": 0.175
+},
+"devaughn vele": {
+"pos": "WR",
+"routes": 230,
+"align": {
+"slot": 0.4,
+"wide": 0.565,
+"inline": 0.035,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.394,
+"wide": 0.563,
+"tight": 0.043
+},
+"consensus_slot": 0.397
+},
+"drew sample": {
+"pos": "TE",
+"routes": 191,
+"align": {
+"slot": 0.068,
+"wide": 0.047,
+"inline": 0.654,
+"backfield": 0.23
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.372,
+"wide": 0.076,
+"tight": 0.337
+},
+"consensus_slot": 0.22
+},
+"saquon barkley": {
+"pos": "RB",
+"routes": 267,
+"align": {
+"slot": 0.09,
+"wide": 0.139,
+"inline": 0.004,
+"backfield": 0.768
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.053,
+"wide": 0.126,
+"tight": 0.003
+},
+"consensus_slot": 0.071
+},
+"bryce oliver": {
+"pos": "WR",
+"routes": 17,
+"align": {
+"slot": 0.118,
+"wide": 0.882,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"gunner olszewski": {
+"pos": "WR",
+"routes": 66,
+"align": {
+"slot": 0.515,
+"wide": 0.485,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.355,
+"wide": 0.645,
+"tight": null
+},
+"consensus_slot": 0.435
+},
+"taysom hill": {
+"pos": "TE",
+"routes": 79,
+"align": {
+"slot": 0.392,
+"wide": 0.278,
+"inline": 0.114,
+"backfield": 0.215
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.343,
+"wide": 0.269,
+"tight": 0.179
+},
+"consensus_slot": 0.368
+},
+"greg dortch": {
+"pos": "WR",
+"routes": 207,
+"align": {
+"slot": 0.725,
+"wide": 0.251,
+"inline": 0,
+"backfield": 0.024
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.635,
+"wide": 0.274,
+"tight": 0.034
+},
+"consensus_slot": 0.68
+},
+"colston loveland": {
+"pos": "TE",
+"routes": 356,
+"align": {
+"slot": 0.323,
+"wide": 0.242,
+"inline": 0.421,
+"backfield": 0.014
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.392,
+"wide": 0.247,
+"tight": 0.352
+},
+"consensus_slot": 0.358
+},
+"tez johnson": {
+"pos": "WR",
+"routes": 275,
+"align": {
+"slot": 0.393,
+"wide": 0.6,
+"inline": 0,
+"backfield": 0.007
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.327,
+"wide": 0.644,
+"tight": 0.022
+},
+"consensus_slot": 0.36
+},
+"marvin mims": {
+"pos": "WR",
+"routes": 254,
+"align": {
+"slot": 0.311,
+"wide": 0.646,
+"inline": 0,
+"backfield": 0.043
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.24,
+"wide": 0.676,
+"tight": 0.016
+},
+"consensus_slot": 0.275
+},
+"travis homer": {
+"pos": "RB",
+"routes": 4,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"elijah moore": {
+"pos": "WR",
+"routes": 103,
+"align": {
+"slot": 0.398,
+"wide": 0.583,
+"inline": 0,
+"backfield": 0.019
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.257,
+"wide": 0.713,
+"tight": 0.02
+},
+"consensus_slot": 0.328
+},
+"tyquan thornton": {
+"pos": "WR",
+"routes": 226,
+"align": {
+"slot": 0.372,
+"wide": 0.628,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.353,
+"wide": 0.629,
+"tight": 0.017
+},
+"consensus_slot": 0.362
+},
+"jaleel mclaughlin": {
+"pos": "RB",
+"routes": 21,
+"align": {
+"slot": 0,
+"wide": 0.095,
+"inline": 0,
+"backfield": 0.905
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.074,
+"tight": null
+},
+"consensus_slot": 0.0
+},
+"tylan wallace": {
+"pos": "WR",
+"routes": 81,
+"align": {
+"slot": 0.383,
+"wide": 0.617,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.359,
+"wide": 0.603,
+"tight": 0.038
+},
+"consensus_slot": 0.371
+},
+"payne durham": {
+"pos": "TE",
+"routes": 52,
+"align": {
+"slot": 0.25,
+"wide": 0.058,
+"inline": 0.673,
+"backfield": 0.019
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.188,
+"wide": 0.094,
+"tight": 0.672
+},
+"consensus_slot": 0.219
+},
+"woody marks": {
+"pos": "RB",
+"routes": 204,
+"align": {
+"slot": 0.034,
+"wide": 0.064,
+"inline": 0,
+"backfield": 0.902
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.018,
+"wide": 0.069,
+"tight": null
+},
+"consensus_slot": 0.026
+},
+"josiah deguara": {
+"pos": "TE",
+"routes": 51,
+"align": {
+"slot": 0.294,
+"wide": 0.196,
+"inline": 0.49,
+"backfield": 0.02
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.292,
+"wide": 0.271,
+"tight": 0.396
+},
+"consensus_slot": 0.293
+},
+"david moore": {
+"pos": "WR",
+"routes": 36,
+"align": {
+"slot": 0.278,
+"wide": 0.722,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.257,
+"wide": 0.743,
+"tight": null
+},
+"consensus_slot": 0.268
+},
+"cole kmet": {
+"pos": "TE",
+"routes": 307,
+"align": {
+"slot": 0.221,
+"wide": 0.221,
+"inline": 0.521,
+"backfield": 0.036
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.288,
+"wide": 0.223,
+"tight": 0.438
+},
+"consensus_slot": 0.255
+},
+"zach ertz": {
+"pos": "TE",
+"routes": 331,
+"align": {
+"slot": 0.568,
+"wide": 0.139,
+"inline": 0.29,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.633,
+"wide": 0.111,
+"tight": 0.25
+},
+"consensus_slot": 0.601
+},
+"jared wiley": {
+"pos": "TE",
+"routes": 9,
+"align": {
+"slot": 0.111,
+"wide": 0.222,
+"inline": 0.444,
+"backfield": 0.222
+},
+"xcheck": "no NFL Pro match"
+},
+"ian thomas": {
+"pos": "TE",
+"routes": 74,
+"align": {
+"slot": 0.162,
+"wide": 0.135,
+"inline": 0.689,
+"backfield": 0.014
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.256,
+"wide": 0.103,
+"tight": 0.577
+},
+"consensus_slot": 0.209
+},
+"xavier legette": {
+"pos": "WR",
+"routes": 377,
+"align": {
+"slot": 0.387,
+"wide": 0.613,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.384,
+"wide": 0.603,
+"tight": 0.014
+},
+"consensus_slot": 0.386
+},
+"khadarel hodge": {
+"pos": "WR",
+"routes": 38,
+"align": {
+"slot": 0.184,
+"wide": 0.816,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.211,
+"wide": 0.789,
+"tight": null
+},
+"consensus_slot": 0.198
+},
+"britain covey": {
+"pos": "WR",
+"routes": 26,
+"align": {
+"slot": 0.577,
+"wide": 0.423,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tyjae spears": {
+"pos": "RB",
+"routes": 194,
+"align": {
+"slot": 0.093,
+"wide": 0.031,
+"inline": 0.026,
+"backfield": 0.851
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.08,
+"wide": 0.048,
+"tight": 0.011
+},
+"consensus_slot": 0.086
+},
+"jalen nailor": {
+"pos": "WR",
+"routes": 373,
+"align": {
+"slot": 0.606,
+"wide": 0.389,
+"inline": 0.003,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.543,
+"wide": 0.411,
+"tight": 0.041
+},
+"consensus_slot": 0.575
+},
+"michael bandy": {
+"pos": "WR",
+"routes": 13,
+"align": {
+"slot": 0.846,
+"wide": 0.154,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"jordan whittington": {
+"pos": "WR",
+"routes": 194,
+"align": {
+"slot": 0.572,
+"wide": 0.418,
+"inline": 0.005,
+"backfield": 0.005
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.457,
+"wide": 0.389,
+"tight": 0.149
+},
+"consensus_slot": 0.514
+},
+"blake whiteheart": {
+"pos": "TE",
+"routes": 79,
+"align": {
+"slot": 0.228,
+"wide": 0.114,
+"inline": 0.646,
+"backfield": 0.013
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.321,
+"wide": 0.071,
+"tight": 0.595
+},
+"consensus_slot": 0.275
+},
+"jalen royals": {
+"pos": "WR",
+"routes": 31,
+"align": {
+"slot": 0.29,
+"wide": 0.71,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"darnell washington": {
+"pos": "TE",
+"routes": 182,
+"align": {
+"slot": 0.176,
+"wide": 0.17,
+"inline": 0.654,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.263,
+"wide": 0.136,
+"tight": 0.591
+},
+"consensus_slot": 0.22
+},
+"corey kiner": {
+"pos": "RB",
+"routes": 14,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"ceedee lamb": {
+"pos": "WR",
+"routes": 440,
+"align": {
+"slot": 0.341,
+"wide": 0.652,
+"inline": 0,
+"backfield": 0.007
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.354,
+"wide": 0.628,
+"tight": 0.012
+},
+"consensus_slot": 0.348
+},
+"jahmyr gibbs": {
+"pos": "RB",
+"routes": 337,
+"align": {
+"slot": 0.098,
+"wide": 0.068,
+"inline": 0.003,
+"backfield": 0.831
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.066,
+"wide": 0.072,
+"tight": 0.003
+},
+"consensus_slot": 0.082
+},
+"kyle pitts": {
+"pos": "TE",
+"routes": 505,
+"align": {
+"slot": 0.349,
+"wide": 0.204,
+"inline": 0.448,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.578,
+"wide": 0.222,
+"tight": 0.198
+},
+"consensus_slot": 0.463
+},
+"lajohntay wester": {
+"pos": "WR",
+"routes": 26,
+"align": {
+"slot": 0.654,
+"wide": 0.346,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.65,
+"wide": 0.3,
+"tight": 0.05
+},
+"consensus_slot": 0.652
+},
+"trey benson": {
+"pos": "RB",
+"routes": 71,
+"align": {
+"slot": 0.056,
+"wide": 0.099,
+"inline": 0,
+"backfield": 0.845
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.032,
+"wide": 0.113,
+"tight": null
+},
+"consensus_slot": 0.044
+},
+"juju smith schuster": {
+"pos": "WR",
+"routes": 323,
+"align": {
+"slot": 0.443,
+"wide": 0.551,
+"inline": 0.006,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.467,
+"wide": 0.47,
+"tight": 0.06
+},
+"consensus_slot": 0.455
+},
+"noah gray": {
+"pos": "TE",
+"routes": 214,
+"align": {
+"slot": 0.313,
+"wide": 0.178,
+"inline": 0.495,
+"backfield": 0.014
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.346,
+"wide": 0.142,
+"tight": 0.498
+},
+"consensus_slot": 0.33
+},
+"jaylin noel": {
+"pos": "WR",
+"routes": 195,
+"align": {
+"slot": 0.672,
+"wide": 0.318,
+"inline": 0,
+"backfield": 0.01
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.565,
+"wide": 0.392,
+"tight": 0.032
+},
+"consensus_slot": 0.619
+},
+"scott miller": {
+"pos": "WR",
+"routes": 93,
+"align": {
+"slot": 0.258,
+"wide": 0.742,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.289,
+"wide": 0.7,
+"tight": 0.011
+},
+"consensus_slot": 0.273
+},
+"devontez walker": {
+"pos": "WR",
+"routes": 58,
+"align": {
+"slot": 0.207,
+"wide": 0.793,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.2,
+"wide": 0.8,
+"tight": null
+},
+"consensus_slot": 0.204
+},
+"simi fehoko": {
+"pos": "WR",
+"routes": 21,
+"align": {
+"slot": 0.19,
+"wide": 0.81,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.217,
+"wide": 0.783,
+"tight": null
+},
+"consensus_slot": 0.204
+},
+"noah brown": {
+"pos": "WR",
+"routes": 63,
+"align": {
+"slot": 0.175,
+"wide": 0.825,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.169,
+"wide": 0.815,
+"tight": 0.015
+},
+"consensus_slot": 0.172
+},
+"nate adkins": {
+"pos": "TE",
+"routes": 41,
+"align": {
+"slot": 0.146,
+"wide": 0.098,
+"inline": 0.732,
+"backfield": 0.024
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.453,
+"wide": 0.057,
+"tight": 0.472
+},
+"consensus_slot": 0.299
+},
+"kaleb johnson": {
+"pos": "RB",
+"routes": 9,
+"align": {
+"slot": 0.222,
+"wide": 0,
+"inline": 0,
+"backfield": 0.778
+},
+"xcheck": "no NFL Pro match"
+},
+"jake tonges": {
+"pos": "TE",
+"routes": 219,
+"align": {
+"slot": 0.301,
+"wide": 0.082,
+"inline": 0.607,
+"backfield": 0.009
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.306,
+"wide": 0.078,
+"tight": 0.603
+},
+"consensus_slot": 0.303
+},
+"hassan haskins": {
+"pos": "RB",
+"routes": 40,
+"align": {
+"slot": 0.05,
+"wide": 0.05,
+"inline": 0,
+"backfield": 0.9
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.051,
+"tight": 0.026
+},
+"consensus_slot": 0.025
+},
+"jerome ford": {
+"pos": "RB",
+"routes": 163,
+"align": {
+"slot": 0.006,
+"wide": 0.049,
+"inline": 0.117,
+"backfield": 0.828
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.019,
+"wide": 0.05,
+"tight": 0.043
+},
+"consensus_slot": 0.013
+},
+"zach charbonnet": {
+"pos": "RB",
+"routes": 174,
+"align": {
+"slot": 0.063,
+"wide": 0.034,
+"inline": 0.023,
+"backfield": 0.879
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.06,
+"wide": 0.048,
+"tight": null
+},
+"consensus_slot": 0.061
+},
+"tory horton": {
+"pos": "WR",
+"routes": 126,
+"align": {
+"slot": 0.214,
+"wide": 0.786,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.193,
+"wide": 0.8,
+"tight": 0.007
+},
+"consensus_slot": 0.204
+},
+"colby parkinson": {
+"pos": "TE",
+"routes": 233,
+"align": {
+"slot": 0.137,
+"wide": 0.193,
+"inline": 0.67,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.322,
+"wide": 0.192,
+"tight": 0.481
+},
+"consensus_slot": 0.23
+},
+"stone smartt": {
+"pos": "TE",
+"routes": 51,
+"align": {
+"slot": 0.529,
+"wide": 0.137,
+"inline": 0.333,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.581,
+"wide": 0.209,
+"tight": 0.209
+},
+"consensus_slot": 0.555
+},
+"isiah pacheco": {
+"pos": "RB",
+"routes": 179,
+"align": {
+"slot": 0.067,
+"wide": 0.073,
+"inline": 0,
+"backfield": 0.86
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.004,
+"wide": 0.071,
+"tight": null
+},
+"consensus_slot": 0.036
+},
+"luke farrell": {
+"pos": "TE",
+"routes": 121,
+"align": {
+"slot": 0.116,
+"wide": 0.083,
+"inline": 0.793,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.113,
+"wide": 0.087,
+"tight": 0.8
+},
+"consensus_slot": 0.115
+},
+"teagan quitoriano": {
+"pos": "TE",
+"routes": 5,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"sterling shepard": {
+"pos": "WR",
+"routes": 321,
+"align": {
+"slot": 0.486,
+"wide": 0.514,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.495,
+"wide": 0.489,
+"tight": 0.015
+},
+"consensus_slot": 0.49
+},
+"chris blair": {
+"pos": "WR",
+"routes": 5,
+"align": {
+"slot": 0.6,
+"wide": 0.4,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"dareke young": {
+"pos": "WR",
+"routes": 16,
+"align": {
+"slot": 0.062,
+"wide": 0.938,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"trayveon williams": {
+"pos": "RB",
+"routes": 52,
+"align": {
+"slot": 0.038,
+"wide": 0.058,
+"inline": 0.096,
+"backfield": 0.808
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.049,
+"wide": 0.049,
+"tight": 0.024
+},
+"consensus_slot": 0.043
+},
+"tyler allgeier": {
+"pos": "RB",
+"routes": 91,
+"align": {
+"slot": 0.033,
+"wide": 0.055,
+"inline": 0,
+"backfield": 0.912
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.011,
+"wide": 0.055,
+"tight": null
+},
+"consensus_slot": 0.022
+},
+"lequint allen": {
+"pos": "RB",
+"routes": 143,
+"align": {
+"slot": 0.119,
+"wide": 0.035,
+"inline": 0,
+"backfield": 0.846
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.106,
+"wide": 0.038,
+"tight": null
+},
+"consensus_slot": 0.112
+},
+"brevyn spann ford": {
+"pos": "TE",
+"routes": 70,
+"align": {
+"slot": 0.286,
+"wide": 0.029,
+"inline": 0.671,
+"backfield": 0.014
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.317,
+"wide": 0.048,
+"tight": 0.635
+},
+"consensus_slot": 0.301
+},
+"courtland sutton": {
+"pos": "WR",
+"routes": 549,
+"align": {
+"slot": 0.193,
+"wide": 0.807,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.183,
+"wide": 0.812,
+"tight": 0.005
+},
+"consensus_slot": 0.188
+},
+"brock wright": {
+"pos": "TE",
+"routes": 111,
+"align": {
+"slot": 0.243,
+"wide": 0.108,
+"inline": 0.613,
+"backfield": 0.036
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.236,
+"wide": 0.126,
+"tight": 0.575
+},
+"consensus_slot": 0.239
+},
+"jeremy mcnichols": {
+"pos": "RB",
+"routes": 176,
+"align": {
+"slot": 0.244,
+"wide": 0.023,
+"inline": 0,
+"backfield": 0.733
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.122,
+"wide": 0.03,
+"tight": 0.073
+},
+"consensus_slot": 0.183
+},
+"marcedes lewis": {
+"pos": "TE",
+"routes": 3,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"josh palmer": {
+"pos": "WR",
+"routes": 220,
+"align": {
+"slot": 0.195,
+"wide": 0.795,
+"inline": 0.009,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.204,
+"wide": 0.764,
+"tight": 0.026
+},
+"consensus_slot": 0.2
+},
+"malik turner": {
+"pos": "WR",
+"routes": 5,
+"align": {
+"slot": 0,
+"wide": 1.0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"pharaoh brown": {
+"pos": "TE",
+"routes": 18,
+"align": {
+"slot": 0.056,
+"wide": 0,
+"inline": 0.889,
+"backfield": 0.056
+},
+"xcheck": "no NFL Pro match"
+},
+"elic ayomanor": {
+"pos": "WR",
+"routes": 445,
+"align": {
+"slot": 0.173,
+"wide": 0.825,
+"inline": 0.002,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.169,
+"wide": 0.815,
+"tight": 0.015
+},
+"consensus_slot": 0.171
+},
+"isaiah hodgins": {
+"pos": "WR",
+"routes": 185,
+"align": {
+"slot": 0.378,
+"wide": 0.611,
+"inline": 0.011,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.34,
+"wide": 0.61,
+"tight": 0.05
+},
+"consensus_slot": 0.359
+},
+"brandon smith": {
+"pos": "WR",
+"routes": 3,
+"align": {
+"slot": 0,
+"wide": 1.0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"shane zylstra": {
+"pos": "TE",
+"routes": 78,
+"align": {
+"slot": 0.397,
+"wide": 0.218,
+"inline": 0.385,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.537,
+"wide": 0.179,
+"tight": 0.284
+},
+"consensus_slot": 0.467
+},
+"ashton dulin": {
+"pos": "WR",
+"routes": 66,
+"align": {
+"slot": 0.227,
+"wide": 0.758,
+"inline": 0.015,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.164,
+"wide": 0.82,
+"tight": 0.016
+},
+"consensus_slot": 0.196
+},
+"kene nwangwu": {
+"pos": "RB",
+"routes": 12,
+"align": {
+"slot": 0.167,
+"wide": 0.083,
+"inline": 0,
+"backfield": 0.75
+},
+"xcheck": "no NFL Pro match"
+},
+"aaron jones": {
+"pos": "RB",
+"routes": 168,
+"align": {
+"slot": 0.024,
+"wide": 0.054,
+"inline": 0.024,
+"backfield": 0.899
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.034,
+"wide": 0.057,
+"tight": null
+},
+"consensus_slot": 0.029
+},
+"sean mckeon": {
+"pos": "TE",
+"routes": 2,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"chris manhertz": {
+"pos": "TE",
+"routes": 16,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"ameer abdullah": {
+"pos": "RB",
+"routes": 55,
+"align": {
+"slot": 0.073,
+"wide": 0.055,
+"inline": 0,
+"backfield": 0.873
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.042,
+"wide": 0.062,
+"tight": null
+},
+"consensus_slot": 0.057
+},
+"brycen tremayne": {
+"pos": "WR",
+"routes": 107,
+"align": {
+"slot": 0.355,
+"wide": 0.636,
+"inline": 0,
+"backfield": 0.009
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.337,
+"wide": 0.584,
+"tight": 0.069
+},
+"consensus_slot": 0.346
+},
+"tyler badie": {
+"pos": "RB",
+"routes": 128,
+"align": {
+"slot": 0.008,
+"wide": 0.016,
+"inline": 0.062,
+"backfield": 0.914
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.04,
+"wide": 0.016,
+"tight": 0.008
+},
+"consensus_slot": 0.024
+},
+"brandin cooks": {
+"pos": "WR",
+"routes": 324,
+"align": {
+"slot": 0.395,
+"wide": 0.599,
+"inline": 0,
+"backfield": 0.006
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.379,
+"wide": 0.603,
+"tight": 0.012
+},
+"consensus_slot": 0.387
+},
+"alec pierce": {
+"pos": "WR",
+"routes": 445,
+"align": {
+"slot": 0.11,
+"wide": 0.89,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.147,
+"wide": 0.846,
+"tight": 0.007
+},
+"consensus_slot": 0.129
+},
+"keon coleman": {
+"pos": "WR",
+"routes": 281,
+"align": {
+"slot": 0.185,
+"wide": 0.808,
+"inline": 0.007,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.177,
+"wide": 0.804,
+"tight": 0.011
+},
+"consensus_slot": 0.181
+},
+"andrei iosivas": {
+"pos": "WR",
+"routes": 505,
+"align": {
+"slot": 0.586,
+"wide": 0.412,
+"inline": 0,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.549,
+"wide": 0.417,
+"tight": 0.033
+},
+"consensus_slot": 0.568
+},
+"treveyon henderson": {
+"pos": "RB",
+"routes": 225,
+"align": {
+"slot": 0.044,
+"wide": 0.098,
+"inline": 0.009,
+"backfield": 0.849
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.029,
+"wide": 0.097,
+"tight": 0.005
+},
+"consensus_slot": 0.036
+},
+"trent sherfield": {
+"pos": "WR",
+"routes": 59,
+"align": {
+"slot": 0.441,
+"wide": 0.542,
+"inline": 0.017,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.333,
+"wide": 0.639,
+"tight": 0.028
+},
+"consensus_slot": 0.387
+},
+"jerry jeudy": {
+"pos": "WR",
+"routes": 554,
+"align": {
+"slot": 0.182,
+"wide": 0.816,
+"inline": 0.002,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.187,
+"wide": 0.804,
+"tight": 0.007
+},
+"consensus_slot": 0.184
+},
+"cedrick wilson": {
+"pos": "WR",
+"routes": 54,
+"align": {
+"slot": 0.259,
+"wide": 0.704,
+"inline": 0.019,
+"backfield": 0.019
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.172,
+"wide": 0.776,
+"tight": 0.034
+},
+"consensus_slot": 0.215
+},
+"isaiah williams": {
+"pos": "WR",
+"routes": 202,
+"align": {
+"slot": 0.678,
+"wide": 0.317,
+"inline": 0,
+"backfield": 0.005
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.602,
+"wide": 0.344,
+"tight": 0.038
+},
+"consensus_slot": 0.64
+},
+"deebo samuel": {
+"pos": "WR",
+"routes": 420,
+"align": {
+"slot": 0.648,
+"wide": 0.331,
+"inline": 0,
+"backfield": 0.021
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.596,
+"wide": 0.329,
+"tight": 0.035
+},
+"consensus_slot": 0.622
+},
+"kylen granson": {
+"pos": "TE",
+"routes": 75,
+"align": {
+"slot": 0.373,
+"wide": 0.08,
+"inline": 0.52,
+"backfield": 0.027
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.24,
+"wide": 0.06,
+"tight": 0.66
+},
+"consensus_slot": 0.306
+},
+"deven thompkins": {
+"pos": "WR",
+"routes": 7,
+"align": {
+"slot": 0.286,
+"wide": 0.714,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"gabe davis": {
+"pos": "WR",
+"routes": 116,
+"align": {
+"slot": 0.095,
+"wide": 0.879,
+"inline": 0.026,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.134,
+"wide": 0.845,
+"tight": 0.021
+},
+"consensus_slot": 0.115
+},
+"quintin morris": {
+"pos": "TE",
+"routes": 65,
+"align": {
+"slot": 0.246,
+"wide": 0.154,
+"inline": 0.585,
+"backfield": 0.015
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.276,
+"wide": 0.138,
+"tight": 0.569
+},
+"consensus_slot": 0.261
+},
+"james mitchell": {
+"pos": "TE",
+"routes": 11,
+"align": {
+"slot": 0.545,
+"wide": 0,
+"inline": 0.455,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tucker kraft": {
+"pos": "TE",
+"routes": 190,
+"align": {
+"slot": 0.342,
+"wide": 0.126,
+"inline": 0.532,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.397,
+"wide": 0.125,
+"tight": 0.478
+},
+"consensus_slot": 0.37
+},
+"ty chandler": {
+"pos": "RB",
+"routes": 13,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"tyler johnson": {
+"pos": "WR",
+"routes": 151,
+"align": {
+"slot": 0.411,
+"wide": 0.589,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.4,
+"wide": 0.572,
+"tight": 0.028
+},
+"consensus_slot": 0.405
+},
+"julius chestnut": {
+"pos": "RB",
+"routes": 13,
+"align": {
+"slot": 0,
+"wide": 0.154,
+"inline": 0,
+"backfield": 0.846
+},
+"xcheck": "no NFL Pro match"
+},
+"ben sims": {
+"pos": "TE",
+"routes": 29,
+"align": {
+"slot": 0.207,
+"wide": 0.138,
+"inline": 0.655,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.095,
+"wide": 0.286,
+"tight": 0.619
+},
+"consensus_slot": 0.151
+},
+"arian smith": {
+"pos": "WR",
+"routes": 229,
+"align": {
+"slot": 0.428,
+"wide": 0.572,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.441,
+"wide": 0.545,
+"tight": 0.014
+},
+"consensus_slot": 0.434
+},
+"xavier hutchinson": {
+"pos": "WR",
+"routes": 379,
+"align": {
+"slot": 0.201,
+"wide": 0.799,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.188,
+"wide": 0.764,
+"tight": 0.043
+},
+"consensus_slot": 0.195
+},
+"mason tipton": {
+"pos": "WR",
+"routes": 165,
+"align": {
+"slot": 0.321,
+"wide": 0.673,
+"inline": 0,
+"backfield": 0.006
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.296,
+"wide": 0.692,
+"tight": 0.006
+},
+"consensus_slot": 0.308
+},
+"jalen coker": {
+"pos": "WR",
+"routes": 271,
+"align": {
+"slot": 0.598,
+"wide": 0.399,
+"inline": 0,
+"backfield": 0.004
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.574,
+"wide": 0.373,
+"tight": 0.045
+},
+"consensus_slot": 0.586
+},
+"troy franklin": {
+"pos": "WR",
+"routes": 455,
+"align": {
+"slot": 0.433,
+"wide": 0.567,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.413,
+"wide": 0.54,
+"tight": 0.047
+},
+"consensus_slot": 0.423
+},
+"nyheim hines": {
+"pos": "RB",
+"routes": 4,
+"align": {
+"slot": 0,
+"wide": 0.25,
+"inline": 0,
+"backfield": 0.75
+},
+"xcheck": "no NFL Pro match"
+},
+"treyton welch": {
+"pos": "TE",
+"routes": 6,
+"align": {
+"slot": 0.333,
+"wide": 0,
+"inline": 0.667,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"shedrick jackson": {
+"pos": "WR",
+"routes": 17,
+"align": {
+"slot": 0.588,
+"wide": 0.412,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"curtis samuel": {
+"pos": "WR",
+"routes": 76,
+"align": {
+"slot": 0.395,
+"wide": 0.605,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.383,
+"wide": 0.531,
+"tight": 0.049
+},
+"consensus_slot": 0.389
+},
+"myles price": {
+"pos": "WR",
+"routes": 1,
+"align": {
+"slot": 1.0,
+"wide": 0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"deejay dallas": {
+"pos": "RB",
+"routes": 11,
+"align": {
+"slot": 0.182,
+"wide": 0.182,
+"inline": 0,
+"backfield": 0.636
+},
+"xcheck": "no NFL Pro match"
+},
+"andrew ogletree": {
+"pos": "TE",
+"routes": 47,
+"align": {
+"slot": 0.255,
+"wide": 0.17,
+"inline": 0.574,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.143,
+"wide": 0.163,
+"tight": 0.673
+},
+"consensus_slot": 0.199
+},
+"kalif raymond": {
+"pos": "WR",
+"routes": 194,
+"align": {
+"slot": 0.418,
+"wide": 0.577,
+"inline": 0.005,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.371,
+"wide": 0.579,
+"tight": 0.05
+},
+"consensus_slot": 0.394
+},
+"nikko remigio": {
+"pos": "WR",
+"routes": 7,
+"align": {
+"slot": 0.429,
+"wide": 0.571,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tyrone tracy": {
+"pos": "RB",
+"routes": 245,
+"align": {
+"slot": 0.065,
+"wide": 0.102,
+"inline": 0,
+"backfield": 0.833
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.04,
+"wide": 0.103,
+"tight": null
+},
+"consensus_slot": 0.053
+},
+"roschon johnson": {
+"pos": "RB",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"jakobie keeney james": {
+"pos": "WR",
+"routes": 14,
+"align": {
+"slot": 0.357,
+"wide": 0.643,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"adam trautman": {
+"pos": "TE",
+"routes": 166,
+"align": {
+"slot": 0.253,
+"wide": 0.09,
+"inline": 0.651,
+"backfield": 0.006
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.533,
+"wide": 0.067,
+"tight": 0.385
+},
+"consensus_slot": 0.393
+},
+"khalil herbert": {
+"pos": "RB",
+"routes": 17,
+"align": {
+"slot": 0,
+"wide": 0.059,
+"inline": 0,
+"backfield": 0.941
+},
+"xcheck": "no NFL Pro match"
+},
+"devin culp": {
+"pos": "TE",
+"routes": 23,
+"align": {
+"slot": 0.261,
+"wide": 0.348,
+"inline": 0.391,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.348,
+"wide": 0.348,
+"tight": 0.304
+},
+"consensus_slot": 0.304
+},
+"devin singletary": {
+"pos": "RB",
+"routes": 107,
+"align": {
+"slot": 0.047,
+"wide": 0.159,
+"inline": 0,
+"backfield": 0.794
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.018,
+"wide": 0.142,
+"tight": null
+},
+"consensus_slot": 0.033
+},
+"bhayshul tuten": {
+"pos": "RB",
+"routes": 75,
+"align": {
+"slot": 0.093,
+"wide": 0.107,
+"inline": 0,
+"backfield": 0.8
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.041,
+"wide": 0.135,
+"tight": null
+},
+"consensus_slot": 0.067
+},
+"dyami brown": {
+"pos": "WR",
+"routes": 181,
+"align": {
+"slot": 0.276,
+"wide": 0.724,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.249,
+"wide": 0.73,
+"tight": 0.021
+},
+"consensus_slot": 0.263
+},
+"charlie woerner": {
+"pos": "TE",
+"routes": 114,
+"align": {
+"slot": 0.105,
+"wide": 0.061,
+"inline": 0.43,
+"backfield": 0.404
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.186,
+"wide": 0.071,
+"tight": 0.398
+},
+"consensus_slot": 0.145
+},
+"darnell mooney": {
+"pos": "WR",
+"routes": 420,
+"align": {
+"slot": 0.41,
+"wide": 0.59,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.407,
+"wide": 0.58,
+"tight": 0.01
+},
+"consensus_slot": 0.408
+},
+"giovanni ricci": {
+"pos": "TE",
+"routes": 6,
+"align": {
+"slot": 0,
+"wide": 0.333,
+"inline": 0.667,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"george pickens": {
+"pos": "WR",
+"routes": 583,
+"align": {
+"slot": 0.099,
+"wide": 0.901,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.095,
+"wide": 0.905,
+"tight": null
+},
+"consensus_slot": 0.097
+},
+"chris godwin": {
+"pos": "WR",
+"routes": 239,
+"align": {
+"slot": 0.556,
+"wide": 0.444,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.515,
+"wide": 0.468,
+"tight": 0.017
+},
+"consensus_slot": 0.536
+},
+"michael pittman": {
+"pos": "WR",
+"routes": 505,
+"align": {
+"slot": 0.291,
+"wide": 0.691,
+"inline": 0.014,
+"backfield": 0.004
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.281,
+"wide": 0.671,
+"tight": 0.042
+},
+"consensus_slot": 0.286
+},
+"derrick henry": {
+"pos": "RB",
+"routes": 127,
+"align": {
+"slot": 0.008,
+"wide": 0.008,
+"inline": 0,
+"backfield": 0.984
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.008,
+"tight": null
+},
+"consensus_slot": 0.004
+},
+"cam grandy": {
+"pos": "TE",
+"routes": 5,
+"align": {
+"slot": 0.2,
+"wide": 0.2,
+"inline": 0.6,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tahj brooks": {
+"pos": "RB",
+"routes": 17,
+"align": {
+"slot": 0,
+"wide": 0.059,
+"inline": 0,
+"backfield": 0.941
+},
+"xcheck": "no NFL Pro match"
+},
+"hayden rucci": {
+"pos": "TE",
+"routes": 2,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"noah fant": {
+"pos": "TE",
+"routes": 193,
+"align": {
+"slot": 0.254,
+"wide": 0.088,
+"inline": 0.648,
+"backfield": 0.01
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.562,
+"wide": 0.125,
+"tight": 0.297
+},
+"consensus_slot": 0.408
+},
+"mark andrews": {
+"pos": "TE",
+"routes": 317,
+"align": {
+"slot": 0.703,
+"wide": 0.183,
+"inline": 0.114,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.629,
+"wide": 0.116,
+"tight": 0.248
+},
+"consensus_slot": 0.666
+},
+"christian kirk": {
+"pos": "WR",
+"routes": 267,
+"align": {
+"slot": 0.715,
+"wide": 0.277,
+"inline": 0,
+"backfield": 0.007
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.649,
+"wide": 0.281,
+"tight": 0.054
+},
+"consensus_slot": 0.682
+},
+"jalen tolbert": {
+"pos": "WR",
+"routes": 255,
+"align": {
+"slot": 0.459,
+"wide": 0.541,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.433,
+"wide": 0.522,
+"tight": 0.041
+},
+"consensus_slot": 0.446
+},
+"malachi corley": {
+"pos": "WR",
+"routes": 68,
+"align": {
+"slot": 0.603,
+"wide": 0.338,
+"inline": 0.015,
+"backfield": 0.044
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.213,
+"wide": 0.393,
+"tight": 0.328
+},
+"consensus_slot": 0.408
+},
+"olamide zaccheaus": {
+"pos": "WR",
+"routes": 305,
+"align": {
+"slot": 0.475,
+"wide": 0.521,
+"inline": 0.003,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.433,
+"wide": 0.5,
+"tight": 0.057
+},
+"consensus_slot": 0.454
+},
+"michael mayer": {
+"pos": "TE",
+"routes": 209,
+"align": {
+"slot": 0.23,
+"wide": 0.1,
+"inline": 0.651,
+"backfield": 0.019
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.358,
+"wide": 0.102,
+"tight": 0.503
+},
+"consensus_slot": 0.294
+},
+"austin trammell": {
+"pos": "WR",
+"routes": 45,
+"align": {
+"slot": 0.556,
+"wide": 0.444,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.512,
+"wide": 0.465,
+"tight": 0.023
+},
+"consensus_slot": 0.534
+},
+"tommy tremble": {
+"pos": "TE",
+"routes": 258,
+"align": {
+"slot": 0.364,
+"wide": 0.124,
+"inline": 0.484,
+"backfield": 0.027
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.414,
+"wide": 0.116,
+"tight": 0.444
+},
+"consensus_slot": 0.389
+},
+"tutu atwell": {
+"pos": "WR",
+"routes": 133,
+"align": {
+"slot": 0.639,
+"wide": 0.361,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.597,
+"wide": 0.358,
+"tight": 0.045
+},
+"consensus_slot": 0.618
+},
+"cedric tillman": {
+"pos": "WR",
+"routes": 283,
+"align": {
+"slot": 0.311,
+"wide": 0.689,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.304,
+"wide": 0.639,
+"tight": 0.054
+},
+"consensus_slot": 0.307
+},
+"dalevon campbell": {
+"pos": "WR",
+"routes": 5,
+"align": {
+"slot": 0.6,
+"wide": 0.4,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"travis vokolek": {
+"pos": "TE",
+"routes": 4,
+"align": {
+"slot": 0,
+"wide": 0.25,
+"inline": 0.75,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"amar johnson": {
+"pos": "RB",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"matthew golden": {
+"pos": "WR",
+"routes": 247,
+"align": {
+"slot": 0.389,
+"wide": 0.591,
+"inline": 0.02,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.377,
+"wide": 0.573,
+"tight": 0.05
+},
+"consensus_slot": 0.383
+},
+"malik washington": {
+"pos": "WR",
+"routes": 334,
+"align": {
+"slot": 0.494,
+"wide": 0.47,
+"inline": 0.003,
+"backfield": 0.033
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.461,
+"wide": 0.477,
+"tight": 0.022
+},
+"consensus_slot": 0.478
+},
+"raheim sanders": {
+"pos": "RB",
+"routes": 17,
+"align": {
+"slot": 0,
+"wide": 0.118,
+"inline": 0,
+"backfield": 0.882
+},
+"xcheck": "no NFL Pro match"
+},
+"devon achane": {
+"pos": "RB",
+"routes": 312,
+"align": {
+"slot": 0.263,
+"wide": 0.112,
+"inline": 0.01,
+"backfield": 0.615
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.199,
+"wide": 0.111,
+"tight": 0.009
+},
+"consensus_slot": 0.231
+},
+"foster moreau": {
+"pos": "TE",
+"routes": 69,
+"align": {
+"slot": 0.203,
+"wide": 0.072,
+"inline": 0.725,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.286,
+"wide": 0.071,
+"tight": 0.629
+},
+"consensus_slot": 0.244
+},
+"austin ekeler": {
+"pos": "RB",
+"routes": 37,
+"align": {
+"slot": 0.324,
+"wide": 0.027,
+"inline": 0,
+"backfield": 0.649
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.172,
+"wide": 0.034,
+"tight": 0.103
+},
+"consensus_slot": 0.248
+},
+"luke schoonmaker": {
+"pos": "TE",
+"routes": 133,
+"align": {
+"slot": 0.241,
+"wide": 0.083,
+"inline": 0.677,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.283,
+"wide": 0.063,
+"tight": 0.646
+},
+"consensus_slot": 0.262
+},
+"dee eskridge": {
+"pos": "WR",
+"routes": 54,
+"align": {
+"slot": 0.296,
+"wide": 0.704,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.309,
+"wide": 0.691,
+"tight": null
+},
+"consensus_slot": 0.302
+},
+"demarcus robinson": {
+"pos": "WR",
+"routes": 246,
+"align": {
+"slot": 0.398,
+"wide": 0.598,
+"inline": 0.004,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.396,
+"wide": 0.568,
+"tight": 0.035
+},
+"consensus_slot": 0.397
+},
+"tay martin": {
+"pos": "WR",
+"routes": 12,
+"align": {
+"slot": 0.083,
+"wide": 0.917,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"konata mumpfield": {
+"pos": "WR",
+"routes": 166,
+"align": {
+"slot": 0.205,
+"wide": 0.795,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.232,
+"wide": 0.755,
+"tight": 0.013
+},
+"consensus_slot": 0.218
+},
+"tahj washington": {
+"pos": "WR",
+"routes": 34,
+"align": {
+"slot": 0.294,
+"wide": 0.706,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.4,
+"wide": 0.5,
+"tight": 0.1
+},
+"consensus_slot": 0.347
+},
+"jatavion sanders": {
+"pos": "TE",
+"routes": 211,
+"align": {
+"slot": 0.602,
+"wide": 0.175,
+"inline": 0.218,
+"backfield": 0.005
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.593,
+"wide": 0.157,
+"tight": 0.241
+},
+"consensus_slot": 0.597
+},
+"aj brown": {
+"pos": "WR",
+"routes": 450,
+"align": {
+"slot": 0.127,
+"wide": 0.873,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.118,
+"wide": 0.869,
+"tight": 0.011
+},
+"consensus_slot": 0.122
+},
+"dernest johnson": {
+"pos": "RB",
+"routes": 14,
+"align": {
+"slot": 0.143,
+"wide": 0.214,
+"inline": 0,
+"backfield": 0.643
+},
+"xcheck": "no NFL Pro match"
+},
+"darius cooper": {
+"pos": "WR",
+"routes": 90,
+"align": {
+"slot": 0.422,
+"wide": 0.578,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.433,
+"wide": 0.433,
+"tight": 0.1
+},
+"consensus_slot": 0.427
+},
+"blake corum": {
+"pos": "RB",
+"routes": 96,
+"align": {
+"slot": 0.146,
+"wide": 0.021,
+"inline": 0,
+"backfield": 0.833
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.125,
+"wide": 0.021,
+"tight": null
+},
+"consensus_slot": 0.136
+},
+"kavontae turpin": {
+"pos": "WR",
+"routes": 235,
+"align": {
+"slot": 0.749,
+"wide": 0.238,
+"inline": 0,
+"backfield": 0.013
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.667,
+"wide": 0.273,
+"tight": 0.043
+},
+"consensus_slot": 0.708
+},
+"jaxon smith njigba": {
+"pos": "WR",
+"routes": 479,
+"align": {
+"slot": 0.225,
+"wide": 0.758,
+"inline": 0.008,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.211,
+"wide": 0.758,
+"tight": 0.013
+},
+"consensus_slot": 0.218
+},
+"jalen cropper": {
+"pos": "WR",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 1.0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"connor heyward": {
+"pos": "TE",
+"routes": 11,
+"align": {
+"slot": 0.273,
+"wide": 0.273,
+"inline": 0.091,
+"backfield": 0.364
+},
+"xcheck": "no NFL Pro match"
+},
+"jimmy holiday": {
+"pos": "WR",
+"routes": 1,
+"align": {
+"slot": 1.0,
+"wide": 0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"brayden willis": {
+"pos": "TE",
+"routes": 5,
+"align": {
+"slot": 0.4,
+"wide": 0.2,
+"inline": 0.4,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"rashee rice": {
+"pos": "WR",
+"routes": 250,
+"align": {
+"slot": 0.444,
+"wide": 0.54,
+"inline": 0,
+"backfield": 0.016
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.414,
+"wide": 0.542,
+"tight": 0.016
+},
+"consensus_slot": 0.429
+},
+"trevor etienne": {
+"pos": "RB",
+"routes": 14,
+"align": {
+"slot": 0.571,
+"wide": 0.143,
+"inline": 0,
+"backfield": 0.286
+},
+"xcheck": "no NFL Pro match"
+},
+"john metchie": {
+"pos": "WR",
+"routes": 239,
+"align": {
+"slot": 0.36,
+"wide": 0.632,
+"inline": 0,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.348,
+"wide": 0.597,
+"tight": 0.041
+},
+"consensus_slot": 0.354
+},
+"chase brown": {
+"pos": "RB",
+"routes": 374,
+"align": {
+"slot": 0.118,
+"wide": 0.043,
+"inline": 0.005,
+"backfield": 0.834
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.107,
+"wide": 0.052,
+"tight": 0.008
+},
+"consensus_slot": 0.112
+},
+"charlie jones": {
+"pos": "WR",
+"routes": 10,
+"align": {
+"slot": 0.3,
+"wide": 0.7,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"kyle monangai": {
+"pos": "RB",
+"routes": 183,
+"align": {
+"slot": 0.022,
+"wide": 0.06,
+"inline": 0.066,
+"backfield": 0.852
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.04,
+"wide": 0.061,
+"tight": 0.03
+},
+"consensus_slot": 0.031
+},
+"parker washington": {
+"pos": "WR",
+"routes": 381,
+"align": {
+"slot": 0.514,
+"wide": 0.483,
+"inline": 0,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.458,
+"wide": 0.508,
+"tight": 0.028
+},
+"consensus_slot": 0.486
+},
+"mason kinsey": {
+"pos": "WR",
+"routes": 42,
+"align": {
+"slot": 0.429,
+"wide": 0.571,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.463,
+"wide": 0.512,
+"tight": 0.024
+},
+"consensus_slot": 0.446
+},
+"dj giddens": {
+"pos": "RB",
+"routes": 13,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"tetairoa mcmillan": {
+"pos": "WR",
+"routes": 522,
+"align": {
+"slot": 0.199,
+"wide": 0.801,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.205,
+"wide": 0.793,
+"tight": null
+},
+"consensus_slot": 0.202
+},
+"brashard smith": {
+"pos": "RB",
+"routes": 97,
+"align": {
+"slot": 0.258,
+"wide": 0.186,
+"inline": 0.01,
+"backfield": 0.546
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.139,
+"wide": 0.304,
+"tight": 0.025
+},
+"consensus_slot": 0.199
+},
+"tank bigsby": {
+"pos": "RB",
+"routes": 43,
+"align": {
+"slot": 0.07,
+"wide": 0.093,
+"inline": 0,
+"backfield": 0.837
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.031,
+"wide": 0.062,
+"tight": null
+},
+"consensus_slot": 0.051
+},
+"hunter long": {
+"pos": "TE",
+"routes": 112,
+"align": {
+"slot": 0.241,
+"wide": 0.205,
+"inline": 0.545,
+"backfield": 0.009
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.431,
+"wide": 0.171,
+"tight": 0.39
+},
+"consensus_slot": 0.336
+},
+"devin neal": {
+"pos": "RB",
+"routes": 130,
+"align": {
+"slot": 0.023,
+"wide": 0.077,
+"inline": 0,
+"backfield": 0.9
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.034,
+"wide": 0.076,
+"tight": null
+},
+"consensus_slot": 0.029
+},
+"grant calcaterra": {
+"pos": "TE",
+"routes": 105,
+"align": {
+"slot": 0.438,
+"wide": 0.095,
+"inline": 0.467,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.4,
+"wide": 0.067,
+"tight": 0.511
+},
+"consensus_slot": 0.419
+},
+"tyler higbee": {
+"pos": "TE",
+"routes": 173,
+"align": {
+"slot": 0.254,
+"wide": 0.15,
+"inline": 0.59,
+"backfield": 0.006
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.429,
+"wide": 0.154,
+"tight": 0.41
+},
+"consensus_slot": 0.342
+},
+"greg dulcich": {
+"pos": "TE",
+"routes": 127,
+"align": {
+"slot": 0.331,
+"wide": 0.157,
+"inline": 0.504,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.351,
+"wide": 0.132,
+"tight": 0.509
+},
+"consensus_slot": 0.341
+},
+"jake ferguson": {
+"pos": "TE",
+"routes": 475,
+"align": {
+"slot": 0.56,
+"wide": 0.074,
+"inline": 0.358,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.539,
+"wide": 0.081,
+"tight": 0.36
+},
+"consensus_slot": 0.55
+},
+"mike gesicki": {
+"pos": "TE",
+"routes": 238,
+"align": {
+"slot": 0.794,
+"wide": 0.185,
+"inline": 0.021,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.776,
+"wide": 0.193,
+"tight": 0.031
+},
+"consensus_slot": 0.785
+},
+"david sills": {
+"pos": "WR",
+"routes": 297,
+"align": {
+"slot": 0.401,
+"wide": 0.596,
+"inline": 0.003,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.427,
+"wide": 0.559,
+"tight": 0.014
+},
+"consensus_slot": 0.414
+},
+"stefon diggs": {
+"pos": "WR",
+"routes": 401,
+"align": {
+"slot": 0.539,
+"wide": 0.459,
+"inline": 0,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.525,
+"wide": 0.464,
+"tight": 0.006
+},
+"consensus_slot": 0.532
+},
+"tom kennedy": {
+"pos": "WR",
+"routes": 26,
+"align": {
+"slot": 0.692,
+"wide": 0.308,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.593,
+"wide": 0.37,
+"tight": 0.037
+},
+"consensus_slot": 0.642
+},
+"brian robinson": {
+"pos": "RB",
+"routes": 57,
+"align": {
+"slot": 0.088,
+"wide": 0.035,
+"inline": 0,
+"backfield": 0.877
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.032,
+"wide": 0.032,
+"tight": 0.016
+},
+"consensus_slot": 0.06
+},
+"jack stoll": {
+"pos": "TE",
+"routes": 43,
+"align": {
+"slot": 0.256,
+"wide": 0.023,
+"inline": 0.581,
+"backfield": 0.14
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.255,
+"wide": 0.043,
+"tight": 0.489
+},
+"consensus_slot": 0.256
+},
+"kendrick bourne": {
+"pos": "WR",
+"routes": 336,
+"align": {
+"slot": 0.244,
+"wide": 0.756,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.223,
+"wide": 0.747,
+"tight": 0.03
+},
+"consensus_slot": 0.233
+},
+"ej jenkins": {
+"pos": "TE",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"davis allen": {
+"pos": "TE",
+"routes": 179,
+"align": {
+"slot": 0.173,
+"wide": 0.263,
+"inline": 0.553,
+"backfield": 0.011
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.251,
+"wide": 0.223,
+"tight": 0.486
+},
+"consensus_slot": 0.212
+},
+"ricky pearsall": {
+"pos": "WR",
+"routes": 262,
+"align": {
+"slot": 0.229,
+"wide": 0.771,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.185,
+"wide": 0.749,
+"tight": 0.066
+},
+"consensus_slot": 0.207
+},
+"mason taylor": {
+"pos": "TE",
+"routes": 331,
+"align": {
+"slot": 0.335,
+"wide": 0.218,
+"inline": 0.438,
+"backfield": 0.009
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.429,
+"wide": 0.21,
+"tight": 0.346
+},
+"consensus_slot": 0.382
+},
+"robbie chosen": {
+"pos": "WR",
+"routes": 39,
+"align": {
+"slot": 0.103,
+"wide": 0.897,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.175,
+"wide": 0.775,
+"tight": 0.05
+},
+"consensus_slot": 0.139
+},
+"will mallory": {
+"pos": "TE",
+"routes": 7,
+"align": {
+"slot": 0.429,
+"wide": 0.143,
+"inline": 0.429,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"nick vannett": {
+"pos": "TE",
+"routes": 9,
+"align": {
+"slot": 0.111,
+"wide": 0.222,
+"inline": 0.667,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"mack hollins": {
+"pos": "WR",
+"routes": 326,
+"align": {
+"slot": 0.242,
+"wide": 0.733,
+"inline": 0.025,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.26,
+"wide": 0.707,
+"tight": 0.029
+},
+"consensus_slot": 0.251
+},
+"daniel bellinger": {
+"pos": "TE",
+"routes": 196,
+"align": {
+"slot": 0.403,
+"wide": 0.138,
+"inline": 0.342,
+"backfield": 0.117
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.441,
+"wide": 0.118,
+"tight": 0.276
+},
+"consensus_slot": 0.422
+},
+"cody white": {
+"pos": "WR",
+"routes": 43,
+"align": {
+"slot": 0.395,
+"wide": 0.605,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.349,
+"wide": 0.558,
+"tight": 0.093
+},
+"consensus_slot": 0.372
+},
+"efton chism": {
+"pos": "WR",
+"routes": 32,
+"align": {
+"slot": 0.219,
+"wide": 0.75,
+"inline": 0.031,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.24,
+"wide": 0.68,
+"tight": 0.08
+},
+"consensus_slot": 0.229
+},
+"nick chubb": {
+"pos": "RB",
+"routes": 106,
+"align": {
+"slot": 0,
+"wide": 0.038,
+"inline": 0,
+"backfield": 0.962
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.033,
+"tight": null
+},
+"consensus_slot": 0.0
+},
+"russell gage": {
+"pos": "WR",
+"routes": 19,
+"align": {
+"slot": 0.526,
+"wide": 0.474,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"john fitzpatrick": {
+"pos": "TE",
+"routes": 107,
+"align": {
+"slot": 0.121,
+"wide": 0.084,
+"inline": 0.757,
+"backfield": 0.037
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.233,
+"wide": 0.078,
+"tight": 0.641
+},
+"consensus_slot": 0.177
+},
+"savion williams": {
+"pos": "WR",
+"routes": 39,
+"align": {
+"slot": 0.538,
+"wide": 0.308,
+"inline": 0.026,
+"backfield": 0.128
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.405,
+"wide": 0.297,
+"tight": 0.135
+},
+"consensus_slot": 0.472
+},
+"dante pettis": {
+"pos": "WR",
+"routes": 73,
+"align": {
+"slot": 0.438,
+"wide": 0.562,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.2,
+"wide": 0.778,
+"tight": null
+},
+"consensus_slot": 0.319
+},
+"liljordan humphrey": {
+"pos": "WR",
+"routes": 148,
+"align": {
+"slot": 0.351,
+"wide": 0.635,
+"inline": 0.014,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.313,
+"wide": 0.638,
+"tight": 0.049
+},
+"consensus_slot": 0.332
+},
+"dalton schultz": {
+"pos": "TE",
+"routes": 471,
+"align": {
+"slot": 0.342,
+"wide": 0.093,
+"inline": 0.554,
+"backfield": 0.011
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.44,
+"wide": 0.097,
+"tight": 0.442
+},
+"consensus_slot": 0.391
+},
+"aj dillon": {
+"pos": "RB",
+"routes": 16,
+"align": {
+"slot": 0.062,
+"wide": 0,
+"inline": 0,
+"backfield": 0.938
+},
+"xcheck": "no NFL Pro match"
+},
+"kareem hunt": {
+"pos": "RB",
+"routes": 219,
+"align": {
+"slot": 0.05,
+"wide": 0.041,
+"inline": 0.014,
+"backfield": 0.895
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.012,
+"wide": 0.05,
+"tight": 0.004
+},
+"consensus_slot": 0.031
+},
+"drake dabney": {
+"pos": "TE",
+"routes": 9,
+"align": {
+"slot": 0.444,
+"wide": 0.111,
+"inline": 0.444,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"anthony gould": {
+"pos": "WR",
+"routes": 28,
+"align": {
+"slot": 0.893,
+"wide": 0.107,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.821,
+"wide": 0.143,
+"tight": 0.036
+},
+"consensus_slot": 0.857
+},
+"coleman owen": {
+"pos": "WR",
+"routes": 1,
+"align": {
+"slot": 1.0,
+"wide": 0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"ross dwelley": {
+"pos": "TE",
+"routes": 26,
+"align": {
+"slot": 0.269,
+"wide": 0.077,
+"inline": 0.654,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.333,
+"wide": 0.03,
+"tight": 0.636
+},
+"consensus_slot": 0.301
+},
+"jaylen waddle": {
+"pos": "WR",
+"routes": 376,
+"align": {
+"slot": 0.234,
+"wide": 0.761,
+"inline": 0,
+"backfield": 0.005
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.22,
+"wide": 0.775,
+"tight": null
+},
+"consensus_slot": 0.227
+},
+"tucker fisk": {
+"pos": "TE",
+"routes": 45,
+"align": {
+"slot": 0.089,
+"wide": 0.067,
+"inline": 0.822,
+"backfield": 0.022
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.132,
+"wide": 0.053,
+"tight": 0.737
+},
+"consensus_slot": 0.111
+},
+"alvin kamara": {
+"pos": "RB",
+"routes": 200,
+"align": {
+"slot": 0.085,
+"wide": 0.075,
+"inline": 0,
+"backfield": 0.84
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.037,
+"wide": 0.078,
+"tight": 0.014
+},
+"consensus_slot": 0.061
+},
+"amon ra st brown": {
+"pos": "WR",
+"routes": 527,
+"align": {
+"slot": 0.564,
+"wide": 0.429,
+"inline": 0,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.512,
+"wide": 0.419,
+"tight": 0.062
+},
+"consensus_slot": 0.538
+},
+"dylan laube": {
+"pos": "RB",
+"routes": 14,
+"align": {
+"slot": 0,
+"wide": 0.071,
+"inline": 0,
+"backfield": 0.929
+},
+"xcheck": "no NFL Pro match"
+},
+"jayden reed": {
+"pos": "WR",
+"routes": 110,
+"align": {
+"slot": 0.736,
+"wide": 0.209,
+"inline": 0.018,
+"backfield": 0.036
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.698,
+"wide": 0.208,
+"tight": 0.038
+},
+"consensus_slot": 0.717
+},
+"stephen carlson": {
+"pos": "TE",
+"routes": 4,
+"align": {
+"slot": 0.5,
+"wide": 0.25,
+"inline": 0.25,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tyler goodson": {
+"pos": "RB",
+"routes": 19,
+"align": {
+"slot": 0.105,
+"wide": 0.105,
+"inline": 0,
+"backfield": 0.789
+},
+"xcheck": "no NFL Pro match"
+},
+"antonio gibson": {
+"pos": "RB",
+"routes": 14,
+"align": {
+"slot": 0,
+"wide": 0.143,
+"inline": 0,
+"backfield": 0.857
+},
+"xcheck": "no NFL Pro match"
+},
+"marquez valdes scantling": {
+"pos": "WR",
+"routes": 214,
+"align": {
+"slot": 0.271,
+"wide": 0.729,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.29,
+"wide": 0.683,
+"tight": 0.027
+},
+"consensus_slot": 0.28
+},
+"rhamondre stevenson": {
+"pos": "RB",
+"routes": 244,
+"align": {
+"slot": 0.004,
+"wide": 0.074,
+"inline": 0,
+"backfield": 0.922
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.005,
+"wide": 0.068,
+"tight": null
+},
+"consensus_slot": 0.005
+},
+"jaylin lane": {
+"pos": "WR",
+"routes": 182,
+"align": {
+"slot": 0.396,
+"wide": 0.604,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.337,
+"wide": 0.61,
+"tight": 0.053
+},
+"consensus_slot": 0.367
+},
+"emeka egbuka": {
+"pos": "WR",
+"routes": 493,
+"align": {
+"slot": 0.365,
+"wide": 0.635,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.363,
+"wide": 0.631,
+"tight": 0.004
+},
+"consensus_slot": 0.364
+},
+"kayshon boutte": {
+"pos": "WR",
+"routes": 354,
+"align": {
+"slot": 0.099,
+"wide": 0.898,
+"inline": 0.003,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.108,
+"wide": 0.885,
+"tight": 0.003
+},
+"consensus_slot": 0.104
+},
+"eric saubert": {
+"pos": "TE",
+"routes": 53,
+"align": {
+"slot": 0.075,
+"wide": 0.019,
+"inline": 0.906,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.191,
+"wide": 0.021,
+"tight": 0.766
+},
+"consensus_slot": 0.133
+},
+"bijan robinson": {
+"pos": "RB",
+"routes": 406,
+"align": {
+"slot": 0.2,
+"wide": 0.133,
+"inline": 0.002,
+"backfield": 0.665
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.161,
+"wide": 0.161,
+"tight": 0.008
+},
+"consensus_slot": 0.18
+},
+"jaydon blue": {
+"pos": "RB",
+"routes": 19,
+"align": {
+"slot": 0,
+"wide": 0.053,
+"inline": 0,
+"backfield": 0.947
+},
+"xcheck": "no NFL Pro match"
+},
+"jeff wilson": {
+"pos": "RB",
+"routes": 5,
+"align": {
+"slot": 0.2,
+"wide": 0.2,
+"inline": 0,
+"backfield": 0.6
+},
+"xcheck": "no NFL Pro match"
+},
+"ben skowronek": {
+"pos": "WR",
+"routes": 46,
+"align": {
+"slot": 0.391,
+"wide": 0.609,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.314,
+"wide": 0.529,
+"tight": 0.157
+},
+"consensus_slot": 0.353
+},
+"rj harvey": {
+"pos": "RB",
+"routes": 217,
+"align": {
+"slot": 0.101,
+"wide": 0.115,
+"inline": 0.014,
+"backfield": 0.77
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.071,
+"wide": 0.1,
+"tight": null
+},
+"consensus_slot": 0.086
+},
+"jimmy horn": {
+"pos": "WR",
+"routes": 78,
+"align": {
+"slot": 0.718,
+"wide": 0.244,
+"inline": 0.013,
+"backfield": 0.026
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.562,
+"wide": 0.328,
+"tight": 0.094
+},
+"consensus_slot": 0.64
+},
+"dylan drummond": {
+"pos": "WR",
+"routes": 64,
+"align": {
+"slot": 0.219,
+"wide": 0.781,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.29,
+"wide": 0.71,
+"tight": null
+},
+"consensus_slot": 0.255
+},
+"jahdae walker": {
+"pos": "WR",
+"routes": 57,
+"align": {
+"slot": 0.368,
+"wide": 0.632,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.391,
+"wide": 0.587,
+"tight": 0.022
+},
+"consensus_slot": 0.38
+},
+"clyde edwards helaire": {
+"pos": "RB",
+"routes": 7,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"dallas goedert": {
+"pos": "TE",
+"routes": 412,
+"align": {
+"slot": 0.502,
+"wide": 0.146,
+"inline": 0.35,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.49,
+"wide": 0.136,
+"tight": 0.366
+},
+"consensus_slot": 0.496
+},
+"xavier worthy": {
+"pos": "WR",
+"routes": 381,
+"align": {
+"slot": 0.307,
+"wide": 0.685,
+"inline": 0,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.278,
+"wide": 0.697,
+"tight": 0.01
+},
+"consensus_slot": 0.292
+},
+"ronnie rivers": {
+"pos": "RB",
+"routes": 2,
+"align": {
+"slot": 0.5,
+"wide": 0,
+"inline": 0,
+"backfield": 0.5
+},
+"xcheck": "no NFL Pro match"
+},
+"isaiah likely": {
+"pos": "TE",
+"routes": 219,
+"align": {
+"slot": 0.749,
+"wide": 0.119,
+"inline": 0.132,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.677,
+"wide": 0.127,
+"tight": 0.182
+},
+"consensus_slot": 0.713
+},
+"kameron johnson": {
+"pos": "WR",
+"routes": 39,
+"align": {
+"slot": 0.436,
+"wide": 0.564,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.341,
+"wide": 0.634,
+"tight": 0.024
+},
+"consensus_slot": 0.389
+},
+"malik heath": {
+"pos": "WR",
+"routes": 86,
+"align": {
+"slot": 0.36,
+"wide": 0.605,
+"inline": 0.035,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.33,
+"wide": 0.637,
+"tight": 0.033
+},
+"consensus_slot": 0.345
+},
+"luke musgrave": {
+"pos": "TE",
+"routes": 195,
+"align": {
+"slot": 0.303,
+"wide": 0.123,
+"inline": 0.574,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.361,
+"wide": 0.147,
+"tight": 0.492
+},
+"consensus_slot": 0.332
+},
+"breece hall": {
+"pos": "RB",
+"routes": 225,
+"align": {
+"slot": 0.053,
+"wide": 0.049,
+"inline": 0,
+"backfield": 0.898
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.022,
+"wide": 0.048,
+"tight": 0.004
+},
+"consensus_slot": 0.037
+},
+"davante adams": {
+"pos": "WR",
+"routes": 380,
+"align": {
+"slot": 0.142,
+"wide": 0.858,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.155,
+"wide": 0.845,
+"tight": null
+},
+"consensus_slot": 0.148
+},
+"samaje perine": {
+"pos": "RB",
+"routes": 168,
+"align": {
+"slot": 0.03,
+"wide": 0.024,
+"inline": 0.036,
+"backfield": 0.911
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.075,
+"wide": 0.03,
+"tight": null
+},
+"consensus_slot": 0.052
+},
+"bo melton": {
+"pos": "WR",
+"routes": 45,
+"align": {
+"slot": 0.511,
+"wide": 0.489,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.386,
+"wide": 0.545,
+"tight": 0.068
+},
+"consensus_slot": 0.449
+},
+"roman wilson": {
+"pos": "WR",
+"routes": 144,
+"align": {
+"slot": 0.181,
+"wide": 0.819,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.195,
+"wide": 0.799,
+"tight": 0.006
+},
+"consensus_slot": 0.188
+},
+"jaret patterson": {
+"pos": "RB",
+"routes": 37,
+"align": {
+"slot": 0,
+"wide": 0.054,
+"inline": 0.054,
+"backfield": 0.892
+},
+"xcheck": "no NFL Pro match"
+},
+"dameon pierce": {
+"pos": "RB",
+"routes": 6,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"quinshon judkins": {
+"pos": "RB",
+"routes": 146,
+"align": {
+"slot": 0.021,
+"wide": 0.048,
+"inline": 0.034,
+"backfield": 0.897
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.013,
+"wide": 0.052,
+"tight": 0.026
+},
+"consensus_slot": 0.017
+},
+"rashid shaheed": {
+"pos": "WR",
+"routes": 464,
+"align": {
+"slot": 0.338,
+"wide": 0.662,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.339,
+"wide": 0.648,
+"tight": 0.014
+},
+"consensus_slot": 0.339
+},
+"jaylen warren": {
+"pos": "RB",
+"routes": 166,
+"align": {
+"slot": 0.048,
+"wide": 0.036,
+"inline": 0.066,
+"backfield": 0.849
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.048,
+"wide": 0.037,
+"tight": 0.032
+},
+"consensus_slot": 0.048
+},
+"jason brownlee": {
+"pos": "WR",
+"routes": 12,
+"align": {
+"slot": 0,
+"wide": 1.0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"cade otton": {
+"pos": "TE",
+"routes": 449,
+"align": {
+"slot": 0.537,
+"wide": 0.185,
+"inline": 0.276,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.604,
+"wide": 0.166,
+"tight": 0.228
+},
+"consensus_slot": 0.571
+},
+"xavier gipson": {
+"pos": "WR",
+"routes": 3,
+"align": {
+"slot": 1.0,
+"wide": 0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"jackson hawes": {
+"pos": "TE",
+"routes": 88,
+"align": {
+"slot": 0.182,
+"wide": 0.057,
+"inline": 0.761,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.173,
+"wide": 0.074,
+"tight": 0.728
+},
+"consensus_slot": 0.177
+},
+"laquon treadwell": {
+"pos": "WR",
+"routes": 15,
+"align": {
+"slot": 0.267,
+"wide": 0.733,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"thomas fidone": {
+"pos": "TE",
+"routes": 11,
+"align": {
+"slot": 0.636,
+"wide": 0.091,
+"inline": 0.273,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tip reiman": {
+"pos": "TE",
+"routes": 32,
+"align": {
+"slot": 0.094,
+"wide": 0.094,
+"inline": 0.781,
+"backfield": 0.031
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.062,
+"wide": 0.031,
+"tight": 0.844
+},
+"consensus_slot": 0.078
+},
+"quentin skinner": {
+"pos": "WR",
+"routes": 8,
+"align": {
+"slot": 0.25,
+"wide": 0.75,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"harrison bryant": {
+"pos": "TE",
+"routes": 45,
+"align": {
+"slot": 0.133,
+"wide": 0.022,
+"inline": 0.844,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.326,
+"wide": 0.023,
+"tight": 0.628
+},
+"consensus_slot": 0.23
+},
+"drake london": {
+"pos": "WR",
+"routes": 352,
+"align": {
+"slot": 0.324,
+"wide": 0.673,
+"inline": 0,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.322,
+"wide": 0.652,
+"tight": 0.026
+},
+"consensus_slot": 0.323
+},
+"cooper kupp": {
+"pos": "WR",
+"routes": 387,
+"align": {
+"slot": 0.486,
+"wide": 0.504,
+"inline": 0.005,
+"backfield": 0.005
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.456,
+"wide": 0.482,
+"tight": 0.049
+},
+"consensus_slot": 0.471
+},
+"kendre miller": {
+"pos": "RB",
+"routes": 24,
+"align": {
+"slot": 0.083,
+"wide": 0.042,
+"inline": 0,
+"backfield": 0.875
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.067,
+"wide": 0.033,
+"tight": null
+},
+"consensus_slot": 0.075
+},
+"christian mccaffrey": {
+"pos": "RB",
+"routes": 474,
+"align": {
+"slot": 0.165,
+"wide": 0.042,
+"inline": 0.017,
+"backfield": 0.776
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.131,
+"wide": 0.049,
+"tight": 0.004
+},
+"consensus_slot": 0.148
+},
+"devin duvernay": {
+"pos": "WR",
+"routes": 22,
+"align": {
+"slot": 0.409,
+"wide": 0.5,
+"inline": 0.045,
+"backfield": 0.045
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.44,
+"wide": 0.48,
+"tight": 0.04
+},
+"consensus_slot": 0.424
+},
+"andre baccellia": {
+"pos": "WR",
+"routes": 65,
+"align": {
+"slot": 0.385,
+"wide": 0.615,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.286,
+"wide": 0.643,
+"tight": 0.071
+},
+"consensus_slot": 0.336
+},
+"miles sanders": {
+"pos": "RB",
+"routes": 23,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"brenden bates": {
+"pos": "TE",
+"routes": 29,
+"align": {
+"slot": 0.034,
+"wide": 0.034,
+"inline": 0.931,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.077,
+"wide": null,
+"tight": 0.923
+},
+"consensus_slot": 0.056
+},
+"deandre hopkins": {
+"pos": "WR",
+"routes": 189,
+"align": {
+"slot": 0.27,
+"wide": 0.73,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.31,
+"wide": 0.69,
+"tight": null
+},
+"consensus_slot": 0.29
+},
+"jacoby jones": {
+"pos": "WR",
+"routes": 2,
+"align": {
+"slot": 0.5,
+"wide": 0.5,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"jalen mcmillan": {
+"pos": "WR",
+"routes": 74,
+"align": {
+"slot": 0.203,
+"wide": 0.797,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.194,
+"wide": 0.776,
+"tight": 0.03
+},
+"consensus_slot": 0.199
+},
+"xavier weaver": {
+"pos": "WR",
+"routes": 187,
+"align": {
+"slot": 0.219,
+"wide": 0.781,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.175,
+"wide": 0.812,
+"tight": 0.013
+},
+"consensus_slot": 0.197
+},
+"dalen cambre": {
+"pos": "WR",
+"routes": 4,
+"align": {
+"slot": 0.5,
+"wide": 0.5,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"ollie gordon": {
+"pos": "RB",
+"routes": 61,
+"align": {
+"slot": 0.049,
+"wide": 0.033,
+"inline": 0,
+"backfield": 0.918
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.037,
+"wide": 0.037,
+"tight": null
+},
+"consensus_slot": 0.043
+},
+"van jefferson": {
+"pos": "WR",
+"routes": 328,
+"align": {
+"slot": 0.128,
+"wide": 0.872,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.16,
+"wide": 0.84,
+"tight": null
+},
+"consensus_slot": 0.144
+},
+"brittain brown": {
+"pos": "RB",
+"routes": 9,
+"align": {
+"slot": 0,
+"wide": 0.222,
+"inline": 0.111,
+"backfield": 0.667
+},
+"xcheck": "no NFL Pro match"
+},
+"braxton berrios": {
+"pos": "WR",
+"routes": 40,
+"align": {
+"slot": 0.625,
+"wide": 0.35,
+"inline": 0,
+"backfield": 0.025
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.6,
+"wide": 0.325,
+"tight": 0.05
+},
+"consensus_slot": 0.613
+},
+"moliki matavao": {
+"pos": "TE",
+"routes": 19,
+"align": {
+"slot": 0.368,
+"wide": 0.105,
+"inline": 0.526,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"rome odunze": {
+"pos": "WR",
+"routes": 361,
+"align": {
+"slot": 0.385,
+"wide": 0.612,
+"inline": 0,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.354,
+"wide": 0.58,
+"tight": 0.066
+},
+"consensus_slot": 0.369
+},
+"jacorey brooks": {
+"pos": "WR",
+"routes": 2,
+"align": {
+"slot": 0,
+"wide": 1.0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"keenan allen": {
+"pos": "WR",
+"routes": 453,
+"align": {
+"slot": 0.395,
+"wide": 0.605,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.41,
+"wide": 0.581,
+"tight": 0.01
+},
+"consensus_slot": 0.402
+},
+"demario douglas": {
+"pos": "WR",
+"routes": 215,
+"align": {
+"slot": 0.805,
+"wide": 0.177,
+"inline": 0,
+"backfield": 0.019
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.783,
+"wide": 0.177,
+"tight": 0.02
+},
+"consensus_slot": 0.794
+},
+"carter runyon": {
+"pos": "TE",
+"routes": 7,
+"align": {
+"slot": 0.143,
+"wide": 0.286,
+"inline": 0.571,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"jeremy ruckert": {
+"pos": "TE",
+"routes": 173,
+"align": {
+"slot": 0.156,
+"wide": 0.133,
+"inline": 0.699,
+"backfield": 0.012
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.269,
+"wide": 0.131,
+"tight": 0.594
+},
+"consensus_slot": 0.213
+},
+"jk dobbins": {
+"pos": "RB",
+"routes": 71,
+"align": {
+"slot": 0.028,
+"wide": 0,
+"inline": 0,
+"backfield": 0.972
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.019,
+"wide": 0.009,
+"tight": null
+},
+"consensus_slot": 0.024
+},
+"steven sims": {
+"pos": "WR",
+"routes": 3,
+"align": {
+"slot": 0,
+"wide": 1.0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"ben sinnott": {
+"pos": "TE",
+"routes": 99,
+"align": {
+"slot": 0.313,
+"wide": 0.091,
+"inline": 0.556,
+"backfield": 0.04
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.361,
+"wide": 0.133,
+"tight": 0.422
+},
+"consensus_slot": 0.337
+},
+"zay jones": {
+"pos": "WR",
+"routes": 163,
+"align": {
+"slot": 0.301,
+"wide": 0.699,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.287,
+"wide": 0.707,
+"tight": 0.006
+},
+"consensus_slot": 0.294
+},
+"phil mafah": {
+"pos": "RB",
+"routes": 2,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"isaac teslaa": {
+"pos": "WR",
+"routes": 272,
+"align": {
+"slot": 0.25,
+"wide": 0.746,
+"inline": 0.004,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.281,
+"wide": 0.703,
+"tight": 0.015
+},
+"consensus_slot": 0.266
+},
+"zay flowers": {
+"pos": "WR",
+"routes": 464,
+"align": {
+"slot": 0.347,
+"wide": 0.651,
+"inline": 0,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.302,
+"wide": 0.677,
+"tight": 0.014
+},
+"consensus_slot": 0.325
+},
+"jaylen wright": {
+"pos": "RB",
+"routes": 34,
+"align": {
+"slot": 0.235,
+"wide": 0.029,
+"inline": 0,
+"backfield": 0.735
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.214,
+"wide": 0.036,
+"tight": null
+},
+"consensus_slot": 0.224
+},
+"emanuel wilson": {
+"pos": "RB",
+"routes": 116,
+"align": {
+"slot": 0.034,
+"wide": 0.086,
+"inline": 0.026,
+"backfield": 0.853
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.043,
+"wide": 0.094,
+"tight": null
+},
+"consensus_slot": 0.038
+},
+"sal cannella": {
+"pos": "TE",
+"routes": 19,
+"align": {
+"slot": 0.316,
+"wide": 0.158,
+"inline": 0.526,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"jordan addison": {
+"pos": "WR",
+"routes": 400,
+"align": {
+"slot": 0.22,
+"wide": 0.777,
+"inline": 0,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.187,
+"wide": 0.78,
+"tight": 0.028
+},
+"consensus_slot": 0.204
+},
+"durham smythe": {
+"pos": "TE",
+"routes": 70,
+"align": {
+"slot": 0.171,
+"wide": 0.114,
+"inline": 0.557,
+"backfield": 0.157
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.114,
+"wide": 0.129,
+"tight": 0.543
+},
+"consensus_slot": 0.143
+},
+"trey mcbride": {
+"pos": "TE",
+"routes": 667,
+"align": {
+"slot": 0.619,
+"wide": 0.094,
+"inline": 0.283,
+"backfield": 0.003
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.567,
+"wide": 0.08,
+"tight": 0.35
+},
+"consensus_slot": 0.593
+},
+"cam skattebo": {
+"pos": "RB",
+"routes": 122,
+"align": {
+"slot": 0.057,
+"wide": 0.057,
+"inline": 0,
+"backfield": 0.885
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.035,
+"wide": 0.071,
+"tight": null
+},
+"consensus_slot": 0.046
+},
+"beaux collins": {
+"pos": "WR",
+"routes": 42,
+"align": {
+"slot": 0.31,
+"wide": 0.69,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.366,
+"wide": 0.634,
+"tight": null
+},
+"consensus_slot": 0.338
+},
+"luther burden": {
+"pos": "WR",
+"routes": 230,
+"align": {
+"slot": 0.435,
+"wide": 0.552,
+"inline": 0,
+"backfield": 0.013
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.385,
+"wide": 0.566,
+"tight": 0.034
+},
+"consensus_slot": 0.41
+},
+"adonai mitchell": {
+"pos": "WR",
+"routes": 281,
+"align": {
+"slot": 0.178,
+"wide": 0.822,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.201,
+"wide": 0.799,
+"tight": null
+},
+"consensus_slot": 0.19
+},
+"justice hill": {
+"pos": "RB",
+"routes": 120,
+"align": {
+"slot": 0.083,
+"wide": 0.05,
+"inline": 0,
+"backfield": 0.867
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.047,
+"wide": 0.066,
+"tight": null
+},
+"consensus_slot": 0.065
+},
+"zamir white": {
+"pos": "RB",
+"routes": 27,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"terrance ferguson": {
+"pos": "TE",
+"routes": 162,
+"align": {
+"slot": 0.481,
+"wide": 0.235,
+"inline": 0.284,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.503,
+"wide": 0.287,
+"tight": 0.186
+},
+"consensus_slot": 0.492
+},
+"tyler warren": {
+"pos": "TE",
+"routes": 480,
+"align": {
+"slot": 0.458,
+"wide": 0.133,
+"inline": 0.379,
+"backfield": 0.029
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.404,
+"wide": 0.126,
+"tight": 0.427
+},
+"consensus_slot": 0.431
+},
+"charlie kolar": {
+"pos": "TE",
+"routes": 93,
+"align": {
+"slot": 0.086,
+"wide": 0.054,
+"inline": 0.86,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.165,
+"wide": 0.099,
+"tight": 0.637
+},
+"consensus_slot": 0.126
+},
+"ray davis": {
+"pos": "RB",
+"routes": 53,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "agree",
+"npro": {
+"slot": null,
+"wide": 0.049,
+"tight": null
+},
+"consensus_slot": 0.0
+},
+"tanner conner": {
+"pos": "TE",
+"routes": 96,
+"align": {
+"slot": 0.396,
+"wide": 0.146,
+"inline": 0.458,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.419,
+"wide": 0.105,
+"tight": 0.476
+},
+"consensus_slot": 0.407
+},
+"tyler conklin": {
+"pos": "TE",
+"routes": 78,
+"align": {
+"slot": 0.474,
+"wide": 0.128,
+"inline": 0.385,
+"backfield": 0.013
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.446,
+"wide": 0.143,
+"tight": 0.393
+},
+"consensus_slot": 0.46
+},
+"audric estime": {
+"pos": "RB",
+"routes": 90,
+"align": {
+"slot": 0.022,
+"wide": 0.067,
+"inline": 0,
+"backfield": 0.911
+},
+"xcheck": "no NFL Pro match"
+},
+"tyreek hill": {
+"pos": "WR",
+"routes": 94,
+"align": {
+"slot": 0.404,
+"wide": 0.585,
+"inline": 0,
+"backfield": 0.011
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.384,
+"wide": 0.556,
+"tight": 0.04
+},
+"consensus_slot": 0.394
+},
+"hunter henry": {
+"pos": "TE",
+"routes": 443,
+"align": {
+"slot": 0.47,
+"wide": 0.151,
+"inline": 0.343,
+"backfield": 0.036
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.431,
+"wide": 0.148,
+"tight": 0.39
+},
+"consensus_slot": 0.451
+},
+"maurice alexander": {
+"pos": "WR",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 1.0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"marquise brown": {
+"pos": "WR",
+"routes": 365,
+"align": {
+"slot": 0.4,
+"wide": 0.595,
+"inline": 0,
+"backfield": 0.005
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.35,
+"wide": 0.628,
+"tight": 0.015
+},
+"consensus_slot": 0.375
+},
+"mitchell tinsley": {
+"pos": "WR",
+"routes": 129,
+"align": {
+"slot": 0.163,
+"wide": 0.822,
+"inline": 0.008,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.155,
+"wide": 0.789,
+"tight": 0.049
+},
+"consensus_slot": 0.159
+},
+"jakobi meyers": {
+"pos": "WR",
+"routes": 500,
+"align": {
+"slot": 0.426,
+"wide": 0.574,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.425,
+"wide": 0.539,
+"tight": 0.029
+},
+"consensus_slot": 0.425
+},
+"tony pollard": {
+"pos": "RB",
+"routes": 241,
+"align": {
+"slot": 0.062,
+"wide": 0.037,
+"inline": 0.004,
+"backfield": 0.896
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.031,
+"wide": 0.042,
+"tight": 0.004
+},
+"consensus_slot": 0.046
+},
+"ty johnson": {
+"pos": "RB",
+"routes": 197,
+"align": {
+"slot": 0.188,
+"wide": 0.142,
+"inline": 0.056,
+"backfield": 0.614
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.201,
+"wide": 0.186,
+"tight": 0.01
+},
+"consensus_slot": 0.195
+},
+"tai felton": {
+"pos": "WR",
+"routes": 17,
+"align": {
+"slot": 0.118,
+"wide": 0.882,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"adam thielen": {
+"pos": "WR",
+"routes": 224,
+"align": {
+"slot": 0.585,
+"wide": 0.411,
+"inline": 0,
+"backfield": 0.004
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.508,
+"wide": 0.405,
+"tight": 0.082
+},
+"consensus_slot": 0.546
+},
+"aj barner": {
+"pos": "TE",
+"routes": 342,
+"align": {
+"slot": 0.111,
+"wide": 0.035,
+"inline": 0.842,
+"backfield": 0.012
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.245,
+"wide": 0.025,
+"tight": 0.714
+},
+"consensus_slot": 0.178
+},
+"chris moore": {
+"pos": "WR",
+"routes": 210,
+"align": {
+"slot": 0.176,
+"wide": 0.824,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.18,
+"wide": 0.8,
+"tight": 0.02
+},
+"consensus_slot": 0.178
+},
+"calvin ridley": {
+"pos": "WR",
+"routes": 148,
+"align": {
+"slot": 0.236,
+"wide": 0.764,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.209,
+"wide": 0.778,
+"tight": 0.013
+},
+"consensus_slot": 0.222
+},
+"treylon burks": {
+"pos": "WR",
+"routes": 141,
+"align": {
+"slot": 0.177,
+"wide": 0.809,
+"inline": 0.007,
+"backfield": 0.007
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.174,
+"wide": 0.802,
+"tight": 0.025
+},
+"consensus_slot": 0.175
+},
+"travis etienne": {
+"pos": "RB",
+"routes": 245,
+"align": {
+"slot": 0.114,
+"wide": 0.037,
+"inline": 0,
+"backfield": 0.849
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.066,
+"wide": 0.061,
+"tight": 0.004
+},
+"consensus_slot": 0.09
+},
+"jacory croskey merritt": {
+"pos": "RB",
+"routes": 109,
+"align": {
+"slot": 0.11,
+"wide": 0.028,
+"inline": 0,
+"backfield": 0.862
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.052,
+"wide": 0.026,
+"tight": 0.017
+},
+"consensus_slot": 0.081
+},
+"julian hill": {
+"pos": "TE",
+"routes": 92,
+"align": {
+"slot": 0.174,
+"wide": 0.043,
+"inline": 0.761,
+"backfield": 0.022
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.217,
+"wide": 0.083,
+"tight": 0.667
+},
+"consensus_slot": 0.196
+},
+"mike evans": {
+"pos": "WR",
+"routes": 209,
+"align": {
+"slot": 0.244,
+"wide": 0.756,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.281,
+"wide": 0.719,
+"tight": null
+},
+"consensus_slot": 0.263
+},
+"travis hunter": {
+"pos": "WR",
+"routes": 212,
+"align": {
+"slot": 0.637,
+"wide": 0.344,
+"inline": 0,
+"backfield": 0.019
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.593,
+"wide": 0.354,
+"tight": 0.029
+},
+"consensus_slot": 0.615
+},
+"mecole hardman": {
+"pos": "WR",
+"routes": 2,
+"align": {
+"slot": 0.5,
+"wide": 0.5,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"ladd mcconkey": {
+"pos": "WR",
+"routes": 536,
+"align": {
+"slot": 0.64,
+"wide": 0.351,
+"inline": 0.009,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.622,
+"wide": 0.35,
+"tight": 0.028
+},
+"consensus_slot": 0.631
+},
+"james cook": {
+"pos": "RB",
+"routes": 217,
+"align": {
+"slot": 0.028,
+"wide": 0,
+"inline": 0.005,
+"backfield": 0.968
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.017,
+"wide": 0.004,
+"tight": null
+},
+"consensus_slot": 0.022
+},
+"keaton mitchell": {
+"pos": "RB",
+"routes": 46,
+"align": {
+"slot": 0.152,
+"wide": 0.022,
+"inline": 0.043,
+"backfield": 0.783
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.067,
+"wide": 0.022,
+"tight": 0.022
+},
+"consensus_slot": 0.11
+},
+"david njoku": {
+"pos": "TE",
+"routes": 258,
+"align": {
+"slot": 0.314,
+"wide": 0.147,
+"inline": 0.539,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.526,
+"wide": 0.12,
+"tight": 0.339
+},
+"consensus_slot": 0.42
+},
+"jahan dotson": {
+"pos": "WR",
+"routes": 386,
+"align": {
+"slot": 0.42,
+"wide": 0.578,
+"inline": 0.003,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.395,
+"wide": 0.585,
+"tight": 0.018
+},
+"consensus_slot": 0.407
+},
+"ray ray mccloud": {
+"pos": "WR",
+"routes": 128,
+"align": {
+"slot": 0.32,
+"wide": 0.68,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.296,
+"wide": 0.672,
+"tight": 0.032
+},
+"consensus_slot": 0.308
+},
+"theo wease": {
+"pos": "WR",
+"routes": 32,
+"align": {
+"slot": 0.094,
+"wide": 0.906,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.087,
+"wide": 0.913,
+"tight": null
+},
+"consensus_slot": 0.09
+},
+"jonathan taylor": {
+"pos": "RB",
+"routes": 356,
+"align": {
+"slot": 0.073,
+"wide": 0.07,
+"inline": 0,
+"backfield": 0.857
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.041,
+"wide": 0.069,
+"tight": null
+},
+"consensus_slot": 0.057
+},
+"ko kieft": {
+"pos": "TE",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 1.0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"justin watson": {
+"pos": "WR",
+"routes": 32,
+"align": {
+"slot": 0.75,
+"wide": 0.25,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.767,
+"wide": 0.233,
+"tight": null
+},
+"consensus_slot": 0.758
+},
+"jake bobo": {
+"pos": "WR",
+"routes": 31,
+"align": {
+"slot": 0.419,
+"wide": 0.581,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.353,
+"wide": 0.529,
+"tight": 0.118
+},
+"consensus_slot": 0.386
+},
+"dandre swift": {
+"pos": "RB",
+"routes": 259,
+"align": {
+"slot": 0.046,
+"wide": 0.085,
+"inline": 0.062,
+"backfield": 0.807
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.045,
+"wide": 0.072,
+"tight": 0.015
+},
+"consensus_slot": 0.045
+},
+"will shipley": {
+"pos": "RB",
+"routes": 74,
+"align": {
+"slot": 0.122,
+"wide": 0.108,
+"inline": 0,
+"backfield": 0.77
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.114,
+"wide": 0.114,
+"tight": null
+},
+"consensus_slot": 0.118
+},
+"george holani": {
+"pos": "RB",
+"routes": 7,
+"align": {
+"slot": 0.143,
+"wide": 0,
+"inline": 0,
+"backfield": 0.857
+},
+"xcheck": "no NFL Pro match"
+},
+"zavier scott": {
+"pos": "RB",
+"routes": 50,
+"align": {
+"slot": 0.14,
+"wide": 0.16,
+"inline": 0.06,
+"backfield": 0.64
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.125,
+"wide": 0.167,
+"tight": null
+},
+"consensus_slot": 0.133
+},
+"kalel mullings": {
+"pos": "RB",
+"routes": 2,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"josh reynolds": {
+"pos": "WR",
+"routes": 153,
+"align": {
+"slot": 0.222,
+"wide": 0.778,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.229,
+"wide": 0.757,
+"tight": 0.014
+},
+"consensus_slot": 0.226
+},
+"raheem mostert": {
+"pos": "RB",
+"routes": 76,
+"align": {
+"slot": 0.039,
+"wide": 0,
+"inline": 0,
+"backfield": 0.961
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.014,
+"wide": null,
+"tight": null
+},
+"consensus_slot": 0.026
+},
+"alex bachman": {
+"pos": "WR",
+"routes": 16,
+"align": {
+"slot": 0.438,
+"wide": 0.562,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"allen lazard": {
+"pos": "WR",
+"routes": 145,
+"align": {
+"slot": 0.434,
+"wide": 0.566,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.433,
+"wide": 0.532,
+"tight": 0.035
+},
+"consensus_slot": 0.433
+},
+"bucky irving": {
+"pos": "RB",
+"routes": 159,
+"align": {
+"slot": 0.057,
+"wide": 0.101,
+"inline": 0,
+"backfield": 0.843
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.047,
+"wide": 0.094,
+"tight": 0.006
+},
+"consensus_slot": 0.052
+},
+"ashton jeanty": {
+"pos": "RB",
+"routes": 314,
+"align": {
+"slot": 0.041,
+"wide": 0.057,
+"inline": 0,
+"backfield": 0.901
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.019,
+"wide": 0.052,
+"tight": null
+},
+"consensus_slot": 0.03
+},
+"brock bowers": {
+"pos": "TE",
+"routes": 377,
+"align": {
+"slot": 0.475,
+"wide": 0.207,
+"inline": 0.308,
+"backfield": 0.011
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.479,
+"wide": 0.206,
+"tight": 0.305
+},
+"consensus_slot": 0.477
+},
+"josh jacobs": {
+"pos": "RB",
+"routes": 182,
+"align": {
+"slot": 0.022,
+"wide": 0.06,
+"inline": 0.044,
+"backfield": 0.874
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.041,
+"wide": 0.056,
+"tight": null
+},
+"consensus_slot": 0.032
+},
+"devonta smith": {
+"pos": "WR",
+"routes": 497,
+"align": {
+"slot": 0.584,
+"wide": 0.416,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.579,
+"wide": 0.402,
+"tight": 0.017
+},
+"consensus_slot": 0.581
+},
+"harold fannin": {
+"pos": "TE",
+"routes": 403,
+"align": {
+"slot": 0.419,
+"wide": 0.154,
+"inline": 0.414,
+"backfield": 0.012
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.524,
+"wide": 0.156,
+"tight": 0.299
+},
+"consensus_slot": 0.472
+},
+"terry mclaurin": {
+"pos": "WR",
+"routes": 245,
+"align": {
+"slot": 0.143,
+"wide": 0.857,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.148,
+"wide": 0.848,
+"tight": 0.004
+},
+"consensus_slot": 0.145
+},
+"samori toure": {
+"pos": "WR",
+"routes": 8,
+"align": {
+"slot": 0.25,
+"wide": 0.75,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"chuba hubbard": {
+"pos": "RB",
+"routes": 204,
+"align": {
+"slot": 0.044,
+"wide": 0.176,
+"inline": 0,
+"backfield": 0.779
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.02,
+"wide": 0.186,
+"tight": 0.005
+},
+"consensus_slot": 0.032
+},
+"robert tonyan": {
+"pos": "TE",
+"routes": 28,
+"align": {
+"slot": 0.25,
+"wide": 0.143,
+"inline": 0.607,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.286,
+"wide": 0.179,
+"tight": 0.536
+},
+"consensus_slot": 0.268
+},
+"gage larvadain": {
+"pos": "WR",
+"routes": 121,
+"align": {
+"slot": 0.43,
+"wide": 0.57,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.35,
+"wide": 0.625,
+"tight": 0.025
+},
+"consensus_slot": 0.39
+},
+"josh downs": {
+"pos": "WR",
+"routes": 355,
+"align": {
+"slot": 0.806,
+"wide": 0.189,
+"inline": 0,
+"backfield": 0.006
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.733,
+"wide": 0.24,
+"tight": 0.015
+},
+"consensus_slot": 0.77
+},
+"chimere dike": {
+"pos": "WR",
+"routes": 376,
+"align": {
+"slot": 0.718,
+"wide": 0.277,
+"inline": 0,
+"backfield": 0.005
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.638,
+"wide": 0.318,
+"tight": 0.038
+},
+"consensus_slot": 0.678
+},
+"chris olave": {
+"pos": "WR",
+"routes": 557,
+"align": {
+"slot": 0.427,
+"wide": 0.571,
+"inline": 0,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.391,
+"wide": 0.599,
+"tight": 0.009
+},
+"consensus_slot": 0.409
+},
+"ryan flournoy": {
+"pos": "WR",
+"routes": 258,
+"align": {
+"slot": 0.349,
+"wide": 0.651,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.339,
+"wide": 0.615,
+"tight": 0.042
+},
+"consensus_slot": 0.344
+},
+"cam akers": {
+"pos": "RB",
+"routes": 3,
+"align": {
+"slot": 0.333,
+"wide": 0.333,
+"inline": 0,
+"backfield": 0.333
+},
+"xcheck": "no NFL Pro match"
+},
+"tj hockenson": {
+"pos": "TE",
+"routes": 373,
+"align": {
+"slot": 0.402,
+"wide": 0.155,
+"inline": 0.44,
+"backfield": 0.003
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.565,
+"wide": 0.15,
+"tight": 0.28
+},
+"consensus_slot": 0.483
+},
+"travis kelce": {
+"pos": "TE",
+"routes": 511,
+"align": {
+"slot": 0.458,
+"wide": 0.235,
+"inline": 0.297,
+"backfield": 0.01
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.581,
+"wide": 0.224,
+"tight": 0.185
+},
+"consensus_slot": 0.519
+},
+"gunnar helm": {
+"pos": "TE",
+"routes": 230,
+"align": {
+"slot": 0.365,
+"wide": 0.091,
+"inline": 0.539,
+"backfield": 0.004
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.506,
+"wide": 0.068,
+"tight": 0.418
+},
+"consensus_slot": 0.435
+},
+"jelani woods": {
+"pos": "TE",
+"routes": 18,
+"align": {
+"slot": 0.167,
+"wide": 0.111,
+"inline": 0.722,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.3,
+"wide": 0.1,
+"tight": 0.6
+},
+"consensus_slot": 0.233
+},
+"romeo doubs": {
+"pos": "WR",
+"routes": 390,
+"align": {
+"slot": 0.182,
+"wide": 0.818,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.193,
+"wide": 0.805,
+"tight": 0.003
+},
+"consensus_slot": 0.188
+},
+"will dissly": {
+"pos": "TE",
+"routes": 84,
+"align": {
+"slot": 0.179,
+"wide": 0.167,
+"inline": 0.655,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.277,
+"wide": 0.123,
+"tight": 0.585
+},
+"consensus_slot": 0.228
+},
+"cameron latu": {
+"pos": "TE",
+"routes": 12,
+"align": {
+"slot": 0.333,
+"wide": 0,
+"inline": 0.417,
+"backfield": 0.25
+},
+"xcheck": "no NFL Pro match"
+},
+"nico collins": {
+"pos": "WR",
+"routes": 458,
+"align": {
+"slot": 0.203,
+"wide": 0.797,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.206,
+"wide": 0.792,
+"tight": 0.002
+},
+"consensus_slot": 0.205
+},
+"wandale robinson": {
+"pos": "WR",
+"routes": 523,
+"align": {
+"slot": 0.675,
+"wide": 0.314,
+"inline": 0,
+"backfield": 0.011
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.644,
+"wide": 0.317,
+"tight": 0.022
+},
+"consensus_slot": 0.659
+},
+"keandre lambert smith": {
+"pos": "WR",
+"routes": 68,
+"align": {
+"slot": 0.088,
+"wide": 0.912,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.058,
+"wide": 0.942,
+"tight": null
+},
+"consensus_slot": 0.073
+},
+"jonathan mingo": {
+"pos": "WR",
+"routes": 39,
+"align": {
+"slot": 0.231,
+"wide": 0.769,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.333,
+"wide": 0.667,
+"tight": null
+},
+"consensus_slot": 0.282
+},
+"derius davis": {
+"pos": "WR",
+"routes": 52,
+"align": {
+"slot": 0.269,
+"wide": 0.712,
+"inline": 0,
+"backfield": 0.019
+},
+"xcheck": "no NFL Pro match"
+},
+"cade stover": {
+"pos": "TE",
+"routes": 67,
+"align": {
+"slot": 0.09,
+"wide": 0.119,
+"inline": 0.776,
+"backfield": 0.015
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.127,
+"wide": 0.145,
+"tight": 0.709
+},
+"consensus_slot": 0.108
+},
+"tee higgins": {
+"pos": "WR",
+"routes": 494,
+"align": {
+"slot": 0.121,
+"wide": 0.877,
+"inline": 0,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.125,
+"wide": 0.869,
+"tight": 0.004
+},
+"consensus_slot": 0.123
+},
+"bam knight": {
+"pos": "RB",
+"routes": 120,
+"align": {
+"slot": 0.058,
+"wide": 0.075,
+"inline": 0,
+"backfield": 0.867
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.048,
+"wide": 0.065,
+"tight": null
+},
+"consensus_slot": 0.053
+},
+"luke mccaffrey": {
+"pos": "WR",
+"routes": 96,
+"align": {
+"slot": 0.396,
+"wide": 0.604,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.415,
+"wide": 0.543,
+"tight": 0.043
+},
+"consensus_slot": 0.405
+},
+"puka nacua": {
+"pos": "WR",
+"routes": 446,
+"align": {
+"slot": 0.354,
+"wide": 0.626,
+"inline": 0.013,
+"backfield": 0.007
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.326,
+"wide": 0.596,
+"tight": 0.076
+},
+"consensus_slot": 0.34
+},
+"keleki latu": {
+"pos": "TE",
+"routes": 31,
+"align": {
+"slot": 0.323,
+"wide": 0.194,
+"inline": 0.484,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"tyler lockett": {
+"pos": "WR",
+"routes": 349,
+"align": {
+"slot": 0.725,
+"wide": 0.275,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.734,
+"wide": 0.243,
+"tight": 0.021
+},
+"consensus_slot": 0.73
+},
+"tim jones": {
+"pos": "WR",
+"routes": 9,
+"align": {
+"slot": 0.333,
+"wide": 0.667,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"kenneth walker": {
+"pos": "RB",
+"routes": 168,
+"align": {
+"slot": 0.119,
+"wide": 0.083,
+"inline": 0.024,
+"backfield": 0.774
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.126,
+"wide": 0.063,
+"tight": null
+},
+"consensus_slot": 0.122
+},
+"zach horton": {
+"pos": "TE",
+"routes": 1,
+"align": {
+"slot": 0,
+"wide": 0,
+"inline": 0,
+"backfield": 1.0
+},
+"xcheck": "no NFL Pro match"
+},
+"chase edmonds": {
+"pos": "RB",
+"routes": 1,
+"align": {
+"slot": 1.0,
+"wide": 0,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "no NFL Pro match"
+},
+"jauan jennings": {
+"pos": "WR",
+"routes": 427,
+"align": {
+"slot": 0.3,
+"wide": 0.7,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.301,
+"wide": 0.68,
+"tight": 0.017
+},
+"consensus_slot": 0.3
+},
+"chris brooks": {
+"pos": "RB",
+"routes": 87,
+"align": {
+"slot": 0.057,
+"wide": 0.034,
+"inline": 0.069,
+"backfield": 0.839
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.067,
+"wide": 0.067,
+"tight": 0.022
+},
+"consensus_slot": 0.062
+},
+"elijah arroyo": {
+"pos": "TE",
+"routes": 133,
+"align": {
+"slot": 0.188,
+"wide": 0.188,
+"inline": 0.609,
+"backfield": 0.015
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.379,
+"wide": 0.17,
+"tight": 0.438
+},
+"consensus_slot": 0.283
+},
+"jameson williams": {
+"pos": "WR",
+"routes": 556,
+"align": {
+"slot": 0.241,
+"wide": 0.757,
+"inline": 0,
+"backfield": 0.002
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.219,
+"wide": 0.764,
+"tight": 0.016
+},
+"consensus_slot": 0.23
+},
+"ryan miller": {
+"pos": "WR",
+"routes": 22,
+"align": {
+"slot": 0.227,
+"wide": 0.773,
+"inline": 0,
+"backfield": 0
+},
+"xcheck": "DIVERGE",
+"npro": {
+"slot": 0.31,
+"wide": 0.69,
+"tight": null
+},
+"consensus_slot": 0.269
+},
+"kyren williams": {
+"pos": "RB",
+"routes": 296,
+"align": {
+"slot": 0.098,
+"wide": 0.007,
+"inline": 0,
+"backfield": 0.895
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.078,
+"wide": 0.01,
+"tight": null
+},
+"consensus_slot": 0.088
+},
+"jamarr chase": {
+"pos": "WR",
+"routes": 613,
+"align": {
+"slot": 0.333,
+"wide": 0.657,
+"inline": 0.002,
+"backfield": 0.008
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.344,
+"wide": 0.647,
+"tight": 0.002
+},
+"consensus_slot": 0.339
+},
+"tre harris": {
+"pos": "WR",
+"routes": 273,
+"align": {
+"slot": 0.374,
+"wide": 0.612,
+"inline": 0.011,
+"backfield": 0.004
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.319,
+"wide": 0.638,
+"tight": 0.039
+},
+"consensus_slot": 0.347
+},
+"dj moore": {
+"pos": "WR",
+"routes": 512,
+"align": {
+"slot": 0.326,
+"wide": 0.65,
+"inline": 0,
+"backfield": 0.023
+},
+"xcheck": "agree",
+"npro": {
+"slot": 0.312,
+"wide": 0.644,
+"tight": 0.006
+},
+"consensus_slot": 0.319
+}
+}
+}

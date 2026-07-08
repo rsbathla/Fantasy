@@ -19,11 +19,13 @@
   "verified": true,
   "dc_new": true,
   "dc_name": "Jesse Minter",
+  "def_caller": "Jesse Minter (HC)",
+  "dc_title": "Anthony Weaver",
   "dc_prior_man_rate": 19,
   "dc_prior_sack_rate": 5.5,
   "dc_scheme": "Jesse Minter: heavy zone (~81%), two-high split-field, low man, low blitz, front-four pressure (ex-LAC DC)",
   "src": "CBS/NFL.com",
-  "dc_source": "user-confirmed (Ramneik), 2026"
+  "dc_source": "user-confirmed (Ramneik), 2026: Minter is BAL HC and CALLS the defense; Weaver holds the DC title. dc_name = defensive play-caller (drives the scheme priors), dc_title = roster title."
  },
  "BUF": {
   "oc_new": true,

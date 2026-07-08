@@ -1,0 +1,1386 @@
+{
+ "_meta": {
+  "generated": "2026-07-05",
+  "method": "2025 FantasyPoints personnel mix (personnel_2026.json fp_personnel_mix / fp_heavy_rate_2025) = ground-truth baseline; 2026 direction projected from verified coordinator changes (coordinator_changes_2026.json), play-caller profiles (PLAYCALLER_PROFILES_2026.md / scheme_2026.json), and brain_intel.json quotes. Directions only — no invented 2026 percentages.",
+  "league_macro": "vault macro: 'We're going from ~10 teams that felt comfortable in 12/13 personnel to nearly 2/3s of the league chasing it' (personnel_2026.json _meta); heavy usage is the league-wide 2026 trend, so 'hold' teams still sit inside a rising tide.",
+  "oc_new_source": "coordinator_changes_2026.json (CBS-sourced, verified)",
+  "verification_2026_07_05": "SF refuted→hold; DEN/CAR/MIA/NE confirmed (see PERSONNEL_2026_VERIFICATION.md)"
+ },
+ "ARI": {
+  "oc_2026": "Nathaniel Hackett",
+  "oc_new": true,
+  "playcaller_2026": "Mike LaFleur (HC, new — Hackett does NOT call plays)",
+  "baseline_2025": {
+   "heavy_rate": 45.6,
+   "heavy_rank": 6,
+   "top_groupings": [
+    "11 (54.4%)",
+    "12 (33.0%)",
+    "13 (11.8%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "12",
+    "11"
+   ],
+   "rationale": "Elite-heavy baseline (45.6% non-11, #6) holds but the mix shifts: brain says LaFleur is signaling MORE 12 (Tip Reiman name-drops; starting offense listed in 12 personnel with McBride+Reiman), while the 13-personnel architect Petzing left for DET — so 12 up, 13 down, overall heavy roughly flat. INFERENCE: the 13->12 rotation; the 12-up leg is directly sourced."
+  },
+  "evidence": [
+   {
+    "claim": "Mike LaFleur keeps name dropping Tip Reiman, signaling more 12 personnel in 2026 for the team",
+    "source": "brain_intel @dhananizain 2026-06-16"
+   },
+   {
+    "claim": "Cardinals starting offense (listed in 12 Personnel): QB Brissett, RB Love, WRs Harrison/Wilson, TE McBride, TE Reiman",
+    "source": "brain_intel @dhananizain 2026-06-19"
+   },
+   {
+    "claim": "with Drew Petzing, the Cardinals were 3rd in 13 personnel usage over the last two seasons — huge drop off to the 4th team (McBride, Reiman, Higgins)",
+    "source": "brain_intel @joshnorris 2026-06-04 (Petzing now DET => ARI 13P architect gone)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=54.4%, 12=33.0%, 13=11.8% (heavy 45.6%, rank 6)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "oc_new=true per registry, but the play-caller is new HC Mike LaFleur (Shanahan tree); do not model this as Hackett's offense (PLAYCALLER_PROFILES_2026.md)."
+ },
+ "ATL": {
+  "oc_2026": "Tommy Rees",
+  "oc_new": true,
+  "playcaller_2026": "Tommy Rees (OC) in HC Kevin Stefanski's system",
+  "baseline_2025": {
+   "heavy_rate": 39.8,
+   "heavy_rank": 8,
+   "top_groupings": [
+    "11 (60.2%)",
+    "12 (27.5%)",
+    "21 (9.4%)",
+    "13 (2.5%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "BRAIN SAYS: Falcons 'expected to run a lot of 12 personnel' under Stefanski/Rees, with Pitts AND Woerner listed as co-starting TEs; Stefanski's system is #1 under-center wide-zone/PA and TE-friendly. From a 39.8% heavy baseline (12=27.5%), 12 climbs further."
+  },
+  "evidence": [
+   {
+    "claim": "With the introduction of Kevin Stefanski and Tommy Rees, the Falcons are expected to run a lot of 12 personnel (one running back and two tight ends) this season",
+    "source": "brain_intel @dhananizain 2026-06-15"
+   },
+   {
+    "claim": "Starting TE: Kyle Pitts AND Charlie Woerner — 'The Falcons are going to be running a lot of 12-personnel'",
+    "source": "brain_intel @dhananizain 2026-06-20"
+   },
+   {
+    "claim": "If they do actually use a lot of 12 personnel with Charlie Woerner as previously reported, the TPRR for London, Pitts, and Bijan is going to be very high",
+    "source": "brain_intel @ffdataroma-thread 2026-07-01"
+   },
+   {
+    "claim": "Stefanski tree: under-center #1 (2024), wide-zone + heavy PA; TE-friendly (12-personnel) -> Kyle Pitts upside headline",
+    "source": "PLAYCALLER_PROFILES_2026.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=60.2%, 12=27.5%, 21=9.4% (heavy 39.8%, rank 8)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high"
+ },
+ "BAL": {
+  "oc_2026": "Declan Doyle",
+  "oc_new": true,
+  "playcaller_2026": "Declan Doyle (OC, first-time caller)",
+  "baseline_2025": {
+   "heavy_rate": 58.3,
+   "heavy_rank": 1,
+   "top_groupings": [
+    "12 (42.9%)",
+    "11 (41.7%)",
+    "21 (10.7%)",
+    "13 (2.5%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "down",
+   "emphasis": [
+    "11"
+   ],
+   "rationale": "League's #1 heavy offense (58.3%; 12=42.9%, 21=10.7%) loses its architecture: 12P architect Monken left (CLE HC), TE2 Isaiah Likely left (NYG), and FB Patrick Ricard left (NYG). BRAIN SAYS more 11 personnel is the direct consequence; Doyle comes from Payton/Johnson-tree Denver, which was 76.7% 11 in 2025 (INFERENCE on landing spot)."
+  },
+  "evidence": [
+   {
+    "claim": "Fascinated to see what the Declan Doyle Ravens offense looks like in 2026. Losing both Patrick Richard [Ricard] and Isaiah Likely in free agency could mean more 11 personnel",
+    "source": "brain_intel @tejfbanalytics 2026-05-21"
+   },
+   {
+    "claim": "BAL departures: I.Likely (9% of '25 tgt vol) -> NYG; Ricard signed with NYG ('Patrick Ricard may take away route share from a Giants WR')",
+    "source": "PERSONNEL.md + brain_intel @dhananizain (Darnell Mooney note)"
+   },
+   {
+    "claim": "As the Ravens' OC, Monken had the Ravens using 12-Personnel at the third-highest rate (35.9%) — and he is now CLE's HC",
+    "source": "brain_intel @corbin_young21 2026-06-29"
+   },
+   {
+    "claim": "Doyle replaces Todd Monken, who was elite for Lamar — first-time caller, widen error bars",
+    "source": "PLAYCALLER_PROFILES_2026.md"
+   },
+   {
+    "claim": "2025 FP baseline: 12=42.9%, 11=41.7%, 21=10.7% (heavy 58.3%, rank 1)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "Direction down is well-sourced; the magnitude depends on whether Sarratt/Lane earn the WR3 role (per the same tweet)."
+ },
+ "BUF": {
+  "oc_2026": "Pete Carmichael Jr.",
+  "oc_new": true,
+  "playcaller_2026": "Joe Brady (HC — still calls plays; Carmichael is title OC)",
+  "baseline_2025": {
+   "heavy_rate": 19.6,
+   "heavy_rank": 21,
+   "top_groupings": [
+    "11 (80.4%)",
+    "12 (9.1%)",
+    "21 (4.3%)",
+    "22 (3.6%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "11"
+   ],
+   "rationale": "OC-title churn only: BRAIN SAYS Brady still calls plays and 'very little changes' are expected. 2026 ≈ 2025 baseline (80.4% 11, just 19.6% heavy). Carmichael's influence shows up as James Cook receiving work (Kamara-style), not personnel groupings."
+  },
+  "evidence": [
+   {
+    "claim": "Joe Brady will still call plays and have final say on the offense for the Bills... I'm expecting very little changes in the Bills offense",
+    "source": "brain_intel @dhananizain 2026-06-05"
+   },
+   {
+    "claim": "With Pete Carmichael having a say in the system, James Cook figures to take on a significantly expanded receiving role — think Alvin Kamara",
+    "source": "brain_intel @dhananizain 2026-07-02"
+   },
+   {
+    "claim": "2025 FP baseline: 11=80.4%, 12=9.1%, 21=4.3% (heavy 19.6%, rank 21)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium",
+  "notes": "No personnel-grouping brain signal; hold is anchored on the explicit play-caller-continuity quote."
+ },
+ "CAR": {
+  "oc_2026": "Brad Idzik (per scheme file; NOT in verified CBS registry)",
+  "oc_new": false,
+  "playcaller_2026": "Brad Idzik (OC, new caller) under HC Dave Canales — same wide-zone family",
+  "baseline_2025": {
+   "heavy_rate": 20.9,
+   "heavy_rank": 27,
+   "top_groupings": [
+    "11 (79.1%)",
+    "12 (14.3%)",
+    "13 (3.0%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "11"
+   ],
+   "rationale": "Not in coordinator_changes_2026.json (oc_new=false per the anchor), but scheme_2026.json lists CAR among verified 2026 play-caller changes (Idzik). Scheme stays Canales wide-zone with more motion/short aDOT. NO personnel-grouping brain signal — hold the 79.1% 11 baseline. Projection rests on scheme-continuity inference only."
+  },
+  "evidence": [
+   {
+    "claim": "CAR Brad Idzik (OC, new caller): Canales wide-zone committing to MORE motion; short aDOT, RB screens",
+    "source": "COACHING_CHANGES_2026_PLAYCALLERS.md / scheme_2026.json"
+   },
+   {
+    "claim": "2025 FP baseline: 11=79.1%, 12=14.3%, 13=3.0% (heavy 20.9%, rank 27)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "low",
+  "notes": "FLAG: registry conflict (anchor file has no CAR entry; scheme file says caller changed). No personnel-specific intel either way."
+ },
+ "CHI": {
+  "oc_2026": "Press Taylor",
+  "oc_new": true,
+  "playcaller_2026": "Ben Johnson (HC, hired 2025 — still calls; Press Taylor is support)",
+  "baseline_2025": {
+   "heavy_rate": 40.2,
+   "heavy_rank": 9,
+   "top_groupings": [
+    "11 (59.8%)",
+    "12 (30.5%)",
+    "13 (7.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "13",
+    "12"
+   ],
+   "rationale": "Play-caller continuity (Ben Johnson), but BRAIN SAYS the multi-TE identity deepens: 'We will see a lot of 13 personnel this year' from the Bears, and ESPN echoes more 13 with Loveland moved around. From a 40.2% heavy baseline (12=30.5%, 6th-highest), 13 is the growth grouping (Loveland + Kmet)."
+  },
+  "evidence": [
+   {
+    "claim": "'We will see a lot of 13 personnel this year' from the Bears... Is this a way to load manage Rome Odunze?",
+    "source": "brain_intel @dhananizain (team tweet)"
+   },
+   {
+    "claim": "ESPN on personnel changes: Bears to play more 13 personnel with Loveland lined up out wide, slot, or in-line",
+    "source": "brain_intel @dhananizain 2026-06-10"
+   },
+   {
+    "claim": "Most teams don't have the players to build a worthwhile 13-personnel set — basically just the Rams and Bears for whom that could matter",
+    "source": "brain_intel @RyanJ_Heath 2026-05-21"
+   },
+   {
+    "claim": "The Bears ran the sixth-highest rate of 12-Personnel (32.6%) while passing at the 16th-highest rate",
+    "source": "brain_intel @corbin_young21 (DJ Moore note)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=59.8%, 12=30.5%, 13=7.4% (heavy 40.2%, rank 9)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "oc_new=true is title-only; do not model a scheme change — model a year-2 deepening of Johnson's 12/13 identity."
+ },
+ "CIN": {
+  "oc_2026": "Dan Pitcher (returning staff; no entry in 2026 change registry)",
+  "oc_new": false,
+  "playcaller_2026": "Zac Taylor staff continuity",
+  "baseline_2025": {
+   "heavy_rate": 31.2,
+   "heavy_rank": 14,
+   "top_groupings": [
+    "11 (68.8%)",
+    "12 (27.0%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "Returning staff, but BRAIN SAYS the Bengals are deliberately trying to add 12 personnel, with TE Erick All 'critical to unlocking this given his versatility (if he can remain healthy)' — and their heavy-personnel dropback game was a known 2025 weakness they want to fix. Mild 12 bump from 27.0%, health-gated."
+  },
+  "evidence": [
+   {
+    "claim": "Good discussion of what changes the Bengals are trying to make, specifically utilizing more 12 personnel: Erick All is viewed as critical to unlocking this... Under center 12 personnel...",
+    "source": "brain_intel @dhananizain 2026-06-29"
+   },
+   {
+    "claim": "Bengals heavy personnel dropback game is bad. They draw base defense less than anyone in it",
+    "source": "brain_intel @scottbarrettdfb-thread (team tweet)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=68.8%, 12=27.0%, 21=1.6% (heavy 31.2%, rank 14)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium",
+  "notes": "Signal is intent + one player's health; cap the magnitude."
+ },
+ "CLE": {
+  "oc_2026": "Travis Switzer",
+  "oc_new": true,
+  "playcaller_2026": "Todd Monken (HC, new — calls plays; Switzer is title OC)",
+  "baseline_2025": {
+   "heavy_rate": 47.9,
+   "heavy_rank": 3,
+   "top_groupings": [
+    "11 (52.1%)",
+    "12 (41.8%)",
+    "13 (3.8%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "12",
+    "11"
+   ],
+   "rationale": "CLE was already #3 heavy (47.9%; 12=41.8%) under Stefanski, and incoming HC Monken ran BAL at the 3rd-highest 12P rate (35.9%) — BRAIN-SOURCED. So the 12-personnel core survives the coaching change, with modest slippage risk: Njoku departed to LAC and Monken's Air-Coryell adds a vertical tilt (Fannin becomes the every-down TE). Net: hold at a high level, slight 11 drift."
+  },
+  "evidence": [
+   {
+    "claim": "With Kevin Stefanski gone, Todd Monken joins the Browns as their head coach... As the Ravens' OC, Monken had the Ravens using 12-Personnel at the third-highest rate (35.9%)",
+    "source": "brain_intel @corbin_young21 2026-06-29"
+   },
+   {
+    "claim": "CLE departures: D.Njoku (9% of '25 tgt vol) -> LAC; Fannin counted on for a big year",
+    "source": "PERSONNEL.md + brain_intel (Judkins note)"
+   },
+   {
+    "claim": "Monken: Air Coryell vertical PA, ~68% motion, RBs featured",
+    "source": "PLAYCALLER_PROFILES_2026.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=52.1%, 12=41.8%, 13=3.8% (heavy 47.9%, rank 3)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "DAL": {
+  "oc_2026": "(no OC change — Brian Schottenheimer HC yr2 calls; new DC Christian Parker only)",
+  "oc_new": false,
+  "playcaller_2026": "Brian Schottenheimer (yr 2)",
+  "baseline_2025": {
+   "heavy_rate": 22.1,
+   "heavy_rank": 23,
+   "top_groupings": [
+    "11 (77.9%)",
+    "12 (13.9%)",
+    "21 (4.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "11"
+   ],
+   "rationale": "Offensive continuity; BRAIN confirms the identity: 5th in 11-personnel usage in 2025 and efficient out of it. 2026 ≈ 2025 baseline (77.9% 11)."
+  },
+  "evidence": [
+   {
+    "claim": "The Cowboys ranked fifth in their usage of 11-Personnel... sixth-most efficient in EPA per pass out of 11 personnel",
+    "source": "brain_intel @corbin_young21 (CeeDee Lamb note)"
+   },
+   {
+    "claim": "DAL: OFFENSE = continuity (Schottenheimer yr2) -> no off entry",
+    "source": "scheme_2026.json / COACHING_CHANGES_2026_PLAYCALLERS.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=77.9%, 12=13.9%, 21=4.4% (heavy 22.1%, rank 23)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "DEN": {
+  "oc_2026": "Davis Webb",
+  "oc_new": true,
+  "playcaller_2026": "Davis Webb (OC, new caller — Payton handed it off)",
+  "baseline_2025": {
+   "heavy_rate": 23.3,
+   "heavy_rank": 26,
+   "top_groupings": [
+    "11 (76.7%)",
+    "12 (11.7%)",
+    "21 (3.3%)",
+    "22 (3.1%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "11",
+    "12"
+   ],
+   "rationale": "No grouping-specific brain signal. Webb's roots are spread/Air-Raid (argues 11/10), but beat chatter says 'TEs should be more involved this year' with Engram the clear top TE and more deep play-action — a mild 12 counter-tilt. Net: hold the 76.7% 11 baseline. FLAG: this projection rests on the coordinator hire + soft TE chatter only."
+  },
+  "evidence": [
+   {
+    "claim": "Broncos notes: TEs should be more involved in the offense this year. Expecting faster pace bc Davis Webb is shortening the play calls",
+    "source": "brain_intel @dhananizain 2026-06-07"
+   },
+   {
+    "claim": "They believe Evan Engram is potentially in store for more usage YoY... when Davis Webb called plays at practice and preseason, Engram seemed more involved",
+    "source": "brain_intel @dhananizain 2026-06-10"
+   },
+   {
+    "claim": "Webb: Air Raid/spread roots + Waddle -> vertical; deep RB room",
+    "source": "scheme_2026.json"
+   },
+   {
+    "claim": "2025 FP baseline: 11=76.7%, 12=11.7%, 21=3.3%, 22=3.1% (heavy 23.3%, rank 26)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "low",
+  "notes": "No personnel-grouping intel; direction could break either way with a first-year caller."
+ },
+ "DET": {
+  "oc_2026": "Drew Petzing",
+  "oc_new": true,
+  "playcaller_2026": "Drew Petzing (OC, new — replaced Ben Johnson's successor Morton)",
+  "baseline_2025": {
+   "heavy_rate": 26.7,
+   "heavy_rank": 19,
+   "top_groupings": [
+    "11 (73.3%)",
+    "12 (16.9%)",
+    "20 (3.8%)",
+    "21 (2.7%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12",
+    "13"
+   ],
+   "rationale": "BRAIN SAYS Petzing's Cardinals were 3rd in 13-personnel usage over the last two seasons ('huge drop off to the 4th team') and he profiles as legit heavy under-center + play-action. Detroit adds TE Tyler Conklin behind LaPorta. From a modest 26.7% heavy baseline, 12/13 rise — the LaPorta/ARSB play-action case."
+  },
+  "evidence": [
+   {
+    "claim": "Niche upside case for Sam LaPorta's 2026 season: with Drew Petzing, the Cardinals were 3rd in 13 personnel usage over the last two seasons — huge drop off to the 4th team",
+    "source": "brain_intel @joshnorris 2026-06-04"
+   },
+   {
+    "claim": "Petzing: legit heavy under-center + play-action (shows up strongly in the charting), motion + RPO; ARI scheme skewed run-heavy/short",
+    "source": "PLAYCALLER_PROFILES_2026.md"
+   },
+   {
+    "claim": "DET arrivals include TE Tyler Conklin (from LAC)",
+    "source": "PERSONNEL.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=73.3%, 12=16.9%, 20=3.8%, 13=2.4% (heavy 26.7%, rank 19)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "Watch the tension the profiles flag: Ben-Johnson-era explosiveness vs Petzing's more conservative ARI baseline."
+ },
+ "GB": {
+  "oc_2026": "(no OC change — Matt LaFleur calls; new DC Jonathan Gannon only)",
+  "oc_new": false,
+  "playcaller_2026": "Matt LaFleur",
+  "baseline_2025": {
+   "heavy_rate": 30.4,
+   "heavy_rank": 15,
+   "top_groupings": [
+    "11 (69.6%)",
+    "12 (27.1%)",
+    "21 (2.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "11",
+    "12"
+   ],
+   "rationale": "Offensive continuity; no personnel-grouping brain signal. 2026 ≈ 2025 baseline (69.6% 11 / 27.1% 12 — already a top-10 12-personnel team)."
+  },
+  "evidence": [
+   {
+    "claim": "GB: OFFENSE = continuity (LaFleur) -> no off entry",
+    "source": "scheme_2026.json / COACHING_CHANGES_2026_PLAYCALLERS.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=69.6%, 12=27.1%, 21=2.4% (heavy 30.4%, rank 15)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "HOU": {
+  "oc_2026": "Nick Caley (returning — no entry in 2026 change registry)",
+  "oc_new": false,
+  "playcaller_2026": "Nick Caley (yr 2)",
+  "baseline_2025": {
+   "heavy_rate": 13.7,
+   "heavy_rank": 31,
+   "top_groupings": [
+    "11 (86.3%)",
+    "12 (8.6%)",
+    "21 (2.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12",
+    "13"
+   ],
+   "rationale": "Biggest RETURNING-OC riser. BRAIN SAYS (drumbeat, multiple dates): Texans 'will likely utilize a lot more 12 personnel in '26' — 2025's league-low heavy rate (13.7%, rank 31) was forced by a gutted TE room (Brevin Jordan preseason injury); they spent a 2nd-round pick on a TE, signed Foster Moreau, and Caley 'wants TEs to be on the field' and a more balanced run/pass split."
+  },
+  "evidence": [
+   {
+    "claim": "The Texans will likely utilize a lot more 12 personnel packages in '26 than they did last season. The Texans could not do that in 2025 because they were thin at TE after losing Brevin Jordan in the preseason",
+    "source": "brain_intel @dhananizain 2026-06-09"
+   },
+   {
+    "claim": "Drum beat on more 12 and 13 personnel from Houston across various platforms with the TE room healthier (and a draft pick) YoY",
+    "source": "brain_intel @dhananizain 2026-06-12"
+   },
+   {
+    "claim": "Texans — just ~74 passes last season in 2WR looks or less, spent a 2nd round pick on a TE and signed Foster Moreau",
+    "source": "brain_intel @joshnorris 2026-06-05"
+   },
+   {
+    "claim": "Texans OC Nick Caley... wants the offense to be more balanced from a run/pass split perspective... clearly brought in TE depth to do more 12+ personnel",
+    "source": "brain_intel @dhananizain 2026-06-26"
+   },
+   {
+    "claim": "2025 FP baseline: 11=86.3%, 12=8.6%, 21=2.4% (heavy 13.7%, rank 31)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "Also note the 2024 Slowik-era Texans ran 12P at 31.5% (3rd) — the roster supports a snap-back (coachspeakindex via PERSONNEL.md)."
+ },
+ "IND": {
+  "oc_2026": "(returning staff — Steichen; no entry in 2026 change registry)",
+  "oc_new": false,
+  "playcaller_2026": "Shane Steichen",
+  "baseline_2025": {
+   "heavy_rate": 29.3,
+   "heavy_rank": 13,
+   "top_groupings": [
+    "11 (70.7%)",
+    "12 (23.4%)",
+    "13 (5.5%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "Continuity; no 2026 personnel signal in the brain. Baseline already 12-lean (23.4% 12, 5.5% 13; IND was #4 in 13P per SumerSports' 2025 cut) with Tyler Warren entering year 2. 2026 ≈ 2025."
+  },
+  "evidence": [
+   {
+    "claim": "2025 NFL Offense 13 Personnel Usage: ... 4. Indianapolis Colts: 9.82%",
+    "source": "brain_intel @sumersports 2026-06-12"
+   },
+   {
+    "claim": "Can we expect the Year 2 TE [Tyler Warren] to lead the Indianapolis Colts in targets?",
+    "source": "brain_intel @jagibbs_23 (Tyler Warren note)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=70.7%, 12=23.4%, 13=5.5% (heavy 29.3%, rank 13)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "JAX": {
+  "oc_2026": "(returning — Liam Coen calls; no entry in 2026 change registry)",
+  "oc_new": false,
+  "playcaller_2026": "Liam Coen (HC)",
+  "baseline_2025": {
+   "heavy_rate": 19.2,
+   "heavy_rank": 29,
+   "top_groupings": [
+    "11 (80.8%)",
+    "12 (15.2%)",
+    "21 (2.0%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12",
+    "13"
+   ],
+   "rationale": "Returning caller with a stated plan: BRAIN SAYS 12/13 personnel climbs 'to 15th in lg vs 20th in 2025 — still primarily 11,' and 13-personnel single-receiver looks are floated as the way to work Travis Hunter in. Counterweight (same brain): Coen 'loves airing the ball out' and won't sideline the deep WR room — so the rise is moderate, from a low 19.2% base."
+  },
+  "evidence": [
+   {
+    "claim": "Many Jaguars nuggets: Up 12/13 personnel to 15th in lg vs 20th in 2025 — still primarily 11",
+    "source": "brain_intel @dhananizain 2026-06-14"
+   },
+   {
+    "claim": "If the Jaguars are trying to play more heavy personnel packages this season, especially 13 personnel, those single-receiver looks might be the easiest places to sprinkle Travis Hunter in",
+    "source": "brain_intel @mattharmon_byb 2026-05-21"
+   },
+   {
+    "claim": "No, the Jaguars are not about to sideline their deep group of wide receivers. Liam Coen loves airing the ball out",
+    "source": "brain_intel (Brenton Strange note)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=80.8%, 12=15.2%, 21=2.0% (heavy 19.2%, rank 29)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "KC": {
+  "oc_2026": "Eric Bieniemy",
+  "oc_new": true,
+  "playcaller_2026": "Andy Reid (still calls; Bieniemy = support/reunion hire)",
+  "baseline_2025": {
+   "heavy_rate": 35.8,
+   "heavy_rank": 12,
+   "top_groupings": [
+    "11 (64.2%)",
+    "12 (28.8%)",
+    "13 (5.0%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "OC-title change only — Reid calls it. No grouping signal; Bieniemy chatter is about being 'more RB centric' (usage, not personnel), and the roster is 'largely the same personnel as last season.' Hold the 64.2/28.8 11-12 split."
+  },
+  "evidence": [
+   {
+    "claim": "KC — Andy Reid calls it; Bieniemy is a support/reunion hire",
+    "source": "PLAYCALLER_PROFILES_2026.md"
+   },
+   {
+    "claim": "bieniemy will make the KC O more RB centric",
+    "source": "brain_intel @sigmundbloom 2026-05-20"
+   },
+   {
+    "claim": "it's largely the same personnel as last season + a Mahomes ACL tear",
+    "source": "brain_intel @ihartitz (Travis Kelce note)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=64.2%, 12=28.8%, 13=5.0% (heavy 35.8%, rank 12)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "LAC": {
+  "oc_2026": "Mike McDaniel",
+  "oc_new": true,
+  "playcaller_2026": "Mike McDaniel (OC, new — ex-MIA HC)",
+  "baseline_2025": {
+   "heavy_rate": 26.5,
+   "heavy_rank": 25,
+   "top_groupings": [
+    "11 (73.5%)",
+    "10 (6.7%)",
+    "12 (6.2%)",
+    "21 (5.3%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12",
+    "13",
+    "21"
+   ],
+   "rationale": "Strongest heavy-up case in the league. BRAIN SAYS: McDaniel 'does favor 12 and 13 personnel'; the Njoku addition enables 'pure three-tight-end sets' (Kolar/Njoku/Gadsden); ESPN says 'Chargers to deploy 21 personnel bc of Alec Ingold'; and analysts read the heavy-personnel shift as concentrating targets on McConkey/QJ. His 2025 Miami offense ran 21+22 at ~26% combined. From a 26.5% heavy baseline (rank 25), a multi-grouping jump."
+  },
+  "evidence": [
+   {
+    "claim": "McDaniel does favor 12 and 13 personnel, meaning multiple tight end sets... there is a path to both Gadsden and Njoku playing quite a lot",
+    "source": "brain_intel @32beatwriters 2026-05-29"
+   },
+   {
+    "claim": "The addition of Njoku allows the Chargers to get into pure three-tight-end sets more often... Kolar, Njoku and Gadsden all on the field together",
+    "source": "brain_intel @dhananizain 2026-05-28"
+   },
+   {
+    "claim": "ESPN on personnel changes: Chargers to deploy 21 personnel bc of Alec Ingold",
+    "source": "brain_intel @dhananizain 2026-06-10"
+   },
+   {
+    "claim": "get the impression from most all the heavy-personnel/McDaniel[s] stuff is exclusively good for Ladd... maybe QJ gets a nice boost as well",
+    "source": "brain_intel @ihartitz 2026-05-15"
+   },
+   {
+    "claim": "McDaniel's 2025 MIA mix: 21=18.3%, 22=7.3% (FB-built heavy) — the blueprint he brings",
+    "source": "personnel_2026.json MIA fp_personnel_mix (inference: blueprint transfers)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=73.5%, 10=6.7%, 12=6.2%, 21=5.3% (heavy 26.5%, rank 25)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "LAC also arrives with Njoku AND Kolar as 2026 additions (PERSONNEL.md)."
+ },
+ "LAR": {
+  "oc_2026": "Nathan Scheelhaase",
+  "oc_new": true,
+  "playcaller_2026": "Sean McVay (still calls; Scheelhaase internal promo)",
+  "baseline_2025": {
+   "heavy_rate": 26.9,
+   "heavy_rank": 18,
+   "top_groupings": [
+    "11 (73.1%)",
+    "13 (19.5%)",
+    "12 (7.3%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "13",
+    "11"
+   ],
+   "rationale": "Play-caller continuity. LAR is the league's 13-personnel outlier (FP: 19.5% 13; SumerSports' cut: 30.48%, #1) and 'basically just the Rams and Bears' have the bodies for it. One caveat the brain raises: part of the late-2025 heavy lean was necessity (Puka hobbled), so a healthy WR room could drift a few points back toward 11. Hold."
+  },
+  "evidence": [
+   {
+    "claim": "2025 NFL Offense 13 Personnel Usage: 1. Los Angeles Rams: 30.48%",
+    "source": "brain_intel @sumersports 2026-06-12 (route/snap cut differs from FP participation mix)"
+   },
+   {
+    "claim": "he makes their 12 personnel feel like 11 and defenses use an LB on him",
+    "source": "brain_intel @dhananizain 2026-06-11"
+   },
+   {
+    "claim": "the late season <2 WR personnel trend... the Rams (somewhat out of necessity bc Puka was hobbled)",
+    "source": "brain_intel @dhananizain 2026-05-26"
+   },
+   {
+    "claim": "LAR — Sean McVay calls it (#1 in play-action); Scheelhaase is an internal promo",
+    "source": "PLAYCALLER_PROFILES_2026.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=73.1%, 13=19.5%, 12=7.3% (heavy 26.9%, rank 18)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "LV": {
+  "oc_2026": "Andrew Janocko",
+  "oc_new": true,
+  "playcaller_2026": "Klint Kubiak (HC, new — calls plays; Janocko is title OC)",
+  "baseline_2025": {
+   "heavy_rate": 36.2,
+   "heavy_rank": 10,
+   "top_groupings": [
+    "11 (63.8%)",
+    "12 (31.3%)",
+    "13 (4.5%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12",
+    "13",
+    "22"
+   ],
+   "rationale": "BRAIN SAYS (multiple sources): 'Raiders will use 12 personnel a lot — they are excited about their heavy sets (Raiders version this year might be 22 personnel)'; Kubiak 'relies on multi-tight end sets in 12 or 13 personnel' with Bowers as the joker and Mayer as the Y. From an already 12-lean 36.2% baseline, heavy rises further and diversifies (12/13/22)."
+  },
+  "evidence": [
+   {
+    "claim": "Raiders will use 12 personnel a lot — they are excited about their heavy sets (Raiders version this year might be 22 personnel). Brock Bowers will be the focal point",
+    "source": "brain_intel @dhananizain 2026-06-19"
+   },
+   {
+    "claim": "Kubiak, who relies on multi-tight end sets in 12 or 13 personnel, has his 'joker' tight end in Bowers and the traditional 'Y' in-line tight end in Mayer",
+    "source": "brain_intel @dhananizain 2026-06-20"
+   },
+   {
+    "claim": "Kubiak's propensity to run heavy personnel could open up a pretty big role for Mayer (Bowers sub-30% inline every year)",
+    "source": "brain_intel @ffdataroma 2026-06-21"
+   },
+   {
+    "claim": "LV scheme: wide-zone, heavy motion + 12-personnel, deep PA bootlegs, RBs as receivers",
+    "source": "scheme_2026.json"
+   },
+   {
+    "claim": "2025 FP baseline: 11=63.8%, 12=31.3%, 13=4.5% (heavy 36.2%, rank 10)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "Rookie QB (Mendoza) supports a run/heavy 'tight-to-the-vest' Year 1 (PLAYCALLER_PROFILES_2026.md)."
+ },
+ "MIA": {
+  "oc_2026": "Bobby Slowik",
+  "oc_new": true,
+  "playcaller_2026": "Bobby Slowik (OC, new) under new HC Jeff Hafley",
+  "baseline_2025": {
+   "heavy_rate": 42.8,
+   "heavy_rank": 4,
+   "top_groupings": [
+    "11 (57.2%)",
+    "21 (18.3%)",
+    "12 (13.1%)",
+    "22 (7.3%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "down",
+   "emphasis": [
+    "11",
+    "12"
+   ],
+   "rationale": "MIA's #4 heavy rate (42.8%) was McDaniel's FB-built 21/22 structure (21=18.3%, 22=7.3%) — and McDaniel is now LAC's OC while FB Alec Ingold is cited as the reason the CHARGERS will run 21. INFERENCE: that grouping collapses. Slowik's own last stop ran 12P at 31.5% (3rd, 2024 HOU) and he is a run-committed caller, so 12 partially replaces it — but net heavy falls toward the 11/12 shape, especially with 44% of targets vacated and no proven WRs."
+  },
+  "evidence": [
+   {
+    "claim": "ESPN: Chargers to deploy 21 personnel bc of Alec Ingold [MIA's former FB structure leaves with McDaniel]",
+    "source": "brain_intel @dhananizain 2026-06-10"
+   },
+   {
+    "claim": "The 2024 Houston Texans ran 12 personnel at the 3rd highest rate in the NFL at 31.5% [Slowik was HOU's play-caller]",
+    "source": "coordinator note @coachspeakindex via PERSONNEL.md"
+   },
+   {
+    "claim": "Slowik... commitment to the run paradoxically forces his offense into obvious dropback situations — ideologically run-committed",
+    "source": "brain_intel @RyanJ_Heath 2026-06-24"
+   },
+   {
+    "claim": "MIA offense: 44% of 2025 target volume departs (Waddle->DEN, Waller FA, Hill gone); scheme unsettled — low confidence",
+    "source": "PERSONNEL.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=57.2%, 21=18.3%, 12=13.1%, 22=7.3% (heavy 42.8%, rank 4)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium",
+  "notes": "FLAG: no MIA-specific 2026 personnel quote — the 21/22-down leg is roster/coach-departure inference; the 12-landing leg is Slowik's documented history."
+ },
+ "MIN": {
+  "oc_2026": "(returning — Kevin O'Connell; no entry in 2026 change registry)",
+  "oc_new": false,
+  "playcaller_2026": "Kevin O'Connell",
+  "baseline_2025": {
+   "heavy_rate": 21.3,
+   "heavy_rank": 22,
+   "top_groupings": [
+    "11 (78.7%)",
+    "12 (13.7%)",
+    "21 (4.1%)",
+    "13 (2.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "11"
+   ],
+   "rationale": "Continuity; no personnel-grouping brain signal. 2026 ≈ 2025 baseline (78.7% 11). Kyler Murray's arrival changes the QB, not the grouping profile, absent other intel."
+  },
+  "evidence": [
+   {
+    "claim": "MIN arrivals: Kyler Murray, Jauan Jennings; pass attempts modeled UP +1.7/g",
+    "source": "PERSONNEL.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=78.7%, 12=13.7%, 21=4.1% (heavy 21.3%, rank 22)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "NE": {
+  "oc_2026": "(not in 2026 change registry — playcaller profiles flag Josh McDaniels w/ Drake Maye; VERIFY LIVE)",
+  "oc_new": false,
+  "playcaller_2026": "Josh McDaniels (per PLAYCALLER_PROFILES_2026.md, unverified in CBS registry)",
+  "baseline_2025": {
+   "heavy_rate": 37.1,
+   "heavy_rank": 11,
+   "top_groupings": [
+    "11 (62.9%)",
+    "12 (20.1%)",
+    "21 (12.6%)",
+    "22 (2.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "down",
+   "emphasis": [
+    "11",
+    "12"
+   ],
+   "rationale": "BRAIN SAYS the 2026 plan WAS more 12 personnel, but losing blocking TE Julian Hill 'hurt those plans' and they 'will do more 11 personnel' unless a veteran TE is added (articles keep suggesting one). From a 37.1% heavy baseline (12=20.1%, 21=12.6%), lean slightly down/11-ward with a reversal trigger if they sign a TE."
+  },
+  "evidence": [
+   {
+    "claim": "Will do more 11 personnel bc they lost Julian Hill — plan was 12...",
+    "source": "brain_intel @dhananizain 2026-06-16"
+   },
+   {
+    "claim": "Another day, another article suggesting Patriots may add a veteran TE. They wanted to do more 12 personnel this season and losing Julian Hill hurt those plans",
+    "source": "brain_intel @dhananizain (team tweet)"
+   },
+   {
+    "claim": "NE — Josh McDaniels with Drake Maye praised as top play-caller setup, but registry didn't capture NE's 2026 caller — verify before acting",
+    "source": "PLAYCALLER_PROFILES_2026.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=62.9%, 12=20.1%, 21=12.6% (heavy 37.1%, rank 11)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium",
+  "notes": "Direction has a concrete brain quote; the caller identity itself is the unverified part."
+ },
+ "NO": {
+  "oc_2026": "(returning — Kellen Moore HC calls; no entry in 2026 change registry)",
+  "oc_new": false,
+  "playcaller_2026": "Kellen Moore (HC)",
+  "baseline_2025": {
+   "heavy_rate": 20.8,
+   "heavy_rank": 32,
+   "top_groupings": [
+    "11 (79.2%)",
+    "12 (15.8%)",
+    "13 (4.3%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "Returning caller whose scheme is the canon 'heavy two-TE' system; BRAIN SAYS TE Oscar Delp 'can help unlock more 12 personnel' and NO added Noah Fant. 2025 heavy was just 20.8% (12=15.8%) — the roster is finally being built to match the scheme, so 12 rises."
+  },
+  "evidence": [
+   {
+    "claim": "canon: HC Kellen Moore calls plays in a heavy two-TE scheme (web_teams outlook)",
+    "source": "personnel_2026.json evidence"
+   },
+   {
+    "claim": "Oscar Delp is back — a guy who can help unlock more 12 personnel for the Saints",
+    "source": "brain_intel @dhananizain 2026-06-16"
+   },
+   {
+    "claim": "NO arrivals include Noah Fant (from CIN)",
+    "source": "PERSONNEL.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=79.2%, 12=15.8%, 13=4.3% (heavy 20.8%, rank 32 by ffdataroma cut)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "NYG": {
+  "oc_2026": "Matt Nagy",
+  "oc_new": true,
+  "playcaller_2026": "Matt Nagy (OC, new — calls plays)",
+  "baseline_2025": {
+   "heavy_rate": 25.2,
+   "heavy_rank": 17,
+   "top_groupings": [
+    "11 (74.8%)",
+    "12 (23.7%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12",
+    "13",
+    "21"
+   ],
+   "rationale": "Loudest 12/13 drumbeat in the brain: 'Pairing Likely with Theo Johnson will result in the Giants deploying plenty of 12 personnel'; 'leaning on a lot of two and three-tight-end sets... 12 and 13 Personnel coming at you'; slot WR 'won't be featured much'; and ex-BAL FB Patrick Ricard signed — 'Giants want to go bully ball.' From 25.2% heavy (13 was just 0.7%), a large multi-grouping rise."
+  },
+  "evidence": [
+   {
+    "claim": "More confirmation that the New York Giants will deploy 12 personnel often this season: 'Pairing Likely with Theo Johnson will result in the Giants deploying plenty of 12 personnel packages'",
+    "source": "brain_intel (Isaiah Likely note) + personnel_2026.json evidence"
+   },
+   {
+    "claim": "'That all bodes well for a Giants offense that is probably going to be leaning on a lot of two and three-tight-end sets this season.' 12 and 13 Personnel coming at you (as expected)",
+    "source": "brain_intel @dhananizain 2026-06-22"
+   },
+   {
+    "claim": "Calvin Austin starting slot but 'that position won't be featured much in this offense'",
+    "source": "brain_intel @dhananizain 2026-07-03"
+   },
+   {
+    "claim": "Underrated how much Patrick Ricard may take away route share from a Giants WR... Giants want to go bully ball",
+    "source": "brain_intel @dhananizain (Darnell Mooney note)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=74.8%, 12=23.7%, 13=0.7% (heavy 25.2%, rank 17)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "Roster: Likely (from BAL) + Ricard (from BAL) + Theo Johnson; Nagy is Reid-tree but the personnel signal here is roster/beat-driven, not tree-driven."
+ },
+ "NYJ": {
+  "oc_2026": "Frank Reich",
+  "oc_new": true,
+  "playcaller_2026": "Frank Reich (OC, new)",
+  "baseline_2025": {
+   "heavy_rate": 21.3,
+   "heavy_rank": 24,
+   "top_groupings": [
+    "11 (78.7%)",
+    "12 (15.0%)",
+    "21 (3.5%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "BRAIN SAYS: 'With Kenyon Sadiq and Mason Taylor, expecting a healthy amount of 2 WR sets' (i.e., 12), with Omar Cooper as an 11-only starter. Reich's scheme uses RB/TE motion and quick game for Geno. From 21.3% heavy (12=15.0%), a moderate 12 rise built on the two young TEs."
+  },
+  "evidence": [
+   {
+    "claim": "Good to see Omar Cooper getting work with Geno Smith early — should be an 11 personnel starter... With Kenyon Sadiq and Mason Taylor, expecting a healthy amount of 2 WR sets",
+    "source": "brain_intel @dhananizain 2026-06-06"
+   },
+   {
+    "claim": "Reich: veteran scheme, RB/TE motion to ID coverage, quick game (Geno), pocket QB",
+    "source": "scheme_2026.json"
+   },
+   {
+    "claim": "NYJ rookies: Kenyon Sadiq, Omar Cooper Jr.; 40% of 2025 targets vacated",
+    "source": "PERSONNEL.md"
+   },
+   {
+    "claim": "2025 FP baseline: 11=78.7%, 12=15.0%, 21=3.5% (heavy 21.3%, rank 24)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "PHI": {
+  "oc_2026": "Sean Mannion",
+  "oc_new": true,
+  "playcaller_2026": "Sean Mannion (OC, first-time caller; Sirianni CEO HC)",
+  "baseline_2025": {
+   "heavy_rate": 23.4,
+   "heavy_rank": 20,
+   "top_groupings": [
+    "11 (76.6%)",
+    "12 (19.5%)",
+    "13 (2.1%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "ESPN (via brain) says 'Eagles to do more 12 personnel with Eli Stowers (seam stretcher) and Dallas Goedert,' and with A.J. Brown gone (26% of targets) the third-WR case weakens. BUT the same brain doubts the enabler: Stowers 'unlikely to play much in 2026,' 'Mundt is the TE2 over Stowers.' Mild 12 rise from 19.5%, wide error bars (first-time caller)."
+  },
+  "evidence": [
+   {
+    "claim": "ESPN on personnel changes: Eagles to do more 12 personnel with Eli Stowers (seam stretcher) and Dallas Goedert",
+    "source": "brain_intel @dhananizain 2026-06-10"
+   },
+   {
+    "claim": "Everything here on Eli Stowers: Unlikely to play much in 2026. Needs a lot of work as a blocker",
+    "source": "brain_intel (Eli Stowers note) — counterweight"
+   },
+   {
+    "claim": "PHI: 33% of 2025 target volume departs (A.Brown -> NE); first-time caller, neutral-to-cautious",
+    "source": "PERSONNEL.md"
+   },
+   {
+    "claim": "Mannion: McVay/LaFleur-tree motion wide-zone (NOT run-heavy quick game); Hurts designed runs",
+    "source": "scheme_2026.json"
+   },
+   {
+    "claim": "2025 FP baseline: 11=76.6%, 12=19.5%, 13=2.1% (heavy 23.4%, rank 20)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium",
+  "notes": "Signal and counter-signal from the same corpus; treat the 12 bump as mild."
+ },
+ "PIT": {
+  "oc_2026": "Brian Angelichio",
+  "oc_new": true,
+  "playcaller_2026": "Mike McCarthy (HC, new — calls plays; Angelichio is title OC)",
+  "baseline_2025": {
+   "heavy_rate": 46.8,
+   "heavy_rank": 2,
+   "top_groupings": [
+    "11 (53.2%)",
+    "12 (29.5%)",
+    "13 (13.6%)",
+    "21 (2.6%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "down",
+   "emphasis": [
+    "11",
+    "12"
+   ],
+   "rationale": "BRAIN SAYS: 'Mike McCarthy historically been an 11 personnel coach. Threw out of 3+ WR sets more than 80% of the time in final two years with DAL' — arriving at 2025's #2 heavy team (46.8%; 13=13.6%, #2 in the league). The 13-personnel Arthur-Smith identity should fall hard; the offset is roster-driven 12 (Freiermuth + Darnell Washington running the same routes), which McCarthy himself says may pull him above his historical 11P rates. Net: heavy down, 13 down most."
+  },
+  "evidence": [
+   {
+    "claim": "Mike McCarthy historically been an 11 personnel coach. Threw out of 3+ WR sets more than 80% of the time in final two years with DAL. However, expecting decently more 2-TE sets from McCarthy in PIT. With Pat Freiermuth and Darnell Washington...",
+    "source": "brain_intel @adamlevitan 2026-06-04"
+   },
+   {
+    "claim": "McCarthy on Darnell Washington ('Year One... you may tilt one way or the other') — lends itself to more 12 personnel (2TE) than his historical rates (usually 11P heavy)",
+    "source": "brain_intel @dhananizain 2026-06-02"
+   },
+   {
+    "claim": "He's having Darnell Washington run the same routes as Pat Freiermuth. Sounds like they could operate in more 12P than originally expected",
+    "source": "brain_intel @dhananizain 2026-06-10"
+   },
+   {
+    "claim": "2025 NFL Offense 13 Personnel Usage: 2. Pittsburgh Steelers: 14.17% — the outgoing identity",
+    "source": "brain_intel @sumersports 2026-06-12"
+   },
+   {
+    "claim": "2025 FP baseline: 11=53.2%, 12=29.5%, 13=13.6% (heavy 46.8%, rank 2)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high"
+ },
+ "SEA": {
+  "oc_2026": "Brian Fleury",
+  "oc_new": true,
+  "playcaller_2026": "Brian Fleury (OC, first-time; Kubiak left for LV HC job)",
+  "baseline_2025": {
+   "heavy_rate": 36.5,
+   "heavy_rank": 7,
+   "top_groupings": [
+    "11 (63.5%)",
+    "12 (23.7%)",
+    "21 (6.9%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "21",
+    "12"
+   ],
+   "rationale": "Same wide-zone/under-center family (~80% carryover) but BRAIN SAYS the tweaks are heavier: 'More 21 personnel for Seahawks in 2026,' 'more 2 back sets & slip motion,' more TE usage (Fleury was a TE coach, arriving from 21-personnel-heavy SF), Arroyo opening up 12/13, and heavy sets expected 'at Kupp's expense.' Mild rise from an already-high 36.5%."
+  },
+  "evidence": [
+   {
+    "claim": "More 21 personnel for Seahawks in 2026 — could be an interesting schematic tweak",
+    "source": "brain_intel @dhananizain 2026-07-02"
+   },
+   {
+    "claim": "Some changes we may see from Seahawks O scheme: Focus even more on outside zone. More 2 back sets & slip motion. Potentially more usage of the TEs (Fleury was a TE coach)",
+    "source": "brain_intel @dhananizain 2026-06-13"
+   },
+   {
+    "claim": "Elijah Arroyo helps open up 12 & 13 personnel for the Seahawks because he can stretch the field from the slot",
+    "source": "brain_intel (AJ Barner/Arroyo note)"
+   },
+   {
+    "claim": "with them running a lot of heavy sets I'm expecting it to be at Kupp's expense [Shaheed/SEA context]",
+    "source": "brain_intel @rotostreetwolf 2026-06-12"
+   },
+   {
+    "claim": "2025 FP baseline: 11=63.5%, 12=23.7%, 21=6.9% (heavy 36.5%, rank 7)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "Personnel direction is well-sourced even though Fleury himself is an unproven caller (JSN downgrade-risk flag lives in PLAYCALLER_PROFILES_2026.md)."
+ },
+ "SF": {
+  "oc_2026": "(no OC change — Kyle Shanahan calls; new DC Raheem Morris only)",
+  "oc_new": false,
+  "playcaller_2026": "Kyle Shanahan",
+  "baseline_2025": {
+   "heavy_rate": 41.1,
+   "heavy_rank": 5,
+   "top_groupings": [
+    "11 (58.9%)",
+    "21 (26.3%)",
+    "12 (9.7%)",
+    "22 (4.2%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "21",
+    "11"
+   ],
+   "rationale": "CORRECTED by verification pass (2026-07-05): the prior 'down' call assumed Juszczyk departed — false. Kyle Juszczyk is on the 2026 roster (NBC Bay Area 6/13/26); the 'gone' flag was a stale artifact of his Mar-2025 cut-and-re-sign (ESPN, 2yr through 2026). 21-personnel engine intact. Shanahan still calls plays. Early-season mix leans 21/11 with Kittle recovering from an Achilles tear (Wk1 game-time decision)."
+  },
+  "evidence": [
+   {
+    "claim": "SF departures: K.Juszczyk (6% of '25 tgt vol -> gone); arrivals: Christian Kirk; rookies incl. WRs",
+    "source": "PERSONNEL.md"
+   },
+   {
+    "claim": "SF 2025 mix was FB-driven: 21=26.3%, 22=4.2%",
+    "source": "personnel_2026.json fp_personnel_mix"
+   },
+   {
+    "claim": "2025 FP baseline: 11=58.9%, 21=26.3%, 12=9.7% (heavy 41.1%, rank 5)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   },
+   {
+    "claim": "Juszczyk on 2026 roster; 21-personnel intact; Kittle Achilles pushes early mix to 21/11",
+    "source": "verification pass — NBC Bay Area 6/13/26, ESPN re-sign, Yahoo/49erswebzone Kittle timeline"
+   }
+  ],
+  "confidence": "medium",
+  "notes": "FLAG: roster-inference only — no brain personnel quote for SF. Shanahan has always built around a FB; if they add one, revert to hold."
+ },
+ "TB": {
+  "oc_2026": "Zac Robinson",
+  "oc_new": true,
+  "playcaller_2026": "Zac Robinson (OC, new — McVay branch)",
+  "baseline_2025": {
+   "heavy_rate": 14.9,
+   "heavy_rank": 30,
+   "top_groupings": [
+    "11 (85.1%)",
+    "12 (9.3%)",
+    "21 (2.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "hold",
+   "emphasis": [
+    "11"
+   ],
+   "rationale": "BRAIN SAYS: 2025's 12-personnel stretches were 'due to necessity/roster — would not expect the same in 2026 due to better WR depth' (Egbuka at Z per Robinson's own quote, Godwin back). Note the FP baseline already shows TB at just 14.9% heavy (85.1% 11, rank 30) — so the 2026 read is: stay 11-dominant, if anything shave the forced 12."
+  },
+  "evidence": [
+   {
+    "claim": "Bucs / Zac Robinson Personnel expectation update: Went 12 personnel heavy in 2025 due to necessity/roster — would not expect the same in 2026 due to better WR depth",
+    "source": "brain_intel @dhananizain 2026-06-22"
+   },
+   {
+    "claim": "new Buccaneers OC Zac Robinson said that Emeka Egbuka is going to play the Z in his offense",
+    "source": "brain_intel/coordinator_notes @benjaminsolak"
+   },
+   {
+    "claim": "2025 FP baseline: 11=85.1%, 12=9.3%, 21=2.4% (heavy 14.9%, rank 30) — tension with the 'went 12-heavy' framing; the FP season-long number is the anchor",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "medium"
+ },
+ "TEN": {
+  "oc_2026": "Brian Daboll",
+  "oc_new": true,
+  "playcaller_2026": "Brian Daboll (OC, new)",
+  "baseline_2025": {
+   "heavy_rate": 19.7,
+   "heavy_rank": 28,
+   "top_groupings": [
+    "11 (80.3%)",
+    "12 (15.5%)",
+    "13 (2.7%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "BRAIN SAYS (three separate dates): Titans 'paid FA TE Daniel Bellinger handsomely to reunite with Daboll,' expect a Gunnar Helm year-2 jump, and 'will use 12 Personnel more often than people think' — but they 'lack the depth to go 13p with any regularity.' So from 19.7% heavy (rank 28): 12 up, 13 not."
+  },
+  "evidence": [
+   {
+    "claim": "The Titans paid FA TE Daniel Bellinger handsomely to reunite with Daboll in Tennessee... The Titans lack the depth to go 13p with any regularity",
+    "source": "brain_intel @dhananizain 2026-06-06"
+   },
+   {
+    "claim": "Further confirmation Titans might do more 12 personnel than people think: 'Tennessee paid Bellinger real money... he's going to play a big part in this operation'",
+    "source": "brain_intel @dhananizain 2026-06-08"
+   },
+   {
+    "claim": "More speculation that the Titans will use 12 Personnel more often than people think",
+    "source": "brain_intel @dhananizain 2026-06-09"
+   },
+   {
+    "claim": "Bellinger coming over with Daboll from the Giants to potentially siphon routes like he did to Theo Johnson last year",
+    "source": "brain_intel (Gunnar Helm fwd note)"
+   },
+   {
+    "claim": "2025 FP baseline: 11=80.3%, 12=15.5%, 13=2.7% (heavy 19.7%, rank 28)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "Daboll's 2025 NYG offense ran 12 at 23.7% (FP NYG mix) — a moderate-12 profile consistent with this projection."
+ },
+ "WAS": {
+  "oc_2026": "David Blough",
+  "oc_new": true,
+  "playcaller_2026": "David Blough (OC, first-time caller)",
+  "baseline_2025": {
+   "heavy_rate": 30.6,
+   "heavy_rank": 16,
+   "top_groupings": [
+    "11 (69.4%)",
+    "12 (20.2%)",
+    "13 (4.7%)",
+    "21 (2.4%)"
+   ],
+   "source": "FantasyPoints 2025 actuals (personnel_2026.json)"
+  },
+  "projection_2026": {
+   "heavy_direction": "up",
+   "emphasis": [
+    "12"
+   ],
+   "rationale": "The most explicit personnel quote in the brain: Commanders 'will use 12 Personnel a lot more — a lot closer to even vs 11 Personnel — they want to use it as the identity of their offense' (Chig Okonkwo + Ben Sinnott the pass-game keys), tied to Blough's Ben Johnson influence. From 30.6% heavy (12=20.2%), 12 rises sharply toward parity; more under-center/PA for Daniels supports it."
+  },
+  "evidence": [
+   {
+    "claim": "Some good Commanders notes: Will use 12 Personnel a lot more — 'a lot closer to even' vs 11 Personnel — they want to use it as the identity of their offense (Chig + Ben Sinnott key in pass game)",
+    "source": "brain_intel @dhananizain 2026-06-15"
+   },
+   {
+    "claim": "Commanders likely lean more into 12 personnel (Ben Johnson influence)",
+    "source": "brain_intel @dhananizain 2026-06-08"
+   },
+   {
+    "claim": "Exciting changes in David Blough's scheme: Play action for Jayden. Moving Terry McLaurin around. Increased importance / stronger usage of Ben Sinnott",
+    "source": "brain_intel (Ben Sinnott note)"
+   },
+   {
+    "claim": "WAS arrivals include TE Chig Okonkwo (from TEN); Blough scheme = more under-center/balanced, less shotgun",
+    "source": "PERSONNEL.md + scheme_2026.json"
+   },
+   {
+    "claim": "2025 FP baseline: 11=69.4%, 12=20.2%, 13=4.7% (heavy 30.6%, rank 16)",
+    "source": "personnel_2026.json fp_personnel_mix"
+   }
+  ],
+  "confidence": "high",
+  "notes": "First-time caller = execution risk, but the stated personnel intent is unusually concrete."
+ }
+}

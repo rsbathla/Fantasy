@@ -727,6 +727,10 @@ FRESHNESS_DEPS = {
     'proe_tendency_2026.json':  ['data/fantasypoints/proe_offense_2025.csv', 'COACHING_CHANGES_2026.md'],
     'game_sim.json':            ['team_ceiling.json', 'offense_profile.json',
                                  'ffdataroma_draft_guide_export/ffdataroma/csv/weekly-vegas-lines.csv'],
+    # scheme TRANSFORM CHAIN (added with Check K): values are derived, not replicas — freshness is
+    # the guard. An upstream coordinator/canon edit must propagate by rebuild, or these ship stale.
+    'coordinator_scheme_2026.json': ['coordinator_changes_2026.json'],
+    'boom/defensive_profile.json':  ['coordinator_changes_2026.json', 'web_teams.json'],
 }
 def stale_inputs():
     """P0: an output older than an input layer it is built from -- it shipped stale.
@@ -832,6 +836,289 @@ def check_ground_truth(src):
     return viol, ok
 
 
+# ---- CHECK J: coaching-fact consistency — one verified fact, N layers, zero drift ----
+# The Minter case (2026-07-04): ground_truth_registry.json + web_teams.json recorded Jesse Minter
+# as BAL **HC** (and DOSSIER_PROGRESS confirmed "HC calls D; Weaver holds the DC title"), yet
+# scheme_2026.json / coordinator_changes_2026.json still carried the pre-ruling "DC" label — and
+# NO check compared them: Check I's forbidden-claim corpus scans builder .py + allow-listed text
+# only (never JSON layers), and every other check audits wiring/freshness, not value agreement.
+# This closes the class "fact corrected in canon, stale replica lingers": web_teams.json is the
+# structured coaching canon (reconciled here against the registry's asserts prose); every layer
+# naming a coach role must agree. An HC who calls the defense is DECLARED, never implied:
+# coordinator_changes carries `def_caller` + `dc_title`, and dc-role sites must match def_caller.
+COACH_CANON = 'web_teams.json'
+
+
+def _name_only(s):
+    """Leading proper name from a label like 'Jesse Minter (DC, confirmed)' -> 'jesse minter'.
+    Generational suffixes (Jr./Sr./II-IV) are stripped so 'Pete Carmichael Jr.' == 'Pete Carmichael'."""
+    s = str(s or '').split(' (')[0].split(' / ')[0].split(' — ')[0].split(' - ')[0]
+    s = re.sub(r"[^a-z' ]", '', s.lower()).replace("'", '').strip()
+    return re.sub(r'\s+(jr|sr|ii|iii|iv)$', '', s).strip()
+
+
+def check_coaching_consistency():
+    viol, ok = [], []
+    cpath = os.path.join(HERE, COACH_CANON)
+    if not os.path.exists(cpath):
+        return [{'where': COACH_CANON, 'team': '-', 'msg': 'coaching canon missing'}], []
+    canon = {}
+    for t in json.load(open(cpath, encoding='utf-8')):
+        canon[t['team']] = {r: _name_only(t.get(r)) for r in ('hc', 'oc', 'dc')}
+    # (a) registry asserts prose must agree with canon on every "Name (ROLE, TEAM)" pair
+    try:
+        reg = json.load(open(os.path.join(HERE, GT_REGISTRY), encoding='utf-8'))
+        prose = ' '.join(e.get('asserts', '') for e in reg.get('entries', []))
+        for nm, role, tm in re.findall(r"([A-Z][\w.'-]+(?: [A-Z][\w.'-]+)+) \((HC|OC|DC), ([A-Z]{2,3})\)", prose):
+            want = canon.get(tm, {}).get(role.lower())
+            if want and _name_only(nm) != want:
+                viol.append({'where': GT_REGISTRY, 'team': tm,
+                             'msg': f'registry asserts {nm} ({role}) but {COACH_CANON} has "{want}"'})
+    except Exception:
+        pass
+    # effective defensive play-caller: declared def_caller (coordinator_changes) else canon dc
+    cc = {}
+    ccp = os.path.join(HERE, 'coordinator_changes_2026.json')
+    if os.path.exists(ccp):
+        try:
+            cc = json.load(open(ccp, encoding='utf-8'))
+        except Exception:
+            cc = {}
+    def_caller = {}
+    for tm, ent in cc.items():
+        if isinstance(ent, dict) and ent.get('def_caller'):
+            def_caller[tm] = _name_only(ent['def_caller'])
+            if _name_only(ent.get('dc_title')) != canon.get(tm, {}).get('dc'):
+                viol.append({'where': 'coordinator_changes_2026.json', 'team': tm,
+                             'msg': f'def_caller declared but dc_title "{ent.get("dc_title")}" != canon dc '
+                                    f'"{canon.get(tm, {}).get("dc")}" — the title must not be lost'})
+
+    def dc_ok(tm, nm):
+        return _name_only(nm) in {canon.get(tm, {}).get('dc'), def_caller.get(tm)} - {None, ''}
+
+    def pc_ok(tm, nm):
+        return _name_only(nm) in {canon.get(tm, {}).get('hc'), canon.get(tm, {}).get('oc')} - {None, ''}
+
+    # (b) every claim site must agree with canon (or the declared def_caller for dc-role fields)
+    sites = [
+        ('scheme_2026.json',              'playcaller',   pc_ok),
+        ('scheme_2026.json',              'dc',           dc_ok),
+        ('coordinator_changes_2026.json', 'oc_name',      lambda tm, nm: _name_only(nm) == canon.get(tm, {}).get('oc')),
+        ('coordinator_changes_2026.json', 'dc_name',      dc_ok),
+        ('coordinator_scheme_2026.json',  'dc_name',      dc_ok),
+        ('boom/defensive_profile.json',   ('dc', 'name'), dc_ok),   # nested: TEAM -> dc -> name
+    ]
+    for fname, field, rule in sites:
+        p = os.path.join(HERE, fname)
+        if not os.path.exists(p):
+            continue
+        try:
+            obj = json.load(open(p, encoding='utf-8'))
+        except Exception:
+            continue
+        body = obj.get('teams') if isinstance(obj.get('teams'), dict) else obj
+        n_checked = 0
+        for tm, ent in body.items():
+            if str(tm).startswith('_') or not isinstance(ent, dict) or tm not in canon:
+                continue
+            if isinstance(field, tuple):
+                nm = ent
+                for part in field:
+                    nm = nm.get(part) if isinstance(nm, dict) else None
+            else:
+                nm = ent.get(field)
+            if not nm:
+                continue
+            n_checked += 1
+            if not rule(tm, nm):
+                exp = canon[tm]
+                extra = f', def_caller={def_caller[tm]}' if tm in def_caller else ''
+                fdesc = '.'.join(field) if isinstance(field, tuple) else field
+                viol.append({'where': f'{fname}:{fdesc}', 'team': tm,
+                             'msg': f'says "{nm}" but canon has hc={exp["hc"]}, oc={exp["oc"]}, dc={exp["dc"]}{extra}'})
+        fdesc = '.'.join(field) if isinstance(field, tuple) else field
+        ok.append((f'{fname}:{fdesc}', n_checked))
+    # boom/scheme_fit.json is PLAYER-keyed; its per-player `dc` echoes must at least be SOME team's
+    # current dc/def_caller (a fired coach's name lingering here = stale regenerated layer -> rebuild)
+    sfp = os.path.join(HERE, 'boom', 'scheme_fit.json')
+    if os.path.exists(sfp):
+        try:
+            sf = json.load(open(sfp, encoding='utf-8'))
+            valid = {v for tm in canon for v in (canon[tm].get('dc'), def_caller.get(tm)) if v}
+            n_checked = 0
+            for pk, rec in (sf.get('players') or {}).items():
+                nm = rec.get('dc') if isinstance(rec, dict) else None
+                if not nm:
+                    continue
+                n_checked += 1
+                if _name_only(nm) not in valid:
+                    viol.append({'where': 'boom/scheme_fit.json:dc', 'team': rec.get('team', '?'),
+                                 'msg': f'player "{pk}" carries dc "{nm}" — not any team\'s current dc/def_caller; '
+                                        f'regenerated layer is stale, rebuild build_scheme_fit.py'})
+            ok.append(('boom/scheme_fit.json:dc(player-level)', n_checked))
+        except Exception:
+            pass
+    # (c) the NFL-Brain resolver must read coaches from the SAME canon (no hardcoded drift)
+    bpath = os.path.join(HERE, 'brain', 'brain_common.py')
+    if os.path.exists(bpath):
+        if COACH_CANON not in open(bpath, encoding='utf-8', errors='ignore').read():
+            viol.append({'where': 'brain/brain_common.py', 'team': '-',
+                         'msg': f'brain entity resolver does not load coaches from {COACH_CANON} — a '
+                                f'hardcoded/absent coach mapping drifts silently from the verified canon'})
+    return viol, ok
+
+
+# ---- CHECK K: multi-layer fact replicas — same fact, N copies, zero drift ----
+# Generalizes Check J beyond coaching (FACT_DRIFT_AUDIT.md is the ranked register). A fact stored
+# as literal REPLICAS in multiple files must agree exactly; transform CHAINS (dc_prior_man_rate ->
+# man_rate_adj -> man26) are guarded by lineage/freshness instead, never value-equality.
+#   K1 SCHEDULE  — 4 copies (schedule_2026.csv, games_by_week.json, byes_2026.json,
+#                  boom/schedule2026.json) must tell one story: matchups, home/away, byes.
+#   K2 WIN TOTALS— web_teams.json win_total_2026 == statmenu team_env.win_total (move together).
+#   K3 ADP       — statmenu adp is a replica of dk_adp.csv ADP (exact float match at build time).
+#   K4 TEAM CODES— statmenu team codes ⊆ web_teams codes ∪ {FA}; brain _TEAMS == web_teams codes.
+def check_fact_replicas():
+    viol, ok = [], []
+
+    def _viol(dom, msg):
+        viol.append({'domain': dom, 'msg': msg})
+
+    # ---------- K1: schedule (4 copies) ----------
+    try:
+        gbw = json.load(open(os.path.join(HERE, 'pipeline/games_by_week.json')))
+        byes = json.load(open(os.path.join(HERE, 'pipeline/byes_2026.json')))
+        boomsch = json.load(open(os.path.join(HERE, 'boom/schedule2026.json')))
+        # boom: per-team [(wk, opp, home)]; bye = weeks 1..18 absent
+        boom_seq, boom_home, boom_bye = {}, {}, {}
+        for code, games in boomsch.items():
+            real = [g for g in games if str(g.get('opp', '')).upper() != 'BYE']
+            boom_seq[code] = tuple((g['wk'], g['opp']) for g in real)
+            for g in real:
+                boom_home[(code, g['wk'])] = bool(g.get('home'))
+            # bye = explicit BYE entries if the layer carries them, else the absent weeks
+            byes_explicit = sorted(g['wk'] for g in games if str(g.get('opp', '')).upper() == 'BYE')
+            boom_bye[code] = byes_explicit or sorted(set(range(1, 19)) - {g['wk'] for g in real})
+        # csv rows are FULL NAMES; map row->code by matching the opponent sequence to boom
+        import csv as _csv
+        rows = list(_csv.reader(open(os.path.join(HERE, 'pipeline/schedule_2026.csv'))))
+        hdr, n_matched = rows[0], 0
+        csv_home, csv_bye, csv_seq = {}, {}, {}
+        for r in rows[1:]:
+            if not r or not r[0].strip():
+                continue
+            seq, homes, byew = [], {}, None
+            for wk, cell in enumerate(r[1:19], start=1):
+                cell = cell.strip()
+                if cell.upper() == 'BYE':
+                    byew = wk
+                elif cell:
+                    away = cell.startswith('@')
+                    opp = cell.lstrip('@').strip()
+                    seq.append((wk, opp)); homes[wk] = (not away)
+            matches = [c for c, s in boom_seq.items() if s == tuple(seq)]
+            if len(matches) != 1:
+                _viol('schedule', f'csv row "{r[0]}" matches {len(matches)} boom/schedule2026 teams '
+                                  f'by opponent sequence — copies disagree on who plays whom')
+                continue
+            code = matches[0]; n_matched += 1
+            csv_seq[code], csv_bye[code] = seq, byew
+            for wk, h in homes.items():
+                if boom_home.get((code, wk)) != h:
+                    _viol('schedule', f'{code} wk{wk}: home/away differs (csv says {"home" if h else "away"}, '
+                                      f'boom/schedule2026 says {"home" if boom_home.get((code, wk)) else "away"})')
+            if byew is not None and [byew] != boom_bye.get(code, []):
+                _viol('schedule', f'{code}: bye differs (csv wk{byew} vs boom {boom_bye.get(code)})')
+            if byew is not None and byes.get(code) != byew:
+                _viol('schedule', f'{code}: bye differs (csv wk{byew} vs byes_2026.json wk{byes.get(code)})')
+        # games_by_week vs boom: unordered matchup sets per week
+        for wk_s, games in gbw.items():
+            wk = int(str(wk_s).lstrip('w'))
+            g1 = {frozenset(g[:2]) if isinstance(g, (list, tuple)) else frozenset((g['home'], g['away']))
+                  for g in games}
+            g2 = {frozenset((c, o)) for c, s in boom_seq.items() for w, o in s if w == wk}
+            for m in g1 ^ g2:
+                _viol('schedule', f'wk{wk}: matchup {sorted(m)} present in only one of '
+                                  f'games_by_week.json / boom-schedule2026.json')
+        ok.append(('schedule (4 copies)', n_matched))
+    except Exception as e:
+        _viol('schedule', f'cross-check unreadable: {e}')
+
+    # ---------- K2: win totals ----------
+    try:
+        wt = {t['team']: t.get('win_total_2026') for t in json.load(open(os.path.join(HERE, 'web_teams.json')))}
+        sm = json.load(open(os.path.join(HERE, 'boom/statmenu.json')))
+        env = {}
+        for v in sm.values():
+            te = v.get('team_env') or {}
+            if v.get('team') and te.get('win_total') is not None:
+                env.setdefault(v['team'], set()).add(te['win_total'])
+        n = 0
+        for tm, vals in sorted(env.items()):
+            n += 1
+            if len(vals) > 1:
+                _viol('win_totals', f'{tm}: statmenu team_env.win_total INTERNALLY inconsistent {sorted(vals)}')
+            elif wt.get(tm) is not None and wt[tm] not in vals:
+                _viol('win_totals', f'{tm}: web_teams says {wt[tm]}, statmenu team_env says {sorted(vals)} '
+                                    f'— replicas must move together')
+        ok.append(('win_totals (web_teams vs statmenu)', n))
+    except Exception as e:
+        _viol('win_totals', f'cross-check unreadable: {e}')
+
+    # ---------- K3: ADP replica + freshness ----------
+    try:
+        import csv as _csv
+        dk = {}
+        for row in _csv.DictReader(open(os.path.join(HERE, 'dk_adp.csv'))):
+            nm = (row.get('Name') or '').strip().lower()
+            try:
+                dk[nm] = float(row.get('ADP'))
+            except (TypeError, ValueError):
+                continue
+        sm = json.load(open(os.path.join(HERE, 'boom/statmenu.json')))
+        n = drift = 0
+        worst = None
+        for v in sm.values():
+            nm = (v.get('name') or '').lower()
+            if nm in dk and v.get('adp') is not None:
+                n += 1
+                d = abs(v['adp'] - dk[nm])
+                if d > 0.01:
+                    drift += 1
+                    if worst is None or d > worst[0]:
+                        worst = (d, v['name'], v['adp'], dk[nm])
+        if drift:
+            _viol('adp', f'{drift}/{n} players: statmenu.adp != dk_adp.csv ADP (worst: {worst[1]} '
+                         f'{worst[2]:.2f} vs {worst[3]:.2f}) — statmenu ADP is a replica; rebuild it from the CSV')
+        if os.path.getmtime(os.path.join(HERE, 'boom/statmenu.json')) < \
+           os.path.getmtime(os.path.join(HERE, 'dk_adp.csv')) - 5:
+            _viol('adp', 'dk_adp.csv is NEWER than boom/statmenu.json — the ADP replica shipped stale')
+        ok.append(('adp (statmenu vs dk_adp.csv)', n))
+    except Exception as e:
+        _viol('adp', f'cross-check unreadable: {e}')
+
+    # ---------- K4: team codes ----------
+    try:
+        wt_codes = {t['team'] for t in json.load(open(os.path.join(HERE, 'web_teams.json')))}
+        sm = json.load(open(os.path.join(HERE, 'boom/statmenu.json')))
+        sm_codes = {v.get('team') for v in sm.values() if v.get('team')}
+        stray = sorted(sm_codes - wt_codes - {'FA'})
+        if stray:
+            _viol('team_codes', f'statmenu team codes not in web_teams canon: {stray}')
+        bpath = os.path.join(HERE, 'brain', 'brain_common.py')
+        if os.path.exists(bpath):
+            btxt = open(bpath, encoding='utf-8', errors='ignore').read()
+            m = re.search(r'_TEAMS\s*=\s*\{(.*?)\n\}', btxt, re.S)
+            if m:
+                brain_codes = set(re.findall(r'"([A-Z]{2,3})":\s*\[', m.group(1)))
+                if brain_codes and brain_codes != wt_codes:
+                    _viol('team_codes', f'brain _TEAMS != web_teams: only-brain={sorted(brain_codes - wt_codes)}, '
+                                        f'only-canon={sorted(wt_codes - brain_codes)}')
+        ok.append(('team_codes (statmenu/brain vs web_teams)', len(sm_codes)))
+    except Exception as e:
+        _viol('team_codes', f'cross-check unreadable: {e}')
+    return viol, ok
+
+
 def utilization_map(src):
     """Informational: surface-entrypoint builders x core intel layers (token scan).
     Makes 'built-but-ignored' visible at a glance; REQUIRED_CONSUMPTION is the enforced subset."""
@@ -892,6 +1179,8 @@ def main():
     req_viol = check_required_layers(src)
     man_viol, man_entries = check_deliverable_manifest()
     gt_viol, gt_ok = check_ground_truth(src)
+    coach_viol, coach_ok = check_coaching_consistency()
+    fact_viol, fact_ok = check_fact_replicas()
     util = utilization_map(src)
 
     # ---- write report ----
@@ -900,7 +1189,7 @@ def main():
     L.append('_Catches "layer built but not properly consumed". Re-run: `python3 integration_audit.py`._\n')
     L.append('_Standing orders: `CLAUDE.md` · case law: `PLAYBOOK.md` · verified 2026 facts: `ground_truth_registry.json`._\n')
     L.append('_Data-side companion: `audit_roster_moves.py` (cross-source player-team check + roster-move reconciliation) → ROSTER_MOVES_2026.md._\n')
-    p0 = len(inv) + len(ss) + len(sd) + len(si) + len(surf_missing) + len(req_viol) + len(man_viol) + len(gt_viol)
+    p0 = len(inv) + len(ss) + len(sd) + len(si) + len(surf_missing) + len(req_viol) + len(man_viol) + len(gt_viol) + len(coach_viol) + len(fact_viol)
     L.append('## Summary\n')
     L.append(f'- **{len(inv)} invariant violations** (P0 -- a layer is being under-used)')
     L.append(f'- **{len(ss)} split-source files** (P0 -- one logical file read from two drifting copies)')
@@ -910,6 +1199,8 @@ def main():
     L.append(f'- **{len(req_viol)} required-consumption violations** (P0 -- a builder is missing a layer its analysis must rest on)')
     L.append(f'- **{len(man_viol)} deliverable-manifest violations** (P0 -- hand-authored deliverable with undeclared/unjustified layer usage)')
     L.append(f'- **{len(gt_viol)} ground-truth violations** (P0 -- verified post-cutoff facts missing, unconsumed, or contradicted)')
+    L.append(f'- **{len(coach_viol)} coaching-fact violations** (P0 -- a layer carries a stale coach role vs the verified canon)')
+    L.append(f'- **{len(fact_viol)} fact-replica violations** (P0 -- schedule/win-total/ADP/team-code copies disagree)')
     L.append(f'- **{len(surf_triage)} undeclared layers** (triage -- record-structured layers without surfaces declaration)\n')
     L.append(f'- **{len(orphans)} orphan candidates** (produced/on-disk, no consumer; terminals + verified curated dynamic reads excluded)')
     L.append(f'- **{len(missing_from_pipeline)} builders** produce artifacts but are absent from the pipeline runner')
@@ -962,6 +1253,30 @@ def main():
         L.append('\n**Registry entries verified this run:**\n')
         for pth, n in gt_ok:
             L.append(f'- `{pth}` — {n} consumer(s)')
+    L.append('')
+
+    L.append('## J. Coaching-fact consistency (P0 — one verified fact, N layers, zero drift)\n')
+    if coach_viol:
+        for v in coach_viol:
+            L.append(f'- P0: `{v["where"]}` [{v["team"]}] — {v["msg"]}')
+    else:
+        L.append('_None — every coach-role claim agrees with the web_teams.json canon '
+                 '(HC-calls-defense splits declared via def_caller/dc_title).._')
+    if coach_ok:
+        L.append('\n_Claim sites verified this run:_ ' + ', '.join(f'`{s}` ({n} teams)' for s, n in coach_ok))
+    L.append('')
+
+    L.append('## K. Multi-layer fact replicas (P0 — same fact, N copies, zero drift)\n')
+    L.append('_Ranked register + rationale: `FACT_DRIFT_AUDIT.md`. Replicas are value-checked here; '
+             'transform chains are guarded by F2 freshness; coaching roles by Check J; player→team '
+             'by `audit_roster_moves.py`._\n')
+    if fact_viol:
+        for v in fact_viol:
+            L.append(f'- P0 [{v["domain"]}]: {v["msg"]}')
+    else:
+        L.append('_None — schedule copies, win totals, ADP replica, and team codes all agree._')
+    if fact_ok:
+        L.append('\n_Verified this run:_ ' + ', '.join(f'`{s}` ({n})' for s, n in fact_ok))
     L.append('')
 
     L.append('## Utilization map (informational — core intel layers x surface builders)\n')
@@ -1092,6 +1407,12 @@ def main():
     print(f'  ground-truth (I)        : {len(gt_viol)}')
     for v in gt_viol:
         print(f'     - [{v["kind"]}] {v["what"]}: {v["msg"][:110]}')
+    print(f'  coaching-fact (J)       : {len(coach_viol)}')
+    for v in coach_viol:
+        print(f'     - {v["where"]} [{v["team"]}]: {v["msg"][:110]}')
+    print(f'  fact-replicas (K)       : {len(fact_viol)}')
+    for v in fact_viol:
+        print(f'     - [{v["domain"]}] {v["msg"][:110]}')
     print(f'  undeclared layers (G2)  : {len(surf_triage)}  (triage)')
     print('  standing orders: CLAUDE.md | case law: PLAYBOOK.md | verified 2026 facts: ground_truth_registry.json')
     if strict and p0:

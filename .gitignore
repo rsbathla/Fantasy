@@ -22,3 +22,11 @@ _dfs*.png
 
 # note: x_posts.json (raw tweet pulls) is intentionally TRACKED — it is tweet data, not a secret,
 # and all its posts also accumulate into the tracked x_store.json.
+
+# NFL-Brain local secrets — never commit
+brain/cookies/
+brain/brain.conf
+fl_stacksfull.zip
+*.zip
+data/
+NFL-master/

@@ -1,0 +1,16 @@
+curl 'https://www.fantasycruncher.com/lineup-rewind/draftkings/NFL/2025-week-18' \
+  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'cache-control: max-age=0' \
+  -b 'numberOfTeams=NaN; _iidt=hkKUO4SRhrwEMTLdhfOSBp/x7DCmObmcrT1Lc7MIrg0axaPRxxMycYMbCjHdhQDJ8rr5bo+kJE5QJE7ayr8TEivfN0W5h0zATpt+T2U=; _vid_t=q9jJFA51t+HQDfn+nVmhpLW4yY4CBj4Vc0sJLsVGUwZmUcaAPNmT3tXANiYXkKX5rRI4g5wtGiHwvjss1u4+0Zbs/3s4RUyIQQHWY0E=; PHPSESSID=2lm33d79pnqo2gd0cpnbo182ib' \
+  -H 'priority: u=0, i' \
+  -H 'referer: https://www.fantasycruncher.com/lineup-rewind/draftkings/NFL/2025-week-21' \
+  -H 'sec-ch-ua: "Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: document' \
+  -H 'sec-fetch-mode: navigate' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-fetch-user: ?1' \
+  -H 'upgrade-insecure-requests: 1' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36'

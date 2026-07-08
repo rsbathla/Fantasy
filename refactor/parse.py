@@ -57,9 +57,15 @@ def pnum(x):
 
 
 def ab(x):
-    """Strip a leading rank prefix and resolve to a team code ('1PIT' -> PIT, 'Raiders' -> LV)."""
-    s = re.sub(r"^\d+", "", str(x)).strip()
-    return team_code(s)
+    """Resolve to a team code. Try the RAW token first (protects '49ers' -> SF), then strip a leading
+    rank prefix only as a fallback ('1PIT' -> PIT). Was corrupting '49ers' -> 'ers' by stripping first."""
+    s = str(x).strip()
+    c = team_code(s)
+    _NFL32 = {'ARI','ATL','BAL','BUF','CAR','CHI','CIN','CLE','DAL','DEN','DET','GB','HOU','IND','JAX','KC',
+              'LAC','LAR','LV','MIA','MIN','NE','NO','NYG','NYJ','PHI','PIT','SEA','SF','TB','TEN','WAS'}
+    if c in _NFL32:
+        return c
+    return team_code(re.sub(r"^\d+", "", s).strip())
 
 
 def team_code(s):

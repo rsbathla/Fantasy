@@ -1,0 +1,2355 @@
+{
+ "week": 1,
+ "games": [
+  {
+   "game": "DAL vs NYG",
+   "home": "DAL",
+   "away": "NYG",
+   "env": {
+    "total": 50.5,
+    "sim_median": 49.6,
+    "imp": {
+     "DAL": 26.0,
+     "NYG": 25.0
+    },
+    "spread_fav": "DAL",
+    "spread": 1.0,
+    "ceiling": {
+     "DAL": 82.7,
+     "NYG": 63.5
+    }
+   },
+   "sides": {
+    "DAL": {
+     "offense": {
+      "identity": "up-tempo, balanced, wide/zone-run offense (env 94; 9.5 win total)",
+      "pass_rate": 55.4,
+      "pace_pctl": 100,
+      "run_scheme": "zone",
+      "win_total": 9.5,
+      "off_q": 90
+     },
+     "proe_2026": 0.7,
+     "attacks_defense": {
+      "shell": {
+       "man": 37.3,
+       "single_high": 65.9,
+       "two_high": 34.2
+      },
+      "soft_vs": [
+       {
+        "pos": "RB",
+        "edge": 4.9
+       },
+       {
+        "pos": "WR",
+        "edge": 3.0
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 38.7,
+        "ypr": 1.365
+       },
+       "vs_zone": {
+        "soft_pctl": 100.0,
+        "ypr": 1.738
+       },
+       "deep": {
+        "soft_pctl": 100.0,
+        "ypr": 3.749
+       },
+       "short": {
+        "soft_pctl": 41.9,
+        "ypr": 1.399
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 29.7,
+       "pass_rush_pctl": 76.6,
+       "run_def_pctl": 67.2
+      },
+      "funnels": [
+       "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
+       "RUN funnel (soft vs run, stiffer vs pass -> RB up)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": {
+       "dc": "Dennard Wilson",
+       "man_2025": 11.6,
+       "man_adj": 15.8,
+       "conf": "blend-prior"
+      }
+     },
+     "stack": {
+      "tier": "ELITE",
+      "ceiling": 82.7,
+      "w17_opp": "NYG"
+     }
+    },
+    "NYG": {
+     "offense": {
+      "identity": "Matt Nagy \u2014 up-tempo, balanced, wide/zone-run offense (env 26; 7.5 win total)",
+      "pass_rate": 50.6,
+      "pace_pctl": 84,
+      "run_scheme": "zone",
+      "win_total": 7.5,
+      "off_q": 26
+     },
+     "proe_2026": 0.0,
+     "attacks_defense": {
+      "shell": {
+       "man": 22.5,
+       "single_high": 58.8,
+       "two_high": 41.2
+      },
+      "soft_vs": [
+       {
+        "pos": "WR",
+        "edge": 9.5
+       },
+       {
+        "pos": "QB",
+        "edge": 8.1
+       },
+       {
+        "pos": "WR1",
+        "edge": 4.2
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 100.0,
+        "ypr": 1.789
+       },
+       "vs_zone": {
+        "soft_pctl": 87.1,
+        "ypr": 1.651
+       },
+       "deep": {
+        "soft_pctl": 93.5,
+        "ypr": 3.284
+       },
+       "short": {
+        "soft_pctl": 87.1,
+        "ypr": 1.546
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 23.4,
+       "pass_rush_pctl": 17.2,
+       "run_def_pctl": 10.9
+      },
+      "funnels": [
+       "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+       "WR1 funnel (top-CB beatable)"
+      ],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": {
+       "dc": "Christian Parker",
+       "man_2025": 12.2,
+       "man_adj": 14.9,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 63.5,
+      "w17_opp": "DAL"
+     }
+    }
+   }
+  },
+  {
+   "game": "BAL vs IND",
+   "home": "BAL",
+   "away": "IND",
+   "env": {
+    "total": 50.0,
+    "sim_median": 48.9,
+    "imp": {
+     "BAL": 26.5,
+     "IND": 23.5
+    },
+    "spread_fav": "BAL",
+    "spread": 3.0,
+    "ceiling": {
+     "BAL": 67.7,
+     "IND": 32.4
+    }
+   },
+   "sides": {
+    "BAL": {
+     "offense": {
+      "identity": "Declan Doyle \u2014 slow-paced, run-leaning, wide/zone-run offense (env 68; 11.5 win total)",
+      "pass_rate": 46.5,
+      "pace_pctl": 10,
+      "run_scheme": "zone",
+      "win_total": 11.5,
+      "off_q": 71
+     },
+     "proe_2026": -5.3,
+     "attacks_defense": {
+      "shell": {
+       "man": 30.2,
+       "single_high": 60.9,
+       "two_high": 39.0
+      },
+      "soft_vs": [
+       {
+        "pos": "WR",
+        "edge": 6.2
+       },
+       {
+        "pos": "WR2",
+        "edge": 5.0
+       },
+       {
+        "pos": "SLOT",
+        "edge": 3.8
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 32.3,
+        "ypr": 1.321
+       },
+       "vs_zone": {
+        "soft_pctl": 93.5,
+        "ypr": 1.658
+       },
+       "deep": {
+        "soft_pctl": 77.4,
+        "ypr": 3.1
+       },
+       "short": {
+        "soft_pctl": 83.9,
+        "ypr": 1.544
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 35.9,
+       "pass_rush_pctl": 29.7,
+       "run_def_pctl": 70.3
+      },
+      "funnels": [
+       "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+       "TE funnel (soft vs TE)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 67.7,
+      "w17_opp": "CIN"
+     }
+    },
+    "IND": {
+     "offense": {
+      "identity": "slow-paced, balanced, mixed-run offense (env 48; 7.5 win total)",
+      "pass_rate": 53.4,
+      "pace_pctl": 29,
+      "run_scheme": "mixed",
+      "win_total": 7.5,
+      "off_q": 45
+     },
+     "proe_2026": 1.0,
+     "attacks_defense": {
+      "shell": {
+       "man": 34.0,
+       "single_high": 69.1,
+       "two_high": 30.9
+      },
+      "soft_vs": [
+       {
+        "pos": "WR",
+        "edge": 5.5
+       },
+       {
+        "pos": "WR1",
+        "edge": 4.5
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 45.2,
+        "ypr": 1.373
+       },
+       "vs_zone": {
+        "soft_pctl": 51.6,
+        "ypr": 1.566
+       },
+       "deep": {
+        "soft_pctl": 61.3,
+        "ypr": 2.878
+       },
+       "short": {
+        "soft_pctl": 3.2,
+        "ypr": 1.311
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 76.6,
+       "pass_rush_pctl": 54.7,
+       "run_def_pctl": 57.8
+      },
+      "funnels": [
+       "WR1 funnel (top-CB beatable)",
+       "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": {
+       "dc": "Jesse Minter",
+       "man_2025": 23.2,
+       "man_adj": 21.1,
+       "conf": "blend-prior"
+      }
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 32.4,
+      "w17_opp": "CLE"
+     }
+    }
+   }
+  },
+  {
+   "game": "CIN vs TB",
+   "home": "CIN",
+   "away": "TB",
+   "env": {
+    "total": 50.0,
+    "sim_median": 48.7,
+    "imp": {
+     "CIN": 27.5,
+     "TB": 22.5
+    },
+    "spread_fav": "CIN",
+    "spread": 5.0,
+    "ceiling": {
+     "CIN": 84.1,
+     "TB": 79.0
+    }
+   },
+   "sides": {
+    "CIN": {
+     "offense": {
+      "identity": "up-tempo, pass-heavy, mixed-run offense (env 90; 9.5 win total)",
+      "pass_rate": 58.0,
+      "pace_pctl": 71,
+      "run_scheme": "mixed",
+      "win_total": 9.5,
+      "off_q": 87
+     },
+     "proe_2026": 4.3,
+     "attacks_defense": {
+      "shell": {
+       "man": 23.5,
+       "single_high": 59.9,
+       "two_high": 40.2
+      },
+      "soft_vs": [
+       {
+        "pos": "QB",
+        "edge": 3.5
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 93.5,
+        "ypr": 1.707
+       },
+       "vs_zone": {
+        "soft_pctl": 35.5,
+        "ypr": 1.539
+       },
+       "deep": {
+        "soft_pctl": 35.5,
+        "ypr": 2.529
+       },
+       "short": {
+        "soft_pctl": 93.5,
+        "ypr": 1.55
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 4.7,
+       "pass_rush_pctl": 35.9,
+       "run_def_pctl": 17.2
+      },
+      "funnels": [],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "ELITE",
+      "ceiling": 84.1,
+      "w17_opp": "BAL"
+     }
+    },
+    "TB": {
+     "offense": {
+      "identity": "Zac Robinson \u2014 up-tempo, balanced, mixed-run offense (env 64; 9.5 win total)",
+      "pass_rate": 52.8,
+      "pace_pctl": 90,
+      "run_scheme": "mixed",
+      "win_total": 9.5,
+      "off_q": 52
+     },
+     "proe_2026": 0.7,
+     "attacks_defense": {
+      "shell": {
+       "man": 29.9,
+       "single_high": 65.5,
+       "two_high": 34.6
+      },
+      "soft_vs": [
+       {
+        "pos": "TE",
+        "edge": 8.3
+       },
+       {
+        "pos": "RB",
+        "edge": 6.7
+       }
+      ],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -6.3
+       },
+       {
+        "pos": "WR1",
+        "edge": -3.6
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 61.3,
+        "ypr": 1.441
+       },
+       "vs_zone": {
+        "soft_pctl": 64.5,
+        "ypr": 1.598
+       },
+       "deep": {
+        "soft_pctl": 6.5,
+        "ypr": 2.329
+       },
+       "short": {
+        "soft_pctl": 77.4,
+        "ypr": 1.524
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 1.6,
+       "pass_rush_pctl": 23.4,
+       "run_def_pctl": 64.1
+      },
+      "funnels": [
+       "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
+       "RUN funnel (soft vs run, stiffer vs pass -> RB up)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "ELITE",
+      "ceiling": 79.0,
+      "w17_opp": "LAR"
+     }
+    }
+   }
+  },
+  {
+   "game": "LAR vs SF",
+   "home": "LAR",
+   "away": "SF",
+   "env": {
+    "total": 50.0,
+    "sim_median": 48.8,
+    "imp": {
+     "LAR": 27.0,
+     "SF": 23.0
+    },
+    "spread_fav": "LAR",
+    "spread": 3.5,
+    "ceiling": {
+     "LAR": 76.6,
+     "SF": 66.8
+    }
+   },
+   "sides": {
+    "LAR": {
+     "offense": {
+      "identity": "average-pace, balanced, mixed-run offense (env 98; 11.5 win total)",
+      "pass_rate": 54.7,
+      "pace_pctl": 61,
+      "run_scheme": "mixed",
+      "win_total": 11.5,
+      "off_q": 97
+     },
+     "proe_2026": 4.8,
+     "attacks_defense": {
+      "shell": {
+       "man": 20.0,
+       "single_high": 60.2,
+       "two_high": 39.8
+      },
+      "soft_vs": [],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 80.6,
+        "ypr": 1.505
+       },
+       "vs_zone": {
+        "soft_pctl": 25.8,
+        "ypr": 1.495
+       },
+       "deep": {
+        "soft_pctl": 45.2,
+        "ypr": 2.741
+       },
+       "short": {
+        "soft_pctl": 29.0,
+        "ypr": 1.382
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 54.7,
+       "pass_rush_pctl": 48.4,
+       "run_def_pctl": 82.8
+      },
+      "funnels": [
+       "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 76.6,
+      "w17_opp": "TB"
+     }
+    },
+    "SF": {
+     "offense": {
+      "identity": "average-pace, balanced, wide/zone-run offense (env 76; 10.5 win total)",
+      "pass_rate": 52.7,
+      "pace_pctl": 48,
+      "run_scheme": "zone",
+      "win_total": 10.5,
+      "off_q": 81
+     },
+     "proe_2026": 3.2,
+     "attacks_defense": {
+      "shell": {
+       "man": 19.4,
+       "single_high": 54.8,
+       "two_high": 45.3
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "RB",
+        "edge": -3.5
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 19.4,
+        "ypr": 1.285
+       },
+       "vs_zone": {
+        "soft_pctl": 38.7,
+        "ypr": 1.544
+       },
+       "deep": {
+        "soft_pctl": 22.6,
+        "ypr": 2.408
+       },
+       "short": {
+        "soft_pctl": 35.5,
+        "ypr": 1.389
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 51.6,
+       "pass_rush_pctl": 85.9,
+       "run_def_pctl": 60.9
+      },
+      "funnels": [
+       "WR1 funnel (top-CB beatable)"
+      ],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 66.8,
+      "w17_opp": "PHI"
+     }
+    }
+   }
+  },
+  {
+   "game": "DET vs NO",
+   "home": "DET",
+   "away": "NO",
+   "env": {
+    "total": 47.5,
+    "sim_median": 46.4,
+    "imp": {
+     "DET": 27.5,
+     "NO": 20.0
+    },
+    "spread_fav": "DET",
+    "spread": 7.5,
+    "ceiling": {
+     "DET": 84.5,
+     "NO": 45.8
+    }
+   },
+   "sides": {
+    "DET": {
+     "offense": {
+      "identity": "Drew Petzing \u2014 up-tempo, balanced, wide/zone-run offense (env 84; 10.5 win total)",
+      "pass_rate": 53.5,
+      "pace_pctl": 94,
+      "run_scheme": "zone",
+      "win_total": 10.5,
+      "off_q": 100
+     },
+     "proe_2026": -0.1,
+     "attacks_defense": {
+      "shell": {
+       "man": 20.4,
+       "single_high": 65.0,
+       "two_high": 35.0
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -3.8
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 54.8,
+        "ypr": 1.428
+       },
+       "vs_zone": {
+        "soft_pctl": 19.4,
+        "ypr": 1.494
+       },
+       "deep": {
+        "soft_pctl": 51.6,
+        "ypr": 2.802
+       },
+       "short": {
+        "soft_pctl": 80.6,
+        "ypr": 1.539
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 14.1,
+       "pass_rush_pctl": 60.9,
+       "run_def_pctl": 4.7
+      },
+      "funnels": [],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "ELITE",
+      "ceiling": 84.5,
+      "w17_opp": "CHI"
+     }
+    },
+    "NO": {
+     "offense": {
+      "identity": "average-pace, balanced, wide/zone-run offense (env 36; 7.5 win total)",
+      "pass_rate": 54.3,
+      "pace_pctl": 45,
+      "run_scheme": "zone",
+      "win_total": 7.5,
+      "off_q": 39
+     },
+     "proe_2026": -0.6,
+     "attacks_defense": {
+      "shell": {
+       "man": 37.6,
+       "single_high": 66.6,
+       "two_high": 33.4
+      },
+      "soft_vs": [
+       {
+        "pos": "WR",
+        "edge": 4.9
+       },
+       {
+        "pos": "SLOT",
+        "edge": 3.4
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 51.6,
+        "ypr": 1.422
+       },
+       "vs_zone": {
+        "soft_pctl": 83.9,
+        "ypr": 1.645
+       },
+       "deep": {
+        "soft_pctl": 58.1,
+        "ypr": 2.848
+       },
+       "short": {
+        "soft_pctl": 38.7,
+        "ypr": 1.395
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 85.9,
+       "pass_rush_pctl": 98.4,
+       "run_def_pctl": 79.7
+      },
+      "funnels": [
+       "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+       "SLOT funnel (slot WR exploitable)"
+      ],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 45.8,
+      "w17_opp": "ATL"
+     }
+    }
+   }
+  },
+  {
+   "game": "PHI vs WAS",
+   "home": "PHI",
+   "away": "WAS",
+   "env": {
+    "total": 47.5,
+    "sim_median": 46.6,
+    "imp": {
+     "PHI": 27.0,
+     "WAS": 20.5
+    },
+    "spread_fav": "PHI",
+    "spread": 6.5,
+    "ceiling": {
+     "PHI": 66.8,
+     "WAS": 24.9
+    }
+   },
+   "sides": {
+    "PHI": {
+     "offense": {
+      "identity": "Sean Mannion \u2014 average-pace, balanced, wide/zone-run offense (env 38; 10.5 win total)",
+      "pass_rate": 49.8,
+      "pace_pctl": 65,
+      "run_scheme": "zone",
+      "win_total": 10.5,
+      "off_q": 58
+     },
+     "proe_2026": 0.4,
+     "attacks_defense": {
+      "shell": {
+       "man": 26.9,
+       "single_high": 53.3,
+       "two_high": 46.7
+      },
+      "soft_vs": [
+       {
+        "pos": "WR2",
+        "edge": 3.3
+       },
+       {
+        "pos": "WR",
+        "edge": 3.1
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 67.7,
+        "ypr": 1.468
+       },
+       "vs_zone": {
+        "soft_pctl": 96.8,
+        "ypr": 1.683
+       },
+       "deep": {
+        "soft_pctl": 64.5,
+        "ypr": 2.902
+       },
+       "short": {
+        "soft_pctl": 100.0,
+        "ypr": 1.663
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 7.8,
+       "pass_rush_pctl": 20.3,
+       "run_def_pctl": 1.6
+      },
+      "funnels": [],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": {
+       "dc": "Daronte Jones",
+       "man_2025": 15.1,
+       "man_adj": 16.3,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 66.8,
+      "w17_opp": "SF"
+     }
+    },
+    "WAS": {
+     "offense": {
+      "identity": "David Blough \u2014 average-pace, balanced, mixed-run offense (env 14; 8.5 win total)",
+      "pass_rate": 52.1,
+      "pace_pctl": 42,
+      "run_scheme": "mixed",
+      "win_total": 8.5,
+      "off_q": 13
+     },
+     "proe_2026": -2.3,
+     "attacks_defense": {
+      "shell": {
+       "man": 27.9,
+       "single_high": 58.3,
+       "two_high": 41.7
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -4.8
+       },
+       {
+        "pos": "TE",
+        "edge": -4.7
+       },
+       {
+        "pos": "WR1",
+        "edge": -4.5
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 3.2,
+        "ypr": 1.154
+       },
+       "vs_zone": {
+        "soft_pctl": 3.2,
+        "ypr": 1.325
+       },
+       "deep": {
+        "soft_pctl": 12.9,
+        "ypr": 2.352
+       },
+       "short": {
+        "soft_pctl": 0.0,
+        "ypr": 1.215
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 73.4,
+       "pass_rush_pctl": 67.2,
+       "run_def_pctl": 54.7
+      },
+      "funnels": [
+       "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+       "TE fortress (avoid TEs)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "LOW",
+      "ceiling": 24.9,
+      "w17_opp": "JAX"
+     }
+    }
+   }
+  },
+  {
+   "game": "BUF vs HOU",
+   "home": "BUF",
+   "away": "HOU",
+   "env": {
+    "total": 46.5,
+    "sim_median": 45.5,
+    "imp": {
+     "BUF": 23.0,
+     "HOU": 23.5
+    },
+    "spread_fav": "HOU",
+    "spread": 0.5,
+    "ceiling": {
+     "BUF": 54.9,
+     "HOU": 46.9
+    }
+   },
+   "sides": {
+    "BUF": {
+     "offense": {
+      "identity": "average-pace, balanced, mixed-run offense (env 78; 10.5 win total)",
+      "pass_rate": 50.0,
+      "pace_pctl": 52,
+      "run_scheme": "mixed",
+      "win_total": 10.5,
+      "off_q": 68
+     },
+     "proe_2026": -3.0,
+     "attacks_defense": {
+      "shell": {
+       "man": 22.0,
+       "single_high": 56.0,
+       "two_high": 44.0
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -5.8
+       },
+       {
+        "pos": "QB",
+        "edge": -5.2
+       },
+       {
+        "pos": "WR1",
+        "edge": -3.4
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 74.2,
+        "ypr": 1.501
+       },
+       "vs_zone": {
+        "soft_pctl": 6.5,
+        "ypr": 1.36
+       },
+       "deep": {
+        "soft_pctl": 9.7,
+        "ypr": 2.33
+       },
+       "short": {
+        "soft_pctl": 12.9,
+        "ypr": 1.328
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 70.3,
+       "pass_rush_pctl": 92.2,
+       "run_def_pctl": 76.6
+      },
+      "funnels": [
+       "WR fortress (avoid WRs)"
+      ],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 54.9,
+      "w17_opp": "MIA"
+     }
+    },
+    "HOU": {
+     "offense": {
+      "identity": "up-tempo, balanced, mixed-run offense (env 22; 9.5 win total)",
+      "pass_rate": 55.0,
+      "pace_pctl": 74,
+      "run_scheme": "mixed",
+      "win_total": 9.5,
+      "off_q": 16
+     },
+     "proe_2026": 1.7,
+     "attacks_defense": {
+      "shell": {
+       "man": 26.0,
+       "single_high": 54.0,
+       "two_high": 45.9
+      },
+      "soft_vs": [
+       {
+        "pos": "RB",
+        "edge": 4.1
+       }
+      ],
+      "stingy_vs": [
+       {
+        "pos": "TE",
+        "edge": -5.6
+       },
+       {
+        "pos": "WR",
+        "edge": -4.1
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 41.9,
+        "ypr": 1.367
+       },
+       "vs_zone": {
+        "soft_pctl": 29.0,
+        "ypr": 1.496
+       },
+       "deep": {
+        "soft_pctl": 48.4,
+        "ypr": 2.762
+       },
+       "short": {
+        "soft_pctl": 51.6,
+        "ypr": 1.415
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 57.8,
+       "pass_rush_pctl": 64.1,
+       "run_def_pctl": 23.4
+      },
+      "funnels": [
+       "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+       "TE fortress (avoid TEs)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": {
+       "dc": "Jim Leonhard",
+       "man_2025": 18.8,
+       "man_adj": 18.2,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 46.9,
+      "w17_opp": "GB"
+     }
+    }
+   }
+  },
+  {
+   "game": "GB vs MIN",
+   "home": "GB",
+   "away": "MIN",
+   "env": {
+    "total": 46.0,
+    "sim_median": 44.9,
+    "imp": {
+     "GB": 23.5,
+     "MIN": 22.5
+    },
+    "spread_fav": "GB",
+    "spread": 1.0,
+    "ceiling": {
+     "GB": 63.4,
+     "MIN": 24.4
+    }
+   },
+   "sides": {
+    "GB": {
+     "offense": {
+      "identity": "slow-paced, balanced, mixed-run offense (env 57; 10.5 win total)",
+      "pass_rate": 53.1,
+      "pace_pctl": 23,
+      "run_scheme": "mixed",
+      "win_total": 10.5,
+      "off_q": 61
+     },
+     "proe_2026": -4.1,
+     "attacks_defense": {
+      "shell": {
+       "man": 19.6,
+       "single_high": 43.9,
+       "two_high": 56.1
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -8.3
+       },
+       {
+        "pos": "QB",
+        "edge": -4.6
+       },
+       {
+        "pos": "WR1",
+        "edge": -3.7
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 16.1,
+        "ypr": 1.269
+       },
+       "vs_zone": {
+        "soft_pctl": 71.0,
+        "ypr": 1.612
+       },
+       "deep": {
+        "soft_pctl": 83.9,
+        "ypr": 3.169
+       },
+       "short": {
+        "soft_pctl": 58.1,
+        "ypr": 1.467
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 82.8,
+       "pass_rush_pctl": 95.3,
+       "run_def_pctl": 14.1
+      },
+      "funnels": [
+       "WR fortress (avoid WRs)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 63.4,
+      "w17_opp": "HOU"
+     }
+    },
+    "MIN": {
+     "offense": {
+      "identity": "slow-paced, balanced, mixed-run offense (env 40; 8.5 win total)",
+      "pass_rate": 56.4,
+      "pace_pctl": 3,
+      "run_scheme": "mixed",
+      "win_total": 8.5,
+      "off_q": 48
+     },
+     "proe_2026": 0.2,
+     "attacks_defense": {
+      "shell": {
+       "man": 17.7,
+       "single_high": 51.1,
+       "two_high": 48.9
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "RB",
+        "edge": -3.1
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 9.7,
+        "ypr": 1.196
+       },
+       "vs_zone": {
+        "soft_pctl": 12.9,
+        "ypr": 1.452
+       },
+       "deep": {
+        "soft_pctl": 3.2,
+        "ypr": 2.315
+       },
+       "short": {
+        "soft_pctl": 16.1,
+        "ypr": 1.329
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 45.3,
+       "pass_rush_pctl": 82.8,
+       "run_def_pctl": 39.1
+      },
+      "funnels": [],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": {
+       "dc": "Jonathan Gannon",
+       "man_2025": 19.3,
+       "man_adj": 17.1,
+       "conf": "blend-prior"
+      }
+     },
+     "stack": {
+      "tier": "LOW",
+      "ceiling": 24.4,
+      "w17_opp": "NYJ"
+     }
+    }
+   }
+  },
+  {
+   "game": "CAR vs CHI",
+   "home": "CAR",
+   "away": "CHI",
+   "env": {
+    "total": 45.5,
+    "sim_median": 44.4,
+    "imp": {
+     "CAR": 21.5,
+     "CHI": 24.0
+    },
+    "spread_fav": "CHI",
+    "spread": 2.0,
+    "ceiling": {
+     "CAR": 13.8,
+     "CHI": 77.5
+    }
+   },
+   "sides": {
+    "CAR": {
+     "offense": {
+      "identity": "Brad Idzik \u2014 slow-paced, balanced, wide/zone-run offense (env 14; 6.5 win total)",
+      "pass_rate": 54.4,
+      "pace_pctl": 0,
+      "run_scheme": "zone",
+      "win_total": 6.5,
+      "off_q": 6
+     },
+     "proe_2026": -4.0,
+     "attacks_defense": {
+      "shell": {
+       "man": 30.8,
+       "single_high": 61.6,
+       "two_high": 38.5
+      },
+      "soft_vs": [],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 96.8,
+        "ypr": 1.774
+       },
+       "vs_zone": {
+        "soft_pctl": 77.4,
+        "ypr": 1.636
+       },
+       "deep": {
+        "soft_pctl": 96.8,
+        "ypr": 3.554
+       },
+       "short": {
+        "soft_pctl": 6.5,
+        "ypr": 1.314
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 67.2,
+       "pass_rush_pctl": 7.8,
+       "run_def_pctl": 26.6
+      },
+      "funnels": [
+       "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+       "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "LOW",
+      "ceiling": 13.8,
+      "w17_opp": "SEA"
+     }
+    },
+    "CHI": {
+     "offense": {
+      "identity": "up-tempo, balanced, wide/zone-run offense (env 70; 9.5 win total)",
+      "pass_rate": 51.6,
+      "pace_pctl": 94,
+      "run_scheme": "zone",
+      "win_total": 9.5,
+      "off_q": 77
+     },
+     "proe_2026": -3.0,
+     "attacks_defense": {
+      "shell": {
+       "man": 17.0,
+       "single_high": 59.5,
+       "two_high": 40.5
+      },
+      "soft_vs": [],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 29.0,
+        "ypr": 1.318
+       },
+       "vs_zone": {
+        "soft_pctl": 90.3,
+        "ypr": 1.652
+       },
+       "deep": {
+        "soft_pctl": 80.6,
+        "ypr": 3.165
+       },
+       "short": {
+        "soft_pctl": 61.3,
+        "ypr": 1.475
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 60.9,
+       "pass_rush_pctl": 4.7,
+       "run_def_pctl": 7.8
+      },
+      "funnels": [
+       "RUN funnel (soft vs run, stiffer vs pass -> RB up)",
+       "WR1 funnel (top-CB beatable)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "ELITE",
+      "ceiling": 77.5,
+      "w17_opp": "DET"
+     }
+    }
+   }
+  },
+  {
+   "game": "ARI vs LAC",
+   "home": "ARI",
+   "away": "LAC",
+   "env": {
+    "total": 45.0,
+    "sim_median": 43.7,
+    "imp": {
+     "ARI": 16.0,
+     "LAC": 29.0
+    },
+    "spread_fav": "LAC",
+    "spread": 13.0,
+    "ceiling": {
+     "ARI": 73.7,
+     "LAC": 70.5
+    }
+   },
+   "sides": {
+    "ARI": {
+     "offense": {
+      "identity": "Mike LaFleur \u2014 average-pace, pass-heavy, gap/power-run offense (env 76; 4.5 win total)",
+      "pass_rate": 58.9,
+      "pace_pctl": 58,
+      "run_scheme": "gap",
+      "win_total": 4.5,
+      "off_q": 94
+     },
+     "proe_2026": 8.3,
+     "attacks_defense": {
+      "shell": {
+       "man": 18.1,
+       "single_high": 52.5,
+       "two_high": 47.5
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -4.0
+       },
+       {
+        "pos": "QB",
+        "edge": -3.6
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 0.0,
+        "ypr": 1.107
+       },
+       "vs_zone": {
+        "soft_pctl": 9.7,
+        "ypr": 1.416
+       },
+       "deep": {
+        "soft_pctl": 41.9,
+        "ypr": 2.667
+       },
+       "short": {
+        "soft_pctl": 19.4,
+        "ypr": 1.362
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 79.7,
+       "pass_rush_pctl": 42.2,
+       "run_def_pctl": 29.7
+      },
+      "funnels": [
+       "WR fortress (avoid WRs)",
+       "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": {
+       "dc": "Chris O'Leary",
+       "man_2025": 18.2,
+       "man_adj": 17.9,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 73.7,
+      "w17_opp": "LV"
+     }
+    },
+    "LAC": {
+     "offense": {
+      "identity": "Mike McDaniel \u2014 average-pace, balanced, mixed-run offense (env 60; 10.5 win total)",
+      "pass_rate": 53.7,
+      "pace_pctl": 55,
+      "run_scheme": "mixed",
+      "win_total": 10.5,
+      "off_q": 35
+     },
+     "proe_2026": 2.4,
+     "attacks_defense": {
+      "shell": {
+       "man": 20.4,
+       "single_high": 50.3,
+       "two_high": 49.6
+      },
+      "soft_vs": [
+       {
+        "pos": "RB",
+        "edge": 3.6
+       },
+       {
+        "pos": "TE",
+        "edge": 3.3
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 22.6,
+        "ypr": 1.294
+       },
+       "vs_zone": {
+        "soft_pctl": 80.6,
+        "ypr": 1.642
+       },
+       "deep": {
+        "soft_pctl": 71.0,
+        "ypr": 3.028
+       },
+       "short": {
+        "soft_pctl": 48.4,
+        "ypr": 1.41
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 10.9,
+       "pass_rush_pctl": 79.7,
+       "run_def_pctl": 35.9
+      },
+      "funnels": [
+       "[SHIFT 25->26] 2025 graded RUN-funnel, 2026 engine projects PASS-funnel (roster/coordinator change)",
+       "RUN funnel (soft vs run, stiffer vs pass -> RB up)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 70.5,
+      "w17_opp": "KC"
+     }
+    }
+   }
+  },
+  {
+   "game": "NE vs SEA",
+   "home": "NE",
+   "away": "SEA",
+   "env": {
+    "total": 45.0,
+    "sim_median": 43.2,
+    "imp": {
+     "NE": 20.5,
+     "SEA": 24.0
+    },
+    "spread_fav": "SEA",
+    "spread": 3.5,
+    "ceiling": {
+     "NE": 70.0,
+     "SEA": 62.1
+    }
+   },
+   "sides": {
+    "NE": {
+     "offense": {
+      "identity": "average-pace, balanced, mixed-run offense (env 88; 10.5 win total)",
+      "pass_rate": 52.4,
+      "pace_pctl": 35,
+      "run_scheme": "mixed",
+      "win_total": 10.5,
+      "off_q": 84
+     },
+     "proe_2026": 5.4,
+     "attacks_defense": {
+      "shell": {
+       "man": 17.6,
+       "single_high": 49.8,
+       "two_high": 50.2
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -3.1
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 6.5,
+        "ypr": 1.16
+       },
+       "vs_zone": {
+        "soft_pctl": 16.1,
+        "ypr": 1.467
+       },
+       "deep": {
+        "soft_pctl": 25.8,
+        "ypr": 2.451
+       },
+       "short": {
+        "soft_pctl": 9.7,
+        "ypr": 1.322
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 64.1,
+       "pass_rush_pctl": 73.4,
+       "run_def_pctl": 48.4
+      },
+      "funnels": [
+       "TE funnel (soft vs TE)",
+       "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "HIGH",
+      "ceiling": 70.0,
+      "w17_opp": "DEN"
+     }
+    },
+    "SEA": {
+     "offense": {
+      "identity": "Brian Fleury \u2014 slow-paced, balanced, wide/zone-run offense (env 76; 10.5 win total)",
+      "pass_rate": 51.7,
+      "pace_pctl": 26,
+      "run_scheme": "zone",
+      "win_total": 10.5,
+      "off_q": 74
+     },
+     "proe_2026": -3.8,
+     "attacks_defense": {
+      "shell": {
+       "man": 28.5,
+       "single_high": 57.2,
+       "two_high": 42.8
+      },
+      "soft_vs": [],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 35.5,
+        "ypr": 1.324
+       },
+       "vs_zone": {
+        "soft_pctl": 58.1,
+        "ypr": 1.588
+       },
+       "deep": {
+        "soft_pctl": 16.1,
+        "ypr": 2.359
+       },
+       "short": {
+        "soft_pctl": 90.3,
+        "ypr": 1.547
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 95.3,
+       "pass_rush_pctl": 32.8,
+       "run_def_pctl": 89.1
+      },
+      "funnels": [
+       "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)"
+      ],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 62.1,
+      "w17_opp": "CAR"
+     }
+    }
+   }
+  },
+  {
+   "game": "ATL vs PIT",
+   "home": "ATL",
+   "away": "PIT",
+   "env": {
+    "total": 43.0,
+    "sim_median": 42.4,
+    "imp": {
+     "ATL": 19.5,
+     "PIT": 24.0
+    },
+    "spread_fav": "PIT",
+    "spread": 4.5,
+    "ceiling": {
+     "ATL": 28.0,
+     "PIT": 54.2
+    }
+   },
+   "sides": {
+    "ATL": {
+     "offense": {
+      "identity": "Tommy Rees \u2014 up-tempo, balanced, wide/zone-run offense (env 35; 6.5 win total)",
+      "pass_rate": 55.4,
+      "pace_pctl": 68,
+      "run_scheme": "zone",
+      "win_total": 6.5,
+      "off_q": 23
+     },
+     "proe_2026": -3.7,
+     "attacks_defense": {
+      "shell": {
+       "man": 33.5,
+       "single_high": 65.7,
+       "two_high": 34.3
+      },
+      "soft_vs": [
+       {
+        "pos": "WR",
+        "edge": 3.5
+       },
+       {
+        "pos": "TE",
+        "edge": 3.2
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 87.1,
+        "ypr": 1.518
+       },
+       "vs_zone": {
+        "soft_pctl": 32.3,
+        "ypr": 1.523
+       },
+       "deep": {
+        "soft_pctl": 90.3,
+        "ypr": 3.227
+       },
+       "short": {
+        "soft_pctl": 71.0,
+        "ypr": 1.497
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 32.8,
+       "pass_rush_pctl": 89.1,
+       "run_def_pctl": 20.3
+      },
+      "funnels": [
+       "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)",
+       "TE funnel (soft vs TE)"
+      ],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": {
+       "dc": "Patrick Graham",
+       "man_2025": 13.8,
+       "man_adj": 13.9,
+       "conf": "blend-prior"
+      }
+     },
+     "stack": {
+      "tier": "LOW",
+      "ceiling": 28.0,
+      "w17_opp": "NO"
+     }
+    },
+    "PIT": {
+     "offense": {
+      "identity": "Mike McCarthy \u2014 slow-paced, balanced, wide/zone-run offense (env 43; 8.5 win total)",
+      "pass_rate": 56.2,
+      "pace_pctl": 32,
+      "run_scheme": "zone",
+      "win_total": 8.5,
+      "off_q": 42
+     },
+     "proe_2026": -0.6,
+     "attacks_defense": {
+      "shell": {
+       "man": 21.6,
+       "single_high": 62.0,
+       "two_high": 37.9
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "TE",
+        "edge": -4.2
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 12.9,
+        "ypr": 1.252
+       },
+       "vs_zone": {
+        "soft_pctl": 45.2,
+        "ypr": 1.559
+       },
+       "deep": {
+        "soft_pctl": 38.7,
+        "ypr": 2.534
+       },
+       "short": {
+        "soft_pctl": 45.2,
+        "ypr": 1.401
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 92.2,
+       "pass_rush_pctl": 14.1,
+       "run_def_pctl": 32.8
+      },
+      "funnels": [
+       "TE fortress (avoid TEs)",
+       "2026 engine leans RUN-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 54.2,
+      "w17_opp": "TEN"
+     }
+    }
+   }
+  },
+  {
+   "game": "DEN vs KC",
+   "home": "DEN",
+   "away": "KC",
+   "env": {
+    "total": 42.5,
+    "sim_median": 41.1,
+    "imp": {
+     "DEN": 19.5,
+     "KC": 23.0
+    },
+    "spread_fav": "KC",
+    "spread": 3.0,
+    "ceiling": {
+     "DEN": 60.0,
+     "KC": 82.6
+    }
+   },
+   "sides": {
+    "DEN": {
+     "offense": {
+      "identity": "Davis Webb \u2014 up-tempo, balanced, mixed-run offense (env 35; 9.5 win total)",
+      "pass_rate": 55.9,
+      "pace_pctl": 74,
+      "run_scheme": "mixed",
+      "win_total": 9.5,
+      "off_q": 32
+     },
+     "proe_2026": 3.5,
+     "attacks_defense": {
+      "shell": {
+       "man": 28.8,
+       "single_high": 56.3,
+       "two_high": 43.7
+      },
+      "soft_vs": [],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 64.5,
+        "ypr": 1.442
+       },
+       "vs_zone": {
+        "soft_pctl": 61.3,
+        "ypr": 1.594
+       },
+       "deep": {
+        "soft_pctl": 74.2,
+        "ypr": 3.058
+       },
+       "short": {
+        "soft_pctl": 64.5,
+        "ypr": 1.475
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 48.4,
+       "pass_rush_pctl": 51.6,
+       "run_def_pctl": 51.6
+      },
+      "funnels": [],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 60.0,
+      "w17_opp": "NE"
+     }
+    },
+    "KC": {
+     "offense": {
+      "identity": "up-tempo, balanced, wide/zone-run offense (env 73; 10.5 win total)",
+      "pass_rate": 55.7,
+      "pace_pctl": 81,
+      "run_scheme": "zone",
+      "win_total": 10.5,
+      "off_q": 65
+     },
+     "proe_2026": 6.8,
+     "attacks_defense": {
+      "shell": {
+       "man": 35.8,
+       "single_high": 62.5,
+       "two_high": 37.6
+      },
+      "soft_vs": [
+       {
+        "pos": "SLOT",
+        "edge": 3.1
+       }
+      ],
+      "stingy_vs": [
+       {
+        "pos": "WR1",
+        "edge": -4.0
+       },
+       {
+        "pos": "RB",
+        "edge": -3.9
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 25.8,
+        "ypr": 1.31
+       },
+       "vs_zone": {
+        "soft_pctl": 0.0,
+        "ypr": 1.293
+       },
+       "deep": {
+        "soft_pctl": 0.0,
+        "ypr": 2.306
+       },
+       "short": {
+        "soft_pctl": 22.6,
+        "ypr": 1.375
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 98.4,
+       "pass_rush_pctl": 70.3,
+       "run_def_pctl": 73.4
+      },
+      "funnels": [
+       "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+       "SLOT funnel (slot WR exploitable)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "ELITE",
+      "ceiling": 82.6,
+      "w17_opp": "LAC"
+     }
+    }
+   }
+  },
+  {
+   "game": "LV vs MIA",
+   "home": "LV",
+   "away": "MIA",
+   "env": {
+    "total": 42.0,
+    "sim_median": 41.1,
+    "imp": {
+     "LV": 23.0,
+     "MIA": 19.0
+    },
+    "spread_fav": "LV",
+    "spread": 4.0,
+    "ceiling": {
+     "LV": 30.7,
+     "MIA": 23.9
+    }
+   },
+   "sides": {
+    "LV": {
+     "offense": {
+      "identity": "Klint Kubiak \u2014 slow-paced, balanced, wide/zone-run offense (env 10; 5.5 win total)",
+      "pass_rate": 55.8,
+      "pace_pctl": 6,
+      "run_scheme": "zone",
+      "win_total": 5.5,
+      "off_q": 10
+     },
+     "proe_2026": 1.5,
+     "attacks_defense": {
+      "shell": {
+       "man": 23.4,
+       "single_high": 53.2,
+       "two_high": 46.8
+      },
+      "soft_vs": [
+       {
+        "pos": "TE",
+        "edge": 3.6
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 71.0,
+        "ypr": 1.492
+       },
+       "vs_zone": {
+        "soft_pctl": 48.4,
+        "ypr": 1.564
+       },
+       "deep": {
+        "soft_pctl": 29.0,
+        "ypr": 2.471
+       },
+       "short": {
+        "soft_pctl": 54.8,
+        "ypr": 1.465
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 39.1,
+       "pass_rush_pctl": 1.6,
+       "run_def_pctl": 45.3
+      },
+      "funnels": [
+       "TE funnel (soft vs TE)"
+      ],
+      "lean_2026": "BALANCED",
+      "scheme_change_2026": {
+       "dc": "Sean Duggan",
+       "man_2025": 13.7,
+       "man_adj": 15.6,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 30.7,
+      "w17_opp": "ARI"
+     }
+    },
+    "MIA": {
+     "offense": {
+      "identity": "Bobby Slowik \u2014 slow-paced, balanced, wide/zone-run offense (env 20; 4.5 win total)",
+      "pass_rate": 51.1,
+      "pace_pctl": 16,
+      "run_scheme": "zone",
+      "win_total": 4.5,
+      "off_q": 0
+     },
+     "proe_2026": -4.2,
+     "attacks_defense": {
+      "shell": {
+       "man": 14.8,
+       "single_high": 60.4,
+       "two_high": 39.6
+      },
+      "soft_vs": [
+       {
+        "pos": "SLOT",
+        "edge": 4.0
+       },
+       {
+        "pos": "WR",
+        "edge": 3.4
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 58.1,
+        "ypr": 1.438
+       },
+       "vs_zone": {
+        "soft_pctl": 54.8,
+        "ypr": 1.576
+       },
+       "deep": {
+        "soft_pctl": 54.8,
+        "ypr": 2.814
+       },
+       "short": {
+        "soft_pctl": 67.7,
+        "ypr": 1.479
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 17.2,
+       "pass_rush_pctl": 10.9,
+       "run_def_pctl": 85.9
+      },
+      "funnels": [
+       "SLOT funnel (slot WR exploitable)",
+       "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": {
+       "dc": "Rob Leonard",
+       "man_2025": 15.6,
+       "man_adj": 16.6,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "LOW",
+      "ceiling": 23.9,
+      "w17_opp": "BUF"
+     }
+    }
+   }
+  },
+  {
+   "game": "CLE vs JAX",
+   "home": "CLE",
+   "away": "JAX",
+   "env": {
+    "total": 41.5,
+    "sim_median": 40.8,
+    "imp": {
+     "CLE": 18.0,
+     "JAX": 24.0
+    },
+    "spread_fav": "JAX",
+    "spread": 6.0,
+    "ceiling": {
+     "CLE": 46.2,
+     "JAX": 50.3
+    }
+   },
+   "sides": {
+    "CLE": {
+     "offense": {
+      "identity": "Todd Monken \u2014 up-tempo, balanced, wide/zone-run offense (env 8; 6.5 win total)",
+      "pass_rate": 54.1,
+      "pace_pctl": 87,
+      "run_scheme": "zone",
+      "win_total": 6.5,
+      "off_q": 3
+     },
+     "proe_2026": -0.3,
+     "attacks_defense": {
+      "shell": {
+       "man": 18.3,
+       "single_high": 52.4,
+       "two_high": 47.6
+      },
+      "soft_vs": [
+       {
+        "pos": "WR",
+        "edge": 3.2
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 83.9,
+        "ypr": 1.506
+       },
+       "vs_zone": {
+        "soft_pctl": 22.6,
+        "ypr": 1.494
+       },
+       "deep": {
+        "soft_pctl": 87.1,
+        "ypr": 3.203
+       },
+       "short": {
+        "soft_pctl": 25.8,
+        "ypr": 1.376
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 89.1,
+       "pass_rush_pctl": 39.1,
+       "run_def_pctl": 42.2
+      },
+      "funnels": [
+       "[SHIFT 25->26] 2025 graded PASS-funnel, 2026 engine projects RUN-funnel (roster/coordinator change)",
+       "PASS funnel (soft vs pass, stiffer vs run -> WR/TE/QB up)"
+      ],
+      "lean_2026": "RUN",
+      "scheme_change_2026": null
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 46.2,
+      "w17_opp": "IND"
+     }
+    },
+    "JAX": {
+     "offense": {
+      "identity": "average-pace, balanced, mixed-run offense (env 56; 8.5 win total)",
+      "pass_rate": 56.1,
+      "pace_pctl": 39,
+      "run_scheme": "mixed",
+      "win_total": 8.5,
+      "off_q": 55
+     },
+     "proe_2026": 4.3,
+     "attacks_defense": {
+      "shell": {
+       "man": 40.0,
+       "single_high": 69.2,
+       "two_high": 30.9
+      },
+      "soft_vs": [],
+      "stingy_vs": [
+       {
+        "pos": "WR",
+        "edge": -5.3
+       }
+      ],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 48.4,
+        "ypr": 1.399
+       },
+       "vs_zone": {
+        "soft_pctl": 41.9,
+        "ypr": 1.547
+       },
+       "deep": {
+        "soft_pctl": 32.3,
+        "ypr": 2.504
+       },
+       "short": {
+        "soft_pctl": 96.8,
+        "ypr": 1.555
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 20.3,
+       "pass_rush_pctl": 45.3,
+       "run_def_pctl": 92.2
+      },
+      "funnels": [
+       "WR fortress (avoid WRs)",
+       "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": {
+       "dc": "Mike Rutenberg",
+       "man_2025": 10.8,
+       "man_adj": 14.2,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 50.3,
+      "w17_opp": "WAS"
+     }
+    }
+   }
+  },
+  {
+   "game": "NYJ vs TEN",
+   "home": "NYJ",
+   "away": "TEN",
+   "env": {
+    "total": 41.0,
+    "sim_median": 39.8,
+    "imp": {
+     "NYJ": 19.0,
+     "TEN": 22.0
+    },
+    "spread_fav": "TEN",
+    "spread": 3.5,
+    "ceiling": {
+     "NYJ": 22.8,
+     "TEN": 56.2
+    }
+   },
+   "sides": {
+    "NYJ": {
+     "offense": {
+      "identity": "Frank Reich \u2014 slow-paced, balanced, wide/zone-run offense (env 16; 5.5 win total)",
+      "pass_rate": 53.7,
+      "pace_pctl": 13,
+      "run_scheme": "zone",
+      "win_total": 5.5,
+      "off_q": 29
+     },
+     "proe_2026": -5.7,
+     "attacks_defense": {
+      "shell": {
+       "man": 20.3,
+       "single_high": 51.7,
+       "two_high": 48.2
+      },
+      "soft_vs": [
+       {
+        "pos": "WR1",
+        "edge": 3.3
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 90.3,
+        "ypr": 1.594
+       },
+       "vs_zone": {
+        "soft_pctl": 67.7,
+        "ypr": 1.603
+       },
+       "deep": {
+        "soft_pctl": 67.7,
+        "ypr": 2.99
+       },
+       "short": {
+        "soft_pctl": 32.3,
+        "ypr": 1.385
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 42.2,
+       "pass_rush_pctl": 57.8,
+       "run_def_pctl": 95.3
+      },
+      "funnels": [
+       "WR1 funnel (top-CB beatable)",
+       "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": {
+       "dc": "Gus Bradley",
+       "man_2025": 18.2,
+       "man_adj": 14.1,
+       "conf": "blend-prior"
+      }
+     },
+     "stack": {
+      "tier": "LOW",
+      "ceiling": 22.8,
+      "w17_opp": "MIN"
+     }
+    },
+    "TEN": {
+     "offense": {
+      "identity": "Brian Daboll \u2014 slow-paced, balanced, mixed-run offense (env 12; 6.5 win total)",
+      "pass_rate": 56.4,
+      "pace_pctl": 19,
+      "run_scheme": "mixed",
+      "win_total": 6.5,
+      "off_q": 19
+     },
+     "proe_2026": -0.1,
+     "attacks_defense": {
+      "shell": {
+       "man": 33.3,
+       "single_high": 60.0,
+       "two_high": 40.0
+      },
+      "soft_vs": [
+       {
+        "pos": "QB",
+        "edge": 3.0
+       },
+       {
+        "pos": "RB",
+        "edge": 3.0
+       }
+      ],
+      "stingy_vs": [],
+      "cover_splits": {
+       "vs_man": {
+        "soft_pctl": 77.4,
+        "ypr": 1.503
+       },
+       "vs_zone": {
+        "soft_pctl": 74.2,
+        "ypr": 1.626
+       },
+       "deep": {
+        "soft_pctl": 19.4,
+        "ypr": 2.366
+       },
+       "short": {
+        "soft_pctl": 74.2,
+        "ypr": 1.502
+       }
+      },
+      "units": {
+       "pass_cov_pctl": 26.6,
+       "pass_rush_pctl": 26.6,
+       "run_def_pctl": 98.4
+      },
+      "funnels": [
+       "OUTSIDE funnel (boundary WRs exploitable)",
+       "2026 engine leans PASS-funnel (roster-adjusted; 2025 graded balanced)"
+      ],
+      "lean_2026": "PASS",
+      "scheme_change_2026": {
+       "dc": "Brian Duker",
+       "man_2025": 12.4,
+       "man_adj": 15.0,
+       "conf": "regress-mean"
+      }
+     },
+     "stack": {
+      "tier": "MID",
+      "ceiling": 56.2,
+      "w17_opp": "PIT"
+     }
+    }
+   }
+  }
+ ]
+}

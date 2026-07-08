@@ -11,7 +11,7 @@ FULL2AB={'cardinals':'ARI','falcons':'ATL','ravens':'BAL','bills':'BUF','panther
 def pnum(v):
     m=re.search(r'-?\d+\.?\d*',str(v)); return float(m.group()) if m else None
 def ab(x):
-    x=re.sub(r'^\d+','',str(x).strip())
+    x=re.sub(r'^\d+(?=[\s.\)\]:,\-]|$)','',str(x).strip())   # strip a leading RANK number (digits then a separator/end), never digits glued to letters (protects "49ers" -> SF; was corrupting it to "ers")
     if nt(x) in {'ARI','ATL','BAL','BUF','CAR','CHI','CIN','CLE','DAL','DEN','DET','GB','HOU','IND','JAX','KC','LAC','LAR','LV','MIA','MIN','NE','NO','NYG','NYJ','PHI','PIT','SEA','SF','TB','TEN','WAS'}: return nt(x)
     xl=x.lower()
     for k,v in FULL2AB.items():

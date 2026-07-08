@@ -242,10 +242,10 @@
   "teams": {
     "ARI": {
       "team": "ARI",
-      "pass_cov_pctl": 10.9,
+      "pass_cov_pctl": 14.1,
       "pass_cov_pctl_2025": 1.6,
       "pass_cov_rate_2026": -0.0069,
-      "pass_rush_pctl": 79.7,
+      "pass_rush_pctl": 76.6,
       "pass_rush_pctl_2025": 92.2,
       "pass_rush_rate_2026": 0.0129,
       "run_def_pctl": 35.9,
@@ -958,7 +958,7 @@
     },
     "CHI": {
       "team": "CHI",
-      "pass_cov_pctl": 67.2,
+      "pass_cov_pctl": 70.3,
       "pass_cov_pctl_2025": 51.6,
       "pass_cov_rate_2026": 0.0072,
       "pass_rush_pctl": 7.8,
@@ -1107,13 +1107,13 @@
     },
     "CIN": {
       "team": "CIN",
-      "pass_cov_pctl": 1.6,
+      "pass_cov_pctl": 4.7,
       "pass_cov_pctl_2025": 10.9,
       "pass_cov_rate_2026": -0.0082,
-      "pass_rush_pctl": 23.4,
+      "pass_rush_pctl": 20.3,
       "pass_rush_pctl_2025": 42.2,
       "pass_rush_rate_2026": -0.0041,
-      "run_def_pctl": 64.1,
+      "run_def_pctl": 67.2,
       "run_def_pctl_2025": 51.6,
       "run_def_rate_2026": 0.0059,
       "pass_cov_epatgt": 0.1351,
@@ -1278,7 +1278,7 @@
       "pass_rush_pctl": 45.3,
       "pass_rush_pctl_2025": 79.7,
       "pass_rush_rate_2026": 0.0039,
-      "run_def_pctl": 92.2,
+      "run_def_pctl": 95.3,
       "run_def_pctl_2025": 89.1,
       "run_def_rate_2026": 0.0124,
       "pass_cov_epatgt": 0.0357,
@@ -1428,13 +1428,13 @@
       "pass_cov_rate_2026": -0.0055,
       "pass_rush_pctl": 17.2,
       "pass_rush_pctl_2025": 32.8,
-      "pass_rush_rate_2026": -0.0047,
+      "pass_rush_rate_2026": -0.0063,
       "run_def_pctl": 10.9,
       "run_def_pctl_2025": 4.7,
       "run_def_rate_2026": -0.0005,
       "pass_cov_epatgt": 0.0996,
       "pass_cov_strength": -0.0055,
-      "pass_rush_strength": -0.0047,
+      "pass_rush_strength": -0.0063,
       "run_def_strength": -0.0005,
       "rookies_2026": [
         [
@@ -1547,11 +1547,11 @@
           "snaps": 182
         },
         {
-          "name": "Osa Odighizuwa",
-          "pos": "DT",
-          "ps": 2.4,
-          "rate": 0.0049,
-          "snaps": 485
+          "name": "Malachi Lawrence",
+          "pos": "DE",
+          "ps": 0.0,
+          "rate": 0.0,
+          "snaps": 365
         }
       ],
       "top_run_def": [
@@ -1600,6 +1600,14 @@
           "from": "GB",
           "to": "DAL",
           "ps": 5.2,
+          "conf": true
+        },
+        {
+          "player": "Quinnen Williams",
+          "unit": "pass_rush",
+          "from": "2T",
+          "to": "DAL",
+          "ps": -2.2,
           "conf": true
         },
         {
@@ -1862,7 +1870,7 @@
       "pass_cov_pctl": 45.3,
       "pass_cov_pctl_2025": 29.7,
       "pass_cov_rate_2026": -0.0013,
-      "pass_rush_pctl": 82.8,
+      "pass_rush_pctl": 79.7,
       "pass_rush_pctl_2025": 82.8,
       "pass_rush_rate_2026": 0.0129,
       "run_def_pctl": 39.1,
@@ -2022,7 +2030,7 @@
     },
     "HOU": {
       "team": "HOU",
-      "pass_cov_pctl": 70.3,
+      "pass_cov_pctl": 73.4,
       "pass_cov_pctl_2025": 73.4,
       "pass_cov_rate_2026": 0.0072,
       "pass_rush_pctl": 92.2,
@@ -2177,17 +2185,17 @@
     },
     "IND": {
       "team": "IND",
-      "pass_cov_pctl": 35.9,
+      "pass_cov_pctl": 29.7,
       "pass_cov_pctl_2025": 14.1,
-      "pass_cov_rate_2026": -0.0033,
+      "pass_cov_rate_2026": -0.0048,
       "pass_rush_pctl": 29.7,
       "pass_rush_pctl_2025": 35.9,
       "pass_rush_rate_2026": -0.0009,
       "run_def_pctl": 70.3,
       "run_def_pctl_2025": 17.2,
       "run_def_rate_2026": 0.0073,
-      "pass_cov_epatgt": 0.1664,
-      "pass_cov_strength": -0.0033,
+      "pass_cov_epatgt": 0.1491,
+      "pass_cov_strength": -0.0048,
       "pass_rush_strength": -0.0009,
       "run_def_strength": 0.0073,
       "rookies_2026": [
@@ -2304,6 +2312,14 @@
         }
       ],
       "moves_2026": [
+        {
+          "player": "Sauce Gardner",
+          "unit": "coverage",
+          "from": "2T",
+          "to": "IND",
+          "ps": -5.2,
+          "conf": true
+        },
         {
           "player": "Arden Key",
           "unit": "pass_rush",
@@ -2458,7 +2474,7 @@
       "pass_cov_pctl": 48.4,
       "pass_cov_pctl_2025": 60.9,
       "pass_cov_rate_2026": 0.0005,
-      "pass_rush_pctl": 51.6,
+      "pass_rush_pctl": 48.4,
       "pass_rush_pctl_2025": 60.9,
       "pass_rush_rate_2026": 0.0042,
       "run_def_pctl": 51.6,
@@ -2735,7 +2751,7 @@
       "pass_cov_pctl": 51.6,
       "pass_cov_pctl_2025": 64.1,
       "pass_cov_rate_2026": 0.0015,
-      "pass_rush_pctl": 85.9,
+      "pass_rush_pctl": 82.8,
       "pass_rush_pctl_2025": 57.8,
       "pass_rush_rate_2026": 0.0142,
       "run_def_pctl": 60.9,
@@ -2882,7 +2898,7 @@
       "pass_rush_pctl": 10.9,
       "pass_rush_pctl_2025": 20.3,
       "pass_rush_rate_2026": -0.0074,
-      "run_def_pctl": 85.9,
+      "run_def_pctl": 89.1,
       "run_def_pctl_2025": 98.4,
       "run_def_rate_2026": 0.0107,
       "pass_cov_epatgt": 0.192,
@@ -3358,7 +3374,7 @@
       "pass_rush_pctl": 32.8,
       "pass_rush_pctl_2025": 48.4,
       "pass_rush_rate_2026": 0.0005,
-      "run_def_pctl": 89.1,
+      "run_def_pctl": 92.2,
       "run_def_pctl_2025": 67.2,
       "run_def_rate_2026": 0.0107,
       "pass_cov_epatgt": -0.0233,
@@ -3479,19 +3495,19 @@
     },
     "NO": {
       "team": "NO",
-      "pass_cov_pctl": 14.1,
+      "pass_cov_pctl": 1.6,
       "pass_cov_pctl_2025": 42.2,
-      "pass_cov_rate_2026": -0.0062,
+      "pass_cov_rate_2026": -0.0083,
       "pass_rush_pctl": 60.9,
       "pass_rush_pctl_2025": 85.9,
       "pass_rush_rate_2026": 0.0069,
       "run_def_pctl": 4.7,
       "run_def_pctl_2025": 20.3,
-      "run_def_rate_2026": -0.0031,
-      "pass_cov_epatgt": 0.1169,
-      "pass_cov_strength": -0.0062,
+      "run_def_rate_2026": -0.0039,
+      "pass_cov_epatgt": 0.1159,
+      "pass_cov_strength": -0.0083,
       "pass_rush_strength": 0.0069,
-      "run_def_strength": -0.0031,
+      "run_def_strength": -0.0039,
       "rookies_2026": [
         [
           "Christen Miller",
@@ -3517,18 +3533,18 @@
           "snaps": 487
         },
         {
-          "name": "Alontae Taylor",
-          "pos": "CB",
-          "ps": -0.8,
-          "rate": -0.0013,
-          "snaps": 607
-        },
-        {
           "name": "Kool-Aid McKinstry",
           "pos": "CB",
           "ps": -5.4,
           "rate": -0.0095,
           "snaps": 565
+        },
+        {
+          "name": "Quincy Riley",
+          "pos": "CB",
+          "ps": -7.1,
+          "rate": -0.0196,
+          "snaps": 364
         }
       ],
       "top_pass_rush": [
@@ -3570,11 +3586,11 @@
           "snaps": 301
         },
         {
-          "name": "Alontae Taylor",
+          "name": "Kool-Aid McKinstry",
           "pos": "CB",
-          "ps": 0.6,
-          "rate": 0.0013,
-          "snaps": 458
+          "ps": -1.4,
+          "rate": -0.0029,
+          "snaps": 464
         }
       ],
       "moves_2026": [
@@ -3598,19 +3614,19 @@
     },
     "NYG": {
       "team": "NYG",
-      "pass_cov_pctl": 29.7,
+      "pass_cov_pctl": 35.9,
       "pass_cov_pctl_2025": 23.4,
-      "pass_cov_rate_2026": -0.005,
-      "pass_rush_pctl": 76.6,
+      "pass_cov_rate_2026": -0.0038,
+      "pass_rush_pctl": 85.9,
       "pass_rush_pctl_2025": 76.6,
-      "pass_rush_rate_2026": 0.0124,
-      "run_def_pctl": 67.2,
+      "pass_rush_rate_2026": 0.0144,
+      "run_def_pctl": 64.1,
       "run_def_pctl_2025": 92.2,
-      "run_def_rate_2026": 0.0066,
-      "pass_cov_epatgt": 0.2727,
-      "pass_cov_strength": -0.005,
-      "pass_rush_strength": 0.0124,
-      "run_def_strength": 0.0066,
+      "run_def_rate_2026": 0.0052,
+      "pass_cov_epatgt": 0.2588,
+      "pass_cov_strength": -0.0038,
+      "pass_rush_strength": 0.0144,
+      "run_def_strength": 0.0052,
       "rookies_2026": [
         [
           "Arvell Reese",
@@ -3673,28 +3689,21 @@
           "snaps": 509
         },
         {
-          "name": "Odafe Oweh",
-          "pos": "LB",
-          "ps": 2.2,
-          "rate": 0.0051,
-          "snaps": 435
-        },
-        {
           "name": "Abdul Carter",
           "pos": "LB",
           "ps": 0.0,
           "rate": 0.0,
           "snaps": 494
+        },
+        {
+          "name": "Kayvon Thibodeaux",
+          "pos": "DE",
+          "ps": -0.9,
+          "rate": -0.0027,
+          "snaps": 338
         }
       ],
       "top_run_def": [
-        {
-          "name": "Nick Cross",
-          "pos": "S",
-          "ps": 7.4,
-          "rate": 0.0149,
-          "snaps": 499
-        },
         {
           "name": "Tyler Nubin",
           "pos": "S",
@@ -3708,6 +3717,13 @@
           "ps": 4.2,
           "rate": 0.0144,
           "snaps": 290
+        },
+        {
+          "name": "Jevon Holland",
+          "pos": "S",
+          "ps": 3.6,
+          "rate": 0.0117,
+          "snaps": 310
         }
       ],
       "moves_2026": [
@@ -3720,35 +3736,11 @@
           "conf": true
         },
         {
-          "player": "Nick Cross",
-          "unit": "coverage",
-          "from": "IND",
-          "to": "NYG",
-          "ps": -7.0,
-          "conf": true
-        },
-        {
-          "player": "Odafe Oweh",
-          "unit": "pass_rush",
-          "from": "2T",
-          "to": "NYG",
-          "ps": 2.2,
-          "conf": true
-        },
-        {
           "player": "Tremaine Edmunds",
           "unit": "run_def",
           "from": "CHI",
           "to": "NYG",
           "ps": -2.1,
-          "conf": true
-        },
-        {
-          "player": "Nick Cross",
-          "unit": "run_def",
-          "from": "IND",
-          "to": "NYG",
-          "ps": 7.4,
           "conf": true
         }
       ]
@@ -3982,17 +3974,17 @@
     },
     "PHI": {
       "team": "PHI",
-      "pass_cov_pctl": 73.4,
+      "pass_cov_pctl": 67.2,
       "pass_cov_pctl_2025": 79.7,
-      "pass_cov_rate_2026": 0.0076,
+      "pass_cov_rate_2026": 0.0071,
       "pass_rush_pctl": 67.2,
       "pass_rush_pctl_2025": 54.7,
       "pass_rush_rate_2026": 0.0078,
       "run_def_pctl": 54.7,
       "run_def_pctl_2025": 39.1,
       "run_def_rate_2026": 0.0046,
-      "pass_cov_epatgt": -0.0209,
-      "pass_cov_strength": 0.0076,
+      "pass_cov_epatgt": -0.0375,
+      "pass_cov_strength": 0.0071,
       "pass_rush_strength": 0.0078,
       "run_def_strength": 0.0046,
       "rookies_2026": [],
@@ -4066,6 +4058,14 @@
         }
       ],
       "moves_2026": [
+        {
+          "player": "Riq Woolen",
+          "unit": "coverage",
+          "from": "SEA",
+          "to": "PHI",
+          "ps": 2.8,
+          "conf": true
+        },
         {
           "player": "Jonathan Jones",
           "unit": "coverage",
@@ -4199,15 +4199,15 @@
       "team": "SEA",
       "pass_cov_pctl": 64.1,
       "pass_cov_pctl_2025": 85.9,
-      "pass_cov_rate_2026": 0.0066,
+      "pass_cov_rate_2026": 0.0068,
       "pass_rush_pctl": 73.4,
       "pass_rush_pctl_2025": 39.1,
       "pass_rush_rate_2026": 0.0102,
       "run_def_pctl": 48.4,
       "run_def_pctl_2025": 29.7,
       "run_def_rate_2026": 0.0045,
-      "pass_cov_epatgt": -0.0389,
-      "pass_cov_strength": 0.0066,
+      "pass_cov_epatgt": -0.0186,
+      "pass_cov_strength": 0.0068,
       "pass_rush_strength": 0.0102,
       "run_def_strength": 0.0045,
       "rookies_2026": [
@@ -4256,11 +4256,11 @@
           "snaps": 399
         },
         {
-          "name": "Riq Woolen",
+          "name": "Devon Witherspoon",
           "pos": "CB",
-          "ps": 2.8,
-          "rate": 0.0052,
-          "snaps": 530
+          "ps": 2.5,
+          "rate": 0.0043,
+          "snaps": 595
         }
       ],
       "top_pass_rush": [
@@ -4325,15 +4325,15 @@
       "pass_cov_pctl": 54.7,
       "pass_cov_pctl_2025": 57.8,
       "pass_cov_rate_2026": 0.0028,
-      "pass_rush_pctl": 48.4,
+      "pass_rush_pctl": 51.6,
       "pass_rush_pctl_2025": 29.7,
-      "pass_rush_rate_2026": 0.0042,
+      "pass_rush_rate_2026": 0.0044,
       "run_def_pctl": 82.8,
       "run_def_pctl_2025": 45.3,
       "run_def_rate_2026": 0.0101,
       "pass_cov_epatgt": 0.1491,
       "pass_cov_strength": 0.0028,
-      "pass_rush_strength": 0.0042,
+      "pass_rush_strength": 0.0044,
       "run_def_strength": 0.0101,
       "rookies_2026": [
         [
@@ -4418,11 +4418,11 @@
           "snaps": 404
         },
         {
-          "name": "Romello Height",
-          "pos": "DE",
-          "ps": 0.0,
-          "rate": 0.0,
-          "snaps": 304
+          "name": "Osa Odighizuwa",
+          "pos": "DT",
+          "ps": 2.4,
+          "rate": 0.0049,
+          "snaps": 485
         }
       ],
       "top_run_def": [
@@ -4459,6 +4459,14 @@
           "recovered_from_2024": true
         },
         {
+          "player": "Osa Odighizuwa",
+          "unit": "pass_rush",
+          "from": "DAL",
+          "to": "SF",
+          "ps": 2.4,
+          "conf": true
+        },
+        {
           "player": "Nick Bosa",
           "unit": "pass_rush",
           "from": "SF",
@@ -4471,7 +4479,7 @@
     },
     "TB": {
       "team": "TB",
-      "pass_cov_pctl": 4.7,
+      "pass_cov_pctl": 7.8,
       "pass_cov_pctl_2025": 35.9,
       "pass_cov_rate_2026": -0.008,
       "pass_rush_pctl": 35.9,
@@ -4636,17 +4644,17 @@
       "team": "TEN",
       "pass_cov_pctl": 42.2,
       "pass_cov_pctl_2025": 4.7,
-      "pass_cov_rate_2026": -0.0019,
+      "pass_cov_rate_2026": -0.0018,
       "pass_rush_pctl": 57.8,
       "pass_rush_pctl_2025": 67.2,
       "pass_rush_rate_2026": 0.0057,
-      "run_def_pctl": 95.3,
+      "run_def_pctl": 85.9,
       "run_def_pctl_2025": 64.1,
-      "run_def_rate_2026": 0.0124,
-      "pass_cov_epatgt": 0.162,
-      "pass_cov_strength": -0.0019,
+      "run_def_rate_2026": 0.0106,
+      "pass_cov_epatgt": 0.1546,
+      "pass_cov_strength": -0.0018,
       "pass_rush_strength": 0.0057,
-      "run_def_strength": 0.0124,
+      "run_def_strength": 0.0106,
       "rookies_2026": [
         [
           "Anthony Hill Jr.",
@@ -4748,6 +4756,14 @@
       ],
       "moves_2026": [
         {
+          "player": "Alontae Taylor",
+          "unit": "coverage",
+          "from": "NO",
+          "to": "TEN",
+          "ps": -0.8,
+          "conf": true
+        },
+        {
           "player": "Cor'Dale Flott",
           "unit": "coverage",
           "from": "NYG",
@@ -4772,6 +4788,14 @@
           "conf": true
         },
         {
+          "player": "Alontae Taylor",
+          "unit": "run_def",
+          "from": "NO",
+          "to": "TEN",
+          "ps": 0.6,
+          "conf": true
+        },
+        {
           "player": "Jarvis Brownlee Jr.",
           "unit": "run_def",
           "from": "TEN",
@@ -4784,19 +4808,19 @@
     },
     "WAS": {
       "team": "WAS",
-      "pass_cov_pctl": 7.8,
+      "pass_cov_pctl": 10.9,
       "pass_cov_pctl_2025": 20.3,
-      "pass_cov_rate_2026": -0.0073,
-      "pass_rush_pctl": 20.3,
+      "pass_cov_rate_2026": -0.008,
+      "pass_rush_pctl": 23.4,
       "pass_rush_pctl_2025": 7.8,
-      "pass_rush_rate_2026": -0.0043,
+      "pass_rush_rate_2026": -0.003,
       "run_def_pctl": 1.6,
       "run_def_pctl_2025": 10.9,
-      "run_def_rate_2026": -0.0091,
-      "pass_cov_epatgt": 0.21,
-      "pass_cov_strength": -0.0073,
-      "pass_rush_strength": -0.0043,
-      "run_def_strength": -0.0091,
+      "run_def_rate_2026": -0.0046,
+      "pass_cov_epatgt": 0.2278,
+      "pass_cov_strength": -0.008,
+      "pass_rush_strength": -0.003,
+      "run_def_strength": -0.0046,
       "rookies_2026": [
         [
           "Sonny Styles",
@@ -4845,21 +4869,28 @@
           "snaps": 386
         },
         {
+          "name": "Odafe Oweh",
+          "pos": "LB",
+          "ps": 2.2,
+          "rate": 0.0051,
+          "snaps": 435
+        },
+        {
           "name": "Dorance Armstrong",
           "pos": "LB",
           "ps": 2.0,
           "rate": 0.0057,
           "snaps": 358
-        },
-        {
-          "name": "Von Miller",
-          "pos": "LB",
-          "ps": 1.9,
-          "rate": 0.0069,
-          "snaps": 283
         }
       ],
       "top_run_def": [
+        {
+          "name": "Nick Cross",
+          "pos": "S",
+          "ps": 7.4,
+          "rate": 0.0149,
+          "snaps": 499
+        },
         {
           "name": "Quan Martin",
           "pos": "S",
@@ -4873,13 +4904,6 @@
           "ps": 1.0,
           "rate": 0.0033,
           "snaps": 302
-        },
-        {
-          "name": "Mike Sainristil",
-          "pos": "CB",
-          "ps": 0.3,
-          "rate": 0.0008,
-          "snaps": 405
         }
       ],
       "moves_2026": [
@@ -4900,9 +4924,33 @@
           "conf": true
         },
         {
+          "player": "Nick Cross",
+          "unit": "coverage",
+          "from": "IND",
+          "to": "WAS",
+          "ps": -7.0,
+          "conf": true
+        },
+        {
           "player": "K'Lavon Chaisson",
           "unit": "pass_rush",
           "from": "NE",
+          "to": "WAS",
+          "ps": 7.4,
+          "conf": true
+        },
+        {
+          "player": "Odafe Oweh",
+          "unit": "pass_rush",
+          "from": "2T",
+          "to": "WAS",
+          "ps": 2.2,
+          "conf": true
+        },
+        {
+          "player": "Nick Cross",
+          "unit": "run_def",
+          "from": "IND",
           "to": "WAS",
           "ps": 7.4,
           "conf": true

@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Reweight 2025 SIS defensive Points Saved onto 2026 rosters (transparent accounting reweight,
+"""[LEGACY WRITER — NOT CANONICAL] Reweight 2025 SIS defensive Points Saved onto 2026 rosters.
+
+⚠️  normalize_defense_2026.py is the CANONICAL defense.json writer (snap-weighted RATE + rookie-aware).
+    This legacy script sums Points Saved and FLOORS rookies to zero — running it overwrites defense.json
+    with rookie-blind grades. It is kept only as the source of the shared MOVES map (normalize execs its
+    head to import MOVES). Do NOT run it to regenerate defense.json; run normalize_defense_2026.py.
+    A runtime guard below blocks an accidental full run unless BB_ALLOW_LEGACY_DEFENSE=1 is set.
+
+Reweight 2025 SIS defensive Points Saved onto 2026 rosters (transparent accounting reweight,
 NOT a refit). For each unit we start from the 2025 per-player (name, 2025 team, Points Saved) and
 reassign each CONFIRMED mover's FULL 2025 PS to their 2026 team. RETIRED/UFA-unsigned -> subtract
 only (production leaves the league). '2 teams' players -> their combined 2025 PS goes to their
@@ -113,10 +121,17 @@ MOVES={
  'kaden elliss':{'to':'NO','src':'https://www.cbssports.com/nfl/news/nfl-free-agency-tracker-2026-full-list-signings-trades-moves/','note':'LB ATL->NO'},
  'jonathan jones':{'to':'PHI','src':'https://www.foxsports.com/stories/nfl/2026-nfl-free-agency-trades-tracker-signings-updates-best-players-available','note':'CB WAS->PHI'},
  'dante fowler':{'to':'SEA','src':'https://heavy.com/sports/nfl/free-agency-tracker-2026-news-signings-rumors/','note':'EDGE DAL->SEA'},
- 'odafe oweh':{'to':'NYG','src':'https://www.nfl.com/news/2026-nfl-free-agency-giants-raiders-jets-among-teams-in-line-for-turnaround-after-signings-trades','note':'2 teams 2025 -> NYG'},
- 'nick cross':{'to':'NYG','src':'https://www.nfl.com/news/2026-nfl-free-agency-giants-raiders-jets-among-teams-in-line-for-turnaround-after-signings-trades','note':'S IND->NYG'},
+ 'odafe oweh':{'to':'WAS','src':'https://www.nfl.com/news/odafe-oweh-commanders-sign-pass-rusher-four-year-100-million-contract','note':'EDGE -> WAS 4yr/$100M (was mis-registered NYG; corrected 2026-07-05, web-verified)'},
+ 'nick cross':{'to':'WAS','src':'https://www.nfl.com/videos/nick-cross-signs-2-year-14m-deal-with-commanders-free-agency-frenzy','note':'S IND->WAS 2yr/$14M (was mis-registered NYG; corrected 2026-07-05, web-verified)'},
  'cordale flott':{'to':'TEN','src':'https://www.tennesseetitans.com/news/titans-sign-cornerback-cor-dale-flott','note':'CB NYG->TEN'},
  'john franklin myers':{'to':'TEN','src':'https://www.aol.com/articles/titans-sign-john-franklin-myers-192951802.html','note':'DE DEN->TEN'},
+ # --- 2026-07-05 funnel audit: web-verified moves the engine was stale-crediting or missing entirely ---
+ 'riq woolen':{'to':'PHI','src':'https://www.nfl.com/news/eagles-signing-former-seahawks-cb-riq-woolen-to-one-year-deal-worth-max-value-of-15-million','note':'CB SEA->PHI 1yr/$15M (engine was stale-crediting SEA)'},
+ 'alontae taylor':{'to':'TEN','src':'https://www.tennesseetitans.com/news/titans-sign-cornerback-alontae-taylor','note':'CB NO->TEN 3yr/$58M (engine was stale-crediting NO)'},
+ 'osa odighizuwa':{'to':'SF','src':'https://www.espn.com/nfl/story/_/id/48177910/sources-cowboys-trade-dt-odighizuwa-49ers-3rd-round-pick','note':'DT traded DAL->SF for a 3rd (engine was stale-crediting DAL)'},
+ 'quinnen williams':{'to':'DAL','src':'https://www.nfl.com/news/jets-trade-dt-quinnen-williams-to-cowboys-for-first-round-pick','note':'DT traded NYJ->DAL Nov-2025 deadline (was missing from engine)'},
+ 'sauce gardner':{'to':'IND','src':'https://www.colts.com/news/colts-acquire-cb-sauce-gardner-from-new-york-jets-in-exchange-for-2026-2027-first-round-picks-and-wr-adonai-mitchell','note':'CB traded NYJ->IND Nov-2025 deadline (was missing from engine)'},
+ 'dre greenlaw':{'to':'SF','src':'https://www.nfl.com/news/niners-bringing-back-lb-dre-greenlaw-on-one-year-7-5-million-deal','note':'LB DEN->SF 1yr/$7.5M (audit-confirmed)'},
 }
 
 # ----------------------------------------------------------------------------------------------------
@@ -137,6 +152,16 @@ KNOWN_GAPS=[
 ]
 
 UNITS=[('coverage','sis_value/pass_defense.csv'),('pass_rush','sis_value/pass_rush.csv'),('run_def','sis_value/run_defense.csv')]
+# ---- GUARD: everything ABOVE this line is what normalize_defense_2026.py execs to import MOVES.
+# Everything BELOW writes the rookie-BLIND defense.json. Block an accidental full run so a stray
+# invocation can't silently clobber the canonical (rookie-aware) grades again (2026-07-05 regression).
+import os as _os, sys as _sys
+if __name__=='__main__' and _os.environ.get('BB_ALLOW_LEGACY_DEFENSE')!='1':
+    _sys.stderr.write("\n!! reweight_defense_2026.py is the LEGACY, rookie-BLIND writer. "
+        "defense.json's canonical writer is normalize_defense_2026.py.\n"
+        "   Refusing to overwrite defense.json. To force the legacy run anyway: "
+        "BB_ALLOW_LEGACY_DEFENSE=1 python3 reweight_defense_2026.py\n")
+    _sys.exit(2)
 applied_log=collections.defaultdict(list)  # team-code -> list of move dicts (for moves_2026)
 applied_keys=set()
 

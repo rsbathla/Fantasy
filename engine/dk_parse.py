@@ -57,7 +57,7 @@ def parse_dk_board(text, me, board):
         m=re.search(r'On the clock:\s*Pick\s*(\d+)', l, re.I)
         if m: cur_pick=int(m.group(1))
         m=re.search(r'Round\s*(\d+)\s*of', l, re.I)
-        if m and rnd is None: rnd=int(m.group(1))
+        if m: rnd=int(m.group(1))                      # last wins - clip+ appends newer copies
     starts=[i for i in range(n-8) if lines[i+1]=='QB' and lines[i+3]=='RB' and lines[i+5]=='WR' and lines[i+7]=='TE'
             and lines[i+2].isdigit() and lines[i+4].isdigit() and lines[i+6].isdigit() and lines[i+8].isdigit()]
     drafted=[]; my_roster=[]; my_seat=None; my_counts=None
@@ -85,15 +85,18 @@ def parse_dk_board(text, me, board):
         if user==me:
             my_counts=counts
             if first_label: my_seat=int(first_label.split('.')[1])
-    # de-dup my_roster preserving order
+    # de-dup my_roster AND drafted preserving order (clip+ merges re-copy the same columns,
+    # so the same pick can be parsed twice; counts must reflect unique players)
     seen=set(); my_roster=[x for x in my_roster if not (x in seen or seen.add(x))]
+    seen2=set(); drafted=[x for x in drafted if not (x in seen2 or seen2.add(x))]
     gone={_norm(x) for x in drafted}
     available=[p['name'] for p in board if _norm(p['name']) not in gone]
     if rnd is None and cur_pick: rnd=(cur_pick-1)//12+1
     if not my_seat and cur_pick: my_seat=((cur_pick-1)%12)+1
+    n_teams=len({lines[si] for si in starts})          # unique manager names, not header blocks
     return {'pick':cur_pick,'round':rnd,'seat':my_seat,'my_roster':my_roster,
             'counts':my_counts or {'QB':0,'RB':0,'WR':0,'TE':0},'available':available,
-            'n_drafted':len(drafted),'n_teams':len(starts)}
+            'n_drafted':len(drafted),'n_teams':n_teams}
 
 if __name__=='__main__':
     import bbengine as bb, sys

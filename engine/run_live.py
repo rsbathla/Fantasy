@@ -17,10 +17,22 @@ def _read_clipboard():
         import pyperclip; return pyperclip.paste()
     except Exception: raise SystemExit("No clipboard tool. Save the board to a file and pass its path.")
 
+_SESSION_BUF=os.path.join(_HERE,'board_session.txt')
+
 def _board_text(arg):
-    if arg and arg.lower() in ('clip','clipboard','-'):
+    """clip  -> read clipboard, START a fresh board session.
+    clip+ -> read clipboard, APPEND to the session (DK only renders the team columns near your
+             scroll position, so one copy usually misses most of the field: copy the left half,
+             run clip, scroll right, copy, run clip+ - the parser unions every copy).
+    path  -> read a saved board file."""
+    if arg and arg.lower() in ('clip','clipboard','-','clip+','add','+'):
         t=_read_clipboard()
         if not t or not t.strip(): raise SystemExit("Clipboard empty - copy the DK board first (Ctrl+C).")
+        if arg.lower() in ('clip+','add','+') and os.path.exists(_SESSION_BUF):
+            prev=open(_SESSION_BUF,encoding='utf-8',errors='replace').read()
+            t=prev+'\n'+t
+            print(f"[clip+ merged with previous copies: session now {len(t):,} chars]")
+        open(_SESSION_BUF,'w',encoding='utf-8').write(t)
         return t
     return open(arg,encoding="utf-8",errors="replace").read()
 
@@ -100,7 +112,16 @@ def _load_signals():
     psp={}
     try: psp=json.load(open(os.path.join(_REPO,'player_splits.json'),encoding='utf-8',errors='replace'))
     except Exception: pass
-    return S,notes,qual,overl,usage,fus,film,conv,ptw,psp
+    # NFL-BRAIN layer (brain_intel.json <- brain/brain_export.py, refreshed daily after ingest):
+    # dated Stealing-Signals claims, forward-2026 leans, tweet buzz, 2026 source hits, coach context.
+    # ANNOTATE-ONLY: rendered next to the sim numbers, never mixed into them.
+    brain={}; brain_meta={}
+    try:
+        _bi=json.load(open(os.path.join(_REPO,'brain_intel.json'),encoding='utf-8',errors='replace'))
+        brain_meta=_bi.get('_meta',{})
+        for _nm,_rec in _bi.get('players',{}).items(): brain[bb._norm(_nm)]=_rec
+    except Exception: pass
+    return S,notes,qual,overl,usage,fus,film,conv,ptw,psp,brain,brain_meta
 
 def _stack_index(roster_detail):
     """teams where I hold a QB / a pass-catcher, and the W17 games my roster is in (for bring-backs)."""
@@ -127,7 +148,7 @@ def _stack_tag(pos,team,w17,qb_teams,catch_teams,w17games):
     return None
 
 def enrich(tree, st, board, me):
-    S,notes,qual,overl,usage,fus,film,conv,ptw,psp=_load_signals()
+    S,notes,qual,overl,usage,fus,film,conv,ptw,psp,brain,brain_meta=_load_signals()
     pu={bb._norm(p['name']):p.get('playoff_up') for p in board}
     deltas={}
     def harvest(node):
@@ -179,19 +200,46 @@ def enrich(tree, st, board, me):
         if cc is not None and _num(cc.get('qual_score')) is not None:
             d['conviction']={'score':_num(cc.get('qual_score')),'n_sources':_num(cc.get('n_sources')),
                 'n_tweets':_num(cc.get('n_tweets')),'n_categories':_num(cc.get('n_categories'))}
-        # HEAVY prose only for the deep set (larger caps so they read fuller)
+        # BRAIN block: counts + the top forward-2026 lean for EVERY board player; full dated
+        # claims/tweets/sources only for the deep set (payload discipline).
+        brain_live=False
+        br=brain.get(k)
+        if br:
+            bd={'n_sig':int(br.get('n_sig') or 0),'n_noise':int(br.get('n_noise') or 0),
+                'n_tw':int(br.get('n_tw') or 0),'n_chart':int(br.get('n_chart') or 0),
+                'n_src':int(br.get('n_src') or 0)}
+            if br.get('fwd'):
+                f0=br['fwd'][0]; bd['lean']={'s':f0.get('s',''),'t':str(f0.get('t',''))[:220],'d':f0.get('d','')}
+            if deep:
+                # FORWARD-ONLY on cards: 2026 leans + forward tweets + 2026 sources. The 2025
+                # weekly Signal/Noise log stays in the vault; the card shows only its counts.
+                bd['fwd']=[{'s':c.get('s',''),'t':str(c.get('t',''))[:220],'d':c.get('d','')}
+                           for c in (br.get('fwd') or [])[:4]]
+                bd['tw']=[{'d':x.get('d',''),'a':x.get('a',''),'t':str(x.get('t',''))[:200],'tg':x.get('tg','')}
+                          for x in (br.get('tw') or [])[:3]]
+                bd['src26']=[{'d':x.get('d',''),'t':x.get('t','')} for x in (br.get('src26') or [])[:2]]
+                if br.get('coach'): bd['coach']=br['coach']
+            d['brain']=bd
+            # brain carries the CURRENT feed -> suppress the stale mid-June legacy layers below
+            # (old tweet feed / buzz note / viral quote); curated film + 2026 Outlook stay.
+            brain_live=bool(bd.get('tw') or bd.get('fwd'))
+        # HEAVY prose only for the deep set (larger caps so they read fuller). When the brain
+        # feed is live for this player, the June-frozen legacy layers (viral quote, buzz note,
+        # old tweet feed) stay off the card - the brain block IS the current feed.
         if deep:
-            tq=str(q['top_quote']) if q is not None else ''
-            if tq.strip().lower() not in ('','nan') and _name_in_text(nm,tq): d['quote']=tq
-            nt=notes.get(k)
-            if nt is not None and _name_in_text(nm,str(nt['bestball_note'])): d['tweet']=str(nt['bestball_note'])[:520]
+            if not brain_live:
+                tq=str(q['top_quote']) if q is not None else ''
+                if tq.strip().lower() not in ('','nan') and _name_in_text(nm,tq): d['quote']=tq
+                nt=notes.get(k)
+                if nt is not None and _name_in_text(nm,str(nt['bestball_note'])): d['tweet']=str(nt['bestball_note'])[:520]
             vf=film.get(k)
             if vf is not None and str(vf.get('video_note','')).strip().lower() not in ('','nan') and _name_in_text(nm,str(vf['video_note'])):
                 d['film']=str(vf['video_note'])[:700]; d['n_clips']=_num(vf.get('n_clips'))
-            tf=ptw.get(k)
-            if tf and tf.get('tweets'):
-                d['tweets']=[{'d':x.get('date'),'h':x.get('handle'),'t':str(x.get('text',''))[:240],'l':x.get('likes')} for x in tf['tweets'][:5]]
-                d['n_tweets']=tf.get('n')
+            if not brain_live:
+                tf=ptw.get(k)
+                if tf and tf.get('tweets'):
+                    d['tweets']=[{'d':x.get('date'),'h':x.get('handle'),'t':str(x.get('text',''))[:240],'l':x.get('likes')} for x in tf['tweets'][:5]]
+                    d['n_tweets']=tf.get('n')
             sp=psp.get(k)
             if sp: d['splits']=sp
         if k in deltas: d.update(deltas[k])
@@ -202,6 +250,11 @@ def enrich(tree, st, board, me):
     cand=[full_row(p['name']) for p in board if p['name'] in avail and p['proj'] is not None and bb._norm(p['name']) in S]
     cand.sort(key=lambda x:(x.get('rank') or 9999))
     tree['board']=cand[:250]
+    _bm=sum(1 for r in tree['board'] if r.get('brain'))
+    tree['brain_meta']={'as_of':brain_meta.get('generated'),'matched':_bm,
+                        'counts':brain_meta.get('counts',{})}
+    print(f"brain: {_bm}/{len(tree['board'])} board players carry brain intel"
+          + (f" (as of {brain_meta.get('generated')})" if brain_meta.get('generated') else " (brain_intel.json missing)"))
     cnts=tree['state'].get('counts',{})
     tree['construction']={'counts':cnts,'targets':{'QB':'2-3','RB':'5-6','WR':'8-9','TE':'2-3'},
         'anchor':tree['state'].get('anchor'),'byes':sorted({r['bye'] for r in tree['roster_detail'] if r.get('bye')})}
@@ -238,9 +291,24 @@ def run(board_path, me='rsbathla', plies=None, out=None):
     except Exception: pass
     board=bb.load_board()
     import dk_parse
+    board_warning=None
     if dk_parse.is_dk_live(txt):
         st=dk_parse.parse_dk_board(txt,me,board)
         print(f"[DK live draft board: {st['n_teams']} managers, {st['n_drafted']} drafted]")
+        # FIELD-COMPLETENESS GUARD: DK's draft room only renders the team columns near your
+        # scroll position, so a single Cmd+A usually captures 2-4 of 12 columns. Every pick we
+        # never saw stays "available" and poisons the recommendation (a drafted Chase looks
+        # like the best pick on the board). Compare captured picks vs the pick clock.
+        if st.get('pick'):
+            expected=int(st['pick'])-1; found=int(st.get('n_drafted',0))
+            if found<expected:
+                board_warning=(f"FIELD INCOMPLETE: captured {found} of {expected} picks - "
+                    f"{expected-found} drafted players are missing and will WRONGLY show as available. "
+                    f"Scroll the DK board to the uncaptured columns, Cmd+A / Cmd+C, then run: "
+                    f"python3 run_live.py clip+ {me}")
+                print("\n!! "+board_warning+"\n")
+            else:
+                print(f"[field complete: all {expected} picks captured]")
         if int(st.get('n_drafted',0))==0 and int(st.get('pick',1))>1:
             raise SystemExit(
                 "\n!! No drafted players found in what you copied - nothing was simulated.\n"
@@ -261,6 +329,8 @@ def run(board_path, me='rsbathla', plies=None, out=None):
     if dropped: print(f"WARNING: {len(dropped)} drafted players have no sim projection (not modeled): {', '.join(dropped)}")
     tree=dt.build_tree(board,rosters,me,seat=st.get('seat'),plies=plies,pick=st.get('pick'),rnd=st.get('round'))
     tree['state']['modeled_n']=int(modeled_n); tree['state']['drafted_n']=int(drafted_n)
+    import time as _t; tree['state']['captured_at']=_t.time()   # capture-time stamp -> honest dashboard freshness banner
+    if board_warning: tree['state']['board_warning']=board_warning
     if dropped: tree['state']['untracked']=list(dropped); tree['state']['dropped']=list(dropped)
     tree=enrich(tree,st,board,me)
     # ---- strategy layer (advisory; never alters grader output) ----

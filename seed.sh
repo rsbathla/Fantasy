@@ -1,0 +1,17 @@
+curl 'https://fpds.fantasypoints.com/v2/ds/nfl/tools/player/receiving-advanced/values' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -H 'authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJINnRPbVdERWxNWGE0RGdIek5lTXZtMEVQSFoyIiwicm9sZXMiOlsiYW5vbnltb3VzIiwiYXV0aGVudGljYXRlZCIsInJvbGVfMUprMWoyd0x2TmdRR1RNODdLdjMiLCJyb2xlX0FoR01tdnBRVnJkbXhJUHFvZGlqIiwicm9sZV9JNTRaeUxCWUZpZ0pxSlM1OU11TiIsInJvbGVfSW9sdUF1WXNoa0pNUDZKbklCc24iLCJyb2xlX01PRHNHdUJoTzA1ZGRMQ1BoUlBzIiwicm9sZV9PdWhpY09XS0pISHZxVnZrT0dYQSIsInJvbGVfVktaMTZ2aER1ZUg3TERhZTZGNkoiLCJyb2xlX2Fub255bW91cyIsInJvbGVfYXV0aGVudGljYXRlZCIsInJvbGVfbXNhaHJ5dTExdHFkMXE1aTRsZWgiLCJyb2xlX3VKYjMwT2ZacHU0cEZmUzdWUUVxIiwicm9sZV93S1R6QXE1QXJSOHVxa0RndWI0UCIsInJvbGVfd053WFNCRlFIelZLVHdvVFF6WFgiXSwidG9rZW4iOiJXeUpJTm5SUGJWZEVSV3hOV0dFMFJHZEllazVsVFhadE1FVlFTRm95SWl4YkltRnViMjU1Ylc5MWN5SXNJbUYxZEdobGJuUnBZMkYwWldRaUxDSnliMnhsWHpGS2F6RnFNbmRNZGs1blVVZFVUVGczUzNZeklpd2ljbTlzWlY5QmFFZE5iWFp3VVZaeVpHMTRTVkJ4YjJScGFpSXNJbkp2YkdWZlNUVTBXbmxNUWxsR2FXZEtjVXBUTlRsTmRVNGlMQ0p5YjJ4bFgwbHZiSFZCZFZsemFHdEtUVkEyU201SlFuTnVJaXdpY205c1pWOU5UMFJ6UjNWQ2FFOHdOV1JrVEVOUWFGSlFjeUlzSW5KdmJHVmZUM1ZvYVdOUFYwdEtTRWgyY1ZaMmEwOUhXRUVpTENKeWIyeGxYMVpMV2pFMmRtaEVkV1ZJTjB4RVlXVTJSalpLSWl3aWNtOXNaVjloYm05dWVXMXZkWE1pTENKeWIyeGxYMkYxZEdobGJuUnBZMkYwWldRaUxDSnliMnhsWDIxellXaHllWFV4TVhSeFpERnhOV2swYkdWb0lpd2ljbTlzWlY5MVNtSXpNRTltV25CMU5IQkdabE0zVmxGRmNTSXNJbkp2YkdWZmQwdFVla0Z4TlVGeVVqaDFjV3RFWjNWaU5GQWlMQ0p5YjJ4bFgzZE9kMWhUUWtaUlNIcFdTMVIzYjFSUmVsaFlJbDFkIiwiaWF0IjoxNzgzMjY0MTEwfQ.sXgU7P1ZtYU9zVT2GTeiin4FFN_bc8bwnqajm-ekxz0' \
+  -H 'content-type: application/json' \
+  -b '_gcl_au=1.1.1853656971.1783128381; _ga=GA1.1.2036621957.1783128381; _clck=1ebud4u%5E2%5Eg7h%5E0%5E2376; _clsk=162hw88%5E1783262645078%5E1%5E1%5Ez.clarity.ms%2Fcollect; _ga_VQVGJ9KKX4=GS2.1.s1783262642$o3$g1$t1783264204$j60$l0$h0; _ga_P4YX0HREWC=GS2.1.s1783279991$o4$g0$t1783279991$j60$l0$h0' \
+  -H 'origin: https://fpds.fantasypoints.com' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://fpds.fantasypoints.com/nfl/tools/player/receiving-advanced' \
+  -H 'sec-ch-ua: "Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36' \
+  --data-raw '{"context":{"tableProperty":"receivingAdvanced","grouping":"$player.playerId","dualContext":false,"modelContext":"player","routeContext":"player","routeContextTarget":"player","filterMatch":{"isGamePlayed":{"eq":true},"game.season":{"eq":2025},"player.position":{"in":["WR","TE"]}},"filterPlay":{"personnel":{"in":["$$play.offense.personnel.personnelId",[5]]}},"filterResult":{"playerStats.gamesPlayed":{"gte":1},"playerStats.receiving.routes.total":{"gte":1}},"qualifiers":{},"splits":{},"disabled":{"filterMatch":{},"filterPlay":{},"filterResult":{}},"requiresSchedule":null,"requiresCharting":true,"requiresPlayByPlay":false,"requiresPreTotals":false,"requiresPostTotals":false,"requiresMultiplePipelines":null,"requiredRoles":["role_uJb30OfZpu4pFfS7VQEq"],"isFreePreview":false},"useCache":true,"flatten":true,"debug":false}'

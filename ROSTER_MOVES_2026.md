@@ -6,7 +6,7 @@ _A REAL move = every source agrees on the new team. A DATA ERROR (mis-join / sta
 ## Summary
 - **379 board players** audited across 6 team views (dk / ffdataroma / clay independent+market; signals / features / flags model-side)
 - **0 cross-source team disagreements** (P0 — each one is a mis-join or a source conflict)
-- **59 roster moves** detected vs 2025 gamelog team (306 players with 2025 priors): **50 documented** (0 defense MOVES · 19 offense registry news-sourced · 31 offense registry consensus-only) · **0 undocumented** · **9 to-FA/unsigned** (9 curated)
+- **59 roster moves** detected vs 2025 gamelog team (306 players with 2025 priors): **50 documented** (0 defense MOVES · 21 offense registry news-sourced · 29 offense registry consensus-only) · **0 undocumented** · **9 to-FA/unsigned** (9 curated)
 - propagation: **0** stale-schedule rows · **0** stale QB-context teams · **0** movers without usage re-projection · **0** stale `team25` rows
 - presence gaps: ffdataroma missing 0 non-FA (+13 FA, expected) · clay missing 41 non-FA (+13 FA) · features missing 0 · flags missing 3
 
@@ -70,7 +70,7 @@ _Prior team = 2025 PBP mode team (pipeline/player_games.parquet, canonical join)
 | JuJu Smith-Schuster | WR | 227.4 | KC | NYG | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
 | John Metchie III | WR | 227.8 | NYJ | CAR | YES | DOCUMENTED (offense registry, consensus) | reproj_carry (med) | cross-source consensus: dk+ffdataroma+signals+features+flags [conf=med] |
 | Keenan Allen | WR | 228.1 | LAC | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
-| J'Mari Taylor | RB | 228.2 | IND | JAX | YES | DOCUMENTED (offense registry, consensus) | reproj_carry (med) | cross-source consensus: dk+ffdataroma+signals+features+flags [conf=med] |
+| J'Mari Taylor | RB | 228.2 | IND | JAX | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.jaguars.com/team/players-roster/j-mari-taylor/ |
 | Darren Waller | TE | 228.4 | MIA | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
 | Zach Ertz | TE | 228.5 | WAS | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features+flags [conf=med] |
 | Justin Fields | QB | 228.5 | NYJ | KC | YES | DOCUMENTED (offense registry, news-sourced) | reproj_carry (med) | https://www.newyorkjets.com/news/jets-trade-justin-fields-kansas-city-chiefs-03-18-2026 |
@@ -85,7 +85,7 @@ _Prior team = 2025 PBP mode team (pipeline/player_games.parquet, canonical join)
 | Dyami Brown | WR | 229.8 | JAX | WAS | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
 | Tyler Conklin | TE | 230.0 | LAC | DET | YES | DOCUMENTED (offense registry, consensus) | reproj_carry (med) | cross-source consensus: dk+ffdataroma+signals+features [conf=med] |
 | Ja'Kobi Lane | WR | 230.5 | WAS | BAL | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
-| Kevin Coleman Jr. | WR | 231.3 | BUF | MIA | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
+| Kevin Coleman Jr. | WR | 231.3 | BUF | MIA | YES | DOCUMENTED (offense registry, news-sourced) | reproj_clay (high) | https://www.miamidolphins.com/team/players-roster/kevin-coleman-jr/ |
 | Noah Fant | TE | 231.5 | CIN | NO | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
 | Nick Westbrook-Ikhine | WR | 232.2 | MIA | IND | YES | DOCUMENTED (offense registry, consensus) | reproj_clay (high) | cross-source consensus: dk+ffdataroma+clay+signals+features+flags |
 | Jonnu Smith | TE | 234.2 | PIT | FA | YES | UNSIGNED-FA (curated) | moved_to_FA (low) | cross-source consensus: dk+signals+features [conf=med] |
