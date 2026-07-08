@@ -1,0 +1,3806 @@
+{
+"bryce young": {
+"pos": "QB",
+"name": "Bryce Young",
+"schemes": {
+"Cover 0": {
+"db": 12,
+"cmp": 60,
+"ypa": 2.1,
+"td": 3,
+"intc": null,
+"rate": 104.2,
+"adot": 10.3,
+"dk": 13.2,
+"rate_pctl": 64
+},
+"Cover 1": {
+"db": 92,
+"cmp": 47,
+"ypa": 5.81,
+"td": 5,
+"intc": 3,
+"rate": 70.5,
+"adot": 9.5,
+"dk": 41.3,
+"rate_pctl": 28
+},
+"Cover 2": {
+"db": 75,
+"cmp": 70,
+"ypa": 7.36,
+"td": 2,
+"intc": null,
+"rate": 100.6,
+"adot": 6.5,
+"dk": 32.8,
+"rate_pctl": 77
+},
+"Cover 3": {
+"db": 180,
+"cmp": 64.7,
+"ypa": 6.67,
+"td": 3,
+"intc": 4,
+"rate": 79.6,
+"adot": 6.9,
+"dk": 65.9,
+"rate_pctl": 29
+},
+"Cover 4": {
+"db": 114,
+"cmp": 70.9,
+"ypa": 6.38,
+"td": 4,
+"intc": 2,
+"rate": 92.6,
+"adot": 5.4,
+"dk": 47.4,
+"rate_pctl": 61
+},
+"Cover 6": {
+"db": 33,
+"cmp": 78.6,
+"ypa": 6.61,
+"td": null,
+"intc": 1,
+"rate": 79.3,
+"adot": 2.9,
+"dk": 8.9,
+"rate_pctl": 34
+}
+}
+},
+"josh allen": {
+"pos": "QB",
+"name": "Josh Allen",
+"schemes": {
+"Cover 0": {
+"db": 30,
+"cmp": 53.8,
+"ypa": 5.77,
+"td": 3,
+"intc": 1,
+"rate": 93.4,
+"adot": 8.5,
+"dk": 27,
+"rate_pctl": 40
+},
+"Cover 1": {
+"db": 146,
+"cmp": 62.4,
+"ypa": 7.22,
+"td": 5,
+"intc": 4,
+"rate": 84.2,
+"adot": 8.5,
+"dk": 70.6,
+"rate_pctl": 53
+},
+"Cover 2": {
+"db": 58,
+"cmp": 78.8,
+"ypa": 8.27,
+"td": 1,
+"intc": null,
+"rate": 107.5,
+"adot": 6.7,
+"dk": 25.5,
+"rate_pctl": 89
+},
+"Cover 3": {
+"db": 201,
+"cmp": 72,
+"ypa": 8.56,
+"td": 7,
+"intc": 3,
+"rate": 104.5,
+"adot": 6.3,
+"dk": 103.7,
+"rate_pctl": 82
+},
+"Cover 4": {
+"db": 59,
+"cmp": 70.6,
+"ypa": 7.25,
+"td": 4,
+"intc": 2,
+"rate": 100.9,
+"adot": 7.3,
+"dk": 38.2,
+"rate_pctl": 76
+},
+"Cover 6": {
+"db": 39,
+"cmp": 74.2,
+"ypa": 10.68,
+"td": 2,
+"intc": null,
+"rate": 129.9,
+"adot": 9.8,
+"dk": 35.4,
+"rate_pctl": 97
+}
+}
+},
+"marcus mariota": {
+"pos": "QB",
+"name": "Marcus Mariota",
+"schemes": {
+"Cover 0": {
+"db": 15,
+"cmp": 53.3,
+"ypa": 5.6,
+"td": 2,
+"intc": null,
+"rate": 109.4,
+"adot": 11.2,
+"dk": 11.4,
+"rate_pctl": 67
+},
+"Cover 1": {
+"db": 54,
+"cmp": 48,
+"ypa": 4.84,
+"td": 2,
+"intc": 1,
+"rate": 67.3,
+"adot": 10,
+"dk": 17.2,
+"rate_pctl": 20
+},
+"Cover 2": {
+"db": 36,
+"cmp": 70,
+"ypa": 10.3,
+"td": null,
+"intc": 1,
+"rate": 89.4,
+"adot": 12.3,
+"dk": 20.9,
+"rate_pctl": 46
+},
+"Cover 3": {
+"db": 93,
+"cmp": 71.3,
+"ypa": 8.65,
+"td": 2,
+"intc": 3,
+"rate": 90.2,
+"adot": 8.1,
+"dk": 45.1,
+"rate_pctl": 60
+},
+"Cover 4": {
+"db": 36,
+"cmp": 64.3,
+"ypa": 5.79,
+"td": 1,
+"intc": 2,
+"rate": 61.9,
+"adot": 8.8,
+"dk": 10.7,
+"rate_pctl": 12
+},
+"Cover 6": {
+"db": 11,
+"cmp": 60,
+"ypa": 14.9,
+"td": 1,
+"intc": null,
+"rate": 137.5,
+"adot": 16.3,
+"dk": 11.1,
+"rate_pctl": 99
+}
+}
+},
+"kirk cousins": {
+"pos": "QB",
+"name": "Kirk Cousins",
+"schemes": {
+"Cover 0": {
+"db": 10,
+"cmp": 66.7,
+"ypa": 3.11,
+"td": null,
+"intc": 1,
+"rate": 31,
+"adot": 2,
+"dk": 0.1,
+"rate_pctl": 2
+},
+"Cover 1": {
+"db": 54,
+"cmp": 49,
+"ypa": 7.1,
+"td": 2,
+"intc": null,
+"rate": 85.6,
+"adot": 10.2,
+"dk": 25.5,
+"rate_pctl": 57
+},
+"Cover 2": {
+"db": 49,
+"cmp": 74.5,
+"ypa": 6.66,
+"td": null,
+"intc": 2,
+"rate": 74.2,
+"adot": 5.3,
+"dk": 13.5,
+"rate_pctl": 25
+},
+"Cover 3": {
+"db": 86,
+"cmp": 62.2,
+"ypa": 6.61,
+"td": 3,
+"intc": 1,
+"rate": 88.6,
+"adot": 7.1,
+"dk": 36.3,
+"rate_pctl": 57
+},
+"Cover 4": {
+"db": 44,
+"cmp": 70.7,
+"ypa": 6.66,
+"td": 1,
+"intc": 1,
+"rate": 86.7,
+"adot": 6.9,
+"dk": 13.9,
+"rate_pctl": 41
+},
+"Cover 6": {
+"db": 20,
+"cmp": 57.9,
+"ypa": 7.16,
+"td": null,
+"intc": null,
+"rate": 80.2,
+"adot": 7.3,
+"dk": 5.6,
+"rate_pctl": 36
+}
+}
+},
+"shedeur sanders": {
+"pos": "QB",
+"name": "Shedeur Sanders",
+"schemes": {
+"Cover 0": {
+"db": 10,
+"cmp": 33.3,
+"ypa": 7.44,
+"td": 1,
+"intc": null,
+"rate": 97.9,
+"adot": 19.9,
+"dk": 6.7,
+"rate_pctl": 47
+},
+"Cover 1": {
+"db": 41,
+"cmp": 47.1,
+"ypa": 8.79,
+"td": null,
+"intc": null,
+"rate": 77.9,
+"adot": 9,
+"dk": 14,
+"rate_pctl": 43
+},
+"Cover 2": {
+"db": 41,
+"cmp": 71.9,
+"ypa": 5.84,
+"td": 1,
+"intc": 2,
+"rate": 70.7,
+"adot": 6.4,
+"dk": 13.9,
+"rate_pctl": 19
+},
+"Cover 3": {
+"db": 83,
+"cmp": 58.1,
+"ypa": 5.96,
+"td": 2,
+"intc": 5,
+"rate": 56.2,
+"adot": 6.6,
+"dk": 25.1,
+"rate_pctl": 7
+},
+"Cover 4": {
+"db": 46,
+"cmp": 55,
+"ypa": 5.53,
+"td": 1,
+"intc": 2,
+"rate": 58.4,
+"adot": 5.6,
+"dk": 14.3,
+"rate_pctl": 11
+},
+"Cover 6": {
+"db": 17,
+"cmp": 57.1,
+"ypa": 9,
+"td": 1,
+"intc": 1,
+"rate": 81.2,
+"adot": 6.7,
+"dk": 10.3,
+"rate_pctl": 38
+}
+}
+},
+"matthew stafford": {
+"pos": "QB",
+"name": "Matthew Stafford",
+"schemes": {
+"Cover 0": {
+"db": 34,
+"cmp": 66.7,
+"ypa": 4.03,
+"td": 15,
+"intc": null,
+"rate": 114,
+"adot": 6.7,
+"dk": 65.3,
+"rate_pctl": 81
+},
+"Cover 1": {
+"db": 130,
+"cmp": 61.3,
+"ypa": 8.31,
+"td": 8,
+"intc": 3,
+"rate": 99.2,
+"adot": 10.2,
+"dk": 73.7,
+"rate_pctl": 75
+},
+"Cover 2": {
+"db": 54,
+"cmp": 70.6,
+"ypa": 8.98,
+"td": 2,
+"intc": 1,
+"rate": 103.2,
+"adot": 8.4,
+"dk": 28.3,
+"rate_pctl": 83
+},
+"Cover 3": {
+"db": 202,
+"cmp": 71.6,
+"ypa": 8.89,
+"td": 11,
+"intc": 2,
+"rate": 113.4,
+"adot": 8.8,
+"dk": 113.2,
+"rate_pctl": 93
+},
+"Cover 4": {
+"db": 113,
+"cmp": 60.4,
+"ypa": 6.59,
+"td": 2,
+"intc": 1,
+"rate": 82.2,
+"adot": 9,
+"dk": 38.5,
+"rate_pctl": 39
+},
+"Cover 6": {
+"db": 54,
+"cmp": 72,
+"ypa": 11.54,
+"td": null,
+"intc": null,
+"rate": 110.2,
+"adot": 9.8,
+"dk": 26.1,
+"rate_pctl": 91
+}
+}
+},
+"jared goff": {
+"pos": "QB",
+"name": "Jared Goff",
+"schemes": {
+"Cover 0": {
+"db": 35,
+"cmp": 42.4,
+"ypa": 4.79,
+"td": 3,
+"intc": null,
+"rate": 87.7,
+"adot": 5.5,
+"dk": 18.3,
+"rate_pctl": 29
+},
+"Cover 1": {
+"db": 111,
+"cmp": 59.2,
+"ypa": 8.09,
+"td": 11,
+"intc": null,
+"rate": 120.7,
+"adot": 7.9,
+"dk": 80,
+"rate_pctl": 94
+},
+"Cover 2": {
+"db": 106,
+"cmp": 79.6,
+"ypa": 8.87,
+"td": 1,
+"intc": 3,
+"rate": 94.3,
+"adot": 7.2,
+"dk": 38.4,
+"rate_pctl": 66
+},
+"Cover 3": {
+"db": 199,
+"cmp": 68.7,
+"ypa": 7.75,
+"td": 8,
+"intc": 5,
+"rate": 94.8,
+"adot": 7.3,
+"dk": 85.9,
+"rate_pctl": 68
+},
+"Cover 4": {
+"db": 85,
+"cmp": 73.2,
+"ypa": 8.74,
+"td": 4,
+"intc": null,
+"rate": 115.8,
+"adot": 8.6,
+"dk": 48.3,
+"rate_pctl": 95
+},
+"Cover 6": {
+"db": 52,
+"cmp": 77.6,
+"ypa": 8.31,
+"td": 1,
+"intc": null,
+"rate": 108.1,
+"adot": 3.5,
+"dk": 25.7,
+"rate_pctl": 87
+}
+}
+},
+"caleb williams": {
+"pos": "QB",
+"name": "Caleb Williams",
+"schemes": {
+"Cover 0": {
+"db": 37,
+"cmp": 44.1,
+"ypa": 4.12,
+"td": 7,
+"intc": 1,
+"rate": 83.3,
+"adot": 9.8,
+"dk": 33.5,
+"rate_pctl": 19
+},
+"Cover 1": {
+"db": 104,
+"cmp": 56,
+"ypa": 7.21,
+"td": 3,
+"intc": null,
+"rate": 89.8,
+"adot": 8.5,
+"dk": 60.5,
+"rate_pctl": 59
+},
+"Cover 2": {
+"db": 83,
+"cmp": 56.2,
+"ypa": 5.21,
+"td": 1,
+"intc": 1,
+"rate": 69.4,
+"adot": 7.1,
+"dk": 30.7,
+"rate_pctl": 15
+},
+"Cover 3": {
+"db": 239,
+"cmp": 59.9,
+"ypa": 7.51,
+"td": 8,
+"intc": 3,
+"rate": 89.8,
+"adot": 8.8,
+"dk": 102.6,
+"rate_pctl": 58
+},
+"Cover 4": {
+"db": 81,
+"cmp": 61.8,
+"ypa": 7.96,
+"td": 4,
+"intc": null,
+"rate": 104.3,
+"adot": 11.7,
+"dk": 47.4,
+"rate_pctl": 84
+},
+"Cover 6": {
+"db": 66,
+"cmp": 61.4,
+"ypa": 8.05,
+"td": 1,
+"intc": 2,
+"rate": 78,
+"adot": 7.9,
+"dk": 28.6,
+"rate_pctl": 30
+}
+}
+},
+"dak prescott": {
+"pos": "QB",
+"name": "Dak Prescott",
+"schemes": {
+"Cover 0": {
+"db": 30,
+"cmp": 56.7,
+"ypa": 4.97,
+"td": 4,
+"intc": null,
+"rate": 109.6,
+"adot": 4.8,
+"dk": 22,
+"rate_pctl": 71
+},
+"Cover 1": {
+"db": 105,
+"cmp": 62.9,
+"ypa": 9.29,
+"td": 5,
+"intc": 2,
+"rate": 101.8,
+"adot": 9.6,
+"dk": 66.9,
+"rate_pctl": 78
+},
+"Cover 2": {
+"db": 110,
+"cmp": 69.7,
+"ypa": 8.84,
+"td": 2,
+"intc": 2,
+"rate": 95.3,
+"adot": 8.8,
+"dk": 48.2,
+"rate_pctl": 72
+},
+"Cover 2 Man": {
+"db": 24,
+"cmp": 70,
+"ypa": 8.15,
+"td": null,
+"intc": null,
+"rate": 94.4,
+"adot": 7.7,
+"dk": 7.9,
+"rate_pctl": 58
+},
+"Cover 3": {
+"db": 155,
+"cmp": 74.1,
+"ypa": 8.03,
+"td": 9,
+"intc": 2,
+"rate": 112.1,
+"adot": 8.7,
+"dk": 85.1,
+"rate_pctl": 89
+},
+"Cover 4": {
+"db": 105,
+"cmp": 67.8,
+"ypa": 7.31,
+"td": 2,
+"intc": 4,
+"rate": 77.9,
+"adot": 9.1,
+"dk": 37.8,
+"rate_pctl": 26
+},
+"Cover 6": {
+"db": 81,
+"cmp": 69.7,
+"ypa": 6.55,
+"td": 1,
+"intc": null,
+"rate": 91.9,
+"adot": 7.4,
+"dk": 27.8,
+"rate_pctl": 64
+}
+}
+},
+"cam ward": {
+"pos": "QB",
+"name": "Cam Ward",
+"schemes": {
+"Cover 0": {
+"db": 12,
+"cmp": 55.6,
+"ypa": 3.11,
+"td": 1,
+"intc": 1,
+"rate": 58.8,
+"adot": 6.7,
+"dk": 3.1,
+"rate_pctl": 9
+},
+"Cover 1": {
+"db": 106,
+"cmp": 48.9,
+"ypa": 5.65,
+"td": 4,
+"intc": 1,
+"rate": 76.8,
+"adot": 10.2,
+"dk": 38.2,
+"rate_pctl": 38
+},
+"Cover 2": {
+"db": 99,
+"cmp": 60.9,
+"ypa": 6.25,
+"td": null,
+"intc": 1,
+"rate": 74.1,
+"adot": 7.1,
+"dk": 27.6,
+"rate_pctl": 23
+},
+"Cover 3": {
+"db": 210,
+"cmp": 61.8,
+"ypa": 5.96,
+"td": 3,
+"intc": 1,
+"rate": 81.6,
+"adot": 7.1,
+"dk": 59,
+"rate_pctl": 34
+},
+"Cover 4": {
+"db": 86,
+"cmp": 65.8,
+"ypa": 5.86,
+"td": 1,
+"intc": 1,
+"rate": 80.2,
+"adot": 6,
+"dk": 24.4,
+"rate_pctl": 34
+},
+"Cover 6": {
+"db": 73,
+"cmp": 61.8,
+"ypa": 6.16,
+"td": null,
+"intc": 2,
+"rate": 67,
+"adot": 7.8,
+"dk": 20.3,
+"rate_pctl": 17
+}
+}
+},
+"aaron rodgers": {
+"pos": "QB",
+"name": "Aaron Rodgers",
+"schemes": {
+"Cover 0": {
+"db": 16,
+"cmp": 46.7,
+"ypa": 4.47,
+"td": 4,
+"intc": null,
+"rate": 99.2,
+"adot": 4.8,
+"dk": 24.8,
+"rate_pctl": 53
+},
+"Cover 1": {
+"db": 102,
+"cmp": 52.1,
+"ypa": 6.53,
+"td": 6,
+"intc": null,
+"rate": 94,
+"adot": 11.1,
+"dk": 54.7,
+"rate_pctl": 68
+},
+"Cover 2": {
+"db": 75,
+"cmp": 80.9,
+"ypa": 9.12,
+"td": 2,
+"intc": null,
+"rate": 114.5,
+"adot": 4.3,
+"dk": 35.8,
+"rate_pctl": 95
+},
+"Cover 2 Man": {
+"db": 23,
+"cmp": 40,
+"ypa": 3.75,
+"td": null,
+"intc": 1,
+"rate": 30.2,
+"adot": 8.7,
+"dk": 3,
+"rate_pctl": 4
+},
+"Cover 3": {
+"db": 138,
+"cmp": 68,
+"ypa": 5.99,
+"td": 3,
+"intc": 3,
+"rate": 81.7,
+"adot": 4.2,
+"dk": 43.3,
+"rate_pctl": 36
+},
+"Cover 4": {
+"db": 79,
+"cmp": 73,
+"ypa": 6.47,
+"td": 1,
+"intc": null,
+"rate": 94.4,
+"adot": 6.3,
+"dk": 27.2,
+"rate_pctl": 66
+},
+"Cover 6": {
+"db": 65,
+"cmp": 75.8,
+"ypa": 8.71,
+"td": 3,
+"intc": 2,
+"rate": 104.2,
+"adot": 4.8,
+"dk": 34.6,
+"rate_pctl": 83
+}
+}
+},
+"tua tagovailoa": {
+"pos": "QB",
+"name": "Tua Tagovailoa",
+"schemes": {
+"Cover 0": {
+"db": 13,
+"cmp": 53.8,
+"ypa": 3.23,
+"td": 6,
+"intc": null,
+"rate": 100,
+"adot": 8.6,
+"dk": 25.7,
+"rate_pctl": 57
+},
+"Cover 1": {
+"db": 42,
+"cmp": 54.1,
+"ypa": 5.65,
+"td": 1,
+"intc": null,
+"rate": 79.7,
+"adot": 5.3,
+"dk": 13.1,
+"rate_pctl": 45
+},
+"Cover 2": {
+"db": 86,
+"cmp": 77,
+"ypa": 6.28,
+"td": null,
+"intc": null,
+"rate": 92.5,
+"adot": 4.8,
+"dk": 21.8,
+"rate_pctl": 56
+},
+"Cover 2 Man": {
+"db": 13,
+"cmp": 83.3,
+"ypa": 8.08,
+"td": 1,
+"intc": null,
+"rate": 128.1,
+"adot": 6.1,
+"dk": 7.9,
+"rate_pctl": 88
+},
+"Cover 3": {
+"db": 150,
+"cmp": 64.5,
+"ypa": 7.5,
+"td": 4,
+"intc": 10,
+"rate": 66.5,
+"adot": 7.9,
+"dk": 51.8,
+"rate_pctl": 12
+},
+"Cover 4": {
+"db": 60,
+"cmp": 75.5,
+"ypa": 8.15,
+"td": 2,
+"intc": 2,
+"rate": 95.8,
+"adot": 6.6,
+"dk": 27.4,
+"rate_pctl": 72
+},
+"Cover 6": {
+"db": 37,
+"cmp": 68.6,
+"ypa": 8.17,
+"td": 1,
+"intc": 2,
+"rate": 79,
+"adot": 9.5,
+"dk": 13.4,
+"rate_pctl": 32
+}
+}
+},
+"trevor lawrence": {
+"pos": "QB",
+"name": "Trevor Lawrence",
+"schemes": {
+"Cover 0": {
+"db": 30,
+"cmp": 58.6,
+"ypa": 8.9,
+"td": 5,
+"intc": 2,
+"rate": 98.9,
+"adot": 10.3,
+"dk": 29,
+"rate_pctl": 50
+},
+"Cover 1": {
+"db": 114,
+"cmp": 56,
+"ypa": 8.2,
+"td": 6,
+"intc": 3,
+"rate": 90.4,
+"adot": 10.2,
+"dk": 62.7,
+"rate_pctl": 64
+},
+"Cover 2": {
+"db": 80,
+"cmp": 67.6,
+"ypa": 8.41,
+"td": 2,
+"intc": null,
+"rate": 102.8,
+"adot": 8,
+"dk": 36.5,
+"rate_pctl": 81
+},
+"Cover 3": {
+"db": 229,
+"cmp": 60.8,
+"ypa": 6.37,
+"td": 6,
+"intc": 4,
+"rate": 80.9,
+"adot": 8.9,
+"dk": 82,
+"rate_pctl": 32
+},
+"Cover 4": {
+"db": 102,
+"cmp": 63.7,
+"ypa": 7.53,
+"td": 1,
+"intc": 3,
+"rate": 76.5,
+"adot": 9.4,
+"dk": 41.7,
+"rate_pctl": 22
+},
+"Cover 6": {
+"db": 48,
+"cmp": 59.5,
+"ypa": 6.32,
+"td": 2,
+"intc": null,
+"rate": 96,
+"adot": 10.8,
+"dk": 23.4,
+"rate_pctl": 71
+}
+}
+},
+"cj stroud": {
+"pos": "QB",
+"name": "C.J. Stroud",
+"schemes": {
+"Cover 0": {
+"db": 19,
+"cmp": 35.3,
+"ypa": 1.59,
+"td": 1,
+"intc": null,
+"rate": 63.6,
+"adot": 6.6,
+"dk": 5.1,
+"rate_pctl": 12
+},
+"Cover 1": {
+"db": 85,
+"cmp": 65.8,
+"ypa": 8.32,
+"td": 5,
+"intc": 1,
+"rate": 108,
+"adot": 9,
+"dk": 53.9,
+"rate_pctl": 85
+},
+"Cover 2": {
+"db": 61,
+"cmp": 71.9,
+"ypa": 6.91,
+"td": null,
+"intc": 2,
+"rate": 76.2,
+"adot": 6.6,
+"dk": 18.5,
+"rate_pctl": 28
+},
+"Cover 2 Man": {
+"db": 13,
+"cmp": 27.3,
+"ypa": 3.55,
+"td": null,
+"intc": null,
+"rate": 41.9,
+"adot": 8.4,
+"dk": 2.8,
+"rate_pctl": 12
+},
+"Cover 3": {
+"db": 144,
+"cmp": 69,
+"ypa": 7.89,
+"td": 3,
+"intc": 2,
+"rate": 93.8,
+"adot": 7.8,
+"dk": 58.3,
+"rate_pctl": 65
+},
+"Cover 4": {
+"db": 68,
+"cmp": 64.1,
+"ypa": 8,
+"td": 1,
+"intc": 1,
+"rate": 87.5,
+"adot": 8.5,
+"dk": 28,
+"rate_pctl": 45
+},
+"Cover 6": {
+"db": 48,
+"cmp": 69.8,
+"ypa": 8.02,
+"td": 1,
+"intc": 2,
+"rate": 82,
+"adot": 8.2,
+"dk": 20.5,
+"rate_pctl": 44
+}
+}
+},
+"sam darnold": {
+"pos": "QB",
+"name": "Sam Darnold",
+"schemes": {
+"Cover 0": {
+"db": 13,
+"cmp": 61.5,
+"ypa": 7.69,
+"td": 3,
+"intc": 2,
+"rate": 85.4,
+"adot": 11.1,
+"dk": 14,
+"rate_pctl": 26
+},
+"Cover 1": {
+"db": 84,
+"cmp": 64.1,
+"ypa": 8.24,
+"td": 7,
+"intc": 4,
+"rate": 98.4,
+"adot": 10,
+"dk": 56.7,
+"rate_pctl": 73
+},
+"Cover 2": {
+"db": 50,
+"cmp": 75.6,
+"ypa": 7.2,
+"td": null,
+"intc": 3,
+"rate": 67.3,
+"adot": 4.8,
+"dk": 12.9,
+"rate_pctl": 11
+},
+"Cover 2 Man": {
+"db": 12,
+"cmp": 81.8,
+"ypa": 6.82,
+"td": null,
+"intc": null,
+"rate": 95.1,
+"adot": 4,
+"dk": 3,
+"rate_pctl": 73
+},
+"Cover 3": {
+"db": 170,
+"cmp": 66.9,
+"ypa": 9.92,
+"td": 9,
+"intc": 2,
+"rate": 113,
+"adot": 9,
+"dk": 99.4,
+"rate_pctl": 91
+},
+"Cover 4": {
+"db": 101,
+"cmp": 73.7,
+"ypa": 9.79,
+"td": 2,
+"intc": 2,
+"rate": 102.5,
+"adot": 8.7,
+"dk": 45.5,
+"rate_pctl": 78
+},
+"Cover 6": {
+"db": 52,
+"cmp": 66.7,
+"ypa": 6.31,
+"td": null,
+"intc": 1,
+"rate": 75.3,
+"adot": 7.3,
+"dk": 15.4,
+"rate_pctl": 28
+}
+}
+},
+"bo nix": {
+"pos": "QB",
+"name": "Bo Nix",
+"schemes": {
+"Cover 0": {
+"db": 24,
+"cmp": 60.9,
+"ypa": 4.26,
+"td": 6,
+"intc": 1,
+"rate": 92,
+"adot": 5.7,
+"dk": 27.2,
+"rate_pctl": 33
+},
+"Cover 1": {
+"db": 78,
+"cmp": 59.2,
+"ypa": 7.56,
+"td": 4,
+"intc": 2,
+"rate": 89.9,
+"adot": 10.1,
+"dk": 44.8,
+"rate_pctl": 61
+},
+"Cover 2": {
+"db": 103,
+"cmp": 66.7,
+"ypa": 6.21,
+"td": 2,
+"intc": 2,
+"rate": 81.8,
+"adot": 6.8,
+"dk": 34.9,
+"rate_pctl": 36
+},
+"Cover 3": {
+"db": 232,
+"cmp": 64.6,
+"ypa": 7.1,
+"td": 4,
+"intc": 5,
+"rate": 82,
+"adot": 8.2,
+"dk": 81.5,
+"rate_pctl": 39
+},
+"Cover 4": {
+"db": 116,
+"cmp": 62.3,
+"ypa": 6.08,
+"td": 5,
+"intc": null,
+"rate": 95,
+"adot": 8.2,
+"dk": 55.7,
+"rate_pctl": 68
+},
+"Cover 6": {
+"db": 76,
+"cmp": 71.4,
+"ypa": 5.87,
+"td": null,
+"intc": null,
+"rate": 86.1,
+"adot": 6.4,
+"dk": 23.9,
+"rate_pctl": 50
+}
+}
+},
+"baker mayfield": {
+"pos": "QB",
+"name": "Baker Mayfield",
+"schemes": {
+"Cover 0": {
+"db": 10,
+"cmp": 60,
+"ypa": 5.1,
+"td": 2,
+"intc": null,
+"rate": 112.9,
+"adot": 7.6,
+"dk": 10,
+"rate_pctl": 78
+},
+"Cover 1": {
+"db": 139,
+"cmp": 53.5,
+"ypa": 4.89,
+"td": 6,
+"intc": 2,
+"rate": 77.3,
+"adot": 8.2,
+"dk": 75.8,
+"rate_pctl": 39
+},
+"Cover 2": {
+"db": 88,
+"cmp": 69.2,
+"ypa": 7.4,
+"td": 1,
+"intc": 2,
+"rate": 84.2,
+"adot": 7.7,
+"dk": 30.7,
+"rate_pctl": 38
+},
+"Cover 3": {
+"db": 205,
+"cmp": 65.7,
+"ypa": 6.51,
+"td": 4,
+"intc": 2,
+"rate": 86.8,
+"adot": 7.2,
+"dk": 71,
+"rate_pctl": 53
+},
+"Cover 4": {
+"db": 96,
+"cmp": 66.3,
+"ypa": 8.43,
+"td": 4,
+"intc": 1,
+"rate": 102.7,
+"adot": 9.5,
+"dk": 50.8,
+"rate_pctl": 80
+},
+"Cover 6": {
+"db": 44,
+"cmp": 73,
+"ypa": 12.16,
+"td": 2,
+"intc": 2,
+"rate": 109.1,
+"adot": 11.1,
+"dk": 27.5,
+"rate_pctl": 89
+}
+}
+},
+"patrick mahomes": {
+"pos": "QB",
+"name": "Patrick Mahomes",
+"schemes": {
+"Cover 0": {
+"db": 20,
+"cmp": 68.4,
+"ypa": 4.47,
+"td": 7,
+"intc": 2,
+"rate": 77.7,
+"adot": 5.6,
+"dk": 29.4,
+"rate_pctl": 16
+},
+"Cover 1": {
+"db": 152,
+"cmp": 50.4,
+"ypa": 5.67,
+"td": 4,
+"intc": 3,
+"rate": 68.3,
+"adot": 9.3,
+"dk": 73.8,
+"rate_pctl": 24
+},
+"Cover 2": {
+"db": 39,
+"cmp": 91.4,
+"ypa": 11.49,
+"td": 2,
+"intc": null,
+"rate": 133.6,
+"adot": 5.7,
+"dk": 28.6,
+"rate_pctl": 99
+},
+"Cover 2 Man": {
+"db": 14,
+"cmp": 41.7,
+"ypa": 3.67,
+"td": null,
+"intc": null,
+"rate": 52.1,
+"adot": 16.9,
+"dk": 2.4,
+"rate_pctl": 19
+},
+"Cover 3": {
+"db": 163,
+"cmp": 67.2,
+"ypa": 9,
+"td": 3,
+"intc": 3,
+"rate": 93.7,
+"adot": 8.9,
+"dk": 76.9,
+"rate_pctl": 63
+},
+"Cover 4": {
+"db": 99,
+"cmp": 69.1,
+"ypa": 6.57,
+"td": 1,
+"intc": null,
+"rate": 91.2,
+"adot": 6.3,
+"dk": 38,
+"rate_pctl": 55
+},
+"Cover 6": {
+"db": 63,
+"cmp": 67.9,
+"ypa": 8.8,
+"td": null,
+"intc": 3,
+"rate": 73,
+"adot": 7.4,
+"dk": 21.4,
+"rate_pctl": 23
+}
+}
+},
+"jacoby brissett": {
+"pos": "QB",
+"name": "Jacoby Brissett",
+"schemes": {
+"Cover 0": {
+"db": 11,
+"cmp": 72.7,
+"ypa": 4.73,
+"td": 2,
+"intc": null,
+"rate": 122,
+"adot": 9.2,
+"dk": 10.1,
+"rate_pctl": 88
+},
+"Cover 1": {
+"db": 87,
+"cmp": 53.3,
+"ypa": 7,
+"td": 1,
+"intc": 2,
+"rate": 69,
+"adot": 11.4,
+"dk": 26.7,
+"rate_pctl": 25
+},
+"Cover 2": {
+"db": 64,
+"cmp": 77.6,
+"ypa": 8.36,
+"td": null,
+"intc": 1,
+"rate": 94.3,
+"adot": 4.9,
+"dk": 21.5,
+"rate_pctl": 66
+},
+"Cover 3": {
+"db": 182,
+"cmp": 67.7,
+"ypa": 6.98,
+"td": 4,
+"intc": 3,
+"rate": 88.1,
+"adot": 6.8,
+"dk": 66.3,
+"rate_pctl": 55
+},
+"Cover 4": {
+"db": 112,
+"cmp": 64.2,
+"ypa": 6.76,
+"td": 7,
+"intc": 2,
+"rate": 97.9,
+"adot": 8.8,
+"dk": 57.7,
+"rate_pctl": 74
+},
+"Cover 6": {
+"db": 50,
+"cmp": 65,
+"ypa": 7.03,
+"td": 2,
+"intc": null,
+"rate": 102.2,
+"adot": 8.1,
+"dk": 22.7,
+"rate_pctl": 77
+}
+}
+},
+"jordan love": {
+"pos": "QB",
+"name": "Jordan Love",
+"schemes": {
+"Cover 0": {
+"db": 15,
+"cmp": 73.3,
+"ypa": 5,
+"td": 8,
+"intc": null,
+"rate": 123.6,
+"adot": 3.3,
+"dk": 35,
+"rate_pctl": 91
+},
+"Cover 1": {
+"db": 120,
+"cmp": 57.3,
+"ypa": 8.07,
+"td": 6,
+"intc": 2,
+"rate": 94.1,
+"adot": 10.8,
+"dk": 64.7,
+"rate_pctl": 69
+},
+"Cover 2": {
+"db": 53,
+"cmp": 83,
+"ypa": 8.94,
+"td": null,
+"intc": 1,
+"rate": 95,
+"adot": 6.4,
+"dk": 18.7,
+"rate_pctl": 70
+},
+"Cover 2 Man": {
+"db": 10,
+"cmp": 62.5,
+"ypa": 9.25,
+"td": 1,
+"intc": null,
+"rate": 132.3,
+"adot": 13.1,
+"dk": 7.7,
+"rate_pctl": 96
+},
+"Cover 3": {
+"db": 138,
+"cmp": 67.5,
+"ypa": 7.74,
+"td": 3,
+"intc": 1,
+"rate": 95.2,
+"adot": 7.5,
+"dk": 57.6,
+"rate_pctl": 73
+},
+"Cover 4": {
+"db": 72,
+"cmp": 72.7,
+"ypa": 8.76,
+"td": 2,
+"intc": 1,
+"rate": 103,
+"adot": 10.1,
+"dk": 35.3,
+"rate_pctl": 82
+},
+"Cover 6": {
+"db": 56,
+"cmp": 65.3,
+"ypa": 6.51,
+"td": 1,
+"intc": 1,
+"rate": 81.9,
+"adot": 12.3,
+"dk": 23.3,
+"rate_pctl": 42
+}
+}
+},
+"michael penix": {
+"pos": "QB",
+"name": "Michael Penix",
+"schemes": {
+"Cover 0": {
+"db": 13,
+"cmp": 66.7,
+"ypa": 2.5,
+"td": 3,
+"intc": null,
+"rate": 109.7,
+"adot": 5.9,
+"dk": 12.2,
+"rate_pctl": 74
+},
+"Cover 1": {
+"db": 58,
+"cmp": 37,
+"ypa": 5.61,
+"td": 1,
+"intc": 1,
+"rate": 54.8,
+"adot": 13.4,
+"dk": 18.7,
+"rate_pctl": 5
+},
+"Cover 2": {
+"db": 45,
+"cmp": 66.7,
+"ypa": 7.98,
+"td": null,
+"intc": null,
+"rate": 90.9,
+"adot": 7.8,
+"dk": 16.9,
+"rate_pctl": 52
+},
+"Cover 3": {
+"db": 105,
+"cmp": 66.3,
+"ypa": 8.63,
+"td": 3,
+"intc": 2,
+"rate": 95,
+"adot": 6.6,
+"dk": 48.8,
+"rate_pctl": 70
+},
+"Cover 4": {
+"db": 33,
+"cmp": 78.1,
+"ypa": 6.28,
+"td": null,
+"intc": null,
+"rate": 92.8,
+"adot": 6.7,
+"dk": 8.5,
+"rate_pctl": 62
+},
+"Cover 6": {
+"db": 32,
+"cmp": 60.7,
+"ypa": 8.57,
+"td": null,
+"intc": null,
+"rate": 88.4,
+"adot": 9.6,
+"dk": 10.5,
+"rate_pctl": 54
+}
+}
+},
+"geno smith": {
+"pos": "QB",
+"name": "Geno Smith",
+"schemes": {
+"Cover 0": {
+"db": 20,
+"cmp": 62.5,
+"ypa": 7.56,
+"td": 3,
+"intc": null,
+"rate": 125.3,
+"adot": 8.3,
+"dk": 16.8,
+"rate_pctl": 95
+},
+"Cover 1": {
+"db": 105,
+"cmp": 56.7,
+"ypa": 6.72,
+"td": 2,
+"intc": 2,
+"rate": 75.5,
+"adot": 9.2,
+"dk": 37.8,
+"rate_pctl": 36
+},
+"Cover 2": {
+"db": 75,
+"cmp": 68.7,
+"ypa": 6.06,
+"td": null,
+"intc": 8,
+"rate": 45,
+"adot": 5.9,
+"dk": 11.7,
+"rate_pctl": 7
+},
+"Cover 3": {
+"db": 153,
+"cmp": 78.4,
+"ypa": 8.01,
+"td": 2,
+"intc": 2,
+"rate": 98.8,
+"adot": 6.5,
+"dk": 55.4,
+"rate_pctl": 78
+},
+"Cover 4": {
+"db": 94,
+"cmp": 58.4,
+"ypa": 5.78,
+"td": 4,
+"intc": 2,
+"rate": 81.4,
+"adot": 6.4,
+"dk": 35.7,
+"rate_pctl": 38
+},
+"Cover 6": {
+"db": 42,
+"cmp": 77.8,
+"ypa": 6.5,
+"td": null,
+"intc": 1,
+"rate": 82.2,
+"adot": 3.4,
+"dk": 8.8,
+"rate_pctl": 46
+}
+}
+},
+"justin fields": {
+"pos": "QB",
+"name": "Justin Fields",
+"schemes": {
+"Cover 0": {
+"db": 16,
+"cmp": 66.7,
+"ypa": 9.58,
+"td": 6,
+"intc": null,
+"rate": 137.2,
+"adot": 7.2,
+"dk": 38.9,
+"rate_pctl": 98
+},
+"Cover 1": {
+"db": 49,
+"cmp": 59,
+"ypa": 5.44,
+"td": 1,
+"intc": null,
+"rate": 82.4,
+"adot": 8.9,
+"dk": 12.9,
+"rate_pctl": 48
+},
+"Cover 2": {
+"db": 63,
+"cmp": 71.1,
+"ypa": 6.2,
+"td": null,
+"intc": 1,
+"rate": 77.9,
+"adot": 5.8,
+"dk": 17.8,
+"rate_pctl": 31
+},
+"Cover 3": {
+"db": 82,
+"cmp": 61.5,
+"ypa": 6.52,
+"td": null,
+"intc": null,
+"rate": 80.5,
+"adot": 7.4,
+"dk": 25.1,
+"rate_pctl": 30
+},
+"Cover 4": {
+"db": 22,
+"cmp": 55,
+"ypa": 4.95,
+"td": null,
+"intc": null,
+"rate": 68.5,
+"adot": 5.5,
+"dk": 4.7,
+"rate_pctl": 16
+},
+"Cover 6": {
+"db": 20,
+"cmp": 72.2,
+"ypa": 6.94,
+"td": null,
+"intc": null,
+"rate": 91.2,
+"adot": 8.9,
+"dk": 5.5,
+"rate_pctl": 62
+}
+}
+},
+"jalen hurts": {
+"pos": "QB",
+"name": "Jalen Hurts",
+"schemes": {
+"Cover 0": {
+"db": 42,
+"cmp": 59.5,
+"ypa": 5.83,
+"td": 8,
+"intc": 2,
+"rate": 95.7,
+"adot": 6.9,
+"dk": 38.8,
+"rate_pctl": 43
+},
+"Cover 1": {
+"db": 87,
+"cmp": 56.8,
+"ypa": 7.16,
+"td": 8,
+"intc": null,
+"rate": 115.3,
+"adot": 11.5,
+"dk": 63,
+"rate_pctl": 92
+},
+"Cover 2": {
+"db": 89,
+"cmp": 73.8,
+"ypa": 7.2,
+"td": 2,
+"intc": null,
+"rate": 101.9,
+"adot": 7.1,
+"dk": 34.5,
+"rate_pctl": 79
+},
+"Cover 2 Man": {
+"db": 10,
+"cmp": 50,
+"ypa": 7.9,
+"td": 1,
+"intc": null,
+"rate": 110,
+"adot": 11.9,
+"dk": 7.2,
+"rate_pctl": 81
+},
+"Cover 3": {
+"db": 161,
+"cmp": 65,
+"ypa": 7.84,
+"td": 5,
+"intc": 2,
+"rate": 95,
+"adot": 9.9,
+"dk": 71.5,
+"rate_pctl": 70
+},
+"Cover 4": {
+"db": 87,
+"cmp": 65.8,
+"ypa": 5.96,
+"td": null,
+"intc": 2,
+"rate": 70.3,
+"adot": 7.7,
+"dk": 24.7,
+"rate_pctl": 18
+},
+"Cover 6": {
+"db": 36,
+"cmp": 82.1,
+"ypa": 9.68,
+"td": null,
+"intc": null,
+"rate": 107,
+"adot": 9.1,
+"dk": 13,
+"rate_pctl": 85
+}
+}
+},
+"drake maye": {
+"pos": "QB",
+"name": "Drake Maye",
+"schemes": {
+"Cover 0": {
+"db": 26,
+"cmp": 43.5,
+"ypa": 3.61,
+"td": 4,
+"intc": null,
+"rate": 92.9,
+"adot": 5.8,
+"dk": 26.1,
+"rate_pctl": 36
+},
+"Cover 1": {
+"db": 120,
+"cmp": 72.9,
+"ypa": 12.01,
+"td": 11,
+"intc": 1,
+"rate": 146.7,
+"adot": 10.6,
+"dk": 109.1,
+"rate_pctl": 99
+},
+"Cover 2": {
+"db": 97,
+"cmp": 72.7,
+"ypa": 8.36,
+"td": 1,
+"intc": 1,
+"rate": 96.5,
+"adot": 8,
+"dk": 45.8,
+"rate_pctl": 74
+},
+"Cover 2 Man": {
+"db": 13,
+"cmp": 66.7,
+"ypa": 6.75,
+"td": null,
+"intc": null,
+"rate": 85.8,
+"adot": 9.1,
+"dk": 4.3,
+"rate_pctl": 42
+},
+"Cover 3": {
+"db": 207,
+"cmp": 74.6,
+"ypa": 9.2,
+"td": 6,
+"intc": 4,
+"rate": 104.5,
+"adot": 8.7,
+"dk": 100.9,
+"rate_pctl": 82
+},
+"Cover 4": {
+"db": 70,
+"cmp": 80,
+"ypa": 8.9,
+"td": 2,
+"intc": 1,
+"rate": 107.9,
+"adot": 10.9,
+"dk": 35.4,
+"rate_pctl": 91
+},
+"Cover 6": {
+"db": 44,
+"cmp": 66.7,
+"ypa": 7.39,
+"td": 2,
+"intc": 1,
+"rate": 96,
+"adot": 11.7,
+"dk": 18.8,
+"rate_pctl": 71
+}
+}
+},
+"daniel jones": {
+"pos": "QB",
+"name": "Daniel Jones",
+"schemes": {
+"Cover 0": {
+"db": 18,
+"cmp": 31.3,
+"ypa": 4.06,
+"td": 3,
+"intc": null,
+"rate": 84.6,
+"adot": 5.9,
+"dk": 20.9,
+"rate_pctl": 22
+},
+"Cover 1": {
+"db": 76,
+"cmp": 58.8,
+"ypa": 7.99,
+"td": 5,
+"intc": 1,
+"rate": 102.8,
+"adot": 10.9,
+"dk": 46.7,
+"rate_pctl": 82
+},
+"Cover 2": {
+"db": 54,
+"cmp": 80,
+"ypa": 8.64,
+"td": 2,
+"intc": 1,
+"rate": 107.7,
+"adot": 5.8,
+"dk": 29.2,
+"rate_pctl": 91
+},
+"Cover 3": {
+"db": 122,
+"cmp": 72.3,
+"ypa": 9.71,
+"td": 3,
+"intc": 4,
+"rate": 96.9,
+"adot": 8.8,
+"dk": 54.4,
+"rate_pctl": 76
+},
+"Cover 4": {
+"db": 88,
+"cmp": 74.4,
+"ypa": 7.83,
+"td": 1,
+"intc": 1,
+"rate": 95.6,
+"adot": 6.8,
+"dk": 33.9,
+"rate_pctl": 70
+},
+"Cover 6": {
+"db": 52,
+"cmp": 64.4,
+"ypa": 6.82,
+"td": 2,
+"intc": 1,
+"rate": 89.8,
+"adot": 11,
+"dk": 25,
+"rate_pctl": 60
+}
+}
+},
+"jaxson dart": {
+"pos": "QB",
+"name": "Jaxson Dart",
+"schemes": {
+"Cover 0": {
+"db": 17,
+"cmp": 33.3,
+"ypa": 2.93,
+"td": 1,
+"intc": 1,
+"rate": 36.8,
+"adot": 10.6,
+"dk": 11,
+"rate_pctl": 5
+},
+"Cover 1": {
+"db": 97,
+"cmp": 58.7,
+"ypa": 7.23,
+"td": 4,
+"intc": 1,
+"rate": 93.3,
+"adot": 9.1,
+"dk": 53.2,
+"rate_pctl": 66
+},
+"Cover 2": {
+"db": 58,
+"cmp": 66,
+"ypa": 5.4,
+"td": 1,
+"intc": 1,
+"rate": 77.9,
+"adot": 5.8,
+"dk": 17.2,
+"rate_pctl": 31
+},
+"Cover 3": {
+"db": 129,
+"cmp": 72.7,
+"ypa": 8.93,
+"td": 7,
+"intc": 2,
+"rate": 113.5,
+"adot": 8.7,
+"dk": 77.4,
+"rate_pctl": 94
+},
+"Cover 4": {
+"db": 58,
+"cmp": 66,
+"ypa": 5.62,
+"td": 1,
+"intc": null,
+"rate": 87.5,
+"adot": 6.6,
+"dk": 20,
+"rate_pctl": 45
+},
+"Cover 6": {
+"db": 36,
+"cmp": 63.3,
+"ypa": 4.77,
+"td": null,
+"intc": null,
+"rate": 74.7,
+"adot": 10.2,
+"dk": 7.1,
+"rate_pctl": 26
+}
+}
+},
+"lamar jackson": {
+"pos": "QB",
+"name": "Lamar Jackson",
+"schemes": {
+"Cover 0": {
+"db": 33,
+"cmp": 50,
+"ypa": 7.4,
+"td": 6,
+"intc": 1,
+"rate": 100.3,
+"adot": 9.5,
+"dk": 38.5,
+"rate_pctl": 60
+},
+"Cover 1": {
+"db": 94,
+"cmp": 59.8,
+"ypa": 9.12,
+"td": 6,
+"intc": 2,
+"rate": 104.1,
+"adot": 10.9,
+"dk": 59.3,
+"rate_pctl": 83
+},
+"Cover 2": {
+"db": 76,
+"cmp": 66.1,
+"ypa": 7.4,
+"td": 3,
+"intc": 2,
+"rate": 90.7,
+"adot": 7.3,
+"dk": 34.5,
+"rate_pctl": 50
+},
+"Cover 3": {
+"db": 90,
+"cmp": 76.5,
+"ypa": 10.75,
+"td": 2,
+"intc": 1,
+"rate": 114.3,
+"adot": 10.5,
+"dk": 44,
+"rate_pctl": 96
+},
+"Cover 4": {
+"db": 35,
+"cmp": 59.3,
+"ypa": 7.26,
+"td": null,
+"intc": 1,
+"rate": 66.3,
+"adot": 9.2,
+"dk": 9.7,
+"rate_pctl": 14
+},
+"Cover 6": {
+"db": 21,
+"cmp": 82.4,
+"ypa": 8.29,
+"td": 1,
+"intc": null,
+"rate": 120.8,
+"adot": 7.4,
+"dk": 12.4,
+"rate_pctl": 95
+}
+}
+},
+"justin herbert": {
+"pos": "QB",
+"name": "Justin Herbert",
+"schemes": {
+"Cover 0": {
+"db": 20,
+"cmp": 60,
+"ypa": 6.73,
+"td": 2,
+"intc": null,
+"rate": 119.7,
+"adot": 7.9,
+"dk": 22.2,
+"rate_pctl": 84
+},
+"Cover 1": {
+"db": 161,
+"cmp": 56.8,
+"ypa": 6.5,
+"td": 4,
+"intc": 2,
+"rate": 80.1,
+"adot": 8,
+"dk": 70.6,
+"rate_pctl": 46
+},
+"Cover 2": {
+"db": 73,
+"cmp": 80.3,
+"ypa": 9.49,
+"td": 2,
+"intc": 1,
+"rate": 110.3,
+"adot": 9.2,
+"dk": 40.2,
+"rate_pctl": 93
+},
+"Cover 3": {
+"db": 161,
+"cmp": 71.7,
+"ypa": 8.37,
+"td": 6,
+"intc": 5,
+"rate": 96.1,
+"adot": 8.4,
+"dk": 76.2,
+"rate_pctl": 75
+},
+"Cover 4": {
+"db": 93,
+"cmp": 77.9,
+"ypa": 7.83,
+"td": 2,
+"intc": 3,
+"rate": 91.7,
+"adot": 6.1,
+"dk": 34.2,
+"rate_pctl": 57
+},
+"Cover 6": {
+"db": 65,
+"cmp": 53.3,
+"ypa": 5.36,
+"td": null,
+"intc": null,
+"rate": 68.8,
+"adot": 9.8,
+"dk": 16.1,
+"rate_pctl": 21
+}
+}
+},
+"jake browning": {
+"pos": "QB",
+"name": "Jake Browning",
+"schemes": {
+"Cover 1": {
+"db": 19,
+"cmp": 68.8,
+"ypa": 8.63,
+"td": 2,
+"intc": null,
+"rate": 134.9,
+"adot": 10.7,
+"dk": 15,
+"rate_pctl": 96
+},
+"Cover 2": {
+"db": 33,
+"cmp": 73.3,
+"ypa": 5.97,
+"td": null,
+"intc": 1,
+"rate": 74.2,
+"adot": 3.9,
+"dk": 6.2,
+"rate_pctl": 25
+},
+"Cover 3": {
+"db": 29,
+"cmp": 59.3,
+"ypa": 5,
+"td": 1,
+"intc": 5,
+"rate": 45.1,
+"adot": 9.6,
+"dk": 4.4,
+"rate_pctl": 6
+},
+"Cover 4": {
+"db": 20,
+"cmp": 84.2,
+"ypa": 9.05,
+"td": 1,
+"intc": null,
+"rate": 121.9,
+"adot": 6.3,
+"dk": 12.2,
+"rate_pctl": 97
+},
+"Cover 6": {
+"db": 21,
+"cmp": 44.4,
+"ypa": 5.06,
+"td": null,
+"intc": 2,
+"rate": 20.6,
+"adot": 8.3,
+"dk": 1.9,
+"rate_pctl": 3
+}
+}
+},
+"jameis winston": {
+"pos": "QB",
+"name": "Jameis Winston",
+"schemes": {
+"Cover 1": {
+"db": 29,
+"cmp": 46.2,
+"ypa": 8.15,
+"td": null,
+"intc": null,
+"rate": 74.5,
+"adot": 9.5,
+"dk": 19.9,
+"rate_pctl": 34
+},
+"Cover 3": {
+"db": 23,
+"cmp": 65.2,
+"ypa": 9.96,
+"td": 1,
+"intc": 1,
+"rate": 94.3,
+"adot": 9,
+"dk": 12.2,
+"rate_pctl": 66
+}
+}
+},
+"kenny pickett": {
+"pos": "QB",
+"name": "Kenny Pickett",
+"schemes": {
+"Cover 1": {
+"db": 15,
+"cmp": 63.6,
+"ypa": 2.18,
+"td": null,
+"intc": null,
+"rate": 67.6,
+"adot": 4.2,
+"dk": 1.8,
+"rate_pctl": 22
+},
+"Cover 3": {
+"db": 18,
+"cmp": 68.8,
+"ypa": 5.19,
+"td": 1,
+"intc": 1,
+"rate": 75.8,
+"adot": 6,
+"dk": 6.3,
+"rate_pctl": 22
+}
+}
+},
+"mason rudolph": {
+"pos": "QB",
+"name": "Mason Rudolph",
+"schemes": {
+"Cover 1": {
+"db": 10,
+"cmp": 50,
+"ypa": 5.5,
+"td": null,
+"intc": null,
+"rate": 66.7,
+"adot": 8.3,
+"dk": 2.2,
+"rate_pctl": 18
+},
+"Cover 2": {
+"db": 10,
+"cmp": 88.9,
+"ypa": 7.33,
+"td": null,
+"intc": null,
+"rate": 97.2,
+"adot": 0.8,
+"dk": 2.6,
+"rate_pctl": 75
+},
+"Cover 3": {
+"db": 18,
+"cmp": 75,
+"ypa": 5.19,
+"td": null,
+"intc": 1,
+"rate": 60.2,
+"adot": 6.4,
+"dk": 1.6,
+"rate_pctl": 9
+}
+}
+},
+"max brosmer": {
+"pos": "QB",
+"name": "Max Brosmer",
+"schemes": {
+"Cover 1": {
+"db": 16,
+"cmp": 50,
+"ypa": 3.83,
+"td": null,
+"intc": null,
+"rate": 59.7,
+"adot": 7.6,
+"dk": 2.3,
+"rate_pctl": 11
+},
+"Cover 2": {
+"db": 19,
+"cmp": 55.6,
+"ypa": 3.11,
+"td": null,
+"intc": 1,
+"rate": 38.2,
+"adot": 3.1,
+"dk": 1.2,
+"rate_pctl": 5
+},
+"Cover 3": {
+"db": 35,
+"cmp": 67.9,
+"ypa": 5.64,
+"td": null,
+"intc": 3,
+"rate": 42.6,
+"adot": 5,
+"dk": 4.4,
+"rate_pctl": 4
+}
+}
+},
+"riley leonard": {
+"pos": "QB",
+"name": "Riley Leonard",
+"schemes": {
+"Cover 1": {
+"db": 10,
+"cmp": 50,
+"ypa": 2.38,
+"td": null,
+"intc": null,
+"rate": 56.3,
+"adot": 5,
+"dk": 2.8,
+"rate_pctl": 10
+},
+"Cover 2": {
+"db": 10,
+"cmp": 50,
+"ypa": 2.9,
+"td": null,
+"intc": 1,
+"rate": 16.7,
+"adot": 8,
+"dk": 0.2,
+"rate_pctl": 3
+},
+"Cover 3": {
+"db": 24,
+"cmp": 63.6,
+"ypa": 8.95,
+"td": null,
+"intc": null,
+"rate": 92.4,
+"adot": 11.1,
+"dk": 13.5,
+"rate_pctl": 61
+},
+"Cover 6": {
+"db": 12,
+"cmp": 72.7,
+"ypa": 6.09,
+"td": null,
+"intc": null,
+"rate": 88.1,
+"adot": 2.4,
+"dk": 2.7,
+"rate_pctl": 52
+}
+}
+},
+"joe burrow": {
+"pos": "QB",
+"name": "Joe Burrow",
+"schemes": {
+"Cover 1": {
+"db": 47,
+"cmp": 52.2,
+"ypa": 5.24,
+"td": 5,
+"intc": 1,
+"rate": 94.6,
+"adot": 9.8,
+"dk": 28.8,
+"rate_pctl": 71
+},
+"Cover 2": {
+"db": 67,
+"cmp": 66.1,
+"ypa": 5.68,
+"td": 1,
+"intc": null,
+"rate": 86.8,
+"adot": 6.4,
+"dk": 21.3,
+"rate_pctl": 40
+},
+"Cover 2 Man": {
+"db": 10,
+"cmp": 44.4,
+"ypa": 5.78,
+"td": null,
+"intc": null,
+"rate": 63.2,
+"adot": 8.8,
+"dk": 2.1,
+"rate_pctl": 35
+},
+"Cover 3": {
+"db": 81,
+"cmp": 73.7,
+"ypa": 8.33,
+"td": 3,
+"intc": 1,
+"rate": 105.9,
+"adot": 7.2,
+"dk": 39.8,
+"rate_pctl": 84
+},
+"Cover 4": {
+"db": 25,
+"cmp": 68.2,
+"ypa": 8.18,
+"td": 2,
+"intc": 1,
+"rate": 104.4,
+"adot": 7.3,
+"dk": 14.5,
+"rate_pctl": 86
+},
+"Cover 6": {
+"db": 28,
+"cmp": 84.6,
+"ypa": 8.85,
+"td": null,
+"intc": null,
+"rate": 103.5,
+"adot": 6.3,
+"dk": 9.2,
+"rate_pctl": 79
+}
+}
+},
+"spencer rattler": {
+"pos": "QB",
+"name": "Spencer Rattler",
+"schemes": {
+"Cover 1": {
+"db": 42,
+"cmp": 67.6,
+"ypa": 6.03,
+"td": 2,
+"intc": 1,
+"rate": 90.3,
+"adot": 9.1,
+"dk": 19.8,
+"rate_pctl": 62
+},
+"Cover 2": {
+"db": 53,
+"cmp": 68.8,
+"ypa": 6.23,
+"td": 2,
+"intc": 1,
+"rate": 90.5,
+"adot": 7.2,
+"dk": 20.9,
+"rate_pctl": 48
+},
+"Cover 3": {
+"db": 98,
+"cmp": 72.6,
+"ypa": 6.7,
+"td": null,
+"intc": 3,
+"rate": 75.6,
+"adot": 7.9,
+"dk": 24.4,
+"rate_pctl": 20
+},
+"Cover 4": {
+"db": 59,
+"cmp": 71.7,
+"ypa": 7.51,
+"td": 2,
+"intc": null,
+"rate": 105.7,
+"adot": 8.5,
+"dk": 27.7,
+"rate_pctl": 88
+},
+"Cover 6": {
+"db": 10,
+"cmp": 75,
+"ypa": 4.13,
+"td": null,
+"intc": null,
+"rate": 81.8,
+"adot": 3.3,
+"dk": 1.3,
+"rate_pctl": 40
+}
+}
+},
+"dillon gabriel": {
+"pos": "QB",
+"name": "Dillon Gabriel",
+"schemes": {
+"Cover 1": {
+"db": 53,
+"cmp": 61.7,
+"ypa": 5.72,
+"td": 1,
+"intc": null,
+"rate": 84.4,
+"adot": 6.3,
+"dk": 14.8,
+"rate_pctl": 55
+},
+"Cover 2": {
+"db": 39,
+"cmp": 69.4,
+"ypa": 5.44,
+"td": null,
+"intc": 1,
+"rate": 71.1,
+"adot": 4.5,
+"dk": 7.2,
+"rate_pctl": 21
+},
+"Cover 2 Man": {
+"db": 12,
+"cmp": 85.7,
+"ypa": 6.57,
+"td": null,
+"intc": null,
+"rate": 94,
+"adot": 5.9,
+"dk": 5.3,
+"rate_pctl": 50
+},
+"Cover 3": {
+"db": 53,
+"cmp": 57.4,
+"ypa": 4.79,
+"td": 2,
+"intc": 1,
+"rate": 75.2,
+"adot": 6.4,
+"dk": 17,
+"rate_pctl": 19
+},
+"Cover 4": {
+"db": 25,
+"cmp": 63.2,
+"ypa": 5.74,
+"td": null,
+"intc": null,
+"rate": 78.6,
+"adot": 5.2,
+"dk": 6.5,
+"rate_pctl": 30
+},
+"Cover 6": {
+"db": 12,
+"cmp": 55.6,
+"ypa": 4.56,
+"td": null,
+"intc": null,
+"rate": 67.4,
+"adot": 6.8,
+"dk": 3.5,
+"rate_pctl": 19
+}
+}
+},
+"brady cook": {
+"pos": "QB",
+"name": "Brady Cook",
+"schemes": {
+"Cover 1": {
+"db": 22,
+"cmp": 40,
+"ypa": 3,
+"td": null,
+"intc": 2,
+"rate": 8.3,
+"adot": 8.1,
+"dk": 0.4,
+"rate_pctl": 1
+},
+"Cover 2": {
+"db": 36,
+"cmp": 63.3,
+"ypa": 6.77,
+"td": null,
+"intc": 1,
+"rate": 69.2,
+"adot": 5.5,
+"dk": 7.1,
+"rate_pctl": 13
+},
+"Cover 3": {
+"db": 60,
+"cmp": 66.7,
+"ypa": 4.57,
+"td": 1,
+"intc": null,
+"rate": 83.2,
+"adot": 4.2,
+"dk": 14.1,
+"rate_pctl": 47
+},
+"Cover 4": {
+"db": 29,
+"cmp": 61.5,
+"ypa": 4.42,
+"td": null,
+"intc": 2,
+"rate": 39.7,
+"adot": 5,
+"dk": 2.6,
+"rate_pctl": 3
+},
+"Cover 6": {
+"db": 22,
+"cmp": 50,
+"ypa": 5.44,
+"td": null,
+"intc": null,
+"rate": 66.4,
+"adot": 6.8,
+"dk": 6.1,
+"rate_pctl": 15
+}
+}
+},
+"jayden daniels": {
+"pos": "QB",
+"name": "Jayden Daniels",
+"schemes": {
+"Cover 1": {
+"db": 54,
+"cmp": 41.3,
+"ypa": 6.89,
+"td": 1,
+"intc": null,
+"rate": 72.5,
+"adot": 12.1,
+"dk": 22.9,
+"rate_pctl": 32
+},
+"Cover 2": {
+"db": 34,
+"cmp": 76.9,
+"ypa": 7.23,
+"td": 1,
+"intc": 1,
+"rate": 93.1,
+"adot": 5.2,
+"dk": 14,
+"rate_pctl": 60
+},
+"Cover 3": {
+"db": 85,
+"cmp": 66.1,
+"ypa": 6.94,
+"td": 1,
+"intc": 1,
+"rate": 84.7,
+"adot": 6.8,
+"dk": 31.9,
+"rate_pctl": 48
+},
+"Cover 4": {
+"db": 21,
+"cmp": 80,
+"ypa": 9.73,
+"td": null,
+"intc": null,
+"rate": 107.2,
+"adot": 7.6,
+"dk": 10.1,
+"rate_pctl": 89
+},
+"Cover 6": {
+"db": 29,
+"cmp": 65,
+"ypa": 6.05,
+"td": null,
+"intc": 1,
+"rate": 60.6,
+"adot": 6,
+"dk": 7.7,
+"rate_pctl": 11
+}
+}
+},
+"brock purdy": {
+"pos": "QB",
+"name": "Brock Purdy",
+"schemes": {
+"Cover 1": {
+"db": 61,
+"cmp": 62.7,
+"ypa": 6.2,
+"td": 5,
+"intc": null,
+"rate": 108.4,
+"adot": 8.7,
+"dk": 37.6,
+"rate_pctl": 87
+},
+"Cover 2": {
+"db": 29,
+"cmp": 77.3,
+"ypa": 10.32,
+"td": 1,
+"intc": 1,
+"rate": 105.7,
+"adot": 9,
+"dk": 16.8,
+"rate_pctl": 87
+},
+"Cover 3": {
+"db": 100,
+"cmp": 67.8,
+"ypa": 9.42,
+"td": 3,
+"intc": 5,
+"rate": 85.8,
+"adot": 8.9,
+"dk": 50.5,
+"rate_pctl": 50
+},
+"Cover 4": {
+"db": 52,
+"cmp": 80,
+"ypa": 7.47,
+"td": null,
+"intc": 2,
+"rate": 79.3,
+"adot": 5.4,
+"dk": 18.9,
+"rate_pctl": 32
+},
+"Cover 6": {
+"db": 40,
+"cmp": 68.4,
+"ypa": 6.39,
+"td": 1,
+"intc": 1,
+"rate": 83.6,
+"adot": 6.2,
+"dk": 13,
+"rate_pctl": 48
+}
+}
+},
+"russell wilson": {
+"pos": "QB",
+"name": "Russell Wilson",
+"schemes": {
+"Cover 1": {
+"db": 23,
+"cmp": 61.1,
+"ypa": 7.61,
+"td": null,
+"intc": 1,
+"rate": 61.6,
+"adot": 7.8,
+"dk": 6.7,
+"rate_pctl": 13
+},
+"Cover 2": {
+"db": 39,
+"cmp": 69.4,
+"ypa": 8.44,
+"td": 1,
+"intc": null,
+"rate": 104.4,
+"adot": 8.8,
+"dk": 20.2,
+"rate_pctl": 85
+},
+"Cover 3": {
+"db": 25,
+"cmp": 78.9,
+"ypa": 9.95,
+"td": null,
+"intc": null,
+"rate": 108.1,
+"adot": 8.5,
+"dk": 9.2,
+"rate_pctl": 88
+},
+"Cover 4": {
+"db": 18,
+"cmp": 73.3,
+"ypa": 10.47,
+"td": 2,
+"intc": null,
+"rate": 146.4,
+"adot": 12.6,
+"dk": 16.1,
+"rate_pctl": 99
+},
+"Cover 6": {
+"db": 13,
+"cmp": 45.5,
+"ypa": 1.91,
+"td": null,
+"intc": 1,
+"rate": 14.6,
+"adot": 9.1,
+"dk": 1.2,
+"rate_pctl": 1
+}
+}
+},
+"carson wentz": {
+"pos": "QB",
+"name": "Carson Wentz",
+"schemes": {
+"Cover 1": {
+"db": 40,
+"cmp": 54.3,
+"ypa": 4.83,
+"td": null,
+"intc": 1,
+"rate": 55.5,
+"adot": 11.3,
+"dk": 6.9,
+"rate_pctl": 8
+},
+"Cover 2": {
+"db": 25,
+"cmp": 78.9,
+"ypa": 9.21,
+"td": 1,
+"intc": null,
+"rate": 122.6,
+"adot": 6.2,
+"dk": 12.3,
+"rate_pctl": 97
+},
+"Cover 2 Man": {
+"db": 15,
+"cmp": 50,
+"ypa": 3.88,
+"td": null,
+"intc": null,
+"rate": 59.9,
+"adot": 9,
+"dk": 4.1,
+"rate_pctl": 27
+},
+"Cover 3": {
+"db": 54,
+"cmp": 68,
+"ypa": 9.2,
+"td": 1,
+"intc": 3,
+"rate": 78.8,
+"adot": 7.8,
+"dk": 22.8,
+"rate_pctl": 25
+},
+"Cover 4": {
+"db": 22,
+"cmp": 68.2,
+"ypa": 4.41,
+"td": null,
+"intc": null,
+"rate": 77.3,
+"adot": 4.3,
+"dk": 3.9,
+"rate_pctl": 24
+},
+"Cover 6": {
+"db": 25,
+"cmp": 77.3,
+"ypa": 11.18,
+"td": null,
+"intc": 1,
+"rate": 94.1,
+"adot": 10.4,
+"dk": 8.8,
+"rate_pctl": 66
+}
+}
+},
+"davis mills": {
+"pos": "QB",
+"name": "Davis Mills",
+"schemes": {
+"Cover 1": {
+"db": 31,
+"cmp": 48.3,
+"ypa": 5.31,
+"td": null,
+"intc": null,
+"rate": 64.4,
+"adot": 9.1,
+"dk": 6.9,
+"rate_pctl": 15
+},
+"Cover 2": {
+"db": 22,
+"cmp": 47.6,
+"ypa": 2.14,
+"td": null,
+"intc": null,
+"rate": 54.3,
+"adot": 6.1,
+"dk": 2.4,
+"rate_pctl": 9
+},
+"Cover 3": {
+"db": 43,
+"cmp": 67.5,
+"ypa": 7.9,
+"td": 1,
+"intc": null,
+"rate": 99.6,
+"adot": 9.7,
+"dk": 21.7,
+"rate_pctl": 80
+},
+"Cover 4": {
+"db": 21,
+"cmp": 41.2,
+"ypa": 2.47,
+"td": null,
+"intc": null,
+"rate": 48.9,
+"adot": 8,
+"dk": 9.1,
+"rate_pctl": 5
+},
+"Cover 6": {
+"db": 33,
+"cmp": 76.7,
+"ypa": 7.87,
+"td": null,
+"intc": null,
+"rate": 98.8,
+"adot": 8,
+"dk": 10.4,
+"rate_pctl": 74
+}
+}
+},
+"philip rivers": {
+"pos": "QB",
+"name": "Philip Rivers",
+"schemes": {
+"Cover 1": {
+"db": 21,
+"cmp": 40,
+"ypa": 4.65,
+"td": null,
+"intc": null,
+"rate": 54.8,
+"adot": 8,
+"dk": 3.7,
+"rate_pctl": 5
+},
+"Cover 3": {
+"db": 33,
+"cmp": 70,
+"ypa": 6.63,
+"td": null,
+"intc": 1,
+"rate": 74.2,
+"adot": 9.6,
+"dk": 7,
+"rate_pctl": 17
+},
+"Cover 4": {
+"db": 11,
+"cmp": 63.6,
+"ypa": 6.82,
+"td": 1,
+"intc": null,
+"rate": 113.8,
+"adot": 11.7,
+"dk": 7,
+"rate_pctl": 93
+},
+"Cover 6": {
+"db": 15,
+"cmp": 85.7,
+"ypa": 6.93,
+"td": 1,
+"intc": 1,
+"rate": 89.6,
+"adot": 7.4,
+"dk": 6.9,
+"rate_pctl": 58
+}
+}
+},
+"tyler shough": {
+"pos": "QB",
+"name": "Tyler Shough",
+"schemes": {
+"Cover 1": {
+"db": 46,
+"cmp": 63.2,
+"ypa": 8.84,
+"td": 2,
+"intc": null,
+"rate": 109.1,
+"adot": 10.5,
+"dk": 34.8,
+"rate_pctl": 89
+},
+"Cover 2": {
+"db": 43,
+"cmp": 74.4,
+"ypa": 7.26,
+"td": null,
+"intc": null,
+"rate": 94.3,
+"adot": 6.9,
+"dk": 11.6,
+"rate_pctl": 66
+},
+"Cover 3": {
+"db": 121,
+"cmp": 67.9,
+"ypa": 6.3,
+"td": 2,
+"intc": 3,
+"rate": 79.4,
+"adot": 8.7,
+"dk": 37.4,
+"rate_pctl": 27
+},
+"Cover 4": {
+"db": 106,
+"cmp": 67.7,
+"ypa": 7.59,
+"td": 3,
+"intc": 3,
+"rate": 87.5,
+"adot": 8.3,
+"dk": 43.7,
+"rate_pctl": 45
+},
+"Cover 6": {
+"db": 38,
+"cmp": 72.4,
+"ypa": 9.28,
+"td": 1,
+"intc": null,
+"rate": 112.6,
+"adot": 8.9,
+"dk": 16.2,
+"rate_pctl": 93
+}
+}
+},
+"joe flacco": {
+"pos": "QB",
+"name": "Joe Flacco",
+"schemes": {
+"Cover 1": {
+"db": 109,
+"cmp": 53.5,
+"ypa": 5.92,
+"td": 6,
+"intc": 5,
+"rate": 70.5,
+"adot": 9.5,
+"dk": 47.1,
+"rate_pctl": 28
+},
+"Cover 2": {
+"db": 83,
+"cmp": 67.1,
+"ypa": 6.27,
+"td": 1,
+"intc": null,
+"rate": 88.2,
+"adot": 5.4,
+"dk": 27.6,
+"rate_pctl": 42
+},
+"Cover 2 Man": {
+"db": 14,
+"cmp": 71.4,
+"ypa": 8,
+"td": null,
+"intc": null,
+"rate": 94.9,
+"adot": 5.9,
+"dk": 4.5,
+"rate_pctl": 65
+},
+"Cover 3": {
+"db": 99,
+"cmp": 64.9,
+"ypa": 5.96,
+"td": null,
+"intc": 1,
+"rate": 76.6,
+"adot": 6.2,
+"dk": 22.4,
+"rate_pctl": 24
+},
+"Cover 4": {
+"db": 48,
+"cmp": 60.9,
+"ypa": 5.22,
+"td": 1,
+"intc": 1,
+"rate": 72.7,
+"adot": 5.3,
+"dk": 11.6,
+"rate_pctl": 20
+},
+"Cover 6": {
+"db": 45,
+"cmp": 77.3,
+"ypa": 7.59,
+"td": 2,
+"intc": 1,
+"rate": 103.8,
+"adot": 5.1,
+"dk": 23.4,
+"rate_pctl": 81
+}
+}
+},
+"jj mccarthy": {
+"pos": "QB",
+"name": "J.J. McCarthy",
+"schemes": {
+"Cover 1": {
+"db": 57,
+"cmp": 51.1,
+"ypa": 7.53,
+"td": 4,
+"intc": 3,
+"rate": 77.8,
+"adot": 12.3,
+"dk": 35.7,
+"rate_pctl": 41
+},
+"Cover 2": {
+"db": 50,
+"cmp": 70.7,
+"ypa": 8.07,
+"td": 1,
+"intc": 1,
+"rate": 92.6,
+"adot": 7.7,
+"dk": 21.6,
+"rate_pctl": 58
+},
+"Cover 3": {
+"db": 71,
+"cmp": 59.7,
+"ypa": 7.37,
+"td": 1,
+"intc": 3,
+"rate": 67.7,
+"adot": 9.4,
+"dk": 27.2,
+"rate_pctl": 14
+},
+"Cover 4": {
+"db": 42,
+"cmp": 61.5,
+"ypa": 4.97,
+"td": null,
+"intc": 2,
+"rate": 52.7,
+"adot": 6.8,
+"dk": 6.4,
+"rate_pctl": 9
+},
+"Cover 6": {
+"db": 33,
+"cmp": 53.8,
+"ypa": 6.88,
+"td": null,
+"intc": 1,
+"rate": 59.6,
+"adot": 10.2,
+"dk": 10.3,
+"rate_pctl": 9
+}
+}
+},
+"josh johnson": {
+"pos": "QB",
+"name": "Josh Johnson",
+"schemes": {
+"Cover 1": {
+"db": 13,
+"cmp": 55.6,
+"ypa": 13.22,
+"td": null,
+"intc": null,
+"rate": 100.5,
+"adot": 9.4,
+"dk": 6.9,
+"rate_pctl": 76
+},
+"Cover 3": {
+"db": 13,
+"cmp": 63.6,
+"ypa": 6.55,
+"td": null,
+"intc": null,
+"rate": 82.4,
+"adot": 7.9,
+"dk": 3.8,
+"rate_pctl": 40
+},
+"Cover 4": {
+"db": 12,
+"cmp": 54.5,
+"ypa": 4,
+"td": null,
+"intc": 1,
+"rate": 26.3,
+"adot": 4.9,
+"dk": 1.1,
+"rate_pctl": 1
+},
+"Cover 6": {
+"db": 13,
+"cmp": 75,
+"ypa": 7.92,
+"td": null,
+"intc": 1,
+"rate": 62.8,
+"adot": 3.4,
+"dk": 4.1,
+"rate_pctl": 13
+}
+}
+},
+"tanner mckee": {
+"pos": "QB",
+"name": "Tanner McKee",
+"schemes": {
+"Cover 1": {
+"db": 13,
+"cmp": 58.3,
+"ypa": 5.08,
+"td": null,
+"intc": null,
+"rate": 71.9,
+"adot": 8.5,
+"dk": 3.3,
+"rate_pctl": 31
+},
+"Cover 4": {
+"db": 17,
+"cmp": 61.5,
+"ypa": 7.54,
+"td": 1,
+"intc": 1,
+"rate": 78.4,
+"adot": 11.2,
+"dk": 7.2,
+"rate_pctl": 28
+}
+}
+},
+"quinn ewers": {
+"pos": "QB",
+"name": "Quinn Ewers",
+"schemes": {
+"Cover 1": {
+"db": 12,
+"cmp": 70,
+"ypa": 5.7,
+"td": null,
+"intc": null,
+"rate": 84.2,
+"adot": 3.6,
+"dk": 3.2,
+"rate_pctl": 53
+},
+"Cover 2": {
+"db": 18,
+"cmp": 64.3,
+"ypa": 13.64,
+"td": 1,
+"intc": 2,
+"rate": 92,
+"adot": 12.4,
+"dk": 10.3,
+"rate_pctl": 54
+},
+"Cover 3": {
+"db": 41,
+"cmp": 64.1,
+"ypa": 6.54,
+"td": null,
+"intc": 1,
+"rate": 72.1,
+"adot": 7.7,
+"dk": 10.1,
+"rate_pctl": 16
+},
+"Cover 4": {
+"db": 15,
+"cmp": 69.2,
+"ypa": 7.46,
+"td": null,
+"intc": null,
+"rate": 90.9,
+"adot": 9.7,
+"dk": 3.9,
+"rate_pctl": 53
+}
+}
+},
+"andy dalton": {
+"pos": "QB",
+"name": "Andy Dalton",
+"schemes": {
+"Cover 1": {
+"db": 11,
+"cmp": 90,
+"ypa": 11,
+"td": 1,
+"intc": null,
+"rate": 145.8,
+"adot": 9.2,
+"dk": 8.4,
+"rate_pctl": 97
+},
+"Cover 3": {
+"db": 13,
+"cmp": 58.3,
+"ypa": 7.75,
+"td": null,
+"intc": null,
+"rate": 83,
+"adot": 11.3,
+"dk": 3.7,
+"rate_pctl": 45
+}
+}
+},
+"mac jones": {
+"pos": "QB",
+"name": "Mac Jones",
+"schemes": {
+"Cover 1": {
+"db": 43,
+"cmp": 67.5,
+"ypa": 7.42,
+"td": 3,
+"intc": null,
+"rate": 114.3,
+"adot": 7.7,
+"dk": 22,
+"rate_pctl": 90
+},
+"Cover 2": {
+"db": 42,
+"cmp": 80,
+"ypa": 9.53,
+"td": 1,
+"intc": 2,
+"rate": 93.9,
+"adot": 6.9,
+"dk": 20.5,
+"rate_pctl": 62
+},
+"Cover 3": {
+"db": 98,
+"cmp": 75.9,
+"ypa": 9.34,
+"td": 2,
+"intc": 1,
+"rate": 107.1,
+"adot": 7.4,
+"dk": 44.8,
+"rate_pctl": 86
+},
+"Cover 4": {
+"db": 75,
+"cmp": 64.3,
+"ypa": 6.21,
+"td": 1,
+"intc": 1,
+"rate": 80.4,
+"adot": 8.4,
+"dk": 26.2,
+"rate_pctl": 36
+},
+"Cover 6": {
+"db": 29,
+"cmp": 64.3,
+"ypa": 5.39,
+"td": null,
+"intc": 2,
+"rate": 48.4,
+"adot": 5.6,
+"dk": 4,
+"rate_pctl": 7
+}
+}
+},
+"cooper rush": {
+"pos": "QB",
+"name": "Cooper Rush",
+"schemes": {
+"Cover 1": {
+"db": 10,
+"cmp": 70,
+"ypa": 10.5,
+"td": null,
+"intc": 1,
+"rate": 64.6,
+"adot": 8.6,
+"dk": 3.2,
+"rate_pctl": 17
+},
+"Cover 3": {
+"db": 18,
+"cmp": 44.4,
+"ypa": 3.33,
+"td": null,
+"intc": 2,
+"rate": 13.4,
+"adot": 8.6,
+"dk": 0.4,
+"rate_pctl": 1
+},
+"Cover 4": {
+"db": 12,
+"cmp": 81.8,
+"ypa": 5.55,
+"td": null,
+"intc": 1,
+"rate": 51.9,
+"adot": 3.9,
+"dk": 1.4,
+"rate_pctl": 7
+}
+}
+},
+"tyler huntley": {
+"pos": "QB",
+"name": "Tyler Huntley",
+"schemes": {
+"Cover 1": {
+"db": 16,
+"cmp": 80,
+"ypa": 8.47,
+"td": null,
+"intc": null,
+"rate": 101.9,
+"adot": 8.1,
+"dk": 6,
+"rate_pctl": 80
+},
+"Cover 2": {
+"db": 14,
+"cmp": 90,
+"ypa": 5.3,
+"td": null,
+"intc": null,
+"rate": 88.8,
+"adot": 1.8,
+"dk": 2.4,
+"rate_pctl": 44
+},
+"Cover 3": {
+"db": 29,
+"cmp": 65.2,
+"ypa": 6.3,
+"td": null,
+"intc": null,
+"rate": 82.7,
+"adot": 8.6,
+"dk": 10.1,
+"rate_pctl": 42
+},
+"Cover 6": {
+"db": 11,
+"cmp": 80,
+"ypa": 5.4,
+"td": null,
+"intc": null,
+"rate": 89.2,
+"adot": 2.9,
+"dk": 2.2,
+"rate_pctl": 56
+}
+}
+},
+"kyler murray": {
+"pos": "QB",
+"name": "Kyler Murray",
+"schemes": {
+"Cover 1": {
+"db": 19,
+"cmp": 58.8,
+"ypa": 4.35,
+"td": 2,
+"intc": 1,
+"rate": 83.9,
+"adot": 7.2,
+"dk": 10,
+"rate_pctl": 50
+},
+"Cover 2": {
+"db": 24,
+"cmp": 66.7,
+"ypa": 4.9,
+"td": null,
+"intc": null,
+"rate": 78.1,
+"adot": 6.6,
+"dk": 4.2,
+"rate_pctl": 34
+},
+"Cover 3": {
+"db": 59,
+"cmp": 69.4,
+"ypa": 6.27,
+"td": null,
+"intc": null,
+"rate": 86,
+"adot": 6.7,
+"dk": 24.6,
+"rate_pctl": 52
+},
+"Cover 4": {
+"db": 50,
+"cmp": 76.7,
+"ypa": 7.14,
+"td": 1,
+"intc": 1,
+"rate": 93.8,
+"adot": 5.4,
+"dk": 20,
+"rate_pctl": 64
+},
+"Cover 6": {
+"db": 26,
+"cmp": 73.7,
+"ypa": 7.53,
+"td": null,
+"intc": null,
+"rate": 94.8,
+"adot": 6.3,
+"dk": 7.6,
+"rate_pctl": 68
+}
+}
+},
+"tyrod taylor": {
+"pos": "QB",
+"name": "Tyrod Taylor",
+"schemes": {
+"Cover 1": {
+"db": 28,
+"cmp": 48,
+"ypa": 3.68,
+"td": null,
+"intc": 1,
+"rate": 40.8,
+"adot": 8.3,
+"dk": 5.4,
+"rate_pctl": 3
+},
+"Cover 2": {
+"db": 20,
+"cmp": 57.1,
+"ypa": 4.79,
+"td": null,
+"intc": null,
+"rate": 69.6,
+"adot": 7.5,
+"dk": 5.1,
+"rate_pctl": 17
+},
+"Cover 3": {
+"db": 66,
+"cmp": 66,
+"ypa": 6.66,
+"td": 2,
+"intc": 2,
+"rate": 81.7,
+"adot": 9.9,
+"dk": 28,
+"rate_pctl": 36
+},
+"Cover 4": {
+"db": 27,
+"cmp": 68.4,
+"ypa": 7.95,
+"td": 1,
+"intc": 1,
+"rate": 87.8,
+"adot": 10,
+"dk": 9.4,
+"rate_pctl": 49
+},
+"Cover 6": {
+"db": 17,
+"cmp": 58.3,
+"ypa": 6,
+"td": null,
+"intc": 1,
+"rate": 41,
+"adot": 13.4,
+"dk": 3.6,
+"rate_pctl": 5
+}
+}
+},
+"trey lance": {
+"pos": "QB",
+"name": "Trey Lance",
+"schemes": {
+"Cover 2": {
+"db": 13,
+"cmp": 40,
+"ypa": 2.1,
+"td": null,
+"intc": 1,
+"rate": 8.3,
+"adot": 9.7,
+"dk": 1.1,
+"rate_pctl": 1
+},
+"Cover 3": {
+"db": 18,
+"cmp": 53.8,
+"ypa": 3.31,
+"td": null,
+"intc": null,
+"rate": 60.7,
+"adot": 11.5,
+"dk": 6.4,
+"rate_pctl": 11
+},
+"Cover 4": {
+"db": 16,
+"cmp": 69.2,
+"ypa": 7,
+"td": null,
+"intc": null,
+"rate": 88.9,
+"adot": 8.7,
+"dk": 2.6,
+"rate_pctl": 51
+}
+}
+},
+"mitchell trubisky": {
+"pos": "QB",
+"name": "Mitchell Trubisky",
+"schemes": {
+"Cover 3": {
+"db": 18,
+"cmp": 76.5,
+"ypa": 12.59,
+"td": 1,
+"intc": null,
+"rate": 137.5,
+"adot": 8.2,
+"dk": 13,
+"rate_pctl": 99
+}
+}
+},
+"malik willis": {
+"pos": "QB",
+"name": "Malik Willis",
+"schemes": {
+"Cover 3": {
+"db": 18,
+"cmp": 84.6,
+"ypa": 11.77,
+"td": null,
+"intc": null,
+"rate": 115.7,
+"adot": 10.1,
+"dk": 7.8,
+"rate_pctl": 98
+}
+}
+},
+"chris oladokun": {
+"pos": "QB",
+"name": "Chris Oladokun",
+"schemes": {
+"Cover 3": {
+"db": 23,
+"cmp": 68.8,
+"ypa": 5.63,
+"td": null,
+"intc": null,
+"rate": 82.8,
+"adot": 3.8,
+"dk": 3.9,
+"rate_pctl": 43
+},
+"Cover 4": {
+"db": 12,
+"cmp": 90,
+"ypa": 6.2,
+"td": null,
+"intc": null,
+"rate": 92.5,
+"adot": 6,
+"dk": 3,
+"rate_pctl": 59
+}
+}
+},
+"clayton tune": {
+"pos": "QB",
+"name": "Clayton Tune",
+"schemes": {
+"Cover 3": {
+"db": 10,
+"cmp": 50,
+"ypa": 3.17,
+"td": null,
+"intc": 1,
+"rate": 17.4,
+"adot": 4,
+"dk": 1.5,
+"rate_pctl": 2
+}
+}
+}
+}

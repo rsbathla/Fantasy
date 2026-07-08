@@ -129,3 +129,35 @@ _Passing-defense and rushing-defense views (same method, separate pages) not yet
 Per-team-defense passing production **allowed**, sliced by the same dimensions (coverage, throwType, passLocation, dropbackType, passResult, throwAccuracy, targetedRead, depth, play-action, pressure, screen, out-of-pocket). 32 rows per file, `opponentStatsPassing*` = allowed. Endpoint `/team/defense/passing-advanced`.
 
 **Status: 2024 complete (12 dims); 2025 interrupted by FP server rate-limiting** — to be finished after a cooldown.
+
+---
+
+## Passing/coverageScheme (added 2026-07-08)
+
+QB passing box stats by coverage shell. Raw: `NFL-master/FP_SWEEP/2025/Passing/coverageScheme/qb_coverage_pull_2025.json`
+(per-shell, one row per QB with ≥8-10 dropbacks: db, cmp%, ypa, td, intc, rate, adot, dk).
+Shells pulled: Cover 0(29) / 1(57) / 2(51) / 2 Man(13) / 3(61) / 4(52) / 6(49) ranked QBs;
+Red Zone(35) situational; Goal Line/Prevent/Bracket/Misc near-empty (low dropback volume).
+Builder: `build_qb_coverage2025.py` -> `boom/qb_coverage_2025.json` {fn: {schemes: {<shell>:
+{...,rate_pctl}}}} (rating percentile vs QB pool per shell, for tint). Rendered in the warroom
+QB dossier as the "Passing by coverage" table beneath the cspec efficiency bars.
+
+### FP pull method — THE AUTH-HEADER KEY (do not re-learn this the hard way)
+The `/v2/ds/nfl/tools/player/<tool>-advanced/values` POST endpoint returns a **5-row FREE-PREVIEW
+teaser** (scrub players, `count:5`) when replayed WITHOUT the `Authorization` header — even with
+cookies (`credentials:'include'`). The app attaches a Bearer token in an `Authorization` request
+header; **replay MUST reuse the captured request's headers** to get the full authenticated set
+(77 QBs). This single fact is why two automated pull attempts failed before finding it.
+
+Response shape: `data.content.rows.values` (array of per-player objects, ~96 cols; `flatten` in body).
+The coverage FILTER clause is NOT guessable — capture it by setting the UI filter once, then replay:
+```
+context.filterPlay.coverageScheme = {"in": ["$$play.defense.coverageScheme.parent", ["Cover 3"]]}
+```
+(key `coverageScheme`; value pairs the `$$`-field-ref with the value array). Swap the value array
+per shell. The filter UI (react-select) is NOT headless-drivable in this env (SPA never reaches
+document_idle -> screenshots/computer-clicks time out; control classes are token-redacted -> JS
+can't locate it). So: ONE human filter-click captures the real request; the rest replays via the
+authenticated /values endpoint. Charted queries are ~3-5s each -> pull ≤3 shells per JS call to stay
+under the 45s CDP eval cap. Re-arming the fetch hook repeatedly recursively wraps window.fetch and
+eventually throws "Failed to fetch" — keep an `__orig` chain and restore native fetch if it breaks.

@@ -17,8 +17,8 @@ Routes:
   python3 brain/brain_warroom.py --vault ~/Downloads/NFL-Brain [--repo PATH]
 Output: <vault>/warroom.html  (ONE embedded JSON payload; graceful on missing files)
 """
-import argparse, glob, html, json, os, re, sys
-from collections import Counter
+import argparse, csv, glob, html, json, os, re, sys
+from collections import Counter, defaultdict
 from datetime import datetime, date, timedelta
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -134,6 +134,71 @@ COV_RE = re.compile(r"""
   | \bdime\s+(?:package|defense|personnel|back)\b
 """, re.I | re.X)
 
+# FP-sweep team codes -> standard (parse_clay TEAMMAP convention)
+_SWEEP_TEAMMAP = {"BLT": "BAL", "CLV": "CLE", "ARZ": "ARI", "HST": "HOU", "LA": "LAR"}
+
+def build_moves(repo, smp):
+    """Roster changes DERIVED, not copied: 2025 team per player = mode of Team across the
+    FP_SWEEP 2025 Receiving/coverageScheme raw files; 2026 team = boom/statmenu.json.
+    Replaces web_teams key_additions/key_losses (stale 2025-offseason list — user-caught
+    errors: NE 'Diggs new' was the 2025 signing, A.J. Brown's 2026 arrival was missing).
+    Receiving sweep => QB moves are NOT derivable from this source (flagged in render)."""
+    routes, disp, pos25 = Counter(), {}, {}
+    votes = defaultdict(Counter)
+    try:
+        files = glob.glob(os.path.join(repo, "NFL-master", "FP_SWEEP", "2025",
+                                       "Receiving", "coverageScheme", "*.csv"))
+        for f in files:
+            try:
+                for r in csv.DictReader(open(f, encoding="utf-8", errors="replace")):
+                    k = fn(r.get("Name", "")); t = str(r.get("Team", "")).strip()
+                    if not k or not t: continue
+                    votes[k][_SWEEP_TEAMMAP.get(t, t)] += 1
+                    disp.setdefault(k, r.get("Name", "")); pos25.setdefault(k, r.get("POS", ""))
+                    try: routes[k] += float(r.get("RoutesTotal") or 0)
+                    except Exception: pass
+            except Exception as e:
+                bc.log(f"warroom moves: skipped {os.path.basename(f)}: {e}")
+    except Exception as e:
+        bc.log(f"warroom moves: sweep unavailable ({e}) — roster changes degrade")
+        return {}
+    t25 = {k: c.most_common(1)[0][0] for k, c in votes.items()}
+    if not t25: return {}
+    moves = {ab: {"arr": [], "dep": [], "oop": []} for ab in bc._TEAMS}
+    for k, v in smp.items():
+        T = v.get("team"); p25 = t25.get(k)
+        if T in moves and p25 and p25 != T:
+            moves[T]["arr"].append({"k": rslug(v["name"]), "n": v["name"], "pos": v.get("pos", ""),
+                                    "adp": round(v["adp"], 1) if isinstance(v.get("adp"), (int, float)) else None,
+                                    "frm": p25})
+    for k, p25 in t25.items():
+        if p25 not in moves: continue
+        e = smp.get(k)
+        if e:
+            U = e.get("team")
+            if U and U != p25:
+                moves[p25]["dep"].append({"k": rslug(e["name"]), "n": e["name"],
+                                          "pos": e.get("pos", ""), "to": U})
+        elif routes.get(k, 0) >= 20:
+            moves[p25]["oop"].append({"n": disp.get(k, k), "pos": pos25.get(k, ""),
+                                      "rte": int(routes[k])})
+    for ab in moves:
+        moves[ab]["arr"].sort(key=lambda r: (r["adp"] is None, r["adp"] if r["adp"] is not None else 9999))
+        moves[ab]["dep"].sort(key=lambda r: (r["to"] == "FA", r["n"]))
+        moves[ab]["oop"] = sorted(moves[ab]["oop"], key=lambda r: -r["rte"])[:6]
+    return moves
+
+# per-position advanced-splits keys pulled from dfs_scenarios players[].drivers (2025 vintage)
+_ADV_KEYS = {
+    "RB": ["zone_run_sh", "outside_run_sh", "rb_zone_gap_delta", "ol_run_winrate",
+           "team_run_def_tier", "carry_share", "car_pg", "snap_share_est", "rb_rec_ypg"],
+    "QB": ["ol_pass_winrate", "opp_pass_rush_pctl", "tm_plays", "tm_pass_att",
+           "qb_rush_ypg", "qb_anya", "deep_ball_sh", "qb_man_zone_delta"],
+    "WR": ["deep_route_sh", "man_route_sh", "adot_adj_ypt", "rec_yacoe"],
+    "TE": ["deep_route_sh", "man_route_sh", "adot_adj_ypt", "rec_yacoe"],
+}
+_ADV_COMMON = ["sis_boom", "sis_bust"]
+
 def build_dc_intel(cs26, bi):
     """per new-DC team: coverage-vocab-matched intel from brain_intel coaches[dc].tw/.src26
     + teams[team].tw — deduped, newest first, top 3 kept (full match count reported)."""
@@ -164,7 +229,7 @@ def build_dc_intel(cs26, bi):
                    "items": [{"d": h["d"], "a": h["a"], "t": _trim(h["t"], 200)} for h in hits[:3]]}
     return out
 
-def build_players(sm, intel, sem, pfun, fp_players, sfit, cs26, crsp, dfs_drv):
+def build_players(sm, intel, sem, pfun, fp_players, sfit, cs26, crsp, dfs_drv, qbcov=None):
     """players payload keyed by route slug."""
     out = {}
     for key, v in sm.items():
@@ -199,6 +264,12 @@ def build_players(sm, intel, sem, pfun, fp_players, sfit, cs26, crsp, dfs_drv):
                         "cf": (cs26.get(w.get("opp")) or {}).get("conf")}
                        for w in (sf.get("playoff_weeks") or [])],
             }
+        # advanced splits (2025) — dfs_scenarios drivers, position-appropriate subset
+        adv = None
+        dr = dfs_drv.get(key) or {}
+        if dr:
+            keys = _ADV_KEYS.get(v.get("pos", ""), []) + _ADV_COMMON
+            adv = {k2: dr[k2] for k2 in keys if dr.get(k2) is not None} or None
         cr = crsp.get(key)
         sch = None
         if cr:
@@ -228,7 +299,8 @@ def build_players(sm, intel, sem, pfun, fp_players, sfit, cs26, crsp, dfs_drv):
             "sig": it.get("n_sig", 0), "noise": it.get("n_noise", 0),
             "sched": v.get("sched") or {},
             "cs": ({"best": cs.get("best"), "pctl": cs.get("pctl"), "routes": cs.get("routes"),
-                    "pctls": cs.get("pctls")} if cs else None),
+                    "pctls": cs.get("pctls"), "profile": cs.get("profile")} if cs else None),
+            "qbc": ((qbcov or {}).get(key, {}).get("schemes") or None),
             "q": {"bb": v.get("base_blended"), "boom": v.get("base_boom"),
                   "ng": v.get("n_games"), "bg": v.get("boom_games"),
                   "fus": v.get("fus") or {}, "use": v.get("usage") or {},
@@ -240,11 +312,11 @@ def build_players(sm, intel, sem, pfun, fp_players, sfit, cs26, crsp, dfs_drv):
             "fp": ({"mix": fp.get("personnel_mix"), "hs": fp.get("heavy_share"),
                     "routes": fp.get("routes"), "t11": fp.get("tprr_11"), "d11": fp.get("dkfp_rr_11"),
                     "th": fp.get("tprr_heavy"), "dh": fp.get("dkfp_rr_heavy")} if fp else None),
-            "tw": tw, "fwd": fwd, "cov": cov, "sch": sch, "mz": mz,
+            "tw": tw, "fwd": fwd, "cov": cov, "sch": sch, "mz": mz, "adv": adv,
         }
     return out
 
-def build_teams(sm, players_by_slug, off, sch, cc, wt, pers, proj, fp_players, dprof, ds, ngs, tc, proe, genv, cs26, dci):
+def build_teams(sm, players_by_slug, off, sch, cc, wt, pers, proj, fp_players, dprof, ds, ngs, tc, proe, genv, cs26, dci, mv):
     teams = {}
     for ab, names in sorted(bc._TEAMS.items()):
         o = off.get(ab) or {}
@@ -292,7 +364,9 @@ def build_teams(sm, players_by_slug, off, sch, cc, wt, pers, proj, fp_players, d
             "defc": s2.get("dc", ""), "dnote": s2.get("def_note", ""),
             "cc": {k: c[k] for k in ("oc_new", "oc_name", "dc_new", "dc_name", "dc_scheme",
                                      "dc_title", "def_caller", "source", "dc_source", "src") if c.get(k) is not None},
-            "adds": w.get("key_additions") or [], "losses": w.get("key_losses") or [],
+            # DERIVED roster changes (build_moves); web_teams key_additions/key_losses DROPPED —
+            # stale 2025-offseason list, user-caught errors (NE Diggs/A.J. Brown)
+            "mv": mv.get(ab) or {"arr": [], "dep": [], "oop": []},
             "pers": {"heavy": pe.get("heavy_2025"), "pa": pe.get("pa_2025"),
                      "motion": pe.get("motion_2025"), "pace": pe.get("pace_2025"),
                      "rank": pe.get("heavy_rank_2025"), "fph": pe.get("fp_heavy_rate_2025"),
@@ -574,9 +648,14 @@ function vTeam(ab){
     ${t.defc?`<b>Defense:</b> ${esc(t.defc)}<br>`:''}
     ${t.dnote?`<b>Def scheme:</b> ${esc(t.dnote)}<br>`:''}
     ${ccBits.length?`<div style="margin-top:7px">${ccBits.join('<br>')}${ccSrc?`<span class="ev src" style="border:none;padding:0">source: ${esc(ccSrc)} (verified registry)</span>`:''}</div>`:'<span class="mut">no 2026 coordinator change on record</span>'}</div>`;
-  const moves=`<div class="grid" style="gap:10px">
-    <div class="c6"><h2 style="margin-bottom:6px">Key additions</h2>${(t.adds.length?t.adds.map(a=>`<div class="row"><span class="who">＋ ${esc(a)}</span></div>`).join(''):'<div class="mut">none recorded</div>')}</div>
-    <div class="c6"><h2 style="margin-bottom:6px">Key losses</h2>${(t.losses.length?t.losses.map(a=>`<div class="row"><span class="who">－ ${esc(a)}</span></div>`).join(''):'<div class="mut">none recorded</div>')}</div></div>`;
+  const MV=t.mv||{arr:[],dep:[],oop:[]};
+  const moves=`
+    <div class="sublab">Arrivals — 2026 roster, played 2025 elsewhere</div>
+    ${MV.arr.length?MV.arr.map(r=>`<div class="row"><span class="who">＋ ${plink(r.k,r.n)} <span class="mut">${esc(r.pos)}</span></span><span class="what">from ${esc(r.frm)}</span><span class="when">${r.adp!=null?'ADP '+r.adp.toFixed(0):''}</span></div>`).join(''):'<div class="mut">none derived</div>'}
+    <div class="sublab">Departures — played here 2025, elsewhere now</div>
+    ${MV.dep.length?MV.dep.map(r=>`<div class="row"><span class="who">－ ${plink(r.k,r.n)} <span class="mut">${esc(r.pos)}</span></span><span class="what">${r.to==='FA'?'now FA':'to '+esc(r.to)}</span></div>`).join(''):'<div class="mut">none derived</div>'}
+    ${MV.oop.length?`<div class="sublab">2025 snaps, out of the 2026 draft pool</div>${MV.oop.map(r=>`<div class="row"><span class="who mut">${esc(r.n)} ${esc(r.pos)}</span><span class="when">${r.rte} rte</span></div>`).join('')}`:''}
+    <div class="mut" style="font-size:10.5px;margin-top:10px">derived: 2025 team from FP route charting vs 2026 draft-pool rosters · QBs not covered by this source · replaces the stale web_teams list</div>`;
   const P=t.pers||{}, mix=P.mix||{};
   const mixChips=Object.entries(mix).sort((a,b)=>b[1]-a[1]).map(([g,v])=>`<span class="chip">${g} <b>${pct(v)}</b></span>`).join('');
   const pj=t.proj;
@@ -745,9 +824,34 @@ function vPlayer(k){
         +(buckets?`<div class="sublab">Coverage buckets — production pctl vs each look</div>${buckets}`:'')
         +(schTable||chips);
     } else if(p.cs&&p.cs.pctls){
-      const bb=(l,v)=>v!=null?`<div class="bar-row"><span class="bl">${l}</span><div class="bar"><i style="width:${Math.min(100,v).toFixed(0)}%;background:#111"></i></div><span class="bv">${Math.round(v)}</span></div>`:'';
-      const rows=[['man','man'],['zone','zone'],['single-high','single_high'],['two-high','two_high']].map(([l,kk])=>bb(l,p.cs.pctls[kk])).join('');
-      coverage=rows?`<div class="sublab">Coverage-spec percentiles — statmenu fallback (player not in the scheme-fit engine)</div>${rows}`:'';
+      // key-aware per-coverage table. QB cspec keys are c2/c3/c4/c6/man; WR/TE are
+      // man/zone/single_high/two_high. Render whichever the player actually carries —
+      // the old fallback hardcoded WR keys and rendered blank for QBs.
+      const LAB={c2:'Cover 2',c3:'Cover 3',c4:'Cover 4',c6:'Cover 6',man:'Man',zone:'Zone',single_high:'Single-high',two_high:'Two-high'};
+      const ORD=['c2','c3','c4','c6','man','zone','single_high','two_high'];
+      const prof=p.cs.profile||{};
+      const keys=Object.keys(p.cs.pctls).sort((a,b)=>(ORD.indexOf(a)<0?99:ORD.indexOf(a))-(ORD.indexOf(b)<0?99:ORD.indexOf(b)));
+      const row=k=>{const pc=p.cs.pctls[k]; if(pc==null)return''; const val=prof[k];
+        const col=pc>=85?'var(--green)':pc<=20?'var(--red)':'var(--ink)';
+        const fill=pc>=85?'#1F9D55':pc<=20?'#E30613':'#111';
+        return `<div class="bar-row"><span class="bl">${LAB[k]||k}</span><div class="bar"><i style="width:${Math.min(100,pc).toFixed(0)}%;background:${fill}"></i></div><span class="bv" style="color:${col}">${Math.round(pc)}</span><span class="bx">${val!=null?(+val).toFixed(2):''}</span></div>`;};
+      const rows=keys.map(row).join('');
+      const best=p.cs.best?`<div class="note" style="margin-bottom:6px;font-size:12px"><b>Best vs ${esc(p.cs.best)}</b></div>`:'';
+      const isQB=p.pos==='QB';
+      coverage=rows?`<div class="sublab">Vs coverage (2025) — production percentile by scheme${isQB?' (QB efficiency by coverage faced)':''} · trailing value = per-play rate</div>${best}${rows}`:'';
+    }
+    // QB passing box stats BY coverage shell (build_qb_coverage2025.py) — appended below the
+    // efficiency bars. Rating tinted vs the QB pool within that shell (rate_pctl).
+    if(p.qbc){
+      const SH=['Cover 0','Cover 1','Cover 2','Cover 2 Man','Cover 3','Cover 4','Cover 6'];
+      const present=SH.filter(s=>p.qbc[s]).sort((a,b)=>(p.qbc[b].db||0)-(p.qbc[a].db||0));
+      const tr=s=>{const d=p.qbc[s]; const pc=d.rate_pctl;
+        const col=pc>=85?'var(--green)':pc<=20?'var(--red)':'var(--ink)';
+        const tint=pc>=85?'background:rgba(31,157,85,.06)':pc<=20?'background:rgba(227,6,19,.05)':'';
+        return `<tr style="${tint}"><td>${s}</td><td class="num">${d.db}</td><td class="num">${d.cmp!=null?d.cmp+'%':'–'}</td><td class="num">${d.ypa!=null?d.ypa.toFixed(2):'–'}</td><td class="num">${d.td??0}-${d.intc??0}</td><td class="num" style="color:${col};font-weight:600">${d.rate!=null?d.rate.toFixed(1):'–'}${pc!=null?` <span class="mut" style="font-weight:400">${pc}pct</span>`:''}</td><td class="num">${d.adot!=null?d.adot.toFixed(1):'–'}</td><td class="num">${d.dk!=null?d.dk.toFixed(1):'–'}</td></tr>`;};
+      const rows2=present.map(tr).join('');
+      coverage+=`<div class="sublab" style="margin-top:12px">Passing by coverage (2025 DK) — sorted by dropbacks · rating tinted vs QB pool (green ≥85th · red ≤20th)</div>
+        <div style="overflow-x:auto"><table class="tbl"><tr><th>shell</th><th class="num">db</th><th class="num">cmp</th><th class="num">YPA</th><th class="num">TD-INT</th><th class="num">rating</th><th class="num">aDOT</th><th class="num">DK</th></tr>${rows2}</table></div>`;
     }
     if(!coverage){
       coverage=(p.pos==='RB'||p.pos==='QB')
@@ -784,6 +888,32 @@ function vPlayer(k){
         <span><span class="k">DK/RR 11 / heavy</span><span class="v">${fmt(f.d11)} / ${fmt(f.dh)}</span></span>
         <span><span class="k">routes</span><span class="v">${f.routes??'–'}</span></span></div>
       ${f.th!=null&&f.d11!=null&&f.dh!=null?`<div class="mut" style="font-size:12px;margin-top:4px">${f.dh>f.d11?'MORE productive per route from heavy personnel — a heavy-shift offense raises his floor.':'more productive per route from 11 personnel.'}</div>`:''}`;}
+  const ADV_LBL={
+    zone_run_sh:['zone run share','%'],outside_run_sh:['outside run share','%'],rb_zone_gap_delta:['zone−gap succ Δ','n2'],
+    ol_run_winrate:['OL run win rate','bar'],team_run_def_tier:['own run-D tier','s'],carry_share:['carry share','%'],
+    car_pg:['carries/gm','n1'],snap_share_est:['snap share est','%'],rb_rec_ypg:['receiving ypg','n1'],
+    ol_pass_winrate:['OL pass win rate','bar'],opp_pass_rush_pctl:['opp pass-rush pctl (W15-17)','bar'],
+    tm_plays:['team plays/gm','n1'],tm_pass_att:['team pass att/gm','n1'],qb_rush_ypg:['rush ypg','n1'],
+    qb_anya:['ANY/A','n2'],deep_ball_sh:['deep-ball share','%'],qb_man_zone_delta:['man−zone EPA Δ','n2'],
+    deep_route_sh:['deep route share','%'],man_route_sh:['man route share','%'],adot_adj_ypt:['aDOT-adj YPT','n2'],
+    rec_yacoe:['YACOE/rec','n2'],sis_boom:['SIS boom%','bar'],sis_bust:['SIS bust%','barR']};
+  let advHtml='<div class="mut">no 2025 scenario drivers for this player</div>';
+  if(p.adv){
+    const kvs=[],bars=[];
+    for(const [kk,val] of Object.entries(p.adv)){
+      const [lbl,kind]=ADV_LBL[kk]||[kk,'n2'];
+      if(kind==='bar'||kind==='barR')
+        bars.push(`<div class="bar-row"><span class="bl" style="width:170px">${lbl}</span><div class="bar"><i style="width:${Math.min(100,Math.max(0,val)).toFixed(0)}%;background:${kind==='barR'?'#E30613':'#111'}"></i></div><span class="bv">${Math.round(val)}</span></div>`);
+      else if(kind==='%')
+        kvs.push(`<span><span class="k">${lbl}</span><span class="v">${typeof val==='number'?val.toFixed(1):esc(val)}%</span></span>`);
+      else if(kind==='s')
+        kvs.push(`<span><span class="k">${lbl}</span><span class="v" style="font-size:12.5px">${esc(val)}</span></span>`);
+      else
+        kvs.push(`<span><span class="k">${lbl}</span><span class="v">${typeof val==='number'?val.toFixed(kind==='n1'?1:2):esc(val)}</span></span>`);
+    }
+    advHtml=`<div class="mut" style="font-size:10.5px;margin-bottom:8px">dfs_scenarios drivers — 2025 vintage · opp_* = W15-17 opponents</div>
+      <div class="kv">${kvs.join('')}</div>${bars.length?`<div style="margin-top:10px;max-width:520px">${bars.join('')}</div>`:''}`;
+  }
   const tweets=(p.tw||[]).map(t=>`<div class="tweet">${semIcon(t.s)}${esc(t.t)}
       <div class="m">${esc(t.a)} · ${esc(t.d)}${t.u?` · <a href="${esc(t.u)}" target="_blank" rel="noopener">↗</a>`:''}</div></div>`).join('')
     ||'<div class="mut">no tweets captured for this player</div>';
@@ -798,6 +928,7 @@ function vPlayer(k){
       <div class="panel c12 sect"><h2>Quant strip — blended model</h2>${quant}</div>
       <div class="panel c6 sect"><h2>Funnels — 2025 route &amp; alignment</h2>${funnels}</div>
       <div class="panel c6 sect"><h2>Personnel reliance — 11 vs heavy</h2>${fpHtml}</div>
+      <div class="panel c12 sect"><h2>Advanced splits (2025)</h2>${advHtml}</div>
       <div class="panel c6 sect"><h2>Intel — newest tweets</h2>${tweets}</div>
       <div class="panel c6 sect"><h2>Forward claims</h2>${fwd}</div>
     </div>
@@ -840,6 +971,8 @@ def main():
     cs26_meta = csch.get("meta", {})
     crs = jload(repo, "boom", "coverage_route_spec.json") or {}
     crsp = {p.get("key"): p for p in (crs.get("players") or []) if isinstance(p, dict) and p.get("key")}
+    # QB passing-by-coverage (2025 DK) — FantasyPoints per-shell pull -> build_qb_coverage2025.py
+    qbcov = jload(repo, "boom", "qb_coverage_2025.json") or {}
     # man/zone EPA-per-target + man-route exposure from the DFS source-fusion drivers
     dfs_drv = {fn(p.get("name", "")): (p.get("drivers") or {})
                for p in (jload(repo, "dfs_scenarios.json") or {}).get("players", [])
@@ -860,9 +993,10 @@ def main():
 
     smp = {k: v for k, v in sm.items() if isinstance(v, dict) and v.get("name")}
     dci = build_dc_intel(cs26, bi)
-    players = build_players(smp, intel, sem, pfun, fp.get("players", {}), sfit, cs26, crsp, dfs_drv)
+    mv = build_moves(repo, smp)
+    players = build_players(smp, intel, sem, pfun, fp.get("players", {}), sfit, cs26, crsp, dfs_drv, qbcov)
     teams = build_teams(smp, players, off, sch, cc, wt, pers, proj, fp.get("players", {}),
-                        dprof, ds, ngs, tc, proe, genv, cs26, dci)
+                        dprof, ds, ngs, tc, proe, genv, cs26, dci, mv)
     today = build_today(vault, repo, smp, bi, sem, cs26, dci)
 
     data = {"meta": {"generated": now.strftime("%Y-%m-%d %H:%M"),

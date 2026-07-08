@@ -41,6 +41,7 @@ def stage(cmd, outs):
     print("    ok (%.1fs) %s  %s"%(time.time()-t, outs, tail[:80]))
 DOSSIER=[(["build_coverage_spec.py"],["boom/coverage_route_spec.json"]),   # FP charting 2024+25 -> per-scheme/route spec
  (["build_coverage_adv2025.py"],["boom/coverage_route_spec.json"]),        # 2025-DK adv2025 enrichment — MUST follow build_coverage_spec (that rebuild drops the block)
+ (["build_qb_coverage2025.py"],["boom/qb_coverage_2025.json"]),            # QB passing box stats by coverage shell (FP 2025-DK pull) -> warroom QB dossier
  (["build_scheme_fit.py"],["boom/scheme_fit.json"]),                       # spec x 2026 schedule (coordinator-aware new-DC)
  (["build_flag_ranks.py"],["flag_ranks.json"]),                            # ADP-anchored nudge (consumes scheme_fit)
  (["build_dossier.py"],["dossier_data.json"]),
