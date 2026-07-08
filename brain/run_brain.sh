@@ -84,4 +84,8 @@ run_ingest() {
   # your ## Notes are never overwritten.
   python3 brain/brain_concepts.py --vault "$VAULT"
   echo "concepts exit $?"
+  # landing page: one-glance vault home (health, availability watch, today intake, board top, nav)
+  python3 brain/brain_home.py --vault "$VAULT"
+  python3 brain/brain_warroom.py --vault "$VAULT"
+  echo "home exit $?"
 } >> "$LOG" 2>&1

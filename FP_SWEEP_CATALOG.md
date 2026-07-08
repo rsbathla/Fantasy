@@ -61,6 +61,13 @@ Banked under `NFL-master/FP_SWEEP/<year>/Receiving/<dimension>/<value>.csv`.
 | targetedRead | enum | `$$play.pass.targetedRead.targetedReadId` | 1(493), 2(460), 3(456), 4(390), 5(393) |  |
 | throwAccuracy | enum | `$$play.pass.throwAccuracy.throwAccuracyId` | 1(419), 2(476), 3(335), 4(392), 5(478), 6(417), 7(384), 8(415), 9(419) |  |
 | throwType | enum | `$$play.pass.throwType.throwTypeId` | 1(286), 2(128), 3(437), 4(489), 5(378), 6(380), 7(78), 8(470), 9(411) |  |
+| coverageScheme | enum (LABEL values, not codes) | `$$play.defense.coverageScheme.parent` | Cover_0(382), Cover_1(482), Cover_2(474), Cover_2_Man(311), Cover_3(499), Cover_4(483), Cover_6(455), Red_Zone(385), Goal_Line(55), Prevent(185), Bracket(252), Miscellaneous(19) | 2025 only, pulled 2026-07-07; positions RB/FB/WR/TE; DK scoring (`playerStatsFantasyPointsDraftKings` cross-checked = grid FP under DraftKings). Wire values are the labels themselves. The 7 shells feed `build_coverage_adv2025.py` -> `boom/coverage_route_spec.json` adv2025 blocks; the 5 situational values (Red Zone/Goal Line/Prevent/Bracket/Misc) are banked, unwired. |
+
+**Companion (same folder):** `coverageScheme/separation_by_coverage.json` — the dedicated
+`receiving-separation-by-coverage` tool (2025, 519 players RB/FB/WR/TE). Per-player separation
+WIN%/SCORE% + TPRR/YPRR by bucket `Man / Zone / RedZone / Cover2 / Cover3 / Cover4 / Cover6 / Overall`.
+Note: separation is NOT in the receiving-advanced export at all (no per-player sep column exists there),
+and the sep tool has no C0/C1/Man-C2 buckets — per-scheme separation exists only for C2/C3/C4/C6.
 
 ---
 

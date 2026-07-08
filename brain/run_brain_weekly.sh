@@ -75,6 +75,10 @@ BLEND=""; [ -n "$SCRAPE_2026" ] && [ -d "$SCRAPE_2026" ] && BLEND="--raw2026 $SC
   # Refresh fast-rotting statmenu fields (ADP as-of, availability, bye/W15-17), re-render.
   python3 brain/brain_refresh_statmenu.py && echo "statmenu refresh exit $?"
   python3 brain/brain_pages.py --vault "$VAULT" && echo "pages exit $?"
+  # landing page: one-glance vault home (health, availability watch, today intake, board top, nav)
+  python3 brain/brain_home.py --vault "$VAULT"
+  python3 brain/brain_warroom.py --vault "$VAULT"
+  echo "home exit $?"
 
   echo "===== weekly refresh done $(date) ====="
 } >> "$LOG" 2>&1

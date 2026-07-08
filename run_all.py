@@ -11,6 +11,7 @@ Chain (each stage asserts its output exists & is non-empty; fails loud):
   [--full] refactor/pipeline.py   -> features.csv, defense.json, fusion.json ...
   [--full] boom_pipeline.py       -> boom/*.json, command_center.html
   build_coverage_spec.py          -> boom/coverage_route_spec.json  (FP charting 2024+25 per-scheme/route spec)
+  build_coverage_adv2025.py       -> boom/coverage_route_spec.json  (adds 2025-DK adv2025 blocks: tprr/sep/adot/ctc/dk_rr)
   build_scheme_fit.py             -> boom/scheme_fit.json     (spec x 2026 schedule, coordinator-aware new-DC)
   build_flag_ranks.py             -> flag_ranks.json          (ADP-anchored nudge; consumes scheme_fit)
   build_dossier.py                -> dossier_data.json        (verified 2026 OL wired in)
@@ -39,6 +40,7 @@ def stage(cmd, outs):
     tail=(r.stdout.strip().splitlines() or [''])[-1]
     print("    ok (%.1fs) %s  %s"%(time.time()-t, outs, tail[:80]))
 DOSSIER=[(["build_coverage_spec.py"],["boom/coverage_route_spec.json"]),   # FP charting 2024+25 -> per-scheme/route spec
+ (["build_coverage_adv2025.py"],["boom/coverage_route_spec.json"]),        # 2025-DK adv2025 enrichment — MUST follow build_coverage_spec (that rebuild drops the block)
  (["build_scheme_fit.py"],["boom/scheme_fit.json"]),                       # spec x 2026 schedule (coordinator-aware new-DC)
  (["build_flag_ranks.py"],["flag_ranks.json"]),                            # ADP-anchored nudge (consumes scheme_fit)
  (["build_dossier.py"],["dossier_data.json"]),
